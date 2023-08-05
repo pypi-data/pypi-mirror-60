@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+convert.cpp
+libsvm2csv.cpp
+libsvm2csv.h
+setup.py
+libsvm2csv.egg-info/PKG-INFO
+libsvm2csv.egg-info/SOURCES.txt
+libsvm2csv.egg-info/dependency_links.txt
+libsvm2csv.egg-info/top_level.txt
