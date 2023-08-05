@@ -1,0 +1,8 @@
+queryS3/QS3.py,sha256=_MrXipGD3aGztRVL_kcTAmXakT48uQMfvkaeNvjJf7Q,1426
+queryS3/__init__.py,sha256=dJFzFW0oik2NrfQgJo18Gjo5_ppAeGYEn4UlBt7dEIw,105
+queryS3/app.py,sha256=q4VLXXS9C7N1Phu0gNxMsuEbPBZ5zrUuSBnY_ILXUx0,3782
+queryS3-0.0.19.dist-info/LICENSE,sha256=2G67irpAs4H397XqN_WlKGXdQ8UdcyJtkNhZURTvSZE,1102
+queryS3-0.0.19.dist-info/METADATA,sha256=nZ1lFjdy1gHRq8bkMDXb4k6zRdxFUi9mZKIVuIsynRc,2434
+queryS3-0.0.19.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+queryS3-0.0.19.dist-info/top_level.txt,sha256=MhKE4lLGEJjJApIRkyjQNlfwPOVn8lIkVseVuE4N270,8
+queryS3-0.0.19.dist-info/RECORD,,
