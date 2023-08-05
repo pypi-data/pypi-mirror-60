@@ -1,0 +1,8 @@
+README.md
+setup.py
+CeleryFlask/__init__.py
+CeleryFlask.egg-info/PKG-INFO
+CeleryFlask.egg-info/SOURCES.txt
+CeleryFlask.egg-info/dependency_links.txt
+CeleryFlask.egg-info/requires.txt
+CeleryFlask.egg-info/top_level.txt
