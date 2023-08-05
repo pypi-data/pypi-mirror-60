@@ -1,0 +1,6 @@
+uws/__init__.py,sha256=9bDc5a9Ghcl2S-p0vP8rioTfypcdcDwlNO4ewe07oRw,875
+uws/linux/uwebsocketspy.so,sha256=8mgAFeoqHg4gAOsA6Gz44KSqdaYzhmG2R-4yJJWqEqE,1846680
+uws/macosx/uwebsocketspy.so,sha256=BnD299BfI9u0Om9oxwU645UBTXHtXYretegqJufI72Q,528196
+uws-0.0.9.dist-info/METADATA,sha256=IrCfZMh7JttWAQpipY2km5SfCdPtSb8lu6MF_-xrxl8,228
+uws-0.0.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+uws-0.0.9.dist-info/RECORD,,
