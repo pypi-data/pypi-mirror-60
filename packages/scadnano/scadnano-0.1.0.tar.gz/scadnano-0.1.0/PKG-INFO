@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: scadnano
+Version: 0.1.0
+Summary: Python scripting library for generating designs readable by scadnano.
+Home-page: https://github.com/UC-Davis-molecular-computing/scadnano-python-package
+Author: David Doty
+Author-email: doty@ucdavis.edu
+License: MIT
+Download-URL: https://github.com/UC-Davis-molecular-computing/scadnano-python-package/archive/v0.1.0.zip
+Description: UNKNOWN
+Platform: UNKNOWN
