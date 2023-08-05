@@ -1,0 +1,35 @@
+#!python
+import sys
+from linguistics.dictionary import Dictionary
+from linguistics.spark_time import SparkTime
+from linguistics.overlap import Overlap
+from linguistics.io import io
+import scipy
+
+
+filename, modelname = io().check_args(sys, 2, "I also need to know the frequency")
+freq = sys.argv[2]
+
+if freq == "day":
+    window = 30
+elif freq == "hour":
+    window = 12
+else:
+    window = 4
+
+spark_time = SparkTime()
+spark_time.add_keywords(modelname)
+spark_time.create(modelname)
+scipy.sparse.save_npz(modelname + "_term_doc_mat.npz", spark_time.term_doc_mat)
+spark_time.set_frequency(freq)
+spark_time.run()
+spark_time.collate()
+spark_time.save(modelname)
+norm = spark_time.normalise(spark_time.frame)
+spark_time2 = SparkTime()
+spark_time2.frame = norm
+spark_time2.rolling(modelname, window=window)
+
+overlap = Overlap()
+overlap.create(modelname)
+overlap.save(modelname)
