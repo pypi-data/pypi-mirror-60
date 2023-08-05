@@ -1,0 +1,8 @@
+README.md
+setup.py
+cpfgen/__init__.py
+cpfgen/cpfgen.py
+cpfgen.egg-info/PKG-INFO
+cpfgen.egg-info/SOURCES.txt
+cpfgen.egg-info/dependency_links.txt
+cpfgen.egg-info/top_level.txt
