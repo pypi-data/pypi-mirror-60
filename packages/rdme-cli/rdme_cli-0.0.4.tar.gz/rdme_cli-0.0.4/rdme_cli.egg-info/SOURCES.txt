@@ -1,0 +1,9 @@
+README.md
+setup.py
+rdme_cli/__init__.py
+rdme_cli.egg-info/PKG-INFO
+rdme_cli.egg-info/SOURCES.txt
+rdme_cli.egg-info/dependency_links.txt
+rdme_cli.egg-info/entry_points.txt
+rdme_cli.egg-info/requires.txt
+rdme_cli.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+rdme-cli = rdme_cli:main
+
