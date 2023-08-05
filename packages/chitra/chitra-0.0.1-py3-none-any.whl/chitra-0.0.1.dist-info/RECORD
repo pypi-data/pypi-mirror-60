@@ -1,0 +1,12 @@
+chitra/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+chitra/_nbdev.py,sha256=R01FRmiHjh-9eyIcaIduzTGmZU2tlpIjlPdDLcKttb4,594
+chitra/classification.py,sha256=NBrbm8I1qsQ4-RgWRvPmWEAHNtaSUjc0D092S2rcK7U,115
+chitra/core.py,sha256=MTLyN3tVd51jc--JJ5zC1PRlO_cW-15L8V0B-SGhe6w,505
+chitra/dataloader.py,sha256=ZkzUYuaa7qd_y1tMqzHe-XIy_AFXmqQPHulnRDmqafU,1887
+chitra/image.py,sha256=W4TtXR8Ysn64fbZqP0PbFWCWul4Hxm-Qv7RPAZ76Rpc,795
+chitra-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+chitra-0.0.1.dist-info/METADATA,sha256=SXP05aap4XCzlmlXEnOzf6PQLj7OcSzO1DyXud7iGg8,1462
+chitra-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+chitra-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+chitra-0.0.1.dist-info/top_level.txt,sha256=YJe5yeAiVYA1tawgTJuzmPW3B-fVYrcSVpGB4eZgMBo,7
+chitra-0.0.1.dist-info/RECORD,,
