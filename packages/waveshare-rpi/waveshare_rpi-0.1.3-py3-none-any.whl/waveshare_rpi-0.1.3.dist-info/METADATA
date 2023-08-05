@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: waveshare-rpi
+Version: 0.1.3
+Summary: A quick-and-dirty library wrapping the native API of the waveshare GPS hat.
+Home-page: http://packages.python.org/waveshare_rpi
+Author: Eli Barnett
+Author-email: emichaelbarnett@gmail.com
+License: MIT
+Keywords: waveshare rpi gps
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: pynmea2
+Requires-Dist: pyserial
+
+# RPI Waveshare Lib
+
+This is a simple library for using the WaveShare L76x GPS hat for the Raspberry Pi.
+
+The library turns on sensing and runs a background thread that parses the incoming serial messages and pushes them into a queue, from which the most recent message of a given type can be queried synchronously without blocking.
+
+The API exposes the following methods:
+
+## Importing the Library
+
+```python
+import waveshare
+```
+
+## Start Serial Stream
+
+```python
+start(device)
+```
+
+This starts the stream of serial data from the waveshare ("device" should be the name of the USB device being used to communicate with the waveshare).  Prior to running this method, all getters will return `None`.
+
+## Stop Serial Stream
+
+```python
+stop()
+```
+
+This stops the stream of serial data from the device.  Until it is re-started, all getters will return the last value published by the device.
+
+## Read Data Packets
+
+```python
+get_gga()
+```
+
+```python
+get_gsa()
+```
+
+```python
+get_gsv()
+```
+
+```python
+get_rmc()
+```
+
+For a description of the contents of each packet type, see: http://aprs.gids.nl/nmea/
+
