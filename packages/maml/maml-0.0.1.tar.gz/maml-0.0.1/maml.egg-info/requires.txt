@@ -1,0 +1,8 @@
+numpy
+scipy
+monty
+keras
+tensorflow
+scikit-learn
+pandas
+pymatgen
