@@ -1,0 +1,8 @@
+[console_scripts]
+PRaddress = presenzialo.presenzialo_address:main
+PRbot = presenzialo.presenzialo_bot:main
+PRday = presenzialo.presenzialo_day:main
+PRid = presenzialo.presenzialo_id:main
+presenzialo = presenzialo.presenzialo:main
+presenziamelo = presenzialo.presenzialo:main
+
