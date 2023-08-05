@@ -1,0 +1,9 @@
+README.md
+setup.py
+regulagity/__init__.py
+regulagity.egg-info/PKG-INFO
+regulagity.egg-info/SOURCES.txt
+regulagity.egg-info/dependency_links.txt
+regulagity.egg-info/entry_points.txt
+regulagity.egg-info/requires.txt
+regulagity.egg-info/top_level.txt
