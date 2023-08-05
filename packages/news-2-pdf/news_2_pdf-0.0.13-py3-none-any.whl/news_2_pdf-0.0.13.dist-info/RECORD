@@ -1,0 +1,9 @@
+news_2_pdf/__init__.py,sha256=74I6-J8xX3wpKg-y9BT83Vg_0HFjYbP9qyhbz1YWQOU,1183
+news_2_pdf/article.py,sha256=Ou8PXWF9UgP_AQ7UIZ9A3dSHPszckYa_EvtUjIBl97Q,842
+news_2_pdf/find_links.py,sha256=qSrQxL50xD34WKNxR2F3euN7TvNr3LYD6oXfhexRJzA,1973
+news_2_pdf/index.py,sha256=5W-9-x2MaTX67bKmeAcyA2H7KttqfIx4CLQeHWr2ORc,877
+news_2_pdf-0.0.13.dist-info/LICENSE,sha256=Ep-IKW9GzIUQmaKQOr2239YhmBvNj2rQ7i38aFJV5uk,1071
+news_2_pdf-0.0.13.dist-info/METADATA,sha256=40y6XAZBcQSRTjmNQf9CrNX8-0Y8VaNrxMLjx5LDDQs,895
+news_2_pdf-0.0.13.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+news_2_pdf-0.0.13.dist-info/top_level.txt,sha256=xjVUtkrLw-OTXkTez7v3RL6SREK4Gv6CJm53IqhiQWw,11
+news_2_pdf-0.0.13.dist-info/RECORD,,
