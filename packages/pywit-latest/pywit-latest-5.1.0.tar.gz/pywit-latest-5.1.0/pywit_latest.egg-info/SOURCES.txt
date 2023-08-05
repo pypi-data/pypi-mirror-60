@@ -1,0 +1,9 @@
+README.md
+setup.py
+pywit_latest.egg-info/PKG-INFO
+pywit_latest.egg-info/SOURCES.txt
+pywit_latest.egg-info/dependency_links.txt
+pywit_latest.egg-info/requires.txt
+pywit_latest.egg-info/top_level.txt
+wit/__init__.py
+wit/wit.py
