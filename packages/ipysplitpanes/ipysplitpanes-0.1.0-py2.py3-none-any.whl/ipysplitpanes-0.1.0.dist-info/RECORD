@@ -1,0 +1,14 @@
+ipysplitpanes/__init__.py,sha256=C4LzNHs73Ls6E-_bNYRGEmNTiOedv2fqbRi_jtDIFJg,1045
+ipysplitpanes/_version.py,sha256=blcBjMdGK1wUP95gqPKVAVV4Tk3ygOMoyl-bZkA5Fts,392
+ipysplitpanes/widget.py,sha256=Ivmesrvx32n-OkIs8cneHs2k7HnhAYEIWl8Mq9fZ9QE,649
+ipysplitpanes/static/extension.js,sha256=GZgSkWK5G9NHOX-qHVCBHz6FFb6tedoKrh7EOtz93uw,1227
+ipysplitpanes/static/index.js,sha256=pg_iv1hP_Z_1po-JTv_jzKwsYdbPwymBkOt085h6F3k,78763
+ipysplitpanes/static/index.js.map,sha256=Gi5CeJU8FtPntyFa_J5uvh08uSTfhXvLwNxcGnPHLps,359914
+ipysplitpanes-0.1.0.data/data/etc/jupyter/nbconfig/notebook.d/jupyter-splitpanes.json,sha256=At8rH0BGTW6JQ0DO3yOr_F8fpZDlIChesXJjtgmHn1c,72
+ipysplitpanes-0.1.0.data/data/share/jupyter/nbextensions/jupyter-splitpanes/extension.js,sha256=GZgSkWK5G9NHOX-qHVCBHz6FFb6tedoKrh7EOtz93uw,1227
+ipysplitpanes-0.1.0.data/data/share/jupyter/nbextensions/jupyter-splitpanes/index.js,sha256=pg_iv1hP_Z_1po-JTv_jzKwsYdbPwymBkOt085h6F3k,78763
+ipysplitpanes-0.1.0.data/data/share/jupyter/nbextensions/jupyter-splitpanes/index.js.map,sha256=Gi5CeJU8FtPntyFa_J5uvh08uSTfhXvLwNxcGnPHLps,359914
+ipysplitpanes-0.1.0.dist-info/METADATA,sha256=p4y07AwfQik-w4h48dkKkEJuhwTe1_R3--cZ8xWiLBU,985
+ipysplitpanes-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+ipysplitpanes-0.1.0.dist-info/top_level.txt,sha256=ZgffjseYFSX0Bf5xxSVavvgRu9E8HhGQKhrulc6hFQc,14
+ipysplitpanes-0.1.0.dist-info/RECORD,,
