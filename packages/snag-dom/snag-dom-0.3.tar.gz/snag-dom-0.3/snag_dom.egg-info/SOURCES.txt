@@ -1,0 +1,8 @@
+README.md
+setup.py
+snag.py
+snag_dom.egg-info/PKG-INFO
+snag_dom.egg-info/SOURCES.txt
+snag_dom.egg-info/dependency_links.txt
+snag_dom.egg-info/requires.txt
+snag_dom.egg-info/top_level.txt
