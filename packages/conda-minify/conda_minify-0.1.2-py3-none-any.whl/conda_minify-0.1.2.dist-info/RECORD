@@ -1,0 +1,12 @@
+conda_minify/__init__.py,sha256=fvmgyUMT-5gx4sO-K9iaiAOm__OZZ9LgkT3Da-tlK9M,78
+conda_minify/__main__.py,sha256=9hIDGk6wKATNmwgLhhUi_tfREAbCJHINyMnea9SirXA,60
+conda_minify/__version__.py,sha256=r_cKr7sbAG8wXvZQ-5WkC2eXGKMDWp6Xe_hNXu43MT0,21
+conda_minify/cli.py,sha256=CzVWRKiLykGerqV634DJS15MWxj7-hwhCOpQSV3qF44,5261
+conda_minify/environment.py,sha256=ixJUDhWH2iRbFB3YCR2V4CrhCd3dVeQBTwIGh7eBc90,23294
+conda_minify/graph.py,sha256=BZn2I33fJj37piwv74AXZbob92YhjSOebt10Ghu8WRg,4673
+conda_minify-0.1.2.dist-info/LICENSE,sha256=4OUEocDEXqLN5mfOWogL1tTrmh7ER6-_FwiqTxEW70g,1053
+conda_minify-0.1.2.dist-info/METADATA,sha256=5b6nCtVeLdK2Ty0LYDd970jfGZmvCrSNRGNfU97mguI,5220
+conda_minify-0.1.2.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+conda_minify-0.1.2.dist-info/entry_points.txt,sha256=TrejHV-oC_b9CApA2oOaEwy4D2AUBHQgOjva_8Fk5F0,61
+conda_minify-0.1.2.dist-info/top_level.txt,sha256=J9j4hsnNJ-pU9WgFU5RBPa9uyVpp0HL6mmvBMFcgblE,13
+conda_minify-0.1.2.dist-info/RECORD,,
