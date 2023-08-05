@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distributions/Binomialdistribution.py
+distributions/Gaussiandistribution.py
+distributions/Generaldistribution.py
+distributions/__init__.py
+pack_ibrahim.egg-info/PKG-INFO
+pack_ibrahim.egg-info/SOURCES.txt
+pack_ibrahim.egg-info/dependency_links.txt
+pack_ibrahim.egg-info/not-zip-safe
+pack_ibrahim.egg-info/top_level.txt
