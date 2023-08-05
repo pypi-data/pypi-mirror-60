@@ -1,0 +1,17 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="plone">
+
+  <subscriber
+    for=".content.conference.IConference
+         zope.lifecycleevent.interfaces.IObjectAddedEvent"
+    handler=".content.conference.create_conference_content"
+  />
+
+  <subscriber
+    for=".content.conference.IConference
+         zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+    handler=".content.conference.update_conference_content"
+  />
+
+</configure>
