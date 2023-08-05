@@ -1,0 +1,5 @@
+alibi==0.3.2
+boto3==1.10.45
+dill==0.3.1.1
+requests==2.13.0
+tensorflow==1.15
