@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: simple_test_generator
+Version: 0.26
+Summary: A simple cli-based recorder for Python
+Home-page: https://github.com/jeshan/simple-test-generator
+License: UNKNOWN
+Author: Jeshan G. BABOOA
+Author-email: j@jeshan.co
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: jsonpickle <2
+Requires-Dist: loguru <1
+
+# simple_test_generator
+Automated, comprehensive and clean pytest test cases.
+
+
+## Description
+> If we format our code with tools like Black, then why don't we do the same with our tests?
+
+Helps you reach 100% test coverage with real-world test cases.
+Tests that are generated "just work", i.e they are clean, unaware of implementation details, and doesn't require active maintenance.
+
+It works well if your functions are [deterministic](https://en.wikipedia.org/wiki/Deterministic_algorithm) (e.g pure).
+> If not, then you should probably make them so!
+
+It's DDT for pytest (development-driven testing, data-driven tests, or both :nerd_face:)
+
+## why?
+Too tedious/hard to generate custom data for your application?
+
+- save time by having tests generated for you :tada:
+- dramatically increase test code coverage with little effort
+- write more maintainable tests by separating code and data
+- helps you organise your test code consistently in new projects, or:
+- replace your existing disorganised test code :+1:
+- accelerate your migration to pytest
+
+
+> Tests that you write manually can still be made to follow the same conventions as simple_test_generator for consistency
+
+# Using in normal runs
+
+# Using while running tests
+
+
+then, confirm that your test cases expected value are correct.
+
+finally, install it only as a test dependency.
+
+# Demos
+See botostubs going from 0 to 99% under 20 seconds!
+
+
+# Releasing on PyPI
+- `pipenv shell`
+- `flit build`
+- `flit publish`
+
+Enter password when prompted.
+
+## Docs
+Running over and over write test cases in new files to avoid overwriting your previous test cases. The filenames are appended with -00, -01, ... for up to 10 files.
+
+If your function arguments are not serialisable, then test cases won't be generated. You will see an error in the logs for that function.
+
+## Dev docs
+_section still rough; personal notes_
+
+calling `-m simple_test_generator` isn't dropping in debugger. It works when using as a library `with Recorder(): ...` 
+
+# Notes
+- It won't be able to support all types of data, e.g asserting functions that return other functions. See section on how to handle this.
+- This project uses pickling to load the test data. If you're the one generated test data, then it should be fine loading it during tests. Otherwise, don't load untrusted test data. 
+
+# Features
+- Handles functions that return generators by automatically extending these into Python lists so that they can be asserted.
+
+## TODO
+- Minor issue: functions in your main module may be loaded twice, creating identical test cases twice for that function. (maybe happening only in this project)
+- Support functions that return functions. We need a reliable way to assert equivalence between a function and its deserialised representation.
+
+## Related
+These projects resemble this one but mine requires much less effort on your part and generates even less boilerplate :blush:
+- https://smarie.github.io/python-pytest-cases/
+- https://github.com/Figglewatts/pytestgen
+
+# What if you have test failures?
+> It may be due to a bug in simple_test_generator but it's probably because it's difficult to serialise all data types, e.g file descriptors.
+
+## Cases that you should handle on your own:
+- Assertion does not work properly on your objects
+> You should define an `__eq__` function in your class. This will ensure that pytest asserts the return values properly.
+
+## How to report in issue
+1. Raise an issue [here](https://github.com/jeshan/simple_test_generator/issues/new) about the test failure (or upvote an existing one)
+2. Paste your function code (or its signature)
+3. Paste the json file that simple_test_generator generated, e.g `test-data/path/to/function/01.json`
+4. State what you were expecting
+5. State what happened instead
+
+
+# Copyright
+Released under the MIT licence. See file named [LICENCE](LICENCE) for details.
+
+
