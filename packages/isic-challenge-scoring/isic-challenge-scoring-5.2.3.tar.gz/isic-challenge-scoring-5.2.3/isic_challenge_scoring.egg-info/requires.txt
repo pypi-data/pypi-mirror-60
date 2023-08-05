@@ -1,0 +1,8 @@
+click
+click-pathlib
+numpy
+pandas
+pillow>=7
+rdp
+scipy
+scikit-learn
