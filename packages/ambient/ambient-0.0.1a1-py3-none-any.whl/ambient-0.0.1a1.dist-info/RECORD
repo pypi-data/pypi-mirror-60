@@ -1,0 +1,16 @@
+ambient/__init__.py,sha256=VVh3GNpng4XpIdVSD_Zd_lfA_T2dNxS-E2A_8g2Adac,36
+ambient/air.py,sha256=SRl9NiobkJdggCziqTiny-uOqmIsHW7-qyCO3Cxh_M4,14198
+ambient/base.py,sha256=gDaYgGGbvclGs8uZ-gj3A80wngCFLnrRu_vqwOh4k3w,1573
+ambient/boundary.py,sha256=bedPrk2v5vQ6WWuuTmsItwLEH5TmGwAZ6qTrrfJT6pE,343
+ambient/io.py,sha256=GiNEPLViNuoDBDXKmD_sFW1ohSeJs7xzuyD8qNzsLsU,1272
+ambient/location.py,sha256=8Y593vNcZn8n6p-ufSboUCx0F-IHtm6quNejj8Xvv1I,252
+ambient/material.py,sha256=EhcxumPVVeUx3-ZIFUNJ_A2PgJgyfKhtOvdGkk25Y58,2340
+ambient/simulation.py,sha256=U9AX5TMKhO5SXYazR1l2s65eURKXdmtIJCBqO8B1s1I,2581
+ambient/sun.py,sha256=sf6X6yHe0PkwN0AkOwkMB0ugXEKwz0wdHEiEfaYlO68,5153
+ambient/surface.py,sha256=PY6-5Dzuo5j8MTEvGfq_7gxPioTQ9s7tl5cksKOTKw4,7593
+ambient/time.py,sha256=GUVzLHoMYBoot7QAQztftvzIxOS5ZGEdYM6f3CHOVFA,776
+ambient-0.0.1a1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ambient-0.0.1a1.dist-info/METADATA,sha256=49K21Hi9WjwUuN-QAr23aRpH5aFJWQ-h1nUGiWlZewc,494
+ambient-0.0.1a1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ambient-0.0.1a1.dist-info/top_level.txt,sha256=Z0-D-0zgDdP7CyFzHGLB41qq9B28-yr5ZWgEB5yIqNM,8
+ambient-0.0.1a1.dist-info/RECORD,,
