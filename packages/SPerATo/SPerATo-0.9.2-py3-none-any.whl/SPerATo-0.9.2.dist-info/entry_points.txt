@@ -1,0 +1,5 @@
+[console_scripts]
+sperato-hkhlr = sperato.hkhlr:main
+sperato-list = sperato.speratolist:main
+sperato-plots = sperato.plots:main
+
