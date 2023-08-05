@@ -1,0 +1,10 @@
+README.rst
+setup.py
+approxidate/__init__.py
+approxidate/_c.c
+approxidate/approxidate.c
+approxidate/approxidate.h
+approxidate.egg-info/PKG-INFO
+approxidate.egg-info/SOURCES.txt
+approxidate.egg-info/dependency_links.txt
+approxidate.egg-info/top_level.txt
