@@ -1,0 +1,10 @@
+setup.py
+image_filter_tjr.egg-info/PKG-INFO
+image_filter_tjr.egg-info/SOURCES.txt
+image_filter_tjr.egg-info/dependency_links.txt
+image_filter_tjr.egg-info/not-zip-safe
+image_filter_tjr.egg-info/top_level.txt
+image_reader_tjr/AutoThresholder.py
+image_reader_tjr/ImageReader.py
+image_reader_tjr/SimpleThresholder.py
+image_reader_tjr/__init__.py
