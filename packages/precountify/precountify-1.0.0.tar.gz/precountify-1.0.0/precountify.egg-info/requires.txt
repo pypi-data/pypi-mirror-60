@@ -1,0 +1,8 @@
+fire
+librosa
+
+[essentia]
+essentia==2.1b5
+
+[madmom]
+madmom

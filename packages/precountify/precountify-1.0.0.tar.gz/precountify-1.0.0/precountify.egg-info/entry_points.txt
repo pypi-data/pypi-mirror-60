@@ -1,0 +1,3 @@
+[console_scripts]
+precountify = precountify.cli:main
+
