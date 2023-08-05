@@ -1,0 +1,69 @@
+{
+  "projectName": "ward",
+  "projectOwner": "darrenburns",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 60,
+  "commit": false,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "darrenburns",
+      "name": "Darren Burns",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/5740731?v=4",
+      "profile": "https://darrenburns.net",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "review",
+        "bug",
+        "example"
+      ]
+    },
+    {
+      "login": "khusrokarim",
+      "name": "khusrokarim",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1615476?v=4",
+      "profile": "https://github.com/khusrokarim",
+      "contributions": [
+        "ideas",
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "AlecJ",
+      "name": "Alec Jordan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/5054790?v=4",
+      "profile": "https://github.com/AlecJ",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "CodeMouse92",
+      "name": "Jason C. McDonald",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/7471402?v=4",
+      "profile": "https://www.indeliblebluepen.com",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    },
+    {
+      "login": "AndydeCleyre",
+      "name": "Andy Kluger",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1787385?v=4",
+      "profile": "https://github.com/AndydeCleyre",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
