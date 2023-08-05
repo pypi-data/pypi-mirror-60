@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: renan
+Version: 0.0.1
+Summary: My first package
+Home-page: https://github.com/pypa/sampleproject
+Author: Renan Oliveira Biazotto
+Author-email: renan.biazotto@timeenergy.com.br
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib (>=3.1.1)
+Requires-Dist: numpy (>=1.18.1)
+Requires-Dist: pandas (>=0.25.1)
+Provides-Extra: test_deps
+Requires-Dist: pylint (==2.4.4) ; extra == 'test_deps'
+Requires-Dist: pytest (==5.3.3) ; extra == 'test_deps'
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
