@@ -1,0 +1,208 @@
+---
+#  ____     __  __  ___ _ _         _
+# |_  /___ / _|/ _|/ __| (_)___ _ _| |_
+#  / // -_)  _|  _| (__| | / -_) ' \  _|
+# /___\___|_| |_|  \___|_|_\___|_||_\__|
+#
+# :Author: Lance Finn Helsten <lanhel@zeff.ai>
+# :Copyright: Copyright © 2019, Ziff, Inc. — All Rights Reserved
+# :License
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+accept:
+    - application/json
+headers:
+    x-api-key: '{org_id}#{user_id}'
+links:
+    ###
+    ### Datasets
+    ###
+    -
+        tag: tag:zeff.com,2019-12:datasets/list
+        anchor: /v2.6/datasets
+        # hreflang: Langauge-Tag
+        # media: MediaDesc
+        # title: string-value
+        # type: media-type
+        methods: ["GET"]
+    -
+        tag: tag:zeff.com,2019-12:datasets/generic/add
+        anchor: /v2.6/datasets/newGenericDataset
+        methods: ["POST"]
+    -
+        tag: tag:zeff.com,2019-12:datasets/geospatial/add
+        anchor: /v2.6/datasets/newGeospatialDataset
+        methods: ["POST"]
+    -
+        tag: tag:zeff.com,2019-12:datasets/temporal/add
+        anchor: /v2.6/datasets/newTemporalDataset
+        methods: ["POST"]
+    -
+        tag: tag:zeff.com,2019-12:datasets
+        anchor: /v2.6/datasets/{dataset_id}
+        methods: ["GET", "DELETE"]
+    -
+        tag: tag:zeff.com,2019-12:datasets/update
+        anchor: /v2.6/datasets/{dataset_id}/edit
+        methods: ["PUT"]
+    -
+        tag: tag:zeff.com,2019-12:datasets/notifications
+        anchor: /v2.6/datasets/{dataset_id}/enableNotification
+        methods: ["PUT"]
+    -
+        tag: tag:zeff.com,2019-12:datasets/train
+        anchor: /v2.6/datasets/{dataset_id}/train
+        methods: ["GET", "PUT", "DELETE"]
+
+    ###
+    ### Models
+    ###
+    -
+        tag: tag:zeff.com,2019-12:models/list
+        anchor: /v2.6/datasets/{dataset_id}/models
+        methods: ["GET"]
+    -
+        tag: tag:zeff.com,2019-12:models
+        anchor: /v2.6/datasets/{dataset_id}/models/{version}
+        methods: ["GET", "PUT"]
+
+    ###
+    ### Model Records
+    ###
+    -
+        tag: tag:zeff.com,2019-12:models/records_generic/list
+        anchor: /v2.6/datasets/{dataset_id}/models/{version}/genericRecords
+        methods: ["GET"]
+    -
+        tag: tag:zeff.com,2019-12:models/records_generic/add
+        anchor: /v2.6/datasets/{dataset_id}/models/{version}/genericRecords
+        methods: ["POST"]
+    -
+        tag: tag:zeff.com,2019-12:models/records_generic
+        anchor: /v2.6/datasets/{dataset_id}/models/{version}/genericRecords/{record_id}
+        methods: ["GET", "PUT", "DELETE"]
+
+    ###
+    ### Temporal Model Records
+    ###
+    -
+        tag: tag:zeff.com,2019-12:models/records_temporal/list
+        anchor: /v2.6/datasets/{dataset_id}/models/{version}/temporalRecords
+        methods: ["GET"]
+    -
+        tag: tag:zeff.com,2019-12:models/records_temporal/add
+        anchor: /v2.6/datasets/{dataset_id}/models/{version}/temporalRecords
+        methods: ["POST"]
+    -
+        tag: tag:zeff.com,2019-12:models/records_temporal
+        anchor: /v2.6/datasets/{dataset_id}/models/{version}/temporalRecords/{record_id}
+        methods: ["GET", "PUT", "DELETE"]
+
+    ###
+    ### Geospatial Model Records
+    ###
+    -
+        tag: tag:zeff.com,2019-12:models/records_geospatial/list
+        anchor: /v2.6/datasets/{dataset_id}/models/{version}/geospatialRecords
+        methods: ["GET"]
+    -
+        tag: tag:zeff.com,2019-12:models/records_geospatial/add
+        anchor: /v2.6/datasets/{dataset_id}/models/{version}/geospatialRecords
+        methods: ["POST"]
+    -
+        tag: tag:zeff.com,2019-12:models/records_geospatial
+        anchor: /v2.6/datasets/{dataset_id}/models/{version}/geospatialRecords/{record_id}
+        methods: ["GET", "PUT", "DELETE"]
+
+    ###
+    ### Dataset Records
+    ###
+    -
+        tag: tag:zeff.com,2019-12:records_generic/list
+        anchor: /v2.6/datasets/{dataset_id}/genericRecords
+        methods: ["GET"]
+    -
+        tag: tag:zeff.com,2019-12:records_generic/add
+        anchor: /v2.6/datasets/{dataset_id}/genericRecords
+        methods: ["POST"]
+    -
+        tag: tag:zeff.com,2019-12:records_generic
+        anchor: /v2.6/datasets/{dataset_id}/genericRecords/{record_id}
+        methods: ["GET", "PUT", "DELETE"]
+
+
+    ###
+    ### Temporal Dataset Records
+    ###
+    -
+        tag: tag:zeff.com,2019-12:records_temporal/list
+        anchor: /v2.6/datasets/{dataset_id}/temporalRecords
+        methods: ["GET"]
+    -
+        tag: tag:zeff.com,2019-12:records_temporal/add
+        anchor: /v2.6/datasets/{dataset_id}/temporalRecords
+        methods: ["POST"]
+    -
+        tag: tag:zeff.com,2019-12:records_temporal
+        anchor: /v2.6/datasets/{dataset_id}/temporalRecords/{record_id}
+        methods: ["GET", "PUT", "DELETE"]
+
+
+    ###
+    ### Geospatial Dataset Records
+    ###
+    -
+        tag: tag:zeff.com,2019-12:records_geospatial/list
+        anchor: /v2.6/datasets/{dataset_id}/geospatialRecords
+        methods: ["GET"]
+    -
+        tag: tag:zeff.com,2019-12:records_geospatial/add
+        anchor: /v2.6/datasets/{dataset_id}/geospatialRecords
+        methods: ["POST"]
+    -
+        tag: tag:zeff.com,2019-12:records_geospatial
+        anchor: /v2.6/datasets/{dataset_id}/geospatialRecords/{record_id}
+        methods: ["GET", "PUT", "DELETE"]
+
+
+    ###
+    ### Orgs
+    ###
+    -
+        tag: tag:zeff.com,2019-12:orgs/list
+        anchor: /v2.6/orgs
+        methods: ["GET"]
+    -
+        tag: tag:zeff.com,2019-12:orgs/add
+        anchor: /v2.6/orgs
+        methods: ["POST"]
+    -
+        tag: tag:zeff.com,2019-12:orgs
+        anchor: /v2.6/orgs/{org_id}
+        methods: ["GET", "PUT", "DELETE"]
+
+    ###
+    ### Org Users
+    ###
+    -
+        tag: tag:zeff.com,2019-12:users/list
+        anchor: /v2.6/orgs/{org_id}/users
+        methods: ["GET"]
+    -
+        tag: tag:zeff.com,2019-12:users/add
+        anchor: /v2.6/orgs/{org_id}/users
+        methods: ["POST"]
+    -
+        tag: tag:zeff.com,2019-12:users
+        anchor: /v2.6/orgs/{org_id}/users/{user_id}
+        methods: ["GET", "PUT", "DELETE"]
+...
