@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: CITIfile
+Version: 0.1.0
+Summary: To parse CITI format file to xarray.
+Home-page: https://github.com/TitorX/CITIfile
+Author: Titor
+Author-email: titor.sun@gmail.com
+License: UNKNOWN
+Description: # CITIfile
+        To read CITI format file by python.
+        
+Platform: UNKNOWN
