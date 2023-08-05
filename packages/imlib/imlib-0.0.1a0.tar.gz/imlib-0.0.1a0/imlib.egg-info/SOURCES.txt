@@ -1,0 +1,9 @@
+README.md
+setup.py
+imlib/__init__.py
+imlib.egg-info/PKG-INFO
+imlib.egg-info/SOURCES.txt
+imlib.egg-info/dependency_links.txt
+imlib.egg-info/not-zip-safe
+imlib.egg-info/requires.txt
+imlib.egg-info/top_level.txt
