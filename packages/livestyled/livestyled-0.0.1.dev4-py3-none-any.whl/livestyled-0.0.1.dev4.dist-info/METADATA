@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: livestyled
+Version: 0.0.1.dev4
+Summary: UNKNOWN
+Home-page: https://github.com/livestyled/python-sdk
+Author: LiveStyled
+Author-email: dev@livestyled.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: marshmallow (==3.3.0)
+Requires-Dist: pytz (==2019.3)
+Requires-Dist: requests (==2.22.0)
+
+UNKNOWN
+
+
