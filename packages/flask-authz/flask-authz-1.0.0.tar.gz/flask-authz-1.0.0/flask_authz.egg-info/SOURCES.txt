@@ -1,0 +1,11 @@
+README.md
+setup.py
+authz/__init__.py
+authz/middleware.py
+flask_authz.egg-info/PKG-INFO
+flask_authz.egg-info/SOURCES.txt
+flask_authz.egg-info/dependency_links.txt
+flask_authz.egg-info/requires.txt
+flask_authz.egg-info/top_level.txt
+tests/__init__.py
+tests/test_middleware.py
