@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "couchutils"
+version = "0.3.0"
+description = "A collection of CouchDB utils."
+authors = ["Raymond Wanyoike <raymond.wanyoike@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+codecov = "^2.0.15"
+isort = "^4.3.21"
+prospector = "^1.2.0"
+pytest = "^5.3.4"
+pytest-cov = "^2.8.1"
+tox = "^3.14.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
