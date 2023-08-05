@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: allegro-pl-rest-api
+Version: 2020.1.25
+Summary: Allegro REST API
+Home-page: UNKNOWN
+Author: API Support
+Author-email: team@openapitools.org
+License: UNKNOWN
+Description:     https://developer.allegro.pl/about  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Allegro REST API
+Platform: UNKNOWN
