@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: OptiLabFE
+Version: 0.3
+Summary: Front-end for Parallel-OptiLab package
+Home-page: https://www.parallel-ai.com
+Author: Parallel team
+Author-email: fede.campe@gmail.com
+License: UNKNOWN
+Description: Python front-end package for the Parallel platform.
+        For more information, visit
+        https://www.parallel-ai.com
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
