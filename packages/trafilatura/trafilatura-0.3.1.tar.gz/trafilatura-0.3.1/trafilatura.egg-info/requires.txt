@@ -1,0 +1,22 @@
+justext>=2.2.0
+
+[:python_version == "3.4"]
+lxml==4.3.5
+requests==2.21.0
+
+[:python_version > "3.4"]
+lxml>=4.4.2
+requests>=2.22.0
+
+[all]
+htmldate>=0.6.1
+langid>=1.1.6
+
+[all:python_version == "3.4"]
+cchardet==2.1.4
+
+[all:python_version > "3.4"]
+cchardet>=2.1.5
+
+[metadata]
+htmldate>=0.6.1
