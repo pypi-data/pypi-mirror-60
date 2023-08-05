@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: chitra
+Version: 0.0.1
+Summary: Library for creating data input pipeline in pure Tensorflow 2.x
+Home-page: https://github.com/aniketmaurya/chitra
+Author: Aniket Maurya
+Author-email: theaniketmaurya@gmail.com
+License: Apache Software License 2.0
+Description: # Chitra
+        > Library for creating data input pipeline in pure Tensorflow 2.x
+        
+        
+        .
+        <!-- This file will become your README and also the index of your documentation. -->
+        
+        ## Install
+        
+        `pip install chitra`
+        
+        ## How to use
+        
+        <!-- Fill me in please! Don't forget code examples: -->
+        ## Loading data for image classification
+        
+        ```python
+        from chitra.dataloader import Clf
+        
+        path = '/Users/aniketmaurya/Pictures/cats'
+        
+        clf_dl = Clf()
+        data = clf_dl.from_folder(path)
+        
+        print('class names:', clf_dl.CLASS_NAMES)
+        
+        for e in data.take(1):
+            print('image shape:', e[0].shape)
+            print('class:', e[1].numpy())
+        ```
+        
+            class names: (b'whitecat', b'blackcat')
+            image shape: (1, 160, 160, 3)
+            class: b'whitecat'
+        
+        
+Keywords: Tensorflow,Input Pipeline,Deep Learning,Image processing
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
