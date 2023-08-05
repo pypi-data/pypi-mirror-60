@@ -1,0 +1,11 @@
+evtech/__init__.py,sha256=bhu8Batyyds5KoZ3S5dyrOpD4adpTMBAwlZWri7imsA,222
+evtech/camera.py,sha256=GwM3jRGQKzseLQ8kYwx_KrAkoFdwA9F3MbuI_hGBJaQ,8965
+evtech/dataset.py,sha256=D8lCsMec65aJ_4kdjM_Yldn12vOymQzwGlLN8APw6LE,1061
+evtech/geodesy.py,sha256=gifMkhdIfvrgljzeRvGTdMuCbwCrV7-ExCMwWMA3abI,560
+evtech/ray.py,sha256=v0A27N0UX3H7G-ePSAbJHnr4wa_u864qbDPp5_Pb0X0,2104
+evtech-1.0.0.dist-info/AUTHORS.rst,sha256=1jh5xLVBTJsy2t-jaNkK-PjKLUdZlqKNhU9-PYX4ZVM,166
+evtech-1.0.0.dist-info/LICENSE,sha256=m8CzLzBNvqs89ZMHV-J-mT3GTLnjqJNlEIiPAW0lNls,1072
+evtech-1.0.0.dist-info/METADATA,sha256=rWpnyIbHaJQK54Pg8SwJEAB-uZokFA9sUuLKvGvb_24,2457
+evtech-1.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+evtech-1.0.0.dist-info/top_level.txt,sha256=fz0LdZENoQlVbxFsLwP7iEwcrvPL3MXS4xCh84NA8P0,7
+evtech-1.0.0.dist-info/RECORD,,
