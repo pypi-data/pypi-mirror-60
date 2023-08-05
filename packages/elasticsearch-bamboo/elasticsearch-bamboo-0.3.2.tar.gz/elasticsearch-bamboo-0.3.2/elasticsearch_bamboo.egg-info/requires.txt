@@ -1,0 +1,16 @@
+elasticsearch>=6.0.0
+six
+
+[dev]
+coverage
+flake8
+flake8-docstrings
+pytest
+tox
+
+[pandas]
+pandas
+
+[test]
+pandas
+pytest
