@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: todofinder
+Version: 0.0.1
+Summary: Scan for TODO's
+Home-page: https://github.com/jonathangjertsen/todofinder
+Author: Jonathan Reichelt Gjertsen
+Author-email: jonath.re@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/jonathangjertsen/todofinder
+Project-URL: Source, https://github.com/jonathangjertsen/todofinder
+Description: # TODO-finder
+        
+        It finds TODOs!
+        
+        ## Requirements
+        
+        Python 3.8
+        
+        To install, clone the repo and run `pip install -e .`. 
+        
+        ## Usage
+        
+        Specify a glob pattern with `-g` and use `-o` to specify where to store the CSV report
+        
+        ```
+        python -m todofinder -g <glob_pattern> ... <glob_pattern> -o FILE 
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
