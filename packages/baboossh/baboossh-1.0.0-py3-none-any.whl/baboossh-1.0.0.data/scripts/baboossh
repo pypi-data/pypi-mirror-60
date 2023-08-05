@@ -1,0 +1,7 @@
+#!python
+
+from baboossh.shell import BaboosshShell
+
+if __name__ == '__main__':
+    BaboosshShell().cmdloop()
+
