@@ -1,0 +1,13 @@
+gcli/__init__.py,sha256=NX56991qNB5JYbaOIncCUMDxlwswx9q5NKrwLKCoYUg,122
+gcli/cli.py,sha256=5au7lj7awAGAt4MWzp0h2jCszK1Dr2k_450L7owypvg,7553
+gcli/clone.py,sha256=c9Ruh7VCJdfyhwsPC37A1C0OztPanzY7PmqDwc_NIjM,1808
+gcli/config.py,sha256=VdizfhnISGeuRMjbRM32bHIorWLzS2NaVclGZxwhXQo,4993
+gcli/gitlab_python.py,sha256=-0aDFyOLXUm4fBE9S7BdEpaqlXNl4IqwWlg6kizJeK0,818
+gcli/pull_repos.py,sha256=LDw6Em-q9OsYR0JzZsysG4pyxVA67HH9bz_tGFMQXds,534
+gitcli-0.0.1.data/scripts/cli.py,sha256=5au7lj7awAGAt4MWzp0h2jCszK1Dr2k_450L7owypvg,7553
+gitcli-0.0.1.dist-info/LICENSE,sha256=swTzp1HnIYvZ1YzvCkLU0gsSwNBay5AC_ikGaQyH6O0,1071
+gitcli-0.0.1.dist-info/METADATA,sha256=qw2IOY3MOWTq1V6nydDSa47zTBObHEkVQCmEJfNmgf8,389
+gitcli-0.0.1.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+gitcli-0.0.1.dist-info/entry_points.txt,sha256=lNeL-3MoLBQxpDwnYDIACqo2ksXvKGovainpO1IjcdQ,57
+gitcli-0.0.1.dist-info/top_level.txt,sha256=fishdOu9SHAsovrk0eneLwCKmmyqgl3Z3WERvE7Os1M,5
+gitcli-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gitcli
+Version: 0.0.1
+Summary: Git Command Line Interface
+Home-page: UNKNOWN
+Author: joaquin
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: click
+Requires-Dist: distro
+Requires-Dist: cookiecutter
+Requires-Dist: hiyapyco
+Requires-Dist: requests
+Requires-Dist: gitpython
+Requires-Dist: cryptography
+Requires-Dist: python-gitlab
+
+UNKNOWN
+
+
