@@ -1,0 +1,11 @@
+torch>=1.4
+torchvision>=0.5
+
+[dev]
+GitPython
+black==19.3b0
+sphinx
+isort
+bs4
+nbconvert
+pre-commit
