@@ -1,0 +1,12 @@
+pyUSIrest/__init__.py,sha256=kug4yV0wM9R1zSJ4yWov8pbGUg4MKJfvmqVVuXtWkf0,171
+pyUSIrest/auth.py,sha256=gf8EgYl54WgN2Ndbj8Oysv7jj5OG72QM1K5TsfhLnZs,5279
+pyUSIrest/client.py,sha256=RTHRwKoUlRMj1K_xFckddc91_qYz_ChWTydco9VnDJY,14228
+pyUSIrest/exceptions.py,sha256=16Zqdss3YJ6384e5743VgC7Am22TkV788zIZLi3eLqY,548
+pyUSIrest/settings.py,sha256=t8edfMfFYg-EF-LT_oaXoRTDWgZI5Felin1q67Rzk2M,263
+pyUSIrest/usi.py,sha256=ZWP9KdRY8gSZLo5WqnJSA8nglMgSyjVuZx0bFmONfqA,39085
+pyUSIrest-0.3.1.dist-info/AUTHORS.rst,sha256=amCflYlqkeR0egqRWgqoKu7ow5EJ9OC3_cxtE1dV_pA,160
+pyUSIrest-0.3.1.dist-info/LICENSE,sha256=JTZ40HrX_X7gXd98E2T24_d2p4WUellUEP7SnAQGSJM,1628
+pyUSIrest-0.3.1.dist-info/METADATA,sha256=6QUYeAxFKjt_s9y3DqWbrbvuAPwOWb3FflL8TnKZ5b4,6645
+pyUSIrest-0.3.1.dist-info/WHEEL,sha256=H7FJHAefYCIXvb4P5zrYJaeLK7noSyNzfSBJTnV9ig0,110
+pyUSIrest-0.3.1.dist-info/top_level.txt,sha256=plqOwBqIu0HgUroNjPoWHptrECX8OZ-Nf5TNf15_TsQ,10
+pyUSIrest-0.3.1.dist-info/RECORD,,
