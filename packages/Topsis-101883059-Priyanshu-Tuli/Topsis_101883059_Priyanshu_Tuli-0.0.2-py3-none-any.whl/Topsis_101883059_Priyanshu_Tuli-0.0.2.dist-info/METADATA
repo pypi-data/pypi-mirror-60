@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Topsis-101883059-Priyanshu-Tuli
+Version: 0.0.2
+Summary: A package for python implemetation of TOPSIS method for multiple criteria decision making
+Home-page: https://github.com/pypa/sampleproject
+Author: Priyanshu Tuli
+Author-email: priyanshu1tuli@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+This is a python package for TOPSIS method implementation.
+
+
