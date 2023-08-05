@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mogptk
+Version: 0.1
+Summary: Multi-Output Gaussian Process ToolKit
+Home-page: https://github.com/GAMES-UChile/MultiOutputGP-Toolbox
+Author: Taco de Wolff, Alejandro Cuevas, Felipe Tobar
+Author-email: tacodewolff@gmail.com
+License: MIT
+Keywords: MOGP,MOSM,GP,Gaussian Process,Multi-Output,Tobar,Parra
+Platform: UNKNOWN
+Requires-Python: ~=3.7.0
+Requires-Dist: numpy (~=1.18.0)
+Requires-Dist: gpflow (~=2.0.0rc1)
+Requires-Dist: tensorflow (~=2.0.0)
+Requires-Dist: tensorflow-probability (~=0.8.0)
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: python-dateutil
+Requires-Dist: ipython
+
+UNKNOWN
+
+
