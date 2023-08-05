@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+tims/__init__.py
+tims.egg-info/PKG-INFO
+tims.egg-info/SOURCES.txt
+tims.egg-info/dependency_links.txt
+tims.egg-info/requires.txt
+tims.egg-info/top_level.txt
