@@ -1,0 +1,11 @@
+plater/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plater/plater.py,sha256=H7ouAmS3VYH5Jy_A0fbmWocl7bM2kzW-5vWquTQtSks,2615
+plater/templates.py,sha256=fJu8gAKsbxrQ8bv8sToXXN7mDVp8JBzR5QK-RFEBX34,8039
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_cli.py,sha256=DAjn07uU4hOszMhrDVNO4btlrOC7lAmvfwEbe1w291o,309
+plater-0.3.dist-info/LICENSE,sha256=HTgb6Dtu4X13WdWSpSLCE7wpgZ9k6CnbKwF_3K5XYfA,1061
+plater-0.3.dist-info/METADATA,sha256=d_Hf_qMG3I6n1YC0a1MY4Ia1Glk8MNKeD-Yx5cNkaf4,803
+plater-0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+plater-0.3.dist-info/entry_points.txt,sha256=upJ9cIWrfbwHEGukwffWLcksXVIEnrlUO4qxAl5VYOQ,47
+plater-0.3.dist-info/top_level.txt,sha256=0sl0xjla0ZRxOkBVtwnzxtQmD_V5mQpzoIaByq2tMek,12
+plater-0.3.dist-info/RECORD,,
