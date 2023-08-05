@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: precountify
+Version: 1.0.0
+Summary: A tool for pre-countifying
+Home-page: https://github.com/akiomik/precountify
+Author: Akiomi Kamakura
+Author-email: akiomik@gmail.com
+License: Apache License 2.0
+Keywords: audio-processing
+Platform: any
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Sound/Audio :: Sound Synthesis
+Classifier: Topic :: Utilities
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: fire
+Requires-Dist: librosa
+Provides-Extra: essentia
+Requires-Dist: essentia (==2.1b5) ; extra == 'essentia'
+Provides-Extra: madmom
+Requires-Dist: madmom ; extra == 'madmom'
+
+# precountify
+[![](https://github.com/akiomik/precountify/workflows/Python%20package/badge.svg)](https://github.com/akiomik/precountify/actions?query=workflow%3A%22Python+package%22)
+
+A tool for adding pre-count (count-off) click to audio file.
+
+## Requirements
+
+- python >= 3.4
+
+## Install
+
+```sh
+pip install precountify
+
+# with madmom
+pip install precountify[madmom]
+
+# with essentia (linux only)
+pip install precountify[essentia]
+```
+
+## Usage
+
+```sh
+# precountify INPUT_FILE OUTPUT_FILE
+#   [--sr SAMPLE_RATE] [--bpm BPM] [--meter METER] [--measure N_MEASURES] [--upbeat N_UPBEATS]
+#   [--offset OFFSET_IN_SECONDS] [--margin MARGIN_IN_SECONDS] [--click CLICK_FILE] [--estimator ESTIMATOR_MODULE]
+
+# Add pre-count to output.wav with tempo estimation (using librosa)
+precountify input.wav output.wav
+
+# Add pre-count which has specified bpm
+precountify input.wav output.wav --bpm 120
+
+# Use `MadmomTempoEstimator`
+precountify input.wav output.wav --estimator 'precountify.estimator.madmom.MadmomTempoEstimator'
+```
+
+
