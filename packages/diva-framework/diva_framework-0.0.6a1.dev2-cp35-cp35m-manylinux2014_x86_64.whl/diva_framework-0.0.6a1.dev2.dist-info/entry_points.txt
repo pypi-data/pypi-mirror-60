@@ -1,0 +1,8 @@
+[kwiver.cpp_search_paths]
+diva_processes = diva.processes.register_cpp_processes:get_cpp_path
+
+[kwiver.python_plugin_registration]
+image_viewer_process = diva.processes.image_viewer_process
+simple_detector_process = diva.processes.simple_detector_process
+simple_draw_detected_object_set = diva.arrows.simple_draw_detected_object_set
+
