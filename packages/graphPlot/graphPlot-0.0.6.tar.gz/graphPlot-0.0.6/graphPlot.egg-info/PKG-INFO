@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: graphPlot
+Version: 0.0.6
+Summary: Plot (di)graphs using a timestep simulation of charged particles and springs
+Home-page: https://github.com/francisp336/graphPlot
+Author: Peter Francis
+Author-email: franpe02@gettysburg.edu
+License: UNKNOWN
+Description: # graphPlot
+        
+        ![](docs/examples.png)
+        
+        A python module for plotting (directed) Graphs using a simulation of springs
+        and charged particles
+        
+        See [info](https://francisp336.github.io/graphPlot/) for a
+        **mathematical explanation**, **examples**, and **class definitions**.
+        
+        You can import this module with PIP.
+        
+        ```bash
+        $ pip install graphPlot --upgrade
+        ```
+        
+        or
+        
+        ```bash
+        $ python3 -m pip install --user graphPlot --upgrade
+        ```
+        
+        
+        
+        **TODO:**
+        - [ ] Add `__repr__`s for other classes
+        - [ ] Add GIF maker
+        - [ ] Add add self loop arrows
+        - [ ] Add curved arrows
+        
+Keywords: Graph
+Platform: UNKNOWN
+Requires-Python: >=3.0.0
+Description-Content-Type: text/markdown
