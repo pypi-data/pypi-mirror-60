@@ -1,0 +1,3 @@
+[pyriodic_sources]
+aflow = pyriodic_aflow.unit_cells:load_standard
+
