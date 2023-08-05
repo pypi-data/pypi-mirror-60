@@ -1,0 +1,11 @@
+dallasparser/__init__.py,sha256=3GGCgpJ0XuycXBDmeWHJLFgBFe2q99f2FZKC9tU30PU,92
+dallasparser/cli.py,sha256=qUI7_70RFmAgpOVZXWwP-4OkX4TgTW1H7rVekcTT5P4,1008
+dallasparser/parser.py,sha256=D_Bvt3ZD_mZeisIiOYdL_iM9N1c9rQeXZvfdPIkQ7YM,46922
+dallasparser/regex.py,sha256=dki4zUuZ-H9u98rg_U1j6N7eeXBeCnbkeqxwJ_w-C2w,21359
+dallasparser/utils.py,sha256=zOGEPDDuLGaWE1cW1sgFnmJgeLTDdNDvDQTEXnZF2AA,5563
+dallasparser-0.1.dist-info/LICENSE,sha256=7zhIjidRS_Kmxvmjl4IJ85z9VB_x8iL17NkD5NVWygE,1063
+dallasparser-0.1.dist-info/METADATA,sha256=7GSDhI9pPJVs4ZFH7TbGNDPCrsk2yNNyjWyUu4zJcbk,896
+dallasparser-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dallasparser-0.1.dist-info/entry_points.txt,sha256=5YNaWIuJMHgfcGSOxd830TKyCbKSgZOdooGduDZV4pk,56
+dallasparser-0.1.dist-info/top_level.txt,sha256=otPVS-8LDwm0TjAXB5YYoEW-1xYjWDDIWQkmd0ZbryA,13
+dallasparser-0.1.dist-info/RECORD,,
