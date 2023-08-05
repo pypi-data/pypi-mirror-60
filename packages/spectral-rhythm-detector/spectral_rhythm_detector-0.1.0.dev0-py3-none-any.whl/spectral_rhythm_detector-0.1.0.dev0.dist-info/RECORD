@@ -1,0 +1,9 @@
+spectral_rhythm_detector/__init__.py,sha256=mN_OmjkkGR5laVSiJCR6XsHTKpCy7iaf5okqxu6dPzw,56
+spectral_rhythm_detector/core.py,sha256=kzKADlhTC6QGFjpQh8ciyN_3iA3veqKAf3Wt4m0BLmQ,2816
+spectral_rhythm_detector/lfp_likelihood.py,sha256=OB93mJFGBl-c8V2qGPBmNsPCnoSqyRHELOzcRbtzNWw,3454
+spectral_rhythm_detector/simulate_LFP.py,sha256=gEZdIBMwITsYKoL1xWaQyo2tfySufVKL0zcRCrljLUM,3482
+spectral_rhythm_detector-0.1.0.dev0.dist-info/LICENSE,sha256=0bEhhbZfyKwa2N48k-suFgDa9VdBUfLtQtthTGhSvr8,1071
+spectral_rhythm_detector-0.1.0.dev0.dist-info/METADATA,sha256=VYESPXj_JyTz9UZEgyF5OWfcMawxehBVQuI8agBrk3g,463
+spectral_rhythm_detector-0.1.0.dev0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+spectral_rhythm_detector-0.1.0.dev0.dist-info/top_level.txt,sha256=XAw2pKPDX7-mpKl5PgMofh9uC5X5JNn7b7zuBDVgtyk,25
+spectral_rhythm_detector-0.1.0.dev0.dist-info/RECORD,,
