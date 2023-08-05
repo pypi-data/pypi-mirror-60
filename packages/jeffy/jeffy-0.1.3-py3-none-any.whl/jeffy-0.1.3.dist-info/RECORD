@@ -1,0 +1,13 @@
+jeffy/__init__.py,sha256=FJOJ5jFTnHISpvETGG4ROkt7YMcU1ZXC9VEOgkIFVNo,208
+jeffy/decorators.py,sha256=4ipyRNj0FrOT1kysOnVWFSNzd-P5ctIMaF7xqPJZQ70,12098
+jeffy/framework.py,sha256=sKpqrifHle2NClf-ih9VZjxvKeSRBbOYBGTaRzJt_NQ,780
+jeffy/logger.py,sha256=v9UPqYuZrqeAP9mEY6cdOVlBlzCMKZboE5q_uTRRklA,2611
+jeffy/sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jeffy/sdk/kinesis.py,sha256=TjBTHIGhsutX0FNU7OEiJxCKUlNVtxmPLPcBy870yg4,1065
+jeffy/sdk/s3.py,sha256=hZLybOTfiuJ1UX55NsKV2DJYCrYP4Oltj_hLMJQfqDU,919
+jeffy/sdk/sns.py,sha256=RkiYUkXr_JiiEiSUjMeFVkDnTPeEmETyRnnoUXgCk3M,986
+jeffy/sdk/sqs.py,sha256=EjQtU8dy3f5WJ2GBFquf8G--INLn-SLs2JfIU-aVrno,1059
+jeffy-0.1.3.dist-info/METADATA,sha256=H1Wp18c6Ns6ppr7y7GB3AJQG_o_nT0rvfBqkW6nTL-U,13389
+jeffy-0.1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jeffy-0.1.3.dist-info/top_level.txt,sha256=vEbdqMK1dr2_fRI_al1TJuZIFb8mXGiVACtw3y3cBsA,6
+jeffy-0.1.3.dist-info/RECORD,,
