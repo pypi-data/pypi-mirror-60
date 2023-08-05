@@ -1,0 +1,3 @@
+[console_scripts]
+Hockey = Hockey:__main__
+
