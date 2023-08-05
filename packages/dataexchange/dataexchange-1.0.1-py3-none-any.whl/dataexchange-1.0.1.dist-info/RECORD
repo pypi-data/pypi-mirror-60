@@ -1,0 +1,15 @@
+dataexchange/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataexchange/json/decoders.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataexchange/json/encoders.py,sha256=ostt9EuvWee98Hkvqhr3P5JOJvnL39wjFuLtD9tNEdI,149
+dataexchange/json/exchange.py,sha256=3UD0EYEaZnu9HESa6GdiNMEMvfC2o4N_Hy93FC6sDF8,998
+dataexchange/json/keyrename.py,sha256=Jz-Tw86ychraklSyHHU33iLsOOuiIo0B7yDzRNcdwYQ,578
+dataexchange/json/nesteddict.py,sha256=8LxpeN2fNeKDU8kxVgvcsrVG9xC9Vy6dzNUimkV2O00,954
+dataexchange/json/__pycache__/encoders.cpython-37.pyc,sha256=jzuxGUmMaP4541OAsBmv9x5tXO_5-cdI81SyqRtVTOA,329
+dataexchange/json/__pycache__/exchange.cpython-37.pyc,sha256=nUvBuqMN-rKyi79-E__RobJJCeu_T5fUNzMHC4zkt1g,1078
+dataexchange/json/__pycache__/keyrename.cpython-37.pyc,sha256=MlFqhgOY7aenX5-j3Aw1UxUv2Ie0UMJpgO2WjFcwSR4,747
+dataexchange/json/__pycache__/nesteddict.cpython-37.pyc,sha256=C7iRgGunsm0PjNMiSc-JujFUNUuXd9QEEQkyNUOVORc,774
+dataexchange-1.0.1.dist-info/License,sha256=XB16Gk7Eo5LnuPl2Fapxwa_dKzchKgB7JFlmlIbxKuE,1130
+dataexchange-1.0.1.dist-info/METADATA,sha256=h3lgMLULpaOEVUw6xo_pMGuAaRF4o8oJnYI5v5zyLrQ,1900
+dataexchange-1.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+dataexchange-1.0.1.dist-info/top_level.txt,sha256=_64wbYxgf22v5Ma-8HTMTHJSmLiLSVEIFLklcWy2Fxk,13
+dataexchange-1.0.1.dist-info/RECORD,,
