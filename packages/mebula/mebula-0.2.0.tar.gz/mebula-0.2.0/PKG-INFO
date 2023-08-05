@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: mebula
+Version: 0.2.0
+Summary: 
+Home-page: https://github.com/milliams/mebula
+License: MIT
+Author: Matt Williams
+Author-email: matt@milliams.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: azure
+Provides-Extra: google
+Provides-Extra: oracle
+Requires-Dist: azure (>=4.0.0,<5.0.0); extra == "azure"
+Requires-Dist: google-api-python-client (>=1.7.11,<2.0.0); extra == "google"
+Requires-Dist: lark-parser (>=0.8.1,<0.9.0); extra == "google"
+Requires-Dist: oci (>=2.10.0,<3.0.0); extra == "oracle"
+Project-URL: Repository, https://github.com/milliams/mebula
+Description-Content-Type: text/x-rst
+
+Mebula
+======
+
+Mebula is a framework which you can use in your testing code to mock your calls to cloud providers' APIs.
+At the moment, Oracle's OCI, Google Cloud and Microsoft Azure are supported.
+
+Installation
+------------
+
+- For Microsoft Azure, install the ``mebula[azure]`` package.
+- For Google Cloud, install the ``mebula[google]`` package.
+- For Oracle's OCI, install the ``mebula[oracle]`` package.
+
+Usage
+-----
+
+You can use the ``mock_google`` context manager and then use the Google API functions as normal:
+
+.. code:: python
+
+    import googleapiclient.discovery
+    import pytest
+
+    from mebula import mock_google
+
+    @pytest.fixture(scope="function")
+    def client():
+        with mock_google():
+            yield googleapiclient.discovery.build("compute", "v1")
+
+    def my_test(client):
+        assert client.instances().list(project="foo", zone="bar").execute() == {}
+
+Coverage
+--------
+
+Coverage is very minimal at the moment. Only launching and listing instances is supported.
+
