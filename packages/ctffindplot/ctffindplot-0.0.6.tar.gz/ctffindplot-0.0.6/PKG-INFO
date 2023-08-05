@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: ctffindplot
+Version: 0.0.6
+Summary: Sequentially plot ctffind results from aligned micrographs
+Home-page: https://github.com/alberttxu/ctffindplot
+Author: Albert Xu
+Author-email: albert.t.xu@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

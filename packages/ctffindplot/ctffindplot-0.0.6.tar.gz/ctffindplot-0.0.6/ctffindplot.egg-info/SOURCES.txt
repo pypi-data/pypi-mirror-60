@@ -1,0 +1,14 @@
+README.md
+setup.py
+ctffindplot/__init__.py
+ctffindplot/__main__.py
+ctffindplot/dash_app.py
+ctffindplot/plot.py
+ctffindplot/run.py
+ctffindplot/watch.py
+ctffindplot.egg-info/PKG-INFO
+ctffindplot.egg-info/SOURCES.txt
+ctffindplot.egg-info/dependency_links.txt
+ctffindplot.egg-info/entry_points.txt
+ctffindplot.egg-info/requires.txt
+ctffindplot.egg-info/top_level.txt
