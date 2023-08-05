@@ -1,0 +1,3 @@
+[console_scripts]
+platform2gates = dqcsim_openql_mapper:platform2gates_cli
+
