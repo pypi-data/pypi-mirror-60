@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: DockerMake
+Version: 0.9.0b3
+Summary: Build manager for docker images
+Home-page: https://github.com/avirshup/dockermake
+Author: Aaron Virshup
+Author-email: avirshup@gmail.com
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
