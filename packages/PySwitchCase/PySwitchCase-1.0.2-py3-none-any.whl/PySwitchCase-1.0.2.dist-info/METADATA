@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: PySwitchCase
+Version: 1.0.2
+Summary: A pure python way to efficiently do a c++ style switch case in Python 3.6+.
+Home-page: https://github.com/Jakar510/PySwitchCase
+Author: Tyler Stegmaier
+Author-email: tyler.stegmaier.510@gmail.com
+License: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+Download-URL: https://github.com/Jakar510/PySwitchCase/releases/tag/v1.0.2
+Keywords: switch switch-case case
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: Free To Use But Restricted
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
