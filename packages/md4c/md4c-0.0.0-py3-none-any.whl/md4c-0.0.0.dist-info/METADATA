@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: md4c
+Version: 0.0.0
+Summary: Markdown parsing.
+Home-page: https://github.com/Exahilosys/md4c
+Author: Exahilosys
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+
+Bindings for the `MD4C <https://github.com/mity/md4c>`_ markdown parser.
+
+Installing
+==========
+
+.. code-block:: bash
+
+  pip3 install md4c
+
+Usage
+=====
+
+.. code-block:: python
+
+  import md4c
+
+  md4c.load(path_to_lib)
+
+  def enter_block(type, data):
+      print('eb', type, '>', data)
+
+  def leave_block(type, data):
+      print('lb', type, '>', data)
+
+  def enter_span(type, data):
+      print('es', type, '>', data)
+
+  def leave_span(type, data):
+      print('ls', type, '>', data)
+
+  def text(type, data):
+      print('ls', type, '>', data)
+
+  client = md4c.Client(
+      enter_block = enter_block,
+      leave_block = leave_block,
+      enter_span = enter_span,
+      leave_span = leave_span,
+      text = text
+  )
+
+  client.parse('is *this* `thing`\n## working?')
+
+
