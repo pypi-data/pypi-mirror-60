@@ -1,0 +1,4 @@
+PyMySQL
+PyYAML
+records
+email_validator

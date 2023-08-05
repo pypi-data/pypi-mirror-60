@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pvfr.groopledb
+Version: 0.5.0
+Summary: Package to read data from the Groople MySQL Database
+Home-page: https://github.com/passeport-vacances/groopledb
+Author: Jacques Supcik
+Author-email: jacques@pvfr.ch
+License: UNKNOWN
+Description: # PY-GroopleDB
+        
+        A python library to read data from the Groople MySQL database.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
