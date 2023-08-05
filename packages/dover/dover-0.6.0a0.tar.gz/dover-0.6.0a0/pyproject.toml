@@ -1,0 +1,111 @@
+[tool.poetry]
+name = "dover"
+version = "0.6.0-alpha"
+description = "Do version - track and update your package version."
+authors = ["Mark Gemmill <dev@markgemmill.com>"]
+license = "BSD-4-Clause"
+readme = "README.rst"
+repository = "https://gitlab.com/mgemmill-pypi/dover"
+documentation = "https://dover.readthedocs.io/en/latest/"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+]
+include = [
+    "HISTORY.rst",
+]
+
+[tool.poetry.scripts]
+dover = "dover.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+toml = "^0.10.0"
+docopt-ng = "^0.7.2"
+colorama = "^0.4.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3.4"
+black = "^19.10b0"
+flake8 = "^3.7.9"
+pylint = "^2.4.4"
+xini = "^0.2.2"
+pytest-cov = "^2.8.1"
+readme_renderer = "^24.0"
+twine = "^3.1.1"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = true
+envlist = py36, py37, py38.*
+
+[testenv]
+whitelist_externals = poetry
+commands = pytest
+sitepackages = false
+setenv =
+    PYTHONPATH={toxinidir}/test
+    PYTHONUNBUFFERED=yes
+deps =
+    toml>=0.10.0
+    docopt-ng>=0.7.2
+    colorama>=0.4.3
+    pytest>=5.3.4
+    pytest-cov>=2.8.1
+"""
+
+[tool.dover]
+versioned_files = [
+    "src/dover/cli.py",
+    "docs/index.rst",
+    "README.rst",
+    "pyproject.toml"
+]
+
+
+# EXPORT VIA XINI
+
+[tool.flake8]
+statistics = true
+ignore = ["E501","E241"]
+max-line-length = 80
+max-complexity = 7
+tee = true
+exclude = [
+    ".git",
+    ".tox",
+    "__pycache__",
+    "docs",
+    "build",
+    "dist"
+]
+
+[tool.pytest]
+addopts = "-vv --strict --cov=dover --cov-report=term-missing"
+
+[tool.coverage.run]
+source = "dover"
+branch = true
+omit = "src/dover/__main__.py"
+
+[tool.coverage.paths]
+source = "src/dover"
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.pylint]
+disable = [
+    "missing-docstring",
+    "line-too-long",
+    "bad-continuation",
+    "import-outside-toplevel"
+]
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
