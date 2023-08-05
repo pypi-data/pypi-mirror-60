@@ -1,0 +1,10 @@
+six>=1.10.0
+graphql-core<3,>=2
+promise<3,>=2.0
+requests<3,>=2.12
+
+[test]
+pytest==4.6.9
+pytest-cov==2.8.1
+mock==3.0.5
+vcrpy==3.0.0
