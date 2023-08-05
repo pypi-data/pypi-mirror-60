@@ -1,0 +1,14 @@
+README.md
+setup.py
+image_formatter/__init__.py
+image_formatter/dani.py
+image_formatter/example.py
+image_formatter/main.py
+image_formatter.egg-info/PKG-INFO
+image_formatter.egg-info/SOURCES.txt
+image_formatter.egg-info/dependency_links.txt
+image_formatter.egg-info/requires.txt
+image_formatter.egg-info/top_level.txt
+image_formatter/operations/__init__.py
+image_formatter/operations/substract.py
+image_formatter/operations/sumar.py

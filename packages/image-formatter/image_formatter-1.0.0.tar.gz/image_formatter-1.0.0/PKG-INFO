@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: image_formatter
+Version: 1.0.0
+Summary: Transform image .ORF to jpg and more!
+Home-page: https://github.com/stkobsar/image_formatter
+Author: Stephi Kobsar
+Author-email: stkobsar7@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
