@@ -1,0 +1,10 @@
+#!python
+
+import sys
+from linguistics.utils import Utils
+from linguistics.io import io
+
+filename, modelname = io().check_args(sys)
+
+comparison = Utils().compare_flare_to_dict(modelname)
+comparison.to_csv(modelname + "_flare_versus_dict.csv", index=False)

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ads-linguistics
+Version: 2.0.9
+Summary: The ADS Linguistic Library
+Home-page: https://flamingo-james-b@bitbucket.org/flamingodf/linguistics.git
+Author: Applied Data Science Team
+Author-email: james.burnett@flamingogroup.com
+License: Flamingo
+Platform: UNKNOWN
+Requires-Dist: array-split
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: hdbscan
+Requires-Dist: gensim
+Requires-Dist: nltk
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
