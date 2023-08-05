@@ -1,0 +1,23 @@
+<div id="portal-footer" style="background-color:#F2672B">
+  <div align="center">
+    <html>
+    <body>
+
+    <p>National Technology and Engineering Solutions of Sandia, LLC | <a
+      href="http://www.sandia.gov/contact-us/index.html">Questions and Comments</a> | <a
+      href="http://www.sandia.gov/general/privacy-security/index.html">Privacy and Security</a></p>
+    <p class="note">Office of Radiological Security Training websites are operated by <br>
+      <a href="http://www.sandia.gov">National Technology and Engineering Solutions of Sandia, LLC </a> on behalf of the
+      <a href="http://www.energy.gov/">U.S. Department of Energy</a>.</p>
+    <p>
+      <a href="http://www.sandia.gov">
+        <img src="${context/portal_url}/sandia-logo-1.png" height=37 alt="Logo:  Sandia National Laboratories"/></a>
+      <img src="${context/portal_url}/transparentspacer-1.png" width=13px height=93px>
+      <a href="http://www.energy.gov">
+        <img src="${context/portal_url}/doe-logo-white-1.png" alt="Logo:  U.S. Department of Energy"/></a>
+      <img src="${context/portal_url}/transparentspacer-1.png" width=13px height=93px>
+      <a href="http://www.nnsa.doe.gov">
+        <img src="${context/portal_url}/nnsa-logo-white-1.png" alt="Logo: National Nuclear Security Administration"/></a>
+
+
+  </div>

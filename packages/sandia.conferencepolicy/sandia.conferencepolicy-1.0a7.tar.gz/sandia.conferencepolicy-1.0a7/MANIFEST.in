@@ -1,0 +1,4 @@
+graft src/sandia
+graft docs
+include *.rst
+global-exclude *.pyc
