@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+MultiPyDown.egg-info/PKG-INFO
+MultiPyDown.egg-info/SOURCES.txt
+MultiPyDown.egg-info/dependency_links.txt
+MultiPyDown.egg-info/entry_points.txt
+MultiPyDown.egg-info/requires.txt
+MultiPyDown.egg-info/top_level.txt
+pydown/__init__.py
+pydown/__main__.py
+pydown/main.py
+test/test_core.py
