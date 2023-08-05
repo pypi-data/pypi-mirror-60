@@ -1,0 +1,10 @@
+anytree
+click
+packaging>=17
+pkginfo>=1.4.2
+setuptools>=38.3
+wheel
+
+[:python_version == "2.7"]
+enum34
+typing
