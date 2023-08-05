@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: HumanActivityRecognition
+Version: 0.1
+Summary: Package to recognize Human Activity Recognition
+Home-page: UNKNOWN
+Author: Salma
+Author-email: ssalma3157@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+
+Human_activity_recognition
+##########################
+Recognize Human Activity .
+
+.. code-block:: python
+
+  import Human_acitvity_recognition
+
+
+.. contents::
+
+.. section-numbering::
+
+
+Installation
+============
+
+.. code-block:: bash
+
+  pip install Human_acitvity_recognition
+
+You Can find Model File (resnet-34_kinetics.onnx) and Train Class file(action_recognition_kinetics.txt) from Github Link "https://github.com/salmaShahid"
+
+Features
+========
+
+* Pure python.
+* Supports Python 3.5+.
+* Supported and fully tested on Linux, OS X and Windows
+
+
+Use
+===
+
+Basic use
+---------
+
+
+.. code-block:: python
+
+    import Human_activity_recognition
+    s = Human_activity_recognition.HAR()
+    print(s)
+
+Installing for development
+----------------------------
+
+Clone:
+
+.. code-block:: bash
+
+  git clone https://github.com/salmaShahid/Human_activity_recognition.git
+
+
+
+Credits
+=======
+
+Created by `Salma <http://www.salmaUcp.com/>`_ (raziullah0316@gmail.com).
+
+
+.. .. test pypi
+
+
