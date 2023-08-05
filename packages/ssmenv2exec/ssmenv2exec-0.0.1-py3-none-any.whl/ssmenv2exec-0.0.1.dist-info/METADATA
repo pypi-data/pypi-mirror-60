@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: ssmenv2exec
+Version: 0.0.1
+Summary: Pass AWS SSM parameters as environment variables when executing a process
+Home-page: https://github.com/jowage58/ssmenv2exec/
+Author: John Wagenleitner
+Author-email: johnwa@mail.fresnostate.edu
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/jowage58/ssmenv2exec/issues
+Project-URL: Source, https://github.com/jowage58/ssmenv2exec/
+Keywords: aws ssm paraemters environment
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: boto3 (>=1.5)
+
+# ssmenv2exec
+
+Populate environment variables from AWS Systems Manager Parameter Store
+parameters before executing a process.
+
+This allows application configuration to be stored in SSM rather than on
+the EC2 instance or Docker container.
+
+# Usage
+
+    pip install ssmenv2exec
+
+Now you can use the `ssmenv2exec` script from the command line to execute your process
+and have the environment populated from an AWS SSM Parameter store path.
+
+For example, in parameter store you can create parameters using a common path.
+
+    /app/myapp/DB_USER
+    /app/myapp/DB_PASS
+    /app/myapp/DB_URL
+    /app/myapp/SECRET_KEY
+
+Then you can use `ssmenv2exec` to execute your program and the initial environment
+will contain values for `DB_USER`, `DB_PASS`, `DB_URL` and `SECRET_KEY`. If any of
+those already exist as environment variables they will not be overridden.
+
+    ssmenv2exec /app/myapp python app.py
+
+`ssmenv2exec` will grab all parameters from the Parameter Store under the
+`/app/myapp` path and pass those as environment variables to the process. An
+`exec` call is used so that the process id (pid) remains consistent, which is
+useful for containerized environments.
+
+

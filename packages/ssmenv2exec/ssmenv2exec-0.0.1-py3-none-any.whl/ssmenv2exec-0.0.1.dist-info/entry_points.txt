@@ -1,0 +1,3 @@
+[console_scripts]
+ssmenv2exec = ssmenv2exec:main
+
