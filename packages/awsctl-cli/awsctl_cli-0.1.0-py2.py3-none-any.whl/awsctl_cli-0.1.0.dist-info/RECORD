@@ -1,0 +1,15 @@
+awsctl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsctl/cli.py,sha256=KVLudDwbxa8jZTwX5DL7Tr93VKJmga-jRKbqoT7goF0,185
+awsctl/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsctl/commands/install.py,sha256=kLsxtdoDOG6bKAwfBlVEMXXMY0pp5GqHJRI0esMnRds,279
+awsctl/packages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsctl/packages/common.py,sha256=UmMxh2ner7v5DPV4oDA30vBdHTIWxNoRcDyfoN2K0r8,1345
+awsctl/packages/ssm.py,sha256=Aat5-VSC3E88rKy4f4T_kNfY6hPK1uLOQuPfz54Hc6k,805
+awsctl/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsctl/utils/operating_system.py,sha256=mXKjRffSoQHOpyJhAHEiNGIwhWpSookUO03g4oEaCq4,684
+awsctl_cli-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+awsctl_cli-0.1.0.dist-info/METADATA,sha256=Mn3yLhLogp1cvw9NPeCCy7FJvG5J2CaNsyI9HdBirqk,1874
+awsctl_cli-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+awsctl_cli-0.1.0.dist-info/entry_points.txt,sha256=m8-GuCp0RVwp6KNtC2WywlULUkJgeI5lKbuJdJ79CDs,50
+awsctl_cli-0.1.0.dist-info/top_level.txt,sha256=r_3iuVmLUYUDocEbZirf0tc4mxBc-RJzARBbuZ4n5aA,7
+awsctl_cli-0.1.0.dist-info/RECORD,,
