@@ -1,0 +1,12 @@
+pyriodic/Database.py,sha256=HwmYejyCdLaPwdxEOCTOb3jP8q2JhANftDLyZeQR7dY,2456
+pyriodic/Structure.py,sha256=4VIHl_9fZseJYhCZSS1NsxWy1LqkK4EXqep8hDCww6c,4907
+pyriodic/__init__.py,sha256=v5vOq8sH4OtrCmSBiP-XP53K5jab5BwKdVr4410W2N0,140
+pyriodic/import.py,sha256=-qr9o_7F75Ss2I17FnYkDIIxHgiiEAO5-EqCaiTkj0U,1088
+pyriodic/version.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+pyriodic/unit_cells/__init__.py,sha256=L1YMb2NcrIrTFdrZzAKaDDqG0LDeqqObIMo_Ujz9uSU,762
+pyriodic_structures-0.1.1.dist-info/LICENSE,sha256=ZoIaIj06pf6p9dPMXp5FRn81SchAB4XTw47V6uTj314,1060
+pyriodic_structures-0.1.1.dist-info/METADATA,sha256=TCu3lizWXyvnMucopy0nYHvNVKMPo_CWYs7vg9Tuj1I,1214
+pyriodic_structures-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyriodic_structures-0.1.1.dist-info/entry_points.txt,sha256=8i3FYzmm8WnPjMx1SeQAOzsdgrtSXauGdv0nCz-N9ac,65
+pyriodic_structures-0.1.1.dist-info/top_level.txt,sha256=UIIbogXDSOp2y6gWXHevGe6MP1p-44MWicq1-qXxT6c,9
+pyriodic_structures-0.1.1.dist-info/RECORD,,
