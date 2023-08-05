@@ -1,0 +1,10 @@
+setup.py
+gaussian_binomial_distributions_vbcsja.egg-info/PKG-INFO
+gaussian_binomial_distributions_vbcsja.egg-info/SOURCES.txt
+gaussian_binomial_distributions_vbcsja.egg-info/dependency_links.txt
+gaussian_binomial_distributions_vbcsja.egg-info/not-zip-safe
+gaussian_binomial_distributions_vbcsja.egg-info/top_level.txt
+gb_distributions/Binomialdistribution.py
+gb_distributions/Gaussiandistribution.py
+gb_distributions/Generaldistribution.py
+gb_distributions/__init__.py
