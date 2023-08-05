@@ -1,0 +1,1187 @@
+{
+  "addDealer": {
+    "type": "object",
+    "properties": {
+      "dealerBizId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار واسط"
+      },
+      "allProductAllow": {
+        "type": "boolean",
+        "title": "دسترسی به همه محصولات"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "dealerBizId"
+    ]
+  },
+  "dealerList": {
+    "type": "object",
+    "properties": {
+      "dealerBizId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار واسط"
+      },
+      "enable": {
+        "type": "boolean",
+        "title": "فعال بودن واسط"
+      },
+      "offset": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "size": {
+        "type": "integer",
+        "minimum": 1,
+        "title": "تعداد رکورد در هر صفحه"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": []
+  },
+  "enableDealer": {
+    "type": "object",
+    "properties": {
+      "dealerBizId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار واسط"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "dealerBizId"
+    ]
+  },
+  "disableDealer": {
+    "type": "object",
+    "properties": {
+      "dealerBizId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار واسط"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "dealerBizId"
+    ]
+  },
+  "addDealerProductPermission": {
+    "type": "object",
+    "properties": {
+      "dealerBizId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار واسط"
+      },
+      "productId": {
+        "type": "integer",
+        "title": "شناسه محصول"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "dealerBizId",
+      "productId"
+    ]
+  },
+  "dealerProductPermissionList": {
+    "type": "object",
+    "properties": {
+      "productId": {
+        "type": "integer",
+        "title": "شناسه محصول"
+      },
+      "dealerBizId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار واسط"
+      },
+      "enable": {
+        "type": "boolean",
+        "title": "فعال بودن واسط"
+      },
+      "offset": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "size": {
+        "type": "integer",
+        "minimum": 1,
+        "title": "تعداد رکورد در هر صفحه"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": []
+  },
+  "dealingProductPermissionList": {
+    "type": "object",
+    "properties": {
+      "productId": {
+        "type": "integer",
+        "title": "شناسه محصول"
+      },
+      "dealingBusinessId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار واسط"
+      },
+      "enable": {
+        "type": "boolean",
+        "title": "فعال بودن واسط"
+      },
+      "offset": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "size": {
+        "type": "integer",
+        "minimum": 1,
+        "title": "تعداد رکورد در هر صفحه"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": []
+  },
+  "disableDealerProductPermission": {
+    "type": "object",
+    "properties": {
+      "productId": {
+        "type": "integer",
+        "title": "شناسه محصول"
+      },
+      "dealerBizId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار واسط"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "dealerBizId",
+      "productId"
+    ]
+  },
+  "enableDealerProductPermission": {
+    "type": "object",
+    "properties": {
+      "productId": {
+        "type": "integer",
+        "title": "شناسه محصول"
+      },
+      "dealerBizId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار واسط"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "dealerBizId",
+      "productId"
+    ]
+  },
+  "businessDealingList": {
+    "type": "object",
+    "properties": {
+      "dealingBusinessId": {
+        "type": "integer",
+        "title": "شناسه کسب و کاری که واسط آن هستید"
+      },
+      "enable": {
+        "type": "boolean",
+        "title": "فعال بودن واسط"
+      },
+      "offset": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "size": {
+        "type": "integer",
+        "minimum": 1,
+        "title": "تعداد رکورد در هر صفحه"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": []
+  },
+  "addUserAndBusiness": {
+    "type": "object",
+    "properties": {
+      "username": {
+        "type": "string",
+        "minLength": 3,
+        "title": "نام کاربری کسب و کار جدید",
+        "description": "منحصر به فرد، فاقد space و حتما با حروف انگلیسی ثبت گردد."
+      },
+      "businessName": {
+        "type": "string",
+        "minLength": 1,
+        "title": "نام کسب و کار"
+      },
+      "firstName": {
+        "type": "string",
+        "title": "نام شخص نماینده کسب و کار"
+      },
+      "lastName": {
+        "type": "string",
+        "title": "نام خانوادگی شخص نماینده کسب و کار"
+      },
+      "sheba": {
+        "type": "string",
+        "pattern": "^(\\d)(?!\\1{23}$)\\d{23}$",
+        "title": "کد شبا حساب بانکی",
+        "description": "شبا که به صورت عددی وارد می شود. (بدون IR)"
+      },
+      "nationalCode": {
+        "type": "string",
+        "pattern": "^\\d{11}$",
+        "title": "شناسه ملی کسب و کار - 11 رقمی"
+      },
+      "economicCode": {
+        "type": "string",
+        "title": "کد اقتصادی کسب و کار"
+      },
+      "email": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9._%+-]+@(?:[A-Za-z0-9-]+\\.)+[A-Za-z]{2,}$",
+        "title": "ایمیل"
+      },
+      "registrationNumber": {
+        "type": "string",
+        "title": "شماره ثبت کسب و کار"
+      },
+      "guildCode": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minItems": 1,
+        "title": "لیست کد اصناف",
+        "description": "حداقل یک مورد انتخاب شود"
+      },
+      "cellphone": {
+        "type": "string",
+        "title": "شماره موبایل نماینده کسب و کار",
+        "pattern": "^(0|\\+98|0098){1}[9]{1}[\\d]{9}$"
+      },
+      "phone": {
+        "type": "string",
+        "title": "شماره تلفن",
+        "pattern": "\\d{6,14}"
+      },
+      "fax": {
+        "type": "string",
+        "title": "شماره فکس",
+        "description": "در صورت ورد همراه با پیش شماره وارد شود"
+      },
+      "postalCode": {
+        "type": "string",
+        "title": "کد پستی 10 رقمی",
+        "pattern": "^(?!(\\d)\\\\1{3})[13-9]{4}[1346-9][013-9]{5}$"
+      },
+      "country": {
+        "type": "string",
+        "minLength": 1,
+        "title": "کشور محل کسب و کار"
+      },
+      "state": {
+        "type": "string",
+        "minLength": 1,
+        "title": "استان محل کسب و کار"
+      },
+      "city": {
+        "type": "string",
+        "minLength": 1,
+        "title": "شهر محل کسب و کار"
+      },
+      "address": {
+        "type": "string",
+        "minLength": 1,
+        "title": "آدرس محل کسب و کار"
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1,
+        "title": "توضیحات"
+      },
+      "newsReader": {
+        "type": "boolean",
+        "description": "محدود کردن دسترسی کسب و کار"
+      },
+      "logoImage": {
+        "type": "string",
+        "title": "لوگو کسب و کار",
+        "description": "آدرس اینترنتی تصویر لوگو کسب و کار که به صورت مستقیم در دسترس است"
+      },
+      "coverImage": {
+        "type": "string",
+        "title": "کاور کسب و کار",
+        "description": "آدرس اینترنتی تصویر کاور کسب و کار که به صورت مستقیم در دسترس است"
+      },
+      "tags": {
+        "oneOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "title": "لیست درخت تگ"
+          },
+          {
+            "type": "string",
+            "title": "تگ های آیتم",
+            "description": "با ، (ویرگول) موارد را از هم جدا کنید"
+          }
+        ]
+      },
+      "tagTrees": {
+        "oneOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "title": "لیست درخت تگ"
+          },
+          {
+            "type": "string",
+            "title": "تگ های درختی",
+            "description": "با ، (ویرگول) موارد را از هم جدا کنید"
+          }
+        ]
+      },
+      "tagTreeCategoryName": {
+        "type": "string",
+        "title": "دسته درخت تگ"
+      },
+      "link": {
+        "type": "string",
+        "format":"url",
+        "description": "لینک دسترسی به کسب و کار از طریق sso"
+      },
+      "lat": {
+        "type": "number",
+        "title": "عرض جغرافیایی"
+      },
+      "lng": {
+        "type": "number",
+        "title": "طول جغرافیایی"
+      },
+      "agentFirstName": {
+        "type": "string",
+        "minLength": 1,
+        "title": "نام نماینده"
+      },
+      "agentLastName": {
+        "type": "string",
+        "minLength": 1,
+        "title": "نام خانوادگی نماینده"
+      },
+      "agentCellphoneNumber": {
+        "type": "string",
+        "pattern": "^(0|\\+98|0098){1}[9]{1}[\\d]{9}$",
+        "title": "شماره موبایل نماینده"
+      },
+      "agentNationalCode": {
+        "type": "string",
+        "title": "کد ملی نماینده",
+        "pattern": "^\\d{10}$",
+        "description": "کد ملی 10 رقمی و بدون خط تیره و فاصله"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "username",
+      "businessName",
+      "email",
+      "guildCode",
+      "country",
+      "state",
+      "city",
+      "address",
+      "description",
+      "agentFirstName",
+      "agentLastName",
+      "agentCellphoneNumber"
+    ]
+  },
+  "listUserCreatedBusiness": {
+    "type": "object",
+    "properties": {
+      "bizId": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        },
+        "title": "شناسه کسب و کار"
+      },
+      "guildCode": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "title": "لیست کد اصناف"
+      },
+      "offset": {
+        "type": "integer",
+        "minimum": 0,
+        "title": "اندیس شروع"
+      },
+      "size": {
+        "type": "integer",
+        "minimum": 1,
+        "title": "تعداد رکورد در هر صفحه"
+      },
+      "query": {
+        "type": "string",
+        "title": "مورد جستجو روی بیزینس های موجود"
+      },
+      "tags": {
+        "oneOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "title": "لیست درخت تگ"
+          },
+          {
+            "type": "string",
+            "title": "تگ های آیتم",
+            "description": "با ، (ویرگول) موارد را از هم جدا کنید"
+          }
+        ]
+      },
+      "tagTrees": {
+        "oneOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "title": "لیست درخت تگ"
+          },
+          {
+            "type": "string"
+          }
+        ]
+      },
+      "active": {
+        "type": "boolean",
+        "title": "وضعیت"
+      },
+      "country": {
+        "type": "string",
+        "title": "نام کشور"
+      },
+      "state": {
+        "type": "string",
+        "title": "نام استان"
+      },
+      "city": {
+        "type": "string",
+        "title": "نام شهر"
+      },
+      "ssoId": {
+        "type": "string",
+        "title": "شناسه sso کاربر"
+      },
+      "username": {
+        "type": "string",
+        "title": "نام کاربری"
+      },
+      "businessName": {
+        "type": "string",
+        "title": "نام کسب و کار"
+      },
+      "sheba": {
+        "type": "string",
+        "pattern": "^(\\d)(?!\\1{23}$)\\d{23}$",
+        "title": "کد شبا حساب بانکی",
+        "description": "شبا که به صورت عددی وارد می شود. (بدون IR)"
+      },
+      "nationalCode": {
+        "type": "string",
+        "pattern": "^\\d{11}$",
+        "title": "شناسه ملی کسب و کار - 11 رقمی"
+      },
+      "economicCode": {
+        "type": "string",
+        "title": "کد اقتصادی کسب و کار"
+      },
+      "email": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9._%+-]+@(?:[A-Za-z0-9-]+\\.)+[A-Za-z]{2,}$",
+        "title": "آدرس ایمیل کاربر"
+      },
+      "cellphone": {
+        "type": "string",
+        "title": "شماره موبایل نماینده کسب و کار",
+        "pattern": "^(0|\\+98|0098){1}[9]{1}[\\d]{9}$"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": []
+  },
+  "updateBusiness": {
+    "type": "object",
+    "properties": {
+      "bizId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار"
+      },
+      "businessName": {
+        "type": "string",
+        "minLength": 1,
+        "title": "نام کسب و کار"
+      },
+      "companyName": {
+        "type": "string",
+        "title": "نام شرکت"
+      },
+      "shopName": {
+        "type": "string",
+        "title": "نام فروشگاه"
+      },
+      "shopNameEn": {
+        "type": "string",
+        "title": "نام انگلیسی فروشگاه"
+      },
+      "website": {
+        "type": "string",
+        "title": "آدرس وب سایت"
+      },
+      "dateEstablishing": {
+        "type": "string",
+        "title": "تاریخ تاسیس به صورت شمسی",
+        "description": "تاریخ به صورت yyyy/mm/dd وارد شود"
+      },
+      "firstName": {
+        "type": "string",
+        "title": "نام نماینده کسب و کار"
+      },
+      "lastName": {
+        "type": "string",
+        "title": "نام خانوادگی نماینده کسب و کار"
+      },
+      "sheba": {
+        "type": "string",
+        "pattern": "^(\\d)(?!\\1{23}$)\\d{23}$",
+        "title": "کد شبا حساب بانکی",
+        "description": "شبا که به صورت عددی وارد می شود. (بدون IR)"
+      },
+      "nationalCode": {
+        "type": "string",
+        "pattern": "^\\d{11}$",
+        "title": "شناسه ملی کسب و کار - 11 رقمی"
+      },
+      "economicCode": {
+        "type": "string",
+        "title": "کد اقتصادی کسب و کار"
+      },
+      "email": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9._%+-]+@(?:[A-Za-z0-9-]+\\.)+[A-Za-z]{2,}$",
+        "title": "ایمیل"
+      },
+      "registrationNumber": {
+        "type": "string",
+        "title": "شماره ثبت کسب و کار"
+      },
+      "guildCode": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minItems": 1,
+        "title": "لیست کد اصناف",
+        "description": "حداقل یک مورد انتخاب شود"
+      },
+      "cellphone": {
+        "type": "string",
+        "title": "شماره موبایل نماینده کسب و کار",
+        "pattern": "^(0|\\+98|0098){1}[9]{1}[\\d]{9}$"
+      },
+      "phone": {
+        "type": "string",
+        "title": "شماره تلفن",
+        "pattern": "^\\d{6,14}$"
+      },
+      "fax": {
+        "type": "string",
+        "pattern": "^\\d{6,14}$",
+        "title": "شماره فکس",
+        "description": "در صورت ورد همراه با پیش شماره وارد شود"
+      },
+      "postalCode": {
+        "type": "string",
+        "title": "کد پستی",
+        "pattern": "^(?!(\\d)\\\\1{3})[13-9]{4}[1346-9][013-9]{5}$"
+      },
+      "country": {
+        "type": "string",
+        "minLength": 1,
+        "title": "کشور محل کسب و کار"
+      },
+      "state": {
+        "type": "string",
+        "minLength": 1,
+        "title": "استان محل کسب و کار"
+      },
+      "city": {
+        "type": "string",
+        "minLength": 1,
+        "title": "شهر محل کسب و کار"
+      },
+      "address": {
+        "type": "string",
+        "minLength": 1,
+        "title": "آدرس محل کسب و کار"
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1,
+        "title": "توضیحات"
+      },
+      "changeLogo": {
+        "type": "boolean",
+        "description": "در صورتی که بخواهید تصویر لوگو را تغییر دهید true وارد کنید"
+      },
+      "changeCover": {
+        "type": "boolean",
+        "description": "در صورتی که بخواهید تصویر کاور را تغییر دهید true وارد کنید"
+      },
+      "logoImage": {
+        "type": "string",
+        "title": "لوگو کسب و کار",
+        "description": "آدرس اینترنتی تصویر لوگو کسب و کار که به صورت مستقیم در دسترس است"
+      },
+      "coverImage": {
+        "type": "string",
+        "title": "کاور کسب و کار",
+        "description": "آدرس اینترنتی تصویر کاور کسب و کار که به صورت مستقیم در دسترس است"
+      },
+      "tags": {
+        "oneOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "title": "لیست درخت تگ"
+          },
+          {
+            "type": "string",
+            "title": "تگ های آیتم",
+            "description": "با ، (ویرگول) موارد را از هم جدا کنید"
+          }
+        ]
+      },
+      "tagTrees": {
+        "oneOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "title": "لیست درخت تگ"
+          },
+          {
+            "type": "string",
+            "title": "تگ های درختی",
+            "description": "با ، (ویرگول) موارد را از هم جدا کنید"
+          }
+        ]
+      },
+      "tagTreeCategoryName": {
+        "type": "string",
+        "title": "دسته درخت تگ"
+      },
+      "link": {
+        "type": "string",
+        "format":"url",
+        "description": "لینک دسترسی به کسب و کار از طریق sso"
+      },
+      "lat": {
+        "type": "number",
+        "title": "عرض جغرافیایی"
+      },
+      "lng": {
+        "type": "number",
+        "title": "طول جغرافیایی"
+      },
+      "agentFirstName": {
+        "type": "string",
+        "title": "نام نماینده"
+      },
+      "agentLastName": {
+        "type": "string",
+        "title": "نام خانوادگی نماینده"
+      },
+      "agentCellphoneNumber": {
+        "type": "string",
+        "title": "شماره موبایل نماینده",
+        "description": "به صورت 09123456789 وارد شود"
+      },
+      "agentNationalCode": {
+        "type": "string",
+        "pattern": "^\\d{10}$",
+        "title": "کد ملی نماینده",
+        "description": "کد ملی 10 رقمی و بدون خط تیره و فاصله"
+      },
+      "changeAgent": {
+        "type": "boolean",
+        "description": "در صورتی که بخواهید اطلاعات نماینده را تغییر دهید true وارد نمایید"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "bizId",
+      "businessName",
+      "guildCode",
+      "country",
+      "state",
+      "city",
+      "address",
+      "description"
+    ]
+  },
+  "subBusinessList": {
+    "type": "object",
+    "properties": {
+      "offset": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "size": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "name": {
+        "type": "string"
+      },
+      "nationalCode": {
+        "type": "string",
+        "pattern": "^\\d{11}$"
+      },
+      "cellphoneNumber": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9._%+-]+@(?:[A-Za-z0-9-]+\\.)+[A-Za-z]{2,}$"
+      },
+      "registrationNumber": {
+        "type": "integer"
+      },
+      "economicCode": {
+        "type": "string"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "offset",
+      "size"
+    ]
+  },
+  "getApiTokenForCreatedBusiness": {
+    "type": "object",
+    "properties": {
+      "businessId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "businessId"
+    ]
+  },
+  "rateBusiness": {
+    "type": "object",
+    "properties": {
+      "businessId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار"
+      },
+      "rate": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 5,
+        "title": "امتیاز کاربر به کسب و کار"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "businessId",
+      "rate"
+    ]
+  },
+  "commentBusiness": {
+    "type": "object",
+    "properties": {
+      "businessId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار"
+      },
+      "text": {
+        "type": "string",
+        "minLength": 1,
+        "title": "نظر کاربر در مورد کسب و کار"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "businessId",
+      "text"
+    ]
+  },
+  "businessFavorite": {
+    "type": "object",
+    "properties": {
+      "businessId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار"
+      },
+      "disfavorite": {
+        "type": "boolean",
+        "description": "اگر خالی یا false باشد، به علاقه مندی ها اضافه می شود و اگر true باشد، از علاقه مندی ها حذف میشود"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "businessId",
+      "disfavorite"
+    ]
+  },
+  "userBusinessInfos": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        },
+        "title": "لیست شناسه های کسب و کار"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "id"
+    ]
+  },
+  "commentBusinessList": {
+    "type": "object",
+    "properties": {
+      "businessId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار"
+      },
+      "firstId": {
+        "type": "integer",
+        "description": "در صورتی که این فیلد وارد شود فیلدهای lastId و offset نباید وارد شوند و نتیجه صعودی مرتب می شود."
+      },
+      "lastId": {
+        "type": "integer",
+        "description": "در صورتی که این فیلد وارد شود فیلدهای firstId و offset نباید وارد شوند و نتیجه نزولی مرتب می شود"
+      },
+      "offset": {
+        "type": "integer",
+        "minimum": 0,
+        "description": "در صورتی که این فیلد وارد شود فیلدهای lastId و firstId نباید وارد شوند و نتیجه نزولی مرتب می شود"
+      },
+      "size": {
+        "type": "integer",
+        "minimum": 1,
+        "description": "تعداد رکورد در هر صفحه"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "oneOf": [
+      {
+        "required": [
+          "businessId",
+          "firstId"
+        ]
+      },
+      {
+        "required": [
+          "businessId",
+          "lastId"
+        ]
+      },
+      {
+        "required": [
+          "businessId",
+          "offset"
+        ]
+      }
+    ]
+  },
+  "confirmComment": {
+    "type": "object",
+    "properties": {
+      "commentId": {
+        "type": "integer",
+        "title": "شناسه نظر"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "commentId"
+    ]
+  },
+  "unconfirmComment": {
+    "type": "object",
+    "properties": {
+      "commentId": {
+        "type": "integer",
+        "title": "شناسه نظر"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "commentId"
+    ]
+  }
+}
