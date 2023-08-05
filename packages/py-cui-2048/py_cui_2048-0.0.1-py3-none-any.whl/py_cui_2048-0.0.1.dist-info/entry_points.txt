@@ -1,0 +1,3 @@
+[console_scripts]
+py2048 = py_cui_2048:main
+
