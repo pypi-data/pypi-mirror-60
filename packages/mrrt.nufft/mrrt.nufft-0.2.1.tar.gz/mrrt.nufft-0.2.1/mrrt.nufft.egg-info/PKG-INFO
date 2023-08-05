@@ -1,0 +1,54 @@
+Metadata-Version: 1.2
+Name: mrrt.nufft
+Version: 0.2.1
+Summary: Non-uniform FFT in 1D, 2D and 3D for CPU and GPU (CUDA)
+Home-page: http://github.com/mritools/mrrt.nufft
+Author: Gregory R. Lee
+Author-email: grlee77@gmail.com
+Maintainer: Gregory R. Lee
+Maintainer-email: grlee77@gmail.com
+License: BSD
+Description: 
+        
+        mrrt.nufft
+        ==========
+        mrrt.nufft includes:
+        
+        - 1D, 2D and 3D Transform from uniformly spaced spatial grid to non-uniformly spaced Fourier samples.
+        - 1D, 2D and 3D Inverse Transform non-uniformly spaced Fourier samples to uniformly sampled spatial.
+        - All transforms have both low memory and sparse-matrix (precomputed) variants.
+        - Transforms can be applied to NumPy arrays (CPU) or to CuPy arrays (GPU).
+        
+        .. _README: https://github.com/mritools/mrrt.nufft/blob/master/README.md
+        
+        License
+        =======
+        ``mrrt.nufft`` is licensed under the terms of the BSD 3-clause license. See
+        the file "LICENSE.txt" and "LICENSES_bundled.txt" for information on the
+        history of this software, terms & conditions for usage, and a DISCLAIMER OF ALL
+        WARRANTIES.
+        
+        All trademarks referenced herein are property of their respective holders.
+        
+        Copyright (c) 2014-2020,
+        Gregory R. Lee, Cincinnati Children's Hospital Medical Center.
+        
+Keywords: non-uniform fast Fourier transform,NFFT,NUFFT,scientific,non-cartesian MRI,magnetic resonance imaging
+Platform: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Requires: numpy
+Requires: cython
+Requires: mrrt.utils
+Requires-Python: >= 3.6
