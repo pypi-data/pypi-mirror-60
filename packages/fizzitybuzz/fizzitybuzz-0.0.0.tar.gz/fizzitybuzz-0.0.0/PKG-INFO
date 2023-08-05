@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: fizzitybuzz
+Version: 0.0.0
+Summary: For Michael Gray and Q. u. D.
+Home-page: https://github.com/Gabriel786432
+Author: Morgan Wyoming
+Author-email: gabrielezrathompson@gmail.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Fizzbuzz,YouTube,Tom Scott
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
