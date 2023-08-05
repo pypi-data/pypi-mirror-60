@@ -1,0 +1,9 @@
+README.md
+setup.py
+morecantile/__init__.py
+morecantile.egg-info/PKG-INFO
+morecantile.egg-info/SOURCES.txt
+morecantile.egg-info/dependency_links.txt
+morecantile.egg-info/not-zip-safe
+morecantile.egg-info/requires.txt
+morecantile.egg-info/top_level.txt
