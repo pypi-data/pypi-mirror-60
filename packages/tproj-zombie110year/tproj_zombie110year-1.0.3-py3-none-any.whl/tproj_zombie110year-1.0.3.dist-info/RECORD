@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=kHpW8xo7rE1xaFiOVGbw-WXjz9s4ahqwWtW-G2DC-pk,787
+tests/test_tproj.py,sha256=wOzWrbu_wuI_G6eWm7MRmAcftks2hguQuSaD4gck_84,85
+tproj/__init__.py,sha256=2plzdEEb24FLjE2I2XyBBcJEPYWHccNL4SgtLC_6erg,22
+tproj/apply.py,sha256=u56XhHo9MZbDtp_WDCqtaY5NiyWtP2hxjVBzwnnCcUk,695
+tproj/cli.py,sha256=8rKpmsufAUAyP9r3IF_ToNG2RUPcLflIinUjnPPN380,1450
+tproj/create.py,sha256=Wimix5IY7nnFVIyzkt6OPUklp7I1_rEeKFCf1QIzXrE,2034
+tproj/ls.py,sha256=4OxCm301ar0PkUWnqvSfYmqBlS9tNMJi7i3D2LePlzA,1002
+tproj/utils/__init__.py,sha256=C7T0uaYExuUnAwMNy7vtgjOa8ptasbZEQAWb3FSejbs,4289
+tproj_zombie110year-1.0.3.dist-info/LICENSE,sha256=pbEj7gUaG97-Jne71Wa5FFxPCKYdnObZu-kOunB620E,1074
+tproj_zombie110year-1.0.3.dist-info/METADATA,sha256=-PY4d0aTmQKBTOtkytmQfph1UQKZaE9MfepGgN9fbL4,5077
+tproj_zombie110year-1.0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+tproj_zombie110year-1.0.3.dist-info/entry_points.txt,sha256=8vXUKrGp0aDMoUiZnvOru3khQ0vwksf65BEyDdL7G-A,42
+tproj_zombie110year-1.0.3.dist-info/top_level.txt,sha256=9QoB3NpHVdBOksm_NmAx7UT7NHtw1q3dkNH--Y6xQcg,12
+tproj_zombie110year-1.0.3.dist-info/RECORD,,
