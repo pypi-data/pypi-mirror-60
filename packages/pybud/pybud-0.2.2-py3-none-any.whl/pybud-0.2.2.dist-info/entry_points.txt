@@ -1,0 +1,3 @@
+[console_scripts]
+pybud = pybud.main:main
+
