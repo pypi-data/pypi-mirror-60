@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: vktoken
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/jieggii/vktoken
+Author: jieggii
+Author-email: jieggii.contact@gmail.com
+License: GPL-3.0
+Project-URL: Source, https://github.com/jieggii/vktoken
+Project-URL: Tracker, https://github.com/jieggii/vktoken/issues
+Description: 
+        # vktoken  
+        Tool for creating VK access token  
+          
+        ![image](https://imgur.com/nJc8SY9.jpg)
+          
+        ## Installation  
+        `pip3 install vktoken`
+          
+          
+        ## Usage  
+        `vktoken [--help] [--copy] [--version] login [password] [app]`  
+          
+        ### Examples  
+        * `vktoken +3121234569`  
+        * `vktoken +3121234569 mypassword iphone --copy`  
+          
+        ## Features  
+        * Access token can be copied to the clipboard automatically (if you use `--copy` key)  
+        * You can choose any VK app from the list: **Android**, **iPhone**, **iPad**, **Windows phone** and **Desktop**
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

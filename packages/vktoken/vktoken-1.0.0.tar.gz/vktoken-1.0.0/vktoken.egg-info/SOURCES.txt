@@ -1,0 +1,10 @@
+README.md
+setup.py
+vktoken/__init__.py
+vktoken/vktoken.py
+vktoken.egg-info/PKG-INFO
+vktoken.egg-info/SOURCES.txt
+vktoken.egg-info/dependency_links.txt
+vktoken.egg-info/entry_points.txt
+vktoken.egg-info/requires.txt
+vktoken.egg-info/top_level.txt
