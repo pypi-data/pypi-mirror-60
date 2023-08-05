@@ -1,0 +1,4 @@
+include lixi/*.xsd
+include lixi/*.json
+include lixi/xslts
+include lixi/xslts/*.zip

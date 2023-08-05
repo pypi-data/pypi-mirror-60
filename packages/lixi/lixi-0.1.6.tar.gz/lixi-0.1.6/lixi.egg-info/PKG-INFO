@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: lixi
+Version: 0.1.6
+Summary: lixi is a python package to manipulate a valid LIXI message and schema.
+Home-page: https://standards.lixi.org.au/lixi-tech/lixi-pypi
+Author: Ammar Khan
+Author-email: lixilab@lixi.org.au
+License: MIT
+Description: LIXI
+        ====
+        
+        ``lixi`` is a python package that simplifies working with the LIXI data standards and with messages that are based on the LIXI standards. 
+        
+        [LIXI Limited]([https://lixi.org.au/) has been facilitating collaboration within the Australian Lending industry for almost two decades, by managing a suite of data standards (for both XML & JSON) used across the industry to improve the efficiency of B2B electronic messaging.
+        
+        This package is offered under an open source license, however the features are effective when used in conjunction with a LIXI2 Schema which are available to LIXI members  and licensees.
+        
+        Installation
+        ============
+        
+        Requirements
+        ------------
+        
+        The installation of the ``lixi`` package requires [pip](https://pypi.org/project/pip/) to be installed for package installation with your Python installation.
+        
+        The ``lixi`` package is not supported by Python 2.
+        
+        The installation of the ``lixi`` using pip will install the following libraries as required dependencies:
+        
+        * [boto3](https://github.com/boto/boto3)
+        * [isodate](https://github.com/gweis/isodate/)
+        * [jsonschema](https://github.com/Julian/jsonschema)
+        * [lxml](https://lxml.de/)
+        * [xmljson](https://github.com/sanand0/xmljson)
+        
+        Installation with pip
+        ----------------
+        Open a command prompt or a bash window on your PC and type the following command. 
+        
+        ```python
+        pip install lixi
+        ```
+        
+        Now to use the ``lixi`` package, simply import the library into your Python project, like so:
+        
+        ```python
+        import lixi
+        ```
+        
+        and that's it! You're ready to go.
+        
+        Assumptions
+        ===========
+        
+        The ``lixi`` package requires you to have access to the required LIXI schemas. Members and Licensees of LIXI can access these through the LIXI website or via an API provided by LIXI (contact LIXI for more details if you would like to use this API retrieval mechanism).
+        
+        Bug reports
+        ===========
+        
+        Please report bugs and feature requests by emailing lixilab@lixi.org.au.
+        
+        
+        Contributing
+        ============
+        
+        You can contribute to the project in multiple ways:
+        
+        * Suggest new features
+        * Implement features
+        * Fix bugs
+        * Add unit and functional tests
+        * Everything else you can think of!
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
