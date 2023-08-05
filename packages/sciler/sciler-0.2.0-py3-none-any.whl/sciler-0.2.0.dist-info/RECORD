@@ -1,0 +1,9 @@
+sciler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sciler/app.py,sha256=pUCQ0PEpRQHBUAeaQUZScDuiRzBEiz-rQKxlemSLcL8,12074
+sciler/device.py,sha256=pQBKT2SkB7tdniMeK60o-rvNfs8utReUYkF78yxDxCw,2544
+sciler/test_device.py,sha256=HIZJCTFhwIi0RdcajswaClXDu4J6KGT9LcF1Y8mNY30,3876
+sciler-0.2.0.dist-info/LICENSE.md,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+sciler-0.2.0.dist-info/METADATA,sha256=d-ZcYHRKML8DpqyMGpk5q347KS-MgqcCIQ--yTXPY-w,4997
+sciler-0.2.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+sciler-0.2.0.dist-info/top_level.txt,sha256=btnpzYpvQhkwfFiEmEJhid387xTGg7xqo612r4gfiJ0,7
+sciler-0.2.0.dist-info/RECORD,,
