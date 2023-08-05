@@ -1,0 +1,3 @@
+[console_scripts]
+start_project = datasist.project:start_project
+
