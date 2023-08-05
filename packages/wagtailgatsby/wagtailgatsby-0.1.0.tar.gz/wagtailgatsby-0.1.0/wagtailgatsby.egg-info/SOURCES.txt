@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+migrations/0001_initial.py
+migrations/0002_gatsbyimage_gatsbyimagerendition.py
+migrations/0003_auto_20190807_1031.py
+migrations/__init__.py
+wagtailgatsby.egg-info/PKG-INFO
+wagtailgatsby.egg-info/SOURCES.txt
+wagtailgatsby.egg-info/dependency_links.txt
+wagtailgatsby.egg-info/requires.txt
+wagtailgatsby.egg-info/top_level.txt
