@@ -1,0 +1,8 @@
+README.md
+setup.py
+teardrop/__init__.py
+teardrop.egg-info/PKG-INFO
+teardrop.egg-info/SOURCES.txt
+teardrop.egg-info/dependency_links.txt
+teardrop.egg-info/requires.txt
+teardrop.egg-info/top_level.txt
