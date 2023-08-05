@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lite-linter
+Version: 0.0.7
+Summary: Linting for LITE
+Home-page: https://github.com/uktrade/lite-linter
+Author: Jan Faracik
+Author-email: 
+License: UNKNOWN
+Description: ![Logo](docs/logo.svg)
+        
+        [![GitHub license](https://img.shields.io/github/license/uktrade/lite-linter.svg)](https://github.com/uktrade/lite-linter/blob/master/LICENSE)
+        
+        Python library for linting LITE's frontend code.
+        
+        ## Running
+        
+        For now run it through "python main.py"
+        
+        It'll eventually be added as a pip dependency and used through CircleCI.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
