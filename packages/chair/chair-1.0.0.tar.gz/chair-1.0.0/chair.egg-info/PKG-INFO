@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: chair
+Version: 1.0.0
+Summary: Additional features for Android
+Home-page: https://pypi.org/project/chair/
+Author: Hakan Vergil
+Author-email: hakanvergil@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3

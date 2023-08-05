@@ -1,0 +1,5 @@
+setup.py
+chair.egg-info/PKG-INFO
+chair.egg-info/SOURCES.txt
+chair.egg-info/dependency_links.txt
+chair.egg-info/top_level.txt
