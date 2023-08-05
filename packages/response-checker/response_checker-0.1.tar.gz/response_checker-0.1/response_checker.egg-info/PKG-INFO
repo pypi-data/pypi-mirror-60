@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: response-checker
+Version: 0.1
+Summary: Package request validation in unit-tests
+Home-page: UNKNOWN
+Author: Anton Igin
+Author-email: example@mail.com
+License: UNKNOWN
+Description: Package for check the equation of response of request with expected template with using DynamicValue - if filter comparing DynamicValue with response value, he will compare only data types
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
