@@ -1,0 +1,11 @@
+meteoswiss/__init__.py,sha256=MoZavCMZniYUnsr5IcE_L-JHLtyi5LyQ8dQjFBvMPks,360
+meteoswiss/__main__.py,sha256=u_owGBPo3VCNFj2YPCfhfe3Z-ILCBv06bXz-aVLt4bc,27
+meteoswiss/get_all_stations.py,sha256=zdHvzgXUiMKOpApc9Bl6MinozkWz-kbEQPEswvSmzVQ,1661
+meteoswiss/get_current_condition.py,sha256=FdxzqHH1ZGmSrL5hNv44BOKaOebe72e0u1o5D5uDEGs,302
+meteoswiss/get_forecast.py,sha256=ifQTBJcDsm42bynItwIZqZUcpyElRKaJ1HQI9hAyTzU,937
+meteoswiss/misc.py,sha256=VCUd2528zaMCS3gmMAHFSQqazotmxDVXVyR2hi6j7Vw,562
+meteoswiss-0.0.9.dist-info/LICENSE,sha256=94UIpwKVL0MJrH8FelyEhN4Ad4Vz8kQ-Z9U3trNC1Ik,1073
+meteoswiss-0.0.9.dist-info/METADATA,sha256=LKJpXbPHJJm9-EzDJqlPXTc29lxTImNZ7-AEnBfr9uQ,1297
+meteoswiss-0.0.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+meteoswiss-0.0.9.dist-info/top_level.txt,sha256=wKZcbNGj1LTiVjAY4KulM8ssMgGOcz17O2qq5m23zPY,11
+meteoswiss-0.0.9.dist-info/RECORD,,
