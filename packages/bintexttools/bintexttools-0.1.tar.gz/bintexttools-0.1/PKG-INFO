@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: bintexttools
+Version: 0.1
+Summary: Tools for Binary and Text data.
+Home-page: https://www.linkedin.com/in/marcin-zelek/
+Author: Marcin Zelek
+Author-email: marcin.zelek@gmail.com
+License: MIT
+Description: Tools for Binary and ASCII data
+        
+        Tools which allow you to convert Binary data to ASCII and ASCII to Binary format.
+        They will allow you to keep printed version of data which need to be kept that way.
+Keywords: binary ascii text hex base64 convert tools
+Platform: UNKNOWN
