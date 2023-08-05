@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jinja2-getenv-extension
+Version: 0.0.2
+Summary: a jinja2 extension to access to system environment variables
+Home-page: https://github.com/metwork-framework/jinja2_getenv_extension
+License: BSD
+Keywords: jinja2 extension
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Requires-Dist: jinja2
+
+UNKNOWN
+
+
