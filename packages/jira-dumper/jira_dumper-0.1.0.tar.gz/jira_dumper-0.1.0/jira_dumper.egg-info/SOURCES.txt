@@ -1,0 +1,9 @@
+README.rst
+setup.py
+jira_dump/__init__.py
+jira_dump/base.py
+jira_dump/helpers/__init__.py
+jira_dumper.egg-info/PKG-INFO
+jira_dumper.egg-info/SOURCES.txt
+jira_dumper.egg-info/dependency_links.txt
+jira_dumper.egg-info/top_level.txt

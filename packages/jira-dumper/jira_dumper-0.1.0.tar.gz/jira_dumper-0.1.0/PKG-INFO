@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: jira_dumper
+Version: 0.1.0
+Summary: Jira dumping tool
+Home-page: https://github.com/LatvianPython/jira-dumper
+Author: LatvianPython
+Author-email: kalvans.rolands@gmail.com
+License: UNKNOWN
+Description: # jira-dumper
+        
+        Allows for hopefully easy and simple data dumps from Jira servers
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
