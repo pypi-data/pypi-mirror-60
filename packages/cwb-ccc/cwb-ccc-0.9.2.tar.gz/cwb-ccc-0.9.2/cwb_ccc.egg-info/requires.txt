@@ -1,0 +1,2 @@
+pandas>=0.25.3
+cwb-python>=0.2.2
