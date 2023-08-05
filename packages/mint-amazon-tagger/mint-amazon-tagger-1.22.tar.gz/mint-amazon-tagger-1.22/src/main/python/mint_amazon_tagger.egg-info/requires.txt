@@ -1,0 +1,10 @@
+PyQt5
+keyring
+mintapi>=1.40
+mock
+outdated
+progress
+readchar
+requests
+selenium
+selenium-requests
