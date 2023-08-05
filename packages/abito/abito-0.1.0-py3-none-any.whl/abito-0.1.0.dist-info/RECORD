@@ -1,0 +1,17 @@
+abito/__init__.py,sha256=DuwBKJz_winJBprIAwMiQxbySgzF3yqiP94f1J8-Bxg,222
+abito/core.py,sha256=7-uvrm6JoBY-qf6wUYLGfWAFAmK9F71vJYIrYjzOr0U,17385
+abito/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+abito/lib/bootstrap.py,sha256=7HMq3Vc4M8GsL7jNcxHVAwW6ca6snaUOAgiDibnC2QI,2326
+abito/lib/significance.py,sha256=DMuV0PPGcj-CdNBgDC2jQklKCSLKjnOPZF_a7CltLhk,8194
+abito/lib/utils.py,sha256=CDlyFyZCdaNbdJhblOgLV0sjVHMjRDiV_8H044cbrvM,824
+abito/lib/prepare/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+abito/lib/prepare/compress.py,sha256=iMz1-dH9Hi3HB34IurN1E4UygcJMOeDPQJ_TnGdPqRc,3022
+abito/lib/prepare/trim.py,sha256=s7lzNdAsRfsgeua4PXAhtbHhhjgcF0X6wnGUIlHHOZo,2139
+abito/lib/stats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+abito/lib/stats/plain.py,sha256=C08onN-27s8rONfHGaB-X1O4Xrli6rgo5Z0WIyU9jC0,991
+abito/lib/stats/weighted.py,sha256=JIl4JaVMZfxGgnLih5xcNm224EaHy0rpSe3xslM17G4,1956
+abito-0.1.0.dist-info/LICENSE,sha256=Iy-BH9wbsENrdfWrtt6_Ff3NwMAH0eIzBmHwysyFjWU,1067
+abito-0.1.0.dist-info/METADATA,sha256=b6gvPkTS8YSEx-WROWhkk3GYI5-_MipEH88VHbKeMqg,3054
+abito-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+abito-0.1.0.dist-info/top_level.txt,sha256=Gr3nRGORtISTzQgy9TBNCE21HEQvZOv3PXXZLBarN6g,6
+abito-0.1.0.dist-info/RECORD,,
