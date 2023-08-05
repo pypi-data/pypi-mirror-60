@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pyeodhistoricaldata/__init__.py
+pyeodhistoricaldata/api.py
+pyeodhistoricaldata.egg-info/PKG-INFO
+pyeodhistoricaldata.egg-info/SOURCES.txt
+pyeodhistoricaldata.egg-info/dependency_links.txt
+pyeodhistoricaldata.egg-info/not-zip-safe
+pyeodhistoricaldata.egg-info/requires.txt
+pyeodhistoricaldata.egg-info/top_level.txt
