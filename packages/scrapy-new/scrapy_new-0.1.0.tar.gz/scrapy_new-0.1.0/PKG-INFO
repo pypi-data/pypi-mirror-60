@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: scrapy-new
+Version: 0.1.0
+Summary: A package providing code generation command for scrapy CLI
+License: MIT
+Author: Kristobal Junta
+Author-email: junta.kristobal@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: inflection (>=0.3.1,<0.4.0)
+Requires-Dist: mako (>=1.1.1,<2.0.0)
+Requires-Dist: scrapy (>=1.8.0,<2.0.0)
