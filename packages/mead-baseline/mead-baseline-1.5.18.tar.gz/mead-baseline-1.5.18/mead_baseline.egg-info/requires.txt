@@ -1,0 +1,15 @@
+numpy
+six
+
+[report]
+visdom
+tensorboardX
+
+[test]
+pytest
+mock
+contextdecorator
+pytest-forked
+
+[yaml]
+pyyaml

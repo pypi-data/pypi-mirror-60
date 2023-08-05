@@ -1,0 +1,9 @@
+{
+    "reporting_hooks": {
+        "xpctl": {
+	        "cred": "~/xpctlcred.json",
+            "save_model": false,
+    	    "module": "/data/pipelines/modules/reporting_xpctl_v1.py"
+	    }
+    }
+}
