@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: PyFarsi-TBot
+Version: 1.0
+Summary: Telegram Proxy API Handler
+Home-page: https://github.com/BlackRouter/PyFTBot
+Author: Javad Rajabzade
+Author-email: ja7adr@gmail.com
+License: MIT
+Download-URL: https://github.com/BlackRouter/PyFTBot/archive/1.0.zip
+Description: UNKNOWN
+Keywords: Telegram,TelegramBot,Proxy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
