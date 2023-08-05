@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: atd-mds-client
+Version: 0.0.2
+Summary: A Python utility to interact data endpoints compliant with the Mobility Data Specification, as designed by the Open Mobility Foundation
+Home-page: https://github.com/cityofaustin/atd-mds-client/tree/atd-mds-client
+Author: City of Austin
+Author-email: transportation.data@austintexas.gov
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# atd-mds-client
+A Python utility to interact data endpoints compliant with the Mobility Data Specification, as designed by the Open Mobility Foundation
+
+
