@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/genomedashboard.py
+src/genomedashboard.egg-info/PKG-INFO
+src/genomedashboard.egg-info/SOURCES.txt
+src/genomedashboard.egg-info/dependency_links.txt
+src/genomedashboard.egg-info/not-zip-safe
+src/genomedashboard.egg-info/requires.txt
+src/genomedashboard.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/test_genomedashboard.py
