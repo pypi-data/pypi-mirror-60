@@ -1,0 +1,7 @@
+pandas
+numpy
+scipy
+numpy-groupies
+numba
+datetime
+ipython
