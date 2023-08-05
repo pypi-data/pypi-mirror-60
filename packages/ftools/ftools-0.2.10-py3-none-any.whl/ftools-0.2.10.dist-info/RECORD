@@ -1,0 +1,10 @@
+ftools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ftools/callable.py,sha256=Du_AuH2IY0mh-p7MhActVLyjjTVNME-l__HxbbM8DLs,6852
+ftools/collection.py,sha256=GeR1_5NKUggKKt_ybHUEMcNvZby8oQi7fAWU-5ZFrhc,5937
+ftools/iterable.py,sha256=L-7gOkpEhHYiFCnDssycm9uAC3Ni2jtN7sjBLVYTlNA,8994
+ftools/mapping.py,sha256=3MAmjs-3SZqiMkdWYYAWfov3P6RbZc3LDS2kMxt4764,4761
+ftools/optional.py,sha256=AQKUN3wuHsjVyOdFsf7CKsR1WPasksCdw3R01FZcXW4,809
+ftools/sequence.py,sha256=nwIwna0D79mct9NajUeDhJ2Lsgn923mFsCC6JfnBc2Y,1542
+ftools-0.2.10.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+ftools-0.2.10.dist-info/METADATA,sha256=bewkSwiLee5TY1mrk0hnGahwDxZEiLrqH4h5jEgQ5E4,530
+ftools-0.2.10.dist-info/RECORD,,
