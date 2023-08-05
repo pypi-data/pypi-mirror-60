@@ -1,0 +1,7 @@
+Flask
+mimeparse
+Sphinx
+pylyskom
+six
+CherryPy
+Paste
