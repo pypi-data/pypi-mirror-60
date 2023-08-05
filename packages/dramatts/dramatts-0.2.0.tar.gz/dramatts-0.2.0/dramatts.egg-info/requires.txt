@@ -1,0 +1,4 @@
+PyQt5
+setuptools_scm
+jinja2
+pytest

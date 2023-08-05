@@ -1,0 +1,10 @@
+*.wav
+*.ogg
+/*/
+.idea/
+!/dramatts/
+!/utils/
+!/conda/
+!/designer/
+!/tests/
+!/examples/
