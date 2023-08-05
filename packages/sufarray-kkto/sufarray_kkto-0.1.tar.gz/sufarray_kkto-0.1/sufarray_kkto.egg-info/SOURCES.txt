@@ -1,0 +1,8 @@
+README.md
+setup.py
+sufarray/__init__.py
+sufarray/py.typed
+sufarray_kkto.egg-info/PKG-INFO
+sufarray_kkto.egg-info/SOURCES.txt
+sufarray_kkto.egg-info/dependency_links.txt
+sufarray_kkto.egg-info/top_level.txt
