@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: crispy-forms-propeller
+Version: 0.0.2a11
+Summary: Django application to add 'django-crispy-forms' layout objects for 'Propeller.in'
+License: MIT
+Author: Adam Radestock
+Author-email: raddishiow@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: django (>=3,<4)
+Requires-Dist: django-cripsy-forms (>=1.8.1,<2.0.0)
