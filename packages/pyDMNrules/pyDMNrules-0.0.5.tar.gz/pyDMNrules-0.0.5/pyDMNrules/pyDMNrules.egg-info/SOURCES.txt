@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyDMNrules/pyDMNrules.py
+pyDMNrules/pyDMNrules.egg-info/PKG-INFO
+pyDMNrules/pyDMNrules.egg-info/SOURCES.txt
+pyDMNrules/pyDMNrules.egg-info/dependency_links.txt
+pyDMNrules/pyDMNrules.egg-info/requires.txt
+pyDMNrules/pyDMNrules.egg-info/top_level.txt
