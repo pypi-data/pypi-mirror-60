@@ -1,0 +1,12 @@
+tabula/__init__.py,sha256=mYalOQHJoyn1kwYpp4_TZUclxPcqg9hRiSB_GPD2264,318
+tabula/file_util.py,sha256=YcH4NzuKDSFB6BKKKzDzLejIhy83EFH0zEtEitCV718,3239
+tabula/io.py,sha256=u8LDtRGKbUSy3mTsF4Hj5FKXjWpyjrTbABwE16mq40Q,33123
+tabula/tabula-1.0.3-jar-with-dependencies.jar,sha256=zHTjqHuhlE2K6It_H2JHmDu0T3J4WOCIoY-1MVD4OGI,11500668
+tabula/template.py,sha256=cLvkvJir3gZFav9Muz0ZT_lDDuStpV92b0afo-PpvLo,1880
+tabula/util.py,sha256=h9MtPCch8bXAOTIzKixT3wrsMJwfm6Fb9j3xWEgkyMs,1264
+tabula/errors/__init__.py,sha256=P-w-qs1vTxVjsvZGTNsnNFprgUs0fGhom5tLt22K1-U,406
+tabula_py-2.0.4.dist-info/LICENSE,sha256=HiGi1V0yIKVXjQPkcjyHfHmRFsSKKRoAGe68JlIc1Yw,1080
+tabula_py-2.0.4.dist-info/METADATA,sha256=tWze-yBFGVsRseqtVLm_bin9dL8PAEnBRDt7vLbF2OM,5017
+tabula_py-2.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tabula_py-2.0.4.dist-info/top_level.txt,sha256=5M5pAlbKJLwYXe8JeWG74i3H1Iwc3Px8jmsWko8z97A,7
+tabula_py-2.0.4.dist-info/RECORD,,
