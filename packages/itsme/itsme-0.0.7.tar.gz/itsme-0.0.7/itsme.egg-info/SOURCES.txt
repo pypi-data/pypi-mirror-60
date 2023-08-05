@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+./itsme/itsme_lib.dll
+./itsme/itsme_lib.dylib
+./itsme/itsme_lib.so
+itsme/__init__.py
+itsme/itsme.py
+itsme.egg-info/PKG-INFO
+itsme.egg-info/SOURCES.txt
+itsme.egg-info/dependency_links.txt
+itsme.egg-info/top_level.txt
