@@ -1,0 +1,15 @@
+import json
+import os
+
+_HERE = os.path.dirname(__file__)
+
+with open(os.path.join(_HERE, "info.json")) as infofile:
+    _INFODICT = json.load(infofile)
+
+VERSION = _INFODICT["VERSION"]
+AUTHOR = _INFODICT["AUTHOR"]
+COPYRIGHT = _INFODICT["COPYRIGHT"]
+CONTACT = _INFODICT["CONTACT"]
+HOMEPAGE = _INFODICT["HOMEPAGE"]
+CLASSIFIERS = _INFODICT["CLASSIFIERS"]
+ODMLTABLES_VERSION = _INFODICT["ODMLTABLES_VERSION"]
