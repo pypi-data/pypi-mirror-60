@@ -1,0 +1,11 @@
+requests==2.22.0
+
+[dev]
+black
+flake8
+ipython
+mypy
+pytest
+tox
+twine
+wheel
