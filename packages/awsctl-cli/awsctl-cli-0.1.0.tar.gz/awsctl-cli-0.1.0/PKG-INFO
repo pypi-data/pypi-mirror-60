@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: awsctl-cli
+Version: 0.1.0
+Summary: A simple tool to install AWS agents and packages.
+Home-page: https://github.com/arhea/awsctl
+Author: Alex Rhea
+Author-email: alex.rhea@gmail.com
+License: UNKNOWN
+Description: 
+        # AWSCTL
+        
+        `awsctl` is a utility for installing AWS packages on servers in the cloud. AWS packages such as Systems Manager, Cloudwatch, etc. have different installation methods which can be hard to manage when setting up a simple server. This package aims to make this as simple as `awsctl install ssm`.
+        
+        ## Usage
+        
+        | Package | Command | Description |
+        |-|-|-|
+        | Cloudwatch | `awsctl install cloudwatch` | Installs the Cloudwatch agent and configures it to run on startup. |
+        | Systems Manager | `awsctl install ssm` | Installs the SSM agent and configures it to run on startup. |
+        
+        ## Operating System Support
+        
+        Due to different installation methods we only support a subset of operating systems. We welcome additional operating systems!
+        
+        | Operating System | Supported |
+        |-|:-:|
+        | Amazon Linux | :x: |
+        | Amazon Linux 2 | :white_check_mark: |
+        | Debian | :white_check_mark: |
+        | CentOS | :white_check_mark: |
+        | Red Hat | :white_check_mark: |
+        | Ubuntu 16.04 | :x: |
+        | Ubuntu 18.04 | :white_check_mark: |
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown

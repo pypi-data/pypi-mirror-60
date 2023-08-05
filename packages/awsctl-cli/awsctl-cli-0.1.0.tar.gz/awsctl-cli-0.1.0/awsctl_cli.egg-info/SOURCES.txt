@@ -1,0 +1,17 @@
+README.md
+setup.py
+awsctl/__init__.py
+awsctl/cli.py
+awsctl/commands/__init__.py
+awsctl/commands/install.py
+awsctl/packages/__init__.py
+awsctl/packages/common.py
+awsctl/packages/ssm.py
+awsctl/utils/__init__.py
+awsctl/utils/operating_system.py
+awsctl_cli.egg-info/PKG-INFO
+awsctl_cli.egg-info/SOURCES.txt
+awsctl_cli.egg-info/dependency_links.txt
+awsctl_cli.egg-info/entry_points.txt
+awsctl_cli.egg-info/requires.txt
+awsctl_cli.egg-info/top_level.txt
