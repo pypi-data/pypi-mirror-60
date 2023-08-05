@@ -1,0 +1,77 @@
+<metal:macro define-macro="collection-tile-macro"
+             tal:define="helper_view nocall:context/@@collection_tile_helpers">
+    <div class="tile-collection bandi-collection">
+        <div class="tile-collection-container">
+            <h3 tal:define="title view/data/title|nothing;"
+                         class="tileTitle"
+                         tal:condition="title"
+                ><button class="tile-collapse-button"
+                         ><span class="title-content"
+                                tal:content="title">
+                        </span><span class="title-icon"
+                        ></span
+                ></button
+            ></h3>
+            <div class="tileBody" i18n:domain="rer.bandi">
+                <p tal:condition="not:results"
+                  class="noResults"
+                  i18n:translate="tiles_collection_noresults">
+                    No results found
+                </p>
+                <div class="tileContent"
+                     tal:condition="results"
+                     tal:define="toLocalizedTime nocall: context/@@plone/toLocalizedTime;
+                                 classes string:collectionTile ${view/data/css_class|nothing};
+                                 normalizeString nocall: context/plone_utils/normalizeString;">
+                    <tal:results repeat="obj results">
+                        <div class="bandoInfos"
+                             tal:define="stato_bando python:helper_view.getBandoState(obj);">
+                          <div tal:condition="stato_bando"
+                               tal:define="stato_class python:stato_bando[0];
+                                           stato_str python:stato_bando[1]"
+                               tal:attributes="class string:state-${stato_class} bandoStateClass"
+                               tal:content="stato_str">
+                                 stato
+                          </div>
+                          <h4 class="bandoTitle">
+                            <a class="bandoTitleLink" tal:attributes="href obj/getURL;title obj/Title"
+                               tal:content="obj/Title" />
+                          </h4>
+                          <p class="bandoDescription"
+                                tal:condition="python:obj.Description"
+                                    tal:content="obj/Description" />
+                          <p class="bandoType"
+                             tal:condition="python: helper_view.isTipologiaValid(obj.getTipologia_bando)"
+                             tal:content="python: helper_view.getTipologiaTitle(obj.getTipologia_bando)" />
+                          <div class="bandoDates"
+                               tal:condition="python:(is_show_effective_visible or is_show_scadenza_bando_visible) and (obj.effective!='None' or obj.getScadenza_bando)"
+                               tal:define="show_effective string:effective;
+                                           is_show_effective_visible python:show_effective in classes;
+                                           show_scadenza_bando string:scadenza_bando;
+                                           is_show_scadenza_bando_visible python: show_scadenza_bando in classes;
+                                           has_effective_date python:obj.effective.Date() != '1969/12/31';
+                                           valid_scadenza python:helper_view.isValidDeadline(obj.getScadenza_bando)">
+                            <tal:pubblicazione condition="python:is_show_effective_visible and has_effective_date">
+                              <div class="bando-data-pubblicazione">
+                                <span class="labelTB" i18n:translate="bandi_published_on">Published on</span>:
+                                <span tal:content="python:here.toLocalizedTime(obj.effective)" />
+                              </div>
+                            </tal:pubblicazione>
+                            <span class="labelTB colspacer"
+                                  tal:condition="python:is_show_effective_visible and has_effective_date and valid_scadenza and is_show_scadenza_bando_visible"> | </span>
+                            <tal:scadenza_bando condition="python: valid_scadenza and is_show_scadenza_bando_visible">
+                              <div class="bando-data-scadenza">
+                                <span  class="labelTB" i18n:translate="bando_scadenza_partecipazione">Deadline participation terms</span>:
+                                <span tal:content="python:helper_view.getScadenzaDate(obj)" />
+                              </div>
+                            </tal:scadenza_bando>
+                          </div>
+                        </div>
+                    </tal:results>
+                </div>
+            </div>
+        </div>
+    </div>
+</metal:macro>
+
+
