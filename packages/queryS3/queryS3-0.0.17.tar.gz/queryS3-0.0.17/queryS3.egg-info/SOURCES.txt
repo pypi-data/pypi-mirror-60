@@ -1,0 +1,10 @@
+README.md
+setup.py
+queryS3/QS3.py
+queryS3/__init__.py
+queryS3/app.py
+queryS3.egg-info/PKG-INFO
+queryS3.egg-info/SOURCES.txt
+queryS3.egg-info/dependency_links.txt
+queryS3.egg-info/requires.txt
+queryS3.egg-info/top_level.txt
