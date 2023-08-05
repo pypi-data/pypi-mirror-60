@@ -1,0 +1,9 @@
+# modules required for development only
+# $ pip install --requirement dev_requirements.txt
+
+pyflakes
+pytest
+coverage<5  # due to https://github.com/z4r/python-coveralls/issues/73
+doit<0.30; python_version<'3'
+doit>=0.30; python_version>='3'
+doit-py
