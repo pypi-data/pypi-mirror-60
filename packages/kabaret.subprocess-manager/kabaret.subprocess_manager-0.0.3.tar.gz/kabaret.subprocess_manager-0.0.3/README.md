@@ -1,0 +1,162 @@
+# kabaret.subprocess_manager
+
+Subprocess Manager for Kabaret.
+
+Provides an Actor, Flow Objects and Views to manage collections of  environment & command-lines as well as running & controling them.
+
+!!! BEWARE: This is a work in progress, APIs are subjects to change !!!
+
+# Usage:
+
+## Define your process Runners:
+```
+from kabaret.subprocess_manager.manager import SubprocessRunner
+
+class MyStuffToRun(SubprocessRunner):
+
+    def executable(self, version):
+        return '/path/to/executable'
+
+    def argv(self, version):
+        return ['--user', current_user, '--index', 'https://blah.blu.tv']
+
+    def env(self, version):
+        env = os.environ.copy()
+        env['MY_STUFF_CONFIGVAR] = 'my_stuff_config_value'
+
+```
+There are more tunning options, like version support etc... 
+
+Everything is procedural (method call, no static/declarative thingy) so you're in full control ;)
+
+## Configure your Session:
+
+In your session class, add the `SubprocessView` and the `LaunchToolBar` to
+the registered view types.
+
+```
+class MySession(gui.KabaretStandaloneGUISession):
+
+    def register_view_types(self):
+        super(MySession, self).register_view_types()
+
+        type_name = self.register_view_type(SubprocessView)
+        self.add_view(type_name, hidden=True)
+
+        type_name = self.register_view_type(LauncherToolBar)
+        self.add_view(
+            type_name, hidden=False, 
+            area=QtCore.Qt.RightToolBarArea
+        )
+```
+
+In the `_create_actors()` method, you will create the `SubprocessManager` Actor and configure it with runner that don't depend on a projet:
+
+For an example, this creates new group "3D" in the subprocess_manager
+and a "Blender" runner is added to it.
+```
+    def _create_actors(self):
+        # Add the Actor to the session:
+        subprocess_manager = SubprocessManager(self)
+
+        # Create a "3D" group (or get the existing one)
+        group = subprocess_manager.get_group('3D')
+
+        # Configure the group with an icon 
+        # (icons are kabaret.app.ressource ref as always)
+        group.set_config(
+            'icon', ('icons.flow', 'blender')
+        )
+
+        # Registers our custom Runner(s)
+        subprocess_manager.ensure_runner(
+            # BEWARE: We give the Runnder type here:           
+            RunnerType=runners.Blender, 
+            runner_name='Blender', 
+            group_name=group.name
+        )
+
+```
+
+Now you have an awesome toolbar with buttons to launch each 
+version of the runner you registered \o/
+
+## Configure your Project
+
+Most of your subprocess will be different for each project though.
+For example, not all versions of Blender will be supported by all project.
+
+So you need to define Runners inside your projet and have them show up
+in the toolbar only if you entered the project ? Here is how to do it:
+
+We'll use the `_fill_ui()` and a trigger for installation, and prevent 
+installing too often with semaphore
+
+```
+class MyProject(flow.Object):
+
+    episodes = flow.Child(Episodes).ui(show_filter=True)
+    admin = flow.Child(Admin)
+
+    def __init__(self, *args, **kwargs):
+        super(MyProject, self).__init__(*args, **kwargs)
+        # This will be used to install runner only once:
+        self._runners_loaded = False
+
+    def _fill_ui(self, ui):
+        # We can't setup runner in the constructor, so we
+        # set them up the first time the project is displayed:
+        if not self._runners_loaded:
+            self.ensure_runners_config()
+
+    def ensure_runners_config(self):
+        # We are using the SubprocessManager commands
+        # to ensure our Group and Runners are declared:
+
+        session = self.root().session()
+        subprocess_manager = session.get_actor('SubprocessManager')
+        # Create a group with the projet name and set an icon:
+        group = subprocess_manager.get_group(self.name())
+        group.set_config(
+            'icon', ('icons.flow', 'film')
+        )
+
+        # Add our project specific stuff:
+        subprocess_manager.ensure_runner(
+            runners.MyProjectStuffLaunch, group_name=group.name
+        )
+
+``` 
+
+## Run Subprocesses from the Flow
+
+This is the most important since running stuff without 
+contextual argv is not what we need 90% of time :p
+
+In order to use your Runners from the flow and to have them use
+some values from your flow (filename, env var, flag, etc...), you
+will use the Action provided in `kabaret.subprocess_manager.flow`:
+
+Here we define an RunAction that uses the parent's `filename` Param
+to as a command line flag to a hypotetical previously registered
+`TextEdit` runner:
+```
+class EditAction(RunAction):
+
+    _scene = flow.Parent()
+
+    def runner_name_and_group(self):
+        return 'TextEdit', None
+
+    def needs_dialog(self):
+        return False
+
+    def extra_argv(self):
+        # All strings returned here will be
+        # appended to the runner command line:
+        return [self._scene_.filename.get()]
+``` 
+
+You can also provide `extr_env`, let the user select the version
+of the runner, etc...
+
