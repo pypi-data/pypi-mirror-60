@@ -1,0 +1,8 @@
+[VARIABLES]
+dummy-variables-rgx=_|dummy
+
+[MESSAGES CONTROL]
+disable =
+    logging-format-interpolation,
+    I,
+    bad-continuation, # black takes care of this

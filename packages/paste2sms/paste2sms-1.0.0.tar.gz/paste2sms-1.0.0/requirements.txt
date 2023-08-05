@@ -1,0 +1,4 @@
+notify2
+pyperclip
+pyxdg
+requests
