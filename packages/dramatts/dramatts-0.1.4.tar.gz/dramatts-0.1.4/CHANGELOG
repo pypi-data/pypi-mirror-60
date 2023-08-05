@@ -1,0 +1,34 @@
+Changelog
+---------
+
+v0.1.4:
+Date: 2020-01-23
+
+fixes:
+* bugs in scene selection fixed - scene selection did not have any effect (note: start scene now defaults to 0)
+* default substitutions updated
+* some file handling improvements and basic input checks in render methods - caused render threads to crash
+
+New features:
+* some unit tests for core-module added
+
+
+v0.1.3:
+Date: 2020-01-22
+
+fixes:
+* missing values in project export caused render to fail on imported projects
+
+
+v0.1.2:
+Date: 2020-01-22
+
+fixes:
+* check for valid voices configs added, when project is loaded/speaker is added, etc.
+
+
+v0.1.1:
+Date: 2020-01-22
+
+fixes:
+* documentation homepage fixed in setup.py (fixes pip package build error)
