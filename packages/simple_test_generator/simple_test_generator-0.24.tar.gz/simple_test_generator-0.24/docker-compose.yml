@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  package:
+    build:
+      context: .
+
+  botostubs:
+    build:
+      context: .
+      dockerfile: botostubs.dockerfile
