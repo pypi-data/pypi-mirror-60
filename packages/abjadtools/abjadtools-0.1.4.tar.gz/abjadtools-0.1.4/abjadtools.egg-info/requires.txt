@@ -1,0 +1,2 @@
+abjad>=3.1
+abjad-ext-nauert@ https://github.com/Abjad/abjad-ext-nauert/tarball/masterabjad-ext-nauert>=3.1music21
