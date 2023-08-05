@@ -1,0 +1,9 @@
+README.md
+setup.py
+MicceriRD/Data.py
+MicceriRD/Sampling.py
+MicceriRD/__init__.py
+MicceriRD.egg-info/PKG-INFO
+MicceriRD.egg-info/SOURCES.txt
+MicceriRD.egg-info/dependency_links.txt
+MicceriRD.egg-info/top_level.txt
