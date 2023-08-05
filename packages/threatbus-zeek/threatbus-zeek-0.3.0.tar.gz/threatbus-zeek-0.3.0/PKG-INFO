@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: threatbus-zeek
+Version: 0.3.0
+Summary: A plugin to enable threatbus communication with Zeek network monitor.
+Home-page: https://github.com/tenzir/threatbus
+Author: Tenzir
+Author-email: engineering@tenzir.com
+License: BSD 3-clause
+Description: UNKNOWN
+Keywords: threatbus,Zeek,intrusion detection,IDS,broker,plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Object Brokering
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.7
