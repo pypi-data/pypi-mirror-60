@@ -1,0 +1,3 @@
+[console_scripts]
+UCS633-topsis-SumitJain-101703570 = packagesj.__init__:topsis
+
