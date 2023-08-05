@@ -1,0 +1,27 @@
+@startuml
+
+namespace ZeffClient.genericrecord {
+	class Record {
+		name: String
+		void validate()
+		void submit()
+	}
+	Record "1" *-- "0..*" StructuredData
+	Record "1" *-- "0..*" UnstructuredData
+
+	class StructuredData {
+		name: String
+		value: String, Int, Float, Bool
+		data_type: [continuous, discrete]
+		target: [yes, no, ignore]
+	}
+
+	class UnstructuredData{
+		data: URI
+		file_type: [image, video, audio, document, text, meta]
+		group_by: String
+		embeddata: Bool
+	}
+}
+
+@enduml

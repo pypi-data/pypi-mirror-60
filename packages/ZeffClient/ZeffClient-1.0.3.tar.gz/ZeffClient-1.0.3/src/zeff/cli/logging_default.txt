@@ -1,0 +1,107 @@
+#  ____     __  __  ___ _ _         _
+# |_  /___ / _|/ _|/ __| (_)___ _ _| |_
+#  / // -_)  _|  _| (__| | / -_) ' \  _|
+# /___\___|_| |_|  \___|_|_\___|_||_\__|
+#
+# :Author: Lance Finn Helsten <lanhel@zeff.ai>
+# :Copyright: Copyright © 2019, Ziff, Inc. — All Rights Reserved
+# :License:
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+{
+    'version': 1,
+    'root': {
+        'level': 'INFO',
+        'handlers': ['console', 'master']
+    },
+    'loggers': {
+        'zeffclient.record.generator': {
+            'level': 'DEBUG',
+			'propagate': False,
+			'handlers': ['console', 'master', 'generator'],
+        },
+        'zeffclient.record.builder': {
+            'level': 'DEBUG',
+			'propagate': False,
+			'handlers': ['console', 'master', 'builder'],
+        },
+        'zeffclient.record.validator': {
+            'level': 'DEBUG',
+			'propagate': False,
+			'handlers': ['console', 'master', 'validator'],
+        },
+        'zeffclient.record.uploader': {
+            'level': 'DEBUG',
+			'propagate': False,
+			'handlers': ['console', 'master', 'uploader'],
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'level': 'WARNING',
+            'stream': 'ext://sys.stdout',
+            'formatter': 'brief'
+        },
+		'master': {
+		    'class': 'logging.FileHandler',
+			'level': 'DEBUG',
+			'formatter': 'precise',
+			'filename': 'master.log',
+		},
+		'generator': {
+		    'class': 'logging.FileHandler',
+			'level': 'DEBUG',
+			'formatter': 'precise',
+			'filename': 'generator.log',
+		},
+		'builder': {
+		    'class': 'logging.FileHandler',
+			'level': 'DEBUG',
+			'formatter': 'precise',
+			'filename': 'builder.log',
+		},
+		'validator': {
+		    'class': 'logging.FileHandler',
+			'level': 'DEBUG',
+			'formatter': 'precise',
+			'filename': 'validator.log',
+		},
+		'uploader': {
+		    'class': 'logging.FileHandler',
+			'level': 'DEBUG',
+			'formatter': 'precise',
+			'filename': 'uploader.log',
+		},
+    },
+    'formatters': {
+        'brief': {
+			'style': '{',
+            'format': '{levelname:8s} {name:28s} {message:s}',
+        },
+        'precise': {
+			'style': '%',
+            'format': '%(asctime)s %(processName)s %(name)-28s %(levelname)-8s [%(lineno)03d]%(module)-24s %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S'
+        },
+		'concise': {
+			'style': '%',
+			'format': '%(processName)s:%(name)s:%(levelname)s:%(module)s.%(funcName)s:%(message)s'
+		},
+        'default': {
+			'style': '%',
+            'format': '%(asctime)s %(processName)s %(name)-8s %(levelname)-8s %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S'
+        }
+    },
+}
+

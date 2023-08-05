@@ -1,0 +1,39 @@
+version: "1.0"
+stages:
+  - clone
+  - build
+  - test
+  - integration
+steps:
+  main_clone:
+    type: git-clone
+    stage: clone
+    description: "Cloning main repository..."
+    repo: "zeff-ai/ZeffClient"
+    revision: "${{CF_BRANCH}}"
+  ZeffClientImage:
+    type: build
+    stage: build
+    title: "Building ZeffClient Docker Image"
+    image_name: "zeff-ai/ZeffClient"
+    tag: "${{CF_BRANCH_TAG_NORMALIZED}}-${{CF_SHORT_REVISION}}"
+    dockerfile: .codefresh/Dockerfile
+  UnitTests:
+    stage: test
+    type: composition
+    title: "Running unit tests"
+    #image: "${{ZeffClientImage}}"
+    #commands:
+    #    - make validate
+    # The composition exists to work around a freestyle bug
+    composition:
+        version: "3"
+        services:
+            alpine:
+              image: alpine
+    composition_candidates:
+        test:
+          image: ${{ZeffClientImage}}
+          links:
+              - alpine
+          command: "make validate"

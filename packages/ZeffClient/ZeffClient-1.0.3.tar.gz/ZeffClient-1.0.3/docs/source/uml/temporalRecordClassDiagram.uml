@@ -1,0 +1,45 @@
+@startuml
+
+namespace ZeffClient.temporalrecord {
+	class TemporalRecord {
+		name: String
+		void validate()
+		void submit()
+	}
+	TemporalRecord "1" *-- "0..*" StructuredData
+	TemporalRecord "1" *-- "0..*" UnstructuredData
+
+	class StructuredData {
+		name: String
+		value: String, Int, Float, Bool
+		data_type: [continuous, discrete]
+		target: [yes, no, ignore] = ignore
+	}
+
+	class UnstructuredData {
+		data: URI
+		file_type: [video, audio]
+		group_by: String
+		window: Duration
+	}
+	UnstructuredData "1" *-- "0..*" FileContext
+
+	class FileContext {
+		name: String
+		value: Bytes
+		data_type: [continuous, discrete]
+		location_start: Period
+		location_end: Period
+	}
+	FileContext "1" *-- "0..*" SubContext
+
+	class SubContext {
+		name: String
+		value: Bytes
+		data_type: [continuous, discrete]
+		location_start: Period
+		location_end: Period
+	}
+}
+
+@enduml

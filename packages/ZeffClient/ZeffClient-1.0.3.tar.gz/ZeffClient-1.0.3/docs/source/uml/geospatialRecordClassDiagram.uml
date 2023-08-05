@@ -1,0 +1,29 @@
+@startuml
+
+namespace ZeffClient.geospatialrecord {
+	class GeospatialRecord {
+		name: String
+		void validate()
+		void submit()
+	}
+	GeospatialRecord "1" *-- "0..*" StructuredData
+	GeospatialRecord "1" *-- "0..*" UnstructuredData
+
+	class StructuredData {
+		name: String
+		value: String, Int, Float, Bool
+		data_type: [continuous, discrete]
+		target: [yes, no, ignore]
+	}
+	note bottom of StructuredData: Required entries:\n`latitude`\n`longitude`
+
+	class UnstructuredData{
+		data: URI
+		file_type: [image, video, audio, document, text, meta]
+		group_by: String
+		embeddata: Bool
+	}
+}
+
+@enduml
+

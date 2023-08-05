@@ -1,0 +1,55 @@
+############
+# .gitignore
+############
+
+
+##########
+# Documentation archives
+
+docs/source/examples/zeffclient_example_*.tar.bz2
+
+
+##########
+# Generated project directories
+
+var
+tmp
+
+
+##########
+# Editors
+
+*~
+.*.swp
+Session.vim
+*.sublime-project
+*.sublime-workspace
+
+
+##########
+# Python
+
+.venv
+venv
+VENV
+
+build/
+dist/
+sdist/
+.eggs
+*.egg-info
+pip-wheel-metadata
+
+__pycache__
+*.pyc
+*.pyo
+*.log
+*.orig
+.pycache
+
+.pytest_cache/
+.coverage/
+coverage_html_report/
+.mypy_cache/
+.hypothesis/
+
