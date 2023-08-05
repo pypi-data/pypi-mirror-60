@@ -1,0 +1,12 @@
+meticulous/__init__.py,sha256=gy3P0icNqJ4-W0pG_E7eEEgkIpm67INRw99kOScE6hg,87
+meticulous/__main__.py,sha256=-roidRTwA6AQaXoqSmFdmSuAJVvnTT4dvZVnP0PW9q8,980
+meticulous/_github.py,sha256=hW3tgirMJJu5tonKO8FoNCtJQmgO1tYaokexZO_Zfv4,2641
+meticulous/_process.py,sha256=OQzdF0Eo4kWAyQHEUklCPoHmicTt83tJ-YUv7N1steY,15786
+meticulous/_secrets.py,sha256=NPHm-mUY79phdpXMSvjUtUx1cgvLlBuXO9LeHDh1te0,390
+meticulous/_sources.py,sha256=sD38X4A7VhL8s6wFo0Z_c_kT3-oObifTH4f3qUq1RJ0,1677
+meticulous/_storage.py,sha256=5Mf1Lh9HjBjfc0voEm8EoPHaFWCBMbNgLiIACxa9Umc,1866
+meticulous/version.py,sha256=BN999fEoO_bKlJipVsFLpfGjKK1_gDAcL72CL3v0fh4,63
+meticulous-0.8.0.dist-info/METADATA,sha256=_m897WstDPHCtHBhuLAkpBz2YrWaiBNB1GJxRVf7vjI,4187
+meticulous-0.8.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+meticulous-0.8.0.dist-info/top_level.txt,sha256=2tyEnBmgH7L-14gMs2syfB_KTA0MtEktqLIsLypMzYA,11
+meticulous-0.8.0.dist-info/RECORD,,
