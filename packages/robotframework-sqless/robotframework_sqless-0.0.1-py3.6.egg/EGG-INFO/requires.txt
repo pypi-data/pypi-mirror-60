@@ -1,0 +1,3 @@
+robotframework>=3.1.2
+pyyaml>=5.3
+nopea>=0.0.4
