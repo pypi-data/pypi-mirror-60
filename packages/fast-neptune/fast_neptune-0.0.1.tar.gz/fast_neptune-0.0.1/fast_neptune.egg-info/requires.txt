@@ -1,0 +1,4 @@
+psutil
+neptune_client
+nbdev
+fastai
