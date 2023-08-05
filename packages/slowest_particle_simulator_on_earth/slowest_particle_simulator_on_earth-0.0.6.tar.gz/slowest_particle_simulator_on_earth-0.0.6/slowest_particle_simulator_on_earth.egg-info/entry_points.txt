@@ -1,0 +1,3 @@
+[console_scripts]
+slowest_particle_simulator_on_earth = slowest_particle_simulator_on_earth.__main__:main
+

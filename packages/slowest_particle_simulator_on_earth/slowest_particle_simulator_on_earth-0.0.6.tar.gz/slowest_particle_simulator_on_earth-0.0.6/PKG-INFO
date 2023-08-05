@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: slowest_particle_simulator_on_earth
+Version: 0.0.6
+Summary: A very slow particle simulator for exploding nifti files.
+Home-page: https://github.com/ofgulban/slowest-particle-simulator-on-earth
+Author: Omer Faruk Gulban
+Author-email: UNKNOWN
+License: BSD-3-clause
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: mri,nifti,particle,voxel,simulation,explosion
+Platform: UNKNOWN

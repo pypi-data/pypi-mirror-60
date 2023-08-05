@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+slowest_particle_simulator_on_earth/__init__.py
+slowest_particle_simulator_on_earth/__main__.py
+slowest_particle_simulator_on_earth/config.py
+slowest_particle_simulator_on_earth/core.py
+slowest_particle_simulator_on_earth/utils.py
+slowest_particle_simulator_on_earth.egg-info/PKG-INFO
+slowest_particle_simulator_on_earth.egg-info/SOURCES.txt
+slowest_particle_simulator_on_earth.egg-info/dependency_links.txt
+slowest_particle_simulator_on_earth.egg-info/entry_points.txt
+slowest_particle_simulator_on_earth.egg-info/requires.txt
+slowest_particle_simulator_on_earth.egg-info/top_level.txt
+slowest_particle_simulator_on_earth.egg-info/zip-safe
