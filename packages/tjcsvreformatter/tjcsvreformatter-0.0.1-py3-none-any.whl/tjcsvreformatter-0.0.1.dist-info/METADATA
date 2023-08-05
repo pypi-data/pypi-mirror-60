@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tjcsvreformatter
+Version: 0.0.1
+Summary: reformat old csvs into new format specified here:https://wiki.mgcorp.co/pages/viewpage.action?spaceKey=ENGADS&title=DSP+CSV
+Home-page: https://stash.mgcorp.co/projects/ADS/repos/tj-reformat-csvs/browse
+Author: Maryia Hanina
+Author-email: maryia.ganina@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.*
+Requires-Dist: pandas
+Requires-Dist: datetime
+Requires-Dist: argparse
+Requires-Dist: csv
+Requires-Dist: json
+Requires-Dist: os
+
+UNKNOWN
+
+
