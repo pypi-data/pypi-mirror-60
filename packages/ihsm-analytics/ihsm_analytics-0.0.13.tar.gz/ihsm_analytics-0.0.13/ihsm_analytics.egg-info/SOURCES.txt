@@ -1,0 +1,13 @@
+MANIFEST.in
+build_config.py
+ihsm_analytics/__init__.py
+ihsm_analytics/ar.cp37-win_amd64.pyd
+ihsm_analytics/ar_module.cp37-win_amd64.pyd
+ihsm_analytics/eor.cp37-win_amd64.pyd
+ihsm_analytics/screening_table.csv
+ihsm_analytics/screening_table_2019.csv
+ihsm_analytics.egg-info/PKG-INFO
+ihsm_analytics.egg-info/SOURCES.txt
+ihsm_analytics.egg-info/dependency_links.txt
+ihsm_analytics.egg-info/requires.txt
+ihsm_analytics.egg-info/top_level.txt
