@@ -1,0 +1,3 @@
+[console_scripts]
+jemdoc = jemdoc.main:main
+
