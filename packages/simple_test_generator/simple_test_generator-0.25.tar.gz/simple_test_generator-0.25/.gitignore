@@ -1,0 +1,12 @@
+
+.idea/
+dist/
+*.iml
+__pycache__/
+ex_simple_test_generator.main/
+test_pytestgen_cases.py
+botostubs
+simple_test_generator/conftest-*-record.py
+simple_test_generator/conftest-*-runtime.py
+simple_test_generator/conftest.py
+test-data/

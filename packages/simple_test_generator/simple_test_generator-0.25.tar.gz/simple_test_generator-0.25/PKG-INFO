@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: simple_test_generator
+Version: 0.25
+Summary: A simple cli-based recorder for Python
+Home-page: https://github.com/jeshan/simple-test-generator
+Author: Jeshan G. BABOOA
+Author-email: j@jeshan.co
