@@ -1,0 +1,34 @@
+# curv-logger
+Logger with timing added & some helpful usage added like `with`
+## Installing package
+```shell script
+pip install curv-logger
+```
+
+## Installing for local development
+```shell script
+git clone https://github.com/rep-ai/curv-logger.git
+cd curv-logger
+pip install -r requirements.txt
+pip install -e .
+```
+
+## Basic Usage
+```python
+from curv_logger import Logger
+from time import sleep
+
+logger = Logger(name="my-logger", level=Logger.level.WARNING)
+
+with logger(sleep):
+    sleep(0.01)
+with logger("sleep for 0.1s"):
+    sleep(0.1)
+with logger("sleep for 1s"):
+    sleep(1)
+```
+
+## Updating package
+```shell script
+bash deploy.sh
+```

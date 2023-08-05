@@ -1,0 +1,8 @@
+README.md
+setup.py
+curv_logger/__init__.py
+curv_logger.egg-info/PKG-INFO
+curv_logger.egg-info/SOURCES.txt
+curv_logger.egg-info/dependency_links.txt
+curv_logger.egg-info/requires.txt
+curv_logger.egg-info/top_level.txt
