@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: portwait
+Version: 1.0.0
+Summary: CLI tool for waiting on ports to open
+Home-page: https://github.com/jdotpy/portwait
+Author: KJ
+Author-email: jdotpy@users.noreply.github.com
+License: UNKNOWN
+Download-URL: https://github.com/jdotpy/portwait/tarball/master
+Description: UNKNOWN
+Keywords: tools
+Platform: UNKNOWN
