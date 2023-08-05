@@ -1,0 +1,4 @@
+gunicorn==19.9.0
+gevent==1.4.0
+raven[flask]==6.10.0
+
