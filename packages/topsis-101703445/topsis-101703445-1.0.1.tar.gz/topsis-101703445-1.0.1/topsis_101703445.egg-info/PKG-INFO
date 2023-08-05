@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: topsis-101703445
+Version: 1.0.1
+Summary: A python package implementing topsis
+Home-page: UNKNOWN
+Author: Ritwik Khurana
+Author-email: UNKNOWN
+License: MIT
+Description: Project 1 of UCS633 Ritwik Khurana 101703445
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
