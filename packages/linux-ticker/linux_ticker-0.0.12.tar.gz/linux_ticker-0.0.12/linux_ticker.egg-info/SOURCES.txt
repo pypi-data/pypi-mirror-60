@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+linux_ticker/__init__.py
+linux_ticker/linux_ticker.py
+linux_ticker.egg-info/PKG-INFO
+linux_ticker.egg-info/SOURCES.txt
+linux_ticker.egg-info/dependency_links.txt
+linux_ticker.egg-info/not-zip-safe
+linux_ticker.egg-info/top_level.txt
