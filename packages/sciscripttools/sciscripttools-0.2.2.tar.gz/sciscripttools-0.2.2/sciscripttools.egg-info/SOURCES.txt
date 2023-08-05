@@ -1,0 +1,15 @@
+README.md
+setup.py
+sciscripttools/__init__.py
+sciscripttools/arguments.py
+sciscripttools/checks.py
+sciscripttools/common_code.py
+sciscripttools/conversion.py
+sciscripttools/generic.py
+sciscripttools/io.py
+sciscripttools/plot.py
+sciscripttools/plot_defaults.py
+sciscripttools.egg-info/PKG-INFO
+sciscripttools.egg-info/SOURCES.txt
+sciscripttools.egg-info/dependency_links.txt
+sciscripttools.egg-info/top_level.txt
