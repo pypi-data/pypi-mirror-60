@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: ArabicPreProcessing
+Version: 0.1
+Summary: Arabic PreProcessing Functions that must applied before run any ML model.
+Home-page: https://github.com/rashed963
+Author: Rashed Sabra
+Author-email: rashed.sabra@gmail.com
+License: MIT
+Download-URL: https://github.com/rashed963/ArabicPreProcessing/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: NLP,pre-processing,Arabic
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
