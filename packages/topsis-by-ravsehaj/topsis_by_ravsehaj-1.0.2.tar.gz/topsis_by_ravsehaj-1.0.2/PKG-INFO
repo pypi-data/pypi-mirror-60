@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: topsis_by_ravsehaj
+Version: 1.0.2
+Summary: A package for Topsis technique
+Home-page: https://github.com/Ravsehajsinghpuri/topsis_by_ravsehaj
+Author: Ravsehaj Singh Puri
+Author-email: ravsehajsinghpuri@gmail.com
+License: UNKNOWN
+Description: # pypi_Packages
+        This package is implementation of TOPSIS technique of multi-criteria decision analysis. There is a function in this package named rank_data which will accept three parameters: data_filename_path //file which contains the models and parameters list of weights separated by commas(,) list of impacts [+/-] separated by commas(,) You can install this package using following command pip install topsis_by_ravsehaj
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,2 @@
+# pypi_Packages
+This package is implementation of TOPSIS technique of multi-criteria decision analysis. There is a function in this package named rank_data which will accept three parameters: data_filename_path //file which contains the models and parameters list of weights separated by commas(,) list of impacts [+/-] separated by commas(,) You can install this package using following command pip install topsis_by_ravsehaj
