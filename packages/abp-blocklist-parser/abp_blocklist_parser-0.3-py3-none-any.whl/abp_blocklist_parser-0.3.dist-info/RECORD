@@ -1,0 +1,9 @@
+abp_blocklist_parser/BlockListParser.py,sha256=PooTDm-uTzJYkL49xBhyH5Ucz7fFVCYBkVVqWHhWAGE,12603
+abp_blocklist_parser/FastHash.py,sha256=UvCzUzI9_xHFPCOBL1ov_gr7qwTM_bIbmSJh58z7gtM,1330
+abp_blocklist_parser/RegexParser.py,sha256=RubRSUk7obiBI7MV5QpRxtNOaL1pFFh0oMpyLrC54fw,11340
+abp_blocklist_parser/__init__.py,sha256=e5pgixt4Ymw0ta0hmd-urw7ZOHrN1wIMVgmQ-u7HWZI,110
+abp_blocklist_parser-0.3.dist-info/LICENSE,sha256=vyIUrZSf1HxBX2VhHFEfL_PM-kB3CmtNQS__r0PUcBY,37743
+abp_blocklist_parser-0.3.dist-info/METADATA,sha256=JzgGmbaqMs9O5xI98YCut1K93-Dqp8bu7wNwSAYzb-w,1430
+abp_blocklist_parser-0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+abp_blocklist_parser-0.3.dist-info/top_level.txt,sha256=iSUr26oRUobgUvl2nFK-e6yioDwlOdPgpFvdNTdG1h8,21
+abp_blocklist_parser-0.3.dist-info/RECORD,,
