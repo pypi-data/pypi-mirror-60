@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PygameFloatObjects
+Version: 0.0.3
+Summary: Improved Pygame objects to store float attributes
+Home-page: https://github.com/MrComboF10/PygameFloatObjects
+Author: Pedro Azevedo
+Author-email: p.costa.azevedo@gmail.com
+License: MIT
+Description: # PygameFloatObjects
+        
+        Improved pygame objects to store float attributes.
+        
+        This module helps pygame developers to create objects like rect, circle and fonts, and store float values like size and coordinates in order to update them during the game without losing precision.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: pygame
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
