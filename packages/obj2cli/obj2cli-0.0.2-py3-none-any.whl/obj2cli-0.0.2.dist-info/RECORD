@@ -1,0 +1,13 @@
+obj2cli/__init__.py,sha256=arzD6dleHJLLzqE6TtTVMspQJWpzr8jnTr8KiQYZxGo,89
+obj2cli/_cli.py,sha256=yc9PqwguRddQN5HxWanHFTcv_0WgXWCBsMKQaXCFWOE,3514
+obj2cli/_cli_click.py,sha256=a661P4fFRHjB9uhRZ1Dj2564OvRclu8luV5Sh55t-Wc,4391
+obj2cli/argparse.py,sha256=txZeRZtgbuN0bRnIAQtaXMAsqt59iqkVGNzGr_Bci-s,5204
+obj2cli/main.py,sha256=lVPw6BnFelMM645_5xT1HOyMDevbhgtRqueKKd0PVO0,1959
+obj2cli/parser.py,sha256=3DOO-tS8ZRgnSPPx-kb03CPyzbJrg9Il0LiZ_5OjdCw,3224
+obj2cli/version.py,sha256=ZIcthrC--5rw9WkqkU9nHr5wejcvP3fEqLzPjoXXF3c,18
+obj2cli-0.0.2.dist-info/LICENSE,sha256=Mf3_hWAbpR6U8pF7eyGjqEek82VKbNOCZby9z4PkuBk,1073
+obj2cli-0.0.2.dist-info/METADATA,sha256=bpY0E-qX40ZYzTez4TeUFsBM1-sS6HBm7Ie3Av7cexU,2817
+obj2cli-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+obj2cli-0.0.2.dist-info/entry_points.txt,sha256=Bj3o7IJnEo-qgDMnUzfiXz9eT146FnloYyXf3Oak2ls,86
+obj2cli-0.0.2.dist-info/top_level.txt,sha256=9YaMA9IYrHukjjHB7DyPUbds6h93-d-JIN1DFPTSG48,8
+obj2cli-0.0.2.dist-info/RECORD,,
