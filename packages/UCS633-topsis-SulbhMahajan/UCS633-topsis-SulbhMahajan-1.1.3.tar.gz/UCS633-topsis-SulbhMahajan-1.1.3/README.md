@@ -1,0 +1,1 @@
+This is a python package to implement topsis(MCDM-multi-criteria decision analysis method).
