@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: stressor
+Version: 0.0.1
+Summary: Stress-test your web app
+Home-page: https://github.com/mar10/stressor/
+Author: Martin Wendt
+Author-email: stressor@wwwendt.de
+Maintainer: Martin Wendt
+Maintainer-email: stressor@wwwendt.de
+License: MIT
+Description: # ![logo](https://raw.githubusercontent.com/mar10/stressor/master/stressor/monitor/htdocs/stressor_48x48.png) stressor
+        [![Build Status](https://travis-ci.org/mar10/stressor.svg?branch=master)](https://travis-ci.org/mar10/stressor)
+        [![Latest Version](https://img.shields.io/pypi/v/stressor.svg)](https://pypi.python.org/pypi/stressor/)
+        [![License](https://img.shields.io/pypi/l/stressor.svg)](https://github.com/mar10/stressor/blob/master/LICENSE)
+        [![Documentation Status](https://readthedocs.org/projects/stressor/badge/?version=latest)](http://stressor.readthedocs.io/)
+        [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+        [![StackOverflow: stressor](https://img.shields.io/badge/StackOverflow-stressor-blue.svg)](https://stackoverflow.com/questions/tagged/stressor)
+        
+        Stress-test your web app
+        
+Keywords: web server load test stress
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Traffic Generation
+Description-Content-Type: text/markdown
