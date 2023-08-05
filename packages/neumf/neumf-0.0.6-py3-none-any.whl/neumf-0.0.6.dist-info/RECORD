@@ -1,0 +1,13 @@
+neumf/__init__.py,sha256=KkhC_OsGN1cWR4ZT3fflzE3drQkeygYe_dZRWn1whzw,491
+neumf/settings.py,sha256=smPeKZpknOZ2N0RBv_CqSbUvtBimT4_3t84PvmSx9AA,581
+neumf/utils.py,sha256=2L__hklkODxI5j2W2RNUE2BRQw37Naf7vyzt50DXES0,56
+neumf/model/NeuMF.py,sha256=7W4JnqgNFOReIjcaswq1HZuxcpoy-slYRpkqE-S3hPI,12263
+neumf/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neumf/model/gpus.py,sha256=YrhA-rWCnmkdJ5VqgfOpRc8Tl6L67LAchMviZqvYqt8,1817
+neumf/model/layers.py,sha256=5IQosXPBydAcozk5gA1dBr1wJHcIgTjM0jgU-cANWFM,1770
+neumf/model/loss.py,sha256=f1g4nXMwxc0vyoRbtycqtPrCyXtIINDBfXEuxX_TysQ,736
+neumf/model/utils.py,sha256=-OwxB82yQMdL9BhBxav0upXULqHU3JCUM3z_rAuQsn8,1769
+neumf-0.0.6.dist-info/METADATA,sha256=wVnJ_2n6THI1V_AEo_wnzdyyYujbexwC7Q8VRNjWOGU,751
+neumf-0.0.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+neumf-0.0.6.dist-info/top_level.txt,sha256=1kVSWXqu-MehAmXhKX7wZ3RUGHs8qc4WCzQlPxS4vZU,6
+neumf-0.0.6.dist-info/RECORD,,
