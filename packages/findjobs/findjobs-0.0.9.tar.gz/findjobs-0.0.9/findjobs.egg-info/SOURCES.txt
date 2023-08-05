@@ -1,0 +1,7 @@
+README.md
+setup.py
+findjobs.egg-info/PKG-INFO
+findjobs.egg-info/SOURCES.txt
+findjobs.egg-info/dependency_links.txt
+findjobs.egg-info/requires.txt
+findjobs.egg-info/top_level.txt
