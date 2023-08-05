@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: saenopy
+Version: 0.7.2
+Summary: Semi-elastic fiber optimisation in python.
+Home-page: UNKNOWN
+Author: Richard Gerum
+Author-email: richard.gerum@fau.de
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Provides-Extra: compilation
+Requires-Dist: numba ; extra == 'compilation'
+
+UNKNOWN
+
+
