@@ -1,0 +1,12 @@
+sqlalchemy
+aiohttp
+pint
+psycopg2
+alembic
+click
+
+[jupyter]
+ipywidgets
+
+[yappi]
+yappi
