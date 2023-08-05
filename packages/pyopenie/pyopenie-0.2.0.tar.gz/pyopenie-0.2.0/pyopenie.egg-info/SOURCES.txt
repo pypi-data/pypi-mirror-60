@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyopenie/__init__.py
+pyopenie/openie.py
+pyopenie.egg-info/PKG-INFO
+pyopenie.egg-info/SOURCES.txt
+pyopenie.egg-info/dependency_links.txt
+pyopenie.egg-info/requires.txt
+pyopenie.egg-info/top_level.txt
