@@ -1,0 +1,11 @@
+jenkins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jenkins/backup.py,sha256=cZRWrV-wtqEMFg44qKjFADOum58OhlkdP4UUcMQ8wek,508
+jenkins/restore.py,sha256=9N3S8KIZMi0GOYYhvEBImDCK7pM-LKDqWAa9M3tXNCw,747
+main/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+main/jenkins_backup_restore.py,sha256=0426vpzMlG8k97KASM2O8QYc3q8hLpEXJwxS_qF3XyQ,3366
+jenkins_backup_restore_cli-1.0.0.dist-info/LICENSE.txt,sha256=DmZLxs9UGNX8HFwtw1ZlWo5MEzBWZ0dMVLhhACqPr0o,1076
+jenkins_backup_restore_cli-1.0.0.dist-info/METADATA,sha256=kf9UY_zbrA8Mzmusy21uvEDFAyc4DPEpcdRSo5jFQcI,4609
+jenkins_backup_restore_cli-1.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+jenkins_backup_restore_cli-1.0.0.dist-info/entry_points.txt,sha256=McWSU-cwNRzcB0Q9bRyogtses2-F53ec9ntjHL7JdO8,77
+jenkins_backup_restore_cli-1.0.0.dist-info/top_level.txt,sha256=Mmo7L_yU1M_3Sonygr5WUvOvaFcql52nx_y9-oqJUhs,13
+jenkins_backup_restore_cli-1.0.0.dist-info/RECORD,,
