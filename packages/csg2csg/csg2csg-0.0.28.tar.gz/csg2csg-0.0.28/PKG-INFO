@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: csg2csg
+Version: 0.0.28
+Summary: Convert CSG geometry into different formats
+Home-page: https://github.com/makeclean/csg2csg
+Author: andrew davis
+Author-email: andrew.davis@ukaea.uk
+License: UNKNOWN
+Description: # csg2csg
+        A tool to translate common Monte Carlo geometry formats between each other.
+        
+        ## How to use
+        Right now the code is petty rough; as is the install procedure.
+        
+        Install using pip
+        ``pip3 install csg2csg --user``
+        
+        Run csg2csg.py -i filename
+        
+        ## Caveats
+        Several! Right now only MCNP can be read, and then written to MCNP Serpent and OpenMC. 
+        When the file can be read only a subset of MCNP surfaces can be read
+        
+        MCNP Surfaces Supported
+         - P,PX,PY,PZ
+         - S SO SX  SY SZ
+         - CX CY CZ C/X C/Y C/Z
+         - SQ
+         - GQ
+         - KX, KY, KZ
+         - TX TY TZ
+         - Macrobodies - RPP, SPH and RCC 
+         - X, Y, Z - one and two coefficent only
+        
+        
+        MCNP Surfaces Not Yet Supported
+         - X, Y, Z - three coefficient
+         - Macrobodies - BOX, RHP, HEX, REC, TRC, ELL, WEB, ARB
+        
+        Tranforms
+         - Are read and interpretted, but nothing is done with them, in the future codes that support cell transformations will use it, but right now MCNP is the only code that does surface transformations 
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
