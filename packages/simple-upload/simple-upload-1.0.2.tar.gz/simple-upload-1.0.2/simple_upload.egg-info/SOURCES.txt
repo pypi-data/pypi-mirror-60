@@ -1,0 +1,8 @@
+README.md
+setup.py
+simple_pip_push/__init__.py
+simple_upload.egg-info/PKG-INFO
+simple_upload.egg-info/SOURCES.txt
+simple_upload.egg-info/dependency_links.txt
+simple_upload.egg-info/entry_points.txt
+simple_upload.egg-info/top_level.txt

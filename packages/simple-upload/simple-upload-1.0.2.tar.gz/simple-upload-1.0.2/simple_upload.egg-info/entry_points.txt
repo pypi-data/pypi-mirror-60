@@ -1,0 +1,3 @@
+[console_scripts]
+pip-upload = simple_pip_push:main
+
