@@ -1,0 +1,3 @@
+[console_scripts]
+black-widow = black_widow:main
+
