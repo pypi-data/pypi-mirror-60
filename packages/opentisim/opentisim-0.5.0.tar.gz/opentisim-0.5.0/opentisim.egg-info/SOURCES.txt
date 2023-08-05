@@ -1,0 +1,56 @@
+.coveragerc
+.dockerignore
+.gitignore
+AUTHORS.rst
+CHANGELOG.rst
+CONTRIBUTING.rst
+Dockerfile
+HISTORY.rst
+LICENSE.txt
+README.md
+docker-compose.yml
+logo-OpenTISim.png
+logo-OpenTISim.svg
+requirements.txt
+setup.cfg
+setup.py
+.circleci/config.yml
+.ipynb_checkpoints/Terminal optimization-checkpoint.ipynb
+docs/Makefile
+docs/OpenTISim.png
+docs/authors.rst
+docs/changelog.rst
+docs/conf.py
+docs/contributing.rst
+docs/history.rst
+docs/index.rst
+docs/installation.rst
+docs/license.rst
+docs/opentisim.rst
+docs/_static/.gitignore
+notebooks/Example 01 - Agribulk terminal example.ipynb
+notebooks/Example 01 - Basic example of terminal development.ipynb
+notebooks/Example 02 - Hydrogen terminal example.ipynb
+notebooks/Example 03 - Container terminal example.ipynb
+opentisim/__init__.py
+opentisim/agribulk_defaults.py
+opentisim/agribulk_mixins.py
+opentisim/agribulk_objects.py
+opentisim/agribulk_system.py
+opentisim/container_defaults.py
+opentisim/container_mixins.py
+opentisim/container_objects.py
+opentisim/container_system.py
+opentisim/hydrogen_defaults.py
+opentisim/hydrogen_mixins.py
+opentisim/hydrogen_objects.py
+opentisim/hydrogen_system.py
+opentisim.egg-info/PKG-INFO
+opentisim.egg-info/SOURCES.txt
+opentisim.egg-info/dependency_links.txt
+opentisim.egg-info/entry_points.txt
+opentisim.egg-info/not-zip-safe
+opentisim.egg-info/requires.txt
+opentisim.egg-info/top_level.txt
+tests/conftest.py
+tests/test_infrastructure.py

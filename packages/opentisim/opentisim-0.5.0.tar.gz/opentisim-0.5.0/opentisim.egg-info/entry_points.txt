@@ -1,0 +1,3 @@
+[console_scripts]
+opentisim = opentisim.cli:cli
+

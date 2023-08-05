@@ -1,0 +1,5 @@
+[run]
+source = opentisim
+
+[report]
+omit = test*, .eggs*
