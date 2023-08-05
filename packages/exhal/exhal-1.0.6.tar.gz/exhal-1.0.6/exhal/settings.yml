@@ -1,0 +1,24 @@
+color: '#ffc58f'
+
+frequency: 1000
+steps: 5
+max_amplitude: 1
+min_amplitude: .08
+
+logging:
+  version: 1
+  disable_existing_loggers: True
+  formatters:
+    simple:
+      format: '%(asctime)s: %(message)s'
+    verbose:
+      format: '%(asctime)s [%(levelname)s] %(module)s %(message)s'
+  handlers:
+    console:
+      class: logging.StreamHandler
+      level: DEBUG
+      formatter: simple
+      stream: ext://sys.stdout
+  root:
+    level: DEBUG
+    handlers: [console]
