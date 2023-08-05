@@ -1,0 +1,3 @@
+[console_scripts]
+Rank_Predictor_101883054 = top.topsis:main
+
