@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "QuantumGraphs"
+version = "0.1.9"
+description = "Grow random graphs using quantum random walks"
+authors = ["ziofil <miatto@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+numpy = "^1.18"
+scipy = "^1.4"
+networkx = "^2.4"
+matplotlib = "^3.1"
+p-tqdm = "^1.3"
+ipython = "^7.11"
+pandas = "^0.25"
+seaborn = "^0.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
