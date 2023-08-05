@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pytable/__init__.py
+pytable/pytable.py
+pytable/tableError.py
+pytable/tableTest.py
+pytable_console.egg-info/PKG-INFO
+pytable_console.egg-info/SOURCES.txt
+pytable_console.egg-info/dependency_links.txt
+pytable_console.egg-info/not-zip-safe
+pytable_console.egg-info/top_level.txt
