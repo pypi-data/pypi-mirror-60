@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: quickregress
+Version: 0.1
+Summary: Provides a low-effort wrapper for sklearn's polynomial regression
+Home-page: https://github.com/hexaguin/quickregress
+Author: Ryan Hattie
+Author-email: ryan@hattie.email
+License: MIT
+Download-URL: https://github.com/hexaguin/quickregress/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: sklearn,regression
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
