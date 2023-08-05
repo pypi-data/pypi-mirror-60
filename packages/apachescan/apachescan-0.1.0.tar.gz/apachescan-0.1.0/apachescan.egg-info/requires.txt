@@ -1,0 +1,4 @@
+pygtail
+six
+datetime
+argparse

@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: apachescan
+Version: 0.1.0
+Summary: Module scanning Apache HTTP Server log
+Home-page: UNKNOWN
+Author: Quintin Jean-Noel
+Author-email: quintin.jeannoel@gmail.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides: apachescan
