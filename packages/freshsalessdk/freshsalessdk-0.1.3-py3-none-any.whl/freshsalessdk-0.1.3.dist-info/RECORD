@@ -1,0 +1,13 @@
+freshsalessdk/__init__.py,sha256=GIlTUfsNd_M-1PJoxSymJlcrw5lJxBzhwPE6GCy8HpU,100
+freshsalessdk/freshsalessdk.py,sha256=B4mnMSmIaMz-OgyAiAd1XaGpzC0wwNCEu8eijP2XdyU,8359
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/common.py,sha256=6Ah9C-znz32THQ5cr4VgpsSoHFgE7thtyFAeiJI7obI,1729
+test/conftest.py,sha256=87Jse_VrHzhhd_nIlIwZTjUgZzo5YwuUJZ2XvPjD-s8,399
+test/test_accounts.py,sha256=is3DYfgEPbQMdXWz6gf9orYbOX8JDSJyWzvbVpGAJao,1157
+test/test_contacts.py,sha256=vL0b_XiJnKoQoPo5JfsuR4CObX1MYIYZowh5YegViYY,1234
+test/test_deals.py,sha256=r493OmrCnQERUEoc_ZJVwkx6QFsW2LuWYFINpzmy-dk,1058
+freshsalessdk-0.1.3.dist-info/LICENSE,sha256=_OcAxQDwx2t2II4wn0n7ZLhInda--qAJEMSclLAkSO4,1082
+freshsalessdk-0.1.3.dist-info/METADATA,sha256=feyf3XbEORRKtFD9O2fsVOh3cjmkNe9fT9KXLUIafXs,3744
+freshsalessdk-0.1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+freshsalessdk-0.1.3.dist-info/top_level.txt,sha256=9o4UPC65Ddh_bp87dGjeVzTcp2WWT4kn_EQAXAs97XI,19
+freshsalessdk-0.1.3.dist-info/RECORD,,
