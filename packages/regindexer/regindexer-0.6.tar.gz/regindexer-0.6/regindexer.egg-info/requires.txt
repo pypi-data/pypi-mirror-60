@@ -1,0 +1,6 @@
+click
+fedmsg
+PyYAML
+requests
+six
+www-authenticate

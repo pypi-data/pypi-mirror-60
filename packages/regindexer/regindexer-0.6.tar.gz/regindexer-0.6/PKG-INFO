@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: regindexer
+Version: 0.6
+Summary: Tool for creating an index of a container registry
+Home-page: https://pagure.io/regindexer
+Author: Owen Taylor
+Author-email: otaylor@redhat.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
