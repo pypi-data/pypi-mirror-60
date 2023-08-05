@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+Report/Parser.py
+Report/Recorder.py
+Report/__init__.py
+Report/__main__.py
+Report/temp.py
+nCoV.egg-info/PKG-INFO
+nCoV.egg-info/SOURCES.txt
+nCoV.egg-info/dependency_links.txt
+nCoV.egg-info/entry_points.txt
+nCoV.egg-info/requires.txt
+nCoV.egg-info/top_level.txt
