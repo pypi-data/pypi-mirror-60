@@ -1,0 +1,8 @@
+setup.py
+CheckingPyTest1/__init__.py
+CheckingPyTest1/python_code.py
+CheckingPyTest1.egg-info/PKG-INFO
+CheckingPyTest1.egg-info/SOURCES.txt
+CheckingPyTest1.egg-info/dependency_links.txt
+CheckingPyTest1.egg-info/not-zip-safe
+CheckingPyTest1.egg-info/top_level.txt
