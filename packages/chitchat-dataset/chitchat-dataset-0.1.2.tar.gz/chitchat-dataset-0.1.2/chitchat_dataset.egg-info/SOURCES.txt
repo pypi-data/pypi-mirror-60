@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+chitchat_dataset.py
+dataset.json
+setup.py
+chitchat_dataset.egg-info/PKG-INFO
+chitchat_dataset.egg-info/SOURCES.txt
+chitchat_dataset.egg-info/dependency_links.txt
+chitchat_dataset.egg-info/top_level.txt
