@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: primers
+Version: 0.0.2
+Summary: Create PCR primers optimized for length, tm, gc and free energy
+Home-page: https://github.com/Lattice-Automation/primers
+Author: JJTimmons
+Author-email: jtimmons@latticeautomation.com
+License: mit
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Environment :: Console
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: seqfold
+
+# primers
+
+```python
+from primers import pcr, Primer
+
+# create a FWD and REV primer
+ps = pcr("ATGGATGGTAGAGATAGATGG",
+    add_fwd="GGTAGGTAGAT", add_rev="GGTTTTAGGATAGAT", add_min=10, add_max=25,
+    opt_tm=55.0, opt_len=30)
+
+ps[0] # Primer("GGTAGGTAGATATGGATGGT", tm=62.3)
+ps[1] # Primer("GGTTTTAGGATAGATCCTACTATCT", tm=64.0)
+```
+
+
