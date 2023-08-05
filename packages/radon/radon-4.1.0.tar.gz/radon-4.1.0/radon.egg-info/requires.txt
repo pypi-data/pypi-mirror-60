@@ -1,0 +1,4 @@
+mando<0.7,>=0.6
+colorama==0.4.1
+flake8-polyfill
+future
