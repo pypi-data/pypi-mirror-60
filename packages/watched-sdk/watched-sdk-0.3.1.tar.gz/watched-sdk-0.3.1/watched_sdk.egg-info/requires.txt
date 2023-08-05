@@ -1,0 +1,6 @@
+watched-schema>=0.6.0
+diskcache
+redis
+flask
+requests
+markdown
