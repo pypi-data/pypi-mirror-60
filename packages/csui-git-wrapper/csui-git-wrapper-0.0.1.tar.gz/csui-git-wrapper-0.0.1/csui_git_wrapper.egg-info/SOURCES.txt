@@ -1,0 +1,10 @@
+README.md
+setup.py
+csui_git_wrapper/__init__.py
+csui_git_wrapper/__main__.py
+csui_git_wrapper.egg-info/PKG-INFO
+csui_git_wrapper.egg-info/SOURCES.txt
+csui_git_wrapper.egg-info/dependency_links.txt
+csui_git_wrapper.egg-info/entry_points.txt
+csui_git_wrapper.egg-info/requires.txt
+csui_git_wrapper.egg-info/top_level.txt
