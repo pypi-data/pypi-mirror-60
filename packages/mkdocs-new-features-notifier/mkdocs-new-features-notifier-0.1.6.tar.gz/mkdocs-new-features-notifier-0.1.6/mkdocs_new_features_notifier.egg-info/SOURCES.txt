@@ -1,0 +1,10 @@
+README.md
+setup.py
+mkdocs_new_features_notifier/__init__.py
+mkdocs_new_features_notifier/plugin.py
+mkdocs_new_features_notifier.egg-info/PKG-INFO
+mkdocs_new_features_notifier.egg-info/SOURCES.txt
+mkdocs_new_features_notifier.egg-info/dependency_links.txt
+mkdocs_new_features_notifier.egg-info/entry_points.txt
+mkdocs_new_features_notifier.egg-info/requires.txt
+mkdocs_new_features_notifier.egg-info/top_level.txt
