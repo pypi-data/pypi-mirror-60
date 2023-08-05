@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+import sys
+
+import necxxt
+import necxxt.commands
+import necxxt.utils
+import necxxt.utils.logging
+
+
+def main(args):
+    if len(args) == 0 or args[0] == "help":
+        cmd = necxxt.commands.HelpCommand()
+        cmd.run()
+    elif args[0] == "build":
+        cmd = necxxt.commands.BuildCommand()
+        cmd.run()
+    elif args[0] == "install":
+        cmd = necxxt.commands.InstallCommand()
+        cmd.run()
+    elif args[0] == "run":
+        cmd = necxxt.commands.RunCommand()
+        cmd.run()
+    else:
+        cmd = necxxt.commands.HelpCommand()
+        cmd.run()
+        exit(1)
+
+
+if __name__ == "__main__":
+    args = sys.argv[1:]
+
+    main(args)
