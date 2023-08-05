@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+etc/nbextension.json
+etc/serverextension.json
+memory_monitor.egg-info/PKG-INFO
+memory_monitor.egg-info/SOURCES.txt
+memory_monitor.egg-info/dependency_links.txt
+memory_monitor.egg-info/not-zip-safe
+memory_monitor.egg-info/top_level.txt
