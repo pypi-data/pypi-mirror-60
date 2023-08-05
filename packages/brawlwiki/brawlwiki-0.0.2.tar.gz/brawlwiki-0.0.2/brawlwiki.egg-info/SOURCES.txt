@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+brawlwiki/__init__.py
+brawlwiki/core.py
+brawlwiki/errors.py
+brawlwiki/models.py
+brawlwiki/utils.py
+brawlwiki.egg-info/PKG-INFO
+brawlwiki.egg-info/SOURCES.txt
+brawlwiki.egg-info/dependency_links.txt
+brawlwiki.egg-info/requires.txt
+brawlwiki.egg-info/top_level.txt

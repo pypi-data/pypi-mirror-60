@@ -1,0 +1,33 @@
+Metadata-Version: 1.2
+Name: brawlwiki
+Version: 0.0.2
+Summary: An easy to use wrapper for BrawlWiki API
+Home-page: https://github.com/AriusX7/brawlwiki
+Author: AriusX7
+Author-email: icyligii@gmail.com
+License: MIT
+Project-URL: Source Code, https://github.com/AriusX7/brawlwiki
+Project-URL: Issue Tracker, https://github.com/AriusX7/brawlwiki/issues
+Project-URL: Documentation, http://brawlwiki.rtfd.io/
+Description: # brawlwiki
+        
+        - This library is a sync wrapper for [BrawlWiki API](https://ariusx7.github.io/brawlwiki-api/).
+        - Python 3.6 or later is required.
+        
+        ## Features
+        
+        - Covers all of the endpoints of the API.
+        - Access constant values such as attack name, description, etc!
+        - Easy to use with an object oriented design.
+        
+Keywords: brawl stars, brawlstats, supercell,brawlwiki
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Games/Entertainment :: Real Time Strategy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Natural Language :: English
+Requires-Python: >=3.5
