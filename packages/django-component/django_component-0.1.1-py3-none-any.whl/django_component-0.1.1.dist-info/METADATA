@@ -1,0 +1,158 @@
+Metadata-Version: 2.1
+Name: django-component
+Version: 0.1.1
+Summary: Django template tags to create composable components
+Home-page: https://gitlab.com/Mojeer/django_components
+License: MIT
+Keywords: django,components,template
+Author: Jérôme Bon
+Author-email: bon.jerome@protonmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: django (>=1.11)
+Project-URL: Repository, https://gitlab.com/Mojeer/django_components
+Description-Content-Type: text/x-rst
+
+django_component
+#################
+
+The readme is outaded and will be updated only for the first release. Until then refer to the tests
+
+**Better components for Django templates.**
+Inspired by javascript front-end frameworks like Svelte, React, etc
+
+Supports Python **3.6+** and Django **1.11**, **2.0+**, and **3.0+**
+
+
+Describe your components in templatetags/mycomponents.py
+
+.. code-block:: python
+
+    from django_component import Library, Component
+
+    register = Library()
+
+    @register.component
+    class Card(Component):
+        template = "mycomponents/card.html"
+        css = ["mycomponents/card.css"]
+        js = ["mycomponents/card.js"]
+    
+        def context(title, author='Me'):
+            # By default all arguments are passed to the context,
+            # But you can do some context processing if needed
+            return {
+                'short_title': title[:20],
+                'author': author
+            }
+
+Create it's template in template/mycomponents/card.html
+
+.. code-block:: html
+
+    <section class="card">
+        <header>{{ slots.header }}</header>
+        <h1>{{ short_title }}</h1>
+        <div class="content">{{ children }}</div>
+        <footer>
+            Written by {{ author }}
+            {{ slots.footer }}
+        </footer>
+    </section>
+
+Use it in template/homepage.html
+
+.. code-block:: html
+
+    {% load mycomponents %}
+    
+    {% components.use_components_media %}
+    {% components.css %}
+
+    {% Card title="My card's title" %}
+        <div>
+            This will be accessible as the `children` variable.
+            It's just django template, {{ variable }} !
+        </div>
+
+        {% slot header %}
+            This <img src="foo.jpg" />
+            will be in the header of the card
+        {% endslot %}
+
+        {% slot footer %}
+            This <span class="bar">slots</span> 
+            will be in the footer of the card
+        {% endslot %}
+    {% end_Card %}
+
+    {% components.js %}
+
+Why django_component?
+======================
+
+``django_component`` make it easy to create reusable template components. Django already has some features to address this, but they all come with some limitations. ``django_component`` unify what's great from all of these features (``block``, ``includes``, ``inclusion_tag``) under an unique api. In addition ``django_component`` address one of my greatest frustration with reusable components in django: **tracking css and js dependencies** for each component and **automatically** include them when necessary.
+
+``django_component`` api is influenced by javascript frameworks like Svelte, Vue, React, etc
+
+
+Installation
+============
+
+.. code-block:: sh
+
+    pip install git+https://gitlab.com/Mojeer/django_component.git#egg=django_component
+
+Then add ``django_component`` to your INSTALLED_APPS:
+
+.. code-block:: python
+
+    INSTALLED_APPS = [
+        ...,
+        "django_component",
+        ...
+    ]
+
+Usage
+=====
+
+The example at the begining of the readme describe most of the api of ``django_component``. Bellow is a detailed explanation.
+
+Create your component's class
+-----------------------------
+
+A component is describe by it's class. This is where you define it's name, template, css, js, and context processor.
+It's then registered similarly to how you register classic django tags, by instanciating Library, and then calling it's ``component`` method.
+
+.. code-block:: python
+
+    from django_component import Library, Component
+
+    register = Library()
+
+    @register.component
+    class MyComponent(Component):
+        template = 'components/my_component.html'
+        css = ['components/my_component.css']
+        js = ['components/my_component.js']
+
+        def context(foo=5):
+            return {'foo2': foo * 2}
+
+Because django_component.Library inherit from django.template.Library you can also register regular tags with it.
+
+
+Use it in your templates
+------------------------
+
+The opening tag of a component is the same as it's class name, the closing tag is the same prefixed by ``end_``
+
+If your component contains css or js you will need to use ``{% components.use_components_media %}`` before using your components. You can put it in your ``base.html`` template once and then forget about it.
+
+TODO
+For more examples look into tests/templatetags/test_components.py
+
