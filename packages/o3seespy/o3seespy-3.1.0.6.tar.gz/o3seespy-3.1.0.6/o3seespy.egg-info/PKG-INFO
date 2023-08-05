@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: o3seespy
+Version: 3.1.0.6
+Summary: Object-orientated native python version of Opensees
+Home-page: UNKNOWN
+Author: Maxim Millen & Minjie Zhu
+Author-email: mmi46@uclive.ac.nz
+License: MIT
+Description: First deploy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Provides-Extra: test
