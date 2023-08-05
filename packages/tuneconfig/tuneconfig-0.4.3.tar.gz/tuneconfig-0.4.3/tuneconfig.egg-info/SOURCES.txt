@@ -1,0 +1,8 @@
+README.md
+setup.py
+tuneconfig/__init__.py
+tuneconfig.egg-info/PKG-INFO
+tuneconfig.egg-info/SOURCES.txt
+tuneconfig.egg-info/dependency_links.txt
+tuneconfig.egg-info/not-zip-safe
+tuneconfig.egg-info/top_level.txt
