@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: jexia-sdk
+Version: 0.0.1.dev3
+Summary: Official SDK for Jexia platform
+Home-page: https://github.com/jexia/jexia-sdk-python
+Author: Jexia
+Author-email: sdk-team@jexia.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/jexia/jexia-sdk-python/issues
+Project-URL: Source, https://github.com/jexia/jexia-sdk-python/
+Keywords: jexia sdk
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2.7.15, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: PyJWT (==1.4.0)
+Provides-Extra: dev
+Requires-Dist: mock (==3.0.5) ; extra == 'dev'
+Requires-Dist: pytest-profiling (==1.7.0) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.7.1) ; extra == 'dev'
+Requires-Dist: flake8 (==3.7.9) ; extra == 'dev'
+Requires-Dist: flake8-colors ; extra == 'dev'
+Requires-Dist: docutils (==0.16) ; extra == 'dev'
+Requires-Dist: tox (==3.13.2) ; extra == 'dev'
+Requires-Dist: invoke (==1.3.0) ; extra == 'dev'
+Requires-Dist: pygments (==2.2.0) ; extra == 'dev'
+Requires-Dist: pytest (==4.6.5) ; (python_version < "3.5") and extra == 'dev'
+Requires-Dist: pytest (==5.0.1) ; (python_version >= "3.5") and extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: alabaster (==0.7.12) ; extra == 'doc'
+Requires-Dist: Sphinx (==2.1.2) ; extra == 'doc'
+Requires-Dist: sphinx-issues (==1.2.0) ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: mock (==3.0.5) ; extra == 'test'
+Requires-Dist: pytest-profiling (==1.7.0) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.7.1) ; extra == 'test'
+Requires-Dist: flake8 (==3.7.9) ; extra == 'test'
+Requires-Dist: flake8-colors ; extra == 'test'
+Requires-Dist: docutils (==0.16) ; extra == 'test'
+Requires-Dist: pytest (==4.6.5) ; (python_version < "3.5") and extra == 'test'
+Requires-Dist: pytest (==5.0.1) ; (python_version >= "3.5") and extra == 'test'
+
+================
+Jexia Python SDK
+================
+
+.. image:: https://circleci.com/gh/jexia/jexia-sdk-python/tree/master.svg?style=svg
+    :target: https://circleci.com/gh/jexia/jexia-sdk-python/tree/master
+    :alt: Build status
+.. image:: https://coveralls.io/repos/jexia/jexia-sdk-python/badge.svg?branch=master
+    :target: https://coveralls.io/r/jexia/jexia-sdk-python?branch=master
+    :alt: Code coverage
+.. image:: https://readthedocs.org/projects/jexia-sdk/badge/?version=latest
+    :target: https://jexia-sdk.readthedocs.io/en/latest/
+    :alt: Documentation status
+.. image:: https://img.shields.io/pypi/l/jexia-sdk.svg
+    :target: https://pypi.org/project/jexia-sdk
+    :alt: License
+.. image:: https://img.shields.io/pypi/pyversions/jexia-sdk.svg
+    :target: https://pypi.org/project/jexia-sdk
+    :alt: Supported Python versions
+
+This is the official Python SDK for interacting with Jexia projects.
+
+
+Compatibility
+=============
+
+Jexia-SDK requires Python 2.7.15+.
+
+
+Installation
+============
+
+You can install jexia-sdk with pip:
+
+.. code-block:: console
+
+    $ pip install jexia-sdk
+
+or with easy_install:
+
+.. code-block:: console
+
+    $ easy_install jexia-sdk
+
+
+Quick start
+===========
+
+TODO
+
+
+Contributors
+============
+
+Jexia-SDK is brought to you by @velp.
+
+Of course, everyone is welcome to contribute and we will be happy to review your
+PR's or answer to your issues.
+
+
+Documentation
+=============
+
+The documentation is hosted `on Read the Docs <http://jexia-sdk.readthedocs.io/en/latest/>`__
+
+
+Contribution
+============
+Want to contribute! That's awesome! Check out `CONTRIBUTING.rst! <https://github.com/jexia/jexia-sdk/blob/master/CONTRIBUTING.rst>`__
+
+Changelog
+=========
+
+
+
+Current
+-------
+
+
+
