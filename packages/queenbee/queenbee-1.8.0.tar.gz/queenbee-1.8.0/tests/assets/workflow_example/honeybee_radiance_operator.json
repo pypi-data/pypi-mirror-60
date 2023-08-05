@@ -1,0 +1,4 @@
+{
+    "name": "honeybee-radiance-operator",
+    "image": "ladybugtools/honeybee-radiance"
+}
