@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+transx2gtfs/__init__.py
+transx2gtfs/__main__.py
+transx2gtfs/transx2gtfs.py
+transx2gtfs/utils.py
+transx2gtfs/data/__init__.py
+transx2gtfs/transx2gtfs.egg-info/PKG-INFO
+transx2gtfs/transx2gtfs.egg-info/SOURCES.txt
+transx2gtfs/transx2gtfs.egg-info/dependency_links.txt
+transx2gtfs/transx2gtfs.egg-info/not-zip-safe
+transx2gtfs/transx2gtfs.egg-info/requires.txt
+transx2gtfs/transx2gtfs.egg-info/top_level.txt
