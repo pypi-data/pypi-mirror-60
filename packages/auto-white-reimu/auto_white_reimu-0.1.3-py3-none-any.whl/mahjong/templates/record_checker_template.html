@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Record Checker Result</title>
+    <style type="text/css">
+        .tile {
+            letter-spacing: -12px;
+            font-size: 36px;
+            padding-right: 12px;
+        }
+
+        {% for tile_name in all_tiles %}
+            .pic{{ tile_name }} {
+                background-image: url("data:image/png;base64,{{ (tile_name + '.png') | load_raw("mahjong.templates.mjpic") | b64encode | safe}}");
+            }
+        {% endfor %}
+
+        .big {
+            width: 24px;
+            height: 30px;
+            display: inline-block;
+            background-size: cover;
+        }
+
+        .small {
+            width: 16px;
+            height: 20px;
+            display: inline-block;
+            background-size: cover;
+        }
+
+        .tile-small {
+            letter-spacing: -7.5px;
+            font-size: 24px;
+            padding-right: 12px;
+        }
+
+        .game-caption {
+            font-size: 24px;
+        }
+
+        .reasoning-tile {
+            border-bottom: 1px solid grey;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        .hint-red {
+            background-color: red;
+        }
+
+        .hint-blue {
+            background-color: blue;
+        }
+
+        .description-table {
+            display: inline-table;
+        }
+    </style>
+</head>
+<body>
+
+{#<p class="tile">🀀🀁🀂🀃🀄🀅🀆🀇🀈🀉🀊🀋🀌🀍🀎🀏🀐🀑🀒🀓🀔🀕🀖🀗🀘🀙🀚🀛🀜🀝🀞🀟🀠🀡</p>#}
+{#<p class="tile-small">🀀🀁🀂🀃🀄🀅🀆🀇🀈🀉🀊🀋🀌🀍🀎🀏🀐🀑🀒🀓🀔🀕🀖🀗🀘🀙🀚🀛🀜🀝🀞🀟🀠🀡</p>#}
+
+{% macro tile(tile_list, size) -%}
+    {% for tile_item in tile_list -%}
+        <div class="pic{{ tile_item }} {{ size }}"></div>
+    {%- endfor %}
+{%- endmacro %}
+
+{% macro reasoning_display(selected) -%}
+    {% for reasoning in selected %}
+        <div class="reasoning-tile">
+            <div>Discard&nbsp;{{ tile(reasoning.discard_tile, 'small') }}
+                {{ reasoning.waiting_step }}
+                Steps
+                {{ reasoning.useful_tiles_count }} Tiles
+            </div>
+            <div>Expect {{ tile(reasoning.useful_tiles, 'small') }}
+            </div>
+        </div>
+    {% endfor %}
+{%- endmacro %}
+
+
+{{ tile(all_tiles, 'big') }}
+
+<hr>
+
+{{ tile(all_tiles, 'small') }}
+{#    <img src="data:image/png;base64,{{ ('mjpic/' + tile_name + '.png') | load_raw | b64encode | safe}}">#}
+<p> Player: {{ player }} </p>
+<p>{{ record }} <a href="{{ log_url }}">Link</a></p>
+
+<p>
+    Hint: <span class="hint-red">Red</span> color is before richii,
+    <span class="hint-blue">Blue</span> Color is after richii, which could be accepted(may go to defence, or could't
+    change waiting tiles.)
+
+
+</p>
+<p>The more it colored, the worse it has been choosen.</p>
+<p>
+    提示：<span class="hint-red">红色</span>为立直前，<span class="hint-blue">蓝色</span>为立直后，可以接受（可能进入防守，或者无法切换听牌。）
+</p>
+
+{% for game in games %}
+    <div>
+        <details open>
+            <summary><span class="game-caption">{{ game.name }}</span></summary>
+            <table>
+                <tr>
+                    <th>Round <br>(巡目)</th>
+                    <th>Hand <br>(手牌)</th>
+                    <th>Your Choice <br>(你的选择)</th>
+                    <th>Expected Choice <br>(期望选择)</th>
+                    <th>Reasoning <br>(牌理)</th>
+                </tr>
+                {% for round in game.rounds %}
+                    <tr style="background-color: {% if round.somebody_richii %} rgba(0, 0, 255, {% else %} rgba(255, 0, 0, {% endif %}{{ round.wrong_rate }});">
+                        <td>{{ loop.index }}</td>
+                        <td>
+                            {% for meld in round.melds %}{{ tile(meld, 'big') }}&nbsp;{% endfor %}
+                            {{ tile(round.hand, 'big') }}
+                        </td>
+                        <td class="tile">{{ tile(round.your_choice_reasoning.discard_tile, 'big') }}</td>
+                        <td class="tile">
+                            {% for reasoning in round.expected_reasonings %}
+                                {{ tile(reasoning.discard_tile, 'big') }}{% endfor %}
+                        </td>
+                        <td>
+                            <details>
+                                <summary>
+                                    <table class="description-table">
+                                        <tr>
+                                            <td>Expected</td>
+                                            <td>Steps {{ round.expected_reasonings[0].waiting_step }}
+                                        Tiles {{ round.expected_reasonings[0].useful_tiles_count }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Actual</td>
+                                            <td>Steps {{ round.your_choice_reasoning.waiting_step }}
+                                        Tiles {{ round.your_choice_reasoning.useful_tiles_count }}</td>
+                                        </tr>
+                                    </table>
+                                </summary>
+                                {{ reasoning_display(round.merged_reasoning) }}
+                                <details>
+                                    <summary>
+                                        Normal-Type Reasoning
+                                    </summary>
+                                    {{ reasoning_display(round.normal_reasonings) }}
+                                </details>
+                                <details>
+                                    <summary>
+                                        Seven-Pair Reasoning
+                                    </summary>
+                                    {{ reasoning_display(round.seven_pair_reasonings) }}
+                                </details>
+                            </details>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </details>
+    </div>
+{% endfor %}
+</body>
+</html>

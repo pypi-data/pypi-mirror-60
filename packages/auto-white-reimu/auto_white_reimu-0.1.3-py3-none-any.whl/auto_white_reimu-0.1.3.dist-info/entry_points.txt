@@ -1,0 +1,4 @@
+[console_scripts]
+mahjong-win-rate = mahjong.win_rate_demo:main
+tenhou-check = mahjong.tenhou_record_check:main
+
