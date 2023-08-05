@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: phuzzymatcher
+Version: 0.0.1
+Summary: Features the combination of the fuzzywuzzy library and the spacy phrasematcher
+Author: Sebastian Menke
+Author-email: sebastian.menke@posteo.de
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: fuzzywuzzy (>=0.17.0,<0.18.0)
+Requires-Dist: nltk (>=3.4.5,<4.0.0)
+Requires-Dist: spacy (>=2.2.3,<3.0.0)
