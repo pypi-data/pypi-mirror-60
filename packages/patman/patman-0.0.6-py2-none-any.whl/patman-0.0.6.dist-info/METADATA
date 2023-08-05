@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: patman
+Version: 0.0.6
+Summary: A fast and thought free service client for python
+Home-page: UNKNOWN
+Author: Kevin Hill
+Author-email: kah.kevin.hill@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: cachetools
+Requires-Dist: cytoolz
+Requires-Dist: faster-than-requests
+Requires-Dist: json-tricks
+Requires-Dist: loguru
+Requires-Dist: vaex
+
+# Patman -- Easy Client Library for Python
+
+
