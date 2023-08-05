@@ -1,0 +1,3 @@
+requests==2.22.0
+fastecdsa==2.0.0
+ecdsa==0.15
