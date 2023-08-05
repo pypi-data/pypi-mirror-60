@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: openbci
+Version: 0.2.2
+Summary: Hight level Python module for OpenBCI hardware by GCPDS.
+Home-page: UNKNOWN
+Author: Yeison Cardona
+Author-email: yeisoneng@gmail.com
+Maintainer: Yeison Cardona
+Maintainer-email: yeisoneng@gmail.com
+License: Simplified BSD License
+Download-URL: https://bitbucket.org/gcpds/openbci/downloads/
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyserial
+Requires-Dist: scipy (>=1.3.1)
+Requires-Dist: numpy
+Requires-Dist: psutil
+Requires-Dist: mne
+Requires-Dist: requests
+Requires-Dist: tornado
+Provides-Extra: utils
+Requires-Dist: systemd-service ; extra == 'utils'
+Requires-Dist: netifaces ; extra == 'utils'
+Requires-Dist: python-nmap ; extra == 'utils'
+Requires-Dist: quickapi ; extra == 'utils'
+
+# OpenBCI
+Hight level Python module for OpenBCI hardware.
+
+::: warning
+  * This is NOT an official package from [OpenBCI team](https://openbci.com/).
+  * This module is still unstable and not recommended for use in production.
+:::
+
+## What is?
+
+A Python module for interaction with [OpenBCI boards](https://openbci.com/).
+Currently, we have support for Cyton (and Daisy) and their WiFi module.
+All source code can be accessed from our [bitbucket repository](https://bitbucket.org/gcpds/python-openbci/src/master/).
+
+## What do we want?
+
+We want a stable, high level, easy to use and extensible Python module for work
+with OpenBCI, for students and researchers. We are developing a set of tools for
+preprocessing, real-time data handling and streaming.
+
+## Who are we?
+We are a research group focused on digital processing of signals and machine
+learning from the National University of Colombia at Manizales ([GCPDS](http://www.hermes.unal.edu.co/pages/Consultas/Grupo.xhtml;jsessionid=8701CFAD84FB5D540090846EA8912D48.tomcat6?idGrupo=615&opcion=1>)).
+
+## How works?
+
+An acquisition object can be instantiated from differents backend imlplementation:
+Serial, WiFi and WebSockets.
+
+### Synchronous
+For more details refers to [Cyton data acquisition](_notebooks/data_acquisition.html#Cyton).
+
+
+```python
+from openbci.acquisition import CytonRFDuino as Device
+# from openbci.acquisition import CytonWiFi as Device
+
+openbci = Device()
+openbci.collect(5)
+
+eeg_data = openbcib.eeg_buffer()
+```
+
+### Aynchronous
+For more details refers to [WiFi data acquistion](_notebooks/data_acquisition.html#WiFi).
+
+
+```python
+from openbci.acquisition import CytonRFDuino as Device
+# from openbci.acquisition import CytonWiFi as Device
+
+openbci = Device()
+openbci.start_collect()
+# some python stuff 
+openbci.stop_collect()
+
+eeg_data = openbcib.eeg_buffer()
+```
+
+### WebSockets
+For more details refers to [WebSockets data acquistion](_notebooks/data_stream.html#access-to-stream-from-python).
+
+
+```python
+from openbci.stream.ws import CytonWS_decorator
+
+@CytonWS_decorator()
+def eeg_with_ap(ws, eeg_data):
+    """"""
+    # some python stuff 
+```
+
+### API
+
+## Contact:
+
+Main developer: Yeison Cardona yencardonaal@unal.edu.co, [\@yeisondev](https://twitter.com/yeisondev).
+
+
