@@ -1,0 +1,4 @@
+pyfiglet
+botocore
+boto3
+argparse
