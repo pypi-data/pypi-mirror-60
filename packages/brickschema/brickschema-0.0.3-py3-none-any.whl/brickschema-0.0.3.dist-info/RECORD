@@ -1,0 +1,11 @@
+brickschema/__init__.py,sha256=AgZCMEunRrCjl6xRwvACI106xykn75aEfnvFQX3jNlE,296
+brickschema/graph.py,sha256=JafaV2Y-M-HE_tgeHwGiDag6PNNJxEn98d23RkviL3k,3370
+brickschema/index.md,sha256=M0j0PjvQcb9H5kMeogo0lGI9C5eXzE7RTYH4dVPeAg0,1813
+brickschema/inference.py,sha256=-xe_sqYP3lRNwntwKSmF1Dr0naD83-N1It_uhsNS0Rk,22993
+brickschema/namespaces.py,sha256=tpZrRATD5WwF-J5ZXhLb_hmCi_g9L8mGG2_hEFGOwdI,841
+brickschema/ontologies/Brick.ttl,sha256=IbTaY9AAG52TtQGXf2B8rAtSIuPK-xk1NfLu1GmnzIs,294055
+brickschema/ontologies/taglookup.pickle,sha256=nmx_ucMgtENPiV6Paap1g9xOZdQVIljXMHl4izcA2b0,82033
+brickschema/orm.py,sha256=kisg2cV9x4iF_kCEG_WpC1-7vqS9B7hkDtPF18wuonM,9759
+brickschema-0.0.3.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+brickschema-0.0.3.dist-info/METADATA,sha256=IbsMxOkJOuQAmaTLk5eHY-iSiHNzIKvf2848Om_h1s8,2466
+brickschema-0.0.3.dist-info/RECORD,,
