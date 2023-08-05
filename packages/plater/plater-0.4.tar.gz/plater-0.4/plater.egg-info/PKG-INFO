@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: plater
+Version: 0.4
+Summary: Easily create a starter file template for different project
+Home-page: https://github.com/aquadzn/plater
+Author: William Jacques
+Author-email: williamjcqs8@gmail.com
+License: UNKNOWN
+Description: # Plater
+        ![](https://github.com/aquadzn/plater/workflows/Python%20package/badge.svg)
+        
+        ðŸ“‹ Easily create a starter file template for different project
+        
+        # Installation
+        Requires **Python 3.6+** ðŸ¤—
+        
+        ```bash
+        pip install plater
+        ```
+        
+        # Usage
+        
+        ```python
+        plater -t readme  # one template
+        
+        plater -t dockerfile dockerignore  # two templates
+        
+        plater -t pytorch_mnist tensorflow_mnist -f pytorch.py tf.py  # two templates and rename both files
+        ```
+        
+        # Contributing
+        Feel free contribute to this project by forking this repository and add your template on the following files:
+        
+        * [templates.py](https://github.com/aquadzn/plater/edit/master/plater/templates.py)
+        * [plater.py](https://github.com/aquadzn/plater/edit/master/plater/plater.py)
+        
+        # To-do
+        
+        * Do a more complete template finder by using GitHun API or a Python wrapper in order to make requests and return repository as result. Allow user to specify a repository and clone it (or just download files needed).
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

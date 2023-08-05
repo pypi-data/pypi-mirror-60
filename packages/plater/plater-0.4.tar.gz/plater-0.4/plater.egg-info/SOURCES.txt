@@ -1,0 +1,13 @@
+README.md
+setup.py
+plater/__init__.py
+plater/cli.py
+plater/plater.py
+plater/templates.py
+plater.egg-info/PKG-INFO
+plater.egg-info/SOURCES.txt
+plater.egg-info/dependency_links.txt
+plater.egg-info/entry_points.txt
+plater.egg-info/top_level.txt
+test/__init__.py
+test/test_cli.py
