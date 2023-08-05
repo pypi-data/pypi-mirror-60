@@ -1,0 +1,9 @@
+array-split
+pandas
+scikit-learn
+hdbscan
+gensim
+nltk
+scipy
+six
+tqdm

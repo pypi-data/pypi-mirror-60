@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+
+from linguistics.pre_process import Preprocess
+from linguistics.io import io
+from linguistics.vectorise import Vectorise as word2vec
+from linguistics.decompose import Decompose
+from linguistics.normalise import Normalise
+from linguistics.cluster import Cluster
+from linguistics.dictionary import Dictionary
+from linguistics.pickle import Pickle
+
+import pandas as pd
+import sys
+
+filename, modelname = io().check_args(sys, 4, "I need a) filename, b) language c) frequency")
+freq = sys.argv[3]
+lang = sys.argv[2]
+if len(sys.argv) == 5:
+    lemma = True
+else:
+    lemma = False
+
+print("Here we go")
+data = io.read_file(filename)
+
+dir_project = "./data/{}".format(modelname)
+if not os.path.exists(dir_project):
+    os.makedirs(dir_project)
+else:
+    print("A project with that name already exists!")
+    break
+
+os.chdir(dir_project)
+
+io.save_file(data.rename(columns={"created_utc": "date"}), modelname + "_spark.csv")
+pp = Preprocess(data, modelname, lang)
+pp.create_sentences_dataframe()
+pp.set_frequency(freq)
+io.save_file(pp.new_data.rename(
+    columns={"sentence": "body", "created_utc": "date"}), modelname + "_spark_sentence.csv")
+pp.clean_sentences(lemma)
+new_stuff = pp.gram_it()
+Dictionary(new_stuff).save(modelname + "_full")
+Pickle().save(new_stuff, modelname + "_full")
+model = word2vec()
+model.add_verbatim(new_stuff)
+model.train(new_stuff)
+model.save(modelname)
+decompose = Decompose(n_components=15)
+X_decomp = decompose.fit_transform(model.model.wv.vectors)
+X_decomp_norm = Normalise.l2_norm(X_decomp)
+cluster = Cluster()
+cluster.fit(X_decomp_norm)
+clusters = cluster.clusters.merge(model.ordered_vocab[['index', 'word', "count"]], on=['index'])
+clusters[clusters["ok"]].to_csv(modelname+"_clusters.csv", encoding="utf-8")
