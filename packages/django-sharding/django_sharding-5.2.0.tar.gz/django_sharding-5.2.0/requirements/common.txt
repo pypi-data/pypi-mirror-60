@@ -1,0 +1,2 @@
+django-environ<1.0.0
+six
