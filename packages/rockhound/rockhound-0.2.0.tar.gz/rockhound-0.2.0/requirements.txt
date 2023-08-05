@@ -1,0 +1,6 @@
+pooch>=0.5
+xarray
+pandas
+rasterio
+dask
+netcdf4
