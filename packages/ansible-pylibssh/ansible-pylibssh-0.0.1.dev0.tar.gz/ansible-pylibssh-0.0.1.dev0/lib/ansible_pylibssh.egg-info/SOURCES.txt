@@ -1,0 +1,15 @@
+LICENSE.rst
+README.rst
+setup.cfg
+setup.py
+lib/ansible_pylibssh.egg-info/PKG-INFO
+lib/ansible_pylibssh.egg-info/SOURCES.txt
+lib/ansible_pylibssh.egg-info/dependency_links.txt
+lib/ansible_pylibssh.egg-info/top_level.txt
+lib/ansible_pylibssh.egg-info/zip-safe
+lib/pylibssh/__init__.py
+lib/pylibssh/channel.c
+lib/pylibssh/errors.c
+lib/pylibssh/session.c
+lib/pylibssh/sftp.c
+lib/pylibssh/includes/__init__.py
