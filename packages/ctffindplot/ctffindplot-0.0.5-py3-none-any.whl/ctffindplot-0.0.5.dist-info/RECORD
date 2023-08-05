@@ -1,0 +1,12 @@
+ctffindplot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ctffindplot/__main__.py,sha256=5Xp-QhBJSMj90Xvad6_y1Act-AyktqWJ0GfkB6Okg38,3650
+ctffindplot/dash_app.py,sha256=Gp_vwekH9xtTj52sOgSZ89mYbDaDHTntnyl0gll32iw,4820
+ctffindplot/plot.py,sha256=cbWTNpKLvAu1n8tLbQuA1zVSTWIaacqZBR6LJiUDXZw,2057
+ctffindplot/run.py,sha256=SFObTAgf7Zp_vIAZBGJD8SPIMf7CdhweEukt4ha0HEE,751
+ctffindplot/watch.py,sha256=X3WqF6O2VODHUwaqGU9FirdPxvQ1yTJ2-gme1KC01Ns,456
+ctffindplot-0.0.5.dist-info/LICENSE.txt,sha256=_WMm9ntupQBzzAuXh9iReqxfpBS89a1QXGZ7ySSQe_g,1066
+ctffindplot-0.0.5.dist-info/METADATA,sha256=nSBMw6DlTidUT_3Fk5E7qqGnBFaN-4sBS_4sg5ObEVU,484
+ctffindplot-0.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ctffindplot-0.0.5.dist-info/entry_points.txt,sha256=lTMsMKXVW69uNRA7hW7n1S75Bb7ewjEaghBhj0oB49I,59
+ctffindplot-0.0.5.dist-info/top_level.txt,sha256=rasLjQJf56VnfY1G9R2j6NfpanQUWuhmmdk7ODolsDU,12
+ctffindplot-0.0.5.dist-info/RECORD,,
