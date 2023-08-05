@@ -1,0 +1,47 @@
+{
+  "get_nzh_getUserProfile": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29792,
+      "sandbox": 39287
+    }
+  },
+  "get_nzh_editProfile": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29793,
+      "sandbox": 39288
+    }
+  },
+  "post_nzh_editProfileWithConfirmation": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29794,
+      "sandbox": 39289
+    }
+  },
+  "get_nzh_listAddress": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29819,
+      "sandbox": 39314
+    }
+  },
+  "post_nzh_confirmEditProfile": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29795,
+      "sandbox": 39290
+    }
+  }
+}
