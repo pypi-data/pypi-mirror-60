@@ -1,0 +1,214 @@
+#!/bin/env python
+
+#######################################################################
+#
+# Copyright (C) 2020 David Palao
+#
+# This file is part of SPerATo.
+#
+#  SPerATo is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+#
+#  SPerATo is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with SPerATo.  If not, see <http://www.gnu.org/licenses/>.
+#
+#######################################################################
+
+"""Script that generates the plots for the HKHLR monthly reports."""
+
+import sys
+import os
+import argparse
+import datetime
+import calendar
+import subprocess as sp
+
+
+DATE_DESCRIPTION = "{} month for the analysis (included). Valid formats:"
+DATE_DESCRIPTION += "2018/01 or 2018-01 or 2018.01"
+FILTER_DESCRIPTION = (
+    "reduce the analysis to the given {filter_entity} (multiple {filter_entity} "
+    "can be given, separated by SPACES: '{short_opt} foo bar')"
+)
+FILTER_PARSER_DATA = [
+    ("-u", "users", "USER"),
+    ("-a", "accounts", "ACCOUNT"),
+    ("-P", "partitions", "PARTITION")
+]
+default_date = datetime.date.today().strftime("%Y/%m")
+date_seps = ("/", "-", ".")
+speratolist_date_format = "{}/{:02d}/{:02d}"
+monthly_summary_variants = [
+    ("", []),
+    ("_10CPUmin", ["-c", "10m"]),
+    ("_1CPUh", ["-c", "1h"])
+]
+
+    
+def main():
+    try:
+        params = get_parameters()
+        dates = make_dates_from_input(params)
+        filter_opts = make_filter_opts(params)
+        data = get_data(dates, filter_opts)
+        make_plots(data)
+    except Exception as e:
+        return str(e)
+
+    
+def get_parameters():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "-i", "--first-month",
+        action="store",
+        dest="first_month",
+        default=default_date,
+        help=DATE_DESCRIPTION.format("first"),
+    )
+    parser.add_argument(
+        "-e", "--last-month",
+        action="store",
+        dest="last_month",
+        default=default_date,
+        help=DATE_DESCRIPTION.format("last"),
+    )
+    for _short, _long, _meta in FILTER_PARSER_DATA:
+        parser.add_argument(
+            _short, "--"+_long, nargs='*', dest=_long, metavar=_meta,
+            help=FILTER_DESCRIPTION.format(filter_entity=_long, short_opt=_short),
+        )
+    return vars(parser.parse_args())
+
+
+def make_dates_from_input(params):
+    months_interval = []
+    for date_var in ("first_month", "last_month"):
+        value = params[date_var]
+        validated_month = validate_input_date(value)
+        months_interval.append(validated_month)
+    ensure_time_order(months_interval)
+    all_months = iterate_months(months_interval)
+    return all_months
+
+
+def validate_input_date(proto_date):
+    for sep in date_seps:
+        separated_date = proto_date.split(sep)
+        if len(separated_date) == 2:
+            valid_date = tuple([int(_) for _ in separated_date])
+            break
+    else:
+        msg = "Invalid date: {}".format(proto_date)
+        raise ValueError(msg)
+    return valid_date
+
+
+def ensure_time_order(months):
+    dates = [datetime.date(*_, 1) for _ in months]
+    msg = "Initial month ({}) cannot precede final month ({})".format(*dates)
+    assert dates[0] <= dates[1], msg
+
+    
+def iterate_months(interval):
+    month0, monthN = interval
+    monthi = month0
+    delta = datetime.timedelta(days=32)
+    months = [month0]
+    while monthi != monthN:
+        datei=datetime.date(*monthi, 1)
+        dateip1=datei+delta
+        monthi = (dateip1.year, dateip1.month)
+        months.append(monthi)
+    return months
+
+
+def make_filter_opts(params):
+    filter_opts = []
+    users = params["users"]
+    if users:
+        filter_opts += ["-f", "User:"+",".join(users)]
+    accounts = params["accounts"]
+    if accounts:
+        filter_opts += ["-f", "Account:"+",".join(accounts)]
+    partitions = params["partitions"]
+    if partitions:
+        filter_opts += ["-P", ",".join(partitions)]
+    return filter_opts
+
+    
+def get_data(dates, filter_opts):
+    data = {
+        "jobs": {},
+        "month": {},
+    }
+    for month in dates:
+        data["jobs"][month] = get_monthly_data(month, filter_opts)
+    for options in monthly_summary_variants:
+        data["month"][options[0]] = get_global_data(dates[0], dates[-1], options, filter_opts)
+    return data
+
+
+def get_monthly_data(month, filter_opts):
+    print("...getting jobs data for", month)
+    start_day = month+(1,)
+    end_day = month+(calendar.monthrange(*month)[1],)
+    start_date = speratolist_date_format.format(*start_day)
+    end_date = speratolist_date_format.format(*end_day)
+    output_filename = "jobs-{}_to_{}.data".format(
+        start_date.replace("/", "-"),
+        end_date.replace("/", "-")
+    )
+    if os.path.exists(output_filename):
+        if os.path.getsize(output_filename) > 0:
+            pass
+    else:
+        args = [
+            "sperato-hkhlr", "jobs", "-t", start_date, "-T", end_date, 
+        ] + filter_opts
+        with open(output_filename, "w") as output_file:
+            sp.run(args, stdout=output_file, stderr=sp.DEVNULL)
+    return output_filename
+
+
+def get_global_data(start, end, options, filter_opts):
+    print("...getting montly summary data from", start, "to", end)
+    options_str, options_list = options
+    start_day = start+(1,)
+    end_day = end+(calendar.monthrange(*end)[1],)
+    start_date = speratolist_date_format.format(*start_day)
+    end_date = speratolist_date_format.format(*end_day)
+    output_filename = "monthly-summary{}-{}_to_{}.data".format(
+        options_str,
+        start_date.replace("/", "-"),
+        end_date.replace("/", "-")
+    )
+    if os.path.exists(output_filename):
+        if os.path.getsize(output_filename) > 0:
+            pass
+    else:
+        args = [
+            "sperato-hkhlr", "month", "-t", start_date, "-T", end_date, 
+        ] + options_list + filter_opts
+        with open(output_filename, "w") as output_file:
+            sp.run(args, stdout=output_file, stderr=sp.DEVNULL)
+    return output_filename
+
+
+def make_plots(data):
+    for filename in data["jobs"].values():
+        sp.run(["sperato-plots", "efficiency-cpu-histogram", filename])
+        sp.run(["sperato-plots", "unused-and-cummulative-cpu-histogram",
+                "--histogram-bins-X", "200", filename])
+    for filename in data["month"].values():
+        sp.run(["sperato-plots", "job-status-bar-plot", filename])
+
+        
+if __name__ == "__main__":
+    sys.exit(main())
