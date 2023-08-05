@@ -1,0 +1,33 @@
+MarketplaceEnum = (
+    ("ATVPDKIKX0DER", "США (amazonservices.com)"),
+    ("A2EUQ1WTGCTBG2", "Канада (amazonservices.ca)"),
+    ("A1PA6795UKMFR9", "Германия (amazonservices.com)"),
+    ("A1RKKUPIHCS9HS", "Испания (amazonservices.com)"),
+    ("A13V1IB3VIYZZH", "Франция (amazonservices.com)"),
+    ("A1F83G8C2ARO7P", "Великобритания (amazonservices.com)"),
+    ("APJ6JRA9NG5V4", "Италия (amazonservices.com)"),
+    ("A39IBJ37TRP1C6", "Австралия (amazonservices.com.au)"),
+    ("A1VC38T7YXB528", "Япония (amazonservices.jp)"),
+    ("AAHKV2X7AFYLW", "Китай (amazonservices.com.cn)"),
+    ("A33AVAJ2PDY3EV", "Турция (amazonservices.com)"),
+    ("A21TJRUUN4KGV", "Индия (amazonservices.in)"),
+    ("A1AM78C64UM0Y8", "Мексика (amazonservices.com.mx)"),
+    ("A2Q3Y263D00KWC", "Бразилия (amazonservices.com)"),
+)
+
+MarketplaceToHost = {
+    "ATVPDKIKX0DER": "https://mws.amazonservices.com",
+    "A2EUQ1WTGCTBG2": "https://mws.amazonservices.ca",
+    "A1PA6795UKMFR9": "https://mws-eu.amazonservices.com",
+    "A1RKKUPIHCS9HS": "https://mws-eu.amazonservices.com",
+    "A13V1IB3VIYZZH": "https://mws-eu.amazonservices.com",
+    "A1F83G8C2ARO7P": "https://mws-eu.amazonservices.com",
+    "APJ6JRA9NG5V4": "https://mws-eu.amazonservices.com",
+    "A39IBJ37TRP1C6": "https://mws.amazonservices.com.au",
+    "A1VC38T7YXB528": "https://mws.amazonservices.jp",
+    "AAHKV2X7AFYLW": "https://mws.amazonservices.com.cn",
+    "A33AVAJ2PDY3EV": "https://mws-eu.amazonservices.com",
+    "A21TJRUUN4KGV": "https://mws.amazonservices.in",
+    "A1AM78C64UM0Y8": "https://mws.amazonservices.com.mx",
+    "A2Q3Y263D00KWC": "https://mws.amazonservices.com",
+}
