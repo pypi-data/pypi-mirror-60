@@ -1,0 +1,13 @@
+README.md
+setup.py
+Wuhan2019nCoV.egg-info/PKG-INFO
+Wuhan2019nCoV.egg-info/SOURCES.txt
+Wuhan2019nCoV.egg-info/dependency_links.txt
+Wuhan2019nCoV.egg-info/entry_points.txt
+Wuhan2019nCoV.egg-info/requires.txt
+Wuhan2019nCoV.egg-info/top_level.txt
+wuhanncov/__init__.py
+wuhanncov/check_loop.py
+wuhanncov/dingxiangyuan.py
+wuhanncov/osx.py
+wuhanncov/terminalcolor.py
