@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sescraper
+Version: 0.0.1
+Summary: Package to get daily information about the stock market
+Home-page: https://github.com/miki164/stock-exchange-scraper
+Author: miki164
+Author-email: miki3867@gmail.com
+License: UNKNOWN
+Description: # stock-exchange-scraper
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Handhelds/PDA's
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Office/Business :: Financial
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
