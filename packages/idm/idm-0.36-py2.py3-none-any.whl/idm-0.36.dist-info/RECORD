@@ -1,0 +1,13 @@
+idm/__init__.py,sha256=Qybs6tVZP-WcaA33LeShjYTEtbbUYpR-_PTsH_8U2VY,182
+idm/__main__.py,sha256=BS4cGq4JJIGYU5O3-J4gbXLFNxVp-mJZ9zpzc0ZBrSg,53
+idm/__version__.py,sha256=VpfAsE0rWF-EAlVAmR-Y6-EEip0o7ImijnggDytAxug,15
+idm/idm.py,sha256=MI916q0H6c3Br5y0gLGYtm9S0qGGe-G4ywrmtElBqX0,2896
+idm-0.36.data/data/LICENSE.rst,sha256=R9hvVYsnxEN3uuUVy5FnZVhdwK3MW2bbANKDbCHcnsM,1846
+idm-0.36.data/data/README.rst,sha256=mcX3-mGHKi0lqVufUSMQccWaFBAHAtWdSSOLLdOXWCw,1173
+idm-0.36.data/data/__version__.py,sha256=VpfAsE0rWF-EAlVAmR-Y6-EEip0o7ImijnggDytAxug,15
+idm-0.36.dist-info/LICENSE.rst,sha256=R9hvVYsnxEN3uuUVy5FnZVhdwK3MW2bbANKDbCHcnsM,1846
+idm-0.36.dist-info/METADATA,sha256=ByNJxu5zlwz3k2uGcccklcIxkeYDQUJyjFkY0Z7OfXo,2348
+idm-0.36.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+idm-0.36.dist-info/entry_points.txt,sha256=O_E1tFS-_hriIEO3chr8L88pbGsC1Ao3kDXA7L0N1GI,44
+idm-0.36.dist-info/top_level.txt,sha256=72xv3vOVZcv77PM440wKx2MjYeW_WECJJy_U8thfTq0,4
+idm-0.36.dist-info/RECORD,,
