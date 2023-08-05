@@ -1,0 +1,16 @@
+numpy
+scipy
+music21
+bpf4
+notifydict
+appdirs
+tabulate
+sounddevice
+sndfileio
+pillow
+decorator
+cachetools
+ctcsound
+abjad>=3.1
+abjad-ext-nauert
+abjadtools
