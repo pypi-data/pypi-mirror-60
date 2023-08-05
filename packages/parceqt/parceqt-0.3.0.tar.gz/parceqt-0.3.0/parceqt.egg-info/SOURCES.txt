@@ -1,0 +1,14 @@
+ChangeLog
+MANIFEST.in
+README.rst
+setup.py
+parceqt/__init__.py
+parceqt/document.py
+parceqt/highlighter.py
+parceqt/pkginfo.py
+parceqt/treebuilder.py
+parceqt/util.py
+parceqt.egg-info/PKG-INFO
+parceqt.egg-info/SOURCES.txt
+parceqt.egg-info/dependency_links.txt
+parceqt.egg-info/top_level.txt
