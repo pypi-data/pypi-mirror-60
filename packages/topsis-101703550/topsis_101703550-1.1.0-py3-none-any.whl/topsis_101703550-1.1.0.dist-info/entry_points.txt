@@ -1,0 +1,3 @@
+[console_scripts]
+topsis-package = topsis_101703550.__init__:main
+
