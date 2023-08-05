@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aeidon
+Version: 1.7.0
+Summary: aeidon is a Python package for reading, writing and manipulating text-based subtitle files. It is used by the gaupol package, which provides a subtitle editor with a GTK+ user interface.
+Home-page: https://otsaloma.io/gaupol/
+License: GPL-3.0+
+Author: Jack Laxson
+Author-email: jackjrabbit+pypi@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: chardet (>=3.0,<4.0)
+Project-URL: Documentation, https://otsaloma.io/gaupol/doc/api/aeidon.html
+Project-URL: Repository, https://github.com/jrabbit/gaupol
