@@ -1,0 +1,15 @@
+sparkql/__init__.py,sha256=iTqM1t0y2UtJr9mMumFrlI_SBrSWqidTaFxfoeg44xA,754
+sparkql/accessors.py,sha256=oi80_iz7rswV0zvIv5iJQyboJ4Vdhv1-QFX72wpgIEA,1389
+sparkql/exceptions.py,sha256=cU471fSqX3n2GAXPNnJ2BpbqNzyDMj1vlhYi37nzx7w,313
+sparkql/fields/__init__.py,sha256=oVFPsd5dti1tA52xnWl94k9QVZ-OXugLyszMlOKP9RE,396
+sparkql/fields/array.py,sha256=Ow4T-mmTzu2CU7evBo5kQ5V-o8stAW9m04ZEmmUBij4,3096
+sparkql/fields/atomic.py,sha256=QvbIIRwvDJdesEUkl9BNHcDk8csiwlm87HNQQK1EqsU,2475
+sparkql/fields/base.py,sha256=FEb-uPvYBEcf8iCA5k6IqUefCXsbO4zoN0RbouwVeCs,6310
+sparkql/fields/struct.py,sha256=5QOyvh9Pvv_f0MHA5aekGfBxk4XxoL0TG8OOUT0Xx3E,3940
+sparkql/formatters.py,sha256=LF3kTqeKk_ZWzKXtjf1a9dGL9CijKZDu92dqRApX8iw,3359
+sparkql/schema_builder.py,sha256=Ep0Ix-UY2xyxV6eYGyHdyRqt-no4jFH-O6dGrOzKNtI,348
+sparkql-0.1.3.dist-info/entry_points.txt,sha256=nvUxEee3At-AaUPQVOC-wKgi95sP0g08YRX3T2NpIJM,221
+sparkql-0.1.3.dist-info/LICENSE,sha256=U6gkiaWA3Lt_DOP4GrBr84fCne4EttS1DSTqImYt4-k,1087
+sparkql-0.1.3.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+sparkql-0.1.3.dist-info/METADATA,sha256=Eyl73QHFGY8Tl5oUCc5OVg3b13iWjuCrdnAZqxiHCmw,3051
+sparkql-0.1.3.dist-info/RECORD,,
