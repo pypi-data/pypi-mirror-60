@@ -1,0 +1,6 @@
+README.md
+setup.py
+snowflake_tools.egg-info/PKG-INFO
+snowflake_tools.egg-info/SOURCES.txt
+snowflake_tools.egg-info/dependency_links.txt
+snowflake_tools.egg-info/top_level.txt
