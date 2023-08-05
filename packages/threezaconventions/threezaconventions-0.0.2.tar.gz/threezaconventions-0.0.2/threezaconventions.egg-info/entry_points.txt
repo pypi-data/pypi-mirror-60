@@ -1,0 +1,3 @@
+[console_scripts]
+threezaconventions = threezaconventions.__main__:main
+
