@@ -1,0 +1,10 @@
+README.md
+setup.py
+vox_cards/__init__.py
+vox_cards/card.py
+vox_cards/deck.py
+vox_cards/hand.py
+vox_cards.egg-info/PKG-INFO
+vox_cards.egg-info/SOURCES.txt
+vox_cards.egg-info/dependency_links.txt
+vox_cards.egg-info/top_level.txt
