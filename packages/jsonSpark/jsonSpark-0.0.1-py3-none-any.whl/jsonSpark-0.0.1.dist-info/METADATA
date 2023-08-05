@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: jsonSpark
+Version: 0.0.1
+Summary: This is a wrapper package for pyspark to process json files. It pythonifies the json pyspark object.
+Home-page: https://github.com/mzmmoazam/jsonSpark
+Author: mzm
+Author-email: mzm.moazam@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyspark
+
+# JsonSpark
+
+This package is meant to give a python simplicity and feel to pyspark while handling json files.
+
+It is very simple to use and doesn't need extra information if you are using python.
+
+Steps:
+* Import the package<Br>
+    `
+    import jsonSpark
+    `
+* Pass the pyspark json file object<br>
+`
+df = sql.read.json("filename", multiLine=True) # or get from S3 bucket
+`
+* Create a JsonSpark object.<br>
+`
+df = jsonSpark(df)
+`
+* See the schema if you wish.<br>
+`
+df.printSchema()
+`
+<br>
+`
+df.show()
+`
+* Use it as python dictionary<br>
+`
+df["key1"]["key2"]["key3"]["key4"].show()
+`
+
+### I will update the documentation and include a working example soon .... 
+
