@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: cerebunit
+Version: 0.3.0
+Summary: Installable package 'cerebtest' for cerebunit
+Home-page: https://github.com/cerebunit/cerebtests
+Author: Lungsi
+Author-email: lungsi.sharma@unic.cnrs-gif.fr
+License: BSD Clause-3
+Download-URL: https://github.com/cerebunit/cerebtests/archive/v0.3.0.tar.gz
+Description: UNKNOWN
+Keywords: VALIDATION,CEREBELLUM,NEUROSCIENCE,MODELING,SCIENTIFIC METHOD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
