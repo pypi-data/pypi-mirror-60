@@ -1,0 +1,10 @@
+README.rst
+setup.py
+src/memoclass/__init__.py
+src/memoclass/memoclass.py
+src/memoclass/memoize.py
+src/memoclass.egg-info/PKG-INFO
+src/memoclass.egg-info/SOURCES.txt
+src/memoclass.egg-info/dependency_links.txt
+src/memoclass.egg-info/requires.txt
+src/memoclass.egg-info/top_level.txt
