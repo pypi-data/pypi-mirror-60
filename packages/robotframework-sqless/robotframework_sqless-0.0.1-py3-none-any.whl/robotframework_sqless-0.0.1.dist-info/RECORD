@@ -1,0 +1,8 @@
+SQLess/SQLessKeywords.py,sha256=V_SfrtFhk52Q2S3vOU4ow4dC4smbzP4uVYGhO4WS1VA,3370
+SQLess/__init__.py,sha256=5trzUn1oy9EiG8ja0OpUDYCeLQj8Hi5Ub3kmMHzd80w,109
+SQLess/adaptors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SQLess/adaptors/sqlite.py,sha256=xau0qkXzGApWlvm_qxO87dodPmRWkCQvA6HWwGn-_LI,2206
+robotframework_sqless-0.0.1.dist-info/METADATA,sha256=GaVFMsIWPckAYBlY5xy0FiNPB9svFHSiV0ifzSRSnYU,1744
+robotframework_sqless-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+robotframework_sqless-0.0.1.dist-info/top_level.txt,sha256=_ul6lNZiddRwGUYVJtrDzcRZDVegQM_z6MD0bwil6eQ,7
+robotframework_sqless-0.0.1.dist-info/RECORD,,
