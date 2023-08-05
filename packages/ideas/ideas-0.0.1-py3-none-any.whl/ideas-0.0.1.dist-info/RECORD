@@ -1,0 +1,11 @@
+ideas/__init__.py,sha256=tg1eu_bIzBRN6Z-QoaqBncbQMA1VjpfgPMD7aQShtHg,472
+ideas/import_hook.py,sha256=AEvgrnjJX6BBAEiycFdH_y5XIES19xmHrc0wIAKUZB8,5806
+tests/enforce_constants/__init__.py,sha256=4LqLcvNhtvT3HceKC3pXBHW91E4XbKrWBLoTQghHVAM,6
+tests/enforce_constants/final.py,sha256=1LGlprw3_KUaJ30p9PHAJRD_9N0xn3q8mlrjmJReF3A,327
+tests/enforce_constants/test_constants.py,sha256=U4f3BFzIlE-A9xPNZ1_PbBlKyJF2FrHd5DZmVpDTTog,2361
+tests/enforce_constants/uppercase.py,sha256=Nv2vDU258SmL_9Qlqnph7lqiPaBibdaAyPHTNqyZrHg,354
+ideas-0.0.1.dist-info/LICENSE,sha256=U6EkhyEVWEEY9MczYLhiplOqX4irnDLJx921EuHbVNY,1092
+ideas-0.0.1.dist-info/METADATA,sha256=5YgL9Lkv6HnZnrri2eFwlM-E0tJj5I8d6oqiLM76uDU,2699
+ideas-0.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+ideas-0.0.1.dist-info/top_level.txt,sha256=eGlbLkqEaD8gu5e3BHDkxRFR5IdAOmirQZWUxQKFGys,12
+ideas-0.0.1.dist-info/RECORD,,
