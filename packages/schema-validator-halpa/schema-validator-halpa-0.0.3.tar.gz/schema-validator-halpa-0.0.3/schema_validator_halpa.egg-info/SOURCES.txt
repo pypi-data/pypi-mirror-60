@@ -1,0 +1,9 @@
+README.md
+setup.py
+schema_validator_halpa.egg-info/PKG-INFO
+schema_validator_halpa.egg-info/SOURCES.txt
+schema_validator_halpa.egg-info/dependency_links.txt
+schema_validator_halpa.egg-info/requires.txt
+schema_validator_halpa.egg-info/top_level.txt
+validator/__init__.py
+validator/decorators/__init__.py
