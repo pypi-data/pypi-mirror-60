@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pastml
+Version: 1.9.24
+Summary: Ancestral character reconstruction and visualisation for rooted phylogenetic trees.
+Home-page: https://github.com/evolbioinfo/pastml
+Author: Anna Zhukova
+Author-email: anna.zhukova@pasteur.fr
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: PASTML,visualisation,phylogeny,ancestral character reconstruction
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
