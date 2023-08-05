@@ -1,0 +1,10 @@
+fast_neptune/__init__.py,sha256=ry5O5SW74ugwOUMKSV2_LbWjYa8B0IEvUm7S-lHPA2c,23
+fast_neptune/_nbdev.py,sha256=aeHfgURngepnUn06COxyswFHDRusn50B5O1M4ILNxHM,718
+fast_neptune/core.py,sha256=ns07-x1LMzGfkXewsuVbpK2a9DjzdtrNQpgQO0NtujI,5767
+fast_neptune-0.0.1.dist-info/METADATA,sha256=f2p5qEjk-hmKUWWJ1hbspSXSv6H4qhk2hPVm5abb82I,1969
+fast_neptune-0.0.1.dist-info/RECORD,,
+fast_neptune-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+fast_neptune-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+fast_neptune-0.0.1.dist-info/top_level.txt,sha256=Wk5IXv1qXSzGWj9bg2sGWZI-_gk53lTHo66SYe-BeI4,28
+nbdev_template/__init__.py,sha256=ry5O5SW74ugwOUMKSV2_LbWjYa8B0IEvUm7S-lHPA2c,23
+nbdev_template/_nbdev.py,sha256=103DzSoI9GwRzpBX_6cHrtF5NTTKGyh-9L03ZteK9Wk,303
