@@ -1,0 +1,5 @@
+requests
+regex
+beautifulsoup4
+retranslator
+websocket-client
