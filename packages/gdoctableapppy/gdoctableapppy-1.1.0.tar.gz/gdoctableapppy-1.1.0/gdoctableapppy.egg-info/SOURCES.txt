@@ -1,0 +1,13 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+gdoctableapppy/__init__.py
+gdoctableapppy/gdoctableapp.py
+gdoctableapppy.egg-info/PKG-INFO
+gdoctableapppy.egg-info/SOURCES.txt
+gdoctableapppy.egg-info/dependency_links.txt
+gdoctableapppy.egg-info/requires.txt
+gdoctableapppy.egg-info/top_level.txt
+tests/__init__.py
+tests/test_gdoctableapppy.py
