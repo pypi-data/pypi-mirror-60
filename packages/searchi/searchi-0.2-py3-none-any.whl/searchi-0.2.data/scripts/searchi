@@ -1,0 +1,17 @@
+#!python
+
+import os
+from os import listdir
+from os.path import isfile, join
+import sys
+
+if len(sys.argv) < 2:
+  print("=========Please add search string (ex. searchi hello)")
+  sys.exit()
+
+search_str = sys.argv[1]
+current_dir = os.getcwd()
+
+file_dict = {f:join(current_dir, f)  for f in listdir(current_dir) if isfile(join(current_dir, f)) }
+
+print(file_dict[search_str])
