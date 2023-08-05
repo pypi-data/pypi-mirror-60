@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+setup.py
+debugckage/__init__.py
+debugckage/dprint.py
+debugckage.egg-info/PKG-INFO
+debugckage.egg-info/SOURCES.txt
+debugckage.egg-info/dependency_links.txt
+debugckage.egg-info/top_level.txt
