@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: uws
+Version: 0.0.8
+Summary: µWebSockets.py for Linux & macOS
+Home-page: https://github.com/uNetworking/uWebSockets.py
+Author: Alex Hultman
+Author-email: alexhultman@gmail.com
+Requires-Python: >=3.6
+
