@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ds_pkg
+Version: 0.0.3
+Summary: A Data Science project structure pip package
+Home-page: https://github.com/badran047/ds-pkg
+Author: Hasan Badran
+Author-email: badranh88@gmail.com
+License: UNKNOWN
+Description: # Data Science Package Structure (DSPS)
+        This is a sample data science package structure that is installable and ready to start off your project
+        
+        Good Luck!
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
