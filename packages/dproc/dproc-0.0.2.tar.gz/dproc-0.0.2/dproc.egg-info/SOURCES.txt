@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+dproc/__init__.py
+dproc/_nbdev.py
+dproc/core.py
+dproc.egg-info/PKG-INFO
+dproc.egg-info/SOURCES.txt
+dproc.egg-info/dependency_links.txt
+dproc.egg-info/entry_points.txt
+dproc.egg-info/not-zip-safe
+dproc.egg-info/requires.txt
+dproc.egg-info/top_level.txt
