@@ -1,0 +1,6 @@
+setup.py
+organizze_client/UNKNOWN.egg-info/PKG-INFO
+organizze_client/UNKNOWN.egg-info/SOURCES.txt
+organizze_client/UNKNOWN.egg-info/dependency_links.txt
+organizze_client/UNKNOWN.egg-info/requires.txt
+organizze_client/UNKNOWN.egg-info/top_level.txt
