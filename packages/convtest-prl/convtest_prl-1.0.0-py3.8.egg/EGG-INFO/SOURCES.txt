@@ -1,0 +1,12 @@
+README.md
+setup.py
+convtest_prl.egg-info/PKG-INFO
+convtest_prl.egg-info/SOURCES.txt
+convtest_prl.egg-info/dependency_links.txt
+convtest_prl.egg-info/not-zip-safe
+convtest_prl.egg-info/requires.txt
+convtest_prl.egg-info/top_level.txt
+src/convtest_prl.py
+src/kwlist
+src/parser_convtest.py
+src/utils.py

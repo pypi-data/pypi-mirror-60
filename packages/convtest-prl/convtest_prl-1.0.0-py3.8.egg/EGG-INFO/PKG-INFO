@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: convtest-prl
+Version: 1.0.0
+Summary: Convergence test for vasp.
+Home-page: https://github.com/hitliaomq/ConvTest
+Author: Mingqing Liao
+Author-email: liaomq1900127@163.com
+License: GPL3
+Download-URL: https://github.com/hitliaomq/ConvTest
+Description: UNKNOWN
+Keywords: physics,materials,convergence test
+Platform: linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Physics
