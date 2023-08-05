@@ -1,0 +1,14 @@
+embo/VERSION,sha256=QLjrQACpE6d5EJBTXykdPTaYdBYqie88nj1OiHobnnk,6
+embo/__init__.py,sha256=JgKYWl3CF6j9VZu2izKRWd3SSJk8gd-CM_WIXmloQUk,160
+embo/core.py,sha256=juj1tI4SxwiXaS_8zKUILhrzCpTM23rmoW9KWGttTV4,7656
+embo/utils.py,sha256=8TzmEXfvPE7xWlsmCHNAUkNvDzsKLoezosyvqs1Xeys,2766
+embo/examples/Basic-Example.ipynb,sha256=BIycQSjDY8_ZLCG5lS5Mgf6AWq0dVMOLB-CN_LjoViY,73424
+embo/examples/Markov-Chains.ipynb,sha256=IxcLAuZwCXBJru2m9yUmKf-aLFdSYLfG0S7oenY0Xyo,148486
+embo/examples/embo_example.ipynb,sha256=wwzPwaAsMau4fplTO73ToZ5WV9W5wkRoW7QP9M5x5oQ,49609
+embo/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+embo/test/test_embo.py,sha256=INwHvc7yKBxG0aNvYw6ldm4JMGdpxY4NRy1chrcwI34,2380
+embo-0.4.0.dist-info/COPYING,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+embo-0.4.0.dist-info/METADATA,sha256=_JcRarU8tPD688aEbF-muBxVVXOP-uo1y-QFWQhjVcc,4801
+embo-0.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+embo-0.4.0.dist-info/top_level.txt,sha256=ljAtnrIrMeLMZ8DJzi192OpO8Bp11wJeXNKHv44ykwE,5
+embo-0.4.0.dist-info/RECORD,,
