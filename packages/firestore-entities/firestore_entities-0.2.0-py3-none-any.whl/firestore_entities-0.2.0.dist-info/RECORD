@@ -1,0 +1,9 @@
+firestore/__init__.py,sha256=w6_yO-QrEVOKaXvZ1zmFKVIKEoom02Rdo9TrRMHeYmc,252
+firestore/db.py,sha256=dx3pkZmxz89pw7Ed8uOmLchqYs4TSaoFOM91ZkP1VSs,10220
+firestore/entity.py,sha256=DerMsZc0CagIANwBg4-5ttzQyMQ_QeXeMRagUskC1Ps,3882
+firestore/query.py,sha256=17MS5offOIkZ62YIMFUB-J1BD8VPU9A_mgSGU2lt9Is,5963
+firestore_entities-0.2.0.dist-info/LICENSE,sha256=0Sa52vlFKOAwC6eH53JrVEAJmf9QEeg1XbiM1aYEHDc,1060
+firestore_entities-0.2.0.dist-info/METADATA,sha256=oVYQmwCGAi9Wc67ZpBeSf9SqGuiJtOdnShV_ccmhnPc,2974
+firestore_entities-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+firestore_entities-0.2.0.dist-info/top_level.txt,sha256=vlj1JSUKMw7toGNS_gLvKYYJXpw4Z5HywHEnNWdpFE8,10
+firestore_entities-0.2.0.dist-info/RECORD,,
