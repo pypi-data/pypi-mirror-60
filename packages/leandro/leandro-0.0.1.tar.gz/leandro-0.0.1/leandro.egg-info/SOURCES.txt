@@ -1,0 +1,13 @@
+README.md
+setup.py
+leandro.egg-info/PKG-INFO
+leandro.egg-info/SOURCES.txt
+leandro.egg-info/dependency_links.txt
+leandro.egg-info/requires.txt
+leandro.egg-info/top_level.txt
+mypack/__init__.py
+mypack/np_utils.py
+mypack/pd_utils.py
+mypack/plot_utils.py
+tests/__init__.py
+tests/test_lib.py
