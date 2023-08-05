@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: neji
+Version: 0.0.0.1
+Summary: Online free cloud service unlimited
+Home-page: UNKNOWN
+Author: Viraj Neji
+Author-email: unanneji@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Welcome in Neji!
+===================
+
+
+
+
+
+> **Note:**
+
+> - We can not give assurance about security due to their policies.
+> - This is package mainly used to upload your fiel into online world.
+> - This will help you to send the your file in directory into online world.
+> - This package uses the some extra site in order to cloud store.
+
+
+
+## Version
+
+```python
+
+import neji
+print(neji.Neji_version())
+
+# output: Hydrogen-0.0.0.1
+```
+
+## Usage
+```python
+
+import neji
+print(neji.Neji_upload(r"C:\...\Pictures\trial\black1 - Copy (5).png"))
+
+# output: https://file.io/CfJlLI
+```
+## <i class="icon-pencil"></i> Contributing
+Pull requests, we are welcome. For major changes, please open an issue first to discuss what you would like to change. 
+Contact us to improvement this package on:
+ <i class="icon-upload"></i> **unanneji@gmail.com** 
+
+your are welcome to our improvement.
+Please make sure to update tests as appropriate.
+
+> **Remembaring you that:** We can not give assurance about security due to their policies.
+
+## License
+Developed by **Viraj Basavaraj Neji**
+
+Contact on: unanneji@gmail.com (We will try.)
+
+**MIT**
+
