@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: liber
+Version: 0.0.2
+Summary: A library to compile liber.
+Home-page: https://github.com/librian-center/liber-language
+Author: RimoChan
+Author-email: the@librian.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Liber
+
+Liber解析器。
+
