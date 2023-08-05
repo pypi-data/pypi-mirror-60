@@ -1,0 +1,10 @@
+README.md
+setup.py
+sql_schema_builder/MySQLSchema.py
+sql_schema_builder/SQLSchemaBuilder.py
+sql_schema_builder/__init__.py
+sql_schema_builder.egg-info/PKG-INFO
+sql_schema_builder.egg-info/SOURCES.txt
+sql_schema_builder.egg-info/dependency_links.txt
+sql_schema_builder.egg-info/requires.txt
+sql_schema_builder.egg-info/top_level.txt
