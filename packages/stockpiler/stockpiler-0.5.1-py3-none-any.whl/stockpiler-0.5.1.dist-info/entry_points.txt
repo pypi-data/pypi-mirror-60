@@ -1,0 +1,3 @@
+[console_scripts]
+stockpiler = stockpiler.__main__:main
+
