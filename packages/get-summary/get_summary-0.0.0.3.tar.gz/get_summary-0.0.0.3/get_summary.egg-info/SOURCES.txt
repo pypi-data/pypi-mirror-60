@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+get_summary/createsummary.py
+get_summary.egg-info/PKG-INFO
+get_summary.egg-info/SOURCES.txt
+get_summary.egg-info/dependency_links.txt
+get_summary.egg-info/requires.txt
+get_summary.egg-info/top_level.txt
