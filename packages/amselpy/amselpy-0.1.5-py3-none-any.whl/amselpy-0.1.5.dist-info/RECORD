@@ -1,0 +1,10 @@
+amselpy/__init__.py,sha256=59BjvH189v3YicGED2j2GJddkLshC8uaabMkFhUSQyE,59
+amselpy/amsel.py,sha256=sK3smj0bqOQ1Tgzh2pzWNjJwK4kUoTLkpMx6V_hApSE,355
+amselpy/connection.py,sha256=oZG4diPfQ9szpursdorLTepRh68jKBDZlIrItXq42H8,748
+amselpy/skills.py,sha256=_gS0Elvb9bd_5WGtTFRpteuKLULPyQ57p7qvH1hJm_E,1569
+amselpy/utils.py,sha256=3S9WIJF6VM-MXxuxnGkcApkQgwER7NJSbdZlYWgLsvU,810
+amselpy-0.1.5.dist-info/LICENSE,sha256=wTWSK1h1Z-cprjTUb5xL9xuQpesmQxZrQ9S2pfQ9NLA,1067
+amselpy-0.1.5.dist-info/METADATA,sha256=x-RdqQW6XaVs36fkR3w8CGvHujSSdJp9mwmlq5xXjug,980
+amselpy-0.1.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+amselpy-0.1.5.dist-info/top_level.txt,sha256=P3oN_Z_ZtuGvZs2KIwB2vq59rNWEx795zAe90u7JSx8,8
+amselpy-0.1.5.dist-info/RECORD,,
