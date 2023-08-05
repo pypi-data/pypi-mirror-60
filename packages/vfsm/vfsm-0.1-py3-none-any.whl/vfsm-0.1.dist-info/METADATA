@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: vfsm
+Version: 0.1
+Summary: Python framework for virtual finite state machine implementations
+Home-page: https://github.com/rhjdjong/vfsm
+Author: Ruud de Jong
+Author-email: ruud.de.jong@xs4all.nl
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+UNKNOWN
+
+
