@@ -1,0 +1,1 @@
+textlog2json/lexer/_loglexer.abi3.so
