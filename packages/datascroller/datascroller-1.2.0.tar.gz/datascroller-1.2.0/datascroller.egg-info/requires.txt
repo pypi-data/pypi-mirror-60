@@ -1,0 +1,4 @@
+pandas
+
+[:platform_system == "Windows"]
+windows-curses
