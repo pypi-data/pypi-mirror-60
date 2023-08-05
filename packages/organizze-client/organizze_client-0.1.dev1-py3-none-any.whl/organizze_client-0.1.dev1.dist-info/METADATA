@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: organizze-client
+Version: 0.1.dev1
+Summary: A python wrapper over Organizze public api
+Home-page: https://github.com/lucrib/organizze-client
+Author: Lucas Ribeiro
+Author-email: lucasribeiro1990@gmail.com
+License: MIT license
+Project-URL: Source, https://github.com/lucrib/organizze-client
+Project-URL: Tracker, https://github.com/lucrib/organizze-client/issues
+Keywords: organizze,rest,api
+Platform: linux
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5
+Requires-Dist: requests
+
+Organizze Client
+================
+
+Organizze client is a wrapper over [the Organizze public api](https://github.com/organizze/api-doc).
+
+
