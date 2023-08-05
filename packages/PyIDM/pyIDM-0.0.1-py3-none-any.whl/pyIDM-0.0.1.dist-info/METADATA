@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyIDM
+Version: 0.0.1
+Summary: download manager
+Home-page: https://github.com/pyIDM/pyIDM 
+Author: Mahmoud Elshahat
+Author-email: mahmoud_elshahhat@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pyIDM
+
+pyIDM is an open source multi-connections download manager developed in Python,                                    
+it downloads general files, support downloading videos, and playlists from youtube.                               
+Mainly based on "pyCuRL/curl", "youtube_dl", and "PySimpleGUI"
+[project home page](https://github.com/pyIDM/pyIDM/)
+
+

@@ -1,0 +1,40 @@
+Copyright (c) 2019, 2020 pyIDM
+
+# ####################################################################################################################
+# copyright notice                                                                                                   #
+# ####################################################################################################################
+# pyIDM is an open source multi-connections download manager developed in Python,                                    #
+# it downloads general files, support downloading videos, and playlists from youtube.                                #
+# Mainly based on "pyCuRL/curl", "youtube_dl", and "PySimpleGUI"                                                     #
+#                                                                                                                    #
+# Project url: https://github.com/pyIDM/pyIDM                                                                        #
+#                                                                                                                    #
+# Author,                                                                                                            #
+# Mahmoud Elshahat                                                                                                   #
+# email: mahmoud_elshahhat@yahoo.com                                                                                 #
+# 2019, 2020                                                                                                         #
+# ####################################################################################################################
+
+
+# ####################################################################################################################
+# License   GNU LGPLv3                                                                                               #
+# ####################################################################################################################
+# This software can be used under "GNU LGPLv3" License, this means:                                                  #
+# you have permission for: Commercial use, Distribution, Modification,  Patent use, Private use                      #
+# subject to the following conditions:                                                                               #
+#  - Source code must be made available when the software is distributed.                                            #
+#  - a copy of the license and copyright notice must be included with the software.                                  #
+#  - Changes made to the code must be documented                                                                     #
+# ####################################################################################################################
+
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
