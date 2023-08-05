@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: data-hygiene
+Version: 0.3
+Summary: A menu driven package
+Home-page: https://github.com/santosh051987/menulist
+Author: Santosh Singh
+Author-email: santosh@contactous.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# data-hygiene - Make your menu driven program
+
+A Helper pip package for menu driven program. This pip package helps you automate your program manage from command line using menu driven. Sam
+
+
+### Assumptions:
+
++ Assuming python is installed on your system.
+
+Install `data-hygiene` on your system using : 
+
+```
+pip install pymailcheck
+```
+```
+pip install data-hygiene
+```
+
+### Development:
+
++ Need to install package of pandas
+
