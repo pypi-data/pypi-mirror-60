@@ -1,0 +1,106 @@
+Metadata-Version: 1.2
+Name: p4x
+Version: 0.2.0
+Summary: Philipp Tempel's Personal Python Package. Includes lots of self-made modules and methods.
+Home-page: https://github.com/philipptempel/python-p4x
+Author: Philipp Tempel
+Author-email: mail@philipptempel.me
+License: MIT
+Project-URL: Documentation, https://python-p4x.readthedocs.io/
+Project-URL: Changelog, https://python-p4x.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/philipptempel/python-p4x/issues
+Description: ========
+        Overview
+        ========
+        
+        
+        
+        Philipp Tempel's Personal Python Package. Includes lots of self-made modules and methods.
+        
+        * Free software: MIT license
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install p4x
+        
+        You can also install the in-development version with::
+        
+            pip install https://github.com/philipptempel/python-p4x/archive/master.zip
+        
+        
+        Documentation
+        =============
+        
+        
+        https://python-p4x.readthedocs.io/
+        
+        
+        Development
+        ===========
+        
+        To run the all tests run::
+        
+            tox
+        
+        Note, to combine the coverage data from all the tox environments run:
+        
+        .. list-table::
+            :widths: 10 90
+            :stub-columns: 1
+        
+            - - Windows
+              - ::
+        
+                    set PYTEST_ADDOPTS=--cov-append
+                    tox
+        
+            - - Other
+              - ::
+        
+                    PYTEST_ADDOPTS=--cov-append tox
+        
+        
+        Changelog
+        =========
+        
+        
+        0.1.3 (2020-01-22)
+        ------------------
+        
+        * Add module ``laboratory``  with ``experiments`` submodule to manage experimental trials into projects, sessions, and trials
+        * Add module ``timing``
+        * Drop support for ``python3.5``
+        
+        0.1.2 (2019-12-27)
+        ------------------
+        
+        * Add a ``Makefile`` with targets for testing, building, releasing, etc.
+        
+        0.1.1 (2019-12-17)
+        ------------------
+        
+        * Changes in ``bumpversion`` configuration
+        * Change how module ``colorschemes`` behaves resulting in much cleaner code
+        
+        0.1.0 (2019-11-25)
+        ------------------
+        
+        * First release on PyPI.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
