@@ -1,0 +1,42 @@
+"""Django view decorator."""
+
+import logging
+from django_ip_geolocation.utils import get_geolocation, set_cookie
+from django_ip_geolocation.settings import IP_GEOLOCATION_SETTINGS as _settings
+
+
+def with_ip_geolocation(view_func):
+    """Decorate a django view, to add geolocation data to request/response.
+
+    :param: view_func: Django view function
+    :type: function
+    :return: A wrapper function
+    :rtype: function
+    """
+    def inner(request):  # noqa: E501
+        try:
+            enable_request = _settings.get('ENABLE_REQUEST_HOOK')
+            enable_response = _settings.get('ENABLE_RESPONSE_HOOK')
+            if not enable_request and not enable_response:
+                return view_func(request)
+
+            geolocation = get_geolocation(request)
+
+            if enable_request:
+                request.geolocation = geolocation
+
+            response = view_func(request)
+
+            if enable_response:
+                header = _settings.get('RESPONSE_HEADER')
+                response[header] = geolocation
+
+            if _settings.get('ENABLE_COOKIE', False):
+                set_cookie(response, geolocation)
+
+            return response
+        except Exception:
+            logging.error('Django Ip Geolocation Error', exc_info=True)
+            return view_func(request)
+
+    return inner
