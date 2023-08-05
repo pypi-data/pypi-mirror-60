@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: aiobooru
+Version: 0.1.0
+Summary: A danbooru API helper using aiohttp
+Home-page: https://github.com/YuiYukihira/aiobooru
+Author: Yui Yukihira
+Author-email: yuiyukihira1@gmail.com
+License: MIT
+Description: # Aiobooru - A package for Danbooru API using aiohttp
+        
+        
+        Use like:
+        
+        ```python
+        import aiobooru
+        import asyncio
+        
+        def run():
+            async with aiobooru.Booru() as a:
+                p = await a.post(1)
+                await p.download('image.jpg')
+        
+        asyncio.run(run())
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Provides-Extra: aiofiles
