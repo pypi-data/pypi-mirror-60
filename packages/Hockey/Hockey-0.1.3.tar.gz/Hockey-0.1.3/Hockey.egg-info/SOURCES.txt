@@ -1,0 +1,16 @@
+Makefile
+Readme.md
+requirements.txt
+setup.cfg
+setup.py
+Hockey/__main__.py
+Hockey/config.py
+Hockey/video.py
+Hockey.egg-info/PKG-INFO
+Hockey.egg-info/SOURCES.txt
+Hockey.egg-info/dependency_links.txt
+Hockey.egg-info/entry_points.txt
+Hockey.egg-info/not-zip-safe
+Hockey.egg-info/pbr.json
+Hockey.egg-info/requires.txt
+Hockey.egg-info/top_level.txt
