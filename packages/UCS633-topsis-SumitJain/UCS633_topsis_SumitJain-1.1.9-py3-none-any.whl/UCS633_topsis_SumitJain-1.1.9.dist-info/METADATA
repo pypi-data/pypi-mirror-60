@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: UCS633-topsis-SumitJain
+Version: 1.1.9
+Summary: A python package to implement topsis(MCDM)
+Home-page: https://github.com/SumitJain01/MyProjects
+Author: Sumit Jain
+Author-email: sumitjaini1998@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+This is a python package to implement topsis(MCDM).The Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) is a multi-criteria decision analysis method, which was originally developed by Ching-Lai Hwang and Yoon in 1981 with further developments by Yoon in 1987, and Hwang, Lai and Liu in 1993.
+
+
