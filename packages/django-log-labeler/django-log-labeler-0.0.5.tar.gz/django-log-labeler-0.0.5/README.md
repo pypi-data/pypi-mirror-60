@@ -1,0 +1,103 @@
+django-log-labeler
+=====================
+
+**Django middleware and log filter to attach values from the headers to every log message generated as part of a request.**
+
+**Author:** Hermann Stephane Ntsamo
+
+Example
+-------
+
+```
+DEBUG [340d34bb4bb91ed4f45c414808a03a65] myproject.apps.myapp.views: Some log message
+DEBUG [340d34bb4bb91ed4f45c414808a03a65] myproject.apps.myapp.forms: Some other log message
+```
+
+
+Installation and usage
+----------------------
+
+First, install the package: `pip install django-log-labeler`
+
+Add the middleware to your `MIDDLEWARE_CLASSES` setting.
+
+```python
+MIDDLEWARE_CLASSES = (
+    'log_labeler.middleware.HeaderToLabelMiddleware',
+    # ... other middleware goes here
+)
+```
+
+Add the `log_labeler.filters.HeaderToLabelFilter` to your `LOGGING` setting. Update your `formatters` to include the header names you want appearing in the log message. Add a handler to output the messages (eg to the console), and finally attach the handler to your application's logger.
+
+An example `LOGGING` setting is below:
+
+```python
+LOG_LABEL_REQUEST_SETTING = {
+    "request_id": "HTTP_X_REQUEST_ID"
+}
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'filters': {
+        'request_id': {
+            '()': 'log_labeler.filters.HeaderToLabelFilter'
+        }
+    },
+    'formatters': {
+        'standard': {
+            'format': '%(levelname)-8s [%(asctime)s] [%(request_id)s] %(name)s: %(message)s'
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'filters': ['request_id'],
+            'formatter': 'standard',
+        },
+    },
+    'loggers': {
+        'myapp': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    }
+}
+```
+
+You can then output log messages as usual:
+
+```python
+import logging
+logger = logging.getLogger(__name__)
+logger.debug("Hello world!")
+```
+
+License
+-------
+
+Copyright © 2012-2018, DabApps.
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without 
+modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this 
+list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this 
+list of conditions and the following disclaimer in the documentation and/or 
+other materials provided with the distribution.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE 
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL 
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR 
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER 
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, 
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
