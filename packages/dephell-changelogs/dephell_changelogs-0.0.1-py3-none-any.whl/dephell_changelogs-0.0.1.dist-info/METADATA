@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: dephell-changelogs
+Version: 0.0.1
+Summary: Find changelog for github repository, local dir, parse changelog
+Home-Page: https://github.com/dephell/dephell_changelogs
+Author: Gram (@orsinium)
+Author-email: gram@orsinium.dev
+Requires-Python: >=3.5
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: requests
+Provides-Extra: dev
+
+
+dephell_changelogs
+==================
+
+Installation
+------------
+
+.. code-block:: bash
+
+   python3 -m pip install --user dephell_changelogs
+
+Usage
+-----
+
+Get changelog url:
+
+.. code-block:: python
+
+   from dephell_changelogs import get_changelog_url
+
+   url = get_changelog_url('dephell')
+   url = get_changelog_url('https://dephell.readthedocs.io/')
+   url = get_changelog_url('https://github.com/dephell/dephell/')
+
+Parse changelog:
+
+.. code-block:: python
+
+   from dephell_changelogs import parse_changelog
+
+   parsed = parse_changelog(url)
+   parsed['0.8.0']
+   # 'New commands:\n\n+ [dephell package bug]...'

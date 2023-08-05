@@ -1,0 +1,12 @@
+dephell_changelogs-0.0.1.dist-info/dependency_links.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dephell_changelogs-0.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dephell_changelogs-0.0.1.dist-info/METADATA,sha256=FZH2ufpTX3Kekq6UvuurWV0Y37w94wKS7z4TPhNlnEE,1515
+dephell_changelogs-0.0.1.dist-info/top_level.txt,sha256=ZOo3ZXL-QKK2skn_i_LRQ-hmUzUVZIA7djok60I9R6g,18
+dephell_changelogs-0.0.1.dist-info/WHEEL,sha256=Us79eivRQjLGHRjcJWcKLoOci69wgGrVnpmn7W4m6PA,86
+dephell_changelogs/_cli.py,sha256=gLJCSeDmgy2RqT0s75c6QFQotD2Prv1qUHZPXHo84gQ,301
+dephell_changelogs/__init__.py,sha256=NivMw0vi7u8W4spvAuDev_vEWL8shuVBKmA254gM1H0,225
+dephell_changelogs/_parser.py,sha256=qKbiuvrDHmOiNqMaL_2FZocPV0Y3Mk9Iecvh0gQrKTk,2411
+dephell_changelogs/__main__.py,sha256=ZPGytkQ2AZkJkbvPNhYmk7XH9lL6WO4K9U96G9-rQwM,43
+dephell_changelogs/_finder.py,sha256=cjjYG_jClmJNtIDJMOtgsjPffkJBpyefaU0JjqOfhmA,7899
+dephell_changelogs-0.0.1.dist-info/LICENSE,sha256=N7OhtAlbXiRhXf2cAVhHCWveaclUsIeM7hPYJIgdbyE,1109
+dephell_changelogs-0.0.1.dist-info/RECORD,,
