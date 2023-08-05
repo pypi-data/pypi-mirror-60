@@ -1,0 +1,13 @@
+jsonschemaform/__init__.py,sha256=VFw4sJIt4Zc0-__eYnksN8Ku9qMhbPpHJEkXMWUiD30,4
+jsonschemaform/default_settings.py,sha256=WVM6qjuQp83i1WlFm0Nyo1V_IHYjFTlIi6cwvNWL_5U,1306
+jsonschemaform/admin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonschemaform/admin/widgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonschemaform/admin/widgets/jsonschema_widget.py,sha256=bKW_Ljx5AZcZyPk8CiqFUJuC4iWYsRT64n0vHRPmRMM,1315
+jsonschemaform/static/js/jsoneditor.min.js,sha256=51-oMmpgSgS4jV5_DcGKnDHIOL6Jeie2i7ka6sPQVro,161834
+jsonschemaform/static/js/jsonschema-form.js,sha256=z94CbPRlB5q8j9UnJgbJZ_p6rZgz1e59DiMjpCyP_m8,534
+jsonschemaform/templates/jsonschema_widget.html,sha256=H-AnrqUEPkn4pMzt3oqcv9esOQzUmKFxjsK6EKRUk9o,196
+django_jsonschema_form-1.0.3.dist-info/LICENSE,sha256=9w7uSUGgtBedfUHKKIs36Pfzl_qMUG9Ztouk8VrctKs,1098
+django_jsonschema_form-1.0.3.dist-info/METADATA,sha256=jGyYv97e16avwLVWI-NMzZjvY7fT4D0nIdZS_mlZKAY,780
+django_jsonschema_form-1.0.3.dist-info/WHEEL,sha256=XOj1g5kV4OxZCRiBvYFIQdhMldfnAF5nUxS8sgkc5Mg,92
+django_jsonschema_form-1.0.3.dist-info/top_level.txt,sha256=gM-AGLvvwhq0YLNIpBgJicDVGlroBn0osHsPhiC96ps,15
+django_jsonschema_form-1.0.3.dist-info/RECORD,,
