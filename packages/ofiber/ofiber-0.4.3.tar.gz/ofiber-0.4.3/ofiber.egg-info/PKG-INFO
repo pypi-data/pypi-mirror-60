@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ofiber
+Version: 0.4.3
+Summary: Light Propagation in Optical Fibers
+Home-page: https://github.com/scottprahl/ofiber.git
+Author: Scott Prahl
+Author-email: scott.prahl@oit.edu
+License: MIT
+Description: # ofiber
+        
+        A set of Python modules to calculate light propagation through optical fibers.
+        
+        ## Usage
+        
+        For examples and use cases, see <https://github.com/scottprahl/ofiber/tree/master/doc>
+        
+        ## Installation
+        
+        Just use `pip`::
+        
+           pip install --upgrade ofiber
+        
+        ## To uninstall:
+        
+        Again just use `pip`::
+        
+           pip uninstall ofiber
+        
+        ## Dependencies
+        
+        Required Python modules: numpy, matplotlib, scipy
+        
+        ## License
+        
+        `ofiber` is licensed under the terms of the MIT license.
+Keywords: refraction,Sellmeier,modes,dispersion
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
