@@ -1,0 +1,13 @@
+numpy
+bitstruct
+requests
+jinja2
+loguru
+
+[dev]
+pipenv-setup
+
+[test]
+pytest
+pandas
+beautifulsoup4
