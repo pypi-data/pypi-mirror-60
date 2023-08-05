@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: cacheflow
+Version: 0.2
+Summary: Caching Workflow Engine
+Home-page: https://gitlab.com/remram44/cacheflow
+License: BSD-3-Clause
+Keywords: workflow,execution,cache,caching,notebook
+Author: Remi Rampin
+Author-email: remi.rampin@nyu.edu
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: SQL
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Utilities
+Requires-Dist: PyYAML (>=5.3,<6.0)
+Requires-Dist: cloudpickle (>=1.2,<2.0)
+Requires-Dist: markdown (>=3,<4)
+Requires-Dist: requests (>=2.22,<3.0)
+Project-URL: Repository, https://gitlab.com/remram44/cacheflow
+Description-Content-Type: text/x-rst
+
+CacheFlow
+=========
+
+CacheFlow is a caching workflow engine, capable of executing dataflows while
+reusing previous results where appropriate, for efficiency. It is very
+extensible and can be used in many projects.
+
+Goals
+-----
+
+* ☑ Python 3 workflow system
+* ☑ Executes dataflows from JSON or YAML files
+* ☐ `Can also load from SQL database <https://gitlab.com/remram44/cacheflow/issues/4>`__
+* ☐ `Parallel execution <https://gitlab.com/remram44/cacheflow/issues/14>`__
+* ☐ `Streaming/batching <https://gitlab.com/remram44/cacheflow/issues/13>`__
+* ☑ Extensible: can add new components, new storage formats, new caching mechanism, new executors
+* ☐ Pluggable: extensions can be installed from PyPI without forking
+* ☑ Re-usable: can execute workflows by itself, but can also be embedded into applications. Some I plan on developing myself:
+
+  * ☑ `Literate programming app <https://gitlab.com/remram44/cacheflow/issues/2>`__: snippets or components embedded into a markdown file, which are executed on render (similar to Rmarkdown). Results would be cached, making later rendering fast
+  * ☐ Integrate in some of my NYU research projects (VisTrails, Vizier, D3M)
+
+* ☐ `Web-based interface allowing collaborative edition of workflows, with automatic re-execution on change <https://gitlab.com/remram44/cacheflow/issues/11>`__
+
+Other ideas:
+
+* ☐ Use Jupyter kernels as backends to execute code (giving me quick access to all the languages they support)
+* ☐ Isolate script execution (to run untrusted Python/... code, for example with Docker)
+
+Non-goals
+---------
+
+* Make a super-scalable and fast workflow execution engine: I'd rather `make executors based on Spark, Dask, Ray <https://gitlab.com/remram44/cacheflow/issues/14>`__ than try to re-implement those from scratch.
+
+Status
+------
+
+Basic structures are here, extracted from D3M. Execution works. Very few components available. Working on web interface.
+
