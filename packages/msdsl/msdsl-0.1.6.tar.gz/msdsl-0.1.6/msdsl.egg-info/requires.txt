@@ -1,0 +1,4 @@
+svreal>=0.1.9
+scipy
+numpy
+matplotlib
