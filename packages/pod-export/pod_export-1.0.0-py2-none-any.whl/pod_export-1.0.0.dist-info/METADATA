@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pod-export
+Version: 1.0.0
+Summary: POD Export services
+Home-page: https://github.com/FanapSoft/pod-export-python-sdk
+Author: ReZa ZaRe
+Author-email: rz.zare@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/FanapSoft/pod-export-python-sdk
+Project-URL: Tracker, https://github.com/FanapSoft/pod-export-python-sdk/issues
+Keywords: POD,export,download export,export invoice,export delegation,pod sdk
+Platform: UNKNOWN
+Classifier: Natural Language :: Persian
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: pod-base (<2,>=1)
+
+<div dir="rtl">
+
+# پکیج دریافت خروجی از سرویس های پاد
+با استفاده از این پکیج می توانید درخواست هایی که برای دریافت فایل از گزارشات موجود در پاد را ارسال کرده اید،‌مشاهده و یا دانلود کنید
+
+# نصب
+
+برای نصب از طریق `pip` کافیه تا دستور زیر را اجرا کنید
+```
+pip install pod-export
+```
+
+
+# نمونه کد
+
+نمونه کد ها و مثال هایی از تمام متدهای این پکیج را می توانید 
+[اینجا](examples)
+پیدا کنید.
+
+</div>
+

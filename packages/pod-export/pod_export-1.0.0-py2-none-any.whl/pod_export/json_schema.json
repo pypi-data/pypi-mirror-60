@@ -1,0 +1,51 @@
+{
+  "getExportList": {
+    "type": "object",
+    "properties": {
+      "offset": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "size": {
+        "type": "integer",
+        "minimum": 1,
+        "title": "تعداد رکورد در هر صفحه"
+      },
+      "id": {
+        "type": "integer",
+        "title": "شناسه درخواست"
+      },
+      "statusCode": {
+        "type": "string",
+        "enum": [
+          "EXPORT_SERVICE_STATUS_CREATED",
+          "EXPORT_SERVICE_STATUS_RUNNING",
+          "EXPORT_SERVICE_STATUS_SUCCESSFUL",
+          "EXPORT_SERVICE_STATUS_FAILED"
+        ],
+        "title": "کد وضعیت"
+      },
+      "serviceUrl": {
+        "format": "uri",
+        "type": "string",
+        "title": "آدرس سرویس"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "size",
+      "offset"
+    ]
+  }
+}
