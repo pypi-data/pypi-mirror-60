@@ -1,0 +1,81 @@
+[tool.black]
+line_length = 79
+
+[tool.coverage.run]
+branch = true
+source = ["rororo"]
+
+[tool.coverage.paths]
+source = ["rororo/"]
+
+[tool.coverage.report]
+fail_under = 95
+skip_covered = true
+show_missing = true
+
+[tool.poetry]
+name = "rororo"
+version = "2.0.0b3"
+description = "OpenAPI 3 schema support for aiohttp.web applications."
+authors = ["Igor Davydenko <iam@igordavydenko.com>"]
+license = "BSD-3-Clause"
+readme = "README.rst"
+homepage = "https://igordavydenko.com/projects.html#rororo"
+repository = "https://github.com/playpauseandstop/rororo"
+documentation = "https://rororo.readthedocs.io/"
+keywords = ["aiohttp", "aiohttp.web", "oas", "openapi", "openapi3", "helpers", "utilities"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: WSGI",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
+    "Topic :: Utilities",
+    "Typing :: Typed"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+aiohttp = "^3.5"
+aiohttp-middlewares = "^1.0.0"
+attrs = "^19.1"
+openapi-core = "^0.12.0"
+PyYAML = "^5.1"
+typing-extensions = { version = "^3.7.4", python = "<3.8" }
+
+[tool.poetry.dev-dependencies]
+coverage = {extras = ["toml"], version = "^5.0.3"}
+coveralls = "^1.7"
+pytest = "^5.0"
+pytest-aiohttp = "^0.3.0"
+pytest-cov = "^2.7"
+pytest-env = "^0.6.2"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py36,py37,py38
+skipsdist = True
+
+[testenv]
+passenv =
+    PYTHONPATH
+    PYTEST_ADDOPTS
+setenv =
+    PYTHONPATH=.
+    USER=playpauseandstop
+skip_install = True
+whitelist_externals = poetry
+commands_pre =
+    poetry install
+commands =
+    poetry run python -m openapi_spec_validator examples/hobotnica/openapi.yaml
+    poetry run python -m openapi_spec_validator examples/petstore/petstore-expanded.yaml
+    poetry run python -m openapi_spec_validator tests/openapi.json
+    poetry run python -m openapi_spec_validator tests/openapi.yaml
+    poetry run python -m pytest examples/hobotnica/tests.py examples/petstore/tests.py tests/ --cov=rororo --no-cov-on-fail
+"""
