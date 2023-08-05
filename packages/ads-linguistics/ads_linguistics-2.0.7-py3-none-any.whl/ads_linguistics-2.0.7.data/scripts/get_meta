@@ -1,0 +1,14 @@
+#!python
+import sys
+from linguistics.utils import Utils
+from linguistics.io import io
+
+filename, modelname = io().check_args(sys)
+
+meta = Utils().meta_data(modelname)
+
+print("Model: {}".format(modelname))
+print("Posts: {:,.0f}".format(meta["posts"]))
+print("Words: {:,.0f}".format(meta["words"]))
+print("Start Date: {}".format(meta["start_date"].strftime("%Y-%m-%d")))
+print("End Date: {}".format(meta["end_date"].strftime("%Y-%m-%d")))
