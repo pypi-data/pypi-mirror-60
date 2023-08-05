@@ -1,0 +1,14 @@
+README.md
+setup.py
+gcli/__init__.py
+gcli/cli.py
+gcli/clone.py
+gcli/config.py
+gcli/gitlab_python.py
+gcli/pull_repos.py
+gitcli.egg-info/PKG-INFO
+gitcli.egg-info/SOURCES.txt
+gitcli.egg-info/dependency_links.txt
+gitcli.egg-info/entry_points.txt
+gitcli.egg-info/requires.txt
+gitcli.egg-info/top_level.txt

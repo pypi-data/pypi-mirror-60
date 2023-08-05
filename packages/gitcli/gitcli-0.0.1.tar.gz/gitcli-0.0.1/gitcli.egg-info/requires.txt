@@ -1,0 +1,8 @@
+click
+distro
+cookiecutter
+hiyapyco
+requests
+gitpython
+cryptography
+python-gitlab
