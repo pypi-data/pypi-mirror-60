@@ -1,0 +1,12 @@
+README.md
+setup.py
+aos/__init__.py
+aos/aos.py
+aos/checker.py
+aos/parser.py
+aos/type_matchers.py
+aos/utils.py
+aos.egg-info/PKG-INFO
+aos.egg-info/SOURCES.txt
+aos.egg-info/dependency_links.txt
+aos.egg-info/top_level.txt
