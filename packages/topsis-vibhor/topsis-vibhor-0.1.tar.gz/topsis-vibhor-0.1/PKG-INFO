@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: topsis-vibhor
+Version: 0.1
+Summary: This package allows you to run topsis on your dataset for Multiple Attribute Decision Making(MADM)
+Home-page: https://github.com/vibhorkrishna/topsis-vibhor
+Author: Vibhor Krishna
+Author-email: vibhorkrishna98@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: TOPSIS,DATA ANALYSTICS,PS RANA
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
