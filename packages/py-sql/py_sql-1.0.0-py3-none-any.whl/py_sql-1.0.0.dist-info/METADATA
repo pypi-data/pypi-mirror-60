@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: py-sql
+Version: 1.0.0
+Summary: Python Mysql Library
+Home-page: UNKNOWN
+Author: Arslan Haider Sherazi
+Author-email: arslanhaider95@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: mysql-connector (==2.2.9)
+
+UNKNOWN
+
+
