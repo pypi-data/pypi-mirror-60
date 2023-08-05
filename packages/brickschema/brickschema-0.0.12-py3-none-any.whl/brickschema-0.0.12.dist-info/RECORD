@@ -1,0 +1,10 @@
+brickschema/__init__.py,sha256=eXGxEUwGk8bkVjSCzLkTMVthyip5LP5-9pp4tuXL3-E,296
+brickschema/graph.py,sha256=hC-KGq2321jBwLhI4bZsmvFhvuiUlMYtXOHqmJdXTDU,3383
+brickschema/inference.py,sha256=CqCmPIJzK7TrTZuF3rRF2YCnFVUgTjZ_tFwK6-1gerQ,19301
+brickschema/namespaces.py,sha256=LXZhjrtSPTBfsRJxiHciOKM6nyERXcAOB-CWmla7PBk,837
+brickschema/ontologies/Brick.ttl,sha256=3PZGBFdXcJOGelNVcEDpTmeH-uCKfUhHyEDd6AYynsA,333672
+brickschema/ontologies/taglookup.pickle,sha256=335syhfEtMQ5PGSZ30uJeLpi9LyoLUtu28pcn5EXSaU,82643
+brickschema/orm.py,sha256=yVovxcDRvR4O5s_kPPtuOpecshK-Xqrueg6-52xrAkU,9690
+brickschema-0.0.12.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+brickschema-0.0.12.dist-info/METADATA,sha256=3Vjq8M6GVlFbm990AO2dXASDMZIsUjtMt_AsAZ0X8cM,2502
+brickschema-0.0.12.dist-info/RECORD,,
