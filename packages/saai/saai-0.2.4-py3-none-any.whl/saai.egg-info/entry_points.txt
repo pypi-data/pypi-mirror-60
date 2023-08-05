@@ -1,0 +1,4 @@
+[console_scripts]
+saai = saai.__main__:main
+saash = saai.shell.__main__:shell_main
+

@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: saai
+Version: 0.2.4
+Summary: nlu components
+Home-page: https://github.com/samlet/saai
+Author: Samlet Wu
+Author-email: xiaofei.wu@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/samlet/saai/issues
+Project-URL: Source, https://github.com/samlet/saai
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jieba (~=0.40)
+Requires-Dist: simplejson
+Requires-Dist: paddlepaddle-tiny (~=1.6.1)
+Requires-Dist: sagas (>=0.1.2)
+Requires-Dist: python-json-config
+Requires-Dist: python-dotenv
+Provides-Extra: dev
+Requires-Dist: jupyter (~=1.0.0) ; extra == 'dev'
+Requires-Dist: streamlit (~=0.50.2) ; extra == 'dev'
+Requires-Dist: ipymarkup (~=0.5.0) ; extra == 'dev'
+Provides-Extra: rasa
+Requires-Dist: rasa (~=1.6.0) ; extra == 'rasa'
+Requires-Dist: rasa-sdk (~=1.6.0) ; extra == 'rasa'
+
+[![Version](https://img.shields.io/pypi/v/saai.svg)](https://pypi.python.org/pypi/saai/)
+# saai
+
+sagas ai&nlu components.
+
+## start
+```bash
+$ pip install -U saai[rasa]
+```
+
+
