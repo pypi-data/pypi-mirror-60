@@ -1,0 +1,8 @@
+setup.py
+bin/dict
+dictlookup/__init__.py
+dictlookup.egg-info/PKG-INFO
+dictlookup.egg-info/SOURCES.txt
+dictlookup.egg-info/dependency_links.txt
+dictlookup.egg-info/not-zip-safe
+dictlookup.egg-info/top_level.txt
