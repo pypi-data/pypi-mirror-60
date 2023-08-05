@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: django_compilers
+Version: 0.1
+Summary: This adds compilers for various static files, such as SASS.
+Home-page: https://github.com/moddedTechnic/django-compilers
+Author: Jonathan Leeming
+Author-email: jpleeming51@gmail.com
+License: GNU GPL 3.0
+Download-URL: https://github.com/moddedTechnic/django-copmilers/archive/v0.1.1-alpha.tar.gz
+Description: UNKNOWN
+Keywords: django,HTML,components
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Django :: 3.0
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
