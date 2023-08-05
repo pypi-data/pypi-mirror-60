@@ -1,0 +1,12 @@
+CHANGES
+=======
+
+v0.2.0
+------
+
+* Add \_\_contains\_\_ to config
+
+v0.1.1
+------
+
+* Initial commit
