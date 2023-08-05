@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+__pycache__/
+*foo*
+*foo*/
+*log*
+*log*/
+dist/
+_build/
+/TODO.txt

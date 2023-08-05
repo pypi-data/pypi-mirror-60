@@ -1,0 +1,16 @@
+# use python 3.7.3 eventaully by using pyenv: curl https://pyenv.run | bash
+sortedcontainers
+scikit-learn
+statsmodels
+matplotlib
+cachetools
+yfinance
+hyperopt
+requests
+seaborn
+pandas
+keras
+Mako
+h5py
+dill
+gym
