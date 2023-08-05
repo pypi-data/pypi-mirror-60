@@ -1,0 +1,3 @@
+[console_scripts]
+shifty=or_shifty.app:main
+

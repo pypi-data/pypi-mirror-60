@@ -1,0 +1,17 @@
+or_shifty/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+or_shifty/app.py,sha256=pdrVKeUBaByqCWaDbcYO1ddi60hQF-r_jBU3qTzZuGY,1678
+or_shifty/cli.py,sha256=80UgamUQ2nuUyNGaHHkHB6qPO3vfcUvRyv7izZLpxLs,6177
+or_shifty/config.py,sha256=omy6y-Y0utRWpDp_QrnkW9ZUg6BFaU2itJo2Vk_l2yM,1298
+or_shifty/constraints.py,sha256=eMeQR7lzt3jmOgwiTcCLARDLAu1V7v61w5xgSH8sBmA,12968
+or_shifty/history.py,sha256=yZjfbypRE5oEqGa7NH2qGZOua9sm0p4iJcxsZm7FFHg,986
+or_shifty/history_metrics.py,sha256=xbiDBHusKQ0_m8RfgAgePDDF8rn7NxF3z91m7TT6XBc,3602
+or_shifty/indexer.py,sha256=ETWX7RQaAEwLGGW4iFuufe_wOQdNlY03wTKrDs2R7kY,3757
+or_shifty/model.py,sha256=Vr4YCH5bIPn8vjiotQhXDtjE0MmSY8kk8Vxxa5VIT3w,5271
+or_shifty/objective.py,sha256=YwT5QIWEJCoKbe9__FsDvMh5XiNVquzqexh6MzegeG0,4025
+or_shifty/person.py,sha256=gScHqevLYz8K1xqzU9mOdcI3SGiIlDc-11vwqMSXhpA,88
+or_shifty/shift.py,sha256=fo2rn8ypEvhasWM4njpiDfU82cZ1yopokOOuA-k_HRU,3044
+or_shifty-1.1.0.dist-info/entry_points.txt,sha256=kvovIOozUKX8vLaUFk5BppPw5YijmBNHxfMAOSJAWN0,45
+or_shifty-1.1.0.dist-info/LICENSE,sha256=tp4MqdPC6qslA67RZyRnBPEI4lbvzSqQKxRo80AuTwE,1072
+or_shifty-1.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+or_shifty-1.1.0.dist-info/METADATA,sha256=xaJ_vpO7IDaci4_9cBWzc9sMKu5N9BMHeGSvFESWV1g,10076
+or_shifty-1.1.0.dist-info/RECORD,,
