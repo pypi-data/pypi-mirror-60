@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: brnolm
+Version: 0.1.1
+Summary: A language modeling toolkit
+Home-page: https://github.com/BUTSpeechFIT/BrnoLM
+Author: Karel Benes
+Author-email: ibenes@fit.vutbr.cz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch (>=1.4)
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
+# BrnoLM
+A neural language modeling toolkit built on PyTorch.
+
+
