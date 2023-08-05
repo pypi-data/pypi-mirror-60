@@ -1,0 +1,9 @@
+{% load nvd3_tags %}
+{% if error %}
+alert('{{ error|escapejs }}');
+{% elif values %}
+function loadChartScript(){
+   {% load_chart chart_type values chart_container extra %}
+};
+loadChartScript();
+{% endif %}
