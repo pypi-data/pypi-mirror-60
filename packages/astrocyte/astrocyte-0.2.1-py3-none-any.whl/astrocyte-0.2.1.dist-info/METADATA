@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: astrocyte
+Version: 0.2.1
+Summary: Packager for Glia
+Home-page: https://github.com/dbbs-lab/astrocyte
+Author: Robin De Schepper
+Author-email: robingilbert.deschepper@unipv.it
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: nrn-glia (>=0.1.8)
+Requires-Dist: setuptools
+Requires-Dist: gitpython (>=3.0.0)
+Requires-Dist: twine (>=3.0.0)
+Requires-Dist: requests
+Requires-Dist: appdirs (>=1.4.3)
+
+[![Actions Status](https://github.com/dbbs-lab/astrocyte/workflows/Unit%20tests/badge.svg)](https://github.com/dbbs-lab/astrocyte/actions)
+[![codecov](https://codecov.io/gh/dbbs-lab/astrocyte/branch/master/graph/badge.svg)](https://codecov.io/gh/dbbs-lab/astrocyte)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Documentation Status](https://readthedocs.org/projects/astrocyte/badge/?version=latest)](https://astrocyte.readthedocs.io/en/latest/?badge=latest)
+
+# astrocyte
+
+Packager for Glia. Distribute your models amongst the stars.
+
+
