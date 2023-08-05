@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: carson
+Version: 0.0.2
+Summary: carson - An asyncio package to interact the Tesla JSON web service
+Home-page: https://github.com/mloyd/carson
+Author: Michael Loyd
+Author-email: michael@loyd.org
