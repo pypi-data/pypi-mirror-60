@@ -1,0 +1,15 @@
+README.md
+setup.py
+itemzer/__init__.py
+itemzer/__main__.py
+itemzer/get_counter_champs.py
+itemzer/get_items.py
+itemzer/get_runes.py
+itemzer/get_skills_order.py
+itemzer/request_page.py
+itemzer.egg-info/PKG-INFO
+itemzer.egg-info/SOURCES.txt
+itemzer.egg-info/dependency_links.txt
+itemzer.egg-info/entry_points.txt
+itemzer.egg-info/requires.txt
+itemzer.egg-info/top_level.txt

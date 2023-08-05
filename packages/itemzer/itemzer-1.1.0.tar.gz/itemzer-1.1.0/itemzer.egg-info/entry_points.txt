@@ -1,0 +1,3 @@
+[console_scripts]
+itemzer = itemzer.__main__:main
+
