@@ -1,0 +1,14 @@
+nangs/__init__.py,sha256=R9xOYoYrWKcfO5zvTeGC3m_eDNOvxMd8CocQs2tLufo,22
+nangs/_nbdev.py,sha256=kLC-spw0VRBDg90CQOAzA3Hu-M2DW_zsAgoxxVNE4uc,1133
+nangs/bocos.py,sha256=exSElL1zPuEbH8EPKaEPJwcqd1R2L63lgrSIPeUVWBg,9911
+nangs/hi.py,sha256=GPon9iL3Rwlv-On1kOmjnt8eH8IT97wdN7hQmDzjXwc,153
+nangs/pde.py,sha256=uR0C1ADbihWh7gIapyMxrWrrs-pFT0w3-8aAGUg1pmk,13635
+nangs/solution.py,sha256=6erPpm7Mqeu0fsHa94DiEDYrXJB8pL7bWXuHELYMnho,1911
+nangs/solutions.py,sha256=rE8j4-UJJ1VO8S7zAB5vEujrb66gz2MDOfkMPrQMYQs,1028
+nangs/utils.py,sha256=ociFsU-t4TeUcm4RMRzIkpzpdge1ItVsPGPSHaCzP1w,1695
+nangs-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nangs-0.0.8.dist-info/METADATA,sha256=6vcnjiDv2mHHxHwsJshorpUNh-wqh3I5Fs-AXyI7_No,230755
+nangs-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nangs-0.0.8.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+nangs-0.0.8.dist-info/top_level.txt,sha256=aJ9lsSr342poh4P2C2k8w7jwPa20j5Yw5OMze1_8OYg,6
+nangs-0.0.8.dist-info/RECORD,,
