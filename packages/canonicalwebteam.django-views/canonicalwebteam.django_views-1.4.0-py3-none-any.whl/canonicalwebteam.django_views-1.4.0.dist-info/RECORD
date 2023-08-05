@@ -1,0 +1,11 @@
+canonicalwebteam/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+canonicalwebteam/django_views/__init__.py,sha256=OS2U3DyjfYCrNm2SaXe_Hl4D7B0DxFAGce152eAaItA,6963
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_template_finder.py,sha256=PwLJZ44MyMEsSwkO4UBTFDZ82BfR0y_0EYblamK1oeM,6318
+tests/fixtures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/fixtures/urls.py,sha256=p_D9x2Nszc7t82uO2leeGtncKBb7s69E0e7zOw3ZhTQ,172
+canonicalwebteam.django_views-1.4.0.dist-info/LICENSE.txt,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+canonicalwebteam.django_views-1.4.0.dist-info/METADATA,sha256=8tEprA3vTfrjxJLfkzxJ_BbgTXY3oPtloV7IUfdpLZ0,3487
+canonicalwebteam.django_views-1.4.0.dist-info/WHEEL,sha256=XOj1g5kV4OxZCRiBvYFIQdhMldfnAF5nUxS8sgkc5Mg,92
+canonicalwebteam.django_views-1.4.0.dist-info/top_level.txt,sha256=3QzUW8NsRMpxkXDuvyTsaZnBKpWaxA2k0Ofz7ELl5eM,23
+canonicalwebteam.django_views-1.4.0.dist-info/RECORD,,
