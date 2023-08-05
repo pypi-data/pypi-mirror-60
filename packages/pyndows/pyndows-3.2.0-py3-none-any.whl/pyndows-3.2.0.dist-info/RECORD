@@ -1,0 +1,9 @@
+pyndows/__init__.py,sha256=ORggwE7mSLSEFXS8XIdxmx51oOcpFeqpe13hBySGfwc,119
+pyndows/_windows.py,sha256=3gxSFeWXrwm1b75rGG8VZ7BvDXT4KWuCsjaMmdqFkD8,5719
+pyndows/testing.py,sha256=yuFFO9HeKqJE9liy5BSyRH9beFqWHBZjKXfOPhQKmKc,5174
+pyndows/version.py,sha256=M81NLBK9WhTCK3rRSWR9kG4gmEkaU6iemDDawTcOiOg,371
+pyndows-3.2.0.dist-info/LICENSE,sha256=xd320zQeoc-jRB1LnCTKMFT2x0yIIqqX64icuabaQtE,1071
+pyndows-3.2.0.dist-info/METADATA,sha256=3hi68jBSCMBU9w20RV4YYbXALgTfZD38lXou8mQgrSk,4308
+pyndows-3.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyndows-3.2.0.dist-info/top_level.txt,sha256=K6OUbILKyzVuebWlKcyqjIEhN4AZ0n4nR9_iFO3UIpc,8
+pyndows-3.2.0.dist-info/RECORD,,
