@@ -1,0 +1,12 @@
+lmsamplelib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lmsamplelib/subpackage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lmsamplelib/subpackage/examplemodule.cpython-371m-darwin.so,sha256=I4vzZcTh1h9RK5Rtpc-iRUx71_5jDMkafhXjWdyn_I8,40324
+lmsamplelib/subpackage/examplemodule.cpython-372m-darwin.so,sha256=I4vzZcTh1h9RK5Rtpc-iRUx71_5jDMkafhXjWdyn_I8,40324
+lmsamplelib/subpackage/subdir/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lmsamplelib/subpackage/subdir/classwithresourcefile.cpython-371m-darwin.so,sha256=cXxHLlQky-41kh6g1Up3F3FzLKE3_qONEHB3VoQ8xjI,49816
+lmsamplelib/subpackage/subdir/classwithresourcefile.cpython-372m-darwin.so,sha256=cXxHLlQky-41kh6g1Up3F3FzLKE3_qONEHB3VoQ8xjI,49816
+lmsamplelib_felixvita-0.0.4.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+lmsamplelib_felixvita-0.0.4.dist-info/METADATA,sha256=OdWWZPN-4u0CxB6y1kupTBaScG5adExLeqULFFhryME,623
+lmsamplelib_felixvita-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+lmsamplelib_felixvita-0.0.4.dist-info/top_level.txt,sha256=blf5Y9xRTfFHm4N5sZF3PjosXy1ztV_h143Eu875Dgc,12
+lmsamplelib_felixvita-0.0.4.dist-info/RECORD,,
