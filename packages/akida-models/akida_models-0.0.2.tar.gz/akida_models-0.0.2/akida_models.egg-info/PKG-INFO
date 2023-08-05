@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: akida-models
+Version: 0.0.2
+Summary: Akida Models
+Home-page: https://www.akidalab.com
+Author: David Corvoysier
+Author-email: dcorvoysier@brainchip.com
+License: UNKNOWN
+Description: # Akida models
+        
+        This package contains a model zoo of pre-created spiking neural network (SNN)
+        models built with the Akida sequential API and the CNN2SNN toolkit using
+        quantized Keras models.
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
