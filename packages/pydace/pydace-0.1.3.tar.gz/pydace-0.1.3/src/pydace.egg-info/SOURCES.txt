@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/pydace/__init__.py
+src/pydace.egg-info/PKG-INFO
+src/pydace.egg-info/SOURCES.txt
+src/pydace.egg-info/dependency_links.txt
+src/pydace.egg-info/requires.txt
+src/pydace.egg-info/top_level.txt
+src/pydace/correlation/__init__.py
+src/pydace/regression/__init__.py
+src/pydace/utils/__init__.py
+src/pydace/utils/matrixdivide.py
+src/pydace/utils/optimizers/__init__.py
