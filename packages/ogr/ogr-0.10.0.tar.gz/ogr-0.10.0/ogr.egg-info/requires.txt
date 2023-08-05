@@ -1,0 +1,9 @@
+GitPython
+PyGithub
+python-gitlab
+PyYAML
+cryptography
+Deprecated
+
+[testing]
+pytest
