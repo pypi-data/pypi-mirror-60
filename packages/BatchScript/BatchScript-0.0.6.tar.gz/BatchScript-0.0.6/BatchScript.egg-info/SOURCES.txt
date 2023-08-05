@@ -1,0 +1,12 @@
+README.md
+setup.py
+BatchScript/__init__.py
+BatchScript/config.py
+BatchScript/helper.py
+BatchScript/master.py
+BatchScript/test.py
+BatchScript/worker.py
+BatchScript.egg-info/PKG-INFO
+BatchScript.egg-info/SOURCES.txt
+BatchScript.egg-info/dependency_links.txt
+BatchScript.egg-info/top_level.txt
