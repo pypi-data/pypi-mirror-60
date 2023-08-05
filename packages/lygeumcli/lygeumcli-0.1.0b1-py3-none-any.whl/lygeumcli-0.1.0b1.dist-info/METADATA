@@ -1,0 +1,37 @@
+Metadata-Version: 2.0
+Name: lygeumcli
+Version: 0.1.0b1
+Summary: UNKNOWN
+Home-page: https://github.com/kaiso/lygeum-cli
+Author: Kais OMRI
+Author-email: kais.omri.int@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/pypa/sampleproject/issues
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Say Thanks!, http://saythanks.io/to/example
+Project-URL: Source, https://github.com/kaiso/lygeum-cli/
+Keywords: lygeum configuration server cli
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: System :: Systems Administration
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >2.7
+Provides-Extra: dev
+Provides-Extra: test
+Requires-Dist: pyCLI (<2.0.4,>=2.0.3)
+Requires-Dist: PyInquirer (<2.0.0,>=1.0.3)
+Requires-Dist: requests (<3.0.0,>=2.22.0)
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+
+UNKNOWN
+
+
