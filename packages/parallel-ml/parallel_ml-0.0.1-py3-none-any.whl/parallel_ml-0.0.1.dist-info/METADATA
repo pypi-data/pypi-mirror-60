@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: parallel-ml
+Version: 0.0.1
+Summary: Parallel ML utilities (GPU or CPU) that I can't find anywhere else
+Home-page: UNKNOWN
+Author: Sidhartha Parhi
+Author-email: sidhartha.parhi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.16)
+Requires-Dist: pandas (>=0.24.2)
+Requires-Dist: matplotlib (>=3.1.0)
+
+UNKNOWN
+
+
