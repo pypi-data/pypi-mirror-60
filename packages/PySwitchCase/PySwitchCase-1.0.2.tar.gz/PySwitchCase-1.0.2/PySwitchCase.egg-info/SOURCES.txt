@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+PySwitchCase.egg-info/PKG-INFO
+PySwitchCase.egg-info/SOURCES.txt
+PySwitchCase.egg-info/dependency_links.txt
+PySwitchCase.egg-info/top_level.txt
+src/__init__.py
+src/test.py
+src/PySwitchCase/__init__.py
+src/PySwitchCase/__version__.py
+src/PySwitchCase/examples.py
+src/PySwitchCase/switcher.py
