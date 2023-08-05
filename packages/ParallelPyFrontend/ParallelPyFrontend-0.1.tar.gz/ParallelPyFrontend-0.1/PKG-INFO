@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: ParallelPyFrontend
+Version: 0.1
+Summary: Parallel front-end Python package
+Home-page: https://www.parallel-ai.com
+Author: Parallel team
+Author-email: contact@parallel-ai.com
+License: MIT
+Download-URL: https://github.com/FedericoCampe8/ParallelPyFrontend/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: Optimization,Cloud,AI
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
