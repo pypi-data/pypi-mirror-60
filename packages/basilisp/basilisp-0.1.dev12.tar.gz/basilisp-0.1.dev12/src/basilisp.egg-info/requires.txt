@@ -1,0 +1,8 @@
+astor>=0.8
+atomos
+attrs
+click
+pyfunctional
+pyrsistent
+pytest
+python-dateutil
