@@ -1,0 +1,3 @@
+[console_scripts]
+pdftoimg = pdftoimg.pdftoimg:main
+
