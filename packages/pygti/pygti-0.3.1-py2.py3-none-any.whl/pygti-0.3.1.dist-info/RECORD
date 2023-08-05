@@ -1,0 +1,11 @@
+pygti/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygti/auth.py,sha256=FO5_3sZPO_v34Z_8fI2BZJ1ds0oTG72y-BxRu8WcCg0,1426
+pygti/const.py,sha256=0uTTPdoEGXNNdWBlduUX8OGHmW4aiGOFFBcnPcxaNJs,888
+pygti/gti.py,sha256=GF4tglwkBxk_Yfcz0SxOL6KR1X0lMwzcSDYB9m786eg,909
+pygti/schemas.py,sha256=DSsJix-IGVrcbndOl5qRwoOIbAIKtyMbiRps2Ni9pVc,1903
+pygti-0.3.1.dist-info/LICENSE.md,sha256=aCTqFwFNwop1WWGjJviOl2vmuTEpoUoINBkH4ZmpFh4,11347
+pygti-0.3.1.dist-info/METADATA,sha256=3FEECfBNdthvvDaV4tAOGIogV7UQ1SfUlEhi-nfUPjg,2745
+pygti-0.3.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pygti-0.3.1.dist-info/entry_points.txt,sha256=VFpo7tQJz5o5g3NsUl1hi8ezsk3HLvCzb_pPFWWvfl8,95
+pygti-0.3.1.dist-info/top_level.txt,sha256=oAwzF8x7SAKQDCblg22_uP0pHxfB_i_lxMuPDSFF2Q8,6
+pygti-0.3.1.dist-info/RECORD,,
