@@ -1,0 +1,12 @@
+eyelinkparser/__init__.py,sha256=AxNjq-_HM6RyLS2aTvQ5oX4Dvfj8sn7W_wNvCdJ9cDQ,995
+eyelinkparser/_events.py,sha256=O9ISvO41IrNJ_HpQnGlyy4ZC7KeteJrYpIa12HH1ppg,3282
+eyelinkparser/_eyelinkparser.py,sha256=xPuO5yDPi0KwI5eq37ntv9iVtKoe2HqB1F7i_sundFc,13329
+eyelinkparser/_traceprocessor.py,sha256=CMmJRxsZf6QQaZxFJVaMB-KshsVbH-PGoSzO9ZkoAbc,1611
+eyetribeparser/__init__.py,sha256=aNPhW6njNegT2eKeXATD2931XpuD0eCk-P8ruInD3uY,892
+eyetribeparser/_eyetribeparser.py,sha256=3qZEkU7otY6-2hOk0RJcYH3lwrkd1eWjQDb4lwhD1zA,1956
+smiparser/__init__.py,sha256=p2js2UzNklBUSN5scq6Udrl2XkUXA6g3chMxrvywn0M,872
+smiparser/_smiparser.py,sha256=yaxlDUMqCnBdiF6EcWrIfH-GcUsYqPjl3EVqgWmoEUg,2992
+python_eyelinkparser-0.9.3.dist-info/METADATA,sha256=T4M5uQIjlX1q-xilR5dvjlVrP9A23jLY_84DTdeom5k,667
+python_eyelinkparser-0.9.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+python_eyelinkparser-0.9.3.dist-info/top_level.txt,sha256=C1fw0_ZZ-QfZ3Emk9GQQSwy96EFawVJXesqYko7YATw,39
+python_eyelinkparser-0.9.3.dist-info/RECORD,,
