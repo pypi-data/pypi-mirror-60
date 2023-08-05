@@ -1,0 +1,3 @@
+[flake8.extension]
+SFS = flake8_sfs:StringFormatStyleChecker
+
