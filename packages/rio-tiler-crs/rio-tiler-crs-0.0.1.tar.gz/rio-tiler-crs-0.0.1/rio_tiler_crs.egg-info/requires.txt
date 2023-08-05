@@ -1,0 +1,11 @@
+morecantile
+rio-tiler~=1.3
+
+[dev]
+pytest
+pytest-cov
+pre-commit
+
+[test]
+pytest
+pytest-cov
