@@ -1,0 +1,57 @@
+Metadata-Version: 1.2
+Name: essahtmlgen
+Version: 4.3
+Summary: Create HTML files with embedded source code & images
+Home-page: UNKNOWN
+Author: bayleaf
+Author-email: bailey.kocin@gmail.com
+License: UNKNOWN
+Description: Python tool for creating HTML specific layouts with source code files.
+        Uses CSU images as the default.
+        The source code is formatted with a javasript library to be 'pretty'
+        
+        Here are some examples (Im on OSX):
+        
+        - Create a 6 part assignment (very basic no source)
+        
+        
+        **essahtmlgen --destination ~/Desktop --name bayleaf --id 2631542 --parts 6 --assignment 1**
+        
+        
+        This will create 'Assignment1' on the desktop with 6 basic parts.
+        
+        
+        - Create a the 3 part assignment 1  with a source
+        
+        A source directory contains folders which will become named parts (as well as the .html versions).
+        The files in each directory will be used to compose the specfic parts html file.
+        Java code will turn into pretty embedded source code.
+        Text code will turn into paragraph tags.
+        Pictures will be copied, linked and embedded (.png / .jpg).
+        There is no order right now so you may have to play around with it after but generally it follows the directory structure.
+        
+        Create a source directory structured like this:
+        
+                Assignment0Files ->
+        
+                    FirstPart ->
+        
+                            data.txt
+        
+                            JavaCode.java
+        
+                            screenshot.png
+        
+                    SecondPart ->
+        
+                            file.txt
+        
+        **essahtmlgen --destination ~/Desktop --name bayleaf --id 2631542 --parts 2 --assignment 1  --source /path/to/Assignment0Files**
+        
+        
+        This will create 'Assignment1' on the desktop with two parts: FirstPart and SecondPart.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
