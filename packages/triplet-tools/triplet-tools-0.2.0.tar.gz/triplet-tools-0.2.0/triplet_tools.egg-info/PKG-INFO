@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: triplet-tools
+Version: 0.2.0
+Summary: A toolbox for creating and training triplet networks in tensorflow
+Home-page: https://github.com/maxsch3/triplet-toolbox
+Author: Maxim Scherbak
+Author-email: maxim.scherbak@gmail.com
+License: MIT
+Download-URL: https://github.com/maxsch3/triplet-toolbox
+Description: 
+        A set of tools for implementing triplet networks in tensorflow/keras. The toolbox includes a set 
+        of loss functions that plug in to tensorflow/keras neural network seamlessly, transforming
+        your model into a one-short learning triplet model  
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: tests
