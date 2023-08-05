@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jupyter-io
+Version: 0.1.1
+Summary: Python pacakge of some I/O utilities for Jupyter notebook
+License: MIT
+Author: Akio Taniguchi
+Author-email: taniguchi@a.phys.nagoya-u.ac.jp
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: ipython (>=7.11.1,<8.0.0)
+Requires-Dist: matplotlib (>=3.1.2,<4.0.0)
+Requires-Dist: pandas (>=0.25.3,<0.26.0)
