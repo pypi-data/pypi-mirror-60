@@ -1,0 +1,12 @@
+bw_processing/__init__.py,sha256=iJIPnENigFi-MwnRvSbtnTDqNvCUy0TgNiwpCZE-PWY,469
+bw_processing/calculation_package.py,sha256=F_H9BuTdOn9YvLwh5-JgzSfm6lx7TOWBhTP29owJhf0,6354
+bw_processing/errors.py,sha256=U0Sd6CO6ZaEmT6pAxRsdkLLyAkGkSV-3biD0ZUUYjhY,566
+bw_processing/filesystem.py,sha256=Xsz47xke2V5eJ2MF21i2XAb-zrQMEzYjGuP5Y8rIwxE,1082
+bw_processing/processed_package.py,sha256=sNzAK7-t4d_vgqvX10mySVlnWE54jC824V1k3SrRVCo,8688
+bw_processing/utils.py,sha256=rIiTBc8PiqsbjocOOIZ2uI3uC3x5k3sPpeLkvKEsbek,5011
+bw_processing/version.py,sha256=H1gCZSUKizbaFVykAiQmeLKxzmKwt6c38hEb8hmD1UU,20
+bw_processing-0.1.1.dist-info/LICENSE,sha256=2_r6CZgf22wtDYO1nDA27AM64X11rQQmgxArORh6ADo,1511
+bw_processing-0.1.1.dist-info/METADATA,sha256=QOJeW11xrorYOk3D1UwYfbzV4HO6WftRKiYyyGmM38E,1628
+bw_processing-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bw_processing-0.1.1.dist-info/top_level.txt,sha256=CBRJQ3fgOcZ1oc_C4zB-h92jJeLrJWPbulHE9Zm46HU,14
+bw_processing-0.1.1.dist-info/RECORD,,
