@@ -1,0 +1,9 @@
+requests
+bs4
+selenium
+lxml
+asgiref
+aiohttp
+emoji
+pillow
+slackweb
