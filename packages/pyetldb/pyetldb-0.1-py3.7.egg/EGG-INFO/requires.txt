@@ -1,0 +1,5 @@
+cx-Oracle
+mysqlclient
+psycopg2
+pyodbc
+pypyodbc
