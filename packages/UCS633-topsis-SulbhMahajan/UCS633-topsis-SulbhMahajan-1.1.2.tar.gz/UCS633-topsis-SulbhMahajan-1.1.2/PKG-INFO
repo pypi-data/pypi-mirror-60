@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: UCS633-topsis-SulbhMahajan
+Version: 1.1.2
+Summary: A python package to implement topsis(MCDM)
+Home-page: UNKNOWN
+Author: Sulbh Mahajan
+Author-email: sulbh579@gmail.com
+License: UNKNOWN
+Description: This is a python package to implement topsis(MCDM-multi-criteria decision analysis method).
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
