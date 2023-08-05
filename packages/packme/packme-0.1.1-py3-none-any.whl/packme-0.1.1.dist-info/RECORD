@@ -1,0 +1,15 @@
+packme/PackerTemplate.py,sha256=oyOBiWUwdRDarweAre-SO4IzjQoIKrMNZpnUblCjCoY,10448
+packme/Packman.py,sha256=E8N7M_8FK0OJEHVDvrE2oHIipU8l3XpVtPotBQNiXdg,9727
+packme/__init__.py,sha256=WR4_tS3OJstX8ZkTtB1wQcFVzakOdZG_g0SZAKlfkMA,65
+packme/__pkginfo__.py,sha256=SK31VGvSjZvWKtqV35p9-uN7JcPvQ1WRP2T2c2c2bs4,1249
+packme-0.1.1.data/data/stubs/packme/PackerTemplate.pyi,sha256=Wo4NLuuSfuSxvOCBLs2skc3bHc-dDcuW3xyjPfSrlZo,680
+packme-0.1.1.data/data/stubs/packme/Packman.pyi,sha256=pdl8s2t7asXJ9pqe6SeNwgaGtUZ0CtfkURIzSajPC0o,603
+packme-0.1.1.data/data/stubs/packme/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packme-0.1.1.data/data/stubs/packme/__pkginfo__.pyi,sha256=Yhp-l_mxpbib6vugMN5YJTV4PXIIxIZevSMYqxCApBs,232
+packme-0.1.1.data/scripts/packme,sha256=k0BzR6WusHrUvzuzsMksfoXHHgpRXEWTKRWZwQGidIg,3793
+packme-0.1.1.dist-info/COPYING,sha256=by009KDV_Ar22_k93GTG-bclcfogSxaPIuiHAangIOI,1084
+packme-0.1.1.dist-info/LICENSE,sha256=by009KDV_Ar22_k93GTG-bclcfogSxaPIuiHAangIOI,1084
+packme-0.1.1.dist-info/METADATA,sha256=oYL3kRnwP0VOB78N9NMjqsGK9CKKiEbA9DJwbFQLAxs,3131
+packme-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+packme-0.1.1.dist-info/top_level.txt,sha256=25O7Q0xzUdQnXClgWN__s65uUBL34BqF8k2czw58low,7
+packme-0.1.1.dist-info/RECORD,,
