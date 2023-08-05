@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: hifiberrydsp
+Version: 0.20
+Summary: HiFiBerry DSP toolkit
+Home-page: http://github.com/hifiberry/hifiberry-dsp
+Author: Daniel Matuschek
+Author-email: daniel@mhifiberry.com
+License: MIT
+Keywords: audio raspberrypi dsp
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: xmltodict
+Requires-Dist: lxml
+Requires-Dist: spidev
+Requires-Dist: pyalsaaudio
+Requires-Dist: zeroconf
+Requires-Dist: RPi.GPIO
+
+A collection of tools to configure HiFiBerry DSP boards and porogram them from SigmaStudio
+
+
