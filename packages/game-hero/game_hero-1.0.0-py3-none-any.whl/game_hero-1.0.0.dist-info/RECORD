@@ -1,0 +1,14 @@
+game_hero/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+game_hero/game_characters.py,sha256=B_l45_awLjbHqo-H99c7W5q0dSha-tSaVYsfVavmuhA,3873
+game_hero/game_constants.py,sha256=Gl6wCGgr2oZs8bSUPi6RE6N6CVMLEdVnpDm7ds5RYH8,613
+game_hero/gameplay_mechanics.py,sha256=q2v0JM5CJUwPvUDnHTe4jp8PMWYhvK9j30VHMxbymqM,8401
+game_hero/main_game.py,sha256=w2zqSdTxGzLMJoBCjuWmYDqxQAmf74vQ7RCpXdccE1o,2128
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_game_characters.py,sha256=CdMwm1IuMOJJaIFebqeOl0LoU7g5uq2iwGbJ_bA1pDM,2174
+tests/test_gameplay_mechanics.py,sha256=vzpVlgVMQ3n66iO6li8q5gkS2eN3G_nW9XRSdJ2qNGc,1921
+tests/test_main_game.py,sha256=FEudkUtLK1fSTX1M6ZUqtWUuyxC1tLvTpVNuV6mydEU,543
+game_hero-1.0.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+game_hero-1.0.0.dist-info/METADATA,sha256=JCDdKxkS5ceG0-RWXmAzmq3B06twz_BxPl4teaSfY1A,2795
+game_hero-1.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+game_hero-1.0.0.dist-info/top_level.txt,sha256=b2AK-QGM9fb8BmcMVy3oGnJd74ICOXDWukNBmH7rEU4,16
+game_hero-1.0.0.dist-info/RECORD,,
