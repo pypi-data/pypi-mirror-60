@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: xgb2sql
+Version: 0.1
+Summary: A simple library for converting the output of an XGB model to a SQL statement.
+Home-page: https://github.com/Chryzanthemum/xgb2sql
+Author: Benjamin Jiang
+Author-email: benjaminyjiang@gmail.com
+License: MIT
+Download-URL: https://github.com/Chryzanthemum/xgb2sql/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: xgb,xgboost,sql,xgb to sql,xgboost to sql,xgb2sql
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
