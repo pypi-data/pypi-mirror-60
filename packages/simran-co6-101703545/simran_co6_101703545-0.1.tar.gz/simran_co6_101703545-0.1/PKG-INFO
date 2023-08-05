@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: simran_co6_101703545
+Version: 0.1
+Summary: topsis (technique for order of preferance by similarity to ideal solution
+Home-page: https://github.com/simran11081998/simran_coe6_101703545
+Author: SIMRAN
+Author-email: simran17102004@gmail.com
+License: MIT
+Download-URL: https://github.com/simran11081998/simran_coe6_101703545/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: TOPSIS,RANKING,SCORE
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
