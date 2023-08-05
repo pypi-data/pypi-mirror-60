@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gacels
+Version: 0.1.6
+Summary: Package containing reusable tools for different applications.
+Home-page: https://github.com/equinor/gacels
+Author: Arnt Erik Stene
+Author-email: steneae@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.17.*)
+Requires-Dist: seaborn (==0.9.*)
+Requires-Dist: matplotlib (==3.1.*)
+Requires-Dist: pandas (==0.25.*)
+Requires-Dist: azure-keyvault-secrets (==4.0.*)
+Requires-Dist: azure.identity (==1.2.*)
+Requires-Dist: azure-cli-core (==2.0.*)
+Requires-Dist: azure.mgmt.compute (==10.0.*)
+Requires-Dist: missingno (==0.4.*)
+
+UNKNOWN
+
+
