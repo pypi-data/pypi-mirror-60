@@ -1,0 +1,10 @@
+README.md
+setup.py
+ez_cli/__init__.py
+ez_cli/tasks.py
+ez_cli.egg-info/PKG-INFO
+ez_cli.egg-info/SOURCES.txt
+ez_cli.egg-info/dependency_links.txt
+ez_cli.egg-info/entry_points.txt
+ez_cli.egg-info/requires.txt
+ez_cli.egg-info/top_level.txt
