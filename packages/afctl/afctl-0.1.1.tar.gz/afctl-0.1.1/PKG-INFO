@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: afctl
+Version: 0.1.1
+Summary: Python commandline tool to make deployment of Airflow projects easier.
+Home-page: https://github.com/qubole/afctl
+Author: Qubole
+Author-email: dev@qubole.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: airflow cli deployment
+Platform: UNKNOWN
