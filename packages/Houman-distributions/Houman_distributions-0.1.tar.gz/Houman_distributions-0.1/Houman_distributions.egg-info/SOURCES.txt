@@ -1,0 +1,10 @@
+setup.py
+Houman_distributions/Binomialdistribution.py
+Houman_distributions/Gaussiandistribution.py
+Houman_distributions/Generaldistribution.py
+Houman_distributions/__init__.py
+Houman_distributions.egg-info/PKG-INFO
+Houman_distributions.egg-info/SOURCES.txt
+Houman_distributions.egg-info/dependency_links.txt
+Houman_distributions.egg-info/not-zip-safe
+Houman_distributions.egg-info/top_level.txt
