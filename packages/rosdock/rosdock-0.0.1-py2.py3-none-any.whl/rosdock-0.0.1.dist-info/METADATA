@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: rosdock
+Version: 0.0.1
+Summary: An utility scripts for wrapping ros catkin project and use it with docker
+Home-page: https://github.com/trinhtrannp/rosdock
+Author: Trinh Tran
+Author-email: trinhtran2151995@gmail.com
+License: MIT
+Keywords: ROS,DOCKER,WRAPPER
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: docker
+Provides-Extra: ci
+Requires-Dist: codacy-coverage ; extra == 'ci'
+Requires-Dist: codecov ; extra == 'ci'
+Provides-Extra: dev
+Requires-Dist: docutils ; extra == 'dev'
+Requires-Dist: Pygments ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: green ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+
+# rosdock
+
+# To create development environment
+installdev 
+
+# To install
+setup.py
+
