@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: http_rx
+Version: 0.0.1
+Summary: Extensible HTTP health checker for Python
+Home-page: https://github.com/zcking/http_rx
+Author: Zachary King
+Author-email: kingzach77@gmail.com
+License: UNKNOWN
+Description: # HTTP Rx - Your HTTP Doctor
+        
+        **HTTP Rx** is a simple site/http monitor for your websites and HTTP endpoints. The tool monitors a given list of endpoint configurations and sends alerts if the expected health check does not pass.
+        
+        Additional reporting is also provided and be configured per health check.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management :: Link Checking
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown

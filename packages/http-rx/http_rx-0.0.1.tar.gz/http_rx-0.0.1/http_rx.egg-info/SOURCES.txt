@@ -1,0 +1,12 @@
+README.md
+setup.py
+http_rx.egg-info/PKG-INFO
+http_rx.egg-info/SOURCES.txt
+http_rx.egg-info/dependency_links.txt
+http_rx.egg-info/requires.txt
+http_rx.egg-info/top_level.txt
+rx/__init__.py
+rx/__main__.py
+rx/check.py
+rx/doctor.py
+rx/report.py
