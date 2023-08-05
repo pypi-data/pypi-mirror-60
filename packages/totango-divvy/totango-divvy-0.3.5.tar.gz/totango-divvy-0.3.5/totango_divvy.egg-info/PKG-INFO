@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: totango-divvy
+Version: 0.3.5
+Summary: Totango Python Library for DivvyHQ
+Home-page: http://github.com/DivvyHQ/totango-python
+Author: DivvyHQ
+Author-email: contact@divvyhq.com
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: totango api,totango python
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
