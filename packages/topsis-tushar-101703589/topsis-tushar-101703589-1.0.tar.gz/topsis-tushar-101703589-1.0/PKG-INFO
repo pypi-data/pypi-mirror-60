@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: topsis-tushar-101703589
+Version: 1.0
+Summary: Topsis analysis of a numeric csv file
+Home-page: https://github.com/tmahajan1/topsis-tushar-101703589
+Author: Tushar Mahajan
+Author-email: tushar2210mahajan@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: TOPSIS,MCDM,Statistics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
