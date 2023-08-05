@@ -1,0 +1,15 @@
+dreamtools/__init__.py,sha256=eNfp4YRPws1D96qMnv1xH1jOFOg-5VBzKzRmOsJdxCQ,3005
+dreamtools/eksempler.py,sha256=C2vipWs3LxXUxrHCbMewt2hbL33X20cMwMVuHUi0CN4,1872
+dreamtools/excel_endo_exo.py,sha256=KNT5D-ucrIfn3Rveyh7PANIAysbILUPjz0PHlwPyQvw,3082
+dreamtools/excel_gdx.py,sha256=Yab17AXJgbGiRqziaMw42S9CM8t9hmNu7B0ShJ8CYlI,2103
+dreamtools/gams_pandas.py,sha256=qig7eKxwi8fnytpILW9U4Fqm_HEFiUsHSoTe5qq6bT0,16255
+dreamtools/gekko_endo_exo.py,sha256=K3rqqltQMMEow8FFMy5xmTuB3RTrrO7w1TTczK-gQ_0,1541
+dreamtools/gamY/__init__.py,sha256=BhWXmFZYi8mH61CiBL-DcBSb3E_ZOVHDqX0WC_w-RHk,29
+dreamtools/gamY/classes.py,sha256=z8bPEYpybOwyKqh8ea6aqdJqiLAXOaVflpzwd-afhug,3814
+dreamtools/gamY/gamY.py,sha256=AAqHqqhM-qo-yeUy7vIGZhVI7BRzKov9uqUvEpbXPeY,51161
+dreamtools/gamY/patterns.py,sha256=TsrObE5d9o3U1tS2RWkrMZYrSI7o9KfEDPrd9gnxInA,4532
+dream_tools-0.0.4.dist-info/LICENSE,sha256=klSbDwzXEorTFMmqklsU6oakdbZivEZJihWinmIIEos,1093
+dream_tools-0.0.4.dist-info/METADATA,sha256=PhkJEtf2gHFPxy5PgThQb7FrU7SfBvg2lQkyj2MzodM,1682
+dream_tools-0.0.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+dream_tools-0.0.4.dist-info/top_level.txt,sha256=bO0wyBOtg9KuUwRp0ytHyn94wPmoQxpx2ruQ5JnKtGA,11
+dream_tools-0.0.4.dist-info/RECORD,,
