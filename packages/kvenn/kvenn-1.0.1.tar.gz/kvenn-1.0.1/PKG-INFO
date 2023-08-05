@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: kvenn
+Version: 1.0.1
+Summary: CLI tool for waiting on ports to open
+Home-page: https://github.com/jdotpy/kvenn
+Author: KJ
+Author-email: jdotpy@users.noreply.github.com
+License: UNKNOWN
+Download-URL: https://github.com/jdotpy/kvenn/tarball/master
+Description: kvenn
+        =========
+        
+        CLI Tool for doing set-operations on lines of input. Each line is treated as an item in a set. Each input is treated as a set.
+        
+        ## Usage
+        
+        Unique values in a file
+        
+            kvenn <input>
+        
+        Unique values in two or more files (Also `--union`)
+        
+            kvenn <input1> <input2> <inputN>
+        
+        
+        Values found in both files
+        
+            kvenn <input1> <input2> --operation intersection
+        
+        
+        Values found in only one file
+        
+            kvenn <input1> <input2> <inputN> --operation unique
+        
+        
+        Values found in only one file
+        
+            kvenn <input1> <input2> <inputN> --operation unique
+        
+        
+        Subtract values in B (and C, D.. etc) from A. (Unique values from A)
+        
+            kvenn <inputA> <inputB> [<inputC>] --operation subtract
+        
+        
+Keywords: tools
+Platform: UNKNOWN
