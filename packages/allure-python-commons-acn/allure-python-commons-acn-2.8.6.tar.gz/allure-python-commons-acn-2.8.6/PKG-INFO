@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: allure-python-commons-acn
+Version: 2.8.6
+Summary: Common module for integrate allure with python-based frameworks
+Home-page: https://github.com/emartyacn/allure-python
+Author: QAMetaSoftware, Stanislav Seliverstov, Erik Marty
+Author-email: mhacnqa@gmail.com
+License: Apache-2.0
+Description: UNKNOWN
+Keywords: allure reporting report-engine
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
