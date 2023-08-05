@@ -1,0 +1,13 @@
+clustipy/__init__.py,sha256=lg3f1u8Q8Z8k-hTiJfPMWpWl5MStMIPcLryl8-6Pe18,1452
+clustipy/utils.py,sha256=xAC5KEwskJf01VsdvqIC9VOM4u42ZjKO6PpXn-bt_Vk,387
+clustipy/cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clustipy/cmd/clustipy.py,sha256=EQnnwiSUS6xEOGkbBsdFdYyItxW0-2VQPScOVwdYSYg,748
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_clustipy.py,sha256=_y9SLUDbOJCViSCECvb-2KnpdvOSOVaEysDmpiGNSqY,716
+tests/utils.py,sha256=-mKfsxdIqYY0ghAe-a-W2c4pRPkKwfQEw3gaGADJEj8,395
+ClustIPy-0.1.0.dist-info/LICENSE,sha256=TIghZtdZYxdWpLrbOTg1odmzn64RIlOw9tRw1KJK0j8,1075
+ClustIPy-0.1.0.dist-info/METADATA,sha256=77Fih-I5KPVeH0iUloOk0VAt7MW215gpVlri2xm6bqc,427
+ClustIPy-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ClustIPy-0.1.0.dist-info/entry_points.txt,sha256=JQZmNUqLDQj55o-hYWcXN74wK-z8d85EOBgyEHVDaVg,75
+ClustIPy-0.1.0.dist-info/top_level.txt,sha256=eEMQZZn-bWNPNuB4xdbwYGINV93xBgM8VXoH6roAwDk,15
+ClustIPy-0.1.0.dist-info/RECORD,,

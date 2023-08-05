@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        clustipy=clustipy.cmd.clustipy:main
+    
