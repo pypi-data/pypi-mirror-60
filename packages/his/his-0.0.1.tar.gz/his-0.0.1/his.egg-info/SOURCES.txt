@@ -1,0 +1,8 @@
+README.md
+setup.py
+his/__init__.py
+his/tory.py
+his.egg-info/PKG-INFO
+his.egg-info/SOURCES.txt
+his.egg-info/dependency_links.txt
+his.egg-info/top_level.txt
