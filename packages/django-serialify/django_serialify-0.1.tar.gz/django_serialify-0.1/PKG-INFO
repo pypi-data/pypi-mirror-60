@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: django_serialify
+Version: 0.1
+Summary: Simple serialize django models and dict to dict
+Home-page: http://github.com/Buddhalow/django-serialify
+Author: Alexander Forselius
+Author-email: alexander.forselius@buddhalow.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

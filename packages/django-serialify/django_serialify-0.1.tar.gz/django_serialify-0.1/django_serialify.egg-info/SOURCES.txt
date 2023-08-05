@@ -1,0 +1,10 @@
+README.md
+setup.py
+django_serialify/__init__.py
+django_serialify/shortcuts.py
+django_serialify.egg-info/PKG-INFO
+django_serialify.egg-info/SOURCES.txt
+django_serialify.egg-info/dependency_links.txt
+django_serialify.egg-info/not-zip-safe
+django_serialify.egg-info/requires.txt
+django_serialify.egg-info/top_level.txt
