@@ -1,0 +1,10 @@
+pyriodic_aflow/__init__.py,sha256=I-vkoor5Qxm_Sq8p8pIVfEZoYS5oldabz3OMKwq3FBQ,142
+pyriodic_aflow/version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+pyriodic_aflow/unit_cells/__init__.py,sha256=cRX_ialHHOFr_WqRBBChadpAaPJGIWtVGNBiF4bmjOs,803
+pyriodic_aflow/unit_cells/aflow_db.json,sha256=v84rl1kj1SOQ0KwlOgGxjFlajtBjo4DwyZHy6rAnLWw,2181982
+pyriodic_aflow-0.1.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+pyriodic_aflow-0.1.0.dist-info/METADATA,sha256=lmBD0GZwGcabDWr2uWLb_liJ_w0eEaKeDGid2Rr7UM4,1867
+pyriodic_aflow-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyriodic_aflow-0.1.0.dist-info/entry_points.txt,sha256=NAJphiQtLCVRO6TPinqdP4AwuwFsIONMubR1h3J09GM,68
+pyriodic_aflow-0.1.0.dist-info/top_level.txt,sha256=YniWaJLPv2tbpxHA0S0v_2S8oVVvUWFwKfO06k3e2EQ,15
+pyriodic_aflow-0.1.0.dist-info/RECORD,,
