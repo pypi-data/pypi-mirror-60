@@ -1,0 +1,9 @@
+multi_dash/README.md,sha256=-OBy3J7jeG7YjfNNWiPBwc4yyRiZAY6TQ6ZVbSrfx0M,35
+multi_dash/__init__.py,sha256=wufAFU8cwpmrSWGDde3JjgyakYDYe0DOuahzmTI9n-E,3187
+multi_dash/dummy_authentication.py,sha256=11zIRMwE6zDVR3YMuFvZmlq-tKCDoJsgoe_GdgFif9I,1862
+multi_dash/index/__init__.py,sha256=f1ihxFG3nkhdbPYkZ7eKXf8fg59kEYNdOxsuj74b2LI,197
+multi_dash/index/templates/multi_dash/example_base.html.j2,sha256=iw4_V2_qaYXn8b6TFLWh9rL5WpUR6wqfCr63hxPLJiE,657
+multi_dash/index/templates/multi_dash/inline_scripts.js,sha256=qbO3GX1-TP6YGDtiwnoPQhjAr5LEI3YQCgGvwwJAlY4,2019
+multi_dash-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+multi_dash-0.2.0.dist-info/METADATA,sha256=Fc_Zu6wM21tzx9nPg703SdMSnOpwUjwgaNOpAELouME,419
+multi_dash-0.2.0.dist-info/RECORD,,
