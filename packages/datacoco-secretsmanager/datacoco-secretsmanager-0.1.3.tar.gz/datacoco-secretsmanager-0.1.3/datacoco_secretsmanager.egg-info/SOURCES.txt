@@ -1,0 +1,10 @@
+README.rst
+setup.py
+datacoco_secretsmanager/__init__.py
+datacoco_secretsmanager/__version__.py
+datacoco_secretsmanager/secrets.py
+datacoco_secretsmanager.egg-info/PKG-INFO
+datacoco_secretsmanager.egg-info/SOURCES.txt
+datacoco_secretsmanager.egg-info/dependency_links.txt
+datacoco_secretsmanager.egg-info/requires.txt
+datacoco_secretsmanager.egg-info/top_level.txt
