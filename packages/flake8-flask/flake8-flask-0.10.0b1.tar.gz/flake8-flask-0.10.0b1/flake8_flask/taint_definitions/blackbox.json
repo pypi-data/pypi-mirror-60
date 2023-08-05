@@ -1,0 +1,9 @@
+{
+    "does_not_propagate": [
+        "url_for",
+        "Post.query.paginate"
+    ],
+    "propagates": [
+        "os.path.join"
+    ]
+}
