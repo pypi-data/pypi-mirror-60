@@ -1,0 +1,12 @@
+aiotmdb/__init__.py,sha256=L8gd1upJ3lscxuOKwh_0u42h-oU6HbVeUtgg_suTmRw,84
+aiotmdb/aiotmdb.py,sha256=UlXcmWsmb8RCIfkN_R3a_0o_CogDXUz98yLuaHN6VQY,2024
+aiotmdb/exceptions.py,sha256=p77pAQ6-XQv45qBh2rZu_dHBirQVs80BqD4pu6XS49Y,41
+aiotmdb/resources/base.py,sha256=5atGAapvjTBfOl77z0cY9Ez7x6RRgWk_FoXdKZIlwdk,742
+aiotmdb/resources/discover.py,sha256=QcFn9v3PjCY_ALOmapndYUx9gxesq2slQo5-mbiG8Rw,1395
+aiotmdb/resources/genres.py,sha256=m4fVEg5PREwl29dP8aOMKZYC5Wih-tqkHl59rn8EtZA,1059
+aiotmdb/resources/movies.py,sha256=46l0XG6sDex5P6SnbUTO0mgK4tbtr4UrGRCLwwwCvfM,14392
+aiotmdb/resources/search.py,sha256=cxucHbp3q9r3_WmMxQvyFjOpZjlmU_7MvKEgkKt_u-M,3039
+aiotmdb/resources/tv.py,sha256=mcPc0x-gY7Tev5QKeZvjgZxg2NW4saJnYTQezb6Sf5U,9426
+aiotmdb-0.2.dist-info/WHEEL,sha256=VCdoNBk3hWpF-6e5lKoFTDe2J_z3c2Yvza9_dZz7drc,99
+aiotmdb-0.2.dist-info/METADATA,sha256=kGvIMzqQNQqJVth97MLEjKCfynvrI8xir5ALgLfu89I,327
+aiotmdb-0.2.dist-info/RECORD,,
