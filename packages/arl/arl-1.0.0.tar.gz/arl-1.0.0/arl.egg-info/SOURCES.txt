@@ -1,0 +1,10 @@
+README.md
+setup.py
+arl/AuthenticatedResourceLocator.py
+arl/__init__.py
+arl.egg-info/PKG-INFO
+arl.egg-info/SOURCES.txt
+arl.egg-info/dependency_links.txt
+arl.egg-info/requires.txt
+arl.egg-info/top_level.txt
+arl.egg-info/zip-safe

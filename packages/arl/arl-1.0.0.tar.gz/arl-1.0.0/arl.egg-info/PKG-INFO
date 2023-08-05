@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: arl
+Version: 1.0.0
+Summary: Authenticated Resource Locator
+Home-page: https://limacharlie.io
+Author: Maxime Lamothe-Brassard ( Refraction Point, Inc )
+Author-email: maxime@refractionpoint.com
+License: Apache v2
+Description: Authenticated Resource Locator to specify succintly a remote resource to get using many protocols.
+Platform: UNKNOWN
