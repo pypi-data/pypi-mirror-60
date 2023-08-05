@@ -1,0 +1,8 @@
+README.md
+setup.py
+we_pyutils/__init__.py
+we_pyutils/env.py
+we_pyutils.egg-info/PKG-INFO
+we_pyutils.egg-info/SOURCES.txt
+we_pyutils.egg-info/dependency_links.txt
+we_pyutils.egg-info/top_level.txt
