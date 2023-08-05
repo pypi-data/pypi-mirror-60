@@ -1,0 +1,68 @@
+{
+	"framework": "OR",
+	"classType": "MIP",
+	"package": "OR-TOOLS",
+	"model": "simple_model",
+	"variablesList": [{
+		"id": "x",
+		"dims": [],
+		"lb": 0.0,
+		"ub": 1.79769e+308,
+		"warm_start": 3.0,
+		"type": "double"
+	}, {
+		"id": "y",
+		"dims": [],
+		"lb": 0.0,
+		"ub": 1.79769e+308,
+		"warm_start": 2.0,
+		"type": "double"
+	}],
+	"constraintsList":[
+		{
+			"id": "c0",
+			"lb": -1.79769e+308,
+			"ub": 17.5,
+			"coefficientsList": [
+				{
+					"id": "x",
+					"coeff": 1
+				},
+				{
+					"id": "y",
+					"coeff": 7
+				}
+			]
+		},
+		{
+			"id": "c1",
+			"lb": -1.79769e+308,
+			"ub": 3.5,
+			"coefficientsList": [
+				{
+					"id": "x",
+					"coeff": 1
+				},
+				{
+					"id": "y",
+					"coeff": 0
+				}
+			]
+		}
+	],
+	"objectivesList":[
+		{
+			"optimizationDirection": "maximize",
+			"coefficientsList": [
+				{
+					"id": "x",
+					"coeff": 1
+				},
+				{
+					"id": "y",
+					"coeff": 10
+				}
+			]
+		}
+	]
+}

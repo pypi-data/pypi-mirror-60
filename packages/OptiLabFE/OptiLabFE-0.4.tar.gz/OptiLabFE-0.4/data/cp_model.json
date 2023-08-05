@@ -1,0 +1,54 @@
+{
+  "framework": "OR",
+  "classType": "CP",
+  "package": "OR-TOOLS",
+  "model": "simple_model",
+  "variablesList": [
+      {
+          "id": "x",
+          "dims": [],
+          "lb": 0,
+          "ub": 2,
+          "type": "int"
+      },
+      {
+          "id": "y",
+          "dims": [],
+          "lb": 0,
+          "ub": 2,
+          "type": "int"
+      }
+  ],
+  "constraintsList": [
+      {
+          "semantic": "intension",
+          "type": "int",
+          "name": "ne",
+          "propagation_type": "default",
+          "args_list":[["x"], ["y"]]
+      }
+  ],
+ "searchList":[{
+   "searchId": "s1",
+   "searchType": "global",
+   "numSolutions": 1
+ }],
+  "searchObjects": [
+      {
+          "id": "s1",
+          "combinatorType": "baseSearch",
+          "varSelection": "first_unbound",
+          "valSelection": "min_value",
+          "branchingList": [
+              {
+                  "id": "x",
+                  "idx": []
+              },
+              {
+                  "id": "y",
+                  "idx": []
+              }
+          ]
+      }
+  ]
+}

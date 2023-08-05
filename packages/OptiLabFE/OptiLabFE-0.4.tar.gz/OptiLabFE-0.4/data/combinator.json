@@ -1,0 +1,30 @@
+{
+	"framework": "Connectors",
+	"classType": "Combinator",
+	"id": "combinator",
+	"combinatorObjects":["mip_model_1", "mip_model_2"],
+	"objectsList": [
+			{
+				"framework": "OR",
+				"classType": "MIP",
+				"id": "mip_model_1",
+				"package": "OR-TOOLS",
+				"model": "mip_model_1",
+				"model_format": "MPS",
+				"model_data": "",
+				"use_file_descriptors": true,
+				"model_descriptor": "data/bell5.mps"
+		},
+		{
+				"framework": "OR",
+				"classType": "MIP",
+				"id": "mip_model_2",
+				"package": "OR-TOOLS",
+				"model": "mip_model_2",
+				"model_format": "MPS",
+				"model_data": "",
+				"use_file_descriptors": true,
+				"model_descriptor": "data/blend2.mps"
+	}
+	]
+}

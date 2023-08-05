@@ -1,0 +1,33 @@
+{
+  "framework": "EC",
+  "classType": "GA",
+  "package": "OPEN-GA",
+  "model": "simple_model",
+  "variablesList": [{
+    "id": "x",
+    "dims": [3],
+    "lb": 0,
+    "ub": 2,
+    "type": "int"
+    }],
+  "gaParameters" : {
+    "multiThreading": false,
+    "populationSize": 20,
+    "maxGenerations": 100,
+    "crossoverFraction": 0.7,
+    "mutationRate": 0.2,
+    "timeout": 3600,
+    "stallBest": 1e-6,
+    "stallGenMax": 10,
+    "seed": 0
+  },
+  "environmentType": "custom",
+  "environmentFileList":["data/ga_foundry.hpp", "data/custom_environment.cpp"],
+  "crossover": "",
+  "mutation": "",
+  "initialization": "",
+  "use_file_descriptors": true,
+  "objective": ""
+}
+
+

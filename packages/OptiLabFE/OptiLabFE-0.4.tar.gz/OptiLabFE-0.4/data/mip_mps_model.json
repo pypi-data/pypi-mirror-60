@@ -1,0 +1,10 @@
+{
+	"framework": "OR",
+	"classType": "MIP",
+	"package": "OR-TOOLS",
+	"model": "mip_mps",
+	"model_format": "MPS",
+	"model_data": "",
+	"use_file_descriptors": true,
+	"model_descriptor": "data/bell5.mps"
+}

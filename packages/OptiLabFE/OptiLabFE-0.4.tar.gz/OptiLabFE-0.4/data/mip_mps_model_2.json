@@ -1,0 +1,10 @@
+{
+	"framework": "OR",
+	"classType": "MIP",
+	"package": "OR-TOOLS",
+	"model": "mip_model_2",
+	"model_format": "MPS",
+	"model_data": "",
+	"use_file_descriptors": true,
+	"model_descriptor": "/home/austin/src/parallel/optilabtech-python-sdk/data/blend2.mps"
+}

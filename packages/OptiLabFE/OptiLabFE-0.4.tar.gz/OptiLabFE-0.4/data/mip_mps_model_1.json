@@ -1,0 +1,10 @@
+{
+	"framework": "OR",
+	"classType": "MIP",
+	"package": "OR-TOOLS",
+	"model": "mip_model_1",
+	"model_format": "MPS",
+	"model_data": "",
+	"use_file_descriptors": true,
+	"model_descriptor": "../optilabtech-python-sdk/data/bell5.mps"
+}

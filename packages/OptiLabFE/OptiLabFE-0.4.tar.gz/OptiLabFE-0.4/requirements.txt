@@ -1,0 +1,8 @@
+jupyterlab
+numpy
+gmaps
+ipywidgets
+geopy
+widgetsnbextension
+ipywidgets
+ipysheet

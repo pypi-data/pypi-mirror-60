@@ -1,0 +1,6 @@
+numpy
+websocket
+websocket-client
+sympy
+protobuf
+ipykernel
