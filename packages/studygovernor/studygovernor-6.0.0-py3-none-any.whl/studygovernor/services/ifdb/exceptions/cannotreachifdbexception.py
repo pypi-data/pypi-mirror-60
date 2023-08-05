@@ -1,0 +1,2 @@
+class CannotReachIfdbException(Exception):
+    pass
