@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+slims_lisp/__init__.py
+slims_lisp/__main__.py
+slims_lisp/slims.py
+slims_lisp.egg-info/PKG-INFO
+slims_lisp.egg-info/SOURCES.txt
+slims_lisp.egg-info/dependency_links.txt
+slims_lisp.egg-info/entry_points.txt
+slims_lisp.egg-info/requires.txt
+slims_lisp.egg-info/top_level.txt
