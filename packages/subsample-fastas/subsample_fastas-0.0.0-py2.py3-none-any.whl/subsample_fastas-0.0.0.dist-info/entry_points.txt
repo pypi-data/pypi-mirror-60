@@ -1,0 +1,3 @@
+[console_scripts]
+subsample_fastas = subsample_fastas.cli:main
+

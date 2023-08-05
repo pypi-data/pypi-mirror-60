@@ -1,0 +1,12 @@
+subsample_fastas/__init__.py,sha256=ShXQBVjyiSOHxoQJS2BvNG395W4KZfqMxZWBAR0MZrE,22
+subsample_fastas/__main__.py,sha256=BaGOCjVt3tMKQjYo5pCFP0R87N6Pi7vMGbCfbxoshvc,2075
+subsample_fastas/cli.py,sha256=LHfVknNtdpi7bz-1yiE89mFt9IyxL-yyfs7jBLlDb8c,2667
+subsample_fastas/subsample_fastas.py,sha256=wjWR_Uwu4TmmjxpJBqcPD__iCO79XwcUePJ8xZoVJik,1506
+subsample_fastas/utils.py,sha256=7GbbNNee8UpnXa4KKhv-CWD8dhBzj6CUGzkUFgce9pU,453
+subsample_fastas-0.0.0.dist-info/AUTHORS.md,sha256=X_f0n9bvUDRMPA6vwsJ8iU6kzYumUw1yntVjtd5gc-I,64
+subsample_fastas-0.0.0.dist-info/LICENSE,sha256=LFPjsDTGBGu-mdb-fXEqneOSkkZphbkV93OKg9T5Faw,21773
+subsample_fastas-0.0.0.dist-info/METADATA,sha256=gvX6Mlx2loDorbiAbFn-wCnOqfeR6a4_gyjEV9Xw-R4,2226
+subsample_fastas-0.0.0.dist-info/WHEEL,sha256=H7FJHAefYCIXvb4P5zrYJaeLK7noSyNzfSBJTnV9ig0,110
+subsample_fastas-0.0.0.dist-info/entry_points.txt,sha256=Wtkq5WAC1bo6hp9QXzYQHW9lKzbBxFygB39FsnNRHMI,64
+subsample_fastas-0.0.0.dist-info/top_level.txt,sha256=0RrpnarE6l-95s1wD3BeqBKm1Et6C50jZBCQzJEpVcM,17
+subsample_fastas-0.0.0.dist-info/RECORD,,
