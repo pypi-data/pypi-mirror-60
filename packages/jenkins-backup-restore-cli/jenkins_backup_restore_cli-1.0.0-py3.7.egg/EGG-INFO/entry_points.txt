@@ -1,0 +1,3 @@
+[console_scripts]
+jenkins-backup-restore = main.jenkins_backup_restore:main
+
