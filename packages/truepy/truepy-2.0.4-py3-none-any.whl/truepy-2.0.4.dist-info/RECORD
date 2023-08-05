@@ -1,0 +1,15 @@
+truepy/__init__.py,sha256=gXG7Stz0u3rRdd6UtabdBBWs-fdjcQySurcRNYiMs_w,1055
+truepy/__main__.py,sha256=AYlNqnWvAH0vubNj6MxDPTceGprGC2YL3Zeb11FEgF8,7979
+truepy/_bean.py,sha256=tRb-eetftmZyHs7yJ_C4kqchGDFLh5SDpj-mGlOOaEM,6819
+truepy/_bean_serializers.py,sha256=2ePcoo5t3Ra3wqsm30KfAAXQpN16T_g5m6bWdUjbKX4,4963
+truepy/_info.py,sha256=1tPGHqrCEoCULDdYYogRHFVm8t0BZDPKcb9YKgEIF5U,70
+truepy/_license.py,sha256=_nGkUXTZtOkyj3bXnOqjhfhSUiFeKNa8kvRE10Uq8KQ,12717
+truepy/_license_data.py,sha256=rlGmk3zjcWxZCTTvUYUy8raEiZkrxqPJ2El0r2HtDhc,4735
+truepy/_name.py,sha256=6Q1dcL8_9yML78VgClT0DN5LY2ZbuB_gvWH62zaFpjQ,4489
+truepy-2.0.4.dist-info/LICENSE,sha256=cs9B91agg-qATtQkR_XPQsjIaRkQkBiZ-0HsD7NH86U,656
+truepy-2.0.4.dist-info/METADATA,sha256=3S1MJcJjAUwcHWOSX7PZbWCOzr9gZI1DaGFfHhMK_Kc,6147
+truepy-2.0.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+truepy-2.0.4.dist-info/pbr.json,sha256=dq6cjq50c_L3rIYV_z4Lw1fO9v8HlsvW8WoyjQJDOBY,47
+truepy-2.0.4.dist-info/top_level.txt,sha256=EdeJPKkG5owJG_v-kGrny30le8LmR-p68AVUUoy9b34,7
+truepy-2.0.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+truepy-2.0.4.dist-info/RECORD,,
