@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+version.meta
+powerline_inject/__init__.py
+powerline_inject.egg-info/PKG-INFO
+powerline_inject.egg-info/SOURCES.txt
+powerline_inject.egg-info/dependency_links.txt
+powerline_inject.egg-info/entry_points.txt
+powerline_inject.egg-info/requires.txt
+powerline_inject.egg-info/top_level.txt
