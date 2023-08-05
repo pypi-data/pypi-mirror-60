@@ -1,0 +1,14 @@
+README.md
+setup.py
+bijou/__init__.py
+bijou/callbacks.py
+bijou/data.py
+bijou/hook.py
+bijou/learner.py
+bijou/metrics.py
+bijou/modules.py
+bijou/utils.py
+bijou.egg-info/PKG-INFO
+bijou.egg-info/SOURCES.txt
+bijou.egg-info/dependency_links.txt
+bijou.egg-info/top_level.txt
