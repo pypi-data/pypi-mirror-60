@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: fastaparser
+Version: 1.0
+Summary: A python FASTA parser
+Home-page: https://github.com/Kronopt/FastaParser
+Author: Pedro HC David, https://github.com/Kronopt
+License: GPLv3
+Project-URL: Documentation, https://fastaparser.readthedocs.io/en/latest/
+Keywords: fasta parser
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+# FastaParser
+A python FASTA parser
+
+```Python
+>>> import fastaparser
+>>> with open("fasta_file.fasta") as fasta_file:
+...     parser = fastaparser.Reader(fasta_file)
+...     for seq in parser:
+...         print(seq.id, seq.description)
+
+HSBGPG Human gene for bone gla protein (BGP)
+HSGLTH1 Human theta 1-globin gene
+```
+
+#### Work in Progress
+* PyPi package
+* Documentation (readthedocs)
+    * Home
+    * Installation
+    * Usage
+    * Examples
+    * API Specification
+    * Contributing
+    * Authors
+    * History
+* Conda package (?)
+* README
+
+#### Maybe
+* Identify FASTA ID's
+* FASTAID class, to then return in the id property of FastaSequence
+* FASTQ parser
+* Per fasta sequence, show warning if there are characters not in the FASTA specification
+* Way to disable warnings
+* Allow setting of id/description
+
+
