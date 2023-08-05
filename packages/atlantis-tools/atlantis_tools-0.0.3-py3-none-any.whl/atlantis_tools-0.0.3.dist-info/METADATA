@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: atlantis-tools
+Version: 0.0.3
+Summary: Tools of Atlantis project
+Home-page: https://github.com/HolynnChen/Atlantis
+Author: holynnchen
+Author-email: holynnchen@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
