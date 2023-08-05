@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: django-lukepafford-blog
+Version: 1.0.21
+Summary: Django site for personal blog, and anything else
+Home-page: https://github.com/lukepafford/lukepafford_site
+Author: Luke Pafford
+Author-email: lukepafford@gmail.com
+License: MIT
+Keywords: blog django
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: django
+Requires-Dist: django-allauth
+Requires-Dist: django-environ
+Requires-Dist: django-markdown-deux
+Requires-Dist: pyyaml
+Requires-Dist: gunicorn
+
+UNKNOWN
+
+
