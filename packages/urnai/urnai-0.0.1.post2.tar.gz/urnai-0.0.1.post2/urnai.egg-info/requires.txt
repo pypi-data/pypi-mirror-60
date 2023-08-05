@@ -1,0 +1,18 @@
+absl-py
+gym
+tensorflow
+numpy
+matplotlib
+keras
+pysc2
+pandas
+
+[2048]
+gym-2048
+PyGame-Learning-Environment@ git+https://github.com/ntasfi/PyGame-Learning-Environment.git/@master#egg=PyGame-Learning-Environment-0
+
+[deeprts]
+DeepRTS@ git+https://github.com/UIA-CAIR/DeepRTS.git/@e54dc6c#egg=DeepRTS-0
+
+[vizdoom]
+vizdoom

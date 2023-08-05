@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: urnai
+Version: 0.0.1.post2
+Summary: A modular Deep Reinforcement Learning library that supports multiple environments, such as PySC2, OpenAI Gym, and PyGame Learning Environment.
+Home-page: https://github.com/pvnetto/URNAI-Tools
+Author: UFRN-IMD-URNAITeam
+Author-email: urnaiteam@gmail.com
+License: UNKNOWN
+Description: URNAI Tools is a modular Deep Reinforcement Learning library that supports multiple environments, such as PySC2, OpenAI Gym, and PyGame Learning Environment. The main goal of URNAI Tools is to provide an easy way to develop DRL agents in a way that allows the developer to reuse as much code as possible when developing different agents, and that also allows him to reuse previously implemented models in different environments and to integrate new environments easily when necessary. The main advantage of using URNAI Tools is that the models you make for one environment will also work in other environments, so you can prototype new agents for different environments very easily.
+Platform: UNKNOWN
+Provides-Extra: 2048
+Provides-Extra: vizdoom
+Provides-Extra: deeprts
