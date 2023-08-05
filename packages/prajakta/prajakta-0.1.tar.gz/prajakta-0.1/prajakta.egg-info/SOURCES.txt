@@ -1,0 +1,10 @@
+setup.py
+prajakta/Binomialdistribution.py
+prajakta/Gaussiandistribution.py
+prajakta/Generaldistribution.py
+prajakta/__init__.py
+prajakta.egg-info/PKG-INFO
+prajakta.egg-info/SOURCES.txt
+prajakta.egg-info/dependency_links.txt
+prajakta.egg-info/not-zip-safe
+prajakta.egg-info/top_level.txt
