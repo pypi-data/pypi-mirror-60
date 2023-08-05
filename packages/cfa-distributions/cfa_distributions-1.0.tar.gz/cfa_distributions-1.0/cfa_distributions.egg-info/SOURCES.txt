@@ -1,0 +1,10 @@
+setup.py
+cfa_distributions/Binomialdistribution.py
+cfa_distributions/Gaussiandistribution.py
+cfa_distributions/Generaldistribution.py
+cfa_distributions/__init__.py
+cfa_distributions.egg-info/PKG-INFO
+cfa_distributions.egg-info/SOURCES.txt
+cfa_distributions.egg-info/dependency_links.txt
+cfa_distributions.egg-info/not-zip-safe
+cfa_distributions.egg-info/top_level.txt
