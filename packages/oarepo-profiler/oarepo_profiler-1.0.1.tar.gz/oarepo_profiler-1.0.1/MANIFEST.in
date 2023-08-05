@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+#
+# Copyright (C) 2019 CIS UCT Prague.
+#
+# oarepo-profiler is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+#
+#  git init
+#  git add -A
+#  pip install -e .[all]
+#  check-manifest -u
+
+# Check manifest will not automatically add these two files:
+include .dockerignore
+include .editorconfig
+prune docs/_build
+exclude run-tests.sh
+include *.rst
+include LICENSE
+exclude .coveragerc
+exclude pytest.ini
+exclude .licensevars
