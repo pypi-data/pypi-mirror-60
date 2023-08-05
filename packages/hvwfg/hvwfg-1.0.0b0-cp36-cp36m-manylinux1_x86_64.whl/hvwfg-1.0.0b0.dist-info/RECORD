@@ -1,0 +1,10 @@
+hvwfg-1.0.0b0.dist-info/RECORD,,
+hvwfg-1.0.0b0.dist-info/WHEEL,sha256=AKoo51LvHJJJz3_DqlQwz4MB2e4xQub2c35_Bx40pVs,109
+hvwfg-1.0.0b0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+hvwfg-1.0.0b0.dist-info/top_level.txt,sha256=gPWJR1JSVH7cj8iplG0l8QLjayu_hDCbH_lZP9IBi-k,6
+hvwfg-1.0.0b0.dist-info/METADATA,sha256=b6S09bBnzragH20CDc4HWU0YSdJFLkj0ZTc37UlKg3g,1323
+hvwfg/_version.py,sha256=gx06dNaqYKDjXe0rZeSAZdczRlUOFojdFqO6nuUyloY,498
+hvwfg/hv4dr.cpython-36m-x86_64-linux-gnu.so,sha256=0Cgbyi2ZJ1dKbT4jt8fLD2Wpib_FVXLSVv1m-WyYsek,236120
+hvwfg/wfg.cpython-36m-x86_64-linux-gnu.so,sha256=HNUBREQ0C4AoClOTDEX6bkZHdFqSVt2p5jHSbDcEtRI,243024
+hvwfg/__init__.py,sha256=meHAfuFijwjNxVhgp5IrPgKrEGTQP1_NM3ticynj3TE,746
+hvwfg/hv5dr.cpython-36m-x86_64-linux-gnu.so,sha256=q1wMYXTGk_wkqa7XmphFAYyZyeiRU7In0h83qRJwVFU,249760
