@@ -1,0 +1,10 @@
+cryptography
+requests
+zc.lockfile
+urllib3>=1.18
+caucase
+
+[test]
+urllib3>=1.18
+ipaddress
+mock
