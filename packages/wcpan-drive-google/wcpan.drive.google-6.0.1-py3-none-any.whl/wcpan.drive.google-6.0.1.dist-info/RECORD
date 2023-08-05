@@ -1,0 +1,13 @@
+wcpan.drive.google-6.0.1-py3.8-nspkg.pth,sha256=JuewwWaeZDAQsZPmJ9VKh6g38MDsY7iD5I4G_nuLAaY,1148
+wcpan/drive/google/__init__.py,sha256=93yuWfSjMLV-a1Yl8po4FbGC2MRnwmBMAJROqgk9gNM,22
+wcpan/drive/google/api.py,sha256=STDgpobmoXgRa4tBHpK7h7wOPuYAZW2FY0aFYI3VjUE,11661
+wcpan/drive/google/driver.py,sha256=kOPa5Kd_b78QabaoPmYuuKn0UeljsrfPEwil9ivPIwQ,20041
+wcpan/drive/google/exceptions.py,sha256=zkFByN3tvX06NKJVx6552HvGRqus5BAoxvBH3b_8qwk,1525
+wcpan/drive/google/network.py,sha256=vWyvxUZGzHUHGLiLDQgqxWM6PWECWuARH9xMcXx9_xI,11079
+wcpan/drive/google/util.py,sha256=S7n73ZRI0GbbpelpU90DzMQSh1XWALwgXoL6vKIfZBA,8738
+wcpan.drive.google-6.0.1.dist-info/LICENSE.txt,sha256=uOppBWSdxDMjjlDJ2o07rnUPC2MZppj6_wWId86JuhE,1102
+wcpan.drive.google-6.0.1.dist-info/METADATA,sha256=Lz-tzG7zQs1_QW7XPaonhM8QRkaegJWVGRS3N5VUJFI,921
+wcpan.drive.google-6.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+wcpan.drive.google-6.0.1.dist-info/namespace_packages.txt,sha256=dj8SIQZCjzHg5sePrkLxYSq4y4t6d1MBxL-OHTjwfZE,12
+wcpan.drive.google-6.0.1.dist-info/top_level.txt,sha256=QL-0JHAW3jlvYtxLqRkcp3PDnpgzhhNgn4cH9RG_C4Q,6
+wcpan.drive.google-6.0.1.dist-info/RECORD,,
