@@ -1,0 +1,16 @@
+README.md
+setup.py
+validify/__init__.py
+validify/validify.py
+validify.egg-info/PKG-INFO
+validify.egg-info/SOURCES.txt
+validify.egg-info/dependency_links.txt
+validify.egg-info/requires.txt
+validify.egg-info/top_level.txt
+validify/helpers/__init__.py
+validify/helpers/cleanup_compare_strings.py
+validify/helpers/messages.py
+validify/helpers/normalize_space.py
+validify/tests/__init__.py
+validify/tests/prepare_testdata.py
+validify/tests/test_main.py
