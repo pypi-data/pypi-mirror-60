@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fracdiff
+Version: 0.0.4
+Summary: Fractional differentiation of time-series.
+Home-page: https://github.com/simaki/fracdiff
+License: BSD-3-Clause
+Author: Shota Imaki
+Author-email: shota.imaki@icloud.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: numpy (>=1.18.0,<2.0.0)
+Requires-Dist: scikit-learn (>=0.22.1,<0.23.0)
+Requires-Dist: statsmodels (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/simaki/fracdiff
