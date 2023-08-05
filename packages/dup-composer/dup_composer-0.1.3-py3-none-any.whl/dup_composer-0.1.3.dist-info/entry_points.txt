@@ -1,0 +1,3 @@
+[console_scripts]
+dupcomp = dupcomposer.__init__:main
+
