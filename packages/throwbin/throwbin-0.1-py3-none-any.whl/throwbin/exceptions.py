@@ -1,0 +1,2 @@
+class ThrowBinException(Exception):
+    pass
