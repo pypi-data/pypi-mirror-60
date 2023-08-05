@@ -1,0 +1,6 @@
+README
+setup.py
+pyexecute.egg-info/PKG-INFO
+pyexecute.egg-info/SOURCES.txt
+pyexecute.egg-info/dependency_links.txt
+pyexecute.egg-info/top_level.txt

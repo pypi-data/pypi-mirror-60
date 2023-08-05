@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pyexecute
+Version: 1.0.3
+Summary: A module for opening programs and files with python
+Home-page: https://github.com/N-Ziermann/pyexecute
+Author: Niklas Ziermann
+Author-email: n-ziermann@protonmail.com
+License: MIT
+Description: # pyexecute
+        
+        **Version 1.0.3**
+        
+        A module for opening programs and files with python
+        
+        ```python
+        import pyexecute
+        ```
+        
+        ## Dependencies
+        
+        #### Python 3.6 (or higher) with the following modules:
+        
+        - os
+        - multiprocessing
+        
+        Both of these are part of the default python install and therefore don't need to be installed separately.
+        
+        ## Usage
+        
+        ```python
+        pyexecute.file(path)	# opens a file in its default editor
+            
+        
+        pyexecute.program(path)	# opens a program (for linux path is just a prorgams name e.g "obs")
+            
+        ```
+        
+        ## Contributors
+        
+        Niklas Ziermann
+        
+        ## Copyright & License
+        
+        **© Niklas Ziermann** 
+        
+        **MIT License**
+        
+        
+Keywords: multiprocessing open files development
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
