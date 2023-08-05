@@ -1,0 +1,9 @@
+memoq/__init__.py,sha256=d7MtDpal2q4-KfUSjKn2t7XxHS9R6u-uAgXK_ocRFwg,64
+memoq/server.py,sha256=7cDSP3i3dbih32ed2iPJI8Usgd8E57MSlzGpBYOVyFI,8793
+memoq/util.py,sha256=Myd7ao14CANnlhm5XkHqmXZvaSIAtk2iSWiAS4TXw2A,508
+memoq/webservice.py,sha256=u0nNZoNrKflOnE-Bsn5niQ4OHCLveUH_RhGEd9HttX0,10121
+pymemoq-0.2.dev6.dist-info/LICENSE,sha256=an4g5Y1ubM6zBNockk8qKuinYJ9k64-B3svavFWKe-k,1082
+pymemoq-0.2.dev6.dist-info/METADATA,sha256=AKaSCBc2oeqbN7xiEwNaClPZNGT3DmilDjC3YjTgV44,3550
+pymemoq-0.2.dev6.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pymemoq-0.2.dev6.dist-info/top_level.txt,sha256=SiGr7kMlDHPtvYuRFs3tQjNvd2nSKyw8j7DL3_JwDg4,6
+pymemoq-0.2.dev6.dist-info/RECORD,,
