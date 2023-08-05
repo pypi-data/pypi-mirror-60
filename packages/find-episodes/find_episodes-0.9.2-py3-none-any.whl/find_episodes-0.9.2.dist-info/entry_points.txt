@@ -1,0 +1,4 @@
+[console_scripts]
+find-episodes = find_episodes.cli:find_episodes
+find-episodes-init = find_episodes.cli:init_config
+
