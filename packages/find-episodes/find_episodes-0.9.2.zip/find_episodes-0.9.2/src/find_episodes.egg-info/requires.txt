@@ -1,0 +1,6 @@
+hed_utils>=4.1.2
+
+[testing]
+pytest
+pytest-cov
+flake8
