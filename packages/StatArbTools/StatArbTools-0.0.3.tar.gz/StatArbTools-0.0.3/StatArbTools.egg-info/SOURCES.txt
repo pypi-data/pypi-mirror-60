@@ -1,0 +1,6 @@
+README.md
+setup.py
+StatArbTools.egg-info/PKG-INFO
+StatArbTools.egg-info/SOURCES.txt
+StatArbTools.egg-info/dependency_links.txt
+StatArbTools.egg-info/top_level.txt
