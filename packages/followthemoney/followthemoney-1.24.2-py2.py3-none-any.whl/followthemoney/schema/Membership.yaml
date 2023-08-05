@@ -1,0 +1,30 @@
+Membership:
+  label: "Membership"
+  plural: "Memberships"
+  extends: Interest
+  matchable: false
+  featured:
+    - member
+    - organization
+    - role
+    - startDate
+    - endDate
+  edge: # MEMBER is a member of ORGANIZATION
+    source: member
+    target: organization
+    caption: role
+  properties:
+    member:
+      label: "Member"
+      type: entity
+      range: LegalEntity
+      reverse:
+        name: membershipMember
+        label: "Memberships"
+    organization:
+      label: "Organization"
+      type: entity
+      range: Organization
+      reverse:
+        name: membershipOrganization
+        label: "Members"
