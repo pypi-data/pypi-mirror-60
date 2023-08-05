@@ -1,0 +1,3 @@
+[console_scripts]
+UCS633-topsis-sj = packagesj.topsis:main
+
