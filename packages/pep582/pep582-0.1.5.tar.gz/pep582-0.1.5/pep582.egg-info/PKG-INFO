@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pep582
+Version: 0.1.5
+Summary: implements pep582(adds __pypackages__ to PYTHONPATH) via patching site.py
+Home-page: https://github.com/pawnhearts/pep582
+Author: robotnaoborot
+Author-email: robotnaoborot@gmail.com
+License: MIT license
+Description: UNKNOWN
+Keywords: pep582
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.8

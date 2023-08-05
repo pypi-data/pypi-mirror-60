@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        pep582=pep582.cli:main
+    
