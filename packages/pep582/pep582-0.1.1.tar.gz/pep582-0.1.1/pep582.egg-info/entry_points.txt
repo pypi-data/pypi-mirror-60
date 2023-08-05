@@ -1,0 +1,3 @@
+[console_scripts]
+pep582 = pep582.patch:main
+
