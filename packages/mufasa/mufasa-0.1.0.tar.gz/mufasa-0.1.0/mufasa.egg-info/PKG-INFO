@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mufasa
+Version: 0.1.0
+Summary: MUlti-component Fitter for Astrophysical Spectral Applications
+Home-page: https://github.com/mcyc/mufasa
+Author: Michael Chun-Yuan Chen
+Author-email: mcychen@uvic.ca
+License: UNKNOWN
+Description: # mufasa
+        MUlti-component Fitter for Astrophysical Spectral Applications.
+        
+        A full release is comming soon.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
