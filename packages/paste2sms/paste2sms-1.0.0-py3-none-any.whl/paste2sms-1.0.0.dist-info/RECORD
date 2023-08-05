@@ -1,0 +1,13 @@
+paste2sms/__init__.py,sha256=AfJEKSPbDq8QA8hKaHttnylquuI2NLg-2z0SCFvPlDw,974
+paste2sms/__main__.py,sha256=ElcelONeUbyoiM2UV9KVPF6USgz4WbS0w9GFNHrQWZY,4922
+paste2sms/provider/freemobile.py,sha256=KvNAgEaokO5YHZwlTjcLCAxpTH8OKjB0fvicYtokLag,2399
+paste2sms-1.0.0.data/data/share/applications/paste2sms.desktop,sha256=OxLggFBnOFGMN40I55GrFvYm4N9MUWfN6uI0r6vjLkY,248
+paste2sms-1.0.0.data/data/share/pixmaps/paste2sms.svg,sha256=dHvnGOl0jwG-F9tP5yL7esftWSyshosXCOFx9-dFNa8,21005
+paste2sms-1.0.0.dist-info/AUTHORS,sha256=X7TYIj4k0AjeEe6iTOp7-KDz32OoVuzW8P8msPZQ9mI,17
+paste2sms-1.0.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+paste2sms-1.0.0.dist-info/METADATA,sha256=2Bs7XuugenYCaOABx4uHSV7QqPcv6Hn7xjsry5eu4EM,2163
+paste2sms-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+paste2sms-1.0.0.dist-info/entry_points.txt,sha256=5ELiGKBzCFfRHpyxhADTCxebIw7Gti8Y6cEBqcoolwQ,55
+paste2sms-1.0.0.dist-info/top_level.txt,sha256=4rqUCqz9cOei13aF-OHd6qL_V9cyRNJ0nosI9H3gYNQ,10
+paste2sms-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+paste2sms-1.0.0.dist-info/RECORD,,
