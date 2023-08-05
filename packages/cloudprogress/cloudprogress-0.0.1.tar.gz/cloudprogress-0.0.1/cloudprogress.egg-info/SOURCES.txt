@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+cloudprogress/VERSION
+cloudprogress/__init__.py
+cloudprogress/looper.py
+cloudprogress/rest.py
+cloudprogress.egg-info/PKG-INFO
+cloudprogress.egg-info/SOURCES.txt
+cloudprogress.egg-info/dependency_links.txt
+cloudprogress.egg-info/requires.txt
+cloudprogress.egg-info/top_level.txt
