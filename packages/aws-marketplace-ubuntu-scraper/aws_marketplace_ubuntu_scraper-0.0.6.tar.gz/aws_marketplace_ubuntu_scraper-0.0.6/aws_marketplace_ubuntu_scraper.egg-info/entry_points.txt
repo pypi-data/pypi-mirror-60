@@ -1,0 +1,3 @@
+[console_scripts]
+aws_marketplace_ubuntu_scraper = aws_marketplace_ubuntu_scraper:main
+

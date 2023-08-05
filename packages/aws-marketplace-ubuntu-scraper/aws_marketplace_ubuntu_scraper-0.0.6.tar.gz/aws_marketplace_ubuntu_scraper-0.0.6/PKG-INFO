@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: aws_marketplace_ubuntu_scraper
+Version: 0.0.6
+Summary: CLI to return the Ubuntu AMIs in AWS marketplace
+Home-page: https://github.com/philroche/aws-marketplace-ubuntu-scraper
+Author: Philip Roche
+Author-email: phil.roche@canonical.com
+License: GPLv3
+Description: # AWS Marketplace Ubuntu AMI Scraper
+        
+        CLI to return the Ubuntu AMIs in AWS marketplace
+        
+        ## Basic setup
+        
+        Install from [PyPi](https://pypi.org/project/aws-marketplace-ubuntu-scraper/)
+        
+        ```
+        $ pip install aws-marketplace-ubuntu-scraper
+        ```
+        
+        ... OR ...
+        
+        Install the requirements manually:
+        ```
+        $ pip install -r requirements.txt
+        ```
+        
+        You will also need [Firefox](https://www.mozilla.org/en-US/firefox/new/) installed and [geckodriver](https://github.com/mozilla/geckodriver/releases) available in your PATH.
+        
+        I recommend you create a new IAM user with no permissions granted. 
+        Ensure that you have opted in to all the AWS regions that are opt in only and 
+        that you want quicklaunch listings for. 
+        
+        You will also need to set up your aws credentials for use with [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html)
+        
+        Run the application:
+        ```
+        $ python -m aws_marketplace_ubuntu_scraper --help
+        
+        # Print details of the Ubuntu quicklaunch entries for each region
+        $ python -m aws_marketplace_ubuntu_scraper quicklaunch --iam-account-id="YOUR IAM ACCOUNT ID" --iam-username="YOUR IAM USERNAME" --iam-password="YOUR IAM PASSSWORD"
+        
+        # Print details of the Ubuntu marketplace listings
+        $ python -m aws_marketplace_ubuntu_scraper marketplace
+        
+        ```
+        
+        To run the tests:
+        ```
+            $ pytest
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

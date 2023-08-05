@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+aws_marketplace_ubuntu_scraper.py
+requirements.txt
+setup.py
+aws_marketplace_ubuntu_scraper.egg-info/PKG-INFO
+aws_marketplace_ubuntu_scraper.egg-info/SOURCES.txt
+aws_marketplace_ubuntu_scraper.egg-info/dependency_links.txt
+aws_marketplace_ubuntu_scraper.egg-info/entry_points.txt
+aws_marketplace_ubuntu_scraper.egg-info/requires.txt
+aws_marketplace_ubuntu_scraper.egg-info/top_level.txt
