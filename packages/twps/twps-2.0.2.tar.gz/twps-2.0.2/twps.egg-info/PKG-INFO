@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: twps
+Version: 2.0.2
+Summary: TWPS: (T)ext (W)ith (P)ython (S)nippets preprocessor
+Home-page: https://github.com/inr-kit/twps
+Author: A.Travleev
+Author-email: anton.travleev@gmail.com
+License: GPL
+Description: TWPS: (T)ext (W)ith (P)ython (S)nippets
+        ==========================================
+        
+        A python package to preprocess text files with embedded Python code snippets:
+        evaluate or execute them and replace with the result of evaluation/execution.
+        
+        This package provides the ``ppp.py`` script. The script reads the file
+        specified in the command line, finds python snippets, evaluates or executes
+        them and writes out the file with the pyhton code replaced with the
+        evaluateion/execution result. 
+        
+        For command line options see ``readme.rst`` in the ``twps`` folder or run the
+        script without command line arguemnt. 
+        
+        General description with examples (somewhat outdated) can be found in the
+        ``docs`` folder. 
+        
+        
+Keywords: TEXT,PYTHON,SNIPPETS,TEMPLATE,PREPROCESSOR
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
