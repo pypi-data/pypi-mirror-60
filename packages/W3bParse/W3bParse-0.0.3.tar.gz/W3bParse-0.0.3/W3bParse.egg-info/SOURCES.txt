@@ -1,0 +1,8 @@
+README.md
+setup.py
+W3bParse.egg-info/PKG-INFO
+W3bParse.egg-info/SOURCES.txt
+W3bParse.egg-info/dependency_links.txt
+W3bParse.egg-info/top_level.txt
+WebParse/__init__.py
+WebParse/webParse.py
