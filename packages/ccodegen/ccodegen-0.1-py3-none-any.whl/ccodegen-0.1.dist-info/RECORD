@@ -1,0 +1,9 @@
+ccodegen/__init__.py,sha256=1vyQlMnBSU2F4tnmnOe2gh_6QGvDFzRqk7Bl4cQl1CM,110
+ccodegen/ccodegen.py,sha256=GXn5CbrvZPuQLJz3dj4XrkV0RdKgqNAIXME5-_tOG8Y,12367
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=3Q0hakmfDaT7NbhCeVyVXA-Z4OfSa81XTyLn70I6GZc,500
+ccodegen-0.1.dist-info/LICENSE,sha256=VxYR7DcDv-owux4S5sudONywLdX03vPEOSPH9f6rxVQ,1074
+ccodegen-0.1.dist-info/METADATA,sha256=241A-0fV18o-QnKZAQgd86upDIEUklM-QM91erR_hA4,483
+ccodegen-0.1.dist-info/WHEEL,sha256=XOj1g5kV4OxZCRiBvYFIQdhMldfnAF5nUxS8sgkc5Mg,92
+ccodegen-0.1.dist-info/top_level.txt,sha256=CF3f7C_SKqfS3SdZeBqACpMNO4giP9zOTek0zqpCVog,15
+ccodegen-0.1.dist-info/RECORD,,
