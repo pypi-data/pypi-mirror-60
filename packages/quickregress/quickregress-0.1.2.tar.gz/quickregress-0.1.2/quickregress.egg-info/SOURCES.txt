@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+quickregress/__init__.py
+quickregress.egg-info/PKG-INFO
+quickregress.egg-info/SOURCES.txt
+quickregress.egg-info/dependency_links.txt
+quickregress.egg-info/requires.txt
+quickregress.egg-info/top_level.txt
