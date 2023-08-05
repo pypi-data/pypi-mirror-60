@@ -1,0 +1,10 @@
+mreddata/__init__.py,sha256=OoBT8MsdAjQZ9GhsxF23WRvJLfmcmlpkkant6GuugVU,522
+mreddata/datatools.py,sha256=Km6VY6_KIHiShcW01sBPEFLFHUTzjELzgtQmuqgftak,10495
+mreddata/hdf5data.py,sha256=DEs-8daBW1FyRj5gtN_BwH2jTF6B6Ht3ma5nnsZWw6Y,5752
+mreddata/pkldata.py,sha256=wCigNmvHYInu2dvlHGrxkN4m4dJbsIU4MN3Qp31qB6o,3514
+mreddata/txtdata.py,sha256=__o52s61MWej0LrYaw2IEqIV_07EjpyfyCJSVUiQHaI,1175
+mreddata-0.2.0.dist-info/LICENSE,sha256=HEvlcHqgyIfFzybUMY9rDxF6c9l8aNk5HWJUcqojTGE,1073
+mreddata-0.2.0.dist-info/METADATA,sha256=lQqb0jyfHA_fqW-8foWddSrDP1offZf5BGsSRoxImqY,586
+mreddata-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mreddata-0.2.0.dist-info/top_level.txt,sha256=VUt5XfLFwyd6H4Oc9u3WeJW-BCeAR1fMfag25kAyeps,9
+mreddata-0.2.0.dist-info/RECORD,,
