@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: parallel-ml
+Version: 0.0.2
+Summary: Parallel ML utilities (GPU or CPU) that I can't find anywhere else
+Home-page: https://github.com/sidward14/parallel-ml
+Author: Sidhartha Parhi
+Author-email: sidhartha.parhi@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
