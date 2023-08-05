@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+spectral_rhythm_detector/__init__.py
+spectral_rhythm_detector/core.py
+spectral_rhythm_detector/lfp_likelihood.py
+spectral_rhythm_detector/simulate_LFP.py
+spectral_rhythm_detector.egg-info/PKG-INFO
+spectral_rhythm_detector.egg-info/SOURCES.txt
+spectral_rhythm_detector.egg-info/dependency_links.txt
+spectral_rhythm_detector.egg-info/requires.txt
+spectral_rhythm_detector.egg-info/top_level.txt

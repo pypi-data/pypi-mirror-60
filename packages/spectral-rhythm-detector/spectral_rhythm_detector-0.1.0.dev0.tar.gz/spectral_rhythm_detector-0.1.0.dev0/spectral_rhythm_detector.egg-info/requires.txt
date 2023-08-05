@@ -1,0 +1,7 @@
+numpy>=1.14
+matplotlib
+pandas
+scipy
+scikit-learn
+spectral_connectivity
+hmmlearn==0.2.2
