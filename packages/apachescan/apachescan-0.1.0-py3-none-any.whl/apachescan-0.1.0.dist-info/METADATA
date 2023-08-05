@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: apachescan
+Version: 0.1.0
+Summary: Module scanning Apache HTTP Server log
+Home-page: UNKNOWN
+Author: Quintin Jean-Noel
+Author-email: quintin.jeannoel@gmail.com
+License: BSD
+Platform: UNKNOWN
+Provides: apachescan
+Requires-Dist: pygtail
+Requires-Dist: six
+Requires-Dist: datetime
+Requires-Dist: argparse
+
+UNKNOWN
+
+
