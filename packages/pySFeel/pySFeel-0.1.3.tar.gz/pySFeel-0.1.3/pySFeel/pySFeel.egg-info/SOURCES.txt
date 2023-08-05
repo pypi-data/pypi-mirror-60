@@ -1,0 +1,8 @@
+README.md
+setup.py
+pySFeel/pySFeel.py
+pySFeel/pySFeel.egg-info/PKG-INFO
+pySFeel/pySFeel.egg-info/SOURCES.txt
+pySFeel/pySFeel.egg-info/dependency_links.txt
+pySFeel/pySFeel.egg-info/requires.txt
+pySFeel/pySFeel.egg-info/top_level.txt
