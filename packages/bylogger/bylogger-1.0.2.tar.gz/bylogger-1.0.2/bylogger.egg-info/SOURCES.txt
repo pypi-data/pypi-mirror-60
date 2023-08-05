@@ -1,0 +1,11 @@
+README.md
+setup.py
+bylogger.egg-info/PKG-INFO
+bylogger.egg-info/SOURCES.txt
+bylogger.egg-info/dependency_links.txt
+bylogger.egg-info/requires.txt
+bylogger.egg-info/top_level.txt
+src/bylogger/applogger.py
+src/bylogger/data_service_logs.py
+src/bylogger/scraper_logs.py
+src/bylogger/web_service_logs.py
