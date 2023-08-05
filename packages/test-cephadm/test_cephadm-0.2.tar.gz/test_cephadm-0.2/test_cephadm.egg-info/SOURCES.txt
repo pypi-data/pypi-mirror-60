@@ -1,0 +1,7 @@
+README.md
+cephadm
+setup.py
+test_cephadm.egg-info/PKG-INFO
+test_cephadm.egg-info/SOURCES.txt
+test_cephadm.egg-info/dependency_links.txt
+test_cephadm.egg-info/top_level.txt
