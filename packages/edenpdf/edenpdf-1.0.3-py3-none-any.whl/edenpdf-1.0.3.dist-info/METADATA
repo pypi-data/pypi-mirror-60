@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: edenpdf
+Version: 1.0.3
+Summary: ilovepdf.com python API library
+Home-page: https://github.com/eden-box/edenpdf
+License: GPL-3.0-only
+Keywords: pdf,unlock,compress,manipulate,edit,protect,pdftojpg,jpgtopdf,pdfa
+Author: Eden-Box
+Author-email: dev@edenbox.cf
+Requires-Python: >=3.6.0,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests (>=2.22.0,<3.0.0)
+Requires-Dist: urllib3 (>=1.25.0,<2.0.0)
+Project-URL: Repository, https://github.com/eden-box/edenpdf
+Description-Content-Type: text/markdown
+
+# edenpdf
+
+ilovepdf.com python API library, forked from Andrea Bruschi's pylovepdf
+
+## What it does
+
+This library allows pdf manipulation using the API of http://www.ilovepdf.com. See the Tools section to know what you can do.
+
+### Prerequisites
+
+* [developer account] (https://developer.ilovepdf.com) to get a public key to use the API.
+* [Python >3.6]
+* [Requests] (http://it.python-requests.org/it/latest/)
+
+## Installation (older version)
+
+```
+pip install pylovepdf 
+```
+
+## Manual installation (up to date) 
+
+Download the latest release.
+```
+python setup.py install
+```
+
+## Getting started
+
+Example files are located inside samples/.
+Change file paths and the public_key parameter with the one you found in your developer account (see prerequisites).
+Run the files and enjoy.
+
+## Tools
+Currently the following tools are available:
+
+* compress          (Reduce the size of pdf files)
+* imagepdf          (Converts an image to pdf)
+* merge             (Merge multiple pdf into single file)
+* officepdf         (Office document to pdf conversion)
+* pagenumber        (Place numbers on pages)
+* pdfa              (Converts into PDF/A)
+* pdfjpg            (Converts a pdf into jpeg image)
+* protect           (Add password to a pdf)
+* rotate            (Rotates the pages of a file)
+* split             (Split a pdf)
+* unlock            (Remove the password security from the pdf, the coolest feature ever!)
+* validatepdfa      (Checks the conformity of PDF/A format)
+* watermark         (Adds watermark to the file)
+
+## Example Usage (compress tool)
+```python
+from pylovepdf.ilovepdf import ILovePdf
+
+ilovepdf = ILovePdf('public_key', verify_ssl=True)
+task = ilovepdf.new_task('compress')
+task.add_file('pdf_file')
+task.set_output_folder('output_directory')
+task.execute()
+task.download()
+task.delete_current_task()
+```
+
+## Alternative Example Usage (compress tool)
+A tool can be created directly:
+```python
+from pylovepdf.tools.compress import Compress
+
+t = Compress('public_key', verify_ssl=True)
+t.add_file('pdf_file')
+t.set_output_folder('output_directory')
+t.execute()
+t.download()
+t.delete_current_task()
+```
+## Documentation
+
+Please see https://developer.ilovepdf.com/docs for up-to-date documentation.
+
+
