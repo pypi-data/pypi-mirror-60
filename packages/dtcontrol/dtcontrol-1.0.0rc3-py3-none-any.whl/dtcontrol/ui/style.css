@@ -1,0 +1,17 @@
+table {
+  font-size: smaller;
+}
+
+thead > tr > th {
+  text-align: center;
+  text-wrap: normal;
+}
+
+tbody > tr > th {
+  text-align: left;
+  text-wrap: normal;
+}
+
+.time {
+  color: #ecc30b;
+}
