@@ -1,0 +1,7 @@
+README.rst
+setup.py
+boto_creds_path/__init__.py
+botocredspath.egg-info/PKG-INFO
+botocredspath.egg-info/SOURCES.txt
+botocredspath.egg-info/dependency_links.txt
+botocredspath.egg-info/top_level.txt
