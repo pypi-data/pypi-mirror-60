@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ahd
+Version: 0.0.1
+Summary: A system for creating ad-hoc commands.
+Home-page: https://github.com/descent098/ahd
+Author: Kieran Wood
+Author-email: kieran@canadiancoding.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: docopt
+Provides-Extra: dev
+Requires-Dist: nox ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: mkdocs ; extra == 'dev'
+
+# AHD; Ad-Hoc Dispatcher
+
+A system for creating ad-hoc commands with a simple syntax.
+
+**Currently just name-squatting while creating the initial build**
+
+
+
