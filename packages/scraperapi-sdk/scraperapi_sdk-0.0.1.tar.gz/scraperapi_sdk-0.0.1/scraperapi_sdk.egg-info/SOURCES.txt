@@ -1,0 +1,6 @@
+README.md
+setup.py
+scraperapi_sdk.egg-info/PKG-INFO
+scraperapi_sdk.egg-info/SOURCES.txt
+scraperapi_sdk.egg-info/dependency_links.txt
+scraperapi_sdk.egg-info/top_level.txt
