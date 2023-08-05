@@ -1,0 +1,10 @@
+sortable_listview/__init__.py,sha256=9Ke099kkvCy5tiCabo3qMAtJINe4EmsggGYn7OChNzA,36
+sortable_listview/views.py,sha256=wxJJtg2f5Q4RyAOg433Yry3JEujSLKho8zOY_veF29A,7020
+sortable_listview/static/sortable_listview/bootstrap.min.css,sha256=BPg8opl98bploVu_P13ZN3VkfZaNVRMC-tC5YfQvDYs,68723
+sortable_listview/templates/sortable_listview/pagination.html,sha256=yOIdI9yXcekI5-5hew3PePMXnzloiVB7___82z5WtlE,1868
+sortable_listview/templates/sortable_listview/sort_links.html,sha256=KJUec182xljtoZLZwv-LQP859_kwwj-YPXx_LWDk-CI,554
+django_sortable_listview-0.43.dist-info/LICENSE.txt,sha256=9wT6WQ2CN6DQ0Lj2yJzqbCV1V4f7Az3wZHXvaFj80SI,1087
+django_sortable_listview-0.43.dist-info/METADATA,sha256=CAdFLOOZzofIkeKVvUuqp7hxCI59qf26mJJVarhCU8o,4341
+django_sortable_listview-0.43.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+django_sortable_listview-0.43.dist-info/top_level.txt,sha256=CjvaxKQPMc1d19PXJRp7udeXk1EGkwo8jBk0gwrzcjM,18
+django_sortable_listview-0.43.dist-info/RECORD,,
