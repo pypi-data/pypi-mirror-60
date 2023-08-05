@@ -1,0 +1,7 @@
+pylint
+
+[dev]
+isort
+black
+check-manifest
+zest.releaser

@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/pylint_strict_informational.py
+src/pylint_strict_informational.egg-info/PKG-INFO
+src/pylint_strict_informational.egg-info/SOURCES.txt
+src/pylint_strict_informational.egg-info/dependency_links.txt
+src/pylint_strict_informational.egg-info/requires.txt
+src/pylint_strict_informational.egg-info/top_level.txt
