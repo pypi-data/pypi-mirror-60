@@ -1,0 +1,8 @@
+cmdstanpy
+scipy
+tabulate
+pandas
+numpy
+arviz
+matplotlib
+seaborn
