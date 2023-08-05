@@ -1,0 +1,15 @@
+.coveragerc
+.gitignore
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+tox.ini
+.github/workflows/publishpackage.yml
+.github/workflows/runtests.yml
+src/iterlist.py
+src/iterlist.egg-info/PKG-INFO
+src/iterlist.egg-info/SOURCES.txt
+src/iterlist.egg-info/dependency_links.txt
+src/iterlist.egg-info/top_level.txt
+tests/test_iterlist.py
