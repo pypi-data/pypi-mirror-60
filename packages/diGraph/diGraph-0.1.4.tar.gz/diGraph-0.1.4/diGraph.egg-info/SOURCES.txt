@@ -1,0 +1,9 @@
+README.md
+setup.py
+diGraph/__init__.py
+diGraph/diGraph.py
+diGraph.egg-info/PKG-INFO
+diGraph.egg-info/SOURCES.txt
+diGraph.egg-info/dependency_links.txt
+diGraph.egg-info/requires.txt
+diGraph.egg-info/top_level.txt
