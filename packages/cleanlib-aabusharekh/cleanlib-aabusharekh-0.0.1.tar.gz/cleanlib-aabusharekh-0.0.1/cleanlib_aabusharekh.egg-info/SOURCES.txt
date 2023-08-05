@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+cleanlib/__init__.py
+cleanlib/main.py
+cleanlib_aabusharekh.egg-info/PKG-INFO
+cleanlib_aabusharekh.egg-info/SOURCES.txt
+cleanlib_aabusharekh.egg-info/dependency_links.txt
+cleanlib_aabusharekh.egg-info/top_level.txt
