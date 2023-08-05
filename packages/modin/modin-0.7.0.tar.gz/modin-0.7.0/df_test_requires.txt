@@ -1,0 +1,10 @@
+pandas==0.25.3
+numpy
+psutil==5.4.8
+pytest
+pytest-testmon
+pytest-custom_exit_code
+matplotlib
+xarray
+scipy
+Jinja2
