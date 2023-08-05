@@ -1,0 +1,77 @@
+datacoco.cloud
+=======================
+
+.. image:: https://badge.fury.io/py/datacoco-cloud.svg
+    :target: https://badge.fury.io/py/datacoco-cloud
+    :alt: PyPI Version
+
+.. image:: https://readthedocs.org/projects/datacoco-cloud/badge/?version=latest
+    :target: https://datacoco-cloud.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+.. image:: https://api.codacy.com/project/badge/Grade/8b768d9639a94456b8574158122f36ae
+    :target: https://www.codacy.com/manual/equinoxfitness/datacoco.cloud?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=equinoxfitness/datacoco.cloud&amp;utm_campaign=Badge_Grade
+    :alt: Code Quality Grade
+
+.. image:: https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg
+    :target: https://github.com/equinoxfitness/datacoco.cloud/blob/master/CODE_OF_CONDUCT.rst
+    :alt: Code of Conduct
+
+Installing the latest version
+------------
+
+To install the latest version, use pip:
+
+::
+
+     pip install datacoco-cloud
+
+
+Modules
+------------
+
+
+Cocloud contains interaction classes for the following aws servies
+
+
+- S3
+- Athena
+- SES
+- SNS
+- SQS
+- ECS
+- EMR
+- CloudWatch Logs
+
+
+Development
+-----------
+
+Getting Started
+~~~~~~~~~~~~~~~
+
+It is recommended to use the steps below to set up a virtual environment for development:
+
+::
+
+    python3 -m venv <virtual env name>
+    source <virtual env name>/bin/activate
+    pip install -r requirements.txt
+
+Testing
+~~~~~~~
+
+::
+
+    pip install -r requirements_dev.txt
+
+To run the testing suite, simply run the command: ``tox`` or ``python -m unittest discover tests``
+
+Contributing
+------------
+
+Contributions to datacoco\_cloud are welcome!
+
+Please reference guidelines to help with setting up your development
+environment
+`here <https://github.com/equinoxfitness/datacoco.cloud/blob/master/CONTRIBUTING.rst>`__.
