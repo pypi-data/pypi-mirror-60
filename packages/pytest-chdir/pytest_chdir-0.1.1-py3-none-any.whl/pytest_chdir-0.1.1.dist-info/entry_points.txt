@@ -1,0 +1,3 @@
+[pytest11]
+pytest-chdir=pytest_chdir.plugin
+

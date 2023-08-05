@@ -1,0 +1,7 @@
+pytest_chdir/__init__.py,sha256=OluyLtsgJH0Tr1XbWhoi7tDGiIHUm0uMu402xVgtvN4,213
+pytest_chdir/plugin.py,sha256=W22tdN1hcGEOFDfJF9bDMLlC9U9-gLg2bLPCQ4rOdAI,1044
+pytest_chdir-0.1.1.dist-info/entry_points.txt,sha256=3p92lwg_VBhqIHh6KcvvOMBGlstzyMlcuMimG8SYxz8,45
+pytest_chdir-0.1.1.dist-info/LICENSE,sha256=iMVzF_bTwcXZfoA-eai-7aRxoML6Ud2Ifv3CWBuRcRU,1070
+pytest_chdir-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pytest_chdir-0.1.1.dist-info/METADATA,sha256=aOpTOeDeFAqv_uu6MvDBB-iBr8kTR5mzLDneNkq5Ac0,514
+pytest_chdir-0.1.1.dist-info/RECORD,,
