@@ -1,0 +1,13 @@
+pyptax/__init__.py,sha256=ZEeYhv6T2DdXhaZuxneG5AnT3L7ffQip3YOnZcpIpsQ,56
+pyptax/client.py,sha256=ms-DjXAB_h8N6DhYgMUXtY4MCKghAopQ5yDphc6MW9g,539
+pyptax/exceptions.py,sha256=DbB2GFuW5VbIq9yv4gg9A6uw0yBTssvkg2mKBxBmuR8,114
+pyptax/helpers.py,sha256=6gutwJO7z8ruZi-syZiTEi20oIxyykI-nssSRfEUQzE,536
+pyptax/models.py,sha256=hM47dgVbdXwm5AQuuhRNZynssooYOzMW33mcRwfUiQQ,416
+pyptax/ptax.py,sha256=XFghpUzilo-lj8zKg_IY7S9ZHHBwWfqeI-ZFazG2VIY,1019
+pyptax/resources.py,sha256=bsZiF-qSWv2cUgLwwSRzRyYIzgax_oYM7uVJuWeRdr8,580
+pyptax/settings.py,sha256=_U675IqLtJm2K42y6hdFAGk0qzINFGFt1bEfEBgaGn4,141
+pyptax-0.3.0.dist-info/LICENSE,sha256=jdd-EtfbaXduqTlsiCq_aWntQf-2zI7nePqEzTApTVA,1070
+pyptax-0.3.0.dist-info/METADATA,sha256=0aVMkdQsFNTtsXhLGhf9gUvTzuxeGCcWvW8rEw5Zzb0,3740
+pyptax-0.3.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyptax-0.3.0.dist-info/top_level.txt,sha256=W0T5IXyQKaEWpmZVE_AsMFgN6NPKVOpDcjZ1Aed1OF4,7
+pyptax-0.3.0.dist-info/RECORD,,
