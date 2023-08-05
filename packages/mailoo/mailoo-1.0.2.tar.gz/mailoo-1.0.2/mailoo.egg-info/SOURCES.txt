@@ -1,0 +1,10 @@
+README.md
+setup.py
+mailoo/__init__.py
+mailoo/__main__.py
+mailoo/mailoo.py
+mailoo/main.py
+mailoo.egg-info/PKG-INFO
+mailoo.egg-info/SOURCES.txt
+mailoo.egg-info/dependency_links.txt
+mailoo.egg-info/top_level.txt
