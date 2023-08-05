@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+bin/easy-heroku-flask
+easy_heroku_flask.egg-info/PKG-INFO
+easy_heroku_flask.egg-info/SOURCES.txt
+easy_heroku_flask.egg-info/dependency_links.txt
+easy_heroku_flask.egg-info/top_level.txt
