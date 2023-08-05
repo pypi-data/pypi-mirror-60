@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: etsy-api-zs
+Version: 0.4
+Summary: UNKNOWN
+Home-page: https://github.com/kambag/etsy_api_zonesmart
+Author: Kamil Bagaviev
+Author-email: kbagaviev@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3
+
+Description
+===========
+
+
