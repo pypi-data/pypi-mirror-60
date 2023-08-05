@@ -1,0 +1,11 @@
+primers/__init__.py,sha256=uXfRqvskVU9_XZjAqU5WoHy7ASxKEAlGwIiFI-9UwLA,378
+primers/main.py,sha256=WiTjj7rexkGRgj5CaQFXSH3aNWeOLJ8igM3BVbu2fVk,2724
+primers/primers.py,sha256=yoJZpqlbjsk6lpt6PnO9-DEMBKFxkNp4VqmJXtH7Fh4,15326
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/primers_test.py,sha256=3rGk3ofCRZqGn0kXzPGRHu2Z26Xdqq_5GEeGIvcraIs,3677
+primers-0.1.1.dist-info/LICENSE,sha256=7Vk9JLhU9IE6g8bAeeneyADepMrJMrzv-ZK9bUYtrOo,1075
+primers-0.1.1.dist-info/METADATA,sha256=K8ym72Vbhy6b1y377Xfp0HcBqlXu6YCsoJl62lDOVeY,903
+primers-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+primers-0.1.1.dist-info/entry_points.txt,sha256=3O_amguYXQnwLM7AO9PFZS9ILKYOujgA-pjyJ-Tnm48,46
+primers-0.1.1.dist-info/top_level.txt,sha256=aArUtmNkt-jC7HpfQUFIsKSBVNchrbl5EEo1-JBoI8k,14
+primers-0.1.1.dist-info/RECORD,,
