@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: deepracer-vehicle-api
+Version: 0.0.3
+Summary: deepracer-vehicle-api is a python package for control the DeepRacer vehicle via HTTP API.
+Home-page: https://github.com/thu2004/deepracer-vehicle-api
+Author: Chi Thu Le
+Author-email: thu2004@yahoo.se
+License: MIT
+Description: # Deepracer Vehicle API
+        
+        deepracer-vehicle-api
+        
+        # API
+        
+        # Installation
+        
+        pip install deepracer-vehicle-api
+        
+        # Getting Started
+        
+        Show vehicle info
+        
+        import deepracer_vehicle_api as dva
+        
+        client = dva.Client(password="???", ip="111.222.333.444")
+        client.show_vehicle_info()
+        
+        For more details, see addition examples here: https://github.com/thu2004/deepracer-vehicle-api/examples'
+        
+        # Others
+        
+        This repo has borrowed code and refactored them from :
+        * https://github.com/ARCC-RACE/deepracer-rc
+        * https://github.com/gidutz/DeepBullFighting
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
