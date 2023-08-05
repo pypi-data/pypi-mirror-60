@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/vfsm/__init__.py
+src/vfsm.egg-info/PKG-INFO
+src/vfsm.egg-info/SOURCES.txt
+src/vfsm.egg-info/dependency_links.txt
+src/vfsm.egg-info/top_level.txt
