@@ -1,0 +1,8 @@
+CITIfile.py
+README.md
+setup.py
+CITIfile.egg-info/PKG-INFO
+CITIfile.egg-info/SOURCES.txt
+CITIfile.egg-info/dependency_links.txt
+CITIfile.egg-info/requires.txt
+CITIfile.egg-info/top_level.txt
