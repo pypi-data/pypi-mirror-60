@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: abjadtools
+Version: 0.1.1
+Summary: Utilities to work with abjad and convert to music21
+Home-page: https://github.com/gesellkammer/emlib
+Author: Eduardo Moguillansky
+Author-email: eduardo.moguillansky@gmail.com
+License: BSD
+Description: abjadtools
+        ==========
+        
+        -  convert abjad objects to its music21 counterpart
+        -  utilities to make working with abjad less painfull
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
