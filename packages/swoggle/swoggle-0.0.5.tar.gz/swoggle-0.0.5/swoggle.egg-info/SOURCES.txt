@@ -1,0 +1,12 @@
+README.md
+setup.py
+swoggle/__init__.py
+swoggle/_nbdev.py
+swoggle/ai.py
+swoggle/core.py
+swoggle.egg-info/PKG-INFO
+swoggle.egg-info/SOURCES.txt
+swoggle.egg-info/dependency_links.txt
+swoggle.egg-info/entry_points.txt
+swoggle.egg-info/not-zip-safe
+swoggle.egg-info/top_level.txt
