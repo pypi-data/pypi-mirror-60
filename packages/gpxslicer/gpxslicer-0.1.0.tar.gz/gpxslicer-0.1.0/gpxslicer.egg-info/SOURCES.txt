@@ -1,0 +1,11 @@
+README.md
+setup.py
+gpxslicer/__init__.py
+gpxslicer/__main__.py
+gpxslicer/slicer.py
+gpxslicer.egg-info/PKG-INFO
+gpxslicer.egg-info/SOURCES.txt
+gpxslicer.egg-info/dependency_links.txt
+gpxslicer.egg-info/entry_points.txt
+gpxslicer.egg-info/requires.txt
+gpxslicer.egg-info/top_level.txt
