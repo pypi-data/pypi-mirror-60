@@ -1,0 +1,7 @@
+README.rst
+setup.py
+auto_behave.egg-info/PKG-INFO
+auto_behave.egg-info/SOURCES.txt
+auto_behave.egg-info/dependency_links.txt
+auto_behave.egg-info/requires.txt
+auto_behave.egg-info/top_level.txt
