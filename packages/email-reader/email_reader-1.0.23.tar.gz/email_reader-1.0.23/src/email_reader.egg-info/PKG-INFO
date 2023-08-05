@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: email-reader
+Version: 1.0.23
+Summary: Read and parse email's from gmail
+Home-page: https://github.com/acdurai/email_reader
+Author: CCC EQA AUTOMATION
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: ===============================
+        email_reader
+        ===============================
+        
+        .. image:: https://img.shields.io/travis/acdurai04/email_sample.svg
+                :target: https://travis-ci.org/acdurai04/email_sample
+        
+        .. image:: https://img.shields.io/pypi/v/email_sample.svg
+                :target: https://pypi.python.org/pypi/email_sample
+        
+        
+        
+        .. :changelog:
+        
+        History
+        -------
+        
+        Pre-release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
