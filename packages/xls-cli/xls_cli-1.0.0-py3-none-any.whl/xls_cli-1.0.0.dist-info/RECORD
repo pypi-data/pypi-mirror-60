@@ -1,0 +1,11 @@
+xls_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xls_cli/ansi.py,sha256=HYMPSxMJcbrpBEu8HatFJqN_Hnt2xjm4hx8pVLD0wJg,149
+xls_cli/cli.py,sha256=DRVRqJIqBJ-0INtImrXXbnmmLeMsHo_8h46ucnZYjZU,599
+xls_cli/frame.py,sha256=3ALUkABJuxIj8tt_V5pgsogg3z_jOMhHvmAEGz6VM1I,2074
+xls_cli/grid.py,sha256=B9wetPqhsZlPhyiHHglYg8wM0bfnAr8mGThGW8mzCf4,2700
+xls_cli/runner.py,sha256=DVH9THAUmPlDk-X0DFLHgZOxz-8RlUCFlQMh5kEhZzw,382
+xls_cli-1.0.0.dist-info/METADATA,sha256=0MX5cKaaBeALPrXBxQQzXXHx3LO9ryFugzrOYFen-h4,742
+xls_cli-1.0.0.dist-info/WHEEL,sha256=XOj1g5kV4OxZCRiBvYFIQdhMldfnAF5nUxS8sgkc5Mg,92
+xls_cli-1.0.0.dist-info/entry_points.txt,sha256=x0EtHcH0oP2KYmfAR9Or0axURNOS6CD6iLcvDPX1hKY,46
+xls_cli-1.0.0.dist-info/top_level.txt,sha256=yo8RSZ1RPNj-6eAMCQG-M5IOlendyK_f0IRvGtgrNIY,8
+xls_cli-1.0.0.dist-info/RECORD,,
