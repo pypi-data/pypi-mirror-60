@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: scimma-client
+Version: 0.0.1
+Summary: A client library for SCiMMA
+Home-page: https://github.com/scimma/client_library
+Author: Patrick Godwin
+Author-email: patrick.godwin@psu.edu
+License: BSD 3-Clause
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.5.*
+Description-Content-Type: text/markdown
+
+SCiMMA Client
+=============
+
+**scimma-client** is a pub-sub client library for Multimessenger Astrophysics.
+
+## Quickstart
+
+TODO
+
+## Installation
+
+You can install scimma-client either via pip or from source.
+
+To install with pip:
+
+```
+pip install -U scimma-client
+```
+
+To install from source:
+
+```
+tar -xzf scimma-client-x.y.z.tar.gz
+cd scimma-client-x.y.z
+python setup.py install
+```
+
