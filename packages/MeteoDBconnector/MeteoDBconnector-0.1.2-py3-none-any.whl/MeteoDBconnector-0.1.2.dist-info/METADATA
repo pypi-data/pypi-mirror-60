@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: MeteoDBconnector
+Version: 0.1.2
+Summary: Connector for meteo service database
+Home-page: https://git.iszf.irk.ru/RAO/meteodbconnector.git
+Author: Julia Shamsutdinova
+Author-email: shjn0297@gmail.com
+License: MIT
+Keywords: Meteo,DB,Connector
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: mysql-connector
+
+UNKNOWN
+
+
