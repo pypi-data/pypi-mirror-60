@@ -1,0 +1,11 @@
+.DS_Store,sha256=Mr6z9YzE0Qb86GzU1J0liKvy25xb9TEerk62-2oKcbk,6148
+spaghetti/__init__.py,sha256=eEDbYMtD_TgWat8D_L2I2VKa2qt2tDAgc2aBjfrPihc,288
+spaghetti/analysis.py,sha256=M6XNHUi7MshmHy7oRM7riXUjXPXlDaTpvdHHkULcrH4,12284
+spaghetti/api.py,sha256=gBvOUpaV4p2L5X8hsvx75wTm_p_TCagNLGF5gL7BFyM,376
+spaghetti/network.py,sha256=k83BiUnjL5VIgEZAfnOdkFzl7ffy28Hz5lTM_aTqdPk,108182
+spaghetti/util.py,sha256=8JfLNGTZKeDPPxoMD9ih201XOMA6bIG-JOE3UZG6Ms4,17102
+spaghetti-1.4.1.dist-info/LICENSE.txt,sha256=q6S7QxFGt5fJOuE3TfopqKG6BidDAjJxqbv9rs2DJng,1472
+spaghetti-1.4.1.dist-info/METADATA,sha256=5cKwoNtr66Rygjy_0q3SKoxT10NWvLZLQcevXbc6Jdg,9576
+spaghetti-1.4.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+spaghetti-1.4.1.dist-info/top_level.txt,sha256=soPAOVkueFf7npPhGsY0rud7KgVSKLwvSfqmk494ZKQ,10
+spaghetti-1.4.1.dist-info/RECORD,,
