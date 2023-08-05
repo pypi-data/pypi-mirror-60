@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: CeMaIm
+Version: 0.1
+Summary: Program for import certificates to email client
+Home-page: https://github.com/vaceklu6/certs-mail-import
+Author: Lukas Vacek
+Author-email: vaceklu6@fit.cvut.cz
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: bs4
+Requires-Dist: click
+Requires-Dist: importlib.resources
+Requires-Dist: pyOpenSSL
+Requires-Dist: pycryptodome
+Requires-Dist: pyqt5
+Requires-Dist: requests
+Requires-Dist: unicode
+Requires-Dist: unidecode
+
+<blockquote>
+<ul>
+<li>Aplikace v PyQT</li>
+<li><dl>
+<dt>Import osobního certifikátu ve formátu p12 do Thunderbirda (dále emailový klient)</dt>
+<dd><ul>
+<li>Možnost rozšíření o dalšího klienta</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Import certifikační autority do emailového klienta</li>
+<li><dl>
+<dt>Import osobních certifikátů do emailového klienta</dt>
+<dd><ul>
+<li>Z místní složky</li>
+<li>Z webové složky</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Fungování na Linuxu i Windows</li>
+<li>Vytvoření p12 certifikátu ze soukromého a veřejného klíče</li>
+<li>Vytvoření žádosti a klíče</li>
+<li>Jednoduchá aplikace použitelná i netechnickým uživatelem včetně instalace</li>
+</ul>
+</blockquote>
+
+
+
