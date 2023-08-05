@@ -1,0 +1,11 @@
+README.md
+setup.py
+generala/__init__.py
+generala/__main__.py
+generala/_cli.py
+generala/categories.py
+generala.egg-info/PKG-INFO
+generala.egg-info/SOURCES.txt
+generala.egg-info/dependency_links.txt
+generala.egg-info/entry_points.txt
+generala.egg-info/top_level.txt
