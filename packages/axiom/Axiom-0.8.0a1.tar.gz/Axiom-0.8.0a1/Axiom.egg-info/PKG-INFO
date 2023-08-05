@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Axiom
+Version: 0.8.0a1
+Summary: An in-process object-relational database
+Home-page: https://github.com/twisted/axiom
+Maintainer: Divmod, Inc.
+Maintainer-email: support@divmod.org
+License: MIT
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Twisted
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 2 :: Only
+Classifier: Topic :: Database
+Provides-Extra: test

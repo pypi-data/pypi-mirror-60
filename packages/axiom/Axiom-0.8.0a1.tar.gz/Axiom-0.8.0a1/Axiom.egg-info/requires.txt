@@ -1,0 +1,5 @@
+Twisted>=13.2.0
+Epsilon>=0.7.0
+
+[test]
+hypothesis[datetime]<3.0.0,>=2.0.0
