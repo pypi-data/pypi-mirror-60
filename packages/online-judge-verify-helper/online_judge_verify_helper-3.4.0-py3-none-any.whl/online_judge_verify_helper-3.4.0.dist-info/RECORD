@@ -1,0 +1,17 @@
+onlinejudge_verify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onlinejudge_verify/bundle.py,sha256=z3dB63xF-Yord-mnfugNtzdQsuLWc4kmp9t0SthSJ7M,8970
+onlinejudge_verify/docs.py,sha256=Kb5Xh7kTJER-pa5gaoABvjQ5i2A1htGZerOPOQNkMPQ,40830
+onlinejudge_verify/languages.py,sha256=iuZ1EoRXgVz_RABwBV8PSwT-HQZm6Vp3APVwnU0Xza0,5639
+onlinejudge_verify/main.py,sha256=GhegcWpUv8ijsJn-pDU_4Z6bkeMw4eT-Y-1y-_bCx5w,7923
+onlinejudge_verify/marker.py,sha256=oKwnk85p4nr263iKOwkooMRV9A7NAxQVF-qMG0rU8EM,6468
+onlinejudge_verify/verify.py,sha256=2QCQRc07idVYI2uaXZf0DPeBfT0yYN9zJtwQSqhdohM,5872
+onlinejudge_verify_resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onlinejudge_verify_resources/assets/site-header.txt,sha256=_eZ2p2lP6O-8YwONhvzrOfzj6wBeS10fmpnmmuTK4_o,805
+onlinejudge_verify_resources/assets/css/copy-button.css,sha256=JE00TQhLyT8BRGCsn4oq6bpP5jnHjtpPQlZqUt-H1as,375
+onlinejudge_verify_resources/assets/js/copy-button.js,sha256=-yBC0NyLErdkqWHnq45x5wAaB6O216XojgwhxmtoH14,2173
+online_judge_verify_helper-3.4.0.dist-info/LICENSE,sha256=iYgJkJBz84NqFhe59Dot8sml6AmSFukAXbaYS4YW6Sw,1079
+online_judge_verify_helper-3.4.0.dist-info/METADATA,sha256=lCFfW-Hp1M032HXMyjghXG-W2CKJ3VCN5y1BV8UVwS8,6928
+online_judge_verify_helper-3.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+online_judge_verify_helper-3.4.0.dist-info/entry_points.txt,sha256=axQc497LPwM12kMjVbHEUyTx_LCbTydddQT4TcIaE_I,60
+online_judge_verify_helper-3.4.0.dist-info/top_level.txt,sha256=ouSY3Z6lLeoa02lmlHUtMKvHOuH-e-V4QrE-7tVQtQo,48
+online_judge_verify_helper-3.4.0.dist-info/RECORD,,
