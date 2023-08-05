@@ -1,0 +1,53 @@
+diff --git a/examples/scikit-learn/iris.py b/examples/scikit-learn/iris.py
+index de13835..d5ce8d1 100644
+--- a/examples/scikit-learn/iris.py
++++ b/examples/scikit-learn/iris.py
+@@ -51,3 +51,48 @@ class TrainSVC(logexp.BaseWorker):
+         report["valid_accuracy"] = valid_accuracy
+ 
+         return report
++
++
++import numpy as np
++import pickle
++from sklearn.ensemble import RandomForestClassifier
++
++@ex.worker("train-rf")
++class TrainRandomForest(logexp.BaseWorker):
++    def config(self):
++        self.rfc_params = {
++            "n_estimators": 100,
++            "min_samples_leaf": 1,
++            "random_state": 0,
++        }
++        self.test_size = 0.3
++        self.random_seed = 0
++
++    def run(self):
++        np.random.seed(self.random_seed)
++
++        iris = load_iris()
++        X, y = iris.data, iris.target
++
++        X_train, X_valid, y_train, y_valid = \
++            train_test_split(X, y, test_size=self.test_size)
++
++        model = RandomForestClassifier(**self.rfc_params)
++
++        model.fit(X_train, y_train)
++
++        with self.storage.open("rfc.pkl", "wb") as f:
++            pickle.dump(model, f)
++
++        train_accuracy = model.score(X_train, y_train)
++        valid_accuracy = model.score(X_valid, y_valid)
++
++        report = logexp.Report()
++        report["train_size"] = len(X_train)
++        report["valid_size"] = len(X_valid)
++        report["train_accuracy"] = train_accuracy
++        report["valid_accuracy"] = valid_accuracy
++
++        return report
++
++
