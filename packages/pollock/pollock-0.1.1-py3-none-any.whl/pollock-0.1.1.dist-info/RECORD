@@ -1,0 +1,11 @@
+pollock/__init__.py,sha256=AblBeHYDFVu8Er6XJ7jrAdp5JTdxsT9vrYxXSSA60QU,20
+pollock/__main__.py,sha256=UQn-mEpmT-HDyx6nDNpzBCt-fFGah-vSVPn_FNDTjQA,208
+pollock/cli.py,sha256=f025NGmgClLwfvYogl6yy1Ja953ybhKibY8njFccw1k,9446
+pollock/processtools.py,sha256=X80oAnFnoa3PP2n6mjovgLp5_0J20p9nXKQlzb_LpHM,480
+pollock/swap.py,sha256=rEno0Fpk6fwOf6RIRa9My3xWrTTrB_0napN3WWNDFO4,3379
+pollock/version.txt,sha256=Ee4juPwvxhnW6rYnettaUnJhBnrAHM_D4RhX9Vvxi80,5
+pollock-0.1.1.dist-info/METADATA,sha256=5eyP-ZuzWrEBYQLo3wCWvaGzsXf7DjdgIu24weSn0c4,250
+pollock-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pollock-0.1.1.dist-info/entry_points.txt,sha256=sEPv8RhXv4IAYTlQ3OQZWGsvLNyFwjZa-qNtuoAStsk,51
+pollock-0.1.1.dist-info/top_level.txt,sha256=Gtddp27CMUGzeqBbkcsRJPIMZW4kC794vQTemDNy5Hw,8
+pollock-0.1.1.dist-info/RECORD,,
