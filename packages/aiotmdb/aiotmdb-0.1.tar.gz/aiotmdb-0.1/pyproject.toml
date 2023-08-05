@@ -1,0 +1,10 @@
+[build-system]
+requires = ["flit_core >=2,<3", "aiohttp"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "aiotmdb"
+author = "Fabrizio Arzeni"
+author-email = "fabrizio.arz@gmail.com"
+classifiers = ["License :: OSI Approved :: MIT License"]
+
