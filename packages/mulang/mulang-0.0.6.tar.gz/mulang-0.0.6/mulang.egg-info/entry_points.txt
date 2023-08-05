@@ -1,0 +1,3 @@
+[console_scripts]
+ulang = ulang.runtime.main:main
+
