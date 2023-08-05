@@ -1,0 +1,364 @@
+
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+
+    <style type="text/css">
+      a {
+        color: #333;
+      }
+
+      a:visited {
+        color: #333;
+      }
+
+      a:hover {
+        color: #9FB8AD;
+      }
+
+      html, body{
+        background: #F5F5F5;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        color: #333;
+        font-size: large;
+      }
+
+      .header {
+        background: #FFFFFF;
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-bottom: 1px solid #333;
+        display: table;
+        z-index: 1;
+      }
+
+      .header .header-half {
+        width: 50%;
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .header-shadow{
+          border-bottom: 1px solid #333;
+          box-shadow: 0 0 10px #333;
+          -webkit-box-shadow: 0 0 10px #333;
+          -moz-box-shadow: 0 0 10px #333;
+      }
+
+      .header .header-half .site-title {
+        font-size: 40px;
+        text-align: left;
+        padding-left: 50px;
+      }
+
+      .header .header-half .hamburger-holder {
+        float: right;
+        padding-right: 50px;
+        /*transform: translateX(-25%);*/
+        position: relative;
+      }
+
+      .header .header-half .hamburger-holder .hamburger {
+        cursor: pointer;
+      }
+
+      .header .header-half .hamburger-holder .hamburger:hover .hamburger-bar {
+        background: #9FB8AD;
+      }
+
+      .header .header-half .hamburger-holder .hamburger .hamburger-bar {
+        width: 35px;
+        height: 3px;
+        background: #333;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        transition: 0.5s;
+      }
+
+      .hamburger-bar1-flip {
+        -webkit-transform: translateY(8px) rotate(-405deg);
+      }
+
+      .hamburger-bar2-flip {
+        -webkit-transform: scale(0);
+      }
+
+      .hamburger-bar3-flip {
+        -webkit-transform: translateY(-8px) rotate(405deg);
+      }
+
+      .main {
+        margin-top: 60px;
+        padding-top: 2%;
+        width: 100%;
+      }
+
+      .main .anchor {
+        /* needs to be double size of header */
+        height: 120px;
+        margin-top: -120px;
+        visibility: hidden;
+        display: block;
+      }
+
+      .main .section {
+        background: #FFFFFF;
+        padding: 15px;
+        /*margin: 0 auto;*/
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
+        width: 60%;
+        border: 1px solid #333333;
+        border-radius: 10px 10px;
+      }
+
+      .main .section .section-header {
+        display: table;
+        width: 100%;
+      }
+
+      .main .section .section-header .section-title {
+        display: table-cell;
+        font-size: larger;
+        font-weight: bold;
+      }
+
+      .main .section .section-header .section-controller {
+        display: table-cell;
+        padding-top: 1px;
+        font-size: medium;
+        text-align: right;
+      }
+
+      .footer {
+        /*padding-top: 2%;*/
+        padding-bottom: 2%;
+        width: 100%;
+        text-align: center;
+      }
+
+      .sidenav {
+        background: #fff;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding-top: 60px;
+        -webkit-transition: 0.5s;
+           -moz-transition: 0.5s;
+                transition: 0.5s;
+        border-left: 1px solid #333;
+        -webkit-box-shadow: 0px 0px 5px #333;
+           -moz-box-shadow: 0px 0px 5px #333;
+                box-shadow: 0px 0px 5px #333;
+      }
+
+      .sidenav .sidenav-link {
+        padding: 2px 8px 2px 32px;
+        -webkit-transition: 0.1s;
+           -moz-transition: 0.1s;
+                transition: 0.1s;
+        cursor: pointer;
+      }
+
+      .sidenav .sidenav-link a {
+        text-decoration: none;
+        font-size: 110%;
+      }
+
+      .sidenav .sidenav-link:hover a {
+        color: #9FB8AD;
+      }
+
+      .sidenav .bar{
+          width: 50%;
+          border-top: 1px solid #333;
+          transform: translateY(50%);
+          /*margin: auto;*/
+          margin-left: 32px;
+          padding-top: 16px;
+          padding-bottom: 16px;
+      }
+
+      /* dummy used to check screen size for jquery */
+      .dummy{
+          float: left;
+      }
+
+      @media screen and (max-width: 800px){
+          .header-main .header{
+              padding: 0;
+          }
+          .header-main .header .logo img{
+              display: block;
+              margin: auto;
+          }
+          .dummy{
+              float: none;
+          }
+      }
+    </style>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+      // how big should the sidenav get?
+      var sidenavSize = "100%";
+
+      // document ready functions
+      $(document).ready(function() {
+        // initial check of window size
+        checkSize();
+
+        // if we resize, check again
+        $(window).resize(checkSize);
+
+        // add border and shadow on scroll
+        $(document).scroll(function(){
+          var scrollPercent = ($(window).scrollTop() / $('.container').outerHeight()) * 100;
+
+          if (scrollPercent > 0) {
+            $(".header").addClass("header-shadow");
+          } else {
+            $(".header").removeClass("header-shadow");
+          }
+        });
+
+        // mouse clicks
+        $(document).click(function(e) {
+          var target = $(e.target);
+
+          // deal with sidenav
+          var isFlipped = $(".hamburger-bar1").hasClass("hamburger-bar1-flip");
+          if (target.is(".hamburger, .hamburger-bar") && ! isFlipped) {
+            turnSidenavOn();
+          } else if (!target.is(".sidenav") && isFlipped) {
+            turnSidenavOff();
+          }
+
+          // deal with previous from section controller
+          if (target.is(".section-controller-previous")) {
+            var previousSectionIndex = $(".section-controller-previous").index(target) - 1;
+            if (previousSectionIndex >= 0) {
+              var previousSection = $(".anchor").eq(previousSectionIndex);
+              window.location.href = '#' + previousSection.attr('id');
+            };
+          };
+
+          // deal with next from section controller
+          if (target.is(".section-controller-next")) {
+            var nextSectionIndex = $(".section-controller-next").index(target) + 1;
+            if (nextSectionIndex < $(".anchor").length) {
+              var nextSection = $(".anchor").eq(nextSectionIndex);
+              window.location.href = '#' + nextSection.attr('id');
+            };
+          };
+        });
+
+        // keypress
+        $(document).on("keypress", function(e) {
+          var key = e.which;
+
+          // hamburger
+          if (key === 109) {
+            if ($(".hamburger-bar1").hasClass("hamburger-bar1-flip")) {
+              turnSidenavOff();
+            } else {
+              turnSidenavOn();
+            }
+          };
+        });
+      });
+
+      // check the window size
+      function checkSize() {
+        if ($(".dummy").css("float") === "none") {
+          sidenavSize = "100%";
+        } else {
+          sidenavSize = "15%";
+        }
+      };
+
+      // turn sidenav on
+      function turnSidenavOn() {
+        $(".hamburger-bar1").addClass("hamburger-bar1-flip");
+        $(".hamburger-bar2").addClass("hamburger-bar2-flip");
+        $(".hamburger-bar3").addClass("hamburger-bar3-flip");
+        $(".sidenav").css("width", sidenavSize);
+      };
+
+      // turn sidenav off
+      function turnSidenavOff() {
+        $(".hamburger-bar1").removeClass("hamburger-bar1-flip");
+        $(".hamburger-bar2").removeClass("hamburger-bar2-flip");
+        $(".hamburger-bar3").removeClass("hamburger-bar3-flip");
+        $(".sidenav").css("width", "0px");
+      };
+    </script>
+  </head>
+
+  <body>
+    {% if header %}
+      <div class="header">
+        <div class="header-half">
+          <div class="site-title">
+            {{ title }}
+          </div>
+        </div>
+        <div class="header-half">
+          <div class="sidenav">
+            {% for section in sections %}
+              <div class="sidenav-link">
+                <a href="#{{ section[0] }}">{{ section[0] }}</a>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="hamburger-holder">
+            <div class="hamburger">
+              <div class="hamburger-bar hamburger-bar1"></div>
+              <div class="hamburger-bar hamburger-bar2"></div>
+              <div class="hamburger-bar hamburger-bar3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    <div class="main">
+      {% for section in sections %}
+        <span class="anchor" id="{{ section[0] }}"></span>
+        <div class="section">
+          <div class="section-header">
+            <div class="section-title">
+              {{ section[0] }}
+            </div>
+            <div class="section-controller">
+              <a href="javascript:;" class="section-controller-previous">Previous</a> | <a href="javascript:;" class="section-controller-next">Next</a>
+            </div>
+          </div>
+          <div class="section-content">
+            {{ section[1] }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="footer">
+      {{ footer }}
+    </div>
+
+    <div class="dummy"></div>
+  </body>
+
+</html>
