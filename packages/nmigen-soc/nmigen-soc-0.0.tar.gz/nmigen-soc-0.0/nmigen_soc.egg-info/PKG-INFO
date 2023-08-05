@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: nmigen-soc
+Version: 0.0
+Summary: System on Chip toolkit for nMigen
+Home-page: UNKNOWN
+Author: whitequark
+Author-email: whitequark@whitequark.org
+License: BSD
+Project-URL: Source Code, https://github.com/m-labs/nmigen-soc
+Project-URL: Bug Tracker, https://github.com/m-labs/nmigen-soc/issues
+Description: UNKNOWN
+Platform: UNKNOWN
