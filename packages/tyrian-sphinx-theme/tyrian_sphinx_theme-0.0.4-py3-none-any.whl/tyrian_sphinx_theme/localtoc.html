@@ -1,0 +1,12 @@
+{%- if display_toc %}
+
+    <nav class="bs-docs-sidebar" data-spy="affix" data-offset-top="140" data-offset-bottom="400">
+
+        {%- if builder != "singlehtml" %}
+            {{ toctree()|replace("caption", "hidden")|replace("<ul>", "<ul class='nav'>")|replace('<ul class="current">', "<ul class='current nav'>")|replace("index.html#", "#")  }}
+        {%- else %}
+            {{ toc|replace("caption", "hidden")|replace("<ul>", "<ul class='nav'>")|replace("index.html#", "#")  }}
+        {%- endif %}
+
+    </nav>
+{%- endif %}
