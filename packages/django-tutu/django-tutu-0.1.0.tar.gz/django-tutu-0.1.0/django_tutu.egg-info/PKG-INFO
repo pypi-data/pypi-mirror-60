@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: django-tutu
+Version: 0.1.0
+Summary: Performance graphs for django projects
+Home-page: https://github.com/priestc/django-tutu
+Author: Chris Priest
+Author-email: nbvfour@gmail.com
+License: LICENSE
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
