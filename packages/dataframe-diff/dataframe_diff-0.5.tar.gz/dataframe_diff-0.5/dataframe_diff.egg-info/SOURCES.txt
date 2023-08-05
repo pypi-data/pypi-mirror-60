@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+dataframe_diff/__init__.py
+dataframe_diff/dataframe_diff.py
+dataframe_diff.egg-info/PKG-INFO
+dataframe_diff.egg-info/SOURCES.txt
+dataframe_diff.egg-info/dependency_links.txt
+dataframe_diff.egg-info/requires.txt
+dataframe_diff.egg-info/top_level.txt
