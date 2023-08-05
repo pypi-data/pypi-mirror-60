@@ -1,0 +1,8 @@
+gitlabagent/__init__.py,sha256=aRVgseZGDElGkeBjD3_nW-s-Dt3b3S9ziiIvOL2GXVs,70
+gitlabagent/base.py,sha256=OOE3dhqz6TOhy2KysZFaYf-x-PB8XsIo-_un-uCjzC0,183
+gitlabagent/webhookobject.py,sha256=MLxQ28U1RteywQX-n58xwE8rmWNbLZCUJeCHsVdtsE8,1425
+gitlab_agent-0.0.2.dist-info/LICENSE,sha256=NQxFAtCAMp03SwvaKsiD27CLU7S3FwnH8YVX11dZ6A8,1083
+gitlab_agent-0.0.2.dist-info/METADATA,sha256=Wc2yPC7bjlwZOghNuICGLmJgrYyW7jsrnUSKLApvG7w,483
+gitlab_agent-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gitlab_agent-0.0.2.dist-info/top_level.txt,sha256=npYq2hHRxLEDROV9OqOcFN6a8Ncl29ABUgfmlY8itUA,12
+gitlab_agent-0.0.2.dist-info/RECORD,,
