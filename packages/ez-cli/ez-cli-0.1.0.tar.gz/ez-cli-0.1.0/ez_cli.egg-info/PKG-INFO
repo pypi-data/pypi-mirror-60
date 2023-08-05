@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ez-cli
+Version: 0.1.0
+Summary: A small cli
+Home-page: https://github.com/harsh376/ez-cli
+Author: Harsh Verma
+Author-email: harsh376@gmail.com
+License: UNKNOWN
+Description: ## ez-cli
+        
+        This is a simple cli.
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
