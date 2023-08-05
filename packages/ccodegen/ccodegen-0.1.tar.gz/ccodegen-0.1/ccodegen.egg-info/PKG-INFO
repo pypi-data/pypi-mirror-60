@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: ccodegen
+Version: 0.1
+Summary: C code generator
+Home-page: https://github.com/linuxias/C_CodeGen
+Author: Seungha Son
+Author-email: linuxias@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: C,Generator
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
