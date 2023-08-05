@@ -1,0 +1,11 @@
+README.md
+setup.py
+encwork/__init__.py
+encwork/encryption.py
+encwork/exceptions.py
+encwork/p2p.py
+encwork.egg-info/PKG-INFO
+encwork.egg-info/SOURCES.txt
+encwork.egg-info/dependency_links.txt
+encwork.egg-info/requires.txt
+encwork.egg-info/top_level.txt
