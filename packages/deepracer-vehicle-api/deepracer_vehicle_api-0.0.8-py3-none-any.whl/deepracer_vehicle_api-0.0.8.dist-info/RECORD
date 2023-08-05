@@ -1,0 +1,9 @@
+deepracer_vehicle_api/__init__.py,sha256=AmYqfzZPj8xCxPsB1998imfoQTJZbjGJxrE_3b7XNgs,136
+deepracer_vehicle_api/client.py,sha256=bLfkRIT0nRhwnfMep7oftsY_bl4R0b3JOv0ZnELRkEQ,8334
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_1.py,sha256=5RVmAntZ33eOGpJueCZ-7f0b7uXOGMdrVeOEjDwceAQ,272
+deepracer_vehicle_api-0.0.8.dist-info/LICENSE,sha256=ZjqvgZ_Ey8gJR61Ux1_aKMtmnOOt94gVPN8UKxNdB98,1088
+deepracer_vehicle_api-0.0.8.dist-info/METADATA,sha256=u8-uc1p2BMoGbBYGPdg55sWUdmV9H2m1_ZPQaioJvB4,2350
+deepracer_vehicle_api-0.0.8.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+deepracer_vehicle_api-0.0.8.dist-info/top_level.txt,sha256=irXLkUGCec-yrpmXa3oxh5Jd2eJEE1wQ9XW-xKu6vk0,22
+deepracer_vehicle_api-0.0.8.dist-info/RECORD,,
