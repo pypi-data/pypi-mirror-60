@@ -1,0 +1,17 @@
+requests>=2.0
+
+[dev]
+sphinx
+sphinx_rtd_theme
+pytest
+pytest-cov
+responses
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[testing]
+pytest
+pytest-cov
+responses
