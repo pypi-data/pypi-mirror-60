@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: vega
+Version: 3.0.1
+Summary: A Jupyter widget for Vega 5 and Vega-Lite 4
+Author: Dominik Moritz
+Author-email: domoritz@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: widget
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: pandas (>=0.25.3,<0.26.0)
