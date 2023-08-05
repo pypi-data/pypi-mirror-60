@@ -1,0 +1,8 @@
+README.md
+setup.py
+jsonSpark/__init__.py
+jsonSpark.egg-info/PKG-INFO
+jsonSpark.egg-info/SOURCES.txt
+jsonSpark.egg-info/dependency_links.txt
+jsonSpark.egg-info/requires.txt
+jsonSpark.egg-info/top_level.txt
