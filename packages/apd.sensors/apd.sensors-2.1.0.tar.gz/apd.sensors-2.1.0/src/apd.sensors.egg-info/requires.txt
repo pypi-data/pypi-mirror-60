@@ -1,0 +1,9 @@
+psutil
+click
+pint
+
+[:"arm" in platform_machine]
+adafruit-circuitpython-dht
+
+[webapp]
+flask
