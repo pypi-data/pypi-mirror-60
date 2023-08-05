@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: envoy-data-plane
+Version: 0.0.1
+Summary: Python dataclasses for the Envoy Data-Plane-API
+Home-page: https://github.com/cetanu/envoy_data_plane
+Author: Vasilios Syrakis
+Author-email: vsyrakis@atlassian.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
