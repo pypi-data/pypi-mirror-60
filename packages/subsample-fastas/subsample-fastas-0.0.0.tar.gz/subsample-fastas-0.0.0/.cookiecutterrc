@@ -1,0 +1,59 @@
+# This file exists so you can easily regenerate your project.
+#
+# `cookiepatcher` is a convenient shim around `cookiecutter`
+# for regenerating projects (it will generate a .cookiecutterrc
+# automatically for any template). To use it:
+#
+#    pip install cookiepatcher
+#    cookiepatcher https://gitlab.inria.fr/pleiade/pleiade-cookiecutter-python.git project-path
+#
+# See:
+#    https://pypi.org/project/cookiepatcher
+#
+# Alternatively, you can run:
+#
+#    cookiecutter --overwrite-if-exists --config-file=project-path/.cookiecutterrc https://gitlab.inria.fr/pleiade/pleiade-cookiecutter-python.git
+
+default_context:
+
+    _extensions:               ['jinja2_time.TimeExtension']
+    _template:                 '../pleiade-cookiecutter-python/'
+    appveyor:                  'no'
+    c_extension_function:      'longest'
+    c_extension_module:        '_subsample_fastas'
+    c_extension_optional:      'no'
+    c_extension_support:       'no'
+    codacy:                    'no'
+    codeclimate:               'no'
+    codecov:                   'no'
+    command_line_interface:    'argparse'
+    command_line_interface_bin_name: 'subsample_fastas'
+    coveralls:                 'no'
+    distribution_name:         'subsample-fastas'
+    email:                     'clemence.frioux@inria.fr'
+    full_name:                 'Clémence Frioux'
+    git_base:                  'gitlab.inria.fr'
+    git_group:                 'pleiade'
+    gitlab_ci:                 'yes'
+    landscape:                 'no'
+    license:                   'CeCILL 2.1 Free Software License'
+    linter:                    'flake8'
+    package_name:              'subsample_fastas'
+    project_name:              'subsample_fastas'
+    project_short_description: 'Randomly alter fasta files by substracting a given % of genes in a genome (fasta) or in a (% of a) set of genomes '
+    release_date:              'today'
+    repo_name:                 'python-subsample_fastas'
+    requiresio:                'no'
+    scrutinizer:               'no'
+    sonarqube:                 'yes'
+    sphinx_docs:               'no'
+    sphinx_doctest:            'no'
+    sphinx_theme:              'sphinx-rtd-theme'
+    test_matrix_configurator:  'no'
+    test_matrix_separate_coverage: 'no'
+    test_runner:               'pytest'
+    travis:                    'no'
+    version:                   '0.0.0'
+    website:                   'https://team.inria.fr/pleiade'
+    year_from:                 '2019'
+    year_to:                   '2020'

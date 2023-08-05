@@ -1,0 +1,80 @@
+Metadata-Version: 1.2
+Name: subsample-fastas
+Version: 0.0.0
+Summary: Randomly alter fasta files by substracting a given % of genes in a genome (fasta) or in a (% of a) set of genomes 
+Home-page: https://gitlab.inria.fr/pleiade/python-subsample_fastas
+Author: Clémence Frioux
+Author-email: clemence.frioux@inria.fr
+License: CeCILL 2.1 Free Software License
+Project-URL: Changelog, https://gitlab.inria.fr/pleiade/python-subsample_fastas/blob/master/CHANGELOG.md
+Project-URL: Issue Tracker, https://gitlab.inria.fr/pleiade/python-subsample_fastas/issues
+Description: # Overview
+        
+        Randomly alter fasta files by substracting a given % of genes in a genome (fasta) or in a (% of a) set of genomes
+        
+          - Free software: CeCILL 2.1 Free Software License
+        
+        ## Installation
+        
+            pip install subsample-fastas
+        
+        ## Documentation
+        
+        
+        To use the project:
+        
+        ``` python
+        import subsample_fastas
+        subsample_fastas.longest()
+        ```
+        
+        
+        
+        ## Development
+        
+        To run the all tests run:
+        
+            tox
+        
+        Note, to combine the coverage data from all the tox environments run:
+        
+        <table>
+        <colgroup>
+        <col style="width: 10%" />
+        <col style="width: 90%" />
+        </colgroup>
+        <tbody>
+        <tr class="odd">
+        <td>Windows</td>
+        <td><pre><code>set PYTEST_ADDOPTS=--cov-append
+        tox</code></pre></td>
+        </tr>
+        <tr class="even">
+        <td>Other</td>
+        <td><pre><code>PYTEST_ADDOPTS=--cov-append tox</code></pre></td>
+        </tr>
+        </tbody>
+        </table>
+        
+        # Changelog
+        
+        All notable changes to this project will be documented in this file.
+        
+        The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+        and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+        
+        ## [Unreleased] - 0.0.0 (\<TODAY\>) ------------------
+        
+          - Work in progress
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7

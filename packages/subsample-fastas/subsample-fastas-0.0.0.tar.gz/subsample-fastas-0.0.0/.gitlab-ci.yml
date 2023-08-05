@@ -1,0 +1,28 @@
+image: python:latest
+
+before_script:
+  - python -V               # Print out python version for debugging
+  - pip install tox
+
+stages:
+  - test
+  - build
+  - doc
+
+build:
+  stage: build
+  script:
+    - tox -e build
+  artifacts:
+    paths:
+    - dist/
+    expire_in: 4 days
+
+test:
+  stage: test
+  script:
+    - tox
+  artifacts:
+    reports:
+      junit: toxtests.xml
+
