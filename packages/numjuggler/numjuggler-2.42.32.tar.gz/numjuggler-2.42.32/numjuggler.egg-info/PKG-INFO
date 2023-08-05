@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: numjuggler
+Version: 2.42.32
+Summary: MCNP input file renumbering tool
+Home-page: https://github.com/travleev/numjuggler
+Author: A.Travleev
+Author-email: anton.travleev@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: MCNP,ITER,PARSER,RENUMBER
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
