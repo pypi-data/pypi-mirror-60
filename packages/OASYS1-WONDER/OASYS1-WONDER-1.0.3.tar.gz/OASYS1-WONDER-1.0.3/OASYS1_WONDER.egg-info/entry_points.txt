@@ -1,0 +1,6 @@
+[oasys.addons]
+WONDER 1 = orangecontrib.wonder
+
+[oasys.widgets]
+Wonder 1 = orangecontrib.wonder.view.widgets
+
