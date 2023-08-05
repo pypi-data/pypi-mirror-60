@@ -1,0 +1,3 @@
+[console_scripts]
+pyforwarder = forwarder.__main__:start
+

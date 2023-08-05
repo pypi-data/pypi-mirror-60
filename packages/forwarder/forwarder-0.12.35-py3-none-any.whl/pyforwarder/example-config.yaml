@@ -1,0 +1,90 @@
+# Version of the configuration
+version: 2
+# override commandline options
+options:
+  trace: true
+  hexdump: true
+  verbose: true
+# logging Python style
+logging:
+  version: 1
+  formatters:
+    trace:
+      class: logging.Formatter
+      format: '%(asctime)s %(levelname)-8s %(message)s'
+    verbose:
+      class: logging.Formatter
+      format: '%(asctime)s %(message)s'
+  handlers:
+    console:
+      class: logging.StreamHandler
+      level: DEBUG
+      formatter: verbose
+      stream: ext://sys.stdout
+    file:
+      level: DEBUG
+      class: logging.FileHandler
+      encoding: utf-8
+      filename: tracefile.log
+      mode: w
+      formatter: trace
+  root:
+    level: DEBUG
+    handlers:
+    - console
+    - file
+# declare extra port descriptions
+ports:
+  dynamic-proxy:
+    port: 18080
+    protocol: tcp
+    description: dynamic proxy using the TcpSocket() from psocket
+# actual forwarding rules
+hosts:
+  # forward port 8008 to imaps with SSL/TLS ternination
+- source:
+    addr: 0.0.0.0
+    port: 8008
+  destination:
+    addr: 192.168.123.5
+    port: imaps
+    use-ssl-tls: true
+    ssl-tls:
+      verify: false
+      check-host: false
+      required: optional
+      #ca-bundle: yourDomain.ca-bundle
+      #certificate: certifcate.pem
+      #key: private-key.key
+  # forward port 8009 to smtps with SSL/TLS ternination
+- source:
+    port: 8009
+  destination:
+    addr: 192.168.123.5
+    port: smtps
+    use-ssl-tls: false
+    ssl-tls:
+      verify: false
+      check-host: false
+      required: optional
+      #certificate: certifcate.pem
+      #key: private-key.key
+  # froward port 8010 on localhost to 192.168.123.6:25057, currently disabled
+- source:
+    addr: localhost
+    port: 8010
+  destination:
+    addr: 192.168.123.6
+    port: 25057
+    use-ssl-tls: false
+  enabled: false
+  # froward port 18080 on 192.168.123.100 to xxx.xxx.xxx.xxx:yyyyy
+  # the actual address, port, ssl info are provided via the TcpSocket
+  # class in pyforwarder.psocket
+- source:
+    addr: 192.168.123.100
+    port: 18080
+  destination:
+    proxy:  true
+    username: guest
+    password: guest
