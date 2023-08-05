@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: segmentation-evaluation
+Version: 1.0.3
+Summary: Segmentation evaluation tool
+Home-page: https://github.com/mett96/segmentation-evaluation
+Author: Mattia Sanchioni, Alessandro Concetti
+Author-email: mattia.sanchioni.dev@gmail.com, ale.concetti@gmail.com
+License: GPLv3
+Description: # Segmentation Evaluation
+        The tool allows to manually segment an image and perform analysis between two segmentation
+        
+Keywords: segmentation-evaluation segmentation evaluation image analysis image-analysis ground-truth
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
