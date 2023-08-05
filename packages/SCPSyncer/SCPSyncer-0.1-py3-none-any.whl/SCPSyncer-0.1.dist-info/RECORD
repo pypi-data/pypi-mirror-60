@@ -1,0 +1,9 @@
+SCPSyncer/__init__.py,sha256=uptXn7XZ-17KewPMQP3MueGnPMna5g-xUW2B3z3jSLc,57
+SCPSyncer/__main__.py,sha256=YOe0_Rhqbgc97Lecd-kRq0rfyXVnXw0o-CUAfdXVsuQ,1432
+SCPSyncer/remote_hasher.py,sha256=bCs33pMWtsZRdxFbFsjjQd5Wddv9Mig_Or145Cmj87s,1261
+SCPSyncer/scp_syncer.py,sha256=NarsXlfvcSewROHoQ8ejlRwXDJSiQT7DT9ZCluB1QZo,13964
+SCPSyncer-0.1.dist-info/LICENSE,sha256=QlNH62ioOxP-FOWpPFGMepOc39MGLDO45r_EI20eqSg,7798
+SCPSyncer-0.1.dist-info/METADATA,sha256=b5bFZylYgJEHqPlj6osP4rJr1T09ftKe34Nc2_mv8UY,1392
+SCPSyncer-0.1.dist-info/WHEEL,sha256=IWeGwTvdiaNRNtdERe0BHc5KsCqvvVfLuP8HWeQWYGw,97
+SCPSyncer-0.1.dist-info/top_level.txt,sha256=qHQl6kXsiovuD5YwCCb6jkTKIzGMSg4r8Qq-icKCFFg,10
+SCPSyncer-0.1.dist-info/RECORD,,
