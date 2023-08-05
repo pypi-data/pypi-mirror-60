@@ -1,0 +1,8 @@
+README.md
+setup.py
+shholiday/__init__.py
+shholiday/holiday2020.py
+shholiday.egg-info/PKG-INFO
+shholiday.egg-info/SOURCES.txt
+shholiday.egg-info/dependency_links.txt
+shholiday.egg-info/top_level.txt

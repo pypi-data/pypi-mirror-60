@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: shholiday
+Version: 0.0.1
+Summary: Check if the current date is a holiday in Korea.
+Home-page: https://github.com/league3236/shholiday
+Author: league3236
+Author-email: league3236@gmail.com
+License: MIT
+Description: # Use
+        
+        - pip install
+        
+        ```bash
+        #pip install shholiday
+        ```
+        
+        
+        - Temporary use
+        
+        ```python
+        from shholiday import holiday2020
+        
+        daytuple = (1,1) # 1월 1일이 휴일인지 확인하고 싶을 때
+        nowholiday = holiday2020()
+        print(nowholiday.is_holiday(daytuple))
+        ```
+        
+        - Check if today's date is a holiday
+        
+        ```python
+        from shholiday import holiday2020
+        from datetime import  datetime
+        
+            
+        now = datetime.now()
+        daytuple = (str(now.month),str(now.day))
+        
+        nowholiday = holiday2020()
+        print(nowholiday.is_holiday(daytuple))
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
