@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+chordata/__init__.py
+chordata.egg-info/PKG-INFO
+chordata.egg-info/SOURCES.txt
+chordata.egg-info/dependency_links.txt
+chordata.egg-info/requires.txt
+chordata.egg-info/top_level.txt
