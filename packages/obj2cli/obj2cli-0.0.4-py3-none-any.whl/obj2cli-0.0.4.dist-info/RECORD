@@ -1,0 +1,16 @@
+obj2cli/__init__.py,sha256=arzD6dleHJLLzqE6TtTVMspQJWpzr8jnTr8KiQYZxGo,89
+obj2cli/_cli.py,sha256=yc9PqwguRddQN5HxWanHFTcv_0WgXWCBsMKQaXCFWOE,3514
+obj2cli/_cli_click.py,sha256=AkzF3UqbfcFX6_zlPh7i0QfgfF2mm9JfYVJqlzh2rrA,6134
+obj2cli/argparse.py,sha256=txZeRZtgbuN0bRnIAQtaXMAsqt59iqkVGNzGr_Bci-s,5204
+obj2cli/main.py,sha256=Vty_RvoCiWMhJd-pFe6Y1DJdLKToOoKmEuNE8dX7bcg,2103
+obj2cli/parser.py,sha256=3DOO-tS8ZRgnSPPx-kb03CPyzbJrg9Il0LiZ_5OjdCw,3224
+obj2cli/version.py,sha256=_AMCRx0HPnXtG7NMWq5H0EWKj6knJPeJdG7gXs-3sBI,18
+obj2cli/template/argparse_cli.j2,sha256=7gwUKeBuv7A8hpqVgyKOWCSJBdXUHuxHDjBQRVXe6i4,2454
+obj2cli/template/click_cli.j2,sha256=jBcX5wPhaHku95w-HPhy056-T3wi1plfLZOQ6u-_gSU,1817
+obj2cli/template/obj2cli_cli.j2,sha256=fO2Bh789s_9IW4cFzYMu8AOpnXILBcJlXFpw_MLaH4Y,185
+obj2cli-0.0.4.dist-info/LICENSE,sha256=Mf3_hWAbpR6U8pF7eyGjqEek82VKbNOCZby9z4PkuBk,1073
+obj2cli-0.0.4.dist-info/METADATA,sha256=XdaxFS62cN5pSD689fjVvgtkfWHdVasBM24aOcxiLkY,2795
+obj2cli-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+obj2cli-0.0.4.dist-info/entry_points.txt,sha256=Bj3o7IJnEo-qgDMnUzfiXz9eT146FnloYyXf3Oak2ls,86
+obj2cli-0.0.4.dist-info/top_level.txt,sha256=9YaMA9IYrHukjjHB7DyPUbds6h93-d-JIN1DFPTSG48,8
+obj2cli-0.0.4.dist-info/RECORD,,

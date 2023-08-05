@@ -1,0 +1,4 @@
+[console_scripts]
+obj2cli = obj2cli._cli:main
+obj2cli-click = obj2cli._cli_click:cli
+
