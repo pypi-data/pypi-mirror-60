@@ -1,0 +1,8 @@
+deployer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deployer/deployer.py,sha256=xvK3FSaPE9i7Nws34BERZqsLpFlSO9bklgPyvdcFTGI,5056
+deployer/download.py,sha256=ngGazN7lj_3EjDBDVNtL2u_3DQIGDl21Y_8slk5HGac,983
+deployer/main.py,sha256=fIN9Tcgnk2qGo7EQ_P8CjBOIq7x87K5X0J3fn-z-uU8,2824
+gitlab_deployer-0.1.4.dist-info/entry_points.txt,sha256=eKY4WyF35xTurtBc3wqaBZXWC9yi_O52s9HieO15xn4,46
+gitlab_deployer-0.1.4.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+gitlab_deployer-0.1.4.dist-info/METADATA,sha256=DRXL3s3yxvn6UtdqP4KZtVRxF1fbjxlbUVmsLWjiel0,1204
+gitlab_deployer-0.1.4.dist-info/RECORD,,
