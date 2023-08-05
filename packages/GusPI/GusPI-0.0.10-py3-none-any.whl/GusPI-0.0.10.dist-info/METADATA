@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: GusPI
+Version: 0.0.10
+Summary: A Statistical Support package
+Home-page: https://github.com/ygeszvain/GusPI
+Author: Randy Geszvain
+Author-email: ygeszvain@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## GusPI
+A package to include statistical supports.
+
+Quick start
+
+```
+$ python3 -m pip install -U GusPI
+```
+
+## GusPI.scraper
+
+The scrape package provides an easy way to scrape Yelp business info and Yelp reviews for specific business.
+
+```
+from GusPI import scraper
+```
+
+YelpBizInfo
+The function collects business info and save it into a csv file.
+
+```
+#Example
+
+#declare a list: https://www.yelp.com/biz/`artisan-ramen-milwaukee`
+CUISINES = ['artisan-ramen-milwaukee','red-light-ramen-milwaukee-5']
+
+#scrape the business info
+scraper.YelpBizInfo(CUISINES)
+```
+
+YelpReview
+The function collects reviews for respective business and save them into separate files by business names.
+```
+#Example
+
+#declare a list: https://www.yelp.com/biz/`artisan-ramen-milwaukee`
+CUISINES = ['artisan-ramen-milwaukee','red-light-ramen-milwaukee-5']
+
+#scrape the business info
+scraper.YelpReview(CUISINES)
+```
+
+## GusPI.SuPy
+
+```
+from GusPI import SuPy
+```
+
+This package provides several analytical formulas to support supply chain analytics.
+
+Economic order quantity
+EOQ(demand, mean, STD, C, Ce, Cs, Ct)
+
+Perfect Order Measurement
+POM(TotalOrders, ErrorOrders)
+
+Fill Rate
+FR(TotalItems, ShippedItems)
+
+Inventory Days of Supply
+IDS(InventoryOnHand,AvgDailyUsage)
+
+Freight cost per unit
+FCU(TotalFreightCost,NumberOfItems)
+
+Inventory Turnover
+IT(COGS,AvgInventory)
+
+Days of Supply (DOS)
+DOS(AvgInventory,MonthlyDemand)
+
+Gross Margin Return on Investment (GMROI)
+GMROI(GrossProfit, OpeningStock, ClosingStock)
+
+Inventory Accuracy
+IA(ItemCounts, TotalItemCounts)
+
+Storage Utilization Rate
+SUR(InventoryCube, TotalWarehouseCube)
+
+Total Order Cycle Time
+TOCT(TimeOrderReceivedbyCustomer, TimeOrderPlaced,TotalNumberofOrdersShipped)
+
+Internal Order Cycle Time
+IOCT(TimeOrderShipped, TimeOrderReceived, NumberofOrdersShipped)
+
+
