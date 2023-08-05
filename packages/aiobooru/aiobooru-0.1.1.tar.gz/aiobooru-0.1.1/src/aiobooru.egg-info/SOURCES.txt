@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/aiobooru/__init__.py
+src/aiobooru/booru.py
+src/aiobooru.egg-info/PKG-INFO
+src/aiobooru.egg-info/SOURCES.txt
+src/aiobooru.egg-info/dependency_links.txt
+src/aiobooru.egg-info/requires.txt
+src/aiobooru.egg-info/top_level.txt
