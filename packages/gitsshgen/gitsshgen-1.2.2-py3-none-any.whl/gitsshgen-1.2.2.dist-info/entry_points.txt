@@ -1,0 +1,3 @@
+[console_scripts]
+gitsshgen = gitsshgen:main
+
