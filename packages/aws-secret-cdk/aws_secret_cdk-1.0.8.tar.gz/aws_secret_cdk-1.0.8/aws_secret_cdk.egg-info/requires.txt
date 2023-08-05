@@ -1,0 +1,7 @@
+aws-cdk.core
+aws-cdk.aws_iam
+aws-cdk.aws_ec2
+aws-cdk.aws_lambda
+aws-cdk.aws_secretsmanager
+aws-cdk.aws_s3_deployment
+aws-lambda<3.0.0,>=2.1.2
