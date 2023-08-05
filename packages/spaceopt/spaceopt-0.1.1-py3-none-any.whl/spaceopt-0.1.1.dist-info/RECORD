@@ -1,0 +1,9 @@
+spaceopt/__init__.py,sha256=g4Togy_hG0RBLDQwp4GoBH0-PKx5e8xCV7as6BmcxaE,32
+spaceopt/optimizer.py,sha256=D1bkNT89duMjc2hP3TmBsqYv3yaY1FEz018ZI46suWs,9406
+spaceopt/space.py,sha256=jV9bWTLr7L1X1yaT6SJp5HZjuZ61T0uIvjhi_dmrY4Q,2913
+spaceopt/variable.py,sha256=P0WSayd1o2rPtMMnVyU3g4cGEMS33XkfqB6hmEL305E,3248
+spaceopt-0.1.1.dist-info/LICENSE,sha256=MgzFEzaJS1Z2jiML-gwTPQf9gS8Vo05k7uCJsIXqozA,1071
+spaceopt-0.1.1.dist-info/METADATA,sha256=UwnpNZfWresA0MfDF5D7A4xf53-WCeemSeghyTaiEPw,3499
+spaceopt-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+spaceopt-0.1.1.dist-info/top_level.txt,sha256=mU8H6dj4yLLBHpye4_5nFLQ0fvf9vP2TfkjTTRN4ydY,9
+spaceopt-0.1.1.dist-info/RECORD,,
