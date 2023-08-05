@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+grapher/web/__init__.py
+grapher/web/server.py
+grapher/web/__pycache__/__init__.cpython-37.pyc
+grapher/web/__pycache__/server.cpython-37.pyc
+grapher_web.egg-info/PKG-INFO
+grapher_web.egg-info/SOURCES.txt
+grapher_web.egg-info/dependency_links.txt
+grapher_web.egg-info/top_level.txt
