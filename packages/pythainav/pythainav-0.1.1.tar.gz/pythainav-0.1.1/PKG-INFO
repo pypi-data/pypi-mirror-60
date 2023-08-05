@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pythainav
+Version: 0.1.1
+Summary: a Python interface to pull thai mutual fund NAV
+License: MIT
+Author: Nutchanon Ninyawee
+Author-email: me@nutchanon.org
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: requests-html (>=0.10.0,<0.11.0)
