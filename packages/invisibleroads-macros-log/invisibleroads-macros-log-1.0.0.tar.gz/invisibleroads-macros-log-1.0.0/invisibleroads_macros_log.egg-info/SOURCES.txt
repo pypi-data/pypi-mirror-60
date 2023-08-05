@@ -1,0 +1,10 @@
+README.md
+setup.py
+invisibleroads_macros_log/__init__.py
+invisibleroads_macros_log.egg-info/PKG-INFO
+invisibleroads_macros_log.egg-info/SOURCES.txt
+invisibleroads_macros_log.egg-info/dependency_links.txt
+invisibleroads_macros_log.egg-info/entry_points.txt
+invisibleroads_macros_log.egg-info/not-zip-safe
+invisibleroads_macros_log.egg-info/requires.txt
+invisibleroads_macros_log.egg-info/top_level.txt
