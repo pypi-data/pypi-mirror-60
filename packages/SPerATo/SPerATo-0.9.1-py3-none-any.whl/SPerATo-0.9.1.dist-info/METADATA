@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: SPerATo
+Version: 0.9.1
+Summary: Slurm jobs Performance Analysis Tool
+Home-page: https://itp.uni-frankfurt.de/~palao/SPerATo
+Author: David Palao
+Author-email: palao@csc.uni-frankfurt.de
+License: GNU General Public License (GPLv3)
+Platform: GNU/Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: System :: Monitoring
+Provides: sperato
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+SPerATo package
+===============
+
+(**S**\ lurm jobs **Per**\ formance **A**\ nalysis **To**\ ol)
+
+A basic tool to summarize global performance of slurm jobs.
+
+
+Warning!
+--------
+
+.. figure:: in-progress-icon-2.jpg
+    :width: 200px
+    :align: center
+    :height: 200px
+    :alt: work in progress
+    :figclass: align-center
+
+    This is work in progress!
+
+
+Installation
+------------
+
+* With `pip`::
+
+    $ pip install SPerATo
+
+
+Usage
+-----
+
+The package provides several executables:
+
+``sperato-list``
+  can be used to obtain a summary list of users or accounts that run jobs in a
+  time period ordered by different criteria
+
+``sperato-hkhlr``
+  utility to produce some data required for the HKHLR reports
+
+``sperato-plots``
+  produce some efficiency plots from data obtained with other ``sperato-*``
+  programs
+
+``monitoring-plots-hkhlr``
+  just a script to produce all necessary data for the monthly report to HKHLR
+
+Each program has several options available. Use the ``-h`` option to learn more about
+them.
+
+
+Configuration
+-------------
+
+``SPerATo`` requires no configuration, but if the file ``$HOME/.sperato.conf``
+is present, it will be used. The order followed to get values for user given
+parameters is:
+
+1. Command line. If the option is given explicitly in the command line, it
+   has priority.
+2. Config file. If the parameter is found there, it is taken.
+3. Default. If the parameter was not found before, and there is a default
+   value for it, it will be taken.
+
+
+TODO
+----
+
+* Global CPU efficiency plot (CPU load vs time)
+* A LaTeX report should be produced by ``monitoring-plots-hkhlr``, given a template
+
+
+
+
