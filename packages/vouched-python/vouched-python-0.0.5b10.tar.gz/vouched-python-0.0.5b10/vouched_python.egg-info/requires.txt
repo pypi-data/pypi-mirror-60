@@ -1,0 +1,10 @@
+wheel==0.32.2
+opencv_python==3.4.4.19
+gql==0.1.0
+pyopenssl==18.0.0
+ndg-httpsclient==0.5.1
+pyasn1==0.4.4
+python-magic==0.4.15
+pytest==3.9.2
+requests[security]==2.20.0
+requests-mock==1.5.2
