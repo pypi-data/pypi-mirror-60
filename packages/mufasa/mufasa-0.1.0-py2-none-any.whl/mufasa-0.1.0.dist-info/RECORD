@@ -1,0 +1,15 @@
+mufasa/UltraCube.py,sha256=bAl5QSLa0_rWrzaPFmLJ62p-9dVsgifXS-fQZPbmlho,12676
+mufasa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mufasa/aic.py,sha256=9INQOpS1bB8BXjJyBxJ5uLoXfmZgduZNz1cASqyr4MM,4820
+mufasa/ammonia_multiv.py,sha256=jsqkH2n-78QM-ATIdqGVNTDDIQU0LZC4It-7952SG9A,7699
+mufasa/convolve_tools.py,sha256=LIGTAMapoUhzCBXITzY8AvDqPvqIcGERl5pRjo-PIhQ,6797
+mufasa/guess_refine.py,sha256=uNewQ93qg-moJ7HjYHOqozzrGeQPt6mGpty5UBmXIk4,8923
+mufasa/master_fitter.py,sha256=0RO3rl5N7r1LRiQrNlbOV29Kqt29BHn7r2PZObtUhWg,19532
+mufasa/moment_guess.py,sha256=_O76v1ZCorWCXjZ5Ps-dRRyX5JYVPWWqFp1vwtoVKq4,11023
+mufasa/multi_v_fit.py,sha256=Tpq_ya8DEjEjlA4UuXhjuYfwxycPViOSpDZiLvV3dNA,27451
+mufasa/slab_sort.py,sha256=iuOptC3HGB4x81DZj-5hwy2ihrUSRSaD9gVJzE4KIc8,2585
+mufasa-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mufasa-0.1.0.dist-info/METADATA,sha256=D5Odl_oG1KvrhpCRZup2y7hyZTIak4pWkhfDYQXGexc,604
+mufasa-0.1.0.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+mufasa-0.1.0.dist-info/top_level.txt,sha256=bAkVn8U39OEgV5d0QVWUMxEusGrC2IHbx7HlpF_FlbY,7
+mufasa-0.1.0.dist-info/RECORD,,
