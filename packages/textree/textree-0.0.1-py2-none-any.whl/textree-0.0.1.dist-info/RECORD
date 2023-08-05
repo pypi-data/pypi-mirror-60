@@ -1,0 +1,17 @@
+textree/TestTexTree.py,sha256=1SPtobALSVfR9NE9h2yCEogcKmRQUkCvJ7l8FpBVJo0,627
+textree/__init__.py,sha256=GMwyg-ncj3xiU7nrBINDQ_tuE-QW7cqKYiu7pX72O0M,937
+textree/test_import.py,sha256=Zt8qBHBy5XCPSr0OfiDBxD60GRHlQKgCCHxf1wsJ5eo,360
+textree/textree.py,sha256=qXFH1m6f_p_QEJ3YxlbrelOxdPyVAslw-8CialkQCLo,388
+textree/py2/TestTexTree.py,sha256=uZi4FXc2ILaJLyJQ8Vk7JJjS7FuA3vPABlc2AjZzYXA,167219
+textree/py2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+textree/py2/example.py,sha256=r7FkRpxPoVmzvy3uomymwKEEPnpFhqXuRQJAb8Qn2y0,1296
+textree/py2/textree.py,sha256=mQj4Vy90baeTmF4wMoPGjzqueGIsBMfIdnXhuPjQb8I,23150
+textree/py3/TestTexTree.py,sha256=PJOBmo_3qjashKER5w5HkE1cE1TpqLEgNo743sUnDNQ,167242
+textree/py3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+textree/py3/example.py,sha256=r7FkRpxPoVmzvy3uomymwKEEPnpFhqXuRQJAb8Qn2y0,1296
+textree/py3/textree.py,sha256=afYj_141jHKG1sgyBpQTfh4hd7PkqV7AEnVEzRFzHGw,23117
+textree-0.0.1.dist-info/LICENSE.txt,sha256=TS7vZ51fr5JFNLzBMmRjIumoUs5QrlYWaU4Llfe4J10,6671
+textree-0.0.1.dist-info/METADATA,sha256=bxavDRt3_Rlmv5szjV8bf8E_Xe-AX8SZBTep2v6ydD8,4980
+textree-0.0.1.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+textree-0.0.1.dist-info/top_level.txt,sha256=3caQY7VQo_nCgAkSepJFxzRZ-yHij1j4msGbilyXsKg,8
+textree-0.0.1.dist-info/RECORD,,
