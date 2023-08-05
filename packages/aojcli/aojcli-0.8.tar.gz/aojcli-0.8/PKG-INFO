@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: aojcli
+Version: 0.8
+Summary: AOJ submit tool
+Home-page: https://github.com/kamaboko123/aojcli
+Author: kamaboko123
+Author-email: 6112062+kamaboko123@users.noreply.github.com
+License: LGPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7

@@ -1,0 +1,10 @@
+This software uses following libraries.
+
+texttable
+https://github.com/foutaise/texttable
+https://github.com/foutaise/texttable/blob/master/LICENSE
+
+requests
+https://github.com/requests/requests
+https://github.com/requests/requests/blob/master/LICENSE
+
