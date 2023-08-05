@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+parfis/__init__.py
+parfis.egg-info/PKG-INFO
+parfis.egg-info/SOURCES.txt
+parfis.egg-info/dependency_links.txt
+parfis.egg-info/top_level.txt
