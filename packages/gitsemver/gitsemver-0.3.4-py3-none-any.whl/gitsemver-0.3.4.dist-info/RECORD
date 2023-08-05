@@ -1,0 +1,9 @@
+gitsemver/__init__.py,sha256=J74skFzknnEND-qBV90ToYeDLq8qGnX7STU6Tq2VmR4,279
+gitsemver/config.py,sha256=AyfCZFEqpA51C3RdDFcdO6ifJISyY70DUjE8E70UYac,606
+gitsemver/index.py,sha256=fGQEGX1Q8omgbk1zF8fSCPwWscqXFIKI1xIEpRdTmh0,586
+gitsemver/parse.py,sha256=EFHMxs0Fg8PwBYPzZ9FdzGFxT2tibVcTlFaPyFa1OpI,1010
+gitsemver/version.py,sha256=rczTCri2MFioTmqf6_IgrN7utl9MErhhS0XSbgZbkaA,511
+gitsemver-0.3.4.dist-info/entry_points.txt,sha256=_wU1udYiT6WHqfeUYIlLNmE2b1TqMziybtxHy3KMswU,44
+gitsemver-0.3.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+gitsemver-0.3.4.dist-info/METADATA,sha256=sCb4kAtROWSiiKZySTUHeMy1rM9u0b3WAwLTjrriePo,323
+gitsemver-0.3.4.dist-info/RECORD,,

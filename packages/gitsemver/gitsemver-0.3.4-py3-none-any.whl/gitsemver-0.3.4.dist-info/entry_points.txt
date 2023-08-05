@@ -1,0 +1,3 @@
+[console_scripts]
+gitsemver=gitsemver:main
+
