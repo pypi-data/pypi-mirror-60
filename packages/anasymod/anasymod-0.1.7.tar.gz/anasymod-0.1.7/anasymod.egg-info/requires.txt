@@ -1,0 +1,5 @@
+svreal>=0.1.9
+msdsl>=0.1.5
+jinja2
+pyvcd
+pyserial
