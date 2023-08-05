@@ -1,0 +1,7 @@
+pyyaml
+boto3
+google-cloud-bigquery
+google-cloud-bigquery-datatransfer
+google-cloud-storage
+pandas
+psycopg2
