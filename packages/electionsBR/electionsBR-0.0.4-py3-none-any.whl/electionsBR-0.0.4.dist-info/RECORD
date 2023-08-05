@@ -1,0 +1,9 @@
+electionsBR/__init__.py,sha256=WcCipOVpvw-EQgZP-XlPuDcrHyQlGQpvrzH9TkX5Kxo,136
+electionsBR/api.py,sha256=St3G9iHGXiCoyxU0vprr0EvTEZbj8ZY7e1Yz-8MUzas,8273
+electionsBR/columns.py,sha256=kqOmg3Wu-vvsaf7P4W-fzUwLrPgQHjHsBW8xRkEO7To,34580
+electionsBR/backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+electionsBR/backend/client.py,sha256=ZxS042SafivYo2I_-XCwMDNt9fZ1j17YoYqfvu0JcWQ,2351
+electionsBR-0.0.4.dist-info/METADATA,sha256=sCcPE2PBguKk0O_mLQjYKFiuD0QuOuQ-W5leBvQiZEU,9229
+electionsBR-0.0.4.dist-info/WHEEL,sha256=IWeGwTvdiaNRNtdERe0BHc5KsCqvvVfLuP8HWeQWYGw,97
+electionsBR-0.0.4.dist-info/top_level.txt,sha256=0qJG0acYFxm4isuTRJj_bgZV8UyguOTIbHcS_IvybzY,12
+electionsBR-0.0.4.dist-info/RECORD,,
