@@ -1,0 +1,11 @@
+{
+  "get_nzh_biz_getExportList": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29818,
+      "sandbox": 39313
+    }
+  }
+}
