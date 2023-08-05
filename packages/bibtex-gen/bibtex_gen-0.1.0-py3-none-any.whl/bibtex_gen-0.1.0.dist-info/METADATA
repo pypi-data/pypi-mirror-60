@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: bibtex-gen
+Version: 0.1.0
+Summary: Generate BibTeX reference objects from DOIs and strings
+Home-page: https://github.com/whoopnip/bibtex-gen
+Author: Nick DeRobertis
+Author-email: whoopnip@gmail.com
+License: MIT
+Project-URL: Code, https://github.com/whoopnip/bibtex-gen
+Project-URL: Documentation, https://whoopnip.github.io/bibtex-gen
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+
+[![](https://codecov.io/gh/whoopnip/bibtex-gen/branch/master/graph/badge.svg)](https://codecov.io/gh/whoopnip/bibtex-gen)
+
+# bibtex-gen
+
+## Overview
+
+Generate BibTeX reference objects from DOIs and strings
+
+## Getting Started
+
+Install `bibtex_gen`:
+
+```
+pip install bibtex_gen
+```
+
+A simple example:
+
+```python
+import bibtex_gen
+
+# Do something with bibtex_gen
+```
+
+## Links
+
+See the 
+[documentation here.](
+https://whoopnip.github.io/bibtex-gen/
+)
+
+
