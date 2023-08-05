@@ -1,0 +1,1 @@
+recursive-include gym_fearbun/envs/raceboard/maps *.txt
