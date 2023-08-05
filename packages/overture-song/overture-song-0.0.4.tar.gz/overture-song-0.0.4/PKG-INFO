@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: overture-song
+Version: 0.0.4
+Summary: Song API
+Home-page: https://github.com/rtisma/test-song-python-sdk
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description:     Song API reference for developers. SONG is an open source system for validating and tracking metadata about raw data submissions, assigning identifiers to entities of interest, and managing the state of the raw data with regards to publication and access  # noqa: E501
+            
+Keywords: Swagger,Song API
+Platform: UNKNOWN
