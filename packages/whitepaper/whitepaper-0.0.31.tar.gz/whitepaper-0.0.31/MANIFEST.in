@@ -1,0 +1,2 @@
+global-include template.*
+include version.yml
