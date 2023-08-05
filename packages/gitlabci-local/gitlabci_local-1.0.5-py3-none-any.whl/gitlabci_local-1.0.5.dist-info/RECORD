@@ -1,0 +1,16 @@
+gitlabci_local/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitlabci_local/__main__.py,sha256=xPRFF3_d-tBgofNpb9DhJvgvjKOqXOOrr-zbqw6_vbU,71
+gitlabci_local/dumper.py,sha256=jEsrZ35tqQGn7tHKxSyU3tOcMNJVymmjs05wHw_rUxM,555
+gitlabci_local/main.py,sha256=JuzZzBDRhA8S4BQfgohRCBO3sVHWFjr5KwpgKHxKWSs,5150
+gitlabci_local/menu.py,sha256=KNnf-WlD2SMcE-1-zcj5izWRK53q0JFL_8bW49STpFc,10206
+gitlabci_local/parser.py,sha256=ScNLHuNHlKNLKXZLnNFC0sqBD9xownfzL3IcVnJvvds,8267
+gitlabci_local/patcher.py,sha256=g2sBIhDgM_9kku7nTybS-bd15Szlc5whnfpNFTS7od8,3285
+gitlabci_local/puller.py,sha256=sGa6wzQV2gUu536aP_ZT5JTY3itK55s-NAdZkUZfuy8,1418
+gitlabci_local/runner.py,sha256=7mnWv5d9K6PYlsVCtL9Q5HolAYBVxRNmGtpLZYO9aZk,7667
+gitlabci_local/utils.py,sha256=f2mzyvyTQkM1hjk72VzE-9XRm-F0f8lCvMX07mb-0ds,1141
+gitlabci_local-1.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gitlabci_local-1.0.5.dist-info/METADATA,sha256=2ibwa9aVFyef2YxHKfqnUJvjyGaPWGI58_cms5PB1Pc,7183
+gitlabci_local-1.0.5.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+gitlabci_local-1.0.5.dist-info/entry_points.txt,sha256=j9x5yQddEMbFbNkr5-3qxl1-H3uxnKt6AMvj73wPmzY,61
+gitlabci_local-1.0.5.dist-info/top_level.txt,sha256=qMMTDa1ZJ8UYmoIvCGLOjFS5L7YvHtBq_yTGW6_R58A,15
+gitlabci_local-1.0.5.dist-info/RECORD,,
