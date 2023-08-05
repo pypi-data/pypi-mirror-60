@@ -1,0 +1,3 @@
+[console_scripts]
+pipflow = pipflow.__main__:main
+
