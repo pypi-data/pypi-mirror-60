@@ -1,0 +1,10 @@
+boto3
+contextlib2
+lxml
+ImageHash
+opencv-python
+pandas
+pillow
+requests
+tensorflow
+tqdm
