@@ -1,0 +1,3 @@
+class LoglexerException(Exception):
+    pass
+

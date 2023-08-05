@@ -1,0 +1,2 @@
+include textlog2json/lexer/*.h
+include textlog2json/lexer/*.c
