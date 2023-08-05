@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/MicroPyDD_firestore.egg-info/PKG-INFO
+src/MicroPyDD_firestore.egg-info/SOURCES.txt
+src/MicroPyDD_firestore.egg-info/dependency_links.txt
+src/MicroPyDD_firestore.egg-info/requires.txt
+src/MicroPyDD_firestore.egg-info/top_level.txt
+src/micropydd_firestore/__init__.py
+src/micropydd_firestore/config.py
+src/micropydd_firestore/decorators.py
+src/micropydd_firestore/exceptions.py
+src/micropydd_firestore/firestore_entity.py
+src/micropydd_firestore/models.py
+src/micropydd_firestore/module.py
+src/micropydd_firestore/utils.py

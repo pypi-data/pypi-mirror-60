@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: MicroPyDD-firestore
+Version: 0.0.4
+Summary: MicroPyDD wrapper for Google firestore
+Home-page: UNKNOWN
+Author: Danilo Delizia
+Author-email: ddelizia@gmail.com
+License: UNKNOWN
+Description: [![pipeline status](https://gitlab.com/micropydd/micropydd-firestore/badges/master/pipeline.svg)](https://gitlab.com/micropydd/micropydd-firestore/commits/master) [![coverage report](https://gitlab.com/micropydd/micropydd-firestore/badges/master/coverage.svg)](https://gitlab.com/micropydd/micropydd-firestore/commits/master) [![PyPI version](https://badge.fury.io/py/MicroPyDD-firestore.svg)](https://badge.fury.io/py/MicroPyDD-firestore)
+        
+        # MicroPyDD Firestore
+        
+        This module is a simple wrapper that simplifies the setup of firestore. 
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
