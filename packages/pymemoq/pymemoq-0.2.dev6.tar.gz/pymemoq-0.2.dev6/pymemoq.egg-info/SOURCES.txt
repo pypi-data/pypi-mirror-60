@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+memoq/__init__.py
+memoq/server.py
+memoq/util.py
+memoq/webservice.py
+pymemoq.egg-info/PKG-INFO
+pymemoq.egg-info/SOURCES.txt
+pymemoq.egg-info/dependency_links.txt
+pymemoq.egg-info/not-zip-safe
+pymemoq.egg-info/requires.txt
+pymemoq.egg-info/top_level.txt
