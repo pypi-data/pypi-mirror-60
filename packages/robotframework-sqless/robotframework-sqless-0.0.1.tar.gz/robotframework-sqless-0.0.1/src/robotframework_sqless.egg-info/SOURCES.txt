@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/SQLess/SQLessKeywords.py
+src/SQLess/__init__.py
+src/SQLess/adaptors/__init__.py
+src/SQLess/adaptors/sqlite.py
+src/robotframework_sqless.egg-info/PKG-INFO
+src/robotframework_sqless.egg-info/SOURCES.txt
+src/robotframework_sqless.egg-info/dependency_links.txt
+src/robotframework_sqless.egg-info/requires.txt
+src/robotframework_sqless.egg-info/top_level.txt
