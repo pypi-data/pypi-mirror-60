@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pyrandstring
+Version: 0.0.3
+Summary: String Random Generation
+Home-page: https://github.com/alvarodeleon/pyrandstring
+Author: Alvaro De Leon
+Author-email: deleon@adl.com.uy
+License: UNKNOWN
+Download-URL: https://github.com/alvarodeleon/pyrandstring/tarball/0.0.3
+Description: UNKNOWN
+Keywords: password,generator,random
+Platform: UNKNOWN
