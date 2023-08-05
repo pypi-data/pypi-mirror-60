@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+import math
+import sys
+from linguistics.io import io
+from linguistics.vectorise import Vectorise as word2vec
+
+def update_count(row, model) :
+    if  math.isnan(row['size']):
+        return ''
+    else :
+        try :
+            return model.model.wv.vocab[row['id']].count
+        except:
+            return row['size']
+
+
+filename, modelname = io().check_args(sys)
+model = word2vec()
+model.load(modelname)
+
+
+flare = io.read_file(modelname + "_flare.csv")
+flare['size'] = flare.apply(update_count, args=(model,), axis=1)
+flare.to_csv(modelname + "_flare_new.csv", index=False)
