@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pca/__init__.py
+pca/pca.py
+pca/test.py
+pca.egg-info/PKG-INFO
+pca.egg-info/SOURCES.txt
+pca.egg-info/dependency_links.txt
+pca.egg-info/requires.txt
+pca.egg-info/top_level.txt
