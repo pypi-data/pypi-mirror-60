@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cpr
+Version: 0.1
+Summary: Cone program refinement.
+Home-page: UNKNOWN
+Author: Enzo Busseti, Walaa Moursi, Stephen Boyd
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.15.1)
+Requires-Dist: scipy (>=1.1.0)
+Requires-Dist: numba (>=0.36.2)
+
+UNKNOWN
+
+
