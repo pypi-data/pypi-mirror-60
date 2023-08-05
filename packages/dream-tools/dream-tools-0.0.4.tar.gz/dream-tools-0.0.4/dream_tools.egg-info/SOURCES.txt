@@ -1,0 +1,17 @@
+README.md
+setup.py
+dream_tools.egg-info/PKG-INFO
+dream_tools.egg-info/SOURCES.txt
+dream_tools.egg-info/dependency_links.txt
+dream_tools.egg-info/requires.txt
+dream_tools.egg-info/top_level.txt
+dreamtools/__init__.py
+dreamtools/eksempler.py
+dreamtools/excel_endo_exo.py
+dreamtools/excel_gdx.py
+dreamtools/gams_pandas.py
+dreamtools/gekko_endo_exo.py
+dreamtools/gamY/__init__.py
+dreamtools/gamY/classes.py
+dreamtools/gamY/gamY.py
+dreamtools/gamY/patterns.py
