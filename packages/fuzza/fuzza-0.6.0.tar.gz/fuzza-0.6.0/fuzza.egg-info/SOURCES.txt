@@ -1,0 +1,9 @@
+README.md
+fuzza
+setup.cfg
+setup.py
+fuzza.egg-info/PKG-INFO
+fuzza.egg-info/SOURCES.txt
+fuzza.egg-info/dependency_links.txt
+fuzza.egg-info/requires.txt
+fuzza.egg-info/top_level.txt
