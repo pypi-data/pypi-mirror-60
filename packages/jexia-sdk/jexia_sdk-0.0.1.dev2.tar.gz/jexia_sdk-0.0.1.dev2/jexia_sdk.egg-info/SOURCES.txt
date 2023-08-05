@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+jexia_sdk/__init__.py
+jexia_sdk/http.py
+jexia_sdk.egg-info/PKG-INFO
+jexia_sdk.egg-info/SOURCES.txt
+jexia_sdk.egg-info/dependency_links.txt
+jexia_sdk.egg-info/requires.txt
+jexia_sdk.egg-info/top_level.txt
