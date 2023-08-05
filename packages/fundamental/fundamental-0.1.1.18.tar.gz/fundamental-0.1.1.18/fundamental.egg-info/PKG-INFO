@@ -1,0 +1,52 @@
+Metadata-Version: 1.1
+Name: fundamental
+Version: 0.1.1.18
+Summary: Data frame downloader for fundamental financial
+Home-page: https://github.com/steven2K19/fundamental
+Author: Steven Wang
+Author-email: steven.wang0619@gmail.com
+License: UNKNOWN
+Description: fundamental:  Dataframe for fundamental financials
+        ==================================================
+        
+        It is a Python 3 library for generating stock fundamental data through
+        YahooFinance. The library is primarily based on yfinance package.
+        fundamental requires only list of tickers input from the user and easily
+        generate dataframe for fundamental ratio analysis, relative value ratio
+        analysis and industry relative analysis.
+        
+        Data inclusion
+        --------------
+        
+        -  financials for recent 3 years. (income statement, balance sheet, cash
+           flow statement)
+        -  calendar year end financials for comparision.
+        -  TTM financial by aggregate recent 4 quarters data
+        -  Basic share data for each fiscal year end and recent fiscal quarter
+           end
+        -  price data for each fiscal year end and recent fiscal quarter end
+        - It takes about 10 minutes to create a dataframe for 100 stocks.
+        
+        Usage
+        -----
+        
+        ::
+           # pip install fundamental
+        
+           from fundamental import fundamental
+        
+           symlist=['GOOG','MSFT','FB']
+        
+           df = fundamental.get_df_list(symlist)
+        
+           https://github.com/steven2K19/fundamental
+        
+        Limitation
+        ----------
+        
+        -  slow internet connection would lead scraping error and the program
+           will auto try 3 times.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
