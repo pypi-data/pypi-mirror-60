@@ -1,0 +1,16 @@
+six>=1.10.0
+promise<3,>=2.3
+rx<2,>=1.6
+
+[gevent]
+gevent>=1.1
+
+[test]
+pytest==4.6.9
+pytest-django==3.8.0
+pytest-cov==2.8.1
+coveralls==1.10.0
+gevent==1.4.0
+six>=1.10.0
+pytest-benchmark==3.2.3
+pytest-mock==2.0.0
