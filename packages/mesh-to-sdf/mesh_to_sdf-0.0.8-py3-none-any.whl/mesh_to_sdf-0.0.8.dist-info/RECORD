@@ -1,0 +1,14 @@
+mesh_to_sdf/__init__.py,sha256=b_gMx8cw1Z-ecvP6Vr-_Pg5blmk6ZSsc_p_SNiO3XPw,3898
+mesh_to_sdf/pyrender_wrapper.py,sha256=CKjpfW1yjfuKwtetB3RHQD25lRAsrEyeLMpvS59L5Dk,2322
+mesh_to_sdf/scan.py,sha256=JFSYKBQ8n-pCKd3tMdASCVa1giqXGU8gtiIJC3DM4G8,4341
+mesh_to_sdf/surface_point_cloud.py,sha256=t9Pnwwh38lhEoUMSYYxlSbv-N_Xv1ZJB03kOjUDMBiw,6341
+mesh_to_sdf/utils.py,sha256=VmAgZBJ5ZMpNPYOu4sWr0ROgwZtGvpS4kRYWh3atXqY,1492
+mesh_to_sdf/shaders/mesh.frag,sha256=gri5WQ2Ogf3cUUBklPW9IIapmQiMvLbEAx6KTDHkNU8,192
+mesh_to_sdf/shaders/mesh.vert,sha256=bUAD22o2C751hGrMETJinPfggdczkpKvdKebCB0kBhk,529
+mesh_to_sdf-0.0.8.data/data/shaders/mesh.frag,sha256=gri5WQ2Ogf3cUUBklPW9IIapmQiMvLbEAx6KTDHkNU8,192
+mesh_to_sdf-0.0.8.data/data/shaders/mesh.vert,sha256=bUAD22o2C751hGrMETJinPfggdczkpKvdKebCB0kBhk,529
+mesh_to_sdf-0.0.8.dist-info/LICENSE,sha256=6iMcW2jLW2bGS3MGlEZC5NajLmpfwcyAxYHtUpwz2mQ,1074
+mesh_to_sdf-0.0.8.dist-info/METADATA,sha256=XXeHp8XP7t4rSAnCdA97O_I42dWLluc0tnZlu0i7ehM,8163
+mesh_to_sdf-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mesh_to_sdf-0.0.8.dist-info/top_level.txt,sha256=H-tp91StfaykspI4fN0uyIKDe-u-q3vVTPxTlF058QY,12
+mesh_to_sdf-0.0.8.dist-info/RECORD,,
