@@ -1,0 +1,6 @@
+Jinja2==2.10.3
+parse==1.14.0
+requests==2.22.0
+requests-wsgi-adapter==0.4.1
+WebOb==1.8.6
+whitenoise==5.0.1
