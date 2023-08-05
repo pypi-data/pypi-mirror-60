@@ -1,0 +1,8 @@
+README.md
+setup.py
+biscoint_api_python/__init__.py
+biscoint_api_python.egg-info/PKG-INFO
+biscoint_api_python.egg-info/SOURCES.txt
+biscoint_api_python.egg-info/dependency_links.txt
+biscoint_api_python.egg-info/requires.txt
+biscoint_api_python.egg-info/top_level.txt
