@@ -1,0 +1,15 @@
+skrules/__init__.py,sha256=WQ1gAerNyenDqfaObegVAfyieDV8g13nnRXJhRCfPT4,115
+skrules/rule.py,sha256=KpjjgLsLqFQm7I574k5uyb0RVfr9ZvQg6dLIr9aJF44,2352
+skrules/skope_rules.py,sha256=zZxNCRJkFyHMGxllg6KHha45_sK3a3FoYMbsqkEaEPQ,27183
+skrules/datasets/__init__.py,sha256=VNV75udRS0y63H2UYEHHxOpEx1u8ADt9k_zYHKC6xVg,74
+skrules/datasets/credit_data.py,sha256=dSLhbjloygyQ0xXGfInbtNpFAUfvML3maJhnqjtEWZk,1434
+skrules/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skrules/tests/test_common.py,sha256=RMImlbC7iSeY4M7ATEZ8XJ3YsNOX4uoJUFRbR8yLpKA,284
+skrules/tests/test_rule.py,sha256=nd9eNg7HjUju9naquZ-AO8rGsnxQCjgEPN8RwzDu5II,1872
+skrules/tests/test_skope_rules.py,sha256=V-lg6wcWa1c_Ml2vtfqyCdNQ8Or9W7K_Tx-SEYWYRMg,8074
+skope_rules-1.0.0.dist-info/AUTHORS.rst,sha256=ClhliPFBENLyGNrsRGgckLFOvytfp_h97kd5zcvcZvQ,428
+skope_rules-1.0.0.dist-info/COPYING,sha256=M-L0Hnz4kNbVo7Ke0ThUhUB2-hSaOTyFH2c0OVyMQMg,1551
+skope_rules-1.0.0.dist-info/METADATA,sha256=N9ejVjUpiXVkpRrqX7SlAYm9nYvOmzwXxTx9jilA49I,463
+skope_rules-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+skope_rules-1.0.0.dist-info/top_level.txt,sha256=1pwM3nfMGeZalDK1BLGkZPR0hRdnRg2hi017LddG93g,8
+skope_rules-1.0.0.dist-info/RECORD,,
