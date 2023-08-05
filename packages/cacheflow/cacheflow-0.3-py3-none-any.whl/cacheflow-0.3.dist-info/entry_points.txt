@@ -1,0 +1,9 @@
+[cacheflow]
+builtin_python=cacheflow.python:register
+builtins=cacheflow.builtin_components:register
+
+[console_scripts]
+cacheflow=cacheflow.cli:main
+cacheflow-web=cacheflow.web.main:main
+noteflow=cacheflow.literal:main
+
