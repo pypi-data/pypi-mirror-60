@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: actions-in-fly
+Version: 0.2.1
+Summary: Test several CI/CD mechanic
+Home-page: https://github.com/DriverX/actions_in_fly
+License: MIT
+Author: Anton Ilyushenkov
+Author-email: driverx_strogino@mail.ru
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: aiohttp (>=3.4.0,<4.0.0)
+Requires-Dist: attrs (>=18.2.0,<20.0.0)
+Project-URL: Repository, https://github.com/DriverX/actions_in_fly
+Description-Content-Type: text/markdown
+
+Test project
+
