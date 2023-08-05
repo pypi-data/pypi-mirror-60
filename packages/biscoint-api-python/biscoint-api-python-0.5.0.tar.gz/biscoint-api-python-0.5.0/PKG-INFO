@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: biscoint-api-python
+Version: 0.5.0
+Summary: Biscoint API wrapper for python
+Home-page: https://github.com/Biscoint/biscoint-api-python
+Author: Thiago Borges Abdnur
+Author-email: bolaum@gmail.com
+License: UNKNOWN
+Description: # TODO
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
