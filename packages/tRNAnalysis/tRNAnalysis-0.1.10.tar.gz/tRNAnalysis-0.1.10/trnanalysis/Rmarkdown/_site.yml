@@ -1,0 +1,43 @@
+name: tRNAnalysis
+navbar:
+  title: Analysis of tRNA
+  right:
+  - text: Home
+    icon: fa-home
+    href: index.html
+  - text: tRNA abundance
+    icon: fa-bar-chart
+    href: tRNA_abundance.html
+  - text: Quality control
+    icon: fa-filter
+    href: QC_report.html
+  - text: Clustering
+    icon: fa-users
+    href: Clustering.html
+  - text: Diff expression
+    icon: fa-table
+    href: DE.html
+  - text: Coverage
+    icon: fa-globe
+    href: Base_coverage.html
+    
+
+output:
+  html_document:
+    css: style.css
+    fig_caption: yes
+    theme: yeti
+    highlight: textmate
+    toc: yes
+    toc_depth: 2
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+    lib_dir: site_libs
+    self_contained: no
+exclude:
+- rds
+- counts
+- expdata
+- '*.R'
+output_dir: Final_report
