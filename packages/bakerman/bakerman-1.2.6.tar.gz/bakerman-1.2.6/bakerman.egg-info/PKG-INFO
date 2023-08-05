@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bakerman
+Version: 1.2.6
+Summary: Update your Dockerfiles to include the latest containers and packages.
+Home-page: https://github.com/smetj/bakerman
+Author: Jelle Smet
+Author-email: development@smetj.net
+License: UNKNOWN
+Download-URL: https://github.com/smetj/bakerman/tarball/master
+Description: UNKNOWN
+Platform: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Provides-Extra: testing

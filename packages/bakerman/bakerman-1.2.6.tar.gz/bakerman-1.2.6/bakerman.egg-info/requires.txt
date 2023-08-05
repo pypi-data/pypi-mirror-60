@@ -1,0 +1,8 @@
+requests
+jinja2
+bs4
+semver
+gitpython
+
+[testing]
+pytest
