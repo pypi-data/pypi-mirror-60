@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: dashforfaceauth
+Version: 0.0.1
+Summary: dash for facebook authentication
+Home-page: UNKNOWN
+Author: marco vargas <monitorcasalab@gmail.com>
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Dash

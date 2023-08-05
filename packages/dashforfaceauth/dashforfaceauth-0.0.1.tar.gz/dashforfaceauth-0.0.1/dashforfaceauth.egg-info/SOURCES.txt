@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dashforfaceauth/Dashforfaceauth.py
+dashforfaceauth/__init__.py
+dashforfaceauth/_imports_.py
+dashforfaceauth/dashforfaceauth.min.js
+dashforfaceauth/dashforfaceauth.min.js.map
+dashforfaceauth/metadata.json
+dashforfaceauth/package-info.json
+dashforfaceauth.egg-info/PKG-INFO
+dashforfaceauth.egg-info/SOURCES.txt
+dashforfaceauth.egg-info/dependency_links.txt
+dashforfaceauth.egg-info/top_level.txt

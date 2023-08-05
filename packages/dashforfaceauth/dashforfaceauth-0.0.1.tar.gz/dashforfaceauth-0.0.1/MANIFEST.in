@@ -1,0 +1,7 @@
+include dashforfaceauth/dashforfaceauth.min.js
+include dashforfaceauth/dashforfaceauth.min.js.map
+include dashforfaceauth/metadata.json
+include dashforfaceauth/package-info.json
+include README.md
+include LICENSE
+include package.json
