@@ -1,0 +1,10 @@
+plip2ml/__init__.py,sha256=ae_Q_gd6S_kw-XceKI69OSXRxs_G6s0P5E4-v3hrgqo,16
+plip2ml/plipxml2plipcsv.py,sha256=3FnqzA0Sky_JEoxjivU9-D3GExm-KOLGVuWetmSqDB0,6764
+plip2ml/xml2csv.py,sha256=s69le76SEQ17MSWktOKQJfBeD0K_Et3AIcl8kcSx5Jo,6830
+plip2ml-0.0.5.data/scripts/plip2ml-xml2csv,sha256=OGDD7gKxff8Nt_ht9ix68Ah2J2zyBNRTySPxEn7ykpU,2068
+plip2ml-0.0.5.data/scripts/plipxml2plipcsv,sha256=J94pTk6zbGaKSgqZZHV7X_fRT2sGlC4DejrI8PoRPxk,1990
+plip2ml-0.0.5.dist-info/LICENSE,sha256=jFHwT_9TRlbwp0NncQs0_AyOyWgTybTcDvUOGUX50i0,1109
+plip2ml-0.0.5.dist-info/METADATA,sha256=xNgE14iyUnf8XCd740Jky1ry4yyLNCStA33UA0HZjTc,679
+plip2ml-0.0.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+plip2ml-0.0.5.dist-info/top_level.txt,sha256=V1dSui2b0VpdkCrkLE91ij8g5wnUXlTn4HjxWlnm8Lo,8
+plip2ml-0.0.5.dist-info/RECORD,,

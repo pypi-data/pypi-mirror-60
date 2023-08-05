@@ -1,0 +1,57 @@
+#!python
+
+import argparse
+import os
+import sys
+import plip2ml.xml2csv as pxpc
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description='plip2ml-xml2csv: Convert PLIP xml to csv')
+
+    parser.add_argument('plipxml', nargs='*',
+                        help='xml file or list of files to read, default is report.xml',
+                        default=['report.xml'])
+
+    parser.add_argument('-o', '--out',
+                        help='output csv file, default is output.csv',
+                        default='output.csv')
+
+    parser.add_argument('-s', '--structure_id',
+                        help='structure_id')
+
+    parser.add_argument('-l', '--ligand_ids',
+                        help='comma-separated ligands ids')
+
+    parser.add_argument("-f", "--force", help="no warning if output file exists",
+                        action="store_true")
+
+    args = parser.parse_args()
+
+    structure_id = args.structure_id
+    ligand_ids = None if args.ligand_ids is None else args.ligand_ids.split(',')
+
+
+    if os.path.exists(args.out) and not args.force:
+        print('Error, output file exists: ', args.out, 'use -f, --force to overwrite')
+        sys.exit(1)
+
+    try:
+        with open(args.out, "w") as outfile:
+            print(args.out)
+            outfile.write(','.join(pxpc.get_plipcsv_columns()) + '\n')
+            for plipxml in args.plipxml:
+                print("Reading:", plipxml)
+                try:
+                    for row in pxpc.compute_plipcsv_rows(plipxml=plipxml, structrure_id=structure_id,
+                                                         ligand_residues=ligand_ids):
+                        outfile.write(','.join(map(str,row)) + '\n')
+                except IOError as f:
+                    print("There was an error opening input file:", plipxml)
+                    print(f)
+        print("DONE")
+
+    except IOError as e:
+        print("There was an error opening out file:", args.out)
+        print(e)
+        sys.exit(1)

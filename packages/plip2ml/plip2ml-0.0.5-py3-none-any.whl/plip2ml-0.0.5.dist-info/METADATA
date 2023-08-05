@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: plip2ml
+Version: 0.0.5
+Summary: Using PLIP output as ML input
+Home-page: https://github.com/mvoland/plip2ml
+Author: Mathieu Voland
+Author-email: mathieu.voland@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=0.20)
+Requires-Dist: lxml (>=4.0.0)
+
+# plip2ml
+
+PLIP-2-ML - Tools to use PLIP for Machine Learning
+
+
+## Install
+
+    pip install plip2ml
+
+## Documentation
+
+[GitHub Pages: mvoland.github.io/plip2ml](https://mvoland.github.io/plip2ml/)
+
