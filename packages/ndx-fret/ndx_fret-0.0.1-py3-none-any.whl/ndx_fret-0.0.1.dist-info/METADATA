@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ndx-fret
+Version: 0.0.1
+Summary: FRET
+Home-page: https://github.com/ben-dichter-consulting/ndx-fret
+Author: Luiz Tauffer and Ben Dichter
+Author-email: ben.dichter@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+Requires-Dist: pynwb
+
+# ndx-fret
+NWB extension for storing Fluorescence Resonance Energy Transfer (FRET) experimental data
+
+
