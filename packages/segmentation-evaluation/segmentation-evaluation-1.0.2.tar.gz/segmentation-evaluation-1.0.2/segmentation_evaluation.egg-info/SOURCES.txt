@@ -1,0 +1,12 @@
+README.md
+segmentation-evaluation
+setup.py
+performance_tool/__init__.py
+performance_tool/evaluate_segmentation.py
+performance_tool/manually_segmentation.py
+performance_tool/performance_polygons.py
+segmentation_evaluation.egg-info/PKG-INFO
+segmentation_evaluation.egg-info/SOURCES.txt
+segmentation_evaluation.egg-info/dependency_links.txt
+segmentation_evaluation.egg-info/requires.txt
+segmentation_evaluation.egg-info/top_level.txt
