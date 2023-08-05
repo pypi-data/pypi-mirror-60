@@ -1,0 +1,7 @@
+six==1.14.0
+
+[YAML]
+pyyaml==5.3
+
+[html-gen]
+jinja2==2.10.3
