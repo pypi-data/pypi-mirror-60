@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+pyamdcovc-fan-control.service
+setup.py
+pyamdcovc/__init__.py
+pyamdcovc/amdcovc.py
+pyamdcovc/daemon.py
+pyamdcovc/test.py
+pyamdcovc/version.py
+pyamdcovc.egg-info/PKG-INFO
+pyamdcovc.egg-info/SOURCES.txt
+pyamdcovc.egg-info/dependency_links.txt
+pyamdcovc.egg-info/top_level.txt

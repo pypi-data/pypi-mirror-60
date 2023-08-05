@@ -1,0 +1,12 @@
+[Unit]
+Description=AMDGPU manual fan control via pyamdcovc
+
+[Service]
+Type=simple
+WorkingDirectory=/
+ExecStart=python3 -m pyamdcovc.daemon --fan-curve "[[30,0.0],[40,0.1],[50,0.2],[60,0.4],[65,0.6],[75,1.0]]"
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=basic.target
