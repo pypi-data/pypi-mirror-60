@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+django_swappable_tasks/__init__.py
+django_swappable_tasks/handlers.py
+django_swappable_tasks/urls.py
+django_swappable_tasks/utils.py
+django_swappable_tasks/views.py
+django_swappable_tasks.egg-info/PKG-INFO
+django_swappable_tasks.egg-info/SOURCES.txt
+django_swappable_tasks.egg-info/dependency_links.txt
+django_swappable_tasks.egg-info/requires.txt
+django_swappable_tasks.egg-info/top_level.txt
