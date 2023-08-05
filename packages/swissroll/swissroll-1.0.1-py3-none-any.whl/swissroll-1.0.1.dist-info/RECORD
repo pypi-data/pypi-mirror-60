@@ -1,0 +1,10 @@
+swissroll/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swissroll/_distribution.py,sha256=4n0Q4fyfqsHLvZKZy3I2xGSiScgUq2CMj8ncTIhFHRs,3600
+swissroll/distributions.py,sha256=ghin_9jQcWAfZiPC2QyaXOzx7P4njS4ijEkNIKk3mEw,10856
+swissroll/plotter.py,sha256=Vcxk80qxqahyvQ2K0UzefvjKmdDPeTGbojo84W60w80,5454
+swissroll/utils.py,sha256=x_5O--5UnxF3lOwn1hoxh_wdbGXMqwVxq5lFWuBf_sk,810
+swissroll-1.0.1.dist-info/LICENSE,sha256=PIKrXKQT3EDe3g7_AvYPSMTxGOsPkKzFM2iL8jOM9SM,1548
+swissroll-1.0.1.dist-info/METADATA,sha256=VgCYKTRAnt7dBTuVlf5mxnAxtEXVpMzrm4a6XdZD1LU,1098
+swissroll-1.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+swissroll-1.0.1.dist-info/top_level.txt,sha256=Xh84-Rl72XPtclJqNIIVMlOBb6qOjg-v5MTCXF3W5nw,10
+swissroll-1.0.1.dist-info/RECORD,,
