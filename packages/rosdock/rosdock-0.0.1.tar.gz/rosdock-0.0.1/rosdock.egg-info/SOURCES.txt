@@ -1,0 +1,8 @@
+README.md
+setup.py
+rosdock/__init__.py
+rosdock/main.py
+rosdock.egg-info/PKG-INFO
+rosdock.egg-info/SOURCES.txt
+rosdock.egg-info/dependency_links.txt
+rosdock.egg-info/top_level.txt

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rosdock
+Version: 0.0.1
+Summary: An utility scripts for wrapping ros catkin project and use it with docker
+Home-page: https://github.com/trinhtrannp/rosdock
+Author: Trinh Tran
+Author-email: trinhtran2151995@gmail.com
+License: UNKNOWN
+Description: # rosdock
+        
+        # To create development environment
+        installdev 
+        
+        # To install
+        setup.py
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
