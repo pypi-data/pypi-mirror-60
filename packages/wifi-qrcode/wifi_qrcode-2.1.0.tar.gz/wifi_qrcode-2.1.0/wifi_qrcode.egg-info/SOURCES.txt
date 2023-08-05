@@ -1,0 +1,13 @@
+README.md
+setup.py
+wifi_qrcode/__init__.py
+wifi_qrcode/__main__.py
+wifi_qrcode/app.py
+wifi_qrcode/makers.py
+wifi_qrcode/utils.py
+wifi_qrcode.egg-info/PKG-INFO
+wifi_qrcode.egg-info/SOURCES.txt
+wifi_qrcode.egg-info/dependency_links.txt
+wifi_qrcode.egg-info/entry_points.txt
+wifi_qrcode.egg-info/requires.txt
+wifi_qrcode.egg-info/top_level.txt
