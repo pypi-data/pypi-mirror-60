@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pytest_cleanup
+Version: 0.3
+Summary: Automated, comprehensive and well-organised pytest test cases.
+Home-page: https://github.com/jeshan/pytest-cleanup
+Author: Jeshan G. BABOOA
+Author-email: j@jeshan.co
