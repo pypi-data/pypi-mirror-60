@@ -1,0 +1,29 @@
+Metadata-Version: 1.2
+Name: timeconMT
+Version: 0.0.2
+Summary: time converter utilities
+Home-page: https://github.com/colemalphrus/timeconMT
+Author: Cole Malphrus
+Author-email: cole@malphrus.tech
+License: UNKNOWN
+Description: # timeconMT
+        A simple time conversion by Malphrus Tech
+        
+        ## Usage
+        
+        ### import
+        ```python
+        from timeconMT.timecon import  convert
+        ```
+        ### use
+        ```python
+        time = convert("12:30:00")
+        #returns a dictionary
+        # {'military': '1230', 'six_figure': '12:30:00', 'standard': '12:30pm'}
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
