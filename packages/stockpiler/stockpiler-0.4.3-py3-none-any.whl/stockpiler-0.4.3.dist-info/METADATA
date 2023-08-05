@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: stockpiler
+Version: 0.4.3
+Summary: Backup Network Device Configurations
+Home-page: https://github.com/rackerlabs/stockpiler
+Author: Brett Lykins
+Author-email: brett.lykins@rackspace.com
+License: LGPLv3+
+Download-URL: https://github.com/rackerlabs/stockpiler/archive/v0.4.3.tar.gz
+Keywords: stockpiler,backups,network,nornir,python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Requires-Dist: bcrypt (>=3.1.7)
+Requires-Dist: certifi (>=2019.11.28)
+Requires-Dist: cffi (>=1.13.2)
+Requires-Dist: chardet (>=3.0.4)
+Requires-Dist: ciscoconfparse (>=1.4.11)
+Requires-Dist: colorama (>=0.4.3)
+Requires-Dist: cryptography (>=2.8)
+Requires-Dist: dnspython (>=1.16.0)
+Requires-Dist: future (>=0.18.2)
+Requires-Dist: gitdb2 (>=2.0.6)
+Requires-Dist: GitPython (>=3.0.5)
+Requires-Dist: idna (>=2.8)
+Requires-Dist: Jinja2 (>=2.10.3)
+Requires-Dist: junos-eznc (>=2.2.1)
+Requires-Dist: lxml (>=4.4.2)
+Requires-Dist: MarkupSafe (>=1.1.1)
+Requires-Dist: mypy-extensions (>=0.4.3)
+Requires-Dist: napalm (>=2.5.0)
+Requires-Dist: ncclient (>=0.6.7)
+Requires-Dist: netaddr (>=0.7.19)
+Requires-Dist: netmiko (>=3.0.0)
+Requires-Dist: nornir (>=2.3.0)
+Requires-Dist: nxapi-plumbing (>=0.5.2)
+Requires-Dist: paramiko (>=2.7.1)
+Requires-Dist: passlib (>=1.7.2)
+Requires-Dist: pydantic (>=0.18.2)
+Requires-Dist: pyeapi (>=0.8.2)
+Requires-Dist: pyIOSXR (>=0.53)
+Requires-Dist: PyNaCl (>=1.3.0)
+Requires-Dist: pyparsing (>=2.4.6)
+Requires-Dist: pyserial (>=3.4)
+Requires-Dist: PySocks (>=1.7.1)
+Requires-Dist: PyYAML (>=5.3)
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: ruamel.yaml (>=0.15.85)
+Requires-Dist: ruamel.yaml.clib (>=0.2.0)
+Requires-Dist: scp (>=0.13.2)
+Requires-Dist: six (>=1.13.2)
+Requires-Dist: smmap2 (>=2.0.5)
+Requires-Dist: textfsm (>=1.1.0)
+Requires-Dist: transitions (>=0.7.2)
+Requires-Dist: typing-extensions (>=3.7.4.1)
+Requires-Dist: urllib3 (>=1.25.7)
+Requires-Dist: yamlordereddictloader (>=0.4.0)
+Provides-Extra: build
+Requires-Dist: setuptools ; extra == 'build'
+Requires-Dist: sphinx ; extra == 'build'
+Requires-Dist: sphinx-rtd-theme ; extra == 'build'
+Requires-Dist: towncrier ; extra == 'build'
+Requires-Dist: twine ; extra == 'build'
+Requires-Dist: wheel ; extra == 'build'
+Provides-Extra: test
+Requires-Dist: bandit ; extra == 'test'
+Requires-Dist: black ; extra == 'test'
+Requires-Dist: mypy ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pylint ; extra == 'test'
+Requires-Dist: safety ; extra == 'test'
+
+# Stockpiler
+Stockpiler gathers backups of network devices via Nornir - a Python based automation tool.
+
+Stockpiler utilizes Nornir, Netmiko, and GitPython for a fully self-contained
+ backup solution, and has been tested to function on Linux, MacOS, and Windows.
+
+By default, it will read in device inventory/config from `/etc/stockpiler/`, and output backups to `/opt/stockpiler/`.
+ Both are configurable by command line arguments.
+
+# Installation
+
+Notes:
+
+1. Stockpiler utilizes a very recent release of Netmiko. This requires some specific handling (as outlined below),
+   until other libraries update their dependencies.
+2. Stockpiler requires Python 3.7 or higher.
+3. Stockpiler utilizes Python Virtual Envrionments for isolation of the code/executable.
+
+## Installation Steps
+
+1. Create a directory for the Stockpiler virtual environment:
+    `mkdir stockpiler`
+2. Create a virtual environment in that directory:
+    `python3 -m venv stockpiler`
+3. Navigate to the new directory and activate it:
+    `cd stockpiler;source bin/activate`
+4. Install Nornir:
+    `pip install nornir`
+5. Edit the dependencies, this will require you to find the Napalm and Nornir `METADATA` files in your virtual
+ environment:
+    * Paths should be similar to:
+        * `lib/python3.7/site-packages/napalm-2.5.0.dist-info/METADATA`
+        * `lib/python3.7/site-packages/nornir-2.3.0.dist-info/METADATA`
+    * In each file, find the lines similar to below that reference Netmiko:
+        * `Requires-Dist: netmiko (==2.4.2)`
+        * `Requires-Dist: netmiko (>=2.3.3,<3.0.0)`
+    * Edit it to include 3.0.0, similar to the below:
+        * `Requires-Dist: netmiko (>=2.4.2)`
+        * `Requires-Dist: netmiko (>=2.3.3)`
+6. Install Netmiko >= 3.0.0:
+    `pip install 'netmiko>=3.0.0'`
+7. Install Stockpiler:
+    `pip install stockpiler`
+
+# Configuration
+
+As Stockpiler utilizes Nornir for the underlying inventory and task handling, see the Nornir
+ documentation for more information on creating an inventory file or your configuration options
+
+While we have provided a simple `nornir_conf.yaml` file, you are welcome to provide your own or customize
+ the one provided by the package.
+* https://nornir.readthedocs.io/en/latest/configuration/index.html
+
+If you are using Windows (or wish to host your inventory in a different location than `/etc/stockpiler/inventory`), you
+ will need to create a custom Nornir config file with your inventory paths.
+
+
