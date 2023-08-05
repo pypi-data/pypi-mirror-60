@@ -1,0 +1,12 @@
+pravah_protocols/AirQuality_pb2.py,sha256=HtOCXhZ8RCEumnKpzEKx5anNStveJEZq8vbyMP3DmvE,12169
+pravah_protocols/FeedHeaderStatic_pb2.py,sha256=YPeetKMDDDbC2Y9XTzitQ6yj2ACY-yIHjIaqonuWcXw,4628
+pravah_protocols/FeedHeader_pb2.py,sha256=iAP13H7MO6XfjON8k8q4TXAPnxpjrm2bhBtlGMo6XqQ,5452
+pravah_protocols/FlightData_pb2.py,sha256=Fygy8-XcYbxdUiB748QHKWPW75V8rR3oN9yQswDpCmM,20699
+pravah_protocols/PublicBus_pb2.py,sha256=oeoXldvNmjqscUiPpHA7mjJT4aIX8P9yMk6uSXypMO4,55797
+pravah_protocols/SolarPowerProductionStatic_pb2.py,sha256=jpWp1cTK2IfN_cgVlYHuZ3_yRpAN4QVUt22p9BuEAMc,17997
+pravah_protocols/SolarPowerProduction_pb2.py,sha256=e5-d_NUzrEdq-BGfdzB-GZ7NDyxvcH6_apMqApyHd-o,29179
+pravah_protocols/__init__.py,sha256=ysnSloVyShEhwrJv6s2ikJWpyT9cEJKG7AeAyyFqhAA,149
+pravah_protocols-0.0.1.dist-info/METADATA,sha256=bc2_7JeKGaRe41uh5y9YNBnEbAsyOW2NoRg2RUFq1Fc,412
+pravah_protocols-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pravah_protocols-0.0.1.dist-info/top_level.txt,sha256=SHfI3gTKeUdgOlspdv2D8v6xUHnp4cjYK5mOggTTgf8,17
+pravah_protocols-0.0.1.dist-info/RECORD,,
