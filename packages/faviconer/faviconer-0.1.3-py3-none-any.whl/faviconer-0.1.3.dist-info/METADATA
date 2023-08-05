@@ -1,0 +1,79 @@
+Metadata-Version: 2.0
+Name: faviconer
+Version: 0.1.3
+Summary: faviconer is easy for get favicon package
+Home-page: https://github.com/kuniiskywalker/faviconer
+Author: kuniiskywalker
+Author-email: kuniiskywalker@gmail.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: beautifulsoup4 (==4.6.0)
+Requires-Dist: requests (==2.22.0)
+
+================
+faviconer
+================
+
+What is this?
+================
+
+This is a package to get a nice favicon from a website
+
+Installation
+================
+
+.. code-block:: bash
+
+    pip install faviconer
+
+Usage
+================
+
+Get favicon.ico:
+
+Get /favicon.ico if there is no explicit favicon url specified in the meta tag of the target site
+
+When the favicon url is specified in the meta tag
+.. code-block:: python
+
+    >>> import faviconer
+    >>> faviconer.get_by_url("https://example.com/test/?aaa=1")
+    'https://example.com/image/icon.png'
+
+When there is no specific URL specified in the meta tag
+.. code-block:: python
+
+    >>> import faviconer
+    >>> faviconer.get_by_url("https://example.com/test/?aaa=1")
+    'https://example.com/favicon.ico'
+
+Get favicon.ico by url:
+
+Get /favicon.ico
+
+.. code-block:: python
+
+    >>> import faviconer
+    >>> faviconer.get_by_url("https://example.com/")
+    'https://example.com/favicon.ico'
+
+Get favicon.ico by html:
+
+Analyze the target site html and get favicon.ico if favicon url is specified in meta tag
+
+.. code-block:: python
+
+    >>> import faviconer
+    >>> faviconer.get_by_html('<html><head><link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico"></head><body></body</html>')
+    'https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico'
+
