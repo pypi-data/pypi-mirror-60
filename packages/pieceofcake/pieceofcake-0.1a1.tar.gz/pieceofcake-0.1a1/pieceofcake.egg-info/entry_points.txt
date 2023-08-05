@@ -1,0 +1,3 @@
+[console_scripts]
+pieceofcake = pieceofcake.main:main
+
