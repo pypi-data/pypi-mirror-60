@@ -1,0 +1,10 @@
+cvtlib/__init__.py,sha256=a6-8FIEnjOHFIZTLQL8FAsHJUWauuAefZb2Aw5xGuqY,43
+cvtlib/drawing.py,sha256=Qr5bmpXwMICJN4Mp0F0Pc2UPcS43HznUGEwaL-43B28,3643
+cvtlib/files.py,sha256=OhQtDDO3DhaNSxzH44pKDEMLcuiLA2bwmXFj8bfI6pI,646
+cvtlib/image.py,sha256=T6_aRX6HqFW_LOZVLJ50cNXZlRLrue7pmMoD6FPSPHc,1421
+cvtlib/video.py,sha256=nLcoMs20Pi7Q1O3NYaOxapJOt_9LrAS17DH5a0-c3dI,6697
+cvtlib-0.8.1.dist-info/LICENSE,sha256=TqaVVc_uaJM_ZVjOpAgX-1I-qh7_N5mVLmWqdm70A1U,1069
+cvtlib-0.8.1.dist-info/METADATA,sha256=oUWWcIyTdglQyTdh_OcXbub4jn4_LyTe852tkUUbqdo,756
+cvtlib-0.8.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+cvtlib-0.8.1.dist-info/top_level.txt,sha256=oU8XTnHwnKhUleCJ6LXVNYuJhosfwPyi2s9eh54CPEg,7
+cvtlib-0.8.1.dist-info/RECORD,,
