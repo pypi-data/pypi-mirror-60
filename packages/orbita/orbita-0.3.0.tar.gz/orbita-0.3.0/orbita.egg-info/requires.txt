@@ -1,0 +1,5 @@
+numpy
+pyquaternion
+
+[test]
+scipy>=1.4.0
