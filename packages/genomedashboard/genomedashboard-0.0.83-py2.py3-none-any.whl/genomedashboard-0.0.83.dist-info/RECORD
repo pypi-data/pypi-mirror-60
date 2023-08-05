@@ -1,0 +1,15 @@
+genomedashboard-0.0.83.data/scripts/cli.py,sha256=gBCHgpxV0URuM6d8LXQYprbwC0vu3prhgvAdbx7fCro,678
+genomedashboard-0.0.83.data/scripts/convert.py,sha256=iyamsyELzFZiQCvVMEQpBVb6xIPS9lZ1s3oAQkX50VQ,26039
+genomedashboard-0.0.83.data/scripts/ds.py,sha256=MRfofaIP8NqMwXM_exgDYdRmlCqBBOlEIE79UEBzzbY,4722
+genomedashboard-0.0.83.data/scripts/genomedashboard.py,sha256=mW1IMRpjOss56dI1uxMjS9yB00KrLEyKV_Xz47Y37oE,51210
+genomedashboard-0.0.83.data/scripts/io.py,sha256=1Dk2EC7aYQbvKq2rCmQSW9KM4LkTwSfpI2GQBkkP2SQ,11523
+genomedashboard-0.0.83.data/scripts/mathfunction.py,sha256=4ChtjQiIshSUiS5zvggysyZmiTPVxEfV8xsYbgZaPk8,4792
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ds.py,sha256=_8YP3BIUD4mMroGNwlg90V2y5RsRQ6gipL9gI-qAfXw,2042
+tests/test_genomedashboard.py,sha256=ybu7-6eTuQ_xEcI183LCY6k0_RnUJa-P01ZjqyTY5B0,2824
+genomedashboard-0.0.83.dist-info/LICENSE,sha256=WSAMrq5O10wwoQ1uiCMHZZ9VJLUg7sfFxzAlhwa9Xo4,1581
+genomedashboard-0.0.83.dist-info/METADATA,sha256=dbokeyL7v9Fjrn8rZu0eFmVQfncTqr7s_9Bwua3eSkw,3544
+genomedashboard-0.0.83.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+genomedashboard-0.0.83.dist-info/entry_points.txt,sha256=VOI4fxFNj4Hcqd4p0oCHu1CY17m1ytVzzWVPZhTW5fc,62
+genomedashboard-0.0.83.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+genomedashboard-0.0.83.dist-info/RECORD,,
