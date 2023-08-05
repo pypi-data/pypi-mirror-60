@@ -1,0 +1,3 @@
+[console_scripts]
+ipfinder = ipfinder.externip:external_IP
+

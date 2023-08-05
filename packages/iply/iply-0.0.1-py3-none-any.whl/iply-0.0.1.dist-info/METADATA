@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: iply
+Version: 0.0.1
+Summary: A utility tool for determining a users Public IPv4 WAN address.
+Home-page: UNKNOWN
+Author: Joshua Groeschl
+Author-email: joshua.groeschl@tutanota.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: click (==7.0)
+Requires-Dist: requests (==2.22.0)
+
+UNKNOWN
+
+
