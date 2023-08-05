@@ -1,0 +1,10 @@
+README.md
+setup.py
+starcount/__init__.py
+starcount/starcount.py
+starcount.egg-info/PKG-INFO
+starcount.egg-info/SOURCES.txt
+starcount.egg-info/dependency_links.txt
+starcount.egg-info/entry_points.txt
+starcount.egg-info/requires.txt
+starcount.egg-info/top_level.txt
