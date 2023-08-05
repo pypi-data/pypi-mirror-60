@@ -1,0 +1,17 @@
+ZODB
+objproxies
+persistent
+pathvalidate
+
+[dev]
+check-manifest
+numpy
+torch<2
+
+[test]
+coverage<5
+codecov
+pytest
+pytest-runner
+pytest-benchmark
+pytest-cov
