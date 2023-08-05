@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: transx2gtfs
+Version: 0.1
+Summary: A Python tool to convert TransXchange data into GTFS.
+Home-page: https://github.com/htenkanen/transx2gtfs
+Author: Henrikki Tenkanen
+Author-email: h.tenkanen@ucl.ac.uk
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=3, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <3.8

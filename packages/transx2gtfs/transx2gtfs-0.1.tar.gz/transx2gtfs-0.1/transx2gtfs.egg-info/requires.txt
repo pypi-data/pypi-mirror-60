@@ -1,0 +1,2 @@
+pandas>=0.24.1
+pyproj>=2.1.3untangle>=1.1.1datetime
