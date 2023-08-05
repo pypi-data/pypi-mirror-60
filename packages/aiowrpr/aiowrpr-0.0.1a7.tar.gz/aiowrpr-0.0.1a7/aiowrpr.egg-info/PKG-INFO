@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: aiowrpr
+Version: 0.0.1a7
+Summary: UNKNOWN
+Home-page: https://github.com/ishirshov/aiowrpr
+Author: Ildar Shirshov
+Author-email: ildar.shirshov@gmail.com
+License: Apache 2.0
+Download-URL: https://github.com/ishirshov/aiowrpr
+Description: # aiowrpr
+        Toolkit to simplify work with aiohttp module
+        
+        # features
+        * Built-in swagger specification (provides by [aiohttp-apispec](#https://aiohttp-apispec.readthedocs.io/en/latest/));
+        * Marshmallow schemes for requests and responses;
+        * Versioning of API;
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Terminals
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
