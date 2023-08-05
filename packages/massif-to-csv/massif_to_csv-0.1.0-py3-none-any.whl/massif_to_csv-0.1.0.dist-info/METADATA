@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: massif-to-csv
+Version: 0.1.0
+Summary: Convert a Valgrind Massif output file to a CSV file
+Home-page: https://github.com/mpoquet/massif_to_csv
+Author: Millian Poquet
+Author-email: millian.poquet@inria.fr
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Requires-Dist: msparser (>=1.4)
+
+UNKNOWN
+
+
