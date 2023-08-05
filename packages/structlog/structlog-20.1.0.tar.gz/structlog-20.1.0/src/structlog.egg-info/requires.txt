@@ -1,0 +1,48 @@
+six
+
+[azure-pipelines]
+coverage[toml]
+freezegun>=0.2.8
+pretend
+pytest>=3.3.0
+simplejson
+pytest-azurepipelines
+
+[azure-pipelines:python_version >= "3.6"]
+python-rapidjson
+
+[azure-pipelines:python_version >= "3.7"]
+pytest-asyncio
+
+[dev]
+coverage[toml]
+freezegun>=0.2.8
+pretend
+pytest>=3.3.0
+simplejson
+sphinx
+twisted
+pre-commit
+
+[dev:python_version >= "3.6"]
+python-rapidjson
+
+[dev:python_version >= "3.7"]
+pytest-asyncio
+
+[docs]
+sphinx
+twisted
+
+[tests]
+coverage[toml]
+freezegun>=0.2.8
+pretend
+pytest>=3.3.0
+simplejson
+
+[tests:python_version >= "3.6"]
+python-rapidjson
+
+[tests:python_version >= "3.7"]
+pytest-asyncio

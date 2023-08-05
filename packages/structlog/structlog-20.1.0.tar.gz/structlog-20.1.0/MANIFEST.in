@@ -1,0 +1,10 @@
+include LICENSE LICENSE.apache2 LICENSE.mit conftest.py
+include *.rst
+
+include *.ini *.yml *.yaml *.toml
+graft .github
+graft tests
+recursive-exclude tests *.pyc
+
+graft docs
+prune docs/_build
