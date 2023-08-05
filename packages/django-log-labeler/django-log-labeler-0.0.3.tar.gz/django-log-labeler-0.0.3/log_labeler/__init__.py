@@ -1,0 +1,10 @@
+import threading
+
+
+local = threading.local()
+
+
+
+DEFAULT_HEADER_VALUE = "none"
+LOG_LABEL_REQUEST_SETTING = 'LOG_LABEL_REQUEST_SETTING'
+LOG_LABEL_LOGGER_NAME = 'LOG_LABEL_LOGGER_NAME'
