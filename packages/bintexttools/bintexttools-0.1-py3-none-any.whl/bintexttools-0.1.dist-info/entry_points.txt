@@ -1,0 +1,4 @@
+[console_scripts]
+bin2text = bintexttools.bin2text:main
+text2bin = bintexttools.text2bin:main
+
