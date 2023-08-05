@@ -1,0 +1,3 @@
+[console_scripts]
+pileups-merge = pileups.pileups_merge:main
+
