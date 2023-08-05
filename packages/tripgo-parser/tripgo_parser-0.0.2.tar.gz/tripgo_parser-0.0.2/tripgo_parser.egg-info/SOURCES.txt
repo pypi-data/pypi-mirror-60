@@ -1,0 +1,13 @@
+README.rst
+setup.py
+tripgo/__init__.py
+tripgo/get.py
+tripgo/helpers.py
+tripgo/multitripgo.py
+tripgo/parse.py
+tripgo/tripgo.py
+tripgo_parser.egg-info/PKG-INFO
+tripgo_parser.egg-info/SOURCES.txt
+tripgo_parser.egg-info/dependency_links.txt
+tripgo_parser.egg-info/requires.txt
+tripgo_parser.egg-info/top_level.txt
