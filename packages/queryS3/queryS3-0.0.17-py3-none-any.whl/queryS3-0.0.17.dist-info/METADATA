@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: queryS3
+Version: 0.0.17
+Summary: Minimum version of query s3 by label
+Home-page: https://github.com/eugenechang2002/AITestResourceLibrary
+Author: Qiao Liu, Everette Li
+Author-email: qiao.liu01@sjsu.edu, everetteli12@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.0
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: nltk
+
+# Example Package
+Github: [AITestResourceLibrary](https://github.com/eugenechang2002/AITestResourceLibrary)
+Project name: queryS3
+This API will retrieve images from S3 based on user's description
+
+
