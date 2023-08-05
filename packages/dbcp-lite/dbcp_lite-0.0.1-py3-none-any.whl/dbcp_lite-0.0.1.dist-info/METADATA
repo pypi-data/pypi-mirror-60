@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: dbcp-lite
+Version: 0.0.1
+Summary: Simple, light and nearly featureless database connection pool
+Home-page: https://github.com/jowage58/dbcp_lite/
+Author: John Wagenleitner
+Author-email: johnwa@mail.fresnostate.edu
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/jowage58/dbcp_lite/issues
+Project-URL: Source, https://github.com/jowage58/dbcp_lite/
+Keywords: database connection pool
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Database
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+
+# DBCP Lite
+
+A simple, light and nearly featureless database connection pool for Python.
+
+Connections are added to the pool as needed up to `max_size` in number.
+Once added the connections will remain in the pool and no attempt is made
+to shrink the pool. In most cases it is recommended to set 
+`min_size == max_size`.
+
+# Usage
+
+```python
+import cx_Oracle
+from dbcp_lite import DBConnectionPool
+
+connect_args = ('scott', 'tiger', 'dbhost.example.com/orcl')
+pool = DBConnectionPool(cx_Oracle.connect, 
+                        create_args=connect_args, 
+                        create_kwargs={'threaded': False}, 
+                        min_size=1, 
+                        max_size=4, 
+                        name='scott@orcl')
+
+with pool.acquire() as connection:
+    ...
+
+with pool.acquire_cursor() as cursor:
+    ...
+
+pool.close()
+```
+
+The `acquire_cursor()` is a convenience method that returns a `Cursor` using a
+`Connection` from the pool. Upon successful completion `commit()` will be
+called on the `Connection` and the `Cursor` will be closed.
+
+## Timeouts
+
+A timeout can be provided to various methods. If no connections are available to
+be `acquired` or `closed` the methods will raise a `PoolTimeout` exception.
+
+# Lifecycle Methods
+
+The following lifecycle methods are called during normal operations and alternate
+implementations can be provided if needed to perform specialized setup or cleanup.
+
+`on_acquire(self, connection)` - no-op
+
+`on_return(self, connection)` - default implementation calls `connection.rollback()`
+
+`on_close(self, connection)` - default implementation calls `connection.close()`
+
+For example, to implement auto-commit:
+
+```python
+pool = ...
+pool.on_return = lambda x: x.commit()
+``` 
+
+
