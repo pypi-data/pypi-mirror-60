@@ -1,0 +1,16 @@
+ipypathchooser/__init__.py,sha256=fYARZAUzpaI5qTGA-Lvga46AHZjrcuekV72Q1pztaHo,268
+ipypathchooser/_version.py,sha256=nZ27WLDG7iROxfHgBuVMdtfmxqkYw-ILLi_ci49Phpk,281
+ipypathchooser/double_click_select.py,sha256=pAh9bDm3pvRJXrexc7Wkb5r0jAuppZAzhLoNfyKmFXA,1638
+ipypathchooser/pathchooser.py,sha256=q3VpIRo3ExmHt9izcBIH-wTcmNpbnURksKi8Vtyergk,11869
+ipypathchooser/utils.py,sha256=avR70PgFnNxN3aBR8gRiFgmEHU_kwgq6oiu_iWWnJ5Q,1307
+ipypathchooser/static/extension.js,sha256=aBInVzAZg0OL6X516_YOyau5dDWORo21Z0oQPWtoqB0,3348
+ipypathchooser/static/index.js,sha256=Oz8sHavtEZLAdiQ07suP8J2GqUZthzdN9pC8Ad8Skss,2767860
+ipypathchooser/static/index.js.map,sha256=Hm3Og4wYBl8oEwZglb5tCB1vMQelb9RzUSMzTDAkITo,3335619
+ipypathchooser-0.1.0a0.data/data/etc/jupyter/nbconfig/notebook.d/ipypathchooser.json,sha256=8p-MRjYKzGB94JeyYTLVUWyEZiw3YHwd2OQS7775bqg,68
+ipypathchooser-0.1.0a0.data/data/share/jupyter/nbextensions/ipypathchooser/extension.js,sha256=aBInVzAZg0OL6X516_YOyau5dDWORo21Z0oQPWtoqB0,3348
+ipypathchooser-0.1.0a0.data/data/share/jupyter/nbextensions/ipypathchooser/index.js,sha256=Oz8sHavtEZLAdiQ07suP8J2GqUZthzdN9pC8Ad8Skss,2767860
+ipypathchooser-0.1.0a0.data/data/share/jupyter/nbextensions/ipypathchooser/index.js.map,sha256=Hm3Og4wYBl8oEwZglb5tCB1vMQelb9RzUSMzTDAkITo,3335619
+ipypathchooser-0.1.0a0.dist-info/METADATA,sha256=ymicBi7Fr4DR1KCrXcrgv5V9S5p4hNDFJSHlF9WeMlI,1026
+ipypathchooser-0.1.0a0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+ipypathchooser-0.1.0a0.dist-info/top_level.txt,sha256=F1CC2zYEIh7JxAHknV_6IvaSzAN-d0_SPSxb7ZKaSgU,15
+ipypathchooser-0.1.0a0.dist-info/RECORD,,
