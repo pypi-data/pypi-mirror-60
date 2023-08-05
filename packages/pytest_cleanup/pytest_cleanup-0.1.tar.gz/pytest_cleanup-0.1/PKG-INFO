@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pytest_cleanup
+Version: 0.1
+Summary: A simple cli-based recorder for Python
+Home-page: https://github.com/jeshan/pytest-cleanup
+Author: Jeshan G. BABOOA
+Author-email: j@jeshan.co
