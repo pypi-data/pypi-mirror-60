@@ -1,0 +1,8 @@
+picklefield/__init__.py,sha256=SszHwmbCKfBHB27EmjeooBvTnOw5BW9ygA11Is-THzo,317
+picklefield/constants.py,sha256=V784xE8gYPQWg7U7r50eXOxu3Oh2nj5mvjZbAwcvm9g,62
+picklefield/fields.py,sha256=tr1lJrYurqXuoFWWQVD1jROusttOQ7VugUnESpuUtMU,8242
+django_picklefield-2.1.dist-info/LICENSE,sha256=IuAtninx00xC18onRTyzXdeOD61964Lm9u4IsNsLmBo,1126
+django_picklefield-2.1.dist-info/METADATA,sha256=hADa84N78N2kcxkGmbn7bTEgh3fvcpsI9PQkkX00E0E,11015
+django_picklefield-2.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+django_picklefield-2.1.dist-info/top_level.txt,sha256=Kbivdax8q70ZIZ0EgambIIRTgshrjo48xhZMIvWgrlU,12
+django_picklefield-2.1.dist-info/RECORD,,
