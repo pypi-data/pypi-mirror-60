@@ -1,0 +1,7 @@
+include README.md LICENSE
+recursive-include dinolemma *
+recursive-exclude .git *
+prune dinolemma/__pycache__
+prune dinolemma/static
+prune docs*
+prune img*
