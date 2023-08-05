@@ -1,0 +1,12 @@
+README.md
+setup.py
+cached_fields/__init__.py
+cached_fields/exceptions.py
+cached_fields/fields.py
+cached_fields/handlers.py
+cached_fields/mixins.py
+django_cached_fields.egg-info/PKG-INFO
+django_cached_fields.egg-info/SOURCES.txt
+django_cached_fields.egg-info/dependency_links.txt
+django_cached_fields.egg-info/requires.txt
+django_cached_fields.egg-info/top_level.txt
