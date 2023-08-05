@@ -1,0 +1,11 @@
+dockerfixtures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dockerfixtures/catalog.py,sha256=SURrT067v0YMme4ZObHaeiPZ4rULJzvKNGErb3mnYIg,3237
+dockerfixtures/container.py,sha256=NgXAfiBU-_-QmGtCP_RLR8lgFqQ9GJ2ufEuATa2N-i0,13861
+dockerfixtures/image.py,sha256=aqvzExpqIjgD8Wg5GOOaMPlcdoqSuq0mMK_Ly8y4-Ao,2180
+dockerfixtures/placeholders.py,sha256=OJYfmGTfVoOoESIKcKCgOrfS3vqIOinjIWP9VXFUt8A,1619
+dockerfixtures-0.1.0.dist-info/COPYING,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+dockerfixtures-0.1.0.dist-info/METADATA,sha256=j157xUbhWkosrl97bAIkCEvKF7V8jqoTG3_tIvNptRk,3950
+dockerfixtures-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+dockerfixtures-0.1.0.dist-info/top_level.txt,sha256=lBKOwAzQthSzRZ3-mpM00XrpUoKEJOfD5NhD6L4_ZZo,15
+dockerfixtures-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+dockerfixtures-0.1.0.dist-info/RECORD,,
