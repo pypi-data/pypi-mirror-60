@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: aljson
+Version: 0.1.0
+Summary: Convert a SqlAlchemy query object to a dict
+Home-page: https://github.com/hrzp/aljson
+Author: Hamid Reza Zarepour
+Author-email: hamid.zarepour.dev@gmail.com
+License: MIT
+Download-URL: https://github.com/hrzp/aljson/archive/0.1.0.tar.gz
+Description: Install
+        =======
+        
+        ::
+        
+            pip install aljson
+        
+        
+        usage
+        =====
+        
+        .. code:: python
+        
+            pass
+        
+Platform: UNKNOWN

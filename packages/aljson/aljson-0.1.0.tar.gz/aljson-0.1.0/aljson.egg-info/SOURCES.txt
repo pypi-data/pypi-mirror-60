@@ -1,0 +1,9 @@
+README.rst
+setup.py
+aljson/__init__.py
+aljson.egg-info/PKG-INFO
+aljson.egg-info/SOURCES.txt
+aljson.egg-info/dependency_links.txt
+aljson.egg-info/not-zip-safe
+aljson.egg-info/requires.txt
+aljson.egg-info/top_level.txt
