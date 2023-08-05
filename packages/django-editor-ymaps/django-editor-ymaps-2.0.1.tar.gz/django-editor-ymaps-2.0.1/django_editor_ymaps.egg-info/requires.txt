@@ -1,0 +1,9 @@
+Django>=2.0
+Pillow
+django-imagekit
+python-slugify
+django-ckeditor@ git+https://github.com/django-ckeditor/django-ckeditor.git
+lxml
+django-ipware
+django-colorful
+django-admin-sortable
