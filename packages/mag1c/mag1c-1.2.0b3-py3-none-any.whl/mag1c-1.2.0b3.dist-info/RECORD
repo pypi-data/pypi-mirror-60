@@ -1,0 +1,12 @@
+mag1c/__init__.py,sha256=XMal8Olq04O0l7FWXF_AVXV_eeQ69PuIO04MXNBK0m0,69
+mag1c/__main__.py,sha256=s4QbDydT0MXjeTPqfVMtu2Ay8Gb-os6CnoxbK2SBsCY,32
+mag1c/ch4.hdr,sha256=LYkxPX0k5oM6zmpTLrXU0-vzeEUr4Gxr8ZecsMKwvqw,424281
+mag1c/ch4.lut,sha256=TMiYYh2bOeZ_mv210ImCNna80v5Fo-JRxVCihIxpc78,1780800
+mag1c/mag1c.py,sha256=ELjaNJlvCQ-MKbj74RfQvdVoUU-Wv3n4tGBv0romyro,61193
+mag1c/version.py,sha256=C-NuQG1sSqPHLp7pbQeaepApF3Cr_amiO_F3ViOs3L4,23
+mag1c-1.2.0b3.dist-info/LICENSE,sha256=irHIjEUBnEplNXqrpOhNYNfzECVA8TbRbDlmnCayA2Y,1595
+mag1c-1.2.0b3.dist-info/METADATA,sha256=SkpjNd-5jmlwQYk5HskSpe-kSNtVgWJQadjLlEU1F7U,6377
+mag1c-1.2.0b3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mag1c-1.2.0b3.dist-info/entry_points.txt,sha256=y8O3CeTMnLXxgryVliAof2AFmjCVpEVXD5n1P3uFiwc,72
+mag1c-1.2.0b3.dist-info/top_level.txt,sha256=ejh3sbuXVgfcjA3bPby3V67jGiiEPFFeKwWKFp4yOJQ,6
+mag1c-1.2.0b3.dist-info/RECORD,,
