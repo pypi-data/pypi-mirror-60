@@ -1,0 +1,3 @@
+[console_scripts]
+piqok = piqok.piqok:main
+
