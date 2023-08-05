@@ -1,0 +1,4 @@
+[console_scripts]
+smfish_read_config = smfish_image_processing.smfish_read_config:main
+smfish_step1_setup = smfish_image_processing.smfish_step1_setup:main
+
