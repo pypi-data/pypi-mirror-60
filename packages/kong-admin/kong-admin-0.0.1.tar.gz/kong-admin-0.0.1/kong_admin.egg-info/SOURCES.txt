@@ -1,0 +1,8 @@
+README.rst
+setup.py
+kong_admin/__init__.py
+kong_admin.egg-info/PKG-INFO
+kong_admin.egg-info/SOURCES.txt
+kong_admin.egg-info/dependency_links.txt
+kong_admin.egg-info/requires.txt
+kong_admin.egg-info/top_level.txt
