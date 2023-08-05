@@ -1,0 +1,9 @@
+marmot/__init__.py,sha256=EB9DyTToWSoy4KCHBfld38ih_yZLi4K-ek_mp2BKCsg,25
+marmot/base_model.py,sha256=1OLj5t82gveCuewvgz31SQZEkXk24y4nIrUmvHPaM68,8599
+marmot/ensemble_model.py,sha256=Mwgh0fbfqeoSQnROPFVZ2y51c0wWk5pCqtX8QRWf508,5774
+marmot/preprocess.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+marmot/util.py,sha256=ozi9HcuXMxIL0p72uxqqb2ximk6asjzJV504qCRKrfE,765
+marmot-0.1.2.dist-info/LICENSE,sha256=8PsSbdLiZkEKtCK4-mEKF2HO6Y58QCC401E6duHC9fY,1085
+marmot-0.1.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+marmot-0.1.2.dist-info/METADATA,sha256=B_mRzx7pALtdKX_XJlFdYAQaNSgYhZH4Jrdfo4qJ1a4,1209
+marmot-0.1.2.dist-info/RECORD,,
