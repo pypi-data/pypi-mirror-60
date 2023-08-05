@@ -1,0 +1,6 @@
+netCDF4
+numpy
+pandas
+refet>=0.3.7
+scipy>=1.1.0
+xarray
