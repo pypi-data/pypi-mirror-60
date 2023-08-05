@@ -1,0 +1,17 @@
+apd/sensors/__init__.py,sha256=j1-bN_VZExs-u1BflO4MA-2nY5KM66mpuQ5jNZKyJe8,19
+apd/sensors/base.py,sha256=5kXEsO1NQFCbH-HgQyUNVIpynV3B5J_JAvh-stnOmmc,1638
+apd/sensors/cli.py,sha256=vutL-4fXs0cGHX2SZHyxfUbIe_E9fa6v9S5kQ3cXJSA,2089
+apd/sensors/sensors.py,sha256=U4CR4Ux9OKLhjpUWbVMc8e5zDp2a1m0rcr2X9avSJ7I,6206
+apd/sensors/third_party_wsgi.py,sha256=w5MbhPQ7BCCBfchNKMSLGRe_Nl21ay4hst3fnmW_mVk,2391
+apd/sensors/wsgi/__init__.py,sha256=R_D5qRCwXiVP8BH6Poeg7IkxuAAZhlHBfrce8Y46jGs,351
+apd/sensors/wsgi/base.py,sha256=OApHgjBnV2DG57Bvsej3gVnmyo06HyUB5MWWCbHZQBQ,1342
+apd/sensors/wsgi/serve.py,sha256=74cYbjrG8-oULAjX7OXkmeLY-SZv4CEYTrRjTx3DOyk,252
+apd/sensors/wsgi/v10.py,sha256=rfsb1VuUlWMLDwmJnivqpk3ZMnJZQJlXRu46GO1sPAo,697
+apd/sensors/wsgi/v20.py,sha256=nXVWuj6TpNoqW6wtlwGu_PnASTMwD7z8CeZcSRB_GtM,974
+apd/sensors/wsgi/v21.py,sha256=lGuJ08ElAmEvKau0OEbLV-4-CA6iZlQXhP30SY0z-m8,1269
+apd.sensors-2.1.0.dist-info/LICENCE,sha256=lzVVcjMxpC8mfWNgu5Yo2LinWiGXrolzLIXmMgS0Dk0,1077
+apd.sensors-2.1.0.dist-info/METADATA,sha256=RWDiF3sgBHvpgu9IpaBtnMpKokl93dzU__TdjZc-wig,4439
+apd.sensors-2.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+apd.sensors-2.1.0.dist-info/entry_points.txt,sha256=LeThG9_m35mmZA6ZPiuvzHImN8htIa_kpX9GyGkfgg8,405
+apd.sensors-2.1.0.dist-info/top_level.txt,sha256=gOmxYqb1tjWfzMT5-Aiv1QRAkJmvvsCUYeVQxwGBX7I,4
+apd.sensors-2.1.0.dist-info/RECORD,,
