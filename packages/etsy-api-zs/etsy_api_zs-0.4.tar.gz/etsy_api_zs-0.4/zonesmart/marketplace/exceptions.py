@@ -1,0 +1,2 @@
+class CreateChannelException(Exception):
+    pass
