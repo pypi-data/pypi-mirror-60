@@ -1,0 +1,10 @@
+bump2version
+coverage
+flake8
+pip
+pytest-runner
+pytest
+tox
+twine
+watchdog
+wheel
