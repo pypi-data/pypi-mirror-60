@@ -1,0 +1,19 @@
+sudo: false
+language: python
+python:
+- '3.6'
+install:
+- pip install pipenv
+- pipenv install --dev --three
+script:
+- flake8
+- pytest --cov=paragraph --cov-branch --cov-report=xml
+deploy:
+  provider: pypi
+  user: "__token__"
+  password:
+    secure: "h61D+hU+qNAPfpulMT6QXXTgf8kr9hSOhW6kLjrqobjdsXMx5VzF1gYjNbSbQuHEgC+VtPyeASJ1kZUDWcyOIzJ3w1wHdzS7OtapXLWQ5iPJ+UgjEfFZ5h3p0XmeN5Viqw4pJGLRXJ383CY3cUtiRTlwUJ9Tg6TRaiJ1niUHEQG2zdKp75u0Jm9/BDKgXPhugJGHUsWr2pAzezPhqbcKGp4Z9uj2DkJnW/1eugt890FdDKYmUN/akyMDbjBjG2e2XrpKVvqEhKy8ryVBCjRY4BaUshF+lqkB5/7gGIf/7kl9O1lKIX1f7lxNCel9pnAgjjGiioouqvbghEWtzger54JuKEfdozMF6dEr3QM8vi89YV6HnBNeNODGeVfpyvc4o4vXxSFHYgz+uiztzgkqr0EhOKA4zF7AQ6+6HxLWVDpsZEqvmSTQ94dT6H/xqYNr6MBlZpzbnC7nn6QBZUStGUe5hL8s8+5Qp0mu/5OLMBtq+wp/43K8g/jb26mDkAZ3jkYpzPzXae8ZB2jyfSORB0hJWjUfj3P5TDpjg3Qu3SblLjaXAjvswDIo2TO77TOon1pL5VO/gpsLJbB2daCpV9hCx4K1OJ3o0CC7bZLYrGhwySSMVfvH7sfg4D2TrGodlKHy1uWVA2rRtaWFrx5MUIW5cZM6T+G7pmdU6Zc5ZsE="
+  on:
+    tags: true
+after_success:
+- python-codacy-coverage -r coverage.xml
