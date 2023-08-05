@@ -1,0 +1,7 @@
+README.md
+setup.py
+jupyter_module_loader/__init__.py
+jupyter_module_loader.egg-info/PKG-INFO
+jupyter_module_loader.egg-info/SOURCES.txt
+jupyter_module_loader.egg-info/dependency_links.txt
+jupyter_module_loader.egg-info/top_level.txt
