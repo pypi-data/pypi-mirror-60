@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gamesolver
+Version: 0.0.1
+Summary: A solver of 2-player games
+Home-page: https://github.com/Ant1ng2/Gamesolver
+Author: Anthony Ling
+Author-email: acling2k@gmail.com
+License: UNKNOWN
+Description: # TicTacToe
+        
+        Run from the root directory of the repository
+        ```
+        cd TicTacToe
+        python3 Tic.py
+        ```
+        To start a 3-row game against the AI.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
