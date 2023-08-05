@@ -1,0 +1,9 @@
+ddbimp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddbimp/cli.py,sha256=CQR7l3HleNV5oW-RjHt_NY5PR6kG-ubThap8dCRAgFc,981
+ddbimp/importer.py,sha256=cpY8uaXuucwotd-HzqKT0caUjHfU6VE4-f7DJumpH24,2040
+ddbimp-0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ddbimp-0.3.dist-info/METADATA,sha256=GsXynySDxOjgctohLIxh8hJ_hiUBffQL7XQQWtV-umk,3377
+ddbimp-0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ddbimp-0.3.dist-info/entry_points.txt,sha256=c5Zl6QE7sE82eGWMnxnHEvJZGByF5cgO2QinRf5JR4Y,44
+ddbimp-0.3.dist-info/top_level.txt,sha256=gGxRiZRHgyN1R3YAsaNbgNCHElAgvk0ggWUeQWzgQo4,7
+ddbimp-0.3.dist-info/RECORD,,
