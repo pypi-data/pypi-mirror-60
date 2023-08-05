@@ -1,0 +1,17 @@
+MANIFEST.in
+README.txt
+setup.py
+XStatic_Moment_Timezone.egg-info/PKG-INFO
+XStatic_Moment_Timezone.egg-info/SOURCES.txt
+XStatic_Moment_Timezone.egg-info/dependency_links.txt
+XStatic_Moment_Timezone.egg-info/namespace_packages.txt
+XStatic_Moment_Timezone.egg-info/not-zip-safe
+XStatic_Moment_Timezone.egg-info/top_level.txt
+xstatic/__init__.py
+xstatic/pkg/__init__.py
+xstatic/pkg/moment_timezone/__init__.py
+xstatic/pkg/moment_timezone/data/moment-timezone-with-data-2012-2022.js
+xstatic/pkg/moment_timezone/data/moment-timezone-with-data-2012-2022.min.js
+xstatic/pkg/moment_timezone/data/moment-timezone-with-data.js
+xstatic/pkg/moment_timezone/data/moment-timezone-with-data.min.js
+xstatic/pkg/moment_timezone/data/moment-timezone.min.js

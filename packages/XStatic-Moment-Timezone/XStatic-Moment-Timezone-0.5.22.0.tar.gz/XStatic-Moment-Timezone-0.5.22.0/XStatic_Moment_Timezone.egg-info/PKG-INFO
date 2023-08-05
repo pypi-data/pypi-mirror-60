@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: XStatic-Moment-Timezone
+Version: 0.5.22.0
+Summary: Moment-Timezone 0.5.22 (XStatic packaging standard)
+Home-page: https://github.com/moment/moment-timezone
+Maintainer: Michal Arbet
+Maintainer-email: michal.arbet@ultimum.io
+License: (same as Moment-Timezone)
+Description: XStatic-Moment-Timezone
+        --------------
+        
+        Moment-Timezone JavaScript library packaged for setuptools (easy_install) / pip.
+        
+        This package is intended to be used by **any** project that needs these files.
+        
+        It intentionally does **not** provide any extra code except some metadata
+        **nor** has any extra requirements. You MAY use some minimal support code from
+        the XStatic base package, if you like.
+        
+        You can find more info about the xstatic packaging way in the package `XStatic`.
+        
+        
+Keywords: moment_timezone xstatic
+Platform: any
+Description-Content-Type: text/markdown
