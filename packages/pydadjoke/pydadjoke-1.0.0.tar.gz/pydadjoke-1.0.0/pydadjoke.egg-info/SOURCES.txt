@@ -1,0 +1,10 @@
+README.md
+setup.py
+pydadjoke.egg-info/PKG-INFO
+pydadjoke.egg-info/SOURCES.txt
+pydadjoke.egg-info/dependency_links.txt
+pydadjoke.egg-info/entry_points.txt
+pydadjoke.egg-info/requires.txt
+pydadjoke.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
