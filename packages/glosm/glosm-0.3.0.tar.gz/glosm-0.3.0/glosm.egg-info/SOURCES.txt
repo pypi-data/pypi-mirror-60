@@ -1,0 +1,11 @@
+README.md
+setup.py
+glosm/__init__.py
+glosm/cli.py
+glosm/core.py
+glosm.egg-info/PKG-INFO
+glosm.egg-info/SOURCES.txt
+glosm.egg-info/dependency_links.txt
+glosm.egg-info/entry_points.txt
+glosm.egg-info/not-zip-safe
+glosm.egg-info/top_level.txt
