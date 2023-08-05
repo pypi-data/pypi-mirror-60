@@ -1,0 +1,10 @@
+astropy<4
+astropy>2
+numpy
+scipy
+emcee<3
+ptemcee
+matplotlib
+corner
+h5py
+deprecation
