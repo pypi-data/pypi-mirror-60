@@ -1,0 +1,4 @@
+pyspark
+click
+jinja2
+pathlib>1.0.0
