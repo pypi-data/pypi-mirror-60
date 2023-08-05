@@ -1,0 +1,14 @@
+pod_base/__init__.py,sha256=z4CUXL4LwRh2sfwe0DpPuxG-CHa9X4rucqO_yx9_LoA,212
+pod_base/base.py,sha256=7BWlmUDZNPUi8YJCUIAmE32wNnV5ZI8Xmzm5u7vXEwg,4711
+pod_base/config.ini,sha256=TJhkHkfDukxl7KIcGeAcJBOxKqpRrEZ4hQUGce3Eoss,357
+pod_base/config.py,sha256=QqDGgzYW_JYemTc_z6TwT-IAcDx7TxwWESdAJJx8ITc,1038
+pod_base/exceptions.py,sha256=veCGs8PN9UaiJSW0dIZlHTLKT-uMLbN3eMe_tbNCs_Y,2079
+pod_base/json_schema.py,sha256=Y408jitGEnsNiBY0uYOrEQPvb7JnKFCWKokcCtHE5FI,750
+pod_base/request.py,sha256=LW-xo1drKZOME361zvLQyFeuWCjUGL6UCdvb3LtH3Q8,4456
+pod_base/servicecall.py,sha256=7zPJziOWjPaMcnXwFTNAUB8swrZeSOSMU81hqo7I6UY,3314
+pod_base/version.py,sha256=2plzdEEb24FLjE2I2XyBBcJEPYWHccNL4SgtLC_6erg,22
+pod_base-1.0.3.dist-info/LICENSE,sha256=raj9px8_cKcZYQYhL3J_LY-_1hP4Lrkyrj5Um-ajWzI,1066
+pod_base-1.0.3.dist-info/METADATA,sha256=NLWOsKf_3ljut09V3ZuKI-O_g6YOuGLtdzodssxZ7dM,1349
+pod_base-1.0.3.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+pod_base-1.0.3.dist-info/top_level.txt,sha256=e8INheJSI2o589xSSNtN6zrerG-YLaLmOAdWx5HwW-w,9
+pod_base-1.0.3.dist-info/RECORD,,
