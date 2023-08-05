@@ -1,0 +1,7 @@
+structlog_to_seq/__init__.py,sha256=4BbMe7VyB-aXtHb9cNRCD01hJsJnVAVdRHNkWneQeRU,95
+structlog_to_seq/abs_processor.py,sha256=CErxNrPKDUt8rTeRsX1Tk4tSm53ALHQIhGKwGUxckWk,253
+structlog_to_seq/celf_processor.py,sha256=FbF5mku16SV2JQRjPiYXqXFGe7-PUCtnnCjLgDActzQ,3398
+structlog_to_seq-0.1.0.dist-info/LICENSE,sha256=MvkcpKKfxsruwvwRmp8S9JMexbVF7BmFvym0JhNivxk,1073
+structlog_to_seq-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+structlog_to_seq-0.1.0.dist-info/METADATA,sha256=kJIirOv45BgrsGFsZNdhzC6Ps5vCdaSjaHla074S100,495
+structlog_to_seq-0.1.0.dist-info/RECORD,,
