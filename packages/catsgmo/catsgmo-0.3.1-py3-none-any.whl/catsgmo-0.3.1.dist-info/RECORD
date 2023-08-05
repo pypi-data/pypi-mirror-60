@@ -1,0 +1,12 @@
+catsgmo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+catsgmo/main.py,sha256=-gfTvvokvU3NNVtOPIVmOwTT4MLfA8g9HZuJLai6_5g,1090
+catsgmo/site/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+catsgmo/site/demo_stock_binary.py,sha256=iU8IR_2yTJzDoxxYmPR3H1X49AAIIF9LGbEpESiFlpw,14388
+catsgmo/worker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+catsgmo/worker/demo_stock_binary.py,sha256=xopl8Jvj8rPbBu7E2ZIKe6T_UtAicKZ7ilqT1wsA_Zs,2091
+catsgmo/worker/output.py,sha256=QN-x-iw4OFakfm6BzEUIUkYKYkmL1bj4ismOq2wfVDc,1101
+catsgmo-0.3.1.dist-info/METADATA,sha256=Z2IHlrjcYWKiEaI-LCdCkxgJoBKvB9_RONxK_nCByDM,1314
+catsgmo-0.3.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+catsgmo-0.3.1.dist-info/entry_points.txt,sha256=t1AdIhiL1lCINZSiHsDKnam5eg_jWSvxlnHSzM4eIrk,47
+catsgmo-0.3.1.dist-info/top_level.txt,sha256=QE5JNaZLDzj4HoK3LETCza83x3woEPw2Pu5s7e06a_o,8
+catsgmo-0.3.1.dist-info/RECORD,,
