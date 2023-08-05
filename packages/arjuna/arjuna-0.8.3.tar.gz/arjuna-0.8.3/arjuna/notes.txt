@@ -1,0 +1,337 @@
+Progress
+-------
+Working examples:
+y01 - launch chrome
+y02 - .arjuna_option(firefox details)
+y03 - .firefox()
+y04 - firefox based on project conf
+y05 - headless chrome, extended driver config
+y06 -> getting arjuna property from project conf using a.b.c and A_B_C and as_* value methods.
+y07 -> programmatic user options
+y08 -> user options from project config
+y09 -> basic identifiers. link_ptext needs to be fixed.
+y10 -> xpath examples
+y11 -> css examples
+y12 -> Extended identifiers work (which are not commented in example code.)
+y13 -> OR relationship works
+y14 -> HardCoded.sleep works
+y15 -> Basic element interactions work.
+y16 -> auto finding and state checking works for basic interactions.
+y17 -> multielement works.
+y18 -> Java script execution works
+y19 -> alerts work
+y20 -> Basic window handling works
+y21 -> Window with title, partial title and content locator works. check notes for the found issue.
+y22 -> Frame handling works.
+y23 -> Dropdown works. (Performance is slow. investigate.)
+y24 -> RadioGroup logic works.
+y25 -> Named arg formatting, case-insensitive works.
+y26 -> With.javascript works as expected for success and failure scenarios (single element)
+y27 -> With.javascript works as expected for success and failure scenarios (multi element)
+y28 -> Pre state check works for basic element.
+y29 -> Dropdown pre state check off works.
+y30 -> custom dropdown works (example - Bootstrap dropdown control)
+y31 -> Needs work on Narada side for suitable example controls
+y32 -> All source retrieval works.
+
+GNS
+- Simple app abstraction - Done
+- Simple GOM - Done
+- Composite GOM - Done
+- Single context GNS. Make it the default. - Done
+- Check parameterization for identifier pulled from GNS - Done
+
+Action Chains (In progress)
+---------------------------
+- As of now introducing the following actions without explicit action chain creation:
+    GuiElement methods
+        - hover
+        - hover_and_click
+
+Fine Tuning
+-----------
+Done
+- User defined options can be provided as any enum constant. 
+- User defined options can be provided as any enum constant.
+- Concept of lenient interaction introduced
+    - It is observed that although selenium returns is clickable true, element may yet not be clickable.
+    - Arjuna post checking clickability, also executes lenient clicking.
+Pending
+- In the CGOM example, introduce loc enum in page
+- In example code introduce user defined option as enum
+- Change element names to valid python names.
+- Normalise element names so that _ and - can be used interchangeably. 
+    Replace with space in storing and retrieving.
+- Introduce 'hold' method in Gui interaction components. It should wait for enter key. input("Press enter to continue")
+
+Next Features on Priority
+-------------------------
+- ActionChains
+- unittest core support -> HtmlRunner, Test Suite building.
+- WebDriverManager
+- Support for loading conf from a file. E.g. env based multiple conf files.
+- Make wait configurable on a per element level. Configure method.
+
+GNS Desirables
+---------------
+- Introduce equivalent of LoadableComponent logic.
+- Extract with mechanism for pages and separate from the generic logic. It is getting too complicated.
+- An identifier should explicitly look for parameter value:
+    - $kw.abc$ -> This should directly come from With.format() provided keywords.
+    - $dd.abc$ -> This should come from data that is provided to the test.
+    - $l10n.abc$ -> This should come from localizer.
+    - $conf.abc$ -> This should come from config attached to the automator for which this namespace is loaded.
+    - $abc$ -> This will be the least performing but should work. 
+        This should auto look up in the above sequence.
+
+    - Introduce a configuration option where the lookup order can be configured.
+    - There should be a provision where a certain lookup can be completely switched off.
+        E.g. if there is no localizer then that should not be there in the lookup object.
+    - One thought is that you can create a Intrapolator class for this.
+        Each GuiDef can have an intrapolator object attached to it.
+
+Check support for OR AND parameterized identifiers
+
+Localizer
+---------
+Add localizer
+
+Deferred and Reason
+-------------------
+Concept of Intent and Expression.
+Intent is what a test wants to do -> typically it should talk business.
+Expression is technical implementation -> e.g. ExpressViaWebUI. ExpressViaMobileUI. ExpressViaWebSvc. ExpressViaDB.
+
+Notes for any needed fixes and changes
+-------------------------------------
+Names of CLI options to be changed to baseline and extended
+CLI ->
+aro
+uro
+aeo
+ueo
+
+1. Arjuna identifiers:
+- Add support for new identifiers.
+
+2. With.CLASS_NAMES --> Shouldn't we have just one identifier. instead of 2
+- remove With.CLASS_NAME?
+
+3. Setu Log is being created - get rid.
+4. arjuna-py.log --> rename to arjuna.log
+5. include timestamp for arjuna log.
+
+6. Test when different values in sample code are provided as Values rather than as_* conversion.
+    The errors should tell -> expecting str/int etc instead of AnyRefValue.
+    OR those methods at the correct layer should convert it to the expected value type and use.
+
+7. JS execution works and because of local exec can return objects as well. 
+    - should evaluate whether return this object as AnyRefValue makes sense?
+
+8. Window handling logic needs to be checked for stability with content locator. 
+    Wait time should be overall wait time. Needs to be checked.
+    Also check open windows at any point in time.
+    May be we should check for window readiness and page load when a new window is launched using JavaScript.
+
+9. Look at dropdown logic in terms of number of inquiries sent to the browser
+    With XML parsing in place. It should be very quick. 
+    Evaluate.
+
+10. Create Arjuna Named Exceptions:
+    - The exception from the tool or other relevant exceptions should be seen in the dig deeper details.
+    - Element Finding -> IdentificationError
+    - With.JS: Description should mention about the problem.
+    - 
+
+11. Text case insensitive? by default off. For on more processing is needed so expectation should be set accordingly.
+
+12. Check the dispatcher object in case of select control for options. is it set to automator or element.
+
+Planned Features
+Element Configuration (code and gns)
+    - Support at automator level.
+    - Support at configuration level
+Advanced Frame related functionality - In Progress
+    - Enumerating immediate frames at Dom Root and Frame level
+    - Content based frame finding for immediate child frames
+Action Chains - Named method for common interactions - In progress
+    - Invoker-side interfaces and classes - Mostly done
+    - Impl and dispatcher pending
+    - Look for Pythonic opportunities in Invoker api
+Nested Elements support
+More waits
+    wait for Absence, Invisible and Disabled
+
+ - Create a a method in Gui and GuiAutomator, it should also be able to take a callable and its args. Possibly for recording option to be run in a second thread. launch a tool, whatever.
+
+Map valid With options to tpye of component. Clear exceptions with troubleshooting to be coded.
+Explicit wait in Arjuna Setu for Frames and Windows, which works under the total limit of gui max wait.
+Classification of Errors and Exceptions
+Single Context GNS
+    Should be the default context
+Element configuration support in GNS
+AND relationship for code and gns
+Option to enable proxy in Selenium dispatcher
+Taking screenshot - automator level, rect, element, elements
+Frame config: should be able to change the iframe to e.g. object. Enumerate frames should take an optional argument of With and do a multielement match instead of the default With.INDEX used internally.
+File based configuration load_from_code_file
+    coded
+    pytest or unitee session file should support this
+    CLI
+Add support for envioronment variables to be consumed in configuration
+Overridabiliy and visibility of configuration options ---> This needs to be implemented before CLI can be discussed: Following are the levels for which it should be clearly defined. Preferrably all configuration settings should be documented as matrix with the mapping:
+    Project.conf
+    Programmatic
+    CLI - Reference
+    CLI - Extended
+Data Reference
+
+
+Phase 3 - Additional Abstractions and Features for Selenium - 24 Dec, 2019 (Jan 1 2020 - 1.0 First production Release)
+Navigation bar menu Abstraction
+WebTable Abstraction
+MultiElement filters
+    ignore
+    consider
+WebDriver Manager
+JavaScript
+    Sending primititve args to Javascript
+    Sending element to JavaScript
+Support for Multi-select Dropdown list
+Default type checking for enter/set text, check/unckeck, toggle operations etc.
+Optimization of option level or radio button level state and attribute checking in DropDown and RadioButton abstractions
+
+Phase 4 - March 31, 2019 (In Parallel to Next Feature Section)
+Documentation
+    Configuration Options
+    Bindings documentation
+Documentation
+    FaaST protocol
+    Create a sharable Postman collection for FaaST
+
+Extended Arjuna Features, Python Bindings and Corresponding Support in Arjuna
+Phase 1 - March 31, 2019
+    Completion of Python Bindings in alignment with Java Bindings
+    Create a list and high level doc of what is expected from Bindings currently
+    List the features here and track feature wise completion after critical testing
+    Logger as Service
+Visualization of requests & responses
+UniTEE reporter
+    Treeview
+    Summary
+    See whether html5.Treeview helps?
+
+Phase 2 - Tentatively a 6 month schedule
+    Arjuna Web Interface
+    Need help from community contributor who knows web development
+    Arjuna as a Remote Service
+    Jenkins and GitHub integration
+    Arjuna docker Image
+
+
+What SetuSvc used to do:
+
+    def __register_test_session(self, root_dir, cliConfig=None):
+        handler = TestSessionHandler()
+
+        config = handler.init(root_dir, cliConfig)
+        SetuSvcObjectManager.register_testsession_handler(handler)
+        out = {
+            'testSessionSetuId': handler.setu_id,
+            'configSetuId': config.setu_id,
+
+        }
+
+        out.update(config.as_json_dict())
+        return out
+
+    def _handle_configurator_action(self, ts_handler, action_type, json_args):
+        return ts_handler.conf_handler.take_action(action_type.name, json_args)
+
+    def _handle_data_source_action(self, ts_handler, action_type, json_args):
+        return ts_handler.datasource_handler.take_action(action_type, json_args)
+
+    def _handle_gui_automator_action(self, ts_handler, action_type, json_args):
+        if action_type == GuiAutoActionType.LAUNCH:
+            config = ts_handler.conf_handler.configurator.get_config(Handler.get_config_setuid(json_args))
+            automator_handler = GuiAutomatorHandler(ts_handler.dispatcher)
+            automator_handler.launch_automator(config, **json_args)
+            ts_handler.register_gui_automator_handler(automator_handler)
+            return {'automatorSetuId' : automator_handler.setu_id}
+        elif action_type == GuiAutoActionType.QUIT:
+            handler = ts_handler.get_automator_handler(json_args)
+            handler.quit_automator()
+            ts_handler.deregister_gui_automator_handler(handler) 
+        else:
+            gui_setu_id = json_args.get("guiSetuId", None)
+            handler = None
+            if gui_setu_id is not None:
+                handler = ts_handler.get_gui_handler(json_args)
+            else:
+                gui_automator_setu_id = json_args.get("automatorSetuId", None)
+                if gui_automator_setu_id is None:
+                    raise Exception("For gui component action either guiSetuId or automatorSetuId must be provided.")
+                handler = ts_handler.get_automator_handler(json_args)
+            return handler.take_action(action_type, json_args)
+
+    def _handle_gui_action(self, ts_handler, action_type, json_args):
+        automator_handler = ts_handler.get_automator_handler(json_args)
+        return ts_handler.gui_manager.take_action(automator_handler, action_type, json_args)
+
+
+You need to see the following in relation to With object which is now directly used
+in client API instead of a web service call:
+
+    def define_element(self, locators):
+        elem = self.automator.create_element(GuiElementMetaData.createEMD(locators))
+        return {"guiComponentSetuId" : elem.setu_id}
+
+    def define_element_with_emd(self, emd):
+        elem = self.automator.create_element(emd)
+        return {"guiComponentSetuId" : elem.setu_id}
+
+Also look at the following take element action api:
+
+    def take_element_action(self, action, json_dict):
+        elem_setu_id = self.get_element_setuid(json_dict)
+        self.automator.slomo()
+        instance_action = False
+        if "isInstanceAction" in json_dict:
+            instance_action = json_dict["isInstanceAction"]
+            del json_dict["isInstanceAction"]
+        if instance_action:
+            index = json_dict["instanceIndex"]
+            del json_dict["instanceIndex"]
+            multi_element =  self.automator.get_multielement_for_setu_id(elem_setu_id)
+            element = multi_element.get_instance_at_index(index)
+        else:
+            element =  self.automator.get_element_for_setu_id(elem_setu_id)
+        return getattr(ElementHandler, action)(element, **json_dict)
+
+Evaluate the following drop down methods:
+class DropdownHandler:
+    @classmethod
+    def configure(cls, dropdown, elementConfig):
+        dropdown.configure(elementConfig)
+
+    @classmethod
+    def set_option_locators(cls, dropdown, locators):
+        dropdown.set_option_locators(GuiElementMetaData.createEMD(locators))
+
+    @classmethod
+    def set_option_container(cls, dropdown, locators):
+        dropdown.set_option_container(GuiElementMetaData.createEMD(locators))
+
+Following window method:
+    @classmethod
+    def define_child_window(self, window, locators):
+        print(locators)
+        return {"guiComponentSetuId" : window.define_child_window(GuiElementMetaData.createEMD(locators)).setu_id}
+
+
+Following Frame method:
+    @classmethod
+    def define_frame(cls, dom_root, locators):
+        return {"guiComponentSetuId" : dom_root.create_frame(GuiElementMetaData.createEMD(locators)).setu_id}
+
+
