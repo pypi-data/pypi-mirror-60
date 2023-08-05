@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: convert-videos
+Version: 2.0.0
+Summary: This tool allows bulk conversion of videos using ffmpeg
+License: MIT
+Author: Justin Dray
+Author-email: justin@dray.be
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: colorama (>=0.4.3,<0.5.0)
+Requires-Dist: ffmpy (>=0.2.2,<0.3.0)
+Requires-Dist: video_utils (>=2.0.3,<3.0.0)
