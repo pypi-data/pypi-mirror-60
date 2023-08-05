@@ -1,0 +1,12 @@
+doctalk/__init__.py,sha256=IG_IZL2oEpzfLfgfa2vFOM5ekier7KO-ENYT5kHh_60,68
+doctalk/nlp.py,sha256=nrK2yTEgTpH1kg8KsbP6uXBiWwtvLpm8ZEe2lWeyXiw,2403
+doctalk/params.py,sha256=uXqjEthgDB3aB9eSJBrzN29oyHVeVuEoVG71KUQLGFM,657
+doctalk/query.py,sha256=JDeTnyCc_X6DWKQbuGvTiJ34lUxvKBEHQGXapacbSfE,5762
+doctalk/sim.py,sha256=FqGJ6AqpHDEHZe4ouUQ6ibwz5dZGG2EQmOCzkVDKFZs,1984
+doctalk/talk.py,sha256=TssdDNwLpZwOM7rLJNSiHF8fAsT9PH-Sflv9gNeEHOo,14561
+doctalk/vis.py,sha256=Epzn13QnsNJHIKAlSUBlxLOPlgwgjQwSA4WWGFxKp4o,1500
+doctalk-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+doctalk-0.0.5.dist-info/METADATA,sha256=CAGykiZIWxWHA_OJEyuML7TGYsYJb4VpZjmota2HZeQ,1131
+doctalk-0.0.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+doctalk-0.0.5.dist-info/top_level.txt,sha256=EmMxIE9Bo6CcKbIwgai7UnBVK4PoiBgE6iQFOLTwqTA,8
+doctalk-0.0.5.dist-info/RECORD,,
