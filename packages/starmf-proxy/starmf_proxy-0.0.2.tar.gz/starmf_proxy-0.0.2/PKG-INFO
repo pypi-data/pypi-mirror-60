@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: starmf_proxy
+Version: 0.0.2
+Summary: Starmf Proxy Package
+Home-page: https://gitlab.com/thinkmf/starve_proxy
+Author: Vijay
+Author-email: vijayamadhavareddy@gmail.com
+License: UNKNOWN
+Description: startmf proxy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
