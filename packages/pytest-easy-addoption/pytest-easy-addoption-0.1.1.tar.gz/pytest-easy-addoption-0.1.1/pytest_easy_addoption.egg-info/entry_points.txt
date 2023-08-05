@@ -1,0 +1,3 @@
+[pytest11]
+pytest-easy-addoption = _pytest_easy_addoption.plugin
+
