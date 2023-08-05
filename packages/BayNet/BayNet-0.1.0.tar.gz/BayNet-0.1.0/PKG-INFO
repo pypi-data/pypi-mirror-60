@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: BayNet
+Version: 0.1.0
+Summary: (another) Python Bayesian Network library
+Home-page: https://github.com/Stoffle/BayNet
+Author: Chris Robinson
+Author-email: c.f.robinson@sussex.ac.uk
+License: UNKNOWN
+Description: # BayNet
+        
+        Wrapper around python-igraph's `Graph` class specifically for Bayesian Networks.
+        
+        Current features:
+        - Conditional probability tables (parameters for discrete variable networks)
+        - Discrete network sampling
+        
+        Future features:
+        - CPT learning (maximum likelihood)
+        - Dag <-> CPDAG methods
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: ci
+Provides-Extra: dev

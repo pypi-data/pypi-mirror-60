@@ -1,0 +1,11 @@
+README.md
+setup.py
+BayNet.egg-info/PKG-INFO
+BayNet.egg-info/SOURCES.txt
+BayNet.egg-info/dependency_links.txt
+BayNet.egg-info/requires.txt
+BayNet.egg-info/top_level.txt
+baynet/__init__.py
+baynet/metrics.py
+baynet/parameters.py
+baynet/structure.py
