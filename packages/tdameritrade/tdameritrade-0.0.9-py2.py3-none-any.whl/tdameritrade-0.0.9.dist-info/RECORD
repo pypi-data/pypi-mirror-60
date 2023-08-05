@@ -1,0 +1,12 @@
+tdameritrade/__init__.py,sha256=_82ipWulafN_hkfYnOkcgT9lKaBKto83AXxto6PIXMc,91
+tdameritrade/_version.py,sha256=ndCSWTQgwoIBGTVBzEbsvTBLMc6AExnkf6nSkuBZHkw,581
+tdameritrade/client.py,sha256=Il5pvG8hnZ3I8z38XRi94mo4_K7V6z11TIyRVEbFzac,4456
+tdameritrade/urls.py,sha256=6j5Y7qTl-wsrdc4SMBRuDkt7TM8guY527GWCjw-eUf0,292
+tdameritrade/auth/__init__.py,sha256=VBwIOVIMZD99nizLo2ToG1bJSZqiBKtv607aXiUm_I4,3935
+tdameritrade/auth/__main__.py,sha256=nQGCRmKEHQjNN-q9ibDqGd2nr4QyLvbur7uHNKwDDhc,61
+tdameritrade-0.0.9.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tdameritrade-0.0.9.dist-info/METADATA,sha256=sWc4NKyJZREHCgSU5rb6vDwWY67btOQdIIC26GabCx8,2158
+tdameritrade-0.0.9.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+tdameritrade-0.0.9.dist-info/entry_points.txt,sha256=GYrP7ZQVfchIu_oktIUpzzcXa4lU1HKD95y38pXZhIQ,62
+tdameritrade-0.0.9.dist-info/top_level.txt,sha256=6XkuiGY1qkSS8BVc8a4SD5_WY0Kjp6XgbNWNBhQerZk,13
+tdameritrade-0.0.9.dist-info/RECORD,,
