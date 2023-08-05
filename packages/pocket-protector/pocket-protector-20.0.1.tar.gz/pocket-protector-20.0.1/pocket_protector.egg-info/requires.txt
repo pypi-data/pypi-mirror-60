@@ -1,0 +1,6 @@
+attrs
+boltons
+PyNaCl
+ruamel.yaml
+schema
+face>=20.1.1
