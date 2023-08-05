@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+iscard/__init__.py
+iscard/__main__.py
+iscard/core.py
+iscard/model.py
+iscard.egg-info/PKG-INFO
+iscard.egg-info/SOURCES.txt
+iscard.egg-info/dependency_links.txt
+iscard.egg-info/entry_points.txt
+iscard.egg-info/not-zip-safe
+iscard.egg-info/requires.txt
+iscard.egg-info/top_level.txt
