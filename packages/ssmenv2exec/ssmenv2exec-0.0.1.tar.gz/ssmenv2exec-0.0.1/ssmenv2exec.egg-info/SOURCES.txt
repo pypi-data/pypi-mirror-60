@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ssmenv2exec.py
+ssmenv2exec.egg-info/PKG-INFO
+ssmenv2exec.egg-info/SOURCES.txt
+ssmenv2exec.egg-info/dependency_links.txt
+ssmenv2exec.egg-info/entry_points.txt
+ssmenv2exec.egg-info/requires.txt
+ssmenv2exec.egg-info/top_level.txt
