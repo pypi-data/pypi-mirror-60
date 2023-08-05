@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: faces-distance
+Version: 0.0.1
+Summary: Calculates faces distance accuracy as a percentage.
+Home-page: UNKNOWN
+Author: Frank Ricardo R, Henrique Borba
+Author-email: frankjony17@gmail.com
+License: COPYRIGHT
+Keywords: distance,face
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: numpy ; extra == 'dev'
+Provides-Extra: integration
+Requires-Dist: pytest ; extra == 'integration'
+Requires-Dist: pytest-flask ; extra == 'integration'
+
+Calculates faces distance accuracy as a percentage Lib
+=====================
+Calculate norm from faces encodings.
+
+System requirements
+-------------------
+- Python >= 3.6
+
