@@ -1,0 +1,9 @@
+README.md
+setup.py
+astro_crispy.egg-info/PKG-INFO
+astro_crispy.egg-info/SOURCES.txt
+astro_crispy.egg-info/dependency_links.txt
+astro_crispy.egg-info/top_level.txt
+crispy/__init__.py
+crispy/image_ridge_find.py
+crispy/scms.py
