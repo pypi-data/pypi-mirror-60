@@ -1,0 +1,4 @@
+[console_scripts]
+noolite-mqtt = noolite_mqtt:cli
+noolite-mqtt-ha-discover = noolite_mqtt.hass_discover:cli
+
