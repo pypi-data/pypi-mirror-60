@@ -1,0 +1,16 @@
+deltachat/contact.py,sha256=BnWWx_GutZs7EhWyDCuzv_Z0gIUWYtf1Zu1qAUstQog,1782
+deltachat/cutil.py,sha256=UIkMkfGzwhCOwNYUpjq1rgcV_R6sDSHk3AIkivFdkyQ,1169
+deltachat/capi.abi3.so,sha256=PCLvnjxlwv-5vBjxRvH0S4JsSuNkdof5OJQvCkTVXlU,18942604
+deltachat/const.py,sha256=3fBbpktsXSVL6uAw0X2iTyetPjxB4fK-pYPbBcS2PXM,5292
+deltachat/_build.py,sha256=dENmkKx1C73kWQITCfyGU5fQZWpBlneDqBSC3vtsyZQ,3529
+deltachat/__init__.py,sha256=Dr8Ky8zPcUzf5INzQV9GHHLhlvul0EUPUe9LLZNbvso,2426
+deltachat/message.py,sha256=Jh9bM33WqZ3dmbfJYX8bMRoBGPVYYA-hpz9hg2sR6w4,9914
+deltachat/provider.py,sha256=aUhltIc8P0AKwGcg816dcASpDbQChOubs3ycgI06puI,2084
+deltachat/account.py,sha256=JJW5qzxnBNJIko9ZdxQRFxkVPG0oBnHMzAGJuKT4u2U,27328
+deltachat/props.py,sha256=R_h2V0Z5NQAbEGh9sfaykoGgb7RZ9_GCeF29i5vXmvU,805
+deltachat/chat.py,sha256=nZIm-0rkrnN5D3gU5Vrx2ChEIGOG9uYaR69Juhne5XU,16301
+deltachat-0.700.0.dist-info/WHEEL,sha256=Zdy2RSSpbakbl_kJnIqvmkFkjB4ZzjKUt7leDojVFpY,109
+deltachat-0.700.0.dist-info/top_level.txt,sha256=2kZHQcrmwFjeJKqPlxX24BbwzslE8reQOmfPnybPGcU,10
+deltachat-0.700.0.dist-info/METADATA,sha256=NhhIpbx2w1nQ1nzLtgNcDjTjWcQJRkD0p0X0XDdEoLY,5859
+deltachat-0.700.0.dist-info/LICENSE,sha256=-rPda9qyJvHAhjCx3ZF-Efy07F4eAg4sFvg6ChOGPoU,16726
+deltachat-0.700.0.dist-info/RECORD,,
