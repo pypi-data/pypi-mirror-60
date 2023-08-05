@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: aws_secret_cdk
+Version: 1.0.1
+Summary: Package to create a SecretsManager's secret with auto rotation.
+Home-page: https://github.com/laimonassutkus/AwsSecretCdk
+Author: Laimonas Sutkus
+Author-email: laimonas.sutkus@gmail.com
+License: GNU GENERAL PUBLIC LICENSE Version 3
+Description: ## AWS Secrets Manager
+        
+        
+        # Release history
+        
+        #### 1.0.1
+        Ensure bucket and bucket deployment has different names.
+        
+        #### 1.0.0
+        Initial commit. Add ability to create RDS secret and rotate it every 30 days.
+Keywords: AWS CDK CloudFormation SecretsManager Infrastructure Cloud DevOps
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
