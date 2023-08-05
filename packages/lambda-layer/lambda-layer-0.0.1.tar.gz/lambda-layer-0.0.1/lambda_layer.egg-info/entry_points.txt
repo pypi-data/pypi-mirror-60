@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    lambda-layer=lambda_layer.cli:cli
+    
