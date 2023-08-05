@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bb-tools
+Version: 0.1
+Summary: Bitbucket tools package
+Home-page: https://roman_newaza@bitbucket.org/roman_newaza/bb-tools.git
+Author: Roman Borysenko
+Author-email: lngphp@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# bb-tools
+
+
+
