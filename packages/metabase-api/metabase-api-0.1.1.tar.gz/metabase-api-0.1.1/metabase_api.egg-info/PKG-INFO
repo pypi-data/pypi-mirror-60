@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: metabase-api
+Version: 0.1.1
+Summary: A Python Wrapper for Metabase API
+Home-page: https://github.com/vvaezian/metabase_api_python
+Author: Vahid Vaezian
+Author-email: vahid.vaezian@gmail.com
+License: UNKNOWN
+Description: This is a wrapper for Metabase API. 
+        
+        Please check out the Github page for more details.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
