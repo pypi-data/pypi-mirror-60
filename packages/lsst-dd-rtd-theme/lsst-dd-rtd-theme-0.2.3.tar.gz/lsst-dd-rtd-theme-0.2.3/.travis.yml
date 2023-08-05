@@ -1,0 +1,31 @@
+dist: xenial
+language: python
+git:
+  # Clone the full depth for setuptools_scm (to count commits in very large
+  # branches) and for the testing of documenteer's Git metadata inspection
+  # APIs.
+  depth: false
+matrix:
+  include:
+    # Use the Python 3.7 build with latest Sphinx for PyPI deployments and doc
+    # uploads
+    - python: "3.7"
+      env: PYPI_DEPLOY=true
+      install:
+        - "pip install ."
+script:
+  - "echo 1"
+env:
+  global:
+    - PYPI_DEPLOY=false  # disable PyPI pushes in regular matrix
+deploy:
+  provider: pypi
+  user: __token__
+  skip_upload_docs: true
+  distributions: sdist bdist_wheel
+  password:
+    secure: "r9/swggUO6QUvlHCX2ChItFETgeKBGrVv4GkBJNi/uD5IcfeC4k8llVOOUUrtP9uwZpmLuekLoiGsTR57yHk7D89eAgBjE7Mf8zxJ32bL/JYT1H6v+CLvEdCjlonbrAJUWiE36X89MInoMH7ZfUGuDuevv8MXszfyXn83jn3HNhl5f1ejPJUiKiK2ECM7fp972OC7qsp2kGWG7oLgvL5JX3AnuZYc046s8Vx/ztD4qgp00fjiskkEYJtI57/v8q2psLfSsQbC/T4TAWj//BQZOQOWwY6xcupc9zyR6fOskCjb4N1Qbmrg6tXCY5Rex5SM6ZgzV/kyncdEhSexUZyXxDVn/cXP1uNxpCk2pbCAtZouu+m8PPokPwzzlugOsbFwhwfs/87AgO0cYDwjRMcXwNIkbsAMsQvvg9CO0FvmnvYLFJAlZeSNzhcRpfUdcCix/+bVedqVYmB4PVJRDh4LHIKys9GfKrqio9q8Cx7G3i48+hOPWOTj4Fghu/gFovfAtAcQfj4y/137PE/IH9aYtvVnI+iaI+HIzXu2f0bTQpCnI0jDeQHF4LYg7Diu12xoInIERlovielFVOsV54fHHEPS2n+Nn5Py0b6Y6/h8MSdiT6pzDr+CVTptBm9WhFikkke3p0FIOQFxzyGkI0oQrRpRUsU1glLHSnWSegFb+8="
+  on:
+    tags: true
+    repo: lsst-sqre/lsst_dd_rtd_theme
+    condition: "$PYPI_DEPLOY = true"
