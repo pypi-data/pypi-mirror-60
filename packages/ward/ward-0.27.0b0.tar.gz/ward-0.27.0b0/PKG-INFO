@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: ward
+Version: 0.27.0b0
+Summary: A modern Python 3 test framework for finding and fixing flaws faster.
+Home-page: https://github.com/darrenburns/ward
+Author: Darren Burns
+Author-email: darrenb900@gmail.com
