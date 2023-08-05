@@ -1,0 +1,11 @@
+cn_workday/__init__.py,sha256=QJX2YuufeHKcx2Ez-09lp-aJ6oxnqGuYYd3P2E3ARTg,135
+cn_workday/utils.py,sha256=scfaudwb0BgKFuVxNgOr5q6pRAnl3jcaa3greo_-v2Y,3433
+cn_workday/data/2017.csv,sha256=doxtIj91p5D1VGU0kA6s81zAbEnSyvRtz4Gx-hwawSg,1100
+cn_workday/data/2018.csv,sha256=sefmDzTCtpDWbgmOnUIPlTLDyGIxDB2E7V6f8haiHMg,1344
+cn_workday/data/2019.csv,sha256=O6eqSnuVtlKpisFxxmx3s-kpRxabQCclAHiirMjiDFA,1152
+cn_workday/data/2020.csv,sha256=2PhzETCgZpR8sXzxhrhqjnU089MKbdLrumI_vDdagVs,1765
+cn_workday-2020.1.27.1.dist-info/LICENSE,sha256=0CxKeBZMmfgCZWaVSjTa6tb_rH4CPMBiMVX_jmtYkXs,1063
+cn_workday-2020.1.27.1.dist-info/METADATA,sha256=SLXuqG-06uZwhSd2WtZSQNanDKbsU2iarXG3qRKJKNA,1660
+cn_workday-2020.1.27.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cn_workday-2020.1.27.1.dist-info/top_level.txt,sha256=MKDBdcuerPkySN0pYaK7deld7HiYqfUZ27WZlPmF4oc,11
+cn_workday-2020.1.27.1.dist-info/RECORD,,
