@@ -1,0 +1,11 @@
+tornado_jsonapi/__init__.py,sha256=RbuVrvensFBMka3cSmEjwg2Ld0elmvPdHrpUQifyFdU,382
+tornado_jsonapi/_schemas.py,sha256=GXZxMtO9y8ukNFJkmWZ2Egq8RFBOLHtsrskNKV55MdM,2202
+tornado_jsonapi/exceptions.py,sha256=0qja-3iH42qKKbRCOKkN9FjBGO8nm8D97wj34FPHynQ,1513
+tornado_jsonapi/handlers.py,sha256=oYhOec4yU4i1GevnzyAmrEO7ve95BSqfdpaIt5TZgg0,13088
+tornado_jsonapi/resource.py,sha256=A0jcMgRELekcXUy2i5pyfJjIYzyaruxDm_kQWw3nCrA,13403
+tornado_jsonapi-0.1.4.dist-info/LICENSE,sha256=BB4Qd3wyX9vgJD3sYmBbFDTCmel5g1I-rxgsRaJyYs0,1088
+tornado_jsonapi-0.1.4.dist-info/METADATA,sha256=xIAujvnIKL7pmoo0BqIwCcCrQ2JHuqpUDFHQg3_lEiM,4728
+tornado_jsonapi-0.1.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tornado_jsonapi-0.1.4.dist-info/top_level.txt,sha256=CHwTO1QLBe-XLzc3rYNYqew1vkHrqYlWnDa4er4cvZc,16
+tornado_jsonapi-0.1.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tornado_jsonapi-0.1.4.dist-info/RECORD,,
