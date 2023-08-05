@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: d2s
+Version: 0.0.1
+Summary: A Command Line Interface for the Data2Services framework. See https://d2s.semanticscience.org/
+Home-page: https://github.com/MaastrichtU-IDS/d2s-cli
+Author: Vincent Emonet
+Author-email: vincent.emonet@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: Click
+Requires-Dist: cwltool
+
+Install Poetry
+
+```bash
+pip install poetry
+```
+
+Install dependencies
+
+```bash
+poetry install
+```
+
+Add dependencies:
+
+```bash
+poetry add click cwltool
+```
+
+Run using Poetry
+
+```bash
+poetry run d2s start virtuoso
+```
+
+Publish
+
+https://codingdose.info/2019/06/16/develop-and-publish-with-poetry/
+
+```bash
+poetry build
+
+# https://pypi.org/account/register/
+poetry publish
+```
+
+Install the tool
+
+```bash
+pip install d2s
+```
+
+# Try with setuptools
+
+```bash
+# Install package
+pip install package && pip freeze > requirements.txt
+```
+
+Install `d2s` as cli in local
+```bash
+pip3 install --editable .
+```
+
+Build packages
+```bash
+python3 setup.py sdist bdist_wheel
+```
+
+Publish
+```bash
+pipx install twine
+twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+```
+
