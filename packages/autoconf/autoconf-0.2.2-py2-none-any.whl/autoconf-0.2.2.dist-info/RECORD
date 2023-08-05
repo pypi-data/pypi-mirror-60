@@ -1,0 +1,12 @@
+autoconf/__init__.py,sha256=symL_UQuQLVO0EbDcMbY6o8YbwQCz5OdTpfP6VYzvkU,75
+autoconf/conf.py,sha256=SEdC1UkJDwaBwPmw74mp6ua4CNtW36cP1MhA5NjtM_A,10928
+autoconf/exc.py,sha256=wBjvTI6qb506E6cOUFDjuj_ylZtqPmh7Vn4VikLIPBQ,42
+autoconf-0.2.2.dist-info/DESCRIPTION.rst,sha256=C-g2t57LutjCzm4MspaloEI5ZqjeNoHvxChLHSFDa2g,15
+autoconf-0.2.2.dist-info/METADATA,sha256=3vPRXdhullWX3y6AYhAamu8QSKdabqSZTWfjoT3nvnU,941
+autoconf-0.2.2.dist-info/RECORD,,
+autoconf-0.2.2.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+autoconf-0.2.2.dist-info/metadata.json,sha256=kS5JfnJ_Zaxpgb90BFX0ULwMuCrlWaNyhif5Jq6v0Iw,1078
+autoconf-0.2.2.dist-info/top_level.txt,sha256=RNjBk-AvwGHUALHR-Jl_lt4lffGZKITOVtXDQNDHMPE,23
+test_autoconf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_autoconf/mock.py,sha256=WdeDqJjNditb9FnobXd-8rQjqfry-Dc-tSPdq6Ilp9M,2888
+test_autoconf/test_config.py,sha256=ZZGrJ84GxZSHEiDjhxpK5P_FPU2NwYstxvSDSPLFZII,1050
