@@ -1,0 +1,9 @@
+lxml
+django-classy-tags
+django_appconf
+
+[:python_version < "3"]
+django<2
+
+[:python_version > "2"]
+django
