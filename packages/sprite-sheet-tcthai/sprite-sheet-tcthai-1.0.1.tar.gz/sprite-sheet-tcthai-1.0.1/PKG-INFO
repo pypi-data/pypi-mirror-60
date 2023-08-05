@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: sprite-sheet-tcthai
+Version: 1.0.1
+Summary: sprite sheet utility
+Home-page: https://github.com/intek-training-jsc/sprite-sheet-tcthai
+Author: tcthai
+Author-email: thai.tran@f4.intek.edu.vn
+License: UNKNOWN
+Description: 
+        # Sprite Sheet
+        This project develops a uitility box which uses to generate a sprite sheet
+        ## Documentaion
+        The project contains six different parts, include:
+        #### [Waypoint 1: Find the Most Common Color in an Image](https://github.com/intek-training-jsc/sprite-sheet-tcthai/tree/waypoint1) 
+        * This function is a tool developed to find the most common color which can be considered as the background color.
+        #### [Waypoint 2: Write a Class Sprite](https://github.com/intek-training-jsc/sprite-sheet-tcthai/tree/waypoint2)
+        * This class is developed to generate a sprite instance which contains the sprite's parameter itself.
+        #### [Waypoint 3: Find Sprites in an Image](https://github.com/intek-training-jsc/sprite-sheet-tcthai/tree/waypoint3)
+        * This function is developed to generate a label map and sort out each sprite in the input image.
+        #### [Waypoint 4: Draw Sprite Label Bounding Boxes](https://github.com/intek-training-jsc/sprite-sheet-tcthai/tree/waypoint4)
+        * This function is developed to create a sprite sheet and its bounding box from a label map and a list of sprite object in the label map itself.
+        #### [Waypoint 5: Write a Class SpriteSheet](https://github.com/intek-training-jsc/sprite-sheet-tcthai/tree/waypoint5)
+        * This class is a automatic machine which have two build-in functions to create a sprite sheet image or a label map and a list of sprite object directly from the instanitiated image.
+        #### [Waypoint 6: Package and Distribute the Python Library](https://github.com/intek-training-jsc/sprite-sheet-tcthai/tree/waypoint6)
+        * This is a pakaging process to create a downloadable and installable distribution of the library for users to easily download, install and use as a python buid-in library
+        ## Usage
+        * This lib is comparable with [python3] only. if you don't have one, you can download the latest version [here](https://www.python.org).
+        * Get source code from git or a distribution of the library from PyPI, for example:
+        ```bash
+        $ git clone https://github.com/intek-training-jsc/sprite-sheet-tcthai.git
+        ```
+        * Import and use the library as any other buid-in lib. Example:
+        ```python
+        >>> from spriteutil.spritesheet import SpriteSheet
+        >>> sprite_sheet = SpriteSheet('some_image.png')
+        >>> sprites, labels = sprite_sheet.find_sprites()
+        >>> image = sprite_sheet.create_sprite_labels_image()
+        >>> image.save('barbarian_bounding_boxes.png')
+        ```
+        ## Contact
+        * Email: thai.tran@f4.intek.edu.vn
+        * Phone: (+84) 945 577 133
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
