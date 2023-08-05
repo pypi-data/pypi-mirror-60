@@ -1,0 +1,5 @@
+setup.py
+fraimundnester1982.egg-info/PKG-INFO
+fraimundnester1982.egg-info/SOURCES.txt
+fraimundnester1982.egg-info/dependency_links.txt
+fraimundnester1982.egg-info/top_level.txt
