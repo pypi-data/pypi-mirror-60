@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tradfricoap
+Version: 0.0.4
+Summary: Controlling IKEA-Tradfri from the commmand line
+Home-page: https://github.com/moroen/tradfricoap.git
+Author: moroen
+Author-email: moroen@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: cython
+
+UNKNOWN
+
+
