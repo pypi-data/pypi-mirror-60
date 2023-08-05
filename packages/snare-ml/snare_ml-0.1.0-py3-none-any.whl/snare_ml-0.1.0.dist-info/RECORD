@@ -1,0 +1,16 @@
+snare/__init__.py,sha256=HWqq5gxgKNlLU2yaIlOzKEr-lF_B8VlgZPcZ6BPmZVY,68
+snare/snare.py,sha256=PMCNQEi_DwyHDVJcZIKyj2dBmCrxKPSdjSScu74OcQQ,2856
+snare/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snare/core/generation.py,sha256=mf-mOqhkp5C32x1YUjMk-UdB3bUs8rJ7IrCSjzh7rPk,3544
+snare/core/generator.py,sha256=lwQKDaK7PqL5aXUMJAKvegCto17WMvEnX1cfKkRs73s,7392
+snare/core/operation.py,sha256=n-XRYW_xtA2IxBInzuYFuZQqAtG-MPWwqwbMULH5oLE,8848
+snare/examples/lenet5.py,sha256=k3TT8xo-lEEknIDBFxMWgi7aXRR-KVX7_VBjtoFAjFA,3178
+snare/wrappers/__init__.py,sha256=kL7EzizJwYZRrg3VXIZ8BJVrcLQwSmAExurm8bbPt4c,124
+snare/wrappers/custom_layers.py,sha256=pIDYPfcvYWnivPCgHAhmAugvtw1Hum6Fr1Zk0AJ_H-E,13819
+snare/wrappers/group.py,sha256=gsAXhAgE-4jwCxX6SJkZoZc72wtmXVMwqELrDGR2dyc,7688
+snare/wrappers/model_splitter.py,sha256=UCPF1fXVprxUpz7poQ7pLLCNYa_Op0EXpgGw6VZ65xc,1555
+snare/wrappers/model_wrapper.py,sha256=pIDYPfcvYWnivPCgHAhmAugvtw1Hum6Fr1Zk0AJ_H-E,13819
+snare_ml-0.1.0.dist-info/METADATA,sha256=epyPIyQXSD5SBU6obdH9qWXXsRYO2Z5xYd9fipD9F5k,638
+snare_ml-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+snare_ml-0.1.0.dist-info/top_level.txt,sha256=dK9JMkTqt1bIXFAAtLpcwIHd8RKRWS8sSsxfp0O2L5E,6
+snare_ml-0.1.0.dist-info/RECORD,,
