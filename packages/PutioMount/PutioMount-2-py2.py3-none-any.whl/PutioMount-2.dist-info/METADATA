@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: PutioMount
+Version: 2
+Summary: Mount put.io as a local drive
+Home-page: https://github.com/gpenverne/putio-mount
+Author: Gregoire Penverne
+Author-email: UNKNOWN
+License: MIT
+Keywords: put.io mount fuse
+Platform: UNKNOWN
+Requires-Dist: fusepy
+Requires-Dist: inotify
+Requires-Dist: putio.py
+Requires-Dist: requests
+Requires-Dist: urllib3
+
+UNKNOWN
+
+
