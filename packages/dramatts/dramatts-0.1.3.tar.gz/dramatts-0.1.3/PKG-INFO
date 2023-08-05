@@ -1,0 +1,285 @@
+Metadata-Version: 2.1
+Name: dramatts
+Version: 0.1.3
+Summary: Screen play / drama text to multi-voice audio play converter
+Home-page: https://gitlab.com/thecker/dramatts/
+Author: Thies Hecker
+Author-email: thies.hecker@gmx.de
+License: GPL3
+Project-URL: Documentation, https://gitlab.com/thecker/dramatts/blob/master/README.rst
+Project-URL: Source Code, https://gitlab.com/thecker/dramatts/
+Description: dramaTTS
+        ========
+        
+        About
+        -----
+        
+        *dramaTTS* parses scripts (plain text files) for theatre/screen plays and converts them into a multi-voice audio plays
+        (wave-files).
+        
+        While the script parsing functionality is provided by the *dramaTTS* program itself, it relies on external tools for
+        the audio processing:
+        
+        * The `Festival Speech Synthesis System`_ (herein referred to as *Festival*) is used for speech synthesis
+        * `Sound eXchange (SoX)`_  for audio post-processing.
+        
+        *SoX*, *Festival* as well as voices and lexicons for *Festival* have to be installed in order to create audio output
+        with *dramaTTS* (see Prerequisites_ ).
+        
+        Licenses
+        --------
+        
+        *dramaTTS* is free software released under the GPLv3 license (see LICENSE_ file), Copyright (c) 2020 Thies Hecker
+        
+        The GUI of *dramaTTS* is made with PyQt_ and setuptools_scm_ is used to align version numbering with git.
+        
+        While *dramaTTS* is a standalone application, it is of limited use without *Festival* and *SoX* being installed,
+        which provide the audio rendering (only script parsing including syntax highlighting, etc. is available).
+        
+        While the *Festival* application itself and *SoX* are released under free software licenses as well (see details below),
+        specific components, which are commonly bundled with *Festival* (i.e. certain lexicons and voices) may be released
+        under non-free licenses.
+        
+        For instance the *festlex-OALD* lexicon, which can be found among other files (incl. the source code of the latest
+        *Festival* release) on the `Festvox 2.5 release page`_ lexicon is restricted to non-commercial use only.
+        
+        The `Installing Festival without non-free components`_ section will provide an example for a *Festival* distribution
+        based on *free* components only.
+        
+        Please see COPYING_ for details on licenses and copyright disclaimers of the individual components.
+        
+        Features
+        --------
+        
+        *dramaTTS* provides 2 main components: a script parser and an audio-renderer.
+        
+        The script parser features:
+        
+        * input files with minimum formatting (see `Basic script format`_)
+        * syntax highlighting (identifies different content like new scenes, dialogue lines, narrative descriptions,...)
+        * text string substitutions supporting regular expressions
+        * some utility functions like sorting speakers according to their number of text lines
+        
+        The audio-renderer is basically a front-end to *Festival* and *SoX*. Each line of script text will be synthesized by
+        *Festival* and saved to a wave-file, which is then post-processed by *SoX*, allowing:
+        
+        * Altering of *Festival* voices (pitch, tempo and volume)
+        * support for multiple CPU cores to accelerate audio rendering (dispatches parallel processes for individual lines)
+        * using a *Festival* server for rendering is supported
+        * some post-processing: normalize all voices, combine audio files (lines -> scenes -> single project file)
+        * (re-)rendering of individual scenes or speakers
+        
+        Prerequisites
+        -------------
+        
+        python
+        ~~~~~~
+        
+        You will need a python3 distribution installed and for most convenience you should have either the *pip* or *conda*
+        package manager installed.
+        
+        On linux you will most likely have python and pip already installed - if not you should be able to install them with
+        distributions package-manager.
+        
+        E.g. for debian based system like ubuntu just run:
+        
+        .. code::
+        
+            sudo apt-get python3-pip
+        
+        or on arch based:
+        
+        .. code::
+        
+            sudo pacman -S python-pip
+        
+        For Windows users I would recommend to install Anaconda_ or miniconda_, which will provide the *conda* package
+        manager (make sure to get the python3 - not the python2 - version!).
+        
+        To install *dramaTTS* with pip:
+        
+        .. code::
+        
+            pip install dramatts
+        
+        Note, that on some distributions you may install python2 and python3 in parallel. In such cases you should make sure,
+        that you not using a pip for your python2 environment to install *dramaTTS*. Eventually you need to use pip3 as a command.
+        You can check if you are using the correct pip by calling:
+        
+        .. code::
+        
+            pip --version
+        
+        To install *dramaTTS* with conda:
+        
+        .. code::
+        
+            conda install -c thecker dramatts
+        
+        In both cases pip or conda should download all required dependencies and should be able to launch the program.
+        To do that just type:
+        
+        .. code::
+        
+            python -m dramatts.dramatts_gui
+        
+        The GUI should pop up and you can import text files, define roles etc., but you will not be able render audio unless
+        you have installed *Festival* (and its components) and *SoX*.
+        
+        Installing Festival without non-free components
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        While many linux distributions include pre-built packages for *Festival* they often include non-free components like
+        *festlex-OALD*. Therefore the safest way to create a *free* *Festival* distribution is to compile from source.
+        To form a *free* distribution following components could be used:
+        
+        * Festival 2.5 (main application)
+        * Edinburgh Speech Tools (EST) - required to compile *Festival*
+        * festlex_CMU (lexicon)
+        * festlex_POSLEX (lexicon)
+        * festvox_cmu_us_slt_cg (female voice)
+        * festvox_cmu_us_rms_cg (male voice)
+        
+        All components can be downloaded at CMU's (Carnegie Mellon University) `Festvox 2.5 release page`_. The source
+        code of *Festival* and *EST* can also be cloned from the `Festvox github page`_.
+        
+        To compile the code follow the instructions in the INSTALL file included in *Festival*.
+        
+        Note, that more voices can be found at the *Festvox* page (although some might require e.g. additional lexicons and
+        thus won't be working with the selected components above). Additionally voices may also be altered in tempo and pitch in
+        *dramaTTS* (by post-processing with *SoX*) to create more than one speaker per voice.
+        
+        Building *Festival* from source is based on the autotools-toolchain - so it shouldn't be a problem on GNU/linux, but
+        may be complicated on MS Windows.
+        
+        Fortunately the eGuideDog team has created compile-instructions for Windows and even provides a
+        `Festival 2.5 version including precompiled binaries for Windows`_ (which does not include the problematic
+        *festlex-OALD* lexicon).
+        
+        In order to use *Festival* under Windows with *dramaTTS* you will need to copy the *text2wave.bat* (see
+        the `/utils folder`_) to your *Festival* installation.
+        
+        Make sure to adjust the paths in *text2wave.bat*, if you did not install *Festival* in C:\\Festival.
+        
+        Installing SoX
+        --------------
+        
+        Under linux you will most likely have a pre-build package for *SoX*.
+        Building from source is probably not required.
+        
+        Binaries for Windows can be found on the `SoX sourceforge page`_.
+        
+        Specifying location of external tools
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        dramaTTS will try to determine the install locations of *Festival* and *SoX* automatically.
+        This should most likely work under linux, if you installed the tools from the official packages (or put the location of
+        the binaries in your PATH).
+        
+        Under windows you will most likely have to define the tool locations manually.
+        
+        To do that, just go to the preferences tab in the *dramaTTS* GUI and specify the file locations.
+        
+        If you used the *Festival* version provided by the edGuideDog team the pre-compiled binaries are located in:
+        
+        ..Festival\\src\\main
+        
+        After you specified a new tool location, you should save the preferences and restart *dramaTTS* to make the changes
+        become effective.
+        
+        Basic script format
+        -------------------
+        
+        *dramaTTS*'s script parser works with simple text files with minimum formatting.
+        
+        General
+        ~~~~~~~
+        
+        * Empty lines are ignored
+        * in case of doubt a line will be assigned as narrative description
+        
+        You can check how lines have been parsed, if you switch to the *"Parsed lines"-mode* text rendering mode in
+        the "script" tab.
+        
+        New scene
+        ~~~~~~~~~
+        
+        A new scene is indicated by a line starting with a number followed by a dot.
+        
+        .. code-block::
+        
+            23. A new scene
+        
+        The narrator will read the scene number and scene title.
+        
+        Dialogue
+        ~~~~~~~~
+        
+        A dialogue is indicated by a line giving only the speaker name in UPPER CASE letters - e.g.
+        
+        .. code-block::
+        
+            BOB
+        
+            Hi, I am Bob and this line is the my dialogue.
+        
+            Bob's dialogue was quite short.
+        
+        The next (non-empty) line after the dialogue-indicator (BOB) will be interpreted as the Bob's dialogue text.
+        A line break will end the Bob's dialogue and the line following is interpreter as narrative description.
+        
+        The narrator will say the speaker's name and take over again after the speaker's dialogue line is finished.
+        You can easily check, who speaks the lines if you switch to the *"Parsed lines"-mode* text rendering mode in
+        the "script" tab. The example above would be shown as:
+        
+        .. code-block::
+        
+            Narrator: Bob
+            BOB: Hi, I am Bob and this line is the my dialogue.
+            Narrator: Bob's dialogue was quite short.
+        
+        It is also possible to add narrative comments using parenthesis within a dialogue line:
+        
+        .. code-block::
+        
+            BOB
+        
+            I told you not to pull this lever! (shakes his head) Let's get the hell out of here!
+        
+        In the example above, "shakes his head" will be spoken by the narrator -i.e. it would be rendered in
+        "parsed lines"-mode as:
+        
+        .. code-block::
+        
+            Narrator: Bob
+            BOB: I told you not to pull this lever!
+            Narrator: (shakes his head)
+            BOB: Let's get the hell out of here!
+        
+        Links
+        -----
+        .. target-notes::
+        
+        .. _`Festival Speech Synthesis System`: http://www.cstr.ed.ac.uk/projects/Festival/
+        .. _`Sound eXchange (SoX)`: http://sox.sourceforge.net/Main/HomePage
+        .. _LICENSE: https://gitlab.com/thecker/dramatts/blob/master/LICENSE
+        .. _PyQt: https://wiki.python.org/moin/PyQt
+        .. _setuptools_scm: https://github.com/pypa/setuptools_scm/
+        .. _COPYING: https://gitlab.com/thecker/dramatts/blob/master/COPYING
+        .. _`Festival license`: https://github.com/festvox/festival/blob/master/COPYING
+        .. _`Sox license`: https://sourceforge.net/p/sox/code/ci/master/tree/COPYING
+        .. _`Festvox 2.5 release page`: http://festvox.org/packed/festival/2.5/
+        .. _`Festvox github page`: https://github.com/festvox/
+        .. _Anaconda: https://www.anaconda.com/distribution/#download-section
+        .. _miniconda: https://docs.conda.io/en/latest/miniconda.html
+        .. _`Festival 2.5 version including precompiled binaries for Windows`: https://sourceforge.net/projects/e-guidedog/files/related%20third%20party%20software/0.3/festival-2.5-win.7z/download
+        .. _/utils folder: https://gitlab.com/thecker/dramatts/tree/master/utils
+        .. _`SoX sourceforge page`: https://sourceforge.net/projects/sox/files/sox/14.4.2/
+        .. _`CMU_ARCTIC speech synthesis databases`: http://festvox.org/cmu_arctic/index.html
+        .. _here: http://festvox.org/packed/festival/2.5/voices/
+        
+Keywords: TTS play text-to-speech festival audio book
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
