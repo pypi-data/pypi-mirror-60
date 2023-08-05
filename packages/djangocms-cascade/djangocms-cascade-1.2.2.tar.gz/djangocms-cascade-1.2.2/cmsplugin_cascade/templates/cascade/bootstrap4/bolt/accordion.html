@@ -1,0 +1,19 @@
+{% load static cascade_tags sekizai_tags %}
+{% addtoblock "js" %}<script src="{% static 'www/build/bolt-global.js' %}" type="text/javascript"></script>{% endaddtoblock %}
+
+{% with inline_styles=instance.inline_styles %}
+<bolt-accordion>
+  <bolt-accordion-item>
+    <bolt-text slot="trigger">Accordion item 1</bolt-text>
+    <bolt-text>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</bolt-text>
+  </bolt-accordion-item>
+  <bolt-accordion-item>
+    <bolt-text slot="trigger">Accordion item 2</bolt-text>
+    <bolt-text>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</bolt-text>
+  </bolt-accordion-item>
+  <bolt-accordion-item>
+    <bolt-text slot="trigger">Accordion item 3</bolt-text>
+    <bolt-text>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</bolt-text>
+  </bolt-accordion-item>
+</bolt-accordion>
+{% endwith %}
