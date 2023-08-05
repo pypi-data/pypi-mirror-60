@@ -1,0 +1,10 @@
+setup.py
+dsuc/Binomialdistribution.py
+dsuc/Gaussiandistribution.py
+dsuc/Generaldistribution.py
+dsuc/__init__.py
+dsuc.egg-info/PKG-INFO
+dsuc.egg-info/SOURCES.txt
+dsuc.egg-info/dependency_links.txt
+dsuc.egg-info/not-zip-safe
+dsuc.egg-info/top_level.txt
