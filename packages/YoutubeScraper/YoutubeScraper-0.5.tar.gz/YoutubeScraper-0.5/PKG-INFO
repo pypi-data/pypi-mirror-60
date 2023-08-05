@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: YoutubeScraper
+Version: 0.5
+Summary: Scraper to get information from youtube video page
+Home-page: https://github.com/LeonardoAlchieri/youtube_scraper
+Author: Leonardo ALchieri
+Author-email: l.alchieri2@campus.unimib.it
+License: MIT License
+Download-URL: https://github.com/LeonardoAlchieri/youtube_scraper/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: Youtube,Scraping,Selenium
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
