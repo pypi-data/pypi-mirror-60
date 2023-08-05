@@ -1,0 +1,11 @@
+README.md
+setup.py
+example_pkg/__init__.py
+example_pkg/subpackage/__init__.py
+example_pkg/subpackage/examplemodule.py
+example_pkg/subpackage/subdir/__init__.py
+example_pkg/subpackage/subdir/classwithresourcefile.py
+example_pkg_felixvita.egg-info/PKG-INFO
+example_pkg_felixvita.egg-info/SOURCES.txt
+example_pkg_felixvita.egg-info/dependency_links.txt
+example_pkg_felixvita.egg-info/top_level.txt
