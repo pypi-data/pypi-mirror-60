@@ -1,0 +1,17 @@
+README.md
+setup.py
+gitsshgen/__init__.py
+gitsshgen/gitsshgen.py
+gitsshgen/helpers.py
+gitsshgen.egg-info/PKG-INFO
+gitsshgen.egg-info/SOURCES.txt
+gitsshgen.egg-info/dependency_links.txt
+gitsshgen.egg-info/entry_points.txt
+gitsshgen.egg-info/requires.txt
+gitsshgen.egg-info/top_level.txt
+gitsshgen/modules/__init__.py
+gitsshgen/modules/bitbucket.py
+gitsshgen/modules/gitea.py
+gitsshgen/modules/github.py
+gitsshgen/modules/gitlab.py
+gitsshgen/modules/gogs.py
