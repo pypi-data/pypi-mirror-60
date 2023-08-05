@@ -1,0 +1,4 @@
+aiohttp>=3.4.4
+cryptography>=2.0
+toml
+async_exit_stack
