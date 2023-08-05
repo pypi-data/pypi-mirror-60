@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+pandas_htools/__init__.py
+pandas_htools/main.py
+pandas_htools.egg-info/PKG-INFO
+pandas_htools.egg-info/SOURCES.txt
+pandas_htools.egg-info/dependency_links.txt
+pandas_htools.egg-info/requires.txt
+pandas_htools.egg-info/top_level.txt
