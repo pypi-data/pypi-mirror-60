@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: canonical-phone
+Version: 0.0.6
+Summary: Library to get canonical phone number
+Home-page: https://gitlab.com/nitinsureshp/canonical-phone.git
+Author: Nitin Suresh
+Author-email: nitin.kalal@pasarpolis.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Canonical Phone
+## Purpose
+Convert given phone number into a string with hiphenated phone number with country code.
+Default is assumed to be Indonesian number.
+
+## Installation
+```bash
+pip install canonical-phone==0.0.6
+```
+
+## How to use?
+```python
+from canonical_phone.phone import canonical_number
+phone_no = canonical_number(phone) # If invalid, returns False
+if not phone_no:
+    raise Exception("invalid phone number")
+```
+
