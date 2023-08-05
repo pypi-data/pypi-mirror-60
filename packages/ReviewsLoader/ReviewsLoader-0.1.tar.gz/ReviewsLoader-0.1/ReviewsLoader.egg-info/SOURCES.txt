@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+Reviews/CSVReviewsWriter.py
+Reviews/DefaultDataConverter.py
+Reviews/IDataConverter.py
+Reviews/IReviewsWriter.py
+Reviews/ReviewsLoader.py
+Reviews/TaskIterator.py
+Reviews/__init__.py
+Reviews/__main__.py
+ReviewsLoader.egg-info/PKG-INFO
+ReviewsLoader.egg-info/SOURCES.txt
+ReviewsLoader.egg-info/dependency_links.txt
+ReviewsLoader.egg-info/requires.txt
+ReviewsLoader.egg-info/top_level.txt
