@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pyeodhistorical
+Version: 0.0.1
+Summary: End Of Day Historical Data using Python
+Home-page: https://github.com/tnolan8/pyeodhistorical
+Author: Tom Nolan
+Author-email: tomnolan95@gmail.com
+License: MIT
+Keywords: python,trading,data,stock
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.8)
+Requires-Dist: numpy (==1.18.1)
+Requires-Dist: pandas (==0.25.3)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2019.3)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: urllib3 (==1.25.8)
+
+UNKNOWN
+
+
