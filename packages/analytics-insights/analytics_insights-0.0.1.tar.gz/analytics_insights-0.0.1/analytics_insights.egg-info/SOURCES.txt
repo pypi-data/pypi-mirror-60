@@ -1,0 +1,12 @@
+README.md
+setup.py
+analytics_describe/__init__.py
+analytics_insights.egg-info/PKG-INFO
+analytics_insights.egg-info/SOURCES.txt
+analytics_insights.egg-info/dependency_links.txt
+analytics_insights.egg-info/top_level.txt
+analytics_plots/__init__.py
+analytics_plots/plotter.py
+test/__init__.py
+test/examples.py
+test/notebook_1.py

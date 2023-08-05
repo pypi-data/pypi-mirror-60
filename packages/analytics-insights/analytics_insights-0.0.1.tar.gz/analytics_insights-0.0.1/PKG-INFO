@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: analytics_insights
+Version: 0.0.1
+Summary: A library to produce insights about both Analytics Data and Analytics Deployments
+Home-page: https://gde.kapschtraffic.com/brandon/analytics_insights
+Author: Alvaro Brandon
+Author-email: alvaro.brandon@kapsch.net
+License: UNKNOWN
+Description: # analytics_viz
+        
+        A library that can generate different plots with information from analytics
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
