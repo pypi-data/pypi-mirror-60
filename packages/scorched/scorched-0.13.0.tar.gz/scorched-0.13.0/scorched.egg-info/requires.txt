@@ -1,0 +1,10 @@
+setuptools
+requests
+pytz
+
+[test]
+nose
+coverage
+
+[test:python_version < "3"]
+mock
