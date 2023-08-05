@@ -1,0 +1,6 @@
+falcon_mongo_middleware/__init__.py,sha256=Vx7xxEndWksf5h9xRevQfOixX-CU35SwBXGCh74SioU,23
+falcon_mongo_middleware/mongo_middleware.py,sha256=0Bb2zHWbhqmqT0A93VJeIWaVPL9xsxZIhZHV0DHEW9A,3766
+falcon_mongo_middleware-0.1.16.dist-info/LICENSE,sha256=NdeDdZ7Aj4dAWirDqqFTNcBhrGIBBCek87DFtUHwD6g,743
+falcon_mongo_middleware-0.1.16.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+falcon_mongo_middleware-0.1.16.dist-info/METADATA,sha256=MLE1hl-Tv4GSWTrVO1Xk1YO98pB5qh7D8W6hx6aFtOo,406
+falcon_mongo_middleware-0.1.16.dist-info/RECORD,,
