@@ -1,0 +1,11 @@
+README.md
+setup.py
+SCPSyncer/__init__.py
+SCPSyncer/__main__.py
+SCPSyncer/remote_hasher.py
+SCPSyncer/scp_syncer.py
+SCPSyncer.egg-info/PKG-INFO
+SCPSyncer.egg-info/SOURCES.txt
+SCPSyncer.egg-info/dependency_links.txt
+SCPSyncer.egg-info/requires.txt
+SCPSyncer.egg-info/top_level.txt
