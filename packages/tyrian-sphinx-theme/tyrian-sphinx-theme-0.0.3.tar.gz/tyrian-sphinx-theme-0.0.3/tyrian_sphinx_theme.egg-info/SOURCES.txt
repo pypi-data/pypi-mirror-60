@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+tyrian_sphinx_theme/__init__.py
+tyrian_sphinx_theme/_version.py
+tyrian_sphinx_theme/layout.html
+tyrian_sphinx_theme/localtoc.html
+tyrian_sphinx_theme/support.py
+tyrian_sphinx_theme/theme.conf
+tyrian_sphinx_theme.egg-info/PKG-INFO
+tyrian_sphinx_theme.egg-info/SOURCES.txt
+tyrian_sphinx_theme.egg-info/dependency_links.txt
+tyrian_sphinx_theme.egg-info/entry_points.txt
+tyrian_sphinx_theme.egg-info/top_level.txt
+tyrian_sphinx_theme/static/custom.css
+tyrian_sphinx_theme/static/tyrian-sphinx-theme.css_t
