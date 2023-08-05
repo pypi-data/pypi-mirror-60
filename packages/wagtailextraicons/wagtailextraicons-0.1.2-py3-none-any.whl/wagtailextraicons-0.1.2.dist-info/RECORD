@@ -1,0 +1,13 @@
+wagtailextraicons/__init__.py,sha256=mdp2CftfqYbdKtP-eWv1z7rAUycYv6X1ntXSMUf8Kss,22
+wagtailextraicons/apps.py,sha256=3HXmvpVmjLwTLlmf4Y0rl9_bmDKeCHW5uVvqShd2aCA,147
+wagtailextraicons/wagtail_hooks.py,sha256=5FArgsSvFJ27YyC-ky6FNSLTdQ-xz4fPPUT5oSxFzHY,1036
+wagtailextraicons/static/wagtailextraicons/css/main.css,sha256=mi26K7TdIb_pG6uIzDfabf_W1sB4SFARwI1ONwy7KAo,4374
+wagtailextraicons/static/wagtailextraicons/fonts/extraicons.04a2409ed61f2aff307373952485af23.ttf,sha256=oHzQjQBbq188FC0HKnSW_TrCowdbQ6nVScFGV-9KrIA,11236
+wagtailextraicons/static/wagtailextraicons/fonts/extraicons.5704a84654b313e5777965ca234d3894.eot,sha256=NHbEGXeTDkQ26ZQy0VtgAeR4L99so9wNtKkvHdT2VWU,11398
+wagtailextraicons/static/wagtailextraicons/fonts/extraicons.80d5949fa6912c6e2215c6f5bdcb6d9f.woff,sha256=jo5KOox8kfm4L2qV_KfZDvLLI0_ObACvbtMG6hzvHWw,11308
+wagtailextraicons/static/wagtailextraicons/fonts/extraicons.9caaacc7e7f21a8feae64fc85b9aeb88.svg,sha256=5-FwhrxQiqrlVUChFzNh5n9jrldu40BgFNZHeor-ThI,31268
+wagtailextraicons-0.1.2.dist-info/LICENSE,sha256=qKvfVQaDwvLJ8UgUyx_WgWFG1p0fxNwRes1rjfwWLQ4,1506
+wagtailextraicons-0.1.2.dist-info/METADATA,sha256=ON0AuabAtG2raiVDdXpupqmaXWbxUv5IJMbheXSbUXM,2887
+wagtailextraicons-0.1.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+wagtailextraicons-0.1.2.dist-info/top_level.txt,sha256=xOfecZ9j5SGgkOcXL-NI4Xg5w_12EM2EeS-qAdqrEiU,18
+wagtailextraicons-0.1.2.dist-info/RECORD,,
