@@ -1,0 +1,6 @@
+
+        [console_scripts] 
+            streams_plex = streams_plex.main:main
+            streams_plex.debug = streams_plex.debug:debug
+            streams_plex.setserver = streams_plex.setserver:setserver
+        
