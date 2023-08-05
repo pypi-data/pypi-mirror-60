@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+dataexchange-cli.py
+requirements.txt
+setup.py
+dataexchange/__init__.py
+dataexchange.egg-info/PKG-INFO
+dataexchange.egg-info/SOURCES.txt
+dataexchange.egg-info/dependency_links.txt
+dataexchange.egg-info/requires.txt
+dataexchange.egg-info/top_level.txt
