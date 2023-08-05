@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+requirements.txt
+setup.py
+pyredq/__init__.py
+pyredq/queue.py
+pyredq/version.py
+pyredq.egg-info/PKG-INFO
+pyredq.egg-info/SOURCES.txt
+pyredq.egg-info/dependency_links.txt
+pyredq.egg-info/requires.txt
+pyredq.egg-info/top_level.txt
+scripts/release.sh

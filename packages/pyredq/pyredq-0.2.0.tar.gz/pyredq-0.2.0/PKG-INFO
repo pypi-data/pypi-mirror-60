@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: pyredq
+Version: 0.2.0
+Summary: Light and fast ordered message queue for Python3 using Redis
+Home-page: https://github.com/adrianchifor/pyredq
+Author: Adrian Chifor
+Author-email: me@adrianchifor.com
+License: Apache License 2.0
+Description: https://github.com/adrianchifor/pyredq
+Keywords: redis ordered distributed queue pubsub
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Distributed Computing
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
