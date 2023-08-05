@@ -1,0 +1,5 @@
+setuptools
+string-color
+beautifulsoup4
+requests
+tqdm
