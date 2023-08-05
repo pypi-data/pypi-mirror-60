@@ -1,0 +1,7 @@
+Flask==1.1.1
+Jinja2==2.10.3
+beautifulsoup4>=4.6.0
+future==0.18.2
+pendulum==2.0.5
+requests>=2.13.0
+six==1.13.0
