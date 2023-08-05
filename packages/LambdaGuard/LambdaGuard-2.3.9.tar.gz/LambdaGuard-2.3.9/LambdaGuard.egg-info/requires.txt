@@ -1,0 +1,12 @@
+argparse
+boto3
+requests
+
+[dev]
+coverage~=4.4
+flake8>=2.5.4
+pip-tools
+pytest-mock>=1.0
+pytest>=2.9.1
+twine
+wheel
