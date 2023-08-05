@@ -1,0 +1,11 @@
+pyhacrf_datamade-0.2.5.dist-info/RECORD,,
+pyhacrf_datamade-0.2.5.dist-info/WHEEL,sha256=iafpk4R-zGyWwdgwruPLl-ctcK-2b-WUUPNY5wcrHlE,109
+pyhacrf_datamade-0.2.5.dist-info/LICENSE,sha256=PXbMdcuINOLv9uCmZbTRpUT3FwmnqHKWM4fmx5ui41o,1479
+pyhacrf_datamade-0.2.5.dist-info/top_level.txt,sha256=S-k8v_yKi-yy4DVE9pf0VRGFk1uPN876jSBxEpaRFQM,8
+pyhacrf_datamade-0.2.5.dist-info/METADATA,sha256=ryfdPYlHk8vn8iUBdie9b5ofsaIDwwvXrUDy1e6SUk0,3764
+pyhacrf/pyhacrf.py,sha256=21n7ddLvQZsDaYAwLtmCvIk0SX-gkY19eBy9JaISZQU,13946
+pyhacrf/state_machine.py,sha256=Idzy-2iEZzf36ebiRGQLJAREv0L3_JGPPA_qPGq-67E,4040
+pyhacrf/algorithms.cpython-36m-x86_64-linux-gnu.so,sha256=W-zwWdSDWMnXGrPHKcjgXdylLI37o1za3ytn3OXHCP0,1478838
+pyhacrf/adjacent.cpython-36m-x86_64-linux-gnu.so,sha256=YZQY1XqLlw2HtnAgJB-tX_3_0eFNtd1zh8NfhCiGURw,1083896
+pyhacrf/__init__.py,sha256=zHVOzVm2bNEB1pyk8yKQca7CIUtvIs1gXEvehilUxO4,256
+pyhacrf/feature_extraction.py,sha256=sDuY-r52d3YLtpii7DNQpFPbJi28Du4L0EgO1BQ0xjg,9183
