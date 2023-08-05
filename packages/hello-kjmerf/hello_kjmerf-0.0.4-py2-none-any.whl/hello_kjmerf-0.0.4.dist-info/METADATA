@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hello-kjmerf
+Version: 0.0.4
+Summary: A package that says hello to kjmerf
+Home-page: https://github.com/kjmerf/hello_kjmerf
+Author: Kevin Merfeld
+Author-email: kevinjmerfeld@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/kjmerf/hello_kjmerf/archive/v_0_0_01.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+This package says hello to kjmerf!
+
+
