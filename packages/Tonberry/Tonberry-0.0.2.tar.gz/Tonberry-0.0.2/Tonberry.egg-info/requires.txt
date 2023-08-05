@@ -1,0 +1,7 @@
+dacite
+user-agents
+
+[dev]
+mypy
+black
+isort
