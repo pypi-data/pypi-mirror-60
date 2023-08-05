@@ -1,0 +1,10 @@
+cached_fields/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cached_fields/exceptions.py,sha256=OTxTn08ZA4sjNdqFP5G06sksgmbbVVg6t3atEYVunzY,150
+cached_fields/fields.py,sha256=xqYPhr_mEluSS6vRcYQOEWwba5XAXg7gcLsfOmHqSiM,3505
+cached_fields/handlers.py,sha256=mG1jIlkauvTW8x_3XJTEPdQyDLBPkbNMRDAQL6mQ5vk,3579
+cached_fields/mixins.py,sha256=r4ofeldZSj7zq3b7T79A2BUYpF8_w1Zo6BcGnWYhu9A,2973
+django_cached_fields-0.1.2.dist-info/LICENSE,sha256=gJ1K6eT4Nst0bGkbGymVy5273pTBVYQe0KYqoPOt39Y,1065
+django_cached_fields-0.1.2.dist-info/METADATA,sha256=kjpDp6wIbSaKenboE5xqWLkE2PWGT4X4QRm0NnJAd04,3605
+django_cached_fields-0.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_cached_fields-0.1.2.dist-info/top_level.txt,sha256=HRHOy5Z51ZAgQsPYRCizZ02tw9laE5mPrHBDYiZYQxg,14
+django_cached_fields-0.1.2.dist-info/RECORD,,
