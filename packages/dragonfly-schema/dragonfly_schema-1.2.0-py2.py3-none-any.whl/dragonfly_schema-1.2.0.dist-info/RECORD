@@ -1,0 +1,13 @@
+dragonfly_schema/__init__.py,sha256=Cp-YAOlfQuotiRooL-u9oPbSK_C4xBDYQUhlA67qxyI,36
+dragonfly_schema/_base.py,sha256=D4xZT4S1-2W4mvkKOTVpOkhdzIVXMWQTsAgnULpr4z4,698
+dragonfly_schema/_openapi.py,sha256=KnDzz4rihuqGJswm8P5CuBSxcTL_exHrYcRdr3DCx6I,2379
+dragonfly_schema/model.py,sha256=KH-gBwF323plvm32C67sIS92vOvUlN5MwOoWy4uLFTU,8899
+dragonfly_schema/shading_parameter.py,sha256=c6kTDErlVpz8bSKSH_wNbHwa2KBKjAJZPeQ9ixq0yvs,3103
+dragonfly_schema/window_parameter.py,sha256=VaUfm6iP7gQFPf5lI4IjHxOz9p9DxMgL6DgRLNTYbKg,6356
+dragonfly_schema/energy/__init__.py,sha256=lLuzq9Sm9LUrW6VpOYxfS0Q_rXzOJoPDfzlxA3eFq2M,55
+dragonfly_schema/energy/properties.py,sha256=mTFCXLm1ACz6qZRWV0V6G-y1a2K3VbeoQ8_przTO6IU,6534
+dragonfly_schema-1.2.0.dist-info/LICENSE,sha256=XfAFIvGuzrC7DEE82mZyAJX4l2ND-i7fICCCMiXBDZw,1070
+dragonfly_schema-1.2.0.dist-info/METADATA,sha256=MuoN1jg4mzn8sUVn3yhufc1iXVK9wZOJHtU1QeSaJnY,2207
+dragonfly_schema-1.2.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+dragonfly_schema-1.2.0.dist-info/top_level.txt,sha256=FOvFqYP_bZgcwNtIIgvUZjC-LuQGBEms5zW4nkiclZ0,17
+dragonfly_schema-1.2.0.dist-info/RECORD,,
