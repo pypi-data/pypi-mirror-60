@@ -1,0 +1,9 @@
+bs4
+click
+importlib.resources
+pyOpenSSL
+pycryptodome
+pyqt5
+requests
+unicode
+unidecode
