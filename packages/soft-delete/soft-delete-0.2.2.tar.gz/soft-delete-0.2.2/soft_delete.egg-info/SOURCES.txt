@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+soft_delete.egg-info/PKG-INFO
+soft_delete.egg-info/SOURCES.txt
+soft_delete.egg-info/dependency_links.txt
+soft_delete.egg-info/requires.txt
+soft_delete.egg-info/top_level.txt
+softdelete/__init__.py
+softdelete/managers.py
+softdelete/models.py
