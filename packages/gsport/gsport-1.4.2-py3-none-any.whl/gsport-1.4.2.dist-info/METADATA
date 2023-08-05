@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: gsport
+Version: 1.4.2
+Summary: GSPORT download tool for GenomeScan data from customer portal in command-line interface
+Home-page: https://github.com/genomescan/gsport.git
+Author: Niels de Water
+Author-email: n.dewater@genomescan.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.22.0)
+
+- Python GSPORT
+
+For usage, login on https://portal.genomescan.nl
+
+
+
