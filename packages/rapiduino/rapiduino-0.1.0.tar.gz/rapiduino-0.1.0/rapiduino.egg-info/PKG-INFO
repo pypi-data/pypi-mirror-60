@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: rapiduino
+Version: 0.1.0
+Summary: Rapidly develop code to control an Arduino using Python
+Home-page: https://github.com/samwedge/rapiduino
+Author: Sam Wedge
+Author-email: samwedge@gmail.com
+License: MIT
+Description: Rapidly develop code to control an Arduino using Python. Python code is executed on a computer. The Arduino is controlled through serial connection. Suitable for rapid development where a computer connection is not a burden, or where a small microcomputer (such as a Raspberry Pi) can be used.
+Keywords: arduino python rapid development serial communication
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

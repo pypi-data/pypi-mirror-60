@@ -1,0 +1,8 @@
+pyserial
+six
+
+[test]
+unittest2
+mock
+flake8
+coveralls
