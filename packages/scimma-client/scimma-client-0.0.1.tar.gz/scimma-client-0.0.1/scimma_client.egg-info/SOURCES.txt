@@ -1,0 +1,9 @@
+README.md
+setup.py
+scimma/__init__.py
+scimma/client/__init__.py
+scimma_client.egg-info/PKG-INFO
+scimma_client.egg-info/SOURCES.txt
+scimma_client.egg-info/dependency_links.txt
+scimma_client.egg-info/namespace_packages.txt
+scimma_client.egg-info/top_level.txt
