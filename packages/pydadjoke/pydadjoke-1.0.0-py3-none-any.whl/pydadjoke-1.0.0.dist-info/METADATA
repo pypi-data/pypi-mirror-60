@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pydadjoke
+Version: 1.0.0
+Summary: CLI to call the icanhazdadjoke API and returns a dad joke
+Home-page: https://github.com/jwood803/pydadjoke
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: fire
+Requires-Dist: requests
+
+# PyDadJoke
+CLI in Python to retrieve a random dad joke. Uses [icanhazdadjoke](https://icanhazdadjoke.com/) for the API.
+
+## Commands
+
+### Joke
+```bash
+pydadjoke joke
+```
+
+Returns a single, random dad joke.
+
+
+### Search
+```bash
+pydadjoke search <search term>
+```
+
+Returns a list of 10 dad jokes that match the search term.
+
+
