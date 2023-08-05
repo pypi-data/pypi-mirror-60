@@ -1,0 +1,12 @@
+#!/Users/jgentle/miniconda3/envs/sgci-eds-gdash/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'genomedashboard==0.0.73','console_scripts','genomedashboard'
+__requires__ = 'genomedashboard==0.0.73'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('genomedashboard==0.0.73', 'console_scripts', 'genomedashboard')()
+    )
