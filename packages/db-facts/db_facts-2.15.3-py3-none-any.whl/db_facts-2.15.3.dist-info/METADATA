@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: db-facts
+Version: 2.15.3
+Summary: Database connection configuration manager
+Home-page: UNKNOWN
+Author: Vince Broz
+Author-email: vince.broz@bluelabs.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: jinja2
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
