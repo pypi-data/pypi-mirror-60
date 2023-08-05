@@ -1,0 +1,7 @@
+Variable	Process
+independent,6150,6155,20003,20199	binariseCategorical(acrossVisits=True, acrossInstances=True, metaproc='codingdesc')
+independent,20001,20002,20004,40011,40012	binariseCategorical(acrossVisits=True, acrossInstances=True, metaproc='hierarchycodedesc')
+independent,40001,40002,40006,40013,41200,41201,41202,41203,41204,41205,41210,41256,41258,41270,41271,41272,41273	binariseCategorical(acrossVisits=True, acrossInstances=True, metaproc='hierarchynumdesc')
+all_independent_except,6150,6155,20001,20002,20003,20004,20199,40001,40002,40006,40011,40012,40013,41200,41201,41202,41203,41204,41205,41210,41256,41258,41270,41271,41272,41273	removeIfSparse(minpres=51, maxcat=0.99, minstd=1e-6, abscat=False)
+independent,6150,6155,20001,20002,20003,20004,20199,40001,40002,40006,40011,40012,40013,41200,41201,41202,41203,41204,41205,41210,41256,41258,41270,41271,41272,41273	removeIfSparse(mincat=10)
+all	removeIfRedundant(0.99, 0.2)
