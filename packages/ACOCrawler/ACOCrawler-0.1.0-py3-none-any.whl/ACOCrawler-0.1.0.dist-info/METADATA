@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ACOCrawler
+Version: 0.1.0
+Summary: ACO Web Crawler implemented by python
+Home-page: https://github.com/ganariya/ACOCrawler
+Author: ganariya
+Author-email: ganariya2525@gmail.com
+License: MIT
+Keywords: ACOCrawler
+Platform: UNKNOWN
+Requires-Dist: click
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+Requires-Dist: mecab-python3
+Requires-Dist: neo4j
+Requires-Dist: neobolt
+Requires-Dist: reppy
+Requires-Dist: requests
+Requires-Dist: chardet
+
+UNKNOWN
+
+

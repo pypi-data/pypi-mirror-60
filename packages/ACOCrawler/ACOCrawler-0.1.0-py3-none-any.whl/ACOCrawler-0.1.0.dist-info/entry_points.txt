@@ -1,0 +1,3 @@
+[console_scripts]
+ACOCrawler = ACOCrawler.cli:main
+
