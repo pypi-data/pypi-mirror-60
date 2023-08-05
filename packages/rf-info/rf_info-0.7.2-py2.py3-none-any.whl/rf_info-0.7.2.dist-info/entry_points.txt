@@ -1,0 +1,3 @@
+[console_scripts]
+rf-info = rf_info.cli:main
+
