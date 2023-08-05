@@ -1,0 +1,3 @@
+[console_scripts]
+sij = sijuiacion_lang.interface:main
+

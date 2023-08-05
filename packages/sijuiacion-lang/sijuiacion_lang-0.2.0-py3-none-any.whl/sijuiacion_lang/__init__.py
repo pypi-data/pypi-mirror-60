@@ -1,0 +1,1 @@
+import sijuiacion_lang.bytecode_patch

@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: sijuiacion-lang
+Version: 0.2.0
+Summary: UNKNOWN
+Home-page: https://github.com/RemuLang/sijuiacion-lang
+Author: thautwarm
+Author-email: twshere@outlook.com
+License: mit
+Platform: any
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: rbnf-rts
+Requires-Dist: argser
+Requires-Dist: typing-extensions
+Requires-Dist: bytecode
+
+
+# sijuiacion-lang
+
+[![Documentation Status](https://readthedocs.org/projects/sijuiacion-lang/badge/?version=latest)](https://sijuiacion-lang.readthedocs.io/en/latest/?badge=latest)
+
+
+Sijuiacion, a.k.a "橘势", is a programming language to achieve a better use of
+a subset of of the CPython bytecode instructions.
+
+It provides some useful high level instructions, e.g, the Indirect Jumps,
+and the Switch instructions, that are much more efficient than stacked if-else statements.
+
+This idea is not originated by me, and I even just heard(got introduced about)
+this from someone else. I must appreciate him for bringing me how to
+use `END_FINALLY` to achieve this "fast switch" in Python.
+
+# Installation
+
+Clone this repo, and
+
+```
+pip install -U moshmosh-base --no-compile
+cd sijuiacion-lang
+pip install . --no-compile
+```
+
+For manuals, check out the [documentation](https://sijuiacion-lang.readthedocs.io/en/latest/index.html).
+
+
