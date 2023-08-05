@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: byteapi
+Version: 0.1
+Summary: A simple byte api wrapper.
+Home-page: https://github.com/cr3atable/byteapi
+Author: creatable
+Author-email: creatable@creatable.cafe
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+A CLI utility to interact with the byte api.
+
+
