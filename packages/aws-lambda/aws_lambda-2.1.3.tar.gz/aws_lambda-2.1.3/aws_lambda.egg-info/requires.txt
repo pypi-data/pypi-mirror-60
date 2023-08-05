@@ -1,0 +1,8 @@
+boto3
+botocore
+troposphere
+aws-cdk.core
+aws-cdk.aws_iam
+aws-cdk.aws_ec2
+aws-cdk.aws_lambda
+cfnresponse
