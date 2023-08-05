@@ -1,0 +1,5 @@
+setup.py
+squatter.egg-info/PKG-INFO
+squatter.egg-info/SOURCES.txt
+squatter.egg-info/dependency_links.txt
+squatter.egg-info/top_level.txt
