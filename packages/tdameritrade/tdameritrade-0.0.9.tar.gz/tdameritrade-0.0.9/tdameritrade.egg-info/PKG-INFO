@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: tdameritrade
+Version: 0.0.9
+Summary: APIs for TD Ameritrade
+Home-page: https://github.com/timkpaine/tdameritrade
+Author: Tim Paine
+Author-email: t.paine154@gmail.com
+License: Apache 2.0
+Description: # tdameritrade
+        Python interface to TD Ameritrade Api
+        
+        
+        [![Build Status](https://travis-ci.org/timkpaine/tdameritrade.svg?branch=master)](https://travis-ci.org/timkpaine/tdameritrade)
+        [![Coverage](https://codecov.io/gh/timkpaine/tdameritrade/branch/master/graph/badge.svg)](https://codecov.io/gh/timkpaine/tdameritrade)
+        [![BCH compliance](https://bettercodehub.com/edge/badge/timkpaine/tdameritrade?branch=master)](https://bettercodehub.com/)
+        [![License](https://img.shields.io/github/license/timkpaine/tdameritrade.svg)](https://pypi.python.org/pypi/tdameritrade/)
+        [![PyPI](https://img.shields.io/pypi/v/tdameritrade.svg)](https://pypi.python.org/pypi/tdameritrade/)
+        [![Docs](https://img.shields.io/readthedocs/tdameritrade.svg)](https://tdameritrade.readthedocs.io)
+        
+        
+        ## Getting Started
+        [Read the docs!](http://tdameritrade.readthedocs.io/en/latest/index.html)
+        
+        
+        ### Options Data
+        ![](https://raw.githubusercontent.com/timkpaine/tdameritrade/master/docs/img/options.png)
+        
+Keywords: finance data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
