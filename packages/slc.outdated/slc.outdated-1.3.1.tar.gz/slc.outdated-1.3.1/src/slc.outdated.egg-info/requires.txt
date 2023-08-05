@@ -1,0 +1,7 @@
+setuptools
+Plone
+
+[test]
+plone.app.testing
+plone.api
+mock
