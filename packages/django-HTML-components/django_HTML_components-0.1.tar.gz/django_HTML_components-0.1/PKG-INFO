@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: django_HTML_components
+Version: 0.1
+Summary: Adds several commonly used components for Django, such as a styled header and footer.
+Home-page: https://github.com/moddedTechnic/django-HTML-components
+Author: Jonathan Leeming
+Author-email: jpleeming51@gmail.com
+License: GNU GPL 3.0
+Download-URL: https://github.com/moddedTechnic/django-HTML-components/archive/v0.1.3-alpha.tar.gz
+Description: UNKNOWN
+Keywords: django,HTML,components
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Django :: 3.0
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
