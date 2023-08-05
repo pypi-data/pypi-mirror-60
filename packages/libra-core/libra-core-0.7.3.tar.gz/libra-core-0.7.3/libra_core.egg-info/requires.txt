@@ -1,0 +1,8 @@
+PyNaCl
+canoser>=0.7.2
+grpcio
+more-itertools
+protobuf
+pygments
+requests
+toml
