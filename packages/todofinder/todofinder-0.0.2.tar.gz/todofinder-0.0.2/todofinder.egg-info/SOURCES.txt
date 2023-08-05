@@ -1,0 +1,9 @@
+README.md
+setup.py
+todofinder/__init__.py
+todofinder/__main__.py
+todofinder.egg-info/PKG-INFO
+todofinder.egg-info/SOURCES.txt
+todofinder.egg-info/dependency_links.txt
+todofinder.egg-info/not-zip-safe
+todofinder.egg-info/top_level.txt
