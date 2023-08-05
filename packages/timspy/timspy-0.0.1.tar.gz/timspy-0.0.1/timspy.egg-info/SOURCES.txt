@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+timspy/__init__.py
+timspy.egg-info/PKG-INFO
+timspy.egg-info/SOURCES.txt
+timspy.egg-info/dependency_links.txt
+timspy.egg-info/requires.txt
+timspy.egg-info/top_level.txt
