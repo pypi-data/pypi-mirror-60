@@ -1,0 +1,1 @@
+{"ANSIBLE_MODULE_ARGS":{"kubeconfig": "~/.k8s-setup/admin.conf","chart": "charts/wd-test","namespace": "default"}}

@@ -1,0 +1,29 @@
+###########################################
+## Firewall
+
+- name: system - firewall service enabled and started
+  service:
+    name: firewalld
+    enabled: yes
+    state: started
+
+- name: system - read firewall-rules-clp.yml
+  include_vars:
+    file: "firewall-rules-clp.yml"
+    name: rulesfile
+
+- name: system - apply firewall-rules-clp.yml
+  firewalld:
+    port: "{{ item }}"
+    permanent: yes
+    state: enabled
+    immediate: yes
+  with_items: "{{rulesfile.rules}}"
+
+- name: system - apply custom firewall rules (lnxclp_custom_firewall_rules)
+  firewalld:
+    port: "{{ item }}"
+    permanent: yes
+    state: enabled
+    immediate: yes
+  with_items: "{{lnxclp_custom_firewall_rules}}"

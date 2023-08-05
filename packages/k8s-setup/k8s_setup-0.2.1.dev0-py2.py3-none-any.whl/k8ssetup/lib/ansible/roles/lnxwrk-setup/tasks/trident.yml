@@ -1,0 +1,5 @@
+- name: trident - yum package 'nfs-utils' installed
+  yum:
+    name:
+      - nfs-utils
+

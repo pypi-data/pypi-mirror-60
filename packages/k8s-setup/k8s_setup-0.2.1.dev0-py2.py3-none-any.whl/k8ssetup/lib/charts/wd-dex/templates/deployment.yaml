@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    k8s-app: dex
+  name: dex
+spec:
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels:
+      k8s-app: dex
+  template:
+    metadata:
+      labels:
+        k8s-app: dex
+    spec:
+      serviceAccountName: dex # see rbac.yaml
+      containers:
+      - name: dex
+        image: {{ .Values.image }}:{{ .Values.imagetag }}
+        command: ["/usr/local/bin/dex", "serve", "/etc/dex/cfg/config.yaml"]
+
+        ports:
+        - name: https
+          containerPort: 8443
+
+        volumeMounts:
+        - name: config
+          mountPath: /etc/dex/cfg
+
+        - name: https-certificate
+          mountPath: /etc/dex/tls
+
+      volumes:
+      - name: config
+        configMap:
+          name: dex
+          items:
+          - key: config.yaml
+            path: config.yaml
+
+      - name: https-certificate
+        secret:
+          secretName: https-certificate

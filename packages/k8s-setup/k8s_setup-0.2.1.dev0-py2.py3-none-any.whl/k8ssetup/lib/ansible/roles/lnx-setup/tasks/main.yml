@@ -1,0 +1,150 @@
+
+###########################################
+## System 
+
+- name: system - upgrade all yum packages
+  yum:
+    name: '*'
+    state: latest
+  when: setup_update_all_packages
+
+- name: system - swap disabled
+  when: ansible_facts['swaptotal_mb'] != 0
+  shell: |
+    swapoff -a
+
+- name: system - disable swap permanently in /etc/fstab
+  replace:
+    path: /etc/fstab
+
+    # now we are matching the line if 'swap' is contained in the 3rd column
+    # see 'man fstab' for reference. This should work on all Linux systems
+    # test: https://regex101.com/r/F4s7l1/1
+    regexp: '(^[^#][^\s#]+\s+\S+\s+swap)'
+    replace: '# \1'
+
+###########################################
+## Firewall
+
+- name: system - firewall service enabled and started
+  service:
+    name: firewalld
+    enabled: yes
+    state: started
+
+
+###########################################
+## Install docker
+
+- name: docker - ensure required packages installed
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - yum-utils
+    - device-mapper-persistent-data
+    - lvm2
+    - bash-completion
+
+- name: docker - docker yum repository
+  yum_repository:
+    name: docker-ce-stable
+    description: docker-ce-stable
+    baseurl: https://download.docker.com/linux/centos/7/x86_64/stable
+    enabled: yes
+    gpgcheck: yes
+    gpgkey: https://download.docker.com/linux/centos/gpg
+
+
+# https://unixy.net/secure/knowledgebase/104/What-does-el5-el6-and-el7-mean.html
+- name: "docker - docker ce {{lnx_docker_version}} installed"
+  package:
+    name: "docker-ce-{{lnx_docker_version}}.ce"
+
+- name: docker - enable net.bridge.bridge-nf-call-iptables
+  sysctl:
+    name: net.bridge.bridge-nf-call-iptables
+    value: '1'
+    ignoreerrors: yes # otherwise it tries to stat /proc/sys/bridge-nf-call-iptables
+    state: present
+
+- name: docker - enable net.bridge.bridge-nf-call-ip6tables
+  sysctl:
+    name: net.bridge.bridge-nf-call-ip6tables
+    value: '1'
+    ignoreerrors: yes # otherwise it tries to stat /proc/sys/bridge-nf-call-ip6tables
+    state: present
+
+- name: docker - generate demon.json
+  template:
+    src: demon.json
+    dest: /etc/docker/
+
+- name: docker - dockerd enabled and started
+  service:
+    name: docker
+    enabled: yes
+    state: started
+
+###########################################
+## Install kubernetes
+
+# https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#installing-kubeadm-kubelet-and-kubectl
+- name: kubernetes - kubernetes yum repository
+  yum_repository:
+    name: Kubernetes
+    description: Kubernetes
+    baseurl: https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+    enabled: no
+    gpgcheck: yes
+    gpgkey: https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+
+- name: "kubernetes - check if kubelet is already installed"
+  yum:
+    enablerepo: Kubernetes
+    list: installed
+  register: yumres
+
+- name: "kubernetes - kubelet kubeadm kubectl ({{k8s_version}}) installed"
+  yum:
+    enablerepo: Kubernetes
+    name:
+      - "kubelet-{{k8s_version}}-0"
+      - "kubeadm-{{k8s_version}}-0"
+      - "kubectl-{{k8s_version}}-0"
+  when: yumres | json_query('results[?name=="kubelet"]') | count == 0
+  register: out_k8s_install
+
+- name: kubernetes - pull required kubernetes images
+  command: kubeadm config images pull --kubernetes-version={{k8s_version}}
+  when: out_k8s_install.changed
+
+- name: kubernetes - kubelet enabled and started
+  service:
+    name: kubelet
+    enabled: yes
+    state: started
+
+# https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#pod-network
+- name: flannel - allow 8285/udp
+  firewalld:
+    port: 8285/udp
+    permanent: yes
+    state: enabled
+    immediate: yes
+  when: k8s_install_flannel
+
+- name: flannel - allow 8472/udp
+  firewalld:
+    port: 8472/udp
+    permanent: yes
+    state: enabled
+    immediate: yes
+  when: k8s_install_flannel
+  
+- name: flannel - enable firewalld masquerade
+  firewalld:
+    masquerade: 'yes'   # this is documented as string in the firewalld module
+    permanent: yes
+    state: enabled
+    immediate: yes

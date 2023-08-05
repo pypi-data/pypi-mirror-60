@@ -1,0 +1,11 @@
+# Default values for dex
+# This is a YAML-formatted file.
+# Declare name/value pairs to be passed into your templates.
+# name: value
+
+hostname: auth.k8stest.local
+
+image: quay.io/dexidp/dex
+imagetag: "v2.19.0"
+
+replicas: 1

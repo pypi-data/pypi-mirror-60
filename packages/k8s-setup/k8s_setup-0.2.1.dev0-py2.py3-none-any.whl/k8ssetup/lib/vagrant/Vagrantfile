@@ -1,0 +1,131 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Install vagrant plugins if required
+def ensure_plugin(name)
+    unless Vagrant.has_plugin?(name)
+        system("vagrant plugin install #{name}")
+    end
+end
+
+# https://github.com/gosuri/vagrant-env
+# Allows us to put configuration values in .env
+ensure_plugin("vagrant-env")
+
+# https://github.com/oscar-stack/vagrant-hosts
+# Allows us to use host-resolution internaly, without DNS
+ensure_plugin("vagrant-hosts")
+
+Vagrant.configure(2) do |config|
+
+    # enable the vagrant-env
+    config.env.enable
+
+    # get the configured network, without the * postfix
+    network=ENV['GLOBAL_VAGRANT_HOSTS_NETWORK'][/\d+\.\d+.\d+/]
+
+    config.vm.provision :hosts do |p|
+        # p.sync_hosts = true
+        p.autoconfigure = true
+        p.add_host ENV['K8S_APISERVER_VIP'], ["#{ENV['K8S_APISERVER_HOST']}"]
+    end
+
+    #   10.0.0.10-19: Control Plane Nodes
+    (1..ENV['GLOBAL_VAGRANT_LNXCLP_COUNT'].to_i).each do |nr|
+        config.vm.define "lnxclp#{nr}" do |node|
+            node.vm.box=ENV['GLOBAL_VAGRANT_LNX_BOXNAME']
+            node.vm.hostname = "lnxclp#{nr}"
+            node.vm.network "private_network", ip:"#{network}.#{9+nr}"
+
+            # virtualbox configuration
+            node.vm.provider "virtualbox" do |vb|
+                vb.memory = ENV['GLOBAL_VAGRANT_LNXCLP_MEM']
+                vb.cpus = ENV['GLOBAL_VAGRANT_LNXCLP_CPU']
+                vb.linked_clone = true
+                vb.name = "lnxclp#{nr}.#{ENV['K8S_CLUSTER_DNSNAME']}"
+            end
+        end
+    end
+
+    # 10.0.0.20-29: Linux Worker Nodes
+    (1..ENV['GLOBAL_VAGRANT_LNXWRK_COUNT'].to_i).each do |nr|
+        config.vm.define "lnxwrk#{nr}" do |node|
+            node.vm.box=ENV['GLOBAL_VAGRANT_LNX_BOXNAME']
+            node.vm.hostname = "lnxwrk#{nr}"
+            node.vm.network "private_network", ip:"#{network}.#{19+nr}"
+
+            # virtualbox configuration
+            node.vm.provider "virtualbox" do |vb|
+                vb.memory = ENV['GLOBAL_VAGRANT_LNXWRK_MEM']
+                vb.cpus = ENV['GLOBAL_VAGRANT_LNXWRK_CPU']
+                vb.linked_clone = true
+                vb.name = "lnxwrk#{nr}.#{ENV['K8S_CLUSTER_DNSNAME']}"
+            end
+        end
+    end
+
+    # 10.0.0.30-39: Windows Worker Nodes
+    (1..ENV['GLOBAL_VAGRANT_WINWRK_COUNT'].to_i).each do |nr|
+        config.vm.define "winwrk#{nr}" do |node|
+            node.vm.box=ENV['GLOBAL_VAGRANT_WIN_BOXNAME']
+            node.vm.hostname = "winwrk#{nr}"
+            node.vm.network "private_network", ip:"#{network}.#{29+nr}"
+
+            # virtualbox configuration
+            node.vm.provider "virtualbox" do |vb|
+                vb.memory = ENV['GLOBAL_VAGRANT_WINWRK_MEM']
+                vb.cpus = ENV['GLOBAL_VAGRANT_WINWRK_CPU']
+                vb.linked_clone = true
+                vb.name = "winwrk#{nr}.#{ENV['K8S_CLUSTER_DNSNAME']}"
+            end
+        end
+    end
+
+    config.vm.provision :ansible do |ansible|
+
+        # because limit="all", the playbook is executed on all machines in parallel
+        # even if it is triggered by "client", which is the last in the Vagrantfile
+        # This ensures, that
+        #   1. ansible provisioner is called only once
+        #   2. ansible provisioner is called after others
+        ansible.limit = "all"
+
+        # groups are not configured by a hostname pattern, because this generates a warning:
+        # > Vagrant has detected a host range pattern in the `groups` option.
+        # > Vagrant doesn't fully check the validity of these parameters!
+
+        ansible.groups = {
+
+            # only the setup node needs to be configured statically
+            "lnxclp_setup" => ["lnxclp1"],
+            "lnxclp" => [],
+            "lnxwrk" => [],
+            "winwrk" => [],
+            "winwrk:vars" => {
+                "ansible_winrm_scheme" => "http",
+                "ansible_become" => false
+            }
+        }
+
+        (1..ENV['GLOBAL_VAGRANT_LNXCLP_COUNT'].to_i).each do |nr|
+            ansible.groups["lnxclp"] << "lnxclp#{nr}"
+        end
+
+        (1..ENV['GLOBAL_VAGRANT_LNXWRK_COUNT'].to_i).each do |nr|
+            ansible.groups["lnxwrk"] << "lnxwrk#{nr}"
+        end
+
+        (1..ENV['GLOBAL_VAGRANT_WINWRK_COUNT'].to_i).each do |nr|
+            ansible.groups["winwrk"] << "winwrk#{nr}"
+        end
+
+        if ENV['GLOBAL_VAGRANT_SINGLENODE_LNXCLUSTER']
+            ansible.groups["lnxwrk"] << "lnxclp1"
+        end
+
+        ansible.playbook = "./vagrantpp.yml"
+        ansible.compatibility_mode = "2.0"
+
+    end
+
+end
