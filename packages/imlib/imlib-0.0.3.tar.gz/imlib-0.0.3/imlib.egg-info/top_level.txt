@@ -1,0 +1,5 @@
+build
+dist
+htmlcov
+imlib
+travis
