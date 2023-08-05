@@ -1,0 +1,95 @@
+
+@font-face {
+  font-family: 'WorkSans-BoldItalic';
+  src: url('/static/fonts/worksans/WorkSans-BoldItalic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraBoldItalic';
+  src: url('/static/fonts/worksans/WorkSans-ExtraBoldItalic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-Black';
+  src: url('/static/fonts/worksans/WorkSans-Black.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-Thin';
+  src: url('/static/fonts/worksans/WorkSans-Thin.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-SemiBold';
+  src: url('/static/fonts/worksans/WorkSans-SemiBold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraBold';
+  src: url('/static/fonts/worksans/WorkSans-ExtraBold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-ThinItalic';
+  src: url('/static/fonts/worksans/WorkSans-ThinItalic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-BlackItalic';
+  src: url('/static/fonts/worksans/WorkSans-BlackItalic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-Hairline';
+  src: url('/static/fonts/worksans/WorkSans-Hairline.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-Medium';
+  src: url('/static/fonts/worksans/WorkSans-Medium.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-Bold';
+  src: url('/static/fonts/worksans/WorkSans-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-LightItalic';
+  src: url('/static/fonts/worksans/WorkSans-LightItalic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-Italic';
+  src: url('/static/fonts/worksans/WorkSans-Italic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-SemiBoldItalic';
+  src: url('/static/fonts/worksans/WorkSans-SemiBoldItalic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraLight';
+  src: url('/static/fonts/worksans/WorkSans-ExtraLight.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-Light';
+  src: url('/static/fonts/worksans/WorkSans-Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraLightItalic';
+  src: url('/static/fonts/worksans/WorkSans-ExtraLightItalic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-Regular';
+  src: url('/static/fonts/worksans/WorkSans-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans-MediumItalic';
+  src: url('/static/fonts/worksans/WorkSans-MediumItalic.otf') format('truetype');
+}
