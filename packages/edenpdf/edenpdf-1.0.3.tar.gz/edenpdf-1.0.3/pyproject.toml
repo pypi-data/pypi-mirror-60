@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "edenpdf"
+version = "1.0.3"
+description = "ilovepdf.com python API library"
+
+license = "GPL-3.0-only"
+
+authors = [
+    "Eden-Box <dev@edenbox.cf>",
+    "Andrea Bruschi <moonx2006@gmail.com>"
+]
+
+readme = 'README.md'
+
+repository = "https://github.com/eden-box/edenpdf"
+homepage = "https://github.com/eden-box/edenpdf"
+
+keywords = ['pdf', 'unlock', 'compress', 'manipulate', 'edit', 'protect', 'pdftojpg', 'jpgtopdf', 'pdfa']
+
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+]
+
+[tool.poetry.dependencies]
+python = '^3.6.0'
+requests = '^2.22.0'
+urllib3 = '^1.25.0'
