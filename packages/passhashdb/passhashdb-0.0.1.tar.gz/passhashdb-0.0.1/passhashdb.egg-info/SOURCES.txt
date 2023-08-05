@@ -1,0 +1,10 @@
+README.md
+setup.py
+passhashdb/__init__.py
+passhashdb/version.py
+passhashdb.egg-info/PKG-INFO
+passhashdb.egg-info/SOURCES.txt
+passhashdb.egg-info/dependency_links.txt
+passhashdb.egg-info/top_level.txt
+scripts/hibp-to-passhashdb
+scripts/samba-check-passhashdb

@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+# This script converts the files found on https://haveibeenpwned.com/Passwords
+# to a fast, efficient binary format
+from binascii import unhexlify
+from passhashdb import PasswordDB
+
+def process(inf, outf):
+    db = PasswordDB(outf)
+
+    for line in inf:
+        # Parse line
+        line = line.strip()
+        hash_hex, count = line.split(':')
+
+        # Convert to native types
+        hash_bin = unhexlify(hash_hex)
+        count = int(count)
+
+        db.add_hash(hash_bin, count)
+
+
+
+def parse_args():
+    import argparse
+    ap = argparse.ArgumentParser(
+        description="Convert a haveibeenpwned.com password hash file "
+            "to a binary passhashdb file")
+    ap.add_argument('infile', type=argparse.FileType('r'),
+            help="Input text file")
+    ap.add_argument('outfile', type=argparse.FileType('wb'),
+            help="Output binary file")
+    return ap.parse_args()
+
+
+def main():
+    args = parse_args()
+
+    process(args.infile, args.outfile)
+
+
+if __name__ == '__main__':
+    main()

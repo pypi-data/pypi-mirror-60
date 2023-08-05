@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+#
+# This script implements Samba's 'check password script' interface:
+# It reads a password from standard input, then returns 0 if the password is
+# good, or 1 if it has been comprimised.
+#
+# Samba sets the following environment variables (see samdb_check_password):
+# - SAMBA_CPS_ACCOUNT_NAME (sAMAccountName)
+# - SAMBA_CPS_USER_PRINCIPAL_NAME (UPN)
+# - SAMBA_CPS_FULL_NAME (Display name)
+#
+import argparse
+from datetime import datetime
+import os
+import sys
+from passhashdb import PasswordDB
+
+def logline(mesg):
+    line = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+    account = os.getenv('SAMBA_CPS_ACCOUNT_NAME')
+    if account:
+        line += ' ' + account
+
+    line += ': ' + mesg + '\n'
+
+    sys.stderr.write(line)
+
+
+
+def parse_args():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('passhashdb', type=argparse.FileType("r"),
+            help="Path to input password hash database")
+
+    args = ap.parse_args()
+    return args
+
+
+def main():
+    args = parse_args()
+
+    # Read password from stdin (until EOF)
+    plaintext_passwd = sys.stdin.read()
+    
+    # Search for password in DB
+    with PasswordDB(args.passhashdb) as db:
+        try:
+            passwd_count = db.search_password(plaintext_passwd)
+        except KeyError:
+            passwd_count = 0
+
+    # If the password is found, exit with status 1
+    if passwd_count > 0:
+        logline("BAD PASSWORD: Appears in data set {} times".format(passwd_count))
+        sys.exit(1)
+
+
+if __name__ == '__main__':
+    main()
