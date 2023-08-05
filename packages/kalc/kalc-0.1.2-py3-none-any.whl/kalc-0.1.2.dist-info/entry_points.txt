@@ -1,0 +1,3 @@
+[console_scripts]
+kalc-optimize=kalc.misc.cli_optimize:optimize_cluster
+
