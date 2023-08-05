@@ -1,0 +1,15 @@
+pocket_protector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pocket_protector/__main__.py,sha256=JSo_pilDQGhaOJBtE_ZCHWTEFKpMUjqchtk4llL2wbQ,255
+pocket_protector/_version.py,sha256=yn0zWKUKaEnnZlhBNYRQlJeydcYu3y5Q5DV4PoPMzuQ,176
+pocket_protector/cli.py,sha256=WHnjm_df256OM5g74Dc182BSzW0EGgC2paMMCN2LoLQ,12919
+pocket_protector/file_keys.py,sha256=D-honJbYOZ6nOY_sf95xzDXtbgdTsC05VqQ6vJjip5Y,22339
+pocket_protector/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pocket_protector/tests/conftest.py,sha256=hRJpj_dc_aLamuAPUFuUPT891qSpEStotK7CfSnM1iQ,476
+pocket_protector/tests/test_cli.py,sha256=CnzS9pPMALmH9Hj2drvTPOeZ4vE1_H9_yUZ5hg46w6g,5396
+pocket_protector/tests/test_file_keys.py,sha256=YzGTKQ13iLAnZb0CxDcY_FtKoW46NCDOiehBz6a9kPA,2474
+pocket_protector-20.0.1.dist-info/LICENSE.txt,sha256=9w4UqFg7ocfLMg2WhZhwGr7zpXeO4z9G_2ocsOoDCAc,10796
+pocket_protector-20.0.1.dist-info/METADATA,sha256=tOVKb8wofPyU6csCjLasbkJyscE-SR54-tM2tGtP6-Q,9821
+pocket_protector-20.0.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pocket_protector-20.0.1.dist-info/entry_points.txt,sha256=09ecOlRKu1vxbclq9imKBHD_QlbAOyBnXUbZft9uf6E,111
+pocket_protector-20.0.1.dist-info/top_level.txt,sha256=9lDt4PtsMawQMAaJzvrO-5rXSZiRXOQKVbBvKN9HB6M,17
+pocket_protector-20.0.1.dist-info/RECORD,,
