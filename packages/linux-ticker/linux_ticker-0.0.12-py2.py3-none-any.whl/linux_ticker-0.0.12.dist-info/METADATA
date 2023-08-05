@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: linux-ticker
+Version: 0.0.12
+Summary: Simple ticker for use on linux platform with max resolution of 1ms
+Home-page: https://github.com/ishworgurung/linux-ticker
+Author: Ishwor Gurung
+Author-email: me@ishworgurung.com
+Maintainer: Ishwor Gurung
+Maintainer-email: me@ishworgurung.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+
+
+Simple ticker for use on linux platform. Maximum tick resolution is
+1 millisecond.
+
+Install using pip:
+
+.. code:: bash
+
+   pip install linux-ticker
+
+Simple use shown below:
+
+.. code:: python
+
+   from linux_ticker import Ticker, RepeatedTicker
+
+   def hello(interval):
+       print(f'hello() woke after {interval[0]}s')
+
+Repeat the ticker every 0.002 seconds for 2 times:
+
+.. code:: python
+
+   repeated_ticker = RepeatedTicker(interval=0.002, count=2)
+   repeated_ticker.tickback(hello, args=(repeated_ticker.interval,))
+
+Execute lambda:
+
+.. code:: python
+
+   repeated_ticker.tickback(lambda x: print(f'lambda woke after {x[0]}s'), args=(repeated_ticker.interval,))
+
+No tickback - only ticks:
+
+.. code:: python
+
+   repeated_ticker.tickback(None, args=())
+
+Repeat the ticker every 0.01 second
+
+.. code:: python
+
+   simple_ticker = Ticker(interval=0.01)
+   try:
+       while simple_ticker.tick():
+           print(f'simple ticker woke after {simple_ticker}s')
+   finally:
+       simple_ticker.stop()
+
+
