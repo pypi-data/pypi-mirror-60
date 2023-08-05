@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: trvaep
+Version: 0.0.9
+Summary: trVAE - Transfer Variational Autoencoders pytorch
+Home-page: None
+Author: Mohammad Lotfollahi
+Author-email: mohammad.lotfollahi@helmholtz-muenchen.de
