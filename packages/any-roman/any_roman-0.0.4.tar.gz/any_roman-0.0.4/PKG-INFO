@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: any_roman
+Version: 0.0.4
+Summary: Converts any whole number to roman numeral
+Home-page: https://gitlab.com/dnk8n/any_roman
+Author: Dean Kayton
+Author-email: hello@dnk8n.dev
+License: MIT
+Download-URL: https://gitlab.com/dnk8n/any_roman/-/archive/v0.0.4/any_roman-v0.0.4.tar.gz
+Description: UNKNOWN
+Keywords: roman,numeral,conversion
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

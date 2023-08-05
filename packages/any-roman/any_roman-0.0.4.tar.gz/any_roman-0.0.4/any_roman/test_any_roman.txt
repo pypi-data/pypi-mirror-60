@@ -1,0 +1,194 @@
+The ``any_roman`` module
+=======================
+
+
+The ``int_to_roman`` function
+--------------------------
+
+Import statement:
+
+    >>> from any_roman import int_to_roman
+
+Tests:
+
+    >>> int_to_roman(0)
+    'N'
+    >>> int_to_roman(6)
+    'VI'
+    >>> int_to_roman(11)
+    'XI'
+    >>> int_to_roman(345)
+    'CCCXLV'
+    >>> int_to_roman(989)
+    'CMLXXXIX'
+    >>> int_to_roman(989000000, overline_code='^')
+    'C^^M^^L^^X^^X^^X^^M^X^^'
+    >>> int_to_roman(1000)
+    'M'
+    >>> int_to_roman(1001)
+    'MI'
+    >>> int_to_roman(2000)
+    'MM'
+    >>> int_to_roman(2001)
+    'MMI'
+    >>> int_to_roman(900)
+    'CM'
+    >>> int_to_roman(4000, overline_code='^')
+    'MV^'
+    >>> int_to_roman(6000, overline_code='^')
+    'V^M'
+    >>> int_to_roman(9000, overline_code='^')
+    'MX^'
+    >>> int_to_roman(6001, overline_code='^')
+    'V^MI'
+    >>> int_to_roman(9013, overline_code='^')
+    'MX^XIII'
+    >>> int_to_roman(70000000000, overline_code='^')
+    'L^^^X^^^X^^^'
+    >>> int_to_roman(9000013, overline_code='^')
+    'M^X^^XIII'
+    >>> int_to_roman(989888003, overline_code='^')
+    'C^^M^^L^^X^^X^^X^^M^X^^D^C^C^C^L^X^X^X^V^MMMIII'
+
+
+The ``get_thousand_count`` function
+--------------------------
+
+Import statement:
+
+    >>> from any_roman import get_thousand_count
+
+Tests:
+
+    >>> get_thousand_count(13)
+    (13, 0, 0)
+    >>> get_thousand_count(6013)
+    (6, 1, 13)
+    >>> get_thousand_count(60013)
+    (60, 1, 13)
+    >>> get_thousand_count(600013)
+    (600, 1, 13)
+    >>> get_thousand_count(6000013)
+    (6, 2, 13)
+    >>> get_thousand_count(999000000000000000000000000999)
+    (999, 9, 999)
+    >>> get_thousand_count(2005)
+    (2, 1, 5)
+    >>> get_thousand_count(2147483647)
+    (2, 3, 147483647)
+
+
+The ``core_lookup`` function
+--------------------------
+
+Import statement:
+
+    >>> from any_roman import core_lookup
+
+Tests:
+
+    >>> core_lookup(2)
+    ('II', 0)
+    >>> core_lookup(6)
+    ('V', 1)
+    >>> core_lookup(7)
+    ('V', 2)
+    >>> core_lookup(19)
+    ('X', 9)
+    >>> core_lookup(900)
+    ('CM', 0)
+    >>> core_lookup(999)
+    ('CM', 99)
+    >>> core_lookup(1000)
+    ('M', 0)
+    >>> core_lookup(1000.2)
+    Traceback (most recent call last):
+    ValueError: Only integers, n, within range, 0 <= n <= 1000 are supported.
+    >>> core_lookup(10001)
+    Traceback (most recent call last):
+    ValueError: Only integers, n, within range, 0 <= n <= 1000 are supported.
+    >>> core_lookup(-1)
+    Traceback (most recent call last):
+    ValueError: Only integers, n, within range, 0 <= n <= 1000 are supported.
+
+
+The ``gen_number_map`` function
+--------------------------
+
+Import statement:
+
+    >>> from any_roman import gen_number_map
+
+Tests:
+
+    >>> gen_number_map()
+    {1000: 'M', 500: 'D', 100: 'C', 50: 'L', 10: 'X', 5: 'V', 1: 'I', 0: 'N', 4: 'IV', 9: 'IX', 40: 'XL', 90: 'XC', 400: 'CD', 900: 'CM'}
+
+
+The ``get_multiple`` function
+--------------------------
+
+Import statement:
+
+    >>> from any_roman import get_multiple
+    >>> multiples = [0, 1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
+
+Tests:
+
+    >>> get_multiple(0, multiples)
+    0
+    >>> get_multiple(1, multiples)
+    1
+    >>> get_multiple(2, multiples)
+    1
+    >>> get_multiple(3, multiples)
+    1
+    >>> get_multiple(4, multiples)
+    4
+    >>> get_multiple(5, multiples)
+    5
+    >>> get_multiple(6, multiples)
+    5
+    >>> get_multiple(9, multiples)
+    9
+    >>> get_multiple(13, multiples)
+    10
+    >>> get_multiple(401, multiples)
+    400
+    >>> get_multiple(399, multiples)
+    100
+    >>> get_multiple(100, multiples)
+    100
+    >>> get_multiple(99, multiples)
+    90
+
+
+The ``add_overlines`` function
+--------------------------
+
+Import statement:
+
+    >>> from any_roman import add_overlines
+
+Tests:
+
+    >>> add_overlines('AB')
+    'A\u0305B\u0305'
+    >>> add_overlines('A\u0305B\u0305')
+    'A\u0305\u0305B\u0305\u0305'
+
+    >>> add_overlines('AB', num_overlines=3, overline_code='^')
+    'A^^^B^^^'
+    >>> add_overlines('A^B^', num_overlines=1, overline_code='^')
+    'A^^B^^'
+
+    >>> add_overlines('AB', num_overlines=3, overline_code='\u0305')
+    'A\u0305\u0305\u0305B\u0305\u0305\u0305'
+    >>> add_overlines('A\u0305B\u0305', num_overlines=1, overline_code='\u0305')
+    'A\u0305\u0305B\u0305\u0305'
+    
+    >>> add_overlines('A^B', num_overlines=3, overline_code='^')
+    'A^^^^B^^^'
+    
+    >>> add_overlines('A^B', num_overlines=0, overline_code='^')
+    'A^B'
