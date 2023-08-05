@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+src/yummycurry/__init__.py
+src/yummycurry/curry.py
+src/yummycurry.egg-info/PKG-INFO
+src/yummycurry.egg-info/SOURCES.txt
+src/yummycurry.egg-info/dependency_links.txt
+src/yummycurry.egg-info/requires.txt
+src/yummycurry.egg-info/top_level.txt
