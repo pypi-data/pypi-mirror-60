@@ -1,0 +1,3 @@
+[console_scripts]
+identYwaf = identYwaf.identYwaf:main
+

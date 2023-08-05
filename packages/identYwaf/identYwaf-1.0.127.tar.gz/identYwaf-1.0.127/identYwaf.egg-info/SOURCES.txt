@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+identYwaf/LICENSE
+identYwaf/__init__.py
+identYwaf/data.json
+identYwaf/identYwaf.py
+identYwaf.egg-info/PKG-INFO
+identYwaf.egg-info/SOURCES.txt
+identYwaf.egg-info/dependency_links.txt
+identYwaf.egg-info/entry_points.txt
+identYwaf.egg-info/not-zip-safe
+identYwaf.egg-info/top_level.txt

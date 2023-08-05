@@ -1,0 +1,4 @@
+include identYwaf/data.json
+include identYwaf/LICENSE
+include identYwaf/__init__.py
+include identYwaf/identYwaf.py
