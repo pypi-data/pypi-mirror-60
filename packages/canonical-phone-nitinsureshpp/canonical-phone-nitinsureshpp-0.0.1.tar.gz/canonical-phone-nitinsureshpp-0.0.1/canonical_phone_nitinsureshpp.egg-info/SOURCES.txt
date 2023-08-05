@@ -1,0 +1,8 @@
+README.md
+setup.py
+canonical-phone/__init__.py
+canonical-phone/phone.py
+canonical_phone_nitinsureshpp.egg-info/PKG-INFO
+canonical_phone_nitinsureshpp.egg-info/SOURCES.txt
+canonical_phone_nitinsureshpp.egg-info/dependency_links.txt
+canonical_phone_nitinsureshpp.egg-info/top_level.txt
