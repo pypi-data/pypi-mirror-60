@@ -1,0 +1,16 @@
+dbman/__init__.py,sha256=Lqu3XTvXgiymOt4udrhYcxht_BVbRFOSWr46ATbmLao,3415
+dbman/__version__.py,sha256=SHcv4SEgq_tIcO3XbXkZYh0NWWiBFMBOnVqoUtzVaCw,2818
+dbman/api.py,sha256=4sRkGhlfXFjyjR2kGknRBbH8gWMLSIIykVlxt9TTE-M,4628
+dbman/cli.py,sha256=7UMYnGD6acw5uMWN9yGxXj7vnFLfcSKUsuv2ODskV7I,6801
+dbman/core.py,sha256=uyTvIOOBP4yeYuTiCPctMUDOmf0dDuW1dB96MJJ6hPM,5752
+dbman/enum.py,sha256=OeVyrrEOu_ZFnYxZPsNxJPlW393mnSeX79aaQ7aGAMc,1134
+dbman/error.py,sha256=SHgRxgPCmGerpZ5AW0mIyuDw1rNx7r8ZxFRuHGmO7Zc,3693
+dbman/log.py,sha256=6StKpfY1CFKTykfu6Rwavn2PjqhdzI37rA8ICvCFR8M,2458
+dbman/config/base_config.py,sha256=jn5Rix9PJB1PQUtrbOB32Y20Dg-uWshl2DBcbIkxov4,1665
+dbman/config/dbman_logging.json,sha256=LMvsSoLFMIkea0N4hbAahJNhm79xH1fj8jtbKFgQ7n8,683
+dbman-0.0.2.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+dbman-0.0.2.dist-info/METADATA,sha256=aKFy4hTnPxcqrS5_eEr5Uq4tsopLbo_g0nAV_YTYKYI,1938
+dbman-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dbman-0.0.2.dist-info/entry_points.txt,sha256=q6EpOX22oWghjqziadXhVv9-lNJk_gGrCIginhRtQ2M,38
+dbman-0.0.2.dist-info/top_level.txt,sha256=cd7F9ROK4fNcUjIdSvnygR911fxoBugZVJ696oHbfJ4,6
+dbman-0.0.2.dist-info/RECORD,,
