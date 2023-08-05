@@ -1,0 +1,14 @@
+rnasamba/__init__.py,sha256=otQWfK21kuDtt0j1NYMEMyfWqcSBjdlQKk5lrviS4dU,903
+rnasamba/cli.py,sha256=K1EDnTPm1eW-28q18W21ECFmk0bE2fQ6FSirQwlO14g,5375
+rnasamba/core/miniigloo.py,sha256=f6M8PDAoxGz18f5Fi2VTqKsxjI4dI2EguyuelHd2Xts,11249
+rnasamba/core/inputs.py,sha256=8zX-E0mx_0T84WRiq5i0xxhC4sCUO7vIAsYypKYdiZU,3204
+rnasamba/core/kmer.cpython-37m-x86_64-linux-gnu.so,sha256=vJmS3YB3QxZz1RQozsUs24x46aolDqRi3jkz2W-STeM,4238768
+rnasamba/core/model.py,sha256=O6Hfv_2NqZqXbh10MjE8ntWXxUQ3gnjupOyP-IFuHe0,13003
+rnasamba/core/sequences.py,sha256=QVamNheieitwlbjBaiWSlFqUNn_4XUQIBESLmp3OYX8,2818
+rnasamba/core/__init__.py,sha256=VacAz8RjfpX1mKNzPPxBfybM1-XkIdhPwrzejFLBbYU,823
+rnasamba/core/orf.cpython-37m-x86_64-linux-gnu.so,sha256=vJmS3YB3QxZz1RQozsUs24x46aolDqRi3jkz2W-STeM,4238768
+rnasamba-0.2.4.dist-info/WHEEL,sha256=AhV6RMqZ2IDfreRJKo44QWYxYeP-0Jr0bezzBLQ1eog,109
+rnasamba-0.2.4.dist-info/top_level.txt,sha256=KTKAULxK-JrLr0BtdsXL3heHE049f-tQIx2VJD9Idfk,9
+rnasamba-0.2.4.dist-info/entry_points.txt,sha256=71DcGVWSMELX8TAAi6OG59sTepcLdl-JL4K-V8NXKTE,47
+rnasamba-0.2.4.dist-info/METADATA,sha256=DFYF7RhNIrtYkJSi8LPgtopDrHOF3wZ6_N4jDmTtcaY,9425
+rnasamba-0.2.4.dist-info/RECORD,,
