@@ -1,0 +1,17 @@
+libhockeydata.py,sha256=f-kTtDTO3KW__bkLSAAqASrjrgBAMg_tCH2NNNRkK4E,191803
+PyHockeyStats-0.0.9.data/scripts/mkhockeydata.py,sha256=dzfERgkI_L_-r9N2a5k-1OLsLSrIpFJ-QcfLlhDJJU8,13738
+PyHockeyStats-0.0.9.data/scripts/mkhockeydatabase.py,sha256=dzfERgkI_L_-r9N2a5k-1OLsLSrIpFJ-QcfLlhDJJU8,13738
+PyHockeyStats-0.0.9.data/scripts/mkhockeydatabasefromsql.py,sha256=dzfERgkI_L_-r9N2a5k-1OLsLSrIpFJ-QcfLlhDJJU8,13738
+PyHockeyStats-0.0.9.data/scripts/mkhockeypyfromdatabase.py,sha256=dzfERgkI_L_-r9N2a5k-1OLsLSrIpFJ-QcfLlhDJJU8,13738
+PyHockeyStats-0.0.9.data/scripts/mkhockeypyfromxmlfile.py,sha256=dzfERgkI_L_-r9N2a5k-1OLsLSrIpFJ-QcfLlhDJJU8,13738
+PyHockeyStats-0.0.9.data/scripts/mkhockeysqlfromdatabase.py,sha256=dzfERgkI_L_-r9N2a5k-1OLsLSrIpFJ-QcfLlhDJJU8,13738
+PyHockeyStats-0.0.9.data/scripts/mkhockeysqlfromxmlfile.py,sha256=dzfERgkI_L_-r9N2a5k-1OLsLSrIpFJ-QcfLlhDJJU8,13738
+PyHockeyStats-0.0.9.data/scripts/mkhockeyxmlfile.py,sha256=dzfERgkI_L_-r9N2a5k-1OLsLSrIpFJ-QcfLlhDJJU8,13738
+PyHockeyStats-0.0.9.data/scripts/mkhockeyxmlfromolddatabase.py,sha256=dzfERgkI_L_-r9N2a5k-1OLsLSrIpFJ-QcfLlhDJJU8,13738
+PyHockeyStats-0.0.9.data/scripts/mkhockeyxmlfromsql.py,sha256=dzfERgkI_L_-r9N2a5k-1OLsLSrIpFJ-QcfLlhDJJU8,13738
+PyHockeyStats-0.0.9.dist-info/LICENSE,sha256=WM1VWxTUVrQbvEa-LC7cKTaBHXiqSTyYPoJvsZSbd7E,1513
+PyHockeyStats-0.0.9.dist-info/METADATA,sha256=bQg4q3TU3FbFjV78HwBGipHJsQAR5YVw_ofg1oPz3lc,1450
+PyHockeyStats-0.0.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+PyHockeyStats-0.0.9.dist-info/top_level.txt,sha256=_MlmY_1XH9X5FztAmEV23jxdcmKhOcjmig7m6Q5I0vo,14
+PyHockeyStats-0.0.9.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+PyHockeyStats-0.0.9.dist-info/RECORD,,
