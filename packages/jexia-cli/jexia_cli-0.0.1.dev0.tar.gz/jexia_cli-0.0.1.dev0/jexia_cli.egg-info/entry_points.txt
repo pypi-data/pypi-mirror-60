@@ -1,0 +1,10 @@
+[console_scripts]
+jexia = jexia_cli.shell:main
+
+[jexia_cli.commands]
+login = jexia_cli.commands.login:Login
+project_create = jexia_cli.commands.projects:Create
+project_delete = jexia_cli.commands.projects:Delete
+project_list = jexia_cli.commands.projects:List
+project_show = jexia_cli.commands.projects:Show
+
