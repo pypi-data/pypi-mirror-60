@@ -1,0 +1,40 @@
+fields_model: =?utf-8?q?=3Cmodel_xmlns=3Aeasyform=3D=22http=3A//namespaces=2Eplone=2Eorg/supermodel/easyform=22_xmlns=3Aform=3D=22http=3A//namespaces=2Eplone=2Eorg/supermodel/form=22_xmlns=3Ai18n=3D=22http=3A//xml=2Ezope=2Eorg/namespaces/i18n=22_xmlns=3Alingua=3D=22http=3A//namespaces=2Eplone=2Eorg/supermodel/lingua=22_xmlns=3Amarshal=3D=22http=3A//namespaces=2Eplone=2Eorg/supermodel/marshal=22_xmlns=3Asecurity=3D=22http=3A//namespaces=2Eplone=2Eorg/supermodel/security=22_xmlns=3Ausers=3D=22http=3A//namespaces=2Eplone=2Eorg/supermodel/users=22_xmlns=3D=22http=3A//namespaces=2Eplone=2Eorg/supermodel/schema=22=3E=5Cn__=3Cschema=3E=5Cn____=3Cfield_name=3D=22topic=22_type=3D=22zope=2Eschema=2ETextLine=22_easyform=3AserverSide=3D=22False=22_easyform=3ATHidden=3D=22True=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3ESubject=3C/title=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22first=5Fname=22_type=3D=22zope=2Eschema=2ETextLine=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3EFirst_Name=3C/title=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22middle=5Fname=22_type=3D=22zope=2Eschema=2ETextLine=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Crequired=3EFalse=3C/required=3E=5Cn______=3Ctitle=3EMiddle_Name=3C/title=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22last=5Fname=22_type=3D=22zope=2Eschema=2ETextLine=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3ELast_Name=3C/title=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22job=5Ftitle=22_type=3D=22zope=2Eschema=2ETextLine=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3EJob_Title=3C/title=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22company=5Fname=22_type=3D=22zope=2Eschema=2ETextLine=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3ECompany_Name=3C/title=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22company=5Faddress=22_type=3D=22zope=2Eschema=2ETextLine=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3ECompany_Address=3C/title=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22company=5Fcity=22_type=3D=22zope=2Eschema=2ETextLine=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3ECompany_City=3C/title=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22company=5Fstate=22_type=3D=22zope=2Eschema=2ETextLine=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3ECompany_State=3C/title=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22company=5Fzip=5Fcode=22_type=3D=22zope=2Eschema=2ETextLine=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3ECompany_Zip_Code=3C/title=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22business=5Fphone=22_type=3D=22zope=2Eschema=2ETextLine=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3EBusiness_Phone=3C/title=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22replyto=22_type=3D=22zope=2Eschema=2ETextLine=22_easyform=3ATDefault=3D=22python=3Amember_and_member=2EgetProperty=28=27email=27=2C_=27=27=29_or_=27=27=22_easyform=3AserverSide=3D=22False=22_easyform=3Avalidators=3D=22isValidEmail=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3EYour_E-Mail_Address=3C/title=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22name=5Ftag=5Finformation=22_type=3D=22zope=2Eschema=2ETextLine=22=3E=5Cn______=3Cdescription=3EHow_your_name_will_appear_on_your_name_tag=2E=3C/description=3E=5Cn______=3Ctitle=3EName_Tag_Information=3C/title=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22include=5Fyour=5Fcontact=5Finformation=5Fin=5Fa=5Flist=22_type=3D=22zope=2Eschema=2EBool=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3EMay_we_include_your_contact_information_in_a_list_for_distribution_to_participants=3F=3C/title=3E=5Cn______=3Cform=3Awidget_type=3D=22z3c=2Eform=2Ebrowser=2Eradio=2ERadioFieldWidget=22/=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22receive=5Fthe=5Fcontact=5Flist=5Fof=5Fparticipants=22_type=3D=22zope=2Eschema=2EBool=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3EWould_you_like_to_receive_the_contact_list_of_participants=3F=3C/title=3E=5Cn______=3Cform=3Awidget_type=3D=22z3c=2Eform=2Ebrowser=2Eradio=2ERadioFieldWidget=22/=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22do=5Fyou=5Fprovide=5Fyour=5Fconsent=5Fto=5Fbe=5Fphotographed=5Ffor=5Fofficial=5Fpurpose=5Fonly=5F=22_type=3D=22zope=2Eschema=2EBool=22=3E=5Cn______=3Cdescription=3EOn_occasion=2C_Sandia_personnel_take_photographs_of_training_events_for_official_use_only=2E=3C/description=3E=5Cn______=3Ctitle=3EDo_you_provide_your_consent_to_be_photographed_for_official_purpose_only=3F=3C/title=3E=5Cn______=3Cform=3Awidget_type=3D=22z3c=2Eform=2Ebrowser=2Eradio=2ERadioFieldWidget=22/=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22do=5Fyou=5Fhave=5Fany=5Fspecial=5Fdietary=5Fneeds=5F=22_type=3D=22zope=2Eschema=2ESet=22_easyform=3AserverSide=3D=22False=22_easyform=3ATHidden=3D=22False=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Ctitle=3EDo_you_have_any_special_dietary_needs=3F=3C/title=3E=5Cn______=3Cvalue=5Ftype_type=3D=22zope=2Eschema=2EChoice=22=3E=5Cn________=3Cvalues=3E=5Cn__________=3Celement=3ENone=3C/element=3E=5Cn__________=3Celement=3EGluten_Free=3C/element=3E=5Cn__________=3Celement=3EVegetarian=3C/element=3E=5Cn__________=3Celement=3ELactose_Intolerant=3C/element=3E=5Cn__________=3Celement=3EVegan=3C/element=3E=5Cn________=3C/values=3E=5Cn______=3C/value=5Ftype=3E=5Cn______=3Cform=3Awidget_type=3D=22z3c=2Eform=2Ebrowser=2Echeckbox=2ECheckBoxFieldWidget=22/=3E=5Cn____=3C/field=3E=5Cn____=3Cfield_name=3D=22comments=22_type=3D=22zope=2Eschema=2EText=22_easyform=3AserverSide=3D=22False=22_easyform=3ATHidden=3D=22False=22=3E=5Cn______=3Cdescription/=3E=5Cn______=3Crequired=3EFalse=3C/required=3E=5Cn______=3Ctitle=3EComments=3C/title=3E=5Cn____=3C/field=3E=5Cn__=3C/schema=3E=5Cn=3C/model=3E?=
+actions_model: =?utf-8?q?=3Cmodel_xmlns=3D=22http=3A//namespaces=2Eplone=2Eorg/supermodel/schema=22=3E=5Cn__=3Cschema=3E=5Cn____=3Cfield_name=3D=22mailer=22_type=3D=22collective=2Eeasyform=2Eactions=2EMailer=22=3E=5Cn______=3Cdescription=3EE-Mails_Form_Input=3C/description=3E=5Cn______=3Creplyto=5Ffield=3Ereplyto=3C/replyto=5Ffield=3E=5Cn______=3Csubject=5Ffield=3Etopic=3C/subject=5Ffield=3E=5Cn______=3Ctitle=3EMailer=3C/title=3E=5Cn____=3C/field=3E=5Cn__=3C/schema=3E=5Cn=3C/model=3E=5Cn?=
+submitLabel: Submit
+useCancelButton: False
+resetLabel: Reset
+method: post
+form_tabbing: True
+default_fieldset_label: 
+unload_protection: True
+CSRFProtection: True
+forceSSL: False
+formPrologue: 
+formEpilogue: 
+thanksPageOverrideAction: redirect_to
+thanksPageOverride: 
+formActionOverride: 
+onDisplayOverride: 
+afterValidationOverride: 
+headerInjection: 
+submitLabelOverride: 
+thankstitle: Thank You
+thanksdescription: Thanks for your input.
+showAll: True
+showFields: 
+includeEmpties: True
+thanksPrologue: 
+thanksEpilogue: 
+allow_discussion: 
+exclude_from_nav: False
+title: Registration
+description: 
+subjects: 
+language: en-ca
+effective: 
+expires: 
+creators: admin
+contributors: 
+rights: 
+Portal-Type: EasyForm
+

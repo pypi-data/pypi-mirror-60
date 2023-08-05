@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <version>1005</version>
+  <dependencies>
+    <dependency>profile-collective.easyform:default</dependency>
+    <dependency>profile-plone.app.mosaic:default</dependency>
+    <dependency>profile-plone.app.dexterity:default</dependency>
+    <dependency>profile-sandia.conferencetheme:default</dependency>
+  </dependencies>
+</metadata>
