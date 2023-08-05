@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pieceofcake/__init__.py
+pieceofcake/main.py
+pieceofcake/version.py
+pieceofcake.egg-info/PKG-INFO
+pieceofcake.egg-info/SOURCES.txt
+pieceofcake.egg-info/dependency_links.txt
+pieceofcake.egg-info/entry_points.txt
+pieceofcake.egg-info/requires.txt
+pieceofcake.egg-info/top_level.txt
+pieceofcake.egg-info/zip-safe
