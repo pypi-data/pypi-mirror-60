@@ -1,0 +1,17 @@
+mlreflect/__init__.py,sha256=luJiJReI3A1zJ-J7iTzERcN1nC5CgleoJ5o8PPxA0Ac,637
+mlreflect/data_generator.py,sha256=QAfwUm_L6YmNTJ4MVMVPcdJhlgmAmrTNPLHtr9at8uM,17123
+mlreflect/h5_tools.py,sha256=ND_YX_tnCFK-JGweQVVR0aFGuVoD75opw7kBTOG6Uvo,2458
+mlreflect/label_helpers.py,sha256=cpchdaKLBNFQRnY9auOHE2L5TiCWn-VPygUXYQMjQT4,811
+mlreflect/layers.py,sha256=DEZKloGDjDQRFJYlXKbjwI75ke6uzTijxjDVjVdJpho,6098
+mlreflect/performance_tools.py,sha256=zQ47CoUXwNsyjuiYh0_tRM8_c5cwsEJ4KpSgmy8lMZg,472
+mlreflect/prediction.py,sha256=7O-cHketI_fwHCO-dpIuxydm_dxZNAFCP9LrjmcLRRg,2488
+mlreflect/preprocessing.py,sha256=S0wn80B8YMlWoeh_7tN0Bb_9QhPDnyao95v04NTzr2w,9922
+mlreflect/reflectivity.py,sha256=QGZfPX7CQVzik1lAA4xRfqsb9UJ0slUNqBM0PXy_FEU,4904
+mlreflect/models/__init__.py,sha256=wlkYBGZ5vc-T1SQ2bvFu009P1xBDf4wM0MHmmLgB7u8,100
+mlreflect/models/model_helpers.py,sha256=t90FTc5LYqbshox5dthqvh0eUzHkjssBLMqeYv4JDc4,1182
+mlreflect/models/simple_model.py,sha256=e4gIxAGRE2woGEqOmCcIf_ovAETm1Sqh0T8qsDWVfGU,2450
+mlreflect-0.12.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mlreflect-0.12.1.dist-info/METADATA,sha256=McakcO7Ry9sG0xuCZ472ZVbuSM5pvYq8oBDkwbOyH6Y,354
+mlreflect-0.12.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mlreflect-0.12.1.dist-info/top_level.txt,sha256=wuxx7oVxbgxjWiUq0qRsNta-1Ljr8BKuwp6FH1BMaZw,10
+mlreflect-0.12.1.dist-info/RECORD,,
