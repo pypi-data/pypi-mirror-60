@@ -1,0 +1,12 @@
+hypothesis_trio/__init__.py,sha256=wYvaZWa_ID9nCt3HfVB4DYJxHlaYh2dj3bD8UfnsDy0,80
+hypothesis_trio/_version.py,sha256=NfrZhcrzoJyG_s8oYTbshty4h5pX_MvXVlci0QmG1Y0,89
+hypothesis_trio/stateful.py,sha256=VacXCBvR_EVguxV1UcqLaPWjCUkMjNOUT-sK5XUOaLI,12201
+hypothesis_trio/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hypothesis_trio/_tests/test_async_stateful.py,sha256=w_fT73LMToxAMrIpsID0e1tVMhKN1bmN4BiYvMG1mLw,7634
+hypothesis_trio/_tests/test_stateful.py,sha256=cJ4bocJCxWapQtW6k_MEkt1f8NGTrrF2dx-8lZjwi5s,1389
+hypothesis_trio/_tests/test_trio_asyncio.py,sha256=NNT8yXV_Ry7yUqRc6wd5htIZk8dlVR16rNbKM0ObOd4,929
+hypothesis_trio-0.5.0.dist-info/LICENSE,sha256=S4nUUYvRNatO4VSnvOciJGtXqYw9fvwaCUCYmBYMK9E,16724
+hypothesis_trio-0.5.0.dist-info/METADATA,sha256=RtSUHDHVPgHsd0qcx3VSk2Sqvrj4skKqHmLfmp_gJ2U,3254
+hypothesis_trio-0.5.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+hypothesis_trio-0.5.0.dist-info/top_level.txt,sha256=W4XQKCwaZwpWYFITedVfNfpYQpqT_xm1SBGArKHTMNk,16
+hypothesis_trio-0.5.0.dist-info/RECORD,,
