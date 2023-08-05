@@ -1,0 +1,10 @@
+ugapi/TabEngine.py,sha256=Z_Gc8CDrLdKdxVtgriK-iBrtQTVJnQAu5iVgTnWkHKk,1443
+ugapi/TabPipeline.py,sha256=-v8rW8BmnrN2eKkgpC1O0TgxSpPmJaE5VHJKRBnBCc4,355
+ugapi/TabSpider.py,sha256=GNkf-Y7VsfvBhphp6MCEzs2pkbOk_1APfYrywJ1xzgE,627
+ugapi/__init__.py,sha256=dt3E0emyh27CfclMPYXQut3kff1FAdVe6Ql_KNTuKm4,151
+ugapi/enums.py,sha256=nOnrp2GjmtUcFvej7kvqkC271P58rDZcOPi__fZY7kU,186
+ugapi-0.1.0.dist-info/LICENSE.txt,sha256=el2DMELq59yGEWO7STK1pPpdNCrIqetdGjRAtiZLJls,1066
+ugapi-0.1.0.dist-info/METADATA,sha256=igEYSm2S0VSrHw2h6VtxNJEAITOFq2Rf_gYUK78Ih9Q,269
+ugapi-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ugapi-0.1.0.dist-info/top_level.txt,sha256=zi42DTtTPQak0wH7IU3XtEwlfTqUh3gRI_SPYn2014I,6
+ugapi-0.1.0.dist-info/RECORD,,
