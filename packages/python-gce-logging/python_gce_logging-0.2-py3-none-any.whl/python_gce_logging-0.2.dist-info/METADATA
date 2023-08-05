@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: python-gce-logging
+Version: 0.2
+Summary: GCE Logging
+Home-page: UNKNOWN
+Author: Matthias Wutte
+Author-email: matthias.wutte@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/wuttem
+Platform: UNKNOWN
+Requires-Dist: python-json-logger (<2.0,>=0.1.5)
+
+UNKNOWN
+
+
