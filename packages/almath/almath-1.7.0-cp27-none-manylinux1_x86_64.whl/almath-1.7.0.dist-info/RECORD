@@ -1,0 +1,11 @@
+almath/__init__.py,sha256=WA52jLfhzPAhJCp_Wq9ipwNd8OcJu7_TaoN-pF2c2P4,701
+almath/_almathswig.so,sha256=1N7ArzA9NyRHDUJiUY3ar9OyYknqUEWBv5IBhUPD7ww,1103544
+almath/almathswig.py,sha256=cvXy-SWSsElCyJCKkHs_a7T6gQkBuWQlu-NSAXoX9lA,142693
+almath/libalmath.so,sha256=C1x2K25BeoZilwh40oh2T4UwvYaRMAJHk_Oun5cJRHU,768752
+almath-1.7.0.dist-info/DESCRIPTION.rst,sha256=DiOjw23QTP-KMLSqDrplndx_kqr5NzqkzD-LMnmdaHA,71
+almath-1.7.0.dist-info/LICENSE.txt,sha256=JzQA36qe9hGYgJxwt2LysExpjUZe8xvERreMYqVJjVo,36
+almath-1.7.0.dist-info/METADATA,sha256=kv14DBErFrl4Fn7DBKWDndhHsKmFEvkOoQbxdiJ8mZY,736
+almath-1.7.0.dist-info/RECORD,,
+almath-1.7.0.dist-info/WHEEL,sha256=vJCDZaDW8JIQu2s-6ZmtgF46CqKPN-FA-Hjo1N5SJ6s,107
+almath-1.7.0.dist-info/metadata.json,sha256=bR37NPmCcQqrjjvjNSGVZ3ghFhHgrkn-iy7xDF5EHcI,904
+almath-1.7.0.dist-info/top_level.txt,sha256=wU4QuyEJ8RhgbPTb22KDkyemfr2d4cWyVnZBh_pqEvA,7
