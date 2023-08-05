@@ -1,0 +1,3 @@
+[console_scripts]
+pygenpass = pygenpass.__init__:main
+
