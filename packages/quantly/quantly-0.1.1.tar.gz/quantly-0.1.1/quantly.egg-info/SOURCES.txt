@@ -1,0 +1,12 @@
+.gitignore
+setup.py
+quantly/__init__.py
+quantly/data.py
+quantly/forecast.py
+quantly.egg-info/LICENSE
+quantly.egg-info/PKG-INFO
+quantly.egg-info/SOURCES.txt
+quantly.egg-info/dependency_links.txt
+quantly.egg-info/not-zip-safe
+quantly.egg-info/requires.txt
+quantly.egg-info/top_level.txt
