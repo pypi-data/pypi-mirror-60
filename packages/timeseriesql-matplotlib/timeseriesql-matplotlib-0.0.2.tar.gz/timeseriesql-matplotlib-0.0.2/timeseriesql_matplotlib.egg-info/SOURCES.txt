@@ -1,0 +1,9 @@
+README.md
+setup.py
+timeseriesql_matplotlib/__init__.py
+timeseriesql_matplotlib.egg-info/PKG-INFO
+timeseriesql_matplotlib.egg-info/SOURCES.txt
+timeseriesql_matplotlib.egg-info/dependency_links.txt
+timeseriesql_matplotlib.egg-info/not-zip-safe
+timeseriesql_matplotlib.egg-info/requires.txt
+timeseriesql_matplotlib.egg-info/top_level.txt
