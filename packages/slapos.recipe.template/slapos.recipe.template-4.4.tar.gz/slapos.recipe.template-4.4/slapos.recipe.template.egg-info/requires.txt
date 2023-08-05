@@ -1,0 +1,4 @@
+setuptools
+six
+zc.buildout
+jinja2>=2.7
