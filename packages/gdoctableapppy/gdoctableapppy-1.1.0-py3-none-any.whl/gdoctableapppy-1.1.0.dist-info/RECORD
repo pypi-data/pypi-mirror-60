@@ -1,0 +1,10 @@
+gdoctableapppy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gdoctableapppy/gdoctableapp.py,sha256=XHlskSokXOYuT5MaGUDsZiJrKg34mhCy6W8ISDjGoGE,29039
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_gdoctableapppy.py,sha256=yly2c55o56AhnmWch96KJN-3iEex6Bc3Hx8BI0WkDFU,1468
+tests/test_getfilelist.py,sha256=yly2c55o56AhnmWch96KJN-3iEex6Bc3Hx8BI0WkDFU,1468
+gdoctableapppy-1.1.0.dist-info/LICENCE,sha256=XK0RgwzGDdNdvwCGTYknPikrYBcwTyXbmeGZHEOUpVQ,1088
+gdoctableapppy-1.1.0.dist-info/METADATA,sha256=lh-rT74Wa6b0HtiB1hh0Pv8zbW3W6M7DuzY6idIxpb4,21374
+gdoctableapppy-1.1.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+gdoctableapppy-1.1.0.dist-info/top_level.txt,sha256=4S3y3OpvMgiPzNhaH4l9kwprMYU5-zpQvNh0LxDLy_0,21
+gdoctableapppy-1.1.0.dist-info/RECORD,,
