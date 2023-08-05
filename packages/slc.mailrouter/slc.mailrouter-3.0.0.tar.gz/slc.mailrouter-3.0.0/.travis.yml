@@ -1,0 +1,18 @@
+language: python
+matrix:
+  include:
+    - python: 2.7
+      env: PLONE_VERSION=5
+    - python: 3.7
+      env: PLONE_VERSION=5
+install:
+  - mkdir -p buildout-cache/downloads
+  - cp requirements-$PLONE_VERSION.x.txt requirements.txt
+  - python bootstrap.py
+  - bin/buildout -c travis-$PLONE_VERSION.x.cfg
+script:
+  - bin/test
+#after_success:
+#  - bin/coverage-report
+#  - pip install -q coveralls
+#  - coveralls
