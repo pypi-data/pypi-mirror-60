@@ -1,0 +1,10 @@
+README.md
+setup.py
+benchsci_cli.egg-info/PKG-INFO
+benchsci_cli.egg-info/SOURCES.txt
+benchsci_cli.egg-info/dependency_links.txt
+benchsci_cli.egg-info/entry_points.txt
+benchsci_cli.egg-info/requires.txt
+benchsci_cli.egg-info/top_level.txt
+src/__init__.py
+src/tasks.py

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: benchsci-cli
+Version: 0.1.0
+Summary: BenchSci CLI
+Home-page: https://github.com/benchsci/benchsci-cli
+Author: Harsh Verma
+Author-email: harsh@benchsci.com
+License: UNKNOWN
+Description: ## benchsci-cli
+        
+        This is a simple cli for BenchSci platform engineers
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
