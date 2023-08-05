@@ -1,0 +1,10 @@
+*.wav
+*.ogg
+*.json
+*.txt
+/*/
+.idea/
+!/dramatts/
+!/utils/
+!/conda/
+!/designer/

@@ -1,0 +1,8 @@
+Changelog
+---------
+
+v0.1.1:
+Date: 2020-01-22
+
+fixes:
+* documentation homepage fixed in setup.py (fixes pip package build error)
