@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+buba/__init__.py
+buba.egg-info/PKG-INFO
+buba.egg-info/SOURCES.txt
+buba.egg-info/dependency_links.txt
+buba.egg-info/requires.txt
+buba.egg-info/top_level.txt
