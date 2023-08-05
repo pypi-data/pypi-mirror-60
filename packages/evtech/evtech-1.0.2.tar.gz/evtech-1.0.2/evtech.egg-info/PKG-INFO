@@ -1,0 +1,89 @@
+Metadata-Version: 1.2
+Name: evtech
+Version: 1.0.2
+Summary: Tools for RIT Hack.tiff 2020 Hackathon
+Home-page: https://github.com/dnilosek/evtech
+Author: David Nilosek
+Author-email: david.nilosek@eagleview.com
+License: MIT license
+Description: ======
+        EVTech
+        ======
+        
+        .. image:: https://img.shields.io/pypi/v/evtech.svg
+                :target: https://pypi.python.org/pypi/evtech
+        
+        .. image:: https://img.shields.io/travis/dnilosek/evtech.svg
+                :target: https://travis-ci.org/dnilosek/evtech
+        
+        .. image:: https://coveralls.io/repos/github/dnilosek/evtech/badge.svg
+                :target: https://coveralls.io/github/dnilosek/evtech
+        
+        .. image:: https://readthedocs.org/projects/evtech/badge/?version=latest
+                :target: https://evtech.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        .. image:: https://pyup.io/repos/github/dnilosek/evtech/shield.svg
+             :target: https://pyup.io/repos/github/dnilosek/evtech/
+             :alt: Updates
+        
+        .. image:: https://pyup.io/repos/github/dnilosek/evtech/python-3-shield.svg
+             :target: https://pyup.io/repos/github/dnilosek/evtech/
+             :alt: Python 3
+        
+        Simple tools for working with data provided by Eagleview for the RIT Hack.tiff 2020 Hackathon
+        
+        * Free software: MIT license
+        * Documentation: https://evtech.readthedocs.io.
+        
+        =======
+        History
+        =======
+        
+        1.0.1 (2020-01-22)
+        ------------------
+        * Documentation build fixes
+        
+        1.0.0 (2020-01-22)
+        ------------------
+        * Added ability to get shapely geometry of image bounds on ground
+        * Included example application for measuring height from an image
+        
+        0.7.0 (2020-01-20)
+        ------------------
+        * Added triangulation function
+        * Updated usage docs
+        * Fixed bug in project from camera
+        
+        0.6.0 (2020-01-20)
+        ------------------
+        * Added height from two points to camera class
+        * Added ray interesection with elevation
+        
+        0.5.0 (2020-01-19)
+        ------------------
+        * Added ray class
+        * Added project from camera to camera class
+        
+        0.4.0 (2020-01-13)
+        ------------------
+        
+        * Added coverage checking.
+        * Added functions for reading a full dataset with nadirs and obliques
+        
+        0.3.0 (2020-01-08)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: evtech
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
