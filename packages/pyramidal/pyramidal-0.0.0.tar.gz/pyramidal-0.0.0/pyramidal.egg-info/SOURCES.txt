@@ -1,0 +1,5 @@
+setup.py
+pyramidal.egg-info/PKG-INFO
+pyramidal.egg-info/SOURCES.txt
+pyramidal.egg-info/dependency_links.txt
+pyramidal.egg-info/top_level.txt
