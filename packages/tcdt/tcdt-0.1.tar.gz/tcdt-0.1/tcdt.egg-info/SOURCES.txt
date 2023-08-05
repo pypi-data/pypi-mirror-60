@@ -1,0 +1,9 @@
+README.md
+setup.py
+tcdt/__init__.py
+tcdt/tcdt.py
+tcdt.egg-info/PKG-INFO
+tcdt.egg-info/SOURCES.txt
+tcdt.egg-info/dependency_links.txt
+tcdt.egg-info/requires.txt
+tcdt.egg-info/top_level.txt
