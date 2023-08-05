@@ -1,0 +1,10 @@
+mebula/__init__.py,sha256=Zvwa0r4YQW5iEaU3K5sODQSE-CJ2MHhOVE7wnJ_VeRs,106
+mebula/azure.py,sha256=QjAJ-Couo0GWwyfyWbpXQpSipw5GgGgQTGLKyJv0rxE,2230
+mebula/dict_filter.py,sha256=zem7mSPTHabA6JO6iBjnXtUXpOC4qLqCm6I7j5i8IYg,6610
+mebula/google.py,sha256=xUe0AE84_pzlo1ZyBxWPiqG-siP9mFtf9A7g00owi7M,5075
+mebula/oracle.py,sha256=PGm28k8Qt-MKCzs3e10IB8m7Mxxd-E5YxJuS-8LBGlw,2654
+mebula/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mebula-0.2.0.dist-info/LICENSE,sha256=SvQldRJHX16wZu03jRKoufAHHh5sT3m9jT5TIZJ0X9E,1071
+mebula-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+mebula-0.2.0.dist-info/METADATA,sha256=3O9y7CM0w9tsR4tBB-84wVwugRBM-ayVRURw3RvUfBg,1869
+mebula-0.2.0.dist-info/RECORD,,
