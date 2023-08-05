@@ -1,0 +1,11 @@
+push_service_sdk/__init__.py,sha256=4A3ZUjhHtK7yAPcNsRG5Nk0akqOiVmPtQMA3CyLSmlc,2300
+push_service_sdk/common_pb2.py,sha256=lfDzmiqAm9KmyLnK3YtHCj31Sj4iWmVfpK3dgrfOCWY,3813
+push_service_sdk/common_pb2_grpc.py,sha256=s9KvvTKGqObFxOBLz6ktRK2g4c8yLiOXt7p2M71egTM,83
+push_service_sdk/grpc_client.py,sha256=NRtYHB5Y6PhwCoX0_jKRr2IZCc9kYba9CoVFfSHcSUY,1517
+push_service_sdk/pushService_pb2.py,sha256=xIi4ZgeuFB9sxm9AyhQwu36cyT_cweEuGQ0iMLANSwU,7466
+push_service_sdk/pushService_pb2_grpc.py,sha256=1WVfU-Lbeo8TRT4Jf4CLYTByglA9bf1iZ5uSSfG-pSI,1483
+longleding_push_service_sdk-0.1.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+longleding_push_service_sdk-0.1.0.dist-info/METADATA,sha256=G7JyKDXKWOPIFM30rHIpnZgRP-qLNjUK6DYD5w5rT9U,1190
+longleding_push_service_sdk-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+longleding_push_service_sdk-0.1.0.dist-info/top_level.txt,sha256=_fGX2ko4-nxbkpWy3267rp6P-LRyz5qc5UAT2eZwOeM,17
+longleding_push_service_sdk-0.1.0.dist-info/RECORD,,
