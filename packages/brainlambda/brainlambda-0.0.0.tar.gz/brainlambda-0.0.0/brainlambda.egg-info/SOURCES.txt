@@ -1,0 +1,5 @@
+setup.py
+brainlambda.egg-info/PKG-INFO
+brainlambda.egg-info/SOURCES.txt
+brainlambda.egg-info/dependency_links.txt
+brainlambda.egg-info/top_level.txt
