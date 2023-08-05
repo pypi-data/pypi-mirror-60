@@ -1,0 +1,9 @@
+fastapi_mail/__init__.py,sha256=-icczEIKpZ9dd3AOiwQaoHWNhDlRPtPpGNfR1AmYFwU,189
+fastapi_mail/errors.py,sha256=1sMRnjsbr0YKcEUFFVBzmd3ix7WOco44e2a_Nm9wZaU,800
+fastapi_mail/fastmail.py,sha256=43bK9YtuX7Rqjt_k7vafAoraz1Oye2XlFGgLA9bBRHo,7735
+fastapi_mail/version.py,sha256=O1EIxt3NCMd0jcmEUzFIlp7isa7D_v6ZQEl6apejpUw,64
+fastapi_mail-0.0.5.dist-info/LICENSE,sha256=NakCDmv8D0hbgS5uC_x3yQeziV0JXi5PGy7fNknP-pY,1072
+fastapi_mail-0.0.5.dist-info/METADATA,sha256=ukAaASJJXvWd2y5tTlDpPdW6HOO0VFX8qPmUFcyYLUQ,3494
+fastapi_mail-0.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fastapi_mail-0.0.5.dist-info/top_level.txt,sha256=eFCPjCJlqAqJk2rhqJyWHSFRdWLpBvMNrgE-94aqg4o,13
+fastapi_mail-0.0.5.dist-info/RECORD,,
