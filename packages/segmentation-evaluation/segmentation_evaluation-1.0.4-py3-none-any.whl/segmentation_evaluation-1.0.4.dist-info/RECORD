@@ -1,0 +1,10 @@
+performance_tool/__init__.py,sha256=OQI8-KmIMGQ-zM3bSpLKfSSLL_dK9TQGf2Wv8jhb_sc,241
+performance_tool/evaluate_segmentation.py,sha256=O2kG5R7Zh7nJZi5WiXmr52onY5LclA67dec-4oE5c7U,5979
+performance_tool/manually_segmentation.py,sha256=Kuyk1QiEWPXhtAoDtzhPe6LEGUSiSWJtwD_4GX49E8c,8152
+performance_tool/performance_polygons.py,sha256=qkv1nnpQUj1LCKDjJaYrJo62rGUF7E8496rFPbD2alI,2699
+segmentation_evaluation-1.0.4.data/scripts/segmentation-evaluation,sha256=VnMZWLs4jztRcEv9WLEQswgCgBNFe6FhUBDJgHV3Qb8,1150
+segmentation_evaluation-1.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+segmentation_evaluation-1.0.4.dist-info/METADATA,sha256=GEmExzsc_9y-1CL3cjVrjw_PaAz27c3qBBjjGW7MQ28,6667
+segmentation_evaluation-1.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+segmentation_evaluation-1.0.4.dist-info/top_level.txt,sha256=GZLF39LVAmwjlZiqcMPqooaHcRXehrvuO154Ca6Wr1M,17
+segmentation_evaluation-1.0.4.dist-info/RECORD,,
