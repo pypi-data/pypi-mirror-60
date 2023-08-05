@@ -1,0 +1,5 @@
+setup.py
+ketama.egg-info/PKG-INFO
+ketama.egg-info/SOURCES.txt
+ketama.egg-info/dependency_links.txt
+ketama.egg-info/top_level.txt
