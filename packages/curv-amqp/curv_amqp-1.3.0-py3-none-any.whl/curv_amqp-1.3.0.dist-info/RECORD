@@ -1,0 +1,17 @@
+curv_amqp/__init__.py,sha256=F5mW07pSyGrqDNY2Ehr-UpDzpBtN-FsYU0QGZWf6PJE,22
+curv_amqp/channel.py,sha256=UgM7XJnaSnHniwhwDe8M52GWjDRa2yKZThkvmzN97ng,9394
+curv_amqp/conditional_reconnect.py,sha256=3-lZkfbMxBzBBVNm-kObvvL7sT7J7PqHCB701PdCRUI,213
+curv_amqp/connection.py,sha256=vljwT9s5kdtj_PoY-GyJrSOeFtb5Q5BRFbRgvTWTzFI,6479
+curv_amqp/consumer.py,sha256=M9xU5O_EKBpc1t7hPvnjPVuc5ELMwel5P9t7u9PkLys,21347
+curv_amqp/exceptions.py,sha256=zMUa2OgIz2ptfFvKmMFLSPLo1ge3u9VAfI--V0nwkN4,433
+curv_amqp/inactivity_timeout.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+curv_amqp/mocks.py,sha256=lb_ZGEup84s0Ks_GilqBHwvR-2FoVEE7JSxJptYWfyE,13512
+curv_amqp/publisher.py,sha256=2TmSf5qEb2zYLG9ob3ZnSg3vLIqlHJVVkiN9GvQd0p8,4269
+curv_amqp/timestamp.py,sha256=h66ygL06jzEUGCB9KxgOPeGImyfdqa4Gpgq0oNDdcFk,268
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+curv_amqp-1.3.0.dist-info/LICENSE,sha256=-FzwZrU99jXJGQy7NX2RgDH_CUN7ONzLurAY38aIrI8,1067
+curv_amqp-1.3.0.dist-info/METADATA,sha256=w4e6UWitSDaKR68mdmtg1qmmVhvuqCsX5506gd_VSYs,4756
+curv_amqp-1.3.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+curv_amqp-1.3.0.dist-info/top_level.txt,sha256=ogGX13TBpRH3lLgvHcIxJW69auzF3kLwLCqQDmK3B7o,16
+curv_amqp-1.3.0.dist-info/RECORD,,
