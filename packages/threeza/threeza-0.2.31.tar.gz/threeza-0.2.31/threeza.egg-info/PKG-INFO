@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: threeza
+Version: 0.2.31
+Summary: In support of www.3za.org 
+Home-page: https://github.com/microprediction/threeza
+Author: microprediction
+Author-email: info@3za.org
+License: MIT
+Description: # threeza
+        
+        Minimalist conventions for www.3za.org
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

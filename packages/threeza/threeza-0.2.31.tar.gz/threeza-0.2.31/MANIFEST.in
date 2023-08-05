@@ -1,0 +1,5 @@
+include README.md
+include threeza/static/*.html
+include threeza/static/*.css
+include threeza/templates/*.html
+include threeza/templates/*.css
