@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: chipscope
+Version: 0.1.1
+Summary: This package name is reserved by Xilinx, Inc.
+Home-page: https://www.xilinx.com
+Author: Xilinx, Inc.
+Author-email: mdarnall@xilinx.com
+License: UNKNOWN
+Description: This is not a usable Python package, but the name is
+        reserved by Xilinx, Inc.
+        
+        Visit `www.xilinx.com <https://www.xilinx.com>`_ for information about
+        Xilinx tools and products for developers.
+               
+        
+Platform: UNKNOWN
