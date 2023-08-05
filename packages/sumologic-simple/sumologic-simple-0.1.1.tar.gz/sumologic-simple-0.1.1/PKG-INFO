@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: sumologic-simple
+Version: 0.1.1
+Summary: A simple interface to run SumoLogic queries
+Keywords: sumo,sumologic
+Author: Jarrad Whitaker
+Author-email: akdor1154@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: python-dateutil (>=2.8.1,<3.0.0)
+Requires-Dist: sumologic-sdk (>=0.1.8,<0.2.0)
+Description-Content-Type: text/markdown
+
+# Simple Search API for the SumoLogic Python SDK
+
+Install requires `pip` >= 19.
+
+Usage:
+
+```py
+from sumologic import SumoLogic
+from sumo_simple import SumoLogicSimple
+from datetime import timedelta
+
+sumo = SumoLogic(MY_ACCESS_ID, MY_ACCESS_KEY)
+simple = SumoLogicSimple(sumo)
+
+fields, messages, aggregates = simple.search('''
+    _sourceCategory=nginx/prod
+''', startTime=timedelta(minutes=-10)
+)
+
+print([message for message in messages])
+```
+
+TODO: Publish to PyPI
+
