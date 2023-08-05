@@ -1,0 +1,9 @@
+ipfs_api_mount/__init__.py,sha256=DI_fuHQnl-cjVUFaQvE74tktzVk2YyfhfiakgKX5TVA,5513
+ipfs_api_mount/ipfs_mounted.py,sha256=ratSHKu2eV8yWMfTvRs368rDDH1UEqJLQJxdhpURlB0,1166
+ipfs_api_mount/unixfs_pb2.py,sha256=w4gz6HYi93ITWb2oIxa__M_HshyRCMd4N8N__mxpXkc,6307
+ipfs_api_mount-0.2.0.data/scripts/ipfs-api-mount,sha256=un8SCmpcWA-o1GLFN5jBcLtOHVpo4MMNd63UmpngN3M,1781
+ipfs_api_mount-0.2.0.dist-info/LICENSE,sha256=LjON3zDkjoJYCaH0NovBgbi_nGeaX3Rr-Mqj0kSfIa0,1070
+ipfs_api_mount-0.2.0.dist-info/METADATA,sha256=C521O59v6K6dyuRw3lXptJvDJ_S3oYqjXpikWSvm8qw,416
+ipfs_api_mount-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ipfs_api_mount-0.2.0.dist-info/top_level.txt,sha256=pWHwqABQl50MhBQToFttZ2JoGcmf1wWE6UCg2pENjGQ,15
+ipfs_api_mount-0.2.0.dist-info/RECORD,,
