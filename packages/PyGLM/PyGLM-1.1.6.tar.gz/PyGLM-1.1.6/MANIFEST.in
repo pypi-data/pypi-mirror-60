@@ -1,0 +1,6 @@
+include LICENSE
+include COPYING
+include README.md
+include setup.py
+include setup.cfg
+recursive-include glm *
