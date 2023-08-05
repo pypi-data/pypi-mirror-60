@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: GSAS-II-WONDER-osx
+Version: 1.0.3
+Summary: GSAS-II plugin for WONDER
+Home-page: https://github.com/WONDER-project/GSAS-II-WONDER
+Author: Luca Rebuffi, Paolo Scardi, Alberto Flor
+Author-email: paolo.scardi@unitn.ut
+License: GPL3+
+Description: # GSAS-II for WONDER
+        
+        GSAS-II plug-in for WONDER (Whole POwder PatterN moDelling in ORange)
+        
+Keywords: gsas 2,gsas-ii
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
