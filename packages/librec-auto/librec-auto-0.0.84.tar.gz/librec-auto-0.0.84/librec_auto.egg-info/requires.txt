@@ -1,0 +1,15 @@
+matplotlib
+pandas
+numpy
+argparse
+pathlib
+logging
+itertools
+os
+subprocess
+shlex
+time
+sys
+shutil
+re
+webbrowser
