@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+
+import oxo_2_pkg
+oxo_2_pkg.run()
