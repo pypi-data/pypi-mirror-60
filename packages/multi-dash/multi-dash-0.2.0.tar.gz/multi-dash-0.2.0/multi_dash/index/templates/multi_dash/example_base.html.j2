@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Dash</title>
+    {% block styles %} {% endblock %}
+  </head>
+
+  <body>
+    
+    <h1 id = "page-title">{{selected_page.title}}</h1>
+
+    <div>
+      {% for page in pages %}    
+      <a href="{{ page.url }}" data-page-slug="{{page.slug}}">
+        {{ page.title }}
+      </a>
+      {% endfor %}
+    </div>
+   
+   <iframe id="content-frame" src="{{ selected_page.page_url }}"></iframe>
+   
+    <script>
+      window.dashboards = {{ pages|tojson }};
+      {% include "multi_dash/inline_scripts.js" %}
+    </script>
+
+  </body>
+</html>
