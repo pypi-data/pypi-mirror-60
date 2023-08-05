@@ -1,0 +1,10 @@
+django_geomultiplechoice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_geomultiplechoice/admin.py,sha256=k-0o56cbSFzH2-DsdiUdm3J-WLmiPJKrCPA3cujDC4g,128
+django_geomultiplechoice/apps.py,sha256=8Fcdsa9tzAaprdwyRPHdPYlx-qFWIWs9HTKCPQKdg6E,187
+django_geomultiplechoice/widgets.py,sha256=6NglAhQNirZ4QScl7mQTRuD4rusMoyBqHX18QK0O7BI,2590
+django_geomultiplechoice/templates/geomultiplechoice_widget.html,sha256=JWlVndgayMPlX1nTQeWNNIIT0gmdk0md2GhMZGhzdVY,6352
+django_geomultiplechoice-0.0.5.dist-info/LICENSE,sha256=Gf9ca_bMPlm3Ksiu0Uqiz02qtgLuHTxpwtpf93gsaQg,1065
+django_geomultiplechoice-0.0.5.dist-info/METADATA,sha256=LBk05RXMnneiOLTt9rc7K0GVR9k1OkH6mgGRs0O_OeE,1093
+django_geomultiplechoice-0.0.5.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+django_geomultiplechoice-0.0.5.dist-info/top_level.txt,sha256=E_FKkB0--ucR1aIzChOxApi8MB6hsLjYFSKaV_2iILU,25
+django_geomultiplechoice-0.0.5.dist-info/RECORD,,
