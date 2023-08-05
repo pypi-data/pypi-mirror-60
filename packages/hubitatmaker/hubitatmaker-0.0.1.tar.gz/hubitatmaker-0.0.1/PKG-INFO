@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: hubitatmaker
+Version: 0.0.1
+Summary: A library for interfacing with Hubitat via its Maker API
+Home-page: https://github.com/jason0x43/hubitatmaker
+Author: Jason Cheatham
+Author-email: j.cheatham@gmail.com
+License: UNKNOWN
+Description: # hubitatmaker
+        
+        This library provides an async Python interface for Hubitat Elevation’s Maker
+        API.
+        
+        ## Basic usage
+        
+        ```python
+        import asyncio
+        from hubitatmaker import Hub
+        
+        async def print_devices(host, app_id, token):
+        	hub = Hub(host, app_id, token)
+        	await hub.connect()
+        	for device in hub.devices:
+        		print(f"{device.name} ({device.id})")
+        
+        if __name__ == '__main__':
+        	host = 'http://10.0.1.99'
+        	app_id = '1234'
+        	token = '<apitoken>'
+        	asyncio.run(print_devices(host, app_id, token))
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
