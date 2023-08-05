@@ -1,0 +1,7 @@
+prefect
+mlflow
+pyyaml
+numpy
+torch
+simplejson
+TaskBank
