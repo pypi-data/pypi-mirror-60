@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: presenzialo
+Version: 0.3.4
+Summary: presence web manager
+Home-page: https://github.com/so07/presenzialo
+Author: so07
+Author-email: 
+Maintainer: so07
+License: UNKNOWN
+Description: presence web manager
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Requires: requests
