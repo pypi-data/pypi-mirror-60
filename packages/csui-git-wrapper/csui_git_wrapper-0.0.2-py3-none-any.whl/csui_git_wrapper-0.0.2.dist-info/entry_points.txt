@@ -1,0 +1,3 @@
+[console_scripts]
+csuisubmit = csui_git_wrapper.__main__:main
+
