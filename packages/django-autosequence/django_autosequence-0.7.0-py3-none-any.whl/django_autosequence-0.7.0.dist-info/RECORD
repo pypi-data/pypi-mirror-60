@@ -1,0 +1,12 @@
+AUTHORS.rst,sha256=Kx8iR5gt-7OkbY3PwGppThw-9IecFn84CqG3aYLxFcc,157
+CONTRIBUTING.rst,sha256=nAKAaQW3zfw6IEvAy3QU0xvXp8qQEtJSn3ImeU4DDXo,3146
+HISTORY.rst,sha256=y2GUAy6CUHNayaqrOlinBKe9hoBEJJHcCrL-N0yd9GM,625
+LICENSE,sha256=I2G3rsq3hx4vj8fr-ayczAqcbnPlAUSFe7d9POEm0Lg,1077
+README.rst,sha256=yCLCGw35R2eVO06By8SfYlbhouzM5iLgtr7zojK4eNk,3525
+autosequence/__init__.py,sha256=NJJW4L56CPYVWRfF9vOqc_PzOQPFAUNwoB2F4fELVVI,74
+autosequence/fields.py,sha256=7kKzrrwJ8-0L1uO20zAwwWX_DNsCqCgetBY1gOD_PjQ,2123
+autosequence/helpers.py,sha256=l6kdqqrripxC0q7MqAlXCXr8kLyZ_6PWArweiojL5xc,729
+django_autosequence-0.7.0.dist-info/LICENSE,sha256=I2G3rsq3hx4vj8fr-ayczAqcbnPlAUSFe7d9POEm0Lg,1077
+django_autosequence-0.7.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+django_autosequence-0.7.0.dist-info/METADATA,sha256=1WBIlMEsUx1YOQpu0jME91aNfZ7KLqkCposEBQZh0ec,869
+django_autosequence-0.7.0.dist-info/RECORD,,
