@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: TOPSIS IMPLEMENTATION
+Version: 0.3
+Summary: Topsis
+Home-page: https://github.com/dhruvgoyal200/Topsis-implementation
+Author: DHRUV GOYAL
+Author-email: dhruvgoyal200@gmail.com
+License: MIT
+Description: Topsis implementation
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
