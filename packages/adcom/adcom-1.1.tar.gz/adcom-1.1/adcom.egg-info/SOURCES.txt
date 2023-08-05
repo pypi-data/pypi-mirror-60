@@ -1,0 +1,7 @@
+README.rst
+adcom.py
+setup.py
+adcom.egg-info/PKG-INFO
+adcom.egg-info/SOURCES.txt
+adcom.egg-info/dependency_links.txt
+adcom.egg-info/top_level.txt
