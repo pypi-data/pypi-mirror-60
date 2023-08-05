@@ -1,0 +1,4 @@
+[console_scripts]
+recport=recport.main:run1
+showport=recport.main:run2
+
