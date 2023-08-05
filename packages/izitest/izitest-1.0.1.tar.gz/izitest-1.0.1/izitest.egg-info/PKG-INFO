@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: izitest
+Version: 1.0.1
+Summary: Easily run an executable against a test suite
+Home-page: https://github.com/nhqml/izitest
+Author: Kenji 'Nhqml' Gaillac
+License: GNU GPLv3
+Description: # izitest
+        An easy way to test executables against a test suite
+        
+        WIP... please be patient.
+        
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
