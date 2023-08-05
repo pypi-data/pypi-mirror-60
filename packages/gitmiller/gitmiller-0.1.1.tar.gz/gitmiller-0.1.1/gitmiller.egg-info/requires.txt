@@ -1,0 +1,6 @@
+jupyterlab
+matlab_kernel
+papermill
+PyGithub
+pyyaml
+tqdm
