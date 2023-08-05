@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: RandoRank
+Version: 0.1.1
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Rust
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Project-Url: https://github.com/cassidoxa/RandoRank
+Author: cassidoxa <cassidymoen@gmx.com>
+Author-Email: cassidoxa <cassidymoen@gmx.com>
+Maintainer: cassidoxa cassidymoen#2979
+Maintainer-Email: cassidymoen@gmx.com

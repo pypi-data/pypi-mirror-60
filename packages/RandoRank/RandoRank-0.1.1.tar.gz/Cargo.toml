@@ -1,0 +1,46 @@
+[package]
+name = "RandoRank"
+version = "0.1.1"
+authors = ["cassidoxa <cassidymoen@gmx.com>"]
+edition = "2018"
+
+[lib]
+name = "randorank"
+crate-type = ["cdylib"]
+
+[dependencies]
+chrono = "0.4.10"
+itertools = "0.8.2"
+pyo3 = "0.8.5"
+
+# for rust tests
+# cargo test --no-default-features
+[features]
+extension-module = ["pyo3/extension-module"]
+default = ["extension-module"]
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = "abort"
+
+[package.metadata.maturin]
+classifier = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Rust",
+    "Development Status :: 4 - Beta",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    ]
+# keywords = ["ranking", "scoring", "randomizer", "speedrunning"]
+project-url = ["https://github.com/cassidoxa/RandoRank"]
+maintainer = "cassidoxa cassidymoen#2979"
+maintainer-email = "cassidymoen@gmx.com"
