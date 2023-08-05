@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sudosearch
+Version: 0.3.0
+Summary: Google Crawler and Keyword Checker
+Author: John Aldrich Bernardo
+Author-email: 4ldrich@protonmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: spacy (==2.2.3)
