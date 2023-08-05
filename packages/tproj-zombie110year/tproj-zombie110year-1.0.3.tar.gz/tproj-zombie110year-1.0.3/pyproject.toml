@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "tproj-zombie110year"
+version = "1.0.3"
+description = "tproj 用于管理用户创建的项目模板，一个项目所需的起始文件、目录被包含在一个 zip 格式的压缩包中。"
+authors = ["zombie110year <zombie110year@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/zombie110year/tproj-py/"
+repository = "https://github.com/zombie110year/tproj-py.git"
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: System :: Archiving",
+]
+packages = [
+    { include = "tproj/" },
+    { include = "tests/", format = "sdist" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyyaml = "^5.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3.4"
+
+[tool.poetry.scripts]
+tproj = "tproj.cli:main"
+
+[[tool.peotry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple"
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
