@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: neurolib
+Version: 0.1.2
+Summary: Easy whole-brain neural mass modeling
+Home-page: https://github.com/neurolib-dev/neurolib
+Author: Caglar Cakan
+Author-email: cakan@ni.tu-berlin.de
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: h5py
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# neurolib
+*Easy whole-brain neural mass modeling 👩‍🔬💻🧠*
+
+Visit the project's [github page](https://github.com/neurolib-dev/neurolib).
+
+Neurolib allows you to easily create your own state-of-the-art whole-brain models. The main implementation is a neural mass firing rate model called `aln` which consists of two populations of excitatory and a inhibitory neurons. This `aln` model is a mean-field model of spiking adaptive exponential integrate-and-fire neurons (AdEx). 
+
+
