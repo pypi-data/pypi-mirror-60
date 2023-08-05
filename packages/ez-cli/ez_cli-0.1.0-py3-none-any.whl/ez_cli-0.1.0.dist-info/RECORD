@@ -1,0 +1,9 @@
+ez_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ez_cli/__main__.py,sha256=lHj7J_UfyNGwPTXNtFS3yz9_Ijels8ivPOgmwnz7KdA,141
+ez_cli/tasks.py,sha256=Dv3yDyD2-gqLx5YMEFbghkKwx6tMIZD0_ERnbdCAio0,146
+ez_cli-0.1.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+ez_cli-0.1.0.dist-info/METADATA,sha256=Ke77_P2AOt6Svx6lCZnfw-lXCnk6-ApevLza-_3ZGZM,325
+ez_cli-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ez_cli-0.1.0.dist-info/entry_points.txt,sha256=HMIyth2BqnjFoh1KoTJUcTBdWmjVfc4Dl5Wy470g3dc,50
+ez_cli-0.1.0.dist-info/top_level.txt,sha256=JxWdcFy8CJnjipxK0dNBCnermtsHIyVUe5U9TF3ZgIQ,7
+ez_cli-0.1.0.dist-info/RECORD,,
