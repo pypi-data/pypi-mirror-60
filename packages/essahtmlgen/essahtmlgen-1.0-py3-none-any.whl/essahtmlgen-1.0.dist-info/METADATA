@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: essahtmlgen
+Version: 1.0
+Summary: Create HTML files with embedded source code & images
+Home-page: UNKNOWN
+Author: bayleaf
+Author-email: bailey.kocin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+#### essasinate ####
+
+Python tool for creating HTML specific layouts with source code files, css files and image files
+Uses CSU images as the default
+
