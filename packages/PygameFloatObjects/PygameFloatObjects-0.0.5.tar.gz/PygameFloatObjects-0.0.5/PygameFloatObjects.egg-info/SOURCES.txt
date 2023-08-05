@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+PygameFloatObjects/__init__.py
+PygameFloatObjects/objects.py
+PygameFloatObjects.egg-info/PKG-INFO
+PygameFloatObjects.egg-info/SOURCES.txt
+PygameFloatObjects.egg-info/dependency_links.txt
+PygameFloatObjects.egg-info/requires.txt
+PygameFloatObjects.egg-info/top_level.txt
+PygameFloatObjects/examples/__init__.py
+PygameFloatObjects/examples/circle_example.py
+PygameFloatObjects/examples/rect_example.py
