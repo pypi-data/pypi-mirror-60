@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: aiotmdb
+Version: 0.3
+Summary: Asyncio library for TMDb API
+Home-page: None
+Author: Fabrizio Arzeni
+Author-email: fabrizio.arz@gmail.com
