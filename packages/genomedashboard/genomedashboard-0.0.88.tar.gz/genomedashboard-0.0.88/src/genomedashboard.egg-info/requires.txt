@@ -1,0 +1,12 @@
+docutils>=0.3
+twobitreader
+pyBigWig
+numpy
+scipy
+matplotlib
+
+[dev]
+check-manifest
+
+[test]
+coverage
