@@ -1,0 +1,3 @@
+[console_scripts]
+ulog_tools_pid_design = ulog_tools.control_opt:main
+

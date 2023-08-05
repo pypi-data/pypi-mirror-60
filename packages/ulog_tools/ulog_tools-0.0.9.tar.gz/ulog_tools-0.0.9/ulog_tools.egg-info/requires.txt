@@ -1,0 +1,9 @@
+scipy
+numpy
+control
+matplotlib
+slycot
+pandas>=0.19.2
+transforms3d
+pyulog
+sympy
