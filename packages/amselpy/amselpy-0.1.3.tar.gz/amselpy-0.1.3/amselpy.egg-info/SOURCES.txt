@@ -1,0 +1,10 @@
+README.md
+setup.py
+amselpy/__init__.py
+amselpy/amsel.py
+amselpy/connection.py
+amselpy/skills.py
+amselpy.egg-info/PKG-INFO
+amselpy.egg-info/SOURCES.txt
+amselpy.egg-info/dependency_links.txt
+amselpy.egg-info/top_level.txt
