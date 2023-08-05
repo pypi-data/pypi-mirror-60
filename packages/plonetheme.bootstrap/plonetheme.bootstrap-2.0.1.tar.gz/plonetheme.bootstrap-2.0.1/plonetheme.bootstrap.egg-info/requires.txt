@@ -1,0 +1,8 @@
+setuptools
+z3c.jbot
+plone.browserlayer
+collective.js.bootstrap>=3.0
+
+[test]
+plone.app.testing[robot]>=4.2.2
+plone.app.robotframework

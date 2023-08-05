@@ -1,0 +1,53 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plonetheme.bootstrap">
+
+  <include package="z3c.jbot" />
+
+  <interface
+    interface=".interfaces.IThemeSpecific"
+    type="zope.publisher.interfaces.browser.IBrowserSkinType"
+    name="Bootstrap Theme"
+    />
+
+  <browser:jbot
+      layer=".interfaces.IThemeSpecific"
+      directory="templates" />
+
+  <browser:page
+      name="bootstrapview"
+      for="*"
+      class=".utils.BootstrapView"
+      allowed_interface=".interfaces.IBootstrapView"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+    />
+
+
+  <browser:viewlet
+      for="*"
+      name="plonetheme.bootstrap.dropdownmenu"
+      class=".dropdownmenu.BootstrapDropdownMenu"
+      template="dropdownmenu.pt"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:page
+        name="plonetheme_navigation_root"
+        for="*"
+        class=".navigation.NavigationRoot"
+        allowed_interface=".navigation.INavigationRootView"
+        permission="zope2.View"
+        layer=".interfaces.IThemeSpecific"
+        />
+
+  <browser:resource
+    name="bootstrap-integration.js"
+    file="bootstrap-integration.js"
+    layer=".interfaces.IThemeSpecific"
+    />
+
+</configure>
