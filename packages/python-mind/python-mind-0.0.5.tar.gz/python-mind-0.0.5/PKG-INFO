@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: python-mind
+Version: 0.0.5
+Summary: Python API for talking to MIND Mobility Connected Cars
+Home-page: https://github.com/bramkragten/python-mind/
+Author: Bram Kragten
+Author-email: mail@bramkragten.nl
+License: UNKNOWN
+Description: # Python: MIND
+        
+        Python API for MIND Mobility Connected Cars
+        
+Keywords: MIND Mobility PON Mijn Volkswagen Mijn Skoda Mijn Seat Audi Car Assistant Mijn Volkswagen Bedrijfswagens
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,10 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+mind/__init__.py
+python_mind.egg-info/PKG-INFO
+python_mind.egg-info/SOURCES.txt
+python_mind.egg-info/dependency_links.txt
+python_mind.egg-info/requires.txt
+python_mind.egg-info/top_level.txt
