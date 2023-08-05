@@ -1,0 +1,6 @@
+cachetools
+cytoolz
+faster_than_requests
+json_tricks
+loguru
+vaex

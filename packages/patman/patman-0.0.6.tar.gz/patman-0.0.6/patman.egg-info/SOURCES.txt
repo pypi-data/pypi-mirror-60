@@ -1,0 +1,10 @@
+README.md
+setup.py
+patman/__init__.py
+patman/main.py
+patman/utils.py
+patman.egg-info/PKG-INFO
+patman.egg-info/SOURCES.txt
+patman.egg-info/dependency_links.txt
+patman.egg-info/requires.txt
+patman.egg-info/top_level.txt

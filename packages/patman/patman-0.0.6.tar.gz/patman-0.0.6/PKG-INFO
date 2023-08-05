@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: patman
+Version: 0.0.6
+Summary: A fast and thought free service client for python
+Home-page: UNKNOWN
+Author: Kevin Hill
+Author-email: kah.kevin.hill@gmail.com
+License: UNKNOWN
+Description: # Patman -- Easy Client Library for Python
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
