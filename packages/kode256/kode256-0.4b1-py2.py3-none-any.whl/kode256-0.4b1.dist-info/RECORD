@@ -1,0 +1,16 @@
+kode256/Inconsolata-Regular.ttf,sha256=6azR2f-RPnUTndxzWsQ_lbaAap3k3HtvMOozEw2MVjk,84868
+kode256/__init__.py,sha256=HrvQmI7z3M5F-NUghpSWGRXlagmLQocSRLNgcgPtkFY,103
+kode256/__main__.py,sha256=ls9IgEoL0hMgoCXj2VZZVAT9tdK2hHgEX30SyjjEdTQ,63
+kode256/format.py,sha256=hdAws_9Xi7AIzmnGydhJDDRQVs9wFuN9CuZFIfEunPM,9162
+kode256/image.py,sha256=ecjkrnW-bYvktLasBL5u_IfdclaeFla__94AZFNxGjE,2403
+kode256/svg.py,sha256=otl8W2oswDiBNbHGkWtThEABJoazVk-nROpmZpaA1tE,1888
+kode256/tool/ModifiedMixin.py,sha256=kSs7lQ9U2JzFzTBxwOogJf0k89U-0masLnf-_Lt6aRw,2801
+kode256/tool/__init__.py,sha256=nzS5bjbpEwxSRYERQB0hAmb2OQHelQ51h1my_RJjung,53
+kode256/tool/console.py,sha256=Jg3SIOl_3-VA8fMrZFisk3cQX4A68EXI7sKkeazErsI,2667
+kode256/tool/gui.py,sha256=GWlOJ729AfdTdKH_QLcBWPMowg4J-LcB7qs8Ey2yKlA,5063
+kode256-0.4b1.dist-info/LICENSE.txt,sha256=m4cqigcLitMpxL04D7G_AAD1ZMdQI-yOHmgD8VNkuek,26461
+kode256-0.4b1.dist-info/METADATA,sha256=Z-KaAuF2qLn9bFTSaTuhR7_fD30ZA7Rj6W01-vzWlaw,4260
+kode256-0.4b1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+kode256-0.4b1.dist-info/entry_points.txt,sha256=U1NnA3DQwf1KFwijS2ykBohjxKXa9AURau2ACZ03F8w,95
+kode256-0.4b1.dist-info/top_level.txt,sha256=sid4-4ZQx5xGKHCbFoCraQVFLk6y3pIuh23Eiipumwo,8
+kode256-0.4b1.dist-info/RECORD,,

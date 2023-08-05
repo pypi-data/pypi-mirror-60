@@ -1,0 +1,6 @@
+[console_scripts]
+code128 = kode256.tool:main
+
+[gui_scripts]
+code128w = kode256.tool:gui_main
+
