@@ -1,0 +1,3 @@
+[sphinx.html_themes]
+tyrian_sphinx_theme = tyrian_sphinx_theme
+
