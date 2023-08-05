@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: memory-monitor
+Version: 0.1.1
+Summary: Simple Jupyter extension to show how much resources (RAM) your notebook is using
+Home-page: https://github.com/steelersd/memory_monitor
+License: MIT
+Download-URL: https://github.com/steelersd/memory_monitor/archive/0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: Jupyter,Notebook,Extension
+Platform: UNKNOWN
+Requires-Python: >=3.6
