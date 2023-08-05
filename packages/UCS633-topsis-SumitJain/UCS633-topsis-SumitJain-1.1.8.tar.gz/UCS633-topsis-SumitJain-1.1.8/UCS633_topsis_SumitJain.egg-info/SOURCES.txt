@@ -1,0 +1,15 @@
+README.md
+setup.py
+UCS633_topsis_SumitJain.egg-info/PKG-INFO
+UCS633_topsis_SumitJain.egg-info/SOURCES.txt
+UCS633_topsis_SumitJain.egg-info/dependency_links.txt
+UCS633_topsis_SumitJain.egg-info/entry_points.txt
+UCS633_topsis_SumitJain.egg-info/requires.txt
+UCS633_topsis_SumitJain.egg-info/top_level.txt
+UCS633_topsis_sumitjain.egg-info/PKG-INFO
+UCS633_topsis_sumitjain.egg-info/SOURCES.txt
+UCS633_topsis_sumitjain.egg-info/dependency_links.txt
+UCS633_topsis_sumitjain.egg-info/entry_points.txt
+UCS633_topsis_sumitjain.egg-info/top_level.txt
+packagesj/__init__.py
+packagesj/topsis.py
