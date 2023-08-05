@@ -1,0 +1,6 @@
+Click
+duniterpy==0.55.1
+ipaddress
+texttable
+tabulate
+pynacl
