@@ -1,0 +1,3 @@
+[console_scripts]
+jutge-problems-toolkit = jutge_problems_toolkit:main
+
