@@ -1,0 +1,9 @@
+README.md
+setup.py
+bcp/__init__.py
+bcp/__main__.py
+bcp_reader.egg-info/PKG-INFO
+bcp_reader.egg-info/SOURCES.txt
+bcp_reader.egg-info/dependency_links.txt
+bcp_reader.egg-info/entry_points.txt
+bcp_reader.egg-info/top_level.txt

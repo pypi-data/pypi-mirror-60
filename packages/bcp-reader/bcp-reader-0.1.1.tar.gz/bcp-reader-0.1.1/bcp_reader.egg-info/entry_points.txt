@@ -1,0 +1,3 @@
+[console_scripts]
+bcp = bcp.__main__:main
+
