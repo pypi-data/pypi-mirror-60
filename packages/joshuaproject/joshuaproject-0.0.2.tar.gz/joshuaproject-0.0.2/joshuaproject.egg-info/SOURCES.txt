@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+joshuaproject/__init__.py
+joshuaproject/_nbdev.py
+joshuaproject/core.py
+joshuaproject.egg-info/PKG-INFO
+joshuaproject.egg-info/SOURCES.txt
+joshuaproject.egg-info/dependency_links.txt
+joshuaproject.egg-info/entry_points.txt
+joshuaproject.egg-info/not-zip-safe
+joshuaproject.egg-info/requires.txt
+joshuaproject.egg-info/top_level.txt
