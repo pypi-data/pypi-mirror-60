@@ -1,0 +1,4 @@
+[console_scripts]
+scrape-jobs = scrape_jobs.cli.jobs_scraper:run
+scrape-jobs-init-config = scrape_jobs.cli.config_initializer:run
+
