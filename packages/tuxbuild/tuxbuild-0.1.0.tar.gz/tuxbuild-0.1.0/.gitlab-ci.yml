@@ -1,0 +1,17 @@
+image:
+  name: python:3.7-stretch
+
+before_script:
+  - python --version
+  - pip install -r requirements.txt -r requirements-dev.txt .
+  - pip install -e . # For some reason, pytest-cov does not work without this
+
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - black --check .
+    - flake8 .
+    - pytest --cov=tuxbuild .
