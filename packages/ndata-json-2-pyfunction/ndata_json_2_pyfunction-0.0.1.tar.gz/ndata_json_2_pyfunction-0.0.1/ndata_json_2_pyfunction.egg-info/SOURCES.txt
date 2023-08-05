@@ -1,0 +1,6 @@
+README.md
+setup.py
+ndata_json_2_pyfunction.egg-info/PKG-INFO
+ndata_json_2_pyfunction.egg-info/SOURCES.txt
+ndata_json_2_pyfunction.egg-info/dependency_links.txt
+ndata_json_2_pyfunction.egg-info/top_level.txt
