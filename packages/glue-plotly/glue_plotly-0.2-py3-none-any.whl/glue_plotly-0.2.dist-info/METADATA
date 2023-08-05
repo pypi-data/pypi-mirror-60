@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: glue-plotly
+Version: 0.2
+Summary: Experimental plot.ly exporters for glue
+Home-page: https://github.com/glue-viz/glue-plotly
+Author: Thomas Robitaille and Catherine Zucker
+Author-email: glue.viz@gmail.com
+License: BSD 3-Clause License
+Platform: UNKNOWN
+Provides: glue_plotly
+Requires-Python: >=3.6
+Requires-Dist: glue-core (>=0.14)
+Requires-Dist: plotly
+Provides-Extra: qt
+Requires-Dist: PySide2 ; (python_version == "2") and extra == 'qt'
+Requires-Dist: PyQt5 ; (python_version >= "3") and extra == 'qt'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: mock ; extra == 'test'
+Requires-Dist: glue-vispy-viewers ; extra == 'test'
+
+Experimental plot.ly plugin for glue
+------------------------------------
+
+.. image:: https://dev.azure.com/glue-viz/glue-plotly/_apis/build/status/glue-viz.glue-plotly?branchName=master
+   :target: https://dev.azure.com/glue-viz/glue-plotly/_build/results?buildId=27&view=logs
+
+
