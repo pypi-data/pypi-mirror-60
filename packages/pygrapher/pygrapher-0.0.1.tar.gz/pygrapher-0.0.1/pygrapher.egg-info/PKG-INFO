@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pygrapher
+Version: 0.0.1
+Summary: A simple, excel-like plot fitting library
+Home-page: https://github.com/610yilingliu/py-grapher
+Author: Yiling Liu
+Author-email: yilingliu1994@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: any
+Requires-Python: >=3.6
