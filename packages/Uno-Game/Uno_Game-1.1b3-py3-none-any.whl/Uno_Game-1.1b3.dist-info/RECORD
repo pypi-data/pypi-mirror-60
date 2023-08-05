@@ -1,0 +1,16 @@
+uno/__init__.py,sha256=jI4_qy8YyTEVPYC_u_YaCFiDqt4GdYYRm6182sb__Qc,137
+uno/__main__.py,sha256=wSNMHVQ_u8ieWHXwRLhX3dkwcfWdyV7tKi8lCN7nycU,111
+uno/_card.py,sha256=J078EytU_ZCkTpHmVMsFK5FC5PZjfu1G8QZDF-X2Ek0,4150
+uno/_color.py,sha256=s7iRU8jhkKwcxNdXbHnjsIeinW2g0FAZqU_uyt_L6Nk,165
+uno/_colors.py,sha256=6wCGWQUbY8P2qqaKC_HSWVP6Oof0vmfrucIn0puEens,198
+uno/_core.py,sha256=qdu4Fzx_BRECW5U8z5x1GgJ0GFv6EDry-58VP8AuNdk,1509
+uno/_game.py,sha256=5UsCpQ9HMmHpKZPh_mI-mWt7hXI_0RXXx4OZTzsctQQ,1498
+uno/_init.py,sha256=0Z-MsUerWlkFYL92-mStZa7kiejx_8NA3DBbfwWNh-4,181
+uno/_mods.py,sha256=UdwL3qWAlTjiRSyxQPp5-5YskSahLu2_PvV0pci7fq0,2604
+uno/_player.py,sha256=SThBxo3xcQTbYtbVcF-PHIsZRVshYibTRjaef-vF3p8,7190
+uno/lang.py,sha256=1giTPu_9OZmrQJysNOp0eUDqeROVQQNrNxe8jK7r1QA,592
+uno/main.py,sha256=n_enwSN0rNLSv2VqV9zpXLdQjOgb8YP4nPms4OZDbkI,1994
+Uno_Game-1.1b3.dist-info/METADATA,sha256=dc_DB-1ASsiIff0vlF_ubUAmCRkBy_msLSCkwKyOSzU,1279
+Uno_Game-1.1b3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+Uno_Game-1.1b3.dist-info/top_level.txt,sha256=2fhtNLCw4x9ZX7CTLAbHez8Y6jK5-HD1MotnSKhE4hA,4
+Uno_Game-1.1b3.dist-info/RECORD,,
