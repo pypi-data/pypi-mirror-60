@@ -1,0 +1,42 @@
+Longleding Push Service SDK
+
+# Supported Python Versions
+
+Python >= 3.6
+
+# Installation
+
+longleding-push-service-sdk is available for Linux, macOS, and Windows.
+
+```shell script
+$ pip install longleding-push-service-sdk
+```
+
+# Basic Usage
+
+```python
+# -*- coding: utf-8 -*-
+from sdk import push_service_sdk
+
+push_service_endpoint = "localhost:80"
+source_name = "demo"
+
+push_service_sdk.init_service(endpoint=push_service_endpoint, source=source_name)
+
+
+def send_register_code():
+    push_service_sdk.send_register_code("xxxxxxxxxxx", "xxxxxx")
+
+
+def send_login_sms():
+    push_service_sdk.send_login_code("xxxxxxxxxxx", "xxxxxx")
+
+
+def send_change_password_code():
+    push_service_sdk.send_change_password_code("xxxxxxxxxxx", "xxxxxx")
+
+
+if __name__ == '__main__':
+    send_login_sms()
+
+```
