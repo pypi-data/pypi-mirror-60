@@ -1,0 +1,33 @@
+{% load static %}
+{% comment %}
+FIXME: This is a temp workaround to get zoom in and out icons appearing
+until mapbox-gl.css fixes their stylesheet; it should be included in the
+node-installed package and picked up by the Meeting Guide build process.
+{% endcomment %}
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+{# END FIXME #}
+
+<meetings src="{% url "meeting-guide:api" %}"></meetings>
+<script>
+    window.config = {
+        defaults: {
+            title: true,
+        },
+        keys: {
+            mapbox: '{{ mapbox_key }}',
+        },
+        strings: {
+            en: {
+                // meetings: 'AA Meetings',
+            },
+        },
+    };
+</script>
+{% comment %}
+Let's keep a local copy of the JavaScript here so we can control
+when upgrades occur and test.
+
+Source is at https://react.meetingguide.org/app.js
+{% endcomment %}
+<link rel="stylesheet" type="text/css" href="{% static 'meeting_guide/style.css' %}">
+<script src="{% static 'meeting_guide/app.js' %}" async></script>
