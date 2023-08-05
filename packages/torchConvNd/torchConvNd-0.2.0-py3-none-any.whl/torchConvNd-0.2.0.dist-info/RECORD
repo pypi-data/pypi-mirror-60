@@ -1,0 +1,12 @@
+torchConvNd/__init__.py,sha256=yvbWRNKK9Wsj9ZRgHX3Hh-cW5D2ATxamPy-wxF01g5w,115
+torchConvNd/convNd.py,sha256=EyBxcZViYx5-gI5xvRPSw_Dtc4oUa_XZDGf1IDcCuts,1836
+torchConvNd/convNdAuto.py,sha256=9UiOXRqDsKW2-tO7I53tUyC1oAjAispE-hhxe1Ivub4,1568
+torchConvNd/convNdFunc.py,sha256=tQr6KEnhjEYW1U5vZnu7lAOsudfG3aey7r7v5Lisgd0,1805
+torchConvNd/convNdRec.py,sha256=eRqO_hWtfwHbbSYauE8LumbHEUHBs2UfQjs9umOKdus,1482
+torchConvNd/utils/__init__.py,sha256=alIDGBnxWH4JvP-UW-7N99seBBi0r1GV1h8f1ERFBec,21
+torchConvNd/utils/utils.py,sha256=sXw5O9HyUIg1dJhi5rRzWqSiK9xSnp9RU_V_g7adHaQ,3430
+torchConvNd-0.2.0.dist-info/LICENSE,sha256=ZHAlhFTSX4W73hxi5hy6wro_MkucyJ7dnuofi_8W-hw,39821
+torchConvNd-0.2.0.dist-info/METADATA,sha256=ee_g-10NYU7asbpFNUWXYVuS-yqfPZWBc7UpypQvuDY,9017
+torchConvNd-0.2.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+torchConvNd-0.2.0.dist-info/top_level.txt,sha256=JyuGcs1aO1fMyxXklzsL6ERW9oT0ObnLRjmcAqW-fsQ,12
+torchConvNd-0.2.0.dist-info/RECORD,,
