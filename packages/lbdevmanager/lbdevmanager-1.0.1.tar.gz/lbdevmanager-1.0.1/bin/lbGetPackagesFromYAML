@@ -1,0 +1,40 @@
+#!/usr/bin/env python
+
+import sys
+from lbdevmanager.YamlManager import YamlManager
+from lbdevmanager.LbInstallManager import LbInstallManager
+from pprint import pprint
+
+
+def convertYAMLtoPackages(config, siteroot='/tmp/siteroot'):
+    yamlManager = YamlManager(config)
+    packagesWithPrefix = yamlManager.getPrefixList()
+    lbinstallManager = LbInstallManager(siteroot)
+    already_there = []
+    missing_results = []
+    rpmlist = []
+    for tmp in packagesWithPrefix:
+        prefix = tmp['prefix']
+        already_in = False
+        for el in already_there:
+            if el.startswith(prefix):
+                already_in = True
+        if already_in:
+            continue
+        prefix = prefix.replace('+', '\+')
+        pkglist = lbinstallManager.checkPackagesInRemoteDatabase(prefix)
+        if len(pkglist) == 0:
+            missing_results.append((prefix))
+        for p in pkglist:
+            rpmlist.append(p.rpmName().split('-'))
+    print("Missing results:")
+    pprint(missing_results)
+    print("RPM lists to install:")
+    for rpm in rpmlist:
+        print("%s %s %s" % (rpm[0], rpm[1], rpm[2]))
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        raise "Not enough arguments"
+    convertYAMLtoPackages(sys.argv[1])

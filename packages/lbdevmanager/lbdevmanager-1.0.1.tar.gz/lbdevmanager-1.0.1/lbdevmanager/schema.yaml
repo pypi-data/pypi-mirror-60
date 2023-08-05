@@ -1,0 +1,23 @@
+type: map
+mapping:
+  packages:
+    seq:
+      - type: map
+        mapping:
+          name:
+            type: str
+          LCG:
+            seq:
+              - type: str
+          versions:
+            seq:
+              - type: str
+  exclusions:
+    seq:
+      - type: map
+        mapping:
+          LCG:
+            type: str
+          regex:
+             seq:
+               - type: str
