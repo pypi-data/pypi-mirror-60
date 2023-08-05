@@ -1,0 +1,12 @@
+ccc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ccc/argmin.py,sha256=sq52GB25kRpIldfbobN-0AL-54urYwu62wRJkiOUNZ8,5476
+ccc/collocates.py,sha256=O9XqJ0fvSF0Jf3WVviBTzDNhfWxCKwS-crxqw6A6wd4,5465
+ccc/concordances.py,sha256=WjMbQZZA7DZOAmBj43rQR_-QWpBONwuhiEcR7h8d78o,4958
+ccc/cqp_interface.py,sha256=qdySsBdRTFIISW3cv1JCIr3S1c7xNy0UM6lUL1Ni_Jo,15218
+ccc/cwb.py,sha256=FkQah72Zks-UdVvOk5SbaPrub2DnBio27RGPziZiVJ0,11926
+ccc/utils.py,sha256=CMlBPk2JzsTilJMHMraayoLE125dPSd8XqXJUYB5h70,695
+cwb_ccc-0.9.4.dist-info/LICENSE,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+cwb_ccc-0.9.4.dist-info/METADATA,sha256=bQMzGNMLFpCG4TS7aYf32GLb_P3DZfSAscspNJMUeJA,12100
+cwb_ccc-0.9.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cwb_ccc-0.9.4.dist-info/top_level.txt,sha256=VpXYKghrZ3lioLBCjtGiEyCChbe0DX02BIdtNqcQMCo,4
+cwb_ccc-0.9.4.dist-info/RECORD,,
