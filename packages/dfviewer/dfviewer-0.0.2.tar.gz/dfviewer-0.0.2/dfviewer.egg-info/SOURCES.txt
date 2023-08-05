@@ -1,0 +1,8 @@
+README.md
+setup.py
+dfviewer/__init__.py
+dfviewer.egg-info/PKG-INFO
+dfviewer.egg-info/SOURCES.txt
+dfviewer.egg-info/dependency_links.txt
+dfviewer.egg-info/requires.txt
+dfviewer.egg-info/top_level.txt
