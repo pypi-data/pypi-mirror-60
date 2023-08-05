@@ -1,0 +1,10 @@
+README.md
+setup.py
+Compositions.egg-info/PKG-INFO
+Compositions.egg-info/SOURCES.txt
+Compositions.egg-info/dependency_links.txt
+Compositions.egg-info/entry_points.txt
+Compositions.egg-info/top_level.txt
+compositions/__init__.py
+compositions/__main__.py
+compositions/compositions.py
