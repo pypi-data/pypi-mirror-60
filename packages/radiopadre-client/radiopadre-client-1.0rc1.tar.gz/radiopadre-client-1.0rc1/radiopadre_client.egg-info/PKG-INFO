@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: radiopadre-client
+Version: 1.0rc1
+Summary: Radiopadre client-side script
+Home-page: http://github.com/ratt-ru/radiopadre-client
+Author: Oleg Smirnov
+Author-email: osmirnov@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: ipython notebook fits dataset resultset visualisation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
