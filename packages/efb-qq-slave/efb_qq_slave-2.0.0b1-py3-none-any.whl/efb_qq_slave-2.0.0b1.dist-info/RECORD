@@ -1,0 +1,17 @@
+efb_qq_slave/ClientMgr.py,sha256=cSVGKGwYEO6DoQrTQEsFR1h9Hi9YkihiB05jxXcKSCQ,663
+efb_qq_slave/__init__.py,sha256=swKsD1eF0c69DC82pHBwgHXNg2tWzOTq5koCEVJf7ns,3857
+efb_qq_slave/__version__.py,sha256=0soaAM1Yoh_ynJRlLJJvDAbRzxTfkbLz9Yt4h1Xu5Rs,41
+efb_qq_slave/Clients/BaseClient.py,sha256=kWrgaFgeBjbCqY9zSpEGDObV96tG3mnk9MyWq9dvX9w,2274
+efb_qq_slave/Clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+efb_qq_slave/Clients/CoolQ/ChatMgr.py,sha256=V10A5xee1oZU_vUtKyPVn0VC904nHoW9cfL1-97uH2A,6380
+efb_qq_slave/Clients/CoolQ/CoolQ.py,sha256=_3v5NhtjyXQD1gTCyhbVN-J_zsB0ZiM6mQ3YX2Ye78Y,48859
+efb_qq_slave/Clients/CoolQ/Exceptions.py,sha256=TLUtSdaOYfuM_0mjdJJnzGPHEarQSVBeVAGJ2E5JEKo,376
+efb_qq_slave/Clients/CoolQ/MsgDecorator.py,sha256=d3MFEsBKpA3zMRWdRysQDMXVIQcYGA5L7JSFe2qNTmI,9668
+efb_qq_slave/Clients/CoolQ/Utils.py,sha256=FVq8WUid28P8InGVA8KcDY5rEshwb_3rjzYMZRfI-LM,12117
+efb_qq_slave/Clients/CoolQ/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+efb_qq_slave-2.0.0b1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+efb_qq_slave-2.0.0b1.dist-info/METADATA,sha256=WilKkI6siJLcxNHHfLF2t0lqZJf-068G14i-G94gkcA,3570
+efb_qq_slave-2.0.0b1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+efb_qq_slave-2.0.0b1.dist-info/entry_points.txt,sha256=5k70XuKuQqHzSYuSnFsnrCmaCuc9FqBiT4MmGMPbQt0,69
+efb_qq_slave-2.0.0b1.dist-info/top_level.txt,sha256=hfrOMCNW3JJIG3F-jLcyoKHBamZ9sRfKowLMTqZDuYs,13
+efb_qq_slave-2.0.0b1.dist-info/RECORD,,
