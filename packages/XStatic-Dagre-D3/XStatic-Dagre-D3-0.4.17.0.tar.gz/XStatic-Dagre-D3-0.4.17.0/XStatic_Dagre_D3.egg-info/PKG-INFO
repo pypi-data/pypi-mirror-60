@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: XStatic-Dagre-D3
+Version: 0.4.17.0
+Summary: Dagre-D3 0.4.17 (XStatic packaging standard)
+Home-page: https://github.com/dagrejs/dagre-d3
+Maintainer: Michal Arbet
+Maintainer-email: michal.arbet@ultimum.io
+License: (same as Dagre-D3)
+Description: XStatic-Dagre-D3
+        --------------
+        
+        Dagre-D3 JavaScript library packaged for setuptools (easy_install) / pip.
+        
+        This package is intended to be used by **any** project that needs these files.
+        
+        It intentionally does **not** provide any extra code except some metadata
+        **nor** has any extra requirements. You MAY use some minimal support code from
+        the XStatic base package, if you like.
+        
+        You can find more info about the xstatic packaging way in the package `XStatic`.
+        
+        
+Keywords: dagre_d3 xstatic
+Platform: any
+Description-Content-Type: text/markdown
