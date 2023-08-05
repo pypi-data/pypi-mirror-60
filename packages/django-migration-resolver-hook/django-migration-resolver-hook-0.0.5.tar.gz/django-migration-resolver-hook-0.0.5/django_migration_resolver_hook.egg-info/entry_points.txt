@@ -1,0 +1,3 @@
+[console_scripts]
+migration_resolver = bin.resolver:main
+
