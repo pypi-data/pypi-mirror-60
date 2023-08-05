@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: pyriodic-structures
+Version: 0.1.0
+Summary: Library to list and manipulate well-known 3D structures
+Home-page: UNKNOWN
+Author: Matthew Spellings
+Author-email: matthew.p.spellings@gmail.com
+License: MIT
+Project-URL: Documentation, http://pyriodic.readthedocs.io/
+Project-URL: Source, https://github.com/klarh/pyriodic
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
