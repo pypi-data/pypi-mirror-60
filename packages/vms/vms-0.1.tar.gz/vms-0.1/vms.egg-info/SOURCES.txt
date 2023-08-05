@@ -1,0 +1,8 @@
+setup.py
+vms.py
+vms.egg-info/PKG-INFO
+vms.egg-info/SOURCES.txt
+vms.egg-info/dependency_links.txt
+vms.egg-info/entry_points.txt
+vms.egg-info/requires.txt
+vms.egg-info/top_level.txt
