@@ -1,0 +1,8 @@
+You can install the package with:
+pip install kot1
+
+Use it as below:
+
+weather = Weather(city = "Madrid")
+weather.next_12h()
+weather.next_12h()_simplified()
