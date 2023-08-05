@@ -1,0 +1,10 @@
+glfw/GLFW.py,sha256=90rvRuT-_Q1JsEI9VzXFWxifCJ1q5wiJKUDTFD_1CNE,17235
+glfw/__init__.py,sha256=s_uHNYKtPUQIhLRGEKqK3TrkVh5oWwxnkw1cetBFB3I,107267
+glfw/libglfw.so,sha256=Y3InxQudee5aTysTLwJyq9wjxKPLSN2Wa_s3Fx8b0Zk,331888
+glfw/library.py,sha256=FpcIm6Mw97KvDkbrth08_WDYv0U6s8IBBx9fc7MdKvg,6302
+glfw-1.10.1.dist-info/DESCRIPTION.rst,sha256=B4NxCoy5VFpuj_XO8zNMRFNjlAFvDJRINBr_kWm_ajA,3598
+glfw-1.10.1.dist-info/METADATA,sha256=H5-jqe_3W3yetGzi83hkdBb7nrpk7lMOzjajvnEwgQA,4263
+glfw-1.10.1.dist-info/RECORD,,
+glfw-1.10.1.dist-info/WHEEL,sha256=JoVVVzt-uqsDjUP2UNCSvB2FNZmNJxUUaqvGACh5zuM,504
+glfw-1.10.1.dist-info/metadata.json,sha256=APhbbv7e4sOk0eO-w4GbuBUkWLBxzZAMnvDjtqqXSJg,787
+glfw-1.10.1.dist-info/top_level.txt,sha256=n6GNY584FzIdaCsyFH_mQw_kXzRH9bZ9wYb8VvDeT3k,5
