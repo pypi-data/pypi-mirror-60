@@ -1,0 +1,13 @@
+blingfire/__init__.py,sha256=7olCUQgmzuH6jbmGSxtN8K19ZgsynZE_hzWNgDOgwFg,6621
+blingfire/bert_base_cased_tok.bin,sha256=fzoE_Ixup_ULpYIfyaO6GSEEMVaeazlvbC-NRbBEUSI,3193820
+blingfire/bert_base_tok.bin,sha256=SKzUU9rfOcahuAUXTeaCQNEzj25yHvTfaDKjxuXufFI,4232024
+blingfire/bert_chinese.bin,sha256=GrV09NNEoAV9Nc2pdRncmKkOkvcJJN1HjA_180rOG18,3832284
+blingfire/bert_multi_cased.bin,sha256=tdMlTW30r4FVX-8ATSVpOvbfpjwdL6LwSgzi63Osf8w,6311240
+blingfire/blingfiretokdll.dll,sha256=zdyLo6JZj1IIpC3U_nVm6tLqWV09Ai1oYlEOoLZa6rc,1361920
+blingfire/libblingfiretokdll.so,sha256=ffDtqNaooF33q9RhHCTqCaE4BzroxOryx_oGu0yKK8Q,1442520
+blingfire/wbd_chuni.bin,sha256=gEKzsa3B4bBb53PJjtww8vlNs0f72g6j9vTxI6aonJA,130328
+blingfire-0.0.15.dist-info/LICENSE,sha256=3qkmU0GCkALiwjpzcjk-su1uJghftiPzikugr4M_MKY,1183
+blingfire-0.0.15.dist-info/METADATA,sha256=kZeMXbp4UBlof7sFFDqfwINaSN9hamKDAUrRkDyABKw,6202
+blingfire-0.0.15.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+blingfire-0.0.15.dist-info/top_level.txt,sha256=vap8I7AZE4z7mocSG9GERPjZps3XRVeURMDKlNelPrs,10
+blingfire-0.0.15.dist-info/RECORD,,
