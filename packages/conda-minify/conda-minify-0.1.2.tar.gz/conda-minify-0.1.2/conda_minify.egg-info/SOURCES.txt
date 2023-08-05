@@ -1,0 +1,14 @@
+README.md
+setup.py
+conda_minify/__init__.py
+conda_minify/__main__.py
+conda_minify/__version__.py
+conda_minify/cli.py
+conda_minify/environment.py
+conda_minify/graph.py
+conda_minify.egg-info/PKG-INFO
+conda_minify.egg-info/SOURCES.txt
+conda_minify.egg-info/dependency_links.txt
+conda_minify.egg-info/entry_points.txt
+conda_minify.egg-info/requires.txt
+conda_minify.egg-info/top_level.txt
