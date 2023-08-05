@@ -1,0 +1,10 @@
+hvwfg-1.0.0b0.dist-info/RECORD,,
+hvwfg-1.0.0b0.dist-info/WHEEL,sha256=41yCFrJSFHVzlc2oBILEBKDUJ7HO3YjpyLd1p8p3js8,109
+hvwfg-1.0.0b0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+hvwfg-1.0.0b0.dist-info/top_level.txt,sha256=gPWJR1JSVH7cj8iplG0l8QLjayu_hDCbH_lZP9IBi-k,6
+hvwfg-1.0.0b0.dist-info/METADATA,sha256=qUHt5XFon2oxJ_XS0khCMQQmcZA7wgiATemvuJuTCwo,1323
+hvwfg/_version.py,sha256=gx06dNaqYKDjXe0rZeSAZdczRlUOFojdFqO6nuUyloY,498
+hvwfg/hv4dr.cpython-35m-x86_64-linux-gnu.so,sha256=uXdjTgDxjeRWQYdirs5-3MVVZTxkz2D5PwFcDMK1xfY,232944
+hvwfg/wfg.cpython-35m-x86_64-linux-gnu.so,sha256=7sAChdtr-6JsO0DZZ4tkTpNE2AXgignLB1cZwVI81IQ,239848
+hvwfg/hv5dr.cpython-35m-x86_64-linux-gnu.so,sha256=Wbbl_RrhjU1VUTu_mVsIdDbAEqWQh6LDIW_Y7riFaQI,246592
+hvwfg/__init__.py,sha256=meHAfuFijwjNxVhgp5IrPgKrEGTQP1_NM3ticynj3TE,746
