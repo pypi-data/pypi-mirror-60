@@ -1,0 +1,47 @@
+{
+  "get_nzh_biz_addWithdrawRulePlan": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 39913,
+      "sandbox": 48252
+    }
+  },
+  "get_nzh_withdrawRulePlanList": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 39914,
+      "sandbox": 48253
+    }
+  },
+  "get_nzh_biz_withdrawRuleList": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 39915,
+      "sandbox": 48254
+    }
+  },
+  "post_nzh_biz_revokeWithdrawRule": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 39916,
+      "sandbox": 48255
+    }
+  },
+  "get_nzh_withdrawRuleUsageReport": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 39917,
+      "sandbox": 48256
+    }
+  }
+}
