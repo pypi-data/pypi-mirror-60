@@ -1,0 +1,40 @@
+[
+    {
+        "workspace": "D:\\Debug",
+        "workflow": [
+            "RAW",
+            "Selection",
+            "Edited",
+            "Affinity",
+            "Instagram",
+            "Backup",
+            "Preview"
+        ],
+        "baseflow": "RAW",
+        "backup": "Backup",
+        "selection": "Selection",
+        "edited": "Edited",
+        "preview": "Preview",
+        "editing": "Affinity",
+        "instagram": "Instagram"
+    },
+    {
+        "workspace": "D:\\Pictures",
+        "workflow": [
+            "RAW",
+            "Selection",
+            "Edited",
+            "Affinity",
+            "Instagram",
+            "Backup",
+            "Preview"
+        ],
+        "baseflow": "RAW",
+        "backup": "Backup",
+        "selection": "Selection",
+        "edited": "Edited",
+        "preview": "Preview",
+        "editing": "Affinity",
+        "instagram": "Instagram"
+    }
+]
