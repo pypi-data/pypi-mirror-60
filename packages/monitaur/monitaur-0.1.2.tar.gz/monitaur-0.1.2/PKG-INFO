@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: monitaur
+Version: 0.1.2
+Summary: Monitaur Client Library
+Home-page: UNKNOWN
+Author: Michael Herman
+Author-email: michael@monitaur.ai
+License: MIT
+Description: Monitaur Client Library
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: ==3.6, ==3.7
+Description-Content-Type: text/markdown
