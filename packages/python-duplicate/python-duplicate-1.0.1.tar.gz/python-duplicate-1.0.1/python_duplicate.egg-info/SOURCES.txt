@@ -1,0 +1,17 @@
+README.md
+setup.py
+pyd/__init__.py
+pyd/data/__init__.py
+pyd/data/const.py
+pyd/data/from_list.py
+pyd/data/utils.py
+pyd/database/__init__.py
+pyd/database/from_mysql.py
+pyd/database/from_psql.py
+pyd/database/utils.py
+python_duplicate.egg-info/PKG-INFO
+python_duplicate.egg-info/SOURCES.txt
+python_duplicate.egg-info/dependency_links.txt
+python_duplicate.egg-info/not-zip-safe
+python_duplicate.egg-info/requires.txt
+python_duplicate.egg-info/top_level.txt
