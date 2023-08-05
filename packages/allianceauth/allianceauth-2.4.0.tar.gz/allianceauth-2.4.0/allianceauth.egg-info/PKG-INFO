@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: allianceauth
+Version: 2.4.0
+Summary: An auth system for EVE Online to help in-game organizations manage online service access.
+Home-page: https://gitlab.com/allianceauth/allianceauth
+Author: Alliance Auth
+Author-email: adarnof@gmail.com
+License: GPLv2
+Description: Alliance Auth
+        ============
+        
+        [![Chat on Discord](https://img.shields.io/discord/399006117012832262.svg)](https://discord.gg/fjnHAmk)
+        [![Documentation Status](https://readthedocs.org/projects/allianceauth/badge/?version=latest)](http://allianceauth.readthedocs.io/?badge=latest)
+        [![pipeline status](https://gitlab.com/allianceauth/allianceauth/badges/master/pipeline.svg)](https://gitlab.com/allianceauth/allianceauth/commits/master)
+        [![coverage report](https://gitlab.com/allianceauth/allianceauth/badges/master/coverage.svg)](https://gitlab.com/allianceauth/allianceauth/commits/master)
+        
+        
+        
+        An auth system for EVE Online to help in-game organizations manage online service access.
+        
+        [Read the docs here.](http://allianceauth.rtfd.io)
+        
+        [Get help on Discord](https://discord.gg/fjnHAmk) or submit an Issue.
+        
+        
+        Active Developers:
+        
+         - [Adarnof](https://gitlab.com/adarnof/)
+         - [Basraah](https://gitlab.com/basraah/)
+         - [Ariel Rin](https://gitlab.com/soratidus999/)
+         - [Col Crunch](https://gitlab.com/colcrunch/)
+        
+        Beta Testers / Bug Fixers:
+        
+         - [ghoti](https://gitlab.com/ChainsawMcGinny/)
+         - [mmolitor87](https://gitlab.com/mmolitor87/)
+         - [TargetZ3R0](https://github.com/TargetZ3R0)
+         - [kaezon](https://github.com/kaezon/)
+         - [orbitroom](https://github.com/orbitroom/)
+         - [tehfiend](https://github.com/tehfiend/)
+        
+        Special thanks to [Nikdoof](https://github.com/nikdoof/), as his [auth](https://github.com/nikdoof/test-auth) was the foundation for the original work on this project.
+        
+        ### Contributing
+        Make sure you have signed the [License Agreement](https://developers.eveonline.com/resource/license-agreement) by logging in at [https://developers.eveonline.com](https://developers.eveonline.com) before submitting any pull requests.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: ~=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: testing
