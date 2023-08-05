@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+stockpiler/__init__.py
+stockpiler/__main__.py
+stockpiler.egg-info/PKG-INFO
+stockpiler.egg-info/SOURCES.txt
+stockpiler.egg-info/dependency_links.txt
+stockpiler.egg-info/entry_points.txt
+stockpiler.egg-info/not-zip-safe
+stockpiler.egg-info/requires.txt
+stockpiler.egg-info/top_level.txt
