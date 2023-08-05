@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: django1.11-zebra
+Version: 2.2
+Summary: Library for Django1.11 and Stripe
+Home-page: https://github.com/DivvyHQ/django-zebra
+Author: DivvyHQ
+Author-email: contact@divvyhq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+UNKNOWN
+
+
