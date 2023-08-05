@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: buba
+Version: 0.0.1
+Summary: Multi-environment yaml settings following 12 Factor App methodology.
+Home-page: https://github.com/code-impactor/buba
+Author: Andrei Roskach
+Author-email: code.impactor@gmail.com
+License: MIT
+Download-URL: https://github.com/code-impactor/buba/releases/tag/0.0.1
+Keywords: multi-environment,yaml,settings,config,12 Factor,python,nested
+Platform: Any
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML (>=5.3)
+
+# buba
+Multi-environment yaml settings following 12 Factor App methodology.
+
+Inspired by gem [rubyconfig](https://rubygems.org/gems/config).
+
+#### Features:
+- simple YAML config files
+- config files support inheritance and multiple environments
+- access config information via convenient object member notation
+- support for multi-level settings (Settings.group.subgroup.setting)
+
+#### Install:
+```bash
+pip install buba
+```
+
+#### Usage:
+Create config directories and files in project root directory:
+```bash
+.
++-- ...
++-- _config
+|   +-- environments
+|       +-- development.db.yaml
+|       +-- production.db.yaml
+|       +-- production.common.yaml
+|   +-- db.yaml
+|   +-- common.yaml
++-- ...
++-- ...
++-- main.py
+```
+* files loaded by app env (default - development). 
+    * First loaded config/*.yaml files
+    * Then loaded config/environment/{APP_ENV}*.yaml files (overrides values, there is option to override/merge list values)
+    * Then check all loaded keys for overrides in environment variables (db.host will be mapped to PREFIX__DB__HOST)
+
+
+* app env defined by env ver APP_ENV (there is option to override)
+* app env config prefix default value is 'APP_CONFIG' (there is option to override)
+* app env config splitter default value is '__' (there is option to override)
+
+```python
+from os import environ
+from buba import Buba
+
+if __name__ == '__main__':
+    config = Buba(env_name='APP_ENV', prefix='CONFIG', splitter='::')
+    assert config.app_name == 'my_app'
+    assert config.db.host == 'localhost_default'
+    assert config.db.user == 'user_development'
+    assert config.db.password == 'password_development'
+
+    environ['APP_ENV'] = 'production'
+    config.load()
+
+    assert config.app_name == 'my_app'
+    assert config.db.host == 'localhost_default'
+    assert config.db.user == 'user_production'
+    assert config.db.password == 'password_production'
+
+    environ['APP_ENV'] = 'production'
+    environ['CONFIG::DB::HOST'] = 'production_host'
+    environ['CONFIG::APP_NAME'] = 'production_app_name'
+    config.load()
+
+    assert config.app_name == 'production_app_name'
+    assert config.db.host == 'production_host'
+    assert config.db.user == 'user_production'
+    assert config.db.password == 'password_production'
+
+```
+
+
