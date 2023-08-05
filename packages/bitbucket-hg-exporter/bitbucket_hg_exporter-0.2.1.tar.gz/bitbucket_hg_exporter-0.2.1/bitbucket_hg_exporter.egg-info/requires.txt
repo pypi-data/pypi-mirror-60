@@ -1,0 +1,5 @@
+keyring
+requests
+questionary
+python-dateutil
+colorama
