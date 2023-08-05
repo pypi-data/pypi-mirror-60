@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: his
+Version: 0.0.1
+Summary: Utree package
+Home-page: https://github.com/Utree/his
+Author: Utree
+Author-email: Utree@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# his
+
+## 説明
+過去に実行したコマンドの一覧を表示
+
+## 使い方
+```
+ from his.tory import show
+ show()
+```
+
+
