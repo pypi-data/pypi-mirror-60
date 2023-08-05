@@ -1,0 +1,3 @@
+[console_scripts]
+actions_in_fly=actions_in_fly:main
+
