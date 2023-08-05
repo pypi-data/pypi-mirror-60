@@ -1,0 +1,15 @@
+agw/__init__.py,sha256=IdTGRbafC3mgEhSyhVxH9yC9APQeKKtxLSYRT2y9tqU,3320
+agw/app.py,sha256=uA0FgJ9LZ2Jher4kn_yxCwSDO9dZZILTI6ZOZZ84Snw,1956
+agw/cli/__init__.py,sha256=eg3Xyo08Xmh3oDKlq8sL2Yon07k8rEZBmZjb0aQ4ncY,619
+agw/cli/cursor.py,sha256=zdA78w6neNW6mLN8I1K9CDS4itRyMX1XYEVD0BRzuwk,570
+agw/cli/jiggler.py,sha256=Mi_sqJHzagVqzu7wE9tWrysatWsIxPzXQPSE8JZVIWA,477
+agw/cli/screen.py,sha256=6bXmjYRwctCyyahWI4QNkIapd1lAzG40NgPVTgo-MDs,2740
+agw/cli/util.py,sha256=QgU_9PozZ3iWzum9lIfkqh97i83LY4pbopFASvqT4zY,308
+agw/data.py,sha256=WnysbB8OGJv4efNXWhHalgWBYhlV8FrZmFLo9Xrh5RY,2583
+agw/screen.py,sha256=S-ac5WfJghi2pEm4WDw4Ognfa81_ShFII3FlHOW8c-E,449
+agw/util.py,sha256=oMKHWXqE1fv8XZzcHeDvF3ZwXwXWtShp7qvrftQNhJQ,1759
+agw/winapi.py,sha256=EEKIByTJFVB1t6HXbkRWFS8_Y6xR1W_3ZOhuwIwe4Ck,6020
+agw-0.4.0b0.dist-info/entry_points.txt,sha256=NnKDrT1Bsd7BvU9Q9aHNNa2Kd4FrNJANsuJi61ojkqQ,36
+agw-0.4.0b0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+agw-0.4.0b0.dist-info/METADATA,sha256=T_n873EwXweD9XVMtHJACw51jdW6-lSpi7M4D_YP0PM,659
+agw-0.4.0b0.dist-info/RECORD,,
