@@ -1,0 +1,10 @@
+README.md
+setup.py
+scclib/__init__.py
+scclib/app.py
+scclib/device.py
+scclib/test_device.py
+scclib.egg-info/PKG-INFO
+scclib.egg-info/SOURCES.txt
+scclib.egg-info/dependency_links.txt
+scclib.egg-info/top_level.txt
