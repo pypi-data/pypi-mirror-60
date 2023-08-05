@@ -1,0 +1,12 @@
+README.md
+setup.py
+ideas/__init__.py
+ideas/import_hook.py
+ideas.egg-info/PKG-INFO
+ideas.egg-info/SOURCES.txt
+ideas.egg-info/dependency_links.txt
+ideas.egg-info/top_level.txt
+tests/enforce_constants/__init__.py
+tests/enforce_constants/final.py
+tests/enforce_constants/test_constants.py
+tests/enforce_constants/uppercase.py
