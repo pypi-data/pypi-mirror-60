@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: tootstream
+Version: 0.3.8.1
+Summary: A command line interface for interacting with Mastodon instances
+Home-page: http://www.github.com/magicalraccoon/tootstream
+Author: Sara Murray
+Author-email: saramurray@protonmail.com
+License: MIT
+Description: A command line interface for interacting with Mastodon instances
+Keywords: mastodon,mastodon.social,toot,tootstream
+Platform: UNKNOWN
+Requires-Python: >=3
