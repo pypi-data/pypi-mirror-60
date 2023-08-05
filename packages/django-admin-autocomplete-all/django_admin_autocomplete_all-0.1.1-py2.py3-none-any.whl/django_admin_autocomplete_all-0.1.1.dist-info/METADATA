@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: django-admin-autocomplete-all
+Version: 0.1.1
+Summary: django admin: use select2 (autocomplete_fields) everywhere
+Home-page: https://github.com/pyutil/django-admin-autocomplete-all
+Author: Mirek Zvolský
+Author-email: zvolsky@seznam.cz
+License: MIT
+Download-URL: https://github.com/pyutil/django-admin-autocomplete-all/archive/0.1.1.tar.gz
+Keywords: django-admin-autocomplete-all
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+
+=============================
+django_admin_autocomplete_all
+=============================
+
+.. image:: https://badge.fury.io/py/django-admin-autocomplete-all.svg
+    :target: https://badge.fury.io/py/django-admin-autocomplete-all
+
+.. image:: https://travis-ci.org/pyutil/django-admin-autocomplete-all.svg?branch=master
+    :target: https://travis-ci.org/pyutil/django-admin-autocomplete-all
+
+.. image:: https://codecov.io/gh/pyutil/django-admin-autocomplete-all/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/pyutil/django-admin-autocomplete-all
+
+Django admin: Use select2 (autocomplete_fields) everywhere. Implicit is better than explicit. Because it is brief and easy.
+
+Documentation
+-------------
+
+The full documentation is at https://django-admin-autocomplete-all.readthedocs.io.
+
+Quickstart
+----------
+
+Install django-admin-autocomplete-all::
+
+    pip install django-admin-autocomplete-all
+
+Features
+--------
+
+Django admin: Use select2 (autocomplete_fields) everywhere. Implicit is better than explicit. Because it is brief and easy.
+
+Running Tests
+-------------
+
+Does the code actually work? /N/A while we haven't the 1st test yet./
+
+::
+
+    source <YOURVIRTUALENV>/bin/activate
+    (myenv) $ pip install -r requirements_test.txt
+    (myenv) $ tox
+
+Credits
+-------
+
+Tools used in rendering this package:
+
+*  cookiecutter_
+*  `cookiecutter-djangopackage`_
+
+.. _cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`cookiecutter-djangopackage`: https://github.com/pydanny/cookiecutter-djangopackage
+
+
+
+
+History
+-------
+
+0.1.0 (2020-01-22)
+++++++++++++++++++
+
+* First release on PyPI.
+
+
