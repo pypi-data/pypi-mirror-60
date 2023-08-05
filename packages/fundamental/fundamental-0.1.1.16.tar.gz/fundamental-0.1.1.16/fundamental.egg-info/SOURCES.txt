@@ -1,0 +1,9 @@
+README.rst
+setup.py
+fundamental/__init__.py
+fundamental/fundamental.py
+fundamental.egg-info/PKG-INFO
+fundamental.egg-info/SOURCES.txt
+fundamental.egg-info/dependency_links.txt
+fundamental.egg-info/requires.txt
+fundamental.egg-info/top_level.txt
