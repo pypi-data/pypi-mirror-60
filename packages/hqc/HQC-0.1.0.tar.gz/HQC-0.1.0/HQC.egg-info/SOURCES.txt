@@ -1,0 +1,9 @@
+README.md
+setup.py
+HQC/HQC.py
+HQC/__init__.py
+HQC/version.py
+HQC.egg-info/PKG-INFO
+HQC.egg-info/SOURCES.txt
+HQC.egg-info/dependency_links.txt
+HQC.egg-info/top_level.txt
