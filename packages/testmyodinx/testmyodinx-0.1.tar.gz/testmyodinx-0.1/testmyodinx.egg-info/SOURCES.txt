@@ -1,0 +1,11 @@
+MANIFEST.in
+README.txt
+setup.py
+myPackage/__init__.py
+myPackage/somePython.py
+myPackage/packageData/sampleData.dat
+testmyodinx.egg-info/PKG-INFO
+testmyodinx.egg-info/SOURCES.txt
+testmyodinx.egg-info/dependency_links.txt
+testmyodinx.egg-info/requires.txt
+testmyodinx.egg-info/top_level.txt
