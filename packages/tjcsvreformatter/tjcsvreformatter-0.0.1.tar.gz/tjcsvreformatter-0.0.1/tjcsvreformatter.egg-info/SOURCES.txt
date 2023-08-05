@@ -1,0 +1,8 @@
+README.md
+setup.py
+tjcsvreformatter.egg-info/PKG-INFO
+tjcsvreformatter.egg-info/SOURCES.txt
+tjcsvreformatter.egg-info/dependency_links.txt
+tjcsvreformatter.egg-info/entry_points.txt
+tjcsvreformatter.egg-info/requires.txt
+tjcsvreformatter.egg-info/top_level.txt
