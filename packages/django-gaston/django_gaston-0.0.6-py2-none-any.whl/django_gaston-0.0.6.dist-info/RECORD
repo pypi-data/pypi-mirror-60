@@ -1,0 +1,10 @@
+gaston/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gaston/menu.py,sha256=Lcb7t0Hs3N1zxRXXjp3mqINe4P6lU9GdmrGUa8FW3iQ,102
+gaston/templates/gaston/menu.html,sha256=nQpO3JNaoQAfV3DGun5kxPTbIj-f0hksSr-JJz16aGQ,298
+gaston/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gaston/templatetags/gaston_tags.py,sha256=eKiVXn7QtgWfojzxEfZME8kGyyMrj31k57JMOOZAVfE,409
+django_gaston-0.0.6.dist-info/LICENSE,sha256=iJUCGbSXhZFSJePxIRL2TPFS8YhdWvidayubV3XjT9M,1074
+django_gaston-0.0.6.dist-info/METADATA,sha256=7020GOM6VteyZ8v29mdXe_OQr3b9A5drpaY3S4EeCK4,212
+django_gaston-0.0.6.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+django_gaston-0.0.6.dist-info/top_level.txt,sha256=gccKrT4ad62T38FlJeHInqZlh5pueads-oHN79TMreA,7
+django_gaston-0.0.6.dist-info/RECORD,,
