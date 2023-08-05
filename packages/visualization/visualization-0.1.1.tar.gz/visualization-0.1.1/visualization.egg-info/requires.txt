@@ -1,0 +1,12 @@
+imageio
+numpy
+matplotlib<=2.2.0
+trimesh[easy]
+autolab_core
+autolab_perception
+pyrender
+
+[docs]
+sphinx
+sphinxcontrib-napoleon
+sphinx_rtd_theme
