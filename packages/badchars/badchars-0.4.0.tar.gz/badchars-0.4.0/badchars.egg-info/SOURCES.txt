@@ -1,0 +1,9 @@
+README.md
+badchars
+setup.cfg
+setup.py
+badchars.egg-info/PKG-INFO
+badchars.egg-info/SOURCES.txt
+badchars.egg-info/dependency_links.txt
+badchars.egg-info/requires.txt
+badchars.egg-info/top_level.txt
