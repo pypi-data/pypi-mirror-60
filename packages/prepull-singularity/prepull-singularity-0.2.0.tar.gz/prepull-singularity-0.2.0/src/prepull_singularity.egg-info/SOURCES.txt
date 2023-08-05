@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+src/prepull_singularity/__init__.py
+src/prepull_singularity.egg-info/PKG-INFO
+src/prepull_singularity.egg-info/SOURCES.txt
+src/prepull_singularity.egg-info/dependency_links.txt
+src/prepull_singularity.egg-info/entry_points.txt
+src/prepull_singularity.egg-info/not-zip-safe
+src/prepull_singularity.egg-info/requires.txt
+src/prepull_singularity.egg-info/top_level.txt

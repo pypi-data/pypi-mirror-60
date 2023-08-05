@@ -1,0 +1,3 @@
+[console_scripts]
+prepull-singularity = prepull_singularity:main
+
