@@ -1,0 +1,8 @@
+attrs
+python-dateutil
+pytz
+requests
+
+[pandas]
+numpy
+pandas>0.25
