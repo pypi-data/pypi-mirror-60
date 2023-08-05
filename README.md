@@ -3,7 +3,7 @@
 This repo contains 40000 packages uploaded to PyPI between 
 2020-01-22 04:06 and 2020-02-07 03:48.
 
-The repo is 4% (1989/40000) complete.
+The repo is 9% (3989/40000) complete.
 
 ## Packages:
 
