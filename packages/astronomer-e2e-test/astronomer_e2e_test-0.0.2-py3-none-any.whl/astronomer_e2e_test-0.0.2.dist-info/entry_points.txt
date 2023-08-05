@@ -1,0 +1,4 @@
+[console_scripts]
+astronomer-e2e-test = astronomer_e2e_test.astronomer_e2e_test:main
+astronomer-next-version = astronomer_ci.astronomer_ci:main
+
