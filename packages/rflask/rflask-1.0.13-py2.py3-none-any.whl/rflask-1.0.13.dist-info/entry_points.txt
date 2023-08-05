@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        rflask=rflask.commands:rflask
+    
