@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: gordo
+Version: 0.48.3
+Summary: Train and build models for Argo / Kubernetes
+Home-page: https://github.com/equinor/gordo
+Author: Equinor ASA
+Author-email: fg_gpl@equinor.com
+License: AGPLv3
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Click (~=7.0)
+Requires-Dist: cachetools (~=4.0)
+Requires-Dist: dictdiffer (~=0.8)
+Requires-Dist: dataclasses-json (~=0.3)
+Requires-Dist: gunicorn (~=20.0)
+Requires-Dist: h5py (~=2.8)
+Requires-Dist: influxdb (~=5.2)
+Requires-Dist: jinja2 (~=2.10)
+Requires-Dist: pyarrow (~=0.15)
+Requires-Dist: numpy (~=1.18)
+Requires-Dist: pandas (~=0.25)
+Requires-Dist: peewee (~=3.13)
+Requires-Dist: numexpr (~=2.7)
+Requires-Dist: psycopg2-binary (==2.8.4)
+Requires-Dist: python-dateutil (~=2.8)
+Requires-Dist: pyyaml (~=5.3)
+Requires-Dist: requests (~=2.20)
+Requires-Dist: scikit-learn (~=0.22)
+Requires-Dist: tensorflow (~=2.0)
+Requires-Dist: Flask (~=1.0)
+Requires-Dist: flask-restplus (~=0.12)
+Requires-Dist: azure-datalake-store (~=0.0)
+Requires-Dist: cchardet (~=2.1)
+Requires-Dist: urllib3 (~=1.24)
+Requires-Dist: simplejson (~=3.17)
+Requires-Dist: catboost (~=0.20)
+Requires-Dist: typing-extensions (~=3.7)
+Requires-Dist: mlflow (~=1.5)
+Requires-Dist: azureml-contrib-run (~=1.0)
+
+UNKNOWN
+
+
