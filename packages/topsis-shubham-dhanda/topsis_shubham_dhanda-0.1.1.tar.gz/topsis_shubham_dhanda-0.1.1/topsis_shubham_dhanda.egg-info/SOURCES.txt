@@ -1,0 +1,5 @@
+setup.py
+topsis_shubham_dhanda.egg-info/PKG-INFO
+topsis_shubham_dhanda.egg-info/SOURCES.txt
+topsis_shubham_dhanda.egg-info/dependency_links.txt
+topsis_shubham_dhanda.egg-info/top_level.txt

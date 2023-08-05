@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: topsis_shubham_dhanda
+Version: 0.1.1
+Summary: Python package for TOPSIS algorithm
+Home-page: https://github.com/iammoni/topsis_shubham_dhanda
+Author: Shubham Dhanda
+Author-email: sdhandahr08@gmail.com
+License: UNKNOWN
+Description: topsis_package
+        This package inpired when we stuck in such a situation where we have to choose one  within multiple choice varying by some fetures or properties.
+        This package suggest to with which one you should go based upon your weight on features and which feature you want to maximize or minmize.
+        
+        use this package as:
+        
+        from  topsis_shubham_dhanda import topsis
+        import pandas as pd
+        
+        '-' -----you want to minimize it
+        '+' ---- you want to maximize it
+        
+        #you have to define index column
+        df=pd.read_csv('topsis.csv', index_col="")
+        s=topsis(df,[.25,.25,.25,.25],['-','+','+','+'])
+        print("You should Choose item at:"+str(s.choose()))
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
