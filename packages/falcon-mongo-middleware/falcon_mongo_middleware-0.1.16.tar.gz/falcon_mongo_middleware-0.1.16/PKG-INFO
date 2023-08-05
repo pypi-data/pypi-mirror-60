@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: falcon-mongo-middleware
+Version: 0.1.16
+Summary: 
+Author: TnL Community
+Author-email: tnlcommunity@todandlorna.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pymongo (>=3.10,<4.0)

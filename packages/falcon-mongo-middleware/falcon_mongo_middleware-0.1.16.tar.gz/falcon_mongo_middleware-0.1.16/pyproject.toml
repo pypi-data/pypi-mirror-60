@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "falcon_mongo_middleware"
+version = "0.1.16"
+description = ""
+authors = ["TnL Community <tnlcommunity@todandlorna.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pymongo = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
