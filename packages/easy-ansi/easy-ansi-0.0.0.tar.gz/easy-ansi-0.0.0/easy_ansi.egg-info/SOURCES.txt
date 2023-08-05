@@ -1,0 +1,7 @@
+README.md
+setup.py
+easy_ansi.egg-info/PKG-INFO
+easy_ansi.egg-info/SOURCES.txt
+easy_ansi.egg-info/dependency_links.txt
+easy_ansi.egg-info/top_level.txt
+easyansi/__init__.py

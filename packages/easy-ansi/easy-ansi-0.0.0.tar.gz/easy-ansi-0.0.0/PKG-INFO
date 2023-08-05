@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: easy-ansi
+Version: 0.0.0
+Summary: A library to make it easy to use ANSI escape sequences within your Python program.
+Home-page: https://gitlab.com/joeysbytes/easy-ansi
+Author: Joey Rockhold
+Author-email: joey@joeysbytes.net
+License: UNKNOWN
+Description: # Easy ANSI
+        
+        A library to make it easy to use ANSI escape sequences within your Python program.
+        
+        ## Usage
+        
+        Coming soon.
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Terminals
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
