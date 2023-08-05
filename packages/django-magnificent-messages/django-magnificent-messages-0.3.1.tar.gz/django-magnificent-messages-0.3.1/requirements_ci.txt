@@ -1,0 +1,13 @@
+bandit
+coverage==4.5.4
+mock>=1.0.1
+flake8>=2.1.0
+coveralls
+django-model-utils>=4.0
+setuptools
+wheel
+twine
+pbr
+django-appconf
+gitchangelog
+pystache

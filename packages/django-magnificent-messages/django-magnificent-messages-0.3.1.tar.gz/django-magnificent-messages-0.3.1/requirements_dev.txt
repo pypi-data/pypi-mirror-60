@@ -1,0 +1,9 @@
+django-model-utils>=4.0
+gitchangelog
+pylint
+pylint-django
+flake8>=2.1.0
+bandit
+coverage
+mock>=1.0.1
+django-appconf
