@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: codegraph
+Version: 0.0.3
+Summary: Tool that create a graph of code to show dependencies between code entities (methods, classes and etc).
+Author: xnuinside
+Author-email: xnuinside@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: clifier (>=0.0.3,<0.0.4)
+Requires-Dist: matplotlib (>=3.1,<4.0)
+Requires-Dist: networkx (>=2.4,<3.0)
