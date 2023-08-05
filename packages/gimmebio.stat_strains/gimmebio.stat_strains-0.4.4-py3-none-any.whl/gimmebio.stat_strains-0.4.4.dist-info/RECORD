@@ -1,0 +1,10 @@
+gimmebio.stat_strains-0.4.4-py3.6-nspkg.pth,sha256=pxTb1jWsCspdqoPmV2TGBVot_a6QmHbVwKXbDN4rHTs,549
+gimmebio/stat_strains/__init__.py,sha256=Rdqhe_bhAkBTCYo5xDR81awb0_9SqoBTbtqza5rK2pc,183
+gimmebio/stat_strains/api.py,sha256=mzxqyJgpz_NX7J9zS6k1myXFo0Z0CCAitel89FMKOWg,4868
+gimmebio/stat_strains/cli.py,sha256=qDl8rK3VAKbKkg7nlzi2S9I0ACyzSEvoYHYi1xVFPnE,3192
+gimmebio/stat_strains/metrics.py,sha256=wFcHtsRlpaeehUeTi8MGRM69L8O-UUWwNKGZ-gdmvNU,128
+gimmebio.stat_strains-0.4.4.dist-info/METADATA,sha256=nKk4w6czP3Ov_CHW7cH7k9gkwucZrKh7OBbFCLzjpb8,429
+gimmebio.stat_strains-0.4.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gimmebio.stat_strains-0.4.4.dist-info/namespace_packages.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9
+gimmebio.stat_strains-0.4.4.dist-info/top_level.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9
+gimmebio.stat_strains-0.4.4.dist-info/RECORD,,
