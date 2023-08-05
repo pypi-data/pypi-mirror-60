@@ -1,0 +1,12 @@
+evan/__init__.py,sha256=PHTGwxDtoiL3J16fzFqJpjYO-ciB6hlv2F46V0LyAjM,117
+evan/config.py,sha256=lqJUaqSStVxJV-3swT0BFlBg2GPYpbcyT_q-Qlq5jQ8,60
+evan/dataset.py,sha256=av4LYbw9Gf_bFYvh2vP0Qd6WDyU1X8BNn7km3J6e1VE,2054
+evan/inception.py,sha256=c57fbEqlxewdOmJPesEfI3CZzHHeXFfjstYqjpE2Phk,3004
+evan/score.py,sha256=FDB9VhxzTdDlwp_7Lkq-osvrrkZbJOzLNpRq4aMfNPI,3355
+evan/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evan/models/resnet.py,sha256=52xlv-k5sa0u5WSrXy36thfUEbWQW9tqSGENQjW3iuo,7234
+evan-0.0.1.dist-info/METADATA,sha256=N8J-mwhs3Fiil8iU_u9vtp6zFkJjxhx-TvlCFfewxiI,383
+evan-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+evan-0.0.1.dist-info/entry_points.txt,sha256=4EOnAATxMj7eckwzdRVvDl_T1unvv_XkIVdxo_olHz0,45
+evan-0.0.1.dist-info/top_level.txt,sha256=DJ-yk5VwPvBmnSDoFsPuy9I8cVYMc4CxvHaP0Vvr3RI,5
+evan-0.0.1.dist-info/RECORD,,

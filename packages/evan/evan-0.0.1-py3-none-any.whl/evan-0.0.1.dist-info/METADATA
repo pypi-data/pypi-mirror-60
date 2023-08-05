@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: evan
+Version: 0.0.1
+Summary: Evaluation framework for GANs for video generation
+Home-page: https://github.com/raahii/video-gans-evaluation
+Author: raahii
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Requires-Dist: torch
+Requires-Dist: scikit-video
+Requires-Dist: opencv-python
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
