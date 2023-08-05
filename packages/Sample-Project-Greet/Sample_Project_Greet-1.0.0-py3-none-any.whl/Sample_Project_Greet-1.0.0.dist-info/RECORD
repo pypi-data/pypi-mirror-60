@@ -1,0 +1,8 @@
+sampleproject/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sampleproject/greet.py,sha256=kEECgq4Vw4etis7XWijIQ7WZrUOClGqi6wv1snXWvLU,38
+sampleproject/welcome.py,sha256=_ResHT7LQGhvzigCFeokOkeyGlyaKVXwvUown_unZyU,39
+Sample_Project_Greet-1.0.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+Sample_Project_Greet-1.0.0.dist-info/METADATA,sha256=whZNLLxtn6nK3E2SXGelur1L6S0RjskqMpyEz2RbUrU,220
+Sample_Project_Greet-1.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+Sample_Project_Greet-1.0.0.dist-info/top_level.txt,sha256=39Iqd-oTojHfmrl_IfE6azvHXUpBbgb4g9_R6T64BZE,14
+Sample_Project_Greet-1.0.0.dist-info/RECORD,,
