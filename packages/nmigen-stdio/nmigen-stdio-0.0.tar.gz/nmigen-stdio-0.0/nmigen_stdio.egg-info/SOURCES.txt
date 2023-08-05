@@ -1,0 +1,10 @@
+.gitignore
+LICENSE.txt
+README.md
+setup.py
+nmigen_stdio/__init__.py
+nmigen_stdio.egg-info/PKG-INFO
+nmigen_stdio.egg-info/SOURCES.txt
+nmigen_stdio.egg-info/dependency_links.txt
+nmigen_stdio.egg-info/requires.txt
+nmigen_stdio.egg-info/top_level.txt

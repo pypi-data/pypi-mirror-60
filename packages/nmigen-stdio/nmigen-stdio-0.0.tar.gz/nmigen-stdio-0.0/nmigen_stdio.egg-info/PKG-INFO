@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: nmigen-stdio
+Version: 0.0
+Summary: Industry standard I/O for nMigen
+Home-page: UNKNOWN
+Author: whitequark
+Author-email: whitequark@whitequark.org
+License: BSD
+Project-URL: Source Code, https://github.com/m-labs/nmigen-stdio
+Project-URL: Bug Tracker, https://github.com/m-labs/nmigen-stdio/issues
+Description: UNKNOWN
+Platform: UNKNOWN
