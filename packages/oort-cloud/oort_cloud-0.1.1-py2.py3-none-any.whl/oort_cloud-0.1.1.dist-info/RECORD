@@ -1,0 +1,12 @@
+oort/__init__.py,sha256=TLgwvTvg7CsyJvD3DB075_QcQPo2iFizdRoX8afofow,37
+oort/options.py,sha256=pEqLcq-Ha4FRQuOnWafP35uaDpOErce0WIPDBSmFyIw,702
+oort/server.py,sha256=S--w4tGTknf3F6yiNsljxc7xVL3wULUkf6fmf3Tv6Rw,1281
+oort/app/__init__.py,sha256=9Xo7c6wkcieIeAiRRLSpQIxnSZr_1G6NIQ0Jm_drQM4,376
+oort/app/models.py,sha256=5wopcNqsqCpFPitOrSOUrJypZQJCO6XSDgUlVCF7Dfo,2033
+oort/app/views.py,sha256=6XukvsHBaREB4cHKWm_HPePwCgGHzklgl_upJOxLbgY,3401
+oort_cloud-0.1.1.dist-info/LICENSE,sha256=ICn5eLbuXC8BJ0MkJED0-W9lHbP7I2BS-ptGT6nlgPs,1069
+oort_cloud-0.1.1.dist-info/METADATA,sha256=ytI22bRSa3R8qWu1obcfHu0xshzERPhjLZJPUO674U8,933
+oort_cloud-0.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+oort_cloud-0.1.1.dist-info/entry_points.txt,sha256=D9xvD_Gxrzc6ebOZ1tQxKprLhHb0SL9so65-SctKVrE,43
+oort_cloud-0.1.1.dist-info/top_level.txt,sha256=x33z7vHvNakZVtrbI4TxRpGbEK-vP1rj8jMJOwCZ208,5
+oort_cloud-0.1.1.dist-info/RECORD,,
