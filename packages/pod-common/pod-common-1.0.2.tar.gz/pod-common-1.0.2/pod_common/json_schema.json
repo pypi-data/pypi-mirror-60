@@ -1,0 +1,222 @@
+{
+  "getTagTreeList": {
+    "type": "object",
+    "oneOf": [
+      {
+        "properties": {
+          "categoryId": {
+            "type": "number"
+          },
+          "levelCount": {
+            "type": "number"
+          },
+          "level": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "categoryId",
+          "levelCount",
+          "level"
+        ]
+      },
+      {
+        "properties": {
+          "categoryId": {
+            "type": "number"
+          },
+          "parentId": {
+            "type": "number"
+          },
+          "level": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "categoryId",
+          "levelCount",
+          "parentId"
+        ]
+      },
+      {
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "parentId": {
+            "type": "number"
+          },
+          "level": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    ]
+  },
+  "addTagTreeCategory": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "نام دسته بندی"
+      },
+      "desc": {
+        "type": "string",
+        "title": "توضیحات"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "name"
+    ]
+  },
+  "updateTagTreeCategory": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "title": "شناسه دسته بندی"
+      },
+      "name": {
+        "type": "string",
+        "title": "نام دسته بندی"
+      },
+      "desc": {
+        "type": "string",
+        "title": "توضیحات دسته بندی"
+      },
+      "enable": {
+        "type": "boolean",
+        "title": "فعال یا غیر فعال کردن دسته بندی"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "id"
+    ]
+  },
+  "getTagTreeCategoryList": {
+    "type": "object",
+    "properties": {
+      "offset": {
+        "type": "integer",
+        "title": "اندیس شروع"
+      },
+      "size": {
+        "type": "integer",
+        "title": "تعداد رکورد در هر صفحه"
+      },
+      "id": {
+        "type": "integer",
+        "title": "شناسه دسته بندی"
+      },
+      "name": {
+        "type": "string",
+        "title": "نام دسته بندی"
+      },
+      "query": {
+        "type": "string",
+        "title": "عبارت برای جستجو در نام دسته بندی"
+      },
+      "scVoucherHash": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "offset",
+      "size"
+    ]
+  },
+    "addTagTree": {
+        "type": "object",
+          "properties": {
+            "name": {
+                  "type": "string",
+                  "title": "نام برچسب"
+              },
+            "categoryId": {
+                  "type": "integer",
+                  "title": "َشناسه دسته بندی برچسب"
+              },
+            "parentId": {
+                  "type": "integer",
+                  "title": "شناسه والد برچسب"
+              },
+            "scVoucherHash": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+          },
+          "required": ["name", "categoryId"]
+      },
+    "updateTagTree": {
+        "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "title": "َشناسه برچسب"
+            },
+            "name": {
+              "type": "string",
+              "title": "نام برچسب"
+            },
+            "parentId": {
+              "type": "integer",
+              "title": "شناسه والد برچسب"
+            },
+            "enable": {
+              "type": "boolean",
+              "title": "فعال/غیرفعال کردن برچسب"
+            },
+
+      "scApiKey": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      },
+            "scVoucherHash": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+        "required": ["id"]
+
+    }
+}

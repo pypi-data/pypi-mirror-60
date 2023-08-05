@@ -1,0 +1,83 @@
+{
+  "get_nzh_ott": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29816,
+      "sandbox": 39311
+    }
+  },
+  "get_nzh_currencyList": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29992,
+      "sandbox": 39378
+    }
+  },
+  "get_nzh_guildList": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29833,
+      "sandbox": 39329
+    }
+  },
+  "post_nzh_biz_updateTagTree": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29865,
+      "sandbox": 39361
+    }
+  },
+  "get_nzh_biz_getTagTreeList": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29864,
+      "sandbox": 39360
+    }
+  },
+  "post_nzh_biz_addTagTree": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29863,
+      "sandbox": 39359
+    }
+  },
+  "post_nzh_biz_updateTagTreeCategory": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29862,
+      "sandbox": 39358
+    }
+  },
+  "get_nzh_biz_getTagTreeCategoryList": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29861,
+      "sandbox": 39357
+    }
+  },
+  "post_nzh_biz_addTagTreeCategory": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29860,
+      "sandbox": 39356
+    }
+  }
+}
