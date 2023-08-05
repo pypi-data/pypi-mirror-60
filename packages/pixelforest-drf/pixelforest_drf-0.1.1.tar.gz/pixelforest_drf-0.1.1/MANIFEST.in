@@ -1,0 +1,4 @@
+include LICENSE.md
+include README.md
+recursive-include pixelforest_drf *py
+recursive-include pixelforest_drf/countries/migrations_files *
