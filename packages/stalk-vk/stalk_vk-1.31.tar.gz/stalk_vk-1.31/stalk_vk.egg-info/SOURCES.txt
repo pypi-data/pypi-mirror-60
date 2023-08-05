@@ -1,0 +1,10 @@
+README.txt
+setup.py
+stalk/__init__.py
+stalk/core.py
+stalk_vk.egg-info/PKG-INFO
+stalk_vk.egg-info/SOURCES.txt
+stalk_vk.egg-info/dependency_links.txt
+stalk_vk.egg-info/entry_points.txt
+stalk_vk.egg-info/requires.txt
+stalk_vk.egg-info/top_level.txt
