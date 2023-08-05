@@ -1,0 +1,8 @@
+jira_dump/__init__.py,sha256=skLrSLcnZxtyLrrLoCLbiF3s4HXQlRGPb41WPoDnLfo,74
+jira_dump/base.py,sha256=oZsIS9koSXHj9wd_GuAM3-AeMfSb93PLq3ktvWiyl5I,6755
+jira_dump/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jira_dumper-0.1.0.dist-info/LICENSE,sha256=6U2k63DFTMuRSCU_2IhdWKbW-0HvpnlsS5yIJ-K8Mf8,1091
+jira_dumper-0.1.0.dist-info/METADATA,sha256=UrCm7lA1LvhL4kifZD_fcGmdB_LKwCy1w_d4I0L03sY,581
+jira_dumper-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+jira_dumper-0.1.0.dist-info/top_level.txt,sha256=L5qKx5dhTVsb0I3hEvHuNCqEcNRkAYJ46ZTA_2-xFZ0,10
+jira_dumper-0.1.0.dist-info/RECORD,,
