@@ -1,0 +1,7 @@
+include mcldashauthfb/mcldashauthfb.min.js
+include mcldashauthfb/mcldashauthfb.min.js.map
+include mcldashauthfb/metadata.json
+include mcldashauthfb/package-info.json
+include README.md
+include LICENSE
+include package.json

@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+mcldashauthfb/Mcldashauthfb.py
+mcldashauthfb/__init__.py
+mcldashauthfb/_imports_.py
+mcldashauthfb/mcldashauthfb.min.js
+mcldashauthfb/mcldashauthfb.min.js.map
+mcldashauthfb/metadata.json
+mcldashauthfb/package-info.json
+mcldashauthfb.egg-info/PKG-INFO
+mcldashauthfb.egg-info/SOURCES.txt
+mcldashauthfb.egg-info/dependency_links.txt
+mcldashauthfb.egg-info/top_level.txt

@@ -1,0 +1,64 @@
+{
+  "src/lib/components/Mcldashauthfb.react.js": {
+    "description": "ExampleComponent is an example component.\r\nIt takes a property, `label`, and\r\ndisplays it.\r\nIt renders an input with the property `value`\r\nwhich is editable by the user.",
+    "displayName": "Mcldashauthfb",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\r\nin callbacks. The ID needs to be unique across all of the\r\ncomponents in an app."
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "label for testing"
+      },
+      "appId": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The Identification of the APP given by Facebook for developers"
+      },
+      "nameu": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "name extracted"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\r\nproperties change"
+      },
+      "n_clicks": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'change'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "property to identify when is clicked"
+      },
+      "resultFacebookLogin": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "the outcome of the callback"
+      }
+    }
+  }
+}
