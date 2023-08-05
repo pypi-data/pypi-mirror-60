@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: csirtg-dt
+Version: 0.1
+Summary: CSIRTG DateTime Utils
+Home-page: https://github.com/csirtgadgets/csirtg-dt
+Author: Wes Young
+Author-email: wes@csirtgadgets.com
+License: MPL2
+Description: UNKNOWN
+Keywords: security
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
