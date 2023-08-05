@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+cimpl/field.c
+cimpl/field.h
+cimpl/field.pyx
+cimpl/popcount.h
+sparsebitfield.egg-info/PKG-INFO
+sparsebitfield.egg-info/SOURCES.txt
+sparsebitfield.egg-info/dependency_links.txt
+sparsebitfield.egg-info/requires.txt
+sparsebitfield.egg-info/top_level.txt
+test/test_bitfield.py
