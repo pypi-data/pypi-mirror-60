@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: PyErrManager
+Version: 2.0
+Summary: Exception management package
+Home-page: UNKNOWN
+Author: Hyppoprogramm
+Author-email: programm.jeremiah@yandex.ru
+License: UNKNOWN
+Description: # PyError
+        ## Exception management package
+        
+        This package allows you to quickly create and manage exceptions
+        
+        ## Installation
+        
+        > pip install PyErrManager
+        
+        ## Example
+        
+        ```python
+        from pyerror.templates import TypeError
+        def add(a,b):
+        	if type(a) != int or type(b) != int:
+        		TypeError.unsupported_operand_types('+',a.__class__.__name__,b.__class__.__name__)(end=-1);
+        	return a+b;
+        print(add(1,2))
+        print(add('1',2))
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

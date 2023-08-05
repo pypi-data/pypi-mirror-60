@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyErrManager.egg-info/PKG-INFO
+PyErrManager.egg-info/SOURCES.txt
+PyErrManager.egg-info/dependency_links.txt
+PyErrManager.egg-info/top_level.txt
+pyerror/__init__.py
+pyerror/info.py
+pyerror/templates.py
