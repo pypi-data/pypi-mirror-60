@@ -1,0 +1,4 @@
+beautifulsoup4
+ratelimit
+requests
+requests_cache
