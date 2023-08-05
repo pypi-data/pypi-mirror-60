@@ -1,0 +1,8 @@
+numpy
+pytest-cov
+coverage
+pandas
+dask
+keras
+tensorflow
+aegis-data
