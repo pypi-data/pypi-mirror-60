@@ -1,0 +1,3 @@
+[console_scripts]
+realpython = canonical_phone.phone.canonical_number
+
