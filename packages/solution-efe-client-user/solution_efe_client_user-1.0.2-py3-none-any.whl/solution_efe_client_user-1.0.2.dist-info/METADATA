@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: solution-efe-client-user
+Version: 1.0.2
+Summary: Paquete de client user
+Home-page: UNKNOWN
+Author: Rulman Ferro
+Author-email: rulman26@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: solution-efe-config
+
+UNKNOWN
+
+
