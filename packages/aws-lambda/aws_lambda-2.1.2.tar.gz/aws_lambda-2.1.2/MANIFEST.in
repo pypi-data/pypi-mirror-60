@@ -1,0 +1,6 @@
+include *.txt
+include *.in
+include *.md
+
+recursive-include aws_lambda *.py
+recursive-include aws_lambda *.sh
