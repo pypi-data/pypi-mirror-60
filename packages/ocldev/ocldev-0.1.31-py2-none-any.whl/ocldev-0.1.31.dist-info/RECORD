@@ -1,0 +1,16 @@
+ocldev/__init__.py,sha256=xiw2I2bZYcSuPG-L9-DodwAk0_QOd9jAidpTosR0Hvs,16
+ocldev/dsme.py,sha256=3UR76jx7XEO-cMtZwhG-toHEQmAyoD-2h6U13f9jXew,403
+ocldev/oclbase.py,sha256=vjYr03wgqdAkjQ4WW7nIMonIYWrgxlHWVZUDXhyCqB8,114
+ocldev/oclconstants.py,sha256=OO10qHL5OsTXs3HWgtpiVIK0iCsweA7_KqO74tKynS8,2621
+ocldev/oclcsv.py,sha256=Wug5xsehnI5oSDuY9U683XHd2YLiohLJXI1bj8qUhEo,1295
+ocldev/oclcsvtojsonconverter.py,sha256=m4QF__FxoYHtRlMhahtMaa-sAZKPNli3uJ2ydWN8pmI,69277
+ocldev/oclexport.py,sha256=t2xMXOAhEUyzfS0MkAjUXwT-YuBaUfc0omqoMqY8ymo,5796
+ocldev/oclfleximporter.py,sha256=vJISih9qRMfBiZZlIm1GM2a3_XaetpbxCsc2EWjjQkI,45857
+ocldev/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocldev/tests/plm-poc-v2.py,sha256=u2znXpuA3hEG5qCIy55t8TGQDjXsqU8oUSiASIGf4qc,1241
+ocldev/tests/test_csv_converter.py,sha256=-9Yb-CYmn8O-fKM45UA8KeBfjbuUuQ--JnDwGWH_iaM,3137
+ocldev-0.1.31.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+ocldev-0.1.31.dist-info/METADATA,sha256=eyVkRo670lwjrhmhfoTsrduHO28t4AxWlDGGOLIPoPc,1284
+ocldev-0.1.31.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+ocldev-0.1.31.dist-info/top_level.txt,sha256=ftJJC5oVibZDBsSDfOqYlXTq-BJr7_Ccc6ghrNGpdvI,7
+ocldev-0.1.31.dist-info/RECORD,,
