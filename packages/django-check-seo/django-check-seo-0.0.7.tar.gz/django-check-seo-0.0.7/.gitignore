@@ -1,0 +1,9 @@
+Makefile
+build/
+dist/
+django_check_seo.egg-info/
+.venv/
+Pipfile
+Pipfile.lock
+.vscode/
+*.pyc
