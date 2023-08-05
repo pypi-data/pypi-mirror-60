@@ -1,0 +1,3 @@
+[console_scripts]
+vgpedestrian = App.app:App.main
+
