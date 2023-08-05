@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Topsissss
+Version: 0.4
+Summary: Topsis code
+Home-page: https://github.com/deepak199922/Topsisss
+Author: Deepak Gupta
+Author-email: deepakgupta221999@gmail.com
+License: MIT
+Description: Topsisss
+        topsis code
+        
+        
+        By Deepak Gupta(101703158) For the course Data Analytics and Visualization (UCS633)
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
