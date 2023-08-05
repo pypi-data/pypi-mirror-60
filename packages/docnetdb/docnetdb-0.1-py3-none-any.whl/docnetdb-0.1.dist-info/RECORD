@@ -1,0 +1,10 @@
+docnetdb/__init__.py,sha256=nRmWlfdVWDj3vGxpqvMEg1tX2S5ScEYdQcQBMR4Si68,103
+docnetdb/docnetdb.py,sha256=gJ19fWIuGfBYaCb0KjOUTDuoHKCPAb_4DbfVh65KF70,5542
+docnetdb/vertex.py,sha256=4YC9ZdBAXsp5HCpqsHl9oe9WLdGsK-6Oyxt5ZzDBH9U,2066
+docnetdb/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docnetdb/tests/test_docnetdb.py,sha256=bqK-s_JcBsjuGBqbQ7lUc6wiVLDTeCD5UpQ4iTHK5-A,5591
+docnetdb-0.1.dist-info/LICENSE,sha256=xyjWa0YykgmXpa2elXhOqba0-o58-hsH01KMI2d5gu0,1065
+docnetdb-0.1.dist-info/METADATA,sha256=zJ36fNvLo8dM_R4B636Tg7TbxEX2ZDQZf3bL66NucdU,2599
+docnetdb-0.1.dist-info/WHEEL,sha256=XOj1g5kV4OxZCRiBvYFIQdhMldfnAF5nUxS8sgkc5Mg,92
+docnetdb-0.1.dist-info/top_level.txt,sha256=pP2LmrGUWdoMPCcTOSZjm3pLDGupBwVmPEdUpfB5pC8,9
+docnetdb-0.1.dist-info/RECORD,,
