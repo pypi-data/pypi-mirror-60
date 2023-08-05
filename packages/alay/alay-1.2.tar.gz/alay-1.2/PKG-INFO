@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: alay
+Version: 1.2
+Summary: Generate your text into Alay style.
+Home-page: https://github.com/HilmiZul/alay-generator
+Author: Zul Hilmi
+Author-email: netspytux@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: alay,alay generator,bahasa alay
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
