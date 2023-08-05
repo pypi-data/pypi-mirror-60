@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION.txt
+requirements.txt
+setup.py
+forestopenfermion/__init__.py
+forestopenfermion/pyquil_circuit_generator.py
+forestopenfermion/pyquil_connector.py
+forestopenfermion/rdm_estimation.py
+forestopenfermion/rdm_utilities.py
+forestopenfermion/version.py
+forestopenfermion.egg-info/PKG-INFO
+forestopenfermion.egg-info/SOURCES.txt
+forestopenfermion.egg-info/dependency_links.txt
+forestopenfermion.egg-info/requires.txt
+forestopenfermion.egg-info/top_level.txt
