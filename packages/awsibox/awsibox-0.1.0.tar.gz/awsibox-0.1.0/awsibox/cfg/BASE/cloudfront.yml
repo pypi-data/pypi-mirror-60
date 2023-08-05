@@ -1,0 +1,34 @@
+global:
+  Parameter:
+    - CloudFrontLogging:
+        Description: 'CloudFront Logging - None to disable - empty for default based on env/role'
+    - CloudFrontWebACLId:
+        Description: 'CloudFront WebACLId - empty for default based on env/role'
+  Condition:
+    - CloudFrontAcmCertificate:
+        get_condition('', 'not_equals', 'None', 'CloudFrontAcmCertificate')
+    - CloudFrontLogging:
+        get_condition('', 'not_equals', 'None', 'CloudFrontLogging')
+    - CloudFrontWebACLId:
+        get_condition('', 'not_equals', 'None', 'CloudFrontWebACLId')
+  Output:
+    - CloudFrontWebACLId:
+        Value: get_endvalue('CloudFrontWebACLId')
+  CloudFront: None
+  CloudFrontAcmCertificate: True
+  CloudFrontCacheBehaviors:
+    - 0:
+        AllowedMethods: ['HEAD', 'GET']
+        CachedMethods: ['HEAD', 'GET']
+        Compress: True
+        CookiesForward: none
+        CookiesWhitelistedNames: ''
+        DefaultTTL: 0
+        Headers: []
+        MaxTTL: 31536000
+        MinTTL: 0
+        QueryString: True
+        QueryStringCacheKeys: []
+        ViewerProtocolPolicy: allow-all
+  CloudFrontHttpVersion: 'http2'
+  CloudFrontLogging: None
