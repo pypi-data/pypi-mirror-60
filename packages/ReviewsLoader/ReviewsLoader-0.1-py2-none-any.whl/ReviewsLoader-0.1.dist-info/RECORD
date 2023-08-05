@@ -1,0 +1,13 @@
+Reviews/CSVReviewsWriter.py,sha256=A7cNlgXV5Ltf7whgVwrh4YhYT9mf343UmxGJmtzW1Ck,515
+Reviews/DefaultDataConverter.py,sha256=56AQHAnXrTGvlucjwtfYB4zXOotIsZwX16DSMP7i4JE,910
+Reviews/IDataConverter.py,sha256=51T6GCJkoopn_HyEd8EeunzV7plAEo0UKLDrRHIR00U,184
+Reviews/IReviewsWriter.py,sha256=z96IbN7AwdeuDAWRornT3Iwf3g1Lo654g2yZNlMrECM,163
+Reviews/ReviewsLoader.py,sha256=6Luz1GpRZcmhO33SxR0LP6J5Bb7GfmgU5PV5Lnzefhk,2379
+Reviews/TaskIterator.py,sha256=4NFLRaW7WLXaxB5cXA_t0DS3cq46UrsMsKemNKfHHLI,1665
+Reviews/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Reviews/__main__.py,sha256=KqN_mBFl-3AFnD1Xw5_gLKBtArDdS8PgmyyQ8yw-8Yg,1968
+ReviewsLoader-0.1.dist-info/LICENSE.txt,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+ReviewsLoader-0.1.dist-info/METADATA,sha256=8GNelKDWPu4K0GMkp7TYvPv4pU1QVuBKG949vJ1FHKs,975
+ReviewsLoader-0.1.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+ReviewsLoader-0.1.dist-info/top_level.txt,sha256=y9FlkXBQtEM_7o20eqZpgbmGPWPutlVMfPnhzIUprhI,8
+ReviewsLoader-0.1.dist-info/RECORD,,
