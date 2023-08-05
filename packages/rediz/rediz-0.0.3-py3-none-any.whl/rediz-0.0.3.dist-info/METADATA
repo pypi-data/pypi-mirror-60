@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rediz
+Version: 0.0.3
+Summary: Redis usage patterns for live shared data (used at www.3za.org) 
+Home-page: https://github.com/microprediction/rediz
+Author: microprediction
+Author-email: info@3za.org
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: threezaconventions
+Requires-Dist: fakeredis
+Requires-Dist: redis
+
+# rediz
+An experimental redis usage pattern for a collection of items representing live data
+The "z" comes from its use at www.3za.org which hosts a prototype prediction web
+
+
