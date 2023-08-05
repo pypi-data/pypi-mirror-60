@@ -1,0 +1,8 @@
+README.md
+setup.py
+tensornet/__init__.py
+tensornet.egg-info/PKG-INFO
+tensornet.egg-info/SOURCES.txt
+tensornet.egg-info/dependency_links.txt
+tensornet.egg-info/requires.txt
+tensornet.egg-info/top_level.txt
