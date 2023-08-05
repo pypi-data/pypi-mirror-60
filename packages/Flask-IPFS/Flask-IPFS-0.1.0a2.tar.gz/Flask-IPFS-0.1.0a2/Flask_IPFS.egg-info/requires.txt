@@ -1,0 +1,5 @@
+Flask
+ipfshttpclient
+
+[dev]
+bumpversion

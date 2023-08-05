@@ -1,0 +1,9 @@
+README.md
+flask_ipfs.py
+setup.py
+Flask_IPFS.egg-info/PKG-INFO
+Flask_IPFS.egg-info/SOURCES.txt
+Flask_IPFS.egg-info/dependency_links.txt
+Flask_IPFS.egg-info/not-zip-safe
+Flask_IPFS.egg-info/requires.txt
+Flask_IPFS.egg-info/top_level.txt
