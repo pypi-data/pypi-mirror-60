@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: botsic
+Version: 0.0.2
+Summary: Creates bots
+Home-page: https://github.com/ifosch/botsic
+Author: Ignasi Fosch
+Author-email: natx@y10k.ws
+License: MIT
+Download-URL: https://github.com/ifosch/botsic/archive/0.0.2.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
