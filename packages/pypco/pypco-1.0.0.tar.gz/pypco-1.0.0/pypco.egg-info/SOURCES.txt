@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+pypco/__init__.py
+pypco/auth_config.py
+pypco/exceptions.py
+pypco/pco.py
+pypco/user_auth_helpers.py
+pypco.egg-info/PKG-INFO
+pypco.egg-info/SOURCES.txt
+pypco.egg-info/dependency_links.txt
+pypco.egg-info/requires.txt
+pypco.egg-info/top_level.txt
+pypco.egg-info/zip-safe
