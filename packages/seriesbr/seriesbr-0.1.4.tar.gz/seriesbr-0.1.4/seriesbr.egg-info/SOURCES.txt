@@ -1,0 +1,11 @@
+setup.py
+seriesbr/__init__.py
+seriesbr/bcb.py
+seriesbr/ibge.py
+seriesbr/ipea.py
+seriesbr/seriesbr.py
+seriesbr.egg-info/PKG-INFO
+seriesbr.egg-info/SOURCES.txt
+seriesbr.egg-info/dependency_links.txt
+seriesbr.egg-info/requires.txt
+seriesbr.egg-info/top_level.txt
