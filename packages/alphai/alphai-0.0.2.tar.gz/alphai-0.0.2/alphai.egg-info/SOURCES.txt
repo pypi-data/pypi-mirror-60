@@ -1,0 +1,7 @@
+setup.py
+alphai/__init__.py
+alphai.egg-info/PKG-INFO
+alphai.egg-info/SOURCES.txt
+alphai.egg-info/dependency_links.txt
+alphai.egg-info/top_level.txt
+alphai.egg-info/zip-safe
