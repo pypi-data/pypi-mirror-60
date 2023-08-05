@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: TDXLib
+Version: 0.2.5
+Summary: a python library for interacting with the TeamDynamix Web API
+Home-page: https://github.com/cedarville-university/tdxlib
+Author: Nat Biggs, Stephen Gaines, Josiah Lansford
+Author-email: tdxlib@cedarville.edu
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: python-dateutil
+Requires-Dist: requests
+
+This module provides options for programmatically affecting TDX objects, including tickets, people, accounts, assets, and groups.
+
+
