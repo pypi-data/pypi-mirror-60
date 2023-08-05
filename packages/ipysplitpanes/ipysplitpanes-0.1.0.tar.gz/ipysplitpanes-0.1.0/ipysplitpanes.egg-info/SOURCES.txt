@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+jupyter-splitpanes.json
+setup.cfg
+setup.py
+ipysplitpanes/__init__.py
+ipysplitpanes/_version.py
+ipysplitpanes/widget.py
+ipysplitpanes.egg-info/PKG-INFO
+ipysplitpanes.egg-info/SOURCES.txt
+ipysplitpanes.egg-info/dependency_links.txt
+ipysplitpanes.egg-info/not-zip-safe
+ipysplitpanes.egg-info/requires.txt
+ipysplitpanes.egg-info/top_level.txt
+ipysplitpanes/static/extension.js
+ipysplitpanes/static/index.js
+ipysplitpanes/static/index.js.map
