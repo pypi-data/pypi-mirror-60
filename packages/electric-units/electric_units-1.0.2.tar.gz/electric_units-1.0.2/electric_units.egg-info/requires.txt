@@ -1,0 +1,6 @@
+attrs
+numpy
+pandas>0.25
+python-dateutil
+pytz
+requests
