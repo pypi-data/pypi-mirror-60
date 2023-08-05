@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: Spriteutils-Ngoc-Dang
+Version: 1.0.6
+Summary: A Sprite dectection tool
+Home-page: https://github.com/Friendlyngoc/Friendlyngoc_spriteutil
+Author: Dang Duc Ngoc
+Author-email: ngoc.dang@f4.intek.edu.vn
+Maintainer: Dang Duc Ngoc
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: wheel
+Requires-Dist: twine
+Requires-Dist: numpy
+Requires-Dist: pillow
+Provides-Extra: dev
+Requires-Dist: appdirs (==1.4.3) ; extra == 'dev'
+Requires-Dist: attrs (==19.3.0) ; extra == 'dev'
+Requires-Dist: cached-property (==1.5.1) ; extra == 'dev'
+Requires-Dist: cerberus (==1.3.2) ; extra == 'dev'
+Requires-Dist: certifi (==2019.11.28) ; extra == 'dev'
+Requires-Dist: chardet (==3.0.4) ; extra == 'dev'
+Requires-Dist: click (==7.0) ; extra == 'dev'
+Requires-Dist: colorama (==0.4.1) ; extra == 'dev'
+Requires-Dist: distlib (==0.3.0) ; extra == 'dev'
+Requires-Dist: first (==2.0.2) ; extra == 'dev'
+Requires-Dist: idna (==2.8) ; extra == 'dev'
+Requires-Dist: more-itertools (==8.1.0) ; extra == 'dev'
+Requires-Dist: orderedmultidict (==1.0.1) ; extra == 'dev'
+Requires-Dist: packaging (==19.2) ; extra == 'dev'
+Requires-Dist: pathspec (==0.7.0) ; extra == 'dev'
+Requires-Dist: pep517 (==0.8.1) ; extra == 'dev'
+Requires-Dist: pip-shims (==0.4.0) ; extra == 'dev'
+Requires-Dist: pipenv-setup (==2.2.5) ; extra == 'dev'
+Requires-Dist: pipfile (==0.0.2) ; extra == 'dev'
+Requires-Dist: plette[validation] (==0.2.3) ; extra == 'dev'
+Requires-Dist: pyparsing (==2.4.6) ; extra == 'dev'
+Requires-Dist: regex (==2020.1.8) ; extra == 'dev'
+Requires-Dist: requests (==2.22.0) ; extra == 'dev'
+Requires-Dist: requirementslib (==1.5.3) ; extra == 'dev'
+Requires-Dist: six (==1.14.0) ; extra == 'dev'
+Requires-Dist: toml (==0.10.0) ; extra == 'dev'
+Requires-Dist: tomlkit (==0.5.8) ; extra == 'dev'
+Requires-Dist: typed-ast (==1.4.1) ; extra == 'dev'
+Requires-Dist: typing (==3.7.4.1) ; extra == 'dev'
+Requires-Dist: urllib3 (==1.25.7) ; extra == 'dev'
+Requires-Dist: vistir (==0.5.0) ; extra == 'dev'
+Requires-Dist: wheel (==0.33.6) ; extra == 'dev'
+Requires-Dist: zipp (==1.0.0) ; extra == 'dev'
+Requires-Dist: importlib-metadata (==1.4.0) ; (python_version < "3.8") and extra == 'dev'
+Requires-Dist: black (==19.10b0) ; (python_version >= "3.6") and extra == 'dev'
+
+# Sprites Detection
+A [**sprite**](<https://en.wikipedia.org/wiki/Sprite_(computer_graphics)>) is a small [**raster graphic**](https://en.wikipedia.org/wiki/Raster_graphics) (a **bitmap**) that represents an object such as a [character, a vehicle, a projectile, etc.](https://www.youtube.com/watch?v=a1yBP5t-fSA)
+
+## Sprite Sheet
+
+It is not uncommon for games to have tens to hundreds of sprites. Loading each of these as an individual image would consume a lot of memory and processing power. To help manage sprites and avoid using so many images, many games use [**sprite sheets**](https://www.youtube.com/watch?v=crrFUYabm6E) (also known as **image sprites**).
+
+A sprite sheet consists of multiple sprites in one image. In other words, sprite sheets pack multiple sprites into a single picture. Using sprite sheet, video game developers create sprite sheet animation representing one or several animation sequences while only loading a single file:
+
+![Metal Slug Sprites](metal_slug_sprite_sheet_large.png)
+
+## Sprite Bounding Box
+
+A frame (**bounding box**) can be used to delimit the sprite in the sprite sheet. This bounding box is defined with two 2D points `top_left` and the `bottom_right`, which their respective coordinates `x` and `y` are relative to the top-left corner of the sprite sheet's image.
+
+For example:
+
+![Shape Bounding Boxes](metal_slug_sprite_detection_bounding_boxes.png)
+
+## Sprite Mask
+
+The mask of a sprite defines the 2D shape of the sprite. For example, the sprite sheet 
+contains 3 following sprites:
+
+
+![Metal Slug Standing Stance](1.png)
+
+The masks of these sprites are respectively:
+
+![](2.png)
+
+## Aim of the project
+- Detect sprites packed in an image (sheet) and draw their masks and bounding boxes into a new image with the same size of the original image. <br/>
+- Present a 2D map of all the the sprites with their labels. <br/>
+
+## Usage Information
+### Prerequisites
+- `Python 3.6` is required. <br/>
+- `pip` is requied, to install `sudo apt install pip`
+### Usage
+- `pip install Friendlyngoc` from your terminal
+- Example of functioning:
+
+    - Input as a spritesheet
+    !['3.png'](spritesheet.png)
+
+    - A image with sprite masks
+    !['spritesheet.png'](4.png)
+
+    ```python
+    >>> from Friendlyngoc_spriteutil.spriteutil import SpriteSheet
+    >>> sprite_sheet = SpriteSheet('spritesheet.png')
+    >>> sprites, labels = sprite_sheet.find_sprites()
+    >>> len(sprites)
+    22
+    >>> # Create the mask image with bounding boxes.
+    >>> image = sprite_sheet.create_sprite_labels_image()
+    >>> image.save('sprites_masks.png')
+    ```
+
+## Contact Information
+- Email: `Email: ngoc.dang@f4.intek.edu.vn` <br/>
+- Phone number: `Phone: (+84) 90 690 2056`
+
