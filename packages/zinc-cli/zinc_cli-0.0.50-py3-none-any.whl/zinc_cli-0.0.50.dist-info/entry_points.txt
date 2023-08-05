@@ -1,0 +1,4 @@
+[console_scripts]
+zinc-create-cmd = zinc_cli.commands.zinc_create:invoke
+zinc-transform-cmd = zinc_cli.commands.zinc_transform:invoke
+
