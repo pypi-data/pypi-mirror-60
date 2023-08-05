@@ -1,0 +1,9 @@
+README.md
+setup.py
+synergyvue/__init__.py
+synergyvue/synergyvue.py
+synergyvue.egg-info/PKG-INFO
+synergyvue.egg-info/SOURCES.txt
+synergyvue.egg-info/dependency_links.txt
+synergyvue.egg-info/requires.txt
+synergyvue.egg-info/top_level.txt
