@@ -1,0 +1,10 @@
+effects/__init__.py,sha256=0JV2K5h_Bmb9pNj2h-WQ0IXWB1SJuSOxFM0rQJsAowk,234
+effects/contrib/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+effects/contrib/mypy/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+effects/contrib/mypy/typeclass_plugin.py,sha256=qHVr1C-BePHMMPJI8a12pgG9xh2SMXJcWCWdvINTjME,3997
+effects/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+effects/typeclass.py,sha256=zAEfe0rPREASTrTST8mgxVfCYHlPnLgRF1wHv3tCNJc,10063
+effects-0.0.1.dist-info/LICENSE,sha256=qsPWtb3rXfTqJl62HvIxWdKk6bPRdJyc8iYeiKnPm-c,1289
+effects-0.0.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+effects-0.0.1.dist-info/METADATA,sha256=GPutWqm85MfTJzzVBM3IVN72CIKY659Ml2d61Vvhp7E,5777
+effects-0.0.1.dist-info/RECORD,,
