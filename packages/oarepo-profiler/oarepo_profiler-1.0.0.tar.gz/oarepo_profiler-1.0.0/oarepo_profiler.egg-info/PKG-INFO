@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: oarepo-profiler
+Version: 1.0.0
+Summary: Data model for PIGA KROKD repository
+Home-page: https://github.com/oarepo/oarepo-profiler
+Author: CIS UCT Prague
+Author-email: simeki@vscht.cz
+License: MIT
+Description: ..
+            Copyright (C) 2019 CIS UCT Prague.
+        
+            OARepo profiler is free software; you can redistribute it and/or modify it
+            under the terms of the MIT License; see LICENSE file for more details.
+        
+        ======================
+        OARepo profiler
+        ======================
+        
+        .. image:: https://img.shields.io/github/license/oarepo/oarepo-profiler.svg
+                :target: https://github.com/oarepo/oarepo-profiler/blob/master/LICENSE
+        
+        .. image:: https://img.shields.io/travis/oarepo/oarepo-profiler.svg
+                :target: https://travis-ci.org/oarepo/oarepo-profiler
+        
+        .. image:: https://img.shields.io/coveralls/oarepo/oarepo-profiler.svg
+                :target: https://coveralls.io/r/oarepo/oarepo-profiler
+        
+        .. image:: https://img.shields.io/pypi/v/oarepo-profiler.svg
+                :target: https://pypi.org/pypi/oarepo-profiler
+        
+        Installation
+        ============
+        
+        .. code-block:: bash
+        
+           pip install oarepo-profiler
+        
+        Usage
+        =====
+        
+        * change the wsgi endpoint from `invenio_app.wsgi:application` to `oarepo_profiler:application`
+        * to start profiling, add `OAREPO_PROFILER_ENABLED=True` to `invenio.cfg`. Implicitly the `profs` files
+          will be created in `/tmp/oarepo-profiler`. This location can be changed by setting
+          `OAREPO_PROFILER_PATH`
+        * use third party tools (such as snakeviz) to interpret the result of profiling
+        
+        
+Keywords: Invenio profiler
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Development Status :: 4 - Beta
+Provides-Extra: tests
+Provides-Extra: tests-es7
