@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+package.json
+setup.py
+dash_treebeard/DashTreebeard.py
+dash_treebeard/__init__.py
+dash_treebeard/_imports_.py
+dash_treebeard/dash_treebeard.min.js
+dash_treebeard/dash_treebeard.min.js.map
+dash_treebeard/metadata.json
+dash_treebeard/package-info.json
+dash_treebeard.egg-info/PKG-INFO
+dash_treebeard.egg-info/SOURCES.txt
+dash_treebeard.egg-info/dependency_links.txt
+dash_treebeard.egg-info/top_level.txt

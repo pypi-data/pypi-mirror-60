@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: dash-treebeard
+Version: 0.0.1
+Summary: Dash Tree View Component. Data-Driven, Fast, Efficient and Customisable. Based on react-treebeard.
+Home-page: UNKNOWN
+Author: James Saunders <james@businessoptics.biz>
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Dash
