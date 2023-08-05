@@ -1,0 +1,2 @@
+_readdbc.abi3.so
+pysus/utilities/_readdbc.cpython-36m-x86_64-linux-gnu.so
