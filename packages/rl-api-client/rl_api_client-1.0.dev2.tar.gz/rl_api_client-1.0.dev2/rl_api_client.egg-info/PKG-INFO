@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: rl-api-client
+Version: 1.0.dev2
+Summary: RedisLabs Redis Enterprise Python API Client
+Home-page: UNKNOWN
+Author: Erez Atiya
+Author-email: erez.atiya@redislabs.com
+License: UNKNOWN
+Description: This is a simple example package. You can use
+        [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+        to write your content.
+        
+        
+        # Overview
+        
+        RLAPIClient is meant to provide an easy method of using the RS REST API.
+        
+        Install:         `pip install rl-api-client`
+        Build:           `make build`
+        Publish to PyPi: `make publish`
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
