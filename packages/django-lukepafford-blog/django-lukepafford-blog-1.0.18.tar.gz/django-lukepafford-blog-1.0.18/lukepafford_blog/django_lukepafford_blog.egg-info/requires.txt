@@ -1,0 +1,6 @@
+django
+django-allauth
+django-environ
+django-markdown-deux
+pyyaml
+gunicorn
