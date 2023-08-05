@@ -1,0 +1,6 @@
+setuptools
+BeautifulSoup4
+cssutils
+
+[test]
+lxml
