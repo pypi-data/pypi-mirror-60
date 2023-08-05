@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/HackDuck/__init__.py
+src/HackDuck/main.py
+src/HackDuck.egg-info/PKG-INFO
+src/HackDuck.egg-info/SOURCES.txt
+src/HackDuck.egg-info/dependency_links.txt
+src/HackDuck.egg-info/entry_points.txt
+src/HackDuck.egg-info/requires.txt
+src/HackDuck.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+hackduck = src.cli:main
+
