@@ -1,0 +1,9 @@
+lesync/__init__.py,sha256=SzPY37LydjjYra30d2stXoJbnQKfucinU6B6ZC29cTI,111
+lesync/core.py,sha256=GoM_hiMZRvJR56DC6cOIQeJNrnC3ZmF48Kc-mVxsJsI,5028
+lesync/trafaret.py,sha256=7qRDJQavxdh3ex2D8fRCTquYtMHwDzsDiGTPN1xhI0I,980
+lesync/utils.py,sha256=4tWHfmuKZY-P6y9JzWagBrvjwcR5jskPZz4YYbOgpaE,175
+lesync-0.4.0.dist-info/LICENSE,sha256=3db9dQv65ivVSNb-4hTMSYJGQb6OsQl5Rmdrd4qN_7g,1062
+lesync-0.4.0.dist-info/METADATA,sha256=wTWFXILE0gybZHQalgQylSIxSu19UEVdryQ50-yqz3Q,2945
+lesync-0.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+lesync-0.4.0.dist-info/top_level.txt,sha256=raCf0TktDQjWEuOFATw4SRJMOE_5g7KYGXAHKLoRg6E,7
+lesync-0.4.0.dist-info/RECORD,,
