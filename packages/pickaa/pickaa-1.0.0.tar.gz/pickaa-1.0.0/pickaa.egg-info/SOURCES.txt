@@ -1,0 +1,10 @@
+README.md
+setup.py
+pickaa/__init__.py
+pickaa/test_randpicker.py
+pickaa.egg-info/PKG-INFO
+pickaa.egg-info/SOURCES.txt
+pickaa.egg-info/dependency_links.txt
+pickaa.egg-info/entry_points.txt
+pickaa.egg-info/requires.txt
+pickaa.egg-info/top_level.txt
