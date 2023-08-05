@@ -1,0 +1,12 @@
+setup.py
+pybility/Binomialdistribution.py
+pybility/Gaussiandistribution.py
+pybility/Generaldistribution.py
+pybility/Poissondistribution.py
+pybility/__init__.py
+pybility.egg-info/PKG-INFO
+pybility.egg-info/SOURCES.txt
+pybility.egg-info/dependency_links.txt
+pybility.egg-info/not-zip-safe
+pybility.egg-info/requires.txt
+pybility.egg-info/top_level.txt
