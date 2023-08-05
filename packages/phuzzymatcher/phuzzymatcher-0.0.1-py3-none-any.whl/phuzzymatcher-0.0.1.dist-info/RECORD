@@ -1,0 +1,8 @@
+README.md,sha256=Vwr2c1kkts2p80YnjcZfkaRq0rHLgk1nou8YaceMJR4,989
+scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scripts/fuzzy_phrase_matcher.py,sha256=wjbMWWhzQC902KsiHLWfJiGrLZ9kt8WyXWAjM9gXjcw,1596
+scripts/utils.py,sha256=ZQmM-eT_ceaIrUEoKEqcrGUhryFba32OiKyuBWWocQs,1682
+phuzzymatcher-0.0.1.dist-info/LICENSE,sha256=6QjMSxu4QT8Bq_1JUAjOHewBdcPIQJNl-UqhnygPwIo,1072
+phuzzymatcher-0.0.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+phuzzymatcher-0.0.1.dist-info/METADATA,sha256=SdAdrcAmEtz4KcHhBdAJ8f3h3ngnfqvxPTiwJm0jopM,505
+phuzzymatcher-0.0.1.dist-info/RECORD,,
