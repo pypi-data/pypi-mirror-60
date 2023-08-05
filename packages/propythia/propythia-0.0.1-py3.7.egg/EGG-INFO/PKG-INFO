@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: propythia
+Version: 0.0.1
+Summary: propythia - automated platform for the classification of peptides/proteins using machine learning
+Home-page: https://github.com/BioSystemsUM/propythia
+Author: Ana Marta Sequeira
+Author-email: anamartasequeira94@gmail.com
+License: GNU General Public License v3
+Description: UNKNOWN
+Keywords: machine learning classification proteins
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
