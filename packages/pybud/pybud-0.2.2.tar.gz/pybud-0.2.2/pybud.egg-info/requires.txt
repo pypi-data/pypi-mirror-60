@@ -1,0 +1,5 @@
+dictdiffer==0.8.1
+Pillow==7.0.0
+opencv-python
+numpy
+pyyaml
