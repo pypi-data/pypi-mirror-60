@@ -1,0 +1,11 @@
+xadix/__init__.py,sha256=I4__gaAeVewoB2M0Jsh-iukXZugzXmXcSPEP1-BJnds,327
+xadix/argparse_tree/__init__.py,sha256=a_u92hxo1WFr5-4BJIj9_LpOYjrXil5wYMxFEd5ctMI,319
+xadix/argparse_tree/_version.py,sha256=zYkY7pehhPve3LuKRjGS8tn4B3cIc1XOpypS4WXS-MM,507
+xadix/argparse_tree/argparse_tree.py,sha256=DkHbUkqn-pYpxy4_H6doCvMb4xuAi02z4hTT2VSveN4,7141
+xadix.argparse_tree-0.1.7.post0.dev13.dist-info/DESCRIPTION.rst,sha256=bUL1K--x5qXB5f5H8jKB3qFvm-B9-M9CZpZ4rGyFJs4,41
+xadix.argparse_tree-0.1.7.post0.dev13.dist-info/METADATA,sha256=h9VQtdTvjFpiHnmr6cNSt2JWZxD0s-xiIstqUI-kdco,727
+xadix.argparse_tree-0.1.7.post0.dev13.dist-info/RECORD,,
+xadix.argparse_tree-0.1.7.post0.dev13.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+xadix.argparse_tree-0.1.7.post0.dev13.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+xadix.argparse_tree-0.1.7.post0.dev13.dist-info/metadata.json,sha256=BL8jtv0Bap2q5Km9YtgSWCDTL-yZSaHl6YRCJ818YQE,869
+xadix.argparse_tree-0.1.7.post0.dev13.dist-info/top_level.txt,sha256=W4YV28q1EBkks4WwHp5r7Cpv42x2sRfLXOXalsuZFdQ,6
