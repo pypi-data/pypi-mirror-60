@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: numpipe
+Version: 0.1
+Summary: Easily run Python functions in parallel and cache the results
+Home-page: UNKNOWN
+Author: John Parker
+Author-email: japarker@uchicago.edu
+License: MIT
+Keywords: cache pipeline hdf5 parallel cluster
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: h5py
+Requires-Dist: termcolor
+
+# NumPipe
+
+## Features
+
+## Installation
+NumPipe can be installed with pip
+```shell
+pip install numpipe
+```
+
+## Usage
+See the examples folder for how to use FPlanck.
+
+## License
+NumPipe is licensed under the terms of the MIT license.
+
+

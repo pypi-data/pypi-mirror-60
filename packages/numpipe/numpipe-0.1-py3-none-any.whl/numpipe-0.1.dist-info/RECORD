@@ -1,0 +1,16 @@
+numpipe/__init__.py,sha256=9x0122Z7qa4yptDqdJCEz-BDPw-jOUHXAhj9MrJU7ww,465
+numpipe/display.py,sha256=A-J5r24xfJdwv-eUhqsZVeuPk3pwYO-8z_tDfql32dQ,3345
+numpipe/execution.py,sha256=0b1ekBgYIR3031o7yqbBdUgL6bXW_rKul29_Pg7P7r0,2382
+numpipe/fileio.py,sha256=wvxaFGNM_U97Z8hPaqoPaYUhXN5FLXQlRumewrPRNZE,1033
+numpipe/h5cache.py,sha256=bD8zQ0J76wKALbfOH80MWUAx4nHPUfv2skJPDFvAVHg,4351
+numpipe/networking.py,sha256=4ISnpvQzVoftae-h-ZBb9XCEFiGa50qn7ml1E2QkETg,707
+numpipe/numpipe.py,sha256=xQregP-4hnTXsBUz6DOcfWshiyMr2uFQhhWd5rftE54,14746
+numpipe/parser.py,sha256=0l2gpV176RF42O9-MI1f5kbiAxDVTAIpZOxuMP-lh4g,2068
+numpipe/server.py,sha256=vuTRPeduxTGsiOeTjxjtHHX6yK_THTPJV8YoHqr0ooQ,1970
+numpipe/slurm.py,sha256=OVoKNPEj48vyStJke5lXH6HVD2EscxuB2KvQ643lqDo,3251
+numpipe/utility.py,sha256=rlAuLTp4hwppLAF7zW8I-R15oKjf6Ebf72Etvn12ALU,2044
+numpipe-0.1.dist-info/LICENSE.md,sha256=zLK05R59a2NW4t2rP7vJ4e2BSK2gC2zhSZx4zO95tQY,1068
+numpipe-0.1.dist-info/METADATA,sha256=J8Ph1TNJlMaGJ4lTlUAE7_ucFfwI3yBt3UHvvF2_Li0,829
+numpipe-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+numpipe-0.1.dist-info/top_level.txt,sha256=idG7L9mlO1HxdoFri3ugHjGHCL8J4IG-MUpLRRLhTLY,8
+numpipe-0.1.dist-info/RECORD,,
