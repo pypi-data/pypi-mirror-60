@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+scales.py
+setup.cfg
+setup.py
+scales.py.egg-info/PKG-INFO
+scales.py.egg-info/SOURCES.txt
+scales.py.egg-info/dependency_links.txt
+scales.py.egg-info/requires.txt
+scales.py.egg-info/top_level.txt
