@@ -1,0 +1,5 @@
+pint
+panflute
+pandocfilters
+colorama
+pandoc-imagine
