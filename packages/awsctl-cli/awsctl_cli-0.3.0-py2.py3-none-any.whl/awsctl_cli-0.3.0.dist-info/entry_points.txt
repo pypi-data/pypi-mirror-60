@@ -1,0 +1,3 @@
+[console_scripts]
+awsctl = awsctl.cli:entrypoint
+
