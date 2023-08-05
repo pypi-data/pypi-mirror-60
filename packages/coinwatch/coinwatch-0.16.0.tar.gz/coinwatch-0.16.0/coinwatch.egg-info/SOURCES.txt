@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+bin/coinwatch
+coinwatch.egg-info/PKG-INFO
+coinwatch.egg-info/SOURCES.txt
+coinwatch.egg-info/dependency_links.txt
+coinwatch.egg-info/requires.txt
+coinwatch.egg-info/top_level.txt
