@@ -1,0 +1,1 @@
+from g_ttt import tic_tac_toe
