@@ -1,0 +1,19 @@
+{% load static %}
+<input 
+    type="{{ widget.type }}" 
+    name="{{ widget.name }}"
+    {% if widget.value != None %} 
+        value="{{ widget.value|stringformat:'s' }}"
+    {% endif %}
+    {% include "django/forms/widgets/attrs.html" %}
+>
+<div id="map" class="map_container">
+    {{provider}}
+</div>
+
+<script>
+    let input_widget = "{{widget.name}}"
+</script>
+
+<script src="{% static 'vendor/jquery-2.2.4.min.js' %}"></script>
+<script src="{% static 'widgets/point.js' %}"></script>
