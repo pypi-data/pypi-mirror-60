@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+autoconf/__init__.py
+autoconf/conf.py
+autoconf/exc.py
+test_autoconf/__init__.py
+test_autoconf/mock.py
+test_autoconf/test_config.py
