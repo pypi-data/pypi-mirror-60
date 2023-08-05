@@ -1,0 +1,13 @@
+README.md
+setup.py
+dallasparser/__init__.py
+dallasparser/cli.py
+dallasparser/parser.py
+dallasparser/regex.py
+dallasparser/utils.py
+dallasparser.egg-info/PKG-INFO
+dallasparser.egg-info/SOURCES.txt
+dallasparser.egg-info/dependency_links.txt
+dallasparser.egg-info/entry_points.txt
+dallasparser.egg-info/requires.txt
+dallasparser.egg-info/top_level.txt
