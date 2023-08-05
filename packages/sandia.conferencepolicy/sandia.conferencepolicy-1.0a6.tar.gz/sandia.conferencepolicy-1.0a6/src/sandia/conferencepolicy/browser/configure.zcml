@@ -1,0 +1,75 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="sandia.conferencepolicy">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="sandia.conferencepolicy.interfaces.ISandiaConferencepolicyLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="sandia.conferencepolicy"
+      type="plone"
+      directory="static"
+      />
+
+  <!-- Training Class -->
+  <browser:page
+      name="view"
+      for="sandia.conferencepolicy.content.training_class.ITrainingClass"
+      class="sandia.conferencepolicy.content.training_class.TrainingClassView"
+      template="templates/training_class.pt"
+      permission="zope2.View"
+      />
+
+  <!-- Person -->
+  <browser:page
+      name="view"
+      for="sandia.conferencepolicy.content.person.IPerson"
+      class="sandia.conferencepolicy.content.person.PersonView"
+      template="templates/person.pt"
+      permission="zope2.View"
+      />
+
+  <!-- Keynoter -->
+  <browser:page
+      name="view"
+      for="sandia.conferencepolicy.content.keynoter.IKeynoter"
+      class="sandia.conferencepolicy.content.keynoter.KeynoterView"
+      template="templates/person.pt"
+      permission="zope2.View"
+      />
+
+  <!-- Presentation -->
+  <browser:page
+      name="view"
+      for="sandia.conferencepolicy.content.presentation.IPresentation"
+      class="sandia.conferencepolicy.content.presentation.PresentationView"
+      template="templates/presentation.pt"
+      permission="zope2.View"
+      />
+
+  <!-- Conference -->
+   <browser:page
+     name="view"
+     for="sandia.conferencepolicy.content.conference.IConference"
+     class="sandia.conferencepolicy.content.conference.ConferenceView"
+     template="templates/conference.pt"
+     permission="zope2.View"
+     />
+
+   <browser:page
+     name="conference_listing_view"
+     menu="plone_displayviews"
+     title="view with talk list"
+     for="sandia.conferencepolicy.content.conference.IConference"
+     class="sandia.conferencepolicy.content.conference.ConferenceView"
+     template="templates/conference_listing.pt"
+     permission="zope2.View"
+     />
+</configure>

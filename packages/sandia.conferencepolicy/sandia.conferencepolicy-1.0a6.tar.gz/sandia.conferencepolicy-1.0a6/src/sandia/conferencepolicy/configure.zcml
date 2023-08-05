@@ -1,0 +1,108 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
+    i18n_domain="sandia.conferencepolicy">
+
+  <!--<five:registerPackage package="." initialize=".initialize" />-->
+  <!-- Include configuration for dependencies listed in setup.py -->
+  <includeDependencies package="." />
+
+  <i18n:registerTranslations directory="locales" />
+
+  <!--
+    Be careful if you use general includeDependencies, it can have sideffects!
+    Better import explicite packages or configurations ;)
+  -->
+  <!--<includeDependencies package="." />-->
+
+  <include package="collective.monkeypatcher" />
+  <include package=".tiles" />
+  <include package=".content" />
+  <include package=".browser" />
+  <include file="events.zcml" />
+
+  <include file="permissions.zcml" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Sandia conference event management"
+      directory="profiles/default"
+      description="Installs the Sandia conference package."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Sandia conference event management (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the Sandia conference package."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="sandia.conferencepolicy-hiddenprofiles"
+      />
+
+  <!-- -*- extra stuff goes here -*- -->
+
+  <genericsetup:upgradeDepends
+      source="1000"
+      destination="1001"
+      title="Add entries to css registry"
+      description=""
+      profile="sandia.conferencepolicy:default"
+      import_steps="cssregistry"
+      />
+
+  <genericsetup:upgradeDepends
+      source="1001"
+      destination="1002"
+      title="Add Presentation view"
+      description=""
+      profile="sandia.conferencepolicy:default"
+      import_steps="typeinfo"
+      />
+
+  <genericsetup:upgradeDepends
+      source="1002"
+      destination="1003"
+      title="Add Social media fields to Person type and view"
+      description=""
+      profile="sandia.conferencepolicy:default"
+      import_steps="typeinfo"
+      />
+
+  <genericsetup:upgradeStep
+      source="1003"
+      destination="1004"
+      profile="sandia.conferencepolicy:default"
+      title="Migrate content to copy 'summary' into description"
+      description=""
+      handler=".setuphandlers.replace_summaries"
+      />
+
+  <genericsetup:upgradeDepends
+      source="1004"
+      destination="1005"
+      title="Add custom presentation tile"
+      description=""
+      profile="sandia.conferencepolicy:default"
+      import_steps="plone.app.registry"
+      />
+
+  <monkey:patch
+      description="This works around issue https://github.com/plone/plone.dexterity/issues/124"
+      class="plone.dexterity.exportimport.DexterityContentExporterImporter"
+      original="import_"
+      replacement=".patches.import_"
+      />
+
+
+</configure>
