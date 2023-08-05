@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: parfis
+Version: 0.0.0
+Summary: Particles in field simulator
+Home-page: https://github.com/GinkoBalboa/parfis
+Author: Ginko Balboa
+Author-email: ginkobalboa3@gmail.com
+License: MIT
+Download-URL: https://github.com/GinkoBalboa/parfis/archive/pypi-0_0_0.tar.gz
+Description: UNKNOWN
+Keywords: physics,simulation,electromagnetic,particles,particle-in-cell,field
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7

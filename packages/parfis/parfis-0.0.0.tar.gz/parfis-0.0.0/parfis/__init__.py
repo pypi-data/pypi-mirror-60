@@ -1,0 +1,1 @@
+from parfis.dummy import DummyClass
