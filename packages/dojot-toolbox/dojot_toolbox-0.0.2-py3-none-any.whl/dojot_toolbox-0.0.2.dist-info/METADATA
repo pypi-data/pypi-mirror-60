@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: dojot-toolbox
+Version: 0.0.2
+Summary: A toolbox for dojot
+Home-page: https://github.com/andersonluisribeiro/dojot-toolbox
+Author: Anderson Luis Ribeiro
+Author-email: anderson.luis.rib@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pyfiglet (==0.8.post1)
+Requires-Dist: PyYAML (==5.1.2)
+Requires-Dist: gitpython (==3.0.5)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: progress (==1.5)
+Requires-Dist: kubernetes (==10.0.1)
+Requires-Dist: ansible (==2.9.2)
+
+# A toolbox for dojot
+
+## Settings to build de pip package
+
+sudo python3 -m pip install --upgrade pip setuptools wheel  
+sudo python3 -m pip install tqdm  
+sudo python3 -m pip install --user --upgrade twine  
+
+## To configure de pip package
+
+python3 setup.py bdist_wheel
+
+
