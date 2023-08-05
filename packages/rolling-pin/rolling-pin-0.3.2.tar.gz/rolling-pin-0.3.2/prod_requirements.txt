@@ -1,0 +1,11 @@
+cufflinks
+flask
+flasgger
+graphviz
+ipython
+networkx
+numpy
+pandas
+pydot
+radon
+wrapt
