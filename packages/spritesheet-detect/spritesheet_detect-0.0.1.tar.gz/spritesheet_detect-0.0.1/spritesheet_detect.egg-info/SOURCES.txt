@@ -1,0 +1,9 @@
+README.md
+setup.py
+spritesheet_detect/__init__.py
+spritesheet_detect/spriteutil.py
+spritesheet_detect.egg-info/PKG-INFO
+spritesheet_detect.egg-info/SOURCES.txt
+spritesheet_detect.egg-info/dependency_links.txt
+spritesheet_detect.egg-info/requires.txt
+spritesheet_detect.egg-info/top_level.txt
