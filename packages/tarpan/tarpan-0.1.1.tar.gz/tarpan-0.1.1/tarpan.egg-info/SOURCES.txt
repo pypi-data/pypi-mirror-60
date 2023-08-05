@@ -1,0 +1,9 @@
+README.md
+setup.py
+tarpan/__init__.py
+tarpan/cmdstanpy.py
+tarpan/shared.py
+tarpan.egg-info/PKG-INFO
+tarpan.egg-info/SOURCES.txt
+tarpan.egg-info/dependency_links.txt
+tarpan.egg-info/top_level.txt
