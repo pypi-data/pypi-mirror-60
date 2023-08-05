@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: sufarray-kkto
+Version: 0.1
+Summary: Suffix Array for all-substring search
+Home-page: https://github.com/isaacto/sufarray
+Author: Isaac To
+Author-email: isaac.to@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.5
+Description-Content-Type: text/markdown
+
+# sufarray: implementation of suffix array
+
+It uses prefix doubling for calculating the suffix array, which is O(n
+log n) time.  When searching for all occurrences of a string, it takes
+O(log n) time.  Further occurrences takes constant time.
+
+At present the implementation is Python only.  This has the drawback
+that the speed is not comparable with those of other languages.
+
+
