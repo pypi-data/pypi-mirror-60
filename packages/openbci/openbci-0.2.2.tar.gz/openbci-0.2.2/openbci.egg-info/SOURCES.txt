@@ -1,0 +1,174 @@
+MANIFEST.in
+README.md
+setup.py
+cmd/eegstream
+openbci/__init__.py
+openbci/_version.txt
+openbci.egg-info/PKG-INFO
+openbci.egg-info/SOURCES.txt
+openbci.egg-info/dependency_links.txt
+openbci.egg-info/requires.txt
+openbci.egg-info/top_level.txt
+openbci/acquisition/__init__.py
+openbci/acquisition/cyton.py
+openbci/acquisition/cyton_bin_parser.py
+openbci/database/__init__.py
+openbci/database/raw2bin.py
+openbci/database/sample_8ch_bin0.txt
+openbci/database/sample_8ch_bin1.txt
+openbci/database/sample_8ch_bin2.txt
+openbci/database/sample_8ch_raw0.txt
+openbci/database/sample_8ch_raw1.txt
+openbci/database/sample_8ch_raw2.txt
+openbci/handlers/__init__.py
+openbci/handlers/eegframe.py
+openbci/preprocess/__init__.py
+openbci/preprocess/eeg_connectivity.py
+openbci/preprocess/eeg_features.py
+openbci/preprocess/eeg_filters.py
+openbci/stream/__init__.py
+openbci/stream/ws/__init__.py
+openbci/stream/ws/app.py
+openbci/stream/ws/base_server.py
+openbci/stream/ws/client.py
+openbci/stream/ws/server.py
+openbci/stream/ws/html/home.html
+openbci/stream/ws/static/bootstrap-4.3.1-dist/css/bootstrap-grid.css
+openbci/stream/ws/static/bootstrap-4.3.1-dist/css/bootstrap-grid.css.map
+openbci/stream/ws/static/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css
+openbci/stream/ws/static/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css.map
+openbci/stream/ws/static/bootstrap-4.3.1-dist/css/bootstrap-reboot.css
+openbci/stream/ws/static/bootstrap-4.3.1-dist/css/bootstrap-reboot.css.map
+openbci/stream/ws/static/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css
+openbci/stream/ws/static/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css.map
+openbci/stream/ws/static/bootstrap-4.3.1-dist/css/bootstrap.css
+openbci/stream/ws/static/bootstrap-4.3.1-dist/css/bootstrap.css.map
+openbci/stream/ws/static/bootstrap-4.3.1-dist/css/bootstrap.min.css
+openbci/stream/ws/static/bootstrap-4.3.1-dist/css/bootstrap.min.css.map
+openbci/stream/ws/static/bootstrap-4.3.1-dist/js/bootstrap.bundle.js
+openbci/stream/ws/static/bootstrap-4.3.1-dist/js/bootstrap.bundle.js.map
+openbci/stream/ws/static/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js
+openbci/stream/ws/static/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js.map
+openbci/stream/ws/static/bootstrap-4.3.1-dist/js/bootstrap.js
+openbci/stream/ws/static/bootstrap-4.3.1-dist/js/bootstrap.js.map
+openbci/stream/ws/static/bootstrap-4.3.1-dist/js/bootstrap.min.js
+openbci/stream/ws/static/bootstrap-4.3.1-dist/js/bootstrap.min.js.map
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Sans-Black Italic.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Sans-Black.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Sans-Bold Italic.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Sans-Bold.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Sans-Extrabold Italic.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Sans-Extrabold.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Sans-Light Italic.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Sans-Light.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Sans-Regular Italic.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Sans-Regular.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Serif-Bold Italic.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Serif-Bold.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Serif-Extrabold Italic.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Serif-Extrabold.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Serif-Light Italic.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Serif-Light.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Serif-Regular Italic.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/Ancizar Serif-Regular.otf
+openbci/stream/ws/static/fonts/Ancizar-4.0/ancizar.css
+openbci/stream/ws/static/fonts/Ancizar-4.0/ancizar.py
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/LICENSE.txt
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/all.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/all.min.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/brands.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/brands.min.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/fontawesome.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/fontawesome.min.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/regular.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/regular.min.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/solid.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/solid.min.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/svg-with-js.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/svg-with-js.min.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/v4-shims.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/css/v4-shims.min.css
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-brands-400.eot
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-brands-400.svg
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-brands-400.ttf
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-brands-400.woff
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-brands-400.woff2
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.eot
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.svg
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.ttf
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.eot
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.svg
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.ttf
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff
+openbci/stream/ws/static/fonts/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/Ubuntu-B.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/Ubuntu-BI.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/Ubuntu-C.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/Ubuntu-L.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/Ubuntu-LI.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/Ubuntu-M.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/Ubuntu-MI.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/Ubuntu-R.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/Ubuntu-RI.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/Ubuntu-Th.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/UbuntuMono-B.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/UbuntuMono-BI.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/UbuntuMono-R.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/UbuntuMono-RI.ttf
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/ubuntu.css
+openbci/stream/ws/static/fonts/ubuntu-font-family-0.83/ubuntu.py
+openbci/stream/ws/static/fonts/worksans/WorkSans-Black.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-BlackItalic.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-Bold.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-BoldItalic.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-ExtraBold.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-ExtraBoldItalic.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-ExtraLight.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-ExtraLightItalic.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-Hairline.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-Italic.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-Light.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-LightItalic.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-Medium.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-MediumItalic.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-Regular.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-SemiBold.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-SemiBoldItalic.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-Thin.otf
+openbci/stream/ws/static/fonts/worksans/WorkSans-ThinItalic.otf
+openbci/stream/ws/static/fonts/worksans/worksans-italic-vf.ttf
+openbci/stream/ws/static/fonts/worksans/worksans-roman-vf.ttf
+openbci/stream/ws/static/fonts/worksans/worksans.css
+openbci/stream/ws/static/fonts/worksans/worksans.py
+openbci/stream/ws/static/jquery/jquery-3.4.1.slim.min.js
+openbci/stream/ws/static/popper.js-1.16.0-dist/popper-utils.js
+openbci/stream/ws/static/popper.js-1.16.0-dist/popper-utils.js.map
+openbci/stream/ws/static/popper.js-1.16.0-dist/popper-utils.min.js
+openbci/stream/ws/static/popper.js-1.16.0-dist/popper-utils.min.js.map
+openbci/stream/ws/static/popper.js-1.16.0-dist/popper.js
+openbci/stream/ws/static/popper.js-1.16.0-dist/popper.js.map
+openbci/stream/ws/static/popper.js-1.16.0-dist/popper.min.js
+openbci/stream/ws/static/popper.js-1.16.0-dist/popper.min.js.map
+openbci/stream/ws/static/popper.js-1.16.0-dist/esm/popper-utils.js
+openbci/stream/ws/static/popper.js-1.16.0-dist/esm/popper-utils.js.map
+openbci/stream/ws/static/popper.js-1.16.0-dist/esm/popper-utils.min.js
+openbci/stream/ws/static/popper.js-1.16.0-dist/esm/popper-utils.min.js.map
+openbci/stream/ws/static/popper.js-1.16.0-dist/esm/popper.js
+openbci/stream/ws/static/popper.js-1.16.0-dist/esm/popper.js.map
+openbci/stream/ws/static/popper.js-1.16.0-dist/esm/popper.min.js
+openbci/stream/ws/static/popper.js-1.16.0-dist/esm/popper.min.js.map
+openbci/stream/ws/static/popper.js-1.16.0-dist/umd/popper-utils.js
+openbci/stream/ws/static/popper.js-1.16.0-dist/umd/popper-utils.js.map
+openbci/stream/ws/static/popper.js-1.16.0-dist/umd/popper-utils.min.js
+openbci/stream/ws/static/popper.js-1.16.0-dist/umd/popper-utils.min.js.map
+openbci/stream/ws/static/popper.js-1.16.0-dist/umd/popper.js
+openbci/stream/ws/static/popper.js-1.16.0-dist/umd/popper.js.flow
+openbci/stream/ws/static/popper.js-1.16.0-dist/umd/popper.js.map
+openbci/stream/ws/static/popper.js-1.16.0-dist/umd/popper.min.js
+openbci/stream/ws/static/popper.js-1.16.0-dist/umd/popper.min.js.map
+openbci/utils/__init__.py
+openbci/utils/endpoints.py
+openbci/utils/scan_wifi_modules.py
+openbci/utils/systemd_daemon.py

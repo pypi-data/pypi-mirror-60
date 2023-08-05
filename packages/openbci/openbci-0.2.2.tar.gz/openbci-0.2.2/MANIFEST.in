@@ -1,0 +1,7 @@
+recursive-include openbci/ *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-exclude trials/ *
+recursive-exclude tests/ *
+recursive-exclude notebooks/ *

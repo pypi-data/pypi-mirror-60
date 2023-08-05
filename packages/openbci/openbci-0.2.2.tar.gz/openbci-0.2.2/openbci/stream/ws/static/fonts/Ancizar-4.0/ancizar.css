@@ -1,0 +1,126 @@
+
+@font-face {
+  font-family: 'Ancizar-Serif';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Serif-Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Sans-Extrabold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Sans-Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Sans-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Serif-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Sans-Regular Italic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Sans-Bold Italic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Serif';
+  font-style: italic;
+  font-weight: 800;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Serif-Extrabold Italic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Sans-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Serif-Bold Italic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Serif-Regular Italic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Sans-Extrabold Italic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Sans-Black.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Serif';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Serif-Extrabold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Serif';
+  font-style: italic;
+  font-weight: 300;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Serif-Light Italic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Serif-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Sans';
+  font-style: italic;
+  font-weight: 900;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Sans-Black Italic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ancizar-Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: url('/static/fonts/Ancizar-4.0/Ancizar Sans-Light Italic.otf') format('truetype');
+}
