@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+src/faviconer/__init__.py
+src/faviconer/main.py
+src/faviconer.egg-info/PKG-INFO
+src/faviconer.egg-info/SOURCES.txt
+src/faviconer.egg-info/dependency_links.txt
+src/faviconer.egg-info/not-zip-safe
+src/faviconer.egg-info/requires.txt
+src/faviconer.egg-info/top_level.txt
