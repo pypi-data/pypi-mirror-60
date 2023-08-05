@@ -1,0 +1,13 @@
+pycurl<=7.43.0.3
+pyparsing
+future
+six
+chardet
+
+[:python_version < "3.5"]
+configparser
+
+[dev]
+mock
+netaddr
+pip-tools
