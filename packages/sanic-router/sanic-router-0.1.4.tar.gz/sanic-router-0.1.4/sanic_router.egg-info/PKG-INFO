@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: sanic-router
+Version: 0.1.4
+Summary: Powerful Django-like router for Sanic
+Home-page: https://github.com/RafRaf/sanic-router
+Author: RafRaf
+Author-email: smartrafraf@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: sanic,router,urls
+Platform: UNKNOWN
