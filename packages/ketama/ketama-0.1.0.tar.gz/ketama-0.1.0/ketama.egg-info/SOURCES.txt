@@ -1,0 +1,12 @@
+MANIFEST.in
+ketama.pyi
+ketama_python.c
+setup.py
+ketama.egg-info/PKG-INFO
+ketama.egg-info/SOURCES.txt
+ketama.egg-info/dependency_links.txt
+ketama.egg-info/top_level.txt
+src/ketama.c
+src/ketama.h
+src/md5.c
+src/md5.h
