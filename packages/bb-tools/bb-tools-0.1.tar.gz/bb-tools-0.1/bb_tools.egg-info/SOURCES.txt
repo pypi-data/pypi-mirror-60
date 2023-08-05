@@ -1,0 +1,6 @@
+README.md
+setup.py
+bb_tools.egg-info/PKG-INFO
+bb_tools.egg-info/SOURCES.txt
+bb_tools.egg-info/dependency_links.txt
+bb_tools.egg-info/top_level.txt
