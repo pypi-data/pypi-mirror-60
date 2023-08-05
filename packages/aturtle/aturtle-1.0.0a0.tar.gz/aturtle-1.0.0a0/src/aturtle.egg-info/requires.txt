@@ -1,0 +1,16 @@
+
+[dev]
+pillow
+coverage
+pylint
+hypothesis
+
+[docs]
+
+[pillow]
+pillow
+
+[tests]
+coverage
+pylint
+hypothesis
