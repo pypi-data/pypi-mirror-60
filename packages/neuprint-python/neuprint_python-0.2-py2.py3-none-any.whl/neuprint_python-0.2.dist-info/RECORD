@@ -1,0 +1,11 @@
+neuprint/__init__.py,sha256=Ww84qnXxLAr-AtQ3jAiDLBcV5nHOkgVuHotV-AsdLKc,1208
+neuprint/_version.py,sha256=EdB8oiXIQh1UgtEEfpAdRijqfw0r9qlt0b_fRehh_VA,495
+neuprint/admin.py,sha256=4TynOSPbvgwxjS_2tOzMJB154Rjv_R8mArm271up65U,3550
+neuprint/client.py,sha256=938LbNsYdi-EiFnJdz9Q-sJ8t5f8Zlq7rrUsUsqEpy4,17921
+neuprint/queries.py,sha256=Ot8sNfiwFn9WLCTzkUb41Oum6e_srP6GKBXV7PrdQIw,6215
+neuprint/utils.py,sha256=FPiZxEaI-IY4CgI6MH2c3O92R1tP3H7SKZCTa1a3HcY,630
+neuprint_python-0.2.dist-info/LICENSE,sha256=PF-nuCoFjWWi6X4dzAX2UI_43e3_IQtg87ELG8TTpcY,1462
+neuprint_python-0.2.dist-info/METADATA,sha256=3EnTN2I1Ax1ZPKb8Nai30GOIQZHV187Vgdhu4GO6c6E,1397
+neuprint_python-0.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+neuprint_python-0.2.dist-info/top_level.txt,sha256=P7nNrYpUXUwYPvId_XizM520JowJysGkHOsSljaVfMg,9
+neuprint_python-0.2.dist-info/RECORD,,
