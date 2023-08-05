@@ -1,0 +1,10 @@
+README.md
+__init__.py
+setup.py
+test_xc.py
+xc.py
+bin/xc
+xc.egg-info/PKG-INFO
+xc.egg-info/SOURCES.txt
+xc.egg-info/dependency_links.txt
+xc.egg-info/top_level.txt
