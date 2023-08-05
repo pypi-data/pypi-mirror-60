@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Skperopt
+Version: 0.0.5
+Summary: Hyperopt Wrapper
+Home-page: https://github.com/lewis-morris/Skperopt
+Author: Lewis
+Author-email: lewis.morris@gmail.com
+License: MIT
+Download-URL: https://github.com/lewis-morris/Skperopt/archive/0.0.5.tar.gz
+Keywords: hyperopt-wrapper,hyperparameter
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Natural Language :: English
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: sklearn
+Requires-Dist: hyperopt (==0.2.3)
+
+UNKNOWN
+
+
