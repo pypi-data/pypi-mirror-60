@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: pymongo-inmemory
+Version: 0.1.2
+Summary: Pymongo Mocking Tool with in memory MongoDB running.
+Home-page: https://github.com/kaizendorks/pymongo_inmemory
+Author: Kaizen Dorks
+Author-email: kaizendorks@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/kaizendorks/pymongo_inmemory/issues
+Project-URL: Source, https://github.com/kaizendorks/pymongo_inmemory
+Description: # pymongo_inmemory
+        A mongo mocking library with an ephemeral MongoDB running in memory.
+        
+        ## Usage
+        Insert a new section to your project's `setup.cfg` for the operating system and
+        mongo version you want to spin up:
+        ```ini
+        [pymongo_inmemory]
+        mongo_version = 4.0
+        operating_system = osx
+        ```
+        
+        then use the `pymongo_inmemory` client instead of original one:
+        ```python
+        from pymongo_inmemory import MongoClient
+        
+        client = MongoClient()  # No need to provide host
+        db = client['testdb']
+        collection = db['test-collection']
+        # etc., etc.
+        client.close()
+        
+        # Also usable with context manager
+        with MongoClient() as client:
+            # do stuff
+        ```
+        
+        ## Development
+        Project is set up to develop with [Pipenv](https://github.com/pypa/pipenv).
+        
+        After installing Pipenv and cloning the repo, create the shell and install all
+        package requirements:
+        
+        ```bash
+        $> pipenv shell
+        $> pipenv install --dev
+        ```
+        
+        Create your own `setup.cfg` file from `setup.cfg-template`.
+        
+        Run the tests:
+        ```bash
+        $> pytest
+        ```
+        
+        If on NIX systems you can run further tests:
+        ```bash
+        $> bash tests/integrity/test_integrity.sh
+        ```
+        
+Keywords: mongodb testing pymongo
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
