@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: adamapi
+Version: 0.0.1
+Summary: Python Adam API
+Home-page: https://git.services.meeo.it/das/adamapi
+Author: MEEO s.r.l.
+Author-email: info@meeo.it
+License: UNKNOWN
+Description: Adampy version 0.0.9
+        
+        # Installation
+        
+        ```bash
+        sudo apt-get install python3-venv python3-gdal gdal-bin
+        VENVNAME="adamapi"
+        python3 -m venv "${VENVNAME}"
+        source "${VENVNAME}/bin/activate";
+        python3 -m pip install --upgrade pip
+        pip install adamapi
+        deactivate
+        ln -s "/usr/lib/python3/dist-packages/osgeo" "${VENVNAME}/lib/python3.6/site-packages/osgeo"
+        source "${VENVNAME}/bin/activate"
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
