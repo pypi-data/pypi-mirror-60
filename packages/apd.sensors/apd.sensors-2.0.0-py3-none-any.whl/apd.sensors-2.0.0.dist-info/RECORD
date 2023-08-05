@@ -1,0 +1,16 @@
+apd/sensors/__init__.py,sha256=SMeR41ZrJZJX6btTKipN1k9oXH88PjvC9pENOaGCLNg,19
+apd/sensors/base.py,sha256=5kXEsO1NQFCbH-HgQyUNVIpynV3B5J_JAvh-stnOmmc,1638
+apd/sensors/cli.py,sha256=vutL-4fXs0cGHX2SZHyxfUbIe_E9fa6v9S5kQ3cXJSA,2089
+apd/sensors/sensors.py,sha256=RZxFVW--dkt3PX4zbyhk_S433M80D2xtRZDcuEx2aPE,6109
+apd/sensors/third_party_wsgi.py,sha256=w5MbhPQ7BCCBfchNKMSLGRe_Nl21ay4hst3fnmW_mVk,2391
+apd/sensors/wsgi/__init__.py,sha256=TcifFRllVhIokpea0vKB2ts7pGeWsOSsCb0nncCRWb4,274
+apd/sensors/wsgi/base.py,sha256=OApHgjBnV2DG57Bvsej3gVnmyo06HyUB5MWWCbHZQBQ,1342
+apd/sensors/wsgi/serve.py,sha256=74cYbjrG8-oULAjX7OXkmeLY-SZv4CEYTrRjTx3DOyk,252
+apd/sensors/wsgi/v10.py,sha256=rfsb1VuUlWMLDwmJnivqpk3ZMnJZQJlXRu46GO1sPAo,697
+apd/sensors/wsgi/v20.py,sha256=a4iOOa6QNpWKKh84gbkScRjf14D45VNffVVC0O0F2-4,982
+apd.sensors-2.0.0.dist-info/LICENCE,sha256=lzVVcjMxpC8mfWNgu5Yo2LinWiGXrolzLIXmMgS0Dk0,1077
+apd.sensors-2.0.0.dist-info/METADATA,sha256=rwuivsNLL6XzWXGOpiQPLNL9-o3haDkWsd__2vmdy24,4233
+apd.sensors-2.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+apd.sensors-2.0.0.dist-info/entry_points.txt,sha256=LeThG9_m35mmZA6ZPiuvzHImN8htIa_kpX9GyGkfgg8,405
+apd.sensors-2.0.0.dist-info/top_level.txt,sha256=gOmxYqb1tjWfzMT5-Aiv1QRAkJmvvsCUYeVQxwGBX7I,4
+apd.sensors-2.0.0.dist-info/RECORD,,

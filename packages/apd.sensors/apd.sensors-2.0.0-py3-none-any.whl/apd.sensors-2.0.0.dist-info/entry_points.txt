@@ -1,0 +1,12 @@
+[apd.sensors.sensors]
+ACStatus = apd.sensors.sensors:ACStatus
+CPULoad = apd.sensors.sensors:CPULoad
+IPAddresses = apd.sensors.sensors:IPAddresses
+PythonVersion = apd.sensors.sensors:PythonVersion
+RAMAvailable = apd.sensors.sensors:RAMAvailable
+RelativeHumidity = apd.sensors.sensors:RelativeHumidity
+Temperature = apd.sensors.sensors:Temperature
+
+[console_scripts]
+sensors = apd.sensors.cli:show_sensors
+
