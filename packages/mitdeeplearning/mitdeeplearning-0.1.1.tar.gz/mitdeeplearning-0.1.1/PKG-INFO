@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: mitdeeplearning
+Version: 0.1.1
+Summary: Official software labs for MIT Introduction to Deep Learning (http://introtodeeplearning.com)
+Home-page: http://introtodeeplearning.com
+Author: Alexander Amini
+Author-email: introtodeeplearning-staff@mit.edu
+License: MIT
+Download-URL: https://github.com/aamini/introtodeeplearning/archive/v0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: deep learning,neural networks,tensorflow,introduction
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
