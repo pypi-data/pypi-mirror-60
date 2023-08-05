@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+ez_setup.py
+setup.py
+figlib/__init__.py
+figlib/api.py
+figlib/config_class.py
+figlib/json_cfg.py
+figlib/version.py
+figlib.egg-info/PKG-INFO
+figlib.egg-info/SOURCES.txt
+figlib.egg-info/dependency_links.txt
+figlib.egg-info/top_level.txt
