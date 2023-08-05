@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pollock
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/drtexx/pollock
+License: UNKNOWN
+Description: # Pollock
+        
+        Commands and usages
+        
+        ```bash
+        pollock --help
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
