@@ -1,0 +1,11 @@
+pep440cmp/__init__.py,sha256=JwYKkEUUyNNtBYUyLg1DXKG4400Oaje8YqxOJ2Usda4,3821
+pep440cmp/commands/__init__.py,sha256=44fuE6xogEP4WavMTown9Y-jGf9CNRZRXPHS8zC8Frg,1692
+pep440cmp/commands/is_prerelease.py,sha256=ZxgXcfGOO5HE19OL8La4bJLQsKykVnj0MLGuTvl4jNo,1841
+pep440cmp/commands/pep440cmp.py,sha256=pcQPsG90680TFU79ZAa5XEqF1p07bjo2xWQTI_srhVw,3703
+pep440_version_compare_cli-1.0.0.dist-info/LICENSE,sha256=baVmyxNgCisX2lMzbkDvJxX9Sy1Z33_LR1OnTccxrAM,1088
+pep440_version_compare_cli-1.0.0.dist-info/METADATA,sha256=UmqkwzYc-i4M5Cf5wMiKW5iqFkdqLATC4rlfFoWBvyE,1693
+pep440_version_compare_cli-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pep440_version_compare_cli-1.0.0.dist-info/entry_points.txt,sha256=SaIBOrewrczr-ioUjMws8GyG31-z2cHVMX2slmCxJqA,45
+pep440_version_compare_cli-1.0.0.dist-info/top_level.txt,sha256=5ZfiKcYBBP4Nn071ElBW9u_YIbbRqNTASs0t60fffyM,10
+pep440_version_compare_cli-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pep440_version_compare_cli-1.0.0.dist-info/RECORD,,
