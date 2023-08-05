@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: extractCMRRPhysio
+Version: 1.2.20200018
+Summary: extractCMRRPhysio.m(https://github.com/CMRR-C2P/MB/blob/master/extractCMRRPhysio.m) in Python
+Home-page: https://github.com/yinglilu/extractCMRRPhysio_github_actions
+Author: YingLi Lu
+Author-email: yinglilu@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pytest
+Requires-Dist: pydicom
+
+# CMRR-MB in Python
+rewrite Matlab's extractCMRRPhysio.m(https://github.com/CMRR-C2P/MB/blob/master/extractCMRRPhysio.m) in Python',
+
+install:  
+```bash
+pip install git+https://github.com/yinglilu/extractCMRRPhysio.git#egg=extractCMRRPhysio
+```
+or   
+```bash
+pip install extractCMRRPhysio
+```
+
+usage: 
+
+```bash
+extractCMRRPhysio /path/to/dicom_file /output_path
+```
+
+
