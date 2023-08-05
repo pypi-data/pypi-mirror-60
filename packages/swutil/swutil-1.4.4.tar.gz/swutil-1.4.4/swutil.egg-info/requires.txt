@@ -1,0 +1,7 @@
+numpy
+matplotlib
+tikzplotlib
+memory_profiler
+pathos
+dill
+PyPDF2
