@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pipgui
+Version: 1.1
+Summary: This package is GUI based tool for installing pip packages in your environment.
+Home-page: https://github.com/GDGVIT/pip-gui
+Author: Ayush Priya
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: PyQt5
+Requires-Dist: beautifulsoup4
+
+UNKNOWN
+
+
