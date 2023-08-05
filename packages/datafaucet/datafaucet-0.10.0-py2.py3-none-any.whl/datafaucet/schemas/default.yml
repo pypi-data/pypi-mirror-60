@@ -1,0 +1,34 @@
+%YAML 1.2
+---
+profile: default
+
+variables: {}
+
+engine:
+    type: spark
+    master: local[*]
+    timezone: null
+    detect: true
+    repositories: []
+    jars: []
+    packages: []
+    files: []
+    conf: {}
+        
+providers: {}
+resources: {}
+
+logging:
+    level: info
+    stdout: true
+    file:  null
+    kafka: null
+
+---
+profile: prod
+---
+profile: stage
+---
+profile: test
+---
+profile: dev
