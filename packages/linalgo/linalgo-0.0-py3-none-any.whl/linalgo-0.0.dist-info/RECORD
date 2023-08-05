@@ -1,0 +1,12 @@
+linalgo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linalgo/annotate.py,sha256=TJYZoX816T7gh-FzQcnjKdWObYFpXlbY0FXGn3t2sFI,7410
+linalgo/client.py,sha256=sPxEMeV584UDwred8LU3TrZ_prPz-R8tmi61FXJZm48,7609
+linalgo/scheduler.py,sha256=OP_ShqvB-RmO-yYGjTsXkZJnl687YXcxPQg-yBEzMqo,3421
+linalgo/test_annotate.py,sha256=atsr2vCy_97j6TzpxyPJU9O5ok0sj1uiLJQqk9G-BCc,136
+linalgo/utils.py,sha256=eNhTMWz4lO4SDKfAOKmLx9brzdPEsOzzeC0E8h-Gtws,3350
+linalgo/xtram.py,sha256=Py89VnmU1f90p-_cHwZugTW7ThEbvYqDyjduKi_7hcM,4950
+linalgo-0.0.dist-info/LICENSE,sha256=bk1LiXZb9fwM1R_muTwgKjIi3qz9s_d02tdByGjy7WQ,1097
+linalgo-0.0.dist-info/METADATA,sha256=yde9hQ-7VP15E_g3HAss4_-pvRZHKr9Uy35g2k8A_Gw,364
+linalgo-0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+linalgo-0.0.dist-info/top_level.txt,sha256=1w7JaYyI1quPw3tU88xVUdnO2kN9GuM_yOT6Cyee7hU,8
+linalgo-0.0.dist-info/RECORD,,
