@@ -1,0 +1,15 @@
+django_setty-3.2.0.dist-info/METADATA,sha256=Xa7Zdm9RNpMiBWsnE7XFGnAw9W7JYdvOec3lxzFVSBE,4058
+django_setty-3.2.0.dist-info/RECORD,,
+django_setty-3.2.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_setty-3.2.0.dist-info/top_level.txt,sha256=wTeMl7pqfxmM02ijH0IPciCO2jL9dBxJ3BFCq5DJmjI,6
+setty/__init__.py,sha256=X6CSGuJbRDQlv2jBSZ_3gZZ1egElpk8oYrkjzDa4rP4,198
+setty/admin.py,sha256=XDMhe5u-HfchQCvbAmbJCTgc1BB4sfAE31N3zqM0vIA,2684
+setty/apps.py,sha256=OJkfW9dxCr4DanbWjZ0PLj0o1M7SOnT9xbM2FE_hNYU,126
+setty/backend.py,sha256=YVlofhkpOtQYePr_cbs_myfV_B_aod336rBAn66N1kA,2307
+setty/context_processors.py,sha256=EAEBQc-6Vm2930Rgz2s9CJ_EWfReydnwaFnoiiG3STY,280
+setty/exceptions.py,sha256=5LZuak4eWVH0C659zJ_7xaKTsP5ZPTJjgRh8qtN5lDQ,107
+setty/models.py,sha256=16ln-ibYkIdbVZKn6tRzjDDkO9rOqRZb8yz8Z5sqOSg,1313
+setty/wrapper.py,sha256=XD6X1tuaSKul5e9WxGOwWahvOpiwmGTOr2GTrm8-fyA,886
+setty/migrations/0001_initial.py,sha256=Gc_gvUbM7JN03JkM_-yHY8g3epNdTAU0erwAscZXgEM,999
+setty/migrations/0002_settysettings_app_name.py,sha256=mS9vn3HoMiTlrk-esfYOmZBXirQiBfpJy1Jr1PMWjzA,805
+setty/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
