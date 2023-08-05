@@ -1,0 +1,7 @@
+collectd/__init__.py,sha256=xcqH2bH4Zm3KB4w9IpUQ6An0tZCF4ylQ0jSzPCpPgSM,146
+collectd/dispatcher.py,sha256=hLiGlekGg2BStzwss64Q1LkH9lhTSqEQ8V23jF1OHIY,1134
+collectd/registry.py,sha256=IrOXAr4to_38_S_sIkxHPUMSScoHULqLlXugbrS5gmA,180
+python_collectd_mock-0.0.3.dist-info/METADATA,sha256=aGa6Q-CdSBed8oHJD77fVpQaK51E70dLt2ABZ0sMjKg,341
+python_collectd_mock-0.0.3.dist-info/RECORD,,
+python_collectd_mock-0.0.3.dist-info/WHEEL,sha256=9xUnOISuCvrSyfu9GlFZT4i2TZ_2OLkwLNqcDvIo3zM,92
+python_collectd_mock-0.0.3.dist-info/top_level.txt,sha256=KLsauyRt89uwjn6kDkgXopj_FUJcalU8C0CzbZVkPj4,9
