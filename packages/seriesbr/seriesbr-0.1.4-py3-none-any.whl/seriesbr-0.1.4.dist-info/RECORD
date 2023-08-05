@@ -1,0 +1,11 @@
+seriesbr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seriesbr/bcb.py,sha256=5kKdGs6zKm4-4L9WUW9JkLmDrys7Y2_R7AyqOBkugxU,4636
+seriesbr/ibge.py,sha256=fjR6o_4Kz5Qvp4eAv3QZujsAN4lPij0PIEIRRKG3Oi8,15427
+seriesbr/ipea.py,sha256=wJ676iBNlQBij-FqSy-myHA724Ru0UiekQzHOL-iY7c,6284
+seriesbr/seriesbr.py,sha256=Zw-B2GtjgZdzdwqYGReMtuI2O9rySzqe1pmZSxQ_rBU,1835
+seriesbr-0.1.4.dist-info/DESCRIPTION.rst,sha256=ahKswfZFnyoDH28qjVmXWZ4K-doU2zdgTPeKAH-oI08,429
+seriesbr-0.1.4.dist-info/METADATA,sha256=gNMxHGt7aOQz07tDkqZBB-QoABp8TBOoL-hN394NrwQ,1012
+seriesbr-0.1.4.dist-info/RECORD,,
+seriesbr-0.1.4.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+seriesbr-0.1.4.dist-info/metadata.json,sha256=IFgOd3iTN9fIBVlbuWeMWJL3aF2bcCvdxs40JA_BhIc,776
+seriesbr-0.1.4.dist-info/top_level.txt,sha256=Z7TSW1CYxovQ3pwomPRYsxjbKSfEjL5QYZfOoG-r8Yo,9
