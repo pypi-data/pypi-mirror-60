@@ -1,0 +1,7 @@
+# Include the README.
+include README.md
+
+# Include dependency files.
+include requirements.txt
+include requirements-dev.txt
+include requirements-test.txt
