@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: nada-dataprofilering
+Version: 1.0.5
+Summary: Nada dataprofilering
+Home-page: UNKNOWN
+Author: NAV IKT
+License: MIT
+Project-URL: Bug Tracker, https://github.com/navikt
+Project-URL: Documentation, https://github.com/navikt
+Project-URL: Source Code, https://github.com/navikt
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Requires-Dist: plotly
+Requires-Dist: cx-Oracle
+Requires-Dist: dataverk-vault
+Requires-Dist: urllib3
+Requires-Dist: pandas
+
+UNKNOWN
+
+
