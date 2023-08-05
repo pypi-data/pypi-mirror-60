@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+oxdc_scidb.egg-info/PKG-INFO
+oxdc_scidb.egg-info/SOURCES.txt
+oxdc_scidb.egg-info/dependency_links.txt
+oxdc_scidb.egg-info/requires.txt
+oxdc_scidb.egg-info/top_level.txt
+scidb/__init__.py
