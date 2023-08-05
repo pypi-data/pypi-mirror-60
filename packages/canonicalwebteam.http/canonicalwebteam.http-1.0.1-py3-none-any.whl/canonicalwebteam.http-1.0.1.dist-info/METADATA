@@ -1,0 +1,42 @@
+Metadata-Version: 2.0
+Name: canonicalwebteam.http
+Version: 1.0.1
+Summary: For making HTTP requests with helpful defaults for Canonical's webteam.
+Home-page: https://github.com/canonical-webteam/http
+Author: Canonical webteam
+Author-email: webteam@canonical.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: CacheControl (>=0.12.5)
+Requires-Dist: HTTPretty (>=0.9.6)
+Requires-Dist: freezegun (>=0.3.11)
+Requires-Dist: lockfile (>=0.12.2)
+Requires-Dist: mockredispy (>=2.9.3)
+Requires-Dist: redis (>=3.0.1)
+Requires-Dist: requests (>=2.21.0)
+
+canonicalwebteam.http
+=====================
+
+A Python library for making HTTP requests with sensible defaults
+
+.. image:: https://github.com/canonical-web-and-design/canonicalwebteam.http/workflows/Tests/badge.svg
+   :alt: Tests status
+   :target: https://github.com/canonical-web-and-design/canonicalwebteam.http/actions?query=workflow%3ATests
+
+Installation
+------------
+
+This module is in PyPi as :code:`canonicalwebteam.http`. You should be able to install it simply with:
+
+.. code:: bash
+
+    pip install canonicalwebteam.http
+
+
+Tests
+-----
+
+Tests are located in the `tests` directory and can be run with `python -m unittest discover tests/`.
+
+
