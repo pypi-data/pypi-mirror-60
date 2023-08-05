@@ -1,0 +1,4 @@
+requests<3
+
+[:python_version == "3.6"]
+dataclasses==0.7
