@@ -1,0 +1,15 @@
+aegis_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aegis_model/main/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aegis_model/main/run.py,sha256=P9Zm3wGPrVjxLA8jAX5eU47iZqogTgRLw-ZTUhIArpQ,443
+aegis_model/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aegis_model/model/preprocessor.py,sha256=AUEgekT-AQJbpRRsjnDkNR2Tm-5jr3gP0TsYOZJ9q6g,2805
+aegis_model/model/winrate_model.py,sha256=KJMQ9QjXvDlUc8qvlBncVxpMjKuW7YSyzdwQX4dKMdo,5745
+aegis_model/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aegis_model/util/ansi_code.py,sha256=1Ch2LkUOSNShaQjBtANLz-g4Z-zSh4AKq81AAuWI7uA,545
+aegis_model/util/aux_functions.py,sha256=BXoAZVKNu7PnvoXucJhpveJUQVBAoUYsCaSJyUOXoY4,1679
+aegis_model/util/config.py,sha256=r4YzwCfMyu4ejubJ6tYVsbNUBWngmCRLSHgunRuyrVE,1187
+aegis_model-0.1.dist-info/LICENSE,sha256=gKDhMQ3YUFAjmzchT9YKipRsS-VOdPEn9KGyqZEknb4,1064
+aegis_model-0.1.dist-info/METADATA,sha256=3JvNPRsXU9SzUtQljtyOQdEr84OWArPXyvqktYphIcg,381
+aegis_model-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+aegis_model-0.1.dist-info/top_level.txt,sha256=ZkbKBFlxX_Crg1-Wa4XxOMU1i7Lb6klSc9lq5cTGTzU,12
+aegis_model-0.1.dist-info/RECORD,,

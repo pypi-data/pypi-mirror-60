@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: aegis-model
+Version: 0.1
+Summary: Modeling agent for project Aegis
+Home-page: UNKNOWN
+Author: Moliang
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: pytest-cov
+Requires-Dist: coverage
+Requires-Dist: pandas
+Requires-Dist: dask
+Requires-Dist: keras
+Requires-Dist: tensorflow
+Requires-Dist: aegis-data
+
+UNKNOWN
+
+
