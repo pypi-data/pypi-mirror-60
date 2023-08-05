@@ -1,0 +1,3 @@
+[console_scripts]
+Topsis_401703010 = topsis.cli:main
+
