@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: atomicgraphs
+Version: 0.1.4
+Summary: This is a library to split an RDF Graph into atomic graphs.
+Home-page: UNKNOWN
+Author: Simaris
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: 
+        AtomicGraphs
+        ------------
+        This is a python library to split an RDF Graph into atomic graphs.
+        
+        With this library using atomic graphs we want to make RDF Graphs containing
+        blanknodes comparable.
+        This package implements a colouring algorithm.
+        
+Platform: UNKNOWN
