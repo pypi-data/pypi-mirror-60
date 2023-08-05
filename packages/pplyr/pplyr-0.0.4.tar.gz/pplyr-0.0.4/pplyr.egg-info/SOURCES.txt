@@ -1,0 +1,15 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+pplyr/__init__.py
+pplyr/_nbdev.py
+pplyr/core.py
+pplyr.egg-info/PKG-INFO
+pplyr.egg-info/SOURCES.txt
+pplyr.egg-info/dependency_links.txt
+pplyr.egg-info/entry_points.txt
+pplyr.egg-info/not-zip-safe
+pplyr.egg-info/top_level.txt
