@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+FalseColor/Color.py
+FalseColor/DataQueue.py
+FalseColor/FCdataobject.py
+FalseColor/Process.py
+FalseColor/SaveThread.py
+FalseColor/__init__.py
+FalseColor.egg-info/PKG-INFO
+FalseColor.egg-info/SOURCES.txt
+FalseColor.egg-info/dependency_links.txt
+FalseColor.egg-info/requires.txt
+FalseColor.egg-info/top_level.txt
