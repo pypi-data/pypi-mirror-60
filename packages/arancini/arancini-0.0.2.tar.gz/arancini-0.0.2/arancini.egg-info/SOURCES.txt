@@ -1,0 +1,6 @@
+README.md
+setup.py
+arancini.egg-info/PKG-INFO
+arancini.egg-info/SOURCES.txt
+arancini.egg-info/dependency_links.txt
+arancini.egg-info/top_level.txt
