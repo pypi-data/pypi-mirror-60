@@ -1,0 +1,3 @@
+[console_scripts]
+slims-lisp = test_python_200123.cli:main
+
