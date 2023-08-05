@@ -1,0 +1,14 @@
+# Top-level dependencies for `tox -e check`
+autoflake
+black
+flake8
+flake8-bandit
+flake8-bugbear
+flake8-builtins
+flake8-comprehensions
+flake8-docstrings
+flake8-print
+isort
+mypy
+pep8-naming
+pyupgrade
