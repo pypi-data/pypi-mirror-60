@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pdftoimg
+Version: 0.0.1
+Summary: Easily convert PDF to Image from command line
+Home-page: https://github.com/starkblaze01/Pdf-To-Image
+Author: starkblaze01
+Author-email: mp.pathela@gmail.com
+License: UNKNOWN
+Description: # [Pdf-To-Image](https://github.com/starkblaze01/Pdf-To-Image)
+        Simple Command Line tool to convert PDF to Image.
+        This package is still in the beta-version.
+        
+        # For Using the package
+        - Run `pdftoimg -h`
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
