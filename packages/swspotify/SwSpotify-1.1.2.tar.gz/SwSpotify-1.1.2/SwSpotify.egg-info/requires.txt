@@ -1,0 +1,14 @@
+flask==1.1.1
+requests==2.22.0
+flask-cors==3.0.8
+
+[:platform_system == "Darwin"]
+pyobjc
+
+[:platform_system == "Windows"]
+pywin32
+
+[dev]
+mock
+pytest
+pytest-cov
