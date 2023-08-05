@@ -1,0 +1,15 @@
+structure_id,ligand_id,num_heavy_atoms,num_hbd,num_unpaired_hbd,num_hba,num_unpaired_hba,num_hal,num_unpaired_hal,num_aromatic_rings,num_rotatable_bonds,molweight,logp,interaction,sidechain,protisdon,protispos,protcharged,dist,dist_h-a,dist_d-a,don_angle,centdist,angle,offset,acc_angle,rms,coordination,complexnum,restype,restype_lig,donortype,acceptortype,lig_group,type,metal_type,target_type,location,geometry
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,lig_properties,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,hydrophobic_interaction,None,None,None,None,3.45,None,None,None,None,None,None,None,None,None,None,PHE,VWW,None,None,None,None,None,None,None,None
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,hydrophobic_interaction,None,None,None,None,3.68,None,None,None,None,None,None,None,None,None,None,PHE,VWW,None,None,None,None,None,None,None,None
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,hydrophobic_interaction,None,None,None,None,3.8,None,None,None,None,None,None,None,None,None,None,VAL,VWW,None,None,None,None,None,None,None,None
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,hydrogen_bond,True,True,None,None,None,2.14,3.02,148.13,None,None,None,None,None,None,None,TRP,VWW,Nar,O.co2,None,None,None,None,None,None
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,hydrogen_bond,True,True,None,None,None,3.43,3.77,102.76,None,None,None,None,None,None,None,GLN,VWW,Nam,O2,None,None,None,None,None,None
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,hydrogen_bond,True,True,None,None,None,2.07,3.04,164.83,None,None,None,None,None,None,None,LEU,VWW,Nam,O2,None,None,None,None,None,None
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,hydrogen_bond,True,True,None,None,None,1.88,2.71,141.03,None,None,None,None,None,None,None,LEU,VWW,Nam,O2,None,None,None,None,None,None
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,hydrogen_bond,True,True,None,None,None,3.52,3.98,110.8,None,None,None,None,None,None,None,GLN,VWW,Nam,N3,None,None,None,None,None,None
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,hydrogen_bond,True,True,None,None,None,1.79,2.7,147.33,None,None,None,None,None,None,None,GLN,VWW,N3,O2,None,None,None,None,None,None
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,hydrogen_bond,True,True,None,None,None,3.66,3.98,101.96,None,None,None,None,None,None,None,GLN,VWW,Nam,O.co2,None,None,None,None,None,None
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,hydrogen_bond,True,True,None,None,None,1.92,2.87,159.79,None,None,None,None,None,None,None,SER,VWW,Nam,O.co2,None,None,None,None,None,None
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,salt_bridge,None,None,True,None,4.42,None,None,None,None,None,None,None,None,None,None,ARG,VWW,None,None,Carboxylate,None,None,None,None,None
+10gs,A.VWW.210,473.54198,3.0209,33,6,1,9,1,0,0,2,15,salt_bridge,None,None,True,None,3.6,None,None,None,None,None,None,None,None,None,None,LYS,VWW,None,None,Carboxylate,None,None,None,None,None

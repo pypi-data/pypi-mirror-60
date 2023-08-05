@@ -1,0 +1,2 @@
+include docs/*.html
+include plip2ml/tests/data/*
