@@ -1,0 +1,8 @@
+numpy
+
+[dev]
+numpy
+
+[integration]
+pytest
+pytest-flask
