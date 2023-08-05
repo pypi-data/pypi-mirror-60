@@ -1,0 +1,380 @@
+dramaTTS, Copyright (C) 2020 Thies Hecker
+
+dramaTTS is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Notes:
+------
+
+Although "dramaTTS" runs as a standalone application, it is of limited use without the "Festival Speech Synthesis
+System" (herein referred to as "Festival") - with its command line tools "festival", "festival_client" and "text2wave" -
+and "Sound eXchange (SoX)" - with its command line tools "sox" and "play" - being installed (both applications are
+herein also referred to as "external components").
+These external components provide the audio rendering & post-processing functionality - without them "dramaTTS" only
+provides script parsing including syntax highlighting, etc.
+
+While the "Festival" application itself and "SoX" are released under free software licenses as well (see details below),
+specific components, which are commonly bundled with "Festival" (i.e. certain lexicons and voices) may be released
+under non-free licenses.
+
+For instance the "festlex-OALD" lexicon, which can be found among other files (incl. the source code of the latest
+"Festival" release) on the Festvox 2.5 release page is restricted to non-commercial use only.
+
+In order to create a "free" "Festival" distribution the documentation of "dramaTTS" provides a list of components for
+"Festival", which could form such a "free" distribution (see "dramaTTS" README - "Installing Festival without non-free
+components").
+
+Note, that this selection was created on best knowledge with the intention to provide "free" environment for "dramaTTS",
+without any violation of the licenses of the individual software components used. In order to assure, that the external
+components are suitable for your intended application make sure to check their licenses yourself.
+
+The copyright disclaimers/licenses of the selected components are given below.
+
+
+Copyright disclaimers/licenses of selected components
+-----------------------------------------------------
+
+Below the licenses of linked 3rd party libraries used in "dramaTTS" as well as the external tools and its components
+to create a fully functional "dramaTTS" environment are given. The number in parenthesis gives the version number
+of the component from which the copyright disclaimers/license information was taken.
+
+Used Libraries belonging to the python standard library are not listed individually - see the following chapter
+"Python (3.8.1)" with regards to libraries belonging to the python standard library.
+
+Python (3.8.1)
+~~~~~~~~~~~~~~
+
+Copyright © 2001-2020 Python Software Foundation; All Rights Reserved
+
+1. This LICENSE AGREEMENT is between the Python Software Foundation ("PSF"), and
+   the Individual or Organization ("Licensee") accessing and otherwise using Python
+   3.8.1 software in source or binary form and its associated documentation.
+
+2. Subject to the terms and conditions of this License Agreement, PSF hereby
+   grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce,
+   analyze, test, perform and/or display publicly, prepare derivative works,
+   distribute, and otherwise use Python 3.8.1 alone or in any derivative
+   version, provided, however, that PSF's License Agreement and PSF's notice of
+   copyright, i.e., "Copyright © 2001-2020 Python Software Foundation; All Rights
+   Reserved" are retained in Python 3.8.1 alone or in any derivative version
+   prepared by Licensee.
+
+3. In the event Licensee prepares a derivative work that is based on or
+   incorporates Python 3.8.1 or any part thereof, and wants to make the
+   derivative work available to others as provided herein, then Licensee hereby
+   agrees to include in any such work a brief summary of the changes made to Python
+   3.8.1.
+
+4. PSF is making Python 3.8.1 available to Licensee on an "AS IS" basis.
+   PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED.  BY WAY OF
+   EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND DISCLAIMS ANY REPRESENTATION OR
+   WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE
+   USE OF PYTHON 3.8.1 WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.
+
+5. PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON 3.8.1
+   FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF
+   MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON 3.8.1, OR ANY DERIVATIVE
+   THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.
+
+6. This License Agreement will automatically terminate upon a material breach of
+   its terms and conditions.
+
+7. Nothing in this License Agreement shall be deemed to create any relationship
+   of agency, partnership, or joint venture between PSF and Licensee.  This License
+   Agreement does not grant permission to use PSF trademarks or trade name in a
+   trademark sense to endorse or promote products or services of Licensee, or any
+   third party.
+
+8. By copying, installing or otherwise using Python 3.8.1, Licensee agrees
+   to be bound by the terms and conditions of this License Agreement.
+
+
+PyQt5 (5.14.2)
+~~~~~~~~~~~~~~
+
+PyQt5 is copyright (c) Riverbank Computing Limited.  Its homepage is
+https://www.riverbankcomputing.com/software/pyqt/.
+
+PyQt5 is released under the GPL v3 license and under a commercial license that
+allows for the development of proprietary applications.
+
+
+setuptools_scm (3.4.2)
+~~~~~~~~~~~~~~~~~~~~~~
+
+copyright (c) Ronny Pfannschmidt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+Festival Speech Synthesis System (2.5)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The system as a whole and most of the files in it are distributed
+under the following copyright and conditions
+
+                The Festival Speech Synthesis System
+                Centre for Speech Technology Research
+                     University of Edinburgh, UK
+                      Copyright (c) 1996-2017
+                        All Rights Reserved.
+
+  Permission is hereby granted, free of charge, to use and distribute
+  this software and its documentation without restriction, including
+  without limitation the rights to use, copy, modify, merge, publish,
+  distribute, sublicense, and/or sell copies of this work, and to
+  permit persons to whom this work is furnished to do so, subject to
+  the following conditions:
+   1. The code must retain the above copyright notice, this list of
+      conditions and the following disclaimer.
+   2. Any modifications must be clearly marked as such.
+   3. Original authors' names are not deleted.
+   4. The authors' names are not used to endorse or promote products
+      derived from this software without specific prior written
+      permission.
+
+  THE UNIVERSITY OF EDINBURGH AND THE CONTRIBUTORS TO THIS WORK
+  DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING
+  ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT
+  SHALL THE UNIVERSITY OF EDINBURGH NOR THE CONTRIBUTORS BE LIABLE
+  FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+  AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+  ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+  THIS SOFTWARE.
+
+Some further comments:
+
+Every effort has been made to ensure that Festival does not contain
+any violation of intellectual property rights through disclosure of
+trade secrets, copyright or patent violation.  Considerable time and
+effort has been spent to ensure that this is the case.  However,
+especially with patent problems, it is not always within our control
+to know what has or has not been restricted.  If you do suspect that
+some part of Festival cannot be legally distributed please inform us
+so that an alternative may be sought.  Festival is only useful if it
+is truly free to distribute.
+
+As of 1.4.0 the core distribution (and speech tools) is free.  Unlike
+previous versions which had a commercial restriction.  You are free to
+incorporate Festival in commercial (and of course non-commercial
+systems), without any further communication or licence from us.
+However if you are seriously using Festival within a commercial
+application we would like to know, both so we know we are contributing
+and so we can keep you informed of future developments.  Also if you
+require maintenance, support or wish us to provide consultancy feel
+free to contact us.
+
+The voices however aren't all free.  At present the US voices, kal and
+ked are free. Our British voices are free themselves but they use OALD
+which is restricted for non-commercial use.  Our Spanish voice is also
+so restricted.
+
+Note other modules that festival supports e.g MBROLA and OGI
+extensions, may have different licencing please take care when using
+the system to understand what you are actually using.
+
+--------------------------------------------------
+
+A number of individual files in the system fall under a different
+copyright from the above.  All however are termed "free software"
+but most people.
+
+./src/arch/festival/tcl.c
+ * Copyright (C)1997 Jacques H. de Villiers <jacques@cse.ogi.edu>
+ * Copyright (C)1997 Center for Spoken Language Understanding,
+ *                   Oregon Graduate Institute of Science & Technology
+ See conditions in file.  This is the standard TCL licence and hence
+ shouldn't cause problems from most people.
+
+./examples/festival_client.pl
+# Copyright (C) 1997
+# Kevin A. Lenzo (lenzo@cs.cmu.edu) 7/97
+ See condition in file
+
+./src/modules/clunits/*
+./lib/*clunits*
+ Joint copyright University of Edinburgh and Carnegie Mellon University
+ Conditions remain as free software like the rest of distribution
+
+./src/modules/clustergen/*
+ Copyright Carnegie Mellon University
+ Nagoya Insitute of Technology (derived code from HTS)
+ HTS_vocoder_me.c HTS_vocoder_me.h
+   contains additions from Aby Louw
+   Copyright (c) 2012 The Department of Arts and Culture,
+   The Government of the Republic of South Africa.
+   under a free software licence compatible with the other
+   free software copyrights in this work
+
+./src/modules/hts_engine/*
+./lib/hts.scm
+ The HMM-based speech synthesis system (HTS)
+ hts_engine API version 1.07 (http://hts-engine.sourceforge.net/)
+ Copyright (C) 2001-2012  Nagoya Institute of Technology
+               2001-2008  Tokyo Institute of Technology
+ All rights reserved.
+ distributed under the Modified BSD licence.
+
+./lib/festival.el
+;;;               Copyright (C) Alan W Black 1996
+copyright under FSF General Public Licence
+
+Please also read the COPYING section of speech_tools/README for the
+conditions on those files.
+
+
+Edinburgh Speech Tools (2.5)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+            Edinburgh Speech Tools Library version 2.5
+              Centre for Speech Technology Research
+                   University of Edinburgh, UK
+                    Copyright (c) 1994-2017
+                      All Rights Reserved.
+
+Permission is hereby granted, free of charge, to use and distribute
+this software and its documentation without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of this work, and to
+permit persons to whom this work is furnished to do so, subject to
+the following conditions:
+ 1. The code must retain the above copyright notice, this list of
+    conditions and the following disclaimer.
+ 2. Any modifications must be clearly marked as such.
+ 3. Original authors' names are not deleted.
+ 4. The authors' names are not used to endorse or promote products
+    derived from this software without specific prior written
+    permission.
+
+THE UNIVERSITY OF EDINBURGH AND THE CONTRIBUTORS TO THIS WORK
+DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING
+ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT
+SHALL THE UNIVERSITY OF EDINBURGH NOR THE CONTRIBUTORS BE LIABLE
+FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+THIS SOFTWARE.
+
+
+festlex_CMU (? as provided on http://festvox.org/packed/festival/2.5/festlex_CMU.tar.gz, 2020-01-22)
+----------------------------------------------------------------------------------------------------
+
+This directory contains an American English Lexicon and letter to
+sournd rules based on CMUDICT 0.4.  This distribution falls under
+the following copyright.  CMUDICT falls under a simialr free licence
+that has no commercial restrictions.
+
+                Centre for Speech Technology Research
+                     University of Edinburgh, UK
+                       Copyright (c) 1996,1997
+                        All Rights Reserved.
+
+  Permission is hereby granted, free of charge, to use and distribute
+  this software and its documentation without restriction, including
+  without limitation the rights to use, copy, modify, merge, publish,
+  distribute, sublicense, and/or sell copies of this work, and to
+  permit persons to whom this work is furnished to do so, subject to
+  the following conditions:
+   1. The code must retain the above copyright notice, this list of
+      conditions and the following disclaimer.
+   2. Any modifications must be clearly marked as such.
+   3. Original authors' names are not deleted.
+   4. The authors' names are not used to endorse or promote products
+      derived from this software without specific prior written
+      permission.
+
+  THE UNIVERSITY OF EDINBURGH AND THE CONTRIBUTORS TO THIS WORK
+  DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING
+  ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT
+  SHALL THE UNIVERSITY OF EDINBURGH NOR THE CONTRIBUTORS BE LIABLE
+  FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+  AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+  ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+  THIS SOFTWARE.
+
+
+festlex_POSLEX (? as provided on http://festvox.org/packed/festival/2.5/festlex_POSLEX.tar.gz, 2020-01-22)
+----------------------------------------------------------------------------------------------------------
+
+This directory contains a lexicon (wsj.wp39.poslexR) and an ngram
+(wsj.wp39.tri.ngrambin) for English part of speech tagging.
+Information in these files were derived from the Penn Tree Bank
+diustributed by the LDC, in tur derived from data from the Wall
+Street Journal.  These models fall under the following copyright
+without conflict from the material the models were trained from
+
+                Centre for Speech Technology Research
+                     University of Edinburgh, UK
+                       Copyright (c) 1996,1997
+                        All Rights Reserved.
+
+  Permission is hereby granted, free of charge, to use and distribute
+  this software and its documentation without restriction, including
+  without limitation the rights to use, copy, modify, merge, publish,
+  distribute, sublicense, and/or sell copies of this work, and to
+  permit persons to whom this work is furnished to do so, subject to
+  the following conditions:
+   1. The code must retain the above copyright notice, this list of
+      conditions and the following disclaimer.
+   2. Any modifications must be clearly marked as such.
+   3. Original authors' names are not deleted.
+   4. The authors' names are not used to endorse or promote products
+      derived from this software without specific prior written
+      permission.
+
+  THE UNIVERSITY OF EDINBURGH AND THE CONTRIBUTORS TO THIS WORK
+  DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING
+  ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT
+  SHALL THE UNIVERSITY OF EDINBURGH NOR THE CONTRIBUTORS BE LIABLE
+  FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+  AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+  ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+  THIS SOFTWARE.
+
+
+Sound eXchange - SoX (14.4.2)
+-----------------------------
+
+Copyright (c) 1998-2013 Chris Bagwell and SoX Contributors,
+Copyright (c) 1991 Lance Norskog and Sundry Contributors.
+
+SoX source code is distributed under two main licenses. The two
+licenses are in the files LICENSE.GPL and LICENSE.LGPL.
+
+sox.c, and thus SoX-the user application, is distributed under the
+GPL, while the files that make up libsox are licensed under the less
+restrictive LGPL.
+
+Note that some of the external packages that can be linked into libsox
+are GPLed and/or may have licensing problems, so they can be disabled
+at configure time with the relevant--with-* options. If libsox is built
+with such libraries, it must be distributed under the GPL.
