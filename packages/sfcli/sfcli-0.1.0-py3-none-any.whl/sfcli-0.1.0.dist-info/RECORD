@@ -1,0 +1,14 @@
+sfcli-0.1.0.dist-info/METADATA,sha256=kneOq31-C3Gjp_baT5ZvOI2dP7DNC1kYud2Ryw3B2CE,888
+sfcli-0.1.0.dist-info/RECORD,,
+sfcli-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+sfcli-0.1.0.dist-info/entry_points.txt,sha256=CRYSCUsXzItPdQQHQQdvZ2vfJwiMV9Tw77lsif4CGK4,94
+sfcli-0.1.0.dist-info/top_level.txt,sha256=wWIyTjCg-fGhEjOvcdurcjtSh-sAi8Sy4iEdDAIkIAU,5
+tech/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/serviceframework/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/serviceframework/version.py,sha256=gUC9joFgsQUdO_Okq-dibFUR_xAD7ly425FVsF6H844,44
+tech/mlsql/serviceframework/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/serviceframework/scripts/process_info.py,sha256=rme_vOrWR9yJlZXTduzTfh6YP4THA47QlsGyS3aIlQU,249
+tech/mlsql/serviceframework/scripts/processutils.py,sha256=iTK53XKP1Qdz6Pq1YLpKoYrcqouiLuKHzdICevVf5qU,3708
+tech/mlsql/serviceframework/scripts/scripts.py,sha256=jPgx6EvSGk7XMTirzWdxsFAOaIvBp6Yds3OpqAb56Ls,5426
+tech/mlsql/serviceframework/scripts/shellutils.py,sha256=alGYteXnJk4BuK4TchlBI048IiLWzD96SpaCyMwkjMw,3485
