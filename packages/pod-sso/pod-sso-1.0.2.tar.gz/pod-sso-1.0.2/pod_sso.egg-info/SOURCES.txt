@@ -1,0 +1,13 @@
+README.md
+setup.py
+pod_sso.egg-info/PKG-INFO
+pod_sso.egg-info/SOURCES.txt
+pod_sso.egg-info/dependency_links.txt
+pod_sso.egg-info/requires.txt
+pod_sso.egg-info/top_level.txt
+sso/__init__.py
+sso/exceptions.py
+sso/json_schema.json
+sso/services.json
+sso/sso.py
+sso/version.py
