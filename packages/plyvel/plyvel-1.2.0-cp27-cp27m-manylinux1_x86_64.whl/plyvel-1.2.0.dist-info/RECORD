@@ -1,0 +1,9 @@
+plyvel-1.2.0.dist-info/top_level.txt,sha256=C6Ih_NMIyfUFXCY5FTNXqQvAXhGl2uyszVQ8INZNDis,7
+plyvel-1.2.0.dist-info/WHEEL,sha256=CKrsQRZNKddeqWkqlP4DoIBo-Lb-ExiV2oTN8bWPh84,109
+plyvel-1.2.0.dist-info/METADATA,sha256=l1sJT7TTIAhyhiAKpDqjCov7udsy4CBH2vpRKl8_qPo,1683
+plyvel-1.2.0.dist-info/RECORD,,
+plyvel/_version.py,sha256=z12RCo8pwz2DUA2Cbrkf-4N5jjJj359aFwWDP-z6qJg,190
+plyvel/__init__.py,sha256=NkKZfruyDYTFC87h0vpCJiJh-aNeXROXzSWZF9qSa3c,339
+plyvel/_plyvel.so,sha256=qvNiLK8CQmOSYrcJvjydPmyQBKnaPZ8Qj0WHvIfkT4I,1143608
+plyvel/.libs/libsnappy-4642352f.so.1.1.8,sha256=UGpT2f0uIb932NZKK8P5YlI7_83S9mXxVwrN18vRcaw,162024
+plyvel/.libs/libleveldb-541abd29.so.1.22.0,sha256=MeNTi-1OfwepzyTLPwFzzw25BwD8S7yMNr_yL6O0A8U,517256
