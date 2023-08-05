@@ -1,0 +1,2 @@
+entrezpy>=2.0.0
+taxonompy==1.0.0
