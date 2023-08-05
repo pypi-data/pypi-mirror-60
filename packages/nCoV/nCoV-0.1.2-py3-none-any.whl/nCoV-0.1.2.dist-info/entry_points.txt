@@ -1,0 +1,3 @@
+[console_scripts]
+nCoV = Report.__main__:main
+
