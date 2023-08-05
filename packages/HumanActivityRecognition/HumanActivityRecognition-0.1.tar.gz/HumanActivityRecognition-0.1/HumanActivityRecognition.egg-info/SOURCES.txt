@@ -1,0 +1,6 @@
+setup.py
+HumanActivityRecognition/__init__.py
+HumanActivityRecognition.egg-info/PKG-INFO
+HumanActivityRecognition.egg-info/SOURCES.txt
+HumanActivityRecognition.egg-info/dependency_links.txt
+HumanActivityRecognition.egg-info/top_level.txt
