@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: better-goompy
+Version: 1
+Summary: Better Google Maps for Python
+Home-page: UNKNOWN
+Author: Abhishek Upmanyu and Alec Singer and Simon D. Levy
+Author-email: upmanyu.abhishek@yahoo.in
+License: LGPL
+Platform: Linux; Windows; OS X
+Requires-Dist: Pillow
+
+UNKNOWN
+
+
