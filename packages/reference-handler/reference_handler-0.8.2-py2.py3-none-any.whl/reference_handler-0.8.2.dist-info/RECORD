@@ -1,0 +1,16 @@
+reference_handler/__init__.py,sha256=ltsGMmBdjk7HMHY9C8P3afX-zRAqHMJ98BuyZCdkfMU,472
+reference_handler/_version.py,sha256=P2nLL5lJBu4CFavbafKC6ygnosAy1C163crptSAmehU,497
+reference_handler/latex_utf8.py,sha256=k_5Z1fF6YwUCDm6r1qDOZsT4ekYLSrwa4vV876zbJiE,9137
+reference_handler/reference_handler.py,sha256=IR_tqtRp8JTywPa1KyQop5bJGtiZ4H8fnzcfR7KVe6E,16287
+reference_handler/utils.py,sha256=Vru_R1BLztJCKHRmJ9ZaoqwshuiYpByeLbBkgNjWTXk,1043
+reference_handler/tests/__init__.py,sha256=ZX-GsU_biDrWDtWU3yqfe6vglfrHUpxONpiwFFIIyAY,112
+reference_handler/tests/build_filenames.py,sha256=3uYJfCL5mJbUz9IVngJ8E9aErBH0cXZg1CUBQv5R5Sw,513
+reference_handler/tests/test_exceptions.py,sha256=CCTTXHM4jsSF3JeGjubPcU5cgCE-Jl8UeUBY7xPN2n8,6273
+reference_handler/tests/test_latex.py,sha256=nLVfPL3A8aZIMpfj3x7rdVMqJDkRFUz3L_e9RDl8yJk,13142
+reference_handler/tests/test_reference_handler.py,sha256=tLCZBDx-roi4hpSrQX9UIZZFnxKDTH7fy6q3zexa074,12813
+reference_handler/tests/data/library.bib,sha256=5dnA3YIfCXvkKibPXPr2544SfrG3G3Q5iGjFnFTUmeY,1757
+reference_handler-0.8.2.dist-info/LICENSE,sha256=zU5cb_D5t1oJONqEhfxhjpwQpSeCi22aoR0S7M-G8NA,1452
+reference_handler-0.8.2.dist-info/METADATA,sha256=a5_fPzFGlUjRS-uivHOGYnFKoQW4ZSNPcdk0IbAOhBQ,5263
+reference_handler-0.8.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+reference_handler-0.8.2.dist-info/top_level.txt,sha256=BeZNgmWaQrwQJr26XNQcS8slei58xAI0qonQM1SjvtY,18
+reference_handler-0.8.2.dist-info/RECORD,,
