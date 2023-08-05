@@ -1,0 +1,7 @@
+MANIFEST.in
+setup.py
+stbt/audio.py
+stbt_premium_stubs.egg-info/PKG-INFO
+stbt_premium_stubs.egg-info/SOURCES.txt
+stbt_premium_stubs.egg-info/dependency_links.txt
+stbt_premium_stubs.egg-info/top_level.txt
