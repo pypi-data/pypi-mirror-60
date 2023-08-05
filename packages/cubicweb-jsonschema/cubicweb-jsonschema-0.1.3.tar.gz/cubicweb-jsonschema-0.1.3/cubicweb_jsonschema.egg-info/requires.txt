@@ -1,0 +1,5 @@
+cubicweb[pyramid]>=3.24.1
+jsl
+jsonschema
+pyramid>=1.10.0
+six>=1.4.0
