@@ -1,0 +1,14 @@
+README.md
+setup.py
+spacy_data_debug/__init__.py
+spacy_data_debug/_nbdev.py
+spacy_data_debug/core.py
+spacy_data_debug/pipeline.py
+spacy_data_debug/util.py
+spacy_data_debug.egg-info/PKG-INFO
+spacy_data_debug.egg-info/SOURCES.txt
+spacy_data_debug.egg-info/dependency_links.txt
+spacy_data_debug.egg-info/entry_points.txt
+spacy_data_debug.egg-info/not-zip-safe
+spacy_data_debug.egg-info/requires.txt
+spacy_data_debug.egg-info/top_level.txt
