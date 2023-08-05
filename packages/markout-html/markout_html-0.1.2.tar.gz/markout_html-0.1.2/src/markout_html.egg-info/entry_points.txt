@@ -1,0 +1,3 @@
+[console_scripts]
+markout_html = markout_html:main
+
