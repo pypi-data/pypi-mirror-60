@@ -1,0 +1,11 @@
+pydace/__init__.py,sha256=rUGDdgkeNdjtz_Gi4acfbyDUvzBeSFtGQrs7kDGcO1M,16955
+pydace/correlation/__init__.py,sha256=mKSfgrtbNSMOjUJofyDvlEy45sUzj_BtS39GCSY1Wmo,2484
+pydace/regression/__init__.py,sha256=JC0lulpgpS7jokJmEXRvOTOn3USgG2cQTagY4TbLjmY,3253
+pydace/utils/__init__.py,sha256=5iukH4zhW_JUHWPVhmdu6NN-vkWWKo8aHegF9yohC8s,3358
+pydace/utils/matrixdivide.py,sha256=gxwFY35FCTIp8AgQwC16BHxm6jUWxPayFGGpendfv-s,1951
+pydace/utils/optimizers/__init__.py,sha256=nxISBrqAnrRdnrkx2ht1PABPrQmIpp2-oCykjTaQmIU,5926
+pydace-0.1.3.dist-info/LICENSE,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+pydace-0.1.3.dist-info/METADATA,sha256=EEtSUCBmCrZAq15DwVyXvbt2wlE2RK9iFjbsEu5w0ow,4217
+pydace-0.1.3.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pydace-0.1.3.dist-info/top_level.txt,sha256=lV4_4tEQXJsxMWHf8YPdUfniTAIwGG7HnJCsKQMHd4w,7
+pydace-0.1.3.dist-info/RECORD,,
