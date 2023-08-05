@@ -1,0 +1,16 @@
+dist: trusty
+
+language: python
+python:
+  - "3.6"
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install ghostscript pdftk texlive-extra-utils poppler-utils
+
+install:
+  - pip install six
+  - pip install -e .[dev]
+
+script:
+  - green -vv -a ./tests
