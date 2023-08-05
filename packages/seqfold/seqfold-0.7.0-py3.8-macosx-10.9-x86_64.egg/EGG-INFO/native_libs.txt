@@ -1,0 +1,7 @@
+seqfold/__init__.cpython-38-darwin.so
+seqfold/dna.cpython-38-darwin.so
+seqfold/fold.cpython-38-darwin.so
+seqfold/main.cpython-38-darwin.so
+seqfold/rna.cpython-38-darwin.so
+seqfold/tm.cpython-38-darwin.so
+seqfold/types.cpython-38-darwin.so
