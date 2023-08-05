@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+aur_upd/__init__.py
+aur_upd/aur_updater.py
+aur_upd/console.py
+aur_upd.egg-info/PKG-INFO
+aur_upd.egg-info/SOURCES.txt
+aur_upd.egg-info/dependency_links.txt
+aur_upd.egg-info/top_level.txt
+aur_upd/bin/aur_update

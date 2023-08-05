@@ -1,0 +1,147 @@
+#!/usr/bin/env python
+import os
+import argparse
+import sys
+import urllib
+
+import requests
+import json
+
+from aur_upd import aur_updater
+
+try:
+    import getch
+    def getpass(prompt):
+        """Replacement for getpass.getpass() which prints asterisks for each character typed"""
+        print(prompt, end='', flush=True)
+        buf = ''
+        while True:
+            ch = getch.getch()
+            if ch == '\n':
+                print('')
+                break
+            else:
+                buf += ch
+                print('*', end='', flush=True)
+        return buf
+except ImportError:
+    from getpass import getpass
+
+
+def aur_list():
+    list = aur.get_aur_packages()
+    for l in list:
+        print(l)
+
+def all():
+    print('uapde all------')
+
+
+def inst_package(name):
+
+    os.system('rm -rf ./' + name)
+
+    if (aur.clone_package(name)) == 0:
+        if aur.build_package(name) == 0:
+            aur.install_package(name, sudoPassword)
+            print(name + ' is updated')
+        else:
+            print(f'{name} building error')
+            return
+    else:
+        print(f'{name} missed in AUR')
+        return
+
+def install(name):
+
+    r = json.loads(requests.get('https://aur.archlinux.org/rpc/?v=5&type=search&arg=' + urllib.parse.quote(name)).text)
+
+    if r['resultcount'] > 1:
+        cnt =1
+        for pac in r['results']:
+            print('[{}] {}'.format(cnt, pac['Name']))
+            cnt += 1
+
+        try:
+            pacNum = int(input("Enter package number: "))
+        except:
+            print("Bad index")
+            return
+
+        if pacNum < 1 or pacNum > r['resultcount']:
+            print("Bad index")
+            return
+
+        print(r['results'][pacNum-1]['Name'])
+
+        inst_package(r['results'][pacNum-1]['Name'])
+        exit(0)
+
+    else:
+        if r['resultcount'] == 0:
+            print('Nothing found')
+        else:
+            print(r['results'][0]['Name'])
+
+if __name__ == '__main__':
+
+    home = os.path.expanduser("~") + '/.cache/aurupd'
+    if not os.path.isdir(home):
+        os.mkdir(home)
+
+    os.chdir(home)
+
+    # sudoPassword = str(input("Enter sudo password:"))
+    sudoPassword = str(getpass("Enter sudo password: "))
+
+    mangle_args = ('install', 'all', 'list')
+    arguments = ['--' + arg if arg in mangle_args else arg for arg in sys.argv[1:]]
+
+    parser = argparse.ArgumentParser(description='Yet another AUR helper with a silent install/update capability')
+
+    # parser.add_argument('--all', dest='funcs',   action='append_const', const=all, help="Full system update include AUR packages")
+    parser.add_argument('--list', dest='funcs',   action='append_const', const=aur_list, help="List installed AUR packages")
+    parser.add_argument('--install', dest='intall_package_name',   action='store', type=str)
+    parser.add_argument('--build-log', action='store_true', dest='show_build_log', default='False')
+
+    args = parser.parse_args(arguments)
+
+    aur = aur_updater.aur_updater(args.show_build_log)
+
+    if args.intall_package_name:
+        print("INSTALL {}".format(args.intall_package_name))
+        install(args.intall_package_name)
+        exit(0)
+    else:
+        if args.funcs:
+            if all in args.funcs:
+                all()
+                exit(0)
+            if aur_list in args.funcs:
+                aur_list()
+                exit(0)
+        print("NO INSTALL - UPDATE")
+
+    list = aur.get_aur_packages()
+
+    for l in list:
+        if l == '':
+            continue
+        name = l.split(' ')[0]
+        ver = l.split(' ')[1]
+
+        v = aur.get_package_current_version(name)
+
+        if v != ver and not (v is None):
+            if (aur.clone_package(name)) == 0:
+                if aur.build_package(name) == 0:
+                    aur.install_package(name, sudoPassword)
+                    print('[+] ' + name + ' is updated')
+                else:
+                    print('[X] '+name+' building error')
+                    continue
+        else:
+            if v is None:
+                print('[-] ' + name + ' missed in AUR')
+            else:
+                print('[ ] ' + name + ' is current')
