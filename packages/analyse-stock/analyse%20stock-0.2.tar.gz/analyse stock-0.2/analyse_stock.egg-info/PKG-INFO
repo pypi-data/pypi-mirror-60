@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: analyse-stock
+Version: 0.2
+Summary: analyse stock
+Home-page: UNKNOWN
+Author: pengsir
+Author-email: qq@qq.com
+Maintainer: pengsir
+Maintainer-email: qq@qq.com
+License: BSD License
+Description: analyse - a powerful staock data analysis and manipulation library for Python
+        =================================================================================
+        
+        **analyse** is a Python package providing fast, flexible, and expressive data
+        structures designed to analyse stock both in hongkong,us,china market,it has
+        the broader goal of becoming **the most powerful and flexible open source data
+        analysis / manipulation tool in analyzing stock**. It is already well on
+        its way toward this goal.
+        
+        Main Features
+        -------------
+        Here are just a few of the things that analyse does well:
+        
+          -get raw data from tdx 
+          -calculate pe,pe_ttm
+          -calculate growth
+          -calculate current vix
+        
+Platform: all
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
