@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: curlipie
+Version: 0.1.0
+Summary: 
+Author: Nguyễn Hồng Quân
+Author-email: ng.hong.quan@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: CaseInsensitiveDict (>=1.0.0,<2.0.0)
+Requires-Dist: first (>=2.0.2,<3.0.0)
+Requires-Dist: hh (>=2.0.0,<3.0.0)
+Requires-Dist: multidict (>=4.7.4,<5.0.0)
+Requires-Dist: orjson (>=2.2.0,<3.0.0)
+Requires-Dist: typed-argument-parser (>=1.4,<2.0)
+Requires-Dist: yarl (>=1.4.2,<2.0.0)
