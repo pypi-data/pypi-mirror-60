@@ -1,0 +1,9 @@
+click
+beautifulsoup4
+lxml
+mecab-python3
+neo4j
+neobolt
+reppy
+requests
+chardet
