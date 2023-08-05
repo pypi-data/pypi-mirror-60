@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dtcontrol
+Version: 1.0.0rc3
+Summary: A small tool which can convert automatically synthesised formally verified controllers into concise decision trees.
+Home-page: https://gitlab.lrz.de/i7/dtcontrol
+Author: Mathias Jackermeier
+Author-email: mathias.jackermeier@outlook.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
