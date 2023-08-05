@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pypyrus-logbook
+Version: 0.3.0
+Summary: Module for extended logging in Python.
+Home-page: https://github.com/t3eHawk/logbook
+Author: Timur Faradzhov
+Author-email: timurfaradzhov@gmail.com
+License: MIT
+Description: # logbook
+        ## Getting Started
+        ### Requirements
+        Operation systems: Windows, Linux, Mac OS.
+        
+        Python version: 3.7.1.
+        
+        ### Installation
+        Use pip to install the module:
+        ```
+        pip install pypyrus_logbook
+        ```
+        
+        ### How to Use
+        To start just call the logger:
+        ```
+        import pypyrus_logbook as logbook
+        
+        
+        logger = logbook.logger()
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
