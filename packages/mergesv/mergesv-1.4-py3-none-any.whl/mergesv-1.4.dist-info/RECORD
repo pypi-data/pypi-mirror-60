@@ -1,0 +1,10 @@
+mergesv/__init__.py,sha256=jRxBCOuqOw9CL4unPnyNkbRe9JSr2QRtaMKHsTVlnrU,14
+mergesv/merge.py,sha256=tVpsnfCZsxkOXSwmIPY90ZR2v4Qlumd8SJT_UER63VQ,10482
+mergesv/mergesv.py,sha256=cox-0YjRtaYYu9SrXr0aVBRrcMaRHJyMYwCfYrtbNDM,9598
+mergesv-1.4.data/scripts/merge.py,sha256=tVpsnfCZsxkOXSwmIPY90ZR2v4Qlumd8SJT_UER63VQ,10482
+mergesv-1.4.data/scripts/mergesv,sha256=o75yk_I483FS93FVevGVhwHm83rZCIY-aHWfpIhda60,77
+mergesv-1.4.dist-info/LICENSE,sha256=oQV1OwHS5BA71-0KlYFFdI6ue51OJ4_2TtXf9NnMkB4,1067
+mergesv-1.4.dist-info/METADATA,sha256=UNp8R3VX9GfRjxpdKxpF3FdirqLhQGDeMo6w7a-T19E,344
+mergesv-1.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mergesv-1.4.dist-info/top_level.txt,sha256=ywphx48vjn_PjU4_4w_YBkZP_vvmeIvLHDLO5Dce9Ek,8
+mergesv-1.4.dist-info/RECORD,,
