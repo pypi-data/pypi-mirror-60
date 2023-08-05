@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: django-autosequence
+Version: 0.7.0
+Summary: A Django model field providing a configurable automatic sequence of values.
+Home-page: https://github.com/cordery/django-autosequence
+License: MIT
+Keywords: Django
+Author: Andrew Cordery
+Author-email: cordery@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: django (>=2,<4)
+Project-URL: Repository, https://github.com/cordery/django-autosequence
