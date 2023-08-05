@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: st2-auth-backend-flat-file
+Version: 0.1.0
+Summary: StackStorm authentication backend which reads credentials from a htpasswd compatible file on disk.
+Home-page: https://github.com/StackStorm/st2-auth-backend-flat-file
+Author: StackStorm, Inc.
+Author-email: info@stackstorm.com
+License: Apache License (2.0)
+Download-URL: https://github.com/StackStorm/st2-auth-backend-flat-file/tarball/master
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Provides: st2auth_flat_file_backend
+Requires-Dist: passlib (<1.8.0,>=1.7.1)
+
+UNKNOWN
+
+
