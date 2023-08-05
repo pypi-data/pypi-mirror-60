@@ -1,0 +1,197 @@
+# Python CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+version: 2.1
+
+workflows:
+  version: 2
+  # This will run on every commit, but not on tags.
+  test_build:
+    jobs:
+      - test_python36
+      - test_python37
+      - test_python38
+      - build:
+          requires:
+            - test_python36
+            - test_python37
+            - test_python38
+  # This will run only on tagged commits due to the filters.
+  test_build_release:
+    jobs:
+      - test_python36:
+          filters:
+            tags:
+              only: /[0-9]+(\.[0-9]+)*(\.0(a|b|rc)[0-9]*)?/
+            branches:
+              ignore: /.*/
+      - test_python37:
+          filters:
+            tags:
+              only: /[0-9]+(\.[0-9]+)*(\.0(a|b|rc)[0-9]*)?/
+            branches:
+              ignore: /.*/
+      - test_python38:
+          filters:
+            tags:
+              only: /[0-9]+(\.[0-9]+)*(\.0(a|b|rc)[0-9]*)?/
+            branches:
+              ignore: /.*/
+      - build:
+          filters:
+            tags:
+              only: /[0-9]+(\.[0-9]+)*(\.0(a|b|rc)[0-9]*)?/
+            branches:
+              ignore: /.*/
+          requires:
+            - test_python36
+            - test_python37
+            - test_python38
+      - hold:
+          filters:
+            tags:
+              only: /[0-9]+(\.[0-9]+)*(\.0(a|b|rc)[0-9]*)?/
+            branches:
+              ignore: /.*/
+          type: approval
+          requires:
+            - build
+      - release:
+          filters:
+            tags:
+              only: /[0-9]+(\.[0-9]+)*(\.0(a|b|rc)[0-9]*)?/
+            branches:
+              ignore: /.*/
+          requires:
+            - hold
+
+jobs:
+  test_python36:
+    docker:
+      - image: circleci/python:3.6
+      - image: circleci/postgres:12
+        environment:
+          POSTGRES_USER: opsy
+          POSTGRES_DB: opsy
+    working_directory: ~/repo
+    steps:
+      - common_setup:
+          python_version: "3.6"
+      - run_tests
+  test_python37:
+    docker:
+      - image: circleci/python:3.7
+      - image: circleci/postgres:12
+        environment:
+          POSTGRES_USER: opsy
+          POSTGRES_DB: opsy
+    working_directory: ~/repo
+    steps:
+      - common_setup:
+          python_version: "3.7"
+      - run_tests
+  test_python38:
+    docker:
+      - image: circleci/python:3.8
+      - image: circleci/postgres:12
+        environment:
+          POSTGRES_USER: opsy
+          POSTGRES_DB: opsy
+    working_directory: ~/repo
+    steps:
+      - common_setup:
+          python_version: "3.8"
+      - run_tests
+  build:
+    docker:
+      - image: circleci/python:3.6
+    working_directory: ~/repo
+    steps:
+      - build
+  release:
+    docker:
+      - image: circleci/python:3.6
+    working_directory: ~/repo
+    steps:
+      - release
+
+commands:
+  common_setup:
+    description: Common steps for all jobs
+    parameters:
+      python_version:
+          type: string
+          default: ""
+    steps:
+      - checkout
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-<< parameters.python_version >>-{{ checksum "requirements.txt" }}-{{ checksum "test-requirements.txt" }}
+      - run:
+          name: install dependencies
+          command: |
+            virtualenv ~/venv
+            . ~/venv/bin/activate
+            pip install tox
+            tox --notest
+            echo "source ~/venv/bin/activate" >> $BASH_ENV
+      - save_cache:
+          paths:
+            - ~/repo/.tox
+          key: v1-dependencies-<< parameters.python_version >>-{{ checksum "requirements.txt" }}-{{ checksum "test-requirements.txt" }}
+  run_tests:
+    description: Run tests
+    steps:
+      - run:
+          name: Run tests
+          command: make test
+  build:
+    description: Build the python package and docker image
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: install dependencies
+          command: |
+            virtualenv ~/venv
+            . ~/venv/bin/activate
+            pip install --upgrade pip setuptools wheel pbr twine
+            echo "source ~/venv/bin/activate" >> $BASH_ENV
+      - run:
+          name: build
+          command: make build
+      - run:
+          name: Stop if we're not releasing
+          command: |
+            if [ -z "$CIRCLE_TAG" ]; then
+                echo "No tag, stopping build early."
+                circleci-agent step halt
+            fi
+      - run:
+          name: Save docker image to workspace
+          command: docker save objectrocket/opsy:${CIRCLE_TAG} | gzip > dist/Opsy-${CIRCLE_TAG}-docker.tar.gz
+      - persist_to_workspace:
+          root: dist
+          paths: '*'
+  release:
+    description: Release to pypi and dockerhub
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/repo/dist
+      - setup_remote_docker
+      - run:
+          name: install dependencies
+          command: |
+            virtualenv ~/venv
+            . ~/venv/bin/activate
+            pip install twine
+            echo "source ~/venv/bin/activate" >> $BASH_ENV
+      - run:
+          name: Load docker image from workspace
+          command: cat dist/Opsy-${CIRCLE_TAG}-docker.tar.gz | gzip -d | docker image load
+      - run:
+          name: Push release
+          command: make release
