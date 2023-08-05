@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+tf2-initializer
+actuation/__init__.py
+actuation/train.py
+models/__init__.py
+models/network.py
+preprocess/__init__.py
+preprocess/process.py
+tf2_initializer.egg-info/PKG-INFO
+tf2_initializer.egg-info/SOURCES.txt
+tf2_initializer.egg-info/dependency_links.txt
+tf2_initializer.egg-info/requires.txt
+tf2_initializer.egg-info/top_level.txt
