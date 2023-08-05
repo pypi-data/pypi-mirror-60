@@ -1,0 +1,3 @@
+[console_scripts]
+gpxslicer = gpxslicer.__main__:main
+
