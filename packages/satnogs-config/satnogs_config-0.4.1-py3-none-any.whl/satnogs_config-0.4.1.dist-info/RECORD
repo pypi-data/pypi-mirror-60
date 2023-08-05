@@ -1,0 +1,17 @@
+satnogsconfig/__init__.py,sha256=OdLyQhuVofBfXdxz4ca9PD7gU_Gkj7rCpxtslL7D9Gg,570
+satnogsconfig/__main__.py,sha256=dE9r-aRPbeQ13mR0SiVdwF6Fq3spA678fDo7o69NoDY,140
+satnogsconfig/_version.py,sha256=CWe7naOj_UJGjFU2R_YyRXxRX8GTbk59r8knzMm0aw4,497
+satnogsconfig/config.py,sha256=7gWEh_Mgqpsfm4kytsdzXg3vaqjXouab1fsfFHLrN9U,2488
+satnogsconfig/menu.py,sha256=2fpkGygAKbvuL05cb9CHel1JJh1MXyZMfOYH6HEYDlM,11949
+satnogsconfig/menu.yml,sha256=AkI9WO5fC4CjFjqxWCiSab3H5y9VIeSEgb6tnAT9tw8,18692
+satnogsconfig/settings.py,sha256=KOtWjx0ANa9Mf0GHkKUTaOhvhpn6dERzbijbUJdWiv8,923
+satnogsconfig/helpers/__init__.py,sha256=wgKDZKghCGpVRCo4WeIZZMOuvbMQutrdeGaTGxEtZac,191
+satnogsconfig/helpers/ansible.py,sha256=mTWGwDVqdqlGPzQYWyhy52lRjisjyEQtAm-dob2q4K4,1119
+satnogsconfig/helpers/grsatnogs.py,sha256=ILaiyxJwP0yH_4_SrVbG19cV4i693fQbqOJd9g8Inr0,362
+satnogsconfig/helpers/satnogssetup.py,sha256=jCmy9aC_xY0T4sO3_qHKu3G2bJT-wv_F_Ym5SIHAivw,4999
+satnogs_config-0.4.1.dist-info/LICENSE,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+satnogs_config-0.4.1.dist-info/METADATA,sha256=yBsZiIUxpnU-4I9AoAKIWi8_jP3tZiU5xbIwZ-KcZkY,785
+satnogs_config-0.4.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+satnogs_config-0.4.1.dist-info/entry_points.txt,sha256=N04YpcchQtUCIJ-lWx5BXmhMAydO16zU9ixx_NRnUdc,55
+satnogs_config-0.4.1.dist-info/top_level.txt,sha256=4wh55z8_A-LIm8MVKIfqB_-qKrquHUlQ6Mck1cD8VwY,14
+satnogs_config-0.4.1.dist-info/RECORD,,
