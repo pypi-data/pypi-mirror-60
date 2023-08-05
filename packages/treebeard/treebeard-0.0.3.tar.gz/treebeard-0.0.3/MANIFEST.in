@@ -1,0 +1,2 @@
+include treebeard/treebeard
+recursive-include treebeard/deploy *

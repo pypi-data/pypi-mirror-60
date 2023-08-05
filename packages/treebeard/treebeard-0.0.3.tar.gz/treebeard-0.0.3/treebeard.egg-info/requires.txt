@@ -1,0 +1,7 @@
+click
+google-cloud-storage
+google-cloud-scheduler
+halo
+flask
+papermill
+gunicorn
