@@ -1,0 +1,16 @@
+pylibssh/__init__.py,sha256=2cC4PbIEiNTUy7KV5hjgL9z5jcr7sTUPL-XvvI9-b7s,59
+pylibssh/channel.c,sha256=N0GJqYwRFirbpcQyQuCrqpVVCj2H8cT46JuNsW59Ie8,266339
+pylibssh/channel.cpython-37m-darwin.so,sha256=HzKdXjqQup_j0aMPvJx1zmdoTuPfxe9qiU7hdC42TqY,65464
+pylibssh/errors.c,sha256=eUzxDOPP5evw1H1OYv9S4ek_YLr3Emc45HcMezMpu4A,301047
+pylibssh/errors.cpython-37m-darwin.so,sha256=ZGpUxtH-vVFwW68JMlLoP4fmIoWpawZzE-f6bgD1hwo,81864
+pylibssh/session.c,sha256=XLmetDB3l9BJbjMM0cBmBPJs5lGs9ckcJDIdNt8Hv-E,388971
+pylibssh/session.cpython-37m-darwin.so,sha256=QY4ULfHJWmpg75q9P6OpukbbqM7bqL6BxxsUPR6Dcno,103120
+pylibssh/sftp.c,sha256=HaO76M8sb6I3-zXvk7iswtL8M-hSd91sSNntkReR5xk,196504
+pylibssh/sftp.cpython-37m-darwin.so,sha256=KrBLE1gNN2w6YdvLYO_fTDhnichsKsGFAyozAWcMJ2w,46384
+pylibssh/includes/__init__.py,sha256=5jcrZJRC-voVURQ7In2GbEm8wF0rebAGFBZAcI5pVH8,72
+ansible_pylibssh-0.0.1.dev1.dist-info/LICENSE.rst,sha256=F2L65_fxzsHWZ516PlM-StkX0plVkyycc_FhHnJjAK0,26411
+ansible_pylibssh-0.0.1.dev1.dist-info/METADATA,sha256=VGJWMC8Pd8rh2G4XZPIStvawf6L7qumdBct_5sZC1tQ,3163
+ansible_pylibssh-0.0.1.dev1.dist-info/WHEEL,sha256=PJpvlWYoaC6URR0LWg8CW_GxFlQ7xrZNRTDuqcfncbQ,110
+ansible_pylibssh-0.0.1.dev1.dist-info/top_level.txt,sha256=C3N7JfuNVTpgag7mK9cghtMakLvaoxej_KimooluPiU,9
+ansible_pylibssh-0.0.1.dev1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ansible_pylibssh-0.0.1.dev1.dist-info/RECORD,,
