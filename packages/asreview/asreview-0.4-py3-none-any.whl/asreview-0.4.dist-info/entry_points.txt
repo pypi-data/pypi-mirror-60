@@ -1,0 +1,4 @@
+[console_scripts]
+asr = asreview.__main__:main_depr
+asreview = asreview.__main__:main
+
