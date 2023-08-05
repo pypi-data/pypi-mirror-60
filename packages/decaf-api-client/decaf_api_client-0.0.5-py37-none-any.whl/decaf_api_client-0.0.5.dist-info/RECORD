@@ -1,0 +1,9 @@
+decaf/api/client/__init__.py,sha256=k15UkU3nEyutXkd3enPZNrcnmjreRUKQxnCCe-o0suU,82
+decaf/api/client/entities.py,sha256=DxRBm6o-ADpbN9zDQJ524yTeqPINtFEAy9aDbIYJN04,4107
+decaf/api/client/machinery.py,sha256=e9blt-RowzbWkXLl9_UEmfC_iXp9HieylV0p_sBMYvE,12536
+decaf/api/client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+decaf_api_client-0.0.5.dist-info/LICENSE,sha256=b2btaTpyHQOvsSrZ2u0erUOeMNK7fxaQ1U8mvkcoKyc,1475
+decaf_api_client-0.0.5.dist-info/METADATA,sha256=20bCCKJJ9rtmv3EzZi4bZaqLMBL2Xguum-HYXRMcqZA,1092
+decaf_api_client-0.0.5.dist-info/WHEEL,sha256=aIgNDTW9mhs4UMp-3du8M5dCKgNcU5l4dXjvzczUd6w,93
+decaf_api_client-0.0.5.dist-info/top_level.txt,sha256=jBvLsYzSXodl4Brh1J9a99Rp7xluwM7Nelyml6gzdXU,6
+decaf_api_client-0.0.5.dist-info/RECORD,,
