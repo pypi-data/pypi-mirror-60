@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: parfis
+Version: 0.0.3
+Summary: Particles and field simulator
+Home-page: https://github.com/GinkoBalboa/parfis
+Author: Ginko Balboa
+Author-email: ginkobalboa3@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: C++
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# parfis
+
+

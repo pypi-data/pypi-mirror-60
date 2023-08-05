@@ -1,0 +1,10 @@
+parfis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parfis/setup.py,sha256=TYiVgSCPvyozjWcFvZ3vsqsolwIXL8G80SsB9Q3zrQg,1092
+parfis/helloworld/__init__.py,sha256=CU_MiyVqdwkp3veagGl2sJIM7C536eq4LDrtCfqsafg,46
+parfis/helloworld/cmodule.cp38-win_amd64.pyd,sha256=qTg5xXC5wGHgS8DQ0KjhipuXRbWKPTkXGMG1jcGubao,10240
+parfis/helloworld/dummy.py,sha256=Gu_WcYoEXEGolVSr8iNa0eNZL7B8c2Kmo_Dwyr7F0bI,144
+parfis-0.0.3.dist-info/LICENSE,sha256=t6l87w4W6ieni7M9--0ImbQqValm6JT31pkcTBPfjrg,1090
+parfis-0.0.3.dist-info/METADATA,sha256=wgayN4dQBL0IdCMKDCS32MzVf7-JrW5NrLVALrjGZJY,646
+parfis-0.0.3.dist-info/WHEEL,sha256=Sn3OaP2cNh8pSqSvLt3QMqYfMxm9dIJ9Ff9aZF3cllA,105
+parfis-0.0.3.dist-info/top_level.txt,sha256=3aNPaBLElvsovZNo8mIag0up4xhgGXEWYIHQpq2GJXA,7
+parfis-0.0.3.dist-info/RECORD,,
