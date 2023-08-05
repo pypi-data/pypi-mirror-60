@@ -1,0 +1,220 @@
+{
+  "addWithdrawRulePlan": {
+    "type": "object",
+    "properties": {
+      "subscriptionDays": {
+        "type": "integer",
+        "title": "تعداد روز اشتراک"
+      },
+      "maxAmount": {
+        "type": "integer",
+        "title": "سقف مبلغ قابل برداشت به ریال"
+      },
+      "maxCount": {
+        "type": "integer",
+        "title": "حداکثر تعداد دفعات برداشت"
+      },
+      "typeCode": {
+        "type": "string",
+        "title": "نوع مجوز",
+        "enum": [
+          "WITHDRAW_RULE_TYPE_SUBSCRIPTION",
+          "WITHDRAW_RULE_TYPE_SUBSCRIPTION_AMOUNT",
+          "WITHDRAW_RULE_TYPE_SUBSCRIPTION_AMOUNT_COUNT",
+          "WITHDRAW_RULE_TYPE_AMOUNT_COUNT",
+          "WITHDRAW_RULE_TYPE_AMOUNT"
+        ]
+      },
+      "sc_voucher_hash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "sc_api_key": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "subscriptionDays",
+      "maxAmount",
+      "maxCount",
+      "typeCode"
+    ]
+  },
+  "withdrawRulePlanList": {
+    "type": "object",
+    "properties": {
+      "offset": {
+        "type": "integer",
+        "title": "اندیس شروع"
+      },
+      "size": {
+        "type": "integer",
+        "title": "اندازه خروجی"
+      },
+      "businessId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار"
+      },
+      "id": {
+        "type": "integer",
+        "title": "شناسه طرح"
+      },
+      "typeCode": {
+        "type": "string",
+        "title": "نوع مجوز",
+        "enum": [
+          "WITHDRAW_RULE_TYPE_SUBSCRIPTION",
+          "WITHDRAW_RULE_TYPE_SUBSCRIPTION_AMOUNT",
+          "WITHDRAW_RULE_TYPE_SUBSCRIPTION_AMOUNT_COUNT",
+          "WITHDRAW_RULE_TYPE_AMOUNT_COUNT",
+          "WITHDRAW_RULE_TYPE_AMOUNT"
+        ]
+      },
+      "sc_voucher_hash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "sc_api_key": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "businessId",
+      "offset",
+      "size"
+    ]
+  },
+  "issueWithdrawRuleByPlan": {
+    "type": "object",
+    "properties": {
+      "businessId": {
+        "type": "integer",
+        "title": "شناسه کسب و کار"
+      },
+      "planId": {
+        "type": "integer",
+        "title": "شناسه طرح"
+      },
+      "redirectUri": {
+        "type": "string",
+        "title": "آدرس بازگشت",
+        "pattern": "(https?|ftp)://[^\\s/$.?#].[^\\s]*"
+      },
+      "callUri": {
+        "type": "string",
+        "title": "آدرس فراخوانی",
+        "pattern": "(https?|ftp)://[^\\s/$.?#].[^\\s]*"
+      }
+    },
+    "required": [
+      "businessId"
+    ]
+  },
+  "withdrawRuleList": {
+    "type": "object",
+    "properties": {
+      "offset": {
+        "type": "integer",
+        "title": "اندیس شروع"
+      },
+      "size": {
+        "type": "integer",
+        "title": "اندازه خروجی"
+      },
+      "userId": {
+        "type": "integer",
+        "title": "شناسه کاربر اعطا کننده مجوز"
+      },
+      "typeCode": {
+        "type": "string",
+        "title": "نوع مجوز",
+        "enum": [
+          "WITHDRAW_RULE_TYPE_SUBSCRIPTION",
+          "WITHDRAW_RULE_TYPE_SUBSCRIPTION_AMOUNT",
+          "WITHDRAW_RULE_TYPE_SUBSCRIPTION_AMOUNT_COUNT",
+          "WITHDRAW_RULE_TYPE_AMOUNT_COUNT",
+          "WITHDRAW_RULE_TYPE_AMOUNT"
+        ]
+      },
+      "sc_voucher_hash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "sc_api_key": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "offset",
+      "size"
+    ]
+  },
+  "revokeWithdrawRule": {
+    "type": "object",
+    "properties": {
+      "ruleId": {
+        "type": "integer",
+        "title": "شناسه مجوز دریافتی از کاربر"
+      },
+      "sc_voucher_hash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "sc_api_key": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "ruleId"
+    ]
+  },
+  "withdrawRuleUsageReport": {
+    "type": "object",
+    "properties": {
+      "ruleId": {
+        "type": "integer",
+        "title": "شناسه مجوز دریافتی از کاربر"
+      },
+      "access_token": {
+        "type": "string",
+        "title": "اکسس توکن کاربر"
+      },
+      "sc_voucher_hash": {
+        "type": "array",
+        "title": "کد تخفیف برای فراخوانی سرویس کال",
+        "description": "کد تخفیف برای فراخوانی سرویس کال",
+        "items": {
+          "type": "string"
+        }
+      },
+      "sc_api_key": {
+        "type": "string",
+        "title": "توکن برای فراخوانی سرویس کال"
+      }
+    },
+    "required": [
+      "ruleId"
+    ]
+  }
+}
+
