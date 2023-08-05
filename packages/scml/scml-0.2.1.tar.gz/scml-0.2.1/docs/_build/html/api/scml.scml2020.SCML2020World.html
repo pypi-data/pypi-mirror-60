@@ -1,0 +1,2180 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SCML2020World &mdash; scml 0.1.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="FinancialReport" href="scml.scml2020.FinancialReport.html" />
+    <link rel="prev" title="AWI" href="scml.scml2020.AWI.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> scml
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../readme.html#id1">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../readme.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../readme.html#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../readme.html#development">Development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/01.run_scml2020.html">Run a session of the SCML world (2020)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/scml2019.html">SCML2019</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modules/scml2019.html#module-scml.scml2019">scml.scml2019 Package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#simulation-steps">Simulation steps:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#remarks-about-re-negotiation-on-breaches">Remarks about re-negotiation on breaches:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#remarks-about-timing">Remarks about timing:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#remarks-about-anac-2019-scml-league">Remarks about ANAC 2019 SCML League:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.transaction.html">transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.temporary_transaction.html">temporary_transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.anac2019_world.html">anac2019_world</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.anac2019_tournament.html">anac2019_tournament</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.anac2019_collusion.html">anac2019_collusion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.anac2019_std.html">anac2019_std</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.balance_calculator.html">balance_calculator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.anac2019_sabotage.html">anac2019_sabotage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.pos_gauss.html">pos_gauss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019._safe_max.html">_safe_max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.zero_runs.html">zero_runs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#classes">Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.Product.html">Product</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.Process.html">Process</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.InputOutput.html">InputOutput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.RunningCommandInfo.html">RunningCommandInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.ManufacturingProfile.html">ManufacturingProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.ManufacturingProfileCompiled.html">ManufacturingProfileCompiled</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.ProductManufacturingInfo.html">ProductManufacturingInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.FactoryStatusUpdate.html">FactoryStatusUpdate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.Job.html">Job</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.ProductionNeed.html">ProductionNeed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.MissingInput.html">MissingInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.ProductionReport.html">ProductionReport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.ProductionFailure.html">ProductionFailure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.FinancialReport.html">FinancialReport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.SCMLAgreement.html">SCMLAgreement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.SCMLAction.html">SCMLAction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.CFP.html">CFP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.Loan.html">Loan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.InsurancePolicy.html">InsurancePolicy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.Factory.html">Factory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.FactoryState.html">FactoryState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.SCMLAWI.html">SCMLAWI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.FactoryManager.html">FactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.DoNothingFactoryManager.html">DoNothingFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.GreedyFactoryManager.html">GreedyFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.JavaFactoryManager.html">JavaFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.JavaDoNothingFactoryManager.html">JavaDoNothingFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.JavaGreedyFactoryManager.html">JavaGreedyFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.JavaDummyMiddleMan.html">JavaDummyMiddleMan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.FJ2FactoryManager.html">FJ2FactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.RaptFactoryManager.html">RaptFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.InsuranceFraudFactoryManager.html">InsuranceFraudFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.SAHAFactoryManager.html">SAHAFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.CheapBuyerFactoryManager.html">CheapBuyerFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.NVMFactoryManager.html">NVMFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.DefaultBank.html">DefaultBank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.Bank.html">Bank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.DefaultInsuranceCompany.html">DefaultInsuranceCompany</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.InsuranceCompany.html">InsuranceCompany</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.SCMLAgent.html">SCMLAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.FactorySimulator.html">FactorySimulator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.SlowFactorySimulator.html">SlowFactorySimulator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.FastFactorySimulator.html">FastFactorySimulator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.DefaultGreedyManager.html">DefaultGreedyManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.ScheduleInfo.html">ScheduleInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.Scheduler.html">Scheduler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.GreedyScheduler.html">GreedyScheduler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.SCMLWorld.html">SCMLWorld</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.Factory.html">Factory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.Consumer.html">Consumer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.ConsumptionProfile.html">ConsumptionProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.JustInTimeConsumer.html">JustInTimeConsumer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.Miner.html">Miner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.MiningProfile.html">MiningProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2019.ReactiveMiner.html">ReactiveMiner</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#class-inheritance-diagram">Class Inheritance Diagram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules/scml2020.html">SCML2020</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../modules/scml2020.html#module-scml.scml2020">scml.scml2020 Package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../modules/scml2020.html#classes">Classes</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2020.RandomAgent.html">RandomAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2020.DoNothingAgent.html">DoNothingAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2020.IndependentNegotiationsAgent.html">IndependentNegotiationsAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2020.BuyCheapSellExpensiveAgent.html">BuyCheapSellExpensiveAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2020.DecentralizingAgent.html">DecentralizingAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2020.FactoryState.html">FactoryState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2020.SCML2020Agent.html">SCML2020Agent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2020.AWI.html">AWI</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">SCML2020World</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2020.FinancialReport.html">FinancialReport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2020.FactoryProfile.html">FactoryProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scml.scml2020.Factory.html">Factory</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2020.html#class-inheritance-diagram">Class Inheritance Diagram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts.html">Command Line Scripts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripts.html#tournament-command-scml-tournament">Tournament Command (scml tournament)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../scripts.html#creating-a-tournament">Creating a tournament</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripts.html#running-a-tournament">Running a tournament</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripts.html#combining-tournament-results">Combining tournament results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripts.html#finding-the-winners-of-a-tournament">Finding the winners of a tournament</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../scripts.html#running-an-scml2020-world-scml-run2020">Running an SCML2020 world (scml run2020)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripts.html#running-an-scml2019-world-scml-run2019">Running an SCML2019 world (scml run2019)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/index.html">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../reference/scml.html">scml</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contributing.html#bug-reports">Bug reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing.html#documentation-improvements">Documentation improvements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing.html#feature-requests-and-feedback">Feature requests and feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing.html#development">Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../contributing.html#pull-request-guidelines">Pull Request Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../contributing.html#tips">Tips</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id1">0.1.5 (2019.12.11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id2">0.1.3 (2019-12-08)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id3">0.1.2 (2019-12-01)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id4">0.1.1 (2019-11-25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id5">0.1.0 (2019-11-20)</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">scml</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../modules/scml2020.html">SCML2020</a> &raquo;</li>
+        
+      <li>SCML2020World</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/scml.scml2020.SCML2020World.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="scml2020world">
+<h1>SCML2020World<a class="headerlink" href="#scml2020world" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="scml.scml2020.SCML2020World">
+<em class="property">class </em><code class="sig-prename descclassname">scml.scml2020.</code><code class="sig-name descname">SCML2020World</code><span class="sig-paren">(</span><em class="sig-param">process_inputs</em>, <em class="sig-param">process_outputs</em>, <em class="sig-param">catalog_prices</em>, <em class="sig-param">profiles</em>, <em class="sig-param">agent_types</em>, <em class="sig-param">agent_params=None</em>, <em class="sig-param">exogenous_contracts=()</em>, <em class="sig-param">initial_balance=1000</em>, <em class="sig-param">buy_missing_products=False</em>, <em class="sig-param">borrow_on_breach=True</em>, <em class="sig-param">bankruptcy_limit=1.0</em>, <em class="sig-param">breach_penalty=0.15</em>, <em class="sig-param">interest_rate=0.05</em>, <em class="sig-param">financial_report_period=5</em>, <em class="sig-param">compensation_fraction=1.0</em>, <em class="sig-param">compensate_immediately=False</em>, <em class="sig-param">compensate_before_past_debt=True</em>, <em class="sig-param">exogenous_force_max=True</em>, <em class="sig-param">exogenous_buy_missing=False</em>, <em class="sig-param">exogenous_no_borrow=False</em>, <em class="sig-param">exogenous_no_bankruptcy=False</em>, <em class="sig-param">exogenous_penalty=0.15</em>, <em class="sig-param">exogenous_supply_limit=None</em>, <em class="sig-param">exogenous_sales_limit=None</em>, <em class="sig-param">exogenous_horizon=None</em>, <em class="sig-param">production_confirm=True</em>, <em class="sig-param">production_buy_missing=False</em>, <em class="sig-param">production_no_borrow=True</em>, <em class="sig-param">production_no_bankruptcy=False</em>, <em class="sig-param">production_penalty=0.15</em>, <em class="sig-param">compact=False</em>, <em class="sig-param">no_logs=False</em>, <em class="sig-param">n_steps=1000</em>, <em class="sig-param">time_limit=5400</em>, <em class="sig-param">neg_n_steps=20</em>, <em class="sig-param">neg_time_limit=120</em>, <em class="sig-param">neg_step_time_limit=60</em>, <em class="sig-param">negotiation_speed=21</em>, <em class="sig-param">signing_delay=0</em>, <em class="sig-param">force_signing=False</em>, <em class="sig-param">batch_signing=True</em>, <em class="sig-param">name=None</em>, <em class="sig-param">agent_name_reveals_position=True</em>, <em class="sig-param">agent_name_reveals_type=True</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">negmas.situated.TimeInAgreementMixin</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">negmas.situated.World</span></code></p>
+<p>A Supply Chain SCML2020World simulation as described for the SCML league of ANAC &#64; IJCAI 2020.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>process_inputs</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>) – An n_processes vector specifying the number of inputs from each product needed to execute
+each process.</p></li>
+<li><p><strong>process_outputs</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>) – An n_processes vector specifying the number of inputs from each product generated by
+executing each process.</p></li>
+<li><p><strong>catalog_prices</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>) – An n_products vector (i.e. n_processes+1 vector) giving the catalog price of all products</p></li>
+<li><p><strong>profiles</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<a class="reference internal" href="../reference/scml.html#scml.FactoryProfile" title="scml.scml2020.world.FactoryProfile"><code class="xref py py-class docutils literal notranslate"><span class="pre">FactoryProfile</span></code></a>]) – An n_agents list of <a class="reference internal" href="scml.scml2020.FactoryProfile.html#scml.scml2020.FactoryProfile" title="scml.scml2020.FactoryProfile"><code class="xref any py py-class docutils literal notranslate"><span class="pre">FactoryProfile</span></code></a> objects specifying the private profile of the factory
+associated with each agent.</p></li>
+<li><p><strong>agent_types</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code>[<a class="reference internal" href="../reference/scml.html#scml.SCML2020Agent" title="scml.scml2020.world.SCML2020Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">SCML2020Agent</span></code></a>]]) – An n_agents list of strings/ <a class="reference internal" href="scml.scml2020.SCML2020Agent.html#scml.scml2020.SCML2020Agent" title="scml.scml2020.SCML2020Agent"><code class="xref any py py-class docutils literal notranslate"><span class="pre">SCML2020Agent</span></code></a> classes specifying the type of each agent</p></li>
+<li><p><strong>agent_params</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]]) – An n_agents dictionaries giving the parameters of each agent</p></li>
+<li><p><strong>initial_balance</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – The initial balance in each agent’s wallet. All agents will start with this same value.</p></li>
+<li><p><strong>breach_penalty</strong> – The total penalty paid upon a breach will be calculated as (breach_level * breach_penalty *
+contract_quantity * contract_unit_price).</p></li>
+<li><p><strong>exogenous_supply_limit</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>]) – An n_steps * n_products array giving the total supply available of each product over time.
+Only affects guaranteed supply.</p></li>
+<li><p><strong>exogenous_sales_limit</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>]) – An n_steps * n_products array giving the total sales to happen for each product over time.
+Only affects guaranteed sales.</p></li>
+<li><p><strong>financial_report_period</strong> – The number of steps between financial reports. If &lt; 1, it is a fraction of n_steps</p></li>
+<li><p><strong>borrow_on_breach</strong> – If true, agents will be forced to borrow money on breach as much as possible to honor the
+contract</p></li>
+<li><p><strong>interest_rate</strong> – The interest at which loans grow over time (it only affect a factory when its balance is
+negative)</p></li>
+<li><p><strong>bankruptcy_limit</strong> – The maximum amount that be be borrowed (including interest). The balance of any factory cannot
+go lower than - borrow_limit or the agent will go bankrupt immediately</p></li>
+<li><p><strong>compensation_fraction</strong> – Fraction of a contract to be compensated (at most) if a partner goes bankrupt. Notice
+that this fraction is not guaranteed because the bankrupt agent may not have enough
+assets to pay all of its standing contracts to this level of compensation. In such
+cases, a smaller fraction will be used.</p></li>
+<li><p><strong>compensate_immediately</strong> – If true, compensation will happen immediately when an agent goes bankrupt and in
+in money. This means that agents with contracts involving the bankrupt agent will
+just have these contracts be nullified and receive monetary compensation immediately
+. If false, compensation will not happen immediately but at the contract execution
+time. In this case, agents with contracts involving the bankrupt agent will be
+informed of the compensation fraction (instead of the compensation money) at the
+time of bankruptcy and will receive the compensation in kind (money if they are
+sellers and products if they are buyers) at the normal execution time of the
+contract. In the special case of no-compensation (i.e. <code class="xref any docutils literal notranslate"><span class="pre">compensation_fraction</span></code> is
+zero or the bankrupt agent has no assets), the two options will behave similarity.</p></li>
+<li><p><strong>compensate_before_past_debt</strong> – If true, then compensations will be paid before past debt is considered,
+otherwise, the money from liquidating bankrupt agents will first be used to
+pay past debt then whatever remains will be used for compensation. Notice that
+in all cases, the trigger of bankruptcy will be paid before compensation and
+past debts.</p></li>
+<li><p><strong>exogenous_force_max</strong> – If true, agents are not asked to confirm guaranteed transactions and they
+are carried out up to bankruptcy</p></li>
+<li><p><strong>exogenous_no_borrow</strong> – If true, agents will not borrow if they fail to satisfy an external transaction. The
+transaction will just fail silently</p></li>
+<li><p><strong>exogenous_no_bankruptcy</strong> – If true, agents will not go bankrupt because of an external transaction. The
+transaction will just fail silently</p></li>
+<li><p><strong>exogenous_penalty</strong> – The penalty paid for failure to honor external contracts</p></li>
+<li><p><strong>exogenous_horizon</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – The horizon for revealing external contracts</p></li>
+<li><p><strong>production_no_borrow</strong> – If true, agents will not borrow if they fail to satisfy its production need to execute
+a scheduled production command</p></li>
+<li><p><strong>production_no_bankruptcy</strong> – If true, agents will not go bankrupt because of an production related transaction.</p></li>
+<li><p><strong>production_penalty</strong> – The penalty paid when buying from spot-market to satisfy production needs</p></li>
+<li><p><strong>production_confirm</strong> – If true, the factory will confirm running processes at every time-step just before running
+them by calling <a class="reference internal" href="scml.scml2020.BuyCheapSellExpensiveAgent.html#scml.scml2020.BuyCheapSellExpensiveAgent.confirm_production" title="scml.scml2020.BuyCheapSellExpensiveAgent.confirm_production"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">confirm_production</span></code></a> on the agent controlling it.</p></li>
+<li><p><strong>compact</strong> – If True, no logs will be kept and the whole simulation will use a smaller memory footprint</p></li>
+<li><p><strong>n_steps</strong> – Number of simulation steps (can be considered as days).</p></li>
+<li><p><strong>time_limit</strong> – Total time allowed for the complete simulation in seconds.</p></li>
+<li><p><strong>neg_n_steps</strong> – Number of negotiation steps allowed for all negotiations.</p></li>
+<li><p><strong>neg_time_limit</strong> – Total time allowed for a complete negotiation in seconds.</p></li>
+<li><p><strong>neg_step_time_limit</strong> – Total time allowed for a single step of a negotiation. in seconds.</p></li>
+<li><p><strong>negotiation_speed</strong> – The number of negotiation steps that pass in every simulation step. If 0, negotiations
+will be guaranteed to finish within a single simulation step</p></li>
+<li><p><strong>signing_delay</strong> – The number of simulation steps to pass between a contract is concluded and signed</p></li>
+<li><p><strong>name</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – The name of the simulations</p></li>
+<li><p><strong>**kwargs</strong> – Other parameters that are passed directly to <a class="reference internal" href="#scml.scml2020.SCML2020World" title="scml.scml2020.SCML2020World"><code class="xref any py py-class docutils literal notranslate"><span class="pre">SCML2020World</span></code></a> constructor.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Attributes Summary</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.agreement_fraction" title="scml.scml2020.SCML2020World.agreement_fraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agreement_fraction</span></code></a></p></td>
+<td><p>Fraction of negotiations ending in agreement and leading to signed contracts</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.agreement_rate" title="scml.scml2020.SCML2020World.agreement_rate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agreement_rate</span></code></a></p></td>
+<td><p>Fraction of negotiations ending in agreement and leading to signed contracts</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.bankruptcy_rate" title="scml.scml2020.SCML2020World.bankruptcy_rate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bankruptcy_rate</span></code></a></p></td>
+<td><p>The fraction of factories that went bankrupt</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.breach_fraction" title="scml.scml2020.SCML2020World.breach_fraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">breach_fraction</span></code></a></p></td>
+<td><p>Fraction of signed contracts that led to breaches</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.breach_level" title="scml.scml2020.SCML2020World.breach_level"><code class="xref py py-obj docutils literal notranslate"><span class="pre">breach_level</span></code></a></p></td>
+<td><p>The average breach level per contract</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.breach_rate" title="scml.scml2020.SCML2020World.breach_rate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">breach_rate</span></code></a></p></td>
+<td><p>Fraction of signed contracts that led to breaches</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.business_size" title="scml.scml2020.SCML2020World.business_size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">business_size</span></code></a></p></td>
+<td><p>The total business size defined as the total money transferred within the system</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.cancellation_fraction" title="scml.scml2020.SCML2020World.cancellation_fraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cancellation_fraction</span></code></a></p></td>
+<td><p>Fraction of negotiations ending in agreement and leading to signed contracts</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.cancellation_rate" title="scml.scml2020.SCML2020World.cancellation_rate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cancellation_rate</span></code></a></p></td>
+<td><p>Fraction of negotiations ending in agreement and leading to signed contracts</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.cancelled_contracts" title="scml.scml2020.SCML2020World.cancelled_contracts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cancelled_contracts</span></code></a></p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.contract_dropping_fraction" title="scml.scml2020.SCML2020World.contract_dropping_fraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contract_dropping_fraction</span></code></a></p></td>
+<td><p>Fraction of signed contracts that were never executed because they were signed to late to be executable</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.contract_err_fraction" title="scml.scml2020.SCML2020World.contract_err_fraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contract_err_fraction</span></code></a></p></td>
+<td><p>Fraction of signed contracts that caused exception during their execution</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.contract_execution_fraction" title="scml.scml2020.SCML2020World.contract_execution_fraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contract_execution_fraction</span></code></a></p></td>
+<td><p>Fraction of signed contracts successfully executed with no breaches, or errors</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.contract_nullification_fraction" title="scml.scml2020.SCML2020World.contract_nullification_fraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contract_nullification_fraction</span></code></a></p></td>
+<td><p>Fraction of signed contracts were nullified by the system (e.g.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.current_step" title="scml.scml2020.SCML2020World.current_step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">current_step</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.erred_contracts" title="scml.scml2020.SCML2020World.erred_contracts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">erred_contracts</span></code></a></p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.executed_contracts" title="scml.scml2020.SCML2020World.executed_contracts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">executed_contracts</span></code></a></p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.id" title="scml.scml2020.SCML2020World.id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id</span></code></a></p></td>
+<td><p>The unique ID of this entity</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.log_folder" title="scml.scml2020.SCML2020World.log_folder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">log_folder</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.n_negotiation_rounds_failed" title="scml.scml2020.SCML2020World.n_negotiation_rounds_failed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">n_negotiation_rounds_failed</span></code></a></p></td>
+<td><p>Average number of rounds in a successful negotiation</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.n_negotiation_rounds_successful" title="scml.scml2020.SCML2020World.n_negotiation_rounds_successful"><code class="xref py py-obj docutils literal notranslate"><span class="pre">n_negotiation_rounds_successful</span></code></a></p></td>
+<td><p>Average number of rounds in a successful negotiation</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.name" title="scml.scml2020.SCML2020World.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A convenient name of the entity (intended primarily for printing/logging/debugging).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.nullified_contracts" title="scml.scml2020.SCML2020World.nullified_contracts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nullified_contracts</span></code></a></p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.num_bankrupt" title="scml.scml2020.SCML2020World.num_bankrupt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">num_bankrupt</span></code></a></p></td>
+<td><p>The fraction of factories that went bankrupt</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.productivity" title="scml.scml2020.SCML2020World.productivity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">productivity</span></code></a></p></td>
+<td><p>Fraction of production lines occupied during the simulation</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.relative_productivity" title="scml.scml2020.SCML2020World.relative_productivity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">relative_productivity</span></code></a></p></td>
+<td><p>Productivity relative to the expected value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.relative_time" title="scml.scml2020.SCML2020World.relative_time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">relative_time</span></code></a></p></td>
+<td><p>Returns a number between <code class="docutils literal notranslate"><span class="pre">0</span></code> and <code class="docutils literal notranslate"><span class="pre">1</span></code> indicating elapsed relative time or steps.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.remaining_steps" title="scml.scml2020.SCML2020World.remaining_steps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remaining_steps</span></code></a></p></td>
+<td><p>Returns the remaining number of steps until the end of the mechanism run.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.remaining_time" title="scml.scml2020.SCML2020World.remaining_time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remaining_time</span></code></a></p></td>
+<td><p>Returns remaining time in seconds.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.resolved_breaches" title="scml.scml2020.SCML2020World.resolved_breaches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resolved_breaches</span></code></a></p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.saved_breaches" title="scml.scml2020.SCML2020World.saved_breaches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saved_breaches</span></code></a></p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.saved_contracts" title="scml.scml2020.SCML2020World.saved_contracts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saved_contracts</span></code></a></p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.saved_negotiations" title="scml.scml2020.SCML2020World.saved_negotiations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saved_negotiations</span></code></a></p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.signed_contracts" title="scml.scml2020.SCML2020World.signed_contracts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">signed_contracts</span></code></a></p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.stats" title="scml.scml2020.SCML2020World.stats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stats</span></code></a></p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.time" title="scml.scml2020.SCML2020World.time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">time</span></code></a></p></td>
+<td><p>Elapsed time since mechanism started in seconds.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.unresolved_breaches" title="scml.scml2020.SCML2020World.unresolved_breaches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unresolved_breaches</span></code></a></p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.uuid" title="scml.scml2020.SCML2020World.uuid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">uuid</span></code></a></p></td>
+<td><p>The unique ID of this entity</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.winners" title="scml.scml2020.SCML2020World.winners"><code class="xref py py-obj docutils literal notranslate"><span class="pre">winners</span></code></a></p></td>
+<td><p>The winners of this world (factory managers with maximum wallet balance</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods Summary</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.add_financial_report" title="scml.scml2020.SCML2020World.add_financial_report"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_financial_report</span></code></a>(agent, factory, …)</p></td>
+<td><p>Records a financial report for the given agent in the agent indexed reports and time indexed reports</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.announce" title="scml.scml2020.SCML2020World.announce"><code class="xref py py-obj docutils literal notranslate"><span class="pre">announce</span></code></a>(event)</p></td>
+<td><p>Raises an event and informs all event sinks that are registerd for notifications on this event type</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.append_stats" title="scml.scml2020.SCML2020World.append_stats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">append_stats</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.breach_record" title="scml.scml2020.SCML2020World.breach_record"><code class="xref py py-obj docutils literal notranslate"><span class="pre">breach_record</span></code></a>(breach)</p></td>
+<td><p>Converts a breach to a record suitable for storage during the simulation</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.checkpoint" title="scml.scml2020.SCML2020World.checkpoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">checkpoint</span></code></a>(path[, file_name, info, …])</p></td>
+<td><p>Saves a checkpoint of the current object at  the given path.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.checkpoint_final_step" title="scml.scml2020.SCML2020World.checkpoint_final_step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">checkpoint_final_step</span></code></a>()</p></td>
+<td><p>Should be called at the end of the simulation to save the final state</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.checkpoint_info" title="scml.scml2020.SCML2020World.checkpoint_info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">checkpoint_info</span></code></a>(file_name)</p></td>
+<td><p>Returns the information associated with a dump of the object saved in the given file</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.checkpoint_init" title="scml.scml2020.SCML2020World.checkpoint_init"><code class="xref py py-obj docutils literal notranslate"><span class="pre">checkpoint_init</span></code></a>([step_attrib, every, …])</p></td>
+<td><p>Initializes the object to automatically save a checkpoint</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.checkpoint_on_step_started" title="scml.scml2020.SCML2020World.checkpoint_on_step_started"><code class="xref py py-obj docutils literal notranslate"><span class="pre">checkpoint_on_step_started</span></code></a>()</p></td>
+<td><p>Should be called on every step to save checkpoints as needed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.compensate" title="scml.scml2020.SCML2020World.compensate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compensate</span></code></a>(available, factory)</p></td>
+<td><p>Called by a factory when it is going bankrupt after liquidation</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.complete_contract_execution" title="scml.scml2020.SCML2020World.complete_contract_execution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">complete_contract_execution</span></code></a>(contract, …)</p></td>
+<td><p>Called after breach resolution is completed for contracts for which some potential breaches occurred.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.contract_record" title="scml.scml2020.SCML2020World.contract_record"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contract_record</span></code></a>(contract)</p></td>
+<td><p>Converts a contract to a record suitable for permanent storage</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.contract_size" title="scml.scml2020.SCML2020World.contract_size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contract_size</span></code></a>(contract)</p></td>
+<td><p>Returns an estimation of the <strong>activity level</strong> associated with this contract.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.create" title="scml.scml2020.SCML2020World.create"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create</span></code></a>(*args, **kwargs)</p></td>
+<td><p>Creates an object and returns a proxy to it.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.delete_executed_contracts" title="scml.scml2020.SCML2020World.delete_executed_contracts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_executed_contracts</span></code></a>()</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.executable_contracts" title="scml.scml2020.SCML2020World.executable_contracts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">executable_contracts</span></code></a>()</p></td>
+<td><p>Called at every time-step to get the contracts that are <code class="xref any docutils literal notranslate"><span class="pre">executable</span></code> at this point of the simulation</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.execute_action" title="scml.scml2020.SCML2020World.execute_action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">execute_action</span></code></a>(action, agent[, callback])</p></td>
+<td><p>Executes the given action by the given agent</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.from_checkpoint" title="scml.scml2020.SCML2020World.from_checkpoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_checkpoint</span></code></a>(file_name[, return_info])</p></td>
+<td><p>Creates an object from a saved checkpoint</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.from_config" title="scml.scml2020.SCML2020World.from_config"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_config</span></code></a>(config[, section, …])</p></td>
+<td><p>Creates an object of this class given the configuration info</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.generate" title="scml.scml2020.SCML2020World.generate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate</span></code></a>(agent_types[, agent_params, …])</p></td>
+<td><p>Generates the configuration for a world</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.get_dropped_contracts" title="scml.scml2020.SCML2020World.get_dropped_contracts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_dropped_contracts</span></code></a>()</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Collection</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Contract</span></code>]</p>
+</dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.get_private_state" title="scml.scml2020.SCML2020World.get_private_state"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_private_state</span></code></a>(agent)</p></td>
+<td><p>Reads the private state of the given agent</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.ignore_contract" title="scml.scml2020.SCML2020World.ignore_contract"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ignore_contract</span></code></a>(contract)</p></td>
+<td><p>Ignores the contract as if it was never agreed upon</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.init" title="scml.scml2020.SCML2020World.init"><code class="xref py py-obj docutils literal notranslate"><span class="pre">init</span></code></a>([time_field])</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.join" title="scml.scml2020.SCML2020World.join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">join</span></code></a>(x[, simulation_priority])</p></td>
+<td><p>Add an agent to the world.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.logdebug" title="scml.scml2020.SCML2020World.logdebug"><code class="xref py py-obj docutils literal notranslate"><span class="pre">logdebug</span></code></a>(s[, event])</p></td>
+<td><p>logs debug-level information</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.logdebug_agent" title="scml.scml2020.SCML2020World.logdebug_agent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">logdebug_agent</span></code></a>(aid, s[, event])</p></td>
+<td><p>logs debug to the agent individual log</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.logerror" title="scml.scml2020.SCML2020World.logerror"><code class="xref py py-obj docutils literal notranslate"><span class="pre">logerror</span></code></a>(s[, event])</p></td>
+<td><p>logs error-level information</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.logerror_agent" title="scml.scml2020.SCML2020World.logerror_agent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">logerror_agent</span></code></a>(aid, s[, event])</p></td>
+<td><p>logs information to the agent individual log</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.loginfo" title="scml.scml2020.SCML2020World.loginfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">loginfo</span></code></a>(s[, event])</p></td>
+<td><p>logs info-level information</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.loginfo_agent" title="scml.scml2020.SCML2020World.loginfo_agent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">loginfo_agent</span></code></a>(aid, s[, event])</p></td>
+<td><p>logs information to the agent individual log</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.logwarning" title="scml.scml2020.SCML2020World.logwarning"><code class="xref py py-obj docutils literal notranslate"><span class="pre">logwarning</span></code></a>(s[, event])</p></td>
+<td><p>logs warning-level information</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.logwarning_agent" title="scml.scml2020.SCML2020World.logwarning_agent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">logwarning_agent</span></code></a>(aid, s[, event])</p></td>
+<td><p>logs warning to the agent individual log</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.n_saved_contracts" title="scml.scml2020.SCML2020World.n_saved_contracts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">n_saved_contracts</span></code></a>([ignore_no_issue])</p></td>
+<td><p>Number of saved contracts</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.nullify_contract" title="scml.scml2020.SCML2020World.nullify_contract"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nullify_contract</span></code></a>(contract, new_quantity)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.on_contract_cancelled" title="scml.scml2020.SCML2020World.on_contract_cancelled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_contract_cancelled</span></code></a>(contract)</p></td>
+<td><p>Called whenever a concluded contract is not signed (cancelled)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.on_contract_concluded" title="scml.scml2020.SCML2020World.on_contract_concluded"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_contract_concluded</span></code></a>(contract, to_be_signed_at)</p></td>
+<td><p>Called to add a contract to the existing set of unsigned contract after it is concluded</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.on_contract_processed" title="scml.scml2020.SCML2020World.on_contract_processed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_contract_processed</span></code></a>(contract)</p></td>
+<td><p>Called whenever a contract finished processing to be removed from unsigned contracts</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.on_contract_signed" title="scml.scml2020.SCML2020World.on_contract_signed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_contract_signed</span></code></a>(contract)</p></td>
+<td><p>Called to add a contract to the existing set of contract after it is signed</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.on_event" title="scml.scml2020.SCML2020World.on_event"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_event</span></code></a>(event, sender)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.order_contracts_for_execution" title="scml.scml2020.SCML2020World.order_contracts_for_execution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">order_contracts_for_execution</span></code></a>(contracts)</p></td>
+<td><p>Orders the contracts in a specific time-step that are about to be executed</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.post_step_stats" title="scml.scml2020.SCML2020World.post_step_stats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">post_step_stats</span></code></a>()</p></td>
+<td><p>Called at the end of the simulation step to update all stats</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.pre_step_stats" title="scml.scml2020.SCML2020World.pre_step_stats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pre_step_stats</span></code></a>()</p></td>
+<td><p>Called at the beginning of the simulation step to prepare stats or update them</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.read_config" title="scml.scml2020.SCML2020World.read_config"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_config</span></code></a>(config[, section])</p></td>
+<td><p>Reads the configuration from a file or a dict and prepares it for parsing</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.record_bankrupt" title="scml.scml2020.SCML2020World.record_bankrupt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">record_bankrupt</span></code></a>(factory)</p></td>
+<td><p>Records agent bankruptcy</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.register" title="scml.scml2020.SCML2020World.register"><code class="xref py py-obj docutils literal notranslate"><span class="pre">register</span></code></a>(x[, simulation_priority])</p></td>
+<td><p>Registers an entity in the world so it can be looked up by name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.register_listener" title="scml.scml2020.SCML2020World.register_listener"><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_listener</span></code></a>(event_type, listener)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.register_stats_monitor" title="scml.scml2020.SCML2020World.register_stats_monitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_stats_monitor</span></code></a>(m)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.register_world_monitor" title="scml.scml2020.SCML2020World.register_world_monitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_world_monitor</span></code></a>(m)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.relative_welfare" title="scml.scml2020.SCML2020World.relative_welfare"><code class="xref py py-obj docutils literal notranslate"><span class="pre">relative_welfare</span></code></a>([include_bankrupt])</p></td>
+<td><p>Total welfare relative to expected value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.request_negotiation_about" title="scml.scml2020.SCML2020World.request_negotiation_about"><code class="xref py py-obj docutils literal notranslate"><span class="pre">request_negotiation_about</span></code></a>(req_id, caller, …)</p></td>
+<td><p>Requests to start a negotiation with some other agents</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.run" title="scml.scml2020.SCML2020World.run"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code></a>()</p></td>
+<td><p>Runs the simulation until it ends</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.run_negotiation" title="scml.scml2020.SCML2020World.run_negotiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run_negotiation</span></code></a>(caller, issues, partners, …)</p></td>
+<td><p>Runs a negotiation until completion</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.run_negotiations" title="scml.scml2020.SCML2020World.run_negotiations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run_negotiations</span></code></a>(caller, issues, partners, …)</p></td>
+<td><p>Requests to run a set of negotiations simultaneously.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.save_config" title="scml.scml2020.SCML2020World.save_config"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save_config</span></code></a>(file_name)</p></td>
+<td><p>Saves the config of the world as a yaml file</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.set_bulletin_board" title="scml.scml2020.SCML2020World.set_bulletin_board"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_bulletin_board</span></code></a>(bulletin_board)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.simulation_step_after_execution" title="scml.scml2020.SCML2020World.simulation_step_after_execution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">simulation_step_after_execution</span></code></a>()</p></td>
+<td><p>A single step of the simulation if any (after entity and contract execution)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.simulation_step_before_execution" title="scml.scml2020.SCML2020World.simulation_step_before_execution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">simulation_step_before_execution</span></code></a>()</p></td>
+<td><p>A single step of the simulation if any (before entity and contract execution)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.start_contract_execution" title="scml.scml2020.SCML2020World.start_contract_execution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">start_contract_execution</span></code></a>(contract)</p></td>
+<td><p>Tries to execute the contract</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.step" title="scml.scml2020.SCML2020World.step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">step</span></code></a>()</p></td>
+<td><p>A single simulation step</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.unregister_stats_monitor" title="scml.scml2020.SCML2020World.unregister_stats_monitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unregister_stats_monitor</span></code></a>(m)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.unregister_world_monitor" title="scml.scml2020.SCML2020World.unregister_world_monitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unregister_world_monitor</span></code></a>(m)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#scml.scml2020.SCML2020World.welfare" title="scml.scml2020.SCML2020World.welfare"><code class="xref py py-obj docutils literal notranslate"><span class="pre">welfare</span></code></a>([include_bankrupt])</p></td>
+<td><p>Total welfare of all agents</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes Documentation</p>
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.agreement_fraction">
+<code class="sig-name descname">agreement_fraction</code><a class="headerlink" href="#scml.scml2020.SCML2020World.agreement_fraction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fraction of negotiations ending in agreement and leading to signed contracts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.agreement_rate">
+<code class="sig-name descname">agreement_rate</code><a class="headerlink" href="#scml.scml2020.SCML2020World.agreement_rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fraction of negotiations ending in agreement and leading to signed contracts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.bankruptcy_rate">
+<code class="sig-name descname">bankruptcy_rate</code><a class="headerlink" href="#scml.scml2020.SCML2020World.bankruptcy_rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>The fraction of factories that went bankrupt</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.breach_fraction">
+<code class="sig-name descname">breach_fraction</code><a class="headerlink" href="#scml.scml2020.SCML2020World.breach_fraction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fraction of signed contracts that led to breaches</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.breach_level">
+<code class="sig-name descname">breach_level</code><a class="headerlink" href="#scml.scml2020.SCML2020World.breach_level" title="Permalink to this definition">¶</a></dt>
+<dd><p>The average breach level per contract</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.breach_rate">
+<code class="sig-name descname">breach_rate</code><a class="headerlink" href="#scml.scml2020.SCML2020World.breach_rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fraction of signed contracts that led to breaches</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.business_size">
+<code class="sig-name descname">business_size</code><a class="headerlink" href="#scml.scml2020.SCML2020World.business_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>The total business size defined as the total money transferred within the system</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.cancellation_fraction">
+<code class="sig-name descname">cancellation_fraction</code><a class="headerlink" href="#scml.scml2020.SCML2020World.cancellation_fraction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fraction of negotiations ending in agreement and leading to signed contracts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.cancellation_rate">
+<code class="sig-name descname">cancellation_rate</code><a class="headerlink" href="#scml.scml2020.SCML2020World.cancellation_rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fraction of negotiations ending in agreement and leading to signed contracts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.cancelled_contracts">
+<code class="sig-name descname">cancelled_contracts</code><a class="headerlink" href="#scml.scml2020.SCML2020World.cancelled_contracts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.contract_dropping_fraction">
+<code class="sig-name descname">contract_dropping_fraction</code><a class="headerlink" href="#scml.scml2020.SCML2020World.contract_dropping_fraction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fraction of signed contracts that were never executed because they were signed to late to be executable</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.contract_err_fraction">
+<code class="sig-name descname">contract_err_fraction</code><a class="headerlink" href="#scml.scml2020.SCML2020World.contract_err_fraction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fraction of signed contracts that caused exception during their execution</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.contract_execution_fraction">
+<code class="sig-name descname">contract_execution_fraction</code><a class="headerlink" href="#scml.scml2020.SCML2020World.contract_execution_fraction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fraction of signed contracts successfully executed with no breaches, or errors</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.contract_nullification_fraction">
+<code class="sig-name descname">contract_nullification_fraction</code><a class="headerlink" href="#scml.scml2020.SCML2020World.contract_nullification_fraction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fraction of signed contracts were nullified by the system (e.g. due to bankruptcy)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.current_step">
+<code class="sig-name descname">current_step</code><a class="headerlink" href="#scml.scml2020.SCML2020World.current_step" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.erred_contracts">
+<code class="sig-name descname">erred_contracts</code><a class="headerlink" href="#scml.scml2020.SCML2020World.erred_contracts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.executed_contracts">
+<code class="sig-name descname">executed_contracts</code><a class="headerlink" href="#scml.scml2020.SCML2020World.executed_contracts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#scml.scml2020.SCML2020World.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>The unique ID of this entity</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.log_folder">
+<code class="sig-name descname">log_folder</code><a class="headerlink" href="#scml.scml2020.SCML2020World.log_folder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.n_negotiation_rounds_failed">
+<code class="sig-name descname">n_negotiation_rounds_failed</code><a class="headerlink" href="#scml.scml2020.SCML2020World.n_negotiation_rounds_failed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Average number of rounds in a successful negotiation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.n_negotiation_rounds_successful">
+<code class="sig-name descname">n_negotiation_rounds_successful</code><a class="headerlink" href="#scml.scml2020.SCML2020World.n_negotiation_rounds_successful" title="Permalink to this definition">¶</a></dt>
+<dd><p>Average number of rounds in a successful negotiation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.name">
+<code class="sig-name descname">name</code><a class="headerlink" href="#scml.scml2020.SCML2020World.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A convenient name of the entity (intended primarily for printing/logging/debugging).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.nullified_contracts">
+<code class="sig-name descname">nullified_contracts</code><a class="headerlink" href="#scml.scml2020.SCML2020World.nullified_contracts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.num_bankrupt">
+<code class="sig-name descname">num_bankrupt</code><a class="headerlink" href="#scml.scml2020.SCML2020World.num_bankrupt" title="Permalink to this definition">¶</a></dt>
+<dd><p>The fraction of factories that went bankrupt</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.productivity">
+<code class="sig-name descname">productivity</code><a class="headerlink" href="#scml.scml2020.SCML2020World.productivity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fraction of production lines occupied during the simulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.relative_productivity">
+<code class="sig-name descname">relative_productivity</code><a class="headerlink" href="#scml.scml2020.SCML2020World.relative_productivity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Productivity relative to the expected value. Will return None if self.info does not have
+the expected productivity</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.relative_time">
+<code class="sig-name descname">relative_time</code><a class="headerlink" href="#scml.scml2020.SCML2020World.relative_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a number between <code class="docutils literal notranslate"><span class="pre">0</span></code> and <code class="docutils literal notranslate"><span class="pre">1</span></code> indicating elapsed relative time or steps.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.remaining_steps">
+<code class="sig-name descname">remaining_steps</code><a class="headerlink" href="#scml.scml2020.SCML2020World.remaining_steps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the remaining number of steps until the end of the mechanism run. None if unlimited</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.remaining_time">
+<code class="sig-name descname">remaining_time</code><a class="headerlink" href="#scml.scml2020.SCML2020World.remaining_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns remaining time in seconds. None if no time limit is given.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.resolved_breaches">
+<code class="sig-name descname">resolved_breaches</code><a class="headerlink" href="#scml.scml2020.SCML2020World.resolved_breaches" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.saved_breaches">
+<code class="sig-name descname">saved_breaches</code><a class="headerlink" href="#scml.scml2020.SCML2020World.saved_breaches" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.saved_contracts">
+<code class="sig-name descname">saved_contracts</code><a class="headerlink" href="#scml.scml2020.SCML2020World.saved_contracts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.saved_negotiations">
+<code class="sig-name descname">saved_negotiations</code><a class="headerlink" href="#scml.scml2020.SCML2020World.saved_negotiations" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.signed_contracts">
+<code class="sig-name descname">signed_contracts</code><a class="headerlink" href="#scml.scml2020.SCML2020World.signed_contracts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.stats">
+<code class="sig-name descname">stats</code><a class="headerlink" href="#scml.scml2020.SCML2020World.stats" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.time">
+<code class="sig-name descname">time</code><a class="headerlink" href="#scml.scml2020.SCML2020World.time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Elapsed time since mechanism started in seconds. None if the mechanism did not start running</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.unresolved_breaches">
+<code class="sig-name descname">unresolved_breaches</code><a class="headerlink" href="#scml.scml2020.SCML2020World.unresolved_breaches" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.uuid">
+<code class="sig-name descname">uuid</code><a class="headerlink" href="#scml.scml2020.SCML2020World.uuid" title="Permalink to this definition">¶</a></dt>
+<dd><p>The unique ID of this entity</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="scml.scml2020.SCML2020World.winners">
+<code class="sig-name descname">winners</code><a class="headerlink" href="#scml.scml2020.SCML2020World.winners" title="Permalink to this definition">¶</a></dt>
+<dd><p>The winners of this world (factory managers with maximum wallet balance</p>
+</dd></dl>
+
+<p class="rubric">Methods Documentation</p>
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.add_financial_report">
+<code class="sig-name descname">add_financial_report</code><span class="sig-paren">(</span><em class="sig-param">agent</em>, <em class="sig-param">factory</em>, <em class="sig-param">reports_agent</em>, <em class="sig-param">reports_time</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.add_financial_report"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.add_financial_report" title="Permalink to this definition">¶</a></dt>
+<dd><p>Records a financial report for the given agent in the agent indexed reports and time indexed reports</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>agent</strong> (<a class="reference internal" href="../reference/scml.html#scml.SCML2020Agent" title="scml.scml2020.world.SCML2020Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">SCML2020Agent</span></code></a>) – The agent</p></li>
+<li><p><strong>factory</strong> (<a class="reference internal" href="../reference/scml.html#scml.Factory" title="scml.scml2020.world.Factory"><code class="xref py py-class docutils literal notranslate"><span class="pre">Factory</span></code></a>) – Its factory</p></li>
+<li><p><strong>reports_agent</strong> – A dictionary of financial reports indexed by agent id</p></li>
+<li><p><strong>reports_time</strong> – A dictionary of financial reports indexed by time</p></li>
+</ul>
+</dd>
+</dl>
+<p>Returns:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.announce">
+<code class="sig-name descname">announce</code><span class="sig-paren">(</span><em class="sig-param">event</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.announce" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raises an event and informs all event sinks that are registerd for notifications
+on this event type</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.append_stats">
+<code class="sig-name descname">append_stats</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.append_stats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.breach_record">
+<code class="sig-name descname">breach_record</code><span class="sig-paren">(</span><em class="sig-param">breach</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.breach_record"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.breach_record" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a breach to a record suitable for storage during the simulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.checkpoint">
+<code class="sig-name descname">checkpoint</code><span class="sig-paren">(</span><em class="sig-param">path</em>, <em class="sig-param">file_name=None</em>, <em class="sig-param">info=None</em>, <em class="sig-param">exist_ok=False</em>, <em class="sig-param">single_checkpoint=True</em>, <em class="sig-param">step_attribs=('current_step'</em>, <em class="sig-param">'_current_step'</em>, <em class="sig-param">'_Entity__current_step'</em>, <em class="sig-param">'_step')</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.checkpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves a checkpoint of the current object at  the given path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – Full path to a directory to store the checkpoint</p></li>
+<li><p><strong>file_name</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – Name of the file to dump into. If not given, a unique name is created</p></li>
+<li><p><strong>info</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]) – Information to save with the checkpoint (must be json serializable)</p></li>
+<li><p><strong>exist_ok</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – If true, override existing dump</p></li>
+<li><p><strong>single_checkpoint</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – If true, keep a single checkpoint for the last step</p></li>
+<li><p><strong>step_attribs</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – Attributes to represent the time-step of the object. Any of the given attributes will be
+used in the file name generated if single_checkpoint is False. If single_checkpoint is True, the
+filename will not contain time-step information</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>full path to the file used to save the checkpoint</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.checkpoint_final_step">
+<code class="sig-name descname">checkpoint_final_step</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.checkpoint_final_step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Should be called at the end of the simulation to save the final state</p>
+<dl class="simple">
+<dt>Remarks:</dt><dd><ul class="simple">
+<li><p>Should be called after all processing of the final step is conducted.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.checkpoint_info">
+<em class="property">classmethod </em><code class="sig-name descname">checkpoint_info</code><span class="sig-paren">(</span><em class="sig-param">file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.checkpoint_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the information associated with a dump of the object saved in the given file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_name</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code>]) – Name of the object</p>
+</dd>
+</dl>
+<p>Returns:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.checkpoint_init">
+<code class="sig-name descname">checkpoint_init</code><span class="sig-paren">(</span><em class="sig-param">step_attrib='current_step'</em>, <em class="sig-param">every=1</em>, <em class="sig-param">folder=None</em>, <em class="sig-param">filename=None</em>, <em class="sig-param">info=None</em>, <em class="sig-param">exist_ok=True</em>, <em class="sig-param">single=True</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.checkpoint_init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the object to automatically save a checkpoint</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>step_attrib</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The attribute that defines the current step. If None, there is no step concept</p></li>
+<li><p><strong>every</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – Number of steps per checkpoint. If &lt; 1 no checkpoints will be saved</p></li>
+<li><p><strong>folder</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code>, <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – The directory to store checkpoints under</p></li>
+<li><p><strong>filename</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – Name of the file to save the checkpoint under. If None, a unique name will be choosen.
+If <code class="xref any docutils literal notranslate"><span class="pre">single_checkpoint</span></code> was False, then multiple files will be used prefixed with the
+step number</p></li>
+<li><p><strong>info</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]) – Any extra information to save in the json file associated with each checkpoint</p></li>
+<li><p><strong>exist_ok</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – Override existing files if any</p></li>
+<li><p><strong>single</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – If True, only the most recent checkpoint will be kept</p></li>
+</ul>
+</dd>
+</dl>
+<p>Remarks:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>single_checkpoint implies exist_ok</p></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.checkpoint_on_step_started">
+<code class="sig-name descname">checkpoint_on_step_started</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.checkpoint_on_step_started" title="Permalink to this definition">¶</a></dt>
+<dd><p>Should be called on every step to save checkpoints as needed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code>]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The path on which the checkpoint is stored if one is stored. None otherwise.</p>
+</dd>
+</dl>
+<p>Remarks:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Should be called at the BEGINNING of every step before any processing takes place</p></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.compensate">
+<code class="sig-name descname">compensate</code><span class="sig-paren">(</span><em class="sig-param">available</em>, <em class="sig-param">factory</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.compensate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.compensate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called by a factory when it is going bankrupt after liquidation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>available</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – The amount available from liquidation</p></li>
+<li><p><strong>factory</strong> (<a class="reference internal" href="../reference/scml.html#scml.Factory" title="scml.scml2020.world.Factory"><code class="xref py py-class docutils literal notranslate"><span class="pre">Factory</span></code></a>) – The factory being bankrupted</p></li>
+</ul>
+</dd>
+</dl>
+<p>Returns:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.complete_contract_execution">
+<code class="sig-name descname">complete_contract_execution</code><span class="sig-paren">(</span><em class="sig-param">contract</em>, <em class="sig-param">breaches</em>, <em class="sig-param">resolution</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.complete_contract_execution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.complete_contract_execution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after breach resolution is completed for contracts for which some potential breaches occurred.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>contract</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Contract</span></code>) – The contract considered.</p></li>
+<li><p><strong>breaches</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Breach</span></code>]) – The list of potential breaches that was generated by <code class="xref any docutils literal notranslate"><span class="pre">_execute_contract</span></code>.</p></li>
+<li><p><strong>resolution</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Contract</span></code>) – The agreed upon resolution</p></li>
+</ul>
+</dd>
+</dl>
+<p>Returns:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.contract_record">
+<code class="sig-name descname">contract_record</code><span class="sig-paren">(</span><em class="sig-param">contract</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.contract_record"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.contract_record" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a contract to a record suitable for permanent storage</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.contract_size">
+<code class="sig-name descname">contract_size</code><span class="sig-paren">(</span><em class="sig-param">contract</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.contract_size"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.contract_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an estimation of the <strong>activity level</strong> associated with this contract. Higher is better
+:type contract: <code class="xref py py-class docutils literal notranslate"><span class="pre">Contract</span></code>
+:param contract:</p>
+<p>Returns:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.create">
+<em class="property">classmethod </em><code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates an object and returns a proxy to it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.delete_executed_contracts">
+<code class="sig-name descname">delete_executed_contracts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.delete_executed_contracts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.executable_contracts">
+<code class="sig-name descname">executable_contracts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.executable_contracts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at every time-step to get the contracts that are <code class="xref any docutils literal notranslate"><span class="pre">executable</span></code> at this point of the simulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Collection</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Contract</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.execute_action">
+<code class="sig-name descname">execute_action</code><span class="sig-paren">(</span><em class="sig-param">action</em>, <em class="sig-param">agent</em>, <em class="sig-param">callback=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.execute_action"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.execute_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes the given action by the given agent</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.from_checkpoint">
+<em class="property">classmethod </em><code class="sig-name descname">from_checkpoint</code><span class="sig-paren">(</span><em class="sig-param">file_name</em>, <em class="sig-param">return_info=False</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.from_checkpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates an object from a saved checkpoint</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_name</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code>]) – </p></li>
+<li><p><strong>return_info</strong> – If True, tbe information saved when the file was dumped are returned</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">NamedObject</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">NamedObject</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Either the object or the object and dump-info as a dict (if return_info was true)</p>
+</dd>
+</dl>
+<p>Remarks:</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>If info is returned, it is guaranteed to have the following members:</dt><dd><ul>
+<li><p>time: Dump time</p></li>
+<li><p>type: Type of the dumped object</p></li>
+<li><p>id: ID</p></li>
+<li><p>name: name</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.from_config">
+<em class="property">classmethod </em><code class="sig-name descname">from_config</code><span class="sig-paren">(</span><em class="sig-param">config</em>, <em class="sig-param">section=None</em>, <em class="sig-param">ignore_children=True</em>, <em class="sig-param">try_parsing_children=True</em>, <em class="sig-param">scope=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.from_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates an object of this class given the configuration info</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>config</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>]) – Either a file name or a dictionary</p></li>
+<li><p><strong>section</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – A section in the file or a key in the dictionary to use for loading params</p></li>
+<li><p><strong>ignore_children</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – If true then children will be ignored and there will be a single return</p></li>
+<li><p><strong>try_parsing_children</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – If true the children will first be parsed as <code class="xref any docutils literal notranslate"><span class="pre">ConfigReader</span></code> classes if they are not</p></li>
+<li><p><strong>types</strong><strong> (</strong><strong>e.g. int</strong><strong>, </strong><strong>str</strong><strong>, </strong><strong>float</strong><strong>, </strong><strong>Iterable</strong><strong>[</strong><strong>int|str|float</strong><strong>]</strong> (<em>simple</em>) – </p></li>
+<li><p><strong>scope</strong> – The scope at which to evaluate any child classes. This MUST be passed as scope=globals() if you are</p></li>
+<li><p><strong>any children that are to be parsed.</strong> (<em>having</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An object of cls if ignore_children is True or a tuple with an object of cls and a dictionary with children
+that were not parsed.</p>
+</dd>
+</dl>
+<p>Remarks:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>This function will return an object of its class after passing the key-value pairs found in the config to
+the init function.</p></li>
+<li><p>Requiring passing scope=globals() to this function is to get around the fact that in python eval() will be
+called with a globals dictionary based on the module in which the function is defined not called. This means
+that in general when eval() is called to create the children, it will not have access to the class
+definitions of these children (except if they happen to be imported in this file). To avoid this problem
+causing an undefined_name exception, the caller must pass her globals() as the scope.</p></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.generate">
+<em class="property">classmethod </em><code class="sig-name descname">generate</code><span class="sig-paren">(</span><em class="sig-param">agent_types</em>, <em class="sig-param">agent_params=None</em>, <em class="sig-param">n_steps=100</em>, <em class="sig-param">n_processes=4</em>, <em class="sig-param">n_lines=10</em>, <em class="sig-param">n_agents_per_process=3</em>, <em class="sig-param">process_inputs=1</em>, <em class="sig-param">process_outputs=1</em>, <em class="sig-param">production_costs=(1</em>, <em class="sig-param">10)</em>, <em class="sig-param">profit_means=(0.1</em>, <em class="sig-param">0.2)</em>, <em class="sig-param">profit_stddevs=0.05</em>, <em class="sig-param">max_productivity=1.0</em>, <em class="sig-param">initial_balance=None</em>, <em class="sig-param">cost_increases_with_level=True</em>, <em class="sig-param">horizon=(0.5</em>, <em class="sig-param">0.9)</em>, <em class="sig-param">equal_exogenous_supply=False</em>, <em class="sig-param">equal_exogenous_sales=False</em>, <em class="sig-param">use_exogenous_contracts=True</em>, <em class="sig-param">exogenous_control=(0.0</em>, <em class="sig-param">1.0)</em>, <em class="sig-param">cash_availability=2.5</em>, <em class="sig-param">profit_basis=&lt;function mean&gt;</em>, <em class="sig-param">force_signing=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.generate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.generate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates the configuration for a world</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>agent_types</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code>[<a class="reference internal" href="../reference/scml.html#scml.SCML2020Agent" title="scml.scml2020.world.SCML2020Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">SCML2020Agent</span></code></a>]]) – All agent types</p></li>
+<li><p><strong>agent_params</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]]) – Agent parameters used to initialize them</p></li>
+<li><p><strong>n_steps</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – Number of simulation steps</p></li>
+<li><p><strong>n_processes</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – Number of processes in the production chain</p></li>
+<li><p><strong>n_lines</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – Number of lines per factory</p></li>
+<li><p><strong>process_inputs</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – Number of input units per process</p></li>
+<li><p><strong>process_outputs</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – Number of output units per process</p></li>
+<li><p><strong>production_costs</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – Production cost per factory</p></li>
+<li><p><strong>profit_means</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]) – Mean profitability per production level (i.e. process).</p></li>
+<li><p><strong>profit_stddevs</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]) – Std. Dev. of the profitability of every level (i.e. process).</p></li>
+<li><p><strong>max_productivity</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]) – Maximum possible productivity per level (i.e. process).</p></li>
+<li><p><strong>initial_balance</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – The initial balance of all agents</p></li>
+<li><p><strong>n_agents_per_process</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – Number of agents per process</p></li>
+<li><p><strong>cost_increases_with_level</strong> – If true, production cost will be higher for processes nearer to the final
+product.</p></li>
+<li><p><strong>profit_basis</strong> – The statistic used when controlling catalog prices by profit arguments. It can be np.mean,
+np.median, np.min, np.max or any Callable[[list[float]], float] and is used to summarize
+production costs at every level.</p></li>
+<li><p><strong>horizon</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]) – The horizon used for revealing external supply/sales as a fraction of n_steps</p></li>
+<li><p><strong>equal_exogenous_supply</strong> – If true, external supply will be distributed equally among all agents in the first
+layer</p></li>
+<li><p><strong>equal_exogenous_sales</strong> – If true, external sales will be distributed equally among all agents in the last
+layer</p></li>
+<li><p><strong>use_exogenous_contracts</strong> – If true, external supply and sales are revealed as exogenous contracts instead
+of using exogenous_* parts of the factory profile</p></li>
+<li><p><strong>cash_availability</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]) – The fraction of the total money needs of the agent to work at maximum capacity that
+is available as <a class="reference internal" href="scml.scml2019.Factory.html#scml.scml2019.Factory.initial_balance" title="scml.scml2019.Factory.initial_balance"><code class="xref any py py-attr docutils literal notranslate"><span class="pre">initial_balance</span></code></a> . This is only effective if <a class="reference internal" href="scml.scml2019.Factory.html#scml.scml2019.Factory.initial_balance" title="scml.scml2019.Factory.initial_balance"><code class="xref any py py-attr docutils literal notranslate"><span class="pre">initial_balance</span></code></a> is set
+to <code class="xref any docutils literal notranslate"><span class="pre">None</span></code> .</p></li>
+<li><p><strong>force_signing</strong> – Whether to force contract signatures (exogenous contracts are treated in the same way).</p></li>
+<li><p><strong>exogenous_control</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]) – How much control does the agent have over exogenous contract signing. Only effective if
+force_signing is False and use_exogenous_contracts is True</p></li>
+<li><p><strong>**kwargs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>world configuration as a Dict[str, Any]. A world can be generated from this dict by calling SCML2020World(<a href="#id1"><span class="problematic" id="id2">**</span></a>d)</p>
+</dd>
+</dl>
+<p>Remarks:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Most parameters (i.e. <code class="xref any docutils literal notranslate"><span class="pre">process_inputs</span></code> , <code class="xref any docutils literal notranslate"><span class="pre">process_outputs</span></code> , <code class="xref any docutils literal notranslate"><span class="pre">n_agents_per_process</span></code> , <a class="reference internal" href="scml.scml2020.FactoryProfile.html#scml.scml2020.FactoryProfile.costs" title="scml.scml2020.FactoryProfile.costs"><code class="xref any py py-attr docutils literal notranslate"><span class="pre">costs</span></code></a> ) can
+take a single value, a tuple of two values, or a list of values.
+If it has a single value, it is repeated for all processes/factories as appropriate. If it is a
+tuple of two numbers $(i, j)$, each process will take a number sampled from a uniform distribution
+supported on $[i, j]$ inclusive. If it is a list of values, of the length <a class="reference internal" href="scml.scml2020.AWI.html#scml.scml2020.AWI.n_processes" title="scml.scml2020.AWI.n_processes"><code class="xref any py py-attr docutils literal notranslate"><span class="pre">n_processes</span></code></a> , it is used as
+it is otherwise, it is used to sample values for each process.</p></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.get_dropped_contracts">
+<code class="sig-name descname">get_dropped_contracts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.get_dropped_contracts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Collection</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Contract</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.get_private_state">
+<code class="sig-name descname">get_private_state</code><span class="sig-paren">(</span><em class="sig-param">agent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.get_private_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.get_private_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the private state of the given agent</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.ignore_contract">
+<code class="sig-name descname">ignore_contract</code><span class="sig-paren">(</span><em class="sig-param">contract</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.ignore_contract" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ignores the contract as if it was never agreed upon</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>contract</strong> – The contract to add</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.init">
+<code class="sig-name descname">init</code><span class="sig-paren">(</span><em class="sig-param">time_field='time'</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.join">
+<code class="sig-name descname">join</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">simulation_priority=0</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.join" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an agent to the world.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Agent</span></code>) – The agent to be registered</p></li>
+<li><p><strong>simulation_priority</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – The simulation periority. Entities with lower periorities will be stepped first during</p></li>
+</ul>
+</dd>
+</dl>
+<p>Returns:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.logdebug">
+<code class="sig-name descname">logdebug</code><span class="sig-paren">(</span><em class="sig-param">s</em>, <em class="sig-param">event=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.logdebug" title="Permalink to this definition">¶</a></dt>
+<dd><p>logs debug-level information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<em>str</em>) – The string to log</p></li>
+<li><p><strong>event</strong> (<em>Event</em>) – The event to announce after logging</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.logdebug_agent">
+<code class="sig-name descname">logdebug_agent</code><span class="sig-paren">(</span><em class="sig-param">aid</em>, <em class="sig-param">s</em>, <em class="sig-param">event=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.logdebug_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>logs debug to the agent individual log</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<em>str</em>) – The string to log</p></li>
+<li><p><strong>event</strong> (<em>Event</em>) – The event to announce after logging</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.logerror">
+<code class="sig-name descname">logerror</code><span class="sig-paren">(</span><em class="sig-param">s</em>, <em class="sig-param">event=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.logerror" title="Permalink to this definition">¶</a></dt>
+<dd><p>logs error-level information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<em>str</em>) – The string to log</p></li>
+<li><p><strong>event</strong> (<em>Event</em>) – The event to announce after logging</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.logerror_agent">
+<code class="sig-name descname">logerror_agent</code><span class="sig-paren">(</span><em class="sig-param">aid</em>, <em class="sig-param">s</em>, <em class="sig-param">event=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.logerror_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>logs information to the agent individual log</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<em>str</em>) – The string to log</p></li>
+<li><p><strong>event</strong> (<em>Event</em>) – The event to announce after logging</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.loginfo">
+<code class="sig-name descname">loginfo</code><span class="sig-paren">(</span><em class="sig-param">s</em>, <em class="sig-param">event=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.loginfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>logs info-level information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<em>str</em>) – The string to log</p></li>
+<li><p><strong>event</strong> (<em>Event</em>) – The event to announce after logging</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.loginfo_agent">
+<code class="sig-name descname">loginfo_agent</code><span class="sig-paren">(</span><em class="sig-param">aid</em>, <em class="sig-param">s</em>, <em class="sig-param">event=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.loginfo_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>logs information to the agent individual log</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<em>str</em>) – The string to log</p></li>
+<li><p><strong>event</strong> (<em>Event</em>) – The event to announce after logging</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.logwarning">
+<code class="sig-name descname">logwarning</code><span class="sig-paren">(</span><em class="sig-param">s</em>, <em class="sig-param">event=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.logwarning" title="Permalink to this definition">¶</a></dt>
+<dd><p>logs warning-level information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<em>str</em>) – The string to log</p></li>
+<li><p><strong>event</strong> (<em>Event</em>) – The event to announce after logging</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.logwarning_agent">
+<code class="sig-name descname">logwarning_agent</code><span class="sig-paren">(</span><em class="sig-param">aid</em>, <em class="sig-param">s</em>, <em class="sig-param">event=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.logwarning_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>logs warning to the agent individual log</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<em>str</em>) – The string to log</p></li>
+<li><p><strong>event</strong> (<em>Event</em>) – The event to announce after logging</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.n_saved_contracts">
+<code class="sig-name descname">n_saved_contracts</code><span class="sig-paren">(</span><em class="sig-param">ignore_no_issue=True</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.n_saved_contracts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of saved contracts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ignore_no_issue</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – If true, only contracts resulting from negotiation (has some issues) will be counted</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.nullify_contract">
+<code class="sig-name descname">nullify_contract</code><span class="sig-paren">(</span><em class="sig-param">contract</em>, <em class="sig-param">new_quantity</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.nullify_contract"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.nullify_contract" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.on_contract_cancelled">
+<code class="sig-name descname">on_contract_cancelled</code><span class="sig-paren">(</span><em class="sig-param">contract</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.on_contract_cancelled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called whenever a concluded contract is not signed (cancelled)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>contract</strong> – The contract to add</p>
+</dd>
+</dl>
+<p>Remarks:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>By default this function just adds the contract to the set of contracts maintaned by the world.</p></li>
+<li><p>You should ALWAYS call this function when overriding it.</p></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.on_contract_concluded">
+<code class="sig-name descname">on_contract_concluded</code><span class="sig-paren">(</span><em class="sig-param">contract</em>, <em class="sig-param">to_be_signed_at</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.on_contract_concluded"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.on_contract_concluded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called to add a contract to the existing set of unsigned contract after it is concluded</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>contract</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Contract</span></code>) – The contract to add</p></li>
+<li><p><strong>to_be_signed_at</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – The timestep at which the contract is to be signed</p></li>
+</ul>
+</dd>
+</dl>
+<p>Remarks:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>By default this function just adds the contract to the set of contracts maintaned by the world.</p></li>
+<li><p>You should ALWAYS call this function when overriding it.</p></li>
+</ul>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.on_contract_processed">
+<code class="sig-name descname">on_contract_processed</code><span class="sig-paren">(</span><em class="sig-param">contract</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.on_contract_processed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called whenever a contract finished processing to be removed from unsigned contracts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>contract</strong> – Contract</p>
+</dd>
+</dl>
+<p>Remarks:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>called by on_contract_cancelled and on_contract_signed</p></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.on_contract_signed">
+<code class="sig-name descname">on_contract_signed</code><span class="sig-paren">(</span><em class="sig-param">contract</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.on_contract_signed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.on_contract_signed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called to add a contract to the existing set of contract after it is signed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>contract</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Contract</span></code>) – The contract to add</p>
+</dd>
+</dl>
+<p>Remarks:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>By default this function just adds the contract to the set of contracts maintaned by the world.</p></li>
+<li><p>You should ALWAYS call this function when overriding it.</p></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.on_event">
+<code class="sig-name descname">on_event</code><span class="sig-paren">(</span><em class="sig-param">event</em>, <em class="sig-param">sender</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.on_event" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.order_contracts_for_execution">
+<code class="sig-name descname">order_contracts_for_execution</code><span class="sig-paren">(</span><em class="sig-param">contracts</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.order_contracts_for_execution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.order_contracts_for_execution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Orders the contracts in a specific time-step that are about to be executed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Collection</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Contract</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.post_step_stats">
+<code class="sig-name descname">post_step_stats</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.post_step_stats"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.post_step_stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at the end of the simulation step to update all stats</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.pre_step_stats">
+<code class="sig-name descname">pre_step_stats</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.pre_step_stats"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.pre_step_stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called at the beginning of the simulation step to prepare stats or update them</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.read_config">
+<em class="property">classmethod </em><code class="sig-name descname">read_config</code><span class="sig-paren">(</span><em class="sig-param">config</em>, <em class="sig-param">section=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.read_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the configuration from a file or a dict and prepares it for parsing</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>config</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>]) – Either a file name or a dictionary</p></li>
+<li><p><strong>section</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – A section in the file or a key in the dictionary to use for loading params</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A dict ready to be parsed by from_config</p>
+</dd>
+</dl>
+<p>Remarks:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.record_bankrupt">
+<code class="sig-name descname">record_bankrupt</code><span class="sig-paren">(</span><em class="sig-param">factory</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.record_bankrupt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.record_bankrupt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Records agent bankruptcy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.register">
+<code class="sig-name descname">register</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">simulation_priority=0</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.register" title="Permalink to this definition">¶</a></dt>
+<dd><p>Registers an entity in the world so it can be looked up by name. Should not be called directly</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code>) – The entity to be registered</p></li>
+<li><p><strong>simulation_priority</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – The simulation periority. Entities with lower periorities will be stepped first during</p></li>
+</ul>
+</dd>
+</dl>
+<p>Returns:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.register_listener">
+<code class="sig-name descname">register_listener</code><span class="sig-paren">(</span><em class="sig-param">event_type</em>, <em class="sig-param">listener</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.register_listener" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.register_stats_monitor">
+<code class="sig-name descname">register_stats_monitor</code><span class="sig-paren">(</span><em class="sig-param">m</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.register_stats_monitor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.register_world_monitor">
+<code class="sig-name descname">register_world_monitor</code><span class="sig-paren">(</span><em class="sig-param">m</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.register_world_monitor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.relative_welfare">
+<code class="sig-name descname">relative_welfare</code><span class="sig-paren">(</span><em class="sig-param">include_bankrupt=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.relative_welfare"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.relative_welfare" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total welfare relative to expected value. Returns None if no expectation is found in self.info</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.request_negotiation_about">
+<code class="sig-name descname">request_negotiation_about</code><span class="sig-paren">(</span><em class="sig-param">req_id</em>, <em class="sig-param">caller</em>, <em class="sig-param">issues</em>, <em class="sig-param">partners</em>, <em class="sig-param">roles=None</em>, <em class="sig-param">annotation=None</em>, <em class="sig-param">mechanism_name=None</em>, <em class="sig-param">mechanism_params=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.request_negotiation_about" title="Permalink to this definition">¶</a></dt>
+<dd><p>Requests to start a negotiation with some other agents</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>req_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – An ID For the request that is unique to the caller</p></li>
+<li><p><strong>caller</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Agent</span></code>) – The agent requesting the negotiation</p></li>
+<li><p><strong>partners</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Agent</span></code>]) – The list of partners that the agent wants to negotiate with. Roles will be determined by these agents.</p></li>
+<li><p><strong>issues</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Issue</span></code>]) – Negotiation issues</p></li>
+<li><p><strong>annotation</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]) – Extra information to be passed to the <code class="xref any docutils literal notranslate"><span class="pre">partners</span></code> when asking them to join the negotiation</p></li>
+<li><p><strong>partners</strong> – A list of partners to participate in the negotiation</p></li>
+<li><p><strong>roles</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]) – The roles of different partners. If None then each role for each partner will be None</p></li>
+<li><p><strong>mechanism_name</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – Name of the mechanism to use. It must be one of the mechanism_names that are supported by the</p></li>
+<li><p><strong>or None which means that the World should select the mechanism. If None</strong><strong>, </strong><strong>then roles and my_role</strong> (<em>World</em>) – </p></li>
+<li><p><strong>also be None</strong> (<em>must</em>) – </p></li>
+<li><p><strong>mechanism_params</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]) – A dict of parameters used to initialize the mechanism object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None. The caller will be informed by a callback function <a class="reference internal" href="scml.scml2019.Bank.html#scml.scml2019.Bank.on_neg_request_accepted" title="scml.scml2019.Bank.on_neg_request_accepted"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">on_neg_request_accepted</span></code></a> or
+<a class="reference internal" href="scml.scml2019.Bank.html#scml.scml2019.Bank.on_neg_request_rejected" title="scml.scml2019.Bank.on_neg_request_rejected"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">on_neg_request_rejected</span></code></a> about the status of the negotiation.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the simulation until it ends</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.run_negotiation">
+<code class="sig-name descname">run_negotiation</code><span class="sig-paren">(</span><em class="sig-param">caller</em>, <em class="sig-param">issues</em>, <em class="sig-param">partners</em>, <em class="sig-param">negotiator</em>, <em class="sig-param">ufun=None</em>, <em class="sig-param">caller_role=None</em>, <em class="sig-param">roles=None</em>, <em class="sig-param">annotation=None</em>, <em class="sig-param">mechanism_name=None</em>, <em class="sig-param">mechanism_params=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.run_negotiation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs a negotiation until completion</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>caller</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Agent</span></code>) – The agent requesting the negotiation</p></li>
+<li><p><strong>partners</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Collection</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Agent</span></code>]) – The list of partners that the agent wants to negotiate with. Roles will be determined by these agents.</p></li>
+<li><p><strong>negotiator</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Negotiator</span></code>) – The negotiator to be used in the negotiation</p></li>
+<li><p><strong>ufun</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">UtilityFunction</span></code>]) – The utility function. Only needed if the negotiator does not already know it</p></li>
+<li><p><strong>caller_role</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – The role of the caller in the negotiation</p></li>
+<li><p><strong>issues</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Collection</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Issue</span></code>]) – Negotiation issues</p></li>
+<li><p><strong>annotation</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]) – Extra information to be passed to the <code class="xref any docutils literal notranslate"><span class="pre">partners</span></code> when asking them to join the negotiation</p></li>
+<li><p><strong>partners</strong> – A list of partners to participate in the negotiation</p></li>
+<li><p><strong>roles</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Collection</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]) – The roles of different partners. If None then each role for each partner will be None</p></li>
+<li><p><strong>mechanism_name</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – Name of the mechanism to use. It must be one of the mechanism_names that are supported by the</p></li>
+<li><p><strong>or None which means that the World should select the mechanism. If None</strong><strong>, </strong><strong>then roles and my_role</strong> (<em>World</em>) – </p></li>
+<li><p><strong>also be None</strong> (<em>must</em>) – </p></li>
+<li><p><strong>mechanism_params</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]) – A dict of parameters used to initialize the mechanism object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Contract</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">AgentMechanismInterface</span></code>]]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A Tuple of a contract and the ami of the mechanism used to get it in case of success. None otherwise</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.run_negotiations">
+<code class="sig-name descname">run_negotiations</code><span class="sig-paren">(</span><em class="sig-param">caller</em>, <em class="sig-param">issues</em>, <em class="sig-param">partners</em>, <em class="sig-param">negotiators</em>, <em class="sig-param">ufuns=None</em>, <em class="sig-param">caller_roles=None</em>, <em class="sig-param">roles=None</em>, <em class="sig-param">annotations=None</em>, <em class="sig-param">mechanism_names=None</em>, <em class="sig-param">mechanism_params=None</em>, <em class="sig-param">all_or_none=False</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.run_negotiations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Requests to run a set of negotiations simultaneously. Returns after all negotiations are run to completion</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>caller</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Agent</span></code>) – The agent requesting the negotiation</p></li>
+<li><p><strong>partners</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Agent</span></code>]]) – The list of partners that the agent wants to negotiate with. Roles will be determined by these agents.</p></li>
+<li><p><strong>issues</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Issue</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Issue</span></code>]]]) – Negotiation issues</p></li>
+<li><p><strong>negotiators</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Negotiator</span></code>]) – The negotiator to be used in the negotiation</p></li>
+<li><p><strong>ufuns</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">UtilityFunction</span></code>]]) – The utility function. Only needed if the negotiator does not already know it</p></li>
+<li><p><strong>caller_roles</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]) – The role of the caller in the negotiation</p></li>
+<li><p><strong>annotations</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]]]) – Extra information to be passed to the <code class="xref any docutils literal notranslate"><span class="pre">partners</span></code> when asking them to join the negotiation</p></li>
+<li><p><strong>partners</strong> – A list of partners to participate in the negotiation</p></li>
+<li><p><strong>roles</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]]]) – The roles of different partners. If None then each role for each partner will be None</p></li>
+<li><p><strong>mechanism_names</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>], <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – Name of the mechanism to use. It must be one of the mechanism_names that are supported by the</p></li>
+<li><p><strong>or None which means that the World should select the mechanism. If None</strong><strong>, </strong><strong>then roles and my_role</strong> (<em>World</em>) – </p></li>
+<li><p><strong>also be None</strong> (<em>must</em>) – </p></li>
+<li><p><strong>mechanism_params</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]], <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – A dict of parameters used to initialize the mechanism object</p></li>
+<li><p><strong>all_of_none</strong> – If True, ALL partners must agree to negotiate to go through.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>contract (None for failure) and ami (The mechanism info [None if
+the partner refused the negotiation])</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>A list of tuples each with two values</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.save_config">
+<code class="sig-name descname">save_config</code><span class="sig-paren">(</span><em class="sig-param">file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.save_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the config of the world as a yaml file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Name of file to save the config to</p>
+</dd>
+</dl>
+<p>Returns:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.set_bulletin_board">
+<code class="sig-name descname">set_bulletin_board</code><span class="sig-paren">(</span><em class="sig-param">bulletin_board</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.set_bulletin_board" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.simulation_step_after_execution">
+<code class="sig-name descname">simulation_step_after_execution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.simulation_step_after_execution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.simulation_step_after_execution" title="Permalink to this definition">¶</a></dt>
+<dd><p>A single step of the simulation if any (after entity and contract execution)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.simulation_step_before_execution">
+<code class="sig-name descname">simulation_step_before_execution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.simulation_step_before_execution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.simulation_step_before_execution" title="Permalink to this definition">¶</a></dt>
+<dd><p>A single step of the simulation if any (before entity and contract execution)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.start_contract_execution">
+<code class="sig-name descname">start_contract_execution</code><span class="sig-paren">(</span><em class="sig-param">contract</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.start_contract_execution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.start_contract_execution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tries to execute the contract</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>contract</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Contract</span></code>) – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The set of breaches committed if any. If there are no breaches return an empty set</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Set[Breach]</p>
+</dd>
+</dl>
+<p>Remarks:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You must call super() implementation of this method before doing anything</p></li>
+<li><p>It is possible to return None which indicates that the contract was nullified (i.e. not executed due to a
+reason other than an execution exeception).</p></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.step">
+<code class="sig-name descname">step</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.step" title="Permalink to this definition">¶</a></dt>
+<dd><p>A single simulation step</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.unregister_stats_monitor">
+<code class="sig-name descname">unregister_stats_monitor</code><span class="sig-paren">(</span><em class="sig-param">m</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.unregister_stats_monitor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.unregister_world_monitor">
+<code class="sig-name descname">unregister_world_monitor</code><span class="sig-paren">(</span><em class="sig-param">m</em><span class="sig-paren">)</span><a class="headerlink" href="#scml.scml2020.SCML2020World.unregister_world_monitor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scml.scml2020.SCML2020World.welfare">
+<code class="sig-name descname">welfare</code><span class="sig-paren">(</span><em class="sig-param">include_bankrupt=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scml/scml2020/world.html#SCML2020World.welfare"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scml.scml2020.SCML2020World.welfare" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total welfare of all agents</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="scml.scml2020.FinancialReport.html" class="btn btn-neutral float-right" title="FinancialReport" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="scml.scml2020.AWI.html" class="btn btn-neutral float-left" title="AWI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Yasser Mohammad
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

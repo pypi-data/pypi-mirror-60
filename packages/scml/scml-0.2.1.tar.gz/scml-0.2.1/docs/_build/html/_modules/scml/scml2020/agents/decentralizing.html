@@ -1,0 +1,1325 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>scml.scml2020.agents.decentralizing &mdash; scml 0.1.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> scml
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../readme.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../readme.html#id1">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../readme.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../readme.html#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../readme.html#development">Development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../tutorials/01.run_scml2020.html">Run a session of the SCML world (2020)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/scml2019.html">SCML2019</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../modules/scml2019.html#module-scml.scml2019">scml.scml2019 Package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../modules/scml2019.html#simulation-steps">Simulation steps:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../modules/scml2019.html#remarks-about-re-negotiation-on-breaches">Remarks about re-negotiation on breaches:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../modules/scml2019.html#remarks-about-timing">Remarks about timing:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../modules/scml2019.html#remarks-about-anac-2019-scml-league">Remarks about ANAC 2019 SCML League:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../modules/scml2019.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.transaction.html">transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.temporary_transaction.html">temporary_transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.anac2019_world.html">anac2019_world</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.anac2019_tournament.html">anac2019_tournament</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.anac2019_collusion.html">anac2019_collusion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.anac2019_std.html">anac2019_std</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.balance_calculator.html">balance_calculator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.anac2019_sabotage.html">anac2019_sabotage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.pos_gauss.html">pos_gauss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019._safe_max.html">_safe_max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.zero_runs.html">zero_runs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../modules/scml2019.html#classes">Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.Product.html">Product</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.Process.html">Process</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.InputOutput.html">InputOutput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.RunningCommandInfo.html">RunningCommandInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.ManufacturingProfile.html">ManufacturingProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.ManufacturingProfileCompiled.html">ManufacturingProfileCompiled</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.ProductManufacturingInfo.html">ProductManufacturingInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.FactoryStatusUpdate.html">FactoryStatusUpdate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.Job.html">Job</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.ProductionNeed.html">ProductionNeed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.MissingInput.html">MissingInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.ProductionReport.html">ProductionReport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.ProductionFailure.html">ProductionFailure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.FinancialReport.html">FinancialReport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.SCMLAgreement.html">SCMLAgreement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.SCMLAction.html">SCMLAction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.CFP.html">CFP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.Loan.html">Loan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.InsurancePolicy.html">InsurancePolicy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.Factory.html">Factory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.FactoryState.html">FactoryState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.SCMLAWI.html">SCMLAWI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.FactoryManager.html">FactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.DoNothingFactoryManager.html">DoNothingFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.GreedyFactoryManager.html">GreedyFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.JavaFactoryManager.html">JavaFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.JavaDoNothingFactoryManager.html">JavaDoNothingFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.JavaGreedyFactoryManager.html">JavaGreedyFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.JavaDummyMiddleMan.html">JavaDummyMiddleMan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.FJ2FactoryManager.html">FJ2FactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.RaptFactoryManager.html">RaptFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.InsuranceFraudFactoryManager.html">InsuranceFraudFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.SAHAFactoryManager.html">SAHAFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.CheapBuyerFactoryManager.html">CheapBuyerFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.NVMFactoryManager.html">NVMFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.DefaultBank.html">DefaultBank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.Bank.html">Bank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.DefaultInsuranceCompany.html">DefaultInsuranceCompany</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.InsuranceCompany.html">InsuranceCompany</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.SCMLAgent.html">SCMLAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.FactorySimulator.html">FactorySimulator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.SlowFactorySimulator.html">SlowFactorySimulator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.FastFactorySimulator.html">FastFactorySimulator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.DefaultGreedyManager.html">DefaultGreedyManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.ScheduleInfo.html">ScheduleInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.Scheduler.html">Scheduler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.GreedyScheduler.html">GreedyScheduler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.SCMLWorld.html">SCMLWorld</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.Factory.html">Factory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.Consumer.html">Consumer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.ConsumptionProfile.html">ConsumptionProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.JustInTimeConsumer.html">JustInTimeConsumer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.Miner.html">Miner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.MiningProfile.html">MiningProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2019.ReactiveMiner.html">ReactiveMiner</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../modules/scml2019.html#class-inheritance-diagram">Class Inheritance Diagram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/scml2020.html">SCML2020</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../modules/scml2020.html#module-scml.scml2020">scml.scml2020 Package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../modules/scml2020.html#classes">Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2020.RandomAgent.html">RandomAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2020.DoNothingAgent.html">DoNothingAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2020.IndependentNegotiationsAgent.html">IndependentNegotiationsAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2020.BuyCheapSellExpensiveAgent.html">BuyCheapSellExpensiveAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2020.DecentralizingAgent.html">DecentralizingAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2020.FactoryState.html">FactoryState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2020.SCML2020Agent.html">SCML2020Agent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2020.AWI.html">AWI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2020.SCML2020World.html">SCML2020World</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2020.FinancialReport.html">FinancialReport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2020.FactoryProfile.html">FactoryProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../api/scml.scml2020.Factory.html">Factory</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../modules/scml2020.html#class-inheritance-diagram">Class Inheritance Diagram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scripts.html">Command Line Scripts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../scripts.html#tournament-command-scml-tournament">Tournament Command (scml tournament)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../scripts.html#creating-a-tournament">Creating a tournament</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../scripts.html#running-a-tournament">Running a tournament</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../scripts.html#combining-tournament-results">Combining tournament results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../scripts.html#finding-the-winners-of-a-tournament">Finding the winners of a tournament</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../scripts.html#running-an-scml2020-world-scml-run2020">Running an SCML2020 world (scml run2020)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../scripts.html#running-an-scml2019-world-scml-run2019">Running an SCML2019 world (scml run2019)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../reference/index.html">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../reference/scml.html">scml</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributing.html">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../contributing.html#bug-reports">Bug reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../contributing.html#documentation-improvements">Documentation improvements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../contributing.html#feature-requests-and-feedback">Feature requests and feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../contributing.html#development">Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../contributing.html#pull-request-guidelines">Pull Request Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../contributing.html#tips">Tips</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../changelog.html">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../changelog.html#id1">0.1.5 (2019.12.11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../changelog.html#id2">0.1.3 (2019-12-08)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../changelog.html#id3">0.1.2 (2019-12-01)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../changelog.html#id4">0.1.1 (2019-11-25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../changelog.html#id5">0.1.0 (2019-11-20)</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">scml</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>scml.scml2020.agents.decentralizing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for scml.scml2020.agents.decentralizing</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Implements the `DecentralizingAgent` which creates ony buy and one sell controller for each time-step and relinquishes</span>
+<span class="sd">control of negotiations to buy/sell the required number of items of its input/output product.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">copy</span>
+<span class="kn">import</span> <span class="nn">itertools</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">namedtuple</span>
+<span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">Type</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">negmas</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">UtilityFunction</span><span class="p">,</span>
+    <span class="n">Outcome</span><span class="p">,</span>
+    <span class="n">outcome_as_dict</span><span class="p">,</span>
+    <span class="n">LinearUtilityFunction</span><span class="p">,</span>
+    <span class="n">SAONegotiator</span><span class="p">,</span>
+    <span class="n">Issue</span><span class="p">,</span>
+    <span class="n">Negotiator</span><span class="p">,</span>
+    <span class="n">AgentMechanismInterface</span><span class="p">,</span>
+    <span class="n">Contract</span><span class="p">,</span>
+    <span class="n">SAOController</span><span class="p">,</span>
+    <span class="n">MechanismState</span><span class="p">,</span>
+    <span class="n">ResponseType</span><span class="p">,</span>
+    <span class="n">AspirationMixin</span><span class="p">,</span>
+    <span class="n">AspirationNegotiator</span><span class="p">,</span>
+    <span class="n">PassThroughNegotiator</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">negmas.events</span> <span class="kn">import</span> <span class="n">Notifier</span><span class="p">,</span> <span class="n">Notification</span>
+<span class="kn">from</span> <span class="nn">negmas.helpers</span> <span class="kn">import</span> <span class="n">instantiate</span><span class="p">,</span> <span class="n">get_class</span>
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">scml.scml2020</span> <span class="kn">import</span> <span class="n">AWI</span><span class="p">,</span> <span class="n">NO_COMMAND</span><span class="p">,</span> <span class="n">ANY_LINE</span>
+
+<span class="kn">from</span> <span class="nn">.do_nothing</span> <span class="kn">import</span> <span class="n">DoNothingAgent</span>
+
+<span class="n">QUANTITY</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">TIME</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">UNIT_PRICE</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;DecentralizingAgent&quot;</span><span class="p">]</span>
+
+
+<span class="k">class</span> <span class="nc">StepController</span><span class="p">(</span><span class="n">SAOController</span><span class="p">,</span> <span class="n">AspirationMixin</span><span class="p">,</span> <span class="n">Notifier</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A controller for managing a set of negotiations about selling/buying the a product starting/ending at some</span>
+<span class="sd">    specific time-step. It works in conjunction with the `DecentralizingAgent` .</span>
+
+<span class="sd">    Args:</span>
+
+<span class="sd">        target_quantity: The quantity to be secured</span>
+<span class="sd">        is_seller:  Is this a seller or a buyer</span>
+<span class="sd">        parent: The parent `DecedntralizingAgent`</span>
+<span class="sd">        step:  The simulation step that this controller is responsible about</span>
+<span class="sd">        urange: The range of unit prices used for negotiation</span>
+<span class="sd">        product: The product that this controller negotiates about</span>
+<span class="sd">        partners: A list of partners to negotiate with</span>
+<span class="sd">        negotiator_type: The type of the negotiator used for all negotiations.</span>
+<span class="sd">        negotiator_params: The parameters of the negotiator used for all negotiations</span>
+<span class="sd">        max_retries: How many times can the controller try negotiating with each partner.</span>
+<span class="sd">        *args: Position arguments passed to the base Controller constructor</span>
+<span class="sd">        **kwargs: Keyword arguments passed to the base Controller constructor</span>
+
+
+<span class="sd">    Remarks:</span>
+
+<span class="sd">        - It uses whatever negotiator type on all of its negotiations and it assumes that the ufun will never change</span>
+<span class="sd">        - Once it accumulates the required quantity, it ends all remaining negotiations</span>
+<span class="sd">        - It assumes that all ufuns are identical so there is no need to keep a separate negotiator for each one and it</span>
+<span class="sd">          instantiates a single negotiator that dynamically changes the AMI but always uses the same ufun.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+        <span class="n">target_quantity</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">is_seller</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+        <span class="n">parent</span><span class="p">:</span> <span class="s2">&quot;DecentralizingAgent&quot;</span><span class="p">,</span>
+        <span class="n">step</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">urange</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
+        <span class="n">product</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">partners</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+        <span class="n">negotiator_type</span><span class="p">:</span> <span class="n">SAONegotiator</span><span class="p">,</span>
+        <span class="n">negotiator_params</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">max_retries</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__parent</span> <span class="o">=</span> <span class="n">parent</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">is_seller</span> <span class="o">=</span> <span class="n">is_seller</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">target</span> <span class="o">=</span> <span class="n">target_quantity</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">urange</span> <span class="o">=</span> <span class="n">urange</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">partners</span> <span class="o">=</span> <span class="n">partners</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">product</span> <span class="o">=</span> <span class="n">product</span>
+        <span class="n">negotiator_params</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">negotiator_params</span> <span class="k">if</span> <span class="n">negotiator_params</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">secured</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">is_seller</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ufun</span> <span class="o">=</span> <span class="n">LinearUtilityFunction</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ufun</span> <span class="o">=</span> <span class="n">LinearUtilityFunction</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">))</span>
+        <span class="n">negotiator_params</span><span class="p">[</span><span class="s2">&quot;ufun&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ufun</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__negotiator</span> <span class="o">=</span> <span class="n">instantiate</span><span class="p">(</span><span class="n">negotiator_type</span><span class="p">,</span> <span class="o">**</span><span class="n">negotiator_params</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">completed</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">bool</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">step</span> <span class="o">=</span> <span class="n">step</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">retries</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_retries</span> <span class="o">=</span> <span class="n">max_retries</span>
+
+    <span class="k">def</span> <span class="nf">join</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">negotiator_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">ami</span><span class="p">:</span> <span class="n">AgentMechanismInterface</span><span class="p">,</span>
+        <span class="n">state</span><span class="p">:</span> <span class="n">MechanismState</span><span class="p">,</span>
+        <span class="o">*</span><span class="p">,</span>
+        <span class="n">ufun</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="s2">&quot;UtilityFunction&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">role</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;agent&quot;</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="n">joined</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">negotiator_id</span><span class="p">,</span> <span class="n">ami</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">ufun</span><span class="o">=</span><span class="n">ufun</span><span class="p">,</span> <span class="n">role</span><span class="o">=</span><span class="n">role</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">joined</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">completed</span><span class="p">[</span><span class="n">negotiator_id</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">return</span> <span class="n">joined</span>
+
+    <span class="k">def</span> <span class="nf">propose</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">negotiator_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">MechanismState</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="s2">&quot;Outcome&quot;</span><span class="p">]:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__negotiator</span><span class="o">.</span><span class="n">_ami</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">negotiators</span><span class="p">[</span><span class="n">negotiator_id</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">_ami</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__negotiator</span><span class="o">.</span><span class="n">propose</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">respond</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">negotiator_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">MechanismState</span><span class="p">,</span> <span class="n">offer</span><span class="p">:</span> <span class="s2">&quot;Outcome&quot;</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ResponseType</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">secured</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">target</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">ResponseType</span><span class="o">.</span><span class="n">END_NEGOTIATION</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__negotiator</span><span class="o">.</span><span class="n">_ami</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">negotiators</span><span class="p">[</span><span class="n">negotiator_id</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">_ami</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__negotiator</span><span class="o">.</span><span class="n">respond</span><span class="p">(</span><span class="n">offer</span><span class="o">=</span><span class="n">offer</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="n">state</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;{&#39;selling&#39; if self.is_seller else &#39;buying&#39;} p</span><span class="si">{self.product}</span><span class="s2"> [</span><span class="si">{self.step}</span><span class="s2">] &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;secured </span><span class="si">{self.secured}</span><span class="s2"> of </span><span class="si">{self.target}</span><span class="s2"> for </span><span class="si">{self.__parent.name}</span><span class="s2"> &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;({len([_ for _ in self.completed.values() if _])} completed of {len(self.completed)} negotiators)&quot;</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">create_negotiator</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">negotiator_type</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Type</span><span class="p">[</span><span class="n">PassThroughNegotiator</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">cntxt</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PassThroughNegotiator</span><span class="p">:</span>
+        <span class="n">neg</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">create_negotiator</span><span class="p">(</span><span class="n">negotiator_type</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">cntxt</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">completed</span><span class="p">[</span><span class="n">neg</span><span class="o">.</span><span class="n">id</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">return</span> <span class="n">neg</span>
+
+    <span class="k">def</span> <span class="nf">negotiation_concluded</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">negotiator_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">agreement</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">awi</span><span class="p">:</span> <span class="n">AWI</span>
+        <span class="n">awi</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__parent</span><span class="o">.</span><span class="n">awi</span>  <span class="c1"># type: ignore</span>
+        <span class="c1"># mark this negotiation as completed</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">completed</span><span class="p">[</span><span class="n">negotiator_id</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="c1"># if there is an agreement increase the secured amount and check if we are done.</span>
+        <span class="k">if</span> <span class="n">agreement</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">secured</span> <span class="o">+=</span> <span class="n">agreement</span><span class="p">[</span><span class="s2">&quot;quantity&quot;</span><span class="p">]</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">secured</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">target</span><span class="p">:</span>
+                <span class="n">awi</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ending all negotiations on controller {str(self)}&quot;</span><span class="p">)</span>
+                <span class="c1"># If we are done, end all other negotiations</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">negotiators</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">completed</span><span class="p">[</span><span class="n">k</span><span class="p">]:</span>
+                        <span class="k">continue</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">notify</span><span class="p">(</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">negotiators</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">Notification</span><span class="p">(</span><span class="s2">&quot;end_negotiation&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+                    <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">kill_negotiator</span><span class="p">(</span><span class="n">negotiator_id</span><span class="p">,</span> <span class="n">force</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">completed</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+            <span class="c1"># If we secured everything, just return control to the agent</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">secured</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">target</span><span class="p">:</span>
+                <span class="n">awi</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Secured Everything: {str(self)}&quot;</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">__parent</span><span class="o">.</span><span class="n">all_negotiations_concluded</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">step</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_seller</span><span class="p">)</span>
+                <span class="k">return</span>
+            <span class="c1"># If we did not secure everything we need yet and time allows it, create new negotiations</span>
+            <span class="n">tmin</span><span class="p">,</span> <span class="n">tmax</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__parent</span><span class="o">.</span><span class="n">_trange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">step</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_seller</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">awi</span><span class="o">.</span><span class="n">current_step</span> <span class="o">&lt;</span> <span class="n">tmax</span> <span class="o">+</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">tmin</span> <span class="o">&lt;=</span> <span class="n">tmax</span><span class="p">:</span>
+                <span class="c1"># get a good partner: one that was not retired too much</span>
+                <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">partners</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">other</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">partners</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">retries</span><span class="p">[</span><span class="n">other</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_retries</span><span class="p">:</span>
+                        <span class="n">partner</span> <span class="o">=</span> <span class="n">other</span>
+                        <span class="k">break</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">return</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">retries</span><span class="p">[</span><span class="n">partner</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="n">neg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_negotiator</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">completed</span><span class="p">[</span><span class="n">neg</span><span class="o">.</span><span class="n">id</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="n">awi</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;{str(self)} negotiating with </span><span class="si">{partner}</span><span class="s2"> on u=</span><span class="si">{self.urange}</span><span class="s2">&quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot;, q=(1,{self.target-self.secured}), u=(</span><span class="si">{tmin}</span><span class="s2">, </span><span class="si">{tmax}</span><span class="s2">)&quot;</span>
+                <span class="p">)</span>
+                <span class="n">awi</span><span class="o">.</span><span class="n">request_negotiation</span><span class="p">(</span>
+                    <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_seller</span><span class="p">,</span>
+                    <span class="n">product</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">product</span><span class="p">,</span>
+                    <span class="n">quantity</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">target</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">secured</span><span class="p">),</span>
+                    <span class="n">unit_price</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">urange</span><span class="p">,</span>
+                    <span class="n">time</span><span class="o">=</span><span class="p">(</span><span class="n">tmin</span><span class="p">,</span> <span class="n">tmax</span><span class="p">),</span>
+                    <span class="n">partner</span><span class="o">=</span><span class="n">partner</span><span class="p">,</span>
+                    <span class="n">negotiator</span><span class="o">=</span><span class="n">neg</span><span class="p">,</span>
+                    <span class="n">extra</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">controller_index</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">step</span><span class="p">,</span> <span class="n">is_seller</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">is_seller</span><span class="p">),</span>
+                <span class="p">)</span>
+
+
+<span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">ControllerInfo</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Keeps a record of information about one of the controllers used by the agent&quot;&quot;&quot;</span>
+
+    <span class="n">controller</span><span class="p">:</span> <span class="n">StepController</span>
+    <span class="n">time_step</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">is_seller</span><span class="p">:</span> <span class="nb">bool</span>
+    <span class="n">time_range</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span>
+    <span class="n">target</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">expected</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">done</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+
+
+<div class="viewcode-block" id="DecentralizingAgent"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent">[docs]</a><span class="k">class</span> <span class="nc">DecentralizingAgent</span><span class="p">(</span><span class="n">DoNothingAgent</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;An agent that keeps schedules of what it needs to buy and sell and tries to satisfy them.</span>
+
+<span class="sd">    It assumes that the agent can run a single process.</span>
+
+<span class="sd">    Args:</span>
+
+<span class="sd">        negotiator_type: The negotiator type to use for all negotiations</span>
+<span class="sd">        negotiator_params: The parameters used to initialize all negotiators</span>
+<span class="sd">        horizon: The number of steps in the future to consider for securing inputs and</span>
+<span class="sd">                 outputs.</span>
+<span class="sd">        predicted_demand: A prediction of the number of units needed by the market of the output</span>
+<span class="sd">                          product at each timestep</span>
+<span class="sd">        predicted_supply: A prediction of the nubmer of units available within the market of the input</span>
+<span class="sd">                          product at each timestep</span>
+<span class="sd">        agreement_fraction: A prediction about the fraction of the quantity negotiated about that will</span>
+<span class="sd">                            be secured</span>
+<span class="sd">        adapt_prices: If true, the agent tries to adapt the unit price range it negotites about to market</span>
+<span class="sd">                      conditions (i.e. previous trade). If false, catalog prices will be used to constrain</span>
+<span class="sd">                      the unit price ranges to (1, catalog price) for buying and (catalog price, 2* catalog price)</span>
+<span class="sd">                      for selling</span>
+<span class="sd">        *args: Position arguments to pass the the base `SCML2020Agent` constructor</span>
+<span class="sd">        **kwargs: Keyword arguments to pass to the base `SCML2020Agent` constructor</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+        <span class="n">negotiator_type</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">SAONegotiator</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">AspirationNegotiator</span><span class="p">,</span>
+        <span class="n">negotiator_params</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">horizon</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+        <span class="n">predicted_demand</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">predicted_supply</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">agreement_fraction</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span>
+        <span class="n">adapt_prices</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">adapt_prices</span> <span class="o">=</span> <span class="n">adapt_prices</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">predicted_demand</span> <span class="o">=</span> <span class="n">predicted_demand</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">predicted_supply</span> <span class="o">=</span> <span class="n">predicted_supply</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">negotiator_type</span> <span class="o">=</span> <span class="n">get_class</span><span class="p">(</span><span class="n">negotiator_type</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">negotiator_params</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">negotiator_params</span> <span class="k">if</span> <span class="n">negotiator_params</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">horizon</span> <span class="o">=</span> <span class="n">horizon</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">exogenous_horizon</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">input_product</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_product</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pcost</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_inputs</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_outputs</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">input_cost</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_price</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">production_needed</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">production_secured</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">production_factor</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buyers</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sellers</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">catalog_n_equivalent</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">supplies_negotiating</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sales_negotiating</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">agreement_fraction</span> <span class="o">=</span> <span class="n">agreement_fraction</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">use_exogenous_contracts</span> <span class="o">=</span> <span class="kc">True</span>
+
+<div class="viewcode-block" id="DecentralizingAgent.init"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.init">[docs]</a>    <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">awi</span><span class="p">:</span> <span class="n">AWI</span>
+        <span class="n">awi</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span>  <span class="c1"># type: ignore</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">exogenous_horizon</span> <span class="o">=</span> <span class="n">awi</span><span class="o">.</span><span class="n">bb_read</span><span class="p">(</span><span class="s2">&quot;settings&quot;</span><span class="p">,</span> <span class="s2">&quot;exogenous_horizon&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buyers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ControllerInfo</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">ControllerInfo</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">(),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span><span class="p">)</span>
+        <span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sellers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ControllerInfo</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">ControllerInfo</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">(),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span><span class="p">)</span>
+        <span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">catalog_n_equivalent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span> <span class="o">*</span> <span class="mi">2</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">input_product</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">awi</span><span class="o">.</span><span class="n">my_input_product</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_product</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_product</span> <span class="o">+</span> <span class="mi">1</span>
+
+        <span class="k">def</span> <span class="nf">adjust</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">demand</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">x</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">awi</span><span class="o">.</span><span class="n">n_lines</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">):</span>
+                <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="n">predicted</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">demand</span><span class="p">:</span>
+                <span class="n">predicted</span><span class="p">[:</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_product</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">predicted</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">input_product</span> <span class="o">-</span> <span class="n">awi</span><span class="o">.</span><span class="n">n_processes</span> <span class="p">:]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">return</span> <span class="n">predicted</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">predicted_demand</span> <span class="o">=</span> <span class="n">adjust</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">predicted_demand</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">predicted_supply</span> <span class="o">=</span> <span class="n">adjust</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">predicted_supply</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">use_exogenous_contracts</span> <span class="o">=</span> <span class="n">awi</span><span class="o">.</span><span class="n">bb_read</span><span class="p">(</span>
+            <span class="s2">&quot;settings&quot;</span><span class="p">,</span> <span class="s2">&quot;has_exogenous_contracts&quot;</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span>
+            <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_exogenous_contracts</span>
+            <span class="ow">and</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_product</span> <span class="o">==</span> <span class="mi">0</span>
+            <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_product</span> <span class="o">==</span> <span class="n">awi</span><span class="o">.</span><span class="n">n_products</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">predicted_supply</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">predicted_demand</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">process</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_product</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pcost</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">awi</span><span class="o">.</span><span class="n">profile</span><span class="o">.</span><span class="n">costs</span><span class="p">[:,</span> <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="p">])))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_inputs</span> <span class="o">=</span> <span class="n">awi</span><span class="o">.</span><span class="n">inputs</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_outputs</span> <span class="o">=</span> <span class="n">awi</span><span class="o">.</span><span class="n">outputs</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">production_factor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_outputs</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_inputs</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="p">[</span>
+            <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">exogenous_horizon</span>
+        <span class="p">]</span> <span class="o">=</span> <span class="n">awi</span><span class="o">.</span><span class="n">profile</span><span class="o">.</span><span class="n">exogenous_supplies</span><span class="p">[:</span> <span class="bp">self</span><span class="o">.</span><span class="n">exogenous_horizon</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_product</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="p">[:</span> <span class="bp">self</span><span class="o">.</span><span class="n">exogenous_horizon</span><span class="p">]</span> <span class="o">=</span> <span class="n">awi</span><span class="o">.</span><span class="n">profile</span><span class="o">.</span><span class="n">exogenous_sales</span><span class="p">[</span>
+            <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">exogenous_horizon</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_product</span>
+        <span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">production_needed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">production_secured</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">awi</span><span class="o">.</span><span class="n">my_input_product</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_exogenous_contracts</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">predicted_demand</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">production_factor</span>
+            <span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">awi</span><span class="o">.</span><span class="n">my_output_product</span> <span class="o">!=</span> <span class="n">awi</span><span class="o">.</span><span class="n">n_products</span> <span class="o">-</span> <span class="mi">1</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_exogenous_contracts</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">predicted_supply</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">production_factor</span>
+            <span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">production_factor</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">production_factor</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">supplies_negotiating</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sales_negotiating</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">production_needed</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+        <span class="p">)</span>
+        <span class="n">inprices</span> <span class="o">=</span> <span class="n">awi</span><span class="o">.</span><span class="n">profile</span><span class="o">.</span><span class="n">exogenous_supply_prices</span><span class="p">[:,</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_product</span><span class="p">]</span>
+        <span class="n">inprices</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">outprices</span> <span class="o">=</span> <span class="n">awi</span><span class="o">.</span><span class="n">profile</span><span class="o">.</span><span class="n">exogenous_sale_prices</span><span class="p">[:,</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_product</span><span class="p">]</span>
+        <span class="n">outprices</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">input_cost</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span>
+            <span class="n">inprices</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">catalog_prices</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">input_product</span><span class="p">]</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span>
+            <span class="n">outprices</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">catalog_prices</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">output_product</span><span class="p">]</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">logdebug_agent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Initialized</span><span class="se">\n</span><span class="s2">{pformat(self._debug_state())}&quot;</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">_debug_state</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">&quot;supplies_secured&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+            <span class="s2">&quot;supplies_needed&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+            <span class="s2">&quot;supplies_negotiating&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">supplies_negotiating</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+            <span class="s2">&quot;sales_secured&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+            <span class="s2">&quot;sales_needed&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+            <span class="s2">&quot;sales_negotiating&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">sales_negotiating</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+            <span class="s2">&quot;production_secured&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">production_secured</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+            <span class="s2">&quot;production_needed&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">production_needed</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+            <span class="s2">&quot;buyers&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="sa">f</span><span class="s2">&quot;step: </span><span class="si">{_.controller.step}</span><span class="s2"> secured </span><span class="si">{_.controller.secured}</span><span class="s2"> of </span><span class="si">{_.controller.target}</span><span class="s2"> units &quot;</span>
+                <span class="sa">f</span><span class="s2">&quot;[Completed {len([_ for _ in _.controller.completed.values() if _])} &quot;</span>
+                <span class="sa">f</span><span class="s2">&quot;of {len(_.controller.completed)}]&quot;</span>
+                <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">buyers</span>
+                <span class="k">if</span> <span class="n">_</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">_</span><span class="o">.</span><span class="n">controller</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+            <span class="p">],</span>
+            <span class="s2">&quot;sellers&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="sa">f</span><span class="s2">&quot;step: </span><span class="si">{_.controller.step}</span><span class="s2"> secured </span><span class="si">{_.controller.secured}</span><span class="s2"> of </span><span class="si">{_.controller.target}</span><span class="s2"> units &quot;</span>
+                <span class="sa">f</span><span class="s2">&quot;[Completed {len([_ for _ in _.controller.completed.values() if _])} &quot;</span>
+                <span class="sa">f</span><span class="s2">&quot;of {len(_.controller.completed)}]&quot;</span>
+                <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">sellers</span>
+                <span class="k">if</span> <span class="n">_</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">_</span><span class="o">.</span><span class="n">controller</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+            <span class="p">],</span>
+            <span class="s2">&quot;buy_negotiations&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="n">_</span><span class="o">.</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;seller&quot;</span><span class="p">]</span>
+                <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">running_negotiations</span>
+                <span class="k">if</span> <span class="n">_</span><span class="o">.</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;buyer&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span>
+            <span class="p">],</span>
+            <span class="s2">&quot;sell_negotiations&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="n">_</span><span class="o">.</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;buyer&quot;</span><span class="p">]</span>
+                <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">running_negotiations</span>
+                <span class="k">if</span> <span class="n">_</span><span class="o">.</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;seller&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span>
+            <span class="p">],</span>
+            <span class="s2">&quot;_balance&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">balance</span><span class="p">,</span>
+            <span class="s2">&quot;_input_inventory&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">inventory</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">my_input_product</span><span class="p">],</span>
+            <span class="s2">&quot;_output_inventory&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">inventory</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">my_output_product</span><span class="p">],</span>
+        <span class="p">}</span>
+
+<div class="viewcode-block" id="DecentralizingAgent.step"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.step">[docs]</a>    <span class="k">def</span> <span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Generates buy and sell negotiations as needed&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">logdebug_agent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Enter step:</span><span class="se">\n</span><span class="s2">{pformat(self._debug_state())}&quot;</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">exogenous_horizon</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_exogenous_contracts</span><span class="p">:</span>
+            <span class="n">nxt</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">exogenous_horizon</span>
+            <span class="k">if</span> <span class="n">nxt</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="p">[</span><span class="n">nxt</span><span class="p">]</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">profile</span><span class="o">.</span><span class="n">exogenous_supplies</span><span class="p">[</span><span class="n">nxt</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">nxt</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="p">[</span><span class="n">nxt</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">profile</span><span class="o">.</span><span class="n">exogenous_supplies</span><span class="p">[</span>
+                        <span class="n">nxt</span>
+                    <span class="p">]</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="p">[</span><span class="n">nxt</span><span class="p">]</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">profile</span><span class="o">.</span><span class="n">exogenous_sales</span><span class="p">[</span><span class="n">nxt</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">nxt</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="p">[</span><span class="n">nxt</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">profile</span><span class="o">.</span><span class="n">exogenous_sales</span><span class="p">[</span>
+                        <span class="n">nxt</span>
+                    <span class="p">]</span>
+        <span class="k">if</span> <span class="n">s</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">last</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">horizon</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">step</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">last</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">generate_buy_negotiations</span><span class="p">(</span><span class="n">step</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">generate_sell_negotiations</span><span class="p">(</span><span class="n">step</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">nxt</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">horizon</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">nxt</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">logdebug_agent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;End step:</span><span class="se">\n</span><span class="s2">{pformat(self._debug_state())}&quot;</span><span class="p">)</span>
+                <span class="k">return</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">generate_buy_negotiations</span><span class="p">(</span><span class="n">nxt</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">generate_sell_negotiations</span><span class="p">(</span><span class="n">nxt</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">logdebug_agent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;End step:</span><span class="se">\n</span><span class="s2">{pformat(self._debug_state())}&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.respond_to_negotiation_request"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.respond_to_negotiation_request">[docs]</a>    <span class="k">def</span> <span class="nf">respond_to_negotiation_request</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">initiator</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">issues</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Issue</span><span class="p">],</span>
+        <span class="n">annotation</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span>
+        <span class="n">mechanism</span><span class="p">:</span> <span class="n">AgentMechanismInterface</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Negotiator</span><span class="p">]:</span>
+
+        <span class="c1"># find negotiation parameters</span>
+        <span class="n">is_seller</span> <span class="o">=</span> <span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;seller&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span>
+        <span class="n">tmin</span><span class="p">,</span> <span class="n">tmax</span> <span class="o">=</span> <span class="n">issues</span><span class="p">[</span><span class="n">TIME</span><span class="p">]</span><span class="o">.</span><span class="n">min_value</span><span class="p">,</span> <span class="n">issues</span><span class="p">[</span><span class="n">TIME</span><span class="p">]</span><span class="o">.</span><span class="n">max_value</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="c1"># find the time-step for which this negotiation should be added</span>
+        <span class="n">step</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">tmin</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">is_seller</span> <span class="k">else</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">tmax</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="c1"># find the corresponding controller.</span>
+        <span class="n">controller_info</span><span class="p">:</span> <span class="n">ControllerInfo</span>
+        <span class="n">controller_info</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sellers</span><span class="p">[</span><span class="n">step</span><span class="p">]</span> <span class="k">if</span> <span class="n">is_seller</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">buyers</span><span class="p">[</span><span class="n">step</span><span class="p">]</span>
+        <span class="c1"># check if we need to negotiate and indicate that we are negotiating some amount if we need</span>
+        <span class="k">if</span> <span class="n">is_seller</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;product&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_product</span>
+            <span class="n">target</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="p">[</span><span class="n">tmin</span> <span class="p">:</span> <span class="n">tmax</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+                <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="p">[</span><span class="n">tmin</span> <span class="p">:</span> <span class="n">tmax</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+            <span class="p">)</span>
+            <span class="k">if</span> <span class="n">target</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">None</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sales_negotiating</span><span class="p">[</span><span class="n">tmin</span> <span class="p">:</span> <span class="n">tmax</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span>
+                <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">agreement_fraction</span> <span class="o">*</span> <span class="n">issues</span><span class="p">[</span><span class="n">QUANTITY</span><span class="p">]</span><span class="o">.</span><span class="n">max_value</span><span class="p">)</span>
+                <span class="o">//</span> <span class="p">(</span><span class="n">tmax</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">tmin</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;product&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_product</span>
+            <span class="n">target</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="p">[</span><span class="n">tmin</span> <span class="p">:</span> <span class="n">tmax</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+                <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="p">[</span><span class="n">tmin</span> <span class="p">:</span> <span class="n">tmax</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+            <span class="p">)</span>
+            <span class="k">if</span> <span class="n">target</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">None</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">supplies_negotiating</span><span class="p">[</span>
+                <span class="n">issues</span><span class="p">[</span><span class="n">TIME</span><span class="p">]</span><span class="o">.</span><span class="n">min_value</span> <span class="p">:</span> <span class="n">issues</span><span class="p">[</span><span class="n">TIME</span><span class="p">]</span><span class="o">.</span><span class="n">max_value</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="p">]</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span>
+                <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">agreement_fraction</span> <span class="o">*</span> <span class="n">issues</span><span class="p">[</span><span class="n">QUANTITY</span><span class="p">]</span><span class="o">.</span><span class="n">max_value</span><span class="p">)</span>
+            <span class="p">)</span> <span class="o">//</span> <span class="p">(</span>
+                <span class="n">issues</span><span class="p">[</span><span class="n">TIME</span><span class="p">]</span><span class="o">.</span><span class="n">max_value</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">issues</span><span class="p">[</span><span class="n">TIME</span><span class="p">]</span><span class="o">.</span><span class="n">min_value</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Accepting request from </span><span class="si">{initiator}</span><span class="s2">: {[str(_) for _ in mechanism.issues]} &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;({Issue.num_outcomes(mechanism.issues)})&quot;</span>
+        <span class="p">)</span>
+        <span class="c1"># create a controller for the time-step if one does not exist or use the one already running</span>
+        <span class="k">if</span> <span class="n">controller_info</span><span class="o">.</span><span class="n">controller</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">controller</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">add_controller</span><span class="p">(</span>
+                <span class="n">is_seller</span><span class="p">,</span>
+                <span class="n">target</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_urange</span><span class="p">(</span><span class="n">step</span><span class="p">,</span> <span class="n">is_seller</span><span class="p">,</span> <span class="p">(</span><span class="n">tmin</span><span class="p">,</span> <span class="n">tmax</span><span class="p">)),</span>
+                <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">agreement_fraction</span> <span class="o">*</span> <span class="n">target</span><span class="p">),</span>
+                <span class="n">step</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">controller</span> <span class="o">=</span> <span class="n">controller_info</span><span class="o">.</span><span class="n">controller</span>
+
+        <span class="c1"># create a new negotiator, add it to the controller and return it</span>
+        <span class="k">return</span> <span class="n">controller</span><span class="o">.</span><span class="n">create_negotiator</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.on_negotiation_failure"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.on_negotiation_failure">[docs]</a>    <span class="k">def</span> <span class="nf">on_negotiation_failure</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">partners</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+        <span class="n">annotation</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span>
+        <span class="n">mechanism</span><span class="p">:</span> <span class="n">AgentMechanismInterface</span><span class="p">,</span>
+        <span class="n">state</span><span class="p">:</span> <span class="n">MechanismState</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">controller</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_controller</span><span class="p">(</span><span class="n">mechanism</span><span class="p">)</span>
+        <span class="n">neg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_running_negotiations</span><span class="p">[</span><span class="n">mechanism</span><span class="o">.</span><span class="n">id</span><span class="p">]</span>
+        <span class="n">negotiator_id</span> <span class="o">=</span> <span class="n">neg</span><span class="o">.</span><span class="n">negotiator</span><span class="o">.</span><span class="n">id</span>
+        <span class="n">controller</span><span class="o">.</span><span class="n">negotiation_concluded</span><span class="p">(</span><span class="n">negotiator_id</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.on_negotiation_success"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.on_negotiation_success">[docs]</a>    <span class="k">def</span> <span class="nf">on_negotiation_success</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">contract</span><span class="p">:</span> <span class="n">Contract</span><span class="p">,</span> <span class="n">mechanism</span><span class="p">:</span> <span class="n">AgentMechanismInterface</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">controller</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_controller</span><span class="p">(</span><span class="n">mechanism</span><span class="p">)</span>
+        <span class="n">neg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_running_negotiations</span><span class="p">[</span><span class="n">mechanism</span><span class="o">.</span><span class="n">id</span><span class="p">]</span>
+        <span class="n">negotiator_id</span> <span class="o">=</span> <span class="n">neg</span><span class="o">.</span><span class="n">negotiator</span><span class="o">.</span><span class="n">id</span>
+        <span class="n">controller</span><span class="o">.</span><span class="n">negotiation_concluded</span><span class="p">(</span><span class="n">negotiator_id</span><span class="p">,</span> <span class="n">contract</span><span class="o">.</span><span class="n">agreement</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.on_contracts_finalized"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.on_contracts_finalized">[docs]</a>    <span class="k">def</span> <span class="nf">on_contracts_finalized</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">signed</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Contract</span><span class="p">],</span>
+        <span class="n">cancelled</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Contract</span><span class="p">],</span>
+        <span class="n">rejectors</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">logdebug_agent</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Enter Contracts Finalized:</span><span class="se">\n</span><span class="s2">&quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;Signed {pformat([self._format(_) for _ in signed])}</span><span class="se">\n</span><span class="s2">&quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;Cancelled {pformat([self._format(_) for _ in cancelled])}</span><span class="se">\n</span><span class="s2">&quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;{pformat(self._debug_state())}&quot;</span>
+        <span class="p">)</span>
+        <span class="n">consumed</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">contract</span> <span class="ow">in</span> <span class="n">signed</span><span class="p">:</span>
+            <span class="n">is_seller</span> <span class="o">=</span> <span class="n">contract</span><span class="o">.</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;seller&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span>
+            <span class="n">q</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">t</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">contract</span><span class="o">.</span><span class="n">agreement</span><span class="p">[</span><span class="s2">&quot;quantity&quot;</span><span class="p">],</span>
+                <span class="n">contract</span><span class="o">.</span><span class="n">agreement</span><span class="p">[</span><span class="s2">&quot;unit_price&quot;</span><span class="p">],</span>
+                <span class="n">contract</span><span class="o">.</span><span class="n">agreement</span><span class="p">[</span><span class="s2">&quot;time&quot;</span><span class="p">],</span>
+            <span class="p">)</span>
+            <span class="k">if</span> <span class="n">is_seller</span><span class="p">:</span>
+                <span class="c1"># if I am a seller, I will schedule production then buy my needs to produce</span>
+                <span class="n">output_product</span> <span class="o">=</span> <span class="n">contract</span><span class="o">.</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;product&quot;</span><span class="p">]</span>
+                <span class="n">input_product</span> <span class="o">=</span> <span class="n">output_product</span> <span class="o">-</span> <span class="mi">1</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">output_price</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">output_price</span><span class="p">[</span><span class="n">t</span><span class="p">]</span>
+                    <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">catalog_n_equivalent</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="p">[</span><span class="n">t</span><span class="p">])</span>
+                    <span class="o">+</span> <span class="n">u</span> <span class="o">*</span> <span class="n">q</span>
+                <span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">+</span> <span class="n">q</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">+=</span> <span class="n">q</span>
+                <span class="k">if</span> <span class="n">input_product</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">steps</span><span class="p">,</span> <span class="n">lines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">available_for_production</span><span class="p">(</span>
+                        <span class="n">repeats</span><span class="o">=</span><span class="n">q</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span><span class="p">,</span> <span class="n">t</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+                    <span class="p">)</span>
+                    <span class="n">q</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">steps</span><span class="p">)</span> <span class="o">-</span> <span class="n">consumed</span><span class="p">,</span> <span class="n">q</span><span class="p">)</span>
+                    <span class="n">consumed</span> <span class="o">+=</span> <span class="n">q</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">production_needed</span><span class="p">[</span><span class="n">t</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="n">q</span>
+                    <span class="k">if</span> <span class="n">contract</span><span class="o">.</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;caller&quot;</span><span class="p">]</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="p">[</span><span class="n">t</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">max</span><span class="p">(</span>
+                            <span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">q</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">production_factor</span><span class="p">))</span>
+                        <span class="p">)</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># I am a buyer. I need not produce anything but I need to negotiate to sell the production of what I bought</span>
+            <span class="n">input_product</span> <span class="o">=</span> <span class="n">contract</span><span class="o">.</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;product&quot;</span><span class="p">]</span>
+            <span class="n">output_product</span> <span class="o">=</span> <span class="n">input_product</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">input_cost</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">input_cost</span><span class="p">[</span><span class="n">t</span><span class="p">]</span>
+                <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">catalog_n_equivalent</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="p">[</span><span class="n">t</span><span class="p">])</span>
+                <span class="o">+</span> <span class="n">u</span> <span class="o">*</span> <span class="n">q</span>
+            <span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">+</span> <span class="n">q</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">+=</span> <span class="n">q</span>
+            <span class="k">if</span> <span class="n">output_product</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_products</span> <span class="ow">and</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">contract</span><span class="o">.</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;caller&quot;</span><span class="p">]</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="p">[</span><span class="n">t</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">q</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">production_factor</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">logdebug_agent</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Exit Contracts Finalized:</span><span class="se">\n</span><span class="s2">{pformat(self._debug_state())}&quot;</span>
+        <span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">_format</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">c</span><span class="p">:</span> <span class="n">Contract</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;{f&#39;&gt;&#39; if c.annotation[&#39;seller&#39;] == self.id else &#39;&lt;&#39;}&quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;{c.annotation[&#39;buyer&#39;] if c.annotation[&#39;seller&#39;] == self.id else c.annotation[&#39;seller&#39;]}: &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{c.agreement[&#39;quantity&#39;]}</span><span class="s2"> of </span><span class="si">{c.annotation[&#39;product&#39;]}</span><span class="s2"> @ </span><span class="si">{c.agreement[&#39;unit_price&#39;]}</span><span class="s2"> on </span><span class="si">{c.agreement[&#39;time&#39;]}</span><span class="s2">&quot;</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="DecentralizingAgent.sign_all_contracts"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.sign_all_contracts">[docs]</a>    <span class="k">def</span> <span class="nf">sign_all_contracts</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">contracts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Contract</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">logdebug_agent</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Enter Sign Contracts {pformat([self._format(_) for _ in contracts])}:</span><span class="se">\n</span><span class="s2">{pformat(self._debug_state())}&quot;</span>
+        <span class="p">)</span>
+        <span class="n">contracts</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">contracts</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">agreement</span><span class="p">[</span><span class="s2">&quot;time&quot;</span><span class="p">])</span>
+        <span class="n">signatures</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">contracts</span><span class="p">)</span>
+        <span class="n">taken</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">contract</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">contracts</span><span class="p">):</span>
+            <span class="n">q</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">t</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">contract</span><span class="o">.</span><span class="n">agreement</span><span class="p">[</span><span class="s2">&quot;quantity&quot;</span><span class="p">],</span>
+                <span class="n">contract</span><span class="o">.</span><span class="n">agreement</span><span class="p">[</span><span class="s2">&quot;unit_price&quot;</span><span class="p">],</span>
+                <span class="n">contract</span><span class="o">.</span><span class="n">agreement</span><span class="p">[</span><span class="s2">&quot;time&quot;</span><span class="p">],</span>
+            <span class="p">)</span>
+            <span class="c1"># check that the contract is executable in principle</span>
+            <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;=</span> <span class="n">s</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">contract</span><span class="o">.</span><span class="n">issues</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="c1"># check that I can produce the required quantities even in principle</span>
+            <span class="k">if</span> <span class="n">contract</span><span class="o">.</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;seller&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">:</span>
+                <span class="n">trange</span> <span class="o">=</span> <span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+                <span class="n">secured</span><span class="p">,</span> <span class="n">needed</span><span class="p">,</span> <span class="n">negotiating</span> <span class="o">=</span> <span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="p">,</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="p">,</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">sales_negotiating</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">trange</span> <span class="o">=</span> <span class="p">(</span><span class="n">t</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="n">secured</span><span class="p">,</span> <span class="n">needed</span><span class="p">,</span> <span class="n">negotiating</span> <span class="o">=</span> <span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="p">,</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="p">,</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">supplies_negotiating</span><span class="p">,</span>
+                <span class="p">)</span>
+
+            <span class="n">steps</span><span class="p">,</span> <span class="n">lines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">available_for_production</span><span class="p">(</span>
+                <span class="n">q</span><span class="p">,</span> <span class="n">trange</span><span class="p">,</span> <span class="n">ANY_LINE</span><span class="p">,</span> <span class="n">override</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;all&quot;</span>
+            <span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">steps</span><span class="p">)</span> <span class="o">-</span> <span class="n">taken</span> <span class="o">&lt;</span> <span class="n">q</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="n">taken</span> <span class="o">+=</span> <span class="n">q</span>
+
+            <span class="k">if</span> <span class="p">(</span>
+                <span class="n">secured</span><span class="p">[</span><span class="n">trange</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">:</span> <span class="n">trange</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+                <span class="o">+</span> <span class="n">q</span>
+                <span class="o">+</span> <span class="n">taken</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">agreement_fraction</span>
+                <span class="o">&lt;=</span> <span class="n">needed</span><span class="p">[</span><span class="n">trange</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">:</span> <span class="n">trange</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+            <span class="p">):</span>
+                <span class="n">signatures</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">logdebug_agent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Exit Sign Contracts:</span><span class="se">\n</span><span class="s2">{pformat(self._debug_state())}&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">signatures</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.confirm_production"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.confirm_production">[docs]</a>    <span class="k">def</span> <span class="nf">confirm_production</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">commands</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">balance</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">inventory</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="n">commands</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">commands</span><span class="p">)</span> <span class="o">*</span> <span class="n">NO_COMMAND</span>
+        <span class="n">awi</span><span class="p">:</span> <span class="n">AWI</span>
+        <span class="n">awi</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="n">awi</span><span class="o">.</span><span class="n">current_step</span>
+        <span class="n">inputs</span> <span class="o">=</span> <span class="n">awi</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">inventory</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">input_product</span><span class="p">]</span>
+        <span class="n">n_needed</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="n">awi</span><span class="o">.</span><span class="n">n_lines</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">production_needed</span><span class="p">[:</span> <span class="n">s</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()))</span>
+        <span class="k">if</span> <span class="n">inputs</span> <span class="o">&lt;</span> <span class="n">n_needed</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">s</span> <span class="o">&lt;</span> <span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">production_needed</span><span class="p">[</span><span class="n">s</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="n">inputs</span> <span class="o">-</span> <span class="n">n_needed</span>
+            <span class="n">n_needed</span> <span class="o">=</span> <span class="n">inputs</span>
+        <span class="n">commands</span><span class="p">[:</span><span class="n">n_needed</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_product</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">production_needed</span><span class="p">[</span><span class="n">s</span><span class="p">]</span> <span class="o">-=</span> <span class="n">n_needed</span>
+        <span class="k">return</span> <span class="n">commands</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.on_contract_nullified"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.on_contract_nullified">[docs]</a>    <span class="k">def</span> <span class="nf">on_contract_nullified</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">contract</span><span class="p">:</span> <span class="n">Contract</span><span class="p">,</span> <span class="n">compensation_money</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">new_quantity</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">q</span> <span class="o">=</span> <span class="n">contract</span><span class="o">.</span><span class="n">agreement</span><span class="p">[</span><span class="s2">&quot;quantity&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">new_quantity</span> <span class="o">&lt;</span> <span class="n">q</span><span class="p">:</span>
+            <span class="n">t</span> <span class="o">=</span> <span class="n">contract</span><span class="o">.</span><span class="n">agreement</span><span class="p">[</span><span class="s2">&quot;time&quot;</span><span class="p">]</span>
+            <span class="n">missing</span> <span class="o">=</span> <span class="n">q</span> <span class="o">-</span> <span class="n">new_quantity</span>
+            <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span><span class="p">:</span>
+                <span class="k">return</span>
+            <span class="k">if</span> <span class="n">contract</span><span class="o">.</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;seller&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">-=</span> <span class="n">missing</span>
+                <span class="k">if</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">production_needed</span><span class="p">[</span><span class="n">t</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-=</span> <span class="n">missing</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="p">[</span><span class="n">t</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-=</span> <span class="n">missing</span>
+                <span class="k">if</span> <span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">sellers</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+                    <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">sellers</span><span class="p">[</span><span class="n">t</span><span class="p">]</span><span class="o">.</span><span class="n">controller</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+                <span class="p">):</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">sellers</span><span class="p">[</span><span class="n">t</span><span class="p">]</span><span class="o">.</span><span class="n">controller</span><span class="o">.</span><span class="n">target</span> <span class="o">-=</span> <span class="n">missing</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">+=</span> <span class="n">missing</span>
+                <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="p">[</span><span class="n">t</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-=</span> <span class="n">missing</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">buyers</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">buyers</span><span class="p">[</span><span class="n">t</span><span class="p">]</span><span class="o">.</span><span class="n">controller</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">buyers</span><span class="p">[</span><span class="n">t</span><span class="p">]</span><span class="o">.</span><span class="n">controller</span><span class="o">.</span><span class="n">target</span> <span class="o">+=</span> <span class="n">missing</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.all_negotiations_concluded"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.all_negotiations_concluded">[docs]</a>    <span class="k">def</span> <span class="nf">all_negotiations_concluded</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">controller_index</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">is_seller</span><span class="p">:</span> <span class="nb">bool</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Called by the `StepController` to affirm that it is done negotiating for some time-step&quot;&quot;&quot;</span>
+        <span class="n">info</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sellers</span><span class="p">[</span><span class="n">controller_index</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">is_seller</span>
+            <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">buyers</span><span class="p">[</span><span class="n">controller_index</span><span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">info</span><span class="o">.</span><span class="n">done</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="n">controller</span>
+        <span class="n">quantity</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">secured</span>
+        <span class="n">target</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">target</span>
+        <span class="n">expected</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="n">expected</span>
+        <span class="n">time_range</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="n">time_range</span>
+        <span class="k">if</span> <span class="n">is_seller</span><span class="p">:</span>
+            <span class="n">negotiating</span><span class="p">,</span> <span class="n">secured</span><span class="p">,</span> <span class="n">needed</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">sales_negotiating</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">controllers</span><span class="p">,</span> <span class="n">generator</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sellers</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">generate_sell_negotiations</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">negotiating</span><span class="p">,</span> <span class="n">secured</span><span class="p">,</span> <span class="n">needed</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">supplies_negotiating</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">controllers</span><span class="p">,</span> <span class="n">generator</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">buyers</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">generate_buy_negotiations</span>
+
+        <span class="k">if</span> <span class="n">time_range</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">time_range</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">negotiating</span><span class="p">[</span><span class="n">time_range</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">:</span> <span class="n">time_range</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-=</span> <span class="n">expected</span> <span class="o">//</span> <span class="p">(</span>
+                <span class="n">time_range</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">time_range</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Killing Controller {str(controllers[controller_index].controller)}&quot;</span>
+        <span class="p">)</span>
+        <span class="n">controllers</span><span class="p">[</span><span class="n">controller_index</span><span class="p">]</span><span class="o">.</span><span class="n">controller</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">quantity</span> <span class="o">&lt;=</span> <span class="n">target</span><span class="p">:</span>
+            <span class="n">secured</span><span class="p">[</span><span class="n">time_range</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">+=</span> <span class="n">quantity</span>
+            <span class="n">generator</span><span class="p">(</span><span class="n">step</span><span class="o">=</span><span class="n">controller_index</span><span class="p">)</span>
+            <span class="k">return</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.confirm_exogenous_sales"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.confirm_exogenous_sales">[docs]</a>    <span class="k">def</span> <span class="nf">confirm_exogenous_sales</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">quantities</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">unit_prices</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="n">p</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_product</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span>
+        <span class="n">quantities</span><span class="p">[</span><span class="n">p</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span>
+            <span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="n">quantities</span><span class="p">[</span><span class="n">p</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="p">[</span><span class="n">s</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="p">[</span><span class="n">s</span><span class="p">])</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">quantities</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.confirm_exogenous_supplies"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.confirm_exogenous_supplies">[docs]</a>    <span class="k">def</span> <span class="nf">confirm_exogenous_supplies</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">quantities</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">unit_prices</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="n">p</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_product</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span>
+        <span class="n">quantities</span><span class="p">[</span><span class="n">p</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span>
+            <span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="n">quantities</span><span class="p">[</span><span class="n">p</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="p">[</span><span class="n">s</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="p">[</span><span class="n">s</span><span class="p">])</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">quantities</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.generate_buy_negotiations"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.generate_buy_negotiations">[docs]</a>    <span class="k">def</span> <span class="nf">generate_buy_negotiations</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Creates the controller and starts negotiations to acquire all required inputs (supplies) at the given step&quot;&quot;&quot;</span>
+        <span class="n">quantity</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">supplies_needed</span><span class="p">[</span><span class="n">step</span><span class="p">]</span>
+            <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">supplies_secured</span><span class="p">[</span><span class="n">step</span><span class="p">]</span>
+            <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">supplies_negotiating</span><span class="p">[</span><span class="n">step</span><span class="p">]</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="n">quantity</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">start_negotiations</span><span class="p">(</span>
+            <span class="n">product</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">input_product</span><span class="p">,</span>
+            <span class="n">step</span><span class="o">=</span><span class="n">step</span><span class="p">,</span>
+            <span class="n">quantity</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span>
+                <span class="mi">1</span><span class="p">,</span>
+                <span class="nb">min</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_lines</span> <span class="o">*</span> <span class="p">(</span><span class="n">step</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span><span class="p">),</span>
+                    <span class="nb">int</span><span class="p">(</span><span class="n">quantity</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">production_factor</span><span class="p">),</span>
+                <span class="p">),</span>
+            <span class="p">),</span>
+            <span class="n">unit_price</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span>
+                <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span>
+                    <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_outputs</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_price</span><span class="p">[</span><span class="n">step</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">pcost</span><span class="p">)</span>
+                    <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_inputs</span>
+                <span class="p">)</span>
+            <span class="p">),</span>
+        <span class="p">)</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.generate_sell_negotiations"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.generate_sell_negotiations">[docs]</a>    <span class="k">def</span> <span class="nf">generate_sell_negotiations</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Creates the controller and starts negotiations to sell all required outputs (sales) at the given step&quot;&quot;&quot;</span>
+
+        <span class="c1"># find out if I need to sell any output products</span>
+        <span class="n">quantity</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sales_needed</span><span class="p">[</span><span class="n">step</span><span class="p">]</span>
+            <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">sales_secured</span><span class="p">[</span><span class="n">step</span><span class="p">]</span>
+            <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">sales_negotiating</span><span class="p">[</span><span class="n">step</span><span class="p">]</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="n">quantity</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="c1"># if so, negotiate to sell as much of them as possible</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">start_negotiations</span><span class="p">(</span>
+            <span class="n">product</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">output_product</span><span class="p">,</span>
+            <span class="n">step</span><span class="o">=</span><span class="n">step</span><span class="p">,</span>
+            <span class="n">quantity</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span>
+                <span class="mi">1</span><span class="p">,</span>
+                <span class="nb">min</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_lines</span> <span class="o">*</span> <span class="p">(</span><span class="n">step</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span><span class="p">),</span>
+                    <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">quantity</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">production_factor</span><span class="p">)),</span>
+                <span class="p">),</span>
+            <span class="p">),</span>
+            <span class="n">unit_price</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pcost</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_cost</span><span class="p">[</span><span class="n">step</span><span class="p">]</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_inputs</span><span class="p">)</span>
+            <span class="o">//</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_outputs</span><span class="p">,</span>
+        <span class="p">)</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.start_negotiations"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.start_negotiations">[docs]</a>    <span class="k">def</span> <span class="nf">start_negotiations</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">product</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">quantity</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">unit_price</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Starts a set of negotiations to by/sell the product with the given limits</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            product: product type. If it is an input product, negotiations to buy it will be started otherweise to sell.</span>
+<span class="sd">            quantity: The maximum quantity to negotiate about</span>
+<span class="sd">            unit_price: The maximum/minimum unit price for buy/sell</span>
+<span class="sd">            step: The maximum/minimum time for buy/sell</span>
+
+<span class="sd">        Remarks:</span>
+
+<span class="sd">            - This method assumes that products cannot be in my_input_products and my_output_products</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">awi</span><span class="p">:</span> <span class="n">AWI</span>
+        <span class="n">awi</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span>  <span class="c1"># type: ignore</span>
+        <span class="n">is_seller</span> <span class="o">=</span> <span class="n">product</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_product</span>
+        <span class="k">if</span> <span class="n">quantity</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">unit_price</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">step</span> <span class="o">&lt;</span> <span class="n">awi</span><span class="o">.</span><span class="n">current_step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">awi</span><span class="o">.</span><span class="n">logdebug</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Less than 2 valid issues (q:</span><span class="si">{quantity}</span><span class="s2">, u:</span><span class="si">{unit_price}</span><span class="s2">, t:</span><span class="si">{step}</span><span class="s2">)&quot;</span>
+            <span class="p">)</span>
+            <span class="k">return</span>
+        <span class="c1"># choose ranges for the negotiation agenda.</span>
+        <span class="n">qvalues</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">quantity</span><span class="p">)</span>
+        <span class="n">tvalues</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_trange</span><span class="p">(</span><span class="n">step</span><span class="p">,</span> <span class="n">is_seller</span><span class="p">)</span>
+        <span class="n">uvalues</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_urange</span><span class="p">(</span><span class="n">step</span><span class="p">,</span> <span class="n">is_seller</span><span class="p">,</span> <span class="n">tvalues</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">tvalues</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">tvalues</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="k">return</span>
+        <span class="k">if</span> <span class="n">is_seller</span><span class="p">:</span>
+            <span class="n">partners</span> <span class="o">=</span> <span class="n">awi</span><span class="o">.</span><span class="n">my_consumers</span>
+            <span class="n">expected_quantity</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">qvalues</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">agreement_fraction</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">partners</span> <span class="o">=</span> <span class="n">awi</span><span class="o">.</span><span class="n">my_suppliers</span>
+            <span class="n">expected_quantity</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">qvalues</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">agreement_fraction</span><span class="p">))</span>
+
+        <span class="c1"># negotiate with everyone</span>
+        <span class="n">controller</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">add_controller</span><span class="p">(</span>
+            <span class="n">is_seller</span><span class="p">,</span> <span class="n">qvalues</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">uvalues</span><span class="p">,</span> <span class="n">expected_quantity</span><span class="p">,</span> <span class="n">step</span>
+        <span class="p">)</span>
+        <span class="n">awi</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Requesting {&#39;selling&#39; if is_seller else &#39;buying&#39;} negotiation &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;on u=</span><span class="si">{uvalues}</span><span class="s2">, q=</span><span class="si">{qvalues}</span><span class="s2">, t=</span><span class="si">{tvalues}</span><span class="s2">&quot;</span>
+            <span class="sa">f</span><span class="s2">&quot; with {str(partners)} using {str(controller)}&quot;</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">request_negotiations</span><span class="p">(</span>
+            <span class="n">is_buy</span><span class="o">=</span><span class="ow">not</span> <span class="n">is_seller</span><span class="p">,</span>
+            <span class="n">product</span><span class="o">=</span><span class="n">product</span><span class="p">,</span>
+            <span class="n">quantity</span><span class="o">=</span><span class="n">qvalues</span><span class="p">,</span>
+            <span class="n">unit_price</span><span class="o">=</span><span class="n">uvalues</span><span class="p">,</span>
+            <span class="n">time</span><span class="o">=</span><span class="n">tvalues</span><span class="p">,</span>
+            <span class="n">partners</span><span class="o">=</span><span class="n">partners</span><span class="p">,</span>
+            <span class="n">controller</span><span class="o">=</span><span class="n">controller</span><span class="p">,</span>
+            <span class="n">extra</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">controller_index</span><span class="o">=</span><span class="n">step</span><span class="p">,</span> <span class="n">is_seller</span><span class="o">=</span><span class="n">is_seller</span><span class="p">),</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="n">is_seller</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sales_negotiating</span><span class="p">[</span>
+                <span class="n">tvalues</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">:</span> <span class="n">tvalues</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="p">]</span> <span class="o">+=</span> <span class="n">expected_quantity</span> <span class="o">//</span> <span class="p">(</span><span class="n">tvalues</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">tvalues</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">supplies_negotiating</span><span class="p">[</span>
+                <span class="n">tvalues</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">:</span> <span class="n">tvalues</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="p">]</span> <span class="o">+=</span> <span class="n">expected_quantity</span> <span class="o">//</span> <span class="p">(</span><span class="n">tvalues</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">tvalues</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.max_production_till"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.max_production_till">[docs]</a>    <span class="k">def</span> <span class="nf">max_production_till</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns the maximum number of units that can be produced until the given step given current production</span>
+<span class="sd">        schedule&quot;&quot;&quot;</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_lines</span> <span class="o">*</span> <span class="p">(</span><span class="n">step</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">steps</span><span class="p">,</span> <span class="n">lines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">available_for_production</span><span class="p">(</span>
+            <span class="n">repeats</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span><span class="p">,</span> <span class="n">step</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">steps</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">production_factor</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.max_consumption_till"><a class="viewcode-back" href="../../../../reference/scml.html#scml.scml2020.DecentralizingAgent.max_consumption_till">[docs]</a>    <span class="k">def</span> <span class="nf">max_consumption_till</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns the maximum number of units that can be consumed until the given step given current production</span>
+<span class="sd">        schedule&quot;&quot;&quot;</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_lines</span> <span class="o">*</span> <span class="p">(</span><span class="n">step</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">steps</span><span class="p">,</span> <span class="n">lines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">available_for_production</span><span class="p">(</span>
+            <span class="n">repeats</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span><span class="p">,</span> <span class="n">step</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">steps</span><span class="p">)</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">production_factor</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="DecentralizingAgent.add_controller"><a class="viewcode-back" href="../../../../api/scml.scml2020.DecentralizingAgent.html#scml.scml2020.DecentralizingAgent.add_controller">[docs]</a>    <span class="k">def</span> <span class="nf">add_controller</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">is_seller</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+        <span class="n">target</span><span class="p">,</span>
+        <span class="n">urange</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
+        <span class="n">expected_quantity</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">step</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">StepController</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">is_seller</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">sellers</span><span class="p">[</span><span class="n">step</span><span class="p">]</span><span class="o">.</span><span class="n">controller</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sellers</span><span class="p">[</span><span class="n">step</span><span class="p">]</span><span class="o">.</span><span class="n">controller</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">is_seller</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">buyers</span><span class="p">[</span><span class="n">step</span><span class="p">]</span><span class="o">.</span><span class="n">controller</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">buyers</span><span class="p">[</span><span class="n">step</span><span class="p">]</span><span class="o">.</span><span class="n">controller</span>
+        <span class="n">controller</span> <span class="o">=</span> <span class="n">StepController</span><span class="p">(</span>
+            <span class="n">is_seller</span><span class="o">=</span><span class="n">is_seller</span><span class="p">,</span>
+            <span class="n">target_quantity</span><span class="o">=</span><span class="n">target</span><span class="p">,</span>
+            <span class="n">negotiator_type</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">negotiator_type</span><span class="p">,</span>
+            <span class="n">negotiator_params</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">negotiator_params</span><span class="p">,</span>
+            <span class="n">parent</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+            <span class="n">step</span><span class="o">=</span><span class="n">step</span><span class="p">,</span>
+            <span class="n">urange</span><span class="o">=</span><span class="n">urange</span><span class="p">,</span>
+            <span class="n">product</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">output_product</span> <span class="k">if</span> <span class="n">is_seller</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_product</span><span class="p">,</span>
+            <span class="n">partners</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">my_consumers</span> <span class="k">if</span> <span class="n">is_seller</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">my_suppliers</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="n">is_seller</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">sellers</span><span class="p">[</span><span class="n">step</span><span class="p">]</span><span class="o">.</span><span class="n">controller</span> <span class="ow">is</span> <span class="kc">None</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sellers</span><span class="p">[</span><span class="n">step</span><span class="p">]</span> <span class="o">=</span> <span class="n">ControllerInfo</span><span class="p">(</span>
+                <span class="n">controller</span><span class="p">,</span>
+                <span class="n">step</span><span class="p">,</span>
+                <span class="n">is_seller</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_trange</span><span class="p">(</span><span class="n">step</span><span class="p">,</span> <span class="n">is_seller</span><span class="p">),</span>
+                <span class="n">target</span><span class="p">,</span>
+                <span class="n">expected_quantity</span><span class="p">,</span>
+                <span class="kc">False</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">buyers</span><span class="p">[</span><span class="n">step</span><span class="p">]</span><span class="o">.</span><span class="n">controller</span> <span class="ow">is</span> <span class="kc">None</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buyers</span><span class="p">[</span><span class="n">step</span><span class="p">]</span> <span class="o">=</span> <span class="n">ControllerInfo</span><span class="p">(</span>
+                <span class="n">controller</span><span class="p">,</span>
+                <span class="n">step</span><span class="p">,</span>
+                <span class="n">is_seller</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_trange</span><span class="p">(</span><span class="n">step</span><span class="p">,</span> <span class="n">is_seller</span><span class="p">),</span>
+                <span class="n">target</span><span class="p">,</span>
+                <span class="n">expected_quantity</span><span class="p">,</span>
+                <span class="kc">False</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="n">controller</span></div>
+
+    <span class="k">def</span> <span class="nf">_urange</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">is_seller</span><span class="p">,</span> <span class="n">time_range</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">is_seller</span><span class="p">:</span>
+            <span class="n">cprice</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">catalog_prices</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">output_product</span><span class="p">]</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">adapt_prices</span><span class="p">:</span>
+                <span class="n">cprice</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_price</span><span class="p">[</span><span class="n">time_range</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">:</span> <span class="n">time_range</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">cprice</span><span class="p">):</span>
+                    <span class="n">cprice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cprice</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">cprice</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">catalog_prices</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">output_product</span><span class="p">]</span>
+            <span class="k">return</span> <span class="n">cprice</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">cprice</span>
+
+        <span class="n">cprice</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">catalog_prices</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">input_product</span><span class="p">]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">adapt_prices</span><span class="p">:</span>
+            <span class="n">cprice</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_cost</span><span class="p">[</span><span class="n">time_range</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">:</span> <span class="n">time_range</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">cprice</span><span class="p">):</span>
+                <span class="n">cprice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cprice</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">cprice</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">catalog_prices</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">input_product</span><span class="p">]</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">,</span> <span class="n">cprice</span>
+
+    <span class="k">def</span> <span class="nf">_trange</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">is_seller</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">is_seller</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">step</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">n_steps</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">awi</span><span class="o">.</span><span class="n">current_step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">step</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">_get_controller</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mechanism</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">StepController</span><span class="p">:</span>
+        <span class="n">neg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_running_negotiations</span><span class="p">[</span><span class="n">mechanism</span><span class="o">.</span><span class="n">id</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">neg</span><span class="o">.</span><span class="n">negotiator</span><span class="o">.</span><span class="n">parent</span></div>
+        <span class="c1"># if neg.my_request:</span>
+        <span class="c1">#     controller_index = neg.extra[&quot;controller_index&quot;]</span>
+        <span class="c1">#     if neg.extra[&quot;is_seller&quot;]:</span>
+        <span class="c1">#         return self.sellers[controller_index].controller</span>
+        <span class="c1">#     else:</span>
+        <span class="c1">#         return self.buyers[controller_index].controller</span>
+        <span class="c1"># else:</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Yasser Mohammad
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
