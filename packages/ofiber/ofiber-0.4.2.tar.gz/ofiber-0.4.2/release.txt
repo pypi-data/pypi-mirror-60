@@ -1,0 +1,30 @@
+# Releasing a new version
+
+# make sure things are not broken and that files match up
+  make check
+  check-manifest
+  pyroma -d .
+
+# update the version in setup.py
+  git commit -m 'update version' setup.py
+  git push
+
+# update CHANGELOG.txt  `git shortlog`
+  git commit -m 'update recent changes' CHANGELOG.txt
+  git push
+
+# create release tag on github
+  git tag v1.0.1
+  git push origin v1.0.1
+
+# upload source to pypi
+  rm -rf dist/*
+  python3 setup.py sdist
+  python3 -m twine upload dist/*
+
+# test the install by removing local developer version
+# installing, then uninstalling, then restoring developer version
+  conda develop -u .
+  pip install ofiber
+  pip uninstall ofiber
+  conda develop .
