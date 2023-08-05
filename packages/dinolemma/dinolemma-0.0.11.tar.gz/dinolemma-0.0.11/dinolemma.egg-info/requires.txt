@@ -1,0 +1,4 @@
+numpy>=1.16.2
+
+[game]
+pygame>=1.9.6
