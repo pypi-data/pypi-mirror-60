@@ -1,0 +1,4 @@
+gpxpy==1.3.5
+pandas==0.25.3
+sklearn==0.0
+traces==0.5.2
