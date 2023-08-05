@@ -1,0 +1,71 @@
+From 079a9d3f5ef744d80dfbee1d104017aba0b2e6ba Mon Sep 17 00:00:00 2001
+From: Burlen Loring <bloring@lbl.gov>
+Date: Tue, 10 Sep 2019 17:59:09 -0700
+Subject: [PATCH] fix cf_writer file indexing
+
+* fixes a bug if the number of steps is less than the number of steps per file.
+* if the number of steps per file does not divide evenly, put the remainder in
+  an additional file, instead of adding 1 step to the first remainder files.
+  this is probably more consistent with what users expect, and maybe slightly
+  worse load balancing.
+---
+ io/teca_cf_writer.cxx   | 15 +++++++--------
+ test/test_cf_writer.cpp |  2 +-
+ 2 files changed, 8 insertions(+), 9 deletions(-)
+
+diff --git a/io/teca_cf_writer.cxx b/io/teca_cf_writer.cxx
+index 23f4784..05e90c0 100644
+--- a/io/teca_cf_writer.cxx
++++ b/io/teca_cf_writer.cxx
+@@ -429,7 +429,8 @@ teca_metadata teca_cf_writer::get_output_metadata(unsigned int port,
+     }
+ 
+     // estimate the number of files we create for this run
+-    long n_files = n_indices/this->steps_per_file;
++    long n_steps_left = n_indices % this->steps_per_file;
++    long n_files = n_indices / this->steps_per_file + (n_steps_left ? 1 : 0);
+ 
+     // pass through input metadata
+     teca_metadata md_out(md_in);
+@@ -493,7 +494,8 @@ std::vector<teca_metadata> teca_cf_writer::get_upstream_request(
+     }
+ 
+     // estimate the number of files
+-    long n_large_files = n_indices_up % this->steps_per_file;
++    long n_steps_left = n_indices_up % this->steps_per_file;
++    long n_files = n_indices_up / this->steps_per_file;
+ 
+     // get the file id requested of us, convert this into a set of
+     // upstream indices
+@@ -504,12 +506,9 @@ std::vector<teca_metadata> teca_cf_writer::get_upstream_request(
+         return up_reqs;
+     }
+ 
+-    long first_index = file_id < n_large_files ?
+-        file_id*(this->steps_per_file + 1) :
+-        file_id*this->steps_per_file + n_large_files;
+-
+-    long n_indices = this->steps_per_file +
+-        (file_id < n_large_files ? 1 : 0);
++    long first_index = file_id*this->steps_per_file;
++    long n_indices = ((file_id == n_files) && n_steps_left ?
++        n_steps_left : this->steps_per_file);
+ 
+     // construct the base request, pass through incoming request for bounds,
+     // arrays, etc...  reset executive control keys
+diff --git a/test/test_cf_writer.cpp b/test/test_cf_writer.cpp
+index f37bb64..09abd47 100644
+--- a/test/test_cf_writer.cpp
++++ b/test/test_cf_writer.cpp
+@@ -64,7 +64,7 @@ int parse_command_line(int argc, char **argv, int rank,
+         if (rank == 0)
+         {
+             cerr << endl << "Usage error:" << endl
+-                << "test_cf_reader [-i input regex] [-o output] [-s first step,last step] "
++                << "test_cf_writer [-i input regex] [-o output] [-s first step,last step] "
+                 << "[-x x axis variable] [-y y axis variable] [-z z axis variable] "
+                 << "[-t t axis variable] [-b x0,x1,y0,y1,z0,z1] [-e i0,i1,j0,j1,k0,k1] "
+                 << "[-c index count] [-n num threads] [array 0] ... [array n]"
+-- 
+2.20.1
+

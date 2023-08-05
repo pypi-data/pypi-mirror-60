@@ -1,0 +1,152 @@
+diff --git a/alg/teca_binary_segmentation.cxx b/alg/teca_binary_segmentation.cxx
+index 1d927dd..6ddbfc7 100644
+--- a/alg/teca_binary_segmentation.cxx
++++ b/alg/teca_binary_segmentation.cxx
+@@ -72,6 +72,7 @@ void percentile_threshold(out_t *output, const in_t *input,
+     // sort the input data up to the high cut
+     indirect_comp<in_t,index_t>  comp(input);
+     std::partial_sort(ids, ids+std::min(high_cut+2, n_vals), ids+n_vals, comp);
++    //std::sort(ids, ids+n_vals, comp);
+ 
+     // interpolate to get the percentiles
+     double y0 = input[ids[low_cut]];
+@@ -93,6 +94,67 @@ void percentile_threshold(out_t *output, const in_t *input,
+     free(ids);
+ }
+ 
++// set locations in the output where the input array
++// has values within the low high range. ids indicating ordering
++// of the input are returned, and should be free'd
++template <typename in_t, typename out_t, typename index_t>
++void percentile_threshold(out_t *output, const in_t *input,
++    std::atomic<index_t*> &ids, std::mutex &ids_mutex,
++    unsigned long n_vals, float q_low, float q_high)
++{
++    // allocate indices, initialize, and sort. these can be re-used
++    // when the same input is repeatedly processed
++    if (!ids.load())
++    {
++        std::lock_guard<std::mutex> lock(ids_mutex);
++        if (!ids.load())
++        {
++            index_t *p_ids = (index_t*)malloc(n_vals*sizeof(index_t));
++            for (index_t i = 0; i < n_vals; ++i)
++                p_ids[i] = i;
++
++            // complete sort of the input data is needed because
++            // we don't know what subsequent percentile values will be
++            indirect_comp<in_t,index_t>  comp(input);
++            std::sort(p_ids, p_ids+n_vals, comp);
++
++            ids.store(p_ids);
++        }
++    }
++
++    index_t *p_ids = ids.load();
++
++    // cut points are locations of values bounding desired percentiles in the
++    // sorted data
++    index_t n_vals_m1 = n_vals - 1;
++
++    // low percentile is bound from below by value at low_cut
++    double tmp = n_vals_m1 * (q_low/100.f);
++    index_t low_cut = index_t(tmp);
++    double t_low = tmp - low_cut;
++
++    // high percentile is bound from above by value at high_cut+1
++    tmp = n_vals_m1 * (q_high/100.f);
++    index_t high_cut = index_t(tmp);
++    double t_high = tmp - high_cut;
++
++    // interpolate to get the percentiles
++    double y0 = input[p_ids[low_cut]];
++    double y1 = input[p_ids[low_cut+1]];
++    double low_percentile = (y1 - y0)*t_low + y0;
++
++    index_t high_cut_p1 = std::min(high_cut+1, n_vals_m1);
++    y0 = input[p_ids[high_cut]];
++    y1 = input[p_ids[high_cut_p1]];
++    double high_percentile = (y1 - y0)*t_high + y0;
++
++   std::cerr << q_low << "th percentile is " <<  std::setprecision(10) << low_percentile << std::endl
++        << q_high << "th percentile is " <<  std::setprecision(9) << high_percentile << std::endl;
++
++    // apply thresholds
++    for (size_t i = 0; i < n_vals; ++i)
++        output[i] = ((input[i] >= low_percentile) && (input[i] <= high_percentile)) ? 1 : 0;
++}
+ };
+ 
+ // --------------------------------------------------------------------------
+@@ -100,15 +162,20 @@ teca_binary_segmentation::teca_binary_segmentation() :
+     segmentation_variable(""), threshold_variable(""),
+     low_threshold_value(std::numeric_limits<double>::lowest()),
+     high_threshold_value(std::numeric_limits<double>::max()),
+-    threshold_mode(BY_VALUE)
++    threshold_mode(BY_VALUE), cache_ids(0)
+ {
+     this->set_number_of_input_connections(1);
+     this->set_number_of_output_ports(1);
++
++    this->ids.store(nullptr);
+ }
+ 
+ // --------------------------------------------------------------------------
+ teca_binary_segmentation::~teca_binary_segmentation()
+-{}
++{
++    unsigned long *p_ids = ids.load();
++    free(p_ids);
++}
+ 
+ // --------------------------------------------------------------------------
+ int teca_binary_segmentation::get_segmentation_variable(
+@@ -304,8 +371,12 @@ const_p_teca_dataset teca_binary_segmentation::execute(
+         }
+         else if  (this->threshold_mode == BY_PERCENTILE)
+         {
+-            ::percentile_threshold(p_seg, p_in, n_elem,
+-                static_cast<NT>(low), static_cast<NT>(high));
++            if (this->cache_ids)
++                ::percentile_threshold(p_seg, p_in, this->ids, this->ids_mutex,
++                    n_elem, static_cast<NT>(low), static_cast<NT>(high));
++            else
++                ::percentile_threshold(p_seg, p_in, n_elem,
++                    static_cast<NT>(low), static_cast<NT>(high));
+         }
+         else
+         {
+diff --git a/alg/teca_binary_segmentation.h b/alg/teca_binary_segmentation.h
+index 495c390..258d227 100644
+--- a/alg/teca_binary_segmentation.h
++++ b/alg/teca_binary_segmentation.h
+@@ -7,6 +7,8 @@
+ 
+ #include <string>
+ #include <vector>
++#include <atomic>
++#include <mutex>
+ 
+ TECA_SHARED_OBJECT_FORWARD_DECL(teca_binary_segmentation)
+ 
+@@ -47,6 +49,10 @@ public:
+     void set_threshold_by_percentile() { set_threshold_mode(BY_PERCENTILE); }
+     void set_threshold_by_value() { set_threshold_mode(BY_VALUE); }
+ 
++    // when calculating percentile based segmentation repeatedly
++    // on the same input cacheing ids will improve performance.
++    // note that wrong results will be produced if the input changes
++    TECA_ALGORITHM_PROPERTY(int, cache_ids)
+ protected:
+     teca_binary_segmentation();
+ 
+@@ -71,6 +77,9 @@ private:
+     double low_threshold_value;
+     double high_threshold_value;
+     int threshold_mode;
++    int cache_ids;
++    std::mutex ids_mutex;
++    std::atomic<unsigned long *>ids;
+ };
+ 
+ #endif

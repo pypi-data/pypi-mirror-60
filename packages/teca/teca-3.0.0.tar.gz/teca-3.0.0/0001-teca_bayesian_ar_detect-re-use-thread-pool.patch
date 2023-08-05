@@ -1,0 +1,230 @@
+From 2e54a255c627c8453fc57b96219c1772fa092fd9 Mon Sep 17 00:00:00 2001
+From: Burlen Loring <bloring@lbl.gov>
+Date: Tue, 18 Jun 2019 14:25:58 +0200
+Subject: [PATCH] teca_bayesian_ar_detect re-use thread pool
+
+make the thread pool directly set-able in teca_threaded_algorithm.
+create and cache a thread pool for use during teca_bayesian_ar_detect,
+this enables the threads to be bound correctly to cores across MPI
+ranks, reduces overhead from repeated contruction when parallelizing
+over control parameters.
+---
+ alg/teca_bayesian_ar_detect.cxx  | 30 ++++++++++++++++++++++++++++--
+ alg/teca_bayesian_ar_detect.h    |  7 +++++--
+ core/teca_threaded_algorithm.cxx | 27 +++++++++++++++++----------
+ core/teca_threaded_algorithm.h   | 23 ++++++++++++++++++++++-
+ 4 files changed, 72 insertions(+), 15 deletions(-)
+
+diff --git a/alg/teca_bayesian_ar_detect.cxx b/alg/teca_bayesian_ar_detect.cxx
+index 5537c73..8039c27 100644
+--- a/alg/teca_bayesian_ar_detect.cxx
++++ b/alg/teca_bayesian_ar_detect.cxx
+@@ -17,6 +17,7 @@
+ #include "teca_programmable_reduce.h"
+ #include "teca_dataset_capture.h"
+ #include "teca_index_executive.h"
++#include "teca_thread_pool.h"
+ #include "teca_mpi.h"
+ 
+ #include <algorithm>
+@@ -423,6 +424,7 @@ struct teca_bayesian_ar_detect::internals_t
+     teca_algorithm_output_port parameter_pipeline_port; // pipeline that serves up tracks
+     const_p_teca_table parameter_table;                 // parameter table
+     teca_metadata metadata;                             // cached metadata
++    p_teca_data_request_queue queue;                    // thread pool
+ };
+ 
+ // --------------------------------------------------------------------------
+@@ -492,7 +494,10 @@ void teca_bayesian_ar_detect::set_properties(const std::string &prefix,
+     TECA_POPTS_SET(opts, std::string, prefix, min_component_area_variable)
+     TECA_POPTS_SET(opts, std::string, prefix, min_water_vapor_variable)
+     TECA_POPTS_SET(opts, std::string, prefix, hwhm_latitude_variable)
+-    TECA_POPTS_SET(opts, int, prefix, thread_pool_size)
++
++    std::string opt_name = (prefix.empty()?"":prefix+"::") + "thread_pool_size";
++    if (opts.count(opt_name))
++        this->set_thread_pool_size(opts[opt_name].as<int>());
+ }
+ #endif
+ 
+@@ -515,6 +520,19 @@ void teca_bayesian_ar_detect::set_modified()
+     teca_algorithm::set_modified();
+ }
+ 
++// --------------------------------------------------------------------------
++void teca_bayesian_ar_detect::set_thread_pool_size(int n)
++{
++    this->internals->queue = new_teca_data_request_queue(
++        this->get_communicator(), n, true, true);
++}
++
++// --------------------------------------------------------------------------
++unsigned int teca_bayesian_ar_detect::get_thread_pool_size() const noexcept
++{
++    return this->internals->queue->size();
++}
++
+ // --------------------------------------------------------------------------
+ teca_metadata
+ teca_bayesian_ar_detect::teca_bayesian_ar_detect::get_output_metadata(
+@@ -682,6 +700,14 @@ const_p_teca_dataset teca_bayesian_ar_detect::execute(
+     (void)port;
+     (void)request;
+ 
++    // check the thread pool
++    if (!this->internals->queue)
++    {
++        TECA_ERROR("thread pool has not been created. Did you forget "
++            "to call set_thread_pool_size?")
++        return nullptr;
++    }
++
+     // check the parameter table
+     if (!this->internals->parameter_table)
+     {
+@@ -784,7 +810,7 @@ const_p_teca_dataset teca_bayesian_ar_detect::execute(
+     pr->set_input_connection(pa->get_output_port());
+     pr->set_reduce_callback(reduce);
+     pr->set_verbose(0);
+-    pr->set_thread_pool_size(this->thread_pool_size);
++    pr->set_data_request_queue(this->internals->queue);
+ 
+     // extract the result
+     p_teca_dataset_capture dc = teca_dataset_capture::New();
+diff --git a/alg/teca_bayesian_ar_detect.h b/alg/teca_bayesian_ar_detect.h
+index 3dbe97b..01c0765 100644
+--- a/alg/teca_bayesian_ar_detect.h
++++ b/alg/teca_bayesian_ar_detect.h
+@@ -32,8 +32,11 @@ public:
+     TECA_ALGORITHM_PROPERTY(std::string, min_component_area_variable)
+     TECA_ALGORITHM_PROPERTY(std::string, hwhm_latitude_variable)
+ 
+-    // set the number of threads to use internally
+-    TECA_ALGORITHM_PROPERTY(int, thread_pool_size)
++    // set/get the number of threads in the pool. setting
++    // to -1 results in a thread per core factoring in all MPI
++    // ranks running on the node. the default is -1.
++    void set_thread_pool_size(int n_threads);
++    unsigned int get_thread_pool_size() const noexcept;
+ 
+     // override the input connections because we are going to
+     // take the first input and use it to generate metadata.
+diff --git a/core/teca_threaded_algorithm.cxx b/core/teca_threaded_algorithm.cxx
+index eed35fa..fee4861 100644
+--- a/core/teca_threaded_algorithm.cxx
++++ b/core/teca_threaded_algorithm.cxx
+@@ -2,7 +2,6 @@
+ #include "teca_metadata.h"
+ #include "teca_thread_pool.h"
+ 
+-
+ #include <memory>
+ #include <string>
+ #include <vector>
+@@ -16,6 +15,15 @@
+ #include <boost/program_options.hpp>
+ #endif
+ 
++
++// **************************************************************************
++p_teca_data_request_queue new_teca_data_request_queue(MPI_Comm comm,
++    int n, bool bind, bool verbose)
++{
++    return std::make_shared<teca_data_request_queue>(
++        comm, n, bind, verbose);
++}
++
+ // function that executes the data request and returns the
+ // requested dataset
+ class teca_data_request
+@@ -36,13 +44,6 @@ public:
+     teca_metadata m_up_req;
+ };
+ 
+-// task
+-using teca_data_request_task = std::packaged_task<const_p_teca_dataset()>;
+-
+-using teca_data_request_queue =
+-    teca_thread_pool<teca_data_request_task, const_p_teca_dataset>;
+-
+-using p_teca_data_request_queue = std::shared_ptr<teca_data_request_queue>;
+ 
+ // internals for teca threaded algorithm
+ class teca_threaded_algorithm_internals
+@@ -64,13 +65,12 @@ public:
+ void teca_threaded_algorithm_internals::thread_pool_resize(MPI_Comm comm,
+     int n, bool bind, bool verbose)
+ {
+-    this->thread_pool = std::make_shared<teca_data_request_queue>(
++    this->thread_pool = new_teca_data_request_queue(
+         comm, n, bind, verbose);
+ }
+ 
+ 
+ 
+-
+ // --------------------------------------------------------------------------
+ teca_threaded_algorithm::teca_threaded_algorithm() : verbose(0),
+     bind_threads(1), internals(new teca_threaded_algorithm_internals)
+@@ -129,6 +129,13 @@ unsigned int teca_threaded_algorithm::get_thread_pool_size() const noexcept
+     return this->internals->get_thread_pool_size();
+ }
+ 
++// --------------------------------------------------------------------------
++void teca_threaded_algorithm::set_data_request_queue(
++    const p_teca_data_request_queue &queue)
++{
++    this->internals->thread_pool = queue;
++}
++
+ // --------------------------------------------------------------------------
+ const_p_teca_dataset teca_threaded_algorithm::request_data(
+     teca_algorithm_output_port &current,
+diff --git a/core/teca_threaded_algorithm.h b/core/teca_threaded_algorithm.h
+index 2223cc0..0c41579 100644
+--- a/core/teca_threaded_algorithm.h
++++ b/core/teca_threaded_algorithm.h
+@@ -3,11 +3,29 @@
+ 
+ #include "teca_algorithm.h"
+ #include "teca_threaded_algorithm_fwd.h"
++#include "teca_algorithm_output_port.h"
+ #include "teca_dataset.h"
++
++template <typename task_t, typename data_t>
++class teca_thread_pool;
++
+ class teca_metadata;
+ class teca_threaded_algorithm_internals;
+ 
+-#include "teca_algorithm_output_port.h"
++#include <thread>
++#include <future>
++
++// declare the thread pool type
++using teca_data_request_task = std::packaged_task<const_p_teca_dataset()>;
++
++class teca_data_request;
++using teca_data_request_queue =
++    teca_thread_pool<teca_data_request_task, const_p_teca_dataset>;
++
++using p_teca_data_request_queue = std::shared_ptr<teca_data_request_queue>;
++
++p_teca_data_request_queue new_teca_data_request_queue(MPI_Comm comm,
++    int n, bool bind, bool verbose);
+ 
+ // this is the base class defining a threaded algorithm.
+ // the stratgey employed is to parallelize over upstream
+@@ -38,6 +56,9 @@ public:
+     // likely degrade performance. Default is 1.
+     TECA_ALGORITHM_PROPERTY(int, bind_threads);
+ 
++    // explicitly set the thread pool to submit requests to
++    void set_data_request_queue(const p_teca_data_request_queue &queue);
++
+ protected:
+     teca_threaded_algorithm();
+ 
+-- 
+2.20.1
+

@@ -1,0 +1,190 @@
+diff --git a/test/test_component_area_filter.cpp b/test/test_component_area_filter.cpp
+index 2d85708..20aa36c 100644
+--- a/test/test_component_area_filter.cpp
++++ b/test/test_component_area_filter.cpp
+@@ -31,7 +31,8 @@ int main(int argc, char **argv)
+     if (argc != 8)
+     {
+         cerr << "test_component_area_filter [nx] [ny] [num labels x] "
+-            << "[num labels y] [low thershold] [consecutive labels] [out file]" << endl;
++            << "[num labels y] [low thershold] [consecutive labels] [out file] "
++            << "[baseline]" << endl;
+         return -1;
+     }
+ 
+@@ -42,6 +43,10 @@ int main(int argc, char **argv)
+     double low_threshold_value = atof(argv[5]);
+     int consecutive_labels = atoi(argv[6]);
+     string out_file = argv[7];
++    string  baseline = argv[8];
++    int have_baseline = 0;
++    if (teca_file_util::file_exists(baseline.c_str()))
++        have_baseline = 1;
+ 
+     if (!consecutive_labels && (nxl*nyl > 64))
+     {
+@@ -114,17 +119,17 @@ int main(int argc, char **argv)
+     source->set_dataset(mesh);
+ 
+     p_teca_2d_component_area ca = teca_2d_component_area::New();
+-    ca->set_label_variable("labels");
+-    ca->set_contiguous_label_ids(consecutive_labels);
+     ca->set_input_connection(source->get_output_port());
++    ca->set_component_variable("labels");
++    ca->set_contiguous_component_ids(consecutive_labels);
+ 
+     p_teca_component_area_filter caf = teca_component_area_filter::New();
+-    caf->set_labels_variable("labels");
+-    caf->set_unique_labels_variable("label_id");
+-    caf->set_areas_variable("area");
++    caf->set_input_connection(ca->get_output_port());
++    caf->set_component_variable("labels");
++    caf->set_component_ids_key("label_id");
++    caf->set_component_area_key("area");
+     caf->set_low_threshold_value(low_threshold_value);
+     caf->set_variable_post_fix(post_fix);
+-    caf->set_input_connection(ca->get_output_port());
+ 
+     p_teca_dataset_capture cao = teca_dataset_capture::New();
+     cao->set_input_connection(caf->get_output_port());
+@@ -141,57 +146,97 @@ int main(int argc, char **argv)
+     wri->update();
+ 
+ 
++    // validate the result.
+     const_p_teca_dataset ds = cao->get_dataset();
+-    const_p_teca_cartesian_mesh cds = std::dynamic_pointer_cast<const teca_cartesian_mesh>(ds);
+-    const_p_teca_variant_array va = cds->get_point_arrays()->get("labels" + post_fix);
++    teca_metadata mdo = ds->get_metadata();
+ 
+-    NESTED_TEMPLATE_DISPATCH_I(const teca_variant_array_impl,
+-        va.get(),
+-        _LABEL,
++    // get the output component ids and their areas
++    std::vector<int> label_id_filtered;
++    mdo.get("component_ids" + post_fix, label_id_filtered);
+ 
+-        const NT_LABEL *p_labels_filtered = static_cast<TT_LABEL*>(va.get())->get();
+-        teca_metadata mdo = ds->get_metadata();
++    std::vector<double> area_filtered;
++    mdo.get("component_area" + post_fix, area_filtered);
+ 
+-        std::vector<int> filtered_label_id;
++    // build the test table
++    p_teca_table area_table = teca_table::New();
++    area_table->append_column("component_ids", label_id_filtered);
++    area_table->append_column("component_area", area_filtered);
+ 
+-        std::vector<int> label_id;
+-        mdo.get("label_id", label_id);
++    p_teca_dataset_source dss = teca_dataset_source::New();
++    dss->set_dataset(area_table);
+ 
+-        std::vector<double> area;
+-        mdo.get("area", area);
++    // compare the output ids to the baseline image
++    if (have_baseline)
++    {
++        // run the test
++        p_teca_table_reader table_reader = teca_table_reader::New();
++        table_reader->set_file_name(baseline);
++
++        p_teca_dataset_diff diff = teca_dataset_diff::New();
++        diff->set_input_connection(0, table_reader->get_output_port());
++        diff->set_input_connection(1, dss->get_output_port());
++        diff->update();
++    }
++    else
++    {
++        // make a baseline
++        cerr << "generating baseline image " << baseline << endl;
++        p_teca_table_writer table_writer = teca_table_writer::New();
++        table_writer->set_input_connection(dss->get_output_port());
++        table_writer->set_file_name(baseline.c_str());
++        table_writer->update();
++    }
+ 
+-        std::vector<int> label_id_filtered;
+-        mdo.get("label_id" + post_fix, label_id_filtered);
+ 
+-        std::vector<double> area_filtered;
+-        mdo.get("area" + post_fix, area_filtered);
++    // get the input component ids and their areas
++    std::vector<int> label_id;
++    mdo.get("component_ids", label_id);
+ 
+-        cerr << "component areas" << endl;
+-        int n_labels = label_id.size();
+-        for (int i = 0; i < n_labels; ++i)
+-        {
+-            cerr << "label " << label_id[i] << " = " << area[i] << endl;
+-            if (area[i] < low_threshold_value)
+-            {
+-                filtered_label_id.push_back(label_id[i]);
+-            }
+-        }
+-        cerr << endl;
++    std::vector<double> area;
++    mdo.get("component_area", area);
+ 
+-        cerr << "component areas filtered with low thershold area = " << low_threshold_value;
+-        cerr << endl;
+-        int n_labels_filtered = label_id_filtered.size();
+-        for (int i = 0; i < n_labels_filtered; ++i)
+-        {
+-            cerr << "label " << label_id_filtered[i] << " = " << area_filtered[i] << endl;
+-        }
+ 
++    // print the filtered component labels and areas, this is one of the
++    // outputs of the filter
++    int n_labels_filtered = label_id_filtered.size();
++
++    for (int i = 0; i < n_labels_filtered; ++i)
++        cerr << "label " << label_id_filtered[i] << " = " << area_filtered[i] << endl;
++
++    // perform the calculation here of what labels are expected in the
++    // output.
++    std::vector<int> filtered_label_id;
++    cerr << "component areas" << endl;
++    int n_labels = label_id.size();
++    for (int i = 0; i < n_labels; ++i)
++    {
++        cerr << "label " << label_id[i] << " = " << area[i] << endl;
++        if (area[i] < low_threshold_value)
++            filtered_label_id.push_back(label_id[i]);
++    }
++    cerr << endl;
++
++
++    // check that expected labels are present
++
++    cerr << "component areas filtered with low thershold area = "
++        << low_threshold_value << endl;
++
++    const_p_teca_cartesian_mesh cds = std::dynamic_pointer_cast<const teca_cartesian_mesh>(ds);
++    const_p_teca_variant_array va = cds->get_point_arrays()->get("labels" + post_fix);
++
++    TEMPLATE_DISPATCH_I(const teca_variant_array_impl,
++        va.get(),
++
++        const NT *p_labels_filtered = static_cast<TT*>(va.get())->get();
+ 
+         size_t n_filtered = filtered_label_id.size();
++
++
+         size_t n_labels_total = va->size();
+         for (size_t i = 0; i < n_filtered; ++i)
+         {
+-            NT_LABEL label = filtered_label_id[i];
++            NT label = filtered_label_id[i];
+             for (size_t j = 0; j < n_labels_total; j++)
+             {
+                 if (label == p_labels_filtered[j])
+@@ -201,7 +246,6 @@ int main(int argc, char **argv)
+                 }
+             }
+         }
+-        
+     )
+ 
+     return 0;

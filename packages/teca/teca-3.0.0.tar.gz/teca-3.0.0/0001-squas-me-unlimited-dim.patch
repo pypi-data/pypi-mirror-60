@@ -1,0 +1,184 @@
+From e0ebc7471f3c8ccfddc5b90617e8c5ac470fb2f1 Mon Sep 17 00:00:00 2001
+From: Burlen Loring <bloring@lbl.gov>
+Date: Thu, 6 Jun 2019 10:32:32 -0700
+Subject: [PATCH] squas me --unlimited dim
+
+---
+ io/teca_cf_writer.cxx | 39 ++++++++++++++++++++++++---------------
+ io/teca_cf_writer.h   | 18 +++++++++++++++++-
+ 2 files changed, 41 insertions(+), 16 deletions(-)
+
+diff --git a/io/teca_cf_writer.cxx b/io/teca_cf_writer.cxx
+index 6fc398d..1d6f90e 100644
+--- a/io/teca_cf_writer.cxx
++++ b/io/teca_cf_writer.cxx
+@@ -25,7 +25,7 @@ public:
+     // data is organized into a vector of array collections, one per
+     // time step.
+     static
+-    int write(const std::string &file_name, int mode,
++    int write(const std::string &file_name, int mode, int use_unlimited_dim,
+         const std::vector<long> &request_ids, const const_p_teca_variant_array &x,
+         const const_p_teca_variant_array &y, const const_p_teca_variant_array &z,
+         const const_p_teca_variant_array &t, const std::string &x_variable,
+@@ -36,11 +36,12 @@ public:
+ 
+ // --------------------------------------------------------------------------
+ int teca_cf_writer_internals::write(const std::string &file_name, int mode,
+-    const std::vector<long> &request_ids, const const_p_teca_variant_array &x,
+-    const const_p_teca_variant_array &y, const const_p_teca_variant_array &z,
+-    const const_p_teca_variant_array &t, const std::string &x_variable,
+-    const std::string &y_variable, const std::string &z_variable,
+-    const std::string &t_variable, const teca_metadata &array_attributes,
++    int use_unlimited_dim, const std::vector<long> &request_ids,
++    const const_p_teca_variant_array &x, const const_p_teca_variant_array &y,
++    const const_p_teca_variant_array &z, const const_p_teca_variant_array &t,
++    const std::string &x_variable, const std::string &y_variable,
++    const std::string &z_variable, const std::string &t_variable,
++    const teca_metadata &array_attributes,
+     const std::vector<const_p_teca_array_collection> &arrays)
+ {
+     (void) request_ids;
+@@ -68,6 +69,8 @@ int teca_cf_writer_internals::write(const std::string &file_name, int mode,
+ 
+     const_p_teca_variant_array coord_arrays[4];
+     std::string coord_array_names[4];
++    size_t dims[4] = {0, 0, 0, 0};
++
+ 
+     // the cf reader always creates 4D data, but some other tools choke
+     // on it, notably ParView. All dimensions of 1 are safe to skip, unless
+@@ -80,6 +83,7 @@ int teca_cf_writer_internals::write(const std::string &file_name, int mode,
+     {
+         coord_arrays[n_dims] = t;
+         coord_array_names[n_dims] = t_variable.empty() ? "time" : t_variable;
++        dims[n_dims] = use_unlimited_dim ? NC_UNLIMITED : t->size();
+         ++n_dims;
+     }
+     if (z)
+@@ -88,6 +92,7 @@ int teca_cf_writer_internals::write(const std::string &file_name, int mode,
+         {
+             coord_arrays[n_dims] = z;
+             coord_array_names[n_dims] = z_variable.empty() ? "z" : z_variable;
++            dims[n_dims] = n_dims == 0 && use_unlimited_dim ? NC_UNLIMITED : z->size();
+             ++n_dims;
+         }
+     }
+@@ -97,6 +102,7 @@ int teca_cf_writer_internals::write(const std::string &file_name, int mode,
+         {
+             coord_arrays[n_dims] = y;
+             coord_array_names[n_dims] = y_variable.empty() ? "y" : y_variable;
++            dims[n_dims] = n_dims == 0 && use_unlimited_dim ? NC_UNLIMITED : y->size();
+             ++n_dims;
+         }
+     }
+@@ -106,20 +112,17 @@ int teca_cf_writer_internals::write(const std::string &file_name, int mode,
+         {
+             coord_arrays[n_dims] = x;
+             coord_array_names[n_dims] = x_variable.empty() ? "x" : x_variable;
++            dims[n_dims] = n_dims == 0 && use_unlimited_dim ? NC_UNLIMITED : x->size();
+             ++n_dims;
+         }
+     }
+ 
+     // dictionary of names to ncids
+     int dim_ids[4] = {-1};
+-    size_t dims[4] = {0, 0, 0, 0};
+     std::map<std::string, int> var_ids;
+ 
+     for (int i = 0; i < n_dims; ++i)
+     {
+-        // save the size of the dimension
+-        dims[i] = coord_arrays[i]->size();
+-
+         // define dimension
+         int dim_id = -1;
+         if ((ierr = nc_def_dim(fh.get(), coord_array_names[i].c_str(), dims[i], &dim_id)) != NC_NOERR)
+@@ -326,8 +329,10 @@ int teca_cf_writer_internals::write(const std::string &file_name, int mode,
+ }
+ 
+ // --------------------------------------------------------------------------
+-teca_cf_writer::teca_cf_writer()
+-    : file_name(""), steps_per_file(8), mode_flags(NC_CLOBBER)
++teca_cf_writer::teca_cf_writer() :
++    file_name(""), steps_per_file(8), mode_flags(NC_CLOBBER|NC_NETCDF4),
++    use_unlimited_dim(1)
++
+ {
+     this->set_number_of_input_connections(1);
+     this->set_number_of_output_ports(1);
+@@ -352,6 +357,9 @@ void teca_cf_writer::get_properties_description(
+             "set the number of time steps to write per file (8)")
+         TECA_POPTS_GET(int, prefix, mode_flags,
+             "mode flags to pass to NetCDF when creating the file (NC_CLOBBER)")
++        TECA_POPTS_GET(int, prefix, use_unlimited_dim,
++            "if set the slowest varying dimension is specified to be "
++            "NC_UNLIMITED. (1)")
+         ;
+ 
+     global_opts.add(opts);
+@@ -364,6 +372,7 @@ void teca_cf_writer::set_properties(
+     TECA_POPTS_SET(opts, std::string, prefix, file_name)
+     TECA_POPTS_SET(opts, unsigned int, prefix, steps_per_file)
+     TECA_POPTS_SET(opts, int, prefix, mode_flags)
++    TECA_POPTS_SET(opts, int, prefix, use_unlimited_dim)
+ }
+ #endif
+ 
+@@ -637,9 +646,9 @@ const_p_teca_dataset teca_cf_writer::execute(unsigned int port,
+     teca_file_util::replace_extension(out_file, "nc");
+ 
+     // write the data
+-    if (teca_cf_writer_internals::write(out_file, this->mode_flags, req_ids,
+-        x, y, z, t, x_variable, y_variable, z_variable, t_variable, in_atts,
+-        arrays))
++    if (teca_cf_writer_internals::write(out_file, this->mode_flags,
++        this->use_unlimited_dim, req_ids, x, y, z, t, x_variable, y_variable,
++        z_variable, t_variable, in_atts, arrays))
+     {
+         TECA_ERROR("Failed to write \"" << out_file << "\"")
+         return nullptr;
+diff --git a/io/teca_cf_writer.h b/io/teca_cf_writer.h
+index f03ee4b..b978e69 100644
+--- a/io/teca_cf_writer.h
++++ b/io/teca_cf_writer.h
+@@ -28,12 +28,27 @@ public:
+     // %t% is replaced with the current time step.
+     TECA_ALGORITHM_PROPERTY(std::string, file_name)
+ 
+-    // control how many time steps are written to each file
++    // set how many time steps are written to each file. Note that upstream is
++    // parallelized over files rather than time steps.  this has the affect of
++    // reducing the available oportunity for MPI parallelization by this
++    // factor. For example if there are 16 timee steps and steps_per_file is 8,
++    // 2 MPI ranks each running 8 or more threads would be optimal. One
++    // should make such calculations when planning large runs if optimal
++    // performance is desired. time steps are gathered before the file is
++    // written, thus available memory per MPI rank is the limiting factor in
++    // how many steps can be stored in a single file.
+     TECA_ALGORITHM_PROPERTY(unsigned int, steps_per_file)
+ 
+     // sets the flags passed to NetCDF during file creation. (NC_CLOBBER)
+     TECA_ALGORITHM_PROPERTY(int, mode_flags)
+ 
++    // if set the slowest varying dimension is specified to be NC_UNLIMITED.
++    // This has a negative impact on performance when reading the values in a
++    // single pass. However, unlimited dimensions are used ubiquitously thus
++    // by default it is set. For data being consumed by TECA performance will
++    // be better when using fixed dimensions. (1)
++    TECA_ALGORITHM_PROPERTY(int, use_unlimited_dim)
++
+ protected:
+     teca_cf_writer();
+ 
+@@ -52,6 +67,7 @@ private:
+     std::string file_name;
+     unsigned int steps_per_file;
+     int mode_flags;
++    int use_unlimited_dim;
+ };
+ 
+ #endif
+-- 
+2.17.2
+
