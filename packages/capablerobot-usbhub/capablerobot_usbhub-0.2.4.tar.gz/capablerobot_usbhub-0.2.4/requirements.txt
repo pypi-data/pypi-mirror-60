@@ -1,0 +1,4 @@
+pyusb
+construct
+pyyaml
+click
