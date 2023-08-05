@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+UCS633_topsis_SulbhMahajan.egg-info/PKG-INFO
+UCS633_topsis_SulbhMahajan.egg-info/SOURCES.txt
+UCS633_topsis_SulbhMahajan.egg-info/dependency_links.txt
+UCS633_topsis_SulbhMahajan.egg-info/entry_points.txt
+UCS633_topsis_SulbhMahajan.egg-info/requires.txt
+UCS633_topsis_SulbhMahajan.egg-info/top_level.txt
