@@ -1,0 +1,13 @@
+bracketdot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bracketdot/android.py,sha256=b71WLOj615qNMMZsut4Lx-MgUW-dvF2myBS25X51a_k,5271
+bracketdot/command_line.py,sha256=hwLJKKnSg561s1sldUnKlXLuR_XNDs8D17UDuYXimuU,5853
+bracketdot/gitdiff.py,sha256=Gm4efeXH7GSCL612nNj9BJB-YSHLcMqQTvQo7RNd0lI,3154
+bracketdot/ios.py,sha256=-gVr0EVXLn6eZ77UC_cBLmEbad__qAHKG9I-QUkrxPQ,13286
+bracketdot/spell_check.py,sha256=BaDSyvb2LnZzx4xWoQZXTeQAqMQnYGlq79XoPFfctCw,1761
+bracketdot/svndiff.py,sha256=F3_EPPhJHoCkJTRF-sywu8-ZpzFv4brMo342E8Az-R4,1970
+bracketdot-1.0.1.dist-info/LICENSE,sha256=4nTCb5F_r2Y9HRUAaZaNfJiGakgUb_AutsooaqhqLMs,1066
+bracketdot-1.0.1.dist-info/METADATA,sha256=tje6kzY7QPcYldoaztJy-5S8ls5UzdViWYLHcultsLI,2847
+bracketdot-1.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+bracketdot-1.0.1.dist-info/entry_points.txt,sha256=44UvJGpOf8WO72SxkDqt9XknH7WErLfqd4i--tsU__w,212
+bracketdot-1.0.1.dist-info/top_level.txt,sha256=yduXiFviBKe99jWM_367J1-ktgkzgBYoeToa23CUNhM,11
+bracketdot-1.0.1.dist-info/RECORD,,

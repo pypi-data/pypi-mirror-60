@@ -1,0 +1,6 @@
+[console_scripts]
+bracket-dot = bracketdot.command_line:bracket_dot
+difflint-android = bracketdot.command_line:android
+difflint-objc = bracketdot.command_line:objc
+difflint-swift = bracketdot.command_line:swift
+
