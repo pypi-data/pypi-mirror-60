@@ -1,0 +1,3 @@
+termcolor
+docker>=4
+pyyaml>=5

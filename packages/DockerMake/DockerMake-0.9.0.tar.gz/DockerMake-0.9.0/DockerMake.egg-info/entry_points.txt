@@ -1,0 +1,3 @@
+[console_scripts]
+docker-make = dockermake.__main__:main
+
