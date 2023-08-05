@@ -1,0 +1,10 @@
+blockdiag>=1.5.0
+
+[testing]
+nose
+flake8
+flake8-coding
+flake8-copyright
+flake8-isort
+reportlab
+docutils
