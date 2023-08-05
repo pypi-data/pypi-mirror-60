@@ -1,0 +1,11 @@
+.gitignore
+README.md
+setup.py
+src/wait_notify/__init__.py
+src/wait_notify/cli.py
+src/wait_notify.egg-info/PKG-INFO
+src/wait_notify.egg-info/SOURCES.txt
+src/wait_notify.egg-info/dependency_links.txt
+src/wait_notify.egg-info/entry_points.txt
+src/wait_notify.egg-info/requires.txt
+src/wait_notify.egg-info/top_level.txt
