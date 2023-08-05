@@ -1,0 +1,15 @@
+deepymod_torch/DeepMod.py,sha256=JR-K3eVGcwD6Ade0B72cnSf4w7791TgR5kUB1NRRci4,1909
+deepymod_torch/__init__.py,sha256=n8iiMX3aEhRBE_Z3d-YAWWm6FgYH179Xpmo65bHx0nw,371
+deepymod_torch/library_functions.py,sha256=qJAmKl5fYRqq4nIo-T4iMeWQRTRHv-aAI1hwoFo6LCk,2209
+deepymod_torch/losses.py,sha256=-k7CdPtcAny8115ZAOm8Sx4z1up-yGJiq5mVdv427tY,896
+deepymod_torch/network.py,sha256=bwVxE_cc43ksKKuaQ3L51xiT-jQhLAoV-QCm0YLbmC4,3503
+deepymod_torch/output.py,sha256=8Xk_bA2IGPICrNonJ4ksDtMeScydbKdKSVtbIb2_H3Q,3024
+deepymod_torch/sparsity.py,sha256=XS1YQgIvNkaStd-YcyFjZJ-icLigKUWsMwNAnG70t3o,2046
+deepymod_torch/training.py,sha256=k5AFl5MmQivzcQjUVXng5S1WSudTZBYGClM394-tHks,4024
+deepymod_torch/utilities.py,sha256=mQ6q38cLhGCexNfgn0elF2Lcmgo9mWURJ_gF2yWJtFM,1739
+DeePyMoD-2.0.1.dist-info/AUTHORS.rst,sha256=chafArGQBPb0ecEXTbyW7EspEkagYRXjz2IB4F2gW44,81
+DeePyMoD-2.0.1.dist-info/LICENSE.txt,sha256=Vf0qrTjiyQ2k_G0eihz6jJsaiZiE8dVwI401cAn2KmU,1075
+DeePyMoD-2.0.1.dist-info/METADATA,sha256=TJuVDe6T-qwBTZOdD0rCC7WcIHEcrKoVNnpZopqmFBs,4134
+DeePyMoD-2.0.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+DeePyMoD-2.0.1.dist-info/top_level.txt,sha256=LEf-S8GEnNyU2NdjungBNS5ehnHH0ls83WgAFQaUHRE,15
+DeePyMoD-2.0.1.dist-info/RECORD,,
