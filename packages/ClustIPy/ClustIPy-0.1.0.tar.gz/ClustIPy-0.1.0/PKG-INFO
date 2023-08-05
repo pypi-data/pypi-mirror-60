@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ClustIPy
+Version: 0.1.0
+Summary: Clustering IPs
+Home-page: https://github.com/shuichiro-makigaki/ClustIPy
+Author: Shuichiro MAKIGAKI
+Author-email: shuichiro.makigaki@gmail.com
+License: MIT
+Description: # ClustIPy
+        
+        IPv4 address clustering
+        
+        ## Quick Start
+        
+        ```bash
+        $ pip install ClustIPy
+        $ clustipy --help
+        ```
+        
+        ## Test
+        
+        ```
+        pytest -v --cov . --pep8
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
