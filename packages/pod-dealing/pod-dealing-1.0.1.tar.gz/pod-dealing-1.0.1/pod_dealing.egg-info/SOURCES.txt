@@ -1,0 +1,13 @@
+README.md
+setup.py
+pod_dealing/__init__.py
+pod_dealing/json_schema.json
+pod_dealing/pod_dealing.py
+pod_dealing/services.json
+pod_dealing/version.py
+pod_dealing.egg-info/PKG-INFO
+pod_dealing.egg-info/SOURCES.txt
+pod_dealing.egg-info/dependency_links.txt
+pod_dealing.egg-info/not-zip-safe
+pod_dealing.egg-info/requires.txt
+pod_dealing.egg-info/top_level.txt

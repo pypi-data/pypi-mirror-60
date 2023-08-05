@@ -1,0 +1,191 @@
+{
+  "post_nzh_biz_addDealer": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29827,
+      "sandbox": 39323
+    }
+  },
+  "get_nzh_biz_dealerList": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29828,
+      "sandbox": 39324
+    }
+  },
+  "post_nzh_biz_enableDealer": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29829,
+      "sandbox": 39325
+    }
+  },
+  "post_nzh_biz_disableDealer": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29830,
+      "sandbox": 39326
+    }
+  },
+  "post_nzh_biz_businessDealingList": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29831,
+      "sandbox": 39327
+    }
+  },
+  "post_nzh_biz_addUserAndBusiness": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29832,
+      "sandbox": 39328
+    }
+  },
+  "get_nzh_biz_listUserCreatedBusiness": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29834,
+      "sandbox": 39330
+    }
+  },
+  "post_nzh_biz_updateBusiness": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29834,
+      "sandbox": 39331
+    }
+  },
+  "get_nzh_biz_getApiTokenForCreatedBusiness": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29836,
+      "sandbox": 39332
+    }
+  },
+  "get_nzh_rateBusiness": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29837,
+      "sandbox": 39333
+    }
+  },
+  "get_nzh_commentBusiness": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29838,
+      "sandbox": 39334
+    }
+  },
+  "post_nzh_businessFavorite": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29839,
+      "sandbox": 39335
+    }
+  },
+  "get_nzh_userBusinessInfos": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29840,
+      "sandbox": 39336
+    }
+  },
+  "get_nzh_commentBusinessList": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29841,
+      "sandbox": 39337
+    }
+  },
+  "get_nzh_biz_confirmComment": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29842,
+      "sandbox": 39338
+    }
+  },
+  "get_nzh_biz_unconfirmComment": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29843,
+      "sandbox": 39339
+    }
+  },
+  "post_nzh_biz_addDealerProductPermission": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29822,
+      "sandbox": 39318
+    }
+  },
+  "get_nzh_biz_dealerProductPermissionList": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29823,
+      "sandbox": 39319
+    }
+  },
+  "get_nzh_biz_dealingProductPermissionList": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29824,
+      "sandbox": 39320
+    }
+  },
+  "get_nzh_biz_disableDealerProductPermission": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29825,
+      "sandbox": 39321
+    }
+  },
+  "get_nzh_biz_enableDealerProductPermission": {
+    "platform_url": "base_url",
+    "sub_url": "/nzh/doServiceCall",
+    "http_verb": "post",
+    "products": {
+      "production": 29826,
+      "sandbox": 39322
+    }
+  }
+}
