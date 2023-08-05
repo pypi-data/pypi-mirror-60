@@ -1,0 +1,3 @@
+[console_scripts]
+UCS633-topsis-SulbhMahajan-101703569 = mypackage.topsis:main
+
