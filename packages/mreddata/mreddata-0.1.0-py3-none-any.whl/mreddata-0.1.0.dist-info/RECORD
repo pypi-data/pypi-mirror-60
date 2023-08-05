@@ -1,0 +1,17 @@
+mreddata/__init__.py,sha256=dWXsC9Xvfbez6hIex5VPdfNoxtoVY90ZibAwf_QCsq4,146
+mreddata/__main__.py,sha256=rVKEslxhmiaoWY9vqSlmgAYtn2QyD5I9VlI727xJXQ8,14353
+mreddata/_data.py,sha256=FTHOtxwtZSN3Uwz0l6i7luhVF-sckY-Keo6fDTNpnWM,6635
+mreddata/_files.py,sha256=Q4Ng52wl59WRcxWXMXPzIHkNUjyT0YzCb1lC8ysiSGY,2749
+mreddata/_options_parser.py,sha256=M6L1o8dBKSInu1CIBAbfKbcs3ad6BiYWf2LD_HsdJgQ,1737
+mreddata/datatools.py,sha256=41eh7N53ZAWH9phxmOXizvhPThW12sJk3Bzfmt3Ib-U,15530
+mreddata/foo.py,sha256=niB6gd7nBGgcXOYWzU29K1sIM60tpFObUUzAkXmgNqY,98
+mreddata/plot_data.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testMred/__init__.py,sha256=0W7nO1GVAc35b9vsUIBsMV8bXe0zWX2jMkdgJFeb_xg,74
+testMred/__main__.py,sha256=qPRVqBT6GooDXmEGgemNiyLE2HpzQbBoGZ_EOEl_JIA,14348
+testMred/m2.py,sha256=-uHGkGNKAEHB9JHy8vb81qB9EoXngD-i5laoBvvKOAY,8272
+testMred/plot_data.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mreddata-0.1.0.dist-info/LICENSE,sha256=HEvlcHqgyIfFzybUMY9rDxF6c9l8aNk5HWJUcqojTGE,1073
+mreddata-0.1.0.dist-info/METADATA,sha256=RMO4F-nEqK39iXGLia0xx1uMNkSWaxmAACJN_eJg6BM,586
+mreddata-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mreddata-0.1.0.dist-info/top_level.txt,sha256=NdeY44csNFnqbW_XJRgNK8IZKW6H0Hac4WskeUUZAcQ,18
+mreddata-0.1.0.dist-info/RECORD,,
