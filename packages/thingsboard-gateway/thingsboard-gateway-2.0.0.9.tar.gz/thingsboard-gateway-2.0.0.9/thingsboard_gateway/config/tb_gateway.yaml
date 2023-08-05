@@ -1,0 +1,14 @@
+connectors:
+- configuration: mqtt.json
+  name: OPC-UA
+  type: mqtt
+storage:
+  max_records_count: 10000
+  read_records_count: 100
+  type: memory
+thingsboard:
+  host: localhost
+  port: 1883
+  remoteConfiguration: false
+  security:
+    accessToken: '1234567890'

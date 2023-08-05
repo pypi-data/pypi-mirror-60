@@ -1,0 +1,46 @@
+{
+  "server": {
+    "url": "localhost:4840/freeopcua/server/",
+    "scanPeriodInMillis": 10000,
+    "timeoutInMillis": 5000,
+    "showMap": true,
+    "security": "Basic128Rsa15",
+    "identity": {
+      "type": "anonymous"
+    },
+    "mapping": [
+      {
+        "deviceNodePattern": "Root\\.Objects\\.MyObject\\d+",
+        "deviceNamePattern": "Device ${Root\\.Objects\\.MyObject\\d+\\.MyStringVariable}",
+        "attributes": [
+          {
+            "key": "Tag1",
+            "path": "${MyVariable1}"
+          }
+        ],
+        "timeseries": [
+          {
+            "key": "Tag3",
+            "path": "${MyVariable2}"
+          },
+          {
+            "key": "Tag2",
+            "path": "${MyVariable3}"
+          }
+        ],
+        "rpc_methods": [
+          {
+            "method": "multiply",
+            "arguments": [2, 4]
+          }
+        ],
+        "attributes_updates": [
+          {
+            "attributeOnThingsBoard": "t",
+            "attributeOnDevice": "MyVariable1"
+          }
+        ]
+      }
+    ]
+  }
+}
