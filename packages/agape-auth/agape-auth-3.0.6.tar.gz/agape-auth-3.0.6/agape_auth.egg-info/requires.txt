@@ -1,0 +1,6 @@
+Django>=2.0.0
+django-cors-headers>=2.1.0
+django-filter>=1.1.0
+djangorestframework>=3.6.4
+djangorestframework-jwt>=1.11.0
+agape-core>=2.0.0
