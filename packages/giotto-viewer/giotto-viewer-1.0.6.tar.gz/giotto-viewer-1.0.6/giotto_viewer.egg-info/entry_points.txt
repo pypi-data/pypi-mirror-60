@@ -1,0 +1,8 @@
+[console_scripts]
+giotto_copy_js_css = giotto_viewer.giotto_copy_js_css:main
+giotto_prepare_annot = giotto_viewer.prepare_annot:main
+giotto_read_matrix_custom = giotto_viewer.read_matrix_custom:main
+giotto_setup_image = giotto_viewer.giotto_setup_image:main
+giotto_setup_viewer = giotto_viewer.giotto_setup_viewer:main
+giotto_step1_modify_json = giotto_viewer.giotto_step1_modify_json:main
+
