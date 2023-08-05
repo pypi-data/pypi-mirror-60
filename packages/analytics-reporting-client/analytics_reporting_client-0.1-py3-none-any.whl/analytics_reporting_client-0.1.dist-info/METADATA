@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: analytics-reporting-client
+Version: 0.1
+Summary: Python Client Wrapper for Analytics Reporter Web Service
+Home-page: UNKNOWN
+Author: Jandon Limited
+Author-email: automation@jandon.co.uk
+License: No License
+Platform: UNKNOWN
+Requires-Dist: requests
+
+
+Python Client Wrapper for Analytics Reporter Web Service
+
+

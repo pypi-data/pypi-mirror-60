@@ -1,0 +1,10 @@
+analytics_reporting_client/__init__.py,sha256=BEZCuRz5n1ediWV3KdRH2uYt2YwBvYFt9h2YoQuk3EE,247
+analytics_reporting_client/api_wrapper.py,sha256=h1Nia8lvEsp2kkBF8qVHpOZe6SUgudAJDPyfZFnqOgM,5633
+analytics_reporting_client/missing_credentials_error.py,sha256=YWItNDalGIF5smsg68_RXirLoXkbHgQ2b-ABVP5b-Ws,136
+analytics_reporting_client/session.py,sha256=BLlvfTrY0Cv1uY9d9Vv1DMCIS_eSMRvOgOyss921pRA,423
+analytics_reporting_client/tests.py,sha256=cNkVha8UMDiWAGdS0SP1CbMWUFr031InhWHEaF-Sllg,5731
+analytics_reporting_client-0.1.dist-info/METADATA,sha256=MD2Ta1zKuC7Yngs_scSQg02w7bmSb8VVC5zBnVYk2h8,337
+analytics_reporting_client-0.1.dist-info/RECORD,,
+analytics_reporting_client-0.1.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+analytics_reporting_client-0.1.dist-info/top_level.txt,sha256=62f8P9TjVnyEDnm8Y_XjfhgJmHO1Z90MK15-gQcW3JM,27
+analytics_reporting_client-0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
