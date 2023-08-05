@@ -1,0 +1,46 @@
+{
+  "mappings": {
+    "record": {
+      "_all": {
+        "enabled": true
+      },
+      "properties": {
+        "_workflow": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "keyword"
+            },
+            "data_type": {
+              "type": "keyword"
+            },
+            "created": {
+              "type": "date"
+            },
+            "modified": {
+              "type": "date"
+            },
+            "id_workflow": {
+              "type": "keyword"
+            },
+            "id_user": {
+              "type": "integer"
+            },
+            "id_parent": {
+              "type": "integer"
+            },
+            "workflow_class": {
+              "type": "keyword"
+            },
+            "workflow_name": {
+              "type": "keyword"
+            },
+            "workflow_position": {
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  }
+}

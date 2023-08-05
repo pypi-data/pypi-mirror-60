@@ -1,0 +1,238 @@
+* 2.0.19 "Pawel <41995670+pazembrz@users.noreply.github.com>"
+    MINOR ed30dbec: Merge pull request #51 from pazembrz/retry_on_429
+    MINOR 62b3beab: bulk_index: add retry on error 429
+
+* 2.0.18 "pazembrz <41995670+pazembrz@users.noreply.github.com>"
+    MINOR bbdf0c41: Merge pull request #50 from pazembrz/es7_compatibility
+    MINOR ee2cebfc: rest: fix es7 comatibility
+
+* 2.0.17 "Harris Tzovanakis <me@drjova.com>"
+    MINOR 61cf42ce: Merge pull request #49 from pazembrz/update_es
+    MINOR a7868351: setup: Update elasticsearch to v7
+
+* 2.0.16 "Antonio Cesarano <cesarano2607@gmail.com>"
+    MINOR 59943566: Merge pull request #36 from david-caro/es5_mapping
+    MINOR 5a08e3e4: es5: adapt mappings
+
+* 2.0.15 "David Caro <david@dcaro.es>"
+    MINOR 541a96aa: Merge pull request #47 from david-caro/remove_es2
+    MINOR f170d98f: global: remove elasticsearch2 compatibility
+
+* 2.0.14 "Szymon Łopaciuk <szymon.lopaciuk@cern.ch>"
+    MINOR 22ad6581: Merge pull request #46 from szymonlopaciuk/add_action_route
+    MINOR 0fc8cb9f: views.rest: add restart_step to action segment
+
+* 2.0.13 "Antonio Cesarano <cesarano2607@gmail.com>"
+    MINOR 9b8abbf8: Merge pull request #45 from
+    szymonlopaciuk/add_restart_step_endpoint
+    MINOR 3739b7a0: api: create endpoint for restarting current task
+
+* 2.0.12 "David Caro <david@dcaro.es>"
+    MINOR 0a8be0eb: Merge pull request #44 from
+    szymonlopaciuk/proper_restart_wfs
+    MINOR 246cae42: api: remove reloading from source_data in restart
+
+* 2.0.11 "Harris Tzovanakis <me@drjova.com>"
+    MINOR 0c1adb8d: Merge pull request #43 from drjova/etag-addition
+    MINOR 872c5110: response: addition of etag header
+
+* 2.0.10 "David Caro <david@dcaro.es>"
+    MINOR a19c058b: Merge pull request #42 from
+    szymonlopaciuk/fix_even_more_remap_errors
+    MINOR 28886095: cli: reindex only specified types, not every wf
+
+* 2.0.9 "David Caro <david@dcaro.es>"
+    MINOR 484be00f: Merge pull request #41 from
+    szymonlopaciuk/fix_more_remap_errors
+    MINOR 05c85223: cli: remap: write errors to a file not stdout
+
+* 2.0.8 "David Caro <david@dcaro.es>"
+    MINOR 74dfffc3: Merge pull request #40 from szymonlopaciuk/fix_remap_errors
+    MINOR bcc1048c: cli: remap: fix div by zero, repr errors
+
+* 2.0.7 "Antonio Cesarano <cesarano2607@gmail.com>"
+    MINOR 002c6521: Merge pull request #39 from
+    szymonlopaciuk/collect_errors_from_indexing
+    MINOR a5a41450: tasks: collect unexpected errors while indexing
+
+* 2.0.6 "Antonio Cesarano <cesarano2607@gmail.com>"
+    MINOR f877a38e: Merge pull request #38 from
+    szymonlopaciuk/index_param_queue_name
+    MINOR ca5e8224: cli: parametrize the queue name for indexing
+
+* 2.0.5 "Antonio Cesarano <cesarano2607@gmail.com>"
+    MINOR b9eb3bc1: Merge pull request #37 from
+    szymonlopaciuk/parallelize_indexing
+    MINOR c5601604: cli: parallelise HP indexing between workers
+
+* 2.0.4 "David Caro <david@dcaro.es>"
+    MINOR c901497c: Merge pull request #35 from david-caro/es5
+    MINOR 9d195ffd: es5 support
+
+* 2.0.3 "David Caro <david@dcaro.es>"
+    MINOR 9f69578c: Merge pull request #34 from david-caro/fine_grained_actions
+    MINOR ec3fc27d: permissions: allow fine-grained read/write actions
+    MINOR ec9dd087: gitignore: add a couple missing entries
+
+* 2.0.2 "David Caro <david@dcaro.es>"
+    MINOR ab359e47: Merge pull request #32 from david-caro/format_failures
+    MINOR 4534b6e0: cli: properly format failures on error
+
+* 2.0.1 "David Caro <david@dcaro.es>"
+    MINOR d5589c2e: Merge pull request #31 from
+    david-caro/allow_cleanup_on_restart
+    MINOR b3726a29: setup: add missing elasticsearch-dls
+    MINOR 286725bc: WorkflowUIObject: allow cleanup on restart
+
+* 2.0.0 "David Caro <david@dcaro.es>"
+    MAJOR 5a509300: Merge pull request #30 from zzacharo/bump-workflow
+    MAJOR 03d850a4: bump `invenio_workflows` to version 7
+
+* 1.1.3 "Samuele Kaplun <kaplun@gmail.com>"
+    MINOR 72f62982: Merge pull request #29 from kaplun/bulk-reindexing
+    MINOR 8d0ab79f: cli: bulk reindexing
+
+* 1.1.2 "Samuele Kaplun <kaplun@gmail.com>"
+    MINOR 0f875b03: Merge pull request #28 from kaplun/yield_per
+    MINOR 179fc6dd: cli: reindex via yield_per
+    FIXED ISSUES: 27
+
+* 1.1.1 "David Caro <david@dcaro.es>"
+    MINOR 50e6a34e: Merge pull request #25 from
+    david-caro/restart_from_first_task
+    MINOR 4334b05b: workflowuirecord: restart form first task
+
+* 1.1.0 "David Caro <david@dcaro.es>"
+    FEATURE 3ccd53e6: Merge pull request #24 from jmartinm/new-cli
+    FEATURE baef9f82: cli: initial commit
+
+* 1.0.32 "David Caro <david@dcaro.es>"
+    MINOR c5cb062b: Merge pull request #23 from
+    david-caro/fix_invenio_workflows_pin
+    MINOR e64c8cc1: Pin to the invenio-workflows major version.
+    MINOR 1f86d61c: tests: fix minor docs issues
+
+* 1.0.31 "David Caro <david@dcaro.es>"
+    MINOR 17b8f2f6: Merge pull request #22 from david-caro/fix_continue_resume
+    MINOR 3c8265c4: api: reset workflow status on resume/restart
+
+* 1.0.30 "David Caro <david@dcaro.es>"
+    MINOR 8678676e: Merge pull request #17 from jmartinm/920-permissions
+    MINOR 81fad0ab: permissions: restrict API views
+
+* 1.0.29 "Javier Martin Montull <javier.martin.montull@cern.ch>"
+    MINOR df7dd43b: Merge pull request #20 from jmartinm/19-PUT-rest
+    MINOR 444cd827: views: add rest PUT endpoint
+    FIXED ISSUES: 19
+
+* 1.0.28 "David Caro <david@dcaro.es>"
+    MINOR dc933438: Merge pull request #18 from david-caro/fix_autosemver_pin
+    MINOR 873406f9: packaging: fix autosemver pin
+
+* 1.0.27 "David Caro <david@dcaro.es>"
+    MINOR bfee4df1: Merge pull request #16 from david-caro/remove_version
+    MINOR 8e08b9c0: packaging: remove version module
+
+* 1.0.26 "David Caro <david@dcaro.es>"
+    MINOR 079bea5b: Merge pull request #15 from david-caro/use_autosemver
+    MINOR 03250038: packaging: remove old python compatibility tags
+    MINOR abaa45f4: docs: use the correct url
+    MINOR cbf3c5b2: travis: enable autodeploy
+    MINOR bd12773a: packaging: move to autosemver
+
+* 1.0.25 "David Caro <david@dcaro.es>"
+    MINOR 5d26babe: Merge pull request #13 from david-caro/qa
+    MINOR eebcd632: tests: add dummy docs to pass the tests
+    MINOR 296f140e: api: remove duplicated delete from index
+    MINOR 5c056a56: core: use correct workflow model
+    MINOR b41ad223: global: final cleanup for Invenio 3
+    MINOR f96dd593: travis: remove old pythons and extra req branches
+    MINOR 91685d6d: tests: pep8/formatting fixes
+    MINOR d9b47687: core: avoid using directly the model
+    MINOR ab6f36b2: indexer: tzinfo already set fix
+    MINOR edb9e39c: Merge pull request #11 from jmartinm/indexing-fix
+    MINOR 5d2a2cf5: workflow: save the workflow and reset the position
+
+* 1.0.24 "Javier Martin Montull <javier.martin.montull@cern.ch>"
+    MINOR f5267987: permissions: holdingpen-admin-access action addition
+
+* 1.0.23 "Eamonn Maguire <eamonnmag@gmail.com>"
+    MINOR 84bf8238: workflows: fixed renderer call.
+
+* 1.0.22 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR ae518446: indexer: do not index if no data_type
+
+* 1.0.21 "Eamonn Maguire <eamonnmag@gmail.com>"
+    MINOR bf8f9069: api: adding request_data to kwargs for use in workflow
+
+* 1.0.20 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR faf6f0ec: api: initial files support
+
+* 1.0.19 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 9f855ac4: api: avoid double indexing
+
+* 1.0.18 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 0f64719d: api: editing addition
+
+* 1.0.17 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 1321c998: api: refactoring indexing
+
+* 1.0.16 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR d0b2cf41: rest: customizible API class
+
+* 1.0.15 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 820beefe: api: add extra_data to API record
+
+* 1.0.14 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 6ce0668a: search: fix query factory
+
+* 1.0.13 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 0507605f: rest: sort and facets API integration
+
+* 1.0.12 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 69ddef58: global: cleanup pidstore integration
+
+* 1.0.11 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR d8e59e0a: views: restart action message update
+
+* 1.0.10 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 060558c8: search: match all if empty search
+
+* 1.0.9 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 574b846c: views: REST serializing fix
+
+* 1.0.8 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 1268bc8f: docs: update README
+
+* 1.0.7 "PXke <px9e@gmx.fr>"
+    MINOR 25e7e15e: mappings: enable->enabled typo
+
+* 1.0.6 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR dabd3a6c: mappings: rename sample doctype
+
+* 1.0.5 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 24ace0da: mappings: sample mapping fix
+
+* 1.0.4 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 7e7d52b1: api: exception logging fix
+
+* 1.0.3 "Javier Martin Montull <javier.martin.montull@cern.ch>"
+    MINOR a3cebd92: global: move to elasticsearch-dsl
+
+* 1.0.2 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR bfd148f1: api: error robustness
+
+* 1.0.1 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 11d5c607: views: template context processor support
+
+* 1.0.0 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MAJOR c83b7e04: global: initial Invenio 3 compatibility
+
+* 0.0.3 "Guillaume Lastecoueres <PX9e@gmx.fr>"
+    MINOR 3478d944: workflow: details view
+
+* 0.0.2 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR 8794ae0c: Import from invenio-workflows
+
+* 0.0.1 "Jan Aage Lavik <jan.age.lavik@cern.ch>"
+    MINOR aef06e15: Initial commit
