@@ -1,0 +1,13 @@
+secureaws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+secureaws/__main__.py,sha256=OPsdEeDrktRSZ384qcvNlDjrRiI3pVNLB9VDEhVuJiA,34
+secureaws/checkaws.py,sha256=lxm43puHTVtlu6NpZpuKb56gqxu7Yin8TldQsUkI5g4,9062
+secureaws/common.py,sha256=7VsgKNs0jIszr5PCOTCdYiGR3u5OVS73U2jUhfW6Sbg,1781
+secureaws/rsautil.py,sha256=mn0cIs6QoJzti7G-j1fJ0PF9CHFA1d92v5WK2Lxmofg,1314
+secureaws/secureaws.py,sha256=bERg6SfhA6L2NIdLdimiiluQs-rw0jN8rrUwn-znocQ,8550
+secureaws/setupaws.py,sha256=BL7PXab8SbP12Gr5nrvwY4Z2TKPXKJPHetjDFMg0HTk,47167
+secureaws-19.12.5.dist-info/LICENCE,sha256=J115ouqkAlDPS2pcw5sCfDWQ5_mKIzluPUwpDWgrQfQ,1069
+secureaws-19.12.5.dist-info/METADATA,sha256=SaxrNQT2kDbuQ7YxDeNQhvXqsLT6bSoYfUZuWCzu_9U,1874
+secureaws-19.12.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+secureaws-19.12.5.dist-info/entry_points.txt,sha256=Ktox_HeUa2DO1itqOp2BXLgxCXMyPFIaWDHYWvkv49g,56
+secureaws-19.12.5.dist-info/top_level.txt,sha256=p3tTbWUH-xBGOHHzfrHa9lP5oFsvITMtTrQVkK_t46M,10
+secureaws-19.12.5.dist-info/RECORD,,
