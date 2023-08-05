@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: py-mclimate-api
+Version: 1.0.0
+Summary: MClimate API Wrapper in Python
+Home-page: https://github.com/Pernichev/mclimate_api_wrapper
+Author: MClimate
+Author-email: hi@seemelissa.com
+License: UNKNOWN
+Description: # Python Wrapper for the MClimate API
+        
+        ### How to use
+        
+        ```
+        pip install py-api-mclimate
+        ```
+        
+        ## Built With
+        
+        * [requests](http://docs.python-requests.org/en/master/)
+        
+        ## License
+        
+        Licensed under the MIT License - see this [LICENSE.md](LICENSE.md)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
