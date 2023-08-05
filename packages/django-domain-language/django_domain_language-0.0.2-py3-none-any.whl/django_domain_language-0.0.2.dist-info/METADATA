@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-domain-language
+Version: 0.0.2
+Summary: ('A django app that allows to swich the language based on the domain',)
+Home-page: https://github.com/sacovo/django-domain-language/
+Author: Sandro Covo
+Author-email: sandro@sandrocovo.ch
+License: GPLv3
+Keywords: django translation
+Platform: UNKNOWN
+
+UNKNOWN
+
+
