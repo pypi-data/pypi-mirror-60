@@ -1,0 +1,10 @@
+snaketrace/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snaketrace/__main__.py,sha256=r0ENAfANT1MpeV0VMXdyrImVopfPA65iAg6ioNjuOzg,2078
+snaketrace/trace.py,sha256=psiPBpvr9i3ujsSB19T3QRLzGtqa4GeGiC6J1JA_oXM,3307
+snaketrace/tsv.py,sha256=_nENftUkzQ79z5TNs3F1pROXnX6iyyzvGXKX9T81fMc,628
+snaketrace-0.2.0.dist-info/LICENSE,sha256=QIpbHQ2V3AFUf--e3LYCbGXX3m9IsqSEPRK8sODojyI,1068
+snaketrace-0.2.0.dist-info/METADATA,sha256=csv8w22RnFSLVZj_TpmA2O1zV8jTQNYtYI3mRA8vZ9Y,1647
+snaketrace-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+snaketrace-0.2.0.dist-info/entry_points.txt,sha256=K_iC-21MyQ0pMZ_Th0QZFqoDK_pLjOtuxhoUzq0XNu4,57
+snaketrace-0.2.0.dist-info/top_level.txt,sha256=i-FyBGVhOquWqRxTvmnx8mYFS4cF4eCUzvAWSMF55CI,11
+snaketrace-0.2.0.dist-info/RECORD,,
