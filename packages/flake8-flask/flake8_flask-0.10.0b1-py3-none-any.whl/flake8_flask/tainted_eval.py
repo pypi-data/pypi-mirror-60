@@ -1,0 +1,46 @@
+import ast
+import logging
+import sys
+from flake8_flask.flask_taint_visitor import FlaskTaintVisitor, FakeNode
+from pyt.vulnerabilities.vulnerability_helper import Vulnerability
+
+logger = logging.getLogger(__file__)
+logger.setLevel(logging.INFO)
+handler = logging.StreamHandler(stream=sys.stderr)
+handler.setFormatter(
+    logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+)
+logger.addHandler(handler)
+
+
+class TaintedEvalVisitor(FlaskTaintVisitor):
+    name = "r2c-flask-tainted-eval"
+
+    def __init__(self, target):
+        super(TaintedEvalVisitor, self).__init__(target)
+
+    def is_call_dangerous_sink(self, call_node: ast.Call) -> bool:
+        if isinstance(call_node.func, ast.Name):
+            if call_node.func.id == "eval":
+                return True
+        return False
+
+    def violation_message(self, vuln: Vulnerability) -> str:
+        return (
+            super(TaintedEvalVisitor, self).violation_message(vuln)
+            + "; possible remote code execution."
+        )
+
+    def visit_Call(self, call_node: ast.Call):
+        if self.is_call_dangerous_sink(call_node):
+            logger.debug(f"Found potentially dangerous sink: {ast.dump(call_node)}")
+            vulnerabilities = self.run_taint()
+
+            for result in vulnerabilities:
+                vuln = result.as_dict()
+                self.report_nodes.append(
+                    {
+                        "node": FakeNode(vuln.get("sink", {}).get("line_number"), 0),
+                        "message": self.violation_message(vuln),
+                    }
+                )
