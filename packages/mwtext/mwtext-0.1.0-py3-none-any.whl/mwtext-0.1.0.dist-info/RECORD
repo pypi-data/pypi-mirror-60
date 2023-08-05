@@ -1,0 +1,16 @@
+mwtext/__init__.py,sha256=IDU5E6WG7zdcM93CZZnFyWfoXAZejmZ3IiV4Hjs8Cag,336
+mwtext/about.py,sha256=BXD3RPkLdNmugrmWu-tXLaXK69zwtwh42N2qvbDIq9I,380
+mwtext/mwtext.py,sha256=BbtJGWz2baVrvw2SLoAuK1mO4jIPkpYJesSIi3QJqCg,498
+mwtext/wikitext_preprocessor.py,sha256=D4Sa31KSVfqB47k1eKlDp7dpYYJudMGPvZGBuSKOorQ,4267
+mwtext/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mwtext/utilities/learn_vectors.py,sha256=cSfZkglQsxkfj3jLt1dO8syDFu_vtl4cUsMi9aOBZ_8,1548
+mwtext/utilities/preprocess_text.py,sha256=Geg13-0etBlnCYqID6qyLyPj5lR5gacIC6I_3lj2aZU,6538
+mwtext/utilities/word2vec2gensim.py,sha256=gepoPMP7IwlYlyAv5fnVsGL9PkWtyzbWtNdJS7ipCLw,1864
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_wikitext_preprocessor.py,sha256=z2i57vCTG-FK9HZx4FF3jTvQw1c1Vdz4ng6yt_MYfn8,10905
+mwtext-0.1.0.dist-info/LICENSE,sha256=YAkA8iW42paPJoubuzgC7SaiQuf5TaWZB6E9PH9wxtw,1081
+mwtext-0.1.0.dist-info/METADATA,sha256=j5B21ub1tuu_71QShKmkJTwmlEQNVvThC97tPCC1YJY,1118
+mwtext-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+mwtext-0.1.0.dist-info/entry_points.txt,sha256=nycxHg9Q1x6mChcFICTL5x4Rt7DJQgYJ5MigkjvweWE,47
+mwtext-0.1.0.dist-info/top_level.txt,sha256=AfCiEk7Br4IXtytfc6w3rrlMO6UivmBV3bKBi0DTxrk,13
+mwtext-0.1.0.dist-info/RECORD,,
