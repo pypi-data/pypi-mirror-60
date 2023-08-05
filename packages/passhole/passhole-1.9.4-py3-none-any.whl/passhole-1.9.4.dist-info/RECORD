@@ -1,0 +1,11 @@
+passhole/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+passhole/blank.kdbx,sha256=L-iyyahp-EIb6W75Wrg82PJIkqxDohUYMuDdlcwDqng,1477
+passhole/passhole.py,sha256=vMVOgHwJb_rIDEZ6SMc-PF5XZJCwm3fgsvn4fvrJVmE,37464
+passhole/version.py,sha256=TVQz9Y2Y5ZZsEAeUXaNdkqQorvWqEFZ5UjMCI8zp6qI,22
+passhole/wordlist.txt,sha256=bVV_BpOVj7XmULaLW-5YXrgs9NoyllUFx4npJHQ7xSI,62144
+passhole-1.9.4.dist-info/LICENSE,sha256=QcmC9hWrZBOHJPwyHr2zgWJ3DUbAogmFvc4LMMJuR4Y,35130
+passhole-1.9.4.dist-info/METADATA,sha256=IaORDKPvEcqUR0rm2hUH8tRLBksKTIjMvkEw3Mel5gI,3501
+passhole-1.9.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+passhole-1.9.4.dist-info/entry_points.txt,sha256=0CwN_PF0-MbVUIK7Jg71Svlp355QgfPV6NLYJ5Q8Xwg,81
+passhole-1.9.4.dist-info/top_level.txt,sha256=axbc5wAScuUgpQfg-f5Thnw87Wm-F_TaUxWw6kKD2zk,9
+passhole-1.9.4.dist-info/RECORD,,
