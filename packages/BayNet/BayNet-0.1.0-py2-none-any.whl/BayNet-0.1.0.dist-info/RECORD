@@ -1,0 +1,8 @@
+baynet/__init__.py,sha256=GypDrbMc7Wet3UykaYGhrbTcdWX8OV9GqFJDJlkRRS4,74
+baynet/metrics.py,sha256=Z_jYQ7K66Su8mh6IiG_fAolcQ27rSd9GI1hOC9KjYHY,5484
+baynet/parameters.py,sha256=LXpFTPHKND0JA9h1e8yHcGKdp4s_2jZSRMFZBrUSoB0,2842
+baynet/structure.py,sha256=iI6GQ6IekRaI2PRseKDy3evaCe_VmK9vzAbxVYYb0_w,7826
+BayNet-0.1.0.dist-info/METADATA,sha256=U1WXgMjxfyiQqtbgK7CWbEfMepCm608wQRM_vstJilY,1234
+BayNet-0.1.0.dist-info/WHEEL,sha256=oAVPkyAEF4ax3tnqlvKYGy8JOdoAihZXbcM6C6xJNOI,92
+BayNet-0.1.0.dist-info/top_level.txt,sha256=oXCk9UQbpQdsMStD_yDT1641a_VhIfzskZ_lkE6Ziaw,7
+BayNet-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: BayNet
+Version: 0.1.0
+Summary: (another) Python Bayesian Network library
+Home-page: https://github.com/Stoffle/BayNet
+Author: Chris Robinson
+Author-email: c.f.robinson@sussex.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: python-igraph (>=0.7.0)
+Requires-Dist: numpy (>=1.17.2)
+Requires-Dist: pandas (>=0.25)
+Provides-Extra: ci
+Requires-Dist: pytest (>=3.3.2); extra == 'ci'
+Requires-Dist: pytest-cov (>=2.6.0); extra == 'ci'
+Requires-Dist: networkx; extra == 'ci'
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: mypy (>=0.720); extra == 'dev'
+Requires-Dist: pylint (>=2.0); extra == 'dev'
+Requires-Dist: pytest (>=3.3.2); extra == 'dev'
+Requires-Dist: pytest-cov (>=2.6.0); extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pydocstyle; extra == 'dev'
+Requires-Dist: networkx; extra == 'dev'
+
+# BayNet
+
+Wrapper around python-igraph's `Graph` class specifically for Bayesian Networks.
+
+Current features:
+- Conditional probability tables (parameters for discrete variable networks)
+- Discrete network sampling
+
+Future features:
+- CPT learning (maximum likelihood)
+- Dag <-> CPDAG methods
+
+
