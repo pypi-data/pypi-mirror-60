@@ -1,0 +1,17 @@
+azure/mgmt/operationsmanagement/__init__.py,sha256=IUkrTFE0xDVMEabOh_SkGTZw9XSDUievogkfZDKft5Y,750
+azure/mgmt/operationsmanagement/_configuration.py,sha256=MdJA1PMMzzZZS1qvqiKKGN9YiXOUkZNfsI7_QnHegeg,2782
+azure/mgmt/operationsmanagement/_operations_management_client.py,sha256=BHOxW3QbHz8LjxmJpQpCs-6CU0BiGnfC8rkBywE0eqE,3528
+azure/mgmt/operationsmanagement/version.py,sha256=GukMVZvJdD6GlnUqH5JrIeN8ylWTXk6tJwFIDr8wYLM,493
+azure/mgmt/operationsmanagement/models/__init__.py,sha256=2o-41GBBLUADWoCBNI-MOd8eApAZfWZxgOpf23SseZk,2705
+azure/mgmt/operationsmanagement/models/_models.py,sha256=oh2xNR4Y_LrP2R5QRkX98-SK5Szv3U-Mbva5lElBKu8,16349
+azure/mgmt/operationsmanagement/models/_models_py3.py,sha256=ZDfAyw0qkCisyrWok77UCTb_p0e61jftb64ZVhw4Joc,16455
+azure/mgmt/operationsmanagement/models/_paged_models.py,sha256=2aG0sSl7-Ta_AD6iz6XqsNHFxWCYAqJ9CTz7_rCjRvE,938
+azure/mgmt/operationsmanagement/operations/__init__.py,sha256=cBPH2hIF-tR7Q6aPlrSAOmweSobWD6_FUEq05U8pVyw,875
+azure/mgmt/operationsmanagement/operations/_management_associations_operations.py,sha256=I65hLoFU7-mblQuXK2rjQpAkfvvGA2aOEes_HXjSJT4,15287
+azure/mgmt/operationsmanagement/operations/_management_configurations_operations.py,sha256=_gtfSGcvqhm4O8Ljpm7NVMQYWURZ1UjdC_CWFXul48k,14264
+azure/mgmt/operationsmanagement/operations/_operations.py,sha256=i3YQ0j6I5njj3h4i0qZg9miDEvAuf82DZ9bpzAY2nkE,3975
+azure/mgmt/operationsmanagement/operations/_solutions_operations.py,sha256=kQRykBTh9yLycc2yF5mUDiOG45WUoXHiG55NZ9PEjM0,23865
+azure_mgmt_operationsmanagement-0.1.0.dist-info/METADATA,sha256=Xdh-vWFvPsZlEIcQil8odBzomhclrWeRQZ4VjjKXxik,2208
+azure_mgmt_operationsmanagement-0.1.0.dist-info/WHEEL,sha256=hq9T7ntHzQqUTLUmJ2UVhPL-W4tJi3Yb2Lh5lMfs2mk,110
+azure_mgmt_operationsmanagement-0.1.0.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
+azure_mgmt_operationsmanagement-0.1.0.dist-info/RECORD,,
