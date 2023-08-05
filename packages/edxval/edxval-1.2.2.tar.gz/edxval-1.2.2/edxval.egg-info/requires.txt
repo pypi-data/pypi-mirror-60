@@ -1,0 +1,10 @@
+boto
+django-model-utils
+django-storages
+enum34
+lxml
+Django>=1.11
+pysrt
+edx-django-oauth2-provider
+edx-drf-extensions
+pillow
