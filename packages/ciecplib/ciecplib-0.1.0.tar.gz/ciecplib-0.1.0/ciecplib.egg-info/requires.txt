@@ -1,0 +1,23 @@
+lxml
+M2Crypto
+pyOpenSSL
+
+[:sys_platform != "win32"]
+pykerberos
+
+[:sys_platform == "win32"]
+winkerberos
+
+[docs]
+sphinx
+sphinx-argparse
+sphinx_automodapi
+sphinx_rtd_theme
+sphinx_tabs
+
+[test]
+pytest
+pytest-cov
+
+[test:python_version < "3"]
+mock
