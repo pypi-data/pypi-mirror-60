@@ -1,0 +1,22 @@
+reference:
+        "{{reference}}"
+name:
+        "{{name}}"
+
+min_perc:
+        "{{minperc}}"
+
+now:
+        "{{now}}"
+
+mask:
+        "{{mask}}"
+
+day:
+        "{{day}}"
+
+isolates:
+        "{{isolates}}"
+
+gubbins:
+        {{gubbins}}
