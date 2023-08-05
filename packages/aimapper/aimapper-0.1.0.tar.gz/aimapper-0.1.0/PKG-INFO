@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aimapper
+Version: 0.1.0
+Summary: Python package for the adaptively-integrated intensity map (AIMAP) method
+Author: Akio Taniguchi
+Author-email: taniguchi@a.phys.nagoya-u.ac.jp
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: astropy (>=4.0,<5.0)
+Requires-Dist: numpy (>=1.18.1,<2.0.0)
+Requires-Dist: scipy (>=1.4.1,<2.0.0)
