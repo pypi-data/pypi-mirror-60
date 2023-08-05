@@ -1,0 +1,11 @@
+creator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+creator/copier.py,sha256=XIS4RNWxcWZt5nPCT1wMz1uQ-ziPbsdlyceNB5-UP7U,910
+creator/main.py,sha256=MljthxcUnRYfLxElB0ahPrCmOiNqS09ugNksmU_HXxk,747
+flask_app-0.0.9.dev6.dist-info/AUTHORS,sha256=Fs-QOCNweNnYFLYMtke86eSPu8vcnLXLse17kSRVjoY,109
+flask_app-0.0.9.dev6.dist-info/LICENSE,sha256=WI5JtXXhjcqnIcPllDA1ZtuxNnZ515xjElcILo7z28o,1073
+flask_app-0.0.9.dev6.dist-info/METADATA,sha256=fTsbtziVkrh-TXpT4WkYWsuClWAnhCzxPlhJTh88Ilw,1616
+flask_app-0.0.9.dev6.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+flask_app-0.0.9.dev6.dist-info/entry_points.txt,sha256=ZxAd7CU3wCQsepz6Qk201KPh9Vi9zWB1L5p7WZd3l-4,49
+flask_app-0.0.9.dev6.dist-info/pbr.json,sha256=5bn5q6pTtBkhqTuskm5QR0ds5N8Z0LMIVJh9_it2x8A,47
+flask_app-0.0.9.dev6.dist-info/top_level.txt,sha256=KMZpeSBTjQ4ts1-Kcdum2oiuj129aGJ-H6fN-iUCFHc,8
+flask_app-0.0.9.dev6.dist-info/RECORD,,
