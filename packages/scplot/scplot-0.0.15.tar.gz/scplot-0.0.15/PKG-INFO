@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: scplot
+Version: 0.0.15
+Summary: Single cell plotting
+Home-page: https://github.com/klarman-cell-observatory/scPlot
+Author: Joshua Gould
+Author-email: jgould@broadinstitute.org
+License: BSD license
+Description: # scPlot
+        
+        Interactive single cell plotting library for [anndata](https://anndata.readthedocs.io/) objects.
+        
+        ## Installation
+        `pip install scplot`
+        
+        # Features
+         - Plot millions of cells on a 2-dimensional grid.
+         - Interactively explore multiple features and embeddings simultaneously.
+        
+        # Screenshots
+        ![embedding](https://github.com/klarman-cell-observatory/scPlot/raw/master/images/embedding.png)
+        ![composition_plot](https://github.com/klarman-cell-observatory/scPlot/raw/master/images/composition_plot.png)
+        ![dotplot](https://github.com/klarman-cell-observatory/scPlot/raw/master/images/dotplot.png)
+        ![heatmap](https://github.com/klarman-cell-observatory/scPlot/raw/master/images/heatmap.png)
+        ![violin](https://github.com/klarman-cell-observatory/scPlot/raw/master/images/violin.png)
+        ![scatter](https://github.com/klarman-cell-observatory/scPlot/raw/master/images/scatter.png)
+        
+        ## Example Notebook
+        [View example notebook](https://nbviewer.jupyter.org/github/klarman-cell-observatory/scPlot/blob/master/notebooks/scplot.ipynb?flush_cache=true)
+        
+        [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/klarman-cell-observatory/scPlot/master)
+        
+        
+        
+Keywords: plot
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Description-Content-Type: text/markdown
