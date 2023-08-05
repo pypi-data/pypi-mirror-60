@@ -1,0 +1,10 @@
+boto3>=1.9.228
+botocore>=1.13.46
+python-dateutil<3.0.0,>=2.6
+PyYAML>=5.1
+jsonschema
+jsonpatch>=1.21
+argcomplete
+tabulate>=0.8.2
+urllib3
+certifi
