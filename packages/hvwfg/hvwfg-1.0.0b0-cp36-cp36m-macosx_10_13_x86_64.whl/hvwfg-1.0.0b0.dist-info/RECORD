@@ -1,0 +1,10 @@
+hvwfg/__init__.py,sha256=meHAfuFijwjNxVhgp5IrPgKrEGTQP1_NM3ticynj3TE,746
+hvwfg/_version.py,sha256=gx06dNaqYKDjXe0rZeSAZdczRlUOFojdFqO6nuUyloY,498
+hvwfg/hv4dr.cpython-36m-darwin.so,sha256=ggR6LWvW99W0A9qeRQUgSt3wYbYkpfJaO3TbjwrEMTw,66968
+hvwfg/hv5dr.cpython-36m-darwin.so,sha256=qgIrb3AwQnV1DF8rnP5CJ4IiBxz9k_6jBrw1k5HWPWg,72464
+hvwfg/wfg.cpython-36m-darwin.so,sha256=69UaI-Do31k3_UHlKJcJMU-hbNKC9Wglq5CfLfjp98Y,69616
+hvwfg-1.0.0b0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+hvwfg-1.0.0b0.dist-info/METADATA,sha256=b6S09bBnzragH20CDc4HWU0YSdJFLkj0ZTc37UlKg3g,1323
+hvwfg-1.0.0b0.dist-info/WHEEL,sha256=jmnwvFlpVYpeJpGCXCC2yz3It4EJZCIO93bTulKzsNw,111
+hvwfg-1.0.0b0.dist-info/top_level.txt,sha256=gPWJR1JSVH7cj8iplG0l8QLjayu_hDCbH_lZP9IBi-k,6
+hvwfg-1.0.0b0.dist-info/RECORD,,
