@@ -1,0 +1,14 @@
+popbuild/conf.py,sha256=eRPF7scYWKIjgllPl1bBuuc29vgNoWZDXiNnkFnX2n8,2765
+popbuild/scripts.py,sha256=0ALdoPTYKBSwgbJiKZvasEI_BPKjbUSOPUpcnhCjjS4,145
+popbuild/version.py,sha256=o7Unuzd4xVpZ346rFwsMYXi5YBPWXAUUNTOStvJmyDE,16
+popbuild/popbuild/build.py,sha256=_1L19tB9zWFN6u0x1SfeeUuMFM_EUPlFpVkuvdOTCIE,949
+popbuild/popbuild/init.py,sha256=xFTnRhTZkIJ2gKsVEgUGHHIw6ZoDMqrXp4DQFipR60o,3369
+popbuild/popbuild/inst.py,sha256=SF9hd6DK9DYTYheOAxRQvNa5o0pP9Ciel1HGGZ9rx2g,2076
+popbuild/popbuild/post.py,sha256=mMdlRV22XaVMxXkHYiQG9YMgpB-VX58fXV9afzZ_ODQ,350
+popbuild/popbuild/venv.py,sha256=U6QGLCbhBSb0IWoTm9GQmrYN3p9QdNNgkHOksedrsxk,4325
+pop_build-1.1.dist-info/LICENSE,sha256=pZUC-Jz_OkbURD3ZSsQBh6u1Giu7OTkbeNF8oUembIY,11348
+pop_build-1.1.dist-info/METADATA,sha256=4YteVtq8WNkzUboYQSA-nkbFR-NPoHGKDuQrDV_1WZo,5200
+pop_build-1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pop_build-1.1.dist-info/entry_points.txt,sha256=Rgkq2DPFj56LkzdX5a-IdwD4HF5xeAvXicuoBnoFes4,54
+pop_build-1.1.dist-info/top_level.txt,sha256=qBi7ZLVZDrAdv7pjh5dg9qBrvxfF-u9oxMaOHCTb8uw,9
+pop_build-1.1.dist-info/RECORD,,
