@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pytest_cleanup
+Version: 0.1
+Summary: A simple cli-based recorder for Python
+Home-page: https://github.com/jeshan/pytest-cleanup
+License: UNKNOWN
+Author: Jeshan G. BABOOA
+Author-email: j@jeshan.co
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: jsonpickle <2
+Requires-Dist: loguru <1
+
+# pytest_cleanup
+> Automated, comprehensive and well-organised pytest test cases.
+
+Get started by typing `pip install pytest_cleanup`
+
+# Release process
+Deployment pipeline described in [templates/deployment-pipeline.yaml](templates/deployment-pipeline.yaml).
+
+Project can also be released with:
+- `docker-compose run release` : Enter password when prompted
+
+
+# Copyright
+Released under the MIT licence. See file named [LICENCE](LICENCE) for details.
+
+
