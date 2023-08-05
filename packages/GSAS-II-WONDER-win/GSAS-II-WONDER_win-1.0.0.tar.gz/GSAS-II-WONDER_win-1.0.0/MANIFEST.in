@@ -1,0 +1,13 @@
+recursive-include GSAS-II-WONDER *.py
+recursive-include GSAS-II-WONDER *.dat
+recursive-include GSAS-II-WONDER/bin *.*
+recursive-include GSAS-II-WONDER/bindist *.*
+recursive-include GSAS-II-WONDER/CifFile *.py
+recursive-include GSAS-II-WONDER/imports *.py
+recursive-include GSAS-II-WONDER/NIST_profile *.py
+
+include requirements.txt
+include README.md
+include LICENSE.txt
+include about.md
+include *.py *.txt
