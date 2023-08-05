@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+src/infi/__init__.py
+src/infi.datatable.egg-info/PKG-INFO
+src/infi.datatable.egg-info/SOURCES.txt
+src/infi.datatable.egg-info/dependency_links.txt
+src/infi.datatable.egg-info/entry_points.txt
+src/infi.datatable.egg-info/namespace_packages.txt
+src/infi.datatable.egg-info/not-zip-safe
+src/infi.datatable.egg-info/requires.txt
+src/infi.datatable.egg-info/top_level.txt
+src/infi/datatable/__init__.py
+src/infi/datatable/__version__.py
+src/infi/datatable/static/datatable/infi.datatable.js
+src/infi/datatable/static/datatable/infi.datatable.utils.js
