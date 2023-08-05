@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyenchant
+Version: 3.0.0a1
+Summary: Python bindings for the Enchant spellchecking system
+Home-page: https://pyenchant.github.io/pyenchant/
+Author: Dimitri Merejkowsky
+Author-email: d.merej@gmail.com
+License: LGPL
+Keywords: spelling spellcheck enchant
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >="3.5"
+
+UNKNOWN
+
+
