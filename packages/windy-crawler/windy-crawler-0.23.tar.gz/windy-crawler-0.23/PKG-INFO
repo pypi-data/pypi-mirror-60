@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: windy-crawler
+Version: 0.23
+Summary: Windy-Web-Crawler is a command line web crawler that crawls 'www.windy.com' and displays the Temperature and wind speed for next 5 days 
+Home-page: UNKNOWN
+Author: Ganesh Prasad B G
+Author-email: gnshprasad402@gmail.com
+License: Mozilla Public License Version 2.0
+Description: # Project Title
+        
+        Windy-Web-Crawler is a Web Crawler that Crawls "www.windy.com" for Temperature and Wind speed details of a given place. Windy-Web-Crawler is a Command Line tool.
+        
+        ## Getting Started
+        
+        These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+        
+        
+        ### Installing
+        
+        A step by step guide for installing from PyPi:
+        
+        ```
+        pip install windy-crawler
+        ```
+        
+        
+        Usage :
+        ```
+        >>> from windy_crawler.windy_web_crawler import windy
+        
+        >>> windy("Place Name")
+        
+        ```
+        Example
+        
+        ```
+        >>> from windy_crawler.windy_web_crawler import windy
+        
+        >>> windy("Bangalore")
+        ******************************
+        Place :  Bengaluru, Karnataka, India
+        Latitude 12.97194
+        Longitude 77.59369
+        
+         On Sunday 2:
+        
+        +-----------------------+-----+------+-----+-----+-----+
+        |          Hour         | 9AM | 12PM | 3PM | 6PM | 9PM |
+        +-----------------------+-----+------+-----+-----+-----+
+        | Temperature (celcius) | 20Â° | 26Â°  | 28Â° | 27Â° | 23Â° |
+        |      Wind (knots)     |  10 |  9   |  7  |  8  |  9  |
+        +-----------------------+-----+------+-----+-----+-----+
+        
+         On Monday 3:
+        
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        |          Hour         | 0AM | 3AM | 6AM | 9AM | 12PM | 3PM | 6PM | 9PM |
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        | Temperature (celcius) | 20Â° | 18Â° | 16Â° | 20Â° | 27Â°  | 30Â° | 28Â° | 22Â° |
+        |      Wind (knots)     |  8  |  7  |  5  |  5  |  6   |  6  |  7  |  9  |
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        
+         On Tuesday 4:
+        
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        |          Hour         | 0AM | 3AM | 6AM | 9AM | 12PM | 3PM | 6PM | 9PM |
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        | Temperature (celcius) | 19Â° | 16Â° | 15Â° | 18Â° | 27Â°  | 29Â° | 27Â° | 22Â° |
+        |      Wind (knots)     |  10 |  8  |  5  |  6  |  8   |  6  |  6  |  7  |
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        
+         On Wednesday 5:
+        
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        |          Hour         | 0AM | 3AM | 6AM | 9AM | 12PM | 3PM | 6PM | 9PM |
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        | Temperature (celcius) | 20Â° | 17Â° | 17Â° | 19Â° | 26Â°  | 29Â° | 28Â° | 22Â° |
+        |      Wind (knots)     |  9  |  8  |  7  |  5  |  2   |  4  |  4  |  6  |
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        
+         On Thursday 6:
+        
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        |          Hour         | 0AM | 3AM | 6AM | 9AM | 12PM | 3PM | 6PM | 9PM |
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        | Temperature (celcius) | 20Â° | 17Â° | 15Â° | 19Â° | 28Â°  | 30Â° | 29Â° | 23Â° |
+        |      Wind (knots)     |  6  |  5  |  3  |  2  |  2   |  3  |  2  |  6  |
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        
+         On Friday 7:
+        
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        |          Hour         | 0AM | 3AM | 6AM | 9AM | 12PM | 3PM | 6PM | 9PM |
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        | Temperature (celcius) | 20Â° | 18Â° | 17Â° | 21Â° | 27Â°  | 30Â° | 29Â° | 26Â° |
+        |      Wind (knots)     |  7  |  5  |  4  |  4  |  4   |  4  |  3  |  3  |
+        +-----------------------+-----+-----+-----+-----+------+-----+-----+-----+
+        
+        ```
+        ## Authors
+        
+        [Ganesh Prasad B G](www.github.com/InvincibleDev)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/markdown
+Provides-Extra: libcloud
+Provides-Extra: sftp
