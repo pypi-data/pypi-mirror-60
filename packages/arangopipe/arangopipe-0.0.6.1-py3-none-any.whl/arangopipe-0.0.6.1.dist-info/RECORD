@@ -1,0 +1,15 @@
+arangopipe/__init__.py,sha256=Cn13k36Z1n-opnNevQHZeMzH3VsEucs_wiuuUe-lILw,75
+arangopipe/arangopipe_analytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arangopipe/arangopipe_analytics/dataset_shift_detector.py,sha256=1SEJIN7GEUbwQVYNRE3CMQkmYloQg8bt8ywZ08jlnxE,311
+arangopipe/arangopipe_analytics/rf_dataset_shift_detector.py,sha256=gQnQEMXi1jqqxxnIQfpIQ6vWf0etSTnRuHdI_iK5B-4,1284
+arangopipe/arangopipe_storage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arangopipe/arangopipe_storage/arangopipe_admin_api.py,sha256=6f30EEI-MBeOXxkZo6Z8yJL9DRmCCFum2A_uJJGGDM8,23227
+arangopipe/arangopipe_storage/arangopipe_api.py,sha256=7m_M4lqOB5TdZ_yNIBJcW63dTWp5MmZrb4dMqQBfD3Y,15591
+arangopipe/arangopipe_storage/arangopipe_config.py,sha256=7uy3rTKpBb5KMdfFDUXV7JCQwhuoFLZCe1M-F-lWQNE,1412
+arangopipe/arangopipe_storage/arangopipe_config.yaml,sha256=ciwiGpitmrsYQlzICLuJftiuoZrXU_lSZT4_uai3aKw,344
+arangopipe/arangopipe_storage/custom_http_client.py,sha256=f_ibXHEjscEu3wsfrpAD7GMNes2xG_k7UNQnPiT3nwc,2170
+arangopipe/arangopipe_storage/managed_service_conn_parameters.py,sha256=mZY4mDc0S-SUdeE11YAHnjwKd3YY9Ib0n6w9tEMcjMo,1075
+arangopipe-0.0.6.1.dist-info/METADATA,sha256=0zVw2ZfxuXzsIQiqj1Suii0a1UN6daOgR-wb8yUknqY,18884
+arangopipe-0.0.6.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+arangopipe-0.0.6.1.dist-info/top_level.txt,sha256=SCwqGJytU-i0adn7nDEt7IYpw0ic_dsAzywAsGUV3Pg,11
+arangopipe-0.0.6.1.dist-info/RECORD,,
