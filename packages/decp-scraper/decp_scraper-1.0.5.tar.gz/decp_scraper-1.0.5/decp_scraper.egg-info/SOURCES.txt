@@ -1,0 +1,11 @@
+README.md
+setup.py
+decp_scraper/__init__.py
+decp_scraper/download.py
+decp_scraper/extractionAcheteurs.py
+decp_scraper/plateformes.csv
+decp_scraper/site_utils.py
+decp_scraper.egg-info/PKG-INFO
+decp_scraper.egg-info/SOURCES.txt
+decp_scraper.egg-info/dependency_links.txt
+decp_scraper.egg-info/top_level.txt
