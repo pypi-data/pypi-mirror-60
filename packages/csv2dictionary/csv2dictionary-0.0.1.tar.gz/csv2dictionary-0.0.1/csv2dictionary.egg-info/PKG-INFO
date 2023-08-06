@@ -1,0 +1,30 @@
+Metadata-Version: 1.2
+Name: csv2dictionary
+Version: 0.0.1
+Summary: converts csv to a dictionary
+Home-page: https://github.com/colemalphrus/csv2dictionary
+Author: Cole Malphrus
+Author-email: cole@malphrus.tech
+License: UNKNOWN
+Description: # timeconMT
+        A conversion from csv file to dictionary by Malphrus Tech
+        
+        ## Usage
+        
+        ### import
+        ```python
+        from csv2dictionary.csvpro import CsvBrain
+        ```
+        ### use
+        ```python
+        case1 = CsvBrain('test.csv')
+        case1.dict
+        #returns a list of dictionaries
+        #the first line in the csv are the keys in the dictionaries
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
