@@ -1,0 +1,10 @@
+  query getDockerImagesByOwnerId($ownerId: String!) {
+    getDockerImagesByOwnerId(ownerId: $ownerId) {
+      id
+      displayName
+      repositoryType
+      path
+      entryPoint
+    }
+  }
+
