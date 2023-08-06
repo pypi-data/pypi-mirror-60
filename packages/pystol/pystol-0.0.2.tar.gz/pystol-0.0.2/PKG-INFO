@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pystol
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/pystol/pystol
+Author: Pystol
+Author-email: carloscamachoucv@gmail.com
+License: Apache-2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
