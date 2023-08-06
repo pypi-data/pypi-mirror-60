@@ -1,0 +1,15 @@
+prettypyplot/__init__.py,sha256=Yy7YAw0098-3KAU-xYF6UF-55TuiD9GWCmTY7agBlb4,101
+prettypyplot/_tools.py,sha256=tOnbokCiagWH-Dygu0azMgicySRhJ0eOLgMRnuuXGW0,2188
+prettypyplot/colors.py,sha256=TV5ip1KHVKyFutwjLPUL4Xl-pQBVPNYMraeGWTTTKVA,6799
+prettypyplot/gallery.py,sha256=Cv28ewNB35hs2aVP5X4uGW-Sh_vgqBrZ9dxS2UI8YcQ,104
+prettypyplot/plot.py,sha256=f454lbkfVIHib8xzxYLoRqNSHrwrcWFGLSE1ViJt1iM,18213
+prettypyplot/cmaps/__init__.py,sha256=YNCxYpyyDU6edHAd9nfzUHryE2OD8vDoIOEcdms8-is,49
+prettypyplot/cmaps/_bownair.py,sha256=36rkwLMcwEVOsaDbb9hWCzvr16goZttlsdgKuDhb3FU,11252
+prettypyplot/cmaps/_discrete.py,sha256=Fvn8y30BnH7ndpbDBnWKzWqDyWOrioovYqvJB4HSXzg,1412
+prettypyplot/cmaps/_macaw.py,sha256=Jmm_NfN8FGqK947kAST9LLh65wy-b5rDhIRNVzGDuHk,11262
+prettypyplot/cmaps/_turbo.py,sha256=AoahG8zE0Cev8MjYIepE8cnIFBGRP02o0-OP6ZbSlKI,8958
+prettypyplot-0.2.2.dist-info/LICENSE,sha256=y-hgGX8QO5KmLwc98gF99SStZG5cAvL6Jhxnxz0nVIg,1512
+prettypyplot-0.2.2.dist-info/METADATA,sha256=Gkfv4UBtTpEiRGiJGXHHcKtzaNvJoKHzIJ7DpnVBcz8,5598
+prettypyplot-0.2.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+prettypyplot-0.2.2.dist-info/top_level.txt,sha256=i_vK9-BbwCxG8fY8aES-uZVmFHMeRxjiUmEcRold5XU,13
+prettypyplot-0.2.2.dist-info/RECORD,,
