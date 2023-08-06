@@ -1,0 +1,3 @@
+awsLexAlexa
+awsLexAlexa/events
+awsLexAlexa/logs
