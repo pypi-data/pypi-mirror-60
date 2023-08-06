@@ -1,0 +1,16 @@
+certifi
+six
+python-dateutil
+setuptools
+urllib3
+daiquiri
+click
+distro
+thoth-analyzer
+yaspin
+texttable
+pyyaml
+requests
+termcolor
+invectio
+thoth-python
