@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+django_force_disable_permissions_admin.egg-info/PKG-INFO
+django_force_disable_permissions_admin.egg-info/SOURCES.txt
+django_force_disable_permissions_admin.egg-info/dependency_links.txt
+django_force_disable_permissions_admin.egg-info/not-zip-safe
+django_force_disable_permissions_admin.egg-info/requires.txt
+django_force_disable_permissions_admin.egg-info/top_level.txt
+force_disable_permissions/__init__.py
+force_disable_permissions/admin.py
+force_disable_permissions/apps.py
+force_disable_permissions/models.py
+force_disable_permissions/tests.py
+force_disable_permissions/views.py
+force_disable_permissions/migrations/__init__.py
