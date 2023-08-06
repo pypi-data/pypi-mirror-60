@@ -1,0 +1,7 @@
+pyobjc-core>=6.1
+pyobjc-framework-AppleScriptObjC>=6.1
+pyobjc-framework-Cocoa>=6.1
+pyobjc-framework-iTunesLibrary>=6.1
+pyobjc-framework-Quartz>=6.1
+pyobjc-framework-ScriptingBridge>=6.1
+pyobjc-framework-StoreKit>=6.1
