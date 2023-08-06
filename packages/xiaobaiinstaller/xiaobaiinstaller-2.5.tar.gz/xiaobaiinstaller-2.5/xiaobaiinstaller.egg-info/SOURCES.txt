@@ -1,0 +1,13 @@
+README.md
+setup.py
+xiaobaiinstaller_setup.py
+xiaobaiinstaller/__init__.py
+xiaobaiinstaller/installer.py
+xiaobaiinstaller/logo.ico
+xiaobaiinstaller/xiaobaicore.cp38-win_amd64.pyd
+xiaobaiinstaller.egg-info/PKG-INFO
+xiaobaiinstaller.egg-info/SOURCES.txt
+xiaobaiinstaller.egg-info/dependency_links.txt
+xiaobaiinstaller.egg-info/entry_points.txt
+xiaobaiinstaller.egg-info/requires.txt
+xiaobaiinstaller.egg-info/top_level.txt
