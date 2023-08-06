@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: marketing-attribution-models
+Version: 1.0.1
+Summary: Metodos de atribuicao de midia
+Home-page: https://github.com/DP6/Marketing-Attribution-Models
+Author: Andre Tocci
+Author-email: andre.tocci@dp6.com.br
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+UNKNOWN
+
+
