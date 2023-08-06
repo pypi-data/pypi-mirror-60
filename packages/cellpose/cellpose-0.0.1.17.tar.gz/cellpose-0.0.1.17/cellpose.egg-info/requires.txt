@@ -1,0 +1,12 @@
+numpy<1.17.0
+scipy
+natsort
+tqdm
+numba
+scikit-image
+matplotlib
+mxnet_mkl
+opencv_python
+pyqtgraph
+PyQt5
+google-cloud-storage
