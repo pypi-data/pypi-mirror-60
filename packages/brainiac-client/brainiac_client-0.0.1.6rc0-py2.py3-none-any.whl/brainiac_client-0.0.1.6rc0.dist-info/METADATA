@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: brainiac-client
+Version: 0.0.1.6rc0
+Summary: The client library to make and use brainiac modules.
+Home-page: https://github.com/suyogsoti/client-lib
+Author: Suyog Soti
+Author-email: suyog.soti@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: cloudpickle
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+Requires-Dist: requests
+Requires-Dist: mock
+
+UNKNOWN
+
+
