@@ -1,0 +1,13 @@
+streamsx/standard/__init__.py,sha256=u9rjjWiPfa-TL29R39Ll1XsifZU7HI0rL1cImCTig-c,2117
+streamsx/standard/_adapter.py,sha256=E7ftrL4ArXFz0s4yAFf59Rx2x19PsVzUMBqxKwXcWZE,282
+streamsx/standard/_version.py,sha256=3Rty_Ne9UygkvXWhIWmLalZCg3pxi6L9XIO65PlGj3g,20
+streamsx/standard/files.py,sha256=JeQUOj3M-Q1KO22PuyfJF3yEyPALJc0ihxLzSI4miXQ,21011
+streamsx/standard/relational.py,sha256=P_LqMzQfHec9F5UkZkEv5wc7afW6xFNddhMD5-hAnic,13587
+streamsx/standard/utility.py,sha256=S6pf1Hzfp98GrsJ8Vu0YVxDPSBlT13FEqc5ZjJjgx6E,15483
+streamsx.standard-0.4.0.dist-info/DESCRIPTION.rst,sha256=CtpL1TWvbAkzVvR7wKh4cguOTt9AnV8VTWq_WXns2tE,190
+streamsx.standard-0.4.0.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+streamsx.standard-0.4.0.dist-info/METADATA,sha256=BJ-CST8FiucKijb7PVvwBzd_Ace-RW7Bwax58y13xhE,872
+streamsx.standard-0.4.0.dist-info/RECORD,,
+streamsx.standard-0.4.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+streamsx.standard-0.4.0.dist-info/metadata.json,sha256=gxTi-WrWEXZ6vCNXA-iF9fZSST7TFh-pMfgTOUssgwU,969
+streamsx.standard-0.4.0.dist-info/top_level.txt,sha256=-HIIPsBc56LEpwY9WQHNMVJy2nOLXnKZ6slLXwmeZoY,9
