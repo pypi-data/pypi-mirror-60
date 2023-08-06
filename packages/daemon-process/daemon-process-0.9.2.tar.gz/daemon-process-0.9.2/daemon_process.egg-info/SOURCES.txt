@@ -1,0 +1,8 @@
+README.md
+setup.py
+daemon/__init__.py
+daemon/daemon.py
+daemon_process.egg-info/PKG-INFO
+daemon_process.egg-info/SOURCES.txt
+daemon_process.egg-info/dependency_links.txt
+daemon_process.egg-info/top_level.txt
