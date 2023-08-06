@@ -1,0 +1,13 @@
+Products.GenericSetup>=1.8.2
+collective.geolocationbehavior
+eea.facetednavigation
+plone.api>=1.8.4
+plone.patternslib>1.1.0
+setuptools
+z3c.jbot
+
+[test]
+plone.app.contenttypes
+plone.app.robotframework[debug]
+plone.app.testing
+plone.testing>=5.0.0
