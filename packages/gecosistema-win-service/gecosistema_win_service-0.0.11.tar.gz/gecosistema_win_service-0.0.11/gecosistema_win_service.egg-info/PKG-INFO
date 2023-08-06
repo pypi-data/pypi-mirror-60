@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: gecosistema-win-service
+Version: 0.0.11
+Summary: A package for simply windows service creation
+Home-page: https://github.com/valluzzi/gecosistema_win_service.git
+Author: Valerio Luzzi
+Author-email: valluzzi@gmail.com
+License: UNKNOWN
+Description: A package for simply windows service creation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
