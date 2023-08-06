@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dbca-utils
+Version: 1.1.0
+Summary: Utilities for Django/Python apps
+Home-page: https://github.com/dbca-wa/dbca-utils
+Author: Department of Biodiversity, Conservation and Attractions
+Author-email: asi@dbca.wa.gov.au
+License: Apache License, Version 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
