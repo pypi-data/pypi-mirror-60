@@ -1,0 +1,27 @@
+# Optional dependencies.
+toil
+
+# For tests
+flask
+
+# For testing
+tox
+nose
+coverage
+
+#Building Docs
+sphinx
+sphinx_rtd_theme
+recommonmark
+
+# Used to check readme.
+readme
+
+# Used for code checking.
+pyflakes
+flake8
+flake8-import-order
+
+# For release
+wheel
+twine
