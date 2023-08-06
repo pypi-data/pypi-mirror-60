@@ -1,0 +1,14 @@
+#!python
+
+""" Command line executable to run pyHiCTools """
+
+import sys
+import logging
+import pyHiCTools
+
+
+if __name__ == '__main__':
+    try:
+        sys.exit(pyHiCTools.main.main())
+    finally:
+        logging.shutdown()

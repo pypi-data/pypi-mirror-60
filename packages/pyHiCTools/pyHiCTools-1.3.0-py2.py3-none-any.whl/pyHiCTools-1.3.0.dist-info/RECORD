@@ -1,0 +1,16 @@
+pyHiCTools/__init__.py,sha256=zq3N6Slcn4jOEFtVGogRFPaN4VtULlAcbG5rCKStqSs,257
+pyHiCTools/deduplicate.py,sha256=k1q42uwW9Ua3VF_DTme253KnbP1X2Zwvx5_TTjk0-hI,2147
+pyHiCTools/digest.py,sha256=V8H0Nr38qtwLGaJwsIj59dP27gETJrXqwgeUeYPTtPs,2224
+pyHiCTools/extract.py,sha256=qmlohZyGooOZGqp8NCA9uaxSEf1mPWqWX7iK9RGenIg,1482
+pyHiCTools/filter.py,sha256=oKZbNMdkv7W793vem5LO4QwVGXBRQbTcCHCpOhfkw-4,3254
+pyHiCTools/main.py,sha256=lIZBMWYYUV8_09T1igF6MuDuA7dN5mLh8cJSd-J3hpU,10400
+pyHiCTools/map.py,sha256=bnmug4qn4gpzPOvkQZOao1PXj7sz_9FCGvVDgSkulKY,4431
+pyHiCTools/process.py,sha256=IWSCO_QWwZHJ6urYHJdOfllNLA3ozDcuzkLDZ4OvQPM,6058
+pyHiCTools/truncate.py,sha256=BbUKM9xo993Wx1zY8bw3VlMlH5YvM0mOcA0Lj07qy2A,2169
+pyHiCTools/valid_pair.py,sha256=bn_8KrmQLBCFt6LyXagjCgX-NWvs6oRh8OS2L2mhktw,668
+pyHiCTools-1.3.0.data/scripts/pyHiCTools,sha256=Fv-J8A2Bu3ob_y_8UkksLvZ0pG8QKD9tZQMfJS8y01A,224
+pyHiCTools-1.3.0.dist-info/LICENSE,sha256=rKhoZtZrAM3jArgrKo4v2QFyYfz0aiIFxWTedrC-jzU,1071
+pyHiCTools-1.3.0.dist-info/METADATA,sha256=2pIiVDAddWinvZkZAH-pK1nkhJrxXZOg7eG1d8lhLnI,821
+pyHiCTools-1.3.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pyHiCTools-1.3.0.dist-info/top_level.txt,sha256=0KhNi6J6ltnedkKBLhfY7O1i_px2f3BnELPuMmeOmcM,11
+pyHiCTools-1.3.0.dist-info/RECORD,,
