@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/vald_client_python.egg-info/PKG-INFO
+src/vald_client_python.egg-info/SOURCES.txt
+src/vald_client_python.egg-info/dependency_links.txt
+src/vald_client_python.egg-info/not-zip-safe
+src/vald_client_python.egg-info/requires.txt
+src/vald_client_python.egg-info/top_level.txt
