@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: edit_distance_lte1
+Version: 0.0.3
+Summary: Fast string distance function for the case where the distance is less or equal to 1
+Home-page: https://github.com/mapado/edit_distance_lte1
+Author: Romain SENESI
+Author-email: romain.senesi@mapado.com
+License: ['MIT']
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
