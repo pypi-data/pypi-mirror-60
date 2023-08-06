@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.13.1: http://docutils.sourceforge.net/" />
+<title>OOoPy: Modify OpenOffice.org documents in Python</title>
+<meta name="author" content="Ralf Schlatterbeck &lt;rsc&#64;runtux.com&gt;" />
+<style type="text/css">
+
+/*
+:Author: David Goodger
+:Contact: goodger@users.sourceforge.net
+:Date: $Date: 2007-12-21 16:51:22 +0100 (Fri, 21 Dec 2007) $
+:Version: $Revision: 4316 $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+*/
+
+/* "! important" is used here to override other ``margin-top`` and
+   ``margin-bottom`` styles that are later in the stylesheet or 
+   more specific.  See <http://www.w3.org/TR/CSS1#the-cascade>. */
+.first {
+  margin-top: 0 ! important }
+
+.last {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+a.reference img {
+  border-width: 0px ;
+  }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em }
+
+div.footer, div.header {
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin-left: 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font-family: serif ;
+  font-size: 100% }
+
+pre.line-block {
+  font-family: serif ;
+  font-size: 100% }
+
+pre.literal-block, pre.doctest-block {
+  margin-left: 2em ;
+  margin-right: 2em ;
+  background-color: #eeeeee }
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+table.citation {
+  border-left: solid thin gray }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid thin black }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+th.docinfo-name, th.field-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+tt.docutils {
+  background-color: #eeeeee }
+
+ul.auto-toc {
+  list-style-type: none }
+
+body {
+  background-color: #F0F0FF }
+
+p img {
+  vertical-align: text-top }
+
+
+</style>
+</head>
+<body>
+<div class="document" id="ooopy-modify-openoffice-org-documents-in-python">
+<h1 class="title">OOoPy: Modify OpenOffice.org documents in Python</h1>
+<table class="docinfo" frame="void" rules="none">
+<col class="docinfo-name" />
+<col class="docinfo-content" />
+<tbody valign="top">
+<tr><th class="docinfo-name">Author:</th>
+<td>Ralf Schlatterbeck &lt;<a class="reference external" href="mailto:rsc&#64;runtux.com">rsc&#64;runtux.com</a>&gt;</td></tr>
+</tbody>
+</table>
+<p>OpenOffice.org (OOo) documents are ZIP archives containing several XML
+files.  Therefore it is easy to inspect, create, or modify OOo
+documents. OOoPy is a library in Python for these tasks with OOo
+documents. To not reinvent the wheel, OOoPy uses an existing XML
+library, ElementTree by Fredrik Lundh (which is in the Python standard
+library for quite some time now). OOoPy is a thin wrapper around
+ElementTree using Python's ZipFile to read and write OOo documents.</p>
+<p>In addition to being a wrapper for ElementTree, OOoPy contains a
+framework for applying XML transforms to OOo documents. Several
+Transforms for OOo documents exist, e.g., for changing OOo fields (OOo
+Insert-Fields menu) or using OOo fields for a mail merge application.
+Some other transformations for modifying OOo settings and meta
+information are also given as examples.</p>
+<p>Applications like this come in handy in applications where calling
+native OOo is not an option, e.g., in server-side Web applications.</p>
+<p>If the mailmerge transform doesn't work for your document: The OOo
+format is well documented but there are ordering constraints in the body
+of an OOo document.
+I've not yet figured out all the tags and their order in the
+OOo body. Individual elements in an OOo document (like e.g., frames,
+sections, tables) need to have their own unique names.  After a mailmerge,
+there are duplicate names for some items. So far I'm renumbering only
+frames, sections, and tables. See the renumber objects at the end of
+ooopy/Transforms.py. So if you encounter missing parts of the mailmerged
+document, check if there are some renumberings missing or send me a <a class="reference external" href="http://ooopy.sourceforge.net/#reporting-bugs">bug
+report</a>.</p>
+<p>There is currently not much documentation except for a python doctest in
+OOoPy.py and Transformer.py and the command-line <a class="reference internal" href="#utilities">utilities</a>.
+For running these test, after installing
+ooopy (assuming here you installed using python into /usr/local):</p>
+<pre class="literal-block">
+cd /usr/local/share/ooopy
+python run_doctest.py /usr/local/lib/python2.X/site-packages/ooopy/Transformer.py
+python run_doctest.py /usr/local/lib/python2.X/site-packages/ooopy/OOoPy.py
+</pre>
+<p>Both should report no failed tests.</p>
+<div class="section" id="usage">
+<h1>Usage</h1>
+<p>There were some slight changes to the API when supporting the open
+document format introduced with OOo 2.0. See below if you get a traceback
+when upgrading from an old version.</p>
+<p>See the online documentation, e.g.:</p>
+<pre class="literal-block">
+% python
+&gt;&gt;&gt; from ooopy.OOoPy import OOoPy
+&gt;&gt;&gt; help (OOoPy)
+&gt;&gt;&gt; from ooopy.Transformer import Transformer
+&gt;&gt;&gt; help (Transformer)
+</pre>
+<p>Help, I'm getting an AssertionError traceback from Transformer, e.g.:</p>
+<pre class="literal-block">
+Traceback (most recent call last):
+  File &quot;./replace.py&quot;, line 17, in ?
+    t = Transformer(Field_Replace(replace = replace_dictionary))
+  File &quot;/usr/local/lib/python2.4/site-packages/ooopy/Transformer.py&quot;, line 1226, in __init__
+    assert (mimetype in mimetypes)
+AssertionError
+</pre>
+<p>The API changed slightly when implementing handling of different
+versions of OOo files. Now the first parameter you pass to the
+Transformer constructor is the mimetype of the OpenOffice.org document
+you intend to transform. The mimetype can be fetched from another opened
+OOo document, e.g.:</p>
+<pre class="literal-block">
+ooo = OOoPy (infile = 'test.odt', outfile = 'test_out.odt')
+t = Transformer(ooo.mimetype, ...
+</pre>
+</div>
+<div class="section" id="usage-of-command-line-utilities">
+<h1>Usage of Command-Line Utilities</h1>
+<p>A, well, there are command-line <span class="target" id="utilities">utilities</span> now:</p>
+<ul class="simple">
+<li>ooo_cat for concatenating several OOo files into one</li>
+<li>ooo_grep to do equivalent of grep -l on OOo files -- only runs on
+Unix-like operating systems, probably only with the GNU version of grep
+(it's a shell-script using ooo_as_text) Note that the -l option of
+grep only prints the matching filenames.</li>
+<li>ooo_fieldreplace for replacing fields in an OOo document</li>
+<li>ooo_mailmerge for doing a mailmerge from a template OOo document and a
+CSV (comma separated values) input</li>
+<li>ooo_as_text for getting the text from an OOo-File (e.g., for doing a
+&quot;grep&quot; on the output).</li>
+<li>ooo_prettyxml for pretty-printing the XML nodes of one of the XML
+files inside an OOo document. Mainly useful for debugging.</li>
+</ul>
+<p>All utilities take a <tt class="docutils literal"><span class="pre">--help</span></tt> option.</p>
+</div>
+<div class="section" id="resources">
+<h1>Resources</h1>
+<p>Project information and download from <a class="reference external" href="http://sourceforge.net/projects/ooopy/">Sourceforge main page</a></p>
+<p>You need at least version 2.7 of python. Now also tested with 3.5, will
+probably work with later versions, too.</p>
+<p>For documentation about the OOo XML file format, see the book by
+J. David Eisenberg called <a class="reference external" href="http://books.evc-cit.info/">OASIS OpenDocument Essentials</a> which is
+under the Gnu Free Documentation License and is also available <a class="reference external" href="http://www.lulu.com/product/paperback/oasis-opendocument-essentials/392512">in
+print</a>.  For a reference document you may want to check out the <a class="reference external" href="http://xml.openoffice.org/xml_specification.pdf">XML
+File Format Specification</a> (PDF) by OpenOffice.org.</p>
+<p>A german page for OOoPy exists at <a class="reference external" href="http://www.runtux.com/ooopy.html">runtux.com</a></p>
+</div>
+<div class="section" id="reporting-bugs">
+<h1>Reporting Bugs</h1>
+<p>Please use the <a class="reference external" href="http://sourceforge.net/tracker/?group_id=134329&amp;atid=729727">Sourceforge Bug Tracker</a> and</p>
+<blockquote>
+<ul class="simple">
+<li>attach the OOo document that reproduces your problem</li>
+<li>give a short description of what you think is the correct behaviour</li>
+<li>give a description of the observed behaviour</li>
+<li>tell me exactly what you did.</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="changes">
+<h1>Changes</h1>
+<p>Version 2.0: Port to Python3</p>
+<p>Still working with lower python versions but I'm only able to test with
+2.7, nothing earlier. Bug fixes where sometimes multiple Set_Attribute
+transformations (e.g. when concatenating OO documents) would be applied
+to the same tag/attribute combination. Also fix a bug with the
+computation of default tabulators when concatenating documents.</p>
+<p>Version 1.11: Small Bug fix ooo_mailmerge</p>
+<p>Now ooo_mailmerge uses the delimiter option, it was ignored before.
+Thanks to Bob Danek for report and test.</p>
+<blockquote>
+<ul class="simple">
+<li>Fix setting csv delimiter in ooo_mailmerge</li>
+</ul>
+</blockquote>
+<p>Version 1.10: Fix table styles when concatenating</p>
+<p>Now ooo_cat fixes tables styles when concatenating (renaming): We
+optimize style usage by re-using existing styles. But for some table
+styles the original names were not renamed to the re-used ones.
+Fixes SF Bug 10, thanks to Claudio Girlanda for reporting.</p>
+<blockquote>
+<ul class="simple">
+<li>Fix style renaming for table styles when concatenating documents</li>
+<li>Add some missing namespaces (ooo 2009)</li>
+</ul>
+</blockquote>
+<p>Version 1.9: Add Picture Handling for Concatenation</p>
+<p>Now ooo_cat supports pictures, thanks to Antonio Sánchez for reporting
+that this wasn't working.</p>
+<blockquote>
+<ul class="simple">
+<li>Add a list of filenames + contents to Transformer</li>
+<li>Update this file-list in Concatenate</li>
+<li>Add Manifest_Append transform to update META-INF/manifest.xml with
+added filenames</li>
+<li>Add hook in OOoPy for adding files</li>
+<li>Update tests</li>
+<li>Update ooo_cat to use new transform</li>
+<li>This is the first release after migration of the version control from
+Subversion to GIT</li>
+</ul>
+</blockquote>
+<p>Version 1.8: Minor bugfixes</p>
+<p>Distribute a missing file that is used in the doctest. Fix directory
+structure. Thanks to Michael Nagel for suggesting the change and
+reporting the bug.</p>
+<blockquote>
+<ul class="simple">
+<li>The file <tt class="docutils literal">testenum.odt</tt> was missing from MANIFEST.in</li>
+<li>All OOo files and other files needed for testing are now in the
+subdirectory <tt class="docutils literal">testfiles</tt>.</li>
+<li>All command line utilities are now in subdirectory <tt class="docutils literal">bin</tt>.</li>
+</ul>
+</blockquote>
+<p>Version 1.7: Minor feature additions</p>
+<p>Add --newlines option to ooo_as_text: With this option the paragraphs in
+the office document are preserved in the text output.
+Fix assertion error with python2.7, thanks to Hans-Peter Jansen for the
+report. Several other small fixes for python2.7 vs. 2.6.</p>
+<blockquote>
+<ul class="simple">
+<li>add --newlines option to ooo_as_text</li>
+<li>fix assertion error with python2.7 reported by Hans-Peter Jansen</li>
+<li>fix several deprecation warnings with python2.7</li>
+<li>remove zip compression sizes from regression test: the compressor in
+python2.7 is better than the one in python2.6</li>
+</ul>
+</blockquote>
+<p>Version 1.6: Minor bugfixes</p>
+<p>Fix compression: when writing new XML-files these would be stored
+instead of compressed in the OOo zip-file resulting in big documents.
+Thanks to Hans-Peter Jansen for the patch. Add copyright notice to
+command-line utils (SF Bug 2650042). Fix mailmerge for OOo 3.X lists (SF
+Bug 2949643).</p>
+<blockquote>
+<ul class="simple">
+<li>fix compression flag, patch by Hans-Peter Jansen</li>
+<li>add regression test to check for compression</li>
+<li>now release ooo_prettyxml -- I've used this for testing for quite
+some time, may be useful to others</li>
+<li>Add copyright (LGPL) notice to command-line utilities, fixes SF Bug
+2650042</li>
+<li>OOo 3.X adds xml:id tags to lists, we now renumber these in the
+mailmerge app., fixes SF Bug 2949643</li>
+</ul>
+</blockquote>
+<p>Version 1.5: Minor feature enhancements</p>
+<p>Add ooo_grep to search for OOo files containing a pattern. Thanks to
+Mathieu Chauvinc for the reporting the problems with modified
+manifest.xml.
+Support python2.6, thanks to Erik Myllymaki for reporting and anonymous
+contributor(s) for confirming the bug.</p>
+<blockquote>
+<ul class="simple">
+<li>New shell-script ooo_grep (does equivalent to grep -l on OOo Files)</li>
+<li>On deletion of an OOoPy object close it explicitly (uses __del__)</li>
+<li>Ensure mimetype is the first element in the resulting archive, seems
+OOo is picky about this.</li>
+<li>When modifying the manifest the resulting .odt file could not be
+opened by OOo. So when modifying manifest make sure the manifest
+namespace is named &quot;manifest&quot; not something auto-generated by
+ElementTree. I consider this a bug in OOo to require this. This now
+uses the _namespace_map of ElementTree and uses the same names as OOo
+for all namespaces. The META-INF/manifest.xml is now in the list of
+files to which Transforms can be applied.</li>
+<li>When modifying (or creating) archive members, we create the OOo
+archive as if it was a DOS system (type fat) and ensure we use the
+current date/time (UTC). This also fixes problems with file
+permissions on newer versions of pythons ZipFile.</li>
+<li>Fix for python2.6 behavior that __init__ of object may not take any
+arguments. Fixes SF Bug 2948617.</li>
+<li>Finally -- since OOoPy is in production in some projects -- change the
+development status to &quot;Production/Stable&quot;.</li>
+</ul>
+</blockquote>
+<p>Version 1.4: Minor bugfixes</p>
+<p>Fix Doctest to hopefully run on windows. Thanks to Dani Budinova for
+testing thoroughly under windows.</p>
+<blockquote>
+<ul class="simple">
+<li>Open output-files in &quot;wb&quot; mode instead of &quot;w&quot; in doctest to not
+create corrupt OOo documents on windows.</li>
+<li>Use double quotes for arguments when calling system, single quotes
+don't seem to work on windows.</li>
+<li>Dont use redirection when calling system, use -i option for input
+file instead. Redirection seems to be a problem on windows.</li>
+<li>Explicitly call the python-interpreter, running a script directly is
+not supported on windows.</li>
+</ul>
+</blockquote>
+<p>Version 1.3: Minor bugfixes</p>
+<p>Regression-test failed because some files were not distributed.
+Fixes SF Bugs 1970389 and 1972900.</p>
+<blockquote>
+<ul class="simple">
+<li>Fix MANIFEST.in to include all files needed for regression test
+(doctest).</li>
+</ul>
+</blockquote>
+<p>Version 1.2: Major feature enhancements</p>
+<p>Add ooo_fieldreplace, ooo_cat, ooo_mailmerge command-line utilities. Fix
+ooo_as_text to allow specification of output-file. Note that handling of
+non-seekable input/output (pipes) for command-line utils will work only
+starting with python2.5. Minor bug-fix when concatenating documents.</p>
+<blockquote>
+<ul class="simple">
+<li>Fix _divide (used for dividing body into parts that must keep
+sequence). If one of the sections was empty, body parts would change
+sequence.</li>
+<li>Fix handling of cases where we don't have a paragraph (only list) elements</li>
+<li>Implement ooo_cat</li>
+<li>Fix ooo_as_text to include more command-line handling</li>
+<li>Fix reading/writing stdin/stdout for command-line utilities, this
+will work reliably (reading/writing non-seekable input/output like,
+e.g., pipes) only with python2.5</li>
+<li>implement ooo_fieldreplace and ooo_mailmerge</li>
+</ul>
+</blockquote>
+<p>Version 1.1: Minor bugfixes</p>
+<p>Small Documentation changes</p>
+<blockquote>
+<ul class="simple">
+<li>Fix css stylesheet</li>
+<li>Link to SF logo for Homepage</li>
+<li>Link to other information updated</li>
+<li>Version numbers in documentation fixed</li>
+<li>Add some checks for new API -- first parameter of Transformer is checked now</li>
+<li>Ship files needed for running the doctest and explain how to run it</li>
+<li>Usage section</li>
+</ul>
+</blockquote>
+<p>Version 1.0: Major feature enhancements</p>
+<p>Now works with version 2.X of OpenOffice.org. Minor API changes.</p>
+<blockquote>
+<ul class="simple">
+<li>Tested with python 2.3, 2.4, 2.5</li>
+<li>OOoPy now works for OOo version 1.X and version 2.X</li>
+<li>New attribute mimetype of OOoPy -- this is automatically set when
+reading a document, and should be set when writing one.</li>
+<li>renumber_all, get_meta, set_meta are now factory functions that take
+the mimetype of the open office document as a parameter.</li>
+<li>Since renumber_all is now a function it will (correctly) restart
+numbering for each new Attribute_Access instance it returns.</li>
+<li>Built-in elementtree support from python2.5 is used if available</li>
+<li>Fix bug in optimisation of original document for concatenation</li>
+</ul>
+</blockquote>
+</div>
+</div>
+</body>
+</html>

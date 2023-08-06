@@ -1,0 +1,71 @@
+#!/usr/bin/env python3
+# Copyright (C) 2008-20 Dr. Ralf Schlatterbeck Open Source Consulting.
+# Reichergasse 131, A-3411 Weidling.
+# Web: http://www.runtux.com Email: office@runtux.com
+# All rights reserved
+# ****************************************************************************
+#
+# This library is free software; you can redistribute it and/or modify
+# it under the terms of the GNU Library General Public License as
+# published by the Free Software Foundation; either version 2 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Library General Public License for more details.
+#
+# You should have received a copy of the GNU Library General Public
+# License along with this program; if not, write to the Free Software
+# Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+# ****************************************************************************
+
+import sys
+from argparse           import ArgumentParser
+from csv                import DictReader
+from io                 import BytesIO
+from ooopy.OOoPy        import OOoPy
+from ooopy.Transformer  import Transformer
+import ooopy.Transforms as     Transforms
+
+if __name__ == '__main__' :
+    parser = ArgumentParser ()
+    parser.add_argument \
+        ( "inputfile"
+        , help    = "Input file"
+        )
+    parser.add_argument \
+        ( "csvfile"
+        , help    = "CSV file"
+        )
+    parser.add_argument \
+        ( "-d", "--delimiter"
+        , dest    = "delimiter"
+        , help    = "Delimiter of cvs-format (Default Tab)"
+        , default = '\t'
+        )
+    parser.add_argument \
+        ( "-o", "--output-file"
+        , dest    = "output_file"
+        , help    = "Output file (defaults to stdout)"
+        , default = None
+        )
+    args = parser.parse_args ()
+    outfile = args.output_file
+    if outfile is None :
+        outfile = BytesIO ()
+    d = DictReader (open (args.csvfile), delimiter = args.delimiter)
+    o = OOoPy (infile = args.inputfile, outfile = outfile)
+    t = Transformer \
+        ( o.mimetype
+        , Transforms.get_meta           (o.mimetype)
+        , Transforms.Addpagebreak_Style ()
+        , Transforms.Mailmerge          (iterator = d)
+        , Transforms.renumber_all       (o.mimetype)
+        , Transforms.set_meta           (o.mimetype)
+        , Transforms.Fix_OOo_Tag        ()
+        )
+    t.transform (o)
+    o.close ()
+    if args.output_file is None :
+        sys.stdout.write (outfile.getvalue ())
