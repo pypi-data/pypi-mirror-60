@@ -1,0 +1,4 @@
+
+[sup]
+matplotlib<4,>=3
+numpy<2,>=1
