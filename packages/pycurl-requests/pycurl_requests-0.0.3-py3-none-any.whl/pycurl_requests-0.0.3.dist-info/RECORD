@@ -1,0 +1,13 @@
+pycurl_requests/__init__.py,sha256=GxzPLGzU8VNBBR3WfIlts3jaepz1XKA2vc-PXPnMRDQ,255
+pycurl_requests/__main__.py,sha256=SQ_ZZz3wI-kJzitWupbnvwi0jt6VhIyVhfQ-el2s4ao,636
+pycurl_requests/_pycurl.py,sha256=NB4jbvgVatAiGihvq9S2cNkY_Zn9t0RKfdD7iosynXI,5386
+pycurl_requests/api.py,sha256=0dtfTCwn_NdW2ddkULElFk4py3B8Ag1CwNEsdzYQ9hk,681
+pycurl_requests/exceptions.py,sha256=T_okYdiBr7OKtEyAeKw2eQx4pgsJdeljoMUcogopgBE,783
+pycurl_requests/models.py,sha256=CP9LnZbxs8_6Ap6Ry5Kq2tZKy6sK934RDTsMisduiNc,8152
+pycurl_requests/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycurl_requests/tests/test_requests.py,sha256=porXdV3z7lW9Hi7t5bV_PyNuJESWbhlnA4hjxKzhx3E,5852
+pycurl_requests-0.0.3.dist-info/LICENSE,sha256=QIpbHQ2V3AFUf--e3LYCbGXX3m9IsqSEPRK8sODojyI,1068
+pycurl_requests-0.0.3.dist-info/METADATA,sha256=QFshnk6v2u5faFtbdSXI3NGQg_fMssmpEy1yCjyO4Wo,5968
+pycurl_requests-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pycurl_requests-0.0.3.dist-info/top_level.txt,sha256=dJTntcZpKMBaZ1CeuW4DotLSCepuOFxTee6Sj2zsGfM,16
+pycurl_requests-0.0.3.dist-info/RECORD,,
