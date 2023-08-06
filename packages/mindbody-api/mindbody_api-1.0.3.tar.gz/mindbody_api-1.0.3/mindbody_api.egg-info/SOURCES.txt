@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+mindbody_api/__init__.py
+mindbody_api/api_client.py
+mindbody_api/configuration.py
+mindbody_api/rest.py
+mindbody_api.egg-info/PKG-INFO
+mindbody_api.egg-info/SOURCES.txt
+mindbody_api.egg-info/dependency_links.txt
+mindbody_api.egg-info/requires.txt
+mindbody_api.egg-info/top_level.txt
