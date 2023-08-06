@@ -1,0 +1,16 @@
+tags:
+  - Redirector
+summary: Redirect shortcut
+description: Redirects a shortcut.
+operationId: phlasch.redirector.redirect
+parameters:
+  - in: path
+    name: shortcut
+    description: Shortcut information
+    required: true
+    type: string
+responses:
+  "302":
+    description: Redirect to shortcut (No content/response)
+  "404":
+    description: Shortcut not found
