@@ -1,0 +1,4 @@
+[openstack.common]
+uos_routing_port_create = uosclient.port:CreateRoutingPort
+uos_routing_port_delete = uosclient.port:DeleteRoutingPort
+
