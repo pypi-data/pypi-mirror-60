@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: wikipedia-histories
+Version: 0.0.3
+Summary: A simple package designed to collect the edit histories of Wikipedia pages
+Home-page: https://github.com/ndrezn/wikipedia-histories
+Author: Nathan Drezner
+Author-email: nathan@drezner.com
+License: UNKNOWN
+Description: # Wikipedia Histories
+        
+        A simple tool to allow a user to pull the edit history of a Wikipedia page in a variety of formats, including JSON, DataFrame, or directly as an object.
+        
+        ```python
+          >>> import wikipedia_histories
+          
+          # Generate a list of revisions for a specified page
+          >>> golden_swallow = get_history('Golden swallow')
+          
+          # Show the revision IDs for every edit
+          >>> golden_swallow
+          # [130805848, 162259515, 167233740, 195388442, 201696349, 221118422, 261207376, 269921878, 301716350, 304532738, 313393438, 331102653, 331445658, 479287772, 491418997, 496330470, 512226517, 515748101, 529222476, 544800300, 595340940, 609293063, 609296694, 613594135, 663245484, 709269059, 709269330, 709269730, ...
+          
+          # Show the user who made a specific edit
+          >>> golden_swallow[16].user
+          # u'Snowmanradio'
+          
+          # Show the text of a specific edit
+          >>> golden_swallow[16].text
+          # u'The Golden Swallow (Tachycineta euchrysea) is a swallow.  The Golden Swallow formerly bred on the island of Jamaica,'...
+          >>> golden_swallow[200].text
+          # u'The golden swallow (Tachycineta euchrysea) is a passerine in the swallow family, Hirundinidae. Two subspecies are recognised,'...
+        
+          # Generate a dataframe from a list of revision history
+          >>> build_df(golden_swallow)
+        
+          # Generate a JSON representation of the revision history
+          >>> build_json(golden_swallow)
+        ```
+        
+        
+        ## Installation
+        
+        To install Wikipedia Histories, simply run:
+        
+        ``$ pip install wikipedia-histories``
+        
+        Wikipedia Histories is compatible with Python 3.6+.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
