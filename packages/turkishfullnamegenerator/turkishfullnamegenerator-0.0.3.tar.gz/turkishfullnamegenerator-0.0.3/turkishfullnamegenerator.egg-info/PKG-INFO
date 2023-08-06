@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: turkishfullnamegenerator
+Version: 0.0.3
+Summary: Generate full turkish names 
+Home-page: https://github.com/anilkay/Turkish-FullName-Generator
+Author: anilkay
+Author-email: aanilkay@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: name generator,turk,turkish
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
