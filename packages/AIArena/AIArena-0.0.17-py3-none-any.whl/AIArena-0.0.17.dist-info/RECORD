@@ -1,0 +1,15 @@
+AIArena/AI.py,sha256=xLMu2pFlkLAE8UO0zMr0260xp3lQepKm9dBNX6_7kRU,2079
+AIArena/Human.py,sha256=7o_64XFHwU1oznESh3UpNLnTOiSQ0sA1ilO1TWtZjpo,656
+AIArena/Ref.py,sha256=Ag65KX_tsKpqTYc2PYJtwlozdYWBBa8dRSyfnjPsaJ8,4007
+AIArena/__init__.py,sha256=SfOdK9_1ZcxqYvjPk-WxHKn6YzOaWyervT74ExyK7y4,2203
+AIArena/games/Arena.py,sha256=Ujl-Z8pirAmmYbLuUzus4lxudDsr_OWrhZqH96tktU4,10149
+AIArena/games/Connect4.py,sha256=_EaF_cbLY-AA_GDQKEtoIO6JLLckv1-Ph4DLxWOvzHU,2481
+AIArena/games/GymBlackjack.py,sha256=a_eSRo8FEh0K84UwJ5wrXZaAOwcHSpaFM1QPagVkJMQ,2353
+AIArena/games/GymFrozenLake.py,sha256=3SVow6DCRpY9nmGImsywvXAIRPiyLszs3JWJRIf_O-I,1988
+AIArena/games/StockMarket.py,sha256=5YP3HaIFEjojQw-_hhLxTMwkA92WXRigWWIchldqZN4,4924
+AIArena/games/__init__.py,sha256=xkpKDDbk66ZyGx8pBi1cIp-NU7wxfsrA33_LJdxtfUQ,246
+AIArena-0.0.17.dist-info/LICENSE,sha256=roJu8bTKcBPMg8yJ9hnlQ-z8DnRNkk4uvr5qPvzXt_s,1068
+AIArena-0.0.17.dist-info/METADATA,sha256=MZwE28RsBnHqPsf6UyfrZ-l9H_aLk0xA462HfJW4Y28,559
+AIArena-0.0.17.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+AIArena-0.0.17.dist-info/top_level.txt,sha256=FKIgQlSEGOA21Cl9GqtkQ3KHTzjW-v-eZ9xWlIvowMs,8
+AIArena-0.0.17.dist-info/RECORD,,
