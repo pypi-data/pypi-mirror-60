@@ -1,0 +1,9 @@
+parsley/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slrp/__init__.py,sha256=y6h415crOTWpVln7uWTuR80JRy_FvlGSEj3KVnjSd40,132
+slrp/combos.py,sha256=xm7jSGdozzkaZcsc0s2d-JRBDlIbHD0Iu_NpFIsCP_4,5024
+slrp/expressions.py,sha256=fiZNHEbEimJw8N1tBb_5D3TFp9tpn1PsuMiE79T_84c,854
+slrp-0.0.0.dist-info/LICENSE,sha256=G8Vjqkd_B--jajlQTlXmXv-GsDZN8Kb9UEohFiDt8S4,1058
+slrp-0.0.0.dist-info/METADATA,sha256=YsXOIlLJIP_-7642QAS0HBDylnXlgbnc52iXXkPMgZ4,502
+slrp-0.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+slrp-0.0.0.dist-info/top_level.txt,sha256=jfEH31KmORxySTCExYlJYqghrin3L8Rlmt3Vrnkn-9E,5
+slrp-0.0.0.dist-info/RECORD,,
