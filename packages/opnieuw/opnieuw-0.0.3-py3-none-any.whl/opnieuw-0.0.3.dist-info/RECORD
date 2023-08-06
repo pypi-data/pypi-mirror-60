@@ -1,0 +1,12 @@
+opnieuw/__init__.py,sha256=HN0SdHJZktFp3kalGy8rI_oQR8mVvWj4Q1tiulbSbwc,281
+opnieuw/clock.py,sha256=Mf6IQVFVuduWd18On5ZQ96JBiA7L0bRHD6xO71fgY9w,802
+opnieuw/exceptions.py,sha256=IhkBR8IgswFVSqBKSl8W1N2eLFiLh_o-HoeYE7SkbbU,510
+opnieuw/retries.py,sha256=te_50t_DZ_qOw8SM73E3w6kPC4tBklLtm7EXVpm09lM,10207
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_exponential_multiplier.py,sha256=6hIyq69dOhdbyR_ftk_4UJMNres_ffHEzq4fmsJqOmA,538
+tests/test_opnieuw.py,sha256=YzYRm0jETFTQoFOriGAESTCY69tkvwqwqPDUDSSoF6k,1845
+opnieuw-0.0.3.dist-info/LICENSE,sha256=0uCiWXjgk-M_VaNl6Dm85cRCnG6ud9WlmD237zFxi1Y,1508
+opnieuw-0.0.3.dist-info/METADATA,sha256=D9NMQONPZ-rCUoMb1gPtz-gHspvdEAYI-8OfIXmMIzU,4311
+opnieuw-0.0.3.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+opnieuw-0.0.3.dist-info/top_level.txt,sha256=uXt_uYagGCWmSt6qNPtcMCEThqq8c2wJLjiYDpcS01o,14
+opnieuw-0.0.3.dist-info/RECORD,,
