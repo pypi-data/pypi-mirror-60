@@ -1,0 +1,3 @@
+setuptools
+pgpy==0.5.2
+django_enum_choices==2.1.1
