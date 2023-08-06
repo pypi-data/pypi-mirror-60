@@ -1,0 +1,9 @@
+datasette_auth_existing_cookies/__init__.py,sha256=8Sgn9Qqpqmch4M8rQTMLFg1MMrDYztGQXmChpgw835E,1812
+datasette_auth_existing_cookies/existing_cookies_auth.py,sha256=oNA_gC0nKV3HC-SgddRBJZJ8agcH0yefBduKKrg16tk,7001
+datasette_auth_existing_cookies/utils.py,sha256=eXOhtlTvfCpv0gkDgFOspvBQngAlKRP1jk_nfnud6t8,1977
+datasette_auth_existing_cookies-0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datasette_auth_existing_cookies-0.5.dist-info/METADATA,sha256=wyqW3IH3BoaTUXJuSjwevovsVjQI17CFD3If5g3SKv0,9641
+datasette_auth_existing_cookies-0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+datasette_auth_existing_cookies-0.5.dist-info/entry_points.txt,sha256=PgBKIw3deiZefo94uqaOGHu-_vDGuh3j-L0STh-1WzQ,69
+datasette_auth_existing_cookies-0.5.dist-info/top_level.txt,sha256=OxVHKd90rB3_3mfHUzoe_z344_g_et8jvlQLcQMjHi8,32
+datasette_auth_existing_cookies-0.5.dist-info/RECORD,,
