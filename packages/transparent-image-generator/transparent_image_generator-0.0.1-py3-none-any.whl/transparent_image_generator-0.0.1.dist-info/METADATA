@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: transparent-image-generator
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/coint-hub/transparent-image-generator
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: pypng (>=0.0.20)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+UNKNOWN
+
+
