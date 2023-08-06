@@ -1,0 +1,6 @@
+geopatra/__init__.py,sha256=MLV6WhDGO6qfW9c6yjFEiPAKsioo1GKJS6qVzZNl4hs,62
+geopatra/folium.py,sha256=2dnHXMRRxyg4CRLpwAqmlVoYFVN-fGzpCIsatjOAL9c,8642
+geopatra/map.py,sha256=K0a2FbwivQS8cmUy7ELFzTQiZFtflNwi-COqz-KoGq0,765
+geopatra-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+geopatra-0.1.1.dist-info/METADATA,sha256=OlbDBi9OXzAnS7XyyLIj3mo2QWAvKOM7cxhX88WEdo4,433
+geopatra-0.1.1.dist-info/RECORD,,

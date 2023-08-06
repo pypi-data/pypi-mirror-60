@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: geopatra
+Version: 0.1.1
+Summary: 
+Author: sangarshanan
+Author-email: sangarshanan1998@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: folium (>=0.10.1,<0.11.0)
+Requires-Dist: geopandas (>=0.6.2,<0.7.0)
