@@ -1,0 +1,9 @@
+CHANGELOG.md,sha256=k7hGQr5T9upjC3GEzK0E3BWqZdjzs0GMtWL44vKhWR4,461
+yamk/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+yamk/main.py,sha256=DdgoZPRI0hUKGG3ErzvSLAsosYm-g5ZSR3DEO5thejE,613
+yamk/make.py,sha256=3nwTqQgbtysEanzUeWH5uAbrmEHWRwOa4mxwYFIGrHI,510
+yamk-0.1.1.dist-info/entry_points.txt,sha256=XLgaGPYZeP50YTmNdhPcclvyT-kIIYo6s7ZwK_TjBTs,39
+yamk-0.1.1.dist-info/LICENSE.txt,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+yamk-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+yamk-0.1.1.dist-info/METADATA,sha256=QCV1FYoHyYIlGmKnZtoNHh7hM7XdZEB85ZjppIZZRuo,1732
+yamk-0.1.1.dist-info/RECORD,,
