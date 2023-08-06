@@ -1,0 +1,3 @@
+[console_scripts]
+gistsync = gistsync.entry_points_console_scripts:gistsync
+
