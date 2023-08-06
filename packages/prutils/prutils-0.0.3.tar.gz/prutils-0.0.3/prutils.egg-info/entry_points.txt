@@ -1,0 +1,4 @@
+[console_scripts]
+hello = prutils:utils.hello
+world = prutils:utils.world
+
