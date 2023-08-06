@@ -1,0 +1,5 @@
+pandas
+loguru
+click
+xlrd
+openpyxl
