@@ -1,0 +1,12 @@
+matplotlib
+numpy
+pyzmq
+plotly
+ipywidgets
+pydot
+nbformat
+scikit-image
+nbformat
+pyyaml
+scikit-image
+graphviz
