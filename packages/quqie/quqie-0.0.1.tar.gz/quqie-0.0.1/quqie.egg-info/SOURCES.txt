@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+quqie/__init__.py
+quqie/cli.py
+quqie.egg-info/PKG-INFO
+quqie.egg-info/SOURCES.txt
+quqie.egg-info/dependency_links.txt
+quqie.egg-info/entry_points.txt
+quqie.egg-info/requires.txt
+quqie.egg-info/top_level.txt
