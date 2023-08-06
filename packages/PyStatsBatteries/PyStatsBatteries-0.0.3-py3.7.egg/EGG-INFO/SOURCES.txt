@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+PyStatsBatteries/Descriptors.py
+PyStatsBatteries/ML-Batteries.py
+PyStatsBatteries/Management.py
+PyStatsBatteries/Test.py
+PyStatsBatteries/__init__.py
+PyStatsBatteries.egg-info/PKG-INFO
+PyStatsBatteries.egg-info/SOURCES.txt
+PyStatsBatteries.egg-info/dependency_links.txt
+PyStatsBatteries.egg-info/requires.txt
+PyStatsBatteries.egg-info/top_level.txt
