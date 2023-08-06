@@ -1,0 +1,11 @@
+aiologger==0.5.*
+
+[dev]
+uvloop==0.14.*
+
+[test]
+uvloop==0.14.*
+flake8
+pytest
+pytest-cov
+tox
