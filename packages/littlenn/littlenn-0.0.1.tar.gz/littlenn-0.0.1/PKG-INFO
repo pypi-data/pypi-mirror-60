@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: littlenn
+Version: 0.0.1
+Summary: Little NN - a tiny deep learning framework
+Home-page: https://github.com/qbeer/littlenn
+Author: Alex Olar
+Author-email: olaralex666@gmail.com
+License: UNKNOWN
+Description: # Little NN - a tiny deep learning framework
+        
+        Little NN is my fun project to actually understand the concepts of deep learning `deeply` (pun intended).
+        
+        ### @Regards, Alex
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
