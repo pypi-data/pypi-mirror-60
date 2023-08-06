@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mutable_merkle
+Version: 0.1.0
+Summary: A Merkle tree supporting append, update, remove operations.
+Home-page: https://github.com/EdgyEdgemond/mutable_merkle
+Author: Daniel Edgecombe
+Author-email: edgy.edgemond@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Provides-Extra: release
+Provides-Extra: dev
+Provides-Extra: test

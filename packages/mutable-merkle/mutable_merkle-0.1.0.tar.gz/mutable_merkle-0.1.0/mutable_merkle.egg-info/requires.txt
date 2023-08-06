@@ -1,0 +1,16 @@
+
+[dev]
+flake8
+flake8-commas
+flake8-isort
+flake8-quotes
+isort>=4.3.15
+
+[release]
+bump2version<1.0.0
+changelog_gen
+
+[test]
+pytest>=3.7.2
+pytest-cov
+pytest-random-order
