@@ -1,0 +1,4 @@
+httplib2
+sphinx
+sphinxcontrib-napoleon
+sphinx_rtd_theme
