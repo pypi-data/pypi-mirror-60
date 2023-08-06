@@ -1,0 +1,22 @@
+# Copyright © Nekoka.tt 2020
+#
+# This file is part of stupify.
+#
+# stupify is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# stupify is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with stupify. If not, see <https://www.gnu.org/licenses/>.
+
+__author__ = "Nekoka.tt"
+__email__ = "nekoka.tt@outlook.com"
+__license__ = "LGPL-3.0-ONLY"
+__url__ = "https://gitlab.com/nekokatt/stupify"
+__version__ = "0.0.1.dev1"
