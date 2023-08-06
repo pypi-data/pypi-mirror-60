@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: MyQRcode
+Version: 3.1
+Summary: Generater for amazing QR Codes. Including Common, Artistic and Animated QR Codes.
+Home-page: https://github.com/xyz27900/qrcode
+Author: xyz27900
+Author-email: xyz27900@gmail.com
+License: GPLv3
+Download-URL: https://github.com/xyz27900/qrcode
+Description: UNKNOWN
+Keywords: qr,qrcode,qr code,artistic,animated,gif
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
