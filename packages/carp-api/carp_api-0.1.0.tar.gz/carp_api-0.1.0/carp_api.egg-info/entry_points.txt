@@ -1,0 +1,3 @@
+[console_scripts]
+carp_api = carp_api.cli:main
+
