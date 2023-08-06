@@ -1,0 +1,22 @@
+tags:
+  - Shortener
+summary: Shorten address
+description: Shortens an address.
+operationId: phlasch.shortener.shorten
+produces:
+  - application/json
+parameters:
+  - in: body
+    name: body
+    description: Address information
+    required: true
+    schema:
+      type: object
+      properties:
+        address:
+          type: string
+responses:
+  "201":
+    description: Successfully shortened
+  "400":
+    description: Bad address information
