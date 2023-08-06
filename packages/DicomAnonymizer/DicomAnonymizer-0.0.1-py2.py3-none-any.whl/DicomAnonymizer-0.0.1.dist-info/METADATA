@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: DicomAnonymizer
+Version: 0.0.1
+Summary: Program to anonymize dicom files with default and custom rules
+Home-page: https://gitlab.kitware.io/kitware/DicomAnonymizer.git
+Author: DevApp Kitware Team
+Author-email: laurenn.lam@kitware.com
+License: UNKNOWN
+Keywords: dicom anonymizer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Requires-Dist: pydicom
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
