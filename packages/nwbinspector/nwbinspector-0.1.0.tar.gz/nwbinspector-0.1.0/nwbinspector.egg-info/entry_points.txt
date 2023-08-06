@@ -1,0 +1,3 @@
+[console_scripts]
+nwbinspector = nwbinspector:main
+
