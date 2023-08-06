@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: bibliothek
+Version: 0.1.2
+Summary: Managing Markup Files
+Home-page: https://github.com/ereyue/bibliothek
+Author: ereyue
+Author-email: python@ereyue.me
+License: gpl-3.0
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+
+# Bibliothek
+
+[![Build Status](https://travis-ci.org/ereyue/Bibliothek.svg?branch=master)](https://travis-ci.org/ereyue/Bibliothek)
+[![codecov](https://codecov.io/gh/ereyue/Bibliothek/branch/master/graph/badge.svg)](https://codecov.io/gh/ereyue/Bibliothek)
+
+> 🏛 Managing Markup Files
+
+
+
