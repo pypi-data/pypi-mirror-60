@@ -1,0 +1,8 @@
+django_request_mapping/__init__.py,sha256=Gl8H-z1PS4yBAgq1jtM5Up8WjoktN6UK6jszms2GteI,92
+django_request_mapping/decorator.py,sha256=j6t0CM3j19tVw4wFyfa0LenA1_j3u_vkKFmko6PLgCU,4387
+django_request_mapping/route.py,sha256=yQ1hcwoh_iqiJZ609xVWoV84jUU8FVOcvpipxI9kJXE,3431
+django_request_mapping-0.0.8.dist-info/LICENSE,sha256=4cCtcomD2KVzNeUs8QZPGv_R1FQXPYzr0-2LSnK0hwQ,35121
+django_request_mapping-0.0.8.dist-info/METADATA,sha256=u3gUQHfEi8LMjcHxtrFNh526xmh2VqVtnPM5hc5uHLE,1850
+django_request_mapping-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_request_mapping-0.0.8.dist-info/top_level.txt,sha256=HZUrnyqphDzC-nB8Ejel_Pl5THwU2INU3WL7-JZrgMA,23
+django_request_mapping-0.0.8.dist-info/RECORD,,
