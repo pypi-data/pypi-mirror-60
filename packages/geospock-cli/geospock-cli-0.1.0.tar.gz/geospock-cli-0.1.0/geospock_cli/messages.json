@@ -1,0 +1,16 @@
+{
+    "verificationInstruction" : "To complete initial setup, please use a web browser to go to the following address and confirm authentication by logging in with your GeoSpock credentials: ",
+    "graphQLError": "Error with GraphQL response: ",
+    "noHeader": "Error - could not obtain query header to send to the server.",
+    "helpGetCommands": "This returns a list of available commands and the required arguments for each.",
+    "helpAllCommands": "See below for a list of available commands and the arguments for each. Use 'geospock help COMMAND' for more detailed information on a particular command.",
+    "requiredArguments": "Where argument types are marked with a !, these are required. Other arguments are optional. For enumerated types, the allowed values are shown in square brackets.",
+    "helpInit": "Could not complete initialisation. Command should be of the format geospock init --clientid {clientID} --audience {audience} --auth0url {url} --request-address {address}.",
+    "helpGetCredentials": "This command is used to setup a credentials file, and normally only needs to be run once. When first run, the user will be required to visit a website and log in using their GeoSpock credentials in order to authenticate.",
+    "helpRun": "Runs a specific command. Please add all arguments required by that command (use 'geospock help' to determine which are required). Any argument provided ending with .json will read from a file rather than using the string provided.",
+    "argNumberWrong": "Unexpected number of arguments provided. Expected format: 'geospock COMMAND [--argumentName {argumentValue}]'.",
+    "noArgsNeeded": "This command does not require any arguments.",
+    "credentialsDirectory": "Directory for credentials not created. Please ensure 'geospock init' has been run.",
+    "pollingError": "Error when trying to retrieve device code for authentication: {0}",
+    "profileError": "Profile '{0}' not configured - please run 'geospock init --profile {0}' with appropriate options"
+}

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: geospock-cli
+Version: 0.1.0
+Summary: GeoSpock CLI
+Home-page: http://geospock.com/
+Author: GeoSpock Ltd
+Author-email: cli-development@geospock.com
+License: MIT
+Description: # GeoSpock CLI
+        
+        For the documentation about how to use GeoSpock CLI, please use [MkDocs](https://www.mkdocs.org/):  
+        ```
+        $ cd geospock_cli
+        $ sudo apt install mkdocs
+        $ mkdocs serve
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown

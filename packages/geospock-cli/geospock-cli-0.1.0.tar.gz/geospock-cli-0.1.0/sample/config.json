@@ -1,0 +1,6 @@
+{
+    "client_id" : "{auth0-CLI-ClientID}",
+    "audience" : "https://{sample-api}.geospock.com",
+    "auth0_url" : "{sample-auth}.eu.auth0.com",
+    "request_address" : "{sample-request}.geospock.com"
+}

@@ -1,0 +1,5 @@
+site_name: GeoSpock CLI
+nav:
+  - Home: index.md
+  - Installation: install.md
+  - Available Commands: commands.md
