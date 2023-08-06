@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: secureclientserverservice
+Version: 0.1
+Summary: Secure client-server service library.
+Home-page: https://github.com/xmzxmz
+Author: Marcin Zelek
+Author-email: marcin.zelek@gmail.com
+License: MIT
+Description: Secure Client-Server Service
+        
+        Basic server-client library with additional security for connection and transport
+Keywords: secure client server service
+Platform: UNKNOWN
