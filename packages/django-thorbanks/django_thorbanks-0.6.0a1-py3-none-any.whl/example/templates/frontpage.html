@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Welcome to Thorbanks demo!</h1>
+
+    <ul>
+        <li><a href="{% url 'payment' %}">Payment demo</a></li>
+        <li><a href="{% url 'auth' %}">Authentication demo</a></li>
+    </ul>
+
+{% endblock %}
