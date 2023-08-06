@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: yve
+Version: 0.0.1
+Summary: Chinese Province, City and Area Recognition Utilities
+Home-page: UNKNOWN
+Author: Hugh
+Author-email: UNKNOWN
+License: MIT
+Keywords: for study
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Indexing
+Requires-Dist: pandas (>=0.20.0)
+Requires-Dist: jieba (>=0.39)
+
+
+All respect to 'DQinYuan'
+这个就是一个可以把字符串文本里面的地址解析出来并生成一个DataFrame的小包.
+用法：
+import yve_help
+yve_help.transform(location_list)
+注意一定是list啊
+
+Dedicate this package to Yve and I love her
+
+
