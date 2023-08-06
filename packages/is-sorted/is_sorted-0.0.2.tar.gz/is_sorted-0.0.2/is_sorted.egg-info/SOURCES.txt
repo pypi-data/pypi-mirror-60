@@ -1,0 +1,8 @@
+README.rst
+is_sorted.py
+setup.py
+is_sorted.egg-info/PKG-INFO
+is_sorted.egg-info/SOURCES.txt
+is_sorted.egg-info/dependency_links.txt
+is_sorted.egg-info/requires.txt
+is_sorted.egg-info/top_level.txt
