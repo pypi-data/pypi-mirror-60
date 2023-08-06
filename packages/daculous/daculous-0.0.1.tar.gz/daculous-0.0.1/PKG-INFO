@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: daculous
+Version: 0.0.1
+Summary: Python library for DACulous
+License: MIT
+Author: Fabian Schuh
+Author-email: fabian@chainsquad.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: graphenelib (>=1.2.0,<2.0.0)
