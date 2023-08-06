@@ -1,0 +1,4 @@
+[console_scripts]
+ifr = infraform.cli.main:main
+infraform = infraform.cli.main:main
+
