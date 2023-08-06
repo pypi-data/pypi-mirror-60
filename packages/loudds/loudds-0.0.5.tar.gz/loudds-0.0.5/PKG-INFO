@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: loudds
+Version: 0.0.5
+Summary: Python client for loudds
+Home-page: https://github.com/jareks/loudds
+Author: Jarosław Skrzypek
+Author-email: skrzypek.jarek@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
