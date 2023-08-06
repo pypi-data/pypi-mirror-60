@@ -1,0 +1,207 @@
+Metadata-Version: 2.1
+Name: micropython-ds1631
+Version: 0.4.4
+Summary: MicroPython i2c driver for Maxim-Dallas DS1621 DS1631 DS1631A DS1721 DS1731 digital thermometer and thermostat.
+Home-page: UNKNOWN
+Author: Fabrice Sincère
+Author-email: fabrice.sincere@wanadoo.fr
+Maintainer: Fabrice Sincère
+Maintainer-email: fabrice.sincere@wanadoo.fr
+License: GNU General Public License v3.0
+Description: ## MicroPython DS1631 module
+        
+        This MicroPython module provides an i2c driver for Maxim-Dallas DS1621 DS1631 DS1631A DS1721 DS1731 high-precision digital thermometer and thermostat.
+        
+        ### Datasheets
+        
+        - [DS1631-DS1731](https://datasheets.maximintegrated.com/en/ds/DS1631-DS1731.pdf)
+        - [DS1621](https://datasheets.maximintegrated.com/en/ds/DS1621.pdf)
+        - [DS1721](https://datasheets.maximintegrated.com/en/ds/DS1721.pdf)
+        
+        ### 2-wire serial data bus
+        
+        DS1631s are connected to ESP8266/ESP32/Pyboard i2c GPIO (8 devices max) with 4 wires :
+        
+        - SDA i2c bus (+ 4.7 kΩ pull-up resistor)
+        - SCL i2c bus (+ 4.7 kΩ pull-up resistor)
+        - Power (3.3 V)
+        - Ground
+        
+        ### Installation
+        
+        ```python
+        >>> import upip
+        >>> upip.install('micropython-ds1631')
+        ```
+        or download the ```micropython-ds1631.tar.gz``` archive, uncompress the ```DS1631.py``` module, and copy it in your flash memory target.  
+        
+        ### Basic usage
+        
+        ```python
+        from machine import Pin, I2C
+        import DS1631
+        import time
+        
+        # i2c bus pins
+        i2c = I2C(scl=Pin(4), sda=Pin(5))
+        # i2c bus scan
+        [print(hex(i)) for i in i2c.scan()]
+        
+        i2c_address = 0x48
+        ic1 = DS1631.DS1631(i2c, i2c_address)
+        # thermostat config
+        ic1.set_tout_polarity("active-low")
+        ic1.set_thigh(24.5)
+        ic1.set_tlow(22.5)
+        # thermometer config
+        ic1.set_conversion_mode("continuous")
+        ic1.set_resolution(12)
+        ic1.start_convert()
+        # read temperature
+        while True:
+            time.sleep_ms(750)
+            temperature = ic1.get_temperature()
+            print("Temperature  : {} °C".format(temperature))
+        ```
+        
+        ### API reference
+        
+        - get_config_register()
+            
+            Read and return the configuration register
+        
+        - get_conversion_mode()
+        
+            Read and return the conversion mode ("continuous" or "one-shot")
+        
+        - get_resolution()
+        
+            Read resolution and return the tuple temperature resolution (bits), temperature resolution (°C), conversion time (ms)
+        
+        - get_temperature()
+        
+            Read and return the last converted temperature value (°C) from the temperature register.
+        
+            Note : temperature value stored in SRAM (power-up state -60 °C)
+        
+        - get_thigh()
+        
+            Read and return the Th thermostat register (°C)
+        
+        - get_tlow()
+        
+            Read and return the Tl thermostat register (°C)
+        
+        - get_tout_polarity()
+        
+            Read and return the Tout polarity ("active-low" or "active-high")
+        
+        - is_eeprom_busy()
+        
+            EEPROM status.  
+            return True if a write to memory is in progress.  
+            return False if memory is not busy.
+        
+            Note : write cycle time : 10 ms max, 4 ms typ.
+        
+        - is_temperature_conversion_in_progress()
+        
+            Temperature conversion status.  
+            return True if a temperature conversion is in progress.  
+            return False if the temperature conversion is complete.  
+        
+        - is_thigh_flag_on()
+        
+            Th thermostat status.  
+            return False if the measured temperature has not exceeded the value stored in the Th register since power-up ; otherwise return True
+        
+        - is_tlow_flag_on()
+        
+            Tl thermostat status.  
+            return False if the measured temperature has not been lower than the value stored in the Tl register since power-up ; otherwise return True.  
+        
+        - print_configuration()
+        
+            Read and print configuration and status information
+        
+        - reset_thigh_flag()
+        
+            Th thermostat status.  
+            Thigh flag is overwritten with a 0  
+        
+        - reset_tlow_flag()
+        
+            Tl thermostat status.  
+            Tlow flag is overwritten with a 0  
+        
+        - set_config_register(config_register)
+        
+            Write to the configuration register  
+        
+            Note : when writing to the configuration register, conversions should first be stopped using the Stop Convert command if the device is in continuous conversion mode.
+        
+        - set_conversion_mode(mode)
+        
+            Set the conversion mode.    
+            mode = "one-shot" or "continuous".    
+            Stored in EEPROM (write cycle time : 10 ms max)  
+        
+            Note : when writing to the configuration register, conversions should first be stopped using the Stop Convert command if the device is in continuous conversion mode.
+        
+        - set_resolution(resolution)
+        
+            Set the temperature resolution.   
+            resolution is 9, 10, 11 or 12 bits.   
+        
+            Stored in SRAM (power-up state 12 bits)  
+        
+            Note : when writing to the configuration register, conversions should first be stopped using the Stop Convert command if the device is in continuous conversion mode.
+        
+        - set_thigh(temperature)
+        
+            Set the upper thermostat trip point.  
+            temperature range : -55°C to +125°C.  
+            Stored in EEPROM (write cycle time : 10 ms max)  
+        
+            Note : when making changes to the Th and Tl registers, conversions should first be stopped using the Stop Convert command if the device is in continuous conversion mode.
+        
+        - set_tlow(temperature)
+        
+            Set the lower thermostat trip point.  
+            temperature range : -55°C to +125°C.  
+            Stored in EEPROM (write cycle time : 10 ms max)  
+        
+            Note : when making changes to the Th and Tl registers, conversions should first be stopped using the Stop Convert command if the device is in continuous conversion mode.
+        
+        - set_tout_polarity(polarity)
+        
+            Set the Tout polarity.  
+            polarity = "active-low" or "active-high".  
+            Stored in EEPROM (write cycle time : 10 ms max)  
+        
+            Note : when writing to the configuration register, conversions should first be stopped using the Stop Convert command if the device is in continuous conversion mode.
+        
+        - software_por()
+        
+            Initiates a software power-on-reset (POR), which stops temperature conversions and resets all registers and logic to their power-up states.
+        
+            Power-up state :
+        
+            temperature register : -60 °C  
+            resolution  : 12 bits  
+            temperature high flag : 0 (off)  
+            temperature low flag : 0 (off)  
+        
+        - start_convert()
+        
+            Initiates temperature conversions.  
+            If the part is in one-shot mode, only one conversion is performed.  
+            In continuous mode, continuous temperature conversions are performed until a Stop Convert command is issued.
+        
+        - stop_convert()
+        
+            Stops temperature conversions when the device is in continuous conversion mode.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Description-Content-Type: text/markdown
