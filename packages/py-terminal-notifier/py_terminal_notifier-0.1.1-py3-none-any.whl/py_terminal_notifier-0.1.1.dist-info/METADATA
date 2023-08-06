@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: py-terminal-notifier
+Version: 0.1.1
+Summary: A python wrapper for terminal-notifier
+Keywords: py-terminal-notifier,terminal-notifier,terminal,notifier
+Author: flomk
+Author-email: sudogitrekt@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

@@ -1,0 +1,2 @@
+class TerminalNotifierException(Exception):
+    pass
