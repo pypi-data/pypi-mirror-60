@@ -1,0 +1,8 @@
+README.md
+setup.py
+PickPlace3D/__init__.py
+PickPlace3D.egg-info/PKG-INFO
+PickPlace3D.egg-info/SOURCES.txt
+PickPlace3D.egg-info/dependency_links.txt
+PickPlace3D.egg-info/requires.txt
+PickPlace3D.egg-info/top_level.txt
