@@ -1,0 +1,5 @@
+setup.py
+station_tools.egg-info/PKG-INFO
+station_tools.egg-info/SOURCES.txt
+station_tools.egg-info/dependency_links.txt
+station_tools.egg-info/top_level.txt
