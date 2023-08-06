@@ -1,0 +1,4 @@
+PyInquirer==1.0.3
+PyYAML>=3.13
+boto3>=1.11.6
+python-dotenv==0.10.5
