@@ -1,0 +1,13 @@
+llyfrau/__init__.py,sha256=26Wdg9R3_Dwde7RuyBsrXvQLRuWLAveenLvYyWaIoq4,48
+llyfrau/__main__.py,sha256=IWCEMB0jcIxofHb_8NvVLmNBVRK9ZU8TQhN6TNAGrfE,83
+llyfrau/_version.py,sha256=R3oG5jRSg_UIxi3CToy9is1eZeTyVJU18-1XoENdE5g,24
+llyfrau/data.py,sha256=lDOU0xNXRwS5beTvY5dgAWBsI9lBNezi6BuPfbNLNIs,6492
+llyfrau/importers.py,sha256=rfqODUZlakpB41s2QFMwZm_e4QPft4QwhMJKQysaHpU,1656
+llyfrau/cli/__init__.py,sha256=qPJTe-nQDJGccYcuv4ARqVX9QP2xuI1yfmJ-rOMSOU0,3447
+llyfrau/cli/tui.py,sha256=1Gs1MKbSyxpcMDniIe6NBT1OVvoGI_50MUB8lPIP12A,5436
+llyfrau-0.3.0b7.dist-info/LICENSE,sha256=UxrGREwK4rJKtR_d_gZ5ZTIYq0EMrrXZTsnrEP-yQ6c,1067
+llyfrau-0.3.0b7.dist-info/METADATA,sha256=6j6mN6vuIVFrzmotfaotoq-KHFUQBe-dca_kKp7qJ8M,1250
+llyfrau-0.3.0b7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+llyfrau-0.3.0b7.dist-info/entry_points.txt,sha256=YanO7CxnfRim7reu7QKEs5FvQGzSv0ff8YZbPjYJHcc,104
+llyfrau-0.3.0b7.dist-info/top_level.txt,sha256=sTnxlQFcVa4sDkPQiWaNv6tRQPruiNJG5BrKzSn97zs,8
+llyfrau-0.3.0b7.dist-info/RECORD,,
