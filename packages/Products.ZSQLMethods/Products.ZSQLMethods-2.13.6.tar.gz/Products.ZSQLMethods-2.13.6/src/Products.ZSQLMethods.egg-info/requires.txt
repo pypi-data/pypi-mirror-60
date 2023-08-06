@@ -1,0 +1,12 @@
+setuptools
+Acquisition
+DateTime
+ExtensionClass
+Missing
+Persistence
+Record
+transaction
+ZODB3
+zope.interface
+Zope2>2.12.8
+DocumentTemplate>=2.13.5
