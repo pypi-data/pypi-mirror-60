@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: CITIfile
+Version: 0.1.4
+Summary: To parse CITI format file to xarray.
+Home-page: https://github.com/TitorX/CITIfile
+Author: Titor
+Author-email: titor.sun@gmail.com
+License: UNKNOWN
+Description: # CITIfile
+        
+        Read CITI format file by python.
+        
+        ## Introduction
+        
+        CITIfile is a tiny library that allows you use python to read CITIfile.
+        
+        ## Tutorial
+        
+        
+        
+        ## Websites
+        
+        Main website: https://github.com/TitorX/CITIfile
+        
+        CITIfile Definitions: http://literature.cdn.keysight.com/litweb/pdf/ads15/cktsim/ck2016.html
+        
+        xarray document: http://xarray.pydata.org/en/stable/
+        
+        ## Installation
+        ```shell script
+        pip install CITIfile
+        ```
+        
+        ## Reports
+        
+        Report bugs or ask questions at https://github.com/TitorX/CITIfile/issues.
+        
+        ## Contact
+        
+        Written by Shoukun Sun.
+        
+        Email: titor.sun@gmail.com
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
