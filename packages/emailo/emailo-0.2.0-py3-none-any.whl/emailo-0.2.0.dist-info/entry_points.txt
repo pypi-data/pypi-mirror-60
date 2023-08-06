@@ -1,0 +1,3 @@
+[console_scripts]
+emailo=emailo.console:app
+
