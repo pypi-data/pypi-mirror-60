@@ -1,0 +1,10 @@
+coverage
+pacifica-archiveinterface
+pacifica-cartd
+pacifica-metadata
+pacifica-policy
+pep257
+pre-commit
+pylint
+pytest
+recommonmark
