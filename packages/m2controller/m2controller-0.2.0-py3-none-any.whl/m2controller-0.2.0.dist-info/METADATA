@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: m2controller
+Version: 0.2.0
+Summary: an SDK for educational robotics
+Home-page: https://github.com/dronedevelopers/m2robots/tree/master/pySDK
+Author: drone developer
+Author-email: dronedeveloper@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# why we create a robot for people learning programming?
+Inspired by this idea:
+"It is important to teach problem solving or teach to the problem not to the tools so this would be like you are trying to teach people about how engines work. Before, you know you could start by the more traditional approach, would be to say we're going to teach you all about screwdrivers and wrenches and you even have a course on screwdrivers, a course on wrenches, and all these things and its a very difficult way to do it. A much better way would be like here's the engine. Now let's take it apart. How are we going to take it apart? Oh, you need a screwdriver, that's what the screwdrivers for. You need a wrench, that's what the wrench is for. Then a very important thing happens, whcih is that the relevance of the tools becomes apparent." --- Elon Mask
+
+We create these robots. You first see these robots working, them take them apart, understanding their mechatronic working principles, understanding their programming design principles. In the meantime, the relevance of the software and hardware parts becomes apparent.
+
+
+
+
