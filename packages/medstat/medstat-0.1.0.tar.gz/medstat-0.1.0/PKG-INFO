@@ -1,0 +1,66 @@
+Metadata-Version: 1.2
+Name: medstat
+Version: 0.1.0
+Summary: Basic hypothesis testing made simple
+Home-page: https://github.com/monferrand/medstat
+Author: Pierre Monferrand
+License: MIT license
+Description: =======
+        medstat
+        =======
+        
+        
+        .. image:: https://img.shields.io/pypi/v/medstat.svg
+                :target: https://pypi.python.org/pypi/medstat
+        
+        .. image:: https://img.shields.io/travis/monferrand/medstat.svg
+                :target: https://travis-ci.org/monferrand/medstat
+        
+        .. image:: https://readthedocs.org/projects/medstat/badge/?version=latest
+                :target: https://medstat.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        Basic hypothesis testing made simple
+        
+        
+        * Free software: MIT license
+        * Documentation: https://medstat.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2020-02-01)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: medstat
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
