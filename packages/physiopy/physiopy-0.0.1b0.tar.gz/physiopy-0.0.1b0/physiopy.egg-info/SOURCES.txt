@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+docs/__init__.py
+physiopy/__init__.py
+physiopy/_version.py
+physiopy.egg-info/PKG-INFO
+physiopy.egg-info/SOURCES.txt
+physiopy.egg-info/dependency_links.txt
+physiopy.egg-info/not-zip-safe
+physiopy.egg-info/requires.txt
+physiopy.egg-info/top_level.txt
