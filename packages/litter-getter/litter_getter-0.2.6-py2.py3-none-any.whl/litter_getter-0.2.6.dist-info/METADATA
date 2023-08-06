@@ -1,0 +1,206 @@
+Metadata-Version: 2.1
+Name: litter-getter
+Version: 0.2.6
+Summary: Retrieve literature from biomedical reference libraries such as PubMed, EPA's HERO, and imports from Endnote RIS exports
+Home-page: https://github.com/shapiromatron/litter_getter
+Author: Andy Shapiro
+Author-email: shapiromatron@gmail.com
+License: MIT license
+Keywords: litter_getter
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: XlsxWriter
+Requires-Dist: RISparser
+Provides-Extra: dev
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: black (==19.10b0) ; extra == 'dev'
+Requires-Dist: flake8 (==3.7.9) ; extra == 'dev'
+Requires-Dist: isort (==4.3.21) ; extra == 'dev'
+Requires-Dist: flake8-isort (==2.8.0) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# Literature Getter (litter_getter)
+
+![PyPI](https://img.shields.io/pypi/v/litter_getter)
+
+Retrieve literature from biomedical reference libraries such as PubMed, EPA's HERO, and imports from Endnote RIS exports.
+
+* Search and reference parsing using [PubMed](http://www.ncbi.nlm.nih.gov/pubmed)
+* Search and reference parsing using [US EPA HERO](https://hero.epa.gov/hero/)
+* Endnote/Reference Manager RIS file-export parsing
+
+## Installation
+
+Install with pip:
+
+```bash
+pip install litter_getter
+```
+
+To grab a developer build:
+
+```bash
+git clone git@github.com:shapiromatron/litter_getter.git
+cd litter_getter/
+python -m venv venv
+source venv/bin/activate
+pip install -e .[dev,test]
+```
+
+Tests require use of an API key; see below. I generally add one to my virtual environment:
+
+```bash
+echo "export \"PUBMED_API_KEY=this-is-my-key\"" >> venv/bin/activate
+tail venv/bin/activate
+source venv/bin/activate
+
+make test
+```
+
+## Usage
+
+The data are currently extracted as list of dicts, using a preset, opinionated,
+dictionary format. This could probably be revised for increased flexibility; if
+you have a need, feel free to submit an issue.
+
+### PubMed
+
+The PubMed API generally uses an API key for best [performance](https://ncbiinsights.ncbi.nlm.nih.gov/2017/11/02/new-api-keys-for-the-e-utilities/), in `litter_getter` this is optional but can be added, you'll only need to do this one time for a session.
+
+```python
+from litter_getter import pubmed
+
+pubmed.connect('my-special-api-key')
+```
+
+If you're not using a key and a server returns 429 errors, you may want to try adding a key. A query can be submitted; the number of references returned and the IDs for the references can be extracted:
+
+```python
+from litter_getter import pubmed
+
+search_term = """science[journal] AND breast cancer AND 2008[pdat]"""
+search = pubmed.PubMedSearch(term=search_term)
+
+search.get_ids_count()
+search.id_count
+>>> 123
+
+search.get_ids()
+>>> ['19008416', '18927361', '18787170', '18487186', '18239126', '18239125']
+```
+
+After obtaining a list of references, details on each reference can be downloaded and parsed:
+
+```python
+ids = [19008416, 18927361]
+fetch = pubmed.PubMedFetch(id_list=ids)
+refs = fetch.get_content()
+
+refs[0].keys()
+>>> ['xml', 'doi', 'title', 'abstract', 'citation', 'authors_short', 'year', 'PMID', 'authors_list']
+```
+
+The complete XML returned from Pubmed is captured in the `xml` field.
+
+### HERO
+
+If reference IDs are known, references can be collected and parsed from the EPA HERO database:
+
+```python
+from litter_getter import hero
+
+ids = [1221, 1223]
+fetch = hero.HEROFetch(id_list=ids)
+results = fetch.get_content()
+
+results.keys()
+>>> ['failure', 'success']
+
+results.failures()
+>>> [12413113]
+
+>>> results['success'][0].keys()
+>>> ['source', 'json', 'title', 'authors_short', 'HEROID', 'abstract', 'year', 'PMID', 'authors_list']
+```
+
+The complete JSON returned from HERo is captured in the `json` field.
+
+### RIS
+
+RIS exports from common reference management software such as [Endnote]()http://endnote.com/) or [Reference Manager](http://referencemanager.com/) can be parsed via:
+
+```python
+from litter_getter import ris
+import os
+
+fn = os.path.expanduser("~/Desktop/sample_ris.txt")
+importer = ris.RisImporter(fn)
+refs = importer.references
+
+refs[0].keys()
+>>> ['doi', 'title', 'reference_type', 'abstract', 'citation', 'accession_number',
+        'json', 'authors_short', 'year', 'accession_db', 'PMID', 'id']
+```
+
+
+# History
+
+## 0.2.6 (2020-01-30)
+
+* Make Pubmed API key optional
+
+## 0.2.5 (2020-01-30)
+
+* Use new HERO URL
+* Use Pubmed API keys
+* Code style enforcement with black
+* Simplify tooling dependencies (no more travis, readthedocs, etc)
+
+## 0.2.4 (2018-06-05)
+
+* Fix bug in capturing title text with child elements
+
+
+## 0.2.3 (2018-04-25)
+
+* Fix bug in capturing abstract text with child elements
+
+
+## 0.2.2 (2018-04-10)
+
+* Bump RISparser version
+* Prevent error if fetch called before count (@breisfeld)
+
+
+## 0.2.1 (2017-05-30)
+
+* Return unicode XML instead of bytes in dict
+
+
+## 0.2.0 (2017-05-29)
+
+* Upgraded to Python 3 only
+
+
+## 0.1.2 (2017-04-07)
+
+* Try to return an int for ID unless it fails; then keep string
+
+
+## 0.1.1 (2016-09-27)
+
+* Added documentation.
+
+
+## 0.1.0 (2016-09-26)
+
+* Initial release.
+
+
