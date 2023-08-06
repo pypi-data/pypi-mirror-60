@@ -1,0 +1,1 @@
+djangocms_darksky_api
