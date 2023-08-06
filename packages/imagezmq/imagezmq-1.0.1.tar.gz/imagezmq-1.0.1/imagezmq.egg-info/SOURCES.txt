@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+imagezmq/__init__.py
+imagezmq/__version__.py
+imagezmq/imagezmq.py
+imagezmq.egg-info/PKG-INFO
+imagezmq.egg-info/SOURCES.txt
+imagezmq.egg-info/dependency_links.txt
+imagezmq.egg-info/not-zip-safe
+imagezmq.egg-info/requires.txt
+imagezmq.egg-info/top_level.txt
