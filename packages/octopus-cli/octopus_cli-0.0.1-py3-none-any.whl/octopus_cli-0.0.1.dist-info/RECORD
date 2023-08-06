@@ -1,0 +1,17 @@
+octopus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octopus/main.py,sha256=Byeco74sqX_E0NMxTjSEH3zux0VSDDgcpQlXTsfom_M,1870
+octopus/controllers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octopus/controllers/base.py,sha256=uan6AEGhDW-7mz_ydZKCu6ZdtKqPP4tbRmeieNMWIlc,1556
+octopus/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octopus/core/exc.py,sha256=GqtIZYuyLieWJ0RdLDZQdczpJkwYgVW0jVUEGbf-hjs,67
+octopus/core/version.py,sha256=o4QkoDlYhxMTk37IYt2lTiiMofsptgpqfnfJVOjq6mI,176
+octopus/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octopus/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octopus/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octopus/templates/command1.jinja2,sha256=HHOy5da8brHPDncTBgXDKkK1AKnGfmni4fc_Nk7R534,64
+octopus_cli-0.0.1.dist-info/LICENSE.md,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+octopus_cli-0.0.1.dist-info/METADATA,sha256=MsFmMBP-t-osYn9NZtzXeRksYt-zVuxJQLA6rnrUqYA,1299
+octopus_cli-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+octopus_cli-0.0.1.dist-info/entry_points.txt,sha256=IK5DscqMc42GwMy4p9_DzaeFtIsUYY1ZRLbqz_eClf8,67
+octopus_cli-0.0.1.dist-info/top_level.txt,sha256=ifz8tQw1bftB--LDtow7Uik7dlPRHzndOzBZW_-pcho,8
+octopus_cli-0.0.1.dist-info/RECORD,,
