@@ -1,0 +1,26 @@
+colorama
+imagesize
+lxml
+requests>=2.0
+six
+
+[:python_version < "3.2"]
+backports.functools_lru_cache
+
+[:python_version < "3.3"]
+backports.shutil_get_terminal_size
+
+[:python_version < "3.8"]
+cached_property
+importlib_metadata
+
+[bash]
+argcomplete
+
+[css]
+cssselect
+
+[test]
+pytest-cov
+pytest-xdist
+responses
