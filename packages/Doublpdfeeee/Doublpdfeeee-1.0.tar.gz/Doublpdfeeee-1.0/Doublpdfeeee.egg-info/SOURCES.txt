@@ -1,0 +1,9 @@
+README.md
+setup.py
+Doublpdfeeee.egg-info/PKG-INFO
+Doublpdfeeee.egg-info/SOURCES.txt
+Doublpdfeeee.egg-info/dependency_links.txt
+Doublpdfeeee.egg-info/top_level.txt
+Doubpdf/__init__.py
+Doubpdf/pdf2image.py
+Doubpdf/pdf2text.py
