@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: aibolit
+Version: 0.0.0
+Summary: Aibolit: Defect Detection Static Analyzer with Machine Learning in Mind
+Home-page: https://github.com/yegor256/aibolit
+Author: Yegor Bugayenko
+Author-email: yegor256@gmail.com
+License: MIT
+Download-URL: https://github.com/yegor256/aibolit
+Description: Defect Detection Static Analyzer with Machine Learning in Mind
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities

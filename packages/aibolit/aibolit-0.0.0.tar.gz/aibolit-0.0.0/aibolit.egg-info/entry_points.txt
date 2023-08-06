@@ -1,0 +1,3 @@
+[console_scripts]
+http = aibolit.__main__:main
+
