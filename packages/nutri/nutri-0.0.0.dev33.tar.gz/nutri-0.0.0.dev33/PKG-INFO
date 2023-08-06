@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: nutri
+Version: 0.0.0.dev33
+Summary: NOTE: nutri has moved to nutra, please follow us there :]
+Home-page: https://github.com/gamesguru/nutra
+Author: gamesguru
+Author-email: mathmuncher11@gmail.com
+License: GPL v3
+Description: **************
+         nutratracker
+        **************
+        
+        PLEASE SEE THE NEW PAGE
+        
+        https://pypi.org/project/nutra/
+        
+        Thanks!
+        -----------------------------------
+        
+        .. image:: https://api.travis-ci.com/gamesguru/nutra.svg?branch=master
+            :target: https://travis-ci.com/gamesguru/nutra
+            
+        Extensible command-line tool for nutraent analysis.
+        
+        *Requires:*
+        
+        - Python 3.6.5 or later
+        - Package manager (pip3)
+        - Internet connection
+        
+        
+        See database: https://github.com/gamesguru/ntdb
+        
+        See server:   https://github.com/gamesguru/nutra-server
+        
+        Install PyPi release (from pip)
+        ===============================
+        
+        Please see the new page :code:`nutra`!
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
