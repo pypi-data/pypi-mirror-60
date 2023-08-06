@@ -1,0 +1,10 @@
+chronicle/__init__.py,sha256=4MkuBEi0hGa9zZv5bbzE1UYGLG5ei3U3xm0yEmUDPL8,2066
+chronicle/models.py,sha256=Qudinw_fYg6o-1UtJJSO0fB1JpVS3GiD2zp-T0FIM5c,5044
+chronicle/signals.py,sha256=Z_qbgnPCUyAAdmUQmfzAXNDuuvOcDyv8kw_bz_fAAss,97
+chronicle/triggers.py,sha256=D1spVb7N_8ebZzYiEVhVM6naC-k8URJW91rBxA_DFjA,6037
+chronicle/utils.py,sha256=g5qb9C_8i9qct9cWV7V0p4pRBuOWsYr-VVZMUpMclN0,1750
+django_chronicle-0.1.0.dist-info/LICENSE,sha256=fkMOuGz2Mc-Cv_IOb8zBJuVpEGwqo2RkhHbwCUz2b0M,1307
+django_chronicle-0.1.0.dist-info/METADATA,sha256=At2aV697NnMnY46R99lgD0iUft5QZuh48W0RopSgqWI,4289
+django_chronicle-0.1.0.dist-info/WHEEL,sha256=hq9T7ntHzQqUTLUmJ2UVhPL-W4tJi3Yb2Lh5lMfs2mk,110
+django_chronicle-0.1.0.dist-info/top_level.txt,sha256=4BFZDl1VGI4Dov1YUkhT3azSPsLl1YU14GEzl3fEBD8,10
+django_chronicle-0.1.0.dist-info/RECORD,,
