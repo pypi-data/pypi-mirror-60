@@ -1,0 +1,9 @@
+README.md
+setup.py
+vkbee/__init__.py
+vkbee/exceptions.py
+vkbee.egg-info/PKG-INFO
+vkbee.egg-info/SOURCES.txt
+vkbee.egg-info/dependency_links.txt
+vkbee.egg-info/requires.txt
+vkbee.egg-info/top_level.txt
