@@ -1,0 +1,11 @@
+pgcopy/__init__.py,sha256=4D0ajqwjcZL8hPcDI0YHRiOxkaZe4Z_7Sxyvdnz2u_0,89
+pgcopy/copy.py,sha256=Dlfctt2J5vVVHSMBnRDsOhtPPpGQuo6CAfbAr-8Gulg,9753
+pgcopy/inspect.py,sha256=8IT50VAl8BfPJShQupm81QaNVXEeYYavevKHJwFNjCk,1160
+pgcopy/util.py,sha256=GIO0qqSGGOayASsvyj4nYZmCsEi5UH95rvakOGlJ3oo,12278
+pgcopy/version.py,sha256=6ImxnR8EAFBMtiyEcHsEjoEJrEuzUcOFUzWJTeupvpM,22
+pgcopy-1.4.1.dist-info/AUTHORS.rst,sha256=PJK_Y9J7FzJIaowinRB1yE5Kg3FbFtVwtvlMoGlr2w4,441
+pgcopy-1.4.1.dist-info/LICENSE.txt,sha256=_RofMhKYo09Nt9iKfctbPUBNi0qxvciSeFiqu64-lPc,1131
+pgcopy-1.4.1.dist-info/METADATA,sha256=qSAwcykeZbEtUTR2MmltHmwX-QVXD-juB5Gx9UQVIos,3229
+pgcopy-1.4.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+pgcopy-1.4.1.dist-info/top_level.txt,sha256=1LEqYcj1rZ-EV_b3QkBcJHd3x07XeJHpCzn1-5z-nC8,7
+pgcopy-1.4.1.dist-info/RECORD,,
