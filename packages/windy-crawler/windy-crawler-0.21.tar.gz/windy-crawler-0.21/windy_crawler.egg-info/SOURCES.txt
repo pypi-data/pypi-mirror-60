@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+windy_crawler/windy_web_crawler.py
+windy_crawler.egg-info/PKG-INFO
+windy_crawler.egg-info/SOURCES.txt
+windy_crawler.egg-info/dependency_links.txt
+windy_crawler.egg-info/not-zip-safe
+windy_crawler.egg-info/requires.txt
+windy_crawler.egg-info/top_level.txt
