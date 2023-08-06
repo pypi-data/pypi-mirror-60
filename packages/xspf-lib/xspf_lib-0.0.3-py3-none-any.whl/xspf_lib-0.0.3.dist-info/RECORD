@@ -1,0 +1,8 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_module.py,sha256=qCUzylMakew9N0AZtEzMqrkEQvY8CMXUsDNEM0M_FXU,3558
+xspf_lib/__init__.py,sha256=k9HziuhFkQ2LW6_s-ikSA_zdiScpG79P5mhYeSCOC9U,11590
+xspf_lib-0.0.3.dist-info/LICENSE,sha256=b70EE4St2xoRjqC32NHtkdnLDWjH2Wy3mFT8w7CepOk,1093
+xspf_lib-0.0.3.dist-info/METADATA,sha256=qW9v5cTEzNeIikIJgo8WaR7sd9-VJOL7q-NSPMQUTSk,3163
+xspf_lib-0.0.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+xspf_lib-0.0.3.dist-info/top_level.txt,sha256=4f0m1-JM1YGNUud9-TdQMOKIdcB9EZLz2nvlnRRaC9g,14
+xspf_lib-0.0.3.dist-info/RECORD,,
