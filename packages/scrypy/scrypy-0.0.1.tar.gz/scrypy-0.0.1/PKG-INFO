@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: scrypy
+Version: 0.0.1
+Summary: Software for Uncertainty Quantification
+Home-page: https://github.com/tostenzel/scrypy
+Author: Tobias Stenzel
+Author-email: tobias.stenzel@mailbox.org
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning

@@ -1,0 +1,6 @@
+README.rst
+setup.py
+scrypy.egg-info/PKG-INFO
+scrypy.egg-info/SOURCES.txt
+scrypy.egg-info/dependency_links.txt
+scrypy.egg-info/top_level.txt
