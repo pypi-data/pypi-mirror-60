@@ -1,0 +1,10 @@
+README.md
+setup.py
+image_croquis/__init__.py
+image_croquis/image_croquis.py
+image_croquis.egg-info/PKG-INFO
+image_croquis.egg-info/SOURCES.txt
+image_croquis.egg-info/dependency_links.txt
+image_croquis.egg-info/entry_points.txt
+image_croquis.egg-info/requires.txt
+image_croquis.egg-info/top_level.txt
