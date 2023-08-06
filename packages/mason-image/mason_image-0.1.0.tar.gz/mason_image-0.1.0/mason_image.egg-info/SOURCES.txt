@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+mason_image/__init__.py
+mason_image/converter.py
+mason_image.egg-info/PKG-INFO
+mason_image.egg-info/SOURCES.txt
+mason_image.egg-info/dependency_links.txt
+mason_image.egg-info/entry_points.txt
+mason_image.egg-info/requires.txt
+mason_image.egg-info/top_level.txt
