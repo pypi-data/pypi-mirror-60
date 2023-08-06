@@ -1,0 +1,11 @@
+autochests_bot/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+autochests_bot/__main__.py,sha256=85uF2SLVWrUrAaAF7yfEwb9cKQXbe1syfu60ajcOlCo,359
+autochests_bot/start_bot.py,sha256=OzXmBv2JFXCzm1o5CczU5BTlPjC1vDNMvj3vO62dQB4,1503
+autochests_bot/bot_controll/__init__.py,sha256=P3Cuk1QuOjJ8NGcUJH8f1pazrA5Btb2GCWqfL0detI0,55
+autochests_bot/bot_controll/args.py,sha256=9Df6QSPHNgexrTpfIehOmsxDRTMmty1NnzY0tD0VrUQ,1464
+autochests_bot/bot_controll/chests_bot.py,sha256=2n1EJRpklnJ5DHEVl411oL-m0zAmXynm-pCifRZiIOw,2787
+twitch_chest_bot-0.9.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+twitch_chest_bot-0.9.0.dist-info/METADATA,sha256=WO4Vwr14t59buw-EzDwvn8689x-UQXOEfR1K55ESSNM,768
+twitch_chest_bot-0.9.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+twitch_chest_bot-0.9.0.dist-info/top_level.txt,sha256=CAqUle-L_C1nbDWbXheNmv0jcXy77itgtlh2I7mOH38,15
+twitch_chest_bot-0.9.0.dist-info/RECORD,,
