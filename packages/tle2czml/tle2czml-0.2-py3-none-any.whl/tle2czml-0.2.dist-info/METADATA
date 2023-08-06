@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: tle2czml
+Version: 0.2
+Summary: Convert TLE's to CZML file
+Home-page: https://github.com/kujosHeist/tle2czml
+Author: Shane Carty
+Author-email: shane.carty@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pygeoif (==0.7)
+Requires-Dist: python-dateutil (==2.6.1)
+Requires-Dist: pytz (==2018.3)
+Requires-Dist: sgp4 (==1.4)
+Requires-Dist: six (==1.11.0)
+Requires-Dist: wheel (==0.24.0)
+
+UNKNOWN
+
+
