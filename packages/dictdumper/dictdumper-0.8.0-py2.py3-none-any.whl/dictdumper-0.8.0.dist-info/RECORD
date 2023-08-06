@@ -1,0 +1,13 @@
+dictdumper/__init__.py,sha256=jNAZEnh8Z5lJcA5M-dcsq0GO0PqrmYOkXS-_RIMPnrk,1181
+dictdumper/_dateutil.py,sha256=dQe_Re_snws2NIzJWeOjcgj5GN37E3xDbBFOrBIztok,2435
+dictdumper/dumper.py,sha256=ixllD-61wQInPKGz-HsjHptaYmu2tz8SqinXeEsx_ZE,5246
+dictdumper/json.py,sha256=mSmy6GoZsE1EXJk6tu83m0q_nMm4Vf-HhmMzlIQDSNg,9043
+dictdumper/plist.py,sha256=A6e7kKBODVFsz4SPqPGCIiJ1VK4NO4ahIyPhUzK1ato,8826
+dictdumper/tree.py,sha256=VtDjUDfVfNh_JtgZfxJixlKhQV1J52gzj94X1t3wvkg,11208
+dictdumper/vuejs.py,sha256=VAFbbMlXwaHeScPoRtJhHKGyXuUCjOUb8ct_6K2mJFo,3184
+dictdumper/xml.py,sha256=d-HV9y5sFT1jqtY5NiERs2Gnki2YbVXh0thj5dQ85VY,2638
+dictdumper-0.8.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+dictdumper-0.8.0.dist-info/METADATA,sha256=r5lKPxlXeqhLqI2miwuMVGrLpyktRRzbuHYFaT6F9g8,6329
+dictdumper-0.8.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+dictdumper-0.8.0.dist-info/top_level.txt,sha256=i6HrMSUBBzJ0Hilsmm3KSeU43RO23sRC0ei52Js39Ns,11
+dictdumper-0.8.0.dist-info/RECORD,,
