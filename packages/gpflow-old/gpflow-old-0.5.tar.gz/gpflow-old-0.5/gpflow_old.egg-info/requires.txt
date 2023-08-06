@@ -1,0 +1,8 @@
+numpy>=1.9
+scipy>=0.16
+
+[Export parameters as pandas dataframes]
+pandas>=0.18.1
+
+[tensorflow with gpu]
+tensorflow-gpu>=1.0.0
