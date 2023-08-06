@@ -1,0 +1,15 @@
+cuba_weather_municipality/__init__.py,sha256=vvcPPNaEe6gfAO-Efq5buc1hfhlOjqGy3u6hhdUmIXM,1175
+cuba_weather_municipality/data_providers/__init__.py,sha256=rZbhULWxQUaSGl82ibvqodbj4H1jdZD9Vj9OxiW8prg,43
+cuba_weather_municipality/data_providers/municipalities.py,sha256=jnRJlAiMNwVYvV-v3vmt9sb-SQXg2AKGNWgwgngnPIY,19687
+cuba_weather_municipality/models/__init__.py,sha256=NP-hIUycvT4EZTYP9bnwZFuNUMp4i4JLmZRPXlVRwOE,50
+cuba_weather_municipality/models/municipality_model.py,sha256=82Q87y6i6EAE2zndouEZSkXW5ElFkbiKttfYVe3Il5A,562
+cuba_weather_municipality/repositories/__init__.py,sha256=IBX4I8WEmMjxbli0AoQk61HI3TqtdHOA1IHguZwn4C4,60
+cuba_weather_municipality/repositories/municipality_repository.py,sha256=JBt7z-NHAjzW8qB0nhZIMIVjMb0jbyl3CCsYhVZPg-A,1560
+cuba_weather_municipality/utils/__init__.py,sha256=9wwYqjdhbjs8BoY1Aa-4-ftI3YkaFk0UlCCQReNUxkI,95
+cuba_weather_municipality/utils/damerau_levenshtein.py,sha256=nhrfQlq777OGjcTXj-1SWY86QuDnJVz4qi53nX5dLhI,986
+cuba_weather_municipality/utils/municipality_curator.py,sha256=OvjdS6-0ukbnYxLPqLzRUCuYO-9-W4KLX2wuwb2dAms,502
+cuba_weather_municipality-0.1.3.dist-info/LICENSE,sha256=VekSlpoqCuQoZnTEz46-ju4hFZSvzjtd0AYeozEsmxs,1068
+cuba_weather_municipality-0.1.3.dist-info/METADATA,sha256=ZRYy_jB2HdHHCSQD0KS5yyN7EWEI8P0QxOqfhtiMEWQ,1122
+cuba_weather_municipality-0.1.3.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+cuba_weather_municipality-0.1.3.dist-info/top_level.txt,sha256=3HVtrzybhxYxgZIu2HbXKJYHzeM2hVcear7yYah7OBU,171
+cuba_weather_municipality-0.1.3.dist-info/RECORD,,
