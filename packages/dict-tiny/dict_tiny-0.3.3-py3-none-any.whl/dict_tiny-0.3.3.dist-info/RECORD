@@ -1,0 +1,11 @@
+dict_tiny/__init__.py,sha256=rClS32ngkbjW8fdRTKY4pANyvmomF6NuvnMYlJOtwzQ,19
+dict_tiny/main.py,sha256=rjFv9CLVnIlAxK3LONogCDn2ziSnrzXr-sbat7ivbJs,10251
+dict_tiny/version.py,sha256=KZKrTmv5BU4urD0nP1Y44Bxd7kCNGSoiV26OSSPT-_E,205
+dict_tiny/en_detail/__init__.py,sha256=b2dmOkoeOSdRpxs8Hkh0wQgcROyWgIt958k1cdMYgo4,45
+dict_tiny/en_detail/get_detail.py,sha256=n3oZai-06Uuhu7VWb2LMyNkzUTys4X2vVyuo06MGFE4,8553
+dict_tiny-0.3.3.dist-info/LICENSE,sha256=RRcHBWzyqmfcZDFaPP4_P5_AOTvuqIHvahaHKRY-VVc,1065
+dict_tiny-0.3.3.dist-info/METADATA,sha256=jI1gzwmKVVnUFrjlwbfOGRDIiBxR6awgMAO4LswEyX0,5310
+dict_tiny-0.3.3.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+dict_tiny-0.3.3.dist-info/entry_points.txt,sha256=65xDayosyr_Goofy2DKEsDpdpPYWY5SfSzdOunrE7Bk,56
+dict_tiny-0.3.3.dist-info/top_level.txt,sha256=ZUQv7_FuHGKvojBun9fD3ISETYIrpXfQXIR_cDFWu5U,10
+dict_tiny-0.3.3.dist-info/RECORD,,
