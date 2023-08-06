@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: mentormatch
+Version: 1.0
+Summary: Validate a Requirements Trace Matrix
+Home-page: https://github.com/jonathanchukinas/mentormatch
+Author: Jonathan Chukinas
+Author-email: chukinas@gmail.com
