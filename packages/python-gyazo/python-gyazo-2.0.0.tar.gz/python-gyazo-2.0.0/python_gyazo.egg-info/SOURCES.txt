@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+gyazo/__about__.py
+gyazo/__init__.py
+gyazo/api.py
+gyazo/error.py
+gyazo/image.py
+gyazo/py.typed
+python_gyazo.egg-info/PKG-INFO
+python_gyazo.egg-info/SOURCES.txt
+python_gyazo.egg-info/dependency_links.txt
+python_gyazo.egg-info/requires.txt
+python_gyazo.egg-info/top_level.txt
