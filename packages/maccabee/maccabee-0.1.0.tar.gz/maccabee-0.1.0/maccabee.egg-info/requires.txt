@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+sympy
+POT
+pyyaml
+threadpoolctl
+
+[docs]
+sphinx
+sphinx-autobuild
+sphinx_rtd_theme
+nbsphinx

@@ -1,0 +1,5 @@
+maccabee.egg-info/PKG-INFO
+maccabee.egg-info/SOURCES.txt
+maccabee.egg-info/dependency_links.txt
+maccabee.egg-info/requires.txt
+maccabee.egg-info/top_level.txt
