@@ -1,0 +1,21 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+src/scimschema/__init__.py
+src/scimschema/_model/__init__.py
+src/scimschema/_model/attribute.py
+src/scimschema/_model/model.py
+src/scimschema/_model/schema_response.py
+src/scimschema/_model/scim_exceptions.py
+src/scimschema/core_schemas/SCIM Core2 enterpriseuser spec.json
+src/scimschema/core_schemas/SCIM Core2 group spec.json
+src/scimschema/core_schemas/SCIM Core2 user spec.json
+src/scimschema/core_schemas/__init__.py
+src/scimschema/core_schemas/resources/__init__.py
+src/scimschema/core_schemas/resources/resourcetype.json
+src/scimschema/core_schemas/resources/serviceproviderconfig.json
+src/scimschema/scimschema.egg-info/PKG-INFO
+src/scimschema/scimschema.egg-info/SOURCES.txt
+src/scimschema/scimschema.egg-info/dependency_links.txt
+src/scimschema/scimschema.egg-info/top_level.txt
