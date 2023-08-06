@@ -1,0 +1,11 @@
+bentley_ottmann/__init__.py,sha256=S8uRTpzq-3fVekFD0rLAIuCEB4x55SMtlH4UWekIfDk,98
+bentley_ottmann/angular.py,sha256=_VS4H4ZzrO090DURVbIaOvrDWISLbligavktjSBguOI,1512
+bentley_ottmann/base.py,sha256=spVml0fpVgqmYHvs7TGIgZ74b6K8UydAHc6JMix0D_Q,26533
+bentley_ottmann/hints.py,sha256=vE09CEBe-FlYsasfcPpcxe3gsm5gJYELjIfRz1CVDm4,123
+bentley_ottmann/linear.py,sha256=Nd-ci3n-Ka0V2-Y9sIs_HmpXaWiBP1FaE_AYBkvVLpQ,10236
+bentley_ottmann/point.py,sha256=47Xnq3BL0129oLFotJ9hC9J_TbGzJp7yBl6qIL7skec,814
+bentley_ottmann-0.0.3.dist-info/LICENSE,sha256=-W_qNLRoZO2-AnwtGfKupruYTfLtIk39IeMqidpeVOU,1069
+bentley_ottmann-0.0.3.dist-info/METADATA,sha256=eOpk-pQn7dvPNPp91rxs3vL2MTDqz3tNkQvF0B-nitY,5672
+bentley_ottmann-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+bentley_ottmann-0.0.3.dist-info/top_level.txt,sha256=plniXB-FYz7fUbbwMoiKHkPGw_RZw14w08G5luYcTgQ,16
+bentley_ottmann-0.0.3.dist-info/RECORD,,
