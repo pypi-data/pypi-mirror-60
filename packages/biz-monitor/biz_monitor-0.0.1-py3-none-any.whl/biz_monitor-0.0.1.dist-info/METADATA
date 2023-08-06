@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: biz-monitor
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: carton.swing
+Author-email: cartonswing@xwfintech.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Flask
+Requires-Dist: jaeger-client
+Requires-Dist: opentracing
+Requires-Dist: contextvars
+Requires-Dist: gunicorn
+Requires-Dist: requests
+Requires-Dist: tornado
+Requires-Dist: wrapt
+Requires-Dist: gevent
+Requires-Dist: flask-restful
+Requires-Dist: kafka-python
+
+UNKNOWN
+
+
