@@ -1,0 +1,14 @@
+delugewebbrowser/__init__.py,sha256=ZWkqQDOmIsx9NBLHeZP82HzD2YLKNR6Y55WOQexiVnE,927
+delugewebbrowser/common.py,sha256=KMNrUwV8rLSFG-OpdHHe7gOnY4Sqao7AkwkyG20dFPA,190
+delugewebbrowser/core.py,sha256=DLSnphnT3Q09aU0CZlW9WwF_P7i0W8c0QQg8xB-uBAQ,3014
+delugewebbrowser/gtkui.py,sha256=LVNqP_ECpVHbfkLLh4LGOihSwd8iEvl-NB9eqSVpF_E,1376
+delugewebbrowser/webui.py,sha256=MSTcvaCrK7lFOeCBRlAIHc-jppHmVrA0RmzcvlSlWew,236
+delugewebbrowser/libraries/SimpleAuthServer.py,sha256=euUIbAo3c8srfsGzvtlTObIw-EWyikh4KrYfgRq_akA,2111
+delugewebbrowser/libraries/Zipping.py,sha256=zOjOwDG8OsTCQGG59tha4Un1QxraaSzQJJrcMRnKB3o,828
+delugewebbrowser/libraries/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DelugeWebBrowser-0.1.1.dist-info/LICENSE,sha256=0wHIiuMhNyZhUH0jbHZXSCPslg9N60prCEwvlfdBn3E,1533
+DelugeWebBrowser-0.1.1.dist-info/METADATA,sha256=vYUmiypcBgCCd5fr0XfccJhYlk6pZ4UJYR8S8BYfrEU,5213
+DelugeWebBrowser-0.1.1.dist-info/WHEEL,sha256=hq9T7ntHzQqUTLUmJ2UVhPL-W4tJi3Yb2Lh5lMfs2mk,110
+DelugeWebBrowser-0.1.1.dist-info/entry_points.txt,sha256=Y5lhLhgIRoRIheAZtG_RvQZAgPT9Jlrp670lQ2le1Ts,235
+DelugeWebBrowser-0.1.1.dist-info/top_level.txt,sha256=-pwIlXKr6JnD6D6u7OR5huPourQynDp9hTZiHL-1glE,17
+DelugeWebBrowser-0.1.1.dist-info/RECORD,,
