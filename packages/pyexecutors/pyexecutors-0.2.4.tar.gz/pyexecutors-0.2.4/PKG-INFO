@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: pyexecutors
+Version: 0.2.4
+Summary: 
+         A light-weight library to efficiently run series of 
+        asynchronous and synchronous tasks concurrently
+        without worrying about managing different threads
+        on your own.
+        
+    
+Home-page: https://github.com/tanmay23235616/pyexecutors
+Author: TANMAY MAJUMDAR
+Author-email: tanmaymajumdar5612@gmail.com
+License: MIT
+Download-URL: https://github.com/tanmay23235616/pyexecutors/archive/0.1.0.tar.gz
+Description: # PyExecutors - A simple multi-threading task management library
+        
+        
+        
+        
+        ![Travis Passing](https://travis-ci.com/tanmay23235616/pyexecutors.svg?branch=master) 
+        [![PyPI version](https://badge.fury.io/py/pyexecutors.svg)](https://badge.fury.io/py/pyexecutors) 
+        [![PyPI Downloads](https://img.shields.io/pypi/dm/pyexecutors)](https://badge.fury.io/py/pyexecutors)
+        [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+         [![Downloads](https://pepy.tech/badge/pyexecutors)](https://pepy.tech/project/pyexecutors)
+        
+        
+        
+        *Are you great with multi-threading?*
+        
+        [![](https://api.gh-polls.com/poll/01DZM6ZQJE9TQYRE5YS86JAH1S/Yes)](https://api.gh-polls.com/poll/01DZM6ZQJE9TQYRE5YS86JAH1S/Yes/vote)
+        [![](https://api.gh-polls.com/poll/01DZM6ZQJE9TQYRE5YS86JAH1S/No)](https://api.gh-polls.com/poll/01DZM6ZQJE9TQYRE5YS86JAH1S/No/vote)
+         
+        PyExecutors is a utility module which provides straight-forward, powerful functions for working with asynchronous python functions.
+         
+        This runs an array of functions in series. You can program the functions to run synchronously or asynchronously in the order you desire. 
+        
+        
+        ## Installation
+        
+        `pip install pyexecutors`
+        
+        Then, from a python interpreter 
+        
+        ```
+        from pyexecutors.executors.Executors import SyncTasks, AsyncTasks, Executors
+        
+        def execute_method(exec_thread_number):
+            // your function
+        
+        Executors() \
+            .enqueue(AsyncTasks(execute_method, args=(1,))) \
+            .enqueue(AsyncTasks(execute_method, args=(2,))) \
+            .enqueue(SyncTasks(execute_method, args=(3,))) \
+            .enqueue(AsyncTasks(execute_method, args=(4,))) \
+            .execute()
+        
+        ```
+        
+        ### How does it work
+        
+        **Synchronous Functions**
+        > A synchronous functions runs by encapsulating itself with [RLocks](https://docs.python.org/2.0/lib/rlock-objects.html)
+        . The lock is released after the functions' execution is complete
+        
+        
+        **Asynchronous Functions**
+        > Asynchronous takes the help of [Barriers](https://docs.python.org/3/library/threading.html). The idea is to create a barrier with the  limit being the number of consecutive async functions.
+        > A new barrier is created when a Sync function comes in between. 
+        
+        ### Running Tests
+        
+        ```buildoutcfg
+        pip install pytest
+        pytest
+        ```
+        The [test function](https://raw.githubusercontent.com/tanmay23235616/pyexecutors/master/pyexecutors/tests/test_executors.py) simply matches the thread number with the argument passed to the functions. 
+        The argument has been given to match the order of thread execution
+        
+        
+        ### Code & Issues
+        If you are a developer and you wish to contribute to the library please fork the project and submit a pull request. 
+        Follow [Github Flow](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/github-flow) for collaboration! If you have any questions, feel free to ask [me](mailto:tanmay.majumdar@hotmail.com) about whatever you want. 
+        
+        ### Project Maintainers
+        This project is founded and actively maintained by [Tanmay Majumdar](https://github.com/tanmay23235616).
+         For any sort of queries feel free to mail at [tanmay.majumdar@hotmail.com](mailto:tanmay.majumdar@hotmail.com)
+        
+        ### License
+        
+        This project is licensed under the MIT License - see the LICENSE.md file for details
+        
+        
+        
+        
+Keywords: PYEXECUTOR,TANMAY23235616,MULTITHREADING
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
