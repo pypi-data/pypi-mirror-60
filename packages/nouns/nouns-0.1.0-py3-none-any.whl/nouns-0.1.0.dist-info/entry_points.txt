@@ -1,0 +1,3 @@
+[console_scripts]
+nouns=nouns:do_command
+
