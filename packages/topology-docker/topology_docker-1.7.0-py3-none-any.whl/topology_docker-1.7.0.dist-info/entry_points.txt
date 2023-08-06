@@ -1,0 +1,7 @@
+[topology_docker_node_10]
+host = topology_docker.nodes.host:HostNode
+switch = topology_docker.nodes.switch:SwitchNode
+
+[topology_platform_10]
+docker = topology_docker.platform:DockerPlatform
+
