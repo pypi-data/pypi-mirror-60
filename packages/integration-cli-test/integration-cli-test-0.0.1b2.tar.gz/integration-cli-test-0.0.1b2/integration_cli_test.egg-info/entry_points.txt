@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        integration=cli:smart_integration_cli
+    
