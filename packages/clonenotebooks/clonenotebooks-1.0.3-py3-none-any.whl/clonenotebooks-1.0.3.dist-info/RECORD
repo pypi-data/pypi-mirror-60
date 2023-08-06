@@ -1,0 +1,12 @@
+clonenotebooks/utils.py,sha256=Fwu9ZKC12O5OF1wMsQSuL8pwVtFewJeXbvNoDQ0aCOk,1698
+clonenotebooks/cloners/__init__.py,sha256=Qg3zpr6APA_ovD0WEaL3DG6CPV60-HbFfowMTN4YyJU,51
+clonenotebooks/cloners/cloners.py,sha256=7ujPX5yxkcaFsdxcdznZPinDAaGxyN6nIj9ZMfoqLYo,7818
+clonenotebooks/cloners/jupyter-config/jupyter_notebook_config.d/cloners.json,sha256=89GpY5k1N9Hcp0_nZJ2Jo-JhZouv5TZF6tr3QL5m6Vo,99
+clonenotebooks/renderers/__init__.py,sha256=bh9UY8qoYbyjRwBddznEcRmKA0HtPflUA5pbQJoKmw8,376
+clonenotebooks/renderers/renderers.py,sha256=YqXd577gnQXTceXDbEGrD4uDQa4jKwAtReAYcm8QEB0,9693
+clonenotebooks-1.0.3.data/data/etc/jupyter/jupyter_notebook_config.d/cloners.json,sha256=89GpY5k1N9Hcp0_nZJ2Jo-JhZouv5TZF6tr3QL5m6Vo,99
+clonenotebooks-1.0.3.dist-info/LICENSE,sha256=kyoWKAmHVMJRWN9zYk0QwkpoP9uBDqiPWVLwTPLUHd0,2389
+clonenotebooks-1.0.3.dist-info/METADATA,sha256=Z1vWYXFbUnXFiwefawNFOZhXSX8jB5fjq1Qs60Qvcik,9012
+clonenotebooks-1.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+clonenotebooks-1.0.3.dist-info/top_level.txt,sha256=JFwW9AGencNTnxx6Pq5h9uSZg1zFTStci78_ZGwjfHE,15
+clonenotebooks-1.0.3.dist-info/RECORD,,
