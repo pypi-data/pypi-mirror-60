@@ -1,0 +1,6 @@
+[console_scripts]
+contacto = contacto.cli:main
+
+[gui_scripts]
+qcontacto = contacto.gui:main
+
