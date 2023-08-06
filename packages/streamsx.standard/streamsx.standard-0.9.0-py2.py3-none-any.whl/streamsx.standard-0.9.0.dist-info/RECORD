@@ -1,0 +1,14 @@
+streamsx/standard/__init__.py,sha256=cBtsBiU0_y5P29BA1_7w3PT42F8OgJUL2rZfcluw_3M,2436
+streamsx/standard/_adapter.py,sha256=5MSe_dDsHt66V-GoplRFQ7kZnFB1oTqfVA_Plr3P31k,547
+streamsx/standard/_version.py,sha256=c4lVGZGLZWodLO4VUIX77lKLfCvQnxY1-8ubOEOhJjg,20
+streamsx/standard/files.py,sha256=la7iDRxr1_TtIMDxStr6dcTuN8kxvJECia6yx9h2bVs,36156
+streamsx/standard/relational.py,sha256=i-GiaBSq1Urqx7eczYwcu1Lo-ryjiXEyjJqR7Wnq9RE,16446
+streamsx/standard/utility.py,sha256=7iDxCfhxvLTZ8h_Q9sDXo0hL1XpNwOCLe38iJ3zjoK4,17347
+streamsx/standard/tests/data.csv,sha256=k0GvC0dq8_cUt2854I3Cb20pLmDIq6a_z2q069AFJGk,18
+streamsx.standard-0.9.0.dist-info/DESCRIPTION.rst,sha256=ue1HXiiV_auuoTYpFKIzZRN-bfhAPszlynHT1Z5O1q4,203
+streamsx.standard-0.9.0.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+streamsx.standard-0.9.0.dist-info/METADATA,sha256=QDPHPS1WWXOoYZJsBctMG1L1M9W0HOxcyaiDuMyYGVQ,885
+streamsx.standard-0.9.0.dist-info/RECORD,,
+streamsx.standard-0.9.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+streamsx.standard-0.9.0.dist-info/metadata.json,sha256=bJFLoacGW91Q7D19Y4-twgJF14hM9bMwsIhfFFDa76M,969
+streamsx.standard-0.9.0.dist-info/top_level.txt,sha256=-HIIPsBc56LEpwY9WQHNMVJy2nOLXnKZ6slLXwmeZoY,9
