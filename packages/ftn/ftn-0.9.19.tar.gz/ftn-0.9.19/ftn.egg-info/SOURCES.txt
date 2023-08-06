@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+ftn/__init__.py
+ftn.egg-info/PKG-INFO
+ftn.egg-info/SOURCES.txt
+ftn.egg-info/dependency_links.txt
+ftn.egg-info/requires.txt
+ftn.egg-info/top_level.txt

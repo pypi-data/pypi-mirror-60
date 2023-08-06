@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ftn
+Version: 0.9.19
+Summary: A module to connect to Fotonower' services
+Home-page: https://github.com/fotonower/fotonowerpip
+Author: The Python Packaging Authority
+Author-email: victor@fotonower.com
+License: UNKNOWN
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Bug Reports, https://github.com/pypa/sampleproject/issues
+Project-URL: Say Thanks!, http://saythanks.io/to/example
+Project-URL: Source, https://github.com/pypa/sampleproject/
+Description: # Fotonower's connection tools
+        
+        A package to connect to fotonower's services and API.
+        
+        ulploading medias, creating feeds, get access to results from classification
+        
+        
+        ----
+        
+        ### to modify and add some info too
+        
+        [packaging guide]: https://packaging.python.org
+        [distribution tutorial]: https://packaging.python.org/en/latest/distributing.html
+        [src]: https://github.com/pypa/sampleproject
+        [rst]: http://docutils.sourceforge.net/rst.html
+        [md]: https://tools.ietf.org/html/rfc7764#section-3.5 "CommonMark variant"
+        [md use]: https://packaging.python.org/specifications/core-metadata/#description-content-type-optional
+        
+Keywords: setuptools development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
