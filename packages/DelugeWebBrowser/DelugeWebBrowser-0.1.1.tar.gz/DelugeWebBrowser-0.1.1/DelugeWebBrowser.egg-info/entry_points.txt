@@ -1,0 +1,8 @@
+
+    [deluge.plugin.core]
+    DelugeWebBrowser = delugewebbrowser:CorePlugin
+    [deluge.plugin.gtkui]
+    DelugeWebBrowser = delugewebbrowser:GtkUIPlugin
+    [deluge.plugin.web]
+    DelugeWebBrowser = delugewebbrowser:WebUIPlugin
+    
