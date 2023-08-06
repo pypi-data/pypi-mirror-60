@@ -1,0 +1,11 @@
+augmentedtree/__init__.py,sha256=uaFbBN1IgvBupft0dpaen2cIhV8LyXtCWO-9Gy5OLIQ,1194
+augmentedtree/abc.py,sha256=rgTvvX2RfbEtfEitFYmp1EjHN4s0SylPPCjjcspD35g,7407
+augmentedtree/augmentation.py,sha256=8WZ8nTjkyC0j5LHVijSVSzA1bvOVSmbVui91LecdKzI,21882
+augmentedtree/core.py,sha256=uyT9Fh6o-wyTlYAwBbPDyPmrU_LYKeZB9AxWBLyQNmk,20127
+augmentedtree/tree.py,sha256=MT3ln4oj6BOVL8jym-jiH7_EDqhTvxHR4hLtq3obHuM,20261
+augmentedtree/treeitems.py,sha256=u9dMfiAc0E3br91efxkr6kdl_oOzBX4FuF9ypflAfkU,33319
+augmentedtree-0.0a1.post1.dist-info/LICENSE,sha256=BRWSY-Jazy6aBueKK07EPlDJmUy1tFlJJUUKl1QuwQo,35757
+augmentedtree-0.0a1.post1.dist-info/METADATA,sha256=_ivUvH117EQ3-5K2WM__ffdDoL6r_n2Uw7S7MNFpGsE,3948
+augmentedtree-0.0a1.post1.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+augmentedtree-0.0a1.post1.dist-info/top_level.txt,sha256=N4hG0gdPV6xX3Len7YJvNV4E6LD-ta7BjbmjtUHNT2A,14
+augmentedtree-0.0a1.post1.dist-info/RECORD,,
