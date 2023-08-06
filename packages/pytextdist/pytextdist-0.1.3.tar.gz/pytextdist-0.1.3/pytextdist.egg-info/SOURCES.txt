@@ -1,0 +1,12 @@
+README.md
+setup.py
+pytextdist/__init__.py
+pytextdist/edit_distance.py
+pytextdist/input_validator.py
+pytextdist/preprocessing.py
+pytextdist/vector_similarity.py
+pytextdist.egg-info/PKG-INFO
+pytextdist.egg-info/SOURCES.txt
+pytextdist.egg-info/dependency_links.txt
+pytextdist.egg-info/requires.txt
+pytextdist.egg-info/top_level.txt
