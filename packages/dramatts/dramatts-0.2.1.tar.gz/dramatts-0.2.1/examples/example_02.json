@@ -1,0 +1,192 @@
+{
+    "file_format_version": "1.1",
+    "script_lines": [
+        {
+            "start": 0,
+            "end": 44,
+            "content": "1. Scene 1: A demonstration of drama T T S",
+            "content_type": "SceneTitle",
+            "speaker": "Narrator",
+            "line_no": 0,
+            "scene_no": 1,
+            "scene_line_no": 0
+        },
+        {
+            "start": 45,
+            "end": 87,
+            "content": "Bob and Mary Ann are having a conversation",
+            "content_type": "NarrativeDescription",
+            "speaker": "Narrator",
+            "line_no": 1,
+            "scene_no": 1,
+            "scene_line_no": 1
+        },
+        {
+            "start": 88,
+            "end": 93,
+            "content": "Bob",
+            "content_type": "DialogueIndicator",
+            "speaker": "Narrator",
+            "line_no": 2,
+            "scene_no": 1,
+            "scene_line_no": 2
+        },
+        {
+            "start": 94,
+            "end": 126,
+            "content": "Hi, Mary Ann how are you doing?",
+            "content_type": "DialogueContent",
+            "speaker": "BOB",
+            "line_no": 3,
+            "scene_no": 1,
+            "scene_line_no": 3
+        },
+        {
+            "start": 126,
+            "end": 136,
+            "content": "Mary Ann",
+            "content_type": "DialogueIndicator",
+            "speaker": "Narrator",
+            "line_no": 4,
+            "scene_no": 1,
+            "scene_line_no": 4
+        },
+        {
+            "start": 137,
+            "end": 176,
+            "content": "Hi, Bob - I'm doing fine. How are you?",
+            "content_type": "DialogueContent",
+            "speaker": "MARY ANN",
+            "line_no": 5,
+            "scene_no": 1,
+            "scene_line_no": 5
+        },
+        {
+            "start": 177,
+            "end": 228,
+            "content": "(turns around as a loud noise is heard in the back)",
+            "content_type": "InlineComment",
+            "speaker": "Narrator",
+            "line_no": 6,
+            "scene_no": 1,
+            "scene_line_no": 6
+        },
+        {
+            "start": 229,
+            "end": 243,
+            "content": "What was that?",
+            "content_type": "DialogueContent",
+            "speaker": "MARY ANN",
+            "line_no": 7,
+            "scene_no": 1,
+            "scene_line_no": 7
+        }
+    ],
+    "characters": [
+        "Narrator",
+        "BOB",
+        "MARY ANN"
+    ],
+    "substitutions": [
+        {
+            "search_text": "\\.{2,}",
+            "subst": "... ",
+            "regex": true,
+            "comment": "Add missing white space after at least two dots (e.g. end...Start, will otherwise be read \"end dot dot dot start\")"
+        },
+        {
+            "search_text": "\"",
+            "subst": "",
+            "regex": false,
+            "comment": "Causes string parsing errors"
+        },
+        {
+            "search_text": "(con't)",
+            "subst": "(continued)",
+            "regex": false,
+            "comment": ""
+        },
+        {
+            "search_text": "(Con't)",
+            "subst": "(continued)",
+            "regex": false,
+            "comment": ""
+        },
+        {
+            "search_text": "(cont.)",
+            "subst": "(continued)",
+            "regex": false,
+            "comment": ""
+        },
+        {
+            "search_text": "(Cont.)",
+            "subst": "(continued)",
+            "regex": false,
+            "comment": ""
+        }
+    ],
+    "speakers": {
+        "Narrator": {
+            "voice_name": "cmu_us_slt_cg",
+            "user_pitch_shift": 0,
+            "user_tempo": 1.0,
+            "user_volume": 1.0
+        },
+        "MARY ANN": {
+            "voice_name": "cmu_us_slt_cg",
+            "user_pitch_shift": 100,
+            "user_tempo": 1.0,
+            "user_volume": 1.0
+        },
+        "BOB": {
+            "voice_name": "cmu_us_rms_cg",
+            "user_pitch_shift": 100,
+            "user_tempo": 1.2,
+            "user_volume": 1.0
+        }
+    },
+    "render_options": {
+        "normalize_audio": true,
+        "dB_level": -3,
+        "use_festival_server": false,
+        "festival_server_name": "localhost",
+        "festival_server_port": 1314,
+        "combine_output": true,
+        "cpu_threads": 4,
+        "start_scene": 0,
+        "end_scene": null,
+        "output_folder": null
+    },
+    "content_identifiers": [
+        {
+            "name": "SceneIdent01",
+            "pattern": "\\n[0-9]+\\. .*?\\n",
+            "info": "A new line starts with at least one number followed by a dot and a whitespace. Afterwards text. Terminated by the next line break",
+            "example": "\n123. Last scene\n"
+        },
+        {
+            "name": "DialogueIdent01",
+            "pattern": "\\n[A-Z -]{2,}\\n\\n.*?\\n",
+            "info": "A new line starts with a string consisting of only UPPER case letters, white space and hyphens. Is followed by two line breaks, some text and terminated by the next line break",
+            "example": "\nBOB MILLER\n\nHello my name is Bob.\n"
+        },
+        {
+            "name": "SpeakerNameIdent01",
+            "pattern": "\\n[A-Z -]{2,}\\n",
+            "info": "A new line starts with a string consisting of only UPPER case letters, white space and hyphens. It is terminated by a line break.",
+            "example": "\nBOB MILLER\n"
+        },
+        {
+            "name": "CommentIdent01",
+            "pattern": "(\\(.*?\\))",
+            "info": "A text part starts with (, followed by any text and terminated by ).",
+            "example": "(he turns away and says)"
+        }
+    ],
+    "identifier_assignments": {
+        "SceneTitle": "SceneIdent01",
+        "Dialogue": "DialogueIdent01",
+        "SpeakerName": "SpeakerNameIdent01",
+        "InlineComment": "CommentIdent01"
+    }
+}

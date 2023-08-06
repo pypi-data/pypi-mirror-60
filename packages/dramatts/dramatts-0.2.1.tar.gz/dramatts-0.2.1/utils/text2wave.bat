@@ -1,0 +1,1 @@
+C:\festival\src\main\festival.exe --script C:\festival\examples\text2wave.sh %*

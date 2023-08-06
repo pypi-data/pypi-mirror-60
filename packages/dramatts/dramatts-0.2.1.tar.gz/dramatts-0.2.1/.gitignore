@@ -1,0 +1,14 @@
+*.wav
+*.ogg
+*.xcf
+/*/
+.idea/
+!/dramatts/
+!/utils/
+!/conda/
+!/designer/
+!/tests/
+!/examples/
+!/doc/*
+!/doc/_static/example.wav
+/doc/_build/

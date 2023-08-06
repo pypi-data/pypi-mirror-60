@@ -1,0 +1,31 @@
+This is a text file for testing "dramaTTS" functions
+
+1. Scene without any text content
+
+2. Scene with only narrative descriptions
+
+This is narrative text and will be read by the narrator
+
+3. Scene with dialogue content
+
+BOB
+
+Hello I am Bob and this is my line of dialogue.
+
+4. Scene with dialogue content and narrator text
+
+Bob and Mary-Ann are having a dialogue.
+
+BOB
+
+Hi, Mary-Ann how are you doing?
+
+MARY-ANN
+
+Hi, Bob - I am doing fine. How are you?
+
+5. Scene with dialogue and inline comment
+
+BOB
+
+I wonder what this lever does... (pulls the lever) ...I don't see any effect...
