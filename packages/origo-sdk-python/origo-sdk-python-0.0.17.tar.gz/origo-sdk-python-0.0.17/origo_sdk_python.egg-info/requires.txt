@@ -1,0 +1,6 @@
+PrettyTable
+PyJWT
+jsonschema
+python-keycloak-client
+requests
+urllib3
