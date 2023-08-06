@@ -1,0 +1,13 @@
+<div class="table-wrapper $_style">
+  <table>
+    <thead>
+      <tr>
+        ${_columns|each:tableheading}
+      </tr>
+    </thead>
+
+    <tbody>
+      ${_|each:tablerow}
+    </tbody>
+  </table>
+</div>
