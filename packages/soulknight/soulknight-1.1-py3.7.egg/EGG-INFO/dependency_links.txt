@@ -1,0 +1,1 @@
+https://github.com/9kin/pytmxloader/tarball#egg=1.0.0beta
