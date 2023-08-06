@@ -1,0 +1,9 @@
+README.md
+setup.py
+siaskynet.egg-info/PKG-INFO
+siaskynet.egg-info/SOURCES.txt
+siaskynet.egg-info/dependency_links.txt
+siaskynet.egg-info/requires.txt
+siaskynet.egg-info/top_level.txt
+skynet/__init__.py
+skynet/skynet.py
