@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: gpflowopt-master
+Version: 0.1.1
+Summary: Bayesian Optimization with GPflow
+Home-page: http://github.com/gpflow/gpflowopt
+Author: Joachim van der Herten, Ivo Couckuyt
+Author-email: joachim.vanderherten@ugent.be
+License: Apache License 2.0
+Keywords: machine-learning bayesian-optimization tensorflow
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: numpy (>=1.9)
+Requires-Dist: scipy (>=0.16)
+Requires-Dist: gpflow-old (==0.5)
+Provides-Extra: docs
+Requires-Dist: sphinx (==1.7.8) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: numpydoc (==0.8.0) ; extra == 'docs'
+Requires-Dist: nbsphinx (==0.3.4) ; extra == 'docs'
+Requires-Dist: jupyter ; extra == 'docs'
+Provides-Extra: gpu
+Requires-Dist: tensorflow-gpu (>=1.0.0) ; extra == 'gpu'
+
+UNKNOWN
+
+
