@@ -1,0 +1,16 @@
+gerridae/__init__.py,sha256=kOmD21jpdXy15QFWBd5vdskHxLqzUAZdvpI2OjhR6o8,90
+gerridae/exceptions.py,sha256=1_kwB5sTB6d4frx67hBFBodCtzreyrVejWUa1UBrOSw,45
+gerridae/field.py,sha256=cErSHJNvdMrqCW8-fD74mpxm_FjdrjKbSCrNhSnEVqA,1857
+gerridae/item.py,sha256=XmrtsefybJs73w7eLoRZDz-SaPZhZQz8VaMgTUYKuoI,2442
+gerridae/log.py,sha256=MgMO9U2J3MQidGa4PChwH3gOUdIJCExt5mWk90nqFcQ,288
+gerridae/middleware.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gerridae/request.py,sha256=e2M9r4jERE2smivIz0QFsEQ6E7K-7O2mdbArG0SM9n0,1293
+gerridae/response.py,sha256=DIzvis98hoPxmxPZd4Zw9sHIGHELcimoLd_vwaz4zMM,712
+gerridae/spider.py,sha256=EiApWJBi4iw2jFODLt0NhxQHnmUWcigu5wV3kysdc0E,1771
+gerridae/utils.py,sha256=pGn_t3_CacYHgHbetEwZLgXL-IUmzPOsXQpNXXFVLsQ,39
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_spider.py,sha256=pNbNVxU8V8_QtPSUbdGfmwTc24WkWfEmDwxqs0QKprI,606
+gerridae-0.2.1.dist-info/METADATA,sha256=OzPmK8ZweNx5sa_vqxJwOMP1UKZEEihRzjXPStLaKHI,929
+gerridae-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gerridae-0.2.1.dist-info/top_level.txt,sha256=1C7GmMfBhSLlARgdmg0RetzOWJMbFMhwtlGwcNdCxWg,15
+gerridae-0.2.1.dist-info/RECORD,,
