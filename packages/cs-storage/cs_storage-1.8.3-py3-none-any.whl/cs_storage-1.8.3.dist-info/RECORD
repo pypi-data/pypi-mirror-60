@@ -1,0 +1,10 @@
+cs_storage/__init__.py,sha256=0LUkalypiOvT_K8-3tjgr7Ubo_cV4wNxgXHPEhPTr9w,6742
+cs_storage/screenshot.py,sha256=2Rq5KT-IGjns_VwSXW7riR2VV1n_Hv49VofeieG9aI8,3367
+cs_storage/templates/index.html,sha256=3tb9yVboXEGcIJwf4HRQKtlYAS2xXrWyTiTmrXUiFrE,2472
+cs_storage/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cs_storage/tests/test_cs_storage.py,sha256=NvjuO-SfpmGASQBNC63mnXePHS6RTDgy220sgHfPhIA,6459
+cs_storage/tests/test_screenshot.py,sha256=eHBuKH73Z3a2BYl2xTVtLENFDMAlhD_afXLJZFBMqdc,1462
+cs_storage-1.8.3.dist-info/METADATA,sha256=KXoLoqrz8c-bbwJrobKb34S-lhfZvmbqLjMharH7tOA,1241
+cs_storage-1.8.3.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+cs_storage-1.8.3.dist-info/top_level.txt,sha256=CwW0ysZ6Jb0mR-bvlP67mAVXkcfVKK7u5SjdSPLGoAE,11
+cs_storage-1.8.3.dist-info/RECORD,,
