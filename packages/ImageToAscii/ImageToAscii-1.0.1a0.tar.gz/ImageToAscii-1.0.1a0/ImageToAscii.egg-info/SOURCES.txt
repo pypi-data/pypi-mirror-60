@@ -1,0 +1,10 @@
+setup.py
+ImageToAscii/GrayscaleToAscii.py
+ImageToAscii/ImageToAscii.py
+ImageToAscii/ImageToGrayscale.py
+ImageToAscii/__init__.py
+ImageToAscii.egg-info/PKG-INFO
+ImageToAscii.egg-info/SOURCES.txt
+ImageToAscii.egg-info/dependency_links.txt
+ImageToAscii.egg-info/requires.txt
+ImageToAscii.egg-info/top_level.txt
