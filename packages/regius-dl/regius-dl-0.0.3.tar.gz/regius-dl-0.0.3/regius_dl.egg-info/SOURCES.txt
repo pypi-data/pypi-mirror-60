@@ -1,0 +1,9 @@
+README.md
+setup.py
+regius/__init__.py
+regius/core.py
+regius/version.py
+regius_dl.egg-info/PKG-INFO
+regius_dl.egg-info/SOURCES.txt
+regius_dl.egg-info/dependency_links.txt
+regius_dl.egg-info/top_level.txt

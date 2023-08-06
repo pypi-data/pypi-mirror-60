@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: regius-dl
+Version: 0.0.3
+Summary: Regius Deep Learning Toolbox
+Home-page: https://github.com/RegiusQuant/regius
+Author: Jiang Yize
+Author-email: 315135833@qq.com
+License: Apache Software License 2.0
+Description: [![Travis](https://img.shields.io/travis/RegiusQuant/regius.svg?label=Travis%20CI)](https://travis-ci.org/RegiusQuant/regius)
+        [![PyPi](https://img.shields.io/pypi/v/regius-dl.svg)](https://pypi.org/project/regius-dl/)
+        
+        [![Python Version](https://img.shields.io/pypi/pyversions/regius-dl.svg)](https://pypi.org/project/regius-dl/)
+        [![License](https://img.shields.io/pypi/l/regius-dl.svg)](https://pypi.org/project/regius-dl/)
+        
+        # Regius
+        Regius DL/ML Toolbox
+        
+Keywords: deep learning,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
