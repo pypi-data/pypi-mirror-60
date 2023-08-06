@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pydict-cedar
+Version: 0.0.3
+Summary: An updateable dict service for Python3, multi-pattern match
+Home-page: https://github.com/liuzl/pyd
+Author: Zhanliang Liu
+Author-email: liang@zliu.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: lsm-db
+Requires-Dist: pycedar
+
+# pyd: An updateable dict service for Python3, multi-pattern match
+
+## Introduction
+
+`pyd` is a python3 package of dict service, multi-pattern match, we also have a Golang version [https://github.com/liuzl/d](https://github.com/liuzl/d).
+
+## Install
+
+## Usage
+
+
