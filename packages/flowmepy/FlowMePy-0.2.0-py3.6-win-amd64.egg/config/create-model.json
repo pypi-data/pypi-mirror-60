@@ -1,0 +1,41 @@
+{
+  "batch": {
+    "mode": "train",
+    "dataPath": "../samples/",
+    "resultPath": "../batch-train.txt",
+    "day": "all",
+    "tube": "all",
+    "covType": "diagonal",
+    "dimensions": [
+      "FSC-A",
+      "SSC-A",
+      "SYTO41",
+      "CD19",
+      "CD10",
+      "CD20",
+      "CD45",
+      "CD34",
+      "CD38"
+    ]
+  },
+  "createModel": {
+    "modelPath": "../",
+    "minEventsPerGroup": 40,
+    "maxEventsPerGroup": 4000, 
+    "minFscore": 0.96,
+    "gmmConfig": [
+      {
+        "gate": "intact",
+        "numGaussians": 2
+      },
+      {
+        "gate": "CD19",
+        "numGaussians": 1
+      },
+      {
+        "gate": "blast",
+        "numGaussians": 1
+      }
+    ]
+  }
+}

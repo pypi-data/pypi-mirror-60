@@ -1,0 +1,9 @@
+{
+    "batch": {
+        "mode": "copy",
+        "dataPath": "../samples/",
+        "resultPath": "../copied-samples/copy-log.txt",
+        "day": "all",
+        "tube": "all"
+    }
+}

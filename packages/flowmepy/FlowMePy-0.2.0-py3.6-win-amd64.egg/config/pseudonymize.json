@@ -1,0 +1,9 @@
+{
+  "batch": {
+    "mode": "pseudonymize",
+    "dataPath": "../samples/",
+    "resultPath": "../batch-pseudonymize.txt",
+    "day": "all",
+    "tube": "all"
+  }
+}

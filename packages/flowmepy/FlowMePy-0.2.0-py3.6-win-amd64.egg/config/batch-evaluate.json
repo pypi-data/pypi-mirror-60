@@ -1,0 +1,12 @@
+{
+  "batch": {
+    "mode": "test",
+    "dataPath": "../samples/",
+    "resultPath": "../batch-test.txt",
+	  "reportPath": "../reports/",
+    "day": "all",
+    "tube": "all",
+    "topN": 21,
+    "covType": "diagonal"
+  }
+}
