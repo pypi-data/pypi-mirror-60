@@ -1,0 +1,43 @@
+from time import time
+
+from epymetheus.utils import TradeResult
+
+
+class Transaction(TradeResult):
+    """
+    Represent transaction history.
+
+    Attributes
+    ----------
+    - (name of assets) : array, (n_bars, )
+        Transaction of each asset.
+    """
+    @classmethod
+    def from_strategy(cls, strategy, verbose=True):
+        """
+        Initialize self from strategy.
+
+        Parameters
+        ----------
+        - strategy : TradeStrategy
+        - verbose : bool
+
+        Returns
+        -------
+        transaction : Transaction
+        """
+        if verbose:
+            print('Evaluating transaction ... ', end='')
+            begin_time = time()
+
+        transaction = cls()
+        transaction.bars = strategy.universe.bars
+        transaction_matrix = strategy._transaction_matrix
+
+        for asset_id, asset in enumerate(strategy.universe.assets):
+            setattr(transaction, asset, transaction_matrix[:, asset_id])
+
+        if verbose:
+            print(f'Done. (Runtime : {time() - begin_time:.2f} sec)')
+
+        return transaction
