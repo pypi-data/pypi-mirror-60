@@ -1,0 +1,4 @@
+sniffio
+
+[:python_version < "3.7"]
+async_exit_stack
