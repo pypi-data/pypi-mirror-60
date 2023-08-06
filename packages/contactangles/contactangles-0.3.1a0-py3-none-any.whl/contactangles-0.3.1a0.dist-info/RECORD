@@ -1,0 +1,11 @@
+contactangles/__init__.py,sha256=Dj3bdsf-QDxwqEZsuJIz7faZ3iVq0pBjKhtofuFWr18,159
+contactangles/_version.py,sha256=t0W2kxMLlNPJCW24IePAeSZFLmIHT2llMQhjgBs9Bjw,525
+contactangles/analysis.py,sha256=YgVZ1UaNsiMqiNcJRbOitC92qo6qUyl5LhgfjB0PbNU,5302
+contactangles/imageanalysis.py,sha256=m2Ux6EDAYtUoynmt5ZaUzB7x_fv436MUUqPg2h0Orq8,28654
+contactangles/movie_handling.py,sha256=-Be9143L_ZIMT9xeuTtZbtKAhVKIi-BAOzeS2gK8ffQ,3045
+contactangles-0.3.1a0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+contactangles-0.3.1a0.dist-info/METADATA,sha256=eEWRRdG06a7azAGpbSFgr2vIlnfVPA3wx5KmBU96z6A,3477
+contactangles-0.3.1a0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+contactangles-0.3.1a0.dist-info/entry_points.txt,sha256=posCDWdBQuQrL59H5_IATutaeAaMAw5ZbImf1LYHeXU,58
+contactangles-0.3.1a0.dist-info/top_level.txt,sha256=CbC8aAEt8BUtMlGpZDXfxU0dbGDaQBfpQPtq0q3LBIs,14
+contactangles-0.3.1a0.dist-info/RECORD,,
