@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nooscounterlibs
+Version: 1.0.0
+Summary: noos counter package
+Home-page: https://bitbucket.org/uygunuks/nooscounter
+Author: Us Teknoloji
+Author-email: info@usbilgiteknoloji.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+Noos Counter
+
+
