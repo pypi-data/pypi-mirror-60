@@ -1,0 +1,24 @@
+mne>=0.19
+numpy>=1.14
+scipy>=1.0
+pebble>=4.5.0
+matplotlib>=2.0
+PyQt5>=5.10
+
+[:platform_system == "Darwin"]
+pyobjc-framework-Cocoa>=5.2
+
+[BrainVision export]
+pybv
+
+[EDF export]
+pyedflib
+
+[FastICA]
+scikit-learn
+
+[PICARD]
+python-picard
+
+[XDF import]
+pyxdf
