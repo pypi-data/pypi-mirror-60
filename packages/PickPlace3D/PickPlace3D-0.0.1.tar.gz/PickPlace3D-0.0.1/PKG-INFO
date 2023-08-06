@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PickPlace3D
+Version: 0.0.1
+Summary: Pick and place using 3D data to inform robotic movement
+Home-page: https://github.com/i3drobotics/PickPlace3D
+Author: Ben Knight
+Author-email: bknight@i3drobotics.com
+License: UNKNOWN
+Description: # Pick Place 3D
+        ## Python package
+        A package for pick and place using 3D data from stereo cameras. 
+        
+        ## Hardware requirements
+        Pick and place is performed using urx which is for use with Universal Robots
+        
+        ## Software requirements
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
