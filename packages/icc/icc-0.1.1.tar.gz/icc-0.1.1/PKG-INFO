@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: icc
+Version: 0.1.1
+Summary: A Python implementation to calculate the ICC
+Home-page: https://github.com/Mind-the-Pineapple/ICC
+Author: Walter Hugo Lopez Pinaya, Jessica Dafflon
+Author-email: walter.diaz_sanz@kcl.ac.uk, jessica.dafflon@kcl.ac.uk
+License: MIT
+Description: # ICC
+        
+        [![Build Status](https://travis-ci.com/Mind-the-Pineapple/ICC.svg?branch=master)](https://travis-ci.com/Mind-the-Pineapple/ICC)
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
