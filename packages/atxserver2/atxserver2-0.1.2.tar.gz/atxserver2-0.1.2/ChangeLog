@@ -1,0 +1,19 @@
+CHANGES
+=======
+
+0.1.2
+-----
+
+* fix the idleTimeout argument is not used issue
+
+0.1.1
+-----
+
+* list device support present argument
+* move readme to root
+
+0.1.0
+-----
+
+* init commit
+* Initial commit
