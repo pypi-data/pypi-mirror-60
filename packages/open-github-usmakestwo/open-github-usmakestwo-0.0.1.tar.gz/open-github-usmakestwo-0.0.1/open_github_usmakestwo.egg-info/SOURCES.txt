@@ -1,0 +1,6 @@
+README.md
+setup.py
+open_github_usmakestwo.egg-info/PKG-INFO
+open_github_usmakestwo.egg-info/SOURCES.txt
+open_github_usmakestwo.egg-info/dependency_links.txt
+open_github_usmakestwo.egg-info/top_level.txt
