@@ -1,0 +1,26 @@
+[console_scripts]
+jexia = jexia_cli.shell:main
+
+[jexia_cli.commands]
+dataset_create = jexia_cli.commands.datasets:Create
+dataset_delete = jexia_cli.commands.datasets:Delete
+dataset_field_create = jexia_cli.commands.datasets_fields:Create
+dataset_field_delete = jexia_cli.commands.datasets_fields:Delete
+dataset_field_list = jexia_cli.commands.datasets_fields:List
+dataset_field_update = jexia_cli.commands.datasets_fields:Update
+dataset_list = jexia_cli.commands.datasets:List
+fileset_create = jexia_cli.commands.filesets:Create
+fileset_delete = jexia_cli.commands.filesets:Delete
+fileset_field_create = jexia_cli.commands.filesets_fields:Create
+fileset_field_delete = jexia_cli.commands.filesets_fields:Delete
+fileset_field_list = jexia_cli.commands.filesets_fields:List
+fileset_field_update = jexia_cli.commands.filesets_fields:Update
+fileset_list = jexia_cli.commands.filesets:List
+fileset_update = jexia_cli.commands.filesets:Update
+login = jexia_cli.commands.login:Login
+project_create = jexia_cli.commands.projects:Create
+project_delete = jexia_cli.commands.projects:Delete
+project_list = jexia_cli.commands.projects:List
+project_show = jexia_cli.commands.projects:Show
+use = jexia_cli.commands.use:Use
+
