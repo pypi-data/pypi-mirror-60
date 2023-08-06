@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+./dist/django_modal_forms.egg-info/PKG-INFO
+./dist/django_modal_forms.egg-info/SOURCES.txt
+./dist/django_modal_forms.egg-info/dependency_links.txt
+./dist/django_modal_forms.egg-info/requires.txt
+./dist/django_modal_forms.egg-info/top_level.txt
+modal_forms/__init__.py
+modal_forms/apps.py
+modal_forms/modal_form.py
+modal_forms/static/modal_forms/js/script.js
+modal_forms/templates/modal_forms/bootstrap3/form_horizontal.html
