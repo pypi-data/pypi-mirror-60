@@ -1,0 +1,7 @@
+click
+flask
+psycopg2
+python-dateutil
+vcversioner
+aiohttp
+tenacity
