@@ -1,0 +1,9 @@
+scipy
+numpy
+pysofaconventions
+
+[examples]
+jupyter
+
+[plotting]
+plotly
