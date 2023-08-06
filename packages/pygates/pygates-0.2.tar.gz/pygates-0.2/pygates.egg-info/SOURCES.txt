@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+pygates/PyGates.py
+pygates/__init__.py
+pygates.egg-info/PKG-INFO
+pygates.egg-info/SOURCES.txt
+pygates.egg-info/dependency_links.txt
+pygates.egg-info/top_level.txt
