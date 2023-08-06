@@ -1,0 +1,13 @@
+custom_email_user/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+custom_email_user/admin.py,sha256=cVGFKwAI9UG_6vWRbs0WzR4zg2ew9aipti42COY1QsM,1243
+custom_email_user/apps.py,sha256=KVsYEvdAYXI_EBipjU_KXaDxZ5ulr2QoH7XQ7X07TAw,107
+custom_email_user/forms.py,sha256=pKHvhKa2PGhXFCMpDal9eOvt4NvZDENLNjFWh2NcHNg,417
+custom_email_user/models.py,sha256=JifQul2dqC7umJPMaNljgs9FlGf_TvryZUPFyKBmqAU,2189
+custom_email_user/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+custom_email_user/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+custom_email_user/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_custom_email_user-0.1.dist-info/LICENSE,sha256=_F0_-aT7XgKO69zzf-bXGIXh20FezuHjq9rYZesuQ3g,1070
+django_custom_email_user-0.1.dist-info/METADATA,sha256=Rz66ZA23_OBd3JNGSPdMmzrzTbgWQW9HwdTxnCo6swA,1649
+django_custom_email_user-0.1.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+django_custom_email_user-0.1.dist-info/top_level.txt,sha256=NOAafS8IpuJYE802lNuuIvDdmrLp-UvkSMziLNslkp4,18
+django_custom_email_user-0.1.dist-info/RECORD,,
