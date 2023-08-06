@@ -1,0 +1,14 @@
+# sources
+-r corelibs.txt
+
+# development
+-e '.[test,coverage,pep8,docs]'
+pre-commit
+tox >= 2.4.1
+radon
+
+# py.test
+-r fixtures.txt
+
+# releaser
+zest.releaser[recommended]
