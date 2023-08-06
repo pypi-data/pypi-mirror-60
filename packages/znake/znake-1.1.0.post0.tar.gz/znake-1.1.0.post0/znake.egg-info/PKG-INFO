@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: znake
+Version: 1.1.0.post0
+Summary: Build system for Python projects.
+Home-page: UNKNOWN
+Maintainer: Andreas Nilsson
+Maintainer-email: andni233@gmail.com
+License: Apache License 2.0
+Description: \
+            Znake is a build system for Python projects.
+        
+Keywords: znake python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
