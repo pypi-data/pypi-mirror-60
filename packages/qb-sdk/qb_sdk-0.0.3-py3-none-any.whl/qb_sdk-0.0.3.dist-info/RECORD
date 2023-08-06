@@ -1,0 +1,11 @@
+qb-sdk/__init__.py,sha256=_v6S5eDkCcRqoHgkSgEOMNiKnsIe02raPzPgIBovUnI,14
+qbsdk/__init__.py,sha256=CGemK1-5H3rLS4Ay4LyL8cQvOs0CMyOzmRI4EOzZ4ew,160
+qbsdk/api.py,sha256=b6Z7ed1BY5IlRqxPhDY1_ywcujSxBHmrexXTm208y78,12495
+qbsdk/error.py,sha256=wf47OU7AwT6OxHc7xT6zJMuXXU64Qw612iH00PAFKiI,452
+qbsdk/loyalty_token.py,sha256=w43zh4wFNTyDzo9kYBex_HWdr1LN94TB5tXr4sjJ6pg,482
+qbsdk/wallet.py,sha256=bjziJIaL0iyM2EzX-HrA2xNbtzyH6ZNpsp5k4CGVthM,7913
+qb_sdk-0.0.3.dist-info/LICENSE,sha256=8KRRdV_LnZip9PRXdXmyWYhmEm8U5uB8Vbayn1_HEiQ,1063
+qb_sdk-0.0.3.dist-info/METADATA,sha256=7zpWmmHaD0uyNV-GPRYd38unp-l9AiVTOd78pP9GYK4,1774
+qb_sdk-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+qb_sdk-0.0.3.dist-info/top_level.txt,sha256=QKsRcQjemaG9vhoZxxWThzotrqH4L_ATjpPgHw7Iep0,6
+qb_sdk-0.0.3.dist-info/RECORD,,
