@@ -1,0 +1,5 @@
+Django<2.3,>=1.11
+pyjwt
+six
+social-auth-core<4.0.0,>=3.1.0
+social-auth-app-django<4.0.0,>=3.1.0
