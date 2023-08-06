@@ -1,0 +1,3 @@
+[console_scripts]
+affo-user-service = affo_user_service.cli:manager.run
+
