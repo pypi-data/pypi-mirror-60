@@ -1,0 +1,3 @@
+[console_scripts]
+hiss=sir_hiss:_main
+
