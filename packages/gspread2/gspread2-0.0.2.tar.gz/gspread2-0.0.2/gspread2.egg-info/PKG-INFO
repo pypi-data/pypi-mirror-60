@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: gspread2
+Version: 0.0.2
+Summary: Wrapper for gspread
+Home-page: https://github.com/futuereprojects/gspread2
+Author: FutuereProjects
+Author-email: nclark@riseup.net
+License: MIT
+Description: # Gspread2
+        
+        A wrapper around gspread for easier usage.
+        
+        Stage = **ALPHA**
+Platform: UNKNOWN
+Requires-Python: >=3.6
