@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: gwebsockets
+Version: 0.7
+Summary: GLib based websockets server
+Home-page: http://github.com/sugarlabs/gwebsockets
+Author: James Cameron
+Author-email: quozl@laptop.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+
+A websocket server written in python. It uses GIO for network communication
+and hence it easily integrates with the GLib mainloop.
+
+
