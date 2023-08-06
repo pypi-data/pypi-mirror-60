@@ -1,0 +1,4 @@
+numpy
+gdal
+requests
+python-dotenv
