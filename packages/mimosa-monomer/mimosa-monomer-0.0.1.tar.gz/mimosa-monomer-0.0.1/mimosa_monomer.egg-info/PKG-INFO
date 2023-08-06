@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mimosa-monomer
+Version: 0.0.1
+Summary: CLI for Stilt 2 database.
+Home-page: UNKNOWN
+Author: Dan Hampton
+License: UNKNOWN
+Description: # mimosa 
+        Database management CLI for **Stilt 2**.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

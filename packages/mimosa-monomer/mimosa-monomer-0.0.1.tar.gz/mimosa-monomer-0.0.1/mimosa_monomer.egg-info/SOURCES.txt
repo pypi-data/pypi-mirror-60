@@ -1,0 +1,10 @@
+README.md
+setup.py
+mimosa/__init__.py
+mimosa/main.py
+mimosa_monomer.egg-info/PKG-INFO
+mimosa_monomer.egg-info/SOURCES.txt
+mimosa_monomer.egg-info/dependency_links.txt
+mimosa_monomer.egg-info/entry_points.txt
+mimosa_monomer.egg-info/requires.txt
+mimosa_monomer.egg-info/top_level.txt
