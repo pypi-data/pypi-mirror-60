@@ -1,0 +1,9 @@
+aio_odoorpc_base/__init__.py,sha256=UMPJkT_uNIiqTD6qRErInAZ2dmseCO8bqpI8qYAvVvQ,297
+aio_odoorpc_base/aio_jsonrpc.py,sha256=nNI5apZH84IfLTZfrDsNxJg1mFcmFzhcatpIRexti7w,3544
+aio_odoorpc_base/helpers.py,sha256=OUyOndIanrBc7aTARdcKQR54gGLljmLlfxrdGspiI8Q,2507
+aio_odoorpc_base/jsonrpc.py,sha256=Pf3zjaIBFl2h5SQVVzXWvuks15N5qe7Ruue8n4rJZLU,3065
+aio_odoorpc_base/protocols.py,sha256=ma9sdT6sXQu2o1cfGOXdqmtpGrKCcBrUEuqPriRMX98,731
+aio_odoorpc_base-2.0.3.dist-info/LICENSE,sha256=R2lZWGXE0rAYy-PJBCpdrbT6PNPT9QyxGJKYe2PiOXc,190
+aio_odoorpc_base-2.0.3.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+aio_odoorpc_base-2.0.3.dist-info/METADATA,sha256=YEgOhhktvtM7KPLPXTFgXiyTdMKbZgIAo1YnlImd3Yk,7375
+aio_odoorpc_base-2.0.3.dist-info/RECORD,,
