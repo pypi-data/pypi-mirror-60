@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: robotframework-sqless
+Version: 0.0.4
+Summary: robotframework-sqless is a SQL abstraction library for Robot Framework
+Home-page: https://github.com/eternalconcert/robotframework-sqless
+Author: Christian Kokoska
+Author-email: info@softcreate.de
+License: Apache License 2.0
+Description: ![Robot Tests](https://github.com/eternalconcert/robotframework-sqless/workflows/Robot%20Tests/badge.svg?branch=master)
+        
+        # Robot Framework - SQLess
+        
+        ``robotframework-sqless`` is a  SQL abstraction library for [Robot Framework](https://robotframework.org/)
+        
+        ## Usage
+        
+        ```bash
+        pip install robotframework-sqless
+        ```
+        
+        ## Example testcase
+        |                     |                           |                     |                     |                       |
+        | ----------------    | --------------------------| ------------------- | ------------------- | --------------------- |
+        | *** Settings ***    |                           |                     |                     |                       |
+        | Library             | SQLess                    | schema.yml          | db_config.yml       |                       |
+        | *** Test Cases ***  |                           |                     |                     |                       |
+        | Get Users By Filter |                           |                     |                     |                       |
+        |                     | ${users}                  | Get By Filter       | Users               | username=TestUser     |
+        |                     | Length Should Be          | ${users}            | 1                   |                       |
+        
+        The example presumes there is a database with a user table and at least a column `username`.
+        
+        ## Schema definition
+        The database schema must be defined in an .yml file. For the above example, the following file should apply:
+        
+        ```yaml
+        database_config:
+          dbms: sqlite
+          db: sqless.db
+        
+        schema:
+          users:
+            tablename: user
+            fields:
+              id: integer
+              username: char
+        ```
+        
+Keywords: robotframework testing test automation http client sql orm postgres postgresql mysql sqlite
+Platform: any
+Description-Content-Type: text/markdown
