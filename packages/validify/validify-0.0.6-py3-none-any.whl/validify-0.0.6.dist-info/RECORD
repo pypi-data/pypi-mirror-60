@@ -1,0 +1,14 @@
+validify/__init__.py,sha256=dnVqiyXoJ9R4pFj6DBJypiL1Hv0IxKsdMvaPte9838o,344
+validify/validify.py,sha256=JBxCYApFt1vjlLJ0Jeprz-XY0pmzIkJi2c011pupKnM,19106
+validify/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+validify/helpers/cleanup_compare_strings.py,sha256=3gaMSSHis3aqDyHzWy7r3mK7iNK1MvZcbQsEIlpmAJ8,1276
+validify/helpers/messages.py,sha256=4eif03isqV5bYRDRnLz00r5-mZCq0cUsgiKxRcKeEZA,3852
+validify/helpers/normalize_space.py,sha256=4HkOm6sEAYgFHNE-md75DkbnV7NBO02VPdsK-jYqdBY,1212
+validify/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+validify/tests/prepare_testdata.py,sha256=CJBHPJVgObAhiOHhbM3hBWuQA05jlrpNMcTMIte2MVM,8130
+validify/tests/test_main.py,sha256=_mWjhUn2XRA4boBVUdP5puBfQ--YH_8kxTQkRVno2Fs,8840
+validify-0.0.6.dist-info/LICENSE,sha256=lVuV3Wh_PbmNDzB-HQ99wGc7azNYzFLHwk4Jr_CYqpY,1089
+validify-0.0.6.dist-info/METADATA,sha256=aDYPJ9t2s8diQDV6xdt2V27wWfxY5_dnDSLJw2qvu5E,7078
+validify-0.0.6.dist-info/WHEEL,sha256=IWeGwTvdiaNRNtdERe0BHc5KsCqvvVfLuP8HWeQWYGw,97
+validify-0.0.6.dist-info/top_level.txt,sha256=QlnxSJJ_3JQ7PjZ6_OAlc2lvF25_uuc6rw1xCe01uHk,9
+validify-0.0.6.dist-info/RECORD,,
