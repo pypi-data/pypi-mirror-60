@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: yjpip
+Version: 0.1
+Summary: pip test
+Home-page: https://github.com/yjl32/test
+Author: yaeji
+Author-email: dldpwl0320@gmail.com
+License: UNKNOWN
+Keywords: piptest
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+
+UNKNOWN
+
+
