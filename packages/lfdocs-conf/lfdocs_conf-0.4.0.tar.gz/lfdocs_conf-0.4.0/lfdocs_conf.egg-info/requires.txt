@@ -1,0 +1,5 @@
+pytest
+pyyaml
+Sphinx~=2.2.2
+sphinx_bootstrap_theme>=0.6.2
+more-itertools~=5.0.0
