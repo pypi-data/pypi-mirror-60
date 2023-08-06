@@ -1,0 +1,11 @@
+README.md
+emoji.py
+setup.py
+workspace.py
+wsp.py
+pathify.egg-info/PKG-INFO
+pathify.egg-info/SOURCES.txt
+pathify.egg-info/dependency_links.txt
+pathify.egg-info/entry_points.txt
+pathify.egg-info/requires.txt
+pathify.egg-info/top_level.txt
