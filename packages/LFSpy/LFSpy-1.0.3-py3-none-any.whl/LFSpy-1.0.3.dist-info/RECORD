@@ -1,0 +1,10 @@
+LFSpy/LFS.py,sha256=VHUorBMWvfCuDWcKP9X3crCLW_dGXKHSpMfToQ4U2LE,32958
+LFSpy/__init__.py,sha256=4gmqTWivSw4VeA-PWVEucf5wd_waubZ1wK0lMXUzP54,18
+LFSpy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+LFSpy/tests/matlab_Data.mat,sha256=zA4UAKC6e3soOGrzIlP0FRiSKIlRbBRmyaIgU2iaHrA,213217
+LFSpy/tests/test_lfs.py,sha256=nrW6jiciOOzE7cSUqvoxx3lPUE8M94fleOT8F6yTAYo,5345
+LFSpy-1.0.3.dist-info/LICENSE,sha256=pfWa6VaPl160acS3vqQLKjRThbmh0MIro7vEXwbw2oU,1503
+LFSpy-1.0.3.dist-info/METADATA,sha256=eLKL0uet7bqdHQAynu0LwkDU4pNPtpchB3h7XNO4bSc,6273
+LFSpy-1.0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+LFSpy-1.0.3.dist-info/top_level.txt,sha256=75wFDO30OYs7G1FvIayhtcQFmxakHskDtosomlEfEH4,6
+LFSpy-1.0.3.dist-info/RECORD,,
