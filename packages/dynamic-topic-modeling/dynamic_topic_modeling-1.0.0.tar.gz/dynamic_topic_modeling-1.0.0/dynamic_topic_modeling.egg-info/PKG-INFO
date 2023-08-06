@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: dynamic-topic-modeling
+Version: 1.0.0
+Summary: Run dynamic topic modeling
+Home-page: https://github.com/JiaxiangBU/dynamic_topic_modeling
+Author: Jiaxiang Li and Shuyi Wang
+Author-email: alex.lijiaxiang@foxmail.com
+License: Apache Software License 2.0
+Description: 
+        # dynamic_topic_modeling
+        > Run dynamic topic modeling.
+        
+        
+        ```python
+        #hide
+        ```
+        
+Keywords: LDA
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
