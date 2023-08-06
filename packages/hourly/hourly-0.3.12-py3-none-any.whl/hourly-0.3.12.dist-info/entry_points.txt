@@ -1,0 +1,6 @@
+[console_scripts]
+hourly = hourly.cli.main:entry
+hourly-in = hourly.cli.main:hourly_in
+hourly-out = hourly.cli.main:hourly_out
+hourly-report = hourly.cli.main:hourly_report
+
