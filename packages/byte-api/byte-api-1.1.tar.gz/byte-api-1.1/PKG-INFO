@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: byte-api
+Version: 1.1
+Summary: Byte API Wrapper
+Home-page: https://github.com/byte-api/byte-python
+Author: bixnel
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/byte-api/byte-python/archive/v1.1.zip
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
