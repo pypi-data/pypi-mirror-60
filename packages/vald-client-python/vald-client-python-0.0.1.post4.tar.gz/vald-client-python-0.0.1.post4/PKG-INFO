@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: vald-client-python
+Version: 0.0.1.post4
+Summary: a client library for Vald (https://github.com/vdaas/vald).
+Home-page: https://github.com/vdaas/vald-client-python
+Author: Rintaro Okamura
+Author-email: rintaro.okamura@gmail.com
+License: UNKNOWN
+Description: # vald-client-python
+        
+        
+Platform: UNKNOWN
