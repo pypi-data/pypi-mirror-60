@@ -1,0 +1,51 @@
+Metadata-Version: 1.2
+Name: autogluon
+Version: 0.0.5
+Summary: AutoML Toolkit with MXNet Gluon
+Home-page: https://github.com/awslabs/autogluon
+Author: AutoGluon Community
+License: Apache
+Description: AutoGluon: AutoML Toolkit for Deep Learning
+        -------------------------------------------
+        
+        |Build Status| |Pypi Version|
+        
+        AutoGluon automates machine learning tasks enabling you to easily
+        achieve strong predictive performance in your applications. With just a
+        few lines of code, you can train and deploy high-accuracy deep learning
+        models on tabular, image, and text data. Get started with:
+        
+        .. code:: python
+        
+           # First install package from terminal:  pip install mxnet autogluon
+        
+           from autogluon import TabularPrediction as task
+           train_data = task.Dataset(file_path='https://autogluon.s3.amazonaws.com/datasets/Inc/train.csv')
+           test_data = task.Dataset(file_path='https://autogluon.s3.amazonaws.com/datasets/Inc/test.csv')
+           predictor = task.fit(train_data=train_data, label='class')
+           performance = predictor.evaluate(test_data)
+        
+        See the `AutoGluon Website <http://autogluon.mxnet.io/index.html>`__ for
+        instructions on: - `Installing
+        AutoGluon <http://autogluon.mxnet.io/index.html#installation>`__ -
+        `Learning with tabular
+        data <http://autogluon.mxnet.io/tutorials/tabular_prediction/tabular-quickstart.html>`__
+        - `Learning with image
+        data <http://autogluon.mxnet.io/tutorials/image_classification/beginner.html>`__
+        - `Learning with text
+        data <http://autogluon.mxnet.io/tutorials/text_classification/beginner.html>`__
+        - More advanced topics such as `Neural Architecture
+        Search <http://autogluon.mxnet.io/tutorials/nas/index.html>`__
+        
+        License
+        -------
+        
+        This library is licensed under the Apache 2.0 License.
+        
+        .. |Build Status| image:: http://ci.mxnet.io/view/all/job/autogluon/job/master/badge/icon
+           :target: http://ci.mxnet.io/view/all/job/autogluon/job/master/
+        .. |Pypi Version| image:: https://img.shields.io/pypi/v/autogluon.svg
+           :target: https://pypi.org/project/autogluon/#history
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6.*
