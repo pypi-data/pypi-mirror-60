@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ACOio.egg-info/PKG-INFO
+ACOio.egg-info/SOURCES.txt
+ACOio.egg-info/dependency_links.txt
+ACOio.egg-info/requires.txt
+ACOio.egg-info/top_level.txt
+examples/convert.py

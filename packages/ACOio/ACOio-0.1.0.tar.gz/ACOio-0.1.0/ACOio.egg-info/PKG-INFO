@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: ACOio
+Version: 0.1.0
+Summary: IO tools for the Aloha Cabled Observaroty
+Home-page: https://github.com/probinso/ACOio
+Author: Philip Robinson
+Author-email: probinso+acoio@protonmail.com
+License: UNKNOWN
+Description: # ACOio
+        
+        This is a library and toolset for audio analysis and visualization fit to
+        the file formats and directory tree for aloha cabled observatory. This
+        library supports operating on time-contextual audio files and joining tracks
+        in memory for ease of analysis.
+        
+        # Install
+        
+        ```
+        pip isntall ACOio
+        ```
+        
+        <!-- ## create the virtual environment using `virtualenv`
+        
+        ```
+        $ virtualenv venv
+        $ source venv/bin/activate
+        ```
+        
+        ## create the virtual environment using `Anaconda`
+        
+        ```
+        conda create -n ACO python=3.6
+        source activate ACO
+        
+        pip install --upgrade pip
+        ```
+        
+        ## install the dependent libraries
+        
+        ```
+        pip install -r requirements.txt
+        ``` -->
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
