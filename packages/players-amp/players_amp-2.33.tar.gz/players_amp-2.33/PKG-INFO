@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: players_amp
+Version: 2.33
+Summary: a little tool written in phyton to count all the active players on your AMP managed game server
+Home-page: https://github.com/R0b95/player_amp
+Author: Strolch
+Author-email: hello.circles@gmail.com
+License: MIT
+Download-URL: https://github.com/R0b95/players_amp/archive/2.0.tar.gz
+Description: UNKNOWN
+Keywords: AMP,UserCount,ActiveUser,ActivePlayer
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
