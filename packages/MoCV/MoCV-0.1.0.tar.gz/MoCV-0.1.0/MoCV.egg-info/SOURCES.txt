@@ -1,0 +1,14 @@
+README.md
+setup.py
+MoCV/__init__.py
+MoCV/contrastImage.py
+MoCV/geom_transform.py
+MoCV/histogram.py
+MoCV/image_function.py
+MoCV/linear_scale_image.py
+MoCV/segmentation.py
+MoCV.egg-info/PKG-INFO
+MoCV.egg-info/SOURCES.txt
+MoCV.egg-info/dependency_links.txt
+MoCV.egg-info/requires.txt
+MoCV.egg-info/top_level.txt

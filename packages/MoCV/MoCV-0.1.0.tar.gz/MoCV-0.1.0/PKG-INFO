@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: MoCV
+Version: 0.1.0
+Summary: List and details of Computer Vision algorithms
+Home-page: https://github.com/quocdat32461997/MoCV
+Author: datqngo
+Author-email: quocdat32461997@yahoo.com
+License: UNKNOWN
+Description: # MoCV - Lists of Computer Vision algorithms.
+        
+        ### MoCV ("Mo" is "Open" in Vietnamese) is created to provide tutorials of Computer Vision algorithms.
+        
+        List of Computer Vision algorithms:
+        1. Histogram - compute image histogram
+        2. Histogram Equalization - equalize image histogram to enhance image contrast
+        3. Linear Scale - lienarly scale image histogram
+        4. Segmentation by Optimal Thresholding
+        5. Will be updated soon
+        
+        ### Tutorials for testing
+        - Install MoCV: pip3 install MoCV
+        - Image Contrast Enhancement: python3 test.py 1
+        - Segmentation: python3 test.py 2
+        - Shifting images: python3 test.py 3 -100 70 
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
