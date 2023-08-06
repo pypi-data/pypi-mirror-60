@@ -1,0 +1,9 @@
+geojson_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geojson_to_sqlite/cli.py,sha256=mX-93GnSRSCoFaHxUF2V9t0jmCpFBbNrpCMzRa2hZE4,866
+geojson_to_sqlite/utils.py,sha256=vMNbmUxWJ2wsisu6O4PmJgMEtHqCht9uBBW9qs9M8Wg,420
+geojson_to_sqlite-0.1a0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+geojson_to_sqlite-0.1a0.dist-info/METADATA,sha256=e8q-ikCV882KaeQBv_h9ZOOsXrQVSTS2gsgMLGuEU4o,2878
+geojson_to_sqlite-0.1a0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+geojson_to_sqlite-0.1a0.dist-info/entry_points.txt,sha256=oWsSqzVrSPfMuDpPanqEtFmql0pzWu1GtSf7Dq0u7CQ,83
+geojson_to_sqlite-0.1a0.dist-info/top_level.txt,sha256=VX3qll2pKI0TF5s8mCQtu7wfAJIEdL6O8ZmsnEEf4lQ,18
+geojson_to_sqlite-0.1a0.dist-info/RECORD,,
