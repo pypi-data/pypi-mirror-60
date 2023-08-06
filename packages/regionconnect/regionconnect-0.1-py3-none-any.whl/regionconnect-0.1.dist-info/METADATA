@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: regionconnect
+Version: 0.1
+Summary: IIT Human Brain Atlas regionconnect tool
+Home-page: https://github.com/SheridanQ/regionconnect.git
+Author: Xiaoxiao Qi
+Author-email: xqi10@hawk.iit.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: nibabel
+
+# regionconnect
+IIT Human Brain Atlas regionconnect app.
+
+## Configuration and installation
+
+## Getting the most probable connections:
+
+
+
+## License:
+For non-commercial usage: IIT license (See LICENSE).  
+For commercial usage: Please email to: mri@iit.edu 
+
+
