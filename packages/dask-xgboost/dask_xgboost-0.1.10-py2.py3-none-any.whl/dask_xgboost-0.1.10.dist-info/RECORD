@@ -1,0 +1,8 @@
+dask_xgboost/__init__.py,sha256=uR6I6XbT_dX0nypvfrytqM9f2rrgsxUlEI78fxFTvv0,102
+dask_xgboost/core.py,sha256=9i20jRQWqxL27n9ROHa5W5QIp1-yLiBQI64YKNYoxjE,19066
+dask_xgboost/tracker.py,sha256=EKe4xQQ0_6zXvJ-zbrcJvHUwS7QzFBd-fKMJI4B5ROQ,16680
+dask_xgboost-0.1.10.dist-info/LICENSE.txt,sha256=cWlrrT78DGni7vlO9B-NMhqbhl6KX_P-zm0K9Z271IM,1505
+dask_xgboost-0.1.10.dist-info/METADATA,sha256=IGWVVezbqmRDedPYh4c-qpUJP5hnajzYTHHq7ITK9no,2403
+dask_xgboost-0.1.10.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+dask_xgboost-0.1.10.dist-info/top_level.txt,sha256=Z6rGdtrctgMERdg5bvMFb8DinLK4AjDhss1rqIpqYKU,13
+dask_xgboost-0.1.10.dist-info/RECORD,,
