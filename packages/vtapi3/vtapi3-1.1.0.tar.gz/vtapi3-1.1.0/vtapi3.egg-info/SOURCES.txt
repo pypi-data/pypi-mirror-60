@@ -1,0 +1,10 @@
+README.rst
+setup.py
+vtapi3/__init__.py
+vtapi3/vtapi3.py
+vtapi3.egg-info/PKG-INFO
+vtapi3.egg-info/SOURCES.txt
+vtapi3.egg-info/dependency_links.txt
+vtapi3.egg-info/not-zip-safe
+vtapi3.egg-info/requires.txt
+vtapi3.egg-info/top_level.txt
