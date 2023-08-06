@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-geolocation-fields
+Version: 0.1.6
+Summary: A Django app to work with geolocation fields without a spatial database.
+Home-page: https://github.com/syk1k/django-geolocation-fields
+Author: GOUNTENI DAMBE TCHIMBIANDJA
+Author-email: dambemondo@gmail.com
+License: MIT
+Description: long_description
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
