@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pyCTS
+Version: 0.2.2
+Summary: UNKNOWN
+Home-page: https://github.com/mromanello/pyCTS/
+Author: Matteo Romanello
+Author-email: matteo.romanello@gmail.com
+License: GPL v3
+Description: pyCTS is a minimal Python implementation of the CTS URN class as defined by the Canonical Text Services protocol.
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: POSIX
