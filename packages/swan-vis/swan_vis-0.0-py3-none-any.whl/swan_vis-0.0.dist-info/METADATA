@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: swan-vis
+Version: 0.0
+Summary: swan is a tool for visualizing and analyzing transcript isoforms
+Home-page: https://github.com/fairliereese/swan
+Author: Fairlie Reese
+Author-email: fairlie.reese@gmail.com
+License: MIT
+Download-URL: https://github.com/fairliereese/swan/archive/v0.0-alpha.tar.gz
+Keywords: swan,transcription,isoform
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research 
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: fpdf
+
+UNKNOWN
+
+
