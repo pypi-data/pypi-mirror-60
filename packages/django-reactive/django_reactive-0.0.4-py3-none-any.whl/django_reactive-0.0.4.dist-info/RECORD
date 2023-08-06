@@ -1,0 +1,17 @@
+django_reactive/__init__.py,sha256=a_4MKTXlMQnTEeVCrSBJ1V-J2V3rFiY3GlXSSu0n7ho,76
+django_reactive/apps.py,sha256=09FrrqsNzLaCWUZoUydNsu7XTof-okXuXzyuXiH48sU,135
+django_reactive/fields.py,sha256=RJt0GveE00K2stX9iu18qm2o3t-lEca3g1OewUstEFc,1213
+django_reactive/forms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_reactive/forms/fields.py,sha256=Jw0S7o6XH7KyjGMszrRhdQ_8yD-5f_zkPZChhlkhRBk,190
+django_reactive/forms/widgets.py,sha256=Pm91sy_pBIpUD6eEE1X19wuPEvS2DWiBWs9THrRdDNw,1207
+django_reactive/static/css/django_reactive.css,sha256=AogfyL8jZQXBONmDZW7xffPhSeMqsj1gNFsydr_0c8k,2332
+django_reactive/static/dist/react-dom.js,sha256=p2yuFdE8hNZsQ31Qk-s8N-Me2fL5cc6NKXOC0U9uGww,119008
+django_reactive/static/dist/react-jsonschema-form.js,sha256=gNIwP9FeJhmvYRRbM6WJJJKh4uYLvcZ_1X9_6Q_nCmY,247336
+django_reactive/static/dist/react-jsonschema-form.js.map,sha256=rRdwpffYyeKOcegZlPLNchDG5FB8WdOlb-bVzDXXMNA,943272
+django_reactive/static/dist/react.js,sha256=Ef0vObdWpkMAnxp39TYSLVS_vVUokDE8CDFnx7tjY6U,12588
+django_reactive/static/js/django_reactive.js,sha256=rqk9Do_F4U3yLjzCcFDi9jaGng5maaenBRd2rsetOIY,2936
+django_reactive/templates/django_reactive.html,sha256=UV1wvU1_nLZf50DwH1Wkpr-nfaClAWOMZS-9MU1UPx4,383
+django_reactive-0.0.4.dist-info/LICENSE,sha256=b8QV3Pf5er5KJ90Vy7Da5KAqhQdYd3Jy9G82K4Y2Mw0,1074
+django_reactive-0.0.4.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+django_reactive-0.0.4.dist-info/METADATA,sha256=q8Wnbb11TQ4d5xdiBI-O5W03GVbYpVRF5ZcvgrHeZb4,6655
+django_reactive-0.0.4.dist-info/RECORD,,
