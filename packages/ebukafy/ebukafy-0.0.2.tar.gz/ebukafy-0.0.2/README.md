@@ -1,0 +1,89 @@
+# ebukafy
+
+The `ebukafy` utility will convert a plain text file into a nicely 
+formatted html file to be used as a chapter in an epub.
+
+## Usage
+It is recommended that you use `ebukafy` in conjunction with Calibre. If 
+you do, read the [Use with Calibre](#use-with-calibre) section first.
+
+`Usage: ebukafy [-h] [-p paragraph-separator] [-s section-separator] 
+filename...`
+
+### Options
+1. `paragraph-separator`: sequence of characters that will 
+delimit paragraphs. Default value: "\t".
+
+2. `section-seperator`: the sequence of characters that will delimit 
+a section (the things I'm calling 'sections' are usually delimited by an 
+empty line in paper books. In other words, sections are the chunks 
+bigger than paragraphs and smaller than chapters). Default value: 
+"\n\n". If the text only has one section, just make this something
+random that won't appear in the text.
+
+NOTE: If you want to change these two separators, make sure to use ANSI
+C like strings. These are used like so: `$'string'`. For example: if you 
+want to use `ebukafy` with `\n\n` as the `paragraph-separator` and 
+`\n\n\n` as the `section-separator`, you would call it like so:
+
+`ebukafy -p $'\n\n' -s $'\n\n\n' filename...`
+
+3. `-h`: print out usage statement
+
+### Args
+After these options, include as many files as you want to `ebukafy`.
+
+### Output
+The output of this utility will be a folder called `ebukafy_index` 
+filled with files named `index_n.html`, with n starting at 1 and 
+incrementing for each `filename` you include when calling `ebukafy`. 
+These are the nicely formatted html files that you can use in your 
+epub. Additionally, the folder will include a copy of 
+`stylesheet_additions.css` that you can find in this repository.
+
+## Use with Calibre
+This utility is meant to be used in conjunction with [Calibre](
+https://calibre-ebook.com/).
+
+1. Create an empty txt file anywhere.
+2. In Calibre, in the upper left corner, click "Add books", which should 
+open a file selector.
+3. In the file selector, navigate to the empty txt file you created, and 
+open it.
+4. This should create a new empty book in Calibre. If you want to, you 
+can add the metadata for the book such as the title, author, cover, etc.
+5. In Calibre, convert the book you created to an EPUB.
+6. After converting, select the book in the library and click "Edit 
+book" in the top right corner.
+7. On the left side you'll see the files that were created. Remove the 
+one called index.html, if one exists. You probably want to keep the 
+title page (titlepage.xhtml) since most books need a cover.
+8. **IMPORTANT**: All EPUBs use a css file called stylesheet.css to give 
+greater control over the formatting of the book. `ebukafy` uses its own 
+stylesheet to format the html. To find it, look at the 
+`stylesheet_additions.css` file in this repo (or in the `ebukafy_index`
+folder created by `ebukafy` after you run it) and add its contents to 
+the stylesheet.css of the EPUB. In Calibre, you can find this stylesheet 
+in the "Edit book" editor.
+
+9. At this point, the boilerplate code is set up and you need to run 
+`ebukafy`. Look at [Usage](#usage) section.
+
+10. Click the "Add file" button in the top left of the "Edit book" 
+editor. You should name it `index_n.html` where n is a number that 
+increments with each file you add (first file is `index_1.html`, second 
+file is `index_2.html`, etc.). Into each file, you put the html created 
+by `ebukafy`.
+
+## Use without Calibre
+`ebukafy` generates nicely formatted html documents based on a provided
+txt file. Though it is much easier to put these files into an actual
+epub with Calibre, it is not necessary if you know what you're doing.
+Just make sure to read the [Usage](#usage) section.
+
+**IMPORTANT**: All EPUBs use a css file called stylesheet.css to give 
+greater control over the formatting of the book. `ebukafy` uses its own 
+stylesheet to format the html. To find it, look at the 
+`stylesheet_additions.css` file in this repo (or in the`ebukafy_index` 
+folder created by `ebukafy` after you run it) and add its contents to 
+the stylesheet.css of the EPUB. 
