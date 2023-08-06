@@ -1,0 +1,10 @@
+intron/__about__.py,sha256=rcEM57qgXOFPylgRaJ2Gfc4R0V-dOToT9Oj-zAYHxs4,651
+intron/__init__.py,sha256=FdNDHoMBpCukrk2hfF_7lazTryCAiykEhLuAS8ZFWDg,14
+intron/intronCounter_v2_stranded.py,sha256=y_IGO5ZLARQXRWYhRddap71aDrgdSwa3nSx9XB40cDI,2501
+intron/make_conserved_gtf.py,sha256=pvOZ7p8972omAHPZY3i_gh45oIV8_1WSpZXRf3uU1w0,2792
+intron/make_conserved_intron_gtf.py,sha256=v5IShuzkX9RDB2pxRBKiZzIXF1wYgjvUzDdgCHTcVFg,2847
+intron-0.0.1.dist-info/LICENSE,sha256=czn6QYya0-jhLnStD9JqnMS-hwP5wRByipkrGTvoXLI,11355
+intron-0.0.1.dist-info/METADATA,sha256=eqkmDi6_qQj7zOD0HklHivuL2_2pdto2j_a4hllYBhg,1432
+intron-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+intron-0.0.1.dist-info/top_level.txt,sha256=VotCq5FQ1aSa0LSgxTBI1Rewj8VCoUyxZ6dVVQ8hTas,7
+intron-0.0.1.dist-info/RECORD,,
