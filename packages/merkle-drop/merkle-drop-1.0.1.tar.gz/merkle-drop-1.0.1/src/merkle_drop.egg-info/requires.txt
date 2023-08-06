@@ -1,0 +1,8 @@
+click
+web3
+contract-deploy-tools
+eth_utils
+flask
+flask_cors
+pendulum
+gunicorn

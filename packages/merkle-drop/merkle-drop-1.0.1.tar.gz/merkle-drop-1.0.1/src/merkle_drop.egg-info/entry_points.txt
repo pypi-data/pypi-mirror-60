@@ -1,0 +1,3 @@
+[console_scripts]
+merkle-drop = merkle_drop.cli:main
+
