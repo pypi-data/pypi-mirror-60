@@ -1,0 +1,2 @@
+ev3devcmd==1.0.0
+ev3dev2simulator
