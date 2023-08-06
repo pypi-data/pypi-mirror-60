@@ -1,0 +1,13 @@
+jsontrips/__init__.py,sha256=L34HsFt5iO3OT8Uz0a52NYMY3XEfBjlgSLXo8Eb0O7Q,548
+jsontrips/code.py,sha256=EYLYpTZ2bjz82o6DPnYZaZTP12DlDommzUeF8pQ8i_Q,359
+jsontrips/data/featurelists.json,sha256=V-BkXa2uBwlBNNrsig9efv3qh5p__Ks3IGPu7mNaMA8,3884
+jsontrips/data/featuretypes.json,sha256=yzDEdSPb3AKo2KQkpyrAOypHwO4eRd7P0XSqnRV-hVA,30259
+jsontrips/data/lexicon_lf.json,sha256=Epq8DbHwQnOue8Yv-WMstlPFW8dVlU-U-x8gtNpiYYA,81444
+jsontrips/data/ontology.json,sha256=qfbu8NTFD-7ndDP6bwaclHDDA_-sp2yf_-s7-KfQc0g,8189601
+jsontrips/data/syntax_templates.json,sha256=vQ8ZLPCEbCniCcR_rDWqIHOEOmlP6IDX2zHS2sgSU2A,890853
+jsontrips/data/words.json,sha256=2WhXbLWRd8Wnjp-RkuzUIz26DEPA9D-IW6ZwYEKVJn8,12600545
+jsontrips-0.1.32.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+jsontrips-0.1.32.dist-info/METADATA,sha256=V4PTFhbopGOVH6ZtHX8keq7jdTdIv5mAbNF-hh8uVng,664
+jsontrips-0.1.32.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+jsontrips-0.1.32.dist-info/top_level.txt,sha256=d2H0cjCs43ijoUAw9J4WY-SArYgCcbuckl8n7gNQIK8,10
+jsontrips-0.1.32.dist-info/RECORD,,
