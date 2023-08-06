@@ -1,0 +1,4 @@
+Django==2.2.9
+blinker==1.4
+mock==2.0.0
+mongoengine==0.18.2
