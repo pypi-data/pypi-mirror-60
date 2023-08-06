@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: dynampy
+Version: 0.0.0
+Summary: Dynamically organized Python
+Home-page: https://github.com/haochuanwei/dynampy
+Author: Harry Wei
+Author-email: pepsimixt@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: deco (>=0.5.2)
+Requires-Dist: wasabi (>=0.4.2)
+
+# Dynampy
+Stands for **"dynamically organized Python program"**. In other words, specify what is *about to be computed*, store them as **callbacks**, and organize such callbacks in an efficient manner that does not require low-level modification of your code.
+
+# Functionality
+
+- auto-detection of parallelizable computation
+- auto-handled parallelization
+
+# pytest
+Tests should be put in the `tests` directory.
+
+To run tests, go to the repo's home directory and run `python -m pytest`
+
+
