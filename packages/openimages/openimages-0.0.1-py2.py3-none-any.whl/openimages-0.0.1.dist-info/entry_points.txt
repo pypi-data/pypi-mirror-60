@@ -1,0 +1,4 @@
+[console_scripts]
+oi_download_dataset = openimages.download:_entrypoint_download_dataset
+oi_download_images = openimages.download:_entrypoint_download_images
+
