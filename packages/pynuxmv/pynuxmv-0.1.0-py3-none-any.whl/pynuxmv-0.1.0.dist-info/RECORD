@@ -1,0 +1,9 @@
+pynuxmv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynuxmv/cli.py,sha256=wbhLs9b9oHQiaOqXZ6bXPOh5xcj2oDbVH__u_TqwXNw,523
+pynuxmv/main.py,sha256=ERXOc3dPd3dIIpBtD7Wk3jUWIsTMKgvUUlxDGNnV9sQ,10448
+pynuxmv/sample.py,sha256=2-N6wxpy1-pTuevuERRiUMgMnyiFKIUinc9WAZ6h9GU,6
+pynuxmv-0.1.0.dist-info/METADATA,sha256=89Dp2j7-r1GS6ey8xGjlCVQCi8HIorV-PiZcX58VVC8,597
+pynuxmv-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pynuxmv-0.1.0.dist-info/entry_points.txt,sha256=i1ot3P20ocsGozW7e3BLtwQ6siMsgR--ejxVr0kvD0E,46
+pynuxmv-0.1.0.dist-info/top_level.txt,sha256=L68BpyFqNP7S39STTvAPilmEOrXE1j0UEXtPb_WqZCg,8
+pynuxmv-0.1.0.dist-info/RECORD,,
