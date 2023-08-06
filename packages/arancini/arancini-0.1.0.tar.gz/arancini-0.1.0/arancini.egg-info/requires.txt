@@ -1,0 +1,15 @@
+samtools
+bedtools
+umi_tools
+pysam
+pandas
+os
+time
+trimmomatic
+bwa
+fastqc
+multiqc
+sys
+glob
+subprocess
+tqdm
