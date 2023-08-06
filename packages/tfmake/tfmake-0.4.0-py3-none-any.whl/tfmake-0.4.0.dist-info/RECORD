@@ -1,0 +1,7 @@
+tfmake/Makefile,sha256=RFneahIJ26rC3c1-XsKeiZkiRpHaCn3lHn3ceWR5UgA,3067
+tfmake/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tfmake/cli.py,sha256=dTbuNU35xHjoQykA2yT-VHb63qRnvhjE9vMXlLJGWVo,697
+tfmake-0.4.0.dist-info/entry_points.txt,sha256=lpo-xkEDpxtTrTGvmkrGYH-rSrA6kiwAlYJizIklZwI,42
+tfmake-0.4.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+tfmake-0.4.0.dist-info/METADATA,sha256=zIeGn81N6gN2EfSx2vnnJ8nQFIqQTvCr_qJKpnEatEc,361
+tfmake-0.4.0.dist-info/RECORD,,
