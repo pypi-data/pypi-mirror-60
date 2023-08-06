@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: python-blizzard
+Version: 1.0.1
+Summary: 
+Package to generate/request a filesystem reference.
+
+Home-page: https://github.com/neurospin/blizzard
+Author: blizzard developers
+Author-email: antoine.grigis@cea.fr
+License: CeCILL-B
+Description: Package to generate/request a filesystem reference.
+        
+Platform: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
