@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: miniga4py
+Version: 5.7.0a3
+Summary: miniga4py Minimal Python bindings for the Global Arrays Toolkit library
+Home-page: https://github.com/GlobalArrays/ga4py
+Author: Roberto Vidmar
+Author-email: rvidmar@inogs.it
+Maintainer: Roberto Vidmar
+Maintainer-email: rvidmar@inogs.it
+License: BSD
+Download-URL: https://github.com/GlobalArrays/ga4py/tree/feature/py3
+Description: # miniga4py #
+        Minimal Python bindings for the Global Arrays Toolkit Library.
+        Implements a *subset* of the [ga4py](https://github.com/GlobalArrays/ga4py)
+        Python library.
+        
+        ## Provides miniga4py ##
+        the Python package that allows the usage of the Global Arrays Toolkit
+        Library from Python3.
+        
+        It has been developed to be used in
+        [LARGE](https://bitbucket.org/ncreati/large)
+        
+        # NOTE: #
+        Install [numpy](https://pypi.org/project/numpy),
+        [mpi4py](https://pypi.org/project/mpi4py) and
+        [globalarrays](https://pypi.org/project/globalarrays) **before**
+        installing miniga4py!
+        
+        ### Install the package ###
+        	pip3 install miniga4py
+        
+        Or download the whole repository:
+        
+        	git clone https://bitbucket.org/bvidmar/miniga4py
+        
+        and then
+        
+            cd miniga4py
+        
+        and install as preferred:
+        
+        * python3 setup.py install
+        * pip3 install
+        
+        ### Check the installation ###
+        	mpiexec -n 4 testminiga4py
+        
+        ### The Author ###
+        * [Roberto Vidmar](mailto://rvidmar@inogs.it)
+        
+        ### The Mantainers ###
+        * [Roberto Vidmar](mailto://rvidmar@inogs.it)
+        * [Nicola Creati](mailto://ncreati@inogs.it)
+        
+Keywords: miniga4py,MPI,GlobalArrays
+Platform: POSIX
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Fortran
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown

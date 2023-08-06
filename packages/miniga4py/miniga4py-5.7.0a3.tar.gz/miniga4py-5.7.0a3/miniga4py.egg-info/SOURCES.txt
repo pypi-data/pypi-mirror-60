@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+bin/testminiga4py
+miniga4py/COPYRIGHT
+miniga4py/__init__.py
+miniga4py/ga.c
+miniga4py/ga.pyx
+miniga4py/gah.pxd
+miniga4py.egg-info/PKG-INFO
+miniga4py.egg-info/SOURCES.txt
+miniga4py.egg-info/dependency_links.txt
+miniga4py.egg-info/requires.txt
+miniga4py.egg-info/top_level.txt
