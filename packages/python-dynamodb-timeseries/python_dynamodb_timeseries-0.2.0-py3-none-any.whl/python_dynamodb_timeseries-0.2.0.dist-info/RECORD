@@ -1,0 +1,10 @@
+dynamodb_timeseries/__init__.py,sha256=7fu9orBQdCL6kqUNKaJImzTt_wBIleMT6Pu_jrVR-Zg,152
+dynamodb_timeseries/constants.py,sha256=Uss3Otv1Rl-4R5zQRqR7rSjsla5A4RMwKBkbqOsXr2U,44
+dynamodb_timeseries/dynamodb.py,sha256=RtR9w4Oqm8Z9EUrxwNF1e7l3JGKnD7dg1Ri5wYHPHWg,5761
+dynamodb_timeseries/exceptions.py,sha256=EsYyo-x05bMro-lFjCEbwC2VeHyMKF_AR7TE9gu8JNA,102
+dynamodb_timeseries/tableresolver.py,sha256=GCQOxytkS3WXSv-PR_w_kwYHd-JZprHQzt7sV2z-qnM,1799
+dynamodb_timeseries/timeseries.py,sha256=qKYN6Wtw4v1_uY2CFv9TH1Gwbw2jggbdsuzhw3ICMOQ,4104
+python_dynamodb_timeseries-0.2.0.dist-info/METADATA,sha256=svJ3GkY4ueNb9OfVuejBmzWzvmL-EmjEDoz5APlSMqQ,2057
+python_dynamodb_timeseries-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+python_dynamodb_timeseries-0.2.0.dist-info/top_level.txt,sha256=15rLUE_Dk-vHg2sRTYCgENqdz7GCQrss35sNO89DffA,20
+python_dynamodb_timeseries-0.2.0.dist-info/RECORD,,
