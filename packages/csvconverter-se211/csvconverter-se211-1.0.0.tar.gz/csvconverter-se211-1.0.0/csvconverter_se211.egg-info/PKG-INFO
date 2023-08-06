@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: csvconverter-se211
+Version: 1.0.0
+Summary: csvconverter for se211
+Home-page: https://github.com/yeggyseo/csvconverter-py
+Author: Yegeon Seo
+Author-email: yeggy.seo@gmail.com
+License: MIT
+Description: # csvconverter-py
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

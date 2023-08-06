@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+csvconverter_se211.egg-info/PKG-INFO
+csvconverter_se211.egg-info/SOURCES.txt
+csvconverter_se211.egg-info/dependency_links.txt
+csvconverter_se211.egg-info/entry_points.txt
+csvconverter_se211.egg-info/top_level.txt
