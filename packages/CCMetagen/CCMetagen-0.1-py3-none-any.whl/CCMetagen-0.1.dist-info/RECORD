@@ -1,0 +1,11 @@
+CCMetagen-0.1.data/scripts/CCMetagen.py,sha256=lsLKGk9LSf3H7_X6Rvv9zdA65j-nZElixfBWRyU_vIU,9193
+CCMetagen-0.1.data/scripts/CCMetagen_merge.py,sha256=kiNPH-ALeYv-4YNa1IhkCbxLAI1vKFtyApUp6HHOTyo,4981
+ccmetagen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ccmetagen/cTaxInfo.py,sha256=GxJHPEnLWMhEnEjOfIdhrOfb18k5-8wS4KWS34rd0Y8,1762
+ccmetagen/fNCBItax.py,sha256=s_YGo8gMkuSpjg3kpv62yPOhSp0wmqoYxheUQcElSiQ,2560
+ccmetagen/fParseKMA.py,sha256=_cdGs5M9pNc2G4CSrD8NGqahQG-oIWqH32CgLnaYO24,5794
+CCMetagen-0.1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+CCMetagen-0.1.dist-info/METADATA,sha256=HjHzbF8hPWhoeNpaP0_TpWeHva3dREueo1no5Zl9F7g,19454
+CCMetagen-0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+CCMetagen-0.1.dist-info/top_level.txt,sha256=qQ_lAbQb670sTNHnPcFwMi-gtNkuF8Rusf6aUCC57_I,10
+CCMetagen-0.1.dist-info/RECORD,,
