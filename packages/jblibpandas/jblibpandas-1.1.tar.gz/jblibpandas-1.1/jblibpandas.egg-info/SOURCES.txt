@@ -1,0 +1,9 @@
+README.md
+setup.py
+jblibpandas/__init__.py
+jblibpandas.egg-info/PKG-INFO
+jblibpandas.egg-info/SOURCES.txt
+jblibpandas.egg-info/dependency_links.txt
+jblibpandas.egg-info/top_level.txt
+jblibpandas/math/__init__.py
+jblibpandas/math/math_libs.py
