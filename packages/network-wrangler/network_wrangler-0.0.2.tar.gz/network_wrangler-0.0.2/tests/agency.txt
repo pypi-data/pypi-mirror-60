@@ -1,0 +1,4 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang
+0,Metro Transit,http://www.metrotransit.org,America/Chicago,EN
+2,Metro Transit,http://www.metrotransit.org,America/Chicago,EN
+3,Minnesota Valley,http://www.mvta.com,America/Chicago,EN

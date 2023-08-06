@@ -1,0 +1,23 @@
+category: Roadway Property Change
+dependencies:
+  conflicts: []
+  corequisites: []
+  prerequisites: []
+facility:
+  A:
+    osm_node_id: '187854529'
+  B:
+    osm_node_id: '187899923'
+  link:
+  - osm_link_id:
+    - '223371529'
+file: /Users/elizabeth/Documents/urbanlabs/MetCouncil/working/network_wrangler/examples/stpaul/project_cards/1_simple_roadway_attribute_change.yml
+notes: Simple project example to do a road diet on 6th St E in front of MetCouncil
+project: 6th St E Road Diet
+properties:
+- change: -1
+  existing: 3
+  property: lanes
+tags:
+- example
+valid: null
