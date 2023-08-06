@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: py-farbfeld
+Version: 1.1.post1
+Summary: Implementation of the Suckelss Farbfeld image format in pure Python
+Home-page: https://github.com/tryamid/farbfeld
+Author: Shantanu Biswas
+Author-email: bsantanu381@gmail.com
+License: WTFPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5

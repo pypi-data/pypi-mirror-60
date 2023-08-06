@@ -1,0 +1,9 @@
+README.md
+setup.py
+farbfeld/__init__.py
+farbfeld/decode.py
+farbfeld/encode.py
+py_farbfeld.egg-info/PKG-INFO
+py_farbfeld.egg-info/SOURCES.txt
+py_farbfeld.egg-info/dependency_links.txt
+py_farbfeld.egg-info/top_level.txt
