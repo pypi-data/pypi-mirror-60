@@ -1,0 +1,3 @@
+[console_scripts]
+TestProject1635 = TestProject1635.cli:main
+
