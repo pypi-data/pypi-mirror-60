@@ -1,0 +1,11 @@
+README.md
+setup.py
+barman_exporter/__init__.py
+barman_exporter/barman_exporter.py
+barman_exporter.egg-info/PKG-INFO
+barman_exporter.egg-info/SOURCES.txt
+barman_exporter.egg-info/dependency_links.txt
+barman_exporter.egg-info/entry_points.txt
+barman_exporter.egg-info/not-zip-safe
+barman_exporter.egg-info/requires.txt
+barman_exporter.egg-info/top_level.txt
