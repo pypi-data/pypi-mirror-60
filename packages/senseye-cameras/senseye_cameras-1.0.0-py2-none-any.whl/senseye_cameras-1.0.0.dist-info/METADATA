@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: senseye-cameras
+Version: 1.0.0
+Summary: Senseye Camera Utilities
+Home-page: UNKNOWN
+Author: Senseye Inc
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: sounddevice
+Requires-Dist: soundfile
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
+UNKNOWN
+
+
