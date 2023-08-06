@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: kommiter
+Version: 0.0.1
+Summary: A script to make commit/push easier
+Home-page: https://github.com/PABlond/AutoCommit
+Author: Pierre-Alexis Blond
+Author-email: pierre-alexis.blond@live.fr
+License: UNKNOWN
+Description: # Autocommit
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,6 @@
+[console_scripts]
+kommiter = autocommit:main
+
+[gui_scripts]
+kommiter = autocommit:main
+
