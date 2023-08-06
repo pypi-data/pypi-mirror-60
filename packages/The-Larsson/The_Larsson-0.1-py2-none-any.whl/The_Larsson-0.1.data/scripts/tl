@@ -1,0 +1,8 @@
+def gtl(msg):
+    print(msg)
+
+def text():
+    gtl("Grattis i efterskott")
+
+if __name__ == '__main__':
+    text()
