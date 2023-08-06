@@ -1,0 +1,17 @@
+pyliveupdate/__init__.py,sha256=x53WJbx8evqiBjYik4CXDbsmJjT3iuDtVLNtaV-c9N4,283
+pyliveupdate/instrumentation.py,sha256=BDLRk0BFw0UAEeyNYKjJzkvuZmG_zszD1D72ddbLBb0,932
+pyliveupdate/ipc.py,sha256=Oz9AZHwNgrLRNV4jxfDaNemBCF_fGYGq_rmBfucyCV4,1259
+pyliveupdate/startserver.py,sha256=A_8eA12vZU1xVbbx0sdNq7IuyMWfOgMu0_ojTt-tOyY,551
+pyliveupdate/update.py,sha256=N62JfBoeljHO3G5EDZkiz1g4_bcuOmmgWUDUF91vELY,10195
+pyliveupdate/client/__init__.py,sha256=CA0lny0FGp3Jv7u7FxytQYsb64aHX-r6irforY61Bkw,144
+pyliveupdate/client/client.py,sha256=mJx72uauuUZf45znK7srfcigQCTqEcj-ZRuhboSgpqo,2589
+pyliveupdate/client/logclient.py,sha256=1qNwKGGRlcaggCjVJpX_rh148f2bsb809mdJb6kxqQA,1581
+pyliveupdate/server/__init__.py,sha256=Utn_B5WR6X8o6GhCcTnC0oRTPL9781D3giFQcdzWj50,112
+pyliveupdate/server/logserver.py,sha256=C2OmlgQ78VMFlmPU3Vh9DuewvmSgulsDXTKE4Io0zvI,3936
+pyliveupdate/server/server.py,sha256=jMNYw-hI4MVjJ4ZslnZ6Z4N9niOKNp7ruy17yc8YG-Q,3014
+pyliveupdate-0.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+pyliveupdate-0.1.dist-info/METADATA,sha256=ehW30uECim0jfa8u0bIm6auy_K16DOExeqVQZEfojYo,2674
+pyliveupdate-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyliveupdate-0.1.dist-info/entry_points.txt,sha256=mYB3MSVa8J3LNvkacms-YaSGfxNFXayMFRkq249OmJ4,89
+pyliveupdate-0.1.dist-info/top_level.txt,sha256=xbG-M70Q-2A9bwD1-vRCP9zo-PRxKn1uOQmuTv9XP98,13
+pyliveupdate-0.1.dist-info/RECORD,,

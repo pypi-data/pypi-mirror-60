@@ -1,0 +1,4 @@
+
+          [console_scripts]
+          pylu-server = pyliveupdate.startserver:main
+      
