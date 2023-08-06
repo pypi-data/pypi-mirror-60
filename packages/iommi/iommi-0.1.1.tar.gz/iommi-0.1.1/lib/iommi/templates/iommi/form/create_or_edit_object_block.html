@@ -1,0 +1,24 @@
+{% extends form.base_template %}
+
+{% block title %}{% if form.extra.is_create %}Create{% else %}Edit{% endif %} {{ form.extra.model_verbose_name }}{% endblock %}
+
+{% block content %}
+
+<form{{ form.attrs }}><input type="hidden" name="csrfmiddlewaretoken" value="{{csrf_token}}"/>
+
+  {% for error in form.errors %}
+    <div class="error">{{ error }}</div>
+  {% endfor %}
+
+  <div class="tablewrapper">
+    <table class="formview" width="100%">
+      {{ form }}
+    </table>
+  </div>
+
+  <div class="form_buttons clear">
+      {{ form.render_actions }}
+  </div>
+</form>
+
+{% endblock %}
