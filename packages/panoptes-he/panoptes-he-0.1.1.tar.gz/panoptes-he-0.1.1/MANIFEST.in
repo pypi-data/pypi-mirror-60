@@ -1,0 +1,4 @@
+include colorstandard.png
+include sample_label.csv
+include sample_sep_file.csv
+include requirements.txt
