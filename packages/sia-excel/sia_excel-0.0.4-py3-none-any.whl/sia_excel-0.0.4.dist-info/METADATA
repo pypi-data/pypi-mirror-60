@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sia-excel
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Maxim Kupfer
+Author-email: mkupfer@staffingindustry.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: openpyxl (>=3.0.3)
+
+UNKNOWN
+
+
