@@ -1,0 +1,12 @@
+GPro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GPro/acquisitions.py,sha256=DLq4Jxl2rOoWFRS6Aj_8gDpS2ebmF1tpEair1CbMicA,2869
+GPro/kernels.py,sha256=eHGggGkBXB65Ub79Lh3LgFAbSY6QpyB2NfkqIjWgVU4,7679
+GPro/optimization.py,sha256=0oeLwQr6z5viSpmCgQ1XaG2TF6BDXYx_uzOTegc6sno,12415
+GPro/posterior.py,sha256=xUrzt6f3KxVXOZ35sfNjnVa38jOIlBX5LBx0p3eXBGU,6361
+GPro/preference.py,sha256=Vl502zyzTMds7_1vS1AfYoZBMLq8obCrBK7UHDdGsKw,13214
+GPro/validations.py,sha256=DUNIdQLuel2pDGaKciwA_Lh3EW-qCQ_e7KKa6evgD4U,6801
+GPro-1.0.0.dist-info/LICENSE,sha256=FjjZAO8ESiw9nT1poCacaHDKfv9pi2gGFafUWTuNrmo,1091
+GPro-1.0.0.dist-info/METADATA,sha256=bdSYVjH53K7HrUg_cICw0XM4kRPyUdmu31Lyp6kjCrA,450
+GPro-1.0.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+GPro-1.0.0.dist-info/top_level.txt,sha256=pBGllnCmotcg1QgfEIVA-s49OU0BiQc-k4Al-7ltPOU,5
+GPro-1.0.0.dist-info/RECORD,,

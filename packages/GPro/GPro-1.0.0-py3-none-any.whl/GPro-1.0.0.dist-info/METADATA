@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: GPro
+Version: 1.0.0
+Summary: Preference Learning with Gaussian Processes
+Home-page: https://github.com/chariff/GPro
+Author: Chariff Alkhassim
+Author-email: chariff.alkhassim@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.9.0)
+Requires-Dist: scipy (>=0.14.0)
+Requires-Dist: pandas (>=0.24.0)
+
+Python implementation of a probabilistic kernel approach to preference learning based on Gaussian processes
+
+
