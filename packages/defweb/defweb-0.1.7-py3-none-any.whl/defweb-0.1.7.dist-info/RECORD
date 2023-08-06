@@ -1,0 +1,12 @@
+defweb/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+defweb/VERSION,sha256=Gmytzwl0rsvqV5jsEYdTXHSbWrOb2vARjvgA3N9TGwY,5
+defweb/__init__.py,sha256=ZBnoP14PbPHCuCtn8V1YpmAyRRf5zxRtr-6YCftFf6c,2661
+defweb/__main__.py,sha256=ms0w1FgCXX26e-_a7aB_qHvZ7VTAiJZRPruIIHF4nVI,37
+defweb/main.py,sha256=1ET1wByq-xcPikTrsyvZepSpnxcMJRWBvGiCnfL-avY,4338
+defweb/version.py,sha256=kGwYVPUsa2YWrtreRjbU2P8udyvY-kDSxlNnidZo0oo,213
+defweb/webserver.py,sha256=iFPDrD6y9ntmFyGEepFeUzjZkrEf1AbAaw8pavHqIlo,7267
+defweb-0.1.7.dist-info/METADATA,sha256=MgNnnkgZ2Bw2Lt9gP7Gwqp4-JRfne1ofTQHkzt66Ipw,1763
+defweb-0.1.7.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+defweb-0.1.7.dist-info/entry_points.txt,sha256=yHv5cvypKD2LB7CrcQphJEdWm94fWleB3gA2pjeCiqQ,49
+defweb-0.1.7.dist-info/top_level.txt,sha256=qdFn9MlEv1XpM6MHzu58wVwqxVWpQ89lQAuNQmILBko,7
+defweb-0.1.7.dist-info/RECORD,,
