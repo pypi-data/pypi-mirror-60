@@ -1,0 +1,12 @@
+pyproxyroulette/__init__.py,sha256=-yqEqnYte05J4C2Ma4B4zYz4-Rx2foseAgDE25MxQpE,89
+pyproxyroulette/app.py,sha256=UbEEk-VbHmYxh47j_2WCRJFkCtal-yhGgBp3FLH89yM,7813
+pyproxyroulette/core.py,sha256=hnHhwFQxN1RRiLFyXYdp6C1Jy0XWFtt898O4KL9UaGs,4414
+pyproxyroulette/defaults.py,sha256=rNgoRq4B_91ShcaH2JaP5WzZ3xlbPoUQ8e24S99iIiM,1690
+pyproxyroulette/exceptions.py,sha256=mz_Tu9EkPdzaZjk0hvbn_cT2IWxIDMsbtM_YmxlYq_k,376
+pyproxyroulette/pool.py,sha256=GaLix75QbDMaNgPpH_UxrQX5K6OjudyTMIXeCI-pP30,8246
+pyproxyroulette/proxy.py,sha256=2XaUiu5zMvs2YPjhnZxVkiMMWJgrYNq_K1W8TigUXUc,4235
+pyproxyroulette-0.4.7.dist-info/LICENSE.txt,sha256=9gBs0iTJHAaNP-0m4Hm4D617LvLdw_YmWCVJ1FRCv60,1089
+pyproxyroulette-0.4.7.dist-info/METADATA,sha256=bnbIqSu0N71RrZstDTP1w7FK-jV03_5mZyOGn6cOFV0,5766
+pyproxyroulette-0.4.7.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pyproxyroulette-0.4.7.dist-info/top_level.txt,sha256=t42hdyd46CO28CBGzzE4QtwEZ5AQuiUFXZokKEqZFSA,16
+pyproxyroulette-0.4.7.dist-info/RECORD,,
