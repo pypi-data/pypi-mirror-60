@@ -1,0 +1,10 @@
+rcsb/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+rcsb/utils/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+rcsb/utils/go/GeneOntologyProvider.py,sha256=9JDt37McjAxVUQMEPhf7vG-qpaLOnX1VTCkwnYHk2X4,6364
+rcsb/utils/go/__init__.py,sha256=EP8WDsAzjfwY1Y2u5-cQJVlaLJyB_MHkF7ovi15bThY,154
+rcsb.utils.go-0.16.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rcsb.utils.go-0.16.dist-info/METADATA,sha256=QQcRnzA_TT2RvcRSHcD93BapgqohgfK4WE2Pwe7GsC4,829
+rcsb.utils.go-0.16.dist-info/WHEEL,sha256=hq9T7ntHzQqUTLUmJ2UVhPL-W4tJi3Yb2Lh5lMfs2mk,110
+rcsb.utils.go-0.16.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+rcsb.utils.go-0.16.dist-info/top_level.txt,sha256=o9JzKwjXZKvIt99MG_WvJuOnR1DZn6_CIPtgWgUB0E8,5
+rcsb.utils.go-0.16.dist-info/RECORD,,
