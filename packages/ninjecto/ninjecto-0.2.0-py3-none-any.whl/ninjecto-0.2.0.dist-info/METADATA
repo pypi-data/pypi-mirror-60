@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: ninjecto
+Version: 0.2.0
+Summary: Ninja Injection Tool. Template rendering and variable injection made easy.
+Home-page: https://docs.kuralabs.io/ninjecto/
+Author: KuraLabs S.R.L
+Author-email: info@kuralabs.io
+License: UNKNOWN
+Keywords: ninjecto
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: toml
+Requires-Dist: ujson
+Requires-Dist: pyyaml
+Requires-Dist: jinja2
+Requires-Dist: cerberus
+Requires-Dist: setuptools
+Requires-Dist: colorlog
+Requires-Dist: pprintpp
+Requires-Dist: setproctitle
+
+===============================
+Ninjecto - Ninja Injection Tool
+===============================
+
+Template rendering and variable injection made easy.
+
+.. image:: https://build.kuralabs.io/buildStatus/icon?job=GitHub/ninjecto/master
+   :target: https://build.kuralabs.io/job/GitHub/job/ninjecto/job/master/
+   :alt: Build Status
+
+.. image:: https://img.shields.io/pypi/v/ninjecto
+   :target: https://pypi.org/project/ninjecto/
+   :alt: PyPI
+
+.. image:: https://img.shields.io/github/license/kuralabs/ninjecto
+   :target: https://choosealicense.com/licenses/apache-2.0/
+   :alt: License
+
+
+Documentation
+=============
+
+    https://docs.kuralabs.io/ninjecto/
+
+
+Install
+=======
+
+.. code-block:: sh
+
+    pip3 install ninjecto
+
+
+Changelog
+=========
+
+0.2.0 (2020-02-03)
+------------------
+
+Fix
+~~~
+
+- Rendered files will now have the same permissions as the source files.
+
+
+0.1.1 (2020-02-03)
+------------------
+
+Fix
+~~~
+
+- Fixes TypeError caused by invalid value of the levels parameter.
+
+
+0.1.0 (2020-02-01)
+------------------
+
+New
+~~~
+
+- Development preview.
+
+
+License
+=======
+
+::
+
+   Copyright (C) 2017-2020 KuraLabs S.R.L
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+
+
