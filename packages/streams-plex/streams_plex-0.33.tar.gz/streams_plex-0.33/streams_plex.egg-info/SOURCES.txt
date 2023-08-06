@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+streams_plex/__init__.py
+streams_plex/debug.py
+streams_plex/main.py
+streams_plex/setserver.py
+streams_plex.egg-info/PKG-INFO
+streams_plex.egg-info/SOURCES.txt
+streams_plex.egg-info/dependency_links.txt
+streams_plex.egg-info/entry_points.txt
+streams_plex.egg-info/requires.txt
+streams_plex.egg-info/top_level.txt
