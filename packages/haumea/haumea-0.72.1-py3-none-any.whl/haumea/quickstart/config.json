@@ -1,0 +1,12 @@
+{
+    "locale" : "en_US",
+    "site-name" : "My Website",
+    "paginate" : 10,
+    "paginate-path" : "page",
+
+    "env" : {
+        "test" : {
+            "site-url" : "http://localhost:8000"
+        }
+    }
+}
