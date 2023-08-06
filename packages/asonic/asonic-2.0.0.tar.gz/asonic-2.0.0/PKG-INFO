@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: asonic
+Version: 2.0.0
+Summary: Async python client for Sonic database
+Home-page: https://github.com/moshe/asonic
+Author: Moshe Zada
+License: MPL-2.0
+Description: asonic - async python client for the sonic search backend
+        =========================================================
+        
+        | Asonic implements all
+          `Sonic <https://github.com/valeriansaliou/sonic>`__ APIs
+        | Bugfixes and api changes are welcome
+        
+        Install
+        -------
+        
+        ``pip install asonic``
+        
+        API Docs
+        --------
+        
+        `here <https://asonic.readthedocs.io/en/latest/asonic.html#module-asonic.client>`__
+        
+        Usage
+        -----
+        
+        Search channel
+        ~~~~~~~~~~~~~~
+        
+        .. code:: python
+        
+           import asyncio
+        
+           from asonic import Client
+           from asonic.enums import Channels
+        
+        
+           async def main():
+             c = Client(host='127.0.0.1', port=1491, password='SecretPassword', max_connections=100)
+             await c.channel(Channels.SEARCH)
+             assert (await c.query('collection', 'bucket', 'quick')) == [b'user_id']
+             assert (await c.suggest('collection', 'bucket', 'br', 1)) == [b'brown']
+        
+           if __name__ == '__main__':
+               loop = asyncio.get_event_loop()
+               loop.run_until_complete(main())
+        
+        Ingest channel
+        ~~~~~~~~~~~~~~
+        
+        .. code:: python
+        
+           import asyncio
+        
+           from asonic import Client
+           from asonic.enums import Channel
+        
+        
+           async def main():
+             c = Client(host='127.0.0.1', port=1491)
+             await c.channel(Channel.INGEST)
+             await c.push('collection', 'bucket', 'user_id', 'The quick brown fox jumps over the lazy dog')
+             # Return b'OK'
+             await c.pop('collection', 'bucket', 'user_id', 'The')
+             # Return 1
+        
+           if __name__ == '__main__':
+               loop = asyncio.get_event_loop()
+               loop.run_until_complete(main())
+        
+        Control channel
+        ~~~~~~~~~~~~~~~
+        
+        .. code:: python
+        
+           import asyncio
+        
+           from asonic import Client
+           from asonic.enums import Channel, Action
+        
+        
+           async def main():
+             c = Client(host='127.0.0.1', port=1491)
+             await c.channel(Channel.CONTROL)
+             await c.trigger(Action.CONSOLIDATE)
+             # Return b'OK'
+        
+           if __name__ == '__main__':
+               loop = asyncio.get_event_loop()
+               loop.run_until_complete(main())
+        
+Keywords: asonic,sonic,search,asyncio,async,text
+Platform: UNKNOWN
+Provides-Extra: tests
