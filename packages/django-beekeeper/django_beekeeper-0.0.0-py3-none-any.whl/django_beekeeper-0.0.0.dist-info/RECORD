@@ -1,0 +1,13 @@
+beekeeper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beekeeper/__version__.py,sha256=5MsUbXkyv4aFEY0AU2NxeOFXseySZl-Acg-Ao_7tHok,62
+beekeeper/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+beekeeper/apps.py,sha256=qL_Nj1k5uYNl1RScXA-ET5xjsdA9uPKO6APVep7LiBE,93
+beekeeper/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+beekeeper/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+beekeeper/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+beekeeper/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_beekeeper-0.0.0.dist-info/LICENSE.txt,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+django_beekeeper-0.0.0.dist-info/METADATA,sha256=DkufFShSqVhJALveOxQfOFFtM5d9MxcjjFpEOt_9g28,947
+django_beekeeper-0.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_beekeeper-0.0.0.dist-info/top_level.txt,sha256=L2-Yy6RducKhn1U72ELTXr-m7Z1PNB8IfYfyYYhlJFg,10
+django_beekeeper-0.0.0.dist-info/RECORD,,
