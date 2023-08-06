@@ -1,0 +1,14 @@
+README.md
+setup.py
+appscanner/__init__.py
+appscanner/__main__.py
+appscanner/appscanner.py
+appscanner/burst.py
+appscanner/features.py
+appscanner/flow.py
+appscanner/preprocessor.py
+appscanner/reader.py
+appscanner.egg-info/PKG-INFO
+appscanner.egg-info/SOURCES.txt
+appscanner.egg-info/dependency_links.txt
+appscanner.egg-info/top_level.txt
