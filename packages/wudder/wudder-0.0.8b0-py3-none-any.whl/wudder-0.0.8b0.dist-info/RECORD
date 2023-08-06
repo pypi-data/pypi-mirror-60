@@ -1,0 +1,17 @@
+package_name/__init__.py,sha256=D-yi-0b5aRj5bOAv__2D7blb_9mlMmt5_inW5Q6rQMY,100
+package_name/package_name.py,sha256=FZk9hm7vBsK8G16pNugputbrrEciYqJc_XRAhTCcojI,46
+test/__init__.py,sha256=khd8TRK3ijhEw9kpUWM4KAL0_V4fJxeG8ZaY_mI2wiM,72
+test/env.py,sha256=AKE7FaNoHuv2MJaD0XElqy-4g-KmXjiGoyihFaF8mLc,4982
+test/test.py,sha256=r3h4ymXRqv8eiK6sxtR-AvvSEREsLjwX1vX56VcLe7g,1451
+tests/__init__.py,sha256=khd8TRK3ijhEw9kpUWM4KAL0_V4fJxeG8ZaY_mI2wiM,72
+tests/env.py,sha256=kBuvHnaBs5qGEt4tGsCiOFt8Wgi5qFbUowGR306ZdRE,9777
+tests/test.py,sha256=DVYGLedL1b3IpqR6J2J0QboTcyNpZbFJxDgdgQwcql8,1932
+wudder/__init__.py,sha256=qdiXbHdbafz2zP3u2Ml8n6ELScpKfCBMJ-cYoPZb_S4,94
+wudder/errors.py,sha256=JljQgd4ROtRFO-BgM-WTi6lTbAtMtklAPn3NJk2lGWg,265
+wudder/utils.py,sha256=eZW_zJANSnWEyTt7E81lANHnYgIzZq7PequZ50vfsWY,2665
+wudder/wudder.py,sha256=8HAVTo_Pk8dq3CSNsm4hjwTWcMuLPHYrGGajPFXIdQ0,15852
+wudder-0.0.8b0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+wudder-0.0.8b0.dist-info/METADATA,sha256=PbKN1j47zFZHMMiUIYT2t7e3CaopeQgnrx4CDeK1784,849
+wudder-0.0.8b0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+wudder-0.0.8b0.dist-info/top_level.txt,sha256=w-poIs2ARfHYh7y7D5MVJkSy9BxDaO2LURu0s9rqljA,13
+wudder-0.0.8b0.dist-info/RECORD,,
