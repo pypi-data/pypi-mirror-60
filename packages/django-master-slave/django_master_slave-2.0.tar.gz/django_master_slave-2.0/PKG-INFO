@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: django_master_slave
+Version: 2.0
+Summary: Provides master-slave routing
+        and force master context manager for Django
+Home-page: UNKNOWN
+Author: tumbler
+Author-email: zimbler@gmail.com
+License: Beer Licence
+Description: UNKNOWN
+Platform: UNKNOWN
