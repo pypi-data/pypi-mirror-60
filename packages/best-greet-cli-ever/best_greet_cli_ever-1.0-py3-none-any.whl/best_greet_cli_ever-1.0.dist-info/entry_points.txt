@@ -1,0 +1,3 @@
+[console_scripts]
+greet = src.__main__:greet
+
