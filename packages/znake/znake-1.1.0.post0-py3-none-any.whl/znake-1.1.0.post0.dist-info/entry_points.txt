@@ -1,0 +1,3 @@
+[console_scripts]
+znake = znake.__main__:main
+

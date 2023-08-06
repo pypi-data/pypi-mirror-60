@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: znake
+Version: 1.1.0.post0
+Summary: Build system for Python projects.
+Home-page: UNKNOWN
+Maintainer: Andreas Nilsson
+Maintainer-email: andni233@gmail.com
+License: Apache License 2.0
+Keywords: znake python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: coloredlogs
+Requires-Dist: fastentrypoints
+Requires-Dist: flake8-blind-except
+Requires-Dist: flake8-class-newline
+Requires-Dist: flake8-comprehensions
+Requires-Dist: flake8-deprecated
+Requires-Dist: flake8-pep3101
+Requires-Dist: flake8-quotes
+Requires-Dist: flake8-string-format
+Requires-Dist: flake8
+Requires-Dist: flake8-tuple
+Requires-Dist: glob2
+Requires-Dist: invoke
+Requires-Dist: isort
+Requires-Dist: jinja2
+Requires-Dist: pydocstyle
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: Sphinx
+Requires-Dist: sphinxcontrib-plantuml
+Requires-Dist: sphinxprettysearchresults
+Requires-Dist: yapf
+
+\
+Znake is a build system for Python projects.
+
+
