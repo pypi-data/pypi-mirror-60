@@ -1,0 +1,5 @@
+[console_scripts]
+fructosad = fructosa.fructosad:main
+lagent = fructosa.lagent:main
+lmaster = fructosa.lmaster:main
+
