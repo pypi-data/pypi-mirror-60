@@ -1,0 +1,38 @@
+CHANGES
+=======
+
+0.0.1
+-----
+
+* build: disable bdist\_wheel upload for now
+* build: use pbr for packaging
+* feat: add next and play/pause shortcuts
+* feat: add enter keyboard control
+* docs: update features/todo list
+* perf: stop storing raw data (reduce memory usage)
+* feat: doubleclick on queue to jump to song
+* feat: tighter layout
+* build: add build github action
+* feat: more compact layout + use icons for buttons
+* feat: add queue tab with play icon
+* style: add pylint and autopep + fix style + comments
+* dist: setup github actions
+* remove submodule and install jf-ac-p in editable mode
+* dist: prepare for packaging
+* add License
+* fix: lots of small fixes
+* feat: first add of cache + songs in album order
+* feat: use a streaming in-memory dual position buffer
+* docs: add to o and infos about sytem theme
+* feat: load albums after login
+* feat: working next button and start new album
+* feat: first working album list
+* feat: song, album, artist via player event listener
+* clean player and try to make next button work
+* feat: Qt GUI + move player in a new file
+* add requirements in install instructions
+* very first working download and playback of songs
+* get songs from api
+* first basic gui
+* add Jellyfin connection
+* initial commit

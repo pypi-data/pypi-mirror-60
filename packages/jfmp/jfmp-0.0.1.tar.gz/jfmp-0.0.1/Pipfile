@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+autopep8 = "*"
+flake8 = "*"
+flake8-copyright = "*"
+pbr = "*"
+
+[packages]
+jellyfin-apiclient-python = {git = "https://github.com/iwalton3/jellyfin-apiclient-python",editable = true}
+musicplayer = {git = "https://github.com/albertz/music-player-core.git",editable = true}
+appdirs = "==1.*"
+pyside2 = "==5.*"
+
+[requires]
+python_version = "3.6"

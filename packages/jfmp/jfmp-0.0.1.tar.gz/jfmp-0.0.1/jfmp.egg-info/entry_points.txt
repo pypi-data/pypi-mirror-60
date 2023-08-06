@@ -1,0 +1,3 @@
+[gui_scripts]
+jfmp = jfmp.app:main
+
