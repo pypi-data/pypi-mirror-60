@@ -1,0 +1,9 @@
+README.md
+setup.py
+slrp/__init__.py
+slrp/combos.py
+slrp/expressions.py
+slrp.egg-info/PKG-INFO
+slrp.egg-info/SOURCES.txt
+slrp.egg-info/dependency_links.txt
+slrp.egg-info/top_level.txt
