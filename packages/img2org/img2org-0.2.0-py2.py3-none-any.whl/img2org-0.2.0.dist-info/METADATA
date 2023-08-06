@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: img2org
+Version: 0.2.0
+Summary: Images to Organism simulations
+Home-page: https://gitlab.com/slcu/teamHJ/henrik_aahl/img2org
+Author: Henrik Ahl
+Author-email: hpa22@cam.ac.uk
+License: GNU General Public License v3
+Keywords: img2org
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+=======
+img2org
+=======
+
+
+.. image:: https://img.shields.io/pypi/v/img2org.svg
+        :target: https://pypi.python.org/pypi/img2org
+
+.. image:: https://img.shields.io/travis/supersubscript/img2org.svg
+        :target: https://travis-ci.org/supersubscript/img2org
+
+.. image:: https://readthedocs.org/projects/img2org/badge/?version=latest
+        :target: https://img2org.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+Image to Organism simulations
+
+
+* Free software: GNU General Public License v3
+* Documentation: https://img2org.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2020-01-16)
+------------------
+
+* First release on PyPI.
+
+
