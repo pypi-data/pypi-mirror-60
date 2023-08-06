@@ -1,0 +1,3 @@
+[console_scripts]
+yamk=yamk.main:main
+
