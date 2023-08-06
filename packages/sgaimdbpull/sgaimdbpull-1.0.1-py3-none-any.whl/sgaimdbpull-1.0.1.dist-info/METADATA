@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sgaimdbpull
+Version: 1.0.1
+Summary: Extract IMDB data
+Home-page: UNKNOWN
+Author: AbdulkadarBabbar
+Author-email: abdulkadar.babbar@sganalytics.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: bs4
+
+Get episode Count
+
+
