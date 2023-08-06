@@ -1,0 +1,14 @@
+validify/__init__.py,sha256=YQ1RrtGQBBRr6i_-_c5c_ZyK7WvawHfU7IdyszJoHkE,331
+validify/validify.py,sha256=yb4dQ_Zkd_1SbpFAHmPLAdGRH3NNNoIbX_ZVHcDlLFk,17311
+validify/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+validify/helpers/cleanup_compare_strings.py,sha256=QuszUtzZ7UkIfqqo6njwXmPSEgRlGkBwkBcazUil1fA,1246
+validify/helpers/messages.py,sha256=Fuf_TnlbBm6FR-xd2lXpS6RBX4oJjIzq3EbeShfQuJs,3789
+validify/helpers/normalize_space.py,sha256=CBRbIBmLUsDB1U_DzpIp59G6cnlcetjpy86XQAi0nW0,1182
+validify/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+validify/tests/prepare_testdata.py,sha256=xlUeamz-j3j60eV7AI5ZRlZzjnRr6WWrSdxerDk_Mhg,7928
+validify/tests/test_main.py,sha256=5i4XMo4wvU1MyAfX6_olGO076ZGwyqJemPNoNX8B-3k,8693
+validify-0.0.3.dist-info/LICENSE,sha256=mx1o3VwwUfojdKB7hV7t7WlwlSW05iaYWz9uaK8Q6s8,1069
+validify-0.0.3.dist-info/METADATA,sha256=AajZLloc89kc6nAevGV2kGOFGei5pAsCdsULBMC4FXQ,7078
+validify-0.0.3.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+validify-0.0.3.dist-info/top_level.txt,sha256=QlnxSJJ_3JQ7PjZ6_OAlc2lvF25_uuc6rw1xCe01uHk,9
+validify-0.0.3.dist-info/RECORD,,
