@@ -1,0 +1,5 @@
+include cellpose/logo/logo.png
+include cellpose/models/cyto_0
+include cellpose/models/size_cyto_A.npy
+include README.md
+include LICENSE
