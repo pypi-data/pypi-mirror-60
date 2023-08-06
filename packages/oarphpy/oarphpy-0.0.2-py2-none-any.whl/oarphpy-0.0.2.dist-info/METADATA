@@ -1,0 +1,56 @@
+Metadata-Version: 2.0
+Name: oarphpy
+Version: 0.0.2
+Summary: A collection of Python utils with an emphasis on Data Science
+Home-page: https://github.com/pwais/oarphpy
+Author: Oarph
+Author-email: py@oarph.me
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Distributed Computing
+Description-Content-Type: text/x-rst
+Provides-Extra: all
+Provides-Extra: spark
+Provides-Extra: tensorflow
+Provides-Extra: utils
+Provides-Extra: all
+Requires-Dist: bokeh (==1.0.4); extra == 'all'
+Requires-Dist: crcmod; extra == 'all'
+Requires-Dist: findspark (==1.3.0); extra == 'all'
+Requires-Dist: humanfriendly; extra == 'all'
+Requires-Dist: imageio; extra == 'all'
+Requires-Dist: numpy; extra == 'all'
+Requires-Dist: pandas; extra == 'all'
+Requires-Dist: pandas (>=0.19.2); extra == 'all'
+Requires-Dist: pyspark (>=2.4.4); extra == 'all'
+Requires-Dist: six; extra == 'all'
+Requires-Dist: tabulate; extra == 'all'
+Requires-Dist: tabulatehelper; extra == 'all'
+Requires-Dist: tensorflow (<=1.15.0); extra == 'all'
+Provides-Extra: spark
+Requires-Dist: findspark (==1.3.0); extra == 'spark'
+Requires-Dist: numpy; extra == 'spark'
+Requires-Dist: pandas (>=0.19.2); extra == 'spark'
+Requires-Dist: pyspark (>=2.4.4); extra == 'spark'
+Provides-Extra: tensorflow
+Requires-Dist: crcmod; extra == 'tensorflow'
+Requires-Dist: tensorflow (<=1.15.0); extra == 'tensorflow'
+Provides-Extra: utils
+Requires-Dist: bokeh (==1.0.4); extra == 'utils'
+Requires-Dist: humanfriendly; extra == 'utils'
+Requires-Dist: imageio; extra == 'utils'
+Requires-Dist: pandas; extra == 'utils'
+Requires-Dist: six; extra == 'utils'
+Requires-Dist: tabulate; extra == 'utils'
+Requires-Dist: tabulatehelper; extra == 'utils'
+
+See https://github.com/pwais/oarphpy
+
+
