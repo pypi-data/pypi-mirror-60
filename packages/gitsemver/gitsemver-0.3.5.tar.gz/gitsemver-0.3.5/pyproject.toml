@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "gitsemver"
+version = "0.3.5"
+description = "semantic versioning from git logs"
+authors = ["Allen Lawrence"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyyaml = "^5.3"
+attrs = "^19.3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3.5"
+pytest-cov = "^2.8.1"
+
+[tool.poetry.scripts]
+gitsemver = "gitsemver:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

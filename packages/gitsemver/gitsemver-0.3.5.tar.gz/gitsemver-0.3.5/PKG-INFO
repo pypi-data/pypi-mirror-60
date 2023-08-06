@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gitsemver
+Version: 0.3.5
+Summary: semantic versioning from git logs
+Author: Allen Lawrence
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: attrs (>=19.3.0,<20.0.0)
+Requires-Dist: pyyaml (>=5.3,<6.0)
