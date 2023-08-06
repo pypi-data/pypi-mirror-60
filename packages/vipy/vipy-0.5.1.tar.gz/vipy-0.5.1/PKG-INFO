@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: vipy
+Version: 0.5.1
+Summary: Visym python tools for privacy preserving computer vision
+Home-page: https://github.com/visym/vipy
+Author: Jeffrey Byrne
+Author-email: jeff@visym.com
+License: UNKNOWN
+Download-URL: https://github.com/visym/vipy/archive/0.5.1.tar.gz
+Description: Visym Labs provides privacy preserving computer vision that does not leak private information without your consent
+Keywords: vision,learning,ML,CV
+Platform: UNKNOWN
