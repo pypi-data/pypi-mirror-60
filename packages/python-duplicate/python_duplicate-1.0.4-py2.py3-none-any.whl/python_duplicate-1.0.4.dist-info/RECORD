@@ -1,0 +1,14 @@
+pyduplicate/__init__.py,sha256=SHipSJT97iGGoQeNuKzTgKKuBUQEMnxzML3Px6mNFWc,204
+pyduplicate/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyduplicate/data/const.py,sha256=6KzxeyC82ubiEs_F0wNeaAFMlSodKI41lt521cFrbOs,74
+pyduplicate/data/from_list.py,sha256=RgDkw7I0V65xK4567YQPNaUUnBsD5V_dKllTK5qblTg,2320
+pyduplicate/data/utils.py,sha256=Svn-qOlUXcHgMNErBgBdnTBODqXNI6d8uWTUogqEvrw,4365
+pyduplicate/database/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyduplicate/database/from_mysql.py,sha256=mLGgTvviQLwF_gp_GjPWuM2h_wVCwDebaWbTw662nEE,2583
+pyduplicate/database/from_psql.py,sha256=DEKwcenjWrU_nuoi8cxK20qZjt47t28Guuwap7a4KDY,2621
+pyduplicate/database/utils.py,sha256=tiCzud-VwWe7c7DHfGnPdVAkUFeRuiJSNjD73HuVK4Y,6031
+python_duplicate-1.0.4.dist-info/LICENSE,sha256=zl5jRonl85H8JDIjli10PpseFWFnw-3lNi7TzGiTaUA,1078
+python_duplicate-1.0.4.dist-info/METADATA,sha256=ad1aksL9mu1ZDls02JzvJ-rEkmFMg2Vo1peZrN2XxQM,1735
+python_duplicate-1.0.4.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+python_duplicate-1.0.4.dist-info/top_level.txt,sha256=-2StjX7ePHOBlcfQWz7J4PyPBXnX_WpKtSb9uH49JIw,12
+python_duplicate-1.0.4.dist-info/RECORD,,
