@@ -1,0 +1,14 @@
+README.md
+setup.py
+Japanese_Deck_Builder.egg-info/PKG-INFO
+Japanese_Deck_Builder.egg-info/SOURCES.txt
+Japanese_Deck_Builder.egg-info/dependency_links.txt
+Japanese_Deck_Builder.egg-info/entry_points.txt
+Japanese_Deck_Builder.egg-info/requires.txt
+Japanese_Deck_Builder.egg-info/top_level.txt
+deckbuilder/CardGenerator.py
+deckbuilder/DeckBuilder.py
+deckbuilder/Gloss.py
+deckbuilder/__init__.py
+deckbuilder/__main__.py
+deckbuilder/glosser_test.py
