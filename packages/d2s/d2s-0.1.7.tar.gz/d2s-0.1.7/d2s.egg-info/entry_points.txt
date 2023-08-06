@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        d2s=d2s:cli
+    
