@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+version
+kix.egg-info/PKG-INFO
+kix.egg-info/SOURCES.txt
+kix.egg-info/dependency_links.txt
+kix.egg-info/top_level.txt
+src/kix/__init__.py
+src/kix/color.py
+src/kix/dict_expander.py
+src/kix/log.py
+src/kix/logger.py
+src/kix/utils/__init__.py
+src/kix/utils/pather.py
+src/kix/utils/truncate.py
