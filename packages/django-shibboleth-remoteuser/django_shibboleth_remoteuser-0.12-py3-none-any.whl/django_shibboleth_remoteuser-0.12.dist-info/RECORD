@@ -1,0 +1,17 @@
+django_shibboleth_remoteuser-0.12.data/data/shibboleth/templates/shibboleth/user_info.html,sha256=rov-bsPOPxDtK4qttg09Pety5u8g6d6FO8vkF2EsCKc,353
+shibboleth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shibboleth/app_settings.py,sha256=QDUBsbDIdVe6rp4IzrQ1DpApebZDzpZKpPZ5CE6y_pQ,1312
+shibboleth/backends.py,sha256=kulZC6qezQmdeuZ0-4EKJar-vtIa1B1bmQIDR51ePbk,3825
+shibboleth/context_processors.py,sha256=eaebCbX7jQlS5C8m2sNdRIROfeiIZKXr_ZQucPKo9bQ,1162
+shibboleth/decorators.py,sha256=e5wOU2CwTQm1DqsWj4uddLryATES0UUQUVPhDQPpCr4,775
+shibboleth/middleware.py,sha256=jVdZmE9XTv2R_XYWRo5-j6s__o3iA7kp4T0YMI0fOKw,5614
+shibboleth/models.py,sha256=iRJKLPEydxzn9OkHMl97BxXGo3fjqyuYJxa1THb3Pug,26
+shibboleth/urls.py,sha256=-g41j_jzgzWL16vOUgIVNvgNkJs91gEcIYDM5i62-e0,361
+shibboleth/views.py,sha256=6FDM99qRPOU-mtlLXVocJd4l9gvBA5oISSfjEJcyjlE,2561
+shibboleth/templates/shibboleth/user_info.html,sha256=rov-bsPOPxDtK4qttg09Pety5u8g6d6FO8vkF2EsCKc,353
+shibboleth/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shibboleth/tests/test_shib.py,sha256=v4xUYOJB2CsdBBvbjUIeP4sNQx2QFEyIurzILAsROK4,15093
+django_shibboleth_remoteuser-0.12.dist-info/METADATA,sha256=nxAbinZrGRoLfGOVr7i7KsPYzAvhgG2bSbnj64L8eCo,6663
+django_shibboleth_remoteuser-0.12.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_shibboleth_remoteuser-0.12.dist-info/top_level.txt,sha256=Pzu8tqBno5xCBohbw3Ld3E6-63-V9nIKIoTb1Gg45_o,11
+django_shibboleth_remoteuser-0.12.dist-info/RECORD,,
