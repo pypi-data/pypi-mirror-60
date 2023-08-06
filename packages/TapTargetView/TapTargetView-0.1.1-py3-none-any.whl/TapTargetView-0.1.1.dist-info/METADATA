@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: TapTargetView
+Version: 0.1.1
+Summary: Attempt to mimic Android's TapTargetView using Kivy and Python
+Home-page: https://github.com/shashi278/TapTargetView
+Author: Shashi Ranjan
+Author-email: shashiranjankv@gmail.com
+License: UNKNOWN
+Keywords: Kivy Python TapTargetView
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: kivy
+
+# TapTargetView
+An attempt to mimic android's TapTargetView using Python and Kivy.
+
+Inspired by [Android's TapTargetView](https://github.com/KeepSafe/TapTargetView)
+
+## Current Demo
+![TapTargetView demo](demo/ttv_demo_2.gif)
+
+#### TODO:
+* [x] Track clicks inside `outer_circle`
+* [x] Track clicks inside `target_circle` and remove the requirement of binding on widget's events
+* [ ] Add shadow property
+* [ ] Better implementation of function to stop animation
+* [ ] Improve ripple animation
+
+
