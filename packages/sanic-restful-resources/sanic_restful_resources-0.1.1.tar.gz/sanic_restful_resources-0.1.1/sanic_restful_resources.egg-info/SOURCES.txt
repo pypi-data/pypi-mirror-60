@@ -1,0 +1,9 @@
+README.md
+setup.py
+sanic_restful_resources/__init__.py
+sanic_restful_resources/sanic_restful_resources.py
+sanic_restful_resources.egg-info/PKG-INFO
+sanic_restful_resources.egg-info/SOURCES.txt
+sanic_restful_resources.egg-info/dependency_links.txt
+sanic_restful_resources.egg-info/requires.txt
+sanic_restful_resources.egg-info/top_level.txt
