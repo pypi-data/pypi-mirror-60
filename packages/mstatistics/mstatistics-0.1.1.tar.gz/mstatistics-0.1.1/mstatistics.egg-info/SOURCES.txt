@@ -1,0 +1,9 @@
+README.md
+setup.py
+mstatistics/__init__.py
+mstatistics/statistics.py
+mstatistics.egg-info/PKG-INFO
+mstatistics.egg-info/SOURCES.txt
+mstatistics.egg-info/dependency_links.txt
+mstatistics.egg-info/not-zip-safe
+mstatistics.egg-info/top_level.txt
