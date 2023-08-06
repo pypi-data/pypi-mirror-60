@@ -1,0 +1,622 @@
+import os
+import re
+import json
+import boto3
+import logging
+import argparse
+from datetime import timedelta, datetime
+from botocore.exceptions import ClientError
+from flask import abort, Flask, request, Response, render_template, jsonify,\
+    session
+from flask_jwt_extended import jwt_optional
+from urllib import parse
+
+from indra.statements import get_all_descendants, IncreaseAmount, \
+    DecreaseAmount, Activation, Inhibition, AddModification, \
+    RemoveModification, get_statement_by_name
+
+from emmaa.util import find_latest_s3_file, strip_out_date, get_s3_client, \
+    does_exist, EMMAA_BUCKET_NAME
+from emmaa.model import load_config_from_s3, last_updated_date, \
+    get_model_stats, _default_test
+from emmaa.answer_queries import QueryManager, load_model_manager_from_cache
+from emmaa.queries import PathProperty, get_agent_from_text, GroundingError, \
+    DynamicProperty, get_agent_from_trips
+from emmaa.answer_queries import FORMATTED_TYPE_NAMES
+
+from indralab_auth_tools.auth import auth, config_auth, resolve_auth
+from indralab_web_templates.path_templates import path_temps
+
+app = Flask(__name__)
+app.register_blueprint(auth)
+app.register_blueprint(path_temps)
+app.config['DEBUG'] = True
+app.config['SECRET_KEY'] = os.environ.get('EMMAA_SERVICE_SESSION_KEY', '')
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+TITLE = 'emmaa title'
+ALL_MODEL_TYPES = ['pysb', 'pybel', 'signed_graph', 'unsigned_graph']
+LINKAGE_SYMBOLS = {'LEFT TACK': '\u22a3',
+                   'RIGHTWARDS ARROW': '\u2192'}
+link_list = [('/home', 'EMMAA Dashboard'),
+             ('/query?tab=static', 'Queries')]
+pass_fail_msg = 'Click to see detailed results for this test'
+stmt_db_link_msg = 'Click to see the evidence for this statement'
+SC, jwt = config_auth(app)
+qm = QueryManager()
+
+
+def _sort_pass_fail(row):
+    def _translator(status):
+        if status.lower() == 'pass':
+            return 0
+        elif status.lower() == 'fail':
+            return 1
+        elif status.lower() == 'n_a':
+            return 2
+        else:
+            raise ValueError(f'Status {status} not handled in sorting test '
+                             f'table')
+    # First sort on count of passing tests per row, then model type from
+    # left (lower number ranks higher).
+    return tuple([sum(row[n+1][1].lower() != 'pass'
+                      for n in range(len(row)-1)),
+                  *(_translator(row[n+1][1]) for n in range(len(row)-1))])
+
+
+def is_available(model, test_corpus, date, bucket=EMMAA_BUCKET_NAME):
+    if (
+        does_exist(
+            bucket, f'model_stats/{model}/model_stats_{date}', '.json') and
+        does_exist(
+            bucket, f'stats/{model}/test_stats_{test_corpus}_{date}', '.json')
+    ) or (
+        does_exist(bucket, f'stats/{model}/stats_{date}', '.json')
+    ):
+        return True
+    return False
+
+
+def get_latest_available_date(
+        model, test_corpus, refresh=False, bucket=EMMAA_BUCKET_NAME):
+    if test_corpus == _default_test(model) and not refresh and \
+            model in model_dates:
+        return model_dates[model]
+    model_date = last_updated_date(model, 'model_stats', extension='.json',
+                                   bucket=bucket)
+    test_date = last_updated_date(model, 'test_stats', tests=test_corpus,
+                                  extension='.json', bucket=bucket)
+    if model_date == test_date:
+        if test_corpus == _default_test(model):
+            model_dates[model] = model_date
+        return model_date
+    min_date = min(model_date, test_date)
+    print(min_date)
+    if is_available(model, test_corpus, min_date, bucket=bucket):
+        if test_corpus == _default_test(model):
+            model_dates[model] = min_date
+        return min_date
+    min_date_obj = datetime.strptime(min_date, "%Y-%m-%d")
+    for day_count in range(1, 30):
+        earlier_date = min_date_obj - timedelta(days=day_count)
+        if is_available(model, test_corpus, earlier_date, bucket=bucket):
+            if test_corpus == _default_test(model):
+                model_dates[model] = earlier_date
+            return earlier_date
+    logger.info(f'Could not find latest available date for {model} model '
+                f'and {test_corpus}.')
+
+
+def _get_test_corpora(model, config, bucket=EMMAA_BUCKET_NAME):
+    tests = config['test'].get('test_corpus', 'large_corpus_tests')
+    if isinstance(tests, str):
+        tests = [tests]
+    tests_with_dates = {}
+    for test in tests:
+        tests_with_dates[test] = get_latest_available_date(
+            model, test, refresh=True, bucket=bucket)
+    return tests_with_dates
+
+
+def _get_model_meta_data(refresh=False, bucket=EMMAA_BUCKET_NAME):
+    s3 = boto3.client('s3')
+    resp = s3.list_objects(Bucket=bucket, Prefix='models/',
+                           Delimiter='/')
+    model_data = []
+    for pref in resp['CommonPrefixes']:
+        model = pref['Prefix'].split('/')[1]
+        config_json = get_model_config(model, bucket=bucket)
+        if not config_json:
+            continue
+        test_corpus = _default_test(model)
+        latest_date = get_latest_available_date(
+            model, test_corpus, refresh=refresh, bucket=bucket)
+        logger.info(f'Latest available date for {model} is {latest_date}')
+        model_data.append((model, config_json, test_corpus, latest_date))
+    return model_data
+
+
+def get_model_config(model, bucket=EMMAA_BUCKET_NAME):
+    if model in model_cache:
+        return model_cache[model]
+    try:
+        config_json = load_config_from_s3(model, bucket=bucket)
+        model_cache[model] = config_json
+    except ClientError:
+        logger.warning(f"Model {model} has no metadata. Skipping...")
+        return None
+    if 'human_readable_name' not in config_json.keys():
+        logger.warning(f"Model {model} has no readable name. Skipping...")
+        model_cache[model] = None
+    return model_cache[model]
+
+
+GLOBAL_PRELOAD = False
+model_cache = {}
+model_dates = {}
+if GLOBAL_PRELOAD:
+    # Load all the model configs
+    model_meta_data = _get_model_meta_data()
+    # Load all the model managers for queries
+    for model, _, _, _ in model_meta_data:
+        load_model_manager_from_cache(model)
+
+
+def get_queryable_stmt_types():
+    """Return Statement class names that can be used for querying."""
+    def get_sorted_descendants(cls):
+        return sorted(get_names(get_all_descendants(cls)))
+
+    def get_names(classes):
+        return [s.__name__ for s in classes]
+
+    stmt_types = \
+        get_names([Activation, Inhibition, IncreaseAmount, DecreaseAmount]) + \
+        get_sorted_descendants(AddModification) + \
+        get_sorted_descendants(RemoveModification)
+    return stmt_types
+
+
+def _make_query(query_dict, use_grouding_service=True):
+    if 'typeSelection' in query_dict.keys():
+        stmt_type = query_dict['typeSelection']
+        stmt_class = get_statement_by_name(stmt_type)
+        subj = get_agent_from_text(
+            query_dict['subjectSelection'], use_grouding_service)
+        obj = get_agent_from_text(
+            query_dict['objectSelection'], use_grouding_service)
+        stmt = stmt_class(subj, obj)
+        query = PathProperty(path_stmt=stmt)
+        tab = 'static'
+    elif 'agentSelection' in query_dict.keys():
+        agent = get_agent_from_trips(query_dict['agentSelection'])
+        value = query_dict['valueSelection']
+        if not value:
+            value = None
+        pattern = query_dict['patternSelection']
+        query = DynamicProperty(agent, pattern, value)
+        tab = 'dynamic'
+    return query, tab
+
+
+def _new_applied_tests(test_stats_json, model_types, model_name, date):
+    # Extract new applied tests into:
+    #   list of tests (one per row)
+    #       each test is a list of tuples (one tuple per column)
+    #           each tuple is a (href, link_text) pair
+    all_test_results = test_stats_json['test_round_summary'][
+        'all_test_results']
+    new_app_hashes = test_stats_json['tests_delta']['applied_hashes_delta'][
+        'added']
+    if len(new_app_hashes) == 0:
+        return 'No new tests were applied'
+    new_app_tests = [(th, all_test_results[th]) for th in new_app_hashes]
+    return _format_table_array(new_app_tests, model_types, model_name, date)
+
+
+def _format_table_array(tests_json, model_types, model_name, date):
+    # tests_json needs to have the structure: [(test_hash, tests)]
+    table_array = []
+    for th, test in tests_json:
+        new_row = [(*test['test'], stmt_db_link_msg)
+                   if len(test['test']) == 2 else test['test']]
+        for mt in model_types:
+            url_param = parse.urlencode(
+                {'model_type': mt, 'test_hash': th, 'date': date})
+            new_row.append((f'/tests/{model_name}?{url_param}',
+                            test[mt][0], pass_fail_msg))
+        table_array.append(new_row)
+    return sorted(table_array, key=_sort_pass_fail)
+
+
+def _format_query_results(formatted_results):
+    result_array = []
+    for qh, res in formatted_results.items():
+        model_types = [mt for mt in ALL_MODEL_TYPES if mt in res]
+        model = res['model']
+        new_res = [('', res["query"], ''),
+                   (f'/dashboard/{model}', model,
+                    f'Click to see details about {model}')]
+        for mt in model_types:
+            url_param = parse.urlencode(
+                {'model_type': mt, 'query_hash': qh})
+            new_res.append((f'/query/{model}?{url_param}', res[mt][0],
+                            'Click to see detailed results for this query'))
+        result_array.append(new_res)
+    return result_array
+
+
+def _format_dynamic_query_results(formatted_results):
+    result_array = []
+    for qh, res in formatted_results.items():
+        model = res['model']
+        new_res = [('', res['query'], ''),
+                   ('', model, ''),
+                   ('', res['result'][0], res['result'][1])]
+        if res.get('image'):
+            new_res.append((res['image'], '', ''))
+        else:
+            new_res.append(('', 'n_a', ''))
+        result_array.append(new_res)
+    return result_array
+
+
+def _new_passed_tests(model_name, test_stats_json, current_model_types, date):
+    new_passed_tests = []
+    all_test_results = test_stats_json['test_round_summary'][
+        'all_test_results']
+    for mt in current_model_types:
+        new_passed_hashes = test_stats_json['tests_delta'][mt][
+            'passed_hashes_delta']['added']
+        if not new_passed_hashes:
+            continue
+        mt_rows = [[('', f'New passed tests for '
+                         f'{FORMATTED_TYPE_NAMES[mt]} model.',
+                     '')]]
+        for test_hash in new_passed_hashes:
+            test = all_test_results[test_hash]
+            path_loc = test[mt][1]
+            if isinstance(path_loc, list):
+                path = path_loc[0]['path']
+            else:
+                path = path_loc
+            url_param = parse.urlencode(
+                {'model_type': mt, 'test_hash': test_hash, 'date': date})
+            new_row = [(*test['test'], stmt_db_link_msg)
+                       if len(test['test']) == 2 else test['test'],
+                       (f'/tests/{model_name}?{url_param}', path,
+                        pass_fail_msg)]
+            mt_rows.append(new_row)
+        new_passed_tests += mt_rows
+    if len(new_passed_tests) > 0:
+        return new_passed_tests
+    return 'No new tests were passed'
+
+
+# Deletes session after the specified time
+@app.before_request
+def session_expiration_check():
+    session.permanent = True
+    session.modified = True
+    app.permanent_session_lifetime = timedelta(minutes=10)
+
+
+@app.route('/')
+@app.route('/home')
+@jwt_optional
+def get_home():
+    user, roles = resolve_auth(dict(request.args))
+    model_data = _get_model_meta_data(refresh=True)
+    return render_template('index_template.html', model_data=model_data,
+                           link_list=link_list,
+                           user_email=user.email if user else "")
+
+
+@app.route('/dashboard/<model>/')
+@jwt_optional
+def get_model_dashboard(model):
+    date = request.args.get('date')
+    test_corpus = request.args.get('test_corpus')
+    tab = request.args.get('tab', 'model')
+    user, roles = resolve_auth(dict(request.args))
+    model_meta_data = _get_model_meta_data()
+    model_stats = get_model_stats(model, 'model', date=date)
+    test_stats = get_model_stats(model, 'test', tests=test_corpus, date=date)
+    if not model_stats or not test_stats:
+        abort(Response(f'Data for {model} and {test_corpus} for {date} '
+                       f'was not found', 404))
+    ndex_id = 'None available'
+    for mid, mmd, tc, av_date in model_meta_data:
+        if mid == model:
+            ndex_id = mmd['ndex']['network']
+            available_tests = _get_test_corpora(model, mmd)
+    if ndex_id == 'None available':
+        logger.warning(f'No ndex ID found for {model}')
+    latest_date = get_latest_available_date(model, test_corpus)
+    model_info_contents = [
+        [('', 'Latest Data Available', ''), ('', latest_date, '')],
+        [('', 'Data Displayed', ''),
+         ('', date, 'Click on the point on time graph to see earlier results')],
+        [('', 'Network on Ndex', ''),
+         (f'http://www.ndexbio.org/#/network/{ndex_id}', ndex_id,
+          'Click to see network on Ndex')]]
+    current_model_types = [mt for mt in ALL_MODEL_TYPES if mt in
+                           test_stats['test_round_summary']]
+    # Filter out rows with all tests == 'n_a'
+    all_tests = []
+    for k, v in test_stats['test_round_summary']['all_test_results'].items():
+        if all(v[mt][0].lower() == 'n_a' for mt in current_model_types):
+            continue
+        else:
+            all_tests.append((k, v))
+
+    all_stmts = model_stats['model_summary']['all_stmts']
+    most_supported = model_stats['model_summary']['stmts_by_evidence'][:10]
+    top_stmts_counts = [((*all_stmts[h], stmt_db_link_msg)
+                         if len(all_stmts[h]) == 2 else all_stmts[h],
+                         ('', str(c), '')) for h, c in most_supported]
+    added_stmts_hashes = \
+        model_stats['model_delta']['statements_hashes_delta']['added']
+    if len(added_stmts_hashes) > 0:
+        added_stmts = [[(*all_stmts[h], stmt_db_link_msg)
+                        if len(all_stmts[h]) == 2 else all_stmts[h]] for h in
+                       added_stmts_hashes]
+    else:
+        added_stmts = 'No new statements were added'
+    return render_template('model_template.html',
+                           model=model,
+                           model_data=model_meta_data,
+                           model_stats_json=model_stats,
+                           test_stats_json=test_stats,
+                           test_corpus=test_corpus,
+                           available_tests=available_tests,
+                           link_list=link_list,
+                           user_email=user.email if user else "",
+                           stmts_counts=top_stmts_counts,
+                           added_stmts=added_stmts,
+                           model_info_contents=model_info_contents,
+                           model_types=["Test", *[FORMATTED_TYPE_NAMES[mt]
+                                                  for mt in
+                                                  current_model_types]],
+                           new_applied_tests=_new_applied_tests(
+                               test_stats_json=test_stats,
+                               model_types=current_model_types,
+                               model_name=model,
+                               date=date),
+                           all_test_results=_format_table_array(
+                               tests_json=all_tests,
+                               model_types=current_model_types,
+                               model_name=model,
+                               date=date),
+                           new_passed_tests=_new_passed_tests(
+                               model, test_stats, current_model_types, date),
+                           date=date,
+                           latest_date=latest_date,
+                           tab=tab)
+
+
+@app.route('/tests/<model>/')
+def get_model_tests_page(model):
+    model_type = request.args.get('model_type')
+    test_hash = request.args.get('test_hash')
+    date = request.args.get('date')
+    if model_type not in ALL_MODEL_TYPES:
+        abort(Response(f'Model type {model_type} does not exist', 404))
+    test_stats = get_model_stats(model, 'test', date=date)
+    if not test_stats:
+        abort(Response(f'Data for {model} for {date} was not found', 404))
+    try:
+        current_test = \
+            test_stats['test_round_summary']['all_test_results'][test_hash]
+    except KeyError:
+        abort(Response(f'Result for this test does not exist for {date}', 404))
+    current_model_types = [mt for mt in ALL_MODEL_TYPES if mt in
+                           test_stats['test_round_summary']]
+    test = current_test["test"]
+    test_status, path_list = current_test[model_type]
+    test_corpus = _default_test(model)
+    latest_date = get_latest_available_date(model, test_corpus)
+    return render_template('tests_template.html',
+                           link_list=link_list,
+                           model=model,
+                           model_type=model_type,
+                           all_model_types=current_model_types,
+                           test_hash=test_hash,
+                           test=test,
+                           test_status=test_status,
+                           path_list=path_list,
+                           formatted_names=FORMATTED_TYPE_NAMES,
+                           date=date,
+                           latest_date=latest_date)
+
+
+@app.route('/query')
+@jwt_optional
+def get_query_page():
+    user, roles = resolve_auth(dict(request.args))
+    user_email = user.email if user else ""
+    tab = request.args.get('tab', 'model')
+    model_meta_data = _get_model_meta_data()
+    stmt_types = get_queryable_stmt_types()
+
+    # Queried results
+    queried_results = 'Results for submitted queries'
+    immediate_table_headers = None
+    dynamic_results = 'Results for submitted queries'
+    dynamic_immediate_headers = None
+    if session.get('query_hashes'):
+        for query_type, query_hashes in session['query_hashes'].items():
+            qr = qm.retrieve_results_from_hashes(query_hashes, query_type)
+            if query_type == 'path_property':
+                immediate_table_headers = ['Query', 'Model'] + [
+                    FORMATTED_TYPE_NAMES[mt] for mt in ALL_MODEL_TYPES if mt in
+                    list(qr.values())[0]] if qr else []
+                queried_results = _format_query_results(qr) if qr else\
+                    'No stashed results for subscribed queries. Please ' \
+                    're-run query to see latest result.'
+            elif query_type == 'dynamic_property':
+                dynamic_immediate_headers = [
+                    'Query', 'Model', 'Result', 'Image']
+                dynamic_results = _format_dynamic_query_results(qr)
+
+    # Subscribed results
+    # user_email = 'joshua@emmaa.com'
+    subscribed_path_headers = []
+    subscribed_dyn_headers = []
+    if user_email:
+        sub_path_res = qm.get_registered_queries(user_email, 'path_property')
+        if sub_path_res:
+            subscribed_path_results = _format_query_results(sub_path_res)
+            subscribed_path_headers = \
+                ['Query', 'Model'] + \
+                [FORMATTED_TYPE_NAMES[mt] for mt in list(
+                    sub_path_res.values())[0] if mt in ALL_MODEL_TYPES]
+        else:
+            subscribed_path_results = 'You have no subscribed queries'
+        sub_dyn_res = qm.get_registered_queries(user_email, 'dynamic_property')
+        if sub_dyn_res:
+            subscribed_dyn_results = _format_dynamic_query_results(sub_dyn_res)
+            subscribed_dyn_headers = ['Query', 'Model', 'Result', 'Image']
+        else:
+            subscribed_dyn_results = 'You have no subscribed queries'
+    else:
+        subscribed_path_results = 'Please log in to see your subscribed queries'
+        subscribed_dyn_results = 'Please log in to see your subscribed queries'
+    return render_template('query_template.html',
+                           immediate_table_headers=immediate_table_headers,
+                           immediate_query_result=queried_results,
+                           immediate_dynamic_results=dynamic_results,
+                           dynamic_immediate_headers=dynamic_immediate_headers,
+                           model_data=model_meta_data,
+                           stmt_types=stmt_types,
+                           subscribed_results=subscribed_path_results,
+                           subscribed_headers=subscribed_path_headers,
+                           subscribed_dynamic_headers=subscribed_dyn_headers,
+                           subscribed_dynamic_results=subscribed_dyn_results,
+                           link_list=link_list,
+                           user_email=user_email,
+                           tab=tab)
+
+
+@app.route('/query/<model>/')
+def get_query_tests_page(model):
+    model_type = request.args.get('model_type')
+    query_hash = int(request.args.get('query_hash'))
+    results = qm.retrieve_results_from_hashes([query_hash], 'path_property')
+    detailed_results = results[query_hash][model_type]\
+        if results else ['query', f'{query_hash}']
+    date = results[query_hash]['date']
+    card_title = ('', results[query_hash]['query'] if results else '', '')
+    return render_template('tests_template.html',
+                           link_list=link_list,
+                           model=model,
+                           model_type=model_type,
+                           all_model_types=ALL_MODEL_TYPES,
+                           test_hash=query_hash,
+                           test=card_title,
+                           is_query_page=True,
+                           test_status=detailed_results[0],
+                           path_list=detailed_results[1],
+                           formatted_names=FORMATTED_TYPE_NAMES,
+                           date=date)
+
+
+@app.route('/query/submit', methods=['POST'])
+@jwt_optional
+def process_query():
+    # Print inputs.
+    logger.info('Got model query')
+    logger.info("Args -----------")
+    logger.info(request.args)
+    logger.info("Json -----------")
+    logger.info(str(request.json))
+    logger.info("------------------")
+
+    user, roles = resolve_auth(dict(request.args))
+    user_email = user.email if user else ""
+    user_id = user.id if user else None
+
+    # Extract info.
+    expected_static_query_keys = {f'{pos}Selection'
+                                  for pos in ['subject', 'object', 'type']}
+    expected_dynamic_query_keys = {f'{pos}Selection'
+                                   for pos in ['pattern', 'value', 'agent']}
+    expected_models = {mid for mid, _, _, _ in _get_model_meta_data()}
+    tab = 'static'
+    try:
+        # If user tries to register query without logging in, refuse query
+        # with 401 (unauthorized)
+        if request.json['register']:
+            if user_email:
+                # Logged in
+                subscribe = request.json['register']
+            else:
+                # Not logged in
+                logger.warning('User not logged in! Query handling aborted.')
+                return jsonify({'result': 'failure',
+                                'reason': 'Invalid credentials'}), 401
+        # Does not try to register
+        else:
+            subscribe = False
+        query_json = request.json['query']
+        assert ((set(query_json.keys()) == expected_static_query_keys or
+                 set(query_json.keys()) == expected_dynamic_query_keys),
+                f'Did not get expected query keys: got {set(query_json.keys())} ')
+        models = set(request.json.get('models'))
+        assert models < expected_models, \
+            f'Got unexpected models: {models - expected_models}'
+    except (KeyError, AssertionError) as e:
+        logger.exception(e)
+        logger.error("Invalid query!")
+        abort(Response(f'Invalid request: {str(e)}', 400))
+    try:
+        query, tab = _make_query(query_json)
+    except GroundingError as e:
+        logger.exception(e)
+        logger.error("Invalid grounding!")
+        abort(Response(f'Invalid entity: {str(e)}', 400))
+
+    is_test = 'test' in request.json or 'test' == request.json.get('tag')
+
+    if is_test:
+        logger.info('Test passed')
+        res = {'result': 'test passed', 'ref': None}
+
+    else:
+        logger.info('Query submitted')
+        try:
+            result = qm.answer_immediate_query(
+                user_email, user_id, query, models, subscribe, use_kappa=False)
+        except Exception as e:
+            logger.exception(e)
+            raise(e)
+        logger.info('Answer to query received: rendering page, returning '
+                    'redirect endpoint')
+        redir_url = f'/query?tab={tab}'
+
+        # Replace existing entry
+        session['query_hashes'] = result
+        res = {'redirectURL': redir_url}
+
+    logger.info('Result: %s' % str(res))
+    return Response(json.dumps(res), mimetype='application/json')
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser('Run the EMMAA dashboard service.')
+    parser.add_argument('--host', default='0.0.0.0')
+    parser.add_argument('--port', default=5000, type=int)
+    parser.add_argument('--preload', action='store_true')
+    args = parser.parse_args()
+
+    # TODO: make pre-loading available when running service via Gunicorn
+    if args.preload and not GLOBAL_PRELOAD:
+        # Load all the model configs
+        model_meta_data = _get_model_meta_data()
+        # Load all the model mamangers for queries
+        for model, _, _, _ in model_meta_data:
+            load_model_manager_from_cache(model)
+
+    print(app.url_map)  # Get all avilable urls and link them
+    app.run(host=args.host, port=args.port)
