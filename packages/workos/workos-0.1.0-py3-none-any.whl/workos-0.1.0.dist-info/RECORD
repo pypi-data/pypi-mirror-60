@@ -1,0 +1,16 @@
+workos/__about__.py,sha256=H3AKFZ6bhhgksdQ12v2qevOBw0pp7pFJkPVuq7aEPak,405
+workos/__init__.py,sha256=Q1XjBFJvq_AVXAD6oBv18fmdlEQUPKj0E6oyo6lp_uM,149
+workos/audit_log.py,sha256=2B0xP67VoUHH_TV-DuldWTwe-8_wP-_EqALpO0tDbwQ,2757
+workos/client.py,sha256=RxcR_6LHNdjp0B6tCRTdXDqEVzp0jFDZ-MgkukFdM3g,476
+workos/exceptions.py,sha256=S0NIS4uYlohEP4YEf0rqwYrW8zp9WETtySatqtv680w,900
+workos/sso.py,sha256=oRzeZiLXJ-4ObiTeSxGO8kfxwHmVwakAgiRAJ8gezOQ,2754
+workos/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+workos/resources/sso.py,sha256=KUWOLaEpvhQFr-8--qEaJYmkWzFhnFcNDSdjhPpiXeY,1231
+workos/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+workos/utils/request.py,sha256=Kjgpt5_ECBKPRw362IB7hOVQLvu7NGeu_OWEsxNzZ6I,2245
+workos/utils/validation.py,sha256=RApF1qwBR0xMd_QdynYV17LEW9BTpaPlC2OlQiWDxzc,868
+workos-0.1.0.dist-info/LICENSE,sha256=2mfeLdd09Jp0za-exo7iIIiCbVTabv9_Y2mPpuleeOs,1063
+workos-0.1.0.dist-info/METADATA,sha256=Q3D0fNQRz01_aHnZR_z1c4Zumd3MrR57g8xLeEckxQc,2365
+workos-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+workos-0.1.0.dist-info/top_level.txt,sha256=ZFskIfue1Tw-JwjyIXRvdsAl9i0DX9VbqmgICXV84Sk,7
+workos-0.1.0.dist-info/RECORD,,
