@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: wikipedia-histories
+Version: 0.0.2
+Summary: A simple package designed to collect the edit histories of Wikipedia pages
+Home-page: https://github.com/ndrezn/wikipedia-histories
+Author: Nathan Drezner
+Author-email: nathan@drezner.com
+License: UNKNOWN
+Description: # Wikipedia Revisions
+        
+        A simple tool to allow a user to pull the edit history of a Wikipedia page in a variety of formats, including JSON, DataFrame, or directly as an object.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
