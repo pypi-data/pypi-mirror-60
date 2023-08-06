@@ -1,0 +1,13 @@
+fontTools==4.2.4
+
+[dev]
+coverage
+pytest
+tox
+flake8
+pytype
+
+[maintain]
+wheel
+setuptools
+twine
