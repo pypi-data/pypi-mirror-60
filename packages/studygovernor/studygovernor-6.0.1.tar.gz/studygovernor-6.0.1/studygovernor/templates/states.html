@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% from "_macros.html" import collapse_card_start, collapse_card_end %}
+{% block content %}
+
+
+<h1>State Overview</h1>
+  {{ collapse_card_start("States", show=True, data_count=states|length) }}
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>id</th>
+        <th>label</th>
+        <th># experiments</th>
+        <th>freetext</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for state in states %}
+      <tr>
+        <td>
+          <a href="{{url_for('web.web_state', id=state.id) }}">
+            {{state.id}}
+          </a>
+        </td>
+        <td>
+          <a href="{{url_for('web.web_state', id=state.id) }}">
+            {{state.label}}
+          </a>
+        </td>
+        <td>
+          {% if state.experiments|length > 0 %}
+            <span class="badge badge-secondary">{{state.experiments|length}}</span>
+          {% endif %}
+          </td>
+        <td>{{state.freetext}}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  {{ collapse_card_end("States") }}
+
+{% endblock %}

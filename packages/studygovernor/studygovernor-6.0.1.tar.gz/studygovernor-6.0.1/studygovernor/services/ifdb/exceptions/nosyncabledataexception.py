@@ -1,0 +1,2 @@
+class NoSyncableDataException(Exception):
+    pass
