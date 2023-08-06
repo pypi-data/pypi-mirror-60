@@ -1,0 +1,4 @@
+micro_restplus_ext
+flask
+sqlalchemy
+six
