@@ -1,0 +1,13 @@
+Flask
+flask_sqlalchemy
+dataclasses
+flask-httpauth
+flask_cors
+subprocess.run
+celery
+redis==3.3.11
+mrcfile
+pillow
+numpy
+scipy
+pyfunctional
