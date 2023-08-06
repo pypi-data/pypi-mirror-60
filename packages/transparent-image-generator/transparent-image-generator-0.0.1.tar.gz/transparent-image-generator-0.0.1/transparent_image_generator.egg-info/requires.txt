@@ -1,0 +1,7 @@
+pypng>=0.0.20
+
+[dev]
+pytest
+setuptools
+wheel
+twine
