@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: blinkytools
+Version: 0.0.1
+Summary: Software tools to work with Blinky sound-to-light conversion sensors.
+Home-page: https://github.com/onolab-tmu/blinky
+Author: Robin Scheibler
+Author-email: fakufaku@gmail.com
+License: UNKNOWN
+Description: Blinky Tools
+        ============
+        
+        This package contains a number of tools to work with Blinkies, small sound-to-light conversion sensors.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
