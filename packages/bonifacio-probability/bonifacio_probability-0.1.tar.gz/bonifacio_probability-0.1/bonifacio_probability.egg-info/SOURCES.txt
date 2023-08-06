@@ -1,0 +1,10 @@
+setup.py
+bonifacio_probability/Binomialdistribution.py
+bonifacio_probability/Gaussiandistribution.py
+bonifacio_probability/Generaldistribution.py
+bonifacio_probability/__init__.py
+bonifacio_probability.egg-info/PKG-INFO
+bonifacio_probability.egg-info/SOURCES.txt
+bonifacio_probability.egg-info/dependency_links.txt
+bonifacio_probability.egg-info/not-zip-safe
+bonifacio_probability.egg-info/top_level.txt
