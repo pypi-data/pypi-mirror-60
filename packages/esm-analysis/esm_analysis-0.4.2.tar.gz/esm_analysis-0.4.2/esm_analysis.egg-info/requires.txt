@@ -1,0 +1,6 @@
+cdo
+Click>=6.0
+pandas
+tabulate
+regex-engine
+pyyaml
