@@ -1,0 +1,11 @@
+spacy_ann/__init__.py,sha256=eeWfPTH04vVI7FAFGfzZMclcuh_E-Ac6-Gda__JVQn0,288
+spacy_ann/ann_linker.py,sha256=hdLxvaKm99Poneanj9NGPyunXYQPiqimrERg1Wb1Kxc,3041
+spacy_ann/candidate_generator.py,sha256=mcIuLlkjayBm1ofsLbVQhTRJ6yy6bSbZzGBZL-Mk6_4,14467
+spacy_ann/models.py,sha256=CDADH8Bzh2Au43Vkqfxt-jkWr4IS7oYBNvO-rkmx5xc,508
+spacy_ann/cli/__init__.py,sha256=qbPKMOlyLg0rtLOigRbi9UCPIkeJEJiVgmeD6hy-QBE,733
+spacy_ann/cli/create_index.py,sha256=qij3fnXRFcrj4EQVFASKtChlt4HjdC12Ts1D-gCk7pg,4521
+spacy_ann_linker-0.0.1.dist-info/entry_points.txt,sha256=p0u1mflp69e93hExzEE7a4-8Gs9TYqYSDg4aAQaugK8,48
+spacy_ann_linker-0.0.1.dist-info/LICENSE,sha256=mQaUD2Gx8LUz-n2ZuvVReLKAj74RPqUd-_rYVyzNXys,1162
+spacy_ann_linker-0.0.1.dist-info/WHEEL,sha256=W0C0r2jfBMZdb75jfiTB1qBj15B4vwTGGZrLTh2uslc,81
+spacy_ann_linker-0.0.1.dist-info/METADATA,sha256=GnQykZS8SjNq2nk3iUv9UH8_SuXF9ymQZvAPE65yLz0,3007
+spacy_ann_linker-0.0.1.dist-info/RECORD,,
