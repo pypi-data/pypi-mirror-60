@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: corae
+Version: 0.0.1
+Summary: A feature selection framwork
+Home-page: https://github.com/pwaabdullah/CoRAE
+Author: Abdullah Al Mamun
+Author-email: aamcse@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: keras
+
+###### CoRAE: Concreate Relaxation Autoencoder for Differentiable Gene Selection and Pan-Cancer Classification
+
+
