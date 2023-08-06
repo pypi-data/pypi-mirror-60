@@ -1,0 +1,8 @@
+setup.py
+idmrc/idmrc.py
+idmrc.egg-info/PKG-INFO
+idmrc.egg-info/SOURCES.txt
+idmrc.egg-info/dependency_links.txt
+idmrc.egg-info/entry_points.txt
+idmrc.egg-info/requires.txt
+idmrc.egg-info/top_level.txt

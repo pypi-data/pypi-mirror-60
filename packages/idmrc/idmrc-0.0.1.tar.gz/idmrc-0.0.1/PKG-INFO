@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: idmrc
+Version: 0.0.1
+Summary: a simple idmrc
+Home-page: https://gitlab.hrz.tu-chemnitz.de/slm/rc
+Author: Lukas Jurk
+Author-email: lukas.jurk@tu-dresden.de
+License: GPLv3
+Description: UNKNOWN
+Keywords: requests rest
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
