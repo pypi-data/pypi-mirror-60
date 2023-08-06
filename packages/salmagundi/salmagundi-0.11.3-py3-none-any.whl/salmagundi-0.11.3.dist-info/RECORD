@@ -1,0 +1,14 @@
+salmagundi/__init__.py,sha256=0ibiIxCtr9Kvn8PQKAJ0gm3bXH_50z9RQhnmUnafrho,50
+salmagundi/colors.py,sha256=QwQ5vu8NwJddRYhhcBs846RHykYLnmNEZfeGft4b5wI,10433
+salmagundi/config.py,sha256=PAXQN0IGO6DICSzRqBLe56_ZAzeqdRU_0SzbhaPqRoM,25094
+salmagundi/crypto.py,sha256=Iuhqb9l3D3OmeIg9l-PBkRacGV26J56Nvnr1blGqF2I,9592
+salmagundi/files.py,sha256=tlxx9RW1jClJJnW220GJshMXLZedhYw3Z6uXQrFwWNg,9789
+salmagundi/inputs.py,sha256=K8_VUvwJIYv1l8JjQIEdu1_AobfwAWP-7neQqSJUpEU,10334
+salmagundi/strings.py,sha256=bCtZwOrCQ_TfWMCtqbldJK7RIOVYm9eVk-N-PT29Xx4,22962
+salmagundi/utils.py,sha256=hkCZItaMrHSk830exu8ftEXDwIjHy-6cgzhOBMYvvSM,13204
+salmagundi/validation.py,sha256=HVVFlTTakOfEo0_GSy1BymxpPcRC66JzF0HMCIVVIRk,20968
+salmagundi-0.11.3.dist-info/LICENSE.txt,sha256=mo2GMQplqv0GJlOXINqpw0Kh95bbw13eJhoCRrVA7N4,1540
+salmagundi-0.11.3.dist-info/METADATA,sha256=J17pW2NtLH5MkBwoYyuwwHHgqPHhM08HbvReM99JHA4,3814
+salmagundi-0.11.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+salmagundi-0.11.3.dist-info/top_level.txt,sha256=2o_ibHUkg10URIz7ZN-xndhHUC-QZEKHkQ5nOIxsDPw,11
+salmagundi-0.11.3.dist-info/RECORD,,
