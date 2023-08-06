@@ -1,0 +1,13 @@
+pe_tools/__init__.py,sha256=TlZTjEnhQzzYmJN9i2l8dhVMI7LOwb7oiNByf_Zogb4,93
+pe_tools/pe_parser.py,sha256=jJ37diVh6aFlAX3TvjOI4eH7S0UmPIQmxaYBy0oasU0,18721
+pe_tools/peresed.py,sha256=xUn5ShqiEtvuTKDawzzHymkRKnILj8WR7agj6X60Z8w,10656
+pe_tools/rsrc.py,sha256=jGWMgA3DPDcmps3sJGmBZhjFaaofKXoxFaZCzDkV438,8057
+pe_tools/struct3.py,sha256=HzuPn9W1rREZFjdMstlaVMjhy9H5BCgQ6l6PbvFzPng,3436
+pe_tools/utils.py,sha256=qiTGa7B7kSPuZ7svB7eSISQ-Lom07Rs3m89q45Lw508,142
+pe_tools/version_info.py,sha256=33bInVkXaOLO7xooWy5f-uyaOCaSqg8ZeQlF8A6E9oI,8049
+pe_tools-0.2.8.dist-info/LICENSE,sha256=nrb2nUih3XZOijPxSlhPRg087GU0d8E2qV3W35wkkhE,1055
+pe_tools-0.2.8.dist-info/METADATA,sha256=AqfV1-_BTMiqnMNN5VqdxQwt4dmA4BS_al6XxNsGMVQ,269
+pe_tools-0.2.8.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+pe_tools-0.2.8.dist-info/entry_points.txt,sha256=0xFvQzH35pNR5NEkMJTbjTA9P6A6Tay5vNSQnKZUhoc,51
+pe_tools-0.2.8.dist-info/top_level.txt,sha256=PSgdwAvdxlz9_D6LFEj4jKUveOej79wtx9K7ScGOjb8,9
+pe_tools-0.2.8.dist-info/RECORD,,
