@@ -1,0 +1,6 @@
+setup.py
+draft_sport.egg-info/PKG-INFO
+draft_sport.egg-info/SOURCES.txt
+draft_sport.egg-info/dependency_links.txt
+draft_sport.egg-info/requires.txt
+draft_sport.egg-info/top_level.txt
