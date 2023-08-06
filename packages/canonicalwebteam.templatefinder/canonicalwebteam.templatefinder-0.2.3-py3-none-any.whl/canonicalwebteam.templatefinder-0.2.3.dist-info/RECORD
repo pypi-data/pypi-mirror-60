@@ -1,0 +1,10 @@
+canonicalwebteam/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+canonicalwebteam/templatefinder/__init__.py,sha256=EpePN5bEUAn-gbj3q7sZ5xTN-QWy0FZK6k59PvK8K9o,56
+canonicalwebteam/templatefinder/templatefinder.py,sha256=n9qd0AuU6qPtw5MEukEjgfr2BpGu9M_yUEe_CZwHeGA,4494
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_templatefinder.py,sha256=GuIdZYEtE_u0m8q05PJFLhMyMO22XoQvnWyzmBTsBFg,2620
+canonicalwebteam.templatefinder-0.2.3.dist-info/LICENSE.txt,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+canonicalwebteam.templatefinder-0.2.3.dist-info/METADATA,sha256=9imWe_0oFsPAT9XVGZBLnQdcglnkbasgZIeJbMg3vZY,3294
+canonicalwebteam.templatefinder-0.2.3.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+canonicalwebteam.templatefinder-0.2.3.dist-info/top_level.txt,sha256=3QzUW8NsRMpxkXDuvyTsaZnBKpWaxA2k0Ofz7ELl5eM,23
+canonicalwebteam.templatefinder-0.2.3.dist-info/RECORD,,
