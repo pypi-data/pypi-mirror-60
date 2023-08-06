@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: qtwidgets
+Version: 0.1
+Summary: Custom widget library for PyQt5 and PySide2 (Qt for Python). Free to use in your own applications.
+Home-page: http://github.com/learnpyqt/python-qtwidgets
+Author: Martin Fitzpatrick
+Author-email: martin.fitzpatrick@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Widget Sets
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
