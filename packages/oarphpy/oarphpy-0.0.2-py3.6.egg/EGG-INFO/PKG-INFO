@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: oarphpy
+Version: 0.0.2
+Summary: A collection of Python utils with an emphasis on Data Science
+Home-page: https://github.com/pwais/oarphpy
+Author: Oarph
+Author-email: py@oarph.me
+License: Apache License 2.0
+Description: See https://github.com/pwais/oarphpy
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Distributed Computing
+Description-Content-Type: text/x-rst
+Provides-Extra: all
+Provides-Extra: utils
+Provides-Extra: spark
+Provides-Extra: tensorflow
