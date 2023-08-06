@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dataget
+Version: 0.4.0
+Summary: 
+License: MIT
+Author: Cristian Garcia
+Author-email: cgarcia.e88@gmail.com
+Requires-Python: ==3.7.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: aiofiles
+Requires-Dist: httpx
+Requires-Dist: idx2numpy
+Requires-Dist: kaggle (>=1.5.6,<2.0.0)
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: tqdm
