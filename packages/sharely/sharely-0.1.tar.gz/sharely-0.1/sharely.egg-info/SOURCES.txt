@@ -1,0 +1,9 @@
+setup.py
+sharely/__init__.py
+sharely/generalSharely.py
+sharely/metrics.py
+sharely.egg-info/PKG-INFO
+sharely.egg-info/SOURCES.txt
+sharely.egg-info/dependency_links.txt
+sharely.egg-info/not-zip-safe
+sharely.egg-info/top_level.txt
