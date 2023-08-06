@@ -1,0 +1,13 @@
+README.md
+setup.py
+pycrime/__init__.py
+pycrime/__version__.py
+pycrime/client.py
+pycrime.egg-info/PKG-INFO
+pycrime.egg-info/SOURCES.txt
+pycrime.egg-info/dependency_links.txt
+pycrime.egg-info/requires.txt
+pycrime.egg-info/top_level.txt
+pycrime.egg-info/zip-safe
+pycrime/apis/__init__.py
+pycrime/apis/statistics.py
