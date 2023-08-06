@@ -1,0 +1,10 @@
+qtcurate/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+qtcurate/__version__.py,sha256=n7VFVyxhe9KZJoqF5nj85b9dEvqrn2yiSqvTZFp9i5M,279
+qtcurate/dictionaries.py,sha256=8lQz3aM8C_IEbi6vb-nfSz8-8am2A-uF_2aRw-vjUDk,7673
+qtcurate/exceptions.py,sha256=9gYgyaK0dURrEFXGtr5sRjTJ44E8cAJlwhL9eMWSFOM,417
+qtcurate/tagging.py,sha256=hw9LEkJ1caW3rgIbALx7Erv40qqnnt9O_t_-aOKIF6s,15607
+qtcurate-1.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+qtcurate-1.1.0.dist-info/METADATA,sha256=H4Y-CAk0fl8S318KU6V22hDqEMbCC77yZkjD0b1-Zsc,14898
+qtcurate-1.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+qtcurate-1.1.0.dist-info/top_level.txt,sha256=zIE_V0Dy7AzT3ORDPhiZuN-xt5lfFpxtWQEgbtvjO8c,9
+qtcurate-1.1.0.dist-info/RECORD,,
