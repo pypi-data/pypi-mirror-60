@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: kss-pyutil
+Version: 1.1.0
+Summary: General Python utilities
+Home-page: https://github.com/klassen-software-solutions/pyutil
+Author: Steven W. Klassen
+Author-email: klassens@acm.org
+License: MIT License
+Description: # pyutil
+        
+        Generic Python utility module
+        
+        ## Description
+        
+        This module contains a number of essentially miscellaneous utilities used within KSS Python projects.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
