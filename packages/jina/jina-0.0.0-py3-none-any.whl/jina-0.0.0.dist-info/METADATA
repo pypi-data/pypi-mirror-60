@@ -1,0 +1,142 @@
+Metadata-Version: 2.1
+Name: jina
+Version: 0.0.0
+Summary: Jina (v%s) is a cloud-native semantic search engine powered by deep neural networks.It provides a universal solution of large-scale index and query for media contents.
+Home-page: UNKNOWN
+Author: Jina Team and All Contributors
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Unix Shell
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Provides-Extra: aiohttp
+Requires-Dist: aiohttp ; extra == 'aiohttp'
+Provides-Extra: all
+Requires-Dist: image ; extra == 'all'
+Requires-Dist: jieba ; extra == 'all'
+Requires-Dist: flask ; extra == 'all'
+Requires-Dist: pylint ; extra == 'all'
+Requires-Dist: plyvel (>=1.0.5) ; extra == 'all'
+Requires-Dist: bert-serving-client (>=1.8.6) ; extra == 'all'
+Requires-Dist: peakutils ; extra == 'all'
+Requires-Dist: onnxruntime ; extra == 'all'
+Requires-Dist: imagehash (>=4.0) ; extra == 'all'
+Requires-Dist: annoy (==1.15.2) ; extra == 'all'
+Requires-Dist: scipy ; extra == 'all'
+Requires-Dist: aiohttp ; extra == 'all'
+Requires-Dist: flair (>=0.4.1) ; extra == 'all'
+Requires-Dist: pytorch-transformers ; extra == 'all'
+Requires-Dist: bert-serving-server (>=1.8.6) ; extra == 'all'
+Requires-Dist: sklearn ; extra == 'all'
+Requires-Dist: gputil (>=1.4.0) ; extra == 'all'
+Requires-Dist: memory-profiler (>=0.55.0) ; extra == 'all'
+Requires-Dist: opencv-python (>=4.0.0) ; extra == 'all'
+Requires-Dist: librosa (>=0.7.0) ; extra == 'all'
+Requires-Dist: psutil (>=5.6.1) ; extra == 'all'
+Provides-Extra: annoy
+Requires-Dist: annoy (==1.15.2) ; extra == 'annoy'
+Provides-Extra: audio
+Requires-Dist: librosa (>=0.7.0) ; extra == 'audio'
+Provides-Extra: bert
+Requires-Dist: bert-serving-server (>=1.8.6) ; extra == 'bert'
+Requires-Dist: bert-serving-client (>=1.8.6) ; extra == 'bert'
+Requires-Dist: flair (>=0.4.1) ; extra == 'bert'
+Requires-Dist: pytorch-transformers ; extra == 'bert'
+Provides-Extra: bert-serving-client
+Requires-Dist: bert-serving-client (>=1.8.6) ; extra == 'bert-serving-client'
+Provides-Extra: bert-serving-server
+Requires-Dist: bert-serving-server (>=1.8.6) ; extra == 'bert-serving-server'
+Provides-Extra: chinese
+Requires-Dist: jieba ; extra == 'chinese'
+Provides-Extra: cv
+Requires-Dist: opencv-python (>=4.0.0) ; extra == 'cv'
+Requires-Dist: imagehash (>=4.0) ; extra == 'cv'
+Requires-Dist: peakutils ; extra == 'cv'
+Requires-Dist: image ; extra == 'cv'
+Provides-Extra: encode
+Requires-Dist: bert-serving-client (>=1.8.6) ; extra == 'encode'
+Requires-Dist: flair (>=0.4.1) ; extra == 'encode'
+Requires-Dist: pytorch-transformers ; extra == 'encode'
+Requires-Dist: bert-serving-server (>=1.8.6) ; extra == 'encode'
+Requires-Dist: onnxruntime ; extra == 'encode'
+Provides-Extra: flair
+Requires-Dist: flair (>=0.4.1) ; extra == 'flair'
+Provides-Extra: flask
+Requires-Dist: flask ; extra == 'flask'
+Provides-Extra: gpu
+Requires-Dist: gputil (>=1.4.0) ; extra == 'gpu'
+Provides-Extra: gputil
+Requires-Dist: gputil (>=1.4.0) ; extra == 'gputil'
+Provides-Extra: http
+Requires-Dist: aiohttp ; extra == 'http'
+Requires-Dist: flask ; extra == 'http'
+Provides-Extra: image
+Requires-Dist: image ; extra == 'image'
+Provides-Extra: imagehash
+Requires-Dist: imagehash (>=4.0) ; extra == 'imagehash'
+Provides-Extra: index
+Requires-Dist: plyvel (>=1.0.5) ; extra == 'index'
+Requires-Dist: annoy (==1.15.2) ; extra == 'index'
+Provides-Extra: jieba
+Requires-Dist: jieba ; extra == 'jieba'
+Provides-Extra: librosa
+Requires-Dist: librosa (>=0.7.0) ; extra == 'librosa'
+Provides-Extra: memory_profiler
+Requires-Dist: memory-profiler (>=0.55.0) ; extra == 'memory_profiler'
+Provides-Extra: ml
+Requires-Dist: onnxruntime ; extra == 'ml'
+Requires-Dist: sklearn ; extra == 'ml'
+Provides-Extra: nlp
+Requires-Dist: bert-serving-client (>=1.8.6) ; extra == 'nlp'
+Requires-Dist: flair (>=0.4.1) ; extra == 'nlp'
+Requires-Dist: pytorch-transformers ; extra == 'nlp'
+Requires-Dist: jieba ; extra == 'nlp'
+Requires-Dist: bert-serving-server (>=1.8.6) ; extra == 'nlp'
+Provides-Extra: numeric
+Requires-Dist: scipy ; extra == 'numeric'
+Provides-Extra: onnxruntime
+Requires-Dist: onnxruntime ; extra == 'onnxruntime'
+Provides-Extra: opencv-python
+Requires-Dist: opencv-python (>=4.0.0) ; extra == 'opencv-python'
+Provides-Extra: peakutils
+Requires-Dist: peakutils ; extra == 'peakutils'
+Provides-Extra: plyvel
+Requires-Dist: plyvel (>=1.0.5) ; extra == 'plyvel'
+Provides-Extra: prep
+Requires-Dist: opencv-python (>=4.0.0) ; extra == 'prep'
+Provides-Extra: psutil
+Requires-Dist: psutil (>=5.6.1) ; extra == 'psutil'
+Provides-Extra: pylint
+Requires-Dist: pylint ; extra == 'pylint'
+Provides-Extra: pytorch-transformers
+Requires-Dist: pytorch-transformers ; extra == 'pytorch-transformers'
+Provides-Extra: scipy
+Requires-Dist: scipy ; extra == 'scipy'
+Provides-Extra: sklearn
+Requires-Dist: sklearn ; extra == 'sklearn'
+Provides-Extra: test
+Requires-Dist: psutil (>=5.6.1) ; extra == 'test'
+Requires-Dist: memory-profiler (>=0.55.0) ; extra == 'test'
+Requires-Dist: pylint ; extra == 'test'
+
+# jina
+
+
