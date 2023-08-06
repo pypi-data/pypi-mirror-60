@@ -1,0 +1,15 @@
+peerjs/api.py,sha256=Q4NopB4XFlIYi-qbbazJP9CaZ518hhz7q_9P_nBe-vA,3369
+peerjs/baseconnection.py,sha256=6qdERXe8rYe6hGgDBvLB0XgAl-YYUkXOhN0koj9hDWI,1235
+peerjs/dataconnection.py,sha256=5qjPsVmjk4o_-AB7veSLyggHbEZJWIV4IJRv16DQSWQ,12861
+peerjs/enums.py,sha256=m8hC8F5aYRA64jakz0GIdRZGfebzTZn2bdssuJGyFiQ,2070
+peerjs/negotiator.py,sha256=muYO5M6VFO_QZl9gLWMObpb1_Io1btzozNCzeHlyw6w,15348
+peerjs/peer.py,sha256=BdPF_WedBOVPhkqKkzbCv2s4_J6RVO7eLfbjBjFoLtM,19354
+peerjs/peerroom.py,sha256=bHRRl7r7CQ19WDtV8ViwnpmJWag8n3B0OKDwauSluc0,3170
+peerjs/servermessage.py,sha256=oSktLbZFM8nNQiav2cs2gURX5qK-7NnVBdD8YXzlsIM,410
+peerjs/socket.py,sha256=tYvyBmBujFmmUQ_oGhYOTrJeycSgDx7FLVtK2NczVpM,5066
+peerjs/util.py,sha256=FHJYgMGi_d2UXJ8qV3bkwtPcgMKIbFYhSiyQDLaWfGg,4006
+peerjs/ext/http-proxy.py,sha256=9WgEG4QCRGj9ZarLAj5mzEeVgmeUPe6KbZJfTsZyD1U,9623
+peerjs-1.1.2.dist-info/METADATA,sha256=oy_pmscFOcaHjnfZgh-oiCbv5B566pJcRG2kxOo3GEg,4718
+peerjs-1.1.2.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+peerjs-1.1.2.dist-info/top_level.txt,sha256=VOEUwznDioQYYetSr7AsWAW5R-Qgn0u3aN4w5dmsJms,7
+peerjs-1.1.2.dist-info/RECORD,,
