@@ -1,0 +1,4 @@
+requests
+
+[azurecli]
+azure-core

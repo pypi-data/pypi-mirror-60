@@ -1,0 +1,8 @@
+README.md
+setup.py
+databricks_client/__init__.py
+databricks_client.egg-info/PKG-INFO
+databricks_client.egg-info/SOURCES.txt
+databricks_client.egg-info/dependency_links.txt
+databricks_client.egg-info/requires.txt
+databricks_client.egg-info/top_level.txt
