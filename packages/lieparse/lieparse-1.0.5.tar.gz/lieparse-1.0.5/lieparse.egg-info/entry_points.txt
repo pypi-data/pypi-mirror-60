@@ -1,0 +1,3 @@
+[console_scripts]
+LiepaParse = lieparse.samples.LiepaParse:main
+
