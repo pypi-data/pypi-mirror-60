@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tinycircuits-a1454
+Version: 0.0.1
+Summary: Wireling Analog Hall Effect Sensor Python library
+Home-page: https://github.com/TinyCircuits/TinyCircuits-Wireling-Hall-Effect-Python-AST1006
+Author: TinyCircuits
+Author-email: info@tinycircuits.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# TinyCircuits Wireling Analog Hall Effect Sensor Python AST1006
+
+This repository holds a python package and example meant for using a TinyCircuits [Analog Hall Effect Sensor Wireling](https://tinycircuits.com/collections/wirelings/products/analog-digital-hall-sensor-wireling?variant=30110882431060) with a Raspberry Pi and Wireling Pi Hat.
+
+To install the package, use:
+
+```
+pip3 install tinycircuits-a1454
+```
+
+or if your default is Python 3:
+
+```
+pip install tinycircuits-a1454
+```
+
+Software written by: [TinyCircuits](https://tinycircuits.com/) for use with TinyCircuits hardware 
+
+
