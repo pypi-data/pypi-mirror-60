@@ -1,0 +1,12 @@
+wrpclient/__init__.py,sha256=JzuM_CNnbrdyjChk--ALUgBOdJNNF9UEJOK7dJxODh4,48
+wrpclient/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wrpclient/camera.py,sha256=xpT_TrAzc21gZTo_rbu-YYjpRgfhEEWs_RV-SFa2I94,7372
+wrpclient/client.py,sha256=W5F1SPa0o-nepNBSMwJ5At2owAJr1tlLgb4ClBBUqLY,5700
+wrpclient/driver.py,sha256=a7eMOTtfRxhi3uIk6Ogu2cOgQ1qARlBilp39eEYU2k4,1184
+wrpclient/message.py,sha256=w8IJsZ7BwZFFInaElyZOqrN1wLROrC_9MidYhXVcLyA,14129
+wrpclient/wrp_connector.py,sha256=BsIJXgdjW1dzYymq8CEzP1e6gAuDtgMkzciFpousCCQ,19543
+wrpclient-0.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+wrpclient-0.1.dist-info/METADATA,sha256=W7xCJeodVGj4XZhhJwZhaJiVqOl3doYWgU1xaeRWW5w,5447
+wrpclient-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+wrpclient-0.1.dist-info/top_level.txt,sha256=BD5WNTZroCe4tN76hxG51FGFJqn2yjtvWn-_UrySwlM,10
+wrpclient-0.1.dist-info/RECORD,,
