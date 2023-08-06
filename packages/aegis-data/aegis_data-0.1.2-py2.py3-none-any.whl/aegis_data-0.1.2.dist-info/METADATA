@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: aegis-data
+Version: 0.1.2
+Summary: Data collection agent for project Aegis
+Home-page: UNKNOWN
+Author: Moliang
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: pytest-cov
+Requires-Dist: prompt-toolkit
+Requires-Dist: pymongo
+Requires-Dist: coverage
+Requires-Dist: pandas
+Requires-Dist: dask
+
+UNKNOWN
+
+
