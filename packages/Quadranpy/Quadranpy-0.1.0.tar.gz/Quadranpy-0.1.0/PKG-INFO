@@ -1,0 +1,59 @@
+Metadata-Version: 1.2
+Name: Quadranpy
+Version: 0.1.0
+Summary: QuadraNpy process Sales and Payment reports
+Home-page: https://github.com/hmelino/Quadranpy
+Author: Matus Hmelar
+Author-email: mhmelar@gmail.com
+License: UNKNOWN
+Description: =========
+        QuadraNpy
+        =========
+        
+        
+        
+        
+        .. image:: https://pyup.io/repos/github/hmelino/Quadranpy/shield.svg
+             :target: https://pyup.io/repos/github/hmelino/Quadranpy/
+             :alt: Updates
+        
+        
+        
+        QuadraNpy process Sales and Payment reports
+        
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2020-01-29)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: Quadranpy
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
