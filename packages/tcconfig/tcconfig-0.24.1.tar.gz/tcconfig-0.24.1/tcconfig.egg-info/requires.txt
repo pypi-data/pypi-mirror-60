@@ -1,0 +1,47 @@
+setuptools>=38.3.0
+colorama<1,>=0.3.7
+DataProperty<2,>=0.43.2
+docker<5,>=1.9.0
+humanreadable<1,>=0.0.7
+Logbook<2,>=0.12.3
+msgfy<1,>=0.0.6
+pyparsing<3,>=2.0.3
+pyroute2<1,>=0.5.7
+simplejson<4,>=3.8.1
+SimpleSQLite<2,>=0.45.4
+six<2,>=1.10.0
+subprocrunner<2,>=0.17.0
+typepy<2,>=0.6.4
+voluptuous<1
+
+[:python_version < "3.3"]
+ipaddress
+
+[:python_version < "3.4"]
+enum34
+
+[:python_version <= "3.4"]
+path.py<12
+
+[:python_version > "3.4"]
+path.py<13,>=12.0.1
+
+[all]
+Pygments>=2.2.0
+
+[buildexe]
+pyinstaller>=3.4
+
+[color]
+Pygments>=2.2.0
+
+[test]
+allpairspy>=2.5
+pingparsing>=0.18.2
+
+[test:python_version < "3"]
+mock<4
+pytest<5
+
+[test:python_version >= "3"]
+pytest>=5
