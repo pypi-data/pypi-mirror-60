@@ -1,0 +1,13 @@
+tensorflow>=2.0.1
+numpy>=1.9.1
+matplotlib
+sklearn
+
+[other]
+xlrd
+pandas
+seaborn
+imageio
+
+[tests]
+pytest
