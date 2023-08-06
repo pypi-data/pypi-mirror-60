@@ -1,0 +1,2 @@
+numpy>=1.13
+fim@ git+https://github.com/myaooo/pyfim-clone@master#egg=fim-6.28
