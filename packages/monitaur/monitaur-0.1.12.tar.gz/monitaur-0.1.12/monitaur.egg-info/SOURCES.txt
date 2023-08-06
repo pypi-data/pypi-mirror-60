@@ -1,0 +1,6 @@
+README.md
+monitaur.egg-info/PKG-INFO
+monitaur.egg-info/SOURCES.txt
+monitaur.egg-info/dependency_links.txt
+monitaur.egg-info/requires.txt
+monitaur.egg-info/top_level.txt
