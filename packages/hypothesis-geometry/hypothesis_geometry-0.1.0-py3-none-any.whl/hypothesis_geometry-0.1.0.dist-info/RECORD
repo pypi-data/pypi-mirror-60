@@ -1,0 +1,14 @@
+hypothesis_geometry/__init__.py,sha256=zfxK038Sd5VV8YnNKoKF2dXMTf8jwGHaGVgrOlJxMP4,99
+hypothesis_geometry/hints.py,sha256=RFHEUseE5HyXA_OaI2Zgu1fFqGTpI_S-4bkNm7WudVQ,330
+hypothesis_geometry/planar.py,sha256=OAJavUY29V4ma7JXIxU4yXK53tBVMlneS8g9d_6J_Kg,5715
+hypothesis_geometry/utils.py,sha256=o3YMz5yuatPfjQQY9B7LAWYNAWR5kwrxyo5Muc4ZwAE,3970
+hypothesis_geometry/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hypothesis_geometry/core/contracts.py,sha256=bYEauG033M1b8m00e4lkB2hLsQ03_GewD6BtVK_unts,1820
+hypothesis_geometry/core/subdivisional.py,sha256=6c3KpIc9aKOkZfj_slsMsriD85WJxB6NxYpBsWa5vso,3705
+hypothesis_geometry/core/triangular.py,sha256=LLGIp_ONxuB_OO7ochyEkwPcd7BwGy-IL1lgq-mqxSQ,5978
+hypothesis_geometry/core/utils.py,sha256=iw06wRXc2VhcGv7ne5RoYCNHSTn9_JU9wAqjvYXAYOo,1923
+hypothesis_geometry-0.1.0.dist-info/LICENSE,sha256=-W_qNLRoZO2-AnwtGfKupruYTfLtIk39IeMqidpeVOU,1069
+hypothesis_geometry-0.1.0.dist-info/METADATA,sha256=xp2WjlqXgfqRjW9XdEmKW6_3kDuERBixOu-ekwiREIQ,6376
+hypothesis_geometry-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+hypothesis_geometry-0.1.0.dist-info/top_level.txt,sha256=NybbY-yEaQgb6se1RfX6s52r1SQ5jDh2xlrWlBm-sFw,20
+hypothesis_geometry-0.1.0.dist-info/RECORD,,
