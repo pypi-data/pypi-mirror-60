@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: jina
+Version: 0.0.0
+Summary: Jina (v%s) is a cloud-native semantic search engine powered by deep neural networks.It provides a universal solution of large-scale index and query for media contents.
+Home-page: UNKNOWN
+Author: Jina Team and All Contributors
+License: UNKNOWN
+Description: # jina
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Unix Shell
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Provides-Extra: bert
+Provides-Extra: encode
+Provides-Extra: nlp
+Provides-Extra: bert-serving-server
+Provides-Extra: bert-serving-client
+Provides-Extra: flair
+Provides-Extra: index
+Provides-Extra: annoy
+Provides-Extra: jieba
+Provides-Extra: chinese
+Provides-Extra: prep
+Provides-Extra: cv
+Provides-Extra: opencv-python
+Provides-Extra: imagehash
+Provides-Extra: image
+Provides-Extra: peakutils
+Provides-Extra: plyvel
+Provides-Extra: test
+Provides-Extra: pylint
+Provides-Extra: memory_profiler
+Provides-Extra: psutil
+Provides-Extra: gpu
+Provides-Extra: gputil
+Provides-Extra: pytorch-transformers
+Provides-Extra: onnxruntime
+Provides-Extra: ml
+Provides-Extra: audio
+Provides-Extra: librosa
+Provides-Extra: numeric
+Provides-Extra: scipy
+Provides-Extra: sklearn
+Provides-Extra: http
+Provides-Extra: flask
+Provides-Extra: aiohttp
+Provides-Extra: all
