@@ -1,0 +1,11 @@
+README.md
+README.rst
+setup.py
+cmdline_csv2shp.egg-info/PKG-INFO
+cmdline_csv2shp.egg-info/SOURCES.txt
+cmdline_csv2shp.egg-info/dependency_links.txt
+cmdline_csv2shp.egg-info/entry_points.txt
+cmdline_csv2shp.egg-info/top_level.txt
+csv2shp/__init__.py
+csv2shp/__main__.py
+csv2shp/csv2shp.py
