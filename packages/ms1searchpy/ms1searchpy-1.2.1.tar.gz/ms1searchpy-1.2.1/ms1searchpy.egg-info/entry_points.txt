@@ -1,0 +1,4 @@
+[console_scripts]
+ms1searchpy = ms1searchpy.search:run
+ms1todiffacto = ms1searchpy.ms1todiffacto:run
+
