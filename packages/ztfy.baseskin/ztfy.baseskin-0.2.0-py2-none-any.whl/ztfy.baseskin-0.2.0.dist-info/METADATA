@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: ztfy.baseskin
+Version: 0.2.0
+Summary: ZTFY base skin package
+Home-page: http://hg.ztfy.org/ztfy.baseskin
+Author: Thierry Florac
+Author-email: tflorac@ulthar.net
+License: zpl
+Keywords: ZTFY skin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Dist: setuptools
+Requires-Dist: z3c.form
+Requires-Dist: z3c.formui
+Requires-Dist: z3c.jsonrpc
+Requires-Dist: z3c.layer.pagelet
+Requires-Dist: zope.component
+Requires-Dist: zope.i18nmessageid
+Requires-Dist: zope.interface
+Requires-Dist: ztfy.base
+Requires-Dist: ztfy.utils
+Provides-Extra: test
+Requires-Dist: zope.testing ; extra == 'test'
+
+.. contents::
+
+Introduction
+============
+
+ZTFY.baseskin is a base package for all ZTFY's skin-related packages.
+
+It mainly contains:
+ - a whole set of skin-related interfaces shared by all skins
+ - a base layer
+ - a small set of forms, buttons and viewlets interfaces, classes and adapters
+   shared by all skin-related packages.
+
+- Thierry Florac <tflorac@ulthar.net> - Author
+
+
+HISTORY
+=======
+
+0.2.0
+-----
+ - added script meta base class
+
+0.1.0
+-----
+ - first release
+
+
