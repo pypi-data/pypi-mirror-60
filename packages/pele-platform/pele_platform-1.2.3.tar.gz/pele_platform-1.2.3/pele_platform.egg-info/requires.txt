@@ -1,0 +1,11 @@
+AdaptivePELE
+PPPele
+PyYAML
+pillow
+scipy
+matplotlib
+biopython
+pandas
+pytest
+cython
+numpy
