@@ -1,0 +1,15 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pg_dump_anonymized/__init__.py
+pg_dump_anonymized/_version.py
+pg_dump_anonymized/bk_anonymized.py
+pg_dump_anonymized/command_basic.py
+pg_dump_anonymized.egg-info/PKG-INFO
+pg_dump_anonymized.egg-info/SOURCES.txt
+pg_dump_anonymized.egg-info/dependency_links.txt
+pg_dump_anonymized.egg-info/not-zip-safe
+pg_dump_anonymized.egg-info/top_level.txt
