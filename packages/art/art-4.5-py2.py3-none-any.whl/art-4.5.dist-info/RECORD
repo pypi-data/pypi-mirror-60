@@ -1,0 +1,14 @@
+art/__init__.py,sha256=zD2zb_jDuoi6CPE-nnWiTj45E7P-R0JOer-WuxSPrIA,365
+art/__main__.py,sha256=DZC8qNjQFBe-_vJFEu5VccncTVSAdj4LQASLSR6flF8,3977
+art/art.py,sha256=BWCxmR7v1Z_w74GAJB4tewQQMGG02A1ca84IHZzHl50,14730
+art/art_dic.py,sha256=t0NRMGuhL9RR0ArdDkZCD21jGou1CrO_Y0ryAFQhaQI,21580
+art/art_param.py,sha256=cu7H06GevDTsq5doft-YWdBR28CrelaYdlYMBDojwCA,30428
+art/test.py,sha256=R6X1ExYDIt-v_cgOVz29ioN_dVyLUbUIziAPwsX1ALs,127151
+art/test2.py,sha256=Qfq4f2kFJQgQp9whG5yuFZCYGTdb6I_Jn9d1r0N-CMc,6629
+art/text_dic1.py,sha256=kZZOPFVtm2hdFwKCGbdPTzAuJ9IRWzU4b8Tw-YiEvxE,1239946
+art/text_dic2.py,sha256=H0LUDPbsSiPe30DYMXjQ-tcPkxw4AI1A6vuJwl1NoLM,1334898
+art/text_dic3.py,sha256=yzqLSPDTibWRYTAZqUqpkgisKBtpWuFsSt7RV-Zhc5Q,586776
+art-4.5.dist-info/METADATA,sha256=f42Mp6FTUr51kOxCUVRybFOvUkzxlOjAeeLdpMSmi68,51658
+art-4.5.dist-info/RECORD,,
+art-4.5.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+art-4.5.dist-info/top_level.txt,sha256=4KTk2XRlF8XAJSwQRlyExWqqOxCUhwIx2oHwX2PJUE4,4
