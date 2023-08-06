@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "markdown-ratings"
+version = "0.1.0"
+description = "A Markdown plugin to show star ratings on your page."
+authors = ["Johan Vergeer <johanvergeer@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+markdown = "^3.1.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^19.10b0"
+isort = "^4.3.21"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
