@@ -1,0 +1,9 @@
+dev_env_testing/__init__.py,sha256=q8fI5ieuQmE0i1govJ0GSDS7ZYmdLjENalxa2NdG9VQ,23
+dev_env_testing/foo.py,sha256=SmRgZAVb5908uMDhHi_TxeR_Ix-WTef0ICmGnk8TA00,28
+dev_env_testing-1.18.0.data/scripts/no-op.sh,sha256=0-OxsUqgKbXGEdLUzRpjdOnEGZX8_ALsp-I3kPgIvss,98
+dev_env_testing-1.18.0.dist-info/DESCRIPTION.rst,sha256=5FndLQHHhdQeEqy-kwQVYZjAr7T23MAs2RzzT2u63k0,1586
+dev_env_testing-1.18.0.dist-info/METADATA,sha256=yF7TE5XD1csphR8jg4RpsQhm4rmIDijMsNkhUzd86UM,2466
+dev_env_testing-1.18.0.dist-info/RECORD,,
+dev_env_testing-1.18.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+dev_env_testing-1.18.0.dist-info/metadata.json,sha256=-KBQqoP91Kw5jbCi2flpnH67AIoVjZHToECyG5KO2o0,1037
+dev_env_testing-1.18.0.dist-info/top_level.txt,sha256=R1PD4Z-McgOETMTAehi6yuGryPNTzwPRgerwsd8jYfg,16
