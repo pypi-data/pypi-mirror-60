@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+cd ../
+
+echo "xxxxxxxxxx Running nosetests xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+nosetests tests/
+echo "xxxxxxxxxx Done xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
