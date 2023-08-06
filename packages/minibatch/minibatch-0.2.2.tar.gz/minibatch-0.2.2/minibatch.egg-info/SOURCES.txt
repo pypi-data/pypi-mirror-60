@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+minibatch/VERSION
+minibatch/__init__.py
+minibatch/__main__.py
+minibatch/_version.py
+minibatch/models.py
+minibatch/window.py
+minibatch.egg-info/PKG-INFO
+minibatch.egg-info/SOURCES.txt
+minibatch.egg-info/dependency_links.txt
+minibatch.egg-info/not-zip-safe
+minibatch.egg-info/requires.txt
+minibatch.egg-info/top_level.txt
