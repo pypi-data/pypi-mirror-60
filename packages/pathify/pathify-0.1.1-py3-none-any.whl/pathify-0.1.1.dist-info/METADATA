@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pathify
+Version: 0.1.1
+Summary: Map <key:path> for path with a key
+Home-page: https://github.com/burdier/pathify
+Author: Burdier
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click
+
+UNKNOWN
+
+
