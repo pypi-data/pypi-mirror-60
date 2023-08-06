@@ -1,0 +1,7 @@
+requests_aws_iam_auth/__init__.py,sha256=kvCHA1OiiICY5cu3Dr4381tSreB0Ym5e3-2_PAe-xkc,36
+requests_aws_iam_auth/api_gateway.py,sha256=JhJK93Cws98rvOTAbzSDmPmG08tOtHZHdli4YlzcKEo,1294
+requests_aws_iam_auth-0.2.0.dist-info/LICENSE.txt,sha256=DOwG4OVfvD3FzuT8qbYH9my49OTbzzs8ATWU3RVnMuk,10173
+requests_aws_iam_auth-0.2.0.dist-info/METADATA,sha256=ETbXsUQG-IhQsSbO1RKop5jZQt5USCdakMoCrUMp2wA,4224
+requests_aws_iam_auth-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+requests_aws_iam_auth-0.2.0.dist-info/top_level.txt,sha256=vbVMO66HfIPg_HWUXTeLbXl1HXlj2c0DS1mEQs7PVUw,22
+requests_aws_iam_auth-0.2.0.dist-info/RECORD,,
