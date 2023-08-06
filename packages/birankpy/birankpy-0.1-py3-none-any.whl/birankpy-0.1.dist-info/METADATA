@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: birankpy
+Version: 0.1
+Summary: Ranking nodes in bipartite networks
+Home-page: https://github.com/BrianAronson/birankr
+Author: Kaicheng Yang
+Author-email: yangkc@iu.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: networkx
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
+
