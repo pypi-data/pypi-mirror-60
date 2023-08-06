@@ -1,0 +1,3 @@
+[console_scripts]
+mason_image = mason_image:main
+
