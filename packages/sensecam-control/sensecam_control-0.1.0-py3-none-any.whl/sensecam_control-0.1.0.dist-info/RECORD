@@ -1,0 +1,10 @@
+sensecam_control/__init__.py,sha256=pFQo3SNGfdnVvMB0y2mGwV6LSp9DbtMv-pjbBnHIIkg,119
+sensecam_control/onvif_config.py,sha256=91oFlFaKtMjDyhWsZD14reJxFSX2qSgZ4pjVf8c3U-4,10583
+sensecam_control/onvif_control.py,sha256=k-BGrYcZ6w1VzBf532NgdVCHXU3eSCmdCN_mM19CASM,9765
+sensecam_control/vapix_config.py,sha256=ac28mKdN3iwBKsrZHBHkl-zL9H7Vl6oH4CUpKXrRnnY,39708
+sensecam_control/vapix_control.py,sha256=ltgQk4hegFg5XOKVglZLwcKNlWZr-fC7fOQhwls8GOQ,10442
+sensecam_control-0.1.0.dist-info/LICENSE.txt,sha256=FMRkgiPiA7UK-1HzlBzMXWmqdElJ1gvKGc_f565obVc,1086
+sensecam_control-0.1.0.dist-info/METADATA,sha256=O_dd64or5iwUe7y2PbdcczZGrs7mPSWcIyBait0I2v4,20721
+sensecam_control-0.1.0.dist-info/WHEEL,sha256=IWeGwTvdiaNRNtdERe0BHc5KsCqvvVfLuP8HWeQWYGw,97
+sensecam_control-0.1.0.dist-info/top_level.txt,sha256=_HosDjW18mTz34eq6qp-CzfxC5rEVaMe_UTGjEDsPhc,17
+sensecam_control-0.1.0.dist-info/RECORD,,
