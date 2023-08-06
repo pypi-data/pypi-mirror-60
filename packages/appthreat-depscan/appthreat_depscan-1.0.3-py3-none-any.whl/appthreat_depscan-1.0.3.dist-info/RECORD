@@ -1,0 +1,14 @@
+depscan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+depscan/cli.py,sha256=ISc47BOYIOQ9DE8jpZJekMXG3tKlLounr-e1mt1wC74,4413
+depscan/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+depscan/lib/analysis.py,sha256=WDt1Kof8WtggKErIX1HMsa3cHTIrqE8bOvR6ntybAzA,1916
+depscan/lib/bom.py,sha256=RlzLQ3Jcn31gjglPjbDlzy8bXoQFo9_TI16Ck_S1bTI,2845
+depscan/lib/utils.py,sha256=BWLAQDOLRrHRLJqFhIl8-LVjnyzxDIuTmPGyTJsRwow,1964
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_bom.py,sha256=kgpw9ssCl2gowS01LqEv47URCB5OWc-7ReX5TEQefV8,1783
+appthreat_depscan-1.0.3.dist-info/LICENSE,sha256=kJYvxpZJVk2AnbBtc84z0ok8qB90trpza0VlTSF3Bic,1066
+appthreat_depscan-1.0.3.dist-info/METADATA,sha256=c4jEPVmnXVY2XYNfPimgofPpED7f7LwgWmM2JX4HUAo,7331
+appthreat_depscan-1.0.3.dist-info/WHEEL,sha256=XOj1g5kV4OxZCRiBvYFIQdhMldfnAF5nUxS8sgkc5Mg,92
+appthreat_depscan-1.0.3.dist-info/entry_points.txt,sha256=ncU-FP7lTHkaF0zo5USJW45Sndgv7hFaYJ7j-YxqJYU,43
+appthreat_depscan-1.0.3.dist-info/top_level.txt,sha256=l0ZG16qy6dr3MpucMopGVoW7z-5LiJcGnT9R-Wxzupc,13
+appthreat_depscan-1.0.3.dist-info/RECORD,,
