@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Qactuar
+Version: 0.0.1
+Summary: ASGI compliant web server
+Home-page: https://github.com/Ayehavgunne/Qactuar/
+Author: Anthony Post
+Author-email: postanthony3000@gmail.com
+License: MIT License
+Description: Qactuar
+        -------
+        
+        An ASGI compliant web server the goal of which is to support multiple strategies
+        for asynchronicity. 
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
