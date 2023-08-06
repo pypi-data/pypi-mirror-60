@@ -1,0 +1,4 @@
+include haumea/quickstart/*
+include haumea/quickstart/content/*
+include haumea/quickstart/layouts/*
+include haumea/quickstart/layouts/partials/*
