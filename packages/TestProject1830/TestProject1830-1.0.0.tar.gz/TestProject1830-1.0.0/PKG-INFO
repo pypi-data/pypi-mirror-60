@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: TestProject1830
+Version: 1.0.0
+Summary: A Python package to add numbers.
+Home-page: UNKNOWN
+Author: chaitanya sudhakar
+Author-email: chaitanya.chowdary25@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7

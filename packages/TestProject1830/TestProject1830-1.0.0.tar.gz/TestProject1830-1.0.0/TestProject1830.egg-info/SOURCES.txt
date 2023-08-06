@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+TestProject1830.egg-info/PKG-INFO
+TestProject1830.egg-info/SOURCES.txt
+TestProject1830.egg-info/dependency_links.txt
+TestProject1830.egg-info/top_level.txt
