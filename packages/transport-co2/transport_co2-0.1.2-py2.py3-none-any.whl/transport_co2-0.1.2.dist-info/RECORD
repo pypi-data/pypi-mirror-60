@@ -1,0 +1,8 @@
+transport_co2/__init__.py,sha256=t0EvDGYBIjbUv9x7hP5wP1MRaoOt5Mexj1ftnMomyDg,214
+transport_co2/__version__.py,sha256=rd5fjenoi8Y8hcO39rB4lPkabIjkCe6Jb3ME6yDJHhs,103
+transport_co2/estimator.py,sha256=AhiQodBZ5XSL9ZNi8xlLo90rnRH6hzAuIqboTqSenqQ,706
+transport_co2/model.py,sha256=JQ8FWF8zsf7MCvGWGs8t7QqvVVZagfuesNZMetkW7WI,1370
+transport_co2-0.1.2.dist-info/METADATA,sha256=FIuoXmZ1cTU_gybRkvhcd4uN5IDXfRJS_KpURXYSU9w,3621
+transport_co2-0.1.2.dist-info/WHEEL,sha256=H7FJHAefYCIXvb4P5zrYJaeLK7noSyNzfSBJTnV9ig0,110
+transport_co2-0.1.2.dist-info/top_level.txt,sha256=_FjrrOIK65RgfBzOUvQQRu3TUpMmvgIKWU2J0drlr3I,14
+transport_co2-0.1.2.dist-info/RECORD,,
