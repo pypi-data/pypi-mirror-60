@@ -1,0 +1,11 @@
+README.md
+setup.py
+GoogleTrans2020/CalcTk.py
+GoogleTrans2020/Translator.py
+GoogleTrans2020/__init__.py
+GoogleTrans2020/gettkk.py
+GoogleTrans2020.egg-info/PKG-INFO
+GoogleTrans2020.egg-info/SOURCES.txt
+GoogleTrans2020.egg-info/dependency_links.txt
+GoogleTrans2020.egg-info/requires.txt
+GoogleTrans2020.egg-info/top_level.txt
