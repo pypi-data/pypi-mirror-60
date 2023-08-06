@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "columnPrinter"
+author = "Dallin Guisti"
+author-email = "support@d-multi.com"
+home-page = "https://github.com/dguis/columnPrinter"
+classifiers = ["License :: OSI Approved :: MIT License"]
+
