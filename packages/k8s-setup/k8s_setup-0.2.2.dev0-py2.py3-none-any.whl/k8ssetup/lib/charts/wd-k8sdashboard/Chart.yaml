@@ -1,0 +1,11 @@
+apiVersion: v2
+name: wd-k8sdashboard
+type: application
+description: |
+  Helm v3 chart for the deployment of the shared kubernetes dashboard
+
+## Reference: https://github.com/kubernetes/dashboard/tree/v2.0.0-beta8/aio/deploy/recommended
+## https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#deploying-the-dashboard-ui
+
+version: 0.0.3
+appVersion: v2.0.0-beta8

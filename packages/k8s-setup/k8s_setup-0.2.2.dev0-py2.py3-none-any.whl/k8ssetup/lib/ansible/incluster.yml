@@ -1,0 +1,250 @@
+- hosts: localhost
+  vars:
+      # this file has been fetched from the lnx_setup host, by the lnxclp-new role
+      # playbook_dir is undocumented, but check the source:
+      # https://github.com/ansible/ansible/blob/143bafec9a506aff8f42ca573c7006a8c5549e12/lib/ansible/vars/hostvars.py#L40
+      charts_dir: "{{playbook_dir}}/../charts"
+
+      local_path: "~/.k8s-setup"
+      admin_conf: "{{local_path}}/admin.conf"
+      script_path: "{{local_path}}/scripts"
+      log_path: "{{local_path}}/scripts/log"
+  tasks:
+
+    ############################################################################
+    ## Provisioner Setup
+
+    - name: incluster - run 'use-context' for verification
+      shell: "{{script_path}}/use-context"
+      register: cmd
+      failed_when: cmd.rc > 0 and cmd.rc < 255
+      changed_when: cmd.rc == 0
+
+    - name: incluster - kubectl completion on provisioner
+      lineinfile:
+        path: ~/.bashrc
+        line: source <(kubectl completion bash)
+
+    - name: incluster - helm3 completion on provisioner
+      lineinfile:
+        path: ~/.bashrc
+        line: source <(helm3 completion bash)
+
+    ############################################################################
+    ## CNI Provider: flannel
+
+    - name: incluster - namespace kube-flannel
+      wd_k8snamespace:
+        namespace: kube-flannel
+
+    - name: incluster - chart wd-flannel installed
+      wd_helm3:
+        chart: "{{ charts_dir }}/wd-flannel"
+        atomic: yes
+        namespace: kube-flannel
+
+    ############################################################################
+    ## LoadBalancer: metallb
+
+    - name: incluster - namespace kube-metallb
+      wd_k8snamespace:
+        namespace: kube-metallb
+
+    - name: incluster - chart wd-metallb installed
+      wd_helm3:
+        chart: "{{ charts_dir }}/wd-metallb"
+        namespace: kube-metallb
+        atomic: yes
+        values:
+          default_ip_range: "{{k8s_loadbalancers_default_ip_range}}"
+          ingress_ip: "{{k8s_loadbalancers_ingress_ip}}"
+
+    ############################################################################
+    ## Ingress-Controller: nginx-ingress
+
+    - name: incluster - namespace kube-nginx-ingress
+      wd_k8snamespace:
+        namespace: kube-nginx-ingress
+
+    - name: incluster - chart wd-nginx-ingress installed
+      wd_helm3:
+        chart: "{{ charts_dir }}/wd-nginx-ingress"
+        namespace: kube-nginx-ingress
+        atomic: yes
+
+    ############################################################################
+    ## Certifiates: CertManger
+
+    - name: incluster - namespace kube-certmanager
+      wd_k8snamespace:
+        namespace: kube-certmanager
+
+    - name: incluster - chart wd-certmanager installed
+      wd_helm3:
+        chart: "{{ charts_dir }}/wd-certmanager"
+        namespace: kube-certmanager
+        atomic: yes
+        values:
+          podDnsPolicy: Default
+          webhook:
+            enabled: false
+          mode: "{{ k8s_certs_mode }}"
+          acme:
+            email: "{{ k8s_certs_acme.email | default('NOACME') }}"
+            server: "{{ k8s_certs_acme.server | default('NOACME') }}"
+
+    ############################################################################
+    ## Kubernetes Dashboard
+
+    - name: incluster - namespace kube-dashboard
+      wd_k8snamespace:
+        namespace: kube-dashboard
+
+    - name: incluster - chart wd-dashboard installed
+      wd_helm3:
+        chart: "{{ charts_dir }}/wd-k8sdashboard"
+        namespace: kube-dashboard
+        atomic: no
+        values:
+          cluster_dns_name: "{{k8s_cluster_dnsname}}"
+          token_ttl: "{{dashboard_token_ttl_s}}"
+
+    ############################################################################
+    ## Authentication: dex
+
+    - name: incluster - namespace kube-dex
+      wd_k8snamespace:
+        namespace: kube-dex
+
+    - name: incluster - chart wd-dex installed
+      wd_helm3:
+        chart: "{{ charts_dir }}/wd-dex"
+        namespace: kube-dex
+        atomic: yes
+        values:
+          cluster_dns_name: "{{k8s_cluster_dnsname}}"
+          hostname: "auth.{{k8s_cluster_dnsname}}"
+
+    ############################################################################
+    ## Test-Application: wd-nginx-test
+
+    - name: incluster - chart wd-nginx-test installed
+      wd_helm3:
+        chart: "{{ charts_dir }}/wd-nginx-test"
+        namespace: default
+        values:
+          cluster_dns_name: "{{k8s_cluster_dnsname}}"
+
+    ############################################################################
+    ## PersistentVolumeClaims: trident
+
+    - name: Include trident tasks, if trident is enabled is set
+      include_tasks: tasks/tridentinstall.yml
+      when: trident.enabled
+
+    ############################################################################
+    ## Registry: harbor
+
+    - name: incluster - namespace kube-harbor
+      wd_k8snamespace:
+        namespace: kube-harbor
+      when: harbor.enabled
+
+    - name: incluster - chart wd-harbor installed (if harbor.enabled)
+      wd_helm3:
+        chart: "{{ charts_dir }}/harbor"
+        namespace: kube-harbor
+        atomic: no
+        keepvaluesfile: yes
+        values:
+
+          # check https://github.com/goharbor/harbor-helm#configuration
+          # for options reference
+
+          # Expose
+          expose:
+            type: ingress
+            ingress:
+              hosts:
+                core: "harbor.{{k8s_cluster_dnsname}}"
+                notary: "notary.{{k8s_cluster_dnsname}}"
+            tls:
+              enabled: false   # we will enable ssl later on
+
+          # Persistence
+          persistence:
+            enabled: "{{harbor.enable_persistence}}"
+            resourcePolicy: keep    # keep the persistent volumnes on uninstall
+            persistentVolumeClaim:
+              registry:
+                size: 10Gi # use 10Gi for registry store
+
+          # General
+          externalURL: "http://harbor.{{k8s_cluster_dnsname}}"
+          harborAdminPassword: "{{harbor.admin_password}}"
+          secretkey: "{{harbor.secret_key}}"
+
+          # Portal
+          portal:
+            image:
+              tag: "v{{harbor.version}}"
+
+          # Core
+          core:
+            image:
+              tag: "v{{harbor.version}}"
+
+          # Jobservice
+          jobservice:
+            image:
+              tag: "v{{harbor.version}}"
+
+          # Registry
+          registry:
+            registry:
+              image:
+                # according to https://hub.docker.com/r/goharbor/registry-photon/tags
+                # the tags are postfixed with -dev
+                tag: "v{{harbor.version}}-dev"
+            controller:
+              image:
+                tag: "v{{harbor.version}}"
+
+          # Chartmuseum
+          chartmuseum:
+            enabled: false
+            image:
+              tag: "v{{harbor.version}}"
+
+          # Clair
+          clair:
+            enabled: false
+            adapter:
+              image:
+                tag: "v{{harbor.version}}"
+
+          # Notary
+          notary:
+            enabled: false
+            signer:
+              image:
+                tag: "v{{harbor.version}}"
+            server:
+              image:
+                tag: "v{{harbor.version}}"
+
+          # Database
+          database:
+            type: internal
+            internal:
+              image:
+                tag: "v{{harbor.version}}"
+
+          # Redis
+          redis:
+            type: internal
+            internal:
+              image:
+                tag: "v{{harbor.version}}"
+
+      when: harbor.enabled

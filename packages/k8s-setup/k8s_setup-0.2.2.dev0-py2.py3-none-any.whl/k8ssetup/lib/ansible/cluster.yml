@@ -1,0 +1,72 @@
+# This playbook does all provisioning of the machines
+# It performs OS configuration, installs docker and the kubernetes binaries kubectl, kubelet and kubeadm
+# It also performs a check of the current host cluster state (init/join)
+# It runs kubeclt for
+#   - join other nodes to the cluster
+---
+
+# common tasks for all control plane nodes
+- hosts: lnxclp:lnxwrk
+  roles:
+    - lnxkubeadm-common
+
+# copy ca file for apiserver oidc
+- hosts: lnxclp
+  tasks:
+    - name: clustersetup - Ensure /etc/kubernetes/pki
+      file:
+        name: /etc/kubernetes/pki
+        state: directory
+
+    - name: clustersetup - Ensure ingress CA file for oidc
+      copy:
+        src: ~/.k8s-setup/cacrt.pem
+        dest: /etc/kubernetes/pki/ingressca.pem
+
+# check if cluster-state of the lnxclp_setup
+- hosts: lnxclp_setup
+  tasks:
+
+    - block: 
+
+      # add the lnxclp-vip to the setup node first
+      - include_role:
+          name: lnxclp-vip
+        vars:
+          vip_enable_tcp_check: no
+
+      # if the master is not initialized, do this first
+      - include_role: 
+          name: lnxclp-first
+
+      - set_fact:
+          k8s_configured: yes
+        no_log: yes
+      
+      when: k8s_configured == false
+
+# apply lnxclp-new role to unconfigured linux control plane nodes
+- hosts: lnxclp
+  tasks:
+    - include_role:
+        name: lnxclp-new
+      when: k8s_configured == false
+
+# apply lnxwrk-new role to unconfigured linux workers
+- hosts: lnxwrk
+  tasks:
+    - include_role:
+        name: lnxwrk-new
+      when: k8s_configured == false
+
+# add the lnxclp-vip to all lnxclp nodex, with the check enabled (see keepalived.conf)
+# this will update the configuration of all clp nodes
+# It is important, that this runs **after** all nodes have joined!
+# Otherwise, you will get connection-issues
+- hosts: lnxclp
+  tasks:
+    - name: run role 'lnxclp-vip' for all clp nodes
+      include_role:
+        name: lnxclp-vip
+      vars:
+        vip_enable_tcp_check: yes

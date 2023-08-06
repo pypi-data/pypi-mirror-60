@@ -1,0 +1,17 @@
+###########################################
+## This role joins nodes to an existing cluster
+## It is added dynamically by lnxclp and lnxwrk, if new nodes need to join
+
+- name: clustersetup - get join-token from lnxclp_setup node
+  command: kubeadm token create --print-join-command
+  delegate_to: "{{ groups['lnxclp_setup'] | first }}"
+  run_once: true
+  register: join_cmd
+
+- name: clustersetup - writing /tmp/k8s-setup-joincmd
+  copy:
+    dest: /tmp/k8s-setup-joincmd
+    content: "{{ join_cmd.stdout }}"
+
+- name: "clustersetup - running k8s-setup joinwrk (you may cat {{ k8s_setup_logdir }}/k8s-setup.log to check progress"
+  shell: "{{ k8s_setup_dir }}/k8s-setup joinwrk >> {{ k8s_setup_logdir }}/k8s-setup.log"

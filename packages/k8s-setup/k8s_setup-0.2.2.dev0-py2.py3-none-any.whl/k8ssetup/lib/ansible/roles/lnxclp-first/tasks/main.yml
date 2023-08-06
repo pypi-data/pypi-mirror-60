@@ -1,0 +1,17 @@
+###########################################
+## This is the role which initializes the cluster on the lnxclp_setup node
+##
+## It is dynamically included by cluster.yml playbook
+
+- name: "clustersetup - running k8s-setup init (you may cat {{ k8s_setup_logdir }}/k8s-setup.log to check progress"
+  shell: "./k8s-setup init >> {{ k8s_setup_logdir }}/k8s-setup.log"
+  args:
+    chdir: "{{ k8s_setup_dir }}"
+
+- name: clustersetup - fetch required files to provisioning client
+  fetch:
+    src: "/etc/kubernetes/{{item}}"
+    dest: "~/.k8s-setup/{{item}}"
+    flat: true
+  loop:
+    - admin.conf

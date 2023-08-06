@@ -1,0 +1,67 @@
+## Global Setup options
+#############################################################
+
+# running in virtual mode, no inventory needs to be provided, and the default
+# configuration should be fine
+global_mode: vagrant
+
+# This is the private subnet of the cluster.
+# You can access this from the host, because virtualbox create a route for
+# the 'private_network', by a 'vboxnetX' interface.
+# So no port-forward rules are needed.
+global_vagrant_hosts_network: 10.0.0.*
+
+## System Setup options
+#############################################################
+
+# if this is enabled, all yum packages are updated on start
+setup_update_all_packages: no
+
+# Vagrant has the nat adapter on eth0. This sucks a little.
+host_primary_interface_name: eth1
+
+## Kubernetes global cluster configuration
+#############################################################
+
+# this is the VIP of the clp load balancer
+k8s_apiserver_vip: 10.0.0.2
+k8s_apiserver_vip_virtual_router_id: 13
+
+# the base dnsname for the cluster  **)
+k8s_cluster_dnsname: k8stest.local
+
+# this is the IP address to use for the Ingress Controller
+k8s_loadbalancers_ingress_ip: 10.0.0.80
+
+# this is the IP range for all other services of type=LoadBalancer
+k8s_loadbalancers_default_ip_range: 10.0.0.81-10.0.0.99
+
+# this instructs k8s-setup to setup a cluster with only one linux node
+# this overwrites the configuration-values: global_vagrant_lnxclp_count, 
+# global_vagrant_lnxwrk_count and global_vagrant_winwrk_count
+global_vagrant_singlenode_lnxcluster: true
+
+## Provisioning Client configuration
+#############################################################
+
+# This is the directory where kubectl, helm and tridentctl are stored
+# We don't use /usr/local/bin, because this is not writeable without root,
+# and we don't run rooted in localhost
+# So we use ~/.local/bin
+# https://unix.stackexchange.com/questions/316765/which-distributions-have-home-local-bin-in-path
+# If the provisioning can't find kubectl or helm3, check config and $PATH
+client_bin_dir: ~/.local/bin
+
+## Trident information
+#############################################################
+trident:
+  enabled: no
+
+## Harbor information
+#############################################################
+harbor:
+  enabled: no
+  version: 1.9.3
+  enable_persistence: false
+  admin_password: Harbor12345
+  secret_key: not-a-secure-key

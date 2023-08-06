@@ -1,0 +1,6 @@
+apiVersion: v2
+
+name: wd-traefik-ingress
+appVersion: 1.7
+
+version: 0.2

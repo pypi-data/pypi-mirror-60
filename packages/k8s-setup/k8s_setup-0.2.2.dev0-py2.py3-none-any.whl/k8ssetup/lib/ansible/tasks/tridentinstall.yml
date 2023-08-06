@@ -1,0 +1,34 @@
+- set_fact:
+    local_path: "~/.k8s-setup"
+
+  no_log: yes
+
+  # this is a seperate step, because we reference {{localpath}}
+  # set_fact module adds the facts at the end, so it can't reference its own vars
+- set_fact:
+    admin_conf: "{{local_path}}/admin.conf"
+    script_path: "{{local_path}}/scripts"
+    log_path: "{{local_path}}/scripts/log"
+  no_log: yes
+
+- name: trident - sync backend.json file from 'trident.backend_config' setting
+  copy:
+    content: "{{ trident.backend_config }}"
+    dest: "{{local_path}}/trident.json"
+
+- name: trident - sync configure-trident script
+  template:
+    src: localtemplates/configure-trident
+    dest: "{{script_path}}/configure-trident"
+    mode: 344
+
+- name: trident - sync trident-standard-storageclass.yaml
+  template:
+    src: localtemplates/trident-standard-storageclass.yaml
+    dest: "{{local_path}}/trident-standard-storageclass.yaml"
+
+- name: "trident - run configure-trident (check log at {{log_path}}/configure-trident.log)"
+  shell: "{{script_path}}/configure-trident > {{log_path}}/configure-trident.log"
+  register: cmd
+  failed_when: cmd.rc > 0 and cmd.rc < 255
+  changed_when: cmd.rc == 0

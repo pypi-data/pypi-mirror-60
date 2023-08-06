@@ -1,0 +1,78 @@
+# https://docs.ansible.com/ansible/latest/modules/list_of_windows_modules.html
+# if you want de-AT keyboard in powerhsell execute:
+# Set-WinUserLanguageList -LanguageList de-AT -Force
+
+
+# todo: ntpd
+# todo: check about to disable pagefile (=SWAP) for windows workers
+
+
+# https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#check-required-ports
+- name: "windows firewall: allow 10250/tcp for kube-apiserver"
+  win_firewall_rule:
+    action: allow
+    name: "kubeapiserver"
+    localport: 10250
+    protocol: tcp
+    direction: in
+
+# set locale
+- name: Set locale to de-AT (for keyboard, execute Set-WinUserLanguageList -language de-AT)
+  win_region:
+    format: de-AT
+
+- name: Ensure 'Containers' Windows Feature
+  # https://docs.ansible.com/ansible/2.5/modules/win_feature_module.html
+  win_feature:
+    name: containers
+    state: present
+    include_sub_features: yes
+  register: reboot_required
+
+- name: Perform Reboot, if required
+  win_reboot:
+  when: reboot_required.changed
+
+# https://docs.docker.com/install/windows/docker-ee/#use-a-script-to-install-docker-ee
+
+# this is done in the script, 
+# see : https://github.com/ansible/ansible/issues/637354
+# - name: Download raw docker package (c:\docker.zip)
+#   win_get_url:
+#     url: "{{ docker_download_url}}"
+#     dest: c:\docker.zip
+#     creates: c:\docker.zip
+
+- name: ensure the install-docker.ps1 script
+  win_template:
+    src: install-docker.ps1
+    dest: c:\install-docker.ps1
+
+- name: ensure the uninstall-docker.ps1 script
+  win_template:
+    src: uninstall-docker.ps1
+    dest: c:\uninstall-docker.ps1
+
+- name: Ensure docker installed (may take some time for download)
+  win_command: powershell.exe -File c:\install-docker.ps1
+  register: installdocker_result
+  changed_when: "'ANSIBLE_OK' not in installdocker_result.stdout"
+
+# we start the docker service with a reboot
+# this ensures the the PATH variable (on Machine) is applied
+- name: Enable and start docker service
+  win_service:
+    name: docker
+    start_mode: auto
+
+- name: Perform Reboot, if docker has been installed
+  win_reboot:
+  when: installdocker_result.changed
+
+# https://docs.microsoft.com/en-us/virtualization/windowscontainers/kubernetes/joining-windows-workers
+
+# Create the "pause" (infrastructure) image
+- name: create the install-kubernetes.ps1 script
+  win_template:
+    src: install-k8s.ps1
+    dest: c:\install-k8s.ps1
