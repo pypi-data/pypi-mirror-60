@@ -1,0 +1,13 @@
+openrv/__init__.py,sha256=VDY4b9afa7CJ1FSMJsy0zLgTNBplDqT3cKfyOHfwIkA,189
+openrv/app.py,sha256=MYEjEwsPLSNJv6_K-V6eig9h8x_FEUKJJfw4jeaVuJo,2765
+openrv/arduino.py,sha256=T0lvJjsnvP-TvEQgfatfacb5xP_tQziszLT_82jgQy4,77
+openrv/colors.py,sha256=5-R7hrp18RVbX-D9f-HxkQadw-bYSzKEcw6rFc6ToUY,115
+openrv/contour.py,sha256=ZKi_FWkW8a9wHYQvOaJxEfaPQf2lZ1IlW3J4QgbtEZs,4705
+openrv/defines.py,sha256=T_5TAMzfa6jBrjvMX87nhxvtkAnHjNpuzS9chODXCcs,269
+openrv/image.py,sha256=E5cJ8utZztaJlTrqUwHoQnIvBQa8NPALlveAzr1RuMY,30052
+openrv/utils.py,sha256=At5PAT6HSkPEHVaRL7km6GLpDBBEtfasK3GXE_bedFE,1890
+OpenRV-0.1.6.3.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+OpenRV-0.1.6.3.dist-info/METADATA,sha256=yMSSJKDBTXf9wEheAbTI6to1sksvR7Bgn5znQp3413s,1271
+OpenRV-0.1.6.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+OpenRV-0.1.6.3.dist-info/top_level.txt,sha256=1jQrzMd3ED4ngR2aICWVVUX-a2vlXo1hg1RUU-nw2j8,7
+OpenRV-0.1.6.3.dist-info/RECORD,,
