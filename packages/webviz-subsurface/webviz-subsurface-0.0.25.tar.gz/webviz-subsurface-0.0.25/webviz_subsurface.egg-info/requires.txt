@@ -1,0 +1,14 @@
+scipy~=1.2
+matplotlib~=3.0
+pillow~=6.1
+xtgeo~=2.1
+webviz-config>=0.0.43
+webviz-subsurface-components==0.0.19
+
+[tests]
+selenium~=3.141
+pylint
+mock
+black
+bandit
+pytest-xdist
