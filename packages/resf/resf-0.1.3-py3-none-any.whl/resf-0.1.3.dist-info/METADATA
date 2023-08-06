@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: resf
+Version: 0.1.3
+Summary: A simple package for displaying calculation results in a textbased table
+Home-page: https://github.com/rol1510/resf
+Author: Roland Strasser
+Author-email: roland1510s@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tabulate
+
+# resf - Result Formatter
+
+A simple package for displaying calculation results in a textbased table
+***
+## How to use
+Basics
+```python
+from resf import *
+
+initRes()                                   # Initializes new Table
+addRes('Name', value, 'Unit', precision)    # add a value to the table
+addRes('Name', value)                       # unit and precision are not required
+printRes()                                  # prints the resulting table
+```
+Sample 1
+```python
+foo = 15
+bar = 123 / 13
+
+initRes()
+addRes('Foo', foo, 'V')
+addRes('5 digits of Bar', bar, precision=5)
+printRes()
+```
+Output 1
+```
+Â +-----------------+----------------+
+Â | NameÂ Â Â Â Â Â Â Â Â Â Â Â | Value [Unit]Â Â Â |
+Â |-----------------+----------------|
+Â | FooÂ Â Â Â Â Â Â Â Â Â Â Â Â | 15.00 VÂ Â Â Â Â Â Â Â |
+Â | 5 digits of Bar | 9.46154Â Â Â Â Â Â Â Â |
+Â +-----------------+----------------+
+```
+***
+Uses [tabulate](https://pypi.org/project/tabulate/) to generate the table
+
+
