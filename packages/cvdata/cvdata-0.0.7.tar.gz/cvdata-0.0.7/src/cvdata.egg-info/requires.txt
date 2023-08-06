@@ -1,0 +1,8 @@
+contextlib2
+lxml
+ImageHash
+opencv-python
+pandas
+pillow
+tensorflow-cpu>=2.1
+tqdm
