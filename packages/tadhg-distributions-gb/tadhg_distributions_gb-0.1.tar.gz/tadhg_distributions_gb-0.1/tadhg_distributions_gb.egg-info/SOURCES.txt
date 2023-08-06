@@ -1,0 +1,10 @@
+setup.py
+tadhg_distributions_gb/Binomialdistribution.py
+tadhg_distributions_gb/Gaussiandistribution.py
+tadhg_distributions_gb/Generaldistribution.py
+tadhg_distributions_gb/__init__.py
+tadhg_distributions_gb.egg-info/PKG-INFO
+tadhg_distributions_gb.egg-info/SOURCES.txt
+tadhg_distributions_gb.egg-info/dependency_links.txt
+tadhg_distributions_gb.egg-info/not-zip-safe
+tadhg_distributions_gb.egg-info/top_level.txt
