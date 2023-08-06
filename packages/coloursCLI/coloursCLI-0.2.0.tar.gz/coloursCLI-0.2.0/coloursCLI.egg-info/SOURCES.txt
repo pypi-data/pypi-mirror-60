@@ -1,0 +1,13 @@
+.gitlab-ci.yml
+MANIFEST.in
+README.md
+setup.py
+bin/colors
+coloursCLI/__init__.py
+coloursCLI/comcol.py
+coloursCLI.egg-info/PKG-INFO
+coloursCLI.egg-info/SOURCES.txt
+coloursCLI.egg-info/dependency_links.txt
+coloursCLI.egg-info/not-zip-safe
+coloursCLI.egg-info/requires.txt
+coloursCLI.egg-info/top_level.txt
