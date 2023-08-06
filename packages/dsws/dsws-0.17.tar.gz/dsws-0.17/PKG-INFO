@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: dsws
+Version: 0.17
+Summary: Data Science Work Space for Jupyter & CDSW
+Home-page: https://pypi.org/project/dsws/
+Author: Brad Barker
+Author-email: brad@ratiocinate.com
+License: MIT
+Description: # Data Science WorkSpace (dsws)
+        
+        DSWS is Python package providing conventions for configuration and use of existing python packages. Intent is to make disparate source data platforms consistanly accessible in python ad-hoc and workflow analyses independent of data source or REPL/RunTime environment.
+        
+        ## Main Features
+        DSWS offers no functionlity beyond what’s in dependency libraries. Instead, it provides conventions to consistantly and concisely use existing libraries. Conventions include:
+        
+         * Configurations for data access are instantiated at the beginning of a session, specific to analysis.
+         * Configurations include not just source data connection, but also environement preferences in the connection, like default database and resource queue.
+         * Common method syntax for connection and query.
+         * For ipython environements, include line and cell magic for executing sql.
+         * Consistant approach for profile startup scripts.
+         * Ability to transition to configured CLI from within python session.
+        
+        ## Environments
+        
+        DSWS originated to address connectivity complexity of connecting to popular hadoop distributions (HDP, CDH) from edge node. Since the original release, it now includes conventions to connect from cluster edge node virtual environement, local device virtual environement, cdsw, jupyter notebooks, or [quickstart](https://www.cloudera.com/downloads/quickstart_vms/5-13.html)/[sandbox](https://www.cloudera.com/downloads/hortonworks-sandbox/hdp.html). DSWS is intended to provide a consistant user experience within any of these evnironements.
+        
+        ## Included Libraries & CLIs
+        
+        Exisiting libraries, classes, configs, and type.
+        
+        
+        | package | default name | class | type | Incl | Exp | Roadmap |
+        |:------- |:------------ |:----- |:----:|:----:|:---:|:-------:|
+        | [impyla](https://github.com/cloudera/impyla) | impyla | ws_impyla.py | conn | X | | |
+        | [pyodbc](https://pypi.org/project/pyodbc/) | pyodbc | ws_pyodbc.py | conn | X | | |
+        | [iopro](https://docs.anaconda.com/iopro/) | iopro | ws_iopro.py | conn | X | | |
+        | [ibis](https://github.com/ibis-project/ibis) | ibis_impala | ws_ibis_impala.py | client | X | | |
+        | [pyspark](https://github.com/apache/spark/tree/master/python/pyspark) | spark (sql) | ws_spark.py | sess | X | | |
+        | [SQLAlchemy](https://www.sqlalchemy.org/) | sa | ws_sqlalchemy.py | conn | | X | |
+        | [dask-yarn](http://yarn.dask.org) | dy | ws_daskyarn.py | sess | | X | |
+        | [phoenixdb](https://github.com/lalinsky/python-phoenixdb) | pheonix | ws_pheonix.py | conn | | | X |
+        | [pydruid](https://github.com/druid-io/pydruid) | druid | ws_druid.py | conn | | | X |
+        | [pyflink](https://ci.apache.org/projects/flink/flink-docs-master/flinkDev/building.html#build-pyflink) | flink | ws_flink.py | conn | | | X |
+        | [pandasql](https://github.com/yhat/pandasql) | ps | ws_ps.py | | | | X |
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Database
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
