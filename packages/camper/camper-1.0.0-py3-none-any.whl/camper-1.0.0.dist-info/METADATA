@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: camper
+Version: 1.0.0
+Summary: Pythonic utilities for Tweak RV
+Home-page: https://gitlab.com/davinozen/camper
+Author: David (Ming) Zeng
+Author-email: me@davidvfx.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Camper
+===========
+
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![PyPI license](https://img.shields.io/pypi/l/camper.svg)](https://pypi.python.org/pypi/camper/)
+[![PyPI status](https://img.shields.io/pypi/status/camper.svg)](https://pypi.python.org/pypi/camper/)
+
+```python
+import caravan
+
+```
+
