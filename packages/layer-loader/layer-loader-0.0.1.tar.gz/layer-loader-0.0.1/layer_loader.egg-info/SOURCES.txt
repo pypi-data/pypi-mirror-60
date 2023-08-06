@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+layer_loader/__init__.py
+layer_loader/__main__.py
+layer_loader/expansion.py
+layer_loader/flatten.py
+layer_loader/loader.py
+layer_loader/py.typed
+layer_loader/types.py
+layer_loader.egg-info/PKG-INFO
+layer_loader.egg-info/SOURCES.txt
+layer_loader.egg-info/dependency_links.txt
+layer_loader.egg-info/top_level.txt
+layer_loader.egg-info/zip-safe
