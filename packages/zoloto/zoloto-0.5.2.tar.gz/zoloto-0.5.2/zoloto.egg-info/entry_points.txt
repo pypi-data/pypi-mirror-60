@@ -1,0 +1,3 @@
+[console_scripts]
+zoloto-preview = zoloto.cli.preview:main
+
