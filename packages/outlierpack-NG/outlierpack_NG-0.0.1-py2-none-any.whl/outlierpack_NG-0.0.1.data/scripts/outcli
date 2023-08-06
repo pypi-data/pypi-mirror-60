@@ -1,0 +1,14 @@
+#!python
+
+import sys
+from outlib.modals import r_outliers
+
+sysarglist = sys.argv
+sysarglist.pop(0)
+assert len(sysarglist) == 2, "Insufficient number of arguments provided"
+
+filename_in = sys.argv[1]
+filename_out = sys.argv[2]
+assert filename_in, "Input CSV filename must be provided"
+assert filename_out, "Output CSV filename must be provided"
+r_outliers(sys.argv[1], sys.argv[2])
