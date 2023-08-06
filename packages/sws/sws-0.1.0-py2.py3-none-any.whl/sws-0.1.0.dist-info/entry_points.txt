@@ -1,0 +1,3 @@
+[console_scripts]
+sws = sws.command_line_utility:main
+
