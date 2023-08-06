@@ -1,0 +1,7 @@
+README.md
+rename-beep-files
+setup.py
+rename_beep_files.egg-info/PKG-INFO
+rename_beep_files.egg-info/SOURCES.txt
+rename_beep_files.egg-info/dependency_links.txt
+rename_beep_files.egg-info/top_level.txt
