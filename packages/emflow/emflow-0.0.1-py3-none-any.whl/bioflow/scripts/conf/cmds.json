@@ -1,0 +1,133 @@
+{
+  "_current":{"MotionCor":"MotionCor2","CTF":"Gctf","Pick":"Non-AI:Gautomatch"},
+  "Movies":{
+    "default":{
+      "cmd": "python3 ${app_dir}/mrc2png.py Movies/${name}.mrc"
+    }
+  },
+  "MotionCor": {
+    "MotionCor2": {
+      "cmd_before": "mkdir MotionCor;chmod 777 MotionCor;",
+      "cmd_after": "python3 {app_dir}/mrc2png.py MotionCor/${name}.mrc;python3 {app_dir}/aln2png.py MotionCor/${name}.aln",
+      "cmd": "{app_dir}/MotionCor2_1.3.0-Cuda101",
+      "args": [
+        {"name":"-InMrc","title":"InMrc","type":"string","value":"Movies/${name}.mrc"},
+        {"name":"-OutMrc","title":"OutMrc","type":"string","value":"MotionCor/${name}.mrc"},
+        {"name":"-Bft","title":"Bft","type":"int","value":"250"},
+        {"name":"-Group","title":"Group","type":"int","value":"3"},
+        {"name":"-Patch","title":"Patch","type":"string","value":"5 5"},
+        {"name":"-FtBin","title":"FtBin","type":"int","value":"1"},
+        {"name":"-Iter","title":"Iter","type":"int","value":"10"},
+        {"name":"-Gpu","title":"Gpu","type":"string","value":"0"},
+        {"name":"-Tol","title":"Tol","type":"float","value":"0.5"},
+        {"name":"-OutAln","title":"OutAln","type":"hidden","value":"MotionCor"},
+        {"name":"-Logfile","title":"Logfile","type":"string","value":"MotionCor/${name}.log"}
+      ]
+    },
+    "Unblur": {
+      "cmd_before": "mkdir MotionCor",
+      "cmd_after": "",
+      "cmd": "{app_dir}/MotionCor2_1.3.0-Cuda101",
+      "args": [
+        {"name":"-InMrc","title":"InMrc","type":"string","value":"Movies/${name}.mrc"},
+        {"name":"-OutMrc","title":"OutMrc","type":"string","value":"MotionCor/${name}.mrc"},
+        {"name":"-Bft","title":"Bft","type":"int","value":"250"},
+        {"name":"-Group","title":"Group","type":"int","value":"3"},
+        {"name":"-Patch","title":"Patch","type":"string","value":"5 5"},
+        {"name":"-FtBin","title":"FtBin","type":"int","value":"1"},
+        {"name":"-Iter","title":"Iter","type":"int","value":"10"},
+        {"name":"-Gpu","title":"Gpu","type":"string","value":"0 1 2 3"},
+        {"name":"-Tol","title":"Tol","type":"float","value":"0.5"},
+        {"name":"-Logfile","title":"Logfile","type":"string","value":"MotionCor/${name}.log"}
+      ]
+    }
+  },
+  "CTF": {
+    "Gctf": {
+      "cmd_before": "mkdir CTF;chmod 777 CTF;ln MotionCor/${name}.mrc CTF/${name}.mrc",
+      "cmd_after": "python3 {app_dir}/mrc2png.py CTF/${name}.ctf",
+      "cmd": "{app_dir}/GCTF_v1.18_sm30-75_cu10.1",
+      "args": [
+        {"name":"--apix","title":"apix","type":"float","value": "1.5"},
+        {"name":"--kV","title":"kV","type":"int","value": "300"},
+        {"name":"--Cs","title":"Cs","type":"float","value": "2.7"},
+        {"name":"--ac","title":"ac","type":"float","value": "0.1"},
+        {"name":"--do_unfinished","title":"int","type":"string","value": "1"},
+        {"name":"--gid","title":"gid","type":"int","value": "3"},
+        {"name":"--ctfstar","title":"ctfstar","type":"hidden","value":"CTF/${name}_gctf.star"},
+        {"name":"","title":"输入文件","type":"string","value":"CTF/${name}.mrc"}
+      ]
+    },
+    "CTFFIND": {
+      "cmd_before": "mkdir CTF;ln MotionCor/${name}.mrc CTF/${name}.mrc",
+      "cmd_after": "",
+      "cmd": "{app_dir}/GCTF_v1.18_sm75_cu10.1",
+      "args": [
+        {"name":"--apix","title":"apix","type":"float","value": "1.5"},
+        {"name":"--kV","title":"kV","type":"int","value": "300"},
+        {"name":"--Cs","title":"Cs","type":"float","value": "2.7"},
+        {"name":"--ac","title":"ac","type":"float","value": "0.1"},
+        {"name":"--do_unfinished","title":"int","type":"string","value": "1"},
+        {"name":"--gid","title":"gid","type":"int","value": "3"},
+        {"name":"","title":"输入文件","type":"string","value": "CTF/${name}.mrc"}
+      ]
+    }
+  },
+  "Pick": {
+    "Non-AI:Gautomatch": {
+      "cmd_before": "mkdir Pick;chmod 777 Pick;ln CTF/${name}.mrc Pick/${name}.mrc",
+      "cmd_after": "",
+      "cmd": "{app_dir}/Gautomatch_v0.56_sm30-75_cu10.1",
+      "args": [
+        {"name":"--apixM","title":"apixM","type":"float","value": "1.5"},
+        {"name":"--diameter","title":"diameter","type":"int","value": "120"},
+        {"name":"","title":"输入文件","type":"string","value": "Pick/${name}.mrc"}
+      ]
+    },
+    "Non-AI:RELION": {
+      "cmd_before": "mkdir Pick;ln CTF/${name}.mrc Pick/${name}.mrc",
+      "cmd_after": "",
+      "cmd": "{app_dir}/Gautomatch_v0.56_sm30-75_cu10.1",
+      "args": [
+        {"name":"--apixM","title":"apixM","type":"float","value": "1.5"},
+        {"name":"--diameter","title":"diameter","type":"int","value": "120"},
+        {"name":"","title":"输入文件","type":"string","value": "Pick/${name}.mrc"}
+      ]
+    },
+    "AI:EMAN": {
+      "cmd_before": "mkdir Pick;ln CTF/${name}.mrc Pick/${name}.mrc",
+      "cmd_after": "",
+      "cmd": "{app_dir}/Gautomatch_v0.56_sm30-75_cu10.1",
+      "args": [
+        {"name":"--apixM","title":"apixM","type":"float","value": "1.5"},
+        {"name":"--diameter","title":"diameter","type":"int","value": "120"},
+        {"name":"","title":"输入文件","type":"string","value": "Pick/${name}.mrc"}
+      ]
+    },
+    "AI:crYOLO": {
+      "cmd_before": "mkdir Pick;ln CTF/${name}.mrc Pick/${name}.mrc",
+      "cmd_after": "",
+      "cmd": "{app_dir}/Gautomatch_v0.56_sm30-75_cu10.1",
+      "args": [
+        {"name":"--apixM","title":"apixM","type":"float","value": "1.5"},
+        {"name":"--diameter","title":"diameter","type":"int","value": "120"},
+        {"name":"","title":"输入文件","type":"string","value": "Pick/${name}.mrc"}
+      ]
+    },
+    "AI:Topaz": {
+      "cmd_before": "mkdir Pick;ln CTF/${name}.mrc Pick/${name}.mrc",
+      "cmd_after": "",
+      "cmd": "{app_dir}/Gautomatch_v0.56_sm30-75_cu10.1",
+      "args": [
+        {"name":"--apixM","title":"apixM","type":"float","value": "1.5"},
+        {"name":"--diameter","title":"diameter","type":"int","value": "120"},
+        {"name":"","title":"输入文件","type":"string","value": "Pick/${name}.mrc"}
+      ]
+    }
+  },
+  "Extract": {
+    "default":{
+      "cmd": "python3 {app_dir}/extract.py MotionCor/${name}.mrc Pick/${name}.star"
+    }
+  }
+}
