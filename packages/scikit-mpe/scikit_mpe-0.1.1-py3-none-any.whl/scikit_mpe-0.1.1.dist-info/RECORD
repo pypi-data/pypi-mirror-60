@@ -1,0 +1,12 @@
+changelog.md,sha256=MiqnpNLseSnRauO7QkMpKG_j4CIy8nW61zjQa_4ENBk,92
+skmpe/__init__.py,sha256=fVPE_F8psbuEbLWgVvivDBAVBQYrREw426-IzWQyT_c,819
+skmpe/_api.py,sha256=1H8zZJoziPnTIJDzwaIPfiiOpPFbNqCJBUUQPyODr3g,1031
+skmpe/_base.py,sha256=Rss0i6JlCMhze558gnMpz51TZP4cm9fwgvsH89tl6rk,6022
+skmpe/_exceptions.py,sha256=FPXLbxjGBmf0o0r3dt9ZMwHFthJQ0zc2Y_l8mzkIL8o,1304
+skmpe/_helpers.py,sha256=JQF-4AuDVguJ6gePvEMeKFF--92IJ6Omxajyf69q0fw,1361
+skmpe/_mpe.py,sha256=kQ-8rbQoic2HCvrm_uBTRHdiEQQOnFkKtd_zk5jmTdQ,11399
+skmpe/_parameters.py,sha256=6qemD7VGl2mrsUcUS8RnNKNp8_74CMGUSs7XwJnEvrI,2492
+scikit_mpe-0.1.1.dist-info/LICENSE,sha256=_bNzXgWzLcV78cAkdRRRwkQevF_6czknfACELv3EzpE,1093
+scikit_mpe-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+scikit_mpe-0.1.1.dist-info/METADATA,sha256=zoDwKtaVte40d8UArJnyo2VTlMx1GAgziguLL7ht7B4,4596
+scikit_mpe-0.1.1.dist-info/RECORD,,
