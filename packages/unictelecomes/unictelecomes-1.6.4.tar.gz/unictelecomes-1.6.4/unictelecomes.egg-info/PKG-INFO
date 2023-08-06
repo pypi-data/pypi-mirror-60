@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: unictelecomes
+Version: 1.6.4
+Summary: Send sms from unictelecome.
+Home-page: https://github.com/SamirWardak/sendmessageunictelecome
+Author: Wardak Ahmad Samir
+Author-email: wardag.as@gmail.com
+License: MIT
+Download-URL: https://github.com/SamirWardak/sendmessageunictelecome
+Description: Send message from unictelecom provider, this library for send message from unic telecome.
+        
+        for installation please use
+        
+        `pip install unictelecomes`
+        
+        for init library
+        
+        `from unictelecome import unictelecome`
+        
+        `unictelecome = unictelecome(apikey="api_key", sender="sender", user="user_name")`\
+        
+        create message
+        
+        `unictelecome.createmessage(message="text", recipients="number_phone")`\
+        
+        change message priority
+        `unictelecome.urgent = True`
+        
+        for testing message we give result but message not sending to phone
+        `unictelecome.test = True`
+        
+        send message
+        `unictelecome.sendmessage()`
+        
+        
+        
+Platform: UNKNOWN
