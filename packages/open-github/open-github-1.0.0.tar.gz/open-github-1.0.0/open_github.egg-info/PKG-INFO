@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: open-github
+Version: 1.0.0
+Summary: A simple script that opens a Github page from the command line.
+Home-page: https://github.com/usmakestwo/open_github
+Author: Gonzalo Vazquez
+Author-email: gvazquez@usmakestwo.io
+License: UNKNOWN
+Description: # Open Github
+        
+        A simple script that opens a Github page from the command line.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
