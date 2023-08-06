@@ -1,0 +1,13 @@
+README.md
+setup.py
+bsdict/__init__.py
+bsdict/bsdict.py
+bsdict/bsdict_tests.py
+bsdict/bslt.py
+bsdict/bslt_tests.py
+bsdict/farray.py
+bsdict/farray_tests.py
+bsdict.egg-info/PKG-INFO
+bsdict.egg-info/SOURCES.txt
+bsdict.egg-info/dependency_links.txt
+bsdict.egg-info/top_level.txt
