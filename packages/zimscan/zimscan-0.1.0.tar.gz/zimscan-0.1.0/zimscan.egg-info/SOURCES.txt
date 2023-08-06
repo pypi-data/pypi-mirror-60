@@ -1,0 +1,9 @@
+README.md
+setup.py
+zimscan/__init__.py
+zimscan/reader.py
+zimscan/record.py
+zimscan.egg-info/PKG-INFO
+zimscan.egg-info/SOURCES.txt
+zimscan.egg-info/dependency_links.txt
+zimscan.egg-info/top_level.txt
