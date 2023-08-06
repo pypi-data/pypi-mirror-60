@@ -1,0 +1,5 @@
+opencv-python
+transitions
+PySide2
+simple_config
+dependency_injector
