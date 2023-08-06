@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: memory_monitor
+Version: 0.1.10
+Summary: Jupyter Extension that monitors the memory consumption, and shuts down the kernel
+Home-page: https://github.com/steelersd/memory_monitor
+License: MIT
+Description: UNKNOWN
+Keywords: Jupyter,Notebook,Extension
+Platform: UNKNOWN
+Requires-Python: >=3.6
