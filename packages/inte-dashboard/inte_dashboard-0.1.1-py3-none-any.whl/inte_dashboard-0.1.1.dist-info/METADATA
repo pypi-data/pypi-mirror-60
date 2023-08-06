@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: inte-dashboard
+Version: 0.1.1
+Summary: Dashboard for inte/edc
+Home-page: https://github.com/inte-africa-trial/inte-dashboard
+Author: Erik van Widenfelt
+Author-email: ew2789@gmail.com
+License: GPL license, see LICENSE
+Keywords: django inte dashboard
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.7
+Requires-Dist: beautifulsoup4
+Requires-Dist: inte-consent
+Requires-Dist: inte-subject
+Requires-Dist: edc-appointment
+Requires-Dist: edc-consent
+Requires-Dist: edc-constants
+Requires-Dist: edc-dashboard
+Requires-Dist: edc-lab-dashboard
+Requires-Dist: edc-model-wrapper
+Requires-Dist: edc-navbar
+Requires-Dist: edc-subject-dashboard
+Requires-Dist: edc-review-dashboard
+
+|pypi| |travis| |codecov| |downloads|
+
+INTE dashboard
+------------------
+
+Dashboard classes for inte project
+
+.. |pypi| image:: https://img.shields.io/pypi/v/inte-dashboard.svg
+    :target: https://pypi.python.org/pypi/inte-dashboard
+
+.. |travis| image:: https://travis-ci.com/inte-trial/inte-dashboard.svg?branch=develop
+    :target: https://travis-ci.com/inte-trial/inte-dashboard
+
+.. |codecov| image:: https://codecov.io/gh/inte-trial/inte-dashboard/branch/develop/graph/badge.svg
+  :target: https://codecov.io/gh/inte-trial/inte-dashboard
+
+.. |downloads| image:: https://pepy.tech/badge/inte-dashboard
+   :target: https://pepy.tech/project/inte-dashboard
+
+
