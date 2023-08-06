@@ -1,0 +1,12 @@
+pyblox3/__init__.py,sha256=tCQCf6rrWr3z2iVmJUUYNt3QGkVbRy9fOG_yOBT2sAw,416
+pyblox3/src/auth.py,sha256=XBLoW22MMhWKt-vwGh39Wk_YYdT-f_GFlJITQQ3InSo,328
+pyblox3/src/groups.py,sha256=jjrwO5uD4FgCGS2Y-Iq-P8JHgaQbqZIg1o0BuJ7ds0M,55484
+pyblox3/src/util/__init__.py,sha256=bs8IGHztdQoXZ8sTbCbH0sYDs3IlzPG41Fbbzc2iQiY,368
+pyblox3/src/util/cached.py,sha256=XFir7bFlZmyV86WF1n1K_OAh2GskXy0bHMAkvz8tFkg,200
+pyblox3/src/util/io.py,sha256=6G6URya7q0AwfmmtQIPoMEhk8YGhd1i41mSXPQ8jjBg,846
+pyblox3/src/util/req.py,sha256=202LrSe-e5nj5BEOLijbLuRZp4M3k8ZavscqjtI4x50,2435
+pyblox3-3.0b3.dist-info/LICENSE,sha256=X-9gkfZVsZS4_ELkult1L_67ZTzYBPaOfGtwKU9nVhs,1112
+pyblox3-3.0b3.dist-info/METADATA,sha256=c1LIkIjLi6Lm36WPearsRy6Zis5UMJzqoJb_Gs3m1bg,1873
+pyblox3-3.0b3.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+pyblox3-3.0b3.dist-info/top_level.txt,sha256=Zwqks-N_BKoM5XCneAa2RE4BcfYXaOaj5OhD8-Hzwpo,8
+pyblox3-3.0b3.dist-info/RECORD,,
