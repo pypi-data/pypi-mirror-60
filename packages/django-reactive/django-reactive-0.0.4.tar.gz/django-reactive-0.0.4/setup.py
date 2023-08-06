@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['django_reactive', 'django_reactive.forms']
+
+package_data = \
+{'': ['*'],
+ 'django_reactive': ['static/css/*',
+                     'static/dist/*',
+                     'static/js/*',
+                     'templates/*']}
+
+install_requires = \
+['jsonschema>=3.2.0,<4.0.0', 'psycopg2-binary>=2.8.4,<3.0.0']
+
+setup_kwargs = {
+    'name': 'django-reactive',
+    'version': '0.0.4',
+    'description': 'Django JSON form field on steroids using react-json-schema-form',
+    'long_description': '=============================\ndjango-reactive\n=============================\n\n.. image:: https://badge.fury.io/py/django-reactive.svg\n    :target: https://badge.fury.io/py/django-reactive\n\n.. image:: https://travis-ci.org/tyomo4ka/django-reactive.svg?branch=master\n    :target: https://travis-ci.org/tyomo4ka/django-reactive\n\n.. image:: https://codecov.io/gh/tyomo4ka/django-reactive/branch/master/graph/badge.svg\n    :target: https://codecov.io/gh/tyomo4ka/django-reactive\n\ndjango-reactive integrates `react-jsonschema-form <https://github.com/mozilla-services/react-jsonschema-form>`_ (RJSF)\nin Django projects.\n\nMotivation\n----------\n\nIn my opinion, `JSON types <https://www.postgresql.org/docs/10/datatype-json.html>`_ is an very useful feature of\nPostgres which allows to combine relational and non-relational approaches to storing data. In many cases\nit leads to simpler database design.\n\nThe `JSONField  <https://docs.djangoproject.com/en/2.1/ref/contrib/postgres/fields/#jsonfield>`_ in Django provides a\nnice way of integrating **json** and **jsonb** Postgres types with the ORM. ORM can even include JSON fields\nin database queries. **jsonb** type also offers a way of indexing JSON documents. That makes it a powerful\ntool in the application design and opens a wide range of use cases, e.g. polymorphic behaviour, storing complex\nhierarchies and lists of related entities.\n\nHowever, the main limitation of JSONField in Django is that it does not offer a good way of configuring such objects in\ndefault admin UI. Defining JSON objects inside the textarea is not practical for most use cases. django-reactive\ntries to address this problem by offering an integration between JSONField and an awesome\n`react-jsonschema-form <https://github.com/mozilla-services/react-jsonschema-form>`_ (RJSF) JS library and Python\'s\n`jsonschema <https://github.com/Julian/jsonschema>` for backend validation. Such integration from our practice can\nsignificantly reduce an amount of work you need to spend on building custom forms for JSONField types.\n\nIn this case developers only need to define a JSON schema for such field and optionally UI schema to modify UI\nof such forms.\n\nA simple example is shown below:\n\n.. code-block:: python\n\n    from django.db import models\n\n    from django_reactive.fields import ReactJSONSchemaField\n\n\n    class TestModel(models.Model):\n        simple = ReactJSONSchemaField(\n            help_text=\'Simple\',\n            schema={\n                "title": "A registration form",\n                "description": "A simple form example.",\n                "type": "object",\n                "required": [\n                    "firstName",\n                    "lastName"\n                ],\n                "properties": {\n                    "firstName": {\n                        "type": "string",\n                        "title": "First name"\n                    },\n                    "lastName": {\n                        "type": "string",\n                        "title": "Last name"\n                    },\n                    "age": {\n                        "type": "integer",\n                        "title": "Age"\n                    },\n                    "bio": {\n                        "type": "string",\n                        "title": "Bio"\n                    },\n                    "password": {\n                        "type": "string",\n                        "title": "Password",\n                        "minLength": 3\n                    },\n                    "telephone": {\n                        "type": "string",\n                        "title": "Telephone",\n                        "minLength": 10\n                    }\n                }\n            },\n            ui_schema={\n                "firstName": {\n                    "ui:autofocus": True,\n                    "ui:emptyValue": ""\n                },\n                "age": {\n                    "ui:widget": "updown",\n                    "ui:title": "Age of person",\n                    "ui:description": "(earthian year)"\n                },\n                "bio": {\n                    "ui:widget": "textarea"\n                },\n                "password": {\n                    "ui:widget": "password",\n                    "ui:help": "Hint: Make it strong!"\n                },\n                "date": {\n                    "ui:widget": "alt-datetime"\n                },\n                "telephone": {\n                    "ui:options": {\n                        "inputType": "tel"\n                    }\n                }\n            },\n        )\n\nIt will generate a form like this:\n\n.. image:: images/simple.png\n\nQuick start\n-----------\n\nInstall django-reactive::\n\n    pip install django-reactive\n\nAdd it to your `INSTALLED_APPS`:\n\n.. code-block:: python\n\n    INSTALLED_APPS = (\n        ...\n        \'django_reactive.apps.DjangoReactJsonSchemaFormConfig\',\n        ...\n    )\n\nRun example app\n---------------\n\n* docker-compose up\n* poetry install\n* ./example/manage.py makemigrations\n* ./example/manage.py migrate\n* ./example/manage.py createsuperuser\n* ./example/manage.py runserver\n* open http://127.0.0.1:8000/admin\n* Go to "Test model" to check a few examples\n\nFeatures\n--------\n\n* React, RJSF and other JS assets are bundled with the package.\n* Integration with default Django admin theme.\n* Backend and frontend validation.\n\nLimitations\n-----------\n\n* `Additional properties <https://github.com/mozilla-services/react-jsonschema-form#expandable-option>`_ ( a feature of RJSF) is not supported.\n\nTo implement this behaviour you can define an array schema with one property serving as a key of the object and do\ntransformation in your JSON class. An example will be provided later.\n\nFuture development\n------------------\n\n* Display description as tooltips\n* Polish styles and HTML generated by **RJSF**\n',
+    'author': 'Artem Kolesnikov',
+    'author_email': 'tyomo4ka@gmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/tyomo4ka/django-reactive',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.6,<4',
+}
+
+
+setup(**setup_kwargs)
