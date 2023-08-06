@@ -1,0 +1,20 @@
+# 基于以太坊的LDG币钱包
+
+### 实现ERC-20代币LDG钱包功能：创建地址，代币交易，查询余额。
+
+#### 安装  
+``` pip install web3 ```
+``` pip install ethwallet-sdk ```  
+#### 导入  
+``` from ethwlt_sdk import wallet ```  
+#### 创建新账户  
+``` wallet.newaccount() ```-->[privateKey,address]    
+#### 导入旧账户  
+``` wallet.inputaccount(privateKey) ```-->address   
+#### 查询余额  
+``` wallet.get_balance(address) ```-->account   
+#### 转账  
+``` wallet.transfer(privateKey,account_self,to_add,value) ```-->blockNumber   
+#### 注意
+##### 本币在ropsten测试网络上
+
