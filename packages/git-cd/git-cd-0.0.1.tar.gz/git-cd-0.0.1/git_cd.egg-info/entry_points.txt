@@ -1,0 +1,3 @@
+[console_scripts]
+gitcd = gitcd.cli_interface:cli
+

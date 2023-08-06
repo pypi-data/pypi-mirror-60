@@ -1,0 +1,12 @@
+README.md
+setup.py
+git_cd.egg-info/PKG-INFO
+git_cd.egg-info/SOURCES.txt
+git_cd.egg-info/dependency_links.txt
+git_cd.egg-info/entry_points.txt
+git_cd.egg-info/requires.txt
+git_cd.egg-info/top_level.txt
+gitcd/__init__.py
+gitcd/cli_interface.py
+gitcd/gitcd.py
+test/test_gitcd.py
