@@ -1,0 +1,12 @@
+aicsdaemon/__init__.py,sha256=lsE_50eIwR0UaiPh5OBk2-dmUtEno3fPufZrs0PBFpo,391
+aicsdaemon/daemon.py,sha256=PoCuUmLmhu4w3NRO3Il5zFLSVH5_iCHIkP1DfgpPil8,4830
+aicsdaemon/example_child.py,sha256=8CUa4_XuAsPGi8RWhFJxigcY2iHL4FaCacivubheapk,1128
+aicsdaemon/types.py,sha256=f3XiQzaYiqoCJ2yUdWgzdJPeB-wTmjBdSiUVJbbweS8,91
+aicsdaemon/bin/__init__.py,sha256=ob6yT3PtlYMkzt2xJ4HNqIjGR8dnTipGhe8mNSxN0LM,67
+aicsdaemon/bin/my_example.py,sha256=4X-_OpVhEy2LOYoX0XFfnhLsYL85vpU-4Mzjsmkzs5I,712
+aicsdaemon-0.1.0.dist-info/LICENSE,sha256=SkgfzSXPfsxBOdEyag_UGm9XnJAZegYyagXGgMNzOjY,1507
+aicsdaemon-0.1.0.dist-info/METADATA,sha256=pt0k7nL9v5axJQZ1SBrSy3rik-ZkHHpMXWMOLFB18EE,9692
+aicsdaemon-0.1.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+aicsdaemon-0.1.0.dist-info/entry_points.txt,sha256=itbqduBfNBqdS_Al5aWK1mDrQEc5GKnBI2ofSQXT7Xc,63
+aicsdaemon-0.1.0.dist-info/top_level.txt,sha256=mEzw2E7UjeCYtF8e6FqhEvKLOhZLrzIjUm3GznkdcXI,11
+aicsdaemon-0.1.0.dist-info/RECORD,,
