@@ -1,0 +1,8 @@
+README.md
+setup.py
+simple_pkg/__init__.py
+simple_pkg/sample.py
+simple_pkg_santoshwaddi.egg-info/PKG-INFO
+simple_pkg_santoshwaddi.egg-info/SOURCES.txt
+simple_pkg_santoshwaddi.egg-info/dependency_links.txt
+simple_pkg_santoshwaddi.egg-info/top_level.txt
