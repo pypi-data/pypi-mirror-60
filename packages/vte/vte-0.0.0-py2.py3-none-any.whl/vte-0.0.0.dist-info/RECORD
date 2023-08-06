@@ -1,0 +1,10 @@
+vte/__init__.py,sha256=YuPj8jvdVKhrvz_DPZJ93BeeyZcEjFhwLeyzBCSiv04,362
+vte/__main__.py,sha256=g2uQ_FYOqw7GbS1RclYalJSSOWwSRVHGt2xyD71xi78,7867
+vte/template_engine.py,sha256=XM_J0AXJ1FHhV325LXH3wSgHmoMoPVbM6xZWl_Ct-9o,428
+vte/template_rgy.py,sha256=plNn4Abmp1Rl6bvg8fvuNs7MuXzbEmlMbjfYYPm8PTw,4199
+vte-0.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vte-0.0.0.dist-info/METADATA,sha256=BnRjGyySYWBpFzHI9bvjT1Q5zgq9EKoDY4nlE1v_gz4,417
+vte-0.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+vte-0.0.0.dist-info/entry_points.txt,sha256=s-44lraQFMYhkNT_6SAJIsyBZp-tz5LOHRm-faeRxms,43
+vte-0.0.0.dist-info/top_level.txt,sha256=28qPiHuWPEK-KaDFQk9gmj5E25Hqq8lU1sRqAnFgOMU,4
+vte-0.0.0.dist-info/RECORD,,

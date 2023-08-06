@@ -1,0 +1,3 @@
+[console_scripts]
+vte = vte.__main__:main
+
