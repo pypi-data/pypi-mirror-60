@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: snag-dom
+Version: 0.8
+Summary: An HTML utility package
+Home-page: UNKNOWN
+Author: Cassandra Gentry
+Author-email: cassiegentlekitty@gmail.com
+License: UNKNOWN
+Description: # snag
+        
+        A simple Python project to make accessing HTML elements easier; really more of an experiment than a full-fledged project.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
