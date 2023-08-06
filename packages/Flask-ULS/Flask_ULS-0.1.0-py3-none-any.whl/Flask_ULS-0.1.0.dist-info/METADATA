@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Flask-ULS
+Version: 0.1.0
+Summary: Easy to use integration of the Universal Language Selector in Flask applications
+Home-page: https://git.legoktm.com/legoktm/flask-uls
+Author: Kunal Mehta
+Author-email: legoktm@member.fsf.org
+License: GPL-3.0-or-later
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Requires-Dist: Flask
+
+UNKNOWN
+
+
