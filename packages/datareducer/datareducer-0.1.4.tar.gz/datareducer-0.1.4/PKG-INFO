@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: datareducer
+Version: 0.1.4
+Summary: UNKNOWN
+Home-page: https://github.com/vnl2k/datareducer
+Author: vnl2k
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: Cython
+Provides-Extra: immutables

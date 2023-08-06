@@ -1,0 +1,8 @@
+numpy>=1.14.0
+funkpy>=1.0.1
+
+[Cython]
+Cython>=0.28.3
+
+[immutables]
+immutables>=0.11
