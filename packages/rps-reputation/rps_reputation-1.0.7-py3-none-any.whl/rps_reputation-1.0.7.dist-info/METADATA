@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: rps-reputation
+Version: 1.0.7
+Summary: An implementation of the Roaring Penguin IP reputation
+ reporting system.
+Home-page: UNKNOWN
+Author: SpamExperts
+Author-email: UNKNOWN
+License: GPL
+Keywords: spam
+Platform: POSIX
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Communications :: Email :: Filters
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires: ipaddr
+
+UNKNOWN
+
+
