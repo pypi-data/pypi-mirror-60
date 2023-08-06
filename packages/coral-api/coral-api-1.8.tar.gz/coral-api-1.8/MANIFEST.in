@@ -1,0 +1,2 @@
+include inaccel/coral/VERSION
+recursive-include inaccel/coral/lib *.so

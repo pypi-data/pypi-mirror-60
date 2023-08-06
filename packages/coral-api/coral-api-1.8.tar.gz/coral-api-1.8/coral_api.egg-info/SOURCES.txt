@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.py
+coral_api.egg-info/PKG-INFO
+coral_api.egg-info/SOURCES.txt
+coral_api.egg-info/dependency_links.txt
+coral_api.egg-info/namespace_packages.txt
+coral_api.egg-info/not-zip-safe
+coral_api.egg-info/requires.txt
+coral_api.egg-info/top_level.txt
+inaccel/coral/VERSION
+inaccel/coral/__init__.py
+inaccel/coral/_coral.py
+inaccel/coral/_numpy_array.py
+inaccel/coral/_request.py
+inaccel/coral/lib/libcoral-api_python.so
