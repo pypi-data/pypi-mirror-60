@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: jmflashcards
+Version: 0.0.3
+Summary: A flashcard manager
+Home-page: UNKNOWN
+Author: Jorge Monforte González
+Author-email: jorge.monforte@gmail.com
+License: private
+Project-URL: source, https://github.com/llou/jmflashcards
+Description: UNKNOWN
+Keywords: flashcards latex
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Education :: Computer Aided Instruction (CAI)
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.8
