@@ -1,0 +1,10 @@
+conllviewer/__init__.py,sha256=orVH_HAJS6seA8p_R_1DLlXXhtFxJGBWiWKpyew3CY0,21
+conllviewer/viewer.py,sha256=LvJhUMs6kqUIcrTnG3zQOmIn1L1bp9DH_DPLDlMl2bY,6837
+conllviewer/fonts/BabelSans.ttf,sha256=ppoNZUeofCZMS4akbInUttZlCzozd-7di4BcQ_6xJ9c,56936
+conllviewer/fonts/Exo-Medium.otf,sha256=vQCz3OL3DCVooV8qI95I-cNXwbi9-LaAwUOtUnOePH0,109352
+conllviewer/fonts/PRIMERB.ttf,sha256=YK9IRwEcR8hiIg3NXyt2GPM_9rf_UH6paWXzarA9iMA,53592
+ConllViewer-1.0.0.dist-info/LICENSE,sha256=IboOtaG477KxFlnYzJpBpF9E_LyPbl4s2SZLFvH-nN8,1065
+ConllViewer-1.0.0.dist-info/METADATA,sha256=srhWXFY9wBbD6HdA5U68xyL4cUBnHXWRQsXXdLZZwAg,1029
+ConllViewer-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ConllViewer-1.0.0.dist-info/top_level.txt,sha256=UenApS1as1aWNH_EgnfIbZJW11iHwrchcTUqegoGUCQ,12
+ConllViewer-1.0.0.dist-info/RECORD,,

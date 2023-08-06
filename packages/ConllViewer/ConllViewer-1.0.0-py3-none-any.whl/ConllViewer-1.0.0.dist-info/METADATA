@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ConllViewer
+Version: 1.0.0
+Summary: Visually representing a CONLL 2009 files
+Home-page: https://github.com/taoprajjwal/conll-viewer/
+Author: Prajjwal Bhattarai
+Author-email: taoprajjwal@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+
+# conll-viewer
+Turning coNLL 2009 formatted files to a visual format, with support for files resulting from [open-sesame](https://github.com/swabhs/open-sesame)
+Currently, the only format supported is the one that been through argument identification stage of open-sesame.
+
+---
+### Installation
+Conll-viewer can be installed from PyPi using PIP
+```sh
+$ pip install conllviewer
+```
+----
+### Examples
+
+```python
+import conllviewer
+file=conllviewer.reader("predicted-args.conll")
+sentences=file.get_sentences()  
+im=sentences[0].draw()
+im.save("sentence.png")
+```
+
