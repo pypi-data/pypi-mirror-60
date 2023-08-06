@@ -1,0 +1,7 @@
+dspg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dspg/cli.py,sha256=RXr3j7457yv9KT3jHzuTx8vG64PZAJJ7jX0Y3rE3AEA,1046
+dspg/sandbox.py,sha256=VC_aYVq-SxM7_wl_ve6QdIUPfwdfxzu3nXJrIFop3mY,182
+dspg-0.1.0.dist-info/entry_points.txt,sha256=l-I1lW58v3tyLVSB2ZV-z53y9rShdi6BnARge8x1XK0,38
+dspg-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dspg-0.1.0.dist-info/METADATA,sha256=ekauajqetyMGF5BMCuUaYibI3K65TF0R76bmIjmkNKs,372
+dspg-0.1.0.dist-info/RECORD,,
