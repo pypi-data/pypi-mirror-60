@@ -1,0 +1,11 @@
+fycharts/SpotifyCharts.py,sha256=xl2CTd_SpLr38Xyx_R1_BrQwX2RiJh708OO7g5-LyRc,6310
+fycharts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fycharts/compute_dates.py,sha256=LmEzmr1nU36PGa_z75dJxeVytkQNAo9ymj2g6w4UVCM,4947
+fycharts/crawler_base.py,sha256=u_nynH2bh6fNOFCnnNPEc92zn7GEOg0PsWT3vqy1t9k,4413
+fycharts/exceptions.py,sha256=P11nCImd5DXynZnxpvzuzl-O9nEUnn7YE7vQgI_m6I0,44
+fycharts/log_config.py,sha256=vEQwaZ7bmK51KdQwxjFzy5ywOOcYOezZ46yg9WLxZU8,585
+fycharts/write_to_file.py,sha256=943PdzzDHMjhTmE2w-_qY5J5Ph62A-ymVC25k7GVpeo,396
+fycharts-2.0.0.dist-info/METADATA,sha256=hUzOonlS2s-gpODBhNqDxXC42NmOLA1ZMc4_JfB6_Oo,5149
+fycharts-2.0.0.dist-info/RECORD,,
+fycharts-2.0.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+fycharts-2.0.0.dist-info/top_level.txt,sha256=b-cjAfV0SsECOVrnQ8UO9MH5I5waS-UDGfhzjLD6J68,9
