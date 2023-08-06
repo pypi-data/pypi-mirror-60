@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: django-verification-code
+Version: 0.1
+Summary: Phone verification with twilio
+Home-page: https://git-codecommit.us-east-2.amazonaws.com/v1/repos/django-verification-code
+Author: Rafael Cardenas
+Author-email: rcardenas@softicsolutions.mx
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: Django (>2)
+Requires-Dist: djangorestframework (==3.11.0)
+Requires-Dist: twilio (==6.35.2)
+
+Django app para enviar codigo con twilio y verificar el codigo buscandolo en usuarios
+
+
