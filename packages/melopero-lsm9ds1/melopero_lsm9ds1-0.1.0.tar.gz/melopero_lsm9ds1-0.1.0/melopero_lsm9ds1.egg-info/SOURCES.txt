@@ -1,0 +1,9 @@
+README.md
+setup.py
+melopero_lsm9ds1/LSM9DS1.py
+melopero_lsm9ds1/__init__.py
+melopero_lsm9ds1.egg-info/PKG-INFO
+melopero_lsm9ds1.egg-info/SOURCES.txt
+melopero_lsm9ds1.egg-info/dependency_links.txt
+melopero_lsm9ds1.egg-info/requires.txt
+melopero_lsm9ds1.egg-info/top_level.txt
