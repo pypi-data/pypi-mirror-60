@@ -1,0 +1,17 @@
+README.md
+setup.py
+classes/__init__.py
+classes/chord.py
+classes/harmalysis.py
+classes/interval.py
+classes/key.py
+classes/pitch_class.py
+classes/scale.py
+harmalysis.egg-info/PKG-INFO
+harmalysis.egg-info/SOURCES.txt
+harmalysis.egg-info/dependency_links.txt
+harmalysis.egg-info/requires.txt
+harmalysis.egg-info/top_level.txt
+parsers/__init__.py
+parsers/chordlabel.py
+parsers/roman.py
