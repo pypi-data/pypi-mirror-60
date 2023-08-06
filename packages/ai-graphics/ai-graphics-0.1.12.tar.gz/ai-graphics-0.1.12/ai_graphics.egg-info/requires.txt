@@ -1,0 +1,9 @@
+numpy
+opencv-python
+flask
+tezign
+mxnet
+sklearn
+scenedetect
+moviepy
+Pillow
