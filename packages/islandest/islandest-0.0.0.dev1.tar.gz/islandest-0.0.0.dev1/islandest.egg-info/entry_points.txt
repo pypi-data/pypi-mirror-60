@@ -1,0 +1,3 @@
+[console_scripts]
+islandest = islandest.main:cli
+
