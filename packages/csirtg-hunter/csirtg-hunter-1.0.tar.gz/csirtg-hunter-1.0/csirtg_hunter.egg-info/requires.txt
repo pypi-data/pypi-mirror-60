@@ -1,0 +1,8 @@
+prettytable
+dnspython
+csirtg_indicator<3.0,>=2.0
+csirtg_dnsdb
+csirtgsdk
+arrow
+geoip2
+maxminddb
