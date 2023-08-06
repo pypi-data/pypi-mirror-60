@@ -1,0 +1,8 @@
+test_package/__init__.py,sha256=wX-ZfgrC6t3BJfCsywGu-3v3LwOoEt8KvdhbNgL_V84,59
+test_package/pip_function_A.py,sha256=RkEturAXM4OBXbTzu3FRDqxlEBHlTv1snF1p3RCqRCM,105
+test_package/pip_function_B.py,sha256=P7SSXAHNrPVJ29EjKDXLQ88wesruoNbDzhFKgqEMH5s,100
+testyuanichenv4-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testyuanichenv4-0.0.1.dist-info/METADATA,sha256=4CJmG5NcmaBcvReKmZC6cmN5tntKkAnNR9pSDuwQoAA,450
+testyuanichenv4-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+testyuanichenv4-0.0.1.dist-info/top_level.txt,sha256=GeXTEKqyjBx-5S0TKnJMkgF1M3Cpjq6YSWM7P4c9-lg,13
+testyuanichenv4-0.0.1.dist-info/RECORD,,
