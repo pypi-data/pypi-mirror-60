@@ -1,0 +1,11 @@
+backup/__init__.py,sha256=2S__lNAnN-4V8F5XJ4aPpNPkEOADOZm_6dZQV7p7fjg,120
+backup/backup.py,sha256=yLJgfmfMaiJSaRmLim-oRCexzo8uYLB90NGcZn6QdXM,2937
+backup/errors.py,sha256=wW8GT-_FAQXb8X17EC_lvgofrxOGejjdODnxD1-4BgM,244
+backup/incremental_backup.py,sha256=ll9OZczH958CoG7PZsUSQ6q3EerMfNX7JVwoqkA_y3w,2029
+backup/rsync_copy.py,sha256=f53n97qiAh8DsZiMFzoeg4vI11g1N21tOTbdFQSxdfM,2639
+backup.py-0.1.1.data/scripts/pybackup,sha256=auekqDU93x2v9SFUvnoyd71S_qVZTI43y4b43VOrSCA,805
+backup.py-0.1.1.dist-info/LICENSE.txt,sha256=xnN_YM7KjqqoFuyBPmDqIhykMwtYydkWewHJrB3Q63E,1068
+backup.py-0.1.1.dist-info/METADATA,sha256=sPJ9mcAufq5_IP0uHPa3cPZe1Mu-nPXIkwNsJohCNC8,2320
+backup.py-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+backup.py-0.1.1.dist-info/top_level.txt,sha256=4Z8W_NlhC8p9AmtGc_HLBsyJ5tgTTgkaLereGvKOTPY,7
+backup.py-0.1.1.dist-info/RECORD,,

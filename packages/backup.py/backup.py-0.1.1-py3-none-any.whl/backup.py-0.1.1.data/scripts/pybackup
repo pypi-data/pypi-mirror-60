@@ -1,0 +1,34 @@
+#!python
+
+import backup
+import argparse
+
+# TODO: check for better windows support
+parser = argparse.ArgumentParser(description="Incremental Recursive Backup")
+parser.add_argument(
+    "--type",
+    "-t",
+    type=str,
+    default="incremental",
+    choices=["full", "incremental"],
+    help="type of backup method",
+)
+parser.add_argument(
+    "src", metavar="source_dir", type=str, help="source dir path to backup"
+)
+parser.add_argument(
+    "dst", metavar="destination_dir", type=str, help="destination dir path to backup"
+)
+
+args = parser.parse_args()
+
+src = args.src
+dst = args.dst
+backup_type = args.type
+
+if backup_type == "full":
+    backup_obj = backup.Backup(src, dst)
+    backup_obj.run()
+elif backup_type == "incremental":
+    backup_obj = backup.IncrementalBackup(src, dst)
+    backup_obj.run()
