@@ -1,0 +1,9 @@
+defweb/__init__.py,sha256=ZBnoP14PbPHCuCtn8V1YpmAyRRf5zxRtr-6YCftFf6c,2661
+defweb/__main__.py,sha256=ms0w1FgCXX26e-_a7aB_qHvZ7VTAiJZRPruIIHF4nVI,37
+defweb/main.py,sha256=b2qVmghn6HbY6sIpaSHhKogv0DKsPjPNzwgdoZTVcRY,3215
+defweb/webserver.py,sha256=8oRTBuyGi4iDc15SshrSBYn1ZUlddKqrr9WD-OAEyJ8,6372
+defweb-0.1.1.dist-info/METADATA,sha256=-sSan3UFAJvRtfvoFMVGxnNguCYmH4rwk67jUsKUJPQ,1347
+defweb-0.1.1.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+defweb-0.1.1.dist-info/entry_points.txt,sha256=yHv5cvypKD2LB7CrcQphJEdWm94fWleB3gA2pjeCiqQ,49
+defweb-0.1.1.dist-info/top_level.txt,sha256=qdFn9MlEv1XpM6MHzu58wVwqxVWpQ89lQAuNQmILBko,7
+defweb-0.1.1.dist-info/RECORD,,
