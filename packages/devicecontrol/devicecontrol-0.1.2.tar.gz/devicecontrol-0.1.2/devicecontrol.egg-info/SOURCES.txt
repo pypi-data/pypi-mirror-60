@@ -1,0 +1,11 @@
+.gitignore
+CHANGELOG.md
+README.md
+VERSION
+requirements.txt
+setup.py
+devicecontrol.egg-info/PKG-INFO
+devicecontrol.egg-info/SOURCES.txt
+devicecontrol.egg-info/dependency_links.txt
+devicecontrol.egg-info/top_level.txt
+source/devicecontrol.py

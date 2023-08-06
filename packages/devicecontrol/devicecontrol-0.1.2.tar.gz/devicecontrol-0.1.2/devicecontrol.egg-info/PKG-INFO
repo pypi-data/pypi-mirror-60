@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: devicecontrol
+Version: 0.1.2
+Summary: A package to interact with device
+Home-page: https://pypi.apple.com/simple/devicecontrol
+Author: Foo Bar
+Author-email: foo@bar.com
+License: UNKNOWN
+Description: hello there this is a test
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
