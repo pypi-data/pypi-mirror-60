@@ -1,0 +1,14 @@
+new_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+new_bot/bots.py,sha256=G80Jdi1QdRcA9wbmqXR4w9c_YrO6Yog3BoZOvizvnmU,227
+new_bot/run.py,sha256=ngcZ6o3IYLa6rLP0e1dWosynqeEs3Ph3djuYlE9vvwE,134
+new_bot/settings.py,sha256=JVGmYI4d3vWsic3NkwfSAE5VGIBpuPFVaz3hLWsFoNo,215
+speedapply/__init__.py,sha256=RLlHMpoOEKaEKI9uwv6C6wLCQUweNphjg76u2kW76dU,190
+speedapply/__main__.py,sha256=UJNM1cUpl4EG9pxheErLj_EP_9O3gLBVaqkOrlQiiGI,1343
+speedapply/bots.py,sha256=74bFjtIB_0uxHQYoH-WbuZDSNmp-sRZn1bcYMAN0Ry4,183
+speedapply/sites.py,sha256=feS63p26A7KN6gDBmONluABp2beFs8QVb5hkR4ShONs,3721
+speedapply-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+speedapply-0.0.1.dist-info/METADATA,sha256=ns5oVmcSyWZpW2kJZIMJ1GPym7n4HF919jlV16XEYek,2732
+speedapply-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+speedapply-0.0.1.dist-info/entry_points.txt,sha256=WuvJh762sRVmhmZL58PFOzkyBJb-Kr3WWJH7oNSnx4I,57
+speedapply-0.0.1.dist-info/top_level.txt,sha256=uLeeiCBYu8TtjYzKsvMdrIlRcd4pXGdiYgQiSfbu-bA,19
+speedapply-0.0.1.dist-info/RECORD,,
