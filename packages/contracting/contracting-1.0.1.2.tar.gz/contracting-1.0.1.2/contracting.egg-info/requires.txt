@@ -1,0 +1,10 @@
+redis==3.2.0
+python-dotenv==0.9.1
+ujson
+autopep8
+coloredlogs
+humanfriendly
+transitions
+astor
+rocks
+sanic
