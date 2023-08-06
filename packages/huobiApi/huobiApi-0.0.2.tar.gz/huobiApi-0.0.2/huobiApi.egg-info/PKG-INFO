@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: huobiApi
+Version: 0.0.2
+Summary: helper functions of huobi api call
+Home-page: https://github.com/MJeremy2017/HuobiApi
+Author: Jeremy.Zhang
+Author-email: zhangyue93006@gmail.com
+License: UNKNOWN
+Description: # HuobiApi
+        Huobi REST API Relevant
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
