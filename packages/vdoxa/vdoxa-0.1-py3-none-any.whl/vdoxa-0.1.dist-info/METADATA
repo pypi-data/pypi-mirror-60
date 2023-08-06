@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: vdoxa
+Version: 0.1
+Summary: 
+Requires-Dist: opencv-contrib-python
+Requires-Dist: imutils
+Requires-Dist: moviepy
+Requires-Dist: questionary
+
+vdoXA is an open-source python package for trimming the videos.
+
+It is built as a subsystem for < XXXXX Not to be named XXXXX > project.
+
+Originally inspired by my colleague's work, I thought of improving the
+concept and build a tool to simplify the process. I hope it comes with
+strong support for continuous updates, reliable functions and overall
+ease of use.
+
+Read complete documentation at: <https://github.com/xames3/vdoxa>.
+
+Home-page: https://github.com/xames3/vdoxa/
+Author: XAMES3
+Author-email: xames3.developer@gmail.com
+Maintainer: XAMES3
+Maintainer-email: xames3.developer@gmail.com
+License: Apache 2.0
+Description: # vdoXA
+        
+        A simple video trimmer.
+        
+        ## License
+        Licensed under the [Apache License 2.0](https://github.com/xames3/vdo_splitter/blob/master/LICENSE). Copyright 2020 XAMES3.
+        
+Keywords: opencv2 cv2
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
