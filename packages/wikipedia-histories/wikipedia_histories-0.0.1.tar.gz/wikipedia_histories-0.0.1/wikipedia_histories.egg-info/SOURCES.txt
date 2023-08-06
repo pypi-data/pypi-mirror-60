@@ -1,0 +1,6 @@
+README.md
+setup.py
+wikipedia_histories.egg-info/PKG-INFO
+wikipedia_histories.egg-info/SOURCES.txt
+wikipedia_histories.egg-info/dependency_links.txt
+wikipedia_histories.egg-info/top_level.txt
