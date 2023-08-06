@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: face-recognize
+Version: 0.2.0
+Summary: face recognize with dlib and arcsoft toolkit
+Home-page: https://github.com/TuYuxiao/face_recognize
+Author: Tu Yuxiao
+Author-email: 754738085@qq.com
+License: MIT License
+Description: UNKNOWN
+Keywords: face recognize
+Platform: any
