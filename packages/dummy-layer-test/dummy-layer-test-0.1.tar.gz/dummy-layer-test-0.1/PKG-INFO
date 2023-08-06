@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: dummy-layer-test
+Version: 0.1
+Summary: Lambda layer dependancy testing
+Home-page: https://github.com/superDross/dummy-layer-test
+Author: superDross
+Author-email: dross78375@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.7
