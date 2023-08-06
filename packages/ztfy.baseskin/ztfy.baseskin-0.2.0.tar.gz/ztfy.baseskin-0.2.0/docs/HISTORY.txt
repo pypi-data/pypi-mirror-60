@@ -1,0 +1,10 @@
+HISTORY
+=======
+
+0.2.0
+-----
+ - added script meta base class
+
+0.1.0
+-----
+ - first release
