@@ -1,0 +1,9 @@
+setup.py
+DatastreamDSWS_Test/DS_Requests.py
+DatastreamDSWS_Test/DS_Response.py
+DatastreamDSWS_Test/__init__.py
+DatastreamDSWS_Test.egg-info/PKG-INFO
+DatastreamDSWS_Test.egg-info/SOURCES.txt
+DatastreamDSWS_Test.egg-info/dependency_links.txt
+DatastreamDSWS_Test.egg-info/requires.txt
+DatastreamDSWS_Test.egg-info/top_level.txt
