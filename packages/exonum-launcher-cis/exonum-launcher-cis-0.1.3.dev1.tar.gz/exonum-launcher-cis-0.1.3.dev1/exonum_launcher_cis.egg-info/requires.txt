@@ -1,0 +1,2 @@
+pyyaml
+exonum-client-cis==0.4.0.dev6
