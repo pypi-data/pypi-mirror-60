@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: rubixs
+Version: 0.0.1
+Summary: Implementation of Rubix's cube in Python3
+Home-page: https://github.com/junhoyeo/rubixs
+Author: Junho Yeo
+Author-email: hanaro0704@gmail.com
+License: MIT
+Download-URL: https://github.com/junhoyeo/rubixs/archive/v_0.0.1.tar.gz
+Description: # 🧸 rubixs
+        [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+        [![PyPI pyversions](https://img.shields.io/pypi/pyversions/rubixs)](https://pypi.org/project/rubixs/)
+        [![MIT LICENSE](https://img.shields.io/pypi/l/rubixs)](https://github.com/junhoyeo/rubixs/blob/master/LICENSE)
+        [![PyPI version](https://badge.fury.io/py/rubixs.svg)](https://badge.fury.io/py/rubixs)
+        [![PyPI monthly downloads](https://img.shields.io/pypi/dm/rubixs)](https://pypistats.org/packages/rubixs)
+        
+        > Implementation of Rubix's cube in Python3
+        
+        ## 📦 Installation
+        
+        ```bash
+        # only python 3 or newer
+        pip3 install rubixs
+        ```
+        
+Keywords: rubix,cube
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3
+Description-Content-Type: text/markdown

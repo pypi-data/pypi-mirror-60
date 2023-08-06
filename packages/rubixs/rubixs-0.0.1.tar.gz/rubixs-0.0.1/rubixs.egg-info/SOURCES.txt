@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+rubixs/__init__.py
+rubixs/cube.py
+rubixs.egg-info/PKG-INFO
+rubixs.egg-info/SOURCES.txt
+rubixs.egg-info/dependency_links.txt
+rubixs.egg-info/top_level.txt
