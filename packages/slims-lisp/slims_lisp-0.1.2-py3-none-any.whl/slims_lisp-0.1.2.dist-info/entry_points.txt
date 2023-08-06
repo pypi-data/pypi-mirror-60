@@ -1,0 +1,3 @@
+[console_scripts]
+slims-lisp = slims_lisp.__main__:cli
+
