@@ -1,0 +1,45 @@
+<map id="inheritance97d0a71d6c" name="inheritance97d0a71d6c">
+<area shape="rect" id="node1" title="Helper class that provides a standard way to create an ABC using" alt="" coords="107,404,132,428"/>
+<area shape="rect" id="node4" title="Base class for all agents that can run within a `World` and engage in situated negotiations" alt="" coords="208,412,234,436"/>
+<area shape="rect" id="node46" title="Base world class encapsulating a world that runs a simulation with several agents interacting within some" alt="" coords="208,307,234,331"/>
+<area shape="rect" id="node2" href="../reference/scml.html#scml.AWI" target="_top" title="The Agent SCML2020World Interface for SCML2020 world allowing a single process per agent" alt="" coords="107,226,132,250"/>
+<area shape="rect" id="node3" title="Agent World Interface class" alt="" coords="2,226,74,250"/>
+<area shape="rect" id="node20" href="../reference/scml.html#scml.SCML2020Agent" target="_top" title="Base class for all SCML2020 agents (factory managers)" alt="" coords="313,428,374,452"/>
+<area shape="rect" id="node5" title="Defines an entity that is a part of the world but does not participate in the simulation" alt="" coords="107,468,132,492"/>
+<area shape="rect" id="node9" href="../reference/scml.html#scml.BuyCheapSellExpensiveAgent" target="_top" title="An agent that tries to buy cheap and sell expensive but does not care about production scheduling." alt="" coords="662,500,766,524"/>
+<area shape="rect" id="node10" href="../reference/scml.html#scml.IndependentNegotiationsAgent" target="_top" title="Implements the base class for agents that negotiate independently with different partners." alt="" coords="541,516,646,540"/>
+<area shape="rect" id="node40" href="../reference/scml.html#scml.RandomAgent" target="_top" title="An agent that negotiates randomly." alt="" coords="688,532,741,556"/>
+<area shape="rect" id="node11" title="Adds the ability to save checkpoints to a `NamedObject`" alt="" coords="90,258,149,282"/>
+<area shape="rect" id="node12" href="../reference/scml.html#scml.DecentralizingAgent" target="_top" title="DecentralizingAgent" alt="" coords="558,347,629,371"/>
+<area shape="rect" id="node32" href="../reference/scml.html#scml.IndDecentralizingAgent" target="_top" title="IndDecentralizingAgent" alt="" coords="554,379,634,404"/>
+<area shape="rect" id="node14" href="../reference/scml.html#scml.StepNegotiationManager" target="_top" title="A negotiation manager that controls a controller and another for selling for every timestep" alt="" coords="425,460,511,484"/>
+<area shape="rect" id="node41" href="../reference/scml.html#scml.ReactiveAgent" target="_top" title="ReactiveAgent" alt="" coords="567,460,621,484"/>
+<area shape="rect" id="node15" href="../reference/scml.html#scml.PredictionBasedTradingStrategy" target="_top" title="A trading strategy that uses prediction strategies to manage inputs/outputs needed" alt="" coords="413,331,522,355"/>
+<area shape="rect" id="node37" href="../reference/scml.html#scml.MovingRangeAgent" target="_top" title="MovingRangeAgent" alt="" coords="559,291,629,315"/>
+<area shape="rect" id="node16" href="../reference/scml.html#scml.SupplyDrivenProductionStrategy" target="_top" title="A production strategy that converts all inputs to outputs" alt="" coords="413,267,523,291"/>
+<area shape="rect" id="node17" href="../reference/scml.html#scml.DoNothingAgent" target="_top" title="An agent that does nothing for the whole length of the simulation" alt="" coords="438,395,497,420"/>
+<area shape="rect" id="node18" href="../reference/scml.html#scml.DemandDrivenProductionStrategy" target="_top" title="A production strategy that produces ONLY when a contract is secured" alt="" coords="410,299,525,323"/>
+<area shape="rect" id="node19" href="../reference/scml.html#scml.ProductionStrategy" target="_top" title="Represents a strategy for controlling production." alt="" coords="310,299,377,323"/>
+<area shape="rect" id="node42" href="../reference/scml.html#scml.TradeDrivenProductionStrategy" target="_top" title="A production strategy that produces ONLY for contracts that the agent did not initiate." alt="" coords="414,428,521,452"/>
+<area shape="rect" id="node21" title="The base class of all named entities." alt="" coords="12,436,63,460"/>
+<area shape="rect" id="node22" title="An object capable of raising events" alt="" coords="96,307,143,331"/>
+<area shape="rect" id="node23" href="../reference/scml.html#scml.ExecutionRatePredictionStrategy" target="_top" title="A prediction strategy for expected inputs and outputs at every step" alt="" coords="165,355,277,379"/>
+<area shape="rect" id="node29" href="../reference/scml.html#scml.FixedERPStrategy" target="_top" title="Predicts that the there is a fixed execution rate that does not change for all partners" alt="" coords="311,363,376,387"/>
+<area shape="rect" id="node36" href="../reference/scml.html#scml.MeanERPStrategy" target="_top" title="Predicts that the there is a fixed execution rate that does not change for all partners" alt="" coords="310,331,377,355"/>
+<area shape="rect" id="node24" href="../reference/scml.html#scml.Factory" target="_top" title="A simulated factory" alt="" coords="22,194,53,218"/>
+<area shape="rect" id="node25" href="../reference/scml.html#scml.FactoryProfile" target="_top" title="Defines all private information of a factory" alt="" coords="12,162,63,186"/>
+<area shape="rect" id="node26" href="../reference/scml.html#scml.FactoryState" target="_top" title="FactoryState(inventory: numpy.ndarray, balance: int, commands: numpy.ndarray, inventory_changes: numpy.ndarray, balance_change: int, contracts: List[List[scml.scml2020.world.ContractInfo]])" alt="" coords="14,130,62,154"/>
+<area shape="rect" id="node27" href="../reference/scml.html#scml.Failure" target="_top" title="A production failure" alt="" coords="23,98,52,122"/>
+<area shape="rect" id="node28" href="../reference/scml.html#scml.FinancialReport" target="_top" title="A report published periodically by the system showing the financial standing of an agent" alt="" coords="9,66,66,90"/>
+<area shape="rect" id="node30" href="../reference/scml.html#scml.FixedTradePredictionStrategy" target="_top" title="Predicts a fixed amount of trade both for the input and output products." alt="" coords="293,512,394,536"/>
+<area shape="rect" id="node31" href="../reference/scml.html#scml.TradePredictionStrategy" target="_top" title="A prediction strategy for expected inputs and outputs at every step" alt="" coords="179,512,263,536"/>
+<area shape="rect" id="node33" href="../reference/scml.html#scml.IndependentNegotiationsManager" target="_top" title="A negotiation manager that manages independent negotiators that do not share any information once created" alt="" coords="410,492,525,516"/>
+<area shape="rect" id="node34" href="../reference/scml.html#scml.ReactiveTradingStrategy" target="_top" title="The agent reactively responds to contracts for selling by buying and vice versa." alt="" coords="425,541,510,565"/>
+<area shape="rect" id="node35" href="../reference/scml.html#scml.NegotiationManager" target="_top" title="A negotiation manager is a component that provides negotiation control functionality to an agent" alt="" coords="308,470,379,494"/>
+<area shape="rect" id="node38" href="../reference/scml.html#scml.MovingRangeNegotiationManager" target="_top" title="My negotiation strategy" alt="" coords="410,235,525,259"/>
+<area shape="rect" id="node39" href="../reference/scml.html#scml.TradingStrategy" target="_top" title="Base class for all trading strategies." alt="" coords="315,395,372,420"/>
+<area shape="rect" id="node43" href="../reference/scml.html#scml.SignAllPossible" target="_top" title="Signs all contracts that can in principle be honored." alt="" coords="315,544,372,568"/>
+<area shape="rect" id="node44" href="../reference/scml.html#scml.SCML2020World" target="_top" title="A Supply Chain SCML2020World simulation as described for the SCML league of ANAC @ IJCAI 2020." alt="" coords="313,267,374,291"/>
+<area shape="rect" id="node47" href="../reference/scml.html#scml.SignAll" target="_top" title="Signs all contracts no matter what." alt="" coords="23,34,52,58"/>
+<area shape="rect" id="node48" href="../reference/scml.html#scml.Simulation" target="_top" title="Provides a simulator to the agent." alt="" coords="18,2,58,26"/>
+</map>
