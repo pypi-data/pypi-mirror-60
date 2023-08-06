@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ethwallet-sdk
+Version: 0.0.1
+Summary: SDK for ETH Wallet(以太坊钱包)
+Home-page: https://github.com
+Author: garder
+Author-email: gaodelong01@163.com
+License: UNKNOWN
+Description: # 以太坊钱包
+        
+        ### 实现以太坊钱包功能：创建地址，代币交易，查询余额，
+        
+        
+Keywords: blockchain bsn
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
