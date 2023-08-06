@@ -1,0 +1,3 @@
+[console_scripts]
+w1logger = w1datalogger.logger:main
+
