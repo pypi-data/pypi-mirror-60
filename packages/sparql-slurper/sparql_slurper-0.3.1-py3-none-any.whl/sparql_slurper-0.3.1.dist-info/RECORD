@@ -1,0 +1,9 @@
+sparql_slurper/__init__.py,sha256=XAZd5FCXrET6dB1RvyeU1Ohh81H7HMlyW-jf6tDwARc,28
+sparql_slurper/_graphdb_slurpygraph.py,sha256=1HhbNIGm0AsAxfAEq10VH97je49xQAp3pheGof8AlcM,1189
+sparql_slurper/_slurpygraph.py,sha256=4XO9ZuZYR3yXXfMPY2VuR21WoPnyfUFlcxjADQNHbQg,7604
+sparql_slurper-0.3.1.dist-info/AUTHORS,sha256=17LPrjhAfveDzSWCXifiUb7qI-ldMWoc2dH88LUR76A,93
+sparql_slurper-0.3.1.dist-info/METADATA,sha256=qUMQsnCJDQIEqUPXKZ4LrzTKOjU50aT8B-Oh6kyLGTg,394
+sparql_slurper-0.3.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sparql_slurper-0.3.1.dist-info/pbr.json,sha256=UgAMS4JDISJ2TMKKfYU-5YobuQNe5DdBpDdaEudI9g8,46
+sparql_slurper-0.3.1.dist-info/top_level.txt,sha256=9pFGexdYlPftkkCDI0zrA1rYHQYAqonAsdZuA7gUi9A,15
+sparql_slurper-0.3.1.dist-info/RECORD,,
