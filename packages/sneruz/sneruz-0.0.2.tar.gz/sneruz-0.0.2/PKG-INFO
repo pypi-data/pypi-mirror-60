@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sneruz
+Version: 0.0.2
+Summary: A logic library
+Home-page: https://github.com/Sn00pbom/sneruz
+Author: Zachary Lefin
+Author-email: zachlefin@gmail.com
+License: MIT
+Download-URL: https://github.com/Sn00pbom/sneruz/archive/v0.0.2.tar.gz
+Description: # sneruz
+        A python logic library
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

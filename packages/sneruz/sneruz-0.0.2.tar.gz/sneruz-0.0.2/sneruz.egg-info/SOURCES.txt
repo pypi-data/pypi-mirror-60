@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+sneruz/__init__.py
+sneruz/connective.py
+sneruz/const.py
+sneruz/domain.py
+sneruz/errors.py
+sneruz/predicate.py
+sneruz/proof.py
+sneruz/prop.py
+sneruz/quantifier.py
+sneruz.egg-info/PKG-INFO
+sneruz.egg-info/SOURCES.txt
+sneruz.egg-info/dependency_links.txt
+sneruz.egg-info/top_level.txt
