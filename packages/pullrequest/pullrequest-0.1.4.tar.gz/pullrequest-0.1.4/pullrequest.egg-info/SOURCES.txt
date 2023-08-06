@@ -1,0 +1,12 @@
+setup.py
+pullrequest/__init__.py
+pullrequest/bitbucket_cloud.py
+pullrequest/cli.py
+pullrequest/github.py
+pullrequest/gitlab.py
+pullrequest.egg-info/PKG-INFO
+pullrequest.egg-info/SOURCES.txt
+pullrequest.egg-info/dependency_links.txt
+pullrequest.egg-info/entry_points.txt
+pullrequest.egg-info/requires.txt
+pullrequest.egg-info/top_level.txt
