@@ -1,0 +1,16 @@
+sgp4/SGP4-VER.TLE,sha256=0kbR2ddorORFo4qWVxP6m6UtgP2KQaBQL_g9es_-KIE,8616
+sgp4/__init__.py,sha256=srGKzZkAQ5lchZ2eKWGBh2yC0Q5KCmTT4XpCtLTC6yA,7032
+sgp4/api.py,sha256=OjvWKX57gJSbh5W_ptvypsTRjvryaGbUMrDSnCrQoDQ,679
+sgp4/earth_gravity.py,sha256=cAV6Oh7TPJa4wZHCjEAStNL9vVW1d17Jvaqr949BiHk,375
+sgp4/ext.py,sha256=WB12sQQcrKHaDDTfzFVykGWxrmb8wXCFyblqW1wupEg,19547
+sgp4/functions.py,sha256=PYMYpEGYlC4jYm06GqWKS3IstwI2XYrYht2KK6WPwjs,835
+sgp4/io.py,sha256=3q-nt_GIR3el_ekahaT7Hw-6TQT-09sgwV2ltOP-bos,10071
+sgp4/model.py,sha256=kSXgVmjOU3FdP8fIFiXt0kbVU9-qdn_5QEMBqRD8I2Q,6576
+sgp4/propagation.py,sha256=Jxu1kF8JBzq02Zb24ZuGV2V2MujIvSzaoxHffGaULKk,74673
+sgp4/tcppver.out,sha256=aHvyjb5S34bo5gq1y0oI0ao9vK9OY7H3q5XwRPvjgzs,140162
+sgp4/tests.py,sha256=SgiKjPLgnvl25qKu3LdP1A1axoxThZq32DGWmMjeMj0,12259
+sgp4/wrapper.py,sha256=9zy69l4VlMO2tWUhJnfwZrkO_J6-wx6jYzqJPqMRbWc,2283
+sgp4-2.1.dist-info/METADATA,sha256=Xk5Wyp3kF8219Bhf24ha2qUm-YruLOPdABBNBTBRMaY,8913
+sgp4-2.1.dist-info/RECORD,,
+sgp4-2.1.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+sgp4-2.1.dist-info/top_level.txt,sha256=3tyrkeTikuhi520DwYTCE9BHwJZ4wYLZhkvugWSSd44,5
