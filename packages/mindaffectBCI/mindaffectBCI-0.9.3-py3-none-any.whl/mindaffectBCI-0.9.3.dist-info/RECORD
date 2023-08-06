@@ -1,0 +1,12 @@
+mindaffectBCI/__init__.py,sha256=1j24M4ZQR-PxxKCMphFOD6iY2UgRTmcdqdeyixRT3T4,152
+mindaffectBCI/mgold_61_6521_psk_60hz.txt,sha256=8W9WdGo1L2b65ibrnmzSvtRFEcLdKbfwTTszWka2_84,12564
+mindaffectBCI/noisetag.py,sha256=tfz9VNn6JkKB_VFX7F2uWeudiw_rP38BNMqzmoRDrlM,20369
+mindaffectBCI/stimseq.py,sha256=wJFIuVs_Hq2_BDtQpQ_Ivup8ZRFul5hN-yFwEnWI6hw,3516
+mindaffectBCI/utopia2output.py,sha256=0s8Znb2b3Lt3Rf7MB3MR03-3ay5rBBdjD0jxhbFSg-Y,5498
+mindaffectBCI/utopiaController.py,sha256=Y8OnCiz9ZDAhqbiH-W9Zrkx2vurKkM2YPONorcEB8h8,6937
+mindaffectBCI/utopiaclient.py,sha256=Tf0lYyz6wIx62yK9cz4yS0HEAOZae-cCN2FD-l10PZM,34060
+mindaffectBCI-0.9.3.dist-info/LICENSE,sha256=Tu4oofMTUhQiM4w4eV71tVTkh6e1hF9vN7FSpK_ULEI,1090
+mindaffectBCI-0.9.3.dist-info/METADATA,sha256=Sn0u_b8oLdzcNAc1ysswAT_qZmKEQ0T7GiIY7ralrrE,8426
+mindaffectBCI-0.9.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+mindaffectBCI-0.9.3.dist-info/top_level.txt,sha256=KXg-oaRXskmBzTikBj3bRkSAYiHvexEpRco7_lWP9xI,14
+mindaffectBCI-0.9.3.dist-info/RECORD,,
