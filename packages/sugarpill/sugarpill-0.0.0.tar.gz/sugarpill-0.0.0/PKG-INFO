@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: sugarpill
+Version: 0.0.0
+Summary: 🍬 Distributed Randomised Control Trials
+Home-page: https://github.com/nmichlo/sugarpill
+Author: Nathan Michlo
+Author-email: NathanJMichlo@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: statistics,dashboard,distributed,multiprocessing,multithreading,cluster,experiments,scheduler,logger
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
