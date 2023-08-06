@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+read_only_class_attributes/__init__.py
+read_only_class_attributes/_version.py
+read_only_class_attributes/read_only_decorator.py
+read_only_class_attributes.egg-info/PKG-INFO
+read_only_class_attributes.egg-info/SOURCES.txt
+read_only_class_attributes.egg-info/dependency_links.txt
+read_only_class_attributes.egg-info/top_level.txt
+test/test_read_only_decorator.py

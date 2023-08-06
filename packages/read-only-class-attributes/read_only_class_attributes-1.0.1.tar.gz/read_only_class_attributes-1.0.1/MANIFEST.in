@@ -1,0 +1,2 @@
+include versioneer.py
+include read_only_class_attributes/_version.py
