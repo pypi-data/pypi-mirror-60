@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        lazycluster=lazycluster.scripts.cli_handler:cli
+    
