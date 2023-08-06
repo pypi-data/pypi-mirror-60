@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+codewithmoshsample.egg-info/PKG-INFO
+codewithmoshsample.egg-info/SOURCES.txt
+codewithmoshsample.egg-info/dependency_links.txt
+codewithmoshsample.egg-info/top_level.txt
+packaging_tutorial/Rectangle.py
+packaging_tutorial/__init__.py
