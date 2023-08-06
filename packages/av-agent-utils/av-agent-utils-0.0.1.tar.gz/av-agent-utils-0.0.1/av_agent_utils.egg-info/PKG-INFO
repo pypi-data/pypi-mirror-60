@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: av-agent-utils
+Version: 0.0.1
+Summary: Some debugging tools for AV engineers to use
+Home-page: https://github.com/AlienVault-Engineering/agent-utils
+Author: Rusty Brooks
+Author-email: rbrooks@alienvault.com
+License: AlienVault Commercial
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6.0

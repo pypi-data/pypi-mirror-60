@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+
+import optparse
+import os
+import json
+import sys
+
+from av_agent_utils import okta_login, kinesis
+
+
+cache_file = '/tmp/agent_lookup_customers.cache'
+cache = {}
+save_count = 0
+
+
+def load_cache():
+    global cache
+    if os.path.exists(cache_file):
+        cache = json.load(open(cache_file))
+
+
+def save_cache():
+    # sys.stderr.write("saving\n")
+    with open(cache_file, 'w') as f:
+        json.dump(cache, f, indent=2)
+
+
+def cache_lookup_stream(stream):
+    global save_count
+    if stream not in cache:
+        save_count += 1
+        cache[stream] = kinesis.tags_for_stream(client, stream)
+
+        if save_count % 20 == 0:
+            save_cache()
+
+    return cache[stream]
+
+
+if __name__ == '__main__':
+    parser = optparse.OptionParser()
+    parser.add_option('--infile', '-i', help="file with list of control node streams, one per line")
+    parser.add_option('--outfile', '-o', default='-', help="output file with results in CSV format (defaults to stdout)")
+    parser.add_option('--regions', '-r', help="list of regions separted by commas (default all)")
+    parser.add_option('--streams', '-s', help="list of streams separated by commas (default all)")
+    parser.add_option('--customers', '-c', help="list of customer name fragments separated by commas (default all)")
+    parser.add_option('--tags', '-t', help="list of desired output tags separated by commas (default all)")
+    options, args = parser.parse_args()
+
+    regions = options.regions.split(',') if options.regions else [
+        'us-east-1', 'us-west-2',
+        'ap-northeast-1', 'ap-northeast-2', 'ap-south-1', 'ap-southeast-1', 'ap-southeast-2',
+        'ca-central-1', 'sa-east-1', 'eu-west-1', 'eu-central-1', 'eu-west-2',
+    ]
+
+    in_tags = options.tags.split(',') if options.tags else ['Customer', 'Instance', 'Department', 'Owner']
+
+    session = okta_login()
+    load_cache()
+
+    instreams = []
+    incusts = []
+
+    if options.infile:
+        close = False
+        if options.infile == '-':
+            f = sys.stdin
+        else:
+            close = True
+            f = open(options.infile)
+
+        instreams = []
+        for line in f:
+            line2 = line.split()
+            if not line2:
+                continue
+
+            instreams.append(line2[0])
+
+        if close:
+            f.close()
+
+    outf = sys.stdout
+    if options.outfile:
+        if options.outfile != '-':
+            outf = open(options.outfile, 'w')
+
+    if options.streams:
+        instreams.extend([x.strip() for x in options.streams.split(',')])
+
+    if options.customers:
+        incusts.extend([x.strip() for x in options.customers.split(',')])
+
+    instreams = set(instreams)
+    incusts = set(incusts)
+
+    has_streams = bool(instreams)
+    has_custs = bool(incusts)
+
+    outf.write(f"stream,region,{','.join(in_tags)}\n")
+    count = 0
+    for region in regions:
+        # sys.stderr.write(f"--------------------- {region}\n")
+
+        client = session.client('kinesis', region_name=region)
+        for stream in kinesis.streams(client):
+            cust_match = False
+            if has_custs:
+                tags = cache_lookup_stream(stream)
+
+                for c in incusts:
+                    for t in tags.values():
+                        if c in t:
+                            cust_match = c
+                            break
+
+                    if cust_match:
+                        break
+
+            if (not has_streams and not has_custs) or stream in instreams or cust_match:
+                if not has_custs:
+                    tags = cache_lookup_stream(stream)
+
+                # sys.stderr.write(f"found {stream}\n")
+                outf.write(f"{stream},{region},{','.join([str(tags.get(t, 'MISSING')) for t in in_tags])}\n")
+                outf.flush()
+                if instreams:
+                    instreams.remove(stream)
+
+    for stream in instreams:
+        outf.write(f"{stream},{','.join(['MISSING']*len(in_tags))}\n")
+
+    outf.flush()
+    outf.close()
+
+    save_cache()
