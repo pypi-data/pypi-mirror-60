@@ -1,0 +1,10 @@
+envars/__init__.py,sha256=1uV80eKrKPTl6l8lcZYR967O_TBrV-so0LH_Tgr2SSo,169
+envars/envars.py,sha256=JsiuMiZaECok_dyTRmzXlX-ig32mpD2djGmAaBB-nWE,1589
+envars/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+envars/tests/test_envars.py,sha256=QpuERoHVG9z9wa9ic-wBU7Ii4IbExMQAeFefktjZEOA,2135
+envars-0.3.1.dist-info/DESCRIPTION.rst,sha256=3--PuUBFa7ddNKrtwpLN4ZZ5wssejJRSvbjt6t6W4YA,2220
+envars-0.3.1.dist-info/METADATA,sha256=_c99Jqp-g1l7ysOv6q98cPZbrZT4EQqyZx-T_aH8zGI,2991
+envars-0.3.1.dist-info/RECORD,,
+envars-0.3.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+envars-0.3.1.dist-info/metadata.json,sha256=alyjjRfWe1q8fn8nIRo8nkiYZAT6iDlUMEswSzuDmxA,897
+envars-0.3.1.dist-info/top_level.txt,sha256=C8UwhUKkWkCLb4WhGfA9gqHxYaFmJhQ3wfkV5_kjBXI,7
