@@ -1,0 +1,15 @@
+LICENSE-APACHE
+LICENSE-MIT
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+everlib/__init__.py
+everlib/__main__.py
+everlib/cli.py
+everlib.egg-info/PKG-INFO
+everlib.egg-info/SOURCES.txt
+everlib.egg-info/dependency_links.txt
+everlib.egg-info/entry_points.txt
+everlib.egg-info/requires.txt
+everlib.egg-info/top_level.txt

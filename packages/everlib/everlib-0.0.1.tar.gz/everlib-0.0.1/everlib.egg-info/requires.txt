@@ -1,0 +1,11 @@
+appdirs
+atomicwrites
+binary
+click
+colorama
+pyperclip>=1.7.0
+pytz>=2018.7
+PyYAML>=3.13
+requests
+toml>=0.10.0
+tzlocal>=1.5.1
