@@ -1,0 +1,15 @@
+README.md
+setup.py
+ev3devcmd/__init__.py
+ev3devcmd/__main__.py
+ev3devcmd/sftpclone.py
+ev3devcmd/version.py
+ev3devcmd.egg-info/PKG-INFO
+ev3devcmd.egg-info/SOURCES.txt
+ev3devcmd.egg-info/dependency_links.txt
+ev3devcmd.egg-info/entry_points.txt
+ev3devcmd.egg-info/requires.txt
+ev3devcmd.egg-info/top_level.txt
+ev3devcmd/res/__init__.py
+ev3devcmd/res/rpyc-4.1.2.tar.gz
+ev3devcmd/res/rpycd.service
