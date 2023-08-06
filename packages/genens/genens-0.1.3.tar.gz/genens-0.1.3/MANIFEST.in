@@ -1,0 +1,2 @@
+include .logging_config.json
+recursive-include tests/config *
