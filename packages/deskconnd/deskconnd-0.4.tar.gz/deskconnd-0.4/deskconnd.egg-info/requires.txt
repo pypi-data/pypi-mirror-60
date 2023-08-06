@@ -1,0 +1,6 @@
+appdirs
+autobahn[serialization,twisted]
+crossbar
+pyqrcode
+sqlalchemy
+zeroconf
