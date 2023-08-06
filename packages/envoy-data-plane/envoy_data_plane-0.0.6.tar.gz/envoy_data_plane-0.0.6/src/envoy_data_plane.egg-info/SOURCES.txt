@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/envoy_data_plane.egg-info/PKG-INFO
+src/envoy_data_plane.egg-info/SOURCES.txt
+src/envoy_data_plane.egg-info/dependency_links.txt
+src/envoy_data_plane.egg-info/requires.txt
+src/envoy_data_plane.egg-info/top_level.txt
