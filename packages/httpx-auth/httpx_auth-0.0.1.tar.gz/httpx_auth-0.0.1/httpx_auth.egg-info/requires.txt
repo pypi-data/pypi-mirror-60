@@ -1,0 +1,4 @@
+httpx==0.11.*
+
+[testing]
+pytest-cov==2.*
