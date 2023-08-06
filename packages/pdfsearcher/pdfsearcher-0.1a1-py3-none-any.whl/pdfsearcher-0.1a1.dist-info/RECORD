@@ -1,0 +1,9 @@
+pdfsearcher/__init__.py,sha256=FfDz8Q_lajJ2rVWbu8M6FpF0wP2kgHyCKe7TYvJc6Pg,28
+pdfsearcher/_cli.py,sha256=GmNNHOPr8oO9kvfRB5fBwiTjF09O0DzZnua5Q8Rtot8,486
+pdfsearcher/_pdf_searcher.py,sha256=9c4S2xeSEoKqG8_U0VR0K1_UQMrce3xDZ8OWf3YSrME,1485
+pdfsearcher-0.1a1.dist-info/LICENSE,sha256=RI0u9uQFviwQj3hPY-61v15DBps4IsdNzBhZ0aXU_3A,1070
+pdfsearcher-0.1a1.dist-info/METADATA,sha256=1ag499KuMIlgHTe85xqKiDcy415tkkfyaTvXI5Aa1UQ,522
+pdfsearcher-0.1a1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pdfsearcher-0.1a1.dist-info/entry_points.txt,sha256=rwGGwDDqBLkJIblcCbeJjqhbLmpBV0w3WMsGA2ZD2AY,55
+pdfsearcher-0.1a1.dist-info/top_level.txt,sha256=u98DHuW_bTVFMCWIgcLCa0Pf40Jj7uwK0J6ttn2bZXE,12
+pdfsearcher-0.1a1.dist-info/RECORD,,

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pdfsearcher
+Version: 0.1a1
+Summary: UNKNOWN
+Home-page: https://github.com/ahmed-shariff/mlpipeline
+Author: Ahmed Shariff
+Author-email: shariff.mfa@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+Requires-Dist: pdfminer.six
+Requires-Dist: click
+Requires-Dist: tqdm
+
+# pdfSearcher
+
+

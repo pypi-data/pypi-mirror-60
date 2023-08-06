@@ -1,0 +1,3 @@
+[console_scripts]
+pdf-searcher = pdfsearcher._cli:cli
+
