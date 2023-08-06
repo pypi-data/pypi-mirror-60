@@ -1,0 +1,4 @@
+[console_scripts]
+apigentools = apigentools.cli:cli
+container-apigentools = apigentools.container_cli:container_cli
+
