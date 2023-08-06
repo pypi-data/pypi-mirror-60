@@ -1,0 +1,4 @@
+colorama
+cmake
+gitpython
+lockfile
