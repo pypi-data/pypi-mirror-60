@@ -1,0 +1,17 @@
+MANIFEST.in
+requirements.txt
+setup.py
+textaugH/Bert_context_augmentation.py
+textaugH/Preprocessing.py
+textaugH/Random_swap.py
+textaugH/Translate_aug.py
+textaugH/Word2vec_augmentation.py
+textaugH/Word_deletion.py
+textaugH/__init __.py
+textaugH/tokenization.py
+textaugH.egg-info/PKG-INFO
+textaugH.egg-info/SOURCES.txt
+textaugH.egg-info/dependency_links.txt
+textaugH.egg-info/not-zip-safe
+textaugH.egg-info/requires.txt
+textaugH.egg-info/top_level.txt
