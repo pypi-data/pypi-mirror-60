@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: autorec
+Version: 0.0.1
+Summary: AutoRec for automated recommendation
+Home-page: https://github.com/thwang1231/autorec
+Author: Data Analytics at Texas A&M (DATA) Lab, AutoRec Team
+Author-email: thwang1231@tamu.edu
+License: UNKNOWN
+Keywords: Automated Machine Learning,Recommender System
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: packaging
+Requires-Dist: keras-tuner (>=1.0.1)
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: pandas
+Provides-Extra: tests
+Requires-Dist: pytest (>=4.4.0) ; extra == 'tests'
+Requires-Dist: flake8 ; extra == 'tests'
+Requires-Dist: isort ; extra == 'tests'
+Requires-Dist: pytest-xdist ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+
+UNKNOWN
+
+
