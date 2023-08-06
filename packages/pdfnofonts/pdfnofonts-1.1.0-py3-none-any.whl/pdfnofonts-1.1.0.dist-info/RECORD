@@ -1,0 +1,9 @@
+pdfnofonts/__init__.py,sha256=bTiw2NLmmdIvwyO4AYFLD7oXL6pCC4IekQN3NiRahbc,1648
+pdfnofonts/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdfnofonts/cli/pdfnofonts.py,sha256=zEbddpUryxts9jrsrjGmhhURvAvmJpzpH0gc4JRb5LM,1388
+pdfnofonts-1.1.0.dist-info/LICENSE,sha256=T-VugPjkf0PsKJyihdN67Q2mw06X3bCQiF_ElhFW3Fw,1068
+pdfnofonts-1.1.0.dist-info/METADATA,sha256=c14-2ibMtIt9TX71Rz8dbBJw7OlkDyskdiGrYTRtYvs,382
+pdfnofonts-1.1.0.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+pdfnofonts-1.1.0.dist-info/entry_points.txt,sha256=u-MPYG1vTG_q-E3_pDkzNzdrfhfsjkvAzUR5_vuEiwc,63
+pdfnofonts-1.1.0.dist-info/top_level.txt,sha256=Ptw1e3yxvcLRWPBzPheCjcw4sVSog3UabCfZ5Onpako,11
+pdfnofonts-1.1.0.dist-info/RECORD,,
