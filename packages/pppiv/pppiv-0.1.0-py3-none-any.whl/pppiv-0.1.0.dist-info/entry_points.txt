@@ -1,0 +1,3 @@
+[console_scripts]
+pppiv=pppiv.main:main
+
