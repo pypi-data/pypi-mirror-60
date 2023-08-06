@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: packaging-classifiers
+Version: 1.0.0rc1
+Summary: UNKNOWN
+Home-page: https://github.com/pypa/packaging-classifiers
+Author: Dustin Ingram
+Author-email: di@python.org
+License: UNKNOWN
+Description: # `packaging-classifiers`
+        Cannonical source for classifiers on PyPI (pypi.org).
+        
+        # Usage
+        Check if a classifier is valid:
+        
+        ```
+        >>> from packaging_classifiers import classifiers
+        >>> 'License :: OSI Approved' in classifiers
+        True
+        >>> 'Fuzzy Wuzzy :: Was :: A :: Bear' in classifiers
+        False
+        >>>
+        ```
+        
+        Determine if a classifier is deprecated:
+        
+        ```
+        >>> classifiers['License :: OSI Approved'].deprecated
+        False
+        >>> classifiers["Natural Language :: Ukranian"].deprecated
+        True
+        >>> classifiers["Natural Language :: Ukranian"].deprecated_by
+        ['Natural Language :: Ukrainian']
+        ```
+        
+Keywords: classifiers
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
