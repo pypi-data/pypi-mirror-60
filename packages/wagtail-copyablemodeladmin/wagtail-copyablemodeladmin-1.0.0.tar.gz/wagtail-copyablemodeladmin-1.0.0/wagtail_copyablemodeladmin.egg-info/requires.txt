@@ -1,0 +1,5 @@
+wagtail<2.8,>=1.13
+
+[testing]
+coverage>=3.7.0
+model-mommy>=2.0.0
