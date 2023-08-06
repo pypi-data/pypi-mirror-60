@@ -1,0 +1,15 @@
+multiped/Engine.py,sha256=2GoaQ1Dpbq3a9g93mzh64UdARODXg7CQf-iK5vJpx9s,34843
+multiped/Gait.py,sha256=HgMx7DMgHfMI2mFXZgwlc7zBAoVhwZlh5-KGKCBvOV4,10647
+multiped/Robot.py,sha256=hIYTRKT3g0QsndAMD1JvN3Hw91Ci8AUV_YIkY8dOgiA,1262
+multiped/Servo.py,sha256=5Jafa1Icm22G2x11i0emtAiNOJibUFcTMCwZlhaXBxY,925
+multiped/__init__.py,sha256=0b6EXR4IJpsmHNziPVncPWGZYuYdgy8SdYbk3Ch3-eg,707
+multiped/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multiped/bin/get_leg_angles.py,sha256=Z9ToqH8ahe2_0HeUVT7LsgyGuiwrslGFoutv9pHlzxM,2593
+multiped/bin/get_leg_info.py,sha256=-qZARFHULftqiBNYJ17t_894kin6hlzRV-iAQnA6DXc,5033
+multiped/jsonFile.py,sha256=SvbhIBp1U5AD2E982jRNQi_4F1UamnusEppD5PkC26A,1661
+multiped/kinematics3.py,sha256=8bAfTbXbhEar9ylFPke6ujN2WR-bQ8Hbh3VvlOJzx08,5418
+multiped/kinematics4.py,sha256=ntBQ7-Qcl-Dmxnn1EhKjZw_nFE_vLvB3AXPXNILf49M,14031
+multiped-0.5.1.dist-info/LICENSE,sha256=ZgbNmEH_09nMl7HzSyi-SDVsnmdRTwqjWfusDQCCaxQ,1082
+multiped-0.5.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+multiped-0.5.1.dist-info/METADATA,sha256=ebFg6eSsygnx5skDcK0JtDCW99DXOxhwO6j1Nn4r9xE,11266
+multiped-0.5.1.dist-info/RECORD,,
