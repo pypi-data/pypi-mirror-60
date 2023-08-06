@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: 101703375-p2
+Version: 0.1.0
+Summary: Removal of outliers using pandas
+Home-page: https://github.com/NishantDhanda/101703375_p2/
+Author: Nishant Dhanda
+Author-email: ndhanda_be17@thapar.edu
+License: UNKNOWN
+Description: # A library capable of removing outliers from a pandas dataframe
+        
+        ```
+        PROJECT 2, UCS633 - Data Analysis and Visualization
+        Nishant Dhanda 
+        COE17
+        Roll number: 101703375
+        ```
+        
+Keywords: CLI,OUTLIER,Data
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
