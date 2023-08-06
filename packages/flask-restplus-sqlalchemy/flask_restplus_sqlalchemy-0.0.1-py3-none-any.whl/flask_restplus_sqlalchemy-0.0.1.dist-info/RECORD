@@ -1,0 +1,9 @@
+flask_restplus_sqlalchemy/__init__.py,sha256=FsHwce0XuG-VD4KwsQ6QVHuGUKRY5EniCIKfOQu5eCQ,103
+flask_restplus_sqlalchemy/factory.py,sha256=MchKRBGdrX1UpAglEyNGg3Fzmcd4T8dSwjp3-MA6q_k,4346
+test/__init__.py,sha256=3tbwIdvPyRULYP82qJx5RjrMtnc8r-dYkldnrq4Q1_8,67
+test/test_factory.py,sha256=uyWKrQm-vXYMgdPFoyNbh4nAV6zoBlY2YGOcnFjxYh4,3250
+flask_restplus_sqlalchemy-0.0.1.dist-info/LICENSE,sha256=powmaEwSTnYg9WYoSBRAI7YAEqjQGjacuJTeBWIyd0E,1055
+flask_restplus_sqlalchemy-0.0.1.dist-info/METADATA,sha256=yCFF9zo91u4NVxFtuBjplNjZ7NjGNMENeTYmlxHfW5A,8092
+flask_restplus_sqlalchemy-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+flask_restplus_sqlalchemy-0.0.1.dist-info/top_level.txt,sha256=1M4C1xVJj3aTRAURTXAPVrzhkwaPkcbjW5JkDqaSgIM,31
+flask_restplus_sqlalchemy-0.0.1.dist-info/RECORD,,
