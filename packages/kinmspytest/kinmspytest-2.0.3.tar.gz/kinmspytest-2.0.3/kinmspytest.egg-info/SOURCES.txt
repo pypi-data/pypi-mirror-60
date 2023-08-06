@@ -1,0 +1,9 @@
+README.md
+setup.py
+kinmspy_test/KinMS.py
+kinmspy_test/KinMS_testsuite.py
+kinmspy_test/__init__.py
+kinmspytest.egg-info/PKG-INFO
+kinmspytest.egg-info/SOURCES.txt
+kinmspytest.egg-info/dependency_links.txt
+kinmspytest.egg-info/top_level.txt
