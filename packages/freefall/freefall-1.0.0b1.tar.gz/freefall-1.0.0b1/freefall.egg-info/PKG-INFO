@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: freefall
+Version: 1.0.0b1
+Summary: A Python package module for simulating falling objects with aerodynamic drag.
+Home-page: https://github.com/cwstryker/freefall/
+Author: Chadwick Stryker
+Author-email: cwsaccts@stryker5.org
+License: UNKNOWN
+Description: # Freefall Package
+        
+        A Python package module for simulating falling objects with aerodynamic drag.
+         
+        Developed by FIRST Robotics Competition Team 6343 - Steel Ridge Robotics
+        
+            Strong 
+                Trustworthy
+                    Empowering
+                        Effective
+                            Leadership
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
