@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pydta116a621
+Version: 0.3.0
+Summary: Daikin DTA116A621 SDK
+Home-page: https://github.com/JasonGao180/pydta116a621
+Author: Jason Gao
+Author-email: github@jasongao.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: bidict (==0.19.0)
+Requires-Dist: pymodbus (==2.3.0)
+
+UNKNOWN
+
+
