@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+cython
+configobj
+h5py
+IPython
