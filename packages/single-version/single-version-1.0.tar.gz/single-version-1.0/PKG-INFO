@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: single-version
+Version: 1.0
+Summary: Small utility to define version string for Poetry-style Python project.
+Home-page: https://github.com/hongquan/single-version.git
+License: MIT
+Author: Nguyễn Hồng Quân
+Author-email: ng.hong.quan@gmail.com
+Maintainer: Nguyễn Hồng Quân
+Maintainer-email: ng.hong.quan@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: first (>=2.0.2,<3.0.0)
+Requires-Dist: importlib_metadata (>=1.5.0,<2.0.0)
+Project-URL: Repository, https://github.com/hongquan/single-version.git
