@@ -1,0 +1,6 @@
+boto3
+cvdata
+lxml
+pandas
+requests
+tqdm

@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/openimages/__init__.py
+src/openimages/download.py
+src/openimages.egg-info/PKG-INFO
+src/openimages.egg-info/SOURCES.txt
+src/openimages.egg-info/dependency_links.txt
+src/openimages.egg-info/entry_points.txt
+src/openimages.egg-info/requires.txt
+src/openimages.egg-info/top_level.txt
+src/openimages/__pycache__/__init__.cpython-38.pyc
+src/openimages/__pycache__/download.cpython-37.pyc
+src/openimages/__pycache__/download.cpython-38.pyc
