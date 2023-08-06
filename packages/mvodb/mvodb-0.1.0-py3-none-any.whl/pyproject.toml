@@ -1,0 +1,72 @@
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "mvodb"
+version = "0.1.0"
+description = "Rename and move files using metadata from online databases."
+authors = ["Timothée Mazzucotelli <pawamoy@pm.me>"]
+license = "ISC License"
+readme = "README.md"
+repository = "https://github.com/pawamoy/mvodb"
+homepage = "https://github.com/pawamoy/mvodb"
+keywords = []
+packages = [ { include = "mvodb", from = "src" } ]
+include = [
+    "README.md",
+    "pyproject.toml"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+guessit = "^3.1.0"
+tmdbsimple = "^2.2.0"
+langdetect = "^1.0.7"
+
+[tool.poetry.dev-dependencies]
+bandit = "*"
+black = { version = "*", allow-prereleases = true }
+coverage = "*"
+flake8 = "*"
+ipython = "*"
+isort = { version = "*", extras = ["pyproject"] }
+jinja2-cli = "*"
+pylint = { git = "https://github.com/PyCQA/pylint" }
+pytest = "*"
+pytest-cov = "*"
+pytest-sugar = "*"
+pytest-xdist = "*"
+safety = "*"
+requests = "^2.22.0"
+
+[tool.poetry.scripts]
+mvodb = "mvodb.cli:main"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+line_length = 120
+not_skip = "__init__.py"
+multi_line_output = 3
+force_single_line = false
+balanced_wrapping = true
+default_section = "THIRDPARTY"
+known_first_party = "mvodb"
+include_trailing_comma = true
+
+[tool.pylint.options]
+disable = """
+  bad-continuation,
+  too-many-lines,
+  too-many-public-methods,
+  too-many-locals,
+  too-many-statements,
+  too-many-arguments,
+  too-many-instance-attributes,
+  too-many-branches,
+  too-few-public-methods,
+  duplicate-code
+"""
+max-line-length = "120"
