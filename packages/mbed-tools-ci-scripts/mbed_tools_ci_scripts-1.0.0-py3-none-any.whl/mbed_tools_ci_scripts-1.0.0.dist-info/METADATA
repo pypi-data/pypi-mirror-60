@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mbed-tools-ci-scripts
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: gitpython
+Requires-Dist: towncrier
+Requires-Dist: pyautoversion
+Requires-Dist: pdoc3
+Requires-Dist: toml
+Requires-Dist: python-dotenv
+Requires-Dist: twine
+
+UNKNOWN
+
+
