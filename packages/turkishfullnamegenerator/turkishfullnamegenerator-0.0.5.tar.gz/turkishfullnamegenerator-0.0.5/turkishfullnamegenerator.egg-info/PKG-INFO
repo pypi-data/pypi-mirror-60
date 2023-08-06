@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: turkishfullnamegenerator
+Version: 0.0.5
+Summary: Generate full turkish names 
+Home-page: https://github.com/anilkay/Turkish-FullName-Generator
+Author: anilkay
+Author-email: aanilkay@gmail.com
+License: UNKNOWN
+Description: # Turkish Full Name Generator
+        ### Installation 
+        `pip install turkishfullnamegenerator`
+        
+        ### Usage
+            import turkishfullname 
+            fullname=turkishfullname.generate_name("erkek")
+        	print(fullname) #return str
+            ten_names=turkishfullname.generate_names("kadin") #return list of str
+        	five_names=turkishfullname.generate_names("erkek",5)
+        #### generate_name(gender)
+        Gender must be kadin,kadın,woman,erkek,man.
+        #### generate_names(gender,howmany)
+        howmany is positive integer. Gender is same as generate_name's gender.
+Keywords: name generator,turk,turkish
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
