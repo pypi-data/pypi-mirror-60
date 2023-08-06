@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: zimpute
+Version: 1.7
+Summary: A low rank complement method based on scRNA-seq data
+Home-page: https://github.com/zhousihan0126
+Author: zhousihan0126
+Author-email: zhousihan0126@gmail.com
+License: MIT
+Description: For the data matrix of scRNA-seq, each cell is treated as a sample, and each row (column) indicates the expression of different genes in this cell is affected by noise.In summary, we have developed a low rank constraint matrix completion method based on truncated kernel norm.
+Keywords: zimpute
+Platform: any
