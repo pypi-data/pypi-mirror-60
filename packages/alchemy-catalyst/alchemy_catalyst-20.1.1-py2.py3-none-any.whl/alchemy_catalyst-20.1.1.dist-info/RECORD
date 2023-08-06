@@ -1,0 +1,9 @@
+alchemy/__init__.py,sha256=iZVyuWEnUXqHl-GYZBRldwp7T9JQGBz-uk_MNn8mNL0,27
+alchemy/__version__.py,sha256=70GeSAuOlRMVWJC3KpAMRa14czbJlwG975WXWq7pgb8,24
+alchemy/example.py,sha256=VH2TftGlZqrwiFKVtsZkpSCmMYjTxJPKXCZjcBxzckc,512
+alchemy/logger.py,sha256=sHGfD3NTduzku0pgB03aad4YFHdgHS1wScZfOg8yhq0,1937
+alchemy_catalyst-20.1.1.dist-info/LICENSE,sha256=UVUtptI_LSKV2Q1T9mi_atJVIXI0g9mtCeREIGFXDzc,11414
+alchemy_catalyst-20.1.1.dist-info/METADATA,sha256=9xk85P2341sfKZy3nuc48FpOKfQZUPLIpDUU8PBFhLs,3565
+alchemy_catalyst-20.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+alchemy_catalyst-20.1.1.dist-info/top_level.txt,sha256=xll1vsF4Y4qE_UqnRPEyFUJbyavDLTGKDHxiR5eJ5nc,8
+alchemy_catalyst-20.1.1.dist-info/RECORD,,
