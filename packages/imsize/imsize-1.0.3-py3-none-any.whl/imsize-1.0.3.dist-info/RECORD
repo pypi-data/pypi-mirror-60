@@ -1,0 +1,15 @@
+imsize/__init__.py,sha256=IRocl1ptRDprt3b0pNnWcc0n2PObJbM3bgtrQdKjuAo,346
+imsize/argv.py,sha256=ojb0xeW1x6cew_GElbzU-zlVUGlVz2hkBVjdquulEcs,9886
+imsize/consoleapp.py,sha256=EDZEafy4C1VPuUw-QEeccKPwAaUfDCkehiLBEVTsXws,3639
+imsize/imsize.py,sha256=9BWNp6IAyFd4GH769Ke-QHctyy-QazX_QDJzzU6M5Xg,11500
+imsize/pfmhdr.py,sha256=LiCu1-YhxTMox2TyR02kAQ6gGxh5okaq26UQZTyhosE,1821
+imsize/pnmhdr.py,sha256=gEzq4FUPl3cByk30s5p7dw2EL_-_BsG1oQNZomAck_0,1733
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_read.py,sha256=ZA5lDWf8nq5pZjUsGzCiZ1Qu4wlDf8WOfGE4Ck_-6cE,2934
+imsize-1.0.3.dist-info/LICENSE,sha256=jg1Lawynup9jI70PWRoUSPP1ninZssO2gAxWAcUK1Qs,1068
+imsize-1.0.3.dist-info/METADATA,sha256=j1IEAqMImofzToVlZZf7s56C_iqdCcJQLbyos62CzB4,392
+imsize-1.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+imsize-1.0.3.dist-info/entry_points.txt,sha256=5tc9sX8V4FsyIK7nxn77je7FGXuPQ1MTmQisFDL-bnE,51
+imsize-1.0.3.dist-info/top_level.txt,sha256=nIm3p2d-y1mhhNS4nucDieJFnGi3MmK-PTBL-AIBnoc,12
+imsize-1.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+imsize-1.0.3.dist-info/RECORD,,
