@@ -1,0 +1,8 @@
+tags:
+  - Stats
+summary: List stats
+description: Lists all links stats.
+operationId: phlasch.stats.stats_list
+responses:
+  "200":
+    description: Successfully listed
