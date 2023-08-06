@@ -1,0 +1,9 @@
+privacy_api/__init__.py,sha256=Y4mNMYoymTZlmGznfNk_h57E4kgokxdELZEnyqVYPqc,65
+privacy_api/client.py,sha256=sudwqlaVp05-VheZfG7twHH4jswyrx_7cvlT7hOhKJ8,10654
+privacy_api/models.py,sha256=BRVyMFV6S2ziDFsahFjuDjVNr4rKGV1gHupMNWWej2E,4120
+privacy_api/schemas.py,sha256=GIXz_rosSjRVfc1IbB24g453ivoCm4Wd5TpJ_7WExAE,2223
+privacy_api-0.1.10.dist-info/LICENSE,sha256=wBzUzIxaJ7rTeouSeYtCxA9jl5MyAbryV0cVkwzraXw,1067
+privacy_api-0.1.10.dist-info/METADATA,sha256=46fpHVQeCE2ciQqAwLOdPgXBKDbTW6qpKysBRt1E_ow,759
+privacy_api-0.1.10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+privacy_api-0.1.10.dist-info/top_level.txt,sha256=mJzwQA_HiIaH9d11eE3KqkYfuZ5203mn5gstzG2mO7s,12
+privacy_api-0.1.10.dist-info/RECORD,,

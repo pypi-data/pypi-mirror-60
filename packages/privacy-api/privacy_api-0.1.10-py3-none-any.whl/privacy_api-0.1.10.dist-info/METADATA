@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: privacy-api
+Version: 0.1.10
+Summary: API client for privacy.com
+Home-page: https://github.com/vicyap/python-privacy-api
+Author: Victor Yap
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: attrs
+Requires-Dist: marshmallow
+
+
+# Python Privacy API
+
+Python API client for privacy.com
+
+
