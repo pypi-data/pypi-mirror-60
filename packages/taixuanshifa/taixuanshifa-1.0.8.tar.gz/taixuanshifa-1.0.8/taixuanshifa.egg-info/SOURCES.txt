@@ -1,0 +1,9 @@
+README.md
+setup.py
+taixuanshifa/__init__.py
+taixuanshifa/taixuanshifa.py
+taixuanshifa.egg-info/PKG-INFO
+taixuanshifa.egg-info/SOURCES.txt
+taixuanshifa.egg-info/dependency_links.txt
+taixuanshifa.egg-info/top_level.txt
+taixuanshifa/data/taixuandict.p
