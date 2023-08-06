@@ -1,0 +1,2 @@
+git+https://gitlab.com/heingroup/hein_utilities.git#egg=hein_utilities
+git+https://github.com/larsyunker/Aston.git@fix_string_read#egg=Aston
