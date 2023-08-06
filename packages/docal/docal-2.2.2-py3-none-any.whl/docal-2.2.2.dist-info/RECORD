@@ -1,0 +1,15 @@
+docal/__init__.py,sha256=3Ks6aiKuk5rl_kW4fqzD5CIZxmc6e4xCtmPtfSbF0aQ,147
+docal/__main__.py,sha256=G00ElGHtez2YekSZKPHmvrXI_0Yhv7AbS4F4vE3AIaE,2997
+docal/calculation.py,sha256=pGQ1h3ygTR3bhtYIFErE4QkazEBZaNLe92tNWYSNocc,14568
+docal/document.py,sha256=q1NmJR80CBGgCTv289xcVRDNKJPClLUOqx0iyKL71rE,8690
+docal/parsing.py,sha256=G7cOndbqiyUdBfwB-L8gT8e2qY1AyhDcGcx-woqyzgw,26841
+docal/handlers/latex.py,sha256=du_Ct7l0_4CPA5W_W9Y8zMPgXy8WZAa7mCIWgP88_-w,8239
+docal/handlers/word.py,sha256=5Oc1PxydIZ9DA_Z0qGre3LeO3rkbVk2LFPOl-4Cqpd4,19314
+docal/parsers/dcl.py,sha256=aCa1choaDFeJSmg8DZzQO2YseQ9NXHH95Ipn8mWUKrU,1935
+docal/parsers/excel.py,sha256=C9H11K2-GkUBsTq_juNo3ahD8qyMRyLAYQqXlsuv4nU,5867
+docal-2.2.2.dist-info/LICENSE,sha256=SaxJB7NbVpK8A6tf4qdFsmNeavKKLZ8bgYadhQmgA-E,1093
+docal-2.2.2.dist-info/METADATA,sha256=C-kRvBaQfjou3lNJtNYfr2GzJmhxf0ORBCdNx4GYG2g,9058
+docal-2.2.2.dist-info/WHEEL,sha256=IWeGwTvdiaNRNtdERe0BHc5KsCqvvVfLuP8HWeQWYGw,97
+docal-2.2.2.dist-info/entry_points.txt,sha256=U9LXr9dZJJ0l9PMv0EUCP1QbDEPzp85NEJgdQCJkPQ4,47
+docal-2.2.2.dist-info/top_level.txt,sha256=6zSaVcfQlO5xNU-bIxLMV-OFQKmYVId8BeuLJWdWoEE,6
+docal-2.2.2.dist-info/RECORD,,
