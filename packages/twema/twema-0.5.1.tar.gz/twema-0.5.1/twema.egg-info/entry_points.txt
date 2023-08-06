@@ -1,0 +1,3 @@
+[console_scripts]
+twema = twema.cli:main
+
