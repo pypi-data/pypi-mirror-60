@@ -1,0 +1,11 @@
+README.md
+setup.py
+Network_Script.egg-info/PKG-INFO
+Network_Script.egg-info/SOURCES.txt
+Network_Script.egg-info/dependency_links.txt
+Network_Script.egg-info/top_level.txt
+netsc/__init__.py
+netsc/client.py
+netsc/netsc.py
+netsc/server.py
+netsc/struct.py
