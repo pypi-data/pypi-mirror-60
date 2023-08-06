@@ -1,0 +1,7 @@
+cloudpickle
+pytest
+pytest-cov
+grpcio
+grpcio-tools
+requests
+mock
