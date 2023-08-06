@@ -1,0 +1,15 @@
+ialab/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ialab/input/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ialab/input/image.py,sha256=8Yh67ZXVtWSkFwQCq44EChMSvJcDKZunwPYvbhDh9dM,2828
+ialab/pipeline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ialab/pipeline/detection.py,sha256=E7_-skAt06YOWgqTY_OWM5omFOXeYHTRoJ2ukN9h4ms,5842
+ialab/pipeline/faces.py,sha256=WKvmxidrfkpGqKp8emVOTu6NXG-ehPUZpCVi8NB9lyM,2969
+ialab/pipeline/model.py,sha256=9F8O_TeSdZC675h4Kh5SAduMpfemtO2hvJLsYtshJx0,2087
+ialab/pipeline/output.py,sha256=6Pn-tbvPUJ0d8jD0Mtf350-0LZmAT5tj7baEiip05po,1267
+text/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+text/model.py,sha256=vRYV7Rm5NpZFQs6yGuy3lkumdX9YJzG9cmNRhBIHgo4,1734
+ialab_core-0.2.5.dist-info/LICENSE,sha256=mpAwKmHKN-evYRi8oCBZXTFu6PUzJzU2yjYMoVxFk38,1046
+ialab_core-0.2.5.dist-info/METADATA,sha256=OpaNKfDc45DBiUgooUnfo1XslPmyjz5jbmMT6Xpq4PE,3639
+ialab_core-0.2.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ialab_core-0.2.5.dist-info/top_level.txt,sha256=bc5HZ3qtrwnDzKunYBDm1XbSGx13lGf9yjSN19tEQ6A,6
+ialab_core-0.2.5.dist-info/RECORD,,
