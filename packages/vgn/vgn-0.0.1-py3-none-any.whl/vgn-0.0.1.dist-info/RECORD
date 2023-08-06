@@ -1,0 +1,11 @@
+vgn/__init__.py,sha256=pOtoSUtdtdxTSdMpYnVpr7vlOLc5SBh-InAG0J9E-L4,88
+vgn/converter.py,sha256=Q2N3o-Gn_5UX8Ta7lXKB7nUx7PH3PpKrMjZUNGYMQJE,4678
+vgn/data_classes.py,sha256=OAdVAMWiohTelR0oF2Rn5AVgMZqmXzMWwKb2QwofOdE,1994
+vgn/exceptions.py,sha256=5b97pNFOiAgOaJtreDYXOm7qXZY59BR3SBYu0mRsUw8,149
+vgn/functions.py,sha256=caZYdcGEuFVJM7UdHb5lCjxgq1z-c-KsWWfkh4tnbgE,6122
+vgn/test_api.py,sha256=MIMvQNYv5EyXNjFO4R8weq9TBxNto5O_rIl5-oqnuGk,981
+vgn-0.0.1.dist-info/LICENSE,sha256=wcQM7DOHKqssJWT2q-GyjsKFcb6twSi6ajvb0BWznew,1068
+vgn-0.0.1.dist-info/METADATA,sha256=cUSbkQRg25fT3wMFn8QV6doflF0FF8rQKF4G24X5dPs,1931
+vgn-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+vgn-0.0.1.dist-info/top_level.txt,sha256=P2rv52kJrY5F_Yt4T5a9SHFtYr1fk-WaY5fTCD3_vdc,4
+vgn-0.0.1.dist-info/RECORD,,
