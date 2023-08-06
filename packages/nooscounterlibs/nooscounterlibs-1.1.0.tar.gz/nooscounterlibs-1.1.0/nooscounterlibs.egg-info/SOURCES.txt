@@ -1,0 +1,10 @@
+README.md
+setup.py
+Numerators/__init__.py
+Numerators/__main__.py
+Numerators/counter.py
+nooscounterlibs.egg-info/PKG-INFO
+nooscounterlibs.egg-info/SOURCES.txt
+nooscounterlibs.egg-info/dependency_links.txt
+nooscounterlibs.egg-info/pbr.json
+nooscounterlibs.egg-info/top_level.txt
