@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cookies &#8212; itty3 1.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Deploying itty3" href="deploying.html" />
+    <link rel="prev" title="Serving Static Assets" href="static_files.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="cookies">
+<span id="id1"></span><h1>Cookies<a class="headerlink" href="#cookies" title="Permalink to this headline">¶</a></h1>
+<p>The nature of HTTP is <strong>state-less</strong> requests. However, this can make
+user-specific behaviors difficult (without endlessly prompting the user).</p>
+<p>A solution to this problem are <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">HTTP Cookies</a>. Cookies provide a way to share
+information between requests.</p>
+<p><code class="docutils literal notranslate"><span class="pre">itty3</span></code> includes support for both sending &amp; receiving cookies. We’ll be
+working with the following baseline code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itty3</span>
+
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">itty3</span><span class="o">.</span><span class="n">App</span><span class="p">()</span>
+
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">greet_user</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">app</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="s2">&quot;Hello, user!&quot;</span><span class="p">)</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/set/&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">set_username</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="n">username</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">GET</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;unknown&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">app</span><span class="o">.</span><span class="n">redirect</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="section" id="setting-cookies">
+<h2>Setting Cookies<a class="headerlink" href="#setting-cookies" title="Permalink to this headline">¶</a></h2>
+<p>Right now, that <code class="docutils literal notranslate"><span class="pre">set_username</span></code> function doesn’t do a whole lot. Sure, the
+user can provide their username via <code class="docutils literal notranslate"><span class="pre">/set/?username=daniel</span></code>, but it only
+lives for the life of that request/response cycle.</p>
+<p>Once they’re redirected back to <code class="docutils literal notranslate"><span class="pre">/</span></code>, the <code class="docutils literal notranslate"><span class="pre">username</span></code> is gone. But we
+can store this value in a cookie to make it persist…</p>
+<p>Since cookies are a (relatively) more advanced concept, we’ll be bypassing
+the typical <code class="docutils literal notranslate"><span class="pre">App.render</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">App.redirect</span></code> shortcuts in favor of working
+with <code class="docutils literal notranslate"><span class="pre">itty3.HttpResponse</span></code> directly. Let’s change up the <code class="docutils literal notranslate"><span class="pre">set_username</span></code>
+code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/set/&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">set_username</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="n">username</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">GET</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;unknown&quot;</span><span class="p">)</span>
+
+    <span class="c1"># First, we manually create the redirect response.</span>
+    <span class="n">resp</span> <span class="o">=</span> <span class="n">itty3</span><span class="o">.</span><span class="n">HttpResponse</span><span class="p">(</span>
+        <span class="n">body</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Location&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span><span class="p">},</span>
+        <span class="n">status_code</span><span class="o">=</span><span class="mi">302</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Now, set the `username` in the cookies!</span>
+    <span class="n">resp</span><span class="o">.</span><span class="n">set_cookie</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="n">username</span><span class="p">)</span>
+
+    <span class="c1"># Don&#39;t forget to return that `resp` at the end!</span>
+    <span class="k">return</span> <span class="n">resp</span>
+</pre></div>
+</div>
+<p>Now when the user hits the <code class="docutils literal notranslate"><span class="pre">/set/</span></code> URL &amp; provides a username, that
+information is persisted (by their browser) &amp; sent with all following
+requests.</p>
+<p>On their next request (in this case, to <code class="docutils literal notranslate"><span class="pre">/</span></code>), their browser will provide
+the <code class="docutils literal notranslate"><span class="pre">Cookie:</span></code> header with their username filled in.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This code is for demonstration &amp; display purposes. Cookies are
+<strong>editable</strong> by the user, so never trust the input &amp; blindly look up
+records using the cookies’ data.</p>
+<p>This is a form of session stealing attack, made even easier by being
+plain text of a non-changing value!</p>
+<p>Using the concept of a session (or signed cookies), as well as
+verification checks, are the best way to prevent such attacks. This
+<code class="docutils literal notranslate"><span class="pre">cookie</span></code> support enables such things, but are beyond the scope of
+this guide.</p>
+</div>
+<p>Lastly, you can make as many calls to <code class="docutils literal notranslate"><span class="pre">HttpResponse.set_cookie</span></code> as you
+like. So if multiple cookies need to be set/updated, call it multiple times,
+once per cookie.</p>
+</div>
+<div class="section" id="reading-cookies">
+<h2>Reading Cookies<a class="headerlink" href="#reading-cookies" title="Permalink to this headline">¶</a></h2>
+<p>Unfortunately, while we’ve stored the user’s data, we’re not doing anything
+with it. Let’s fix that &amp; give the user a proper greeting:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">greet_user</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="c1"># Set up a default.</span>
+    <span class="n">username</span> <span class="o">=</span> <span class="s2">&quot;unknown&quot;</span>
+
+    <span class="c1"># `req.COOKIES` is a `dict` with all the key/value pairs of</span>
+    <span class="c1"># cookie data.</span>
+    <span class="k">if</span> <span class="s2">&quot;username&quot;</span> <span class="ow">in</span> <span class="n">req</span><span class="o">.</span><span class="n">COOKIES</span><span class="p">:</span>
+        <span class="n">username</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">COOKIES</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">]</span>
+
+    <span class="n">body</span> <span class="o">=</span> <span class="s2">&quot;Hello, </span><span class="si">{}</span><span class="s2">!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">username</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">app</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">body</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now, when the user hits the <code class="docutils literal notranslate"><span class="pre">/</span></code> URL, they should be greeted by their
+username!</p>
+</div>
+<div class="section" id="cookie-expiration">
+<h2>Cookie Expiration<a class="headerlink" href="#cookie-expiration" title="Permalink to this headline">¶</a></h2>
+<p>This is all well &amp; good, until the user closes their browser. When that
+happens, then they open the browser again &amp; go back to <code class="docutils literal notranslate"><span class="pre">/</span></code>, they’re
+greeted with <code class="docutils literal notranslate"><span class="pre">Hello,</span> <span class="pre">unknown!</span></code> again!</p>
+<p>What happened?!!</p>
+<p>The problem is that our use of <code class="docutils literal notranslate"><span class="pre">HttpResponse.set_cookie</span></code> doesn’t specify
+an expiration. Because nothing is set, the browser automatically deletes the
+cookies upon closing.</p>
+<p>We can fix this easily enough, with one of two options: <code class="docutils literal notranslate"><span class="pre">max_age</span></code> or
+<code class="docutils literal notranslate"><span class="pre">expires</span></code>. <code class="docutils literal notranslate"><span class="pre">max_age</span></code> lets you specify the number of seconds until the
+cookie expires, while <code class="docutils literal notranslate"><span class="pre">expires</span></code> lets you set a specific date/time for
+the expiration.</p>
+<p>To use <code class="docutils literal notranslate"><span class="pre">max_age</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/set/&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">set_username</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="n">username</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">GET</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;unknown&quot;</span><span class="p">)</span>
+    <span class="n">resp</span> <span class="o">=</span> <span class="n">itty3</span><span class="o">.</span><span class="n">HttpResponse</span><span class="p">(</span>
+        <span class="n">body</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Location&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span><span class="p">},</span>
+        <span class="n">status_code</span><span class="o">=</span><span class="mi">302</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Here&#39;s the change! Let&#39;s expire the cookie in 2 weeks time:</span>
+    <span class="c1"># (60 sec/min * 60 min/hr * 24 hr/day * 7 days/week * 2 weeks)</span>
+    <span class="n">two_weeks</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">*</span> <span class="mi">7</span> <span class="o">*</span> <span class="mi">2</span>
+    <span class="n">resp</span><span class="o">.</span><span class="n">set_cookie</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">max_age</span><span class="o">=</span><span class="n">two_weeks</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">resp</span>
+</pre></div>
+</div>
+<p>To use <code class="docutils literal notranslate"><span class="pre">expires</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add the import at the top!</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+
+<span class="c1"># ...then...</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/set/&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">set_username</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="n">username</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">GET</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;unknown&quot;</span><span class="p">)</span>
+    <span class="n">resp</span> <span class="o">=</span> <span class="n">itty3</span><span class="o">.</span><span class="n">HttpResponse</span><span class="p">(</span>
+        <span class="n">body</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Location&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span><span class="p">},</span>
+        <span class="n">status_code</span><span class="o">=</span><span class="mi">302</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Here&#39;s the change! Let&#39;s expire the cookie in 2 weeks time:</span>
+    <span class="n">two_weeks</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span> <span class="o">+</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">weeks</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">resp</span><span class="o">.</span><span class="n">set_cookie</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">expires</span><span class="o">=</span><span class="n">two_weeks</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">resp</span>
+</pre></div>
+</div>
+<p>Either way, no matter what the user does, that cookie will last for two
+weeks.</p>
+<p>But what if we want to make it go away sooner?</p>
+</div>
+<div class="section" id="deleting-cookies">
+<h2>Deleting Cookies<a class="headerlink" href="#deleting-cookies" title="Permalink to this headline">¶</a></h2>
+<p>Let’s simulate a “logout” &amp; make sure the user’s <code class="docutils literal notranslate"><span class="pre">username</span></code> cookie goes
+away <strong>now</strong>, rather than in two weeks time…:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add a new function.</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/logout/&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">logout</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="n">resp</span> <span class="o">=</span> <span class="n">itty3</span><span class="o">.</span><span class="n">HttpResponse</span><span class="p">(</span>
+        <span class="n">body</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Location&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span><span class="p">},</span>
+        <span class="n">status_code</span><span class="o">=</span><span class="mi">302</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="c1"># All we need to provide is the key.</span>
+    <span class="n">resp</span><span class="o">.</span><span class="n">delete_cookie</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">resp</span>
+</pre></div>
+</div>
+<p>After visiting <code class="docutils literal notranslate"><span class="pre">/logout/</span></code> &amp; returning to <code class="docutils literal notranslate"><span class="pre">/</span></code>, the user is back to being
+unknown.</p>
+</div>
+<div class="section" id="other-options">
+<h2>Other Options<a class="headerlink" href="#other-options" title="Permalink to this headline">¶</a></h2>
+<p>There are other, more advanced behaviors also possible via <code class="docutils literal notranslate"><span class="pre">set_cookie</span></code>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">path</span></code>: The path the cookie is valid for. Default is <code class="docutils literal notranslate"><span class="pre">&quot;/&quot;</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">domain</span></code>: The domain the cookie is valid for. Default is only the domain
+that set it.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">secure</span></code>: If the cookie should only be served by HTTPS. Default is
+<code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">httponly</span></code>: If <code class="docutils literal notranslate"><span class="pre">True</span></code>, prevents the cookie from being provided to
+Javascript requests. Default is <cite>False</cite>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">samesite</span></code>: How the cookie should behave under cross-site requests.
+Options are <code class="docutils literal notranslate"><span class="pre">itty3.SAME_SITE_NONE</span></code>, <code class="docutils literal notranslate"><span class="pre">itty3.SAME_SITE_LAX</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">itty3.SAME_SITE_STRICT</span></code>. Default is <code class="docutils literal notranslate"><span class="pre">itty3.SAME_SITE_NONE</span></code>.
+This is only available for Python 3.8+.</p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">itty3</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending.html">Extending <code class="docutils literal notranslate"><span class="pre">itty3</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="static_files.html">Serving Static Assets</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Cookies</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setting-cookies">Setting Cookies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reading-cookies">Reading Cookies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cookie-expiration">Cookie Expiration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deleting-cookies">Deleting Cookies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#other-options">Other Options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deploying.html">Deploying <code class="docutils literal notranslate"><span class="pre">itty3</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Docs:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reference/itty3.html">API Documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Other Docs:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="philosophy.html">Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="static_files.html" title="previous chapter">Serving Static Assets</a></li>
+      <li>Next: <a href="deploying.html" title="next chapter">Deploying <code class="docutils literal notranslate"><span class="pre">itty3</span></code></a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Daniel Lindsley.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/cookies.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

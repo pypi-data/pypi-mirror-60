@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Serving Static Assets &#8212; itty3 1.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Cookies" href="cookies.html" />
+    <link rel="prev" title="Extending itty3" href="extending.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="serving-static-assets">
+<span id="static-files"></span><h1>Serving Static Assets<a class="headerlink" href="#serving-static-assets" title="Permalink to this headline">¶</a></h1>
+<p>Web pages &amp; web apps are usually made up of more than just HTML or JSON.
+<code class="docutils literal notranslate"><span class="pre">itty3</span></code> ships with built-in support for serving up static assets, such as:
+CSS, images, Javascript, etc.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Serving media in this way is really only suitable for
+<strong>development</strong>. The drawbacks outside of development are numerous:</p>
+<ul class="simple">
+<li><p>It hasn’t been vetted for security</p></li>
+<li><p>It’s slower than something like nginx/S3/etc.</p></li>
+<li><p>It’ll tie up your server process(es)</p></li>
+</ul>
+<p>Please don’t do this in production &amp; take the time to setup your media
+the Right Way™.</p>
+</div>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>Setting up your app to serve static assets is easy. First, create a directory
+for the assets alongside your application code.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ls
+app.py
+$ mkdir static_media
+</pre></div>
+</div>
+<p>The name of the directory isn’t very important, so feel free to use what
+works for you.</p>
+<p>Next, create some assets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># We create a nested structure inside, but there are no requirements.
+# You can have a completely flat directory if you like, or go
+# full Java &amp; have an extremely deeply nested set of directories.
+$ mkdir -p static_media/css
+$ mkdir -p static_media/js
+
+$ touch static_media/css/default.css
+$ touch static_media/js/index.js
+
+# Dump some simple contents into them.
+$ echo &quot;* { margin: 0; padding: 0}&quot; &gt;&gt; static_media/css/default.css
+$ echo &quot;window.alert(&#39;Yo!&#39;);&quot; &gt;&gt; static_media/js/index.js
+</pre></div>
+</div>
+<p>Finally, go back to your app’s code. Change your <code class="docutils literal notranslate"><span class="pre">app.run(...)</span></code> to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+        <span class="c1"># Any other args you might have here, then...</span>
+        <span class="n">static_url_path</span><span class="o">=</span><span class="s2">&quot;/static/&quot;</span><span class="p">,</span>
+        <span class="n">static_root</span><span class="o">=</span><span class="s2">&quot;static_media&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">static_root</span></code> is the <strong>file-system path</strong> to the directory we created
+above. This tells the <cite>itty3.App`</cite> where to look for the assets.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">static_url_path</span></code>, on the other hand, sets up a special route in the
+<code class="docutils literal notranslate"><span class="pre">app</span></code> for serving static media. Anything that starts with that path
+will be served by the <code class="docutils literal notranslate"><span class="pre">render_static</span></code> handler.</p>
+<p>So in this case, the following URLs will now serve the assets we created:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/static/css/default.css</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/static/js/index.js</span></code></p></li>
+</ul>
+<p>Run your app &amp; give it a try!</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">itty3</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending.html">Extending <code class="docutils literal notranslate"><span class="pre">itty3</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Serving Static Assets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setup">Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cookies.html">Cookies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploying.html">Deploying <code class="docutils literal notranslate"><span class="pre">itty3</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Docs:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reference/itty3.html">API Documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Other Docs:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="philosophy.html">Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="extending.html" title="previous chapter">Extending <code class="docutils literal notranslate"><span class="pre">itty3</span></code></a></li>
+      <li>Next: <a href="cookies.html" title="next chapter">Cookies</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Daniel Lindsley.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/static_files.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
