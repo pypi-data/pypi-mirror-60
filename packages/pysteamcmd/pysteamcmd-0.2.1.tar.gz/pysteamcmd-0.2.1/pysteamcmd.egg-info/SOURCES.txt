@@ -1,0 +1,9 @@
+README.md
+setup.py
+pysteamcmd/__init__.py
+pysteamcmd/steamcmd.py
+pysteamcmd.egg-info/PKG-INFO
+pysteamcmd.egg-info/SOURCES.txt
+pysteamcmd.egg-info/dependency_links.txt
+pysteamcmd.egg-info/top_level.txt
+pysteamcmd/tests/__init__.py
