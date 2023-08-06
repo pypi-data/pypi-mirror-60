@@ -1,0 +1,8 @@
+README.md
+setup.py
+nflyway.egg-info/PKG-INFO
+nflyway.egg-info/SOURCES.txt
+nflyway.egg-info/dependency_links.txt
+nflyway.egg-info/requires.txt
+nflyway.egg-info/top_level.txt
+nflyway.egg-info/zip-safe
