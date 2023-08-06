@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+votifier2/__init__.py
+votifier2/exceptions.py
+votifier2/server.py
+votifier2/vote.py
+votifier2.egg-info/PKG-INFO
+votifier2.egg-info/SOURCES.txt
+votifier2.egg-info/dependency_links.txt
+votifier2.egg-info/top_level.txt
