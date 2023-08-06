@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyimgy
+Version: 0.1.0
+Summary: A small library of image tools for Python
+Home-page: https://github.com/cesarfm/pyimgy
+Author: César Fuentes
+Author-email: cesar.at.fuentes@gmail.com
+License: UNKNOWN
+Description: A small library of image tools for Python
+        
+        ## Features
+        
+        - `ImageConverter`: a universal, extensible component for easily converting images to different types, array shapes and normalizations.
+        - `core`: seamless conversion between numpy and Pillow; annotations for conversion and auto plot axes
+        - `image_crop`: `ImageCropper`, automatic cropping of an image's border frame
+        - `utils`: various tools
+          - get palette of an image
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: torch
+Provides-Extra: fastai

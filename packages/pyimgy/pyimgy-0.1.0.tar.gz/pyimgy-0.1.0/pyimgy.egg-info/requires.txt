@@ -1,0 +1,12 @@
+typing
+numpy
+Pillow
+matplotlib
+opencv-python
+
+[fastai]
+torch
+fastai
+
+[torch]
+torch

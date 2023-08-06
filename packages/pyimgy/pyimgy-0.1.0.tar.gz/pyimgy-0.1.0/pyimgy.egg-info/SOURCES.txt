@@ -1,0 +1,17 @@
+README.md
+setup.py
+pyimgy/__init__.py
+pyimgy/core.py
+pyimgy/image_crop.py
+pyimgy/utils.py
+pyimgy.egg-info/PKG-INFO
+pyimgy.egg-info/SOURCES.txt
+pyimgy.egg-info/dependency_links.txt
+pyimgy.egg-info/requires.txt
+pyimgy.egg-info/top_level.txt
+pyimgy/optional/__init__.py
+pyimgy/optional/fastai.py
+pyimgy/optional/torch.py
+pyimgy/optional/torch_utils.py
+pyimgy/video/__init__.py
+pyimgy/video/video_utils.py
