@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: flashfreeze
+Version: 0.1
+Summary: A modern rewrite of FlashBack
+Home-page: https://gitlab.com/blfordham/flashfreeze
+Author: Bryan Fordham
+Author-email: bryan@nativesavannah.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Flashfreeze
+
+A modern rewrite of flashbake
+
+This is *very* rough, but it works.
+
+You can now install via pip:
+
+`pip install flashfreeze`
+
+
+Copy `config.yaml.sample` to `~/.flashfreeze/config.yaml` and edit to your liking.
+
+To run:
+`flashfreeze`
+
+From the python interpreter:
+
+```python
+>>> from flashfreeze import FlashFreeze
+>>> f = FlashFreeze()
+>>> f.run()
+```
+
+This isn't even alpha, folks. Use at your own risk. But if you have issues/bugs/suggestions, please let me know.
+
+

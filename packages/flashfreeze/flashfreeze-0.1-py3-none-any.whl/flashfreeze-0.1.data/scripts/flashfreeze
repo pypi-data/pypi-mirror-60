@@ -1,0 +1,18 @@
+#!python
+
+import argparse
+
+parser = argparse.ArgumentParser(description='Automatically check in your files.')
+parser.add_argument('-c', '--config', help='Specify configuration file. Defaults to "~/.flashfreeze/config.yaml"')
+parser.add_argument('-d', '--directory', help='Which directory to process. By default, processes them all.')
+parser.add_argument('-v', '--verbose', help='More verbose output', action='store_true')
+
+args = parser.parse_args()
+
+log_level = logging.DEBUG if args.verbose else logging.INFO
+import logging
+logging.basicConfig(level=log_level, format="%(message)s")
+
+from flashfreeze import FlashFreeze
+ff = FlashFreeze(args.config)
+ff.run(args.directory)
