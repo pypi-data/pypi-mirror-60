@@ -1,0 +1,7 @@
+docker_tasks/__init__.py,sha256=bwAGX3pQEvz_fTPwCmOlkx0XdAR1NsNQTfUmobynYZM,345
+docker_tasks/cli.py,sha256=2M8IUsxGD4_sb_6nVAHdJiH-UMzebVW950GDO_gajHE,2834
+docker_tasks-0.0.8.dist-info/METADATA,sha256=oegDifUcIHh8_rV5pEDktA4wfSD6ympc3fTdgVWvtIk,1967
+docker_tasks-0.0.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+docker_tasks-0.0.8.dist-info/entry_points.txt,sha256=jewKIstlBc0ifNZBDtPv7rDb2fVmdncaAe6LjambMlg,52
+docker_tasks-0.0.8.dist-info/top_level.txt,sha256=87hekl5_acXliYNBBGeUYgqy-0khfDxu6q1N8X2Q_2k,13
+docker_tasks-0.0.8.dist-info/RECORD,,
