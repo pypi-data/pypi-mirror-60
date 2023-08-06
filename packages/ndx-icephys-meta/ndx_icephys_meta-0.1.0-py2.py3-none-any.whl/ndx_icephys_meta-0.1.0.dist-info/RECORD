@@ -1,0 +1,13 @@
+ndx_icephys_meta/__init__.py,sha256=bNgxydOhbrF4b1hbMNUafLg9Fs6H4KCmYn4cVc58BQE,1494
+ndx_icephys_meta/icephys.py,sha256=L2vrQ_wcjbpO1nKyX8l2HzGoeqGI5dg58Ig_ML91juw,39974
+ndx_icephys_meta/io/__init__.py,sha256=Qv99c0IrifP15zfh7hCPUCoKgoKYXPcaA-MSTuJhe2c,157
+ndx_icephys_meta/io/icephys.py,sha256=x4VtOkFgmx_B7F0BhbNtnMW6Bfx20luqRG0xlUVPSuw,1199
+ndx_icephys_meta/spec/ndx-icephys-meta.extensions.yaml,sha256=ZgExAdamNgCZ0Bpsqz3Vuaw6lffFqxpl1tm_N6S9Z1Q,9522
+ndx_icephys_meta/spec/ndx-icephys-meta.namespace.yaml,sha256=wRxqJwgQ84fAuimFBGQ0FWQNtXM4N97mq4j-buegZyo,597
+ndx_icephys_meta/test/__init__.py,sha256=TMUMj4JtW1zjb3QzwtnFzgWwkm2FLb5S_-996w4ylmY,59
+ndx_icephys_meta/test/test_icephys.py,sha256=JkdvJ-H6uoO7ECimEebBD20dQf0SGCSQhGIQWa2KRFA,48003
+ndx_icephys_meta-0.1.0.dist-info/LICENSE.txt,sha256=IfKSJLtlUXDVG0myMBW3eUNNVUDcKCX1rfmiu8ExtfU,20
+ndx_icephys_meta-0.1.0.dist-info/METADATA,sha256=ZGHtJ_4UY5KAGIGntJNtrxpRIQQBD5Wtn0CYnkjDTE4,458
+ndx_icephys_meta-0.1.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+ndx_icephys_meta-0.1.0.dist-info/top_level.txt,sha256=MAtXZcniVvUlsGQGHHYf9A1leCaDKbuIOVE5bGelHh0,17
+ndx_icephys_meta-0.1.0.dist-info/RECORD,,
