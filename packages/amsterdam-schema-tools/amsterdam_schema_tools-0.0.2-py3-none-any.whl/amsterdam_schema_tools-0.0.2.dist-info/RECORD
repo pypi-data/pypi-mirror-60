@@ -1,0 +1,10 @@
+schematools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schematools/cli.py,sha256=so14hEwVluMt7cYdvP6Wt4JSAoItyVU6dJYQacVKfUw,871
+schematools/create_schema.py,sha256=mfKOAf-3dZZoVyn6QCEXUkIcrkcyJkCWTO5wv1JqtQI,3677
+schematools/db.py,sha256=XiOZRvFMhrIvsJGF8jOzLRNn9u4nPYYERqMxs-elAD0,194
+amsterdam_schema_tools-0.0.2.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+amsterdam_schema_tools-0.0.2.dist-info/METADATA,sha256=uTBsXi-KR8VRzcMt07KFqT3_OSn2sGGDIrsdxem-E2M,1380
+amsterdam_schema_tools-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+amsterdam_schema_tools-0.0.2.dist-info/entry_points.txt,sha256=xjWGgd2uNKwxcHDJzgFsBIHMbYd76vu4x1ol6ttOIww,69
+amsterdam_schema_tools-0.0.2.dist-info/top_level.txt,sha256=f2tD6P5ZNoKHQxj7AQrEYAJMgsZcW9WvyjdnyI7fotA,12
+amsterdam_schema_tools-0.0.2.dist-info/RECORD,,
