@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tinyapp
+Version: 0.0.1
+Summary: Tiny application framework
+Home-page: UNKNOWN
+Author: lison
+Author-email: linzongxian@vip.qq.com
+License: Apache License
+Platform: UNKNOWN
+Requires-Dist: pymysql
+Requires-Dist: pandas
+
+UNKNOWN
+
+
