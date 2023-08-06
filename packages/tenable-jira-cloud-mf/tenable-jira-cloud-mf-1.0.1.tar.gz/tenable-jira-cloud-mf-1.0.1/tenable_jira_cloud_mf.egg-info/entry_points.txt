@@ -1,0 +1,4 @@
+[console_scripts]
+tenable-csv-to-jira = tenable_jira.my_cli:cli
+tenable-jira = tenable_jira.cli:cli
+
