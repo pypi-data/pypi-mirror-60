@@ -1,0 +1,12 @@
+mupix/__init__.py,sha256=HA9B7DN5-JH-r49OkqXFH3vX1it-6oVyNkav577JWlk,252
+mupix/application.py,sha256=eCs11mFkTlW4g1S3Q_0lVzVHrMvegq75aMgNpjiIKF8,18785
+mupix/base.py,sha256=j7Q6v81DU2CayOCdkF6xE5ElzPfi5IA8cHOyGQq5q2M,13140
+mupix/commands.py,sha256=L1csjM2WeCbZzlci9Udiz0R3yKokms9hQiw3_FepG44,6444
+mupix/extra.py,sha256=RWnSe0gfbwQK9kXhuBJosTRqUKshL9HsAJSKOitrgFk,2909
+mupix/result_objects.py,sha256=LPGaYOrUIvyIJyclaWut7L_EaMtLljC5MxIPuM6efSM,3614
+mupix/sequence_alignment.py,sha256=UHt1b0EIHIFRg0YTmaaenodIbYxr6kmLesJJH2A23AE,11244
+mupix-0.2.0.dist-info/entry_points.txt,sha256=O5UwtBN04emD_8y2iyFzNjIFGkuAEh7gFoXYMaighfg,44
+mupix-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mupix-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+mupix-0.2.0.dist-info/METADATA,sha256=KVTchBXpEg7ZNv3kgQzccxx1GW3uHbQzsQRLSWcKwHE,2949
+mupix-0.2.0.dist-info/RECORD,,
