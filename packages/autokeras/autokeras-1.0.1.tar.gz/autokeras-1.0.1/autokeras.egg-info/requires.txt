@@ -1,0 +1,13 @@
+packaging
+keras-tuner>=1.0.1
+scikit-learn
+numpy
+pandas
+
+[tests]
+pytest>=4.4.0
+flake8
+isort
+pytest-xdist
+pytest-cov
+coverage
