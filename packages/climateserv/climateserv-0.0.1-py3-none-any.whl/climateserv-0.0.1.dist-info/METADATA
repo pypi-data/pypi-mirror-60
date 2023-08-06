@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: climateserv
+Version: 0.0.1
+Summary: This is a package to access the ClimateSERV API
+Home-page: https://github.com/servir/ClimateSERVpy
+Author: Billy Ashmall
+Author-email: billy.ashmall@nasa.gov
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: urllib
+Requires-Dist: urllib.request
+Requires-Dist: json
+Requires-Dist: configparser
+Requires-Dist: logging
+Requires-Dist: csv
+
+This is a package to access the ClimateSERV API](https://climateserv.servirglobal.net/) 
+
+
