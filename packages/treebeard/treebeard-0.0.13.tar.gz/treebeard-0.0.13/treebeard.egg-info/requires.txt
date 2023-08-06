@@ -1,0 +1,14 @@
+click
+google-cloud-storage
+google-cloud-scheduler
+halo
+papermill
+jupyter-repo2docker
+jupyter
+colorama
+ipykernel
+gcsfs
+pandas
+pathlib
+timeago
+hashlib
