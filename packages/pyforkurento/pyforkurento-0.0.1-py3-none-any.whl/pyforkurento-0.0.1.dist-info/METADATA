@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyforkurento
+Version: 0.0.1
+Summary: A Python client for Kurento Media Server
+Home-page: https://github.com/kelvingakuo/pyforkurento
+Author: Kelvin Gakuo
+Author-email: kelvingakuo@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: websocket-client (>=0.57.0)
+
+A python client for Kurento Media Streamer
+
+## USAGE
+1. Install Kurento
+```bash
+sudo docker run --name kms -d -p 8888:8888 kurento/kurento-media-server
+```
+
+**DO NOT USE THIS SDK IN ANY FORM OF A PRODUCTION ENVIRONMENT**
+
+The implementation of this SDK was inspired by [this abandoned project](https://github.com/minervaproject/pykurento/tree/master/pykurento)
+
+### REFERENCE DOCUMENTATION
+https://github.com/Kurento/doc-fiware-readthedocs/blob/master/apib/stream_oriented_open_api.apib
+
