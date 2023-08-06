@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+peakingduck/__init__.py
+peakingduck.egg-info/PKG-INFO
+peakingduck.egg-info/SOURCES.txt
+peakingduck.egg-info/dependency_links.txt
+peakingduck.egg-info/not-zip-safe
+peakingduck.egg-info/requires.txt
+peakingduck.egg-info/top_level.txt
