@@ -1,0 +1,8 @@
+apikeystore/__init__.py,sha256=vKygB_KrdjTRBOEUYEhmWuGnT5uJ_EdJddhjS7z-Z3M,95
+apikeystore/__version__.py,sha256=i6Gq_acFlNKPQkrcO177ggWyBQaCND3LaVotk98486c,248
+apikeystore/authentication.py,sha256=EY1HNsGnFZ6SCiga0VYEvUv-4Zv100FVMc71KScjBiU,438
+apikeystore/vaults.py,sha256=jG5xBvKDsai5imQ38RYNenT9i1WKRsZKtEjgIPYlJms,11672
+apikeystore-0.0.10.dist-info/METADATA,sha256=VOpW5BJwj6nBgiWtg7-c8dYH5xrXhb1KwF-LMgEH1nA,2250
+apikeystore-0.0.10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+apikeystore-0.0.10.dist-info/top_level.txt,sha256=EeN-OUshJg13LwdF0SXqiY_PCBmY20g95DiFHOT7bWU,12
+apikeystore-0.0.10.dist-info/RECORD,,
