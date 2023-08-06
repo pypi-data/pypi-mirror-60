@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: kk
+Version: 0.3.3
+Summary: a simple upload server
+Home-page: http://www.ishield.cn
+Author: zhangkai
+Author-email: zkdfbb@qq.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5
