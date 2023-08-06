@@ -1,0 +1,13 @@
+osfooler_ng/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+osfooler_ng/module_p0f.py,sha256=deNc6GH_h5z7h5ys5cwEZOjCn6vfW54GgWr1lWzQSB0,18687
+osfooler_ng/osfooler_ng.py,sha256=JARRK3a8PFHwIlGVM1a8VR-MHteUy3nU0snaijhtaRo,33761
+osfooler_ng/dep/nmap-os-db,sha256=RXrfpXJpQvEKm11qb_h5UJb3qBqy9XorqMpJ8VTqWFg,5002885
+osfooler_ng/dep/p0f.fp,sha256=2zfgvcb0LK_T-FNQCbwS7fNcbbeBOovcmWJbx9DK3N4,33057
+osfooler_ng/dep/p0fa.fp,sha256=Mo9vuSjfSlZxcxXsG-nYgRhFVTxaMbuol9dYDsDWP5w,7522
+osfooler_ng/dep/p0fr.fp,sha256=Accjqa90yjAhuoInUGF_DE9dS9_Z2tB3iZAia_IqfNA,8382
+OSfooler_ng_openwrt-1.1.dist-info/LICENSE.md,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+OSfooler_ng_openwrt-1.1.dist-info/METADATA,sha256=Htd_rh67T50XQNlzyxwstghfXyW4-vps6Eeed66pWm0,8832
+OSfooler_ng_openwrt-1.1.dist-info/WHEEL,sha256=CbUdLTqD3-4zWemf83rgR_2_MC4TeXw9qXwrXte5w4w,92
+OSfooler_ng_openwrt-1.1.dist-info/entry_points.txt,sha256=RwBTBsJPeoy7b2V_mqn3fBsJ8MXM_-LCHPg43RTCA8Q,62
+OSfooler_ng_openwrt-1.1.dist-info/top_level.txt,sha256=Jya7lsZbLsvTlzq3eAKPVz5rkQvNlaEM1vsQGVbZfBk,12
+OSfooler_ng_openwrt-1.1.dist-info/RECORD,,
