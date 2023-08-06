@@ -1,0 +1,13 @@
+README.md
+setup.py
+bentley_ottmann/__init__.py
+bentley_ottmann/angular.py
+bentley_ottmann/base.py
+bentley_ottmann/hints.py
+bentley_ottmann/linear.py
+bentley_ottmann/point.py
+bentley_ottmann.egg-info/PKG-INFO
+bentley_ottmann.egg-info/SOURCES.txt
+bentley_ottmann.egg-info/dependency_links.txt
+bentley_ottmann.egg-info/requires.txt
+bentley_ottmann.egg-info/top_level.txt
