@@ -1,0 +1,13 @@
+dj_chart/__init__.py,sha256=PjrAut5wUOgcQz79krZcrxCW7JYdU9nfMwMc8EdCaFo,22
+dj_chart/constants.py,sha256=_9ivChlyMN0G-5xlycfKTxk9SBZ8n4H_viQxp9xc1Uk,1920
+dj_chart/models.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+dj_chart/urls.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+dj_chart/views.py,sha256=dXEIygTxnsT1s__B5E54OspWUy9p_mqnbywVzR6knZ4,8431
+dj_chart/static/js/Chart.min.js,sha256=R4pqcOYV8lt7snxMQO_HSbVCFRPMdrhAFMH-vr9giYI,172812
+dj_chart/templates/chart.html,sha256=jDTgDoKH2PZhGpgPgEDl5-tDjilMVpslSk9STqFUkzM,1521
+dj_chart-1.1.4.dist-info/AUTHORS.rst,sha256=LFgvYYyZEdOSkeJpjY2Qo5LNHkVItRP7qdcF6xef18c,251
+dj_chart-1.1.4.dist-info/LICENSE,sha256=bs1j73tc3fE1BCTlkbYSkfoCfSGavcLoukc4aEh7SZE,1500
+dj_chart-1.1.4.dist-info/METADATA,sha256=ZgnTsFsk1EiYdbIxyb3uMqPZueg3yHAPaYFyu3fx7To,5621
+dj_chart-1.1.4.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+dj_chart-1.1.4.dist-info/top_level.txt,sha256=kbN9LhwUaGREz7FFYeDh4vB6moIBBArJRasZk4dm-XU,9
+dj_chart-1.1.4.dist-info/RECORD,,
