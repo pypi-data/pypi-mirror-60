@@ -1,0 +1,11 @@
+packaging
+dessia_common
+numpy
+matplotlib
+Cython
+scipy
+jinja2
+geomdl
+jsonschema
+networkx
+triangle
