@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: rpg-namer
+Version: 0.1.0
+Summary: Simple random generator for rpg item names.
+Home-page: https://github.com/matt-palmer-tfs/rpg_namer
+Author: Matthew Palmer
+Author-email: palmer.matthew167@gmail.com
+License: MIT License
+Description: # rpg namer
+        This is a simple package to generate random item names from pre-compiled lists of descriptions and item types
+        
+        Some example names generated:
+        
+        ```
+        Lusca's Fists
+        Consternation Dress
+        The Intimidation Footpads
+        Kushtaka's Spangenhelm
+        The Actual Nasal Helmet
+        Yuki-Onna's Greaves
+        Footguards of the Edged Antaeus
+        Trepidity Warboots of the Svartálfar
+        Possible Anklet
+        Horrible Trousers
+        Tanktop of the Shikoku
+        Legwraps of the Dismay Familiar Spirit
+        Suit of the Real Suangi
+        Devilish Gloves of the Heikegani
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
