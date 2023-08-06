@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: config-pyrser
+Version: 0.1.3
+Summary: 
+Home-page: https://github.com/wadamek65/config-pyrser
+License: MIT
+Author: wadamek65
+Author-email: wadamek65@gmail.com
+Maintainer: wadamek65
+Maintainer-email: wadamek65@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Repository, https://github.com/wadamek65/config-pyrser
