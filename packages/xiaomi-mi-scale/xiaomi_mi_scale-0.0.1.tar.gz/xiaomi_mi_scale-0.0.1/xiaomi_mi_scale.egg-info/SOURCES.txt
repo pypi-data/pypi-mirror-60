@@ -1,0 +1,10 @@
+README.md
+setup.py
+xiaomi_mi_scale/__init__.py
+xiaomi_mi_scale/body_metrics.py
+xiaomi_mi_scale/body_scales.py
+xiaomi_mi_scale/body_score.py
+xiaomi_mi_scale.egg-info/PKG-INFO
+xiaomi_mi_scale.egg-info/SOURCES.txt
+xiaomi_mi_scale.egg-info/dependency_links.txt
+xiaomi_mi_scale.egg-info/top_level.txt
