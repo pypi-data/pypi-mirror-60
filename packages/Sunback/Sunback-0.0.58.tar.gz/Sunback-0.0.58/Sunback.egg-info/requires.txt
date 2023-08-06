@@ -1,0 +1,4 @@
+sunpy[net]
+matplotlib
+twine
+pillow
