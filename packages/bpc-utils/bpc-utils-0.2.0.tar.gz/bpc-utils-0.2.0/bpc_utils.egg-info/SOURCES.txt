@@ -1,0 +1,10 @@
+LICENSE
+README.md
+bpc_utils.py
+setup.cfg
+setup.py
+bpc_utils.egg-info/PKG-INFO
+bpc_utils.egg-info/SOURCES.txt
+bpc_utils.egg-info/dependency_links.txt
+bpc_utils.egg-info/requires.txt
+bpc_utils.egg-info/top_level.txt
