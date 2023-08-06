@@ -1,0 +1,11 @@
+pullrequest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pullrequest/bitbucket_cloud.py,sha256=C-kABYeKqMSXn1drvt_MUUQuS7MFLA9KjQIaWUOUdyM,1752
+pullrequest/cli.py,sha256=C_tvKBsJ3NUpDrSnQg-YcCR-qbfIJa1Op8Kee-GvXHs,3931
+pullrequest/github.py,sha256=AU_pwVN-3WBsYWkDQvm1PNULts_cPbsWkEWuhwBjVYU,528
+pullrequest/gitlab.py,sha256=p3lAkRWHGQcoDGg2NbmoTmEI_Y_vyWofOF4MVapxHAY,1067
+pullrequest-0.1.3.dist-info/LICENSE.txt,sha256=DpKFbUpfOIbEHBs3zz_OhhprlmMCry4hcQkZZtzo8eM,1055
+pullrequest-0.1.3.dist-info/METADATA,sha256=8Wrw0Et3eZZmQM-xxbbR7-c4YB3RuFhEZeTOKcxj56Q,334
+pullrequest-0.1.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pullrequest-0.1.3.dist-info/entry_points.txt,sha256=9hiBPzPvW_CsQ_dGbmTTKdoR__mDoiJXntZ8yv9L-Uo,54
+pullrequest-0.1.3.dist-info/top_level.txt,sha256=BonevjGVhauvH6B1oc3PJisEo7p-j_OXq6_CRUV4G5w,12
+pullrequest-0.1.3.dist-info/RECORD,,
