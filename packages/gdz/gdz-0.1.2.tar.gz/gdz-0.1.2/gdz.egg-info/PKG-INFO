@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: gdz
+Version: 0.1.2
+Summary: Враппер API приложения gdz.ru.
+Home-page: https://github.com/crinny/gdz
+Author: crinny
+Author-email: 
+License: MIT
+Description: 
+        <h1 align="center">gdz</h1>
+        <p align="center">
+            Враппер API приложения <a href="https://play.google.com/store/apps/details?id=com.gdz_ru">ГДЗ: мой решебник</a>.
+            <br /><br />
+            <img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg">
+        </p>
+        
+        ## Установка
+        ```sh
+        pip install https://github.com/crinny/gdz/archive/master.zip
+        ``` 
+        
+        ## Пример
+        ```python
+        from gdz import GDZ
+        
+        gdz = GDZ()
+        
+        for book in gdz.books:
+            if "Алгебра" in book.title:
+                print(book.title)
+                for entry in gdz.book_structure(book):
+                    print(entry.title)
+                    for task in entry.tasks:
+                        print(" -> " + task.title, end=", ")
+                    print()
+                print()
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
