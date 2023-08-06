@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: au-address-parser
+Version: 1.0.0
+Summary: A module parses common forms of australian addresses.
+Home-page: https://github.com/ethanzhao6/au-addr-parser
+Author: Ethan Zhao
+Author-email: gigi17901@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
