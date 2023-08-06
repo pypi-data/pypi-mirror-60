@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cdt-test
+Version: 0.2.3
+Summary: This is a cdt test to assist doctor
+Home-page: https://github.com/ZihaoLian/CDT
+Author: zihaoLian
+Author-email: 2043740417@qq.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: scikit-learn (==0.21.0)
+Requires-Dist: numpy (>=1.15.2)
+Requires-Dist: matplotlib (>=3.0.3)
+Requires-Dist: scipy (>=1.3.1)
+Requires-Dist: tensorflow (==1.14.0)
+Requires-Dist: pillow (==6.1.0)
+Requires-Dist: lime (==0.1.1.36)
+Requires-Dist: opencv-python (==3.4.2.16)
+
+UNKNOWN
+
+
