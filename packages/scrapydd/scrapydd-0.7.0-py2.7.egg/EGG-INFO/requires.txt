@@ -1,0 +1,14 @@
+apscheduler
+attrs>=17.4.0
+docker
+requests==2.20.0
+pysyncobj>=0.2.3
+subprocess32
+scrapy
+service-identity
+six>=1.12
+sqlalchemy
+sqlalchemy-migrate
+tornado<5.0,>=4.4.2
+virtualenv
+w3lib
