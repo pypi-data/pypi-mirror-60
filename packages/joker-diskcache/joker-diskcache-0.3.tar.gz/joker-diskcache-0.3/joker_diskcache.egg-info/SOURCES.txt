@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+joker/__init__.py
+joker/diskcache/__init__.py
+joker/diskcache/base.py
+joker/diskcache/http.py
+joker/diskcache/utils.py
+joker_diskcache.egg-info/PKG-INFO
+joker_diskcache.egg-info/SOURCES.txt
+joker_diskcache.egg-info/dependency_links.txt
+joker_diskcache.egg-info/namespace_packages.txt
+joker_diskcache.egg-info/not-zip-safe
+joker_diskcache.egg-info/requires.txt
+joker_diskcache.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: joker-diskcache
+Version: 0.3
+Summary: Primitive disk-backed cache, probably useful in web scraping
+Home-page: https://github.com/frozflame/joker-diskcache
+Author: anonym
+Author-email: anonym@example.com
+License: GNU General Public License (GPL)
+Description: # joker-diskcache
+        
+        Primitive disk-backed cache, probably useful in web scraping 
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,3 @@
+include requirements.txt
+exclude joker-diskcache/test_joker_diskcache/*
+
