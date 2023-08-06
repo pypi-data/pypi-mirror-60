@@ -1,0 +1,16 @@
+aibolit/__init__.py,sha256=jGWr1Lw5PNt24zuuiUPqSJo2GOcZWN8h0EkcCF0zofY,137
+aibolit/__main__.py,sha256=0UcGXH7sIAimHC6AuEtWTR66sIavb55nw-BJyfKPV7o,305
+aibolit/metrics/__init__.py,sha256=1exh409hRmJ5tT6zhxY4DH5ZWWhffQmEHtos0t7q7OE,31
+aibolit/metrics/loc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aibolit/metrics/loc/loc.py,sha256=MB_A6pPY7dUPNAvmR6A--P6NGkunyTKOPulu35Y03b0,1288
+aibolit-0.0.2.dist-info/DESCRIPTION.rst,sha256=CeLiRw-JfgVlWmVUbfrDvd74JdOTLJyahoAeiJbb8nQ,49
+aibolit-0.0.2.dist-info/METADATA,sha256=lD5BOzUjt7EqbU1avHLgRMtAEOaHus6sF_c9GjAjRdM,596
+aibolit-0.0.2.dist-info/RECORD,,
+aibolit-0.0.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+aibolit-0.0.2.dist-info/entry_points.txt,sha256=UBAMHi27-cg71inRe0VPUTT8mDYiK8iyx2F7UrO6Oqk,48
+aibolit-0.0.2.dist-info/metadata.json,sha256=MuUpssharmJLj_nsIVQABJEFInAKR_aOjRiAisE-zu4,884
+aibolit-0.0.2.dist-info/top_level.txt,sha256=6APp6pSxdCiuOOA3dndkV6VDNfXcOusGkMu3pT2_Pg8,13
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/metrics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/metrics/loc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/metrics/loc/test_loc.py,sha256=s2fcFnZXQb1gGa8QZnBewzrx9a2IY-eyArl2QFxDD4o,1373
