@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-basic-models
+Version: 4.0.0
+Summary: Useful basic models that any django app should need
+Home-page: UNKNOWN
+Author: Concentric Sky
+Author-email: django@concentricsky.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: django-autoslug
+
+UNKNOWN
+
+
