@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: lbmpy-walberla
+Version: 0.2.7
+Summary: Code Generation for Lattice Boltzmann Methods in the walberla framework
+Home-page: https://i10git.cs.fau.de/pycodegen/lbmpy_walberla/
+Author: Martin Bauer
+Author-email: martin.bauer@fau.de
+License: AGPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
