@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: gasync
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/niitsuma/gasync
+Author: Hirotaka Niitsuma
+Author-email: hirotaka.niitsuma@gmail.com
+License: GNU Affero General Public License
+Description: generic async func in Hy.
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Lisp
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
