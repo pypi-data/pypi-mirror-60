@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: tmonpy
+Version: 0.3.6
+Summary: A CLI tool to monitor temp while running a child process
+Home-page: https://github.com/gmagno/tmon
+Author: Goncalo Magno
+Author-email: goncalo@gmagno.dev
+License: MIT license
+Keywords: tmon
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Provides-Extra: dev
+Requires-Dist: pip ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: watchdog ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+===================
+Temp Monitor
+===================
+
+
+.. image:: https://img.shields.io/pypi/v/tmon.svg
+        :target: https://pypi.python.org/pypi/tmon
+
+.. image:: https://img.shields.io/travis/gmagno/tmon.svg
+        :target: https://travis-ci.org/gmagno/tmon
+
+.. image:: https://readthedocs.org/projects/tmon/badge/?version=latest
+        :target: https://tmon.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+A Python CLI utility to monitor cpu temperature
+
+
+* Free software: MIT license
+* Documentation: https://tmon.readthedocs.io.
+
+
+Install
+--------
+
+* pip install tmon
+
+
+=======
+History
+=======
+
+0.1.0 (2020-01-28)
+------------------
+
+* First release on PyPI.
+
+
