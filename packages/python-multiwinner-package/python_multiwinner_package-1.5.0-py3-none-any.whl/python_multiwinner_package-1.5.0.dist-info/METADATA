@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: python-multiwinner-package
+Version: 1.5.0
+Summary: Python Multiwinner Package
+Home-page: https://github.com/Koozco/pmp
+Author: Katarzyna Banaszak, Bartosz Kusek
+Author-email: kussy.kusy@gmail.com
+License: MIT
+Download-URL: https://github.com/Koozco/pmp/archive/v1.5.0.tar.gz
+Platform: UNKNOWN
+Requires-Dist: pytest
+Requires-Dist: six
+Requires-Dist: numpy
+
+UNKNOWN
+
+
