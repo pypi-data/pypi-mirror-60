@@ -1,0 +1,157 @@
+CHANGES
+=======
+
+0.5.0
+-----
+
+* Update examples
+* Add operation execution engine
+* Add Ansible executor
+* Introduce instance graph
+* Introduce template graph
+* Add generic value class
+* Add storage interface
+* Update command implementations
+* Always store bare data in TOSCA AST node
+* Simplify YAML AST node
+* Strengthen path validation
+* Properly terminate type resolution
+* Fix TOSCA v1.3 definitions
+* Remove remnants of legacy opera
+* Remove support for python 3.5
+* Add path resolver
+* Delay the path compaction
+* Use fully qualified type names in standard library
+* Re-root base types in standard library
+* Add reference resolving pass to parser
+* Avoid modifying document's AST in place
+* Add dedicated data type reference
+* Add validate command
+* Add initial implementation of TOSCA loader
+* Add import resolution process
+* Add textual yaml content fixture
+* Add path canonicalization
+* Add path parser
+* Rebase entity parser on map wrapper
+* Add TOSCA AST visitor mechanism
+* Remove remnants of old parser implementation
+* Add normative types from TOSCA 1.3 standard
+* Enable service template merges
+* Configure CircleCI for multiple python versions
+* Add service template parser
+* Add artifact type parser
+* Add topology template parser
+* Add group definition parser
+* Add node template parser
+* Add capability assignment parser
+* Add interface definition parser (template)
+* Add operation definition parser (template)
+* Add node filter definition parser
+* Add requirement assignment parser
+* Add policy definition parser
+* Add relationship teplate parser
+* Add policy type parser
+* Add group type parser
+* Add node type parser
+* Add capablity definition
+* Add requirement definition parser
+* Add relationship type parser
+* Add interface definition parser (type)
+* Add interface type parser
+* Add notification definition parser
+* Add notification implementation parser
+* Add artifact definition parser
+* Add operation definition parser (type)
+* Add operation implementation definition parser
+* Add operaton host parser
+* Add parameter definition parser
+* Add capability type parser
+* Add attribute definition parser
+* Add data type parser
+* Add version parser
+* Add property definition parser
+* Add constraint clause parser
+* Add schema definition parser
+* Add reference parser
+* Add status parser
+* Add import definition parser
+* Add repository definition parser
+* Add credential parser
+* Add TOSCA definitions version parser
+* Initialize 1.3 TOSCA parser module
+* Add range parser
+* Add entity and type entity parsers
+* Add bool parser
+* Add void parser
+* Add integer parser
+* Add string parser
+* Add map and ordered map parser combinators
+* Add list parser combinator
+* Add comparable base class
+* Add base parser class
+* Add yaml parser test fixture
+* Add parser error exception
+* Completely decouple YAML node and location marker
+* Add CircleCI configuration
+* Add YAML 1.2 loader
+* Add YAML constructor
+* Add YAML 1.2 compatible resolver
+* Add YAML AST node
+* Add location class
+* Add pytest development dependency
+* Move to src layout
+* Revert .gitignore back to original
+* Add security groups attribute, into example for creating OS vm
+
+0.1.0
+-----
+
+* Update project documentation
+* Describe project as python 3 only
+* Add extras section for OpenStack libraries
+* Add fuzzy TOSCA version matching
+* Update ansible dependency
+* Fix incomplete instructions in README
+* Add service template playbooks needed for undeploy
+* Remove ansible dependency from requirements
+* Add undeploy command
+* Add support for saving deployment information
+* Make ssh skip host check
+* Implement requirement attribute lookup
+* Add missing attributes to supported TOSCA constructs
+* Add provisional README contents
+* Add Apache 2.0 license text to repo
+* Add support for shared interface inputs on templates
+* Improve error reporting for bad attributes
+* Add support for attributes on templates
+* Ignore missing fields in service template merges
+* Resolve attributes when searching for host
+* Implement attribute and property data accessors
+* Add iteration methods for collections
+* Embed graph links in instances
+* Remove clutter from the opera's output
+* Generalize ansible inventory creation
+* Remove useless future imports
+* Update sample service template
+* Add ignore file
+* Restructure CLI interface
+* Add more complex sample service template
+* Refactor instance model
+* Extend parser TOSCA support
+* Add initial Ansible support
+* Add paths to the parser
+* Add initial support for template instantiation
+* Add reference type and resolution step
+* Generalize actionable key collection
+* Separate parsing from object instantiation
+* Implement service template merging
+* Make internal storage ordered
+* Remove deploy method from service template
+* Add basic normative types to orchestrator
+* Add ordered entity collection
+* Add support for node type parsing
+* Support parsing fields with multiple valid types
+* Reparent EntityCollection
+* Improve error messages in implementation checks
+* Add initial implementation of the parser
+* Initial commit
