@@ -1,0 +1,23 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block stylesheet %}{% static "ink/admin/css/modified_base.css" %}{% endblock %}
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+
+{% block dist_asset %}
+<link rel="stylesheet" type="text/css" href="{% static "ink/app.css" %}">
+<script src="{% static "ink/app.js" %}"></script>
+{% endblock %}
+{% endblock %}
+
+{% block content_title %}{% endblock %}
+{% block content %}
+<div id="app" style="text-align: center;">Please wait. CMS is loading...</div>
+{% endblock %}
