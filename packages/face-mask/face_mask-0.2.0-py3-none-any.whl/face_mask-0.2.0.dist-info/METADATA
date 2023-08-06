@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: face-mask
+Version: 0.2.0
+Summary: Useful data structures, utils for Python.
+Home-page: https://github.com/Prodesire/face-mask
+Author: Prodesire
+Author-email: wangbinxin001@126.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: face-recognition (==1.2.3)
+Requires-Dist: Pillow (==7.0.0)
+Requires-Dist: numpy (==1.18.1)
+
+# face-mask
+Wear a face mask in the given picture.
+
+## Install
+Install by pip:
+```bash
+pip install face-mask
+```
+
+Or install locally (`cd` project root directory first):
+```bash
+python3 setup.py install
+```
+
+## Usage
+Specify face picture path and then auto save to face with mask picture path 
+(whose name with "-with-mask" suffix).
+```bash
+face-mask /path/to/face/picture
+```
+
+If you want to see the new picture with default viewer, please specify `--show` option.
+```bash
+face-mask /path/to/face/picture --show
+```
+
+If you want to wear different mask to face, then specify one of the options below:
+- `--black` for black mask
+- `--blue` for blue mask
+- `--red` for red mask
+
+For instance:
+```bash
+face-mask /path/to/face/picture --blue
+```
+
+## Effects
+### One person wears a mask
+![](images/face-mask-single.jpg)
+
+### Many persons wear masks
+![](images/face-mask-multi.jpg)
+
+### Comic persons wear masks
+Attention: Face recognition for comic face is not accurate enough.
+
+![](images/face-mask-comic.jpg)
+
+

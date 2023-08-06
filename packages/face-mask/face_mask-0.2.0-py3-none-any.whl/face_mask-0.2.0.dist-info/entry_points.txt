@@ -1,0 +1,3 @@
+[console_scripts]
+face-mask = face_mask.__main__:cli
+
