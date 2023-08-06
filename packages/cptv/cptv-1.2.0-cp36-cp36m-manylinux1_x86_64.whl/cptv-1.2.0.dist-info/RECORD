@@ -1,0 +1,10 @@
+cptv-1.2.0.dist-info/RECORD,,
+cptv-1.2.0.dist-info/top_level.txt,sha256=eeuCwlsDmpgDHabrHATSTqaVaT_vB_BKEaTC49TbQBo,5
+cptv-1.2.0.dist-info/METADATA,sha256=3jVNGQtEU066JO-Ac28vxs5Sf5w1PDlICD_jTydoMNE,827
+cptv-1.2.0.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
+cptv/__init__.py,sha256=hDWI6vyYmlCRCAzKzjGULWbz3DvHLJlY2PAD1vQ91gU,87
+cptv/reader.cpython-36m-x86_64-linux-gnu.so,sha256=A1X8_KMydkviC-hVMzgRXQJCEB-FNfcp3HkAJQQouUk,864326
+cptv/bitwriter.cpython-36m-x86_64-linux-gnu.so,sha256=kqxfirJzEPVfcPZ9shgB_Gid2Ttp3JqvHZ6wkw1BIMw,241007
+cptv/writer.cpython-36m-x86_64-linux-gnu.so,sha256=QNSMPyfCBEQqL7uj_OPSB97o8kAzd7GJnhxGcnqmRu0,1578563
+cptv/bitreader.cpython-36m-x86_64-linux-gnu.so,sha256=pPp_8-LZMeVBre650y9INv0vrnutbs1A9johPBbv2Hc,424233
+cptv/frame.py,sha256=vxN17nSsfE4YzB1yqH3tzcgjrUgkDr0X32AsKRoesqw,704
