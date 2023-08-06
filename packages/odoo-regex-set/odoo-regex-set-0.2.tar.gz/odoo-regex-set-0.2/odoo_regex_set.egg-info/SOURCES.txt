@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+.circleci/config.yml
+odoo_regex_set/__init__.py
+odoo_regex_set/manifest.py
+odoo_regex_set/task.py
+odoo_regex_set.egg-info/PKG-INFO
+odoo_regex_set.egg-info/SOURCES.txt
+odoo_regex_set.egg-info/dependency_links.txt
+odoo_regex_set.egg-info/top_level.txt
+tests/__init__.py
+tests/test_task.py
