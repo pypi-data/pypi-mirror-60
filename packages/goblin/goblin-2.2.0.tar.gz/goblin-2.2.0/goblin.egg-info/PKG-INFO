@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: goblin
+Version: 2.2.0
+Summary: Goblin OGM for the Tinkerpop 3 Stack,
+Home-page: https://git.qoto.org/goblin-ogm/goblin
+Author: Jeffrey Phillips Freeman
+Author-email: Jeffrey.Freeman@CleverThis.com
+License: Apache License, Version 2.0
+Download-URL: https://github.com/goblin-ogm/goblin/archive/v2.2.0.tar.gz
+Description: This project is officially hosted on QOTO GitLab here: https://git.qoto.org/goblin-ogm/goblin
+Keywords: Tinkerpop,Tinkerpop3,gremlin,gremlin-python,asyncio,graphdb,ogm,orm
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
