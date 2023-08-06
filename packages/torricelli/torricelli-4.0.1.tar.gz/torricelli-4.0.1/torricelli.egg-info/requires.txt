@@ -1,0 +1,5 @@
+lmfit
+pyqtgraph
+h5py
+numpy
+scipy

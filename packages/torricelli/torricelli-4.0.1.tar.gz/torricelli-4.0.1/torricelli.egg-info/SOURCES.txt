@@ -1,0 +1,132 @@
+README.md
+setup.py
+Torricelli/__init__.py
+Torricelli/__main__.py
+Torricelli/torricelli.py
+Torricelli/imports/GUI_InsertManualValues.py
+Torricelli/imports/GUI_MainWindow.py
+Torricelli/imports/GUI_Regroup.py
+Torricelli/imports/GUI_RemoveAll.py
+Torricelli/imports/GUI_Rename.py
+Torricelli/imports/GUI_SymbolList.py
+Torricelli/imports/Geometry.png
+Torricelli/imports/Torricelli_icon.png
+Torricelli/imports/chi_2_Pearson.png
+Torricelli/imports/chi_red2.png
+Torricelli/imports/pyArgand.py
+Torricelli/imports/Databases/Database references.txt
+Torricelli/imports/Databases/Nondipolar_parameters_of_angular_distribution_Z1to100.ini
+Torricelli/imports/Databases/f0.csv
+Torricelli/imports/Databases/DW/DW_Gao_Elemental_highT.csv
+Torricelli/imports/Databases/DW/DW_Gao_Elemental_lowT.csv
+Torricelli/imports/Databases/DW/DW_Sears.csv
+Torricelli/imports/Databases/DW/DW_Zywietz_C.csv
+Torricelli/imports/Databases/DW/DW_Zywietz_Si.csv
+Torricelli/imports/Databases/Lattices/AtomCoordinates_HCP.csv
+Torricelli/imports/Databases/Lattices/AtomCoordinates_HEX Tetradymite.csv
+Torricelli/imports/Databases/Lattices/AtomCoordinates_HEX Wurtzite.csv
+Torricelli/imports/Databases/Lattices/AtomCoordinates_baseCentered.csv
+Torricelli/imports/Databases/Lattices/AtomCoordinates_bodyCentered.csv
+Torricelli/imports/Databases/Lattices/AtomCoordinates_diamond.csv
+Torricelli/imports/Databases/Lattices/AtomCoordinates_diamond_otherOrigin.csv
+Torricelli/imports/Databases/Lattices/AtomCoordinates_faceCentered.csv
+Torricelli/imports/Databases/Lattices/AtomCoordinates_primitive.csv
+Torricelli/imports/Databases/Lattices/CrystallographicData_Compound.csv
+Torricelli/imports/Databases/Lattices/CrystallographicData_Elemental.csv
+Torricelli/imports/Databases/f1 and f2/ac.nff
+Torricelli/imports/Databases/f1 and f2/ag.nff
+Torricelli/imports/Databases/f1 and f2/al.nff
+Torricelli/imports/Databases/f1 and f2/ar.nff
+Torricelli/imports/Databases/f1 and f2/as.nff
+Torricelli/imports/Databases/f1 and f2/at.nff
+Torricelli/imports/Databases/f1 and f2/au.nff
+Torricelli/imports/Databases/f1 and f2/b.nff
+Torricelli/imports/Databases/f1 and f2/ba.nff
+Torricelli/imports/Databases/f1 and f2/be.nff
+Torricelli/imports/Databases/f1 and f2/bi.nff
+Torricelli/imports/Databases/f1 and f2/br.nff
+Torricelli/imports/Databases/f1 and f2/c.nff
+Torricelli/imports/Databases/f1 and f2/ca.nff
+Torricelli/imports/Databases/f1 and f2/cd.nff
+Torricelli/imports/Databases/f1 and f2/ce.nff
+Torricelli/imports/Databases/f1 and f2/cl.nff
+Torricelli/imports/Databases/f1 and f2/co.nff
+Torricelli/imports/Databases/f1 and f2/cr.nff
+Torricelli/imports/Databases/f1 and f2/cs.nff
+Torricelli/imports/Databases/f1 and f2/cu.nff
+Torricelli/imports/Databases/f1 and f2/dy.nff
+Torricelli/imports/Databases/f1 and f2/er.nff
+Torricelli/imports/Databases/f1 and f2/eu.nff
+Torricelli/imports/Databases/f1 and f2/f.nff
+Torricelli/imports/Databases/f1 and f2/fe.nff
+Torricelli/imports/Databases/f1 and f2/fr.nff
+Torricelli/imports/Databases/f1 and f2/ga.nff
+Torricelli/imports/Databases/f1 and f2/gd.nff
+Torricelli/imports/Databases/f1 and f2/ge.nff
+Torricelli/imports/Databases/f1 and f2/h.nff
+Torricelli/imports/Databases/f1 and f2/he.nff
+Torricelli/imports/Databases/f1 and f2/hf.nff
+Torricelli/imports/Databases/f1 and f2/hg.nff
+Torricelli/imports/Databases/f1 and f2/ho.nff
+Torricelli/imports/Databases/f1 and f2/i.nff
+Torricelli/imports/Databases/f1 and f2/in.nff
+Torricelli/imports/Databases/f1 and f2/ir.nff
+Torricelli/imports/Databases/f1 and f2/k.nff
+Torricelli/imports/Databases/f1 and f2/kr.nff
+Torricelli/imports/Databases/f1 and f2/la.nff
+Torricelli/imports/Databases/f1 and f2/li.nff
+Torricelli/imports/Databases/f1 and f2/lu.nff
+Torricelli/imports/Databases/f1 and f2/mg.nff
+Torricelli/imports/Databases/f1 and f2/mn.nff
+Torricelli/imports/Databases/f1 and f2/mo.nff
+Torricelli/imports/Databases/f1 and f2/n.nff
+Torricelli/imports/Databases/f1 and f2/na.nff
+Torricelli/imports/Databases/f1 and f2/nb.nff
+Torricelli/imports/Databases/f1 and f2/nd.nff
+Torricelli/imports/Databases/f1 and f2/ne.nff
+Torricelli/imports/Databases/f1 and f2/ni.nff
+Torricelli/imports/Databases/f1 and f2/o.nff
+Torricelli/imports/Databases/f1 and f2/os.nff
+Torricelli/imports/Databases/f1 and f2/p.nff
+Torricelli/imports/Databases/f1 and f2/pa.nff
+Torricelli/imports/Databases/f1 and f2/pb.nff
+Torricelli/imports/Databases/f1 and f2/pd.nff
+Torricelli/imports/Databases/f1 and f2/pm.nff
+Torricelli/imports/Databases/f1 and f2/po.nff
+Torricelli/imports/Databases/f1 and f2/pr.nff
+Torricelli/imports/Databases/f1 and f2/pt.nff
+Torricelli/imports/Databases/f1 and f2/ra.nff
+Torricelli/imports/Databases/f1 and f2/rb.nff
+Torricelli/imports/Databases/f1 and f2/re.nff
+Torricelli/imports/Databases/f1 and f2/rh.nff
+Torricelli/imports/Databases/f1 and f2/rn.nff
+Torricelli/imports/Databases/f1 and f2/ru.nff
+Torricelli/imports/Databases/f1 and f2/s.nff
+Torricelli/imports/Databases/f1 and f2/sb.nff
+Torricelli/imports/Databases/f1 and f2/sc.nff
+Torricelli/imports/Databases/f1 and f2/se.nff
+Torricelli/imports/Databases/f1 and f2/si.nff
+Torricelli/imports/Databases/f1 and f2/sm.nff
+Torricelli/imports/Databases/f1 and f2/sn.nff
+Torricelli/imports/Databases/f1 and f2/sr.nff
+Torricelli/imports/Databases/f1 and f2/ta.nff
+Torricelli/imports/Databases/f1 and f2/tb.nff
+Torricelli/imports/Databases/f1 and f2/tc.nff
+Torricelli/imports/Databases/f1 and f2/te.nff
+Torricelli/imports/Databases/f1 and f2/th.nff
+Torricelli/imports/Databases/f1 and f2/ti.nff
+Torricelli/imports/Databases/f1 and f2/tl.nff
+Torricelli/imports/Databases/f1 and f2/tm.nff
+Torricelli/imports/Databases/f1 and f2/u.nff
+Torricelli/imports/Databases/f1 and f2/v.nff
+Torricelli/imports/Databases/f1 and f2/w.nff
+Torricelli/imports/Databases/f1 and f2/xe.nff
+Torricelli/imports/Databases/f1 and f2/y.nff
+Torricelli/imports/Databases/f1 and f2/yb.nff
+Torricelli/imports/Databases/f1 and f2/zn.nff
+Torricelli/imports/Databases/f1 and f2/zr.nff
+torricelli.egg-info/PKG-INFO
+torricelli.egg-info/SOURCES.txt
+torricelli.egg-info/dependency_links.txt
+torricelli.egg-info/requires.txt
+torricelli.egg-info/top_level.txt
