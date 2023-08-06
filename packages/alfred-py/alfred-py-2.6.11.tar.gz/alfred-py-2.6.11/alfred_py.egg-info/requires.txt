@@ -1,0 +1,8 @@
+colorama
+requests
+pycocotools
+future
+deprecated
+loguru
+pyquaternion
+lxml
