@@ -1,0 +1,3 @@
+[console_scripts]
+init=test_simulation:perform_ccp_simulation
+
