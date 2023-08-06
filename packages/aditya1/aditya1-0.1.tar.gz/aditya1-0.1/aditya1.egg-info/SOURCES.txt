@@ -1,0 +1,7 @@
+setup.py
+aditya1/__init__.py
+aditya1.egg-info/PKG-INFO
+aditya1.egg-info/SOURCES.txt
+aditya1.egg-info/dependency_links.txt
+aditya1.egg-info/not-zip-safe
+aditya1.egg-info/top_level.txt
