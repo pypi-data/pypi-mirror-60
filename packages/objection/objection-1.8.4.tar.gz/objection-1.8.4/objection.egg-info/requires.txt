@@ -1,0 +1,10 @@
+frida
+frida-tools<6.0.0
+prompt_toolkit<3.0.0,>=2.0.9
+click
+tabulate
+delegator.py
+requests
+flask
+pygments
+litecli==1.1.0
