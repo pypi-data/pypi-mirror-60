@@ -1,0 +1,3 @@
+[console_scripts]
+borca=borca.__main__:main
+
