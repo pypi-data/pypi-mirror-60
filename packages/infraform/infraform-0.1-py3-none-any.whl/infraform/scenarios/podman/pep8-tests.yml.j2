@@ -1,0 +1,18 @@
+{% if "branch" in vars %}
+execute: "git checkout origin/{{ vars['branch'] }}; tox -e pep8"
+{% else %}
+execute: "tox -e pep8"
+{% endif %}
+image: pep8-tests
+dockerfile: |
+  FROM {{ image_name|default("ubi8") }}
+  RUN dnf install -y python36
+  RUN pip3 install tox
+  RUN dnf install -y http://rhos-release.virt.bos.redhat.com/repos/rhos-release/rhos-release-latest.noarch.rpm
+
+  {% if 'release' in vars %}
+      RUN rhos-release {{ vars['release'] }}
+      RUN dnf config-manager --enable rhelosp-{{ vars['release'] }}.0-unittest
+  {% endif %}
+ 
+  RUN dnf install -y python3-devel git gcc openssl-devel gettext
