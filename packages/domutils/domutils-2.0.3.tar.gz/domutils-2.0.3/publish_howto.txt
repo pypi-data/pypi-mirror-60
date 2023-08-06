@@ -1,0 +1,67 @@
+
+Notes for me to remember steps involved in publishing this package
+
+- create branch on local machine
+
+- make modifications
+
+- run tests and documentation
+  in docs/
+  make clean
+  make doctest
+  make html
+
+- If the test changes the images or that new test data is required
+  the a new test dataset will have to be published in a new version of the repository on zenodo
+  https://doi.org/10.5281/zenodo.3635906    
+  At the moment, only me (dominik) can do that 
+
+  Update to download_test_data.sh will be necessary
+
+- adjust version number in VERSION
+
+- describe changes in CHANGELOG
+
+- commit everything, push branch to github, open merge/pull request
+
+- check that documentation builds on RTD
+  In admin settings, change default to latest and select new branch
+  "latest" will be built from that branch
+  check if docs renders well
+
+- make bundle by running:
+    - You probably want to cleanup
+    python setup.py clean --all
+    rm -rf dist
+python setup.py sdist bdist_wheel
+
+- upload to TEST pypi
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+- upload to official pypi repo
+twine upload dist/*
+
+- when all the above worked, 
+  add version tag and push to github
+   git tag -a v2.0.0 -m 'version 2.0.0 with CamelCase removed'
+   git push github --tags
+  "stable" will be build on RTD
+
+
+For CONDA package
+
+- go in conda_build directory 
+        Command for adding conda build tools
+        conda install anaconda-client conda-build
+  run
+conda skeleton pypi domutils
+conda build domutils
+    this will automatically upload to anaconda.org
+
+        - Can test local build with:
+        conda install -c file:///home/ords/mrd/rpndat/dja001/python_miniconda3/envs/test1/conda-bld/ domutils
+        
+        - test the conda package in a frest conda environment with:
+        conda install -c dja001 domutils
+
+
