@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyCO2SYS/__init__.py
+PyCO2SYS.egg-info/PKG-INFO
+PyCO2SYS.egg-info/SOURCES.txt
+PyCO2SYS.egg-info/dependency_links.txt
+PyCO2SYS.egg-info/requires.txt
+PyCO2SYS.egg-info/top_level.txt
