@@ -1,0 +1,15 @@
+student_mixture/__init__.py,sha256=co_4zzb7nNwfJ4DUr3XgUesCPicD1o6j3UB4VHKewNw,687
+student_mixture/multivariate_t.py,sha256=ujALOoeeV3KqHOI9EfPVcNfD3kxUM6jyr8t1QYJUyaI,21978
+student_mixture/multivariate_t_cdf.py,sha256=0LqsIIs1bW8PF7ohhrjDD0i-94wkUhM5HLR9Gh5MC48,8228
+student_mixture/multivariate_t_fit_functions.py,sha256=d-qLbD40D4cy3J2bcFNjepHvo8eHLgnLBQzzcZqu2HU,18432
+student_mixture/multivariate_t_functions.py,sha256=dAQfb-LbdS1ivfdMOEPtxUss5tkJ-H45V83XC2E6hP8,3793
+student_mixture/multivariate_t_mc.py,sha256=S0nMN2uucFrHT5SxYFqAkhr00oVySCUt1hpNlZOvOR4,4322
+student_mixture/mutlivariate_t_fit.py,sha256=7Kzq92V2BjqawVgaPRjfQRDi6VnofluIB2Bkn3WcVlI,19987
+student_mixture/student_mixture.py,sha256=3rUqcOiHXYyu0x55iA3RdLgXystgsAQ55bYxera-ia8,29897
+student_mixture/student_mixture_functions.py,sha256=IAoyd9pXsHFNngw30GriCXUzXcTfFdX68P7gfBf4MWY,22750
+student_mixture-0.1.3.dist-info/AUTHORS.rst,sha256=S0Ao85glRkNN-jU71kFqN0CMNxJ6BcpAXLFsM5_iQME,174
+student_mixture-0.1.3.dist-info/LICENSE,sha256=NarniaDvxI-39rdU2oYZGLY3oE7sqxMF2FmmRk6Ksvc,2344
+student_mixture-0.1.3.dist-info/METADATA,sha256=w903eklqFgB1jaivTFueRYVaSLyjtAc1jKbXWBBNVgU,4964
+student_mixture-0.1.3.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+student_mixture-0.1.3.dist-info/top_level.txt,sha256=2LgddxIv6oCRP4Y3eKfndyw_Mlb7YqWrMEIvzhYeWAM,16
+student_mixture-0.1.3.dist-info/RECORD,,
