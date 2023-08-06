@@ -1,0 +1,10 @@
+MANIFEST.in
+requirements.txt
+setup.cfg
+setup.py
+elibs.egg-info/PKG-INFO
+elibs.egg-info/SOURCES.txt
+elibs.egg-info/dependency_links.txt
+elibs.egg-info/requires.txt
+elibs.egg-info/top_level.txt
+elibs.egg-info/zip-safe

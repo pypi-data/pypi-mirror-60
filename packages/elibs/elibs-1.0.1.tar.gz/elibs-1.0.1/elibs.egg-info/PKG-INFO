@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: elibs
+Version: 1.0.1
+Summary: A dict with attribute-style access
+Home-page: https://github.com/ellitedev/elibs
+Author: Osni Pezzini Junior
+Author-email: osni.pezzini@gmail.com
+License: MIT License
+Description: A dict with attribute-style access
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
