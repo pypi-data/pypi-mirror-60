@@ -1,0 +1,8 @@
+torch_specinv/__init__.py,sha256=SqqjbpGaZdZuUREL7Q2OHK-fIuwozUaNLcNAo3j46EQ,186
+torch_specinv/methods.py,sha256=R0c3eSana2jCL2eIVBcXrPU6Wi3hSihiti4t1oKuR40,19775
+torch_specinv/metrics.py,sha256=aLG5q-AUtYfnMRkuw-sVTHlvj513aSqgCHyWDkSxSF4,1176
+torch_specinv/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_specinv-0.1.dist-info/METADATA,sha256=NF8awoBUq-GoPHajrwRqdow0szVo8hGSYynEJrxYdCY,1378
+torch_specinv-0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+torch_specinv-0.1.dist-info/top_level.txt,sha256=ZoJAYhzra5Rr2hNnOlowBA0nzjb8YL0-1V7KMrEyP-s,14
+torch_specinv-0.1.dist-info/RECORD,,
