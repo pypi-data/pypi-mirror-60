@@ -1,0 +1,40 @@
+
+form.form-inline {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background: lightsteelblue;
+}
+
+.form-inline .item {
+    flex: 1 0 25%;
+    box-sizing: border-box;
+    padding: .5em;
+}
+
+.form-inline label {
+    display: block;
+}
+
+.form-inline .btn {
+    margin: .5em;
+}
+
+label.option {
+    display: inline-block;
+    padding: .25em;
+}
+
+
+// toggle
+
+.t-cb { transition: all .3s cubic-bezier(.33, 1, .66, 1); }
+
+.checkbox:checked + .checkbox-wrapper {
+  background-color: #19a974; // @extend .bg-green;
+
+  .checkbox-toggle { 
+    left: 2rem; // @extend .left-2;
+    background-color: #ccc; // @extend .bg-moon-gray;
+  }
+}
