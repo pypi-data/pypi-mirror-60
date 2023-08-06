@@ -1,0 +1,57 @@
+resources:
+  repositories:
+  - repository: OpenAstronomy
+    type: github
+    endpoint: aperiosoftware
+    name: OpenAstronomy/azure-pipelines-templates
+    ref: master
+
+trigger:
+  branches:
+    include:
+    - '*'
+  tags:
+    include:
+    - '*'
+
+jobs:
+
+- template: run-tox-env.yml@OpenAstronomy
+  parameters:
+
+    xvfb: true
+    coverage: codecov
+    libraries:
+      apt:
+        - libxkbcommon-x11-0
+        - pandoc
+      brew:
+        - pandoc
+      choco:
+        - pandoc
+
+    envs:
+
+    - linux: py37-imagetest
+    - linux: py38-imagetest
+    - linux: py38-notebook
+    - linux: py38-docs
+
+    - macos: py36-test
+    - macos: py37-test
+    - macos: py38-test
+    - macos: py38-notebook
+    - macos: py38-docs
+
+    - windows: py36-test
+    - windows: py37-test
+    - windows: py38-notebook
+    - windows: py38-docs
+
+- template: publish.yml@OpenAstronomy
+  parameters:
+    ${{ if startsWith(variables['Build.SourceBranch'], 'refs/tags/') }}:
+      pypi_connection_name: 'pypi_endpoint'
+    targets:
+    - sdist
+    - wheels_universal
