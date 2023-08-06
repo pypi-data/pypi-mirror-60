@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pelican-export
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/toumorokoshi/pelican-to-wordpress
+Author: Yusuke Tsutsumi
+Author-email: yusuke@tsutsumi.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: python-wordpress-xmlrpc
+Requires-Dist: pelican
+
+UNKNOWN
+
+
