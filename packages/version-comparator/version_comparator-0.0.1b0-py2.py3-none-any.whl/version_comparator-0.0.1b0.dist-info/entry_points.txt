@@ -1,0 +1,3 @@
+[console_scripts]
+version-comparator = version_comparator.cli:main
+
