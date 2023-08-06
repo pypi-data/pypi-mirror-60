@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        checklist=checklist.checklist:cli
+    
