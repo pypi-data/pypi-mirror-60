@@ -1,0 +1,16 @@
+tags:
+  - Stats
+summary: Retrieve stats
+description: Retrieves a links stats.
+operationId: phlasch.stats.stats_retrieve
+parameters:
+  - in: path
+    name: shortcut
+    description: Shortcut information
+    required: true
+    type: string
+responses:
+  "200":
+    description: Successfully retrieved
+  "404":
+    description: Link not found
