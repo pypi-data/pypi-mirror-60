@@ -1,0 +1,10 @@
+README.md
+setup.py
+Krypton/Binomialdistribution.py
+Krypton/Gaussiandistribution.py
+Krypton/Generaldistribution.py
+Krypton/__init__.py
+Krypton_GD.egg-info/PKG-INFO
+Krypton_GD.egg-info/SOURCES.txt
+Krypton_GD.egg-info/dependency_links.txt
+Krypton_GD.egg-info/top_level.txt
