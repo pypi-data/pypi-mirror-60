@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: sgrep
+Version: 0.1
+Summary: polyglot AST pattern search
+Home-page: https://github.com/returntocorp/sgrep
+Author: Yoann Padioleau
+Author-email: sgrep@r2c.dev
+License: LGPL
+Description: UNKNOWN
+Keywords: sgrep
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
