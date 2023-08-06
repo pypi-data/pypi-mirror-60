@@ -1,0 +1,17 @@
+socks5/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socks5/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socks5/client/core.py,sha256=xQpe1r1YBI7PsL2uhVdgqeSXlEue-NRnbnM0-yrfYUQ,317
+socks5/server/__init__.py,sha256=lB_Sh64oc7CCO-6FFTLsMX0GtcBLncbhiZX7zDeNuFs,74
+socks5/server/__main__.py,sha256=V9LolZrqJb_JsnZTKQ92ylNVBo9OWj6IGQuZDQz8x5w,352
+socks5/server/_socks5.py,sha256=FxmH-JgJNikgTBViNze7r5WtXPC84juOIqQjZPpnsFc,755
+socks5/server/authentications.py,sha256=JOb84BIR3Bso_ZLis7d1DMuUkqogPiS3QQ_zJxwiuVQ,1838
+socks5/server/core.py,sha256=0kdR9YssMcU_eEFVVbMliFZL58p4b-YaHcw1xXmxrt4,5374
+socks5/server/exceptions.py,sha256=uK9lHMiRWLsA4350SLOcXjDW11vKWTvPw5XT-adJMjM,294
+socks5/server/sessions.py,sha256=pzxrMdnXme7g9vFaR4DcQBeeNaUJQPEGsZUaHuhzLF0,7807
+socks5/types.py,sha256=w--dhDliDGnSvnycRNBGhdhHTbAJHmO3oBcZ7qRE63U,593
+socks5/utils.py,sha256=tZy7tHJV-Y8g73hdrkpFC07SV-dmMEz66pjMxe88NNM,3596
+socks5/values.py,sha256=VaCBKcV8pSiE-J4EGnBDFp3JP9NNJvpsVwelYEE9VBA,453
+asyncio_socks5-0.2.5.dist-info/LICENSE,sha256=3AFfqk8DJopMNzIVEiYmgDn4MYgvXD2NYEzqwKsvzWk,1077
+asyncio_socks5-0.2.5.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+asyncio_socks5-0.2.5.dist-info/METADATA,sha256=q7ulCHAomv42NxAVKGEfYUpLq2T7W40X2UWoW19YRwM,1027
+asyncio_socks5-0.2.5.dist-info/RECORD,,
