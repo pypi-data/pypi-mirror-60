@@ -1,0 +1,17 @@
+bayessynth/__init__.py,sha256=md54J2UxSCpWzZoIoOHoM4HU6-dPmFfHNXXfi3b6VLA,90
+bayessynth/analysis/__init__.py,sha256=CssdRHbrWuwB9BcvoY-i-cdAd6iCcVk6qPxLvIP0-Yg,246
+bayessynth/analysis/readtrace.py,sha256=DNMujcHIQHyahTPh_FJFkiyvOHYdv-CNCnUv1GZnTdY,4260
+bayessynth/analysis/summarizefactors.py,sha256=YmwL3p2Gd5SQqb-6I2H4VYsGZ194dc5i_1669TPz4nI,3317
+bayessynth/analysis/summarizeppc.py,sha256=scEs1vxKPzG8AD-YlR-WBntNESYS-kAvLorGn0FLuGI,4332
+bayessynth/modeling/__init__.py,sha256=Kz5GVxQCBYlowlAsVuGqktHTZcKqnC-R53Cl6JzWEAY,207
+bayessynth/modeling/fit.py,sha256=PUmGsxjx8Mqo1TEjtlGLE7TEBBL8RZF6mQKQGjJqazE,8438
+bayessynth/plots/__init__.py,sha256=FLeoLU3-AVveZKlUmZLSXlEb36XqH89rfq7bK5H5Qq4,320
+bayessynth/plots/plotfactors.py,sha256=Q7bh7pS4otssKtaZhHWQax2DaYr3uzGyeG7LMB4Bybg,4027
+bayessynth/plots/plotppc.py,sha256=Wcq_AEmy2nE5jD-c3NcdPzK1RTIRgOsPzt4lnb3PMds,4108
+bayessynth/plots/plotppcbell.py,sha256=zcmh6juA3UReYvzALpoaR5iszcnRu3--kdbvX-RlcQ0,5187
+bayessynth/plots/plotppcdiff.py,sha256=dcfAtk7-kw47mQwP3GNK4xtoVQggCDMCTM4RkMP4Z04,4218
+bayessynth-0.1.dist-info/LICENSE,sha256=Fwmwvk_2zO79uqvYVoFs73NME9AN0vHt07SDOC6LdXY,1054
+bayessynth-0.1.dist-info/METADATA,sha256=R6FiJ4EdIAODehm9Bo5gwdo30frU602D-zd7AfUxxCw,2647
+bayessynth-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+bayessynth-0.1.dist-info/top_level.txt,sha256=E2FjBiURsOsvV-LvtRUEgclkBYd3bStC-qylSZ3tw20,11
+bayessynth-0.1.dist-info/RECORD,,
