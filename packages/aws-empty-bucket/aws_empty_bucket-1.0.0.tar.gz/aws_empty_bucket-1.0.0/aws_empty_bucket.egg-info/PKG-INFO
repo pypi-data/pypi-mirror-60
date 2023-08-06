@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: aws-empty-bucket
+Version: 1.0.0
+Summary: AWS CDK package that empties an S3 bucket upon resource deletion.
+Home-page: https://github.com/idenfy/AwsEmptyBucket.git
+Author: Laimonas Sutkus
+Author-email: laimonas@idenfy.com, laimonas.sutkus@gmail.com
+License: GNU GENERAL PUBLIC LICENSE Version 3
+Description: ## AWS Empty Bucket
+        
+        A package to empty an S3 bucket before deleting it.
+        
+        #### Description
+        
+        A project exposes a custom resource class `EmptyS3` which provides 3 resources:
+        
+        - A CloudFormation custom resource object
+        - A custom resource backend (lambda function)
+        - Backend's role
+        
+        
+        # Release history
+        
+        #### 1.0.0
+        Initial project. Not tested. No extensive readme.
+        
+Keywords: AWS CDK S3 CustomResource
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

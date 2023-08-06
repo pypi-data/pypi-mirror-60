@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+aws_empty_bucket/__init__.py
+aws_empty_bucket/empty_s3.py
+aws_empty_bucket.egg-info/PKG-INFO
+aws_empty_bucket.egg-info/SOURCES.txt
+aws_empty_bucket.egg-info/dependency_links.txt
+aws_empty_bucket.egg-info/requires.txt
+aws_empty_bucket.egg-info/top_level.txt
+aws_empty_bucket/package/__init__.py
+aws_empty_bucket/package/action.py
+aws_empty_bucket/package/index.py
+aws_empty_bucket/package/setup.py
