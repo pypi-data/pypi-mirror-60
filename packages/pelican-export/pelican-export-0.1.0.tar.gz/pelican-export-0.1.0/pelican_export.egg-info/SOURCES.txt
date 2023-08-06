@@ -1,0 +1,7 @@
+README.md
+setup.py
+pelican_export.egg-info/PKG-INFO
+pelican_export.egg-info/SOURCES.txt
+pelican_export.egg-info/dependency_links.txt
+pelican_export.egg-info/requires.txt
+pelican_export.egg-info/top_level.txt
