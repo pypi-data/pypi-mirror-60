@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: agraph
+Version: 0.0.3
+Summary: ASCII graph definition utility
+Home-page: https://github.com/BoskieBuenos/agraph
+Author: boskiebuenos
+Author-email: UNKNOWN
+License: TODO
+Download-URL: https://github.com/BoskieBuenos/agraph/archive/v0.0.3.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 3.7
