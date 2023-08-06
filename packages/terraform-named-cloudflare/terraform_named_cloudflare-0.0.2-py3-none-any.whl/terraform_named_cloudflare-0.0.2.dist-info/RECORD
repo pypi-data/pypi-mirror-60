@@ -1,0 +1,15 @@
+terraform_named_cloudflare/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terraform_named_cloudflare/__main__.py,sha256=aIdffvUhnV9AGKEXTNCAYjHhysO4xBcSsWIpzDOIRTE,5998
+terraform_named_cloudflare/templates/A.tf.j2,sha256=tgTySWmr-V354Hy15TCSRMKWpkxeWsVOXuTjl206DuY,284
+terraform_named_cloudflare/templates/AAAA.tf.j2,sha256=JNAIq9oDuDeMiuKi3-QUXkul_cefDyGkoQKwDmuL_VI,290
+terraform_named_cloudflare/templates/CNAME.tf.j2,sha256=EyZjfRfzeqLFO3Yi84ccKwSR1Msnfh66hWOGz6x8K9A,292
+terraform_named_cloudflare/templates/MX.tf.j2,sha256=eAd0XjrihbSs8XJqMcW1PTiS_X60XRIu3RH7RB0YPXw,339
+terraform_named_cloudflare/templates/SRV.tf.j2,sha256=ctec8vU_rUXZRLRb0Z3j3i5YeJt8F-5JodYvWrsEQ94,680
+terraform_named_cloudflare/templates/TXT.tf.j2,sha256=RGD2dt0wwk8JZKCvpPAUd7KvrPbNv6eEBORKMIWDAMM,288
+terraform_named_cloudflare/templates/variables.tf.j2,sha256=shGG65FPOBWL2waFgGSa3NZWJfbtDmNmqEyLpi8XKaU,283
+terraform_named_cloudflare-0.0.2.data/scripts/terraform-named-cloudflare,sha256=Nm7sBZIpcavRfb0EXjkOaTN_WjOTVeCARjpJoivhA0I,102
+terraform_named_cloudflare-0.0.2.dist-info/LICENSE,sha256=8k92mZJHIjLiOrjb3y66dW0iZJv4t9KR3zD_T9HZ3M8,1076
+terraform_named_cloudflare-0.0.2.dist-info/METADATA,sha256=rINEQB32PHa2V4wT1d_9--9FMC5_Or611LH4yUyOhwc,2855
+terraform_named_cloudflare-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+terraform_named_cloudflare-0.0.2.dist-info/top_level.txt,sha256=hcMEt47e1xNGmmkdw6tPicCEWkleMqsagCCZrZh8bYg,27
+terraform_named_cloudflare-0.0.2.dist-info/RECORD,,
