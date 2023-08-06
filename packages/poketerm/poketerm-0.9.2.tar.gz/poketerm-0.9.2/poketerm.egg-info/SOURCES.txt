@@ -1,0 +1,13 @@
+README.md
+setup.py
+poketerm.egg-info/PKG-INFO
+poketerm.egg-info/SOURCES.txt
+poketerm.egg-info/dependency_links.txt
+poketerm.egg-info/entry_points.txt
+poketerm.egg-info/requires.txt
+poketerm.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/main.py
+src/one_liners.py
+src/pokemons.py

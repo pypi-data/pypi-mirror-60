@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: poketerm
+Version: 0.9.2
+Summary: Terminal welcome messages!
+Home-page: https://github.com/devarshi16/TerminalWelcome
+Author: devarshi16
+Author-email: devershigpt6@gmail.com
+License: UNKNOWN
+Description: 
+        Put a custom message and/or 
+        a pokemon ASCII art and/or 
+        a random oneliner when you start your terminal
+        
+Keywords: terminal ascii-art shell-script welcomemessage bash pikachu bulbasaur pokemon-terminal pokemon linux linux-shell meowth
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=2.7
