@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: pyadomd
+Version: 0.0.2
+Summary: A pythonic approach to query SSAS data models
+Home-page: https://github.com/Andboye/Pyadomd
+Author: SCOUT
+Author-email: andboye@outlook.com
+License: Apache License 2.0
+Download-URL: https://github.com/Andboye/Pyadomd/archive/v_0.0.2.tar.gz
+Description: # Pyadomd
+        
+        A pythonic approach to query SSAS data models.
+        
+        ## Query SSAS Tabular model
+        
+        ```python
+        from pyadomd import Pyadomd
+        
+        from sys import path
+        path.append('\\Program Files\\Microsoft.NET\\ADOMD.NET\\150')
+        
+        conn_str = 'Provider=MSOLAP;Data Source=localhost;Catalog=AdventureWorks;'
+        query = """EVALUATE Product"""
+        
+        with Pyadomd(conn_str) as conn:
+            with conn.cursor().execute(query) as cur:
+                print(cur.fetchall())
+        ```
+        
+        ## Integrates easily with pandas
+        
+        ```python
+        
+        from pandas import DataFrame
+        
+        with Pyadomd(conn_str) as conn:
+            with conn.cursor().execute(q) as cur:
+                df = DataFrame(cur.fetchone(),
+                columns=[i.name for i in cur.description])
+        ```
+Keywords: adomd,ssas,ssas-tabular,ssasadomd
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
