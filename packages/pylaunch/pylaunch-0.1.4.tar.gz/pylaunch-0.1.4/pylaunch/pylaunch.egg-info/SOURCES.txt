@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pylaunch/__init__.py
+pylaunch/dial.py
+pylaunch/ssdp.py
+pylaunch/xmlparse.py
+pylaunch/pylaunch.egg-info/PKG-INFO
+pylaunch/pylaunch.egg-info/SOURCES.txt
+pylaunch/pylaunch.egg-info/dependency_links.txt
+pylaunch/pylaunch.egg-info/requires.txt
+pylaunch/pylaunch.egg-info/top_level.txt
