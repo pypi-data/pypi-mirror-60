@@ -1,0 +1,35 @@
+---
+- job:
+    name: kolla-ansible-base
+    pre-run: tests/pre.yml
+    run: tests/run.yml
+    post-run: tests/post.yml
+    attempts: 5
+    timeout: 7200
+    required-projects:
+      - openstack/kolla
+      - openstack/kolla-ansible
+      - openstack/requirements
+    irrelevant-files:
+      - ^.*\.rst$
+      - ^doc/.*
+      - ^test-requirements.txt$
+      - ^releasenotes/.*$
+    vars:
+      scenario: aio
+    host-vars:
+      primary:
+        ansible_python_interpreter: python2
+      secondary1:
+        ansible_python_interpreter: python2
+      secondary2:
+        ansible_python_interpreter: python2
+    roles:
+      - zuul: zuul/zuul-jobs
+
+- job:
+    name: kolla-ansible-bifrost-base
+    parent: kolla-ansible-base
+    vars:
+      scenario: bifrost
+      install_type: source
