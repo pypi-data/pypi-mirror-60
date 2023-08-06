@@ -1,0 +1,11 @@
+magic_sisters_932/__init__.py,sha256=MGkLjVD5fPhTarh_Qr6isL66dLG9yFE6GVKV4lG7dc8,50
+magic_sisters_932/actions.py,sha256=5YoWc6KczxiHF0ovbgg40lJJdmjr03N1wX51Y5gPX4U,102
+magic_sisters_932/roomie_names.py,sha256=ZrO6lXpfMae9hNBkf8kxQ_0MnR3hOArURpAERYRKrUU,116
+test_package/__init__.py,sha256=wX-ZfgrC6t3BJfCsywGu-3v3LwOoEt8KvdhbNgL_V84,59
+test_package/pip_function_A.py,sha256=RkEturAXM4OBXbTzu3FRDqxlEBHlTv1snF1p3RCqRCM,105
+test_package/pip_function_B.py,sha256=P7SSXAHNrPVJ29EjKDXLQ88wesruoNbDzhFKgqEMH5s,100
+magic_sisters_932-0.0.3.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magic_sisters_932-0.0.3.dist-info/METADATA,sha256=GzGrrn43O65sc7Q_X72ciaS_UVNU-tl-IcwMHdyFnk8,473
+magic_sisters_932-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+magic_sisters_932-0.0.3.dist-info/top_level.txt,sha256=1WyFB2etitmg0v21ZojpEFL3gTkDWA8rEgKLZSy9nK0,18
+magic_sisters_932-0.0.3.dist-info/RECORD,,
