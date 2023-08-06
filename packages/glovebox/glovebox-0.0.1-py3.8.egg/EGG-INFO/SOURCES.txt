@@ -1,0 +1,7 @@
+setup.py
+glovebox/__init__.py
+glovebox.egg-info/PKG-INFO
+glovebox.egg-info/SOURCES.txt
+glovebox.egg-info/dependency_links.txt
+glovebox.egg-info/top_level.txt
+glovebox.egg-info/zip-safe
