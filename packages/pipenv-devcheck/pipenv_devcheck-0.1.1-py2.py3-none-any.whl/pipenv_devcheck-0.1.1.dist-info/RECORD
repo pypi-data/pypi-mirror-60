@@ -1,0 +1,11 @@
+pipenv_devcheck/__init__.py,sha256=mWx8bUjkqVDpWluEJ6G-owsUWVIZOG-tBediRcYLOFM,335
+pipenv_devcheck/__version__.py,sha256=yqvN5wYqoNCXW-NHdu7DigOLzJvt972kE0ErLx6qjyY,278
+pipenv_devcheck/check_fns.py,sha256=-HwPVwMOylILi2JsPgD20_hGksVJnnmXXe2ObXYXSE8,2766
+pipenv_devcheck/pipenv_setup_comp.py,sha256=w99TrK0XgV9_1NoUVemIUdukVd8E2S5jtQpN-TjoXN0,7897
+pipenv_devcheck/regexps.py,sha256=k2OxERdN_XG8g2_HMeqqTQCqjYqBKjhwiYa9jM7Fw6c,922
+pipenv_devcheck-0.1.1.dist-info/LICENSE.md,sha256=JuBZHz8rrLD2Yg99hiurfdFB4WThYnPFBS6xtA_13jg,1082
+pipenv_devcheck-0.1.1.dist-info/METADATA,sha256=Mdpk0R3JDRXF2jYfbfscgiGR3giaYLoXk7bz5uTxE2I,2418
+pipenv_devcheck-0.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pipenv_devcheck-0.1.1.dist-info/entry_points.txt,sha256=_IhRkDM8u5-X2mhuOjhHiR1kiKkAJQXJIL-gmq3-6CI,66
+pipenv_devcheck-0.1.1.dist-info/top_level.txt,sha256=09cLUWOaUMFj41mb-BYI4B8Queat797C4ebGbYw_imY,16
+pipenv_devcheck-0.1.1.dist-info/RECORD,,
