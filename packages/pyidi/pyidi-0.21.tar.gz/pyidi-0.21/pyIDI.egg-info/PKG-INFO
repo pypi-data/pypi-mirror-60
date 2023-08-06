@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: pyidi
+Version: 0.21
+Summary: Python Image Displacement Identification.
+Home-page: https://github.com/ladisk/pyidi
+Author: Klemen Zaletelj, Domen Gorjup, Janko Slavič
+Author-email: janko.slavic@fs.uni-lj.si, ladisk@gmail.com
+License: UNKNOWN
+Description: 
+        pyidi
+        =====
+        Image-based Displacement Identification (IDI) implementation in python.
+        
+        The documentation for this repository is accessible `here <https://pyidi.readthedocs.io/en/latest/index.html>`_.
+        
+Keywords: computer vision dic gradient-based image identification
+Platform: UNKNOWN
