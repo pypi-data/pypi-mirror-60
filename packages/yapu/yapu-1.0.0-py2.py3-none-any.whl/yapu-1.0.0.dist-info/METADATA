@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: yapu
+Version: 1.0.0
+Summary: Yet Another Python Utils is a libray of generic wrappers around standard libraries that I've built over the years. In general these provide simpler defaults and nicer names functions that I use over and over.
+Home-page: https://github.com/pestrela/yapu
+Author: Pedro Estrela
+Author-email: pedro.estrela@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.6
+
+See http://pypi.python.org/pypi/yapu/
+
+
