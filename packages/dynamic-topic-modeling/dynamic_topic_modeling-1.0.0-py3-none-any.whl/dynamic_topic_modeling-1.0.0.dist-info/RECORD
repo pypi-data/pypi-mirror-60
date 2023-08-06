@@ -1,0 +1,11 @@
+dynamic_topic_modeling/__init__.py,sha256=ZhzQKWZ8RFrTIkj7z87B144DI95e8LMfA5w8NDWQDtg,23
+dynamic_topic_modeling/_nbdev.py,sha256=5FgUrqAUNvGVkqZ_ekI5rlguf2BxNNG4a7lyLEGl58s,652
+dynamic_topic_modeling/dtm.py,sha256=9eoJbKaTMR6Ae2sRp6ivC5KLGFwSUGT2HALSmek3Zrs,99
+dynamic_topic_modeling/gensim_lda.py,sha256=N9zsqArK602QWaWyVM__9e86LWBmQpL0ongEwX_86wQ,106
+dynamic_topic_modeling/sklearn_lda.py,sha256=L_DmJKopE-RvP_v0UjCeqTK19cvZ2b_2Jq18Gj2JTJI,2847
+dynamic_topic_modeling-1.0.0.dist-info/LICENSE.md,sha256=0F4WH2rKAikjfALtsNQL64UGo3BISi-GbJDr2Jdsp9A,10658
+dynamic_topic_modeling-1.0.0.dist-info/METADATA,sha256=mceO0iblOIFPD_O-TdRXvJsfJxri88t5O_90L6PKjwE,797
+dynamic_topic_modeling-1.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+dynamic_topic_modeling-1.0.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+dynamic_topic_modeling-1.0.0.dist-info/top_level.txt,sha256=YaChwPL0NffoTkXoSzewcbE5Kz4VICoceMP3e9vmAyU,23
+dynamic_topic_modeling-1.0.0.dist-info/RECORD,,
