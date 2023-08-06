@@ -1,0 +1,80 @@
+Metadata-Version: 1.2
+Name: pylone
+Version: 0.1.1
+Summary: A Python Serverless framework
+Home-page: https://github.com/mathix420/pylone
+Author: Arnaud Gissinger
+Author-email: agissing@student.42.fr
+License: MIT
+Description: # pylone
+        Python serverless framework
+        
+        # Usage
+        
+        ## Start a project
+        
+        To start a new pylone project just type 
+        ```bash
+        pylone init
+        ```
+        ## Create a function
+        
+        ```bash
+        pylone create-function
+        ```
+        
+        ## Create a layer
+        
+        ```bash
+        pylone create-layer
+        ```
+        
+        ## Push architecture
+        
+        ```bash
+        pylone archi push
+        ```
+        
+        ## Update code and configs
+        
+        ```bash
+        pylone push
+        ```
+        
+        # Template reference
+        
+        ## `source` parameter
+        
+        You can use the `source` parameter to force a directory to be used as source
+        ```yaml
+        source: ./bin
+        ```
+        
+        ## `before-script` parameter
+        
+        You can use the `before-script` parameter to execute a bash script before processing an entity
+        ```yaml
+        before-script: ./script.sh
+        # OR
+        before-script: "echo 'Starting ...'"
+        ```
+        
+        ## `after-script` parameter
+        
+        Similar as `before-script` but launch script at the end of process
+        ```yaml
+        after-script: ./script.sh
+        # OR
+        after-script: "echo 'END of process'"
+        ```
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
