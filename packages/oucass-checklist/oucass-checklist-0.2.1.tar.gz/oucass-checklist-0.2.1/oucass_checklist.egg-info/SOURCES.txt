@@ -1,0 +1,13 @@
+README.md
+setup.py
+checklist/__init__.py
+checklist/checklist.py
+checklist/reset_user_settings.py
+checklist/update_preserve_user_settings.py
+checklist/user_settings/__init__.py
+oucass_checklist.egg-info/MANIFEST.in
+oucass_checklist.egg-info/PKG-INFO
+oucass_checklist.egg-info/SOURCES.txt
+oucass_checklist.egg-info/dependency_links.txt
+oucass_checklist.egg-info/entry_points.txt
+oucass_checklist.egg-info/top_level.txt
