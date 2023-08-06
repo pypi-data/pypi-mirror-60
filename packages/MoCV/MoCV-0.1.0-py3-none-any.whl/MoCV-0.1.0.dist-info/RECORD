@@ -1,0 +1,15 @@
+MoCV/__init__.py,sha256=EGoKs_LhXckUmryE2oT1IQhBdQKMIRiV7P7a8yM_zug,211
+MoCV/contrastImage.py,sha256=tyNtgxlUMIYzm7L86D2jH-KP7D4dwOZAYR9TMD9pTfE,914
+MoCV/geom_transform.py,sha256=istWKAqaHDaL9DkEqXgdc2LWYem8NdgRchBj7-wnF5A,1036
+MoCV/histogram.py,sha256=1E498zZTnEtf0NJ_94m3vabI1-a8HNJzYF9Gi6wNvAA,951
+MoCV/image_function.py,sha256=NAaYhk9YZSB5agXvTzxCkjLcDzpHB088MzEF1DFMDTA,559
+MoCV/linear_scale_image.py,sha256=kdkT6AH8eq_ueLC3e3xVjctd2y9MNEfZBqheg1oWIWE,671
+MoCV/pixel.py,sha256=YZC_YnWrZp-PdOaUISmy9tSoHFT2D72lKdDDbcJuYxg,93
+MoCV/segmentation.py,sha256=kMRDpMNz34QoEmrpEu_5LFSKQvy3SgkYu-fZ93aB7Io,3181
+lib/Histogram.py,sha256=GSyxnSb8eQfc-fwjEjfo1rtjvQdcJiHDc1JKXbcAJr8,826
+lib/__init__.py,sha256=FV2MJa7eEv05uoCIAQgRWNjOojuFErqx0Jf5UJ9Bfi0,172
+MoCV-0.1.0.dist-info/LICENSE,sha256=pJA3EEoRGsRKfeMsNbVGmn6pOUf9-dHUIk_RCNBdTng,1069
+MoCV-0.1.0.dist-info/METADATA,sha256=8AC7z7WlOukLv1Cxkw6haeOaC-PO3tXwuQKHWWeUFi0,1118
+MoCV-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+MoCV-0.1.0.dist-info/top_level.txt,sha256=sJOquXdoq6RaSSDHLhOBEoI0tzaRVSjhapKau8tqPyI,5
+MoCV-0.1.0.dist-info/RECORD,,
