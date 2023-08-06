@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: gitStatus
+Version: 1.2
+Summary: Get the git status of any repo
+Home-page: https://github.com/Matt-Gleich/Get-Git-Status
+Author: Matthew Gleich
+Author-email: matthewgleich@gmail.com
+License: MIT
+Download-URL: https://github.com/Matt-Gleich/Get-Git-Status/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: git
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
