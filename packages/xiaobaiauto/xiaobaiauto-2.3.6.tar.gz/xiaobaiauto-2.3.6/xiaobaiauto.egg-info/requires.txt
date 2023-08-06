@@ -1,0 +1,4 @@
+selenium
+pyquery
+requests
+Appium-Python-Client
