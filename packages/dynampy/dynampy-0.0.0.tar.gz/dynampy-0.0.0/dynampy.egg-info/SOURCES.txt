@@ -1,0 +1,8 @@
+README.md
+setup.py
+dynampy/__init__.py
+dynampy.egg-info/PKG-INFO
+dynampy.egg-info/SOURCES.txt
+dynampy.egg-info/dependency_links.txt
+dynampy.egg-info/requires.txt
+dynampy.egg-info/top_level.txt
