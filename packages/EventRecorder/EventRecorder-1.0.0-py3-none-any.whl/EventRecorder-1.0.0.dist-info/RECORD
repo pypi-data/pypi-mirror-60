@@ -1,0 +1,10 @@
+EventRecorder-1.0.0.data/scripts/remind,sha256=A3xfNY0CvEepMajnqhIcS7xm1_vrlP9I33FJVjrHBe4,28
+scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scripts/filterSearch.py,sha256=Aeaq8-A_keLvwa3EtwBWKlcywmqHS-gXHzb1_sbRMLc,2070
+scripts/main.py,sha256=tQbxQHOwWzFeJ1H2KI7h7wcNmT2Zt8McyqnM_UmzrKo,3322
+scripts/pickling.py,sha256=l47uXTNvYatOWqFJ4qoDqHWXZ8ue-2zHiSC4locjSG0,429
+EventRecorder-1.0.0.dist-info/LICENSE.txt,sha256=9oikhiH7Vt4EXxpha3Io5f--skGJo9QrSrDv8PfJAwk,1070
+EventRecorder-1.0.0.dist-info/METADATA,sha256=IE654E-zrvzKN-uw9v7bNBPv3AvXW1kG_GcE-dpXGJA,728
+EventRecorder-1.0.0.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+EventRecorder-1.0.0.dist-info/top_level.txt,sha256=rmzd5mewlrJy4sT608KPib7sM7edoY75AeqJeY3SPB4,8
+EventRecorder-1.0.0.dist-info/RECORD,,

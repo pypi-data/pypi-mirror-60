@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: EventRecorder
+Version: 1.0.0
+Summary: CommandLine utility to keep track of important events and reminders
+Home-page: https://github.com/NDThacker/remind
+Author: Naman Thacker
+Author-email: namanthacker98@gmail.com
+License: BSD
+Keywords: commandline event recorder utility
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Remind
+
+Event Reminder CommandLine Utiliy Built with Python
+
+> WIP
+
+
+This project is licensed under the terms of the MIT license
+
