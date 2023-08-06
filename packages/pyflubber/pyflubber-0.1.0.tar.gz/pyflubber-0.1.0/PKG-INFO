@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pyflubber
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/maxme1/pyflubber
+License: MIT
+Download-URL: https://github.com/maxme1/pyflubber/v0.1.0.tar.gz
+Description: ## pyflubber
+        
+        Linear interpolation of open and closed lines for Python.
+        
+        The code for closed lines is based on the 
+        [flubber](https://github.com/veltman/flubber) package, hence the name.
+        
+        A version for Dart can be found [here](https://github.com/maxme1/dart_flubber).
+        
+        ## Installation
+        
+        
+        ```bash
+        pip install pyflubber
+        ```
+        
+        or
+        
+        ```bash
+        pip install git+https://github.com/maxme1/pyflubber.git
+        ```
+        
+        or 
+        
+        ```bash
+        git clone https://github.com/maxme1/pyflubber.git
+        cd pyflubber
+        pip install -e .
+        ```
+        
+        ## Usage
+        
+        ```python
+        from pyflubber import interpolate
+        
+        middle = interpolate(first, second, 0.5, closed=False)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
