@@ -1,0 +1,17 @@
+callofduty/__init__.py,sha256=fDPbKDLa2pcI1Rr6_9uxKYkKEkWg59iEqWdmL53zJMc,645
+callofduty/auth.py,sha256=cxjfcaxt5PPJ_GV0RINofRMdgek5XZaWx4pLbJuZfWg,3742
+callofduty/client.py,sha256=oznuntYOfxbLs1_iSNmE0POx-qtuC96xBQis4ZMM30Y,29890
+callofduty/enums.py,sha256=-WmNNyhaWiz6QcPdM_cYort2Q7rNnqvxMY9Z-4QLne8,715
+callofduty/errors.py,sha256=2sRShe6nzwMqe0ShE6-r4Mw_vkvwYYZgGVK65UptClE,2564
+callofduty/http.py,sha256=cI3rp6tqlKkwEpAg8RKwe-x9F6scPFaVo7euYsf62L0,10452
+callofduty/leaderboard.py,sha256=Nx_tNwj5pw2kiYBueFpGw96e4s_ybQC1McOPxdWcGRg,3622
+callofduty/loot.py,sha256=NDsjJmBtQwbCkHpinveAmZn6TUTaIj81uVO1ArBq9Lg,2701
+callofduty/match.py,sha256=hUN0HJJCjMwX8o6G5d5eJuy2yLYEwqLKtLmm8qVDkBg,1444
+callofduty/object.py,sha256=JP9gdN0CbAonrZ77cYXBu8GhlE8sm_Hk8g72wbjoZ8c,694
+callofduty/player.py,sha256=KDlRQ03rOfpZ1_dLyY6rHUpcT-5Y8iizissRPxqv0KI,5496
+callofduty/squad.py,sha256=SR2UMDUD36SeLY5PUy3TXmLrMjj_oFEYaN6s4wPC2T8,2686
+callofduty/utils.py,sha256=f41RH5np9yXNWk5F-thonVnpoIoHDorFKVndBXJEg-k,3591
+callofduty.py-1.0.1.dist-info/LICENSE,sha256=c_rNyCzT0oFJsqFvd8JdC3DZBQroG9akTfHQQQYO3-k,1083
+callofduty.py-1.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+callofduty.py-1.0.1.dist-info/METADATA,sha256=V1dg84s3PCyh3PiJ7_uL5CzVoj_RZAU_N46aiyrSDFE,4700
+callofduty.py-1.0.1.dist-info/RECORD,,
