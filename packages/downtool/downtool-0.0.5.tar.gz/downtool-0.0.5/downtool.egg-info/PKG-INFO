@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: downtool
+Version: 0.0.5
+Summary: a downtool for everyone who want to have a good experience with Crawling every image wanted.
+Home-page: https://github.com/czhmisaka/downtool
+Author: chen zhihan&xu chengbo
+Author-email: im.czh@qq.com
+License: MIT Licence
+Description: a downtool for everyone who want to have a good experience with Crawling every image wanted.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
