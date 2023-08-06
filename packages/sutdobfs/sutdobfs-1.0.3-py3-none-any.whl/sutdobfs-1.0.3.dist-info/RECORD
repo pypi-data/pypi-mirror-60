@@ -1,0 +1,13 @@
+sutdobfs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sutdobfs/__main__.py,sha256=xk_vZR0hasrqbmoJr7jNaZa3LRWp02eT40urW_6nwvg,4333
+sutdobfs/gatekeepers/__init__.py,sha256=kwLA6wu0BLpEaE9bu1AEL_ub3PtCy89Z1HLihsqF58s,2529
+sutdobfs/memes/jojo.txt,sha256=yns8FKuNiXy712zdl1rhA_JlvBGBlD78TlwAYkvq2Lk,326
+sutdobfs/memes/memes.txt,sha256=on98ZW8S5KrkJ8YFTC_Eocf5_ebO9JH_zRf02wPY1Bc,789
+sutdobfs/providers/__init__.py,sha256=wg18svnT47V0LVSwaBJfU90mq8q3TQb2BF4gRV20dCk,3646
+sutdobfs/providers/utils.py,sha256=wKQD7GFKqavh_A3TaV-nwUc8pI_5w7TLriJaVeaiAe8,1689
+sutdobfs-1.0.3.dist-info/LICENSE.md,sha256=eVpS2JNDtCBcioqgSA1p_Sxm9HtvxPJ41nhjCj7F6rU,1063
+sutdobfs-1.0.3.dist-info/METADATA,sha256=wknyFIzXH27WuwLfBBm3Ym_CkFvzGiSz3pvDubA1vSU,7569
+sutdobfs-1.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sutdobfs-1.0.3.dist-info/entry_points.txt,sha256=adGbqsa0a2AWa1WrKIesZy-d38-EhC1LCgqZMXXbWN8,53
+sutdobfs-1.0.3.dist-info/top_level.txt,sha256=AvXGtulbIuGTubsivCnl59xYGSDOsgD4RHAxaWdJNYc,9
+sutdobfs-1.0.3.dist-info/RECORD,,
