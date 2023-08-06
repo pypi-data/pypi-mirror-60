@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: slack-bundle
+Version: 1.0
+Summary: Slack support for applauncher
+Home-page: https://github.com/applauncher-team/slack_bundle
+Author: Alvaro Garcia Gomez
+Author-email: maxpowel@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/applauncher-team/slack_bundle/archive/master.zip
+Keywords: applauncher,slack
+Platform: UNKNOWN
+Classifier: Topic :: Adaptive Technologies
+Classifier: Topic :: Software Development
+Classifier: Topic :: System
+Classifier: Topic :: Utilities
+Requires-Dist: applauncher
+Requires-Dist: slackclient (==1.3.1)
+
+UNKNOWN
+
+
