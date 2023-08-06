@@ -1,0 +1,10 @@
+README.md
+setup.py
+w1_datalogger.egg-info/PKG-INFO
+w1_datalogger.egg-info/SOURCES.txt
+w1_datalogger.egg-info/dependency_links.txt
+w1_datalogger.egg-info/entry_points.txt
+w1_datalogger.egg-info/top_level.txt
+w1_datalogger.egg-info/zip-safe
+w1datalogger/__init__.py
+w1datalogger/logger.py

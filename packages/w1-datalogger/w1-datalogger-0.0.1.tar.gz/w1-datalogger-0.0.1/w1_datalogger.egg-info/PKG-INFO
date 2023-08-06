@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: w1-datalogger
+Version: 0.0.1
+Summary: Log data from local w1 busses to a cloud endpoint
+Home-page: UNKNOWN
+Author: Steve Work
+Author-email: steve@work.renlabs.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
