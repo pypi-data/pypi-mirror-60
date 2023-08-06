@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+nbtabs/__init__.py
+nbtabs.egg-info/PKG-INFO
+nbtabs.egg-info/SOURCES.txt
+nbtabs.egg-info/dependency_links.txt
+nbtabs.egg-info/entry_points.txt
+nbtabs.egg-info/requires.txt
+nbtabs.egg-info/top_level.txt
+nbtabs/templates/custom.css
+nbtabs/templates/nbtabs-basic.tpl
+nbtabs/templates/nbtabs-full.tpl
+nbtabs/templates/puretabs.js
