@@ -1,0 +1,57 @@
+#!/usr/bin/python3 -u
+# BOTD - IRC channel daemon
+#
+# bin/botctl
+
+__version__ = 1
+
+import os, sys ; sys.path.insert(0, os.getcwd())
+
+import logging
+
+from botd.err import EINIT
+from botd.evt import Event
+from botd.krn import Kernel, kernels
+from botd.hdl import dispatch
+from botd.log import level
+from botd.shl import parse_cli
+from botd.trc import get_exception
+from botd.trm import termsave, termreset
+
+opts = [
+    ('-d', '--datadir', 'store', str, "", 'set working directory.', 'workdir'),
+    ('-m', '--modules', 'store', str, "", 'modules to load.', 'modules'),
+    ('-l', '--loglevel', 'store', str, "", 'set loglevel.', 'level'),
+    ('-a', '--logdir', "store", str, "", "directory to find the logfiles.", 'logdir'),
+]
+
+def execute(main):
+    termsave()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("")
+    except EINIT:
+        pass
+    except PermissionError:
+        print("you need root permissions.")
+    except Exception:
+        logging.error(get_exception())
+    finally:
+        termreset()
+
+def main():
+    cfg = parse_cli("botctl", __version__, opts)
+    if not cfg.txt:
+        return
+    k = Kernel()
+    k.walk("botd.cmd")
+    k.walk(cfg.modules, True)
+    k.fleet.add(k)
+    e = Event()
+    e.txt = cfg.txt
+    dispatch(k, e)
+    e.wait()
+
+execute(main)
+os._exit(0)

@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+# BOTD - IRC channel daemon.
+# -*- coding: utf-8 -*-
+#
+# echo input to BOTD so it can display that txt on the channel.
+
+import logging
+import os
+import select
+import socket
+import sys
+
+udp = {}
+udp["host"] = "localhost"
+udp["port"] = 5500
+udp["password"] = "boh"
+udp["seed"] = "blablablablablaz" # needs to be 16 chars wide
+udp["server"] = udp["host"]
+
+def out(txt):
+    data = '%s %s' % (udp["password"], txt.strip())
+    #sock = socket.socket(socket.AF_INET6, socket.SOCK_DGRAM)
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    sock.sendto(bytes(data, "utf-8"), (udp["host"], udp["port"]))
+
+def main():
+    if len(sys.argv) > 1:
+        txt = " ".join(sys.argv[1:])
+        out(txt)
+        return
+    if not select.select([sys.stdin,],[],[],0.0)[0]:
+        return
+    while 1:
+        try:
+            (i, o, e) = select.select([sys.stdin,], [], [sys.stderr,])
+        except KeyboardInterrupt:
+            return
+        if e:
+            break
+        stop = False
+        for sock in i:
+            txt = sock.readline()
+            if not txt:
+                stop = True
+                break
+            out(txt)
+        if stop:
+            break
+
+if __name__ == "__main__":
+    main()
+    os._exit(0)
