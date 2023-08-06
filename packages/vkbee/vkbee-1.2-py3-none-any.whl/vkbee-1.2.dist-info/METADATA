@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: vkbee
+Version: 1.2
+Summary: Simple Async VKLibrary faster than vk_api
+Home-page: https://github.com/asyncvk/vkbee
+Author: YamkaFox
+Author-email: cryptoyamafox@gmail.com
+License: Mozilla Public License 2.0
+Project-URL: Github, https://github.com/asyncvk/vkbee
+Project-URL: Documentation, https://github.com/asyncvk/vkbee
+Keywords: vk api framework python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: requests
+
+п»ї![vkbee](https://github.com/asyncvk/vkbee/blob/master/vkbee/bgtio.png?raw=true)
+### vkbee
+## РЈСЃС‚Р°РЅРѕРІРєР°
+```bash
+pip3 install vkbee
+```
+Simple Async VKLibrary faster than vk_api
+# РџСЂРёРјРµСЂ СЂР°Р±РѕС‚С‹
+```python
+import aiohttp
+import asyncio
+import vkbee
+import time
+import datetime
+
+async def main(loop):
+    token = "СЃСЋРґР°С‚РѕРєРµРЅ"
+    vk = vkbee.VkApi(token, loop=loop)
+    delta = datetime.timedelta(hours=8, minutes=0)  # СЂР°Р·РЅРёС†Р° РѕС‚ UTC. РњРѕР¶РµС‚Рµ РІРїРёСЃР°С‚СЊ Р»СЋР±РѕРµ Р·РЅР°С‡РµРЅРёРµ РІРјРµСЃС‚Рѕ 3
+    t = (datetime.datetime.now(datetime.timezone.utc) + delta)  # РџСЂРёСЃРІР°РёРІР°РµРј РґР°С‚Сѓ Рё РІСЂРµРјСЏ РїРµСЂРµРјРµРЅРЅРѕР№ В«tВ»
+    nowtime = t.strftime("%H:%M")  # С‚РµРєСѓС‰РµРµ РІСЂРµРјСЏ
+    nowdate = t.strftime("%d.%m.%Y")  # С‚РµРєСѓС‰Р°СЏ РґР°С‚Р°
+    none={}
+    on = await vkbee.VkApi.call(vk,"friends.getOnline",none)
+    counted = len(on)  # СЃС‡РёС‚Р°РµРј РєРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ СЃРїРёСЃРєРµ
+
+    data = {
+        'text':'VKBee: '+nowtime + " в—Џ " + nowdate + " в—Џ " + "Р”СЂСѓР·РµР№ РѕРЅР»Р°Р№РЅ: " + str(counted)
+    }
+    while True:
+        a=await vkbee.VkApi.call(vk,'status.set',data)
+        print(a)
+        time.sleep(1)
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main(loop))
+
+```
+
+
+
+
+
