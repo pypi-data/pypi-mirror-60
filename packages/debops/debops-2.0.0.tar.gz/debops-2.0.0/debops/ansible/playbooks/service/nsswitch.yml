@@ -1,0 +1,15 @@
+---
+
+- name: Manage Name Service Swtich configuration
+  collections: [ 'debops.debops' ]
+  hosts: [ 'debops_all_hosts', 'debops_service_nsswitch' ]
+  become: True
+
+  environment: '{{ inventory__environment | d({})
+                   | combine(inventory__group_environment | d({}))
+                   | combine(inventory__host_environment  | d({})) }}'
+
+  roles:
+
+    - role: nsswitch
+      tags: [ 'role::nsswitch', 'skip::nsswitch' ]
