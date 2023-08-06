@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: forexcast
+Version: 0.1.0
+Summary: Simple currency forecasting for IEX data
+Home-page: https://github.com/IntrospectData/forexcast
+Author: Bradley Reimers
+Author-email: b.a.reimers@gmail.com
+License: MIT
+Download-URL: https://github.com/IntrospectData/forexcast/archive/v0.1.0.tar.gz
+Keywords: forecast,finance,fintech,currency,fbprophet
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Click
+Requires-Dist: fbprophet
+Requires-Dist: holidays (<=0.10)
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: plotly
+
+# Forexcast
+
+Simple currency forecasting for IEX data
+
+## Installation
+
+### Using pip
+
+`$ pip3 install forexcast`
+
+### From source
+
+`$ git clone git@github.com:IntrospectData/forexcast.git`
+
+`$ python3 -m venv env`
+
+`$ source env/bin/activate`
+
+`(env) $ pip3 install forexcast`
+
+
+## Setup
+On your first use the app will ask for your IEX api key and your desired quote-currency.
+
+These values are stored *unencrypted* in `$HOME/.config/forexcast.json`
+
+## Usage
+```bash
+$ forexcast --help
+Usage: forexcast [OPTIONS] CURRENCY
+
+  Simple currency forecasting for IEX data
+
+  * CURRENCY = 3 char ISO code for target currency
+
+  * Dates should be in YYYY-MM-DD format
+
+Options:
+  --from_date TEXT   Data after this date will be included.
+  --to_date TEXT     Data after this date will be excluded.
+  --periods INTEGER  Periods to predict.
+  --out TEXT         If specified will save forecast in specified dir.
+  --help             Show this message and exit.
+```
+
+
