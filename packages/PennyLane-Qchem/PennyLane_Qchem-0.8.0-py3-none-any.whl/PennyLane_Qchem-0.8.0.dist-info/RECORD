@@ -1,0 +1,9 @@
+pennylane_qchem/__init__.py,sha256=Fhu111mUrphXRIb0g1a1O7dVMqhXLMuQ9wXCEPewc6Q,711
+pennylane_qchem/_version.py,sha256=0-1lVjCe5CrFkOPUYKIfAB0ttvgtddFWJTYRjvcQnR0,673
+pennylane_qchem/qchem.py,sha256=XQn6FcMLsbhwult9HAepg02tNqIvGUTOT3EK2xbAFgs,21860
+PennyLane_Qchem-0.8.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+PennyLane_Qchem-0.8.0.dist-info/METADATA,sha256=0UylQCXIBdF-omR3jZwGIC4-wszp8WFjpv9ScYaneWQ,3848
+PennyLane_Qchem-0.8.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+PennyLane_Qchem-0.8.0.dist-info/entry_points.txt,sha256=4uXvcaHanGIfKR95nXvieUGKYIcPcUsfoHJJ-upZ1Go,55
+PennyLane_Qchem-0.8.0.dist-info/top_level.txt,sha256=csFE3jZalTB_izRgpP0bW6qmDJ31TQjuVh0Au4stxiY,16
+PennyLane_Qchem-0.8.0.dist-info/RECORD,,
