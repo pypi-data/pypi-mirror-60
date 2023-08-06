@@ -1,0 +1,6 @@
+pyramid>=1.10.4
+cubicweb>=3.26.14
+zope.interface>=4.1.2
+requests>=2.22.0
+six>=1.4.0
+pysaml2>=4.8.0
