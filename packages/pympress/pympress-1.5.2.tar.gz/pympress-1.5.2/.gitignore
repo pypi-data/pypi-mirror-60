@@ -1,0 +1,7 @@
+*.pyc
+build/
+dist/
+
+pympress.egg-info/
+
+pympress/share/locale/*/LC_MESSAGES/pympress.mo

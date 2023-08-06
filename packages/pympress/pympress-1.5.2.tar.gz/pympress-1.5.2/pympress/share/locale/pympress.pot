@@ -1,0 +1,447 @@
+msgid "(and optionally seconds)"
+msgstr ""
+
+msgid "(paused)"
+msgstr ""
+
+msgid "Additional features"
+msgstr ""
+
+msgid "Adjust alignment of slides in projector screen"
+msgstr ""
+
+msgid "All files"
+msgstr ""
+
+msgid "Annotations"
+msgstr ""
+
+msgid "Big buttons"
+msgstr ""
+
+msgid "Blank screen"
+msgstr ""
+
+msgid "Cairo can not draw gif"
+msgstr ""
+
+msgid "Cancel goto/jump/highlighting/zooming"
+msgstr ""
+
+msgid "Clock"
+msgstr ""
+
+msgid "Close file"
+msgstr ""
+
+msgid "Content and presenter window must not be on the same monitor if you start full screen!"
+msgstr ""
+
+msgid "Content blanked"
+msgstr ""
+
+msgid "Content fullscreen"
+msgstr ""
+
+msgid "Contributors:"
+msgstr ""
+
+msgid "Could not find the file \"{}\""
+msgstr ""
+
+msgid "Current slide"
+msgstr ""
+
+msgid "ERROR: Gobject Introspections module is missing, make sure Gtk and pygobject are installed on your system."
+msgstr ""
+
+msgid "Error loading icon for about window"
+msgstr ""
+
+msgid "Error opening the file \"{}\""
+msgstr ""
+
+msgid "First slide"
+msgstr ""
+
+msgid "For instructions, refer to https://github.com/Cimbali/pympress/blob/master/README.md#dependencies"
+msgstr ""
+
+msgid "Fullscreen Presentation running"
+msgstr ""
+
+msgid "Go back in slide history"
+msgstr ""
+
+msgid "Go forward in slide history"
+msgstr ""
+
+msgid "Go to page number"
+msgstr ""
+
+msgid "GtkImage gif player"
+msgstr ""
+
+msgid "Highlight"
+msgstr ""
+
+msgid "If using a virtualenv or anaconda, you can either allow system site packages, or run: pip install pygobject"
+msgstr ""
+
+msgid "Invalid log level \"{}\", try one of {}"
+msgstr ""
+
+msgid "Invalid time (mm or mm:ss expected), got \"{}\""
+msgstr ""
+
+msgid "Jump to page label"
+msgstr ""
+
+msgid "Last slide"
+msgstr ""
+
+msgid "Manage files"
+msgstr ""
+
+msgid "Media support uses {}."
+msgstr ""
+
+msgid "Navigating"
+msgstr ""
+
+msgid "Next slide"
+msgstr ""
+
+msgid "Next slide with different label"
+msgstr ""
+
+msgid "Not starting content or presenter window full screen because there is only one monitor"
+msgstr ""
+
+msgid "Notes"
+msgstr ""
+
+msgid "Notes position"
+msgstr ""
+
+msgid "Open _Recent"
+msgstr ""
+
+msgid "Open file"
+msgstr ""
+
+msgid "Open..."
+msgstr ""
+
+msgid "Options:"
+msgstr ""
+
+msgid "Overrides the detection from the file."
+msgstr ""
+
+msgid "PDF files"
+msgstr ""
+
+msgid "Pause"
+msgstr ""
+
+msgid "Play"
+msgstr ""
+
+msgid "Play/pause timer"
+msgstr ""
+
+msgid "Pointer"
+msgstr ""
+
+msgid "Portable installation"
+msgstr ""
+
+msgid "Presentation"
+msgstr ""
+
+msgid "Presentation timing breakdown"
+msgstr ""
+
+msgid "Presenter fullscreen"
+msgstr ""
+
+msgid "Previous slide"
+msgstr ""
+
+msgid "Previous slide with different label"
+msgstr ""
+
+msgid "Pympress Content"
+msgstr ""
+
+msgid "Pympress Presenter"
+msgstr ""
+
+msgid "Pympress can not extract attached file"
+msgstr ""
+
+msgid "Pympress can not extract embedded media"
+msgstr ""
+
+msgid "Pympress can not find file "
+msgstr ""
+
+msgid "Pympress can not interpret annotation of type:"
+msgstr ""
+
+msgid "Pympress does not recognize link type \"{}\""
+msgstr ""
+
+msgid "Pympress does not recognize link type \"{}\" to \"{}\""
+msgstr ""
+
+msgid "Pympress does not yet support link type \"{}\""
+msgstr ""
+
+msgid "Pympress does not yet support link type \"{}\" to \"{}\""
+msgstr ""
+
+msgid "Python version {}"
+msgstr ""
+
+msgid "Quit"
+msgstr ""
+
+msgid "Reset timer"
+msgstr ""
+
+msgid "Resources are loaded from "
+msgstr ""
+
+msgid "Set estimated talk time"
+msgstr ""
+
+msgid "Set level of verbosity in log file:"
+msgstr ""
+
+msgid "Set talk _Time"
+msgstr ""
+
+msgid "Set the position of notes on the pdf page (none, left, right, top, or bottom)."
+msgstr ""
+
+msgid "Slide number"
+msgstr ""
+
+msgid "Some preferences are saved in "
+msgstr ""
+
+msgid "Stop"
+msgstr ""
+
+msgid "Swap windows"
+msgstr ""
+
+msgid "The estimated (intended) talk time in minutes"
+msgstr ""
+
+msgid "The log is written to "
+msgstr ""
+
+msgid "This help"
+msgstr ""
+
+msgid "Time elapsed"
+msgstr ""
+
+msgid "Time estimation"
+msgstr ""
+
+msgid "Timers"
+msgstr ""
+
+msgid "Timing breakdown"
+msgstr ""
+
+msgid "Toggle annotations"
+msgstr ""
+
+msgid "Toggle fullscreen"
+msgstr ""
+
+msgid "Toggle highlighting"
+msgstr ""
+
+msgid "Toggle laserpointer"
+msgstr ""
+
+msgid "Toggle notes mode"
+msgstr ""
+
+msgid "Undo highlight stroke"
+msgstr ""
+
+msgid "Unexpected action in index \"{}\""
+msgstr ""
+
+msgid "Unknow widget {} to be fullscreened, aborting."
+msgstr ""
+
+msgid "Unrecognized named destination: "
+msgstr ""
+
+msgid "Unsupported OS: can't enable/disable screensaver"
+msgstr ""
+
+msgid "Unsupported link clicked. "
+msgstr ""
+
+msgid "Unzoom"
+msgstr ""
+
+msgid "Usage: {} [options] <presentation_file>"
+msgstr ""
+
+msgid "Validate goto/jump destination"
+msgstr ""
+
+msgid "Video support using {} is disabled."
+msgstr ""
+
+msgid "Windows"
+msgstr ""
+
+msgid "Zoom"
+msgstr ""
+
+msgid "_Align content"
+msgstr ""
+
+msgid "_Annotations"
+msgstr ""
+
+msgid "_Blank screen"
+msgstr ""
+
+msgid "_Blue"
+msgstr ""
+
+msgid "_Bottom"
+msgstr ""
+
+msgid "_Disabled"
+msgstr ""
+
+msgid "_File"
+msgstr ""
+
+msgid "_First"
+msgstr ""
+
+msgid "_Fullscreen"
+msgstr ""
+
+msgid "_Go to..."
+msgstr ""
+
+msgid "_Green"
+msgstr ""
+
+msgid "_Help"
+msgstr ""
+
+msgid "_Highlight"
+msgstr ""
+
+msgid "_Jump to label"
+msgstr ""
+
+msgid "_Last"
+msgstr ""
+
+msgid "_Left"
+msgstr ""
+
+msgid "_Manual"
+msgstr ""
+
+msgid "_Navigation"
+msgstr ""
+
+msgid "_Next"
+msgstr ""
+
+msgid "_Notes mode"
+msgstr ""
+
+msgid "_Pause timer"
+msgstr ""
+
+msgid "_Permanent"
+msgstr ""
+
+msgid "_Presentation"
+msgstr ""
+
+msgid "_Previous"
+msgstr ""
+
+msgid "_Red"
+msgstr ""
+
+msgid "_Reset timer"
+msgstr ""
+
+msgid "_Right"
+msgstr ""
+
+msgid "_Shortcuts"
+msgstr ""
+
+msgid "_Starting Configuration"
+msgstr ""
+
+msgid "_Swap screens"
+msgstr ""
+
+msgid "_Top"
+msgstr ""
+
+msgid "_Undo zoom"
+msgstr ""
+
+msgid "_Zoom in"
+msgstr ""
+
+msgid "access denied when trying to access screen saver settings in registry!"
+msgstr ""
+
+msgid "column"
+msgstr ""
+
+msgid "duration"
+msgstr ""
+
+msgid "name"
+msgstr ""
+
+msgid "no action defined for this link!"
+msgstr ""
+
+msgid "page label"
+msgstr ""
+
+msgid "pip will then download and compile pygobject, for which you need the Gtk headers (or development package)."
+msgstr ""
+
+msgid "pympress is a little PDF reader written in Python using Poppler for PDF rendering and GTK for the GUI.\n"
+msgstr ""
+
+msgid "slide"
+msgstr ""
+
+msgid "slide #"
+msgstr ""
+
+msgid "time"
+msgstr ""
+
+msgid "{}, {}, {}, {}, or {}"
+msgstr ""
+

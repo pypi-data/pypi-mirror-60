@@ -1,0 +1,79 @@
+name: Update docs and translatable strings
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  strings:
+    name: Upload translatable strings
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        sudo apt-get update -q
+        sudo apt-get install -qy jq
+        pip install -e .[babel]
+    - name: Extract
+      run: python setup.py extract_messages
+    - name: Upload
+      env:
+        poeditor_api_token: ${{ secrets.POEDITOR_API_TOKEN }}
+      run: ./scripts/poedit.sh upload
+
+  build:
+    name: Generate docs
+    needs: strings
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        sudo apt-get update -q
+        sudo apt-get install -qy jq gobject-introspection libgirepository-1.0-1 gir1.2-gtk-3.0 gir1.2-glib-2.0 gir1.2-gstreamer-1.0 gir1.2-poppler-0.18 python3-pip python3-setuptools python3-wheel libgirepository1.0-dev
+        pip install pygobject pycairo .[build_sphinx]
+    - name: Build
+      env:
+        poeditor_api_token: ${{ secrets.POEDITOR_API_TOKEN }}
+      run: |
+        ./scripts/poedit.sh contributors progress
+        python setup.py build_sphinx
+        tar czf pympress-docs.tar.gz -C build/sphinx/html/ .
+    - name: Upload
+      uses: actions/upload-artifact@v1
+      with:
+        name: pympress-docs.tar.gz
+        path: pympress-docs.tar.gz
+
+  deploy:
+    name: Deploy docs
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        ref: gh-pages
+    - name: Clean
+      run: rm -rf *
+    - name: Download
+      uses: actions/download-artifact@v1
+      with:
+        name: pympress-docs.tar.gz
+        path: .
+    - name: Extract and push
+      run: |
+        tar xzf pympress-docs.tar.gz
+        rm pympress-docs.tar.gz
+        git add .
+        git -c user.email=me@cimba.li -c user.name="${GITHUB_ACTOR}" commit -m "Github Action-built docs update"
+        git push "https://Cimbali:${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" HEAD:gh-pages
