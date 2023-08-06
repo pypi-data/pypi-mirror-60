@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: download_3gpp
+Version: 0.6.0
+Summary: Command line utility for downloading standards documents from the 3GPP download site.
+Home-page: https://gitlab.com/blueskyjunkie/download_3gpp
+License: UNKNOWN
+Author: Russell Smiley
+Author-email: im.russell.smiley@gmail.com
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: beautifulsoup4 >=4.8.2, <5.0
+Requires-Dist: requests >=2.22.0, <3.0
+Requires-Dist: black >=19.10b0 ; extra == "dev"
+Requires-Dist: isort >=4.3.21, <5.0 ; extra == "dev"
+Requires-Dist: pytest >=5.3.4, <6.0 ; extra == "test"
+Requires-Dist: pytest-cov >=2.8.1, <3.0 ; extra == "test"
+Requires-Dist: pytest-mock >=2.0.0, <3.0 ; extra == "test"
+Provides-Extra: dev
+Provides-Extra: test

@@ -1,0 +1,3 @@
+[console_scripts]
+download_3gpp=download_3gpp.entrypoint:flit_entry
+
