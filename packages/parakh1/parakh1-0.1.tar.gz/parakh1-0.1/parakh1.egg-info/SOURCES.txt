@@ -1,0 +1,7 @@
+setup.py
+parakh1/__init__.py
+parakh1.egg-info/PKG-INFO
+parakh1.egg-info/SOURCES.txt
+parakh1.egg-info/dependency_links.txt
+parakh1.egg-info/not-zip-safe
+parakh1.egg-info/top_level.txt
