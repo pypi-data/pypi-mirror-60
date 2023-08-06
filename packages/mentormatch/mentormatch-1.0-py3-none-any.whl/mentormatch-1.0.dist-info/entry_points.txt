@@ -1,0 +1,3 @@
+[console_scripts]
+mentormatch=mentormatch.main.cli:main
+
