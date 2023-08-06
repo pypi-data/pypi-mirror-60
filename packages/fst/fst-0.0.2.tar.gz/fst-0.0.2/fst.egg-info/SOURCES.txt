@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+fst/__init__.py
+fst.egg-info/PKG-INFO
+fst.egg-info/SOURCES.txt
+fst.egg-info/dependency_links.txt
+fst.egg-info/top_level.txt
