@@ -1,0 +1,17 @@
+include ez_setup.py
+include metaphor/cythonlist.txt
+include metaphor/version_gm.py
+include metaphor/services_gm.txt
+#exclude metaphor/version_gm copy.py
+#
+#  Installation of chem_gm
+#
+recursive-include metaphor/chem_gm *.py *.txt *.c
+recursive-include metaphor/chem_gm/api *.py *.txt
+recursive-include metaphor/chem_gm/components *.py
+recursive-include metaphor/chem_gm/core *.py *.cfg *.c
+#recursive-include metaphor/chem_gm/bin *.bin
+include metaphor/chem_gm/api/graphmachine_demo.ipynb
+prune metaphor/chem_gm/api/demo
+prune metaphor/chem_gm/api/demofiles
+#prune metaphor/chem_gm/api/poubelle

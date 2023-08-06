@@ -1,0 +1,12 @@
+#metaphor/chem_gm/core/atoms
+#metaphor/chem_gm/core/bonds
+#metaphor/chem_gm/core/gmconst
+#metaphor/chem_gm/core/GMmodel
+#metaphor/chem_gm/core/gmprograms
+metaphor/chem_gm/core/gmtoolbox
+metaphor/chem_gm/core/gmutils
+metaphor/chem_gm/core/graphmachineworkshop
+metaphor/chem_gm/core/metamolecule
+#metaphor/chem_gm/core/smilexer
+#metaphor/chem_gm/core/smiparserspec
+#metaphor/chem_gm/core/smitokens
