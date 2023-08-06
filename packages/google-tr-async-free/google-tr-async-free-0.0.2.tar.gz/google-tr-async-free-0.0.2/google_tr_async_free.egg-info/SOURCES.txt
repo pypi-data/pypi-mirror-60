@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+google_tr_async/__init__.py
+google_tr_async/google_tr_async.py
+google_tr_async_free.egg-info/PKG-INFO
+google_tr_async_free.egg-info/SOURCES.txt
+google_tr_async_free.egg-info/dependency_links.txt
+google_tr_async_free.egg-info/requires.txt
+google_tr_async_free.egg-info/top_level.txt
