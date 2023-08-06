@@ -1,0 +1,8 @@
+bitmex_trio_websocket/__init__.py,sha256=4mKgrNzmKMbB0xP73p6OfGRFBVLaKNQ_e3jDw-ELwZo,3102
+bitmex_trio_websocket/auth.py,sha256=dIHvxHcVvGTrDeTz1Q-IsFjQdBimyzaKKmJzF0q8HIU,1341
+bitmex_trio_websocket/storage.py,sha256=_teO80sajEzZFaY1MBB5qz5vZ2ugQejStsKJWZ6HH6I,6448
+bitmex_trio_websocket/websocket.py,sha256=40Bw4UWxu1Y1UA66CHP62tUrt8IMP1tzttPatOrKdEw,2951
+bitmex_trio_websocket-0.4.0.dist-info/LICENSE,sha256=YVEhyWGTVdwHSAoio8MTivZ3OBsmhDpUvoeFOMgeExc,1085
+bitmex_trio_websocket-0.4.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+bitmex_trio_websocket-0.4.0.dist-info/METADATA,sha256=vHPeewtTjkkjjn7IeN6u8twCQWoVmRX-ZH68AYOIbKU,5665
+bitmex_trio_websocket-0.4.0.dist-info/RECORD,,
