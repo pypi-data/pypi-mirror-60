@@ -1,0 +1,11 @@
+naampy/__init__.py,sha256=i9TgcRCpQn6xvUdSzF2yInU5mQNHy9o49RaVR3asfLI,83
+naampy/in_rolls_fn.py,sha256=AAhtGz_E2z9T8Sgm0WBKiTxtDgrirLmEOPJm74nmxEY,4898
+naampy/utils.py,sha256=Y8A-CGsSkpfzWlre3resfjBp7gRKJuCpYGRVhpth4rQ,1760
+naampy/data/in_rolls/in_rolls_state_year_fn_naampy.csv.gz,sha256=h4vwmvfhCKgJI7V7cH5UMPGWILxyDfvrVctvLGByum4,9137489
+naampy/tests/__init__.py,sha256=V2KrwP236kxoNHAlfcBwgpsNvmiHZB0pOYoijuxWK2s,342
+naampy/tests/test_010_in_rolls_ln.py,sha256=VKGxIVxvQ_psZmIgvLscd7AOh2XJ-715DMPNaMcZ5OQ,1248
+naampy-0.1.0.dist-info/METADATA,sha256=UbJylbk1vh2xdkm1KEjD5I_m8gGSzU3FkHIOqjq1Pbo,7086
+naampy-0.1.0.dist-info/RECORD,,
+naampy-0.1.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+naampy-0.1.0.dist-info/entry_points.txt,sha256=oQejUz1wIcwmOHUNLliWOCGbmLQWqNO5LwM8WL5u9oE,64
+naampy-0.1.0.dist-info/top_level.txt,sha256=v0F5jm4DJPwCZPbVxoWzXqzMxLvlka1Qct4KGwr4lDE,7
