@@ -1,0 +1,10 @@
+netsc/__init__.py,sha256=QDOWCkFxnqen26zmjTnH-9VAfH2LrXW-9RZtlbRRTP4,244
+netsc/client.py,sha256=L4X580w8yi0mmT-ZKAQlAtk3pZ3pn_G3VOVQ2uCXj8o,408
+netsc/netsc.py,sha256=tR7dn_SLfX1_b6NOlt8hhvg9T8QpD64cRZG3OCWEEhk,2388
+netsc/server.py,sha256=AcB0mvn5grNEf1kW9W5oI2BModrqu_0pRP-gmrQ9gOQ,549
+netsc/struct.py,sha256=mnXWLmsTIi1iqIKt9OM1oWvDXgwrM7gyYWDxbu5yLV4,6170
+Network_Script-1.0.1.dist-info/LICENSE,sha256=vP8HnY6kCgr1X5Nf4UzLSuZPmFeZ32ntkwJbqJa3S4k,1065
+Network_Script-1.0.1.dist-info/METADATA,sha256=sPIn9Rx-LO1PtQdTycSld1d6qZCLqE3UNgKGQeORcLE,1541
+Network_Script-1.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+Network_Script-1.0.1.dist-info/top_level.txt,sha256=9wKkR0SdrUOTyUVf9VTa08qSz5PZlgfpxWgoVeu30FA,6
+Network_Script-1.0.1.dist-info/RECORD,,
