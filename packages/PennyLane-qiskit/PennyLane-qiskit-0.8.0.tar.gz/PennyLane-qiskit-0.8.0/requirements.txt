@@ -1,0 +1,4 @@
+qiskit>=0.14
+PennyLane>=0.7.0
+numpy
+networkx==2.3
