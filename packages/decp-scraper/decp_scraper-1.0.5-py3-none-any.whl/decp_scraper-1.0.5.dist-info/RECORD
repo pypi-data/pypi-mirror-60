@@ -1,0 +1,10 @@
+decp_scraper/__init__.py,sha256=5ZkwOXdaUAUvYXxUWKFODqVpXNhInxSI4zgxUWe2Eec,50
+decp_scraper/download.py,sha256=zP9wFJVUZVHDu_PzJ_o02rOK293nSha_Z3qtnnJT6t8,10154
+decp_scraper/extractionAcheteurs.py,sha256=IUwwjBXP-nLVmLkCLK72OJTqfimIdtOdQJ9mGy2TcRI,3308
+decp_scraper/plateformes.csv,sha256=OIoiJNbhssufSfmYx56dslUyBN3NxZQO6xcqHTz4OW4,799
+decp_scraper/site_utils.py,sha256=hv94pIZ2v5i0_4FYY9Xpb0y0HhVWjl9LximFyDynOzs,615
+decp_scraper-1.0.5.dist-info/LICENSE,sha256=ikapCzXchCAruaY4bpK2IDJGpLlEDuRmIsxQ75P2ny0,1068
+decp_scraper-1.0.5.dist-info/METADATA,sha256=GT_LvpOrn5Ru0Y0rGuRdVQDHKOCvUVjryzlOiH5h-S0,3075
+decp_scraper-1.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+decp_scraper-1.0.5.dist-info/top_level.txt,sha256=qQAx2mi0hJ500ps3v6lWwoxM6EcsRLa9i1QUutwpil8,13
+decp_scraper-1.0.5.dist-info/RECORD,,
