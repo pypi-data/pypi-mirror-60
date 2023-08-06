@@ -1,0 +1,4 @@
+[console_scripts]
+terraform-installer = terraforminstaller.main:main
+ti = terraforminstaller.main:main
+
