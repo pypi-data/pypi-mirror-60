@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ravencoinlib
+Version: 0.0
+Summary: Ravencoin fork of python-bitcoinlib
+Home-page: https://github.com/standard-error/python-ravencoinlib
+Author: standard-error@github
+Author-email: ravencoinlib@gmail.com
+License: UNKNOWN
+Description: Use python-ravencoinlib <https://github.com/standard-error/python-ravencoinlib> instead.
+Platform: all
