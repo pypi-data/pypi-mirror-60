@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: physiopy
+Version: 0.0.1b0
+Summary: Metapackage for physiopy packages
+Home-page: https://github.com/physiopy/phys2bids
+Author: physiopy community
+Maintainer: Stefano Moia
+Maintainer-email: s.moia@bcbl.eu
+License: Apache-2.0
+Download-URL: https://github.com/physiopy/phys2bids
+Platform: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides: physiopy
+Requires-Python: >=3.6.1
+Description-Content-Type: text/markdown; charset=UTF-8
+Requires-Dist: phys2bids
+Provides-Extra: all
+Requires-Dist: sphinx (>=2.0) ; extra == 'all'
+Requires-Dist: sphinx-argparse ; extra == 'all'
+Requires-Dist: sphinx-rtd-theme ; extra == 'all'
+Requires-Dist: flake8 (>=3.7) ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Provides-Extra: doc
+Requires-Dist: sphinx (>=2.0) ; extra == 'doc'
+Requires-Dist: sphinx-argparse ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Provides-Extra: style
+Requires-Dist: flake8 (>=3.7) ; extra == 'style'
+Provides-Extra: test
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# physiopy
+Metapackage for physiopy repository
+
+
