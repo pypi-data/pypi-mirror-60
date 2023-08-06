@@ -1,0 +1,16 @@
+README.md
+setup.py
+appthreat_depscan.egg-info/PKG-INFO
+appthreat_depscan.egg-info/SOURCES.txt
+appthreat_depscan.egg-info/dependency_links.txt
+appthreat_depscan.egg-info/entry_points.txt
+appthreat_depscan.egg-info/requires.txt
+appthreat_depscan.egg-info/top_level.txt
+depscan/__init__.py
+depscan/cli.py
+depscan/lib/__init__.py
+depscan/lib/analysis.py
+depscan/lib/bom.py
+depscan/lib/utils.py
+test/__init__.py
+test/test_bom.py
