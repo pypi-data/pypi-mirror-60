@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+shameless/__init__.py
+shameless/korean.py
+shameless/shameless.py
+shameless.egg-info/PKG-INFO
+shameless.egg-info/SOURCES.txt
+shameless.egg-info/dependency_links.txt
+shameless.egg-info/requires.txt
+shameless.egg-info/top_level.txt
