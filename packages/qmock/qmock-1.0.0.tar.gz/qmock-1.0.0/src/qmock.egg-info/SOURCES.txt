@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/qmock/__init__.py
+src/qmock/_python_compat.py
+src/qmock/_qmock.py
+src/qmock.egg-info/PKG-INFO
+src/qmock.egg-info/SOURCES.txt
+src/qmock.egg-info/dependency_links.txt
+src/qmock.egg-info/requires.txt
+src/qmock.egg-info/top_level.txt
