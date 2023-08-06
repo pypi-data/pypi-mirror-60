@@ -1,0 +1,5 @@
+wheel==0.33.6
+python-highcharts==0.4.2
+selenium==3.141.0
+beautifulsoup4==4.8.2
+webdriver-manager==2.3.0
