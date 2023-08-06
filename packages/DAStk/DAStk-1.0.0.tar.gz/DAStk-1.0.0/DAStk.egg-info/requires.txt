@@ -1,0 +1,12 @@
+argparse
+datetime
+numpy
+matplotlib
+adjustText
+scipy
+pandas
+pybedtools
+futures
+scikit-learn
+networkx>=2
+upsetplot

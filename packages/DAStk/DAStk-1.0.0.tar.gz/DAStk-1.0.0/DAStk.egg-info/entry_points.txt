@@ -1,0 +1,8 @@
+[console_scripts]
+barcode_plot = DAStk:barcode_plot
+differential_md_score = DAStk:differential_md_score
+ma_plot = DAStk:ma_plot
+process_atac = DAStk:process_atac
+tf_intersect = DAStk:tf_intersect
+tf_result_explanations = DAStk:tf_result_explanations
+
