@@ -1,0 +1,12 @@
+README.md
+setup.py
+spiegel_scraper/__init__.py
+spiegel_scraper/archive.py
+spiegel_scraper/article.py
+spiegel_scraper/comments.py
+spiegel_scraper/constants.py
+spiegel_scraper.egg-info/PKG-INFO
+spiegel_scraper.egg-info/SOURCES.txt
+spiegel_scraper.egg-info/dependency_links.txt
+spiegel_scraper.egg-info/requires.txt
+spiegel_scraper.egg-info/top_level.txt

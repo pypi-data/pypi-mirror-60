@@ -1,0 +1,5 @@
+cssselect
+dateparser
+lxml
+requests
+tldextract
