@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pipelinewise-singer-python
+Version: 1.0.0
+Summary: Singer.io utility library - PipelineWise compatible
+Home-page: https://github.com/transferwise/pipelinewise-singer-python
+Author: Stitch
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: dev
