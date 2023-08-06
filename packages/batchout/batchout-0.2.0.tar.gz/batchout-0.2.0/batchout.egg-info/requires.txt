@@ -1,0 +1,5 @@
+arrow
+requests
+lxml
+jsonpath_rw
+psycopg2-binary
