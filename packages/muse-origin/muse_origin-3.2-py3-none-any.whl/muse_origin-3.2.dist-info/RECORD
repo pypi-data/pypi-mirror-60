@@ -1,0 +1,17 @@
+muse_origin/Dico_3FWHM.fits,sha256=L8X5NgIXEav8moTdwrmWu5GBxQWXvSPahk631UmJpy0,20160
+muse_origin/Dico_FWHM_2_12.fits,sha256=zseGPar3Bu9sz0SAhYRNbxiogR-E3suluvU0Sa5K4gA,118080
+muse_origin/__init__.py,sha256=R3W0d0K-FKnGspsOBKKPQ9oLLc_jxAPa3XmZcu_hZzs,214
+muse_origin/lib_origin.py,sha256=RBf0FV0tHgxBVM3NkVE9ez6LBGQiXp_XwAdmpCH1Wmw,77608
+muse_origin/origin.py,sha256=OEHz-C6vyjEmRGSUmUvZTWofwzjuO-K93bSBfdWLbvA,48524
+muse_origin/source_creation.py,sha256=Ku1ohGpmyWneQMB5jR5CoxVBWooHogctyKmHmCbWU58,18240
+muse_origin/source_masks.py,sha256=08bGV3BSCIsYyxihsJIFc-mkBpYONNFh2gCFV58283c,14074
+muse_origin/source_update.py,sha256=5lSHHMqbDIX9NwqyupVv9MEGRbhFCqZY8r0rTP7bqbY,8631
+muse_origin/steps.py,sha256=lyn3BOM-hi9jXqThNGK0SugM1BtcBftj9_5vukVZ964,46373
+muse_origin/version.py,sha256=cMnnmVw8-Dnqsu2DW-J8WqfmiN--EzqvfKVMqXZOg1c,212
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_origin.py,sha256=KapW4h0d60eP6TytM1YRI_9IUpT3wkt9D4wGDbvcX4A,7418
+muse_origin-3.2.dist-info/LICENSE,sha256=YXTJPPppvRGWBFdcbWGCnkqbyzM5u-tkVGR6_3dSQqA,1120
+muse_origin-3.2.dist-info/METADATA,sha256=zTKqtCYzD4_3m55rVpy8UkL_dbrRUhvmeSo1lkqI-Ww,2711
+muse_origin-3.2.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+muse_origin-3.2.dist-info/top_level.txt,sha256=wJWF87iA3O81NvZpluJf9DyPNF_5zCtHkfR55Pl7zDE,18
+muse_origin-3.2.dist-info/RECORD,,
