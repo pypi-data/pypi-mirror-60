@@ -1,0 +1,4 @@
+[console_scripts]
+pileups-count = pileups.pileups_count:main
+pileups-merge = pileups.pileups_merge:main
+
