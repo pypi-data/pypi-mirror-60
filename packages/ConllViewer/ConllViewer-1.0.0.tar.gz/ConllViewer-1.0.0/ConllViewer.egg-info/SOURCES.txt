@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+ConllViewer.egg-info/PKG-INFO
+ConllViewer.egg-info/SOURCES.txt
+ConllViewer.egg-info/dependency_links.txt
+ConllViewer.egg-info/requires.txt
+ConllViewer.egg-info/top_level.txt
+conllviewer/__init__.py
+conllviewer/viewer.py
+conllviewer/fonts/BabelSans.ttf
+conllviewer/fonts/Exo-Medium.otf
+conllviewer/fonts/PRIMERB.ttf
