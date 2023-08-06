@@ -1,0 +1,17 @@
+.gitignore
+.travis.yml
+LICENSE
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+docs/RabbitMqHttp.html
+docs/build_libdoc.py
+docs/index.html
+src/RabbitMqHttp.py
+src/__init__.py
+src/robotframework_http_rabbitmq.egg-info/PKG-INFO
+src/robotframework_http_rabbitmq.egg-info/SOURCES.txt
+src/robotframework_http_rabbitmq.egg-info/dependency_links.txt
+src/robotframework_http_rabbitmq.egg-info/requires.txt
+src/robotframework_http_rabbitmq.egg-info/top_level.txt
