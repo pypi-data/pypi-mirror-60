@@ -1,0 +1,2 @@
+recursive-include test *.py
+include LICENSE README.md CONTRIBUTING.md
