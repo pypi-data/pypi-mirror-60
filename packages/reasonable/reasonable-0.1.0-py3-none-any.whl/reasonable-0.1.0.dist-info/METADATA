@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: reasonable
+Version: 0.1.0
+Summary: Python interface to 'reasonable', a Datalog implementation of the OWL 2 RL profile
+License: BSD-3-Clause
+Author: Gabe Fierro
+Author-email: gtfierro@cs.berkeley.edu
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
