@@ -1,0 +1,8 @@
+README.md
+setup.py
+rdfframes/__init__.py
+rdfframes/knowledge_graph.py
+rdfframes.egg-info/PKG-INFO
+rdfframes.egg-info/SOURCES.txt
+rdfframes.egg-info/dependency_links.txt
+rdfframes.egg-info/top_level.txt
