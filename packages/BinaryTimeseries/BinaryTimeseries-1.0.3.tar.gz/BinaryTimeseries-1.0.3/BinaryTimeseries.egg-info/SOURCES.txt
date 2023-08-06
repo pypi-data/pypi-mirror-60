@@ -1,0 +1,11 @@
+README.md
+setup.py
+BinaryTimeseries/BinaryTimeseries.py
+BinaryTimeseries/Examples.py
+BinaryTimeseries/GeneratedApiTests.py
+BinaryTimeseries/__init__.py
+BinaryTimeseries.egg-info/PKG-INFO
+BinaryTimeseries.egg-info/SOURCES.txt
+BinaryTimeseries.egg-info/dependency_links.txt
+BinaryTimeseries.egg-info/requires.txt
+BinaryTimeseries.egg-info/top_level.txt
