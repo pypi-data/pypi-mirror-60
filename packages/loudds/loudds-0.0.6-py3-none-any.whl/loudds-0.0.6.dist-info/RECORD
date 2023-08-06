@@ -1,0 +1,11 @@
+loudds/__init__.py,sha256=jAfazCaPhyqQ-akJReu3Ag_U6AUg2ODJuKXmeM4QTCc,2864
+loudds/fastai/__init__.py,sha256=gMXAskqnY_CqXmmAgVboK35HUwhYRsHMFxrm1I2vPx0,22
+loudds/fastai/fastai.py,sha256=TgPdVQd25mbqu-aZc6KgQPsWX37Ci6lGYSXi1lMOStk,2333
+loudds/pytorch/__init__.py,sha256=hxLu7FmRYn01ysoOQalrMa5K_qg4rLNf8OAuoemzd6I,23
+loudds/pytorch/pytorch.py,sha256=2iUVAAcdoPzkx8snhTs4pDdUnYRQRu_iINCZPD9g6eE,1677
+loudds-0.0.6.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+loudds-0.0.6.dist-info/METADATA,sha256=tymW4c2PAI-mqLK3YmzWc98Xmeg3l_RpQiYNiGyvPkk,494
+loudds-0.0.6.dist-info/RECORD,,
+loudds-0.0.6.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+loudds-0.0.6.dist-info/metadata.json,sha256=Wr_b7Av26l1GzCdbX4Rxf0TxtyB1E-xDZTh00UmJnFQ,645
+loudds-0.0.6.dist-info/top_level.txt,sha256=oBhlVJXyIVXMKsSIEVnTT20g1iCQxEqL5pIuGDN8gVc,7
