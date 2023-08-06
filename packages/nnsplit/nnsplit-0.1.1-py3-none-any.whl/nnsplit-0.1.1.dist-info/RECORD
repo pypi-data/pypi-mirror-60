@@ -1,0 +1,9 @@
+nnsplit/__init__.py,sha256=ijT3xrr92eQwCr3CcGYFeWFWvLU7iFBcFJV726K73uI,3348
+nnsplit/defaults.py,sha256=UcfpxBcW7-Yyjam5TZigkwVSovAmQN6qV7yEpWh_Nxo,153
+nnsplit/models.py,sha256=pvW_7-ApRBn-nMIdHQusrpDqJe650wuVLokiXRH21Ao,1570
+nnsplit/tokenizer.py,sha256=vuq2Kj0tAj0sy9znIvFyUeUkR8Ha9GuP73Foqm3xLIs,1297
+nnsplit/train.py,sha256=0PEgXDSQsaDwleYWkz3Oyr9d1nvFlfIL1yXlHKxeJ4I,5742
+nnsplit/utils.py,sha256=zofLoXN-Tfb7Bs8_Ssz75xmOmgf01xh-OwJuyJpxTmE,1450
+nnsplit-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+nnsplit-0.1.1.dist-info/METADATA,sha256=9JoZz_vtGb0eUCkRTrDiuTG-3Y87c7QjxcghmA9dyOw,439
+nnsplit-0.1.1.dist-info/RECORD,,
