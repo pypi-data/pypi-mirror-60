@@ -1,0 +1,9 @@
+utils_flask_sqla_geo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils_flask_sqla_geo/generic.py,sha256=Avc7qlrDbOI0y0qh9G4TlK9wR8cYm81GUAoza3XUby0,3814
+utils_flask_sqla_geo/serializers.py,sha256=Tg2HMNR5pmZwpM95cZ2Uo6DbkvklcFAgeBFXmNPSscU,4220
+utils_flask_sqla_geo/utilsgeometry.py,sha256=lDtk6r6J2df3Jt1cNXXhiSaqSpyKVS8pd8zTwGY-Oe0,11680
+utils_flask_sqlalchemy_geo-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+utils_flask_sqlalchemy_geo-0.0.1.dist-info/METADATA,sha256=St59hlJOOqaLgbveEaj1oUYpmOaFvsUUq-q9_dbF8js,963
+utils_flask_sqlalchemy_geo-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+utils_flask_sqlalchemy_geo-0.0.1.dist-info/top_level.txt,sha256=Sikn2HoCzxxPXEYD3EsHFAwlxIlTohs9aNrlcRTZQ_E,21
+utils_flask_sqlalchemy_geo-0.0.1.dist-info/RECORD,,
