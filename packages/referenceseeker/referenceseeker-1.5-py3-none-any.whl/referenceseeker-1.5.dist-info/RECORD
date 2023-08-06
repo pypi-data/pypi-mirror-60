@@ -1,0 +1,13 @@
+referenceseeker/__init__.py,sha256=uGilDWWEtHN5Sj8h1caV1XlWHdwXHUHFR6cmWFbHS90,20
+referenceseeker/ani.py,sha256=7L5E3l0YQXCcoyU4gGIzXyRJvgNC8UvtWrJGlsy2R3U,5297
+referenceseeker/constants.py,sha256=dFPxF3PTH2k4dfYIhBpoKcjnYCafkY9OCnKw1owoero,345
+referenceseeker/database.py,sha256=hXAjqFJfKLocCIvFoJm9OWkCOZMnKdpo0Zrv2R1FNjI,7816
+referenceseeker/mash.py,sha256=V76bV8beV_gRE3TBzutihIszMNHanH1y9KGzQQ1HDF0,1132
+referenceseeker/referenceseeker.py,sha256=IxiTp74XjRl_aFYbhlQENayF9FcMEeRnkECYUPXsPx4,9025
+referenceseeker/util.py,sha256=NdVfewCNZFGRLc-0eLhe6AI32iBGt6nj1yYtRcl1A0Q,4153
+referenceseeker-1.5.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+referenceseeker-1.5.dist-info/METADATA,sha256=G32qMVfZij_Nq9c1vEj57FT2pUDmThaujkqCySSg6Rk,14251
+referenceseeker-1.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+referenceseeker-1.5.dist-info/entry_points.txt,sha256=IMgOFDlofBXtWTiU-i97ceHWEwa1SDS-gQoIoy43ZA4,125
+referenceseeker-1.5.dist-info/top_level.txt,sha256=oa2sbr1HuNcZB7kbNGbbC-3sT7XSilskSEvSebtdrHY,16
+referenceseeker-1.5.dist-info/RECORD,,
