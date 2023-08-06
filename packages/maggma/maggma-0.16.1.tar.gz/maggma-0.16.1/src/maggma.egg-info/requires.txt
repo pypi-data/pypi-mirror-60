@@ -1,0 +1,15 @@
+setuptools
+pymongo>=3.6
+mongomock>=3.10.0
+monty>=1.0.2
+pydash>=4.1.0
+tqdm>=4.19.6
+mongogrant>=0.2.2
+pynng>=0.5.0
+dnspython>=1.16.0
+
+[S3]
+boto3==1.11.9
+
+[vault]
+hvac>=0.9.5
