@@ -1,0 +1,3 @@
+[console_scripts]
+rkill = hed_utils.cli.rkill:run
+
