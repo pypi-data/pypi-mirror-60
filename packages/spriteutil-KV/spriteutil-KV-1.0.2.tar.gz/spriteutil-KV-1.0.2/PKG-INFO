@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: spriteutil-KV
+Version: 1.0.2
+Summary: spriteutil-KV can detect and create a new image contain the original image sprites
+Home-page: https://github.com/intek-training-jsc/sprite-sheet-KV16
+Author: Khoi Vo
+Author-email: khoi.vo@f4.intek.edu.vn
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
