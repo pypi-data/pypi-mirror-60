@@ -1,0 +1,16 @@
+avogadro/__init__.py,sha256=nZvClXwhUEHWuca10B7vTIdEAbWOnuhRXzUTRxAbHRA,36
+avogadro/core.cpython-37m-darwin.so,sha256=mcyQVIv21Ly4_nUzMsBuYtXzcuTX0hPtPYcsJHOr5rI,132660
+avogadro/io.cpython-37m-darwin.so,sha256=LB3FGHgPdAgaP28UrfTeLts_hb5es58XZeMyrgNan34,101768
+avogadro/libAvogadroCore.1.93.0.dylib,sha256=4As2xnkgYXfrVnW9qRc6qeGH4OmEFYeuZQiThxiAZMQ,768788
+avogadro/libAvogadroCore.1.dylib,sha256=4As2xnkgYXfrVnW9qRc6qeGH4OmEFYeuZQiThxiAZMQ,768788
+avogadro/libAvogadroCore.dylib,sha256=4As2xnkgYXfrVnW9qRc6qeGH4OmEFYeuZQiThxiAZMQ,768788
+avogadro/libAvogadroIO.1.93.0.dylib,sha256=CNVvxtVlmgLohFvkYJy28HIZIr3JhIqZ_kQa_bgUnP8,553748
+avogadro/libAvogadroIO.1.dylib,sha256=CNVvxtVlmgLohFvkYJy28HIZIr3JhIqZ_kQa_bgUnP8,553748
+avogadro/libAvogadroIO.dylib,sha256=CNVvxtVlmgLohFvkYJy28HIZIr3JhIqZ_kQa_bgUnP8,553748
+avogadro/libAvogadroQuantumIO.1.93.0.dylib,sha256=RusT_6U4MUyzM6l3G37xdHYJGPz3Jq0ZIQBbTAC7C8k,272828
+avogadro/libAvogadroQuantumIO.1.dylib,sha256=RusT_6U4MUyzM6l3G37xdHYJGPz3Jq0ZIQBbTAC7C8k,272828
+avogadro/libAvogadroQuantumIO.dylib,sha256=RusT_6U4MUyzM6l3G37xdHYJGPz3Jq0ZIQBbTAC7C8k,272828
+avogadro-1.93.0.dist-info/METADATA,sha256=vPBNl2L002fqco_ZfLms49ZZI8ktv154ZqJt0L6Fblw,964
+avogadro-1.93.0.dist-info/RECORD,,
+avogadro-1.93.0.dist-info/WHEEL,sha256=flw2OsxhLSJ27W_HL2obBKEVhlBgMTdOp9rj7mhmR8Q,104
+avogadro-1.93.0.dist-info/top_level.txt,sha256=1zfhhEmxzchlNR3jxqJeD5yCgfOzTH-mqEx0lrrvOTA,9
