@@ -1,0 +1,3 @@
+[console_scripts]
+stwberlin_menus = stwberlin_menus.cli:main
+
