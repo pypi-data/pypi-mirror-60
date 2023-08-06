@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: alertlogic-sdk-python
+Version: 1.0.1
+Summary: Alert Logic Software Development Kit for Python.
+Home-page: https://github.com/alertlogic/alertlogic-sdk-python
+Author: Alert Logic Inc.
+Author-email: support@alertlogic.com
+License: MIT
+Description: UNKNOWN
+Keywords: alertlogic-sdk,alertlogic-sdk-python,alertlogic-mdr-sdk,almdrlib,alertlogic
+Platform: any
+Requires-Python: >=3.7
+Provides-Extra: dev
