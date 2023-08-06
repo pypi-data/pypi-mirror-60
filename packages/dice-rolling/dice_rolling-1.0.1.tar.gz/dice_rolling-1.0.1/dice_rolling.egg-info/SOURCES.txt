@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+dice_rolling/__init__.py
+dice_rolling/main.py
+dice_rolling.egg-info/PKG-INFO
+dice_rolling.egg-info/SOURCES.txt
+dice_rolling.egg-info/dependency_links.txt
+dice_rolling.egg-info/entry_points.txt
+dice_rolling.egg-info/top_level.txt
+dice_rolling/models/__init__.py
+dice_rolling/models/die.py
+dice_rolling/models/roll_builder.py
+dice_rolling/utils/__init__.py
+dice_rolling/utils/argument_parser.py
