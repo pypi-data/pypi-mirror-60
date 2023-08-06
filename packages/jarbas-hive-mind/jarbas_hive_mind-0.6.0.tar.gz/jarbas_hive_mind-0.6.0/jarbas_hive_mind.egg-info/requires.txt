@@ -1,0 +1,6 @@
+pyopenssl
+service_identity
+autobahn
+twisted
+jarbas_utils>=0.4.1
+json_database
