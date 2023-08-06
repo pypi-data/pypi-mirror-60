@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "dfsj"
+author = "dfsj"
+author-email = "dfsj66011@gmail.com"
+home-page = "https://github.com/dfsj66011/mypkg"
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+
