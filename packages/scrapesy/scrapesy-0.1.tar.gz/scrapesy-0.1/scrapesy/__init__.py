@@ -1,0 +1,1 @@
+from scrapesy.main import *
