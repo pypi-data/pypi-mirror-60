@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+auto_semver/__init__.py
+auto_semver/__main__.py
+auto_semver/auto_semver.py
+auto_semver/cli.py
+auto_semver/git.py
+auto_semver/semver.py
+auto_semver.egg-info/PKG-INFO
+auto_semver.egg-info/SOURCES.txt
+auto_semver.egg-info/dependency_links.txt
+auto_semver.egg-info/entry_points.txt
+auto_semver.egg-info/not-zip-safe
+auto_semver.egg-info/top_level.txt
