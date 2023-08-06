@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: nnsplit
+Version: 0.1.2
+Summary: Fast, robust sentence splitting with bindings for Python, Rust and Javascript.
+Author: Benjamin Minixhofer
+Author-email: bminixhofer@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: numpy (>=1,<2)
+Requires-Dist: torch (>=1,<2)
