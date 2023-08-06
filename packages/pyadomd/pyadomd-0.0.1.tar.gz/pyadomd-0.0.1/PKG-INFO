@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pyadomd
+Version: 0.0.1
+Summary: A pythonic approach to query SSAS data models
+Home-page: https://github.com/Andboye/Pyadomd
+Author: SCOUT
+Author-email: andboye@outlook.com
+License: Apache License 2.0
+Download-URL: https://github.com/Andboye/Pyadomd/archive/v_0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: adomd,ssas,ssas-tabular,ssasadomd
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
