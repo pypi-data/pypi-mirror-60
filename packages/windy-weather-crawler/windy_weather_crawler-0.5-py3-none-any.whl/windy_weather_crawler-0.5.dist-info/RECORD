@@ -1,0 +1,12 @@
+windy_crawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+windy_crawler/items.py,sha256=2jxeohY6pTN4eHK_AcqIDOOMo0nKUuKCNITvrR78Lxo,293
+windy_crawler/middlewares.py,sha256=Izz2suAaKKmYHNUuC-wgt76LHrmKhry8Q3UV67kkE_s,3609
+windy_crawler/pipelines.py,sha256=k3iiZ0pSGhYtW3HR_ODPXNT62YCZpmJDSaMpO05FjbA,294
+windy_crawler/run.py,sha256=maMX7PakKkye_XAo2sLqK4HtA8uwFoqF2Bzpdv_RSHQ,954
+windy_crawler/settings.py,sha256=fmT6t5ARC5i1sNR4bENslAHH-PCXIyxhS5IE_XpK2PY,3223
+windy_crawler/spiders/__init__.py,sha256=ULwecZkx3_NTphkz7y_qiazBeUoHFnCCWnKSjoDCZj0,161
+windy_crawler/spiders/forecast_spider.py,sha256=sKHAc8kliamQIH5LEzawFq6O292x4NnM4C-zp3b2JNo,7082
+windy_weather_crawler-0.5.dist-info/METADATA,sha256=fYT-SDovOy2MjUIcvtCyQTvVqgA-LWMyuanhhCmwrgM,899
+windy_weather_crawler-0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+windy_weather_crawler-0.5.dist-info/top_level.txt,sha256=vUavj2_N6A83CxDyWvUGsT5_DH2YL4l3Zdh5gwGE2RY,14
+windy_weather_crawler-0.5.dist-info/RECORD,,
