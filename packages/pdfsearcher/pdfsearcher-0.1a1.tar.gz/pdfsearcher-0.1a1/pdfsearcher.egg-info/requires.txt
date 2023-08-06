@@ -1,0 +1,3 @@
+pdfminer.six
+click
+tqdm

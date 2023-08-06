@@ -1,0 +1,11 @@
+README.rst
+setup.py
+pdfsearcher/__init__.py
+pdfsearcher/_cli.py
+pdfsearcher/_pdf_searcher.py
+pdfsearcher.egg-info/PKG-INFO
+pdfsearcher.egg-info/SOURCES.txt
+pdfsearcher.egg-info/dependency_links.txt
+pdfsearcher.egg-info/entry_points.txt
+pdfsearcher.egg-info/requires.txt
+pdfsearcher.egg-info/top_level.txt
