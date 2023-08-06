@@ -1,0 +1,5 @@
+setup.py
+nmapthon.egg-info/PKG-INFO
+nmapthon.egg-info/SOURCES.txt
+nmapthon.egg-info/dependency_links.txt
+nmapthon.egg-info/top_level.txt
