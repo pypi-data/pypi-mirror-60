@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+sympy
+
+[dev]
+
+[test]
+pytest
