@@ -1,0 +1,7 @@
+README.md
+setup.py
+cloudwright_mongodb/__init__.py
+cloudwright_mongodb.egg-info/PKG-INFO
+cloudwright_mongodb.egg-info/SOURCES.txt
+cloudwright_mongodb.egg-info/dependency_links.txt
+cloudwright_mongodb.egg-info/top_level.txt
