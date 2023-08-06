@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: google-sign
+Version: 0.0.1
+Summary: Calculate sign string for google translate and baidu translate
+Home-page: http://github.com/ffreemt/google-sign
+Author: mikeee
+License: MIT License
+Download-URL: https://github.com/ffreemt/google-sign/archive/v_001.tar.gz
+Keywords: machine translation,free,sign
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# google-sign
+![Python 3637 package](https://github.com/ffreemt/google-sign/workflows/Python%203637%20package/badge.svg) [![codecov](https://codecov.io/gh/ffreemt/google-sign/branch/master/graph/badge.svg)](https://codecov.io/gh/ffreemt/google-sign) ![status](https://img.shields.io/badge/status-alpha-orange.svg)
+
+Calculate sign string for google translate and baidu translate
+
+
