@@ -1,0 +1,9 @@
+auto_download/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_download/wrds_download.py,sha256=nvGawFuoaDC4fi6KsdeyRXsQ3TII8jw3c22o0tH09k4,3150
+io_with_database/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+io_with_database/database_writer.py,sha256=75QIUFr1CC2PLHHKMZ2XqONmIlJe5d1wXpwc-WVtut8,312
+io_with_database/wrds_writer.py,sha256=go7CmJeDgidQ6xYpMKWZMun1Pe3ML9IzxK_HZRlo8Po,543
+woojicap_dataprep-0.0.1.dist-info/METADATA,sha256=9Gyba_zA9crFZEJeWO_BMgcgBHxPKaC0ATCy4QI_1nc,188
+woojicap_dataprep-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+woojicap_dataprep-0.0.1.dist-info/top_level.txt,sha256=M0mrrKGze3w_ke4brdRjKmxVFtJ228izLPCc4KLSigM,31
+woojicap_dataprep-0.0.1.dist-info/RECORD,,
