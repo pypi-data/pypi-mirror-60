@@ -1,0 +1,10 @@
+README.md
+emfwebcrawler
+setup.py
+emfwebcrawler/__init__.py
+emfwebcrawler/emfwebcrawler.py
+emfwebcrawler.egg-info/PKG-INFO
+emfwebcrawler.egg-info/SOURCES.txt
+emfwebcrawler.egg-info/dependency_links.txt
+emfwebcrawler.egg-info/requires.txt
+emfwebcrawler.egg-info/top_level.txt
