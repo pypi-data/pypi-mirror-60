@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: barman_exporter
+Version: 1.0.4
+Summary: Barman exporter for Prometheus
+Home-page: https://github.com/ahes/prometheus-barman-exporter
+Author: Marcin Hlybin
+Author-email: marcin.hlybin@gmail.com
+License: MIT
+Description: Barman exporter for Prometheus. Full description at https://github.com/ahes/prometheus-barman-exporter
+Keywords: prometheus barman exporter barman-exporter
+Platform: UNKNOWN
