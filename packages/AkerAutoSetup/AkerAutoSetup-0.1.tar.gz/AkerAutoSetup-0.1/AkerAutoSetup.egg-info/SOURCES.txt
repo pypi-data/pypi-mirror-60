@@ -1,0 +1,9 @@
+Autoclose.py
+README.md
+setup.py
+AkerAutoSetup.egg-info/PKG-INFO
+AkerAutoSetup.egg-info/SOURCES.txt
+AkerAutoSetup.egg-info/dependency_links.txt
+AkerAutoSetup.egg-info/not-zip-safe
+AkerAutoSetup.egg-info/requires.txt
+AkerAutoSetup.egg-info/top_level.txt
