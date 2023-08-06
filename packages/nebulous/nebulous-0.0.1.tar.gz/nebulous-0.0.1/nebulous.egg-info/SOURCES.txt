@@ -1,0 +1,7 @@
+README.md
+setup.py
+nebulous/__init__.py
+nebulous.egg-info/PKG-INFO
+nebulous.egg-info/SOURCES.txt
+nebulous.egg-info/dependency_links.txt
+nebulous.egg-info/top_level.txt
