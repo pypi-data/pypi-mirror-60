@@ -1,0 +1,13 @@
+pywdpa/__init__.py,sha256=zG41kKfszD1OHdehEg_f1cKb0_TScr9-uO5aS3xCiJY,563
+pywdpa/__main__.py,sha256=X78_ddWnVLE589HIbt0mqi8e6YgQJtP4K-lAYfj_Im8,550
+pywdpa/get_token.py,sha256=FUweH9v1pLX5q3QVVfC_00mKVaeJWOL3Alws-UnB2Jk,2226
+pywdpa/get_wdpa.py,sha256=UfgY2QoGMNmY2uIeCkdml3T6FbzY9XWoqYaLRc-4Hyc,4617
+pywdpa/pywdpa-runner.py,sha256=9TJCTC6giNQzqhSnHdxBlAipmtDgFprQ1UFRXZ86Vqs,648
+pywdpa/pywdpa.py,sha256=4k0zF51W__vY8euOO3Zid59ms7D2RcVktjFZqfcniFw,708
+pywdpa/settings.py,sha256=H3G3Catk50jqk8n9fdoDxVm6Y36Q4JtkrJrXP5PA6xI,504
+pywdpa-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pywdpa-0.1.1.dist-info/METADATA,sha256=M8OdkXDrEThOR552drpDAOzeeVLcjPnRp1WSNoOiLUA,3009
+pywdpa-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pywdpa-0.1.1.dist-info/entry_points.txt,sha256=UBTi8G-5K-5vJlGCm5HBg2W1lQCAlH2S-NNiPWnxZYU,47
+pywdpa-0.1.1.dist-info/top_level.txt,sha256=y4OGIB4Y059wlfYjL6UYG-YmDFSE7757KH6Rb12rL7c,7
+pywdpa-0.1.1.dist-info/RECORD,,
