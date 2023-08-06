@@ -1,0 +1,8 @@
+setup.py
+parakh_basic_string_pkgs.egg-info/PKG-INFO
+parakh_basic_string_pkgs.egg-info/SOURCES.txt
+parakh_basic_string_pkgs.egg-info/dependency_links.txt
+parakh_basic_string_pkgs.egg-info/not-zip-safe
+parakh_basic_string_pkgs.egg-info/top_level.txt
+parakh_num_rev/__init__.py
+parakh_string_repl/__init__.py
