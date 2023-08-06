@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: dqcsim-cqasm
+Version: 0.0.1
+Summary: A DQCsim frontend for cQASM files
+Home-page: https://github.com/QE-Lab/dqcsim-cqasm
+Author: Quantum Computer Architectures, Quantum & Computer Engineering, QuTech, Delft University of Technology
+Author-email: 
+License: Apache-2.0
+Project-URL: Source Code, https://github.com/QE-Lab/dqcsim-cqasm
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+Requires-Dist: dqcsim
+
+# WORK IN PROGRESS
+
+# DQCsim cQASM frontend
+
+[![PyPi](https://badgen.net/pypi/v/dqcsim-cqasm)](https://pypi.org/project/dqcsim-cqasm/)
+
+See also: [DQCsim](https://github.com/mbrobbel/dqcsim) and
+[libqasm](https://github.com/QE-Lab/libqasm/).
+
+This repository contains some glue code to allow DQCsim to run cQASM files
+(file extension `*.cq`).
+
+Temporary one-liner for running a basic test:
+
+    sudo pip3 uninstall dqcsim-cqasm -y && rm -rf target/python/dist && python3 setup.py build && python3 setup.py bdist_wheel && sudo pip3 install target/python/dist/* && dqcsim test.cq qx
+
+
