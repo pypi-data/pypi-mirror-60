@@ -1,0 +1,6 @@
+README.md
+setup.py
+tibetan_analysis.egg-info/PKG-INFO
+tibetan_analysis.egg-info/SOURCES.txt
+tibetan_analysis.egg-info/dependency_links.txt
+tibetan_analysis.egg-info/top_level.txt

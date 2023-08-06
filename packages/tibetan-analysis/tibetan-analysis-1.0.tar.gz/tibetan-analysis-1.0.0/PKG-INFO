@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: tibetan-analysis
+Version: 1.0.0
+Summary: 藏文字词句分析模块
+Home-page: https://github.com/puntsokCN/tibetan_anlysis
+Author: puntsok
+Author-email: 1195209380@qq.com
+Maintainer: puntsok
+Maintainer-email: 1195209380@qq.com
+License: MIT
+Description: https://github.com/puntsokCN/tibetan_anlysis/blob/master/README.md
+Platform: all
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
