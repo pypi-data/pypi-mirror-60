@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+face_mask/__init__.py
+face_mask/__main__.py
+face_mask.egg-info/PKG-INFO
+face_mask.egg-info/SOURCES.txt
+face_mask.egg-info/dependency_links.txt
+face_mask.egg-info/entry_points.txt
+face_mask.egg-info/requires.txt
+face_mask.egg-info/top_level.txt
+face_mask/images/default-mask.png
