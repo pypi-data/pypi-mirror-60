@@ -1,0 +1,14 @@
+README.md
+setup.py
+macgen/__init__.py
+macgen/__main__.py
+macgen/args.py
+macgen/cli.py
+macgen/mac.py
+macgen/package.py
+macgen.egg-info/PKG-INFO
+macgen.egg-info/SOURCES.txt
+macgen.egg-info/dependency_links.txt
+macgen.egg-info/entry_points.txt
+macgen.egg-info/requires.txt
+macgen.egg-info/top_level.txt

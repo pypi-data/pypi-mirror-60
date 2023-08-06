@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: macgen
+Version: 0.1
+Summary: Utility to generate random MAC addresses
+Home-page: https://github.com/attie/macgen
+Author: Attie Grande
+Author-email: attie@attie.co.uk
+License: BSD-3-Clause
+Description: # `magcen` - MAC Address Generation Utility and Library
+        
+        `macgen` is a simple python library to facilitate the generation of MAC addresses.
+        
+        ## Install
+        
+        ```bash
+        pip install macgen
+        ```
+        
+        ## Usage
+        
+        ```bash
+        # generate a MAC with default options (locally administered, unicast)
+        macgen
+        
+        # generate a MAC with a dash as the separator
+        macgen -s -
+        
+        # generate a MAC with no separator
+        macgen -S
+        
+        # generate a local / multicast MAC
+        macgen -m
+        
+        # generate a random global (supposedly OUI enforced) / unicast MAC
+        macgen -g
+        
+        # generate a global / multicast MAC
+        macgen -mg
+        ```
+        
+        ## Planned Features
+        
+        - Generate a repeatable MAC from a seed string
+        - Supply an OUI prefix
+        
+        ## Development Setup
+        
+        ```bash
+        virtualenv -p python3 venv
+        . venv/bin/activate
+        pip install -r requirements.txt
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Freely Distributable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,3 @@
+[console_scripts]
+macgen = macgen.__main__:cli
+
