@@ -1,0 +1,10 @@
+gspread2/__init__.py,sha256=RFZj8_kn7FvausrIyPLH3UPLg6P15Th15a-2wb74AXs,1622
+gspread2/core.py,sha256=za2xVv7wMWrUChy3uHssbU3wNIy1sqf7OYgH95GPHkU,4476
+gspread2/credentials.py,sha256=AU8m7S98tCXM2P_tfFP12L74aT2UPwozU_x1pK2iS_o,1022
+gspread2/models.py,sha256=ypmi5mbz-PywZARWTbL42I3XBjd0u_kVreJNiFwycGU,7807
+gspread2/utils.py,sha256=9d0a7h814wbaPjq5e5AyJEhS9w-RwqSRC1cTZkOlT7I,1172
+gspread2-0.1.0.dist-info/LICENSE.txt,sha256=ieFaNWLW1znKR5-VNKp3mGOtFEczssUmAbO8a5WLn94,1099
+gspread2-0.1.0.dist-info/METADATA,sha256=knVe7ANcIYdxQusuoUkVhDMi9cshpxpNKqc2QgUYAe0,3942
+gspread2-0.1.0.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+gspread2-0.1.0.dist-info/top_level.txt,sha256=-t_00dzugtrw3LNkmgddEaUt5FDbkaigmuSEQF9C3w8,9
+gspread2-0.1.0.dist-info/RECORD,,
