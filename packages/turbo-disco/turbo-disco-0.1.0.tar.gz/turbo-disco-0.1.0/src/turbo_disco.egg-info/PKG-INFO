@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: turbo-disco
+Version: 0.1.0
+Summary: Learning how to build pyhon packages
+Home-page: UNKNOWN
+Author: Spencer Pease
+Author-email: spease@uw.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: interactive
+Provides-Extra: dev

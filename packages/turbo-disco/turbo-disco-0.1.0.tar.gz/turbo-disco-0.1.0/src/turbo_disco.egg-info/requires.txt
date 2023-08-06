@@ -1,0 +1,9 @@
+pytest
+
+[dev]
+
+[docs]
+
+[interactive]
+
+[test]
