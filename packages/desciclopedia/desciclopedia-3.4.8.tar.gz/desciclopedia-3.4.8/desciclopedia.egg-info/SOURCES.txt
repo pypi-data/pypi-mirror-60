@@ -1,0 +1,11 @@
+README.rst
+setup.py
+desciclopedia/__init__.py
+desciclopedia/exceptions.py
+desciclopedia/util.py
+desciclopedia/wikipedia.py
+desciclopedia.egg-info/PKG-INFO
+desciclopedia.egg-info/SOURCES.txt
+desciclopedia.egg-info/dependency_links.txt
+desciclopedia.egg-info/requires.txt
+desciclopedia.egg-info/top_level.txt
