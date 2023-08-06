@@ -1,0 +1,12 @@
+lbmpy_walberla/__init__.py,sha256=pzgVpBVo0_eEQHUNrMoyPnizByAnHug3QYCGLzSZf8s,199
+lbmpy_walberla/boundary.py,sha256=giXxVXFV92sDPwOThwXU2yCtpP9_EcrXX56UwHfeKuA,4227
+lbmpy_walberla/sparse.py,sha256=9Hr_nlpmFItBdrrag2b9dYcJoNZj9PDwfBUOfjzu1Gk,2153
+lbmpy_walberla/walberla_lbm_generation.py,sha256=F4qZHxLsCuQVriDT-XMWY1oXCdiysarJXamOW65WMLA,13283
+lbmpy_walberla/templates/Boundary.tmpl.cpp,sha256=37CzEMc9x-FdSfW9oKERB2sOryXrOeCUcTBFkiOhnIM,3157
+lbmpy_walberla/templates/Boundary.tmpl.h,sha256=diQy_8PU9tOujUgdPr-T8MHB9dHYlzaSd6USybo27Oc,6535
+lbmpy_walberla/templates/LatticeModel.tmpl.cpp,sha256=6jqemyKvN0Va8gEsMr4S0DipRwA5b5XT-854fPfAP3c,4306
+lbmpy_walberla/templates/LatticeModel.tmpl.h,sha256=PBa3mlHzIHbPG9NwwvA-E6snUaZNPNOKgzSjLKGmBlo,19037
+lbmpy_walberla-0.2.8.dist-info/METADATA,sha256=wJcWuhi6aeA8w2lCsEAgCzYqnkYUK1tVrxGYKyikis8,810
+lbmpy_walberla-0.2.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+lbmpy_walberla-0.2.8.dist-info/top_level.txt,sha256=bOmXQKcU8BQyygGac9YMdlxNuRsHViBB8qqcV9t17zs,15
+lbmpy_walberla-0.2.8.dist-info/RECORD,,
