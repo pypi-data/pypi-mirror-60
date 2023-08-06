@@ -1,0 +1,43 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="sixfeetup.pmdashboard">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="sixfeetup.pmdashboard.interfaces.ISixfeetupPmdashboardLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="sixfeetup.pmdashboard"
+      type="plone"
+      directory="static"
+      />
+
+   <browser:page
+     name="project_view"
+     for="*"
+     template="templates/project_view.pt"
+     permission="zope2.View"
+     />
+   <browser:page
+     name="client_view"
+     for="*"
+     template="templates/client_view.pt"
+     permission="zope2.View"
+     />
+   <browser:page
+     name="pmdashboard_view"
+     menu="plone_displayviews"
+     title="Project Management Dashboard"
+     for="plone.app.contenttypes.interfaces.IFolder"
+     template="templates/pmdashboard_view.pt"
+     permission="zope2.View"
+     />
+
+
+</configure>
