@@ -1,0 +1,9 @@
+vox_cards/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vox_cards/card.py,sha256=pZk0VAFc-DDLWpu9PsQ-d24XXUjPJZXnXx9Jz3VaWu4,1966
+vox_cards/deck.py,sha256=qhEkKPyP4BW8VrdTT1QHyGXzmExRJRBanUkCiCAc9t4,3583
+vox_cards/hand.py,sha256=2qo8U4d1GAhuw7J7YJvZg-5rsqArK9r5nIcuZtzrkVI,3233
+vox_cards-0.1.8.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+vox_cards-0.1.8.dist-info/METADATA,sha256=4yN9vjp070PWqNJSnA7RvrLb2JXAC3HXJlOXJfKuI6w,2916
+vox_cards-0.1.8.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+vox_cards-0.1.8.dist-info/top_level.txt,sha256=ZaIO1LZBY7EsAW9XkyNpXjHTzr_KtKH2lD5TW_1AR7A,10
+vox_cards-0.1.8.dist-info/RECORD,,
