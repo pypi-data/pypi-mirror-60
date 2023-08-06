@@ -1,0 +1,9 @@
+README.md
+setup.py
+Python/__init__.py
+Python/watch.py
+Watchmen.egg-info/PKG-INFO
+Watchmen.egg-info/SOURCES.txt
+Watchmen.egg-info/dependency_links.txt
+Watchmen.egg-info/requires.txt
+Watchmen.egg-info/top_level.txt
