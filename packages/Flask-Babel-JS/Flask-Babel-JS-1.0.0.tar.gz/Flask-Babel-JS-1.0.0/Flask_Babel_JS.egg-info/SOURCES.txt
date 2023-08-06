@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+Flask_Babel_JS.egg-info/PKG-INFO
+Flask_Babel_JS.egg-info/SOURCES.txt
+Flask_Babel_JS.egg-info/dependency_links.txt
+Flask_Babel_JS.egg-info/not-zip-safe
+Flask_Babel_JS.egg-info/requires.txt
+Flask_Babel_JS.egg-info/top_level.txt
+flask_babel_js/__init__.py
