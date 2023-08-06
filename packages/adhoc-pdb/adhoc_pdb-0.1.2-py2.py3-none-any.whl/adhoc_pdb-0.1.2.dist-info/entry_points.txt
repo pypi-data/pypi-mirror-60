@@ -1,0 +1,3 @@
+[console_scripts]
+adhoc-pdb=adhoc_pdb.cli:cli
+
