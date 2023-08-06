@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: simpleapodwrapper
+Version: 1.0
+Summary: A extremely basic wrapper for APOD.
+Home-page: https://github.com/GuerreiroSpiral
+Author: João Pedro Gomes
+Author-email: j.pedrogomes2015@hotmail.com
+License: MIT
+Download-URL: https://github.com/GuerreiroSpiral/apodwrapper/archive/1.0.tar.gz
+Description: UNKNOWN
+Keywords: APOD,NASA,Wrapper,Beginner
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
