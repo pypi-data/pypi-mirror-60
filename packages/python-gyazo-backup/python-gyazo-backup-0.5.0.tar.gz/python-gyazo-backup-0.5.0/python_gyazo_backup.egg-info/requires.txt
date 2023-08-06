@@ -1,0 +1,6 @@
+Jinja2>=2.8
+progress>=1.2
+python-gyazo<3,>=2
+
+[test]
+flake8<4.0.0,>=3.3.0
