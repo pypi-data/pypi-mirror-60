@@ -1,0 +1,12 @@
+sparse_dot_mkl/__init__.py,sha256=9Sz94-dt0ygl4mnutRWV3M1etCP8807gzrA1zAuw5sg,54
+sparse_dot_mkl/_dense_dense.py,sha256=JyXMpmqf1B-wpR-y1Pf7RnGALdB8-FXcEhJkpMaXf9g,1629
+sparse_dot_mkl/_mkl_interface.py,sha256=G64Sr8JxEtqN1b9Ctr72_UiWrS6o1J33UbKXK_k5GIs,23336
+sparse_dot_mkl/_sparse_dense.py,sha256=7XAyEkICD4LTBVx1EDGXhk4vqViKWUw6BmAijYb2iFs,4216
+sparse_dot_mkl/_sparse_sparse.py,sha256=jlGgPPYJ8t9ZBMa1YWdYU8bv2V4mzLGnjXMHFn7RxCM,6741
+sparse_dot_mkl/sparse_dot.py,sha256=1QbAYphw7MOz2bjP2yFvZxdKqLZotMqdzA_5J3tqGh0,2454
+sparse_dot_mkl-0.2a0.dist-info/LICENSE,sha256=1NkqX_PwmRriPMNPZNFPupl55bNe5SdSlCcePxx1X_U,1065
+sparse_dot_mkl-0.2a0.dist-info/METADATA,sha256=4qr9Pv6uBLp1juJcFojJIhpEimd7m0QkUcII1FuwxAg,3174
+sparse_dot_mkl-0.2a0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sparse_dot_mkl-0.2a0.dist-info/top_level.txt,sha256=0Ed3GIAS7ibiDI23vuXGztDy_FmhBFDu-C-xRLCyvvY,15
+sparse_dot_mkl-0.2a0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sparse_dot_mkl-0.2a0.dist-info/RECORD,,
