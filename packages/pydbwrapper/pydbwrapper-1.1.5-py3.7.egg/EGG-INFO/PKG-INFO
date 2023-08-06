@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pydbwrapper
+Version: 1.1.5
+Summary: pydbwrapper is a simple wrapper for Python psycopg2 with connection pooling
+Home-page: https://github.com/orseni/pydbwrapper
+Author: Alexandre Fidelis
+Author-email: orseni@gmail.com
+License: BSD
+Description: PyDbWrapper# pydbwrapper 1
+        
+Keywords: psycopg2 postgresql sql database
+Platform: UNKNOWN
+Classifier: Topic :: Database
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
