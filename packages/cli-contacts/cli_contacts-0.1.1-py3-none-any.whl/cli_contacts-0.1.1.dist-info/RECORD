@@ -1,0 +1,7 @@
+cli_contacts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli_contacts/cli_contacts.py,sha256=BmsRFtj6VEfEPKglJclEc-ImFb5W_dLKY4ZoNXv5lOA,3718
+cli_contacts/models.py,sha256=ZhgWzRDzbC6sXcOayyRxkEAK87pO5VzHKWXtlAawYdg,302
+cli_contacts-0.1.1.dist-info/entry_points.txt,sha256=2i4vv7mS08rtV154I5wdAanApMGcVceb6YLqXEmGJRE,69
+cli_contacts-0.1.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+cli_contacts-0.1.1.dist-info/METADATA,sha256=HdyiV_nGmnXrbv0P04NGgr7OZ4A9IwcYtFm8BjyR6c8,439
+cli_contacts-0.1.1.dist-info/RECORD,,
