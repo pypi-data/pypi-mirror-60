@@ -1,0 +1,9 @@
+elm_kernel/__init__.py,sha256=xIUqIN_ChMmjzcq9bp-lExx9HagV2YXFdf-bH34faMk,83
+elm_kernel/__main__.py,sha256=VTcTe2u_B7SAXgsSv2Ybo_lLtARzdRTyJrSvSshVm2w,121
+elm_kernel/install.py,sha256=q5NkYrEr4WiJo2JnF4JKgMFh5Y_uyN7Ib8f_OFSEMR0,2113
+elm_kernel/kernel.py,sha256=kb0MWi6Ln_7b26xaqpzUxWhUIPuRIfU_OsFF3crLxrA,6647
+elm_kernel-0.21.1.dist-info/LICENCE.txt,sha256=TyakWxQ1vzeKSORwe8VkY2UM4xa2Hm3RRL0waVELWhY,1058
+elm_kernel-0.21.1.dist-info/METADATA,sha256=q7OZ3m7OOejsMLvfosWGzX8Lo_kbAMuOVbnj1j-_vH4,2130
+elm_kernel-0.21.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+elm_kernel-0.21.1.dist-info/top_level.txt,sha256=MfYyJYIQcQEPE1k3jkN7KtHyG2rYJ9-i0LSOOAPVnw0,11
+elm_kernel-0.21.1.dist-info/RECORD,,
