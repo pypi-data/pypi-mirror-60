@@ -1,0 +1,8 @@
+.*.swp
+auto_examples
+conda_build
+build
+dist
+*egg-info
+_build
+__pycache__
