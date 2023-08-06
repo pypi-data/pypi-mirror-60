@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: binarytostring
+Version: 0.1
+Summary: change string to binary
+Home-page: UNKNOWN
+Author: adityasg
+Author-email: aditya.tiwari@sganalytics.com
+License: MIT
+Platform: UNKNOWN
+
+Give 8 bit binary number to string
+
+
