@@ -1,0 +1,16 @@
+foliant/cli/meta/__init__.py,sha256=Mlh4W5KTYKgErZipQAzX4EIbLY3v3_gXnkNw8h3fYlw,22
+foliant/cli/meta/meta.py,sha256=W0Tl4pB1xkHrK4Mh4Je9Dh8n6Yig3_oXqx2v3-dtR7E,2658
+foliant/meta/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foliant/meta/classes.py,sha256=ZzKAlAM_vZDHmDR81iJZ193jFCchVYWVF-MY7nfrf2Q,10376
+foliant/meta/generate.py,sha256=J8K596g_K-ziKboAOuwEgVSK2F8KR-5ibn9aVUaMnyY,4609
+foliant/meta/patterns.py,sha256=S3gEkyVPtHwRJMRU_ECH5TYcsABUlq5erE4Z6JHpd2w,668
+foliant/meta/tools.py,sha256=QVzi_JlVLViBc9MERfO62Os7jgwXA1QRq5KwMt0OMA8,4978
+foliant/meta_commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foliant/meta_commands/base.py,sha256=dLOBsBHzkVurMt-bv0YVNHSaVuIlF1nkV0nbxscwpp0,608
+foliant/meta_commands/generate/__init__.py,sha256=vTaTPEwBy6xJYUoX9fOEOigUlV0qWHRvKSjVuK6NErs,442
+foliant/meta_commands/generate/command.py,sha256=hC73TaWBFng2KJrY_1ede50HLMkUlDXYnKaubetGEic,1120
+foliantcontrib.meta-1.3.0.dist-info/LICENSE,sha256=2j7OLS2vXIEshgbSkiCU9RgYJY1M4OBBtO6ECbo7OB8,1056
+foliantcontrib.meta-1.3.0.dist-info/METADATA,sha256=TQ6uHlLuhC18Vfn4TjhLin63L8j-gzgOHG1MpHukhXQ,7517
+foliantcontrib.meta-1.3.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+foliantcontrib.meta-1.3.0.dist-info/top_level.txt,sha256=5uvI8ZIgBWKY09Z8Xs4ESLGD7yAEGbiLvIrdHdaC9mE,8
+foliantcontrib.meta-1.3.0.dist-info/RECORD,,
