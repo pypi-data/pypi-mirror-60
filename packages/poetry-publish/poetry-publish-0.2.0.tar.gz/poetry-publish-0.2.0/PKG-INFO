@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: poetry-publish
+Version: 0.2.0
+Summary: Helper to build and upload a project that used poetry to PyPi, with prechecks
+Keywords: poetry
+Author: JensDiemer
+Author-email: git@jensdiemer.de
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: python-creole (>=1.4.2,<2.0.0)
