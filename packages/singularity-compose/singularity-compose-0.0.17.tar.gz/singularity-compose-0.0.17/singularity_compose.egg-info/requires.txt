@@ -1,0 +1,6 @@
+spython>=0.0.69
+pyaml>=5.1.1
+
+[all]
+spython>=0.0.69
+pyaml>=5.1.1
