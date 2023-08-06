@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: solution-efe-client-security
+Version: 1.0.2
+Summary: Paquete de preparacion
+Home-page: UNKNOWN
+Author: Rulman Ferro
+Author-email: rulman26@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: Flask
+Requires-Dist: solution-efe-config
+
+UNKNOWN
+
+
