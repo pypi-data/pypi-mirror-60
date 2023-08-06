@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+test/test_data.py
+ugapi/TabEngine.py
+ugapi/TabPipeline.py
+ugapi/TabSpider.py
+ugapi/__init__.py
+ugapi/enums.py
+ugapi.egg-info/PKG-INFO
+ugapi.egg-info/SOURCES.txt
+ugapi.egg-info/dependency_links.txt
+ugapi.egg-info/not-zip-safe
+ugapi.egg-info/requires.txt
+ugapi.egg-info/top_level.txt
