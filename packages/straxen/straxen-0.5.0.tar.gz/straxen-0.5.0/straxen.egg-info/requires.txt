@@ -1,0 +1,11 @@
+strax
+multihist>=0.6.3
+matplotlib
+packaging
+
+[docs]
+sphinx
+sphinx_rtd_theme
+nbsphinx
+recommonmark
+graphviz
