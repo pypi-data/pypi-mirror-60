@@ -1,0 +1,3 @@
+[console_scripts]
+sutdobfs = sutdobfs.__main__:main
+
