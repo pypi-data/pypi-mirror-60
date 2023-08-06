@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pyRDF2Vec
+Version: 0.0.1
+Summary: A python implementation of RDF2Vec
+Home-page: https://github.com/IBCNServices/pyRDF2Vec
+Author: Gilles Vandewiele
+Author-email: gilles.vandewiele@ugent.be
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,12 @@
+.gitignore
+README.md
+requirements.txt
+setup.py
+pyRDF2Vec.egg-info/PKG-INFO
+pyRDF2Vec.egg-info/SOURCES.txt
+pyRDF2Vec.egg-info/dependency_links.txt
+pyRDF2Vec.egg-info/requires.txt
+pyRDF2Vec.egg-info/top_level.txt
+rdf2vec/example.py
+rdf2vec/graph.py
+rdf2vec/rdf2vec.py
