@@ -1,0 +1,10 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+frozenlist2/__init__.py
+frozenlist2.egg-info/PKG-INFO
+frozenlist2.egg-info/SOURCES.txt
+frozenlist2.egg-info/dependency_links.txt
+frozenlist2.egg-info/top_level.txt
