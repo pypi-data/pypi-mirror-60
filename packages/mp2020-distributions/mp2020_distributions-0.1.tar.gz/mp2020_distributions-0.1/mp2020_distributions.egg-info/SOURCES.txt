@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+mp2020_distributions/Binomialdistribution.py
+mp2020_distributions/Gaussiandistribution.py
+mp2020_distributions/Generaldistribution.py
+mp2020_distributions/__init__.py
+mp2020_distributions.egg-info/PKG-INFO
+mp2020_distributions.egg-info/SOURCES.txt
+mp2020_distributions.egg-info/dependency_links.txt
+mp2020_distributions.egg-info/not-zip-safe
+mp2020_distributions.egg-info/top_level.txt
