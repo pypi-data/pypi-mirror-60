@@ -1,0 +1,10 @@
+speedapply/__init__.py,sha256=RLlHMpoOEKaEKI9uwv6C6wLCQUweNphjg76u2kW76dU,190
+speedapply/__main__.py,sha256=UJNM1cUpl4EG9pxheErLj_EP_9O3gLBVaqkOrlQiiGI,1343
+speedapply/bots.py,sha256=74bFjtIB_0uxHQYoH-WbuZDSNmp-sRZn1bcYMAN0Ry4,183
+speedapply/sites.py,sha256=3pstig5fmJyI0zI73irZzTlNtPegX6mUu8lOyOFWB2E,3856
+speedapply-0.0.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+speedapply-0.0.0.dist-info/METADATA,sha256=AhrAUMhxwVYOyy8GnnPzDDB-oi7om0_ap77oSJhHTuc,2686
+speedapply-0.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+speedapply-0.0.0.dist-info/entry_points.txt,sha256=WuvJh762sRVmhmZL58PFOzkyBJb-Kr3WWJH7oNSnx4I,57
+speedapply-0.0.0.dist-info/top_level.txt,sha256=3uc7AgEIcm3I-xrk7NNx_X-2jiyc4aQnU9lvp5XLJiY,11
+speedapply-0.0.0.dist-info/RECORD,,
