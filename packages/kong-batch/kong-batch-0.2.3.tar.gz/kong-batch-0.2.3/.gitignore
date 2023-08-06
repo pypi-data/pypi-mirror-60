@@ -1,0 +1,11 @@
+*.pyc
+*.egg-info
+htmlcov
+.coverage
+.mypy_cache
+venv
+.eggs
+coverage.xml
+.tox
+dist
+doc/_build
