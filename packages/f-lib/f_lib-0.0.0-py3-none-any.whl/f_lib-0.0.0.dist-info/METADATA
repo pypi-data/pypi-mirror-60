@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: f-lib
+Version: 0.0.0
+Summary: A library of useful functions and classes for python projects.
+Home-page: UNKNOWN
+Author: Kyle Finley
+Author-email: kyle@finley.sh
+License: Apache License 2.0
+Project-URL: Source, https://github.com/ITProKyle/f-lib
+Project-URL: Tracker, https://github.com/ITProKyle/f-lib/issues
+Keywords: aws,devops,library
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Requires-Dist: typing-extensions ; python_version < "3.8"
+
+# f-lib
+
+A library of useful functions and classes for python projects.
+
+
