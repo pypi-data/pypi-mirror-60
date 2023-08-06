@@ -1,0 +1,4 @@
+django-waffle
+newrelic
+Django>=1.11
+psutil==1.2.1
