@@ -1,0 +1,13 @@
+npmdownloader/__init__.py,sha256=B74jMA447WL22eCnSNMpayPooHXJZD7ltq5NmBrqaQg,144
+npmdownloader/__main__.py,sha256=WRvPctQk7U9mp58z--61bgAc1m3kpnxmgUmCNdK4r-o,931
+npmdownloader/logger.py,sha256=rXc5NW2zbf0dx9kF2llC95IkMtQJh_u65qxiU2jvedI,321
+npmdownloader/multipackagedownloader.py,sha256=1S4yg9Xn_PLLeIJRbbrz6ciJ8hidjQ8kzzkBlVZWa6M,2066
+npmdownloader/npmclient.py,sha256=67S9K0aYfDPF24JynFJdCY4fH3zpFHWvpX6bzsA448Y,3005
+npmdownloader/npmpackage.py,sha256=2YXYDsQI1A2FrPj0y7esHC653L40YbrLNRESyyHKhvg,1594
+npmdownloader/packagedownloader.py,sha256=7hseObKoYKw2Ptf5Ok2DcLAy8za6syI9yE6fn__f51s,3446
+npmdownloader/utils.py,sha256=8TqgQyu68TrH4yH_DCsNKlDTcNFKsy1eZ3XU3PFsmkg,2033
+npmdownloader-1.2.0.dist-info/LICENSE.txt,sha256=EelCfxy4jh7vhwqN-dS2WkE0fZB-yO4zwdlt13h9mHs,1067
+npmdownloader-1.2.0.dist-info/METADATA,sha256=F67I31I3T6GNVngBOblVuDNWR8qq4prkilv3wwo5dHY,1892
+npmdownloader-1.2.0.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+npmdownloader-1.2.0.dist-info/top_level.txt,sha256=87OVJMfRzSX8QFyk6xs75-KWDD00jjP5tCb-tLmQspo,14
+npmdownloader-1.2.0.dist-info/RECORD,,
