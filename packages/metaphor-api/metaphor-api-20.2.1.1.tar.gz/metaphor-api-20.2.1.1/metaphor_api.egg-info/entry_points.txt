@@ -1,0 +1,3 @@
+[console_scripts]
+server = metaphor.metaphor_api_server.api_server:run
+

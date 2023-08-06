@@ -1,0 +1,20 @@
+include ez_setup.py
+include metaphor/version_api.py
+include metaphor/cythonlist.txt
+#
+# Installation of Metaphor Api
+#
+recursive-include metaphor/metaphor_api *.py
+recursive-include metaphor/metaphor_api_server *.py
+
+recursive-exclude metaphor/metaphor_api_server/exemples_flask *.py
+recursive-exclude metaphor/metaphor_api_server/exemples_quart *.py
+recursive-exclude metaphor/metaphor_api_server/quart-master *.py
+recursive-exclude metaphor/metaphor_api_server/server-sent-events-master *.py
+
+exclude metaphor/metaphor_api_server/api_server_old.py
+exclude metaphor/metaphor_api_server/sanic_sse_exemple.py
+exclude metaphor/metaphor_api_server/sse_toolbox.py
+exclude metaphor/metaphor_api_server/server_toolbox_old.py
+exclude metaphor/metaphor_api_server/sse_toolbox_old.py
+#
