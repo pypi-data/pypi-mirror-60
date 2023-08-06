@@ -1,0 +1,6 @@
+pandas>=0.22.0
+tabulate>=0.8.3
+scikit-learn>=0.20.4
+numpy>=1.16.4
+IlluminaBeadArrayFiles
+json-tricks==3.13.1
