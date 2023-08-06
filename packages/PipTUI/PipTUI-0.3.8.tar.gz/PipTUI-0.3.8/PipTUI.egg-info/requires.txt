@@ -1,0 +1,5 @@
+npyscreen@ https://github.com/npcole/npyscreen
+requests
+
+[:sys_platform == "win32"]
+windows-curses

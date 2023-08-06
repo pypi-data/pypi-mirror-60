@@ -1,0 +1,3 @@
+[console_scripts]
+piptui = piptui.app:main
+
