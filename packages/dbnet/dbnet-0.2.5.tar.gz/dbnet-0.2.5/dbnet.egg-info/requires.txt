@@ -1,0 +1,13 @@
+python-dateutil==2.7.5
+python-socketio==1.8.4
+verboselogs
+coloredlogs
+psutil
+jmespath
+eventlet==0.21.0
+pyyaml
+flask==0.11.1
+Flask-SSLify==0.1.5
+xutil
+apprise
+ruamel.yaml
