@@ -1,0 +1,9 @@
+README.md
+setup.py
+tame/__init__.py
+tame/__main__.py
+tame.egg-info/PKG-INFO
+tame.egg-info/SOURCES.txt
+tame.egg-info/dependency_links.txt
+tame.egg-info/requires.txt
+tame.egg-info/top_level.txt
