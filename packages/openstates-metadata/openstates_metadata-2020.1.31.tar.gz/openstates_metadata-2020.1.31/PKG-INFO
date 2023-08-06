@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: openstates-metadata
+Version: 2020.1.31
+Summary: metadata for the openstates project
+Home-page: https://github.com/openstates/metadata
+License: MIT
+Author: James Turk
+Author-email: james@openstates.org
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: attrs (>=19.3,<20.0)
+Requires-Dist: pyyaml (>=5.3,<6.0)
+Requires-Dist: us (>=1.0,<2.0)
+Project-URL: Repository, https://github.com/openstates/metadata
+Description-Content-Type: text/markdown
+
+# metadata
+
+This repository contains state metadata that powers Open States.
+
+[![CircleCI](https://circleci.com/gh/openstates/metadata.svg?style=svg)](https://circleci.com/gh/openstates/metadata)
+
+## Links
+
+* [Open States Discourse](https://discourse.openstates.org)
+* [Code of Conduct](https://docs.openstates.org/en/latest/contributing/code-of-conduct.html)
+
