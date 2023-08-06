@@ -1,0 +1,12 @@
+vim_kernel/__init__.py,sha256=r5j1xfI1Rt8ImVayx__0v5IY2e-lqpLrpzyBHkseG0U,65
+vim_kernel/__main__.py,sha256=4i3NG3c2c4bvaEWcPT79HxKI-wsuq_DYvj7M_s1tXDY,126
+vim_kernel/autoload/vimkernel.vim,sha256=9fTPQk4WwYZdM1XLMg75mqNgVLa-Sv8MRgy4vIoSHKs,945
+vim_kernel/install.py,sha256=Mkgdz7Md0CdHfwmipqgevnn8GX9-lK2R-RaQ9OTB9FU,1686
+vim_kernel/kernel.json,sha256=5Kd21UFaUwvzwdFsqYAwT0nU7aGjPwoGLOgbNARqrCw,133
+vim_kernel/kernel.py,sha256=9v3GTGjdcUTBav88zBeBGzQyyGSnLar4Vqktn_G91qA,2538
+vim_kernel/kernel.vim,sha256=PGHnLpF5UIh6XYwUw7wffe3W6DXohlq6xTUn9iunskk,1080
+vim_kernel/logo-32x32.png,sha256=jlgf0ykYJoS7gWETx86JiTIuASsqd9Kg5MFZACGGC0I,347
+vim_kernel/logo-64x64.png,sha256=v5emjtD-O64SsFsaOwghvsbhDqLYYx9ZcZpGtNvw5eM,8300
+vim_kernel-0.0.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+vim_kernel-0.0.1.dist-info/METADATA,sha256=986GDeUy9pK9eKkfubJEWsRKBY2zBk4P5iNwkWMjmsc,409
+vim_kernel-0.0.1.dist-info/RECORD,,
