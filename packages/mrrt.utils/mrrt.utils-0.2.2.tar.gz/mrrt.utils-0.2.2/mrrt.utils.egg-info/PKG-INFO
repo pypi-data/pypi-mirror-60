@@ -1,0 +1,44 @@
+Metadata-Version: 1.2
+Name: mrrt.utils
+Version: 0.2.2
+Summary: mrrt.utils: common utilities supporting other mritools packages
+Home-page: http://github.com/mritools/mrrt.utils
+Author: Gregory R. Lee
+Author-email: grlee77@gmail.com
+Maintainer: Gregory R. Lee
+Maintainer-email: grlee77@gmail.com
+License: BSD
+Description: 
+        
+        mrrt.utils
+        ==========
+        mrrt.utils is a collection of simple utility functions that are collected
+        here to reduce duplication across other ``mrrt.*`` modules.
+        
+        This module is not intended for standalone use and is does not currently have
+        detailed examples.
+        
+        .. _README: https://github.com/mritools/mrrt.utils/blob/master/README.md
+        
+        License
+        =======
+        ``mrrt.utils`` is licensed under the terms of the BSD 3-clause license. See
+        the file "LICENSE.txt" for information on the history of this software, terms &
+        conditions for usage, and a DISCLAIMER OF ALL WARRANTIES.
+        
+        All trademarks referenced herein are property of their respective holders.
+        
+        Copyright (c) 2014-2020,
+        Gregory R. Lee, Cincinnati Children's Hospital Medical Center.
+        
+Platform: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires: numpy
+Requires: scipy
+Requires-Python: >= 3.6
