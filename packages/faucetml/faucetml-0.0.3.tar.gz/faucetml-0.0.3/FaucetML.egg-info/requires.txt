@@ -1,0 +1,6 @@
+pandas>0.20.0
+feast>=0.4.4
+google-cloud-bigquery
+retry
+torch
+scipy
