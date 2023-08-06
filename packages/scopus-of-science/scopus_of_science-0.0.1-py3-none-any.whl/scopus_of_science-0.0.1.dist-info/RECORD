@@ -1,0 +1,14 @@
+scopus_of_science/__init__.py,sha256=QniJ6i8rL2zjC_5o46BYZTd-V0idPyauvc6Pk1jW2Uc,161
+scopus_of_science/constants.py,sha256=fvCjwX9EE8LVe46xIHu9Q2D4yNMSAQE3TKPody49ljM,2758
+scopus_of_science/file_handler.py,sha256=HQjMuE3R3aJKWGVeZGtM_a1YGpJY0NXEbVIV6Tu8V5g,1270
+scopus_of_science/sos.py,sha256=Tg1QTdI3znOvwYUK_p-FCRz6hZ_5S4eDYVmNJlnVN54,2721
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/prova.py,sha256=8O2fZqqdlaeiyQL_BQgVcT6TUW8Pe7WvbJ9oq_r81gs,285
+tests/test_constants.py,sha256=ES2t2JbZk41QSkSBZj7yNrJ3zNWmpvhVQnTDvyLLb0A,1962
+tests/test_file_handler.py,sha256=wKylfwH9FGc8XIfmilmU4Ur01ZIh6sWZH2RLT6vzofc,238
+tests/test_sos.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scopus_of_science-0.0.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+scopus_of_science-0.0.1.dist-info/METADATA,sha256=_JKF_PD11XudcNbInQeHCvoV6Zh3jFpFX7ByOgT_PtQ,1610
+scopus_of_science-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+scopus_of_science-0.0.1.dist-info/top_level.txt,sha256=4sfLRnKnQDYMypK-SLIu0-5ULOM7uA8iFTvrOv6qvhM,24
+scopus_of_science-0.0.1.dist-info/RECORD,,
