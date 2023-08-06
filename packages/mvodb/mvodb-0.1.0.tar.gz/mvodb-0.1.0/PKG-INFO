@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: mvodb
+Version: 0.1.0
+Summary: Rename and move files using metadata from online databases.
+Home-page: https://github.com/pawamoy/mvodb
+License: ISC
+Author: Timothée Mazzucotelli
+Author-email: pawamoy@pm.me
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: guessit (>=3.1.0,<4.0.0)
+Requires-Dist: langdetect (>=1.0.7,<2.0.0)
+Requires-Dist: tmdbsimple (>=2.2.0,<3.0.0)
+Project-URL: Repository, https://github.com/pawamoy/mvodb
+Description-Content-Type: text/markdown
+
+<!--
+IMPORTANT:
+  This file is generated from the template at 'scripts/templates/README.md'.
+  Please update the template instead of this file.
+-->
+
+# mvodb
+[![pipeline status](https://gitlab.com/pawamoy/mvodb/badges/master/pipeline.svg)](https://gitlab.com/pawamoy/mvodb/pipelines)
+[![coverage report](https://gitlab.com/pawamoy/mvodb/badges/master/coverage.svg)](https://gitlab.com/pawamoy/mvodb/commits/master)
+[![documentation](https://img.shields.io/readthedocs/mvodb.svg?style=flat)](https://mvodb.readthedocs.io/en/latest/index.html)
+[![pypi version](https://img.shields.io/pypi/v/mvodb.svg)](https://pypi.org/project/mvodb/)
+
+Rename and move files using metadata from online databases.
+
+## Requirements
+mvodb requires Python 3.6 or above.
+
+<details>
+<summary>To install Python 3.6, I recommend using <a href="https://github.com/pyenv/pyenv"><code>pyenv</code></a>.</summary>
+
+```bash
+# install pyenv
+git clone https://github.com/pyenv/pyenv ~/.pyenv
+
+# setup pyenv (you should also put these three lines in .bashrc or similar)
+export PATH="${HOME}/.pyenv/bin:${PATH}"
+export PYENV_ROOT="${HOME}/.pyenv"
+eval "$(pyenv init -)"
+
+# install Python 3.6
+pyenv install 3.6.8
+
+# make it available globally
+pyenv global system 3.6.8
+```
+</details>
+
+## Installation
+With `pip`:
+```bash
+python3.6 -m pip install mvodb
+```
+
+With [`pipx`](https://github.com/cs01/pipx):
+```bash
+python3.6 -m pip install --user pipx
+
+pipx install --python python3.6 mvodb
+```
+
+## Usage (as a library)
+TODO
+
+## Usage (command-line)
+```
+usage: mvodb [-h] [-y] FILE [FILE ...]
+
+positional arguments:
+  FILE              Files to move/rename.
+
+optional arguments:
+  -h, --help        show this help message and exit
+  -y, --no-confirm  Do not ask confirmation.
+
+```
+
+
+
