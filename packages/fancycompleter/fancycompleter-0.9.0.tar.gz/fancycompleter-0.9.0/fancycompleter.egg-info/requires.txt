@@ -1,0 +1,4 @@
+pyrepl>=0.8.2
+
+[:platform_system == "Windows"]
+pyreadline
