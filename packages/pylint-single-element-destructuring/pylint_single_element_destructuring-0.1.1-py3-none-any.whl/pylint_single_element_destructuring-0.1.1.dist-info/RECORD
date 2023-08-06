@@ -1,0 +1,5 @@
+pylint_single_element_destructuring/__init__.py,sha256=QrjcSUCuGp-Zd-RlBhulKpBh-TD3Sx8ZmqD6vldEuP0,30
+pylint_single_element_destructuring/checker.py,sha256=56CpdedjeIyaXHHdlxqs85pSBYCo2y_nwMjt1-BHkgE,1002
+pylint_single_element_destructuring-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+pylint_single_element_destructuring-0.1.1.dist-info/METADATA,sha256=hoW7hACBd2hVLqTQJuMHTq2fA26Xs5z8_AoGRqN-_KM,411
+pylint_single_element_destructuring-0.1.1.dist-info/RECORD,,
