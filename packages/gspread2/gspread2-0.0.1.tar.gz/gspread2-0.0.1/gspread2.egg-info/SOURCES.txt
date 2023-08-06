@@ -1,0 +1,9 @@
+README.md
+setup.py
+gspread2/__init__.py
+gspread2/core.py
+gspread2/credentials.py
+gspread2.egg-info/PKG-INFO
+gspread2.egg-info/SOURCES.txt
+gspread2.egg-info/dependency_links.txt
+gspread2.egg-info/top_level.txt
