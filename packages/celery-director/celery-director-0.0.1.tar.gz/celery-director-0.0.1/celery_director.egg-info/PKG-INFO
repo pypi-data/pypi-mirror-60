@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: celery-director
+Version: 0.0.1
+Summary: Celery Director
+Home-page: UNKNOWN
+Author: OVHcloud
+Author-email: opensource@ovhcloud.com
+License: UNKNOWN
+Description: Celery Director
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Monitoring
+Requires-Python: ~=3.6
+Provides-Extra: dev
+Provides-Extra: ci
