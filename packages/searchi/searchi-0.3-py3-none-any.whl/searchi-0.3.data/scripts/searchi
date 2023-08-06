@@ -1,0 +1,48 @@
+#!python
+
+import os
+from os import listdir
+from os.path import isfile, join, expanduser
+import sys
+from glob import glob
+import argparse
+
+file_name = "gen"
+
+def generate_cache():
+    current_dir = expanduser("~")
+    cache_file = open(file_name, "a+")
+
+    print("Generating ...")
+    result = [y+'\n' for x in os.walk(current_dir) for y in glob(os.path.join(x[0], '*'))]
+    cache_file.writelines(result)
+    cache_file.close()
+
+if len(sys.argv) < 2:
+  print("=========Please add search string (ex. searchi hello world ...)")
+  sys.exit()
+
+command = ''
+
+if sys.argv[1] == 'generate':
+    command = sys.argv[1]
+
+if command == '':
+    if isfile(file_name) == False:
+        generate_cache()
+    
+    words = sys.argv[1:]
+
+    found = False
+    with open(file_name, "r") as f:
+        searchlines = f.readlines()
+    for i, line in enumerate(searchlines):
+        if all(word in line for word in words):
+            found = True
+            print(line)
+    
+    if found == False:
+        print("Nothing found")
+
+else:
+    generate_cache()
