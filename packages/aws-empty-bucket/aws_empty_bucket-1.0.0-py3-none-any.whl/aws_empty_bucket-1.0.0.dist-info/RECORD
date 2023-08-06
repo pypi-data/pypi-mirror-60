@@ -1,0 +1,12 @@
+aws_empty_bucket/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_empty_bucket/empty_s3.py,sha256=eqQjMXiAOcELyCz0NpF21ZIFT-G9KQhF1N-XC1Ulmvc,3558
+aws_empty_bucket/package/__init__.py,sha256=DVfDIsPg6-8PKZE5zrC3NtPQzZjTFfSsnRlyxoXVF-I,68
+aws_empty_bucket/package/action.py,sha256=YpXLgZnfYNI7YGbNOkaufNRzRtVCEzPPru6vlPx9fi0,559
+aws_empty_bucket/package/index.py,sha256=qXLIV5r0zXD1x0aYB-yKd7TZkBzLhI02jPZ-_nbDJ2w,1988
+aws_empty_bucket/package/setup.py,sha256=FGtOa7jJxGEppfFVO0zQ0LnWYhC1h02maAtT1qch2dI,203
+aws_empty_bucket-1.0.0.dist-info/DESCRIPTION.rst,sha256=Yvb51gob_zvuRDHql56T0MjR00JqQSRiXkhjNEQz3tE,362
+aws_empty_bucket-1.0.0.dist-info/METADATA,sha256=QdDOwi9Hjh8OMklXVVpsJMJliB1H3ib3t_BQC_Y_uCE,1146
+aws_empty_bucket-1.0.0.dist-info/RECORD,,
+aws_empty_bucket-1.0.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+aws_empty_bucket-1.0.0.dist-info/metadata.json,sha256=MCKTHEZ3VsWbIMdM-YL1pBdxW5-bpA_IR0o2SFLQE1Y,960
+aws_empty_bucket-1.0.0.dist-info/top_level.txt,sha256=JhgJYXBsDrNZsoJn4VwhzJpVp4wHsRijBM5f5o3CT3A,17
