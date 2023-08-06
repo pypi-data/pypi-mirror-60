@@ -1,0 +1,17 @@
+pmisc/__init__.py,sha256=4uAZPeGDeX4c0Q5wfCWmrorvIfpoxJbHqJeGuqj9Aw0,497
+pmisc/ctx.py,sha256=2NW2_XI2oTRsGLIFeBg-9hU68mKBdkLBOVGFkK8lDns,10205
+pmisc/dicts.py,sha256=WsxcZlxDWMgDQYMlCzkiPcxBZ9OcT3f-LQUFDfS9J-w,1385
+pmisc/file.py,sha256=wbFGij_BV-51Pmm67rxK2BstEoeZV_4NNteRGGMNfiw,2186
+pmisc/member.py,sha256=qQDuxuHqYLbZEkWN_Vk2TzjQrcZvcyxB4QczzXNBHWM,1728
+pmisc/misc.py,sha256=kK44p4CGwI2gEYHAS4Jut4Xp9x76goiIME8UKcRhVZ0,622
+pmisc/number.py,sha256=mvBUeftqSJvo1msdR89E4uL1Dz3gidmO8U1RqLyKFR8,10424
+pmisc/pkgdata.py,sha256=9e1vxuqKBhGzS6b-EyaiJGXjOq_HF57LT9VuVRKb75U,1399
+pmisc/rst.py,sha256=xvw8XdJ-N0JJXZp2JV4IpEAKxFMyKJ4ShX1uwXlVAx8,8583
+pmisc/strings.py,sha256=ebxZCxgStP82fmPaqcRBIkPqMC_RLpRvW6th_msR1WM,9201
+pmisc/test.py,sha256=RBbMz2sBb9deQy0yAkykFpVFvySA2wW0uwARU3ndkQk,22987
+pmisc-1.5.11.dist-info/AUTHORS.rst,sha256=phLrW9LEFMLmvzyfPQtYv9B3oBQfovg7Y1p6-Lx69Gg,151
+pmisc-1.5.11.dist-info/LICENSE,sha256=k_5sqqjSajtSoJQghvyJgkUJTHWVZF9XEeZ6DT8vQV0,1093
+pmisc-1.5.11.dist-info/METADATA,sha256=o7CQVF7_zzJvu83pKHg8YYZMmMhStBaqIrP4JvCbmeY,16979
+pmisc-1.5.11.dist-info/WHEEL,sha256=K1reVGoHtUqPiHgEaplNG9tcovKx97CewaA3_YcIWmc,93
+pmisc-1.5.11.dist-info/top_level.txt,sha256=X1oCCeyNWOV59gWMOkJcaECv0jf7MOUiZ_69Yl6pAsM,6
+pmisc-1.5.11.dist-info/RECORD,,
