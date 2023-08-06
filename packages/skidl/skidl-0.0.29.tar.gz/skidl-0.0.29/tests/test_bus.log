@@ -1,0 +1,35 @@
+WARNING: Attaching non-part Pin  to a Net A.
+WARNING: Attaching non-part Pin  to a Net A.
+WARNING: Attaching non-part Pin  to a Net N$9.
+WARNING: Attaching non-part Pin  to a Net N$1.
+WARNING: Attaching non-part Pin  to a Net N$9.
+WARNING: Attaching non-part Pin  to a Net N$10.
+WARNING: Attaching non-part Pin  to a Net N$11.
+WARNING: Attaching non-part Pin  to a Net N$12.
+WARNING: Attaching non-part Pin  to a Net N$13.
+WARNING: Attaching non-part Pin  to a Net N$14.
+WARNING: Attaching non-part Pin  to a Net N$15.
+WARNING: Attaching non-part Pin  to a Net N$16.
+WARNING: Attaching non-part Pin  to a Net B0.
+WARNING: Attaching non-part Pin  to a Net B1.
+WARNING: Attaching non-part Pin  to a Net B2.
+WARNING: Attaching non-part Pin  to a Net B3.
+WARNING: Attaching non-part Pin  to a Net B4.
+WARNING: Attaching non-part Pin  to a Net B5.
+WARNING: Attaching non-part Pin  to a Net B6.
+WARNING: Attaching non-part Pin  to a Net B7.
+ERROR: Connection mismatch 8 != 9!
+ERROR: Connection mismatch 9 != 8!
+ERROR: Can't assign to a bus! Use the += operator.
+WARNING: Attaching non-part Pin  to a Net A0.
+WARNING: Attaching non-part Pin  to a Net A1.
+WARNING: Attaching non-part Pin  to a Net A2.
+WARNING: Attaching non-part Pin  to a Net A3.
+WARNING: Attaching non-part Pin  to a Net A4.
+WARNING: Attaching non-part Pin  to a Net A5.
+WARNING: Attaching non-part Pin  to a Net A6.
+WARNING: Attaching non-part Pin  to a Net A7.
+ERROR: Can't assign to a bus! Use the += operator.
+WARNING: Attaching non-part Pin  to a Net A5.
+WARNING: Attaching non-part Pin  to a Net A5.
+WARNING: Attaching non-part Pin  to a Net A5.

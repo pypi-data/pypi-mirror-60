@@ -1,0 +1,4 @@
+* Number of ERC messages: 5249
+* Number of nets: 6169
+* Original compilation time: 2160 seconds
+* Final compilation time: 230 seconds

@@ -1,0 +1,416 @@
+ERROR: Cannot set alias for ('my_alias',)
+WARNING: Attaching non-part Pin  to a Net A.
+WARNING: Attaching non-part Pin  to a Net A.
+WARNING: Attaching non-part Pin  to a Net N$9.
+WARNING: Attaching non-part Pin  to a Net N$1.
+WARNING: Attaching non-part Pin  to a Net N$9.
+WARNING: Attaching non-part Pin  to a Net N$10.
+WARNING: Attaching non-part Pin  to a Net N$11.
+WARNING: Attaching non-part Pin  to a Net N$12.
+WARNING: Attaching non-part Pin  to a Net N$13.
+WARNING: Attaching non-part Pin  to a Net N$14.
+WARNING: Attaching non-part Pin  to a Net N$15.
+WARNING: Attaching non-part Pin  to a Net N$16.
+WARNING: Attaching non-part Pin  to a Net B0.
+WARNING: Attaching non-part Pin  to a Net B1.
+WARNING: Attaching non-part Pin  to a Net B2.
+WARNING: Attaching non-part Pin  to a Net B3.
+WARNING: Attaching non-part Pin  to a Net B4.
+WARNING: Attaching non-part Pin  to a Net B5.
+WARNING: Attaching non-part Pin  to a Net B6.
+WARNING: Attaching non-part Pin  to a Net B7.
+ERROR: Connection mismatch 8 != 9!
+ERROR: Connection mismatch 9 != 8!
+ERROR: Can't assign to a bus! Use the += operator.
+WARNING: Attaching non-part Pin  to a Net A0.
+WARNING: Attaching non-part Pin  to a Net A1.
+WARNING: Attaching non-part Pin  to a Net A2.
+WARNING: Attaching non-part Pin  to a Net A3.
+WARNING: Attaching non-part Pin  to a Net A4.
+WARNING: Attaching non-part Pin  to a Net A5.
+WARNING: Attaching non-part Pin  to a Net A6.
+WARNING: Attaching non-part Pin  to a Net A7.
+ERROR: Can't assign to a bus! Use the += operator.
+WARNING: Attaching non-part Pin  to a Net A5.
+WARNING: Attaching non-part Pin  to a Net A5.
+WARNING: Attaching non-part Pin  to a Net A5.
+WARNING: Attaching non-part Pin  to a Net N$1_1.
+WARNING: Attaching non-part Pin  to a Net N$1_2.
+WARNING: Attaching non-part Pin  to a Net N$1_2.
+WARNING: Attaching non-part Pin  to a Net N$1_1.
+WARNING: Attaching non-part Pin  to a Net N$1_1.
+WARNING: Attaching non-part Pin  to a Net N$1.
+WARNING: Attaching non-part Pin  to a Net N$1.
+WARNING: Attaching non-part Pin  to a Net N$1.
+WARNING: Attaching non-part Pin  to a Net N$1.
+WARNING: Attaching non-part Pin  to a Net N$1.
+WARNING: Attaching non-part Pin  to a Net N$1.
+ERROR: Can't use a non-zero index for a net.
+WARNING: Attaching non-part Pin  to a Net N$1.
+WARNING: Attaching non-part Pin  to a Net N$1.
+WARNING: Attaching non-part Pin  to a Net N$1.
+ERROR: Can't open file: crap.
+
+WARNING: Could not load KiCad schematic library "crap", falling back to backup library.
+ERROR: Can't open file: crap.
+
+WARNING: Could not load KiCad schematic library "crap", falling back to backup library.
+ERROR: Can't open file: crap.
+
+WARNING: Could not load KiCad schematic library "crap", falling back to backup library.
+ERROR: Can't open file: crap.
+
+WARNING: Could not load KiCad schematic library "crap", falling back to backup library.
+ERROR: Can't open file: non-existing.
+
+ERROR: Can't open file: non-existing.
+
+ERROR: Can't open file: non-existing.
+
+ERROR: Can't open file: non-existing.
+
+WARNING: Could not load KiCad schematic library "non-existing", falling back to backup library.
+ERROR: Unable to find part P in library UNKNOWN.
+ERROR: Can't open file: non-existing.
+
+WARNING: Could not load KiCad schematic library "non-existing", falling back to backup library.
+ERROR: Unable to find part P in library UNKNOWN.
+ERROR: Can't open file: non-existing.
+
+WARNING: Could not load KiCad schematic library "non-existing", falling back to backup library.
+ERROR: Unable to find part P in library UNKNOWN.
+ERROR: No footprint for cap/C3.
+ERROR: No footprint for cap/C4.
+ERROR: No footprint for res/R3.
+ERROR: No footprint for res/R4.
+ERROR: No footprint for res/R3.
+ERROR: No footprint for res/R4.
+ERROR: No footprint for cap/C3.
+ERROR: No footprint for cap/C4.
+ERROR: No footprint for cap/C5.
+ERROR: No footprint for cap/C6.
+ERROR: No footprint for cap/C7.
+ERROR: No footprint for cap/C8.
+ERROR: No footprint for res/R5.
+ERROR: No footprint for res/R6.
+ERROR: No footprint for res/R7.
+ERROR: No footprint for res/R8.
+ERROR: No footprint for res/R5.
+ERROR: No footprint for res/R6.
+ERROR: No footprint for cap/C5.
+ERROR: No footprint for cap/C6.
+ERROR: No footprint for res/R7.
+ERROR: No footprint for res/R8.
+ERROR: No footprint for cap/C7.
+ERROR: No footprint for cap/C8.
+ERROR: No footprint for cap/C1.
+ERROR: No footprint for cap/C10.
+ERROR: No footprint for cap/C11.
+ERROR: No footprint for cap/C12.
+ERROR: No footprint for cap/C2.
+ERROR: No footprint for cap/C9.
+ERROR: No footprint for res/R1.
+ERROR: No footprint for res/R10.
+ERROR: No footprint for res/R11.
+ERROR: No footprint for res/R12.
+ERROR: No footprint for res/R2.
+ERROR: No footprint for res/R9.
+ERROR: No footprint for res/R1.
+ERROR: No footprint for res/R2.
+ERROR: No footprint for cap/C1.
+ERROR: No footprint for cap/C2.
+ERROR: No footprint for res/R9.
+ERROR: No footprint for res/R10.
+ERROR: No footprint for cap/C9.
+ERROR: No footprint for cap/C10.
+ERROR: No footprint for res/R11.
+ERROR: No footprint for res/R12.
+ERROR: No footprint for cap/C11.
+ERROR: No footprint for cap/C12.
+ERROR: No footprint for cap/C10.
+ERROR: No footprint for cap/C11.
+ERROR: No footprint for cap/C12.
+ERROR: No footprint for cap/C7.
+ERROR: No footprint for cap/C8.
+ERROR: No footprint for cap/C9.
+ERROR: No footprint for res/R10.
+ERROR: No footprint for res/R11.
+ERROR: No footprint for res/R12.
+ERROR: No footprint for res/R7.
+ERROR: No footprint for res/R8.
+ERROR: No footprint for res/R9.
+ERROR: No footprint for res/R7.
+ERROR: No footprint for res/R8.
+ERROR: No footprint for cap/C7.
+ERROR: No footprint for cap/C8.
+ERROR: No footprint for res/R9.
+ERROR: No footprint for res/R10.
+ERROR: No footprint for cap/C9.
+ERROR: No footprint for cap/C10.
+ERROR: No footprint for res/R11.
+ERROR: No footprint for res/R12.
+ERROR: No footprint for cap/C11.
+ERROR: No footprint for cap/C12.
+ERROR: No footprint for cap/C13.
+ERROR: No footprint for cap/C14.
+ERROR: No footprint for cap/C15.
+ERROR: No footprint for cap/C16.
+ERROR: No footprint for cap/C17.
+ERROR: No footprint for cap/C18.
+ERROR: No footprint for cap/C19.
+ERROR: No footprint for cap/C20.
+ERROR: No footprint for cap/C21.
+ERROR: No footprint for cap/C22.
+ERROR: No footprint for cap/C23.
+ERROR: No footprint for cap/C24.
+ERROR: No footprint for res/R13.
+ERROR: No footprint for res/R14.
+ERROR: No footprint for res/R15.
+ERROR: No footprint for res/R16.
+ERROR: No footprint for res/R17.
+ERROR: No footprint for res/R18.
+ERROR: No footprint for res/R19.
+ERROR: No footprint for res/R20.
+ERROR: No footprint for res/R21.
+ERROR: No footprint for res/R22.
+ERROR: No footprint for res/R23.
+ERROR: No footprint for res/R24.
+ERROR: No footprint for res/R13.
+ERROR: No footprint for res/R14.
+ERROR: No footprint for cap/C13.
+ERROR: No footprint for cap/C14.
+ERROR: No footprint for res/R15.
+ERROR: No footprint for res/R16.
+ERROR: No footprint for cap/C15.
+ERROR: No footprint for cap/C16.
+ERROR: No footprint for res/R17.
+ERROR: No footprint for res/R18.
+ERROR: No footprint for cap/C17.
+ERROR: No footprint for cap/C18.
+ERROR: No footprint for res/R19.
+ERROR: No footprint for res/R20.
+ERROR: No footprint for cap/C19.
+ERROR: No footprint for cap/C20.
+ERROR: No footprint for res/R21.
+ERROR: No footprint for res/R22.
+ERROR: No footprint for cap/C21.
+ERROR: No footprint for cap/C22.
+ERROR: No footprint for res/R23.
+ERROR: No footprint for res/R24.
+ERROR: No footprint for cap/C23.
+ERROR: No footprint for cap/C24.
+ERROR: No footprint for cap/C1.
+ERROR: No footprint for cap/C2.
+ERROR: No footprint for cap/C25.
+ERROR: No footprint for cap/C26.
+ERROR: No footprint for cap/C27.
+ERROR: No footprint for cap/C28.
+ERROR: No footprint for cap/C29.
+ERROR: No footprint for cap/C3.
+ERROR: No footprint for cap/C30.
+ERROR: No footprint for cap/C31.
+ERROR: No footprint for cap/C32.
+ERROR: No footprint for cap/C33.
+ERROR: No footprint for cap/C34.
+ERROR: No footprint for cap/C35.
+ERROR: No footprint for cap/C36.
+ERROR: No footprint for cap/C4.
+ERROR: No footprint for cap/C5.
+ERROR: No footprint for cap/C6.
+ERROR: No footprint for res/R1.
+ERROR: No footprint for res/R2.
+ERROR: No footprint for res/R25.
+ERROR: No footprint for res/R26.
+ERROR: No footprint for res/R27.
+ERROR: No footprint for res/R28.
+ERROR: No footprint for res/R29.
+ERROR: No footprint for res/R3.
+ERROR: No footprint for res/R30.
+ERROR: No footprint for res/R31.
+ERROR: No footprint for res/R32.
+ERROR: No footprint for res/R33.
+ERROR: No footprint for res/R34.
+ERROR: No footprint for res/R35.
+ERROR: No footprint for res/R36.
+ERROR: No footprint for res/R4.
+ERROR: No footprint for res/R5.
+ERROR: No footprint for res/R6.
+ERROR: No footprint for res/R1.
+ERROR: No footprint for res/R2.
+ERROR: No footprint for cap/C1.
+ERROR: No footprint for cap/C2.
+ERROR: No footprint for res/R3.
+ERROR: No footprint for res/R4.
+ERROR: No footprint for cap/C3.
+ERROR: No footprint for cap/C4.
+ERROR: No footprint for res/R5.
+ERROR: No footprint for res/R6.
+ERROR: No footprint for cap/C5.
+ERROR: No footprint for cap/C6.
+ERROR: No footprint for res/R25.
+ERROR: No footprint for res/R26.
+ERROR: No footprint for cap/C25.
+ERROR: No footprint for cap/C26.
+ERROR: No footprint for res/R27.
+ERROR: No footprint for res/R28.
+ERROR: No footprint for cap/C27.
+ERROR: No footprint for cap/C28.
+ERROR: No footprint for res/R29.
+ERROR: No footprint for res/R30.
+ERROR: No footprint for cap/C29.
+ERROR: No footprint for cap/C30.
+ERROR: No footprint for res/R31.
+ERROR: No footprint for res/R32.
+ERROR: No footprint for cap/C31.
+ERROR: No footprint for cap/C32.
+ERROR: No footprint for res/R33.
+ERROR: No footprint for res/R34.
+ERROR: No footprint for cap/C33.
+ERROR: No footprint for cap/C34.
+ERROR: No footprint for res/R35.
+ERROR: No footprint for res/R36.
+ERROR: No footprint for cap/C35.
+ERROR: No footprint for cap/C36.
+WARNING: Attaching non-part Pin  to a Net N1.
+ERROR: Can't add unmovable part 1 to this circuit.
+ERROR: Can't attach a part to a net in different circuits (, )!
+WARNING: Attaching non-part Pin  to a Net A.
+WARNING: Attaching non-part Pin  to a Net A.
+WARNING: Attaching non-part Pin  to a Net A.
+WARNING: Attaching non-part Pin  to a Net A.
+WARNING: Attaching non-part Pin  to a Net A.
+WARNING: Attaching non-part Pin  to a Net B.
+WARNING: Attaching non-part Pin  to a Net B.
+WARNING: Attaching non-part Pin  to a Net B.
+ERROR: No footprint for C/C3.
+ERROR: No footprint for C/C4.
+ERROR: No footprint for C/C3.
+ERROR: No footprint for C/C4.
+ERROR: No footprint for C/C5.
+ERROR: No footprint for C/C6.
+ERROR: No footprint for C/C7.
+ERROR: No footprint for C/C8.
+ERROR: No footprint for C/C5.
+ERROR: No footprint for C/C6.
+ERROR: No footprint for C/C7.
+ERROR: No footprint for C/C8.
+ERROR: No footprint for C/C1.
+ERROR: No footprint for C/C10.
+ERROR: No footprint for C/C11.
+ERROR: No footprint for C/C12.
+ERROR: No footprint for C/C2.
+ERROR: No footprint for C/C9.
+ERROR: No footprint for C/C1.
+ERROR: No footprint for C/C2.
+ERROR: No footprint for C/C9.
+ERROR: No footprint for C/C10.
+ERROR: No footprint for C/C11.
+ERROR: No footprint for C/C12.
+ERROR: No footprint for C/C10.
+ERROR: No footprint for C/C11.
+ERROR: No footprint for C/C12.
+ERROR: No footprint for C/C7.
+ERROR: No footprint for C/C8.
+ERROR: No footprint for C/C9.
+ERROR: No footprint for C/C7.
+ERROR: No footprint for C/C8.
+ERROR: No footprint for C/C9.
+ERROR: No footprint for C/C10.
+ERROR: No footprint for C/C11.
+ERROR: No footprint for C/C12.
+ERROR: No footprint for C/C13.
+ERROR: No footprint for C/C14.
+ERROR: No footprint for C/C15.
+ERROR: No footprint for C/C16.
+ERROR: No footprint for C/C17.
+ERROR: No footprint for C/C18.
+ERROR: No footprint for C/C19.
+ERROR: No footprint for C/C20.
+ERROR: No footprint for C/C21.
+ERROR: No footprint for C/C22.
+ERROR: No footprint for C/C23.
+ERROR: No footprint for C/C24.
+ERROR: No footprint for C/C13.
+ERROR: No footprint for C/C14.
+ERROR: No footprint for C/C15.
+ERROR: No footprint for C/C16.
+ERROR: No footprint for C/C17.
+ERROR: No footprint for C/C18.
+ERROR: No footprint for C/C19.
+ERROR: No footprint for C/C20.
+ERROR: No footprint for C/C21.
+ERROR: No footprint for C/C22.
+ERROR: No footprint for C/C23.
+ERROR: No footprint for C/C24.
+ERROR: No footprint for C/C1.
+ERROR: No footprint for C/C2.
+ERROR: No footprint for C/C25.
+ERROR: No footprint for C/C26.
+ERROR: No footprint for C/C27.
+ERROR: No footprint for C/C28.
+ERROR: No footprint for C/C29.
+ERROR: No footprint for C/C3.
+ERROR: No footprint for C/C30.
+ERROR: No footprint for C/C31.
+ERROR: No footprint for C/C32.
+ERROR: No footprint for C/C33.
+ERROR: No footprint for C/C34.
+ERROR: No footprint for C/C35.
+ERROR: No footprint for C/C36.
+ERROR: No footprint for C/C4.
+ERROR: No footprint for C/C5.
+ERROR: No footprint for C/C6.
+ERROR: No footprint for C/C1.
+ERROR: No footprint for C/C2.
+ERROR: No footprint for C/C3.
+ERROR: No footprint for C/C4.
+ERROR: No footprint for C/C5.
+ERROR: No footprint for C/C6.
+ERROR: No footprint for C/C25.
+ERROR: No footprint for C/C26.
+ERROR: No footprint for C/C27.
+ERROR: No footprint for C/C28.
+ERROR: No footprint for C/C29.
+ERROR: No footprint for C/C30.
+ERROR: No footprint for C/C31.
+ERROR: No footprint for C/C32.
+ERROR: No footprint for C/C33.
+ERROR: No footprint for C/C34.
+ERROR: No footprint for C/C35.
+ERROR: No footprint for C/C36.
+ERROR: Can't add unmovable part R1 to this circuit.
+ERROR: Can't attach a part to a net in different circuits (, )!
+WARNING: Attaching non-part Pin  to a Net A0.
+WARNING: Attaching non-part Pin  to a Net A1.
+WARNING: Attaching non-part Pin  to a Net A0_1.
+WARNING: Attaching non-part Pin  to a Net A0.
+WARNING: Attaching non-part Pin  to a Net A0_1.
+WARNING: Attaching non-part Pin  to a Net A1.
+WARNING: Attaching non-part Pin  to a Net A.
+WARNING: Cannot redefine existing net class my_net!
+ERROR: Can't assign net class my_net to net N$1 that's already assigned net class {<skidl.netclass.NetClass object at 0x0000019B890AC6C8>}
+ERROR: Can't assign net class class2 to net a that's already assigned net class {<skidl.netclass.NetClass object at 0x0000019B8A76F088>}
+ERROR: Can't assign net class class2 to net b that's already assigned net class {<skidl.netclass.NetClass object at 0x0000019B8ABEADC8>}
+ERROR: A Network object can't have more than two nodes.
+ERROR: A Network object can't have more than two nodes.
+ERROR: A Network object can't have more than two nodes.
+ERROR: No footprint for C/C1.
+ERROR: No footprint for C/C2.
+ERROR: No footprint for C/C3.
+ERROR: No footprint for C/C4.
+ERROR: No footprint for C/C1.
+ERROR: No footprint for C/C2.
+ERROR: No footprint for C/C3.
+ERROR: No footprint for C/C4.
+ERROR: No footprint for C/C1.
+ERROR: No footprint for C/C2.
+ERROR: No footprint for C/C3.
+ERROR: No footprint for C/C4.
+ERROR: No footprint for C/C5.
+ERROR: No footprint for C/C6.
+ERROR: No footprint for C/C1.
+ERROR: No footprint for C/C2.
+ERROR: No footprint for C/C3.
+ERROR: No footprint for C/C4.
+ERROR: No footprint for C/C5.
+ERROR: No footprint for C/C6.

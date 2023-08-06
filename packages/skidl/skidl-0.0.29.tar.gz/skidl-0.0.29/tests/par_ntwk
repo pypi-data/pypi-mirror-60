@@ -1,0 +1,20 @@
+digraph {
+	rankdir=LR
+	GND0 [shape=point xlabel=GND]
+	R2 -> GND0 [arrowhead=none taillabel="~"]
+	GND1 [shape=point xlabel=GND]
+	R1 -> GND1 [arrowhead=none taillabel="~"]
+	GND2 [shape=point xlabel=GND]
+	R3 -> GND2 [arrowhead=none taillabel="~"]
+	GND3 [shape=point xlabel=GND]
+	R4 -> GND3 [arrowhead=none taillabel="~"]
+	VCC [shape=point xlabel=VCC]
+	R2 -> VCC [arrowhead=none taillabel="~"]
+	R1 -> VCC [arrowhead=none taillabel="~"]
+	R3 -> VCC [arrowhead=none taillabel="~"]
+	R4 -> VCC [arrowhead=none taillabel="~"]
+	R1 [shape=rectangle xlabel=R]
+	R2 [shape=rectangle xlabel=R]
+	R3 [shape=rectangle xlabel=R]
+	R4 [shape=rectangle xlabel=R]
+}

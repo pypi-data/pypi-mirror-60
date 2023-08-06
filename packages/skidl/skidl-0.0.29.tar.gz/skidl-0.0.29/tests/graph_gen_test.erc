@@ -1,0 +1,1519 @@
+ERC WARNING: No pins attached to net VO.
+ERC WARNING: No drivers for net VO
+ERC WARNING: No pins attached to net VI.
+ERC WARNING: No drivers for net VI
+ERC WARNING: No pins attached to net GND.
+ERC WARNING: No drivers for net GND
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of res/R1.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of res/R1.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of res/R2.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of res/R2.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C1.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C2.
+ERC ERROR: Pin conflict on net N$1, PASSIVE pin 2/ of res/R1 <==> NO-CONNECT pin 1/ of res/R1 (PASSIVE connected to NO-CONNECT)
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R1 should not be connected to a net (N$1).
+ERC ERROR: Pin conflict on net N$1, OUTPUT pin 1/ of res/R1 <==> POWER-OUT pin 2/ of res/R1 (OUTPUT connected to POWER-OUT)
+ERC WARNING: No drivers for net N$1
+ERC WARNING: Insufficient drive current on net N$1 for pin INPUT pin 1/ of res/R1
+ERC WARNING: Insufficient drive current on net N$1 for pin POWER-IN pin 2/ of res/R1
+ERC WARNING: No drivers for net N$1
+ERC WARNING: Insufficient drive current on net N$1 for pin POWER-IN pin 2/ of res/R1
+ERC WARNING: Insufficient drive current on net N$1 for pin INPUT pin 1/ of res/R1
+ERC ERROR: Pin conflict on net N$1, PULLUP pin 1/ of res/R1 <==> PULLDN pin 2/ of res/R1 (Pull-up connected to pull-down.)
+ERC WARNING: Pin conflict on net N$1, PULLUP pin 2/ of res/R1 <==> PULLUP pin 1/ of res/R1 (Multiple pull-ups connected.)
+ERC WARNING: Insufficient drive current on net N$59 for pin POWER-IN pin 2/ of res/R59
+ERC WARNING: Pin conflict on net N$67, OUTPUT pin 2/ of res/R67 <==> UNSPECIFIED pin 1/ of res/R67 (OUTPUT connected to UNSPECIFIED)
+ERC ERROR: Pin conflict on net N$22, OUTPUT pin 1/ of res/R22 <==> OPEN-COLLECTOR pin 2/ of res/R22 (OUTPUT connected to OPEN-COLLECTOR)
+ERC WARNING: Pin conflict on net N$58, PASSIVE pin 1/ of res/R58 <==> UNSPECIFIED pin 2/ of res/R58 (PASSIVE connected to UNSPECIFIED)
+ERC ERROR: Pin conflict on net N$21, OUTPUT pin 1/ of res/R21 <==> POWER-OUT pin 2/ of res/R21 (OUTPUT connected to POWER-OUT)
+ERC ERROR: Pin conflict on net N$65, PASSIVE pin 1/ of res/R65 <==> NO-CONNECT pin 2/ of res/R65 (PASSIVE connected to NO-CONNECT)
+ERC ERROR: Pin conflict on net N$39, BIDIRECTIONAL pin 1/ of res/R39 <==> NO-CONNECT pin 2/ of res/R39 (BIDIRECTIONAL connected to NO-CONNECT)
+ERC WARNING: Insufficient drive current on net N$81 for pin POWER-IN pin 1/ of res/R81
+ERC WARNING: Pin conflict on net N$94, POWER-OUT pin 1/ of res/R94 <==> BIDIRECTIONAL pin 2/ of res/R94 (POWER-OUT connected to BIDIRECTIONAL)
+ERC WARNING: Pin conflict on net N$120, OPEN-EMITTER pin 1/ of res/R120 <==> BIDIRECTIONAL pin 2/ of res/R120 (OPEN-EMITTER connected to BIDIRECTIONAL)
+ERC ERROR: Pin conflict on net N$99, POWER-OUT pin 1/ of res/R99 <==> POWER-OUT pin 2/ of res/R99 (POWER-OUT connected to POWER-OUT)
+ERC WARNING: Insufficient drive current on net N$137 for pin POWER-IN pin 2/ of res/R137
+ERC WARNING: Insufficient drive current on net N$111 for pin POWER-IN pin 2/ of res/R111
+ERC ERROR: Pin conflict on net N$168, NO-CONNECT pin 1/ of res/R168 <==> PULLDN pin 2/ of res/R168 (NO-CONNECT connected to PULLDN)
+ERC WARNING: Pin conflict on net N$71, UNSPECIFIED pin 1/ of res/R71 <==> UNSPECIFIED pin 2/ of res/R71 (UNSPECIFIED connected to UNSPECIFIED)
+ERC WARNING: No drivers for net N$71
+ERC ERROR: Pin conflict on net N$163, NO-CONNECT pin 1/ of res/R163 <==> POWER-IN pin 2/ of res/R163 (NO-CONNECT connected to POWER-IN)
+ERC WARNING: No drivers for net N$163
+ERC WARNING: Insufficient drive current on net N$163 for pin POWER-IN pin 2/ of res/R163
+ERC WARNING: Pin conflict on net N$19, UNSPECIFIED pin 2/ of res/R19 <==> OUTPUT pin 1/ of res/R19 (UNSPECIFIED connected to OUTPUT)
+ERC ERROR: Pin conflict on net N$108, OPEN-COLLECTOR pin 1/ of res/R108 <==> TRISTATE pin 2/ of res/R108 (OPEN-COLLECTOR connected to TRISTATE)
+ERC ERROR: Pin conflict on net N$165, NO-CONNECT pin 1/ of res/R165 <==> OPEN-COLLECTOR pin 2/ of res/R165 (NO-CONNECT connected to OPEN-COLLECTOR)
+ERC ERROR: Pin conflict on net N$104, POWER-OUT pin 1/ of res/R104 <==> NO-CONNECT pin 2/ of res/R104 (POWER-OUT connected to NO-CONNECT)
+ERC WARNING: No drivers for net N$7
+ERC WARNING: Insufficient drive current on net N$7 for pin POWER-IN pin 2/ of res/R7
+ERC WARNING: Insufficient drive current on net N$7 for pin INPUT pin 1/ of res/R7
+ERC ERROR: Pin conflict on net N$93, POWER-OUT pin 1/ of res/R93 <==> OUTPUT pin 2/ of res/R93 (POWER-OUT connected to OUTPUT)
+ERC ERROR: Pin conflict on net N$91, NO-CONNECT pin 2/ of res/R91 <==> POWER-IN pin 1/ of res/R91 (NO-CONNECT connected to POWER-IN)
+ERC WARNING: No drivers for net N$91
+ERC WARNING: Insufficient drive current on net N$91 for pin POWER-IN pin 1/ of res/R91
+ERC ERROR: Pin conflict on net N$100, OPEN-COLLECTOR pin 2/ of res/R100 <==> POWER-OUT pin 1/ of res/R100 (OPEN-COLLECTOR connected to POWER-OUT)
+ERC WARNING: Pin conflict on net N$149, PULLDN pin 1/ of res/R149 <==> UNSPECIFIED pin 2/ of res/R149 (PULLDN connected to UNSPECIFIED)
+ERC WARNING: Pin conflict on net N$75, UNSPECIFIED pin 1/ of res/R75 <==> OPEN-EMITTER pin 2/ of res/R75 (UNSPECIFIED connected to OPEN-EMITTER)
+ERC WARNING: Insufficient drive current on net N$33 for pin POWER-IN pin 2/ of res/R33
+ERC ERROR: Pin conflict on net N$161, NO-CONNECT pin 1/ of res/R161 <==> PASSIVE pin 2/ of res/R161 (NO-CONNECT connected to PASSIVE)
+ERC WARNING: No drivers for net N$85
+ERC WARNING: Insufficient drive current on net N$85 for pin POWER-IN pin 1/ of res/R85
+ERC WARNING: Insufficient drive current on net N$85 for pin POWER-IN pin 2/ of res/R85
+ERC ERROR: Pin conflict on net N$48, TRISTATE pin 1/ of res/R48 <==> OPEN-COLLECTOR pin 2/ of res/R48 (TRISTATE connected to OPEN-COLLECTOR)
+ERC ERROR: Pin conflict on net N$160, TRISTATE pin 2/ of res/R160 <==> NO-CONNECT pin 1/ of res/R160 (TRISTATE connected to NO-CONNECT)
+ERC WARNING: Pin conflict on net N$36, BIDIRECTIONAL pin 1/ of res/R36 <==> OPEN-EMITTER pin 2/ of res/R36 (BIDIRECTIONAL connected to OPEN-EMITTER)
+ERC WARNING: No drivers for net N$79
+ERC WARNING: Insufficient drive current on net N$79 for pin INPUT pin 2/ of res/R79
+ERC WARNING: Insufficient drive current on net N$79 for pin POWER-IN pin 1/ of res/R79
+ERC WARNING: Pin conflict on net N$155, PULLDN pin 1/ of res/R155 <==> PULLDN pin 2/ of res/R155 (Multiple pull-downs connected.)
+ERC WARNING: Insufficient drive current on net N$89 for pin POWER-IN pin 1/ of res/R89
+ERC WARNING: Pin conflict on net N$17, TRISTATE pin 2/ of res/R17 <==> OUTPUT pin 1/ of res/R17 (TRISTATE connected to OUTPUT)
+ERC ERROR: Pin conflict on net N$106, OUTPUT pin 2/ of res/R106 <==> OPEN-COLLECTOR pin 1/ of res/R106 (OUTPUT connected to OPEN-COLLECTOR)
+ERC ERROR: Pin conflict on net N$156, NO-CONNECT pin 2/ of res/R156 <==> PULLDN pin 1/ of res/R156 (NO-CONNECT connected to PULLDN)
+ERC ERROR: Pin conflict on net N$167, NO-CONNECT pin 1/ of res/R167 <==> PULLUP pin 2/ of res/R167 (NO-CONNECT connected to PULLUP)
+ERC WARNING: Pin conflict on net N$141, PULLUP pin 2/ of res/R141 <==> PULLUP pin 1/ of res/R141 (Multiple pull-ups connected.)
+ERC ERROR: Pin conflict on net N$26, OUTPUT pin 1/ of res/R26 <==> NO-CONNECT pin 2/ of res/R26 (OUTPUT connected to NO-CONNECT)
+ERC ERROR: Pin conflict on net N$117, OPEN-COLLECTOR pin 1/ of res/R117 <==> NO-CONNECT pin 2/ of res/R117 (OPEN-COLLECTOR connected to NO-CONNECT)
+ERC WARNING: Pin conflict on net N$121, OPEN-EMITTER pin 1/ of res/R121 <==> TRISTATE pin 2/ of res/R121 (OPEN-EMITTER connected to TRISTATE)
+ERC ERROR: Pin conflict on net N$101, POWER-OUT pin 1/ of res/R101 <==> OPEN-EMITTER pin 2/ of res/R101 (POWER-OUT connected to OPEN-EMITTER)
+ERC WARNING: Pin conflict on net N$66, UNSPECIFIED pin 1/ of res/R66 <==> INPUT pin 2/ of res/R66 (UNSPECIFIED connected to INPUT)
+ERC WARNING: No drivers for net N$66
+ERC WARNING: Insufficient drive current on net N$66 for pin INPUT pin 2/ of res/R66
+ERC WARNING: Pin conflict on net N$68, BIDIRECTIONAL pin 2/ of res/R68 <==> UNSPECIFIED pin 1/ of res/R68 (BIDIRECTIONAL connected to UNSPECIFIED)
+ERC WARNING: Pin conflict on net N$49, TRISTATE pin 1/ of res/R49 <==> OPEN-EMITTER pin 2/ of res/R49 (TRISTATE connected to OPEN-EMITTER)
+ERC ERROR: Pin conflict on net N$23, OPEN-EMITTER pin 2/ of res/R23 <==> OUTPUT pin 1/ of res/R23 (OPEN-EMITTER connected to OUTPUT)
+ERC WARNING: Insufficient drive current on net N$88 for pin POWER-IN pin 1/ of res/R88
+ERC WARNING: Pin conflict on net N$97, POWER-OUT pin 1/ of res/R97 <==> UNSPECIFIED pin 2/ of res/R97 (POWER-OUT connected to UNSPECIFIED)
+ERC ERROR: Pin conflict on net N$112, POWER-OUT pin 2/ of res/R112 <==> OPEN-COLLECTOR pin 1/ of res/R112 (POWER-OUT connected to OPEN-COLLECTOR)
+ERC WARNING: Pin conflict on net N$77, UNSPECIFIED pin 1/ of res/R77 <==> PULLDN pin 2/ of res/R77 (UNSPECIFIED connected to PULLDN)
+ERC ERROR: Pin conflict on net N$125, OPEN-EMITTER pin 1/ of res/R125 <==> POWER-OUT pin 2/ of res/R125 (OPEN-EMITTER connected to POWER-OUT)
+ERC WARNING: Insufficient drive current on net N$83 for pin POWER-IN pin 1/ of res/R83
+ERC WARNING: Pin conflict on net N$45, UNSPECIFIED pin 2/ of res/R45 <==> TRISTATE pin 1/ of res/R45 (UNSPECIFIED connected to TRISTATE)
+ERC WARNING: Pin conflict on net N$76, PULLUP pin 2/ of res/R76 <==> UNSPECIFIED pin 1/ of res/R76 (PULLUP connected to UNSPECIFIED)
+ERC ERROR: Pin conflict on net N$130, OPEN-EMITTER pin 1/ of res/R130 <==> NO-CONNECT pin 2/ of res/R130 (OPEN-EMITTER connected to NO-CONNECT)
+ERC ERROR: Pin conflict on net N$119, OUTPUT pin 2/ of res/R119 <==> OPEN-EMITTER pin 1/ of res/R119 (OUTPUT connected to OPEN-EMITTER)
+ERC ERROR: Pin conflict on net N$15, OUTPUT pin 2/ of res/R15 <==> OUTPUT pin 1/ of res/R15 (OUTPUT connected to OUTPUT)
+ERC WARNING: No drivers for net N$1
+ERC WARNING: Insufficient drive current on net N$1 for pin INPUT pin 2/ of res/R1
+ERC WARNING: Insufficient drive current on net N$1 for pin INPUT pin 1/ of res/R1
+ERC WARNING: Insufficient drive current on net N$150 for pin POWER-IN pin 2/ of res/R150
+ERC ERROR: Pin conflict on net N$169, NO-CONNECT pin 2/ of res/R169 <==> NO-CONNECT pin 1/ of res/R169 (NO-CONNECT connected to NO-CONNECT)
+ERC WARNING: No drivers for net N$169
+ERC WARNING: Pin conflict on net N$72, UNSPECIFIED pin 1/ of res/R72 <==> POWER-IN pin 2/ of res/R72 (UNSPECIFIED connected to POWER-IN)
+ERC WARNING: No drivers for net N$72
+ERC WARNING: Insufficient drive current on net N$72 for pin POWER-IN pin 2/ of res/R72
+ERC ERROR: Pin conflict on net N$142, PULLUP pin 1/ of res/R142 <==> PULLDN pin 2/ of res/R142 (Pull-up connected to pull-down.)
+ERC ERROR: Pin conflict on net N$95, POWER-OUT pin 1/ of res/R95 <==> TRISTATE pin 2/ of res/R95 (POWER-OUT connected to TRISTATE)
+ERC ERROR: Pin conflict on net N$157, NO-CONNECT pin 1/ of res/R157 <==> INPUT pin 2/ of res/R157 (NO-CONNECT connected to INPUT)
+ERC WARNING: No drivers for net N$157
+ERC WARNING: Insufficient drive current on net N$157 for pin INPUT pin 2/ of res/R157
+ERC WARNING: Pin conflict on net N$34, BIDIRECTIONAL pin 1/ of res/R34 <==> POWER-OUT pin 2/ of res/R34 (BIDIRECTIONAL connected to POWER-OUT)
+ERC ERROR: Pin conflict on net N$164, POWER-OUT pin 2/ of res/R164 <==> NO-CONNECT pin 1/ of res/R164 (POWER-OUT connected to NO-CONNECT)
+ERC WARNING: Insufficient drive current on net N$20 for pin POWER-IN pin 2/ of res/R20
+ERC WARNING: Pin conflict on net N$41, TRISTATE pin 1/ of res/R41 <==> OUTPUT pin 2/ of res/R41 (TRISTATE connected to OUTPUT)
+ERC ERROR: Pin conflict on net N$47, POWER-OUT pin 2/ of res/R47 <==> TRISTATE pin 1/ of res/R47 (POWER-OUT connected to TRISTATE)
+ERC WARNING: Insufficient drive current on net N$87 for pin POWER-IN pin 1/ of res/R87
+ERC ERROR: Pin conflict on net N$143, NO-CONNECT pin 2/ of res/R143 <==> PULLUP pin 1/ of res/R143 (NO-CONNECT connected to PULLUP)
+ERC ERROR: Pin conflict on net N$158, NO-CONNECT pin 1/ of res/R158 <==> OUTPUT pin 2/ of res/R158 (NO-CONNECT connected to OUTPUT)
+ERC ERROR: Pin conflict on net N$159, NO-CONNECT pin 1/ of res/R159 <==> BIDIRECTIONAL pin 2/ of res/R159 (NO-CONNECT connected to BIDIRECTIONAL)
+ERC WARNING: Pin conflict on net N$6, INPUT pin 1/ of res/R6 <==> UNSPECIFIED pin 2/ of res/R6 (INPUT connected to UNSPECIFIED)
+ERC WARNING: No drivers for net N$6
+ERC WARNING: Insufficient drive current on net N$6 for pin INPUT pin 1/ of res/R6
+ERC WARNING: Pin conflict on net N$46, TRISTATE pin 1/ of res/R46 <==> POWER-IN pin 2/ of res/R46 (TRISTATE connected to POWER-IN)
+ERC WARNING: Insufficient drive current on net N$46 for pin POWER-IN pin 2/ of res/R46
+ERC WARNING: Pin conflict on net N$32, UNSPECIFIED pin 2/ of res/R32 <==> BIDIRECTIONAL pin 1/ of res/R32 (UNSPECIFIED connected to BIDIRECTIONAL)
+ERC WARNING: Insufficient drive current on net N$80 for pin POWER-IN pin 1/ of res/R80
+ERC ERROR: Pin conflict on net N$162, NO-CONNECT pin 1/ of res/R162 <==> UNSPECIFIED pin 2/ of res/R162 (NO-CONNECT connected to UNSPECIFIED)
+ERC WARNING: No drivers for net N$162
+ERC ERROR: Pin conflict on net N$166, NO-CONNECT pin 1/ of res/R166 <==> OPEN-EMITTER pin 2/ of res/R166 (NO-CONNECT connected to OPEN-EMITTER)
+ERC WARNING: Pin conflict on net N$74, UNSPECIFIED pin 1/ of res/R74 <==> OPEN-COLLECTOR pin 2/ of res/R74 (UNSPECIFIED connected to OPEN-COLLECTOR)
+ERC ERROR: Pin conflict on net N$13, INPUT pin 1/ of res/R13 <==> NO-CONNECT pin 2/ of res/R13 (INPUT connected to NO-CONNECT)
+ERC WARNING: No drivers for net N$13
+ERC WARNING: Insufficient drive current on net N$13 for pin INPUT pin 1/ of res/R13
+ERC WARNING: Pin conflict on net N$70, PASSIVE pin 2/ of res/R70 <==> UNSPECIFIED pin 1/ of res/R70 (PASSIVE connected to UNSPECIFIED)
+ERC WARNING: Insufficient drive current on net N$124 for pin POWER-IN pin 2/ of res/R124
+ERC WARNING: Insufficient drive current on net N$90 for pin POWER-IN pin 1/ of res/R90
+ERC WARNING: Pin conflict on net N$110, OPEN-COLLECTOR pin 1/ of res/R110 <==> UNSPECIFIED pin 2/ of res/R110 (OPEN-COLLECTOR connected to UNSPECIFIED)
+ERC WARNING: Pin conflict on net N$136, UNSPECIFIED pin 2/ of res/R136 <==> PULLUP pin 1/ of res/R136 (UNSPECIFIED connected to PULLUP)
+ERC WARNING: Pin conflict on net N$73, UNSPECIFIED pin 1/ of res/R73 <==> POWER-OUT pin 2/ of res/R73 (UNSPECIFIED connected to POWER-OUT)
+ERC WARNING: Pin conflict on net N$69, UNSPECIFIED pin 1/ of res/R69 <==> TRISTATE pin 2/ of res/R69 (UNSPECIFIED connected to TRISTATE)
+ERC ERROR: Pin conflict on net N$52, NO-CONNECT pin 2/ of res/R52 <==> TRISTATE pin 1/ of res/R52 (NO-CONNECT connected to TRISTATE)
+ERC ERROR: Pin conflict on net N$154, PULLUP pin 2/ of res/R154 <==> PULLDN pin 1/ of res/R154 (Pull-up connected to pull-down.)
+ERC ERROR: Pin conflict on net N$78, UNSPECIFIED pin 1/ of res/R78 <==> NO-CONNECT pin 2/ of res/R78 (UNSPECIFIED connected to NO-CONNECT)
+ERC WARNING: No drivers for net N$78
+ERC WARNING: Pin conflict on net N$123, UNSPECIFIED pin 2/ of res/R123 <==> OPEN-EMITTER pin 1/ of res/R123 (UNSPECIFIED connected to OPEN-EMITTER)
+ERC WARNING: Pin conflict on net N$82, POWER-IN pin 1/ of res/R82 <==> TRISTATE pin 2/ of res/R82 (POWER-IN connected to TRISTATE)
+ERC WARNING: Insufficient drive current on net N$82 for pin POWER-IN pin 1/ of res/R82
+ERC WARNING: Pin conflict on net N$84, POWER-IN pin 1/ of res/R84 <==> UNSPECIFIED pin 2/ of res/R84 (POWER-IN connected to UNSPECIFIED)
+ERC WARNING: No drivers for net N$84
+ERC WARNING: Insufficient drive current on net N$84 for pin POWER-IN pin 1/ of res/R84
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 2/ of res/R13 should not be connected to a net (N$13).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 2/ of res/R26 should not be connected to a net (N$26).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 2/ of res/R39 should not be connected to a net (N$39).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 2/ of res/R52 should not be connected to a net (N$52).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 2/ of res/R65 should not be connected to a net (N$65).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 2/ of res/R78 should not be connected to a net (N$78).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 2/ of res/R91 should not be connected to a net (N$91).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 2/ of res/R104 should not be connected to a net (N$104).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 2/ of res/R117 should not be connected to a net (N$117).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 2/ of res/R130 should not be connected to a net (N$130).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 2/ of res/R143 should not be connected to a net (N$143).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 2/ of res/R156 should not be connected to a net (N$156).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R157 should not be connected to a net (N$157).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R158 should not be connected to a net (N$158).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R159 should not be connected to a net (N$159).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R160 should not be connected to a net (N$160).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R161 should not be connected to a net (N$161).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R162 should not be connected to a net (N$162).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R163 should not be connected to a net (N$163).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R164 should not be connected to a net (N$164).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R165 should not be connected to a net (N$165).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R166 should not be connected to a net (N$166).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R167 should not be connected to a net (N$167).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R168 should not be connected to a net (N$168).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 1/ of res/R169 should not be connected to a net (N$169).
+ERC WARNING: Incorrectly connected pin: NO-CONNECT pin 2/ of res/R169 should not be connected to a net (N$169).
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R3) attached to net VI.
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R4) attached to net GND.
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C3.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C3.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C4.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C4.
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: No pins attached to net BB_18.
+ERC WARNING: No drivers for net BB_18
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB_14.
+ERC WARNING: No drivers for net BB_14
+ERC WARNING: No pins attached to net BB_11.
+ERC WARNING: No drivers for net BB_11
+ERC WARNING: No pins attached to net BB_15.
+ERC WARNING: No drivers for net BB_15
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: No pins attached to net BB_17.
+ERC WARNING: No drivers for net BB_17
+ERC WARNING: No pins attached to net BB_16.
+ERC WARNING: No drivers for net BB_16
+ERC WARNING: No pins attached to net BB_12.
+ERC WARNING: No drivers for net BB_12
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R5) attached to net VI.
+ERC WARNING: No pins attached to net BB_13.
+ERC WARNING: No drivers for net BB_13
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R6) attached to net GND.
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: No pins attached to net BB_10.
+ERC WARNING: No drivers for net BB_10
+ERC WARNING: No pins attached to net BB_19.
+ERC WARNING: No drivers for net BB_19
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R8) attached to net GND_1.
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R7) attached to net VI_1.
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C5.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C5.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C6.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C6.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C7.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C7.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C8.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C8.
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R11) attached to net VI_2.
+ERC WARNING: No pins attached to net BB_21.
+ERC WARNING: No drivers for net BB_21
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: No pins attached to net BB_18.
+ERC WARNING: No drivers for net BB_18
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB_23.
+ERC WARNING: No drivers for net BB_23
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB_14.
+ERC WARNING: No drivers for net BB_14
+ERC WARNING: No pins attached to net BB_26.
+ERC WARNING: No drivers for net BB_26
+ERC WARNING: No pins attached to net BB_11.
+ERC WARNING: No drivers for net BB_11
+ERC WARNING: No pins attached to net BB_15.
+ERC WARNING: No drivers for net BB_15
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB_25.
+ERC WARNING: No drivers for net BB_25
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB_28.
+ERC WARNING: No drivers for net BB_28
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: No pins attached to net BB_17.
+ERC WARNING: No drivers for net BB_17
+ERC WARNING: No pins attached to net BB_16.
+ERC WARNING: No drivers for net BB_16
+ERC WARNING: No pins attached to net BB_12.
+ERC WARNING: No drivers for net BB_12
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R1) attached to net VI.
+ERC WARNING: No pins attached to net BB_13.
+ERC WARNING: No drivers for net BB_13
+ERC WARNING: No pins attached to net BB_27.
+ERC WARNING: No drivers for net BB_27
+ERC WARNING: No pins attached to net BB_29.
+ERC WARNING: No drivers for net BB_29
+ERC WARNING: No pins attached to net BB_20.
+ERC WARNING: No drivers for net BB_20
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R2) attached to net GND.
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: No pins attached to net BB_10.
+ERC WARNING: No drivers for net BB_10
+ERC WARNING: No pins attached to net BB_22.
+ERC WARNING: No drivers for net BB_22
+ERC WARNING: No pins attached to net BB_19.
+ERC WARNING: No drivers for net BB_19
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R10) attached to net GND_1.
+ERC WARNING: No pins attached to net BB_24.
+ERC WARNING: No drivers for net BB_24
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R9) attached to net VI_1.
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R12) attached to net GND_2.
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C1.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C1.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C2.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C2.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C9.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C9.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C10.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C10.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C11.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C11.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C12.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C12.
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R12) attached to net VI_2.
+ERC WARNING: No pins attached to net BB_21.
+ERC WARNING: No drivers for net BB_21
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: No pins attached to net BB_18.
+ERC WARNING: No drivers for net BB_18
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB_23.
+ERC WARNING: No drivers for net BB_23
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB_14.
+ERC WARNING: No drivers for net BB_14
+ERC WARNING: No pins attached to net BB_26.
+ERC WARNING: No drivers for net BB_26
+ERC WARNING: No pins attached to net BB_11.
+ERC WARNING: No drivers for net BB_11
+ERC WARNING: No pins attached to net BB_15.
+ERC WARNING: No drivers for net BB_15
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB_25.
+ERC WARNING: No drivers for net BB_25
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB_28.
+ERC WARNING: No drivers for net BB_28
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: No pins attached to net BB_17.
+ERC WARNING: No drivers for net BB_17
+ERC WARNING: No pins attached to net BB_16.
+ERC WARNING: No drivers for net BB_16
+ERC WARNING: No pins attached to net BB_12.
+ERC WARNING: No drivers for net BB_12
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R7) attached to net VI.
+ERC WARNING: No pins attached to net BB_13.
+ERC WARNING: No drivers for net BB_13
+ERC WARNING: No pins attached to net BB_27.
+ERC WARNING: No drivers for net BB_27
+ERC WARNING: No pins attached to net BB_29.
+ERC WARNING: No drivers for net BB_29
+ERC WARNING: No pins attached to net BB_20.
+ERC WARNING: No drivers for net BB_20
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R8) attached to net GND.
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: No pins attached to net BB_10.
+ERC WARNING: No drivers for net BB_10
+ERC WARNING: No pins attached to net BB_22.
+ERC WARNING: No drivers for net BB_22
+ERC WARNING: No pins attached to net BB_19.
+ERC WARNING: No drivers for net BB_19
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R10) attached to net GND_1.
+ERC WARNING: No pins attached to net BB_24.
+ERC WARNING: No drivers for net BB_24
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R9) attached to net VI_1.
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R11) attached to net GND_2.
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C7.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C7.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C8.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C8.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C9.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C9.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C10.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C10.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C11.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C11.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C12.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C12.
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R24) attached to net VI_5.
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R18) attached to net VI_2.
+ERC WARNING: No pins attached to net BB_21.
+ERC WARNING: No drivers for net BB_21
+ERC WARNING: No pins attached to net BB_35.
+ERC WARNING: No drivers for net BB_35
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB_15.
+ERC WARNING: No drivers for net BB_15
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB_58.
+ERC WARNING: No drivers for net BB_58
+ERC WARNING: No pins attached to net BB_12.
+ERC WARNING: No drivers for net BB_12
+ERC WARNING: No pins attached to net BB_13.
+ERC WARNING: No drivers for net BB_13
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R21) attached to net VI_4.
+ERC WARNING: No pins attached to net BB_55.
+ERC WARNING: No drivers for net BB_55
+ERC WARNING: No pins attached to net BB_56.
+ERC WARNING: No drivers for net BB_56
+ERC WARNING: No pins attached to net BB_24.
+ERC WARNING: No drivers for net BB_24
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R19) attached to net VI_3.
+ERC WARNING: No pins attached to net BB_18.
+ERC WARNING: No drivers for net BB_18
+ERC WARNING: No pins attached to net BB_31.
+ERC WARNING: No drivers for net BB_31
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB_23.
+ERC WARNING: No drivers for net BB_23
+ERC WARNING: No pins attached to net BB_25.
+ERC WARNING: No drivers for net BB_25
+ERC WARNING: No pins attached to net BB_37.
+ERC WARNING: No drivers for net BB_37
+ERC WARNING: No pins attached to net BB_54.
+ERC WARNING: No drivers for net BB_54
+ERC WARNING: No pins attached to net BB_16.
+ERC WARNING: No drivers for net BB_16
+ERC WARNING: No pins attached to net BB_34.
+ERC WARNING: No drivers for net BB_34
+ERC WARNING: No pins attached to net BB_40.
+ERC WARNING: No drivers for net BB_40
+ERC WARNING: No pins attached to net BB_49.
+ERC WARNING: No drivers for net BB_49
+ERC WARNING: No pins attached to net BB_29.
+ERC WARNING: No drivers for net BB_29
+ERC WARNING: No pins attached to net BB_20.
+ERC WARNING: No drivers for net BB_20
+ERC WARNING: No pins attached to net BB_57.
+ERC WARNING: No drivers for net BB_57
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R22) attached to net GND_4.
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R16) attached to net GND_1.
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R17) attached to net GND_2.
+ERC WARNING: No pins attached to net BB_48.
+ERC WARNING: No drivers for net BB_48
+ERC WARNING: No pins attached to net BB_45.
+ERC WARNING: No drivers for net BB_45
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R23) attached to net GND_5.
+ERC WARNING: No pins attached to net BB_41.
+ERC WARNING: No drivers for net BB_41
+ERC WARNING: No pins attached to net BB_14.
+ERC WARNING: No drivers for net BB_14
+ERC WARNING: No pins attached to net BB_38.
+ERC WARNING: No drivers for net BB_38
+ERC WARNING: No pins attached to net BB_32.
+ERC WARNING: No drivers for net BB_32
+ERC WARNING: No pins attached to net BB_28.
+ERC WARNING: No drivers for net BB_28
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R13) attached to net VI.
+ERC WARNING: No pins attached to net BB_53.
+ERC WARNING: No drivers for net BB_53
+ERC WARNING: No pins attached to net BB_27.
+ERC WARNING: No drivers for net BB_27
+ERC WARNING: No pins attached to net BB_39.
+ERC WARNING: No drivers for net BB_39
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R14) attached to net GND.
+ERC WARNING: No pins attached to net BB_10.
+ERC WARNING: No drivers for net BB_10
+ERC WARNING: No pins attached to net BB_22.
+ERC WARNING: No drivers for net BB_22
+ERC WARNING: No pins attached to net BB_19.
+ERC WARNING: No drivers for net BB_19
+ERC WARNING: No pins attached to net BB_33.
+ERC WARNING: No drivers for net BB_33
+ERC WARNING: No pins attached to net BB_46.
+ERC WARNING: No drivers for net BB_46
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: No pins attached to net BB_44.
+ERC WARNING: No drivers for net BB_44
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: No pins attached to net BB_26.
+ERC WARNING: No drivers for net BB_26
+ERC WARNING: No pins attached to net BB_11.
+ERC WARNING: No drivers for net BB_11
+ERC WARNING: No pins attached to net BB_50.
+ERC WARNING: No drivers for net BB_50
+ERC WARNING: No pins attached to net BB_17.
+ERC WARNING: No drivers for net BB_17
+ERC WARNING: No pins attached to net BB_47.
+ERC WARNING: No drivers for net BB_47
+ERC WARNING: No pins attached to net BB_43.
+ERC WARNING: No drivers for net BB_43
+ERC WARNING: No pins attached to net BB_52.
+ERC WARNING: No drivers for net BB_52
+ERC WARNING: No pins attached to net BB_42.
+ERC WARNING: No drivers for net BB_42
+ERC WARNING: No pins attached to net BB_36.
+ERC WARNING: No drivers for net BB_36
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R20) attached to net GND_3.
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R15) attached to net VI_1.
+ERC WARNING: No pins attached to net BB_59.
+ERC WARNING: No drivers for net BB_59
+ERC WARNING: No pins attached to net BB_51.
+ERC WARNING: No drivers for net BB_51
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: No pins attached to net BB_30.
+ERC WARNING: No drivers for net BB_30
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C13.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C13.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C14.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C14.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C15.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C15.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C16.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C16.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C17.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C17.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C18.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C18.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C19.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C19.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C20.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C20.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C21.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C21.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C22.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C22.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C23.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C23.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C24.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C24.
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R30) attached to net VI_5.
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R6) attached to net VI_2.
+ERC WARNING: No pins attached to net BB_21.
+ERC WARNING: No drivers for net BB_21
+ERC WARNING: No pins attached to net BB_78.
+ERC WARNING: No drivers for net BB_78
+ERC WARNING: No pins attached to net BB_35.
+ERC WARNING: No drivers for net BB_35
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB_79.
+ERC WARNING: No drivers for net BB_79
+ERC WARNING: No pins attached to net BB_15.
+ERC WARNING: No drivers for net BB_15
+ERC WARNING: No pins attached to net BB_88.
+ERC WARNING: No drivers for net BB_88
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB_58.
+ERC WARNING: No drivers for net BB_58
+ERC WARNING: No pins attached to net BB_84.
+ERC WARNING: No drivers for net BB_84
+ERC WARNING: No pins attached to net BB_12.
+ERC WARNING: No drivers for net BB_12
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R33) attached to net VI_7.
+ERC WARNING: No pins attached to net BB_13.
+ERC WARNING: No drivers for net BB_13
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R27) attached to net VI_4.
+ERC WARNING: No pins attached to net BB_55.
+ERC WARNING: No drivers for net BB_55
+ERC WARNING: No pins attached to net BB_56.
+ERC WARNING: No drivers for net BB_56
+ERC WARNING: No pins attached to net BB_77.
+ERC WARNING: No drivers for net BB_77
+ERC WARNING: No pins attached to net BB_24.
+ERC WARNING: No drivers for net BB_24
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R36) attached to net VI_8.
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R25) attached to net VI_3.
+ERC WARNING: No pins attached to net BB_64.
+ERC WARNING: No drivers for net BB_64
+ERC WARNING: No pins attached to net BB_89.
+ERC WARNING: No drivers for net BB_89
+ERC WARNING: No pins attached to net BB_18.
+ERC WARNING: No drivers for net BB_18
+ERC WARNING: No pins attached to net BB_31.
+ERC WARNING: No drivers for net BB_31
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB_23.
+ERC WARNING: No drivers for net BB_23
+ERC WARNING: No pins attached to net BB_85.
+ERC WARNING: No drivers for net BB_85
+ERC WARNING: No pins attached to net BB_80.
+ERC WARNING: No drivers for net BB_80
+ERC WARNING: No pins attached to net BB_25.
+ERC WARNING: No drivers for net BB_25
+ERC WARNING: No pins attached to net BB_37.
+ERC WARNING: No drivers for net BB_37
+ERC WARNING: No pins attached to net BB_54.
+ERC WARNING: No drivers for net BB_54
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R34) attached to net GND_7.
+ERC WARNING: No pins attached to net BB_71.
+ERC WARNING: No drivers for net BB_71
+ERC WARNING: No pins attached to net BB_16.
+ERC WARNING: No drivers for net BB_16
+ERC WARNING: No pins attached to net BB_67.
+ERC WARNING: No drivers for net BB_67
+ERC WARNING: No pins attached to net BB_34.
+ERC WARNING: No drivers for net BB_34
+ERC WARNING: No pins attached to net BB_40.
+ERC WARNING: No drivers for net BB_40
+ERC WARNING: No pins attached to net BB_49.
+ERC WARNING: No drivers for net BB_49
+ERC WARNING: No pins attached to net BB_29.
+ERC WARNING: No drivers for net BB_29
+ERC WARNING: No pins attached to net BB_20.
+ERC WARNING: No drivers for net BB_20
+ERC WARNING: No pins attached to net BB_57.
+ERC WARNING: No drivers for net BB_57
+ERC WARNING: No pins attached to net BB_83.
+ERC WARNING: No drivers for net BB_83
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: No pins attached to net BB_76.
+ERC WARNING: No drivers for net BB_76
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R28) attached to net GND_4.
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R4) attached to net GND_1.
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R5) attached to net GND_2.
+ERC WARNING: No pins attached to net BB_48.
+ERC WARNING: No drivers for net BB_48
+ERC WARNING: No pins attached to net BB_45.
+ERC WARNING: No drivers for net BB_45
+ERC WARNING: No pins attached to net BB_61.
+ERC WARNING: No drivers for net BB_61
+ERC WARNING: No pins attached to net BB_63.
+ERC WARNING: No drivers for net BB_63
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R29) attached to net GND_5.
+ERC WARNING: No pins attached to net BB_81.
+ERC WARNING: No drivers for net BB_81
+ERC WARNING: No pins attached to net BB_41.
+ERC WARNING: No drivers for net BB_41
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R35) attached to net GND_8.
+ERC WARNING: No pins attached to net BB_62.
+ERC WARNING: No drivers for net BB_62
+ERC WARNING: No pins attached to net BB_14.
+ERC WARNING: No drivers for net BB_14
+ERC WARNING: No pins attached to net BB_38.
+ERC WARNING: No drivers for net BB_38
+ERC WARNING: No pins attached to net BB_75.
+ERC WARNING: No drivers for net BB_75
+ERC WARNING: No pins attached to net BB_32.
+ERC WARNING: No drivers for net BB_32
+ERC WARNING: No pins attached to net BB_60.
+ERC WARNING: No drivers for net BB_60
+ERC WARNING: No pins attached to net BB_82.
+ERC WARNING: No drivers for net BB_82
+ERC WARNING: No pins attached to net BB_28.
+ERC WARNING: No drivers for net BB_28
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R1) attached to net VI.
+ERC WARNING: No pins attached to net BB_68.
+ERC WARNING: No drivers for net BB_68
+ERC WARNING: No pins attached to net BB_53.
+ERC WARNING: No drivers for net BB_53
+ERC WARNING: No pins attached to net BB_27.
+ERC WARNING: No drivers for net BB_27
+ERC WARNING: No pins attached to net BB_39.
+ERC WARNING: No drivers for net BB_39
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R2) attached to net GND.
+ERC WARNING: No pins attached to net BB_10.
+ERC WARNING: No drivers for net BB_10
+ERC WARNING: No pins attached to net BB_22.
+ERC WARNING: No drivers for net BB_22
+ERC WARNING: No pins attached to net BB_66.
+ERC WARNING: No drivers for net BB_66
+ERC WARNING: No pins attached to net BB_19.
+ERC WARNING: No drivers for net BB_19
+ERC WARNING: No pins attached to net BB_33.
+ERC WARNING: No drivers for net BB_33
+ERC WARNING: No pins attached to net BB_86.
+ERC WARNING: No drivers for net BB_86
+ERC WARNING: No pins attached to net BB_46.
+ERC WARNING: No drivers for net BB_46
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: No pins attached to net BB_74.
+ERC WARNING: No drivers for net BB_74
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: No pins attached to net BB_65.
+ERC WARNING: No drivers for net BB_65
+ERC WARNING: No pins attached to net BB_44.
+ERC WARNING: No drivers for net BB_44
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: No pins attached to net BB_26.
+ERC WARNING: No drivers for net BB_26
+ERC WARNING: No pins attached to net BB_70.
+ERC WARNING: No drivers for net BB_70
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R31) attached to net VI_6.
+ERC WARNING: No pins attached to net BB_69.
+ERC WARNING: No drivers for net BB_69
+ERC WARNING: No pins attached to net BB_11.
+ERC WARNING: No drivers for net BB_11
+ERC WARNING: No pins attached to net BB_50.
+ERC WARNING: No drivers for net BB_50
+ERC WARNING: No pins attached to net BB_17.
+ERC WARNING: No drivers for net BB_17
+ERC WARNING: No pins attached to net BB_47.
+ERC WARNING: No drivers for net BB_47
+ERC WARNING: No pins attached to net BB_43.
+ERC WARNING: No drivers for net BB_43
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R32) attached to net GND_6.
+ERC WARNING: No pins attached to net BB_87.
+ERC WARNING: No drivers for net BB_87
+ERC WARNING: No pins attached to net BB_52.
+ERC WARNING: No drivers for net BB_52
+ERC WARNING: No pins attached to net BB_72.
+ERC WARNING: No drivers for net BB_72
+ERC WARNING: No pins attached to net BB_42.
+ERC WARNING: No drivers for net BB_42
+ERC WARNING: No pins attached to net BB_36.
+ERC WARNING: No drivers for net BB_36
+ERC WARNING: Only one pin (PASSIVE pin 2/ of res/R26) attached to net GND_3.
+ERC WARNING: Only one pin (PASSIVE pin 1/ of res/R3) attached to net VI_1.
+ERC WARNING: No pins attached to net BB_59.
+ERC WARNING: No drivers for net BB_59
+ERC WARNING: No pins attached to net BB_51.
+ERC WARNING: No drivers for net BB_51
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: No pins attached to net BB_73.
+ERC WARNING: No drivers for net BB_73
+ERC WARNING: No pins attached to net BB_30.
+ERC WARNING: No drivers for net BB_30
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C1.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C1.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C2.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C2.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C3.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C3.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C4.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C4.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C5.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C5.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C6.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C6.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C25.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C25.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C26.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C26.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C27.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C27.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C28.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C28.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C29.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C29.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C30.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C30.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C31.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C31.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C32.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C32.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C33.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C33.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C34.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C34.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C35.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C35.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/ of cap/C36.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/ of cap/C36.
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R6) attached to net VI.
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R8) attached to net GND.
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C3.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C3.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C4.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C4.
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: No pins attached to net BB_18.
+ERC WARNING: No drivers for net BB_18
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB_14.
+ERC WARNING: No drivers for net BB_14
+ERC WARNING: No pins attached to net BB_11.
+ERC WARNING: No drivers for net BB_11
+ERC WARNING: No pins attached to net BB_15.
+ERC WARNING: No drivers for net BB_15
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: No pins attached to net BB_17.
+ERC WARNING: No drivers for net BB_17
+ERC WARNING: No pins attached to net BB_16.
+ERC WARNING: No drivers for net BB_16
+ERC WARNING: No pins attached to net BB_12.
+ERC WARNING: No drivers for net BB_12
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R10) attached to net VI.
+ERC WARNING: No pins attached to net BB_13.
+ERC WARNING: No drivers for net BB_13
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R12) attached to net GND.
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: No pins attached to net BB_10.
+ERC WARNING: No drivers for net BB_10
+ERC WARNING: No pins attached to net BB_19.
+ERC WARNING: No drivers for net BB_19
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R16) attached to net GND_1.
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R14) attached to net VI_1.
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C5.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C5.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C6.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C6.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C7.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C7.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C8.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C8.
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R22) attached to net VI_2.
+ERC WARNING: No pins attached to net BB_21.
+ERC WARNING: No drivers for net BB_21
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: No pins attached to net BB_18.
+ERC WARNING: No drivers for net BB_18
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB_23.
+ERC WARNING: No drivers for net BB_23
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB_14.
+ERC WARNING: No drivers for net BB_14
+ERC WARNING: No pins attached to net BB_26.
+ERC WARNING: No drivers for net BB_26
+ERC WARNING: No pins attached to net BB_11.
+ERC WARNING: No drivers for net BB_11
+ERC WARNING: No pins attached to net BB_15.
+ERC WARNING: No drivers for net BB_15
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB_25.
+ERC WARNING: No drivers for net BB_25
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB_28.
+ERC WARNING: No drivers for net BB_28
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: No pins attached to net BB_17.
+ERC WARNING: No drivers for net BB_17
+ERC WARNING: No pins attached to net BB_16.
+ERC WARNING: No drivers for net BB_16
+ERC WARNING: No pins attached to net BB_12.
+ERC WARNING: No drivers for net BB_12
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R2) attached to net VI.
+ERC WARNING: No pins attached to net BB_13.
+ERC WARNING: No drivers for net BB_13
+ERC WARNING: No pins attached to net BB_27.
+ERC WARNING: No drivers for net BB_27
+ERC WARNING: No pins attached to net BB_29.
+ERC WARNING: No drivers for net BB_29
+ERC WARNING: No pins attached to net BB_20.
+ERC WARNING: No drivers for net BB_20
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R4) attached to net GND.
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: No pins attached to net BB_10.
+ERC WARNING: No drivers for net BB_10
+ERC WARNING: No pins attached to net BB_22.
+ERC WARNING: No drivers for net BB_22
+ERC WARNING: No pins attached to net BB_19.
+ERC WARNING: No drivers for net BB_19
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R20) attached to net GND_1.
+ERC WARNING: No pins attached to net BB_24.
+ERC WARNING: No drivers for net BB_24
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R18) attached to net VI_1.
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R24) attached to net GND_2.
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C1.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C1.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C2.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C2.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C9.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C9.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C10.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C10.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C11.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C11.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C12.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C12.
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R24) attached to net VI_2.
+ERC WARNING: No pins attached to net BB_21.
+ERC WARNING: No drivers for net BB_21
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: No pins attached to net BB_18.
+ERC WARNING: No drivers for net BB_18
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB_23.
+ERC WARNING: No drivers for net BB_23
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB_14.
+ERC WARNING: No drivers for net BB_14
+ERC WARNING: No pins attached to net BB_26.
+ERC WARNING: No drivers for net BB_26
+ERC WARNING: No pins attached to net BB_11.
+ERC WARNING: No drivers for net BB_11
+ERC WARNING: No pins attached to net BB_15.
+ERC WARNING: No drivers for net BB_15
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB_25.
+ERC WARNING: No drivers for net BB_25
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB_28.
+ERC WARNING: No drivers for net BB_28
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: No pins attached to net BB_17.
+ERC WARNING: No drivers for net BB_17
+ERC WARNING: No pins attached to net BB_16.
+ERC WARNING: No drivers for net BB_16
+ERC WARNING: No pins attached to net BB_12.
+ERC WARNING: No drivers for net BB_12
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R14) attached to net VI.
+ERC WARNING: No pins attached to net BB_13.
+ERC WARNING: No drivers for net BB_13
+ERC WARNING: No pins attached to net BB_27.
+ERC WARNING: No drivers for net BB_27
+ERC WARNING: No pins attached to net BB_29.
+ERC WARNING: No drivers for net BB_29
+ERC WARNING: No pins attached to net BB_20.
+ERC WARNING: No drivers for net BB_20
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R16) attached to net GND.
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: No pins attached to net BB_10.
+ERC WARNING: No drivers for net BB_10
+ERC WARNING: No pins attached to net BB_22.
+ERC WARNING: No drivers for net BB_22
+ERC WARNING: No pins attached to net BB_19.
+ERC WARNING: No drivers for net BB_19
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R20) attached to net GND_1.
+ERC WARNING: No pins attached to net BB_24.
+ERC WARNING: No drivers for net BB_24
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R18) attached to net VI_1.
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R22) attached to net GND_2.
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C7.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C9.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C11.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C11.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C12.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C12.
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R48) attached to net VI_5.
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R36) attached to net VI_2.
+ERC WARNING: No pins attached to net BB_21.
+ERC WARNING: No drivers for net BB_21
+ERC WARNING: No pins attached to net BB_35.
+ERC WARNING: No drivers for net BB_35
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB_15.
+ERC WARNING: No drivers for net BB_15
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB_58.
+ERC WARNING: No drivers for net BB_58
+ERC WARNING: No pins attached to net BB_12.
+ERC WARNING: No drivers for net BB_12
+ERC WARNING: No pins attached to net BB_13.
+ERC WARNING: No drivers for net BB_13
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R42) attached to net VI_4.
+ERC WARNING: No pins attached to net BB_55.
+ERC WARNING: No drivers for net BB_55
+ERC WARNING: No pins attached to net BB_56.
+ERC WARNING: No drivers for net BB_56
+ERC WARNING: No pins attached to net BB_24.
+ERC WARNING: No drivers for net BB_24
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R38) attached to net VI_3.
+ERC WARNING: No pins attached to net BB_18.
+ERC WARNING: No drivers for net BB_18
+ERC WARNING: No pins attached to net BB_31.
+ERC WARNING: No drivers for net BB_31
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB_23.
+ERC WARNING: No drivers for net BB_23
+ERC WARNING: No pins attached to net BB_25.
+ERC WARNING: No drivers for net BB_25
+ERC WARNING: No pins attached to net BB_37.
+ERC WARNING: No drivers for net BB_37
+ERC WARNING: No pins attached to net BB_54.
+ERC WARNING: No drivers for net BB_54
+ERC WARNING: No pins attached to net BB_16.
+ERC WARNING: No drivers for net BB_16
+ERC WARNING: No pins attached to net BB_34.
+ERC WARNING: No drivers for net BB_34
+ERC WARNING: No pins attached to net BB_40.
+ERC WARNING: No drivers for net BB_40
+ERC WARNING: No pins attached to net BB_49.
+ERC WARNING: No drivers for net BB_49
+ERC WARNING: No pins attached to net BB_29.
+ERC WARNING: No drivers for net BB_29
+ERC WARNING: No pins attached to net BB_20.
+ERC WARNING: No drivers for net BB_20
+ERC WARNING: No pins attached to net BB_57.
+ERC WARNING: No drivers for net BB_57
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R44) attached to net GND_4.
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R32) attached to net GND_1.
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R34) attached to net GND_2.
+ERC WARNING: No pins attached to net BB_48.
+ERC WARNING: No drivers for net BB_48
+ERC WARNING: No pins attached to net BB_45.
+ERC WARNING: No drivers for net BB_45
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R46) attached to net GND_5.
+ERC WARNING: No pins attached to net BB_41.
+ERC WARNING: No drivers for net BB_41
+ERC WARNING: No pins attached to net BB_14.
+ERC WARNING: No drivers for net BB_14
+ERC WARNING: No pins attached to net BB_38.
+ERC WARNING: No drivers for net BB_38
+ERC WARNING: No pins attached to net BB_32.
+ERC WARNING: No drivers for net BB_32
+ERC WARNING: No pins attached to net BB_28.
+ERC WARNING: No drivers for net BB_28
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R26) attached to net VI.
+ERC WARNING: No pins attached to net BB_53.
+ERC WARNING: No drivers for net BB_53
+ERC WARNING: No pins attached to net BB_27.
+ERC WARNING: No drivers for net BB_27
+ERC WARNING: No pins attached to net BB_39.
+ERC WARNING: No drivers for net BB_39
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R28) attached to net GND.
+ERC WARNING: No pins attached to net BB_10.
+ERC WARNING: No drivers for net BB_10
+ERC WARNING: No pins attached to net BB_22.
+ERC WARNING: No drivers for net BB_22
+ERC WARNING: No pins attached to net BB_19.
+ERC WARNING: No drivers for net BB_19
+ERC WARNING: No pins attached to net BB_33.
+ERC WARNING: No drivers for net BB_33
+ERC WARNING: No pins attached to net BB_46.
+ERC WARNING: No drivers for net BB_46
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: No pins attached to net BB_44.
+ERC WARNING: No drivers for net BB_44
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: No pins attached to net BB_26.
+ERC WARNING: No drivers for net BB_26
+ERC WARNING: No pins attached to net BB_11.
+ERC WARNING: No drivers for net BB_11
+ERC WARNING: No pins attached to net BB_50.
+ERC WARNING: No drivers for net BB_50
+ERC WARNING: No pins attached to net BB_17.
+ERC WARNING: No drivers for net BB_17
+ERC WARNING: No pins attached to net BB_47.
+ERC WARNING: No drivers for net BB_47
+ERC WARNING: No pins attached to net BB_43.
+ERC WARNING: No drivers for net BB_43
+ERC WARNING: No pins attached to net BB_52.
+ERC WARNING: No drivers for net BB_52
+ERC WARNING: No pins attached to net BB_42.
+ERC WARNING: No drivers for net BB_42
+ERC WARNING: No pins attached to net BB_36.
+ERC WARNING: No drivers for net BB_36
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R40) attached to net GND_3.
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R30) attached to net VI_1.
+ERC WARNING: No pins attached to net BB_59.
+ERC WARNING: No drivers for net BB_59
+ERC WARNING: No pins attached to net BB_51.
+ERC WARNING: No drivers for net BB_51
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: No pins attached to net BB_30.
+ERC WARNING: No drivers for net BB_30
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C13.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C15.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C17.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C17.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C18.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C18.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C19.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C21.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C23.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C23.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C24.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C24.
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R60) attached to net VI_5.
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R12) attached to net VI_2.
+ERC WARNING: No pins attached to net BB_21.
+ERC WARNING: No drivers for net BB_21
+ERC WARNING: No pins attached to net BB_78.
+ERC WARNING: No drivers for net BB_78
+ERC WARNING: No pins attached to net BB_35.
+ERC WARNING: No drivers for net BB_35
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB_79.
+ERC WARNING: No drivers for net BB_79
+ERC WARNING: No pins attached to net BB_15.
+ERC WARNING: No drivers for net BB_15
+ERC WARNING: No pins attached to net BB_88.
+ERC WARNING: No drivers for net BB_88
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB_58.
+ERC WARNING: No drivers for net BB_58
+ERC WARNING: No pins attached to net BB_84.
+ERC WARNING: No drivers for net BB_84
+ERC WARNING: No pins attached to net BB_12.
+ERC WARNING: No drivers for net BB_12
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R66) attached to net VI_7.
+ERC WARNING: No pins attached to net BB_13.
+ERC WARNING: No drivers for net BB_13
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R54) attached to net VI_4.
+ERC WARNING: No pins attached to net BB_55.
+ERC WARNING: No drivers for net BB_55
+ERC WARNING: No pins attached to net BB_56.
+ERC WARNING: No drivers for net BB_56
+ERC WARNING: No pins attached to net BB_77.
+ERC WARNING: No drivers for net BB_77
+ERC WARNING: No pins attached to net BB_24.
+ERC WARNING: No drivers for net BB_24
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R72) attached to net VI_8.
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R50) attached to net VI_3.
+ERC WARNING: No pins attached to net BB_64.
+ERC WARNING: No drivers for net BB_64
+ERC WARNING: No pins attached to net BB_89.
+ERC WARNING: No drivers for net BB_89
+ERC WARNING: No pins attached to net BB_18.
+ERC WARNING: No drivers for net BB_18
+ERC WARNING: No pins attached to net BB_31.
+ERC WARNING: No drivers for net BB_31
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB_23.
+ERC WARNING: No drivers for net BB_23
+ERC WARNING: No pins attached to net BB_85.
+ERC WARNING: No drivers for net BB_85
+ERC WARNING: No pins attached to net BB_80.
+ERC WARNING: No drivers for net BB_80
+ERC WARNING: No pins attached to net BB_25.
+ERC WARNING: No drivers for net BB_25
+ERC WARNING: No pins attached to net BB_37.
+ERC WARNING: No drivers for net BB_37
+ERC WARNING: No pins attached to net BB_54.
+ERC WARNING: No drivers for net BB_54
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R68) attached to net GND_7.
+ERC WARNING: No pins attached to net BB_71.
+ERC WARNING: No drivers for net BB_71
+ERC WARNING: No pins attached to net BB_16.
+ERC WARNING: No drivers for net BB_16
+ERC WARNING: No pins attached to net BB_67.
+ERC WARNING: No drivers for net BB_67
+ERC WARNING: No pins attached to net BB_34.
+ERC WARNING: No drivers for net BB_34
+ERC WARNING: No pins attached to net BB_40.
+ERC WARNING: No drivers for net BB_40
+ERC WARNING: No pins attached to net BB_49.
+ERC WARNING: No drivers for net BB_49
+ERC WARNING: No pins attached to net BB_29.
+ERC WARNING: No drivers for net BB_29
+ERC WARNING: No pins attached to net BB_20.
+ERC WARNING: No drivers for net BB_20
+ERC WARNING: No pins attached to net BB_57.
+ERC WARNING: No drivers for net BB_57
+ERC WARNING: No pins attached to net BB_83.
+ERC WARNING: No drivers for net BB_83
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: No pins attached to net BB_76.
+ERC WARNING: No drivers for net BB_76
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R56) attached to net GND_4.
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R8) attached to net GND_1.
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R10) attached to net GND_2.
+ERC WARNING: No pins attached to net BB_48.
+ERC WARNING: No drivers for net BB_48
+ERC WARNING: No pins attached to net BB_45.
+ERC WARNING: No drivers for net BB_45
+ERC WARNING: No pins attached to net BB_61.
+ERC WARNING: No drivers for net BB_61
+ERC WARNING: No pins attached to net BB_63.
+ERC WARNING: No drivers for net BB_63
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R58) attached to net GND_5.
+ERC WARNING: No pins attached to net BB_81.
+ERC WARNING: No drivers for net BB_81
+ERC WARNING: No pins attached to net BB_41.
+ERC WARNING: No drivers for net BB_41
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R70) attached to net GND_8.
+ERC WARNING: No pins attached to net BB_62.
+ERC WARNING: No drivers for net BB_62
+ERC WARNING: No pins attached to net BB_14.
+ERC WARNING: No drivers for net BB_14
+ERC WARNING: No pins attached to net BB_38.
+ERC WARNING: No drivers for net BB_38
+ERC WARNING: No pins attached to net BB_75.
+ERC WARNING: No drivers for net BB_75
+ERC WARNING: No pins attached to net BB_32.
+ERC WARNING: No drivers for net BB_32
+ERC WARNING: No pins attached to net BB_60.
+ERC WARNING: No drivers for net BB_60
+ERC WARNING: No pins attached to net BB_82.
+ERC WARNING: No drivers for net BB_82
+ERC WARNING: No pins attached to net BB_28.
+ERC WARNING: No drivers for net BB_28
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R2) attached to net VI.
+ERC WARNING: No pins attached to net BB_68.
+ERC WARNING: No drivers for net BB_68
+ERC WARNING: No pins attached to net BB_53.
+ERC WARNING: No drivers for net BB_53
+ERC WARNING: No pins attached to net BB_27.
+ERC WARNING: No drivers for net BB_27
+ERC WARNING: No pins attached to net BB_39.
+ERC WARNING: No drivers for net BB_39
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R4) attached to net GND.
+ERC WARNING: No pins attached to net BB_10.
+ERC WARNING: No drivers for net BB_10
+ERC WARNING: No pins attached to net BB_22.
+ERC WARNING: No drivers for net BB_22
+ERC WARNING: No pins attached to net BB_66.
+ERC WARNING: No drivers for net BB_66
+ERC WARNING: No pins attached to net BB_19.
+ERC WARNING: No drivers for net BB_19
+ERC WARNING: No pins attached to net BB_33.
+ERC WARNING: No drivers for net BB_33
+ERC WARNING: No pins attached to net BB_86.
+ERC WARNING: No drivers for net BB_86
+ERC WARNING: No pins attached to net BB_46.
+ERC WARNING: No drivers for net BB_46
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: No pins attached to net BB_74.
+ERC WARNING: No drivers for net BB_74
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: No pins attached to net BB_65.
+ERC WARNING: No drivers for net BB_65
+ERC WARNING: No pins attached to net BB_44.
+ERC WARNING: No drivers for net BB_44
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: No pins attached to net BB_26.
+ERC WARNING: No drivers for net BB_26
+ERC WARNING: No pins attached to net BB_70.
+ERC WARNING: No drivers for net BB_70
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R62) attached to net VI_6.
+ERC WARNING: No pins attached to net BB_69.
+ERC WARNING: No drivers for net BB_69
+ERC WARNING: No pins attached to net BB_11.
+ERC WARNING: No drivers for net BB_11
+ERC WARNING: No pins attached to net BB_50.
+ERC WARNING: No drivers for net BB_50
+ERC WARNING: No pins attached to net BB_17.
+ERC WARNING: No drivers for net BB_17
+ERC WARNING: No pins attached to net BB_47.
+ERC WARNING: No drivers for net BB_47
+ERC WARNING: No pins attached to net BB_43.
+ERC WARNING: No drivers for net BB_43
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R64) attached to net GND_6.
+ERC WARNING: No pins attached to net BB_87.
+ERC WARNING: No drivers for net BB_87
+ERC WARNING: No pins attached to net BB_52.
+ERC WARNING: No drivers for net BB_52
+ERC WARNING: No pins attached to net BB_72.
+ERC WARNING: No drivers for net BB_72
+ERC WARNING: No pins attached to net BB_42.
+ERC WARNING: No drivers for net BB_42
+ERC WARNING: No pins attached to net BB_36.
+ERC WARNING: No drivers for net BB_36
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R52) attached to net GND_3.
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R6) attached to net VI_1.
+ERC WARNING: No pins attached to net BB_59.
+ERC WARNING: No drivers for net BB_59
+ERC WARNING: No pins attached to net BB_51.
+ERC WARNING: No drivers for net BB_51
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: No pins attached to net BB_73.
+ERC WARNING: No drivers for net BB_73
+ERC WARNING: No pins attached to net BB_30.
+ERC WARNING: No drivers for net BB_30
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C1.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C3.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C5.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C5.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C6.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C6.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C25.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C27.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C29.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C29.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C30.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C30.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C31.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C33.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C35.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C35.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C36.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C36.
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: No pins attached to net BB_18.
+ERC WARNING: No drivers for net BB_18
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB_14.
+ERC WARNING: No drivers for net BB_14
+ERC WARNING: No pins attached to net BB_11.
+ERC WARNING: No drivers for net BB_11
+ERC WARNING: No pins attached to net BB_15.
+ERC WARNING: No drivers for net BB_15
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: No pins attached to net BB_17.
+ERC WARNING: No drivers for net BB_17
+ERC WARNING: No pins attached to net BB_16.
+ERC WARNING: No drivers for net BB_16
+ERC WARNING: No pins attached to net BB_12.
+ERC WARNING: No drivers for net BB_12
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R2) attached to net VI.
+ERC WARNING: No pins attached to net BB_13.
+ERC WARNING: No drivers for net BB_13
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R4) attached to net GND.
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: No pins attached to net BB_10.
+ERC WARNING: No drivers for net BB_10
+ERC WARNING: No pins attached to net BB_19.
+ERC WARNING: No drivers for net BB_19
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R8) attached to net GND_1.
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R6) attached to net VI_1.
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C1.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C1.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C2.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C2.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C3.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C3.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C4.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C4.
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R12) attached to net VI_2.
+ERC WARNING: No pins attached to net BB_21.
+ERC WARNING: No drivers for net BB_21
+ERC WARNING: No pins attached to net BB4.
+ERC WARNING: No drivers for net BB4
+ERC WARNING: No pins attached to net BB_18.
+ERC WARNING: No drivers for net BB_18
+ERC WARNING: No pins attached to net BB3.
+ERC WARNING: No drivers for net BB3
+ERC WARNING: No pins attached to net BB_23.
+ERC WARNING: No drivers for net BB_23
+ERC WARNING: No pins attached to net BB2.
+ERC WARNING: No drivers for net BB2
+ERC WARNING: No pins attached to net BB5.
+ERC WARNING: No drivers for net BB5
+ERC WARNING: No pins attached to net BB_14.
+ERC WARNING: No drivers for net BB_14
+ERC WARNING: No pins attached to net BB_26.
+ERC WARNING: No drivers for net BB_26
+ERC WARNING: No pins attached to net BB_11.
+ERC WARNING: No drivers for net BB_11
+ERC WARNING: No pins attached to net BB_15.
+ERC WARNING: No drivers for net BB_15
+ERC WARNING: No pins attached to net BB8.
+ERC WARNING: No drivers for net BB8
+ERC WARNING: No pins attached to net BB_25.
+ERC WARNING: No drivers for net BB_25
+ERC WARNING: No pins attached to net BB7.
+ERC WARNING: No drivers for net BB7
+ERC WARNING: No pins attached to net BB_28.
+ERC WARNING: No drivers for net BB_28
+ERC WARNING: No pins attached to net BB0.
+ERC WARNING: No drivers for net BB0
+ERC WARNING: No pins attached to net BB_17.
+ERC WARNING: No drivers for net BB_17
+ERC WARNING: No pins attached to net BB_16.
+ERC WARNING: No drivers for net BB_16
+ERC WARNING: No pins attached to net BB_12.
+ERC WARNING: No drivers for net BB_12
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R2) attached to net VI.
+ERC WARNING: No pins attached to net BB_13.
+ERC WARNING: No drivers for net BB_13
+ERC WARNING: No pins attached to net BB_27.
+ERC WARNING: No drivers for net BB_27
+ERC WARNING: No pins attached to net BB_29.
+ERC WARNING: No drivers for net BB_29
+ERC WARNING: No pins attached to net BB_20.
+ERC WARNING: No drivers for net BB_20
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R4) attached to net GND.
+ERC WARNING: No pins attached to net BB6.
+ERC WARNING: No drivers for net BB6
+ERC WARNING: No pins attached to net BB_10.
+ERC WARNING: No drivers for net BB_10
+ERC WARNING: No pins attached to net BB_22.
+ERC WARNING: No drivers for net BB_22
+ERC WARNING: No pins attached to net BB_19.
+ERC WARNING: No drivers for net BB_19
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R8) attached to net GND_1.
+ERC WARNING: No pins attached to net BB_24.
+ERC WARNING: No drivers for net BB_24
+ERC WARNING: No pins attached to net BB9.
+ERC WARNING: No drivers for net BB9
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R6) attached to net VI_1.
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R10) attached to net GND_2.
+ERC WARNING: No pins attached to net BB1.
+ERC WARNING: No drivers for net BB1
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C1.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C1.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C2.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C2.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C3.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C3.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C4.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C4.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C5.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C5.
+ERC WARNING: Unconnected pin: PASSIVE pin 1/~ of C/C6.
+ERC WARNING: Unconnected pin: PASSIVE pin 2/~ of C/C6.
+ERC WARNING: Only one pin (PASSIVE pin 1/~ of R/R2) attached to net VI.
+ERC WARNING: Only one pin (PASSIVE pin 2/~ of R/R4) attached to net GND.
