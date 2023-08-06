@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: isogeo-scan-metadata-processor
+Version: 0.2.0
+Summary: Command-line to read metadata produced by FME scripts of Isogeo Scan, 
+Home-page: UNKNOWN
+Author: Isogeo
+Author-email: contact@isogeo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: click (==7)
+Requires-Dist: isogeo-pysdk (<3.4,>=3.3)
+Requires-Dist: python-dotenv
+Requires-Dist: peewee (==3.13.*)
+Requires-Dist: semver (==2.9.*)
+Requires-Dist: Send2Trash (==1.5.*)
+
+UNKNOWN
+
+
