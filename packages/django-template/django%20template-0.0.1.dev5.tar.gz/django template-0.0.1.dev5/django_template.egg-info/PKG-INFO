@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: django-template
+Version: 0.0.1.dev5
+Summary: A template for production-ready applications
+Home-page: https://github.com/claudinoac/django-template.git
+Author: Alisson Claudino
+Author-email: acjesus@inf.ufrgs.br
+Maintainer: Alisson Claudino
+Maintainer-email: acjesus@inf.ufrgs.br
+License: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.7
