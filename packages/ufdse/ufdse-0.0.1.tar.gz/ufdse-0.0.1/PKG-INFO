@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ufdse
+Version: 0.0.1
+Summary: Magnificent demos in Python.
+Home-page: https://github.com/sc-1123/ufdse
+Author: sc-1123
+Author-email: 2125587278@qq.com
+Maintainer: sc-1123
+Maintainer-email: 2125587278@qq.com
+License: UNKNOWN
+Description: # e
+        
+Keywords: demo,tools
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

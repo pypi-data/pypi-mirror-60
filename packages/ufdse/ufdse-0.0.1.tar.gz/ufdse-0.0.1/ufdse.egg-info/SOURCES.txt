@@ -1,0 +1,7 @@
+README.md
+setup.py
+ufdse/__init__.py
+ufdse.egg-info/PKG-INFO
+ufdse.egg-info/SOURCES.txt
+ufdse.egg-info/dependency_links.txt
+ufdse.egg-info/top_level.txt
