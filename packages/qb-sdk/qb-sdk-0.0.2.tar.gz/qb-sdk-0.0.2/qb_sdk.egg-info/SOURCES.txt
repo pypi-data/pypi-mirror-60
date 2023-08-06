@@ -1,0 +1,12 @@
+README.md
+setup.py
+qb_sdk.egg-info/PKG-INFO
+qb_sdk.egg-info/SOURCES.txt
+qb_sdk.egg-info/dependency_links.txt
+qb_sdk.egg-info/requires.txt
+qb_sdk.egg-info/top_level.txt
+qbsdk/__init__.py
+qbsdk/api.py
+qbsdk/error.py
+qbsdk/loyalty_token.py
+qbsdk/wallet.py
