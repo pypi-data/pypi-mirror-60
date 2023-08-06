@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: slrm
+Version: 0.0.1
+Summary: Slurm launcher in Python.
+Home-page: https://github.com/vzhong/slrm
+Author: Victor Zhong
+Author-email: victor@victorzhong.com
+License: MIT
+Description: # slrm
+        
+        Python library to submit slurm jobs.
+        
+        Installation:
+        
+        ```
+        pip install git+https://github.com/vzhong/slrm
+        ```
+        
+        Usage:
+        
+        ```python
+        import os
+        import slrm
+        
+        for city, state in [('vancouver', 'bc'), ('toronto', 'on'), ('stanford', 'ca'), ('seattle', 'wa')]:
+            cmd = 'python myscript.py --city {} --state {}'.format(city, state)
+            slurm_kwargs = {'account': 'cse', 'partition': 'cse-gpu'}
+            # you can see default args in slrm.launcher.default_args
+            slrm.launch(cmd, slurm_kwargs, dout=os.path.join('jobs', '{}-{}'.format(city, state)), dry=False)
+        ```
+        
+        Pull requests welcome!
+        
+Keywords: cloud compute,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test

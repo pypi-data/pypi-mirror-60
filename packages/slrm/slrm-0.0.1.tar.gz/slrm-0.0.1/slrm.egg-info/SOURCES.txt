@@ -1,0 +1,9 @@
+README.md
+setup.py
+slrm/__init__.py
+slrm/launcher.py
+slrm.egg-info/PKG-INFO
+slrm.egg-info/SOURCES.txt
+slrm.egg-info/dependency_links.txt
+slrm.egg-info/requires.txt
+slrm.egg-info/top_level.txt
