@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: advanced-led-control
+Version: 0.1.0
+Summary: An non-official advanced controller for blinkstick
+Home-page: https://github.com/weshouman/advanced-led-control
+Author: Walid Shouman
+Author-email: eng.walidshouman@gmail.com
+License: UNKNOWN
+Description: ### About
+        A package to ease the control of the [blinkstick nano](https://www.blinkstick.com/products/blinkstick-nano)
+        
+        Source code is at [https://github.com/weshouman/advanced_led_control](https://github.com/weshouman/advanced_led_control)
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5.2
+Description-Content-Type: text/markdown
