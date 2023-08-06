@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: emailo
+Version: 0.1.1
+Summary: 
+Home-page: https://github.com/2tunnels/emailo
+License: MIT
+Author: Vlad Dmitrievich
+Author-email: me@2tunnels.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Communications :: Email
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: email_validator (>=1.0.5,<2.0.0)
+Project-URL: Repository, https://github.com/2tunnels/emailo
+Description-Content-Type: text/markdown
+
+# emailo
+
+[![Build Status](https://travis-ci.org/2tunnels/emailo.svg?branch=master)](https://travis-ci.org/2tunnels/emailo)
+
+Useful descriptions will be here soon.
+
