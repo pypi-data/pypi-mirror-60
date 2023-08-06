@@ -1,0 +1,11 @@
+{%- for resource in resources -%}
+resource "cloudflare_record" "{{ resource }}-MX" {
+  name     = "{{ resources[resource].name }}"
+  priority = {{ resources[resource].priority }}
+  ttl      = {{ resources[resource].ttl }}
+  type     = "MX"
+  value    = "{{ resources[resource].value }}"
+  zone_id  = var.cloudflare_zone_id
+}
+
+{% endfor -%}
