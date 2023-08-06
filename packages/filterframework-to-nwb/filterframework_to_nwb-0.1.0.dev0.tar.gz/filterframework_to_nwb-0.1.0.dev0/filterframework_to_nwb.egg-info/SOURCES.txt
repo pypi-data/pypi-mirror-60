@@ -1,0 +1,12 @@
+README.md
+setup.py
+filterframework_to_nwb/__init__.py
+filterframework_to_nwb/core.py
+filterframework_to_nwb/fl_extension_helpers.py
+filterframework_to_nwb/nspike_helpers.py
+filterframework_to_nwb.egg-info/PKG-INFO
+filterframework_to_nwb.egg-info/SOURCES.txt
+filterframework_to_nwb.egg-info/dependency_links.txt
+filterframework_to_nwb.egg-info/entry_points.txt
+filterframework_to_nwb.egg-info/requires.txt
+filterframework_to_nwb.egg-info/top_level.txt

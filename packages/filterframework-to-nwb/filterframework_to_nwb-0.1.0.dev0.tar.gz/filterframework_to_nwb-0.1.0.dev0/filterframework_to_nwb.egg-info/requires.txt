@@ -1,0 +1,10 @@
+pynwb
+hdmf
+pandas
+networkx
+matplotlib
+numpy
+scipy
+python-dateutil
+python-intervals
+franklab_nwb_extensions

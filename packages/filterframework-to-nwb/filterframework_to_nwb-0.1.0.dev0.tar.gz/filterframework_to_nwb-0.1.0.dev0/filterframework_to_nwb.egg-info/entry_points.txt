@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        create_franklab_spec=filterframework_to_nwb.create_franklab_spec:main
+    
