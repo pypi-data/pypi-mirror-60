@@ -1,0 +1,11 @@
+PyGEL3D/PyGEL.dll,sha256=64zxVTHBgXiTT8bIMrXH8KfmbmWpfD5of5K1eEGW6IA,1164288
+PyGEL3D/__init__.py,sha256=5pLyBWXWaQYz9gg4NU1q-ELgf8rA0mHHi8rYq2MthsQ,24
+PyGEL3D/gel.py,sha256=Jq9MFApi4eZMzqdgiAgwbrVgx13xMyUNC6dZRNlPxQc,43232
+PyGEL3D/glfw3.dll,sha256=VQvhHyegfpMBwwKdqd7S6tBPAyR50m4JbKdobLd6Hs4,225792
+PyGEL3D/js.py,sha256=U4floYiSXk6MAL8crSBhImPqDKxgfqj_hG83gTcriws,2641
+PyGEL3D/libPyGEL.dylib,sha256=cD6DSmDJ4dooZFv_nx1cvC4SX_UfP3u-0cQRouHck2I,4515952
+PyGEL3D/libglfw.3.dylib,sha256=wETqkpLvc0o0gEDHh0W5uoOB3QejYG8xxAcKNp1lBEY,255088
+PyGEL3D-0.0.26.dist-info/METADATA,sha256=PeN7GkgG9Y2-YWuVqRuX6OWzsC0YtlNCDS0c8CRpbcc,4174
+PyGEL3D-0.0.26.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+PyGEL3D-0.0.26.dist-info/top_level.txt,sha256=lInERe-VRucFdpq_Q28RGbcjs5Y3V0L5aL6uB_mIDQE,8
+PyGEL3D-0.0.26.dist-info/RECORD,,
