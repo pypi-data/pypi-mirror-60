@@ -1,0 +1,11 @@
+enboard/__init__.py,sha256=b22AKgzUEF1k89EiTOHQSh9t9PzC4iS2HzY0k8PvTNE,202
+enboard/__main__.py,sha256=IvTjTYhvVO6h9Jpa45i-FfzjcKcJy1jwkAZY_CkgibQ,26
+enboard/conda-bashrc-mingw.sh,sha256=9qYTaQDoiuordCGPTDB4i6c-0duDXAmyC9Msp1r8dfE,209
+enboard/conda-bashrc.sh,sha256=kYRY4vFf33wFgTpMZVNp4hOAmAQdJz7_ueEQaCig-8k,209
+enboard/envs.py,sha256=bR0Fuq9eC8wbR9xY-MRhRieTZJfiRFLrbYjsIAvBdTE,2643
+enboard/menu.py,sha256=Lil5phzmUtO_MT0lZuCc3IQnVVZZuyHBOOLYZh2bLwY,10725
+enboard-0.6.dist-info/entry_points.txt,sha256=q3WQdYOAwdDys1fxuPFY93VCHbgdB5rn3csl-xvwHf8,40
+enboard-0.6.dist-info/LICENSE,sha256=TVrgkkLo-fEf1UuJjsHTF4V8510ENHDFswUkdOaC1o8,1081
+enboard-0.6.dist-info/WHEEL,sha256=W0C0r2jfBMZdb75jfiTB1qBj15B4vwTGGZrLTh2uslc,81
+enboard-0.6.dist-info/METADATA,sha256=JgnoNC0gDB2aZazOBaHd0jTr783NszmQdzJPQxKRKfM,837
+enboard-0.6.dist-info/RECORD,,
