@@ -1,0 +1,9 @@
+setup.py
+infosearch.egg-info/PKG-INFO
+infosearch.egg-info/SOURCES.txt
+infosearch.egg-info/dependency_links.txt
+infosearch.egg-info/requires.txt
+infosearch.egg-info/top_level.txt
+pysearch/__init__.py
+pysearch/test.py
+test/test_package.py
