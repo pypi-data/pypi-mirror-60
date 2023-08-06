@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+PyCharactACDC16/PyCharact16Gui.py
+PyCharactACDC16/__init__.py
+PyCharactACDC16.egg-info/PKG-INFO
+PyCharactACDC16.egg-info/SOURCES.txt
+PyCharactACDC16.egg-info/dependency_links.txt
+PyCharactACDC16.egg-info/entry_points.txt
+PyCharactACDC16.egg-info/requires.txt
+PyCharactACDC16.egg-info/top_level.txt
+PyCharactACDC16/PyCharact16Core/Charact16Core.py
+PyCharactACDC16/PyCharact16Core/Charact16Thread.py
+PyCharactACDC16/PyCharact16Core/__init__.py
