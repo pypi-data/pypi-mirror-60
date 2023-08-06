@@ -1,0 +1,13 @@
+README.md
+setup.py
+bin/gu
+gu/cli.py
+gu/config.py
+gu/version.py
+gu/sender/__init__.py
+gu/sender/default.py
+gu/sender/telegram.py
+gu_cli.egg-info/PKG-INFO
+gu_cli.egg-info/SOURCES.txt
+gu_cli.egg-info/dependency_links.txt
+gu_cli.egg-info/top_level.txt
