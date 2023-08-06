@@ -1,0 +1,9 @@
+spiegel_scraper/__init__.py,sha256=luypVlPG1Gde1bWIrX7qEu5BzoiHdgXwiDUcNSjp40s,81
+spiegel_scraper/archive.py,sha256=P15-Ha2V4JX-1wiVle47YDK8rTSUFG8z5F4amTdGYeI,1624
+spiegel_scraper/article.py,sha256=OBkK3CaMYEqpJFzrbmPmW6o8hVs810UbUGh8mWbYGxY,1868
+spiegel_scraper/comments.py,sha256=MJsMxXNhU1T3QY1NpDrfdy--hcadgwzcx2oYu1dVvY8,2276
+spiegel_scraper/constants.py,sha256=5KVEI-rLK_sYi43AKe5cwFA05wlw4_e1w9SSIlHwvxM,68
+spiegel_scraper-1.1.0.dist-info/METADATA,sha256=77ImY_4n21dbN95AX_D7NG2nVARMnCPZoJhSHxG6yQw,1472
+spiegel_scraper-1.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+spiegel_scraper-1.1.0.dist-info/top_level.txt,sha256=6gNkslSn77UifrXo8PC3cHoUW9quSIBjCnxwV0Yz9KI,16
+spiegel_scraper-1.1.0.dist-info/RECORD,,
