@@ -1,0 +1,6 @@
+[console_scripts]
+jsc2json = jsonsimpleconfig.jsc2json:main
+jscPrint = jsonsimpleconfig.jscPrint:main
+jscValue = jsonsimpleconfig.jscValue:main
+json2jsc = jsonsimpleconfig.json2jsc:main
+
