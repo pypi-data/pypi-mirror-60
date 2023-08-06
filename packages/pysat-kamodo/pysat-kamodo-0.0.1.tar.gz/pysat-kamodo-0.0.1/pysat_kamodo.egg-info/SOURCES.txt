@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pysat_kamodo/__init__.py
+pysat_kamodo/pysat_kamodo.py
+pysat_kamodo.egg-info/PKG-INFO
+pysat_kamodo.egg-info/SOURCES.txt
+pysat_kamodo.egg-info/dependency_links.txt
+pysat_kamodo.egg-info/requires.txt
+pysat_kamodo.egg-info/top_level.txt
