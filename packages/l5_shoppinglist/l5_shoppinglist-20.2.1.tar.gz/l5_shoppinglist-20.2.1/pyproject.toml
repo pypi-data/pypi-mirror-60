@@ -1,0 +1,16 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "l5_shoppinglist"
+author = "fphemeral"
+author-email = "fphemeral@i2pmail.org"
+description-file = "README.md"
+home-page = "https://source.puri.sm/fphemeral/l5_shoppinglist"
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+requires=[
+    "tinydb>=3.15.2",
+    "PyGObject",
+]
+requires-python=">=3.7"

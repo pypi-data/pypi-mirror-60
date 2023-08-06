@@ -1,0 +1,103 @@
+{
+    "config": {},
+    "drug_store": {
+        "1": {
+            "amount": 1,
+            "done": false,
+            "name": "tooth brush",
+            "unit": "pieces"
+        },
+        "2": {
+            "amount": 100,
+            "done": false,
+            "name": "tooth cream",
+            "unit": "ml"
+        },
+        "3": {
+            "amount": 200,
+            "done": false,
+            "name": "shampoo",
+            "unit": "ml"
+        },
+        "4": {
+            "amount": 200,
+            "done": false,
+            "name": "shower gel",
+            "unit": "ml"
+        }
+    },
+    "electronic_store": {
+        "1": {
+            "amount": 1,
+            "done": false,
+            "name": "linux smartphone",
+            "unit": "pieces"
+        },
+        "2": {
+            "done": false,
+            "name": "dock"
+        },
+        "3": {
+            "amount": 128,
+            "done": false,
+            "name": "sd card",
+            "unit": "GB"
+        }
+    },
+    "groceries": {
+        "1": {
+            "amount": 2,
+            "done": false,
+            "name": "apple",
+            "unit": "pieces"
+        },
+        "2": {
+            "amount": 4,
+            "done": false,
+            "name": "banana",
+            "unit": "pieces"
+        },
+        "3": {
+            "amount": 250,
+            "done": false,
+            "name": "cherries",
+            "unit": "g"
+        },
+        "4": {
+            "amount": 5000,
+            "done": false,
+            "name": "potatoes",
+            "unit": "g"
+        },
+        "5": {
+            "amount": 500,
+            "done": false,
+            "name": "tomatoes",
+            "unit": "g"
+        },
+        "6": {
+            "amount": 500,
+            "done": false,
+            "name": "spinach",
+            "unit": "g"
+        },
+        "7": {
+            "amount": 1000,
+            "done": false,
+            "name": "flour",
+            "unit": "g"
+        },
+        "8": {
+            "amount": 4,
+            "done": false,
+            "name": "chocolate",
+            "unit": "bars"
+        },
+        "9": {
+            "amount": 1000,
+            "done": false,
+            "name": "milk",
+            "unit": "ml"
+        }
+    }
+}
