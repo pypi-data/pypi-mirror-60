@@ -1,0 +1,7 @@
+p1_mRFP1-part1
+p2_mRFP1-part2
+p3_mRFP1-part3
+p4_sfGFP-part1
+p5_sfGFP-part2
+p6_sfGFP-part3
+p7_backbone
