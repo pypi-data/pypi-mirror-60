@@ -1,0 +1,11 @@
+COPYING
+MANIFEST.in
+README.rst
+setup.py
+flask_dataapi/__init__.py
+flask_dataapi/py.typed
+flask_dataapi.egg-info/PKG-INFO
+flask_dataapi.egg-info/SOURCES.txt
+flask_dataapi.egg-info/dependency_links.txt
+flask_dataapi.egg-info/requires.txt
+flask_dataapi.egg-info/top_level.txt
