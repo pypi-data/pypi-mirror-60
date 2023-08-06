@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: inlinec
+Version: 0.0.1
+Summary: Effortlessly write inline C functions
+Home-page: UNKNOWN
+Author: George Kharchenko
+Author-email: kharchenko.george@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/georgek42/inlinec/archive/0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: C,inline,ffi,ctypes,pyxl
+Platform: UNKNOWN

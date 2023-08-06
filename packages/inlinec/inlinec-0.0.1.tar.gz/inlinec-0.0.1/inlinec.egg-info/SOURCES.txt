@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+inlinec.pth
+setup.cfg
+setup.py
+inlinec/__init__.py
+inlinec/inlinec.py
+inlinec.egg-info/PKG-INFO
+inlinec.egg-info/SOURCES.txt
+inlinec.egg-info/dependency_links.txt
+inlinec.egg-info/requires.txt
+inlinec.egg-info/top_level.txt
+inlinec/codec/__init__.py
+inlinec/codec/compile.py
+inlinec/codec/parser.py
+inlinec/codec/register.py
