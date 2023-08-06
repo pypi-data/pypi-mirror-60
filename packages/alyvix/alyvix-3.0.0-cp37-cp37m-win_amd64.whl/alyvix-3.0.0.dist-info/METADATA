@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: alyvix
+Version: 3.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: GPL V3
+Platform: UNKNOWN
+Requires-Dist: Flask (==1.0.2)
+Requires-Dist: Pillow (==5.4.1)
+Requires-Dist: cefpython3 (==66.0)
+Requires-Dist: numpy (==1.16.1)
+Requires-Dist: opencv-python (==4.0.0.21)
+Requires-Dist: pywin32 (==224)
+Requires-Dist: gevent (==1.4.0)
+Requires-Dist: psutil (==5.6.3)
+
+Alyvix is a synthetic monitoring system based on computer vision. It automates any application, interacting with GUIs exactly as a human would do. It measures all transactions and visualizes their performances in your monitoring system. It reports HTML pages containing the details of each test case step, so that it provides certifications on end user perceived quality of IT services. Browse the Alyvix documentation here: http://www.alyvix.com/doc/
+
+
