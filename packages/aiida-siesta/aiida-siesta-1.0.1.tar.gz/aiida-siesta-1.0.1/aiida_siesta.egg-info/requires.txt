@@ -1,0 +1,20 @@
+aiida_core[atomic_tools]<2.0.0,>=1.0.0b6
+
+[dev]
+pre-commit==1.17.0
+prospector==1.1.7
+pgtest==1.2.0
+pytest==3.6.3
+pytest-regressions==1.0.6
+yapf==0.28.0
+
+[dev:python_version < "3.0"]
+pylint==1.9.4
+
+[dev:python_version >= "3.0"]
+pylint==2.3.1
+
+[docs]
+Sphinx
+docutils
+sphinx_rtd_theme
