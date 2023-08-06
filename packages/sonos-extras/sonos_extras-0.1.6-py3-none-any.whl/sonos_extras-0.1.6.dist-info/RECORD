@@ -1,0 +1,10 @@
+bin/SonosExtrasCLI.py,sha256=6EXiOmGPQYXG7LMc8mmXKZ0kF8V2tdx0VP_0uNXf-Oo,4623
+bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sonos_extras/__init__.py,sha256=uTrk0IJJI1cv9xx7bedkrYQdqnp-uexOeT6r-2oZtys,190
+sonos_extras/sonos_extras.py,sha256=hThH5bUwSYzXsB4ca6GbJr3wOASvc5omy4oluO1O5_k,4072
+sonos_extras-0.1.6.dist-info/LICENSE,sha256=whzmoez0O-b7JQ8g6f18ZwbS0BEA0Y1dDxLP3mK3wik,1073
+sonos_extras-0.1.6.dist-info/METADATA,sha256=foMJe-N8rCRHrGyHr7SWZ2qb-L1Os7KdpuTXQXbnAdY,3790
+sonos_extras-0.1.6.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+sonos_extras-0.1.6.dist-info/entry_points.txt,sha256=JUiIj3ezS-exlhWBaUF2RO-4MpoMP-CGvGNLusquuZU,60
+sonos_extras-0.1.6.dist-info/top_level.txt,sha256=j_a8ttgldnbgJu5j78Y3mRyQuom64jbbmGV_yt5Ko4E,17
+sonos_extras-0.1.6.dist-info/RECORD,,
