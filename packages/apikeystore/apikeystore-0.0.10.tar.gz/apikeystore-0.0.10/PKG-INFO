@@ -1,0 +1,74 @@
+Metadata-Version: 1.1
+Name: apikeystore
+Version: 0.0.10
+Summary: UNKNOWN
+Home-page: https://bitbucket.org/ewright3/apikeystore/
+Author: Eugene Wright
+Author-email: eugene@ewright3.com
+License: MIT
+Description: 
+        ===========
+        ApiKeyStore 
+        ===========
+        
+        One vault to rule them all
+        --------------------------
+        
+        |buildVersion| |buildStatus| |MitLicense| |pythonVersion|
+        
+        ----------------------------
+        
+        A module for easily and securely storing and retriving API credentials in a database. 
+        
+        Storing API credentials locally in plaintext is a security anti-pattern. The goal of :code:`apikeystore` is to create an easy to use module that will allow you to protect your credentials. It works by keeping the keys encrypted until your code executes.
+        
+        
+        .. code:: python3
+          
+          import apikeystore as aks
+          import requests
+          
+          #Create new vault
+          myvault = aks.Vault("Test-vault1.db")
+          myvault.new()
+          
+          #Store an API credential in the vault
+          mycreds = aks.Creds(vaultName="Test-vault1.db")
+          credDetails = {
+            'appName' : 'virusTotal',
+            'urlBase' : 'https://www.virustotal.com/vtapi/v2/',
+            'userId'  : '',
+            'appKey'  : 'cf51cae902609f18f1f37b33c79eb9ad559c599d29441592e1ca1c4c48d175ab',
+            'authType': 'basic'
+          }
+          mycreds.addCreds(**credDetails)
+          
+          #Retreive and use API keys
+          mycreds = aks.Creds(vaultName="Test-vault1.db")
+          vtcred = mycreds.getCred(appName='virusTotal')
+          vtendpoint = vTcred['urlBase'] + 'file/report?'
+          payload = {
+                'resource': '993dcc7f09c690c6f1d3049b3f66092451f2e82536cf81d15ceef447bc4b3b27', 
+                'apikey' : vTcred['appKey']
+          }
+        
+          r = requests.get(vtendpoint, params=payload)
+          print(r.status_code)
+          #r.json()  
+        
+        
+        
+        
+        
+        
+        
+        
+        .. |buildVersion| image:: https://img.shields.io/badge/Version-0.0.10-blue.svg
+        .. |buildStatus| image::  https://img.shields.io/bitbucket/pipelines/stratussc/apikeystore.svg?logo=python&longCache=true&style=flat
+        .. |pythonVersion| image:: https://img.shields.io/badge/python-3.5%20|%203.6%20|%203.7%20|%203.8-blue.svg
+        .. |MitLicense| image:: https://img.shields.io/badge/License-MIT-orange.svg
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
