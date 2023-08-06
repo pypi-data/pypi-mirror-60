@@ -1,0 +1,7 @@
+ipc/__init__.py,sha256=cFhg-jKNGIYMjjaMD105Eu8DA9C5kC3SOsUIzrYXDIs,23
+ipc/worker.py,sha256=5a4OuQzlY61bD-xaRp2VUpCT33OJKJvstg6JKSmlXJU,3890
+simple_ipc-1.2.0.dist-info/LICENSE,sha256=jvDnES0aqmhSmn1vYO4lmutqJoB4cizXmnmyx42BISI,1091
+simple_ipc-1.2.0.dist-info/METADATA,sha256=Aav2g7lbA1uRYzGqkMr7RUlLJ--rxyS2tYKROaG9m3k,3032
+simple_ipc-1.2.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+simple_ipc-1.2.0.dist-info/top_level.txt,sha256=wfATUQwwL2vH9-i4Bv_x35Zyz0PJaudnSFudF8p-sYI,4
+simple_ipc-1.2.0.dist-info/RECORD,,
