@@ -1,0 +1,2 @@
+- {{node.label}} [+]{% if node.active %} [active]{% endif %}
+[tab]{% with node.children as nodes %}{% include "multinavigation/_tabnav_nodes.html" %}{% endwith %}
