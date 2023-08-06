@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: read_only_class_attributes
+Version: 1.0.0
+Summary: This package provides a decorator to make read only attributes on a given Python class
+Home-page: https://github.com/pavanchhatpar/python-read-only-class-attributes
+Author: Pavan Chhatpar
+Author-email: pavanchhatpar@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
