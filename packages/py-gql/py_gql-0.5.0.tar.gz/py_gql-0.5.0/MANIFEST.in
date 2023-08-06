@@ -1,0 +1,10 @@
+include README.md LICENSE CHANGES.md
+include pyproject.toml
+include setup.cfg
+include requirements.txt *-requirements.txt
+
+recursive-include tests *.py
+
+# This would include .c files (cythonized code) in the source distribution when
+# they are present.
+recursive-include py_gql *.c
