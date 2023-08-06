@@ -1,0 +1,17 @@
+name: contact_angles
+dependencies:
+  - numpy
+  - scipy
+  - scikit-image
+  - imageio
+  - matplotlib
+  - setuptools
+  - wheel
+  - twine
+  - pytest
+  - pip
+  - pip:
+    - imageio-ffmpeg
+    - pytest-subtests
+    - pytest-cov
+    - pyautogui
