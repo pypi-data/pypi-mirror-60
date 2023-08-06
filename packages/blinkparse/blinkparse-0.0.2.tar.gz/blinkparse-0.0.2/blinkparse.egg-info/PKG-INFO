@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: blinkparse
+Version: 0.0.2
+Summary: A python library for parsing command line arguments
+Home-page: https://github.com/nathansmerrill/blinkparse
+Author: Nathan Merrill
+Author-email: mathiscool3000@gmail.com
+License: UNKNOWN
+Description: # BlinkParse
+        A python library for parsing command line arguments
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
