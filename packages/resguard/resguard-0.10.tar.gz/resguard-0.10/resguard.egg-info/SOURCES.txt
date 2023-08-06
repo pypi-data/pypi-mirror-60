@@ -1,0 +1,8 @@
+README.md
+resguard.py
+setup.py
+resguard.egg-info/PKG-INFO
+resguard.egg-info/SOURCES.txt
+resguard.egg-info/dependency_links.txt
+resguard.egg-info/requires.txt
+resguard.egg-info/top_level.txt
