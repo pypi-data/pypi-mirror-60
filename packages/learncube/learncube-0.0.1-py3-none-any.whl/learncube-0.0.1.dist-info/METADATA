@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: learncube
+Version: 0.0.1
+Summary: A Python wrapper for the Learncube API
+Home-page: https://github.com/Bueffelheld/learncube-python
+Author: Fabian Riewe
+Author-email: f.riewe@bueffelehld.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# !EXPERIMENTAL!
+# Learncube Python
+## Installation
+Learncube-Python is available on PyPI:
+* ``$ pip install learncube``
+## Usage
+tbd
+## Links
+* [Büffelheld](https://bueffelheld.de/)
+* [Learncube](https://www.learncube.com/)
+

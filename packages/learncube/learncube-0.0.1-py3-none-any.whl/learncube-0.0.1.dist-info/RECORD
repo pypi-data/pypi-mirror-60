@@ -1,0 +1,11 @@
+learncube/__init__.py,sha256=_X1O3dOjVm_XRTXyaGWu-lA7UTqhhdXX8hdP44oOx7U,33
+learncube/core.py,sha256=uYaE4hprzf3CasrOR8_S-Dd5jq_De53r-fhV09JIn-o,1811
+learncube/virtual_classroom/__init__.py,sha256=5e0IUQhwM828lgU6Ie3c3PPWEHjXP_1aCLLI0yCo-Cc,95
+learncube/virtual_classroom/classroom.py,sha256=PxXcFJ91P7adIl77ILiS8t0OpXUHuZuyi_hccfXKGJ8,1540
+learncube/virtual_classroom/logs.py,sha256=nrvi0Aj_Bfr-2Y-sjCs-4BSke-MEgThkRaDleFZXbnM,746
+learncube/virtual_classroom/participants.py,sha256=mokoC67OvJPpRkA0d3ExsPQpl1DWg0rMrzTrWGOu_uY,785
+learncube-0.0.1.dist-info/LICENSE,sha256=4ZuYxbYCNbHF3m9rWONNDGI6WSNr1TbWtP7wFDkRfA4,1082
+learncube-0.0.1.dist-info/METADATA,sha256=KFB-2eovcc28XUpxeq63TAT18WdK95PD5BtEsr0bke4,690
+learncube-0.0.1.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+learncube-0.0.1.dist-info/top_level.txt,sha256=cWtZ60OOUr6MsEY_II6B3xz43q1qnrgNHEHenBJ6Voo,10
+learncube-0.0.1.dist-info/RECORD,,
