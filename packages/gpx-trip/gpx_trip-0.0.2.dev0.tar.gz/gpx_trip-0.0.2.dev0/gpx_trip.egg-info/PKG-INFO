@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gpx-trip
+Version: 0.0.2.dev0
+Summary: Extract stops and journeys from gpx traces
+Home-page: https://github.com/rspencer01/gpx_trip
+Author: R. A. Spencer
+Author-email: general@robertandrewspencer.com
+License: LICENCE.txt
+Description: GPX Trip Extraction
+        ===================
+        
+        Extract the stops and trips from a GPX trace.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

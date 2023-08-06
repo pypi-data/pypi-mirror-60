@@ -1,0 +1,11 @@
+.gitignore
+LICENCE.txt
+README.md
+setup.py
+bin/gpx_trip
+gpx_trip/__init__.py
+gpx_trip.egg-info/PKG-INFO
+gpx_trip.egg-info/SOURCES.txt
+gpx_trip.egg-info/dependency_links.txt
+gpx_trip.egg-info/requires.txt
+gpx_trip.egg-info/top_level.txt
