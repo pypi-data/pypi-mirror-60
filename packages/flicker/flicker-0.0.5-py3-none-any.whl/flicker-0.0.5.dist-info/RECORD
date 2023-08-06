@@ -1,0 +1,10 @@
+flicker/__init__.py,sha256=i-HVStek-zQI1bBRi1OHSYohhx9Pb3LVGifv2qWelSE,96
+flicker/compat.py,sha256=MXQr3dVB_Gp6391oT9sC6eYDfJSozrLOs-h72NzIcU8,173
+flicker/flicker.py,sha256=Ff6YdrHXas5bfM27DSHMCPlPzE0ntT5hZS5cwsAVCxs,25323
+flicker/udf.py,sha256=qYdKfrIztjWPI9Ydh8BYCHK6jW0YYXB9tdVFZnRp-RU,844
+flicker/version.py,sha256=eB5tEg_BNHHsJgQexgmpZJr4c2VbfooQZMXAWuDHoIg,22
+flicker-0.0.5.dist-info/METADATA,sha256=EwDRg3wMt5sbaT_TEYuO4Gi9OHqW37pEIgNnF_NcqZ4,1089
+flicker-0.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+flicker-0.0.5.dist-info/top_level.txt,sha256=UiYVmYB-bbYTeh_06gbBzo17_i_T9lytnQraCCI6ubs,8
+flicker-0.0.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+flicker-0.0.5.dist-info/RECORD,,
