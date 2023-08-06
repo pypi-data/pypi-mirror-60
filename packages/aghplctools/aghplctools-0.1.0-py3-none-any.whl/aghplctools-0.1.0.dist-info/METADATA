@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: aghplctools
+Version: 0.1.0
+Summary: Interaction package for Agilent ChemStation
+Home-page: https://gitlab.com/larsyunker/agcs
+Author: Lars Yunker / Hein Group
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: unithandler (==1.2.2)
+
+UNKNOWN
+
+
