@@ -1,0 +1,9 @@
+certbot_dns_sakuracloud/__init__.py,sha256=mTBvdtWgWF97Uy2SmolwE9OgdGOcWFT1nQVfLVVVShg,3393
+certbot_dns_sakuracloud/_internal/__init__.py,sha256=FqH2ltJW8pja3kOjWba_CYAeJqHOb3_zuPGaZSVgrO4,84
+certbot_dns_sakuracloud/_internal/dns_sakuracloud.py,sha256=J2bKzfx9FjhH3IyrCxmtKr_tpyUlxynkWsABlZ2bUeA,3218
+certbot_dns_sakuracloud-1.2.0.dist-info/LICENSE.txt,sha256=pZb6tZiHUoSRNf0dK0rtVXpl1DqR6ecvBmnWkfy2hwY,10786
+certbot_dns_sakuracloud-1.2.0.dist-info/METADATA,sha256=UoPclMmQABaXw3Ks1G-ZOOFjzbikwEYgDwNrdC2h7Xw,1553
+certbot_dns_sakuracloud-1.2.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+certbot_dns_sakuracloud-1.2.0.dist-info/entry_points.txt,sha256=rh2ZpGTjLY2qwTTQxGN0YQI_W8J0DXESbsyLsjVdRkM,101
+certbot_dns_sakuracloud-1.2.0.dist-info/top_level.txt,sha256=quYkdlIV2-8gK1kRvV6ML0nGs4QoLkHFRBlte8tcRDQ,24
+certbot_dns_sakuracloud-1.2.0.dist-info/RECORD,,
