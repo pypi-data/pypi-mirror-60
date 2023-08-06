@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+
+import fp23dpy.__main__
