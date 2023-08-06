@@ -1,0 +1,35 @@
+This is release 0.2.12 of ncbi-genome-download.
+
+Highlights of this release are:
+
+* Parallel downloads of checksum files (Thanks to Adelme Bazin (@axbazin))
+* New --flat-output option to dump all downloaded files into a single directory
+* We now have a Chinese translation of the README (Thanks James Yang (@jamesyangget))
+
+Detailed changes:
+
+Adelme Bazin (5):
+      core : Checking MD5SUM in parallel when more than one process is allowed
+      add integration test to check if metadata table was filled properly. Expected failure when using multiprocessing.
+      fill metadata table in config_download instead of download_file_job to avoid problems with multiprocessing
+      modify the metadata_fill test functions so that they follow the same logic than the current code
+      fix the call to Pool with the 'with' statement for python2
+
+Kai Blin (13):
+      core: Allow keeping the downloaded files in a flat hierarchy
+      chore: Break long help text lines
+      core: Fix the --flat-output description
+      README: Update install documentation
+      core: Add tests for type material downloads
+      chore: Add docstring and coverage skip to `downloadjob_creator_caller`
+      config: Test `is_compatible_assembly_accession()` in fuzzy_accession mode
+      core: Add a docstring to new fill_metadata function
+      core: Acquire the metadata table object outside of the download loops
+      config: Also support downloading metagenomes
+      core: Check for exact match on genus name before trying to capitalise it
+      chore: Update README to note that 0.2.12 is the last version to support Python 2
+      Bump version number to 0.2.12
+
+James Yang (1):
+      translate README.md into Chinese (#97)
+
