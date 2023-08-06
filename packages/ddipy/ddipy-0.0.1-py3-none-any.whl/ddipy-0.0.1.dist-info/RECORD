@@ -1,0 +1,14 @@
+ddipy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddipy/database_client.py,sha256=X60_gkDK-xATrruFIJq_3TaaNaz9BjtKyhrpyKXHpZQ,942
+ddipy/dataset_client.py,sha256=D9D21_J-9dXgQAbF7yw_kZi6z0Yn_-YHoNMDmg1ATyo,10001
+ddipy/dblucenemapping_client.py,sha256=quNJd0IRIGQ_Mbmg8w39cPHNzbRZbb9DppQtjR-yn2o,1552
+ddipy/enrichement_client.py,sha256=1CGMB4d0X8FjqcKipmvDQTSAutbWuE0Lqd0b7d54AEM,2023
+ddipy/feedback_client.py,sha256=37pqY96MjilaG_43BUIN26QUKWMOO9ylzNzmNZPzPK8,1516
+ddipy/publication_client.py,sha256=rnvlffyRZMfztRKBm3M9-7qEKi0Cf0Ytes1qdf3ltCw,473
+ddipy/seo_client.py,sha256=11HouUWVHWSVj-klXKj4uWT--aGeUMqYtp6dO7Vxdjg,1633
+ddipy/statistics_client.py,sha256=PdDELbPgYS9-3aE0PqFebvWCgq3s4-wBmiMkHqO73cQ,2247
+ddipy/term_client.py,sha256=dMx1jutB2FF5YkAN6yq4LP87lm6rn2lD2LNAlO0RtIo,922
+ddipy-0.0.1.dist-info/METADATA,sha256=5sF8I2mqoe3H09KmuOw5Ozi_QmEryhReBTGvWPdAhC4,286
+ddipy-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+ddipy-0.0.1.dist-info/top_level.txt,sha256=QbR-YeWx46ybGqF4IZSmBRRBPfVpiHugjp0gOmH61G4,6
+ddipy-0.0.1.dist-info/RECORD,,
