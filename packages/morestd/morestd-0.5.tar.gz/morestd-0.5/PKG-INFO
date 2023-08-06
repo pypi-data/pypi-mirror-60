@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: morestd
+Version: 0.5
+Summary: A collection of additional standard libraries for Python.
+Home-page: https://github.com/fboender/morestd
+Author: Ferry Boender
+Author-email: ferry.boender@gmail.com
+License: MIT
+Description: # MoreSTD: More standard libraries for Python
+        
+        A collection of additional standard libraries for Python.
+        
+        Note that **no garantuees** about backwards compatibility are made. You
+        probably shouldn't use this package.
+        
+        ## Requirements
+        
+        Python v3.4+
+        
+        ## License
+        
+        Released under the MIT license. See the `LICENSE` file for more info.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
