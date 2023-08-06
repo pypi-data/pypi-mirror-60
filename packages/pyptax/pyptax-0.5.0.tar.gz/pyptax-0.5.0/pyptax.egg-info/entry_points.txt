@@ -1,0 +1,3 @@
+[console_scripts]
+pyptax = pyptax.cli:cli
+
