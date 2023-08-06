@@ -1,0 +1,6 @@
+sounddevice
+scipy
+matplotlib
+qtpy
+PyDAQmx
+pandas
