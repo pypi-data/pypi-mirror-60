@@ -1,0 +1,72 @@
+# !/usr/bin/env python
+# -*- coding: utf-8 -*-
+import os
+import argparse
+
+
+def reformat(path, recursive, char, target):
+    if not os.path.exists(path) or not os.path.isdir(path):
+        print('Error in path: {}'.format(path))
+        print('The specified path not exist')
+        return
+
+    dirpath, dirnames, filenames = next(os.walk(path))
+
+    print(dirpath)
+    print('-'*len(dirpath))
+    for file in filenames:
+        print(file)
+        name, ext = os.path.splitext(file)
+        print(name, '+', ext)
+
+        rename = name
+        while target in rename:
+            rename = rename.replace(target, char)
+
+        rename += ext
+        print(rename)
+        # os.rename(file, rename)
+        print()
+
+    print()
+
+    if recursive:
+        for directory in dirnames:
+            reformat(os.path.join(dirpath, directory), recursive, char, target)
+
+    return
+
+
+if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser(description='Process renames all the file into the target directory.')
+    parser.add_argument('-r', '--recursive', action='store_true', default=False,
+                        help='Execute the rename action recursively into all subdirectories of targeted folder')
+    parser.add_argument('-t', '--target', action='store', default='+', type=str,
+                        help='Specify the character to replace')
+    parser.add_argument('-c', '--char', action='store', default=' ', type=str,
+                        help='Specify the character with which you want to replace')
+    parser.add_argument('paths', type=str, nargs='*',
+                        help='Specify all the folders in which execute the renaming')
+
+    args = parser.parse_args()
+
+    recursive = args.recursive
+    target = args.target
+    char = args.char
+    print('recursive:', recursive)
+    print('target:', target)
+    print('char:', char)
+
+    if args.paths:
+        paths = args.paths
+        print(paths)
+    else:
+        # path = input('Insert the path of the target folder: \n')
+        path = '/Users/jarvis/Library/Mobile Documents/3L68KQB4HG~com~readdle~CommonDocuments/Documents/Universita/Machine Learning/Exercise sessions'
+        path = path.replace('\\', '').strip()
+        paths = [path]
+
+    for path in paths:
+        reformat(path, recursive, char, target)
+        pass
