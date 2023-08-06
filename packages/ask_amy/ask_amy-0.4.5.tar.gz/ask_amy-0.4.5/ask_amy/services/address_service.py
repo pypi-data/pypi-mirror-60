@@ -1,0 +1,30 @@
+import logging
+from ask_amy.services.service_base import HTTPRequests, HTTPRequestsError
+
+
+logger = logging.getLogger()
+
+
+class AddressService(HTTPRequests):
+
+    def get_full_address(self, api_endpoint, device_id, api_access_token):
+        logger.debug('Entering AddressService.get_full_address')
+        url = "{}/v1/devices/{}/settings/address".format(api_endpoint, device_id)
+        api_access_token = 'Bearer {}'.format(api_access_token)
+        headers = {'Authorization':api_access_token, 'Accept': 'application/json'}
+        try:
+            response = self._http_call(url, headers=headers, return_type='json')
+            ret_val = {'status_cd': 200, 'body': response}
+        except HTTPRequestsError as error:
+            ret_val = {'status_cd': error.code, 'reason': error.msg }
+        logger.debug(ret_val)
+        return ret_val
+
+
+if __name__ == "__main__":
+    device_id="amzn1.ask.device.AGIWO4PEEJZJXA3HMEQZILE3APCWEVTYVBUJSABZC3O62GXD32323PXMIHCBTJQFVDHIG4JCNURYZ2E2EKVMI22DV5AHO6GIWOXX6DTBTGELVY5ECVOTU6QWVECWHEPW5BDNZE2K5H4TAKSE3ANPIQ53MOHH23NYDIEMZSCPYKVS6FFX5NXF6"
+    api_access_token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmJiNzJiZTcyLWY3OGEtNDc4Mi05ZDI5LWY4MTIxYTk2MjdlNyIsImV4cCI6MTU3OTg3NzMzOCwiaWF0IjoxNTc5ODc3MDM4LCJuYmYiOjE1Nzk4NzcwMzgsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQUFCeVBjaVdaVTZpUTRncDRhVmZsRUgyS2dFQUFBQUFBQUJ0dWs4ODZ0YjhkcS9uZFlXODBkUWprT1l5c2JmK2x0NG5VdEZTUDBkS3o4bUEyV2NKR2lBT0xPbFM3cUV2Q3gzdkpreW01UGlxdUY2bHNGOU05ejlNSEhWRjZtMlVxMXlFMXpmb2trRGZTOTNNSkRxU0ZyZXN2VUsrdThCNFF4THNDaitrUFA0dGMwYlVxRWNraHJGQlllWjdpZXc3NXh6aVBNNUpQWFpjcTEyenZDdlpNRnlxK0E0QTZMaGtTbkhvWWcrZFEwQWgxL3FnaW5Pc0VJVFl5azh5OVY1UmxXc1QvMm1wTm5TNlFFb3BjR2kwUFBlQUxmYzV0ajdCOEtGY01VLzJMUnBEcERzTVBUTjdJVk91UkluYzdxUnA3Sk5HTjRXYko4YTJyekpZNU5xNDJURTBvblNUT0NwaW1JWUpqUUtSMXFuME9kb0QxVGl3aEFDbTVqK0ZDYkVvMGlsVzRNaUNONGZnV3h1OUpIZU1Ja0tZYVlEbnc0d3FWT2prK2FQam1RbUNxTStiIiwiY29uc2VudFRva2VuIjoiQXR6YXxJd0VCSU9pOUV4Si13UnhQLTZrcThSNFVWQk5NZDBaRml5aG1TSjFkQjRJcXpVbVNDRURRTTZ3NUl0cEdHYTI5VUxEUUc0R0FFcnlNcHczSGJsZ2VMTng5YkRYTG01Q0J3eW52M3lYa205VUlwVXUzbGlJQUdySVgtQXFocTBvNzhtalhBZFNzZ0VoT0hKMC13RUR6VENlRTlJVnFxeFYxNy1Ocmc3U1Y3SkZjT3A4cTg1alpnMDhnYTJEVEFWa2g1VUZSRzNnZ3ptbzV2M1g1ajAzeGd0MTk1ejNoaDZJU2tHSDU5MmlDZVJPaHFZby1ZUndLbmRkMkJMTUhEQi1JdTBWRUcwa0lwN1BmaVQ3NlZkSEFBT1YwXzFIUkZyajhDeW94UFlseUw2X1JTY1dwNFozaGd1dERBVmRSdjdJd0RFTVM4NjZHWmpqMlJtU3QyUHZHWlozNDVaQUtVZ3dtd3hOS05LaE9yZmM3RmxwbnpINVBDVkV4anlNVWN1YVpVZi04Rk42VFpuZFlwZHVpQTJOSHdVQTNzQUh6bTVJREJDeGtDTUMzNl8zVzRyX1RmSGctOTVNd0QtWng5dloyVmxLUkJMa1NYQUJZX1J5VE04Rm5pX1J0MHZBZDVKdDltRklabnNhRFpVQ055TUVVUWotR2FEMGZaVDRIekFxdjNLa0lDSkkiLCJkZXZpY2VJZCI6ImFtem4xLmFzay5kZXZpY2UuQUdJV080UEVFSlpKWEEzSE1FUVpJTEUzQVBDV0VWVFlWQlVKU0FCWkMzTzYyR1hEMzIzMjNQWE1JSENCVEpRRlZESElHNEpDTlVSWVoyRTJFS1ZNSTIyRFY1QUhPNkdJV09YWDZEVEJUR0VMVlk1RUNWT1RVNlFXVkVDV0hFUFc1QkROWkUySzVINFRBS1NFM0FOUElRNTNNT0hIMjNOWURJRU1aU0NQWUtWUzZGRlg1TlhGNiIsInVzZXJJZCI6ImFtem4xLmFzay5hY2NvdW50LkFGUUkyV0dIQ1NVT1NHR0FMVVBUWFlYWVBGTTNERE5RWE9ZT01QWVRPM0hTSlRHMjVBRFREWDRRSUdLUzI0VktTMjJTQkdHV1NMQVJYU0NVT0tYQlBMMkkzVjZKR1pJWlpNQ0RBTk5SQktKNDdERTJVUTNDUFJZVklCNVA3WFFTUEw1TDRUWFVKT1Y0UVlUTFBUNE1KT0RJNlVJSlE1Rk1XNFdOVUJYUFhWSkI3NktSM0RSVUtONVAzRU9LUzJUNTdUM0taWlFJNFhBVEpFWSJ9fQ.NAseALmDw8N9WVXeqoD5Gk0x93ltiwHz65yxDLUsvDfYeibXSMO3jvbJFdFsX1ihcvgmnAUYAkgkaMVHTxgu-34qdkwJio0a0E8IfCGTyn-kMQ9ETxbSQ95za8UfSjPScbnqP8Sb_6CoYZD4srS8HAVyFiBB4Oh-AZMWnHCeZEvHb6pXXxGSkgJ5a3D-PXBW-svoWfF4g0UkU65PmGdpywc3OuxfE2STm-QZQULBvU6bNvM75S0UByns4iEDXohXrHOcvD-8PqVC-cpyiiuf3A3RI3ib-u3G7P00KuPJc5--60zIAm2uLpuKwuFSLu78bxvr0Ge9UvUJ3_3KcRIUBw"
+    api_endpoint = "https://api.amazonalexa.com"
+    address_service = AddressService()
+    ret_val = address_service.get_full_address(api_endpoint,device_id,api_access_token)
+    print(ret_val)

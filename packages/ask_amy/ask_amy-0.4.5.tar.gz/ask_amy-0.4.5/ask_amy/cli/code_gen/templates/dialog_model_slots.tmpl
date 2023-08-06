@@ -1,0 +1,15 @@
+,
+   "slots": {
+    {% for slot_index in interaction_model.slot_indexes() %}
+          "{{interaction_model.slots[slot_index]['slot_name']}}":{
+               "speech_out_text": "Please provide the {{interaction_model.slots[slot_index]['slot_name']}}",
+               "re_prompt_text": "Sorry I did not hear that.",
+               "expected_intent": "{{interaction_model.slots[slot_index]['method_name']}}"
+
+          {% if interaction_model.has_next_slot_index(slot_index) %}
+             },
+          {% else %}
+             }
+          {% endif %}
+   {% endfor %}
+   },

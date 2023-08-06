@@ -1,0 +1,6 @@
+   {% for intent in interaction_model.intents %}
+      "{{intent.method_name}}": {
+          "speech_out_text": "you have called the {{intent.method_text}}",
+          "should_end_session": true
+      },
+   {% endfor %}

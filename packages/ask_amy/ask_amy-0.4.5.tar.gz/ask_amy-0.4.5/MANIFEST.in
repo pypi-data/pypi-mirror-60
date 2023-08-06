@@ -1,0 +1,8 @@
+include README.md
+include ask_amy/cli/code_gen/templates/alexa_lambda_role.json
+include ask_amy/cli/code_gen/templates/cli_config.tmpl
+include ask_amy/cli/code_gen/templates/dialog_model_intents.tmpl
+include ask_amy/cli/code_gen/templates/dialog_model_slots.tmpl
+include ask_amy/cli/code_gen/templates/dialog_model_intent_control.tmpl
+include ask_amy/cli/code_gen/templates/dialog_model_master.tmpl
+include ask_amy/cli/code_gen/templates/skill_code_master.tmpl

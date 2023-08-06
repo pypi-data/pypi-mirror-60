@@ -1,0 +1,20 @@
+{
+   "Skill" : {
+      "version": "1.0",
+      "class_name": "{{config_model.skill_name}}.{{config_model.class_name}}",
+      "logging_level": "debug"
+   },
+   "Session": {
+      "persistence": false
+   },
+   "Dialog": {
+      {% include 'dialog_model_intent_control.tmpl' %}
+      {% include 'dialog_model_slots.tmpl' %}
+      {% include 'dialog_model_intents.tmpl' %}
+   "help_intent": {
+      "method_name": "handle_default_intent",
+      "speech_out_text": "help intent",
+      "should_end_session": true
+   }
+  }
+}
