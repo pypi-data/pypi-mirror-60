@@ -1,0 +1,8 @@
+README.md
+setup.py
+TOPSIS_Pratyaksh_Verma_101703402.egg-info/PKG-INFO
+TOPSIS_Pratyaksh_Verma_101703402.egg-info/SOURCES.txt
+TOPSIS_Pratyaksh_Verma_101703402.egg-info/dependency_links.txt
+TOPSIS_Pratyaksh_Verma_101703402.egg-info/top_level.txt
+Topsis/TOPSIS.py
+Topsis/__init__.py
