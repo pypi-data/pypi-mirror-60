@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+ghLinguist.py
+pyproject.toml
+setup.cfg
+setup.py
+ghlinguist/__init__.py
+ghlinguist.egg-info/PKG-INFO
+ghlinguist.egg-info/SOURCES.txt
+ghlinguist.egg-info/dependency_links.txt
+ghlinguist.egg-info/entry_points.txt
+ghlinguist.egg-info/not-zip-safe
+ghlinguist.egg-info/requires.txt
+ghlinguist.egg-info/top_level.txt
