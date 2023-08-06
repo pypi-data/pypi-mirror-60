@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: scrapy-domain-delay
+Version: 0.0.1
+Summary: Define download_delay for different domain.
+Home-page: UNKNOWN
+Author: Carol Chen
+Author-email: carolchency@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
