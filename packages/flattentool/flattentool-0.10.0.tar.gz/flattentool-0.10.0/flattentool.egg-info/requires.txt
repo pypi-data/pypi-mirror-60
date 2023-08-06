@@ -1,0 +1,9 @@
+jsonref
+schema
+openpyxl>=2.6
+pytz
+xmltodict
+lxml
+
+[HTTP]
+requests
