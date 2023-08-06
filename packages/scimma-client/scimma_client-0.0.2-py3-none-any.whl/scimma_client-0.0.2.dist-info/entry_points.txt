@@ -1,0 +1,3 @@
+[console_scripts]
+scimma = scimma.client.__main__:main
+
