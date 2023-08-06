@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: W3bParse
+Version: 0.0.9
+Summary: A simple web parser
+Home-page: https://github.com/pypa/exampleproject
+Author: Colby Sehnert
+Author-email: colbysehnert@gmail.com
+License: UNKNOWN
+Keywords: web-parser,development
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+
