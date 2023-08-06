@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.py
+brein_api.egg-info/PKG-INFO
+brein_api.egg-info/SOURCES.txt
+brein_api.egg-info/dependency_links.txt
+brein_api.egg-info/not-zip-safe
+brein_api.egg-info/requires.txt
+brein_api.egg-info/top_level.txt
+breinify/__init__.py
+breinify/brein_exception.py
+breinify/demo_temporal_data.py
+breinify/demo_user_lookup.py
+breinify/validFields.py
+documentation/img/logo.png
+test/test_hashes.py
