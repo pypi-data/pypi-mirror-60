@@ -1,0 +1,10 @@
+BEZIER:
+
+  DEFINE:
+    IMAGE:
+      max_row_of_image: 1
+      max_col_of_image: 2
+
+      img_size: 6, 5  # width, height
+    BEZIER:
+      number_of_t: 20
