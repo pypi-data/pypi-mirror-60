@@ -1,0 +1,3 @@
+[console_scripts]
+bb-trigger = neurohive.integration.bitbucket:main
+
