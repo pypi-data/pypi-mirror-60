@@ -1,0 +1,6 @@
+README.md
+setup.py
+stad.egg-info/PKG-INFO
+stad.egg-info/SOURCES.txt
+stad.egg-info/dependency_links.txt
+stad.egg-info/top_level.txt
