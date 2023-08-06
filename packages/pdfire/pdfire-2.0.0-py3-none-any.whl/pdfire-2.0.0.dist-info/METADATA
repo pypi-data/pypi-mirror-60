@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pdfire
+Version: 2.0.0
+Summary: Python client for the PDFire.io API.
+Home-page: https://github.com/modernice/pdfire-python
+Author: modernice Ltd.
+Author-email: info@modernice.ltd
+License: MIT
+Keywords: PDFire,client,API,library,PDF,converter
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: python-dateutil
+
+<p align="center">
+<img src="https://pdfire.io/img/logo.svg" width="100" alt="PDFire.io logo">
+</p>
+
+# PDFire Python
+
+![GitHub](https://img.shields.io/github/license/modernice/pdfire-python?style=flat-square)
+
+This package provides a client for the [PDFire.io](https://pdfire.io) API. Read the [Documentation](https://docs.pdfire.io) for a list of available options.
+
+## Installation
+
+```sh
+pip install pdfire
+```
+
+## Basic usage
+
+```python
+from pdfire import Client, ConversionParams
+
+client = Client('YOUR-API-KEY')
+
+pdf = client.convert(ConversionParams(
+  url = 'https://google.com',
+  margin = 0,
+  format = 'A4',
+))
+
+pdf.save_to('/path/on/disk.pdf')
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+

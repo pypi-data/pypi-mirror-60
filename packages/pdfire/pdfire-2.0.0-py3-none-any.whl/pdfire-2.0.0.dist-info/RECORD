@@ -1,0 +1,14 @@
+pdfire/__init__.py,sha256=vU6hXWLIHINgxfDLOB-91O5iCJfForNBTfsS-S5jFVQ,233
+pdfire/bytes_result.py,sha256=R0prwb0ErcknNg3gUFcoH8S1paJXRQ7ppRKrA5ANjO0,188
+pdfire/client.py,sha256=mqU0UU5OSWG6CWk4XOHzDbuXsYQM59waFRAM9bxhNCI,4191
+pdfire/conversion.py,sha256=X8-fCJ9TdLy66_jZjJQIhBX4ScyLz7SiLBjObWt59V4,1300
+pdfire/conversion_params.py,sha256=8s0-EpRFsggLsFlSV0rXPmuPHxqaKOYqBicapWXAgEw,7882
+pdfire/errors.py,sha256=Nneibo71qbgdWTWN2SoeOr6Ut_CknxLCPLOAoGISKqk,1032
+pdfire/example.py,sha256=lXgLVNSvxvDABwFS3ukY0L6r68km6a56YAakF5ux0cc,366
+pdfire/merge_params.py,sha256=P00IHqPZQSO7ZrfWfHXrBziCBcOx6fhJTUTXqpmEDf8,823
+pdfire/result.py,sha256=dNVrQQmfnX1dcROK96BJC_Xwzqxv2dCigc3oI9SBHXU,299
+pdfire-2.0.0.dist-info/LICENSE,sha256=MwGHAS1WTDy3S-jjNrNLZ78z1OlLwF1EgDwF91rDyLU,1071
+pdfire-2.0.0.dist-info/METADATA,sha256=CC7BlsnngQF6N_WrTNcIKsJMU8g60Ro2puwM2sqXFsY,1376
+pdfire-2.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pdfire-2.0.0.dist-info/top_level.txt,sha256=4s0ruox2-3DgrAYS-IJwAcZn3CCKBRHlBjMzkNO3hBg,7
+pdfire-2.0.0.dist-info/RECORD,,
