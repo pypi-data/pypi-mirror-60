@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+mvr/__init__.py
+mvr/test.py
+mvr.egg-info/PKG-INFO
+mvr.egg-info/SOURCES.txt
+mvr.egg-info/dependency_links.txt
+mvr.egg-info/top_level.txt
