@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+sceance.egg-info/PKG-INFO
+sceance.egg-info/SOURCES.txt
+sceance.egg-info/dependency_links.txt
+sceance.egg-info/entry_points.txt
+sceance.egg-info/requires.txt
+sceance.egg-info/top_level.txt
