@@ -1,0 +1,33 @@
+Metadata-Version: 1.2
+Name: explainerdashboard
+Version: 0.1.8.0
+Summary: library that
+Home-page: https://github.com/oegedijk/explainerdashboard
+Author: Oege Dijk
+Author-email: oegedijk@gmail.com
+License: MIT
+Project-URL: Github page, https://github.com/oegedijk/explainerdashboard/
+Project-URL: Documentation, https://explainerdashboard.readthedocs.io/
+Description: 
+            explainerdashboard allows you quickly build an interactive dashboard to explain the inner workings of your machine learning model.
+        
+            It includes:
+            - Model summary statistics
+            - SHAP values (importances, individual contributions, dependence plots, interaction plots, etc)
+            - permutation importances
+            - partial dependence plots
+            - DecisionTree visualizers
+        
+            You can display an interactive dashboard with all of these features with only three lines of code.
+        
+            A deployed example can be found at http://titanicexplainer.herokuapp.com
+            
+Keywords: machine learning,explainability,shap,feature importances,dash
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Dash
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
