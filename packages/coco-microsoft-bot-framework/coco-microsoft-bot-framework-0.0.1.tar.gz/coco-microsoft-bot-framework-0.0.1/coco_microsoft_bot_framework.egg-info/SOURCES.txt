@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+coco_microsoft_bot_framework/__init__.py
+coco_microsoft_bot_framework/coco_microsoft_bot_framework.py
+coco_microsoft_bot_framework.egg-info/PKG-INFO
+coco_microsoft_bot_framework.egg-info/SOURCES.txt
+coco_microsoft_bot_framework.egg-info/dependency_links.txt
+coco_microsoft_bot_framework.egg-info/requires.txt
+coco_microsoft_bot_framework.egg-info/top_level.txt
