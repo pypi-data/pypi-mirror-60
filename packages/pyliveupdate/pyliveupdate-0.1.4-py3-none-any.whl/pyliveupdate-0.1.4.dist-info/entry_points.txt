@@ -1,0 +1,4 @@
+
+          [console_scripts]
+          pylu-controller = pyliveupdate.startcontroller:main
+      
