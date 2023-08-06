@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+*.params
+build/
+dist/
+mogptk.egg-info/
+examples/test*
