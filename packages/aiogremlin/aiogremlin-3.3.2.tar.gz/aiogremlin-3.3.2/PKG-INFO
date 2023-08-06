@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: aiogremlin
+Version: 3.3.2
+Summary: An asynchronous DSL for the Gremlin-Python driver
+Home-page: https://git.qoto.org/goblin-ogm/aiogremlin
+Author: Jeffrey Phillips Freeman
+Author-email: Jeffrey.Freeman@CleverThis.com
+License: Apache License, Version 2.0
+Download-URL: https://github.com/goblin-ogm/aiogremlin/archive/v3.3.2.tar.gz
+Description: This project is officially hosted on [QOTO GitLab here](https://git.qoto.org/goblin-ogm/aiogremlin)
+Keywords: Tinkerpop,Tinkerpop3,gremlin,gremlin-python,asyncio,graphdb
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy

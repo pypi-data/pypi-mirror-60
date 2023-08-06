@@ -1,0 +1,5 @@
+gremlinpython<=3.4.3
+aenum>=1.4.5
+aiohttp>=2.2.5
+PyYAML>=3.12
+six>=1.10.0
