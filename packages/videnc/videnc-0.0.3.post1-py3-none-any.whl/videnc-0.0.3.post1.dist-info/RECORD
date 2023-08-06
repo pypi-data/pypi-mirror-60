@@ -1,0 +1,8 @@
+videnc/__init__.py,sha256=4W6B1CsW_zQ-jwO0o7ZTUcuraRWBmmpt_HaLx58L6Wk,42
+videnc/__main__.py,sha256=SScIJm2mmQXQOWy5yv1Ojaegnp8pC2-roL7jZ9zpYcE,5073
+videnc/video.py,sha256=d10KvVtmDkM39I4bwncpitqg2WxN75RJ2cURJUmvayI,7935
+videnc-0.0.3.post1.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+videnc-0.0.3.post1.dist-info/METADATA,sha256=SOVgKbNzwM-ZUSYDRircPaABkbjVRx54ZGDrFyMgIJ0,509
+videnc-0.0.3.post1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+videnc-0.0.3.post1.dist-info/top_level.txt,sha256=LHdBFxMNOA-UXV4kfn2CtleCT1i6iW1guYWoAABKKeM,7
+videnc-0.0.3.post1.dist-info/RECORD,,
