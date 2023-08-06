@@ -1,0 +1,12 @@
+setuptools
+
+[coverage]
+pytest-cov
+
+[pep8]
+flake8
+black
+
+[test]
+pytest>=2.9.0
+pytest-remove-stale-bytecode
