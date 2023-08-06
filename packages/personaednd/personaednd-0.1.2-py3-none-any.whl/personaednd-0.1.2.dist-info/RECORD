@@ -1,0 +1,15 @@
+personaednd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+personaednd/attributes.py,sha256=t1XWn4H_2jn9uvf1jh7iYai4OA0uHBvF7XxOOey6EEc,12393
+personaednd/dice.py,sha256=Y_Ss4kNfOu9ioaHFLOzYuG_KP-cZq4a8fzL6zayiJJM,668
+personaednd/ol.py,sha256=7Yz90qGtCj4OwMAIQ_GyB6Fc79p8BGnTS24sgsXUKXY,4110
+personaednd/shell.py,sha256=rWMeCi445yCqswujOtJNWr826up95s9K957LppiWfAQ,12496
+personaednd/version.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+personaednd/sources/__init__.py,sha256=9PoezD8PmQQbIEIGekx7piyd-qXKg9B97626pP2Ck7I,18250
+personaednd/sources/reader.py,sha256=nuKaT1_qB5IJnEaSHhe2E5JjqWX9kTL99zIpUGXj56g,2482
+personaednd/sources/sources.yaml,sha256=ZhB3_6-Bv8dFoAjVOrO4Vof8tcD9wFzg6nAXoIpgYts,28312
+personaednd-0.1.2.dist-info/LICENSE,sha256=7yVH2RvO15MjCY8mqqf0-Lfr-t9GlIcvK8tVDDWlIBQ,1070
+personaednd-0.1.2.dist-info/METADATA,sha256=cpQ-KIUTntM8ifetA4NejUTkEZNhQatIdQYUXWzsBxw,6615
+personaednd-0.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+personaednd-0.1.2.dist-info/entry_points.txt,sha256=UaL6T369CPL77vQ_7yR3g4UIc7V0ESJJS0hLozrWhJg,56
+personaednd-0.1.2.dist-info/top_level.txt,sha256=rZNRPq67PzaLhr8gkLK-HUaa53uIg6wuiY3T7GUyF9s,12
+personaednd-0.1.2.dist-info/RECORD,,
