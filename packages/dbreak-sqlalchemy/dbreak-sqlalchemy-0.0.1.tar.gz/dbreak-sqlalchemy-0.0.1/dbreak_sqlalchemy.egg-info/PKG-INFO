@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: dbreak-sqlalchemy
+Version: 0.0.1
+Summary: Plugin for dbreak to handle SQLAlchemy connections
+Home-page: https://github.com/jrhege/dbreak_sqlalchemy
+Author: Johnathon Hege
+License: UNKNOWN
+Description: # dbreak-sqlalchemy
+        A plugin for [dbreak](https://github.com/jrhege/dbreak) that allows it to work with SQLAlchemy engine objects.
+        
+        ## Installation
+        Install from PyPi using pip:
+        
+        ```
+        pip install dbreak-sqlalchemy
+        ```
+        
+        ## Usage
+        There's no need to import the plugin separately, just pass a SQLAlchemy Engine object to dbreak.show_console().
+        
+        ```
+        import sqlalchemy
+        import dbreak
+        
+        # Set up a SQLite SQLAlchemy connection
+        connection = sqlalchemy.create_engine("sqlite://")
+        
+        # Pause execution and enter the console
+        dbreak.start_console(connection)
+        ```
+Keywords: development database sqlalchemy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
