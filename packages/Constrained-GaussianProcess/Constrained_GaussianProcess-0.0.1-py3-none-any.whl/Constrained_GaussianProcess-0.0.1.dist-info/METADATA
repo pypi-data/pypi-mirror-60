@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Constrained-GaussianProcess
+Version: 0.0.1
+Summary: Python implementation of 'Finite-Dimensional Gaussian Approximation with Linear Inequality Constraints'
+Home-page: https://github.com/liaowangh/constrained_gp
+Author: Liaowang Huang
+Author-email: liahuang@student.ethz.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Semester project
+
+
