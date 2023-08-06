@@ -1,0 +1,10 @@
+webreview/VERSION,sha256=H5MN0fEzwfl6lP46y42zQ3LPTAH_2ys_9Mpy-UlBIek,6
+webreview/__init__.py,sha256=sfZ7zRyzMWNkt7vLps2K5DATwPn9cH7zzOPEfw7ho0Q,25
+webreview/test_auth.py,sha256=8OBuRGq08sjG0Fv0dwc3YtBX3K02Gbw9IIZv23hyKOE,293
+webreview/webreview.py,sha256=ZVjupiivjkNwLdQCC84d_uSBn2Qqg97ztRmp4BVI3hI,15887
+webreview/webreview_test.py,sha256=vYtHB4_Zl_iNE1vBkxNidZolo4kDu1fiYpgjesEsGi8,2270
+webreview-0.2.0.dist-info/LICENSE,sha256=mhRabr4H31_xb3vtU9EtYJsS2xZUtPAbBFKLXF4sgaU,1113
+webreview-0.2.0.dist-info/METADATA,sha256=aYxwL9daCl7aRF0Cik8LUk2Mwq4JtM6aBqmRkND042c,1466
+webreview-0.2.0.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+webreview-0.2.0.dist-info/top_level.txt,sha256=1bwCz6kKWlTemnu8fFcAxQDqrDdKM7VfQ1Stw4EXsfg,10
+webreview-0.2.0.dist-info/RECORD,,
