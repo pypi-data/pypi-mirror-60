@@ -1,0 +1,13 @@
+SQLess/SQLessKeywords.py,sha256=sEYMCaH8iObCM8CUQ2UiO5cYiG0prKPO_Cm5Moiixxo,6134
+SQLess/__init__.py,sha256=yg2aLFIceXHsVexQO2ZQ_7ZbjuRXndpfeo65Elx8f2k,110
+SQLess/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SQLess/adapters/adapter.py,sha256=_48hAstBQfy4oawTMY9pPBCEfl1sPH5t7rnbVob-a5M,4095
+SQLess/adapters/mysql.py,sha256=pl3Lnu3WyBiA2e7ffQ1BMNvTb46quWQxSVj65EEcGUw,1299
+SQLess/adapters/oracle.py,sha256=xJBTo3rYOj_AQFTJUd6gEHzTYq89Is1M3WX29ieWN9U,1550
+SQLess/adapters/postgres.py,sha256=20lKV22pOCa-yfBQygnvI173Mvrb6ApVV5Wx2ARpBvQ,1524
+SQLess/adapters/sqlite.py,sha256=aXZhdBVQ0iogIEHFMxNEsqdPY5D440c3tTbf9Pgf6dk,1246
+robotframework_sqless-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+robotframework_sqless-0.0.3.dist-info/METADATA,sha256=6BTZ7jiN_K4vIC_j8EFwgMiK3EF0qBNoQ-o8OW9GKXk,2228
+robotframework_sqless-0.0.3.dist-info/WHEEL,sha256=XOj1g5kV4OxZCRiBvYFIQdhMldfnAF5nUxS8sgkc5Mg,92
+robotframework_sqless-0.0.3.dist-info/top_level.txt,sha256=_ul6lNZiddRwGUYVJtrDzcRZDVegQM_z6MD0bwil6eQ,7
+robotframework_sqless-0.0.3.dist-info/RECORD,,
