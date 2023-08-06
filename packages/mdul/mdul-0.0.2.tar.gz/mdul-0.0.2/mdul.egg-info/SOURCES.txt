@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+mdul/__init__.py
+mdul/main.py
+mdul/test_mdul.py
+mdul.egg-info/PKG-INFO
+mdul.egg-info/SOURCES.txt
+mdul.egg-info/dependency_links.txt
+mdul.egg-info/entry_points.txt
+mdul.egg-info/not-zip-safe
+mdul.egg-info/requires.txt
+mdul.egg-info/top_level.txt
