@@ -1,0 +1,12 @@
+README.md
+setup.py
+Jobtimize/__init__.py
+Jobtimize/jobtimize.py
+Jobtimize/rotateproxies.py
+Jobtimize/scrapindeed.py
+Jobtimize/scrapmonster.py
+Jobtimize.egg-info/PKG-INFO
+Jobtimize.egg-info/SOURCES.txt
+Jobtimize.egg-info/dependency_links.txt
+Jobtimize.egg-info/requires.txt
+Jobtimize.egg-info/top_level.txt
