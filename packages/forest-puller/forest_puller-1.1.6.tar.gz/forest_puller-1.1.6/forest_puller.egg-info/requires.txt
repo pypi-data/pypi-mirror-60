@@ -1,0 +1,7 @@
+pandas
+numpy
+autopaths>=2.5.8
+plumbing>=1.3.5
+lxml
+requests
+tqdm>=4.41.1
