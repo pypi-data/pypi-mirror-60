@@ -1,0 +1,11 @@
+sphinx
+sphinx_rtd_theme
+nose
+coverage
+pypi-publisher
+click==7.0
+tabulate==0.8.6
+pytest==5.3.5
+pytest-env==0.6.2
+pytest-cov==2.8.1
+pydbwrapper==1.1.5
