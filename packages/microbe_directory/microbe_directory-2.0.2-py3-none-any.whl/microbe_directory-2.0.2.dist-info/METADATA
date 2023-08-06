@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: microbe-directory
+Version: 2.0.2
+Summary: Codes for Microbe Directory 2.0 and above
+Home-page: https://github.com/dcdanko/MD2
+Author: Chandrima Bhattacharya
+Author-email: chb4004@med.cornell.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: click
+
+UNKNOWN
+
+
