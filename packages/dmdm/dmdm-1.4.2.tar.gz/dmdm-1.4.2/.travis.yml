@@ -1,0 +1,21 @@
+language: python
+dist: bionic
+sudo: required
+python:
+- 3.6
+- 3.7
+- 3.8
+install:
+  - pip install pipenv
+  - pipenv install --deploy --dev
+script:
+  - ./manage.py migrate
+  - PYTHONWARNINGS=always coverage run manage.py test
+  - flake8 .
+  - yapf -dr .
+  - mypy .
+  - pydocstyle
+  - safety check
+  - pip install "git+https://github.com/${TRAVIS_REPO_SLUG}.git#egg=dmdm"
+after_success:
+  - coveralls

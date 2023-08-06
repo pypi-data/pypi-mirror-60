@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mdmail = "*"
+Django = "*"
+
+[dev-packages]
+"flake8" = "*"
+safety = "*"
+python-coveralls = "*"
+yapf = "*"
+mypy = "*"
+setuptools-scm = "*"
+pydocstyle = "*"
+pre-commit = "*"
+django-stubs = "*"
