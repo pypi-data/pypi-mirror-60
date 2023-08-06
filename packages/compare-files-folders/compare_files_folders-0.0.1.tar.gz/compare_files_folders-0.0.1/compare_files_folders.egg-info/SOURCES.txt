@@ -1,0 +1,6 @@
+README.md
+setup.py
+compare_files_folders.egg-info/PKG-INFO
+compare_files_folders.egg-info/SOURCES.txt
+compare_files_folders.egg-info/dependency_links.txt
+compare_files_folders.egg-info/top_level.txt
