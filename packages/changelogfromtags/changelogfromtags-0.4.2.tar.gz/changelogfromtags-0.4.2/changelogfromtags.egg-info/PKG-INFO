@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: changelogfromtags
+Version: 0.4.2
+Summary: Generate a changelog from git tags.
+Home-page: https://gitlab.com/cdlr75/changelogfromtags
+Author: cdlr75
+Author-email: cdlr75@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://gitlab.com/cdlr75/changelogfromtags/issues
+Project-URL: Source, https://gitlab.com/cdlr75/changelogfromtags/
+Description: README
+        ======
+        
+        Overwite by the main README.md on the gitlab repository.
+        
+Keywords: changelog git tags
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3
+Description-Content-Type: text/markdown
