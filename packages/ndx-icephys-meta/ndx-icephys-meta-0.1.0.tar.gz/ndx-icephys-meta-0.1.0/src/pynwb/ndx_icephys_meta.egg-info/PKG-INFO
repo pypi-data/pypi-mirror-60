@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ndx-icephys-meta
+Version: 0.1.0
+Summary: Implement proposal for hierarchical metadata strucutre for intracellular electrophysiology data 
+Home-page: UNKNOWN
+Author:  Oliver Ruebel, Ryan Ly, Benjamin Dichter, Thomas Braun, Andrew Tritt
+Author-email: oruebel@lbl.gov
+License: BSD 3-Clause
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
