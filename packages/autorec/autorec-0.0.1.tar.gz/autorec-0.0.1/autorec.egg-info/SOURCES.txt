@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+autorec/__init__.py
+autorec.egg-info/PKG-INFO
+autorec.egg-info/SOURCES.txt
+autorec.egg-info/dependency_links.txt
+autorec.egg-info/requires.txt
+autorec.egg-info/top_level.txt

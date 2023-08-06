@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: autorec
+Version: 0.0.1
+Summary: AutoRec for automated recommendation
+Home-page: https://github.com/thwang1231/autorec
+Author: Data Analytics at Texas A&M (DATA) Lab, AutoRec Team
+Author-email: thwang1231@tamu.edu
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Automated Machine Learning,Recommender System
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: tests
