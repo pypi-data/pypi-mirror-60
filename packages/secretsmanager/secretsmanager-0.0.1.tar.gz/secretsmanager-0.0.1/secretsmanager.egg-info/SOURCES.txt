@@ -1,0 +1,6 @@
+setup.py
+secretsmanager/__init__.py
+secretsmanager.egg-info/PKG-INFO
+secretsmanager.egg-info/SOURCES.txt
+secretsmanager.egg-info/dependency_links.txt
+secretsmanager.egg-info/top_level.txt
