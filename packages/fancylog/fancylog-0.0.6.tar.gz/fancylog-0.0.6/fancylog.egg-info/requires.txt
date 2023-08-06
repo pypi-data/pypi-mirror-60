@@ -1,0 +1,7 @@
+luddite
+
+[dev]
+black
+pytest-cov
+pytest
+coveralls
