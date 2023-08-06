@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: FAPSDemonstratorAPI
+Version: 0.0.5
+Summary: FAPS Demonstrator FAPSDemonstratorAPI api
+Home-page: https://faps.de/
+Author: FAU - FAPS
+Author-email: jupiter.bakakeu@faps.fau.de
+License: MIT
+Description: FAPS Demonstrator API. This api enable the control of the demonstrator from the cloud.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
