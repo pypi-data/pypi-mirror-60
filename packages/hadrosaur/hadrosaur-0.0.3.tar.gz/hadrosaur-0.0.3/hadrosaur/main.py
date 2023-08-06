@@ -1,0 +1,119 @@
+import traceback
+import sys
+import json
+import os
+
+_STATUS_FILENAME = 'status.json'
+_ERR_FILENAME = 'error.log'
+_RESULT_FILENAME = 'result.json'
+_STDOUT_FILENAME = 'stdout.log'
+_STDERR_FILENAME = 'stderr.log'
+_STORAGE_DIRNAME = 'storage'
+
+# TODO record start time, completion time, and run time
+
+
+class Project:
+
+    def __init__(self, basepath):
+        if os.path.exists(basepath) and not os.path.isdir(basepath):
+            raise RuntimeError(f"Project base path is not a directory: {basepath}")
+        os.makedirs(basepath, exist_ok=True)
+        self.basedir = basepath
+        self.resources = {}  # type: dict
+
+    def resource(self, name):
+        """
+        Define a new resource by name and function
+        """
+        if name in self.resources:
+            raise RuntimeError(f"Resource name has already been used: '{name}'")
+        res_path = os.path.join(self.basedir, name)
+        os.makedirs(res_path, exist_ok=True)
+
+        def wrapper(func):
+            self.resources[name] = {'func': func, 'dir': res_path}
+            return func
+        return wrapper
+
+    def fetch(self, resource_name, ident, args=None, recompute=False):
+        """
+        Compute a new entry for a resource, or fetch the precomputed entry.
+        """
+        if resource_name not in self.resources:
+            raise RuntimeError(f"No such resource: {resource_name}")
+        ident = str(ident)
+        res = self.resources[resource_name]
+        func = res['func']
+        dirpath = res['dir']
+        entry_path = os.path.join(dirpath, ident)
+        paths = {
+            'base': entry_path,
+            'error': os.path.join(entry_path, _ERR_FILENAME),
+            'stdout': os.path.join(entry_path, _STDOUT_FILENAME),
+            'stderr': os.path.join(entry_path, _STDERR_FILENAME),
+            'status': os.path.join(entry_path, _STATUS_FILENAME),
+            'result': os.path.join(entry_path, _RESULT_FILENAME),
+            'storage': os.path.join(entry_path, _STORAGE_DIRNAME),
+        }
+        os.makedirs(entry_path, exist_ok=True)
+        os.makedirs(paths['storage'], exist_ok=True)
+        # Check the current status of the resource
+        status = {'completed': False, 'pending': True, 'error': False}  # type: dict
+        if os.path.exists(paths['status']):
+            with open(paths['status']) as fd:
+                status = json.load(fd)
+            if status.get('pending'):
+                raise RuntimeError("Resource is already being computed and is pending")
+        result_path = os.path.join(entry_path, _RESULT_FILENAME)
+        if not recompute and status.get('completed'):
+            with open(result_path) as fd:
+                print('Resource is already computed')
+                return {'result': json.load(fd), 'status': status, 'paths': paths}
+        print('Computing the requested resource')
+        # Write status as pending
+        status['pending'] = True
+        status['error'] = False
+        with open(paths['status'], 'w') as fd:
+            # TODO try/except
+            json.dump(status, fd)
+        # Save stdout and stderr from the function to a string
+        old_stdout = sys.stdout
+        old_stderr = sys.stderr
+        mystdout = open(paths['stdout'], 'w')
+        mystderr = open(paths['stderr'], 'w')
+        sys.stdout = mystdout
+        sys.stderr = mystderr
+        if args is None:
+            args = {}
+        # Clear the error file
+        with open(paths['error'], 'w') as fd:
+            fd.write('')
+        try:
+            result = func(ident, args, paths['storage'])
+        except Exception:
+            status['error'] = True
+            err_str = traceback.format_exc()
+            with open(os.path.join(entry_path, _ERR_FILENAME), 'a') as fd:
+                fd.write(err_str)
+            with open(paths['status'], 'w') as fd:
+                status['error'] = True
+                status['pending'] = False
+                json.dump(status, fd)
+            return {'result': None, 'status': status, 'paths': paths}
+        finally:
+            mystdout.close()
+            mystderr.close()
+            sys.stdout = old_stdout
+            sys.stderr = old_stderr
+        with open(result_path, 'w') as fd:
+            # TODO try/except
+            json.dump(result, fd)
+        status['completed'] = True
+        status['error'] = False
+        status['pending'] = False
+        # Write to status file
+        with open(paths['status'], 'w') as fd:
+            # TODO try/except
+            json.dump(status, fd)
+        return {'result': result, 'status': status, 'paths': paths, 'paths': paths}
