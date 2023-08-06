@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.cfg
+setup.py
+aibolit/__init__.py
+aibolit/__main__.py
+aibolit.egg-info/PKG-INFO
+aibolit.egg-info/SOURCES.txt
+aibolit.egg-info/dependency_links.txt
+aibolit.egg-info/entry_points.txt
+aibolit.egg-info/top_level.txt
