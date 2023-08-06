@@ -1,0 +1,6 @@
+pandas
+numpy
+scipy
+ruamel.yaml
+pynwb
+nwbn_conversion_tools==0.2.0
