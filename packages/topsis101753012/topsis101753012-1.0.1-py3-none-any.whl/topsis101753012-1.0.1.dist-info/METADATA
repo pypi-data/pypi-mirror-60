@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: topsis101753012
+Version: 1.0.1
+Summary: A Python package to implement topsis function
+Home-page: https://github.com/mesajal24/topsis_101753012
+Author: Sajal Jain
+Author-email: mesajal24@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# ABOUT TOPSIS
+it is a package which provide rank to choose on the basis of different qualities.
+
+import : pip install topsis101753012
+Syntax: 
+a=topsis(filename,weights,impacts)
+
