@@ -1,0 +1,13 @@
+numpy
+scipy>=0.14
+scikit-learn
+requests
+Pillow
+memory-profiler
+matplotlib
+pandas
+mrcfile
+biopython==1.73
+
+[:python_version == "2.7"]
+weave
