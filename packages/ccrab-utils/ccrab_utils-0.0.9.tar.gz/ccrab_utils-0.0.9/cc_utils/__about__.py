@@ -1,0 +1,10 @@
+__title__ = 'ccrab_utils'
+__description__ = 'utilities'
+__url__ = ''
+__version_info__ = ('0', '0', '9')
+__version__ = '.'.join(__version_info__)
+__author__ = 'John Pickerill'
+__author_email__ = 'john@curiouscrab.com'
+__maintainer__ = 'John Pickerill'
+__license__ = 'MIT'
+__copyright__ = '(c) 2019 by John Pickerill'
