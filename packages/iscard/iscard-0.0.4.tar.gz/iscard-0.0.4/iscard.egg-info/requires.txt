@@ -1,0 +1,13 @@
+pandas
+numpy
+tables
+pysamstats
+pysam
+scikit-learn
+matplotlib
+tqdm
+
+[dev]
+pytest-cov==2.6.1
+pytest==4.0.1
+pytest-runner

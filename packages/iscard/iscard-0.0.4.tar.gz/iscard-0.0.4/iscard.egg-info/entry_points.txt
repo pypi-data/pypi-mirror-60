@@ -1,0 +1,3 @@
+[console_scripts]
+iscard = iscard.__main__
+
