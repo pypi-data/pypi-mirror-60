@@ -1,0 +1,3 @@
+[console_scripts]
+esmcol-validator = esmcol_validator.cli:main
+
