@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: intron
+Version: 0.0.1
+Summary: Intron retention tool
+Home-page: https://github.com/jareyw/intron/
+Author: Therapeutic innovation center, Baylor college of medicine
+Author-email: info@genialis.com
+License: Apache License 2.0
+Description: ==============
+        Intron counter
+        ==============
+        
+        TODO.
+        
+Keywords: bioinformatics intron RNA mRNA
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6, <3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: docs
+Provides-Extra: package
+Provides-Extra: test
