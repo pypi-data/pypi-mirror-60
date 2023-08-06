@@ -1,0 +1,15 @@
+argcomplete
+bs4
+colorama
+configparser
+psutil
+requests
+stashy
+urllib3
+xmltodict
+
+[dev]
+check-manifest
+
+[test]
+coverage
