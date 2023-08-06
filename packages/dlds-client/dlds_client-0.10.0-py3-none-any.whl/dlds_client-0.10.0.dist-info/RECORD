@@ -1,0 +1,15 @@
+dlds.py,sha256=X-d6SfYSNptniHKvu0kohqMUSmO-eIW-NZ_r4dTmpAo,60368
+dlds_cli.py,sha256=pWaZIxnvv3kNokj9tBv7ZLTGNlAdP6qi5YwQcTULHw4,4679
+http_token_authentication.py,sha256=BGCV8Ya7jtBjDrQ_6UQLoDmSQYdu2N4ZQfOWGHqolos,561
+dlds/__init__.py,sha256=Drg_QKcwNY6GPt2CpIOfsuBpNlRkN4SL2379H-kFcWU,350
+dlds/dlds_cli.py,sha256=pWaZIxnvv3kNokj9tBv7ZLTGNlAdP6qi5YwQcTULHw4,4679
+dlds/dlds_client.py,sha256=uknxFFOe4OcvJxOFJvB1D-hfS2QZNErn2y8FaLaYDPY,61333
+dlds/dlds_data_loader.py,sha256=8MYU9G0PHy4FnA9U16aB8uh14a6EhXpNN8hfbVfZLKk,8040
+dlds/dlds_model.py,sha256=iZ94imYsCm8csYYAskgw91nIUdMphayg9PXLfGg8Kpo,1474
+dlds/dlds_worker.py,sha256=8vumLDvDzobxmJO-EmOyCWc4b3H-lcqCthBrra_0zaM,11312
+dlds/http_token_authentication.py,sha256=BGCV8Ya7jtBjDrQ_6UQLoDmSQYdu2N4ZQfOWGHqolos,561
+dlds_client-0.10.0.dist-info/METADATA,sha256=-aqZCS3zF7T_O2hRmmMvY7qlmOwu4fIuhEISEGqOiKc,420
+dlds_client-0.10.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+dlds_client-0.10.0.dist-info/entry_points.txt,sha256=Yb8VrwEFewJaxJL3qSfK-jdJQvephiPfvLewMtLqh6s,57
+dlds_client-0.10.0.dist-info/top_level.txt,sha256=sXf9o2FnDtaeUd2clsEdz4LccqQT3E8Ah-QuKY_vEuw,5
+dlds_client-0.10.0.dist-info/RECORD,,
