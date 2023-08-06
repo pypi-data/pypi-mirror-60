@@ -1,0 +1,10 @@
+README.md
+setup.py
+connectIO/__init__.py
+connectIO/client.py
+connectIO/server.py
+connectIO/utils.py
+connectIO.egg-info/PKG-INFO
+connectIO.egg-info/SOURCES.txt
+connectIO.egg-info/dependency_links.txt
+connectIO.egg-info/top_level.txt
