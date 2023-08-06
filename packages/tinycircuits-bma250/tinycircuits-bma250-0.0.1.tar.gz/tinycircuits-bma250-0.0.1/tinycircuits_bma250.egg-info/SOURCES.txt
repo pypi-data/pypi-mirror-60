@@ -1,0 +1,8 @@
+README.md
+setup.py
+tinycircuits_bma250/__init__.py
+tinycircuits_bma250/tinycircuits_bma250.py
+tinycircuits_bma250.egg-info/PKG-INFO
+tinycircuits_bma250.egg-info/SOURCES.txt
+tinycircuits_bma250.egg-info/dependency_links.txt
+tinycircuits_bma250.egg-info/top_level.txt

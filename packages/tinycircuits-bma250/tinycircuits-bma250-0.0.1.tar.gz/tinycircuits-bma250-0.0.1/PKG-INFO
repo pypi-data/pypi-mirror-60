@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tinycircuits-bma250
+Version: 0.0.1
+Summary: Wireling Accelerometer Sensor Python library
+Home-page: https://github.com/TinyCircuits/TinyCircuits-Wireling-Accelerometer-Python-AST1001
+Author: TinyCircuits
+Author-email: info@tinycircuits.com
+License: UNKNOWN
+Description: # TinyCircuits Wireling Acceleromter Python AST1001
+        
+        This repository holds a python example meant for using a TinyCircuits [Accelerometer Sensor Wireling](https://nkl3bi1i7zzra7md-11252198.shopifypreview.com/collections/wireling-sensors/products/accelerometer-wireling-bma250) with a Raspberry Pi and Wireling Pi Hat.
+        
+        To install, use 
+        
+        ```
+        pip3 install tinycircuits-bma250
+        ```
+        
+        or if your default is Python 3:
+        
+        ```
+        pip install tinycircuits-bma250
+        ```
+        
+        Software written by: [TinyCircuits](https://tinycircuits.com/) for use with TinyCircuits hardware 
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
