@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: wom-connector
+Version: 0.2
+Summary: Connection library to the WOM Platform.
+Home-page: https://github.com/WOM-Platform/Python-Connector
+Author: WOM Platform
+Author-email: info@wom.social
+License: MIT
+Project-URL: Homepage, https://wom.social/
+Project-URL: Source, https://github.com/WOM-Platform/Python-Connector
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: cryptography (>=2.8)
+
+WOM Connector for Python
+========================
+
+Connector library for the WOM platform.
+
+
