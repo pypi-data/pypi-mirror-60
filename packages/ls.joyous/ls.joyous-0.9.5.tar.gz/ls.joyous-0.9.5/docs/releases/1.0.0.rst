@@ -1,0 +1,22 @@
+==========================
+Joyous 1.0.0 release notes - IN DEVELOPMENT
+==========================
+
+.. contents::
+    :local:
+    :depth: 3
+
+
+What's new
+==========
+
+
+
+
+
+Compatibility
+=============
+
+Joyous version 1.0.0 is known to work with the following versions of Wagtail, Django and Python.
+
+Other versions may work - YMMV.
