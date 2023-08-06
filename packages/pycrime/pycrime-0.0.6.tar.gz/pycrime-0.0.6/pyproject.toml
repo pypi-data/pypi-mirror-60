@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "pycrime"
+version = "0.0.1"
+description = ""
+authors = ["Luke Hodkinson <furious.luke@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.22.0"
+base-api = "^0.0.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7"

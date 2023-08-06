@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: pycrime
+Version: 0.0.6
+Summary: Fetch crime statistics from the ExpenseCheck crime statistics API.
+Home-page: https://github.com/furious-luke/pycrime
+Author: Luke Hodkinson
+Author-email: furious.luke@gmail.com
+Maintainer: Luke Hodkinson
+Maintainer-email: furious.luke@gmail.com
+License: UNKNOWN
+Description: # PyCrime
+        
+        Fetch crime statistics from the ExpenseCheck crime statistics API.
+        
+        ## Installation
+        
+        PyPi is the easiest:
+        
+        ``` bash
+        pip install pycrime
+        ```
+        
+        ## Usage
+        
+        Create a new API client with:
+        
+        ``` python
+        from pycrime import CrimeClient
+        
+        
+        client = CrimeClient(jwt=<your-token>)
+        ```
+        
+        Please replace `<your-token>` with your API token as a string.
+        
+        Fetch crime statistics based on postcode with:
+        
+        ``` python
+        client.locality_statistics(3000)
+        ```
+        
+        Here, the postcode for Melbourne's CBD, 3000, has been used. Please
+        substitute for the postcode of interest. The return value is a `dict`
+        containing shaped like the following:
+        
+        ``` python
+        {
+            'localityTheftRate': 27524.8484848485,  # per 100k population
+            'stateTheftRate': 3448.8149871704,      # per 100k population
+            'theftStateAnomaly': 698.0958267475     # percentage
+        }
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
