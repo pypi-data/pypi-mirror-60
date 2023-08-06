@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: nbtabs
+Version: 0.0.1
+Summary: Generate jupyter notebooks with tabbed code blocks
+Home-page: https://github.com/machow/nbtabs
+Author: Michael Chow
+Author-email: mc_al_gh@fastmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: package
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.0

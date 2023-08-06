@@ -1,0 +1,3 @@
+include nbtabs/templates/*.tpl
+include nbtabs/templates/*.js
+include nbtabs/templates/*.css
