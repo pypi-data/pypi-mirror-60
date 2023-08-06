@@ -1,0 +1,2 @@
+This repository contains tools and code for exporting and interacting with an Agilent ChemStation installation.
+This code has been developed by the Hein Lab at the Univeristy of British Columbia and is not an Agilent product.

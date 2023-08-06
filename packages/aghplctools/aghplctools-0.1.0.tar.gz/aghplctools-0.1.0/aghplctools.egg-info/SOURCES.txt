@@ -1,0 +1,10 @@
+README.md
+setup.py
+aghplctools/__init__.py
+aghplctools/hplc.py
+aghplctools/temp.py
+aghplctools.egg-info/PKG-INFO
+aghplctools.egg-info/SOURCES.txt
+aghplctools.egg-info/dependency_links.txt
+aghplctools.egg-info/requires.txt
+aghplctools.egg-info/top_level.txt
