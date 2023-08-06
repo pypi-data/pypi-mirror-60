@@ -1,0 +1,5 @@
+Django==2.2.9
+django-password-policies==0.4.2
+django-simple-menu==1.2.1
+core-dashboard-common-app==1.7.0
+core-main-app==1.7.0
