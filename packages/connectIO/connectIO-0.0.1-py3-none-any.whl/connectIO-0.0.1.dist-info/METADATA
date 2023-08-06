@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: connectIO
+Version: 0.0.1
+Summary: A simple module for sending data across the internet!
+Home-page: https://github.com/Den4200/connectIO
+Author: Dennis Pham
+Author-email: dpham.42@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Communications 
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Communications :: File Sharing
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# ConnectIO
+A simple module for sending data across the internet!
+
+## Use cases
+- Multiplayer pygame games (sending objects)
+- Chat server with clients
+- Transferring files over a network
+- Anything else you can think of!
+
+## Simple Example
+#### Server
+```python
+from connectIO import Server, threaded
+
+class ExampleServer(Server):
+
+    def __init__(self, ip='127.0.0.1', port=5555):
+        super(ExampleServer, self).__init__(ip, port)
+        self.func = self.threaded_conn
+
+    @threaded
+    def threaded_conn(self, conn, addr):
+        raddr = conn.getpeername()
+
+        greeting = 'hello client!'
+        print(f'Server -> {raddr}: {greeting}')
+
+        self.send(conn, greeting)
+        print(f'{raddr} -> Server: {self.recieve(conn)}')
+
+        response = 'great you?'
+        print(f'Server -> {raddr}: {response}')
+
+        resp2 = self.send(conn, response)
+        print(f'{raddr} -> Server: {self.recieve(conn)}')
+
+
+if __name__ == "__main__":
+    ExampleServer().run()
+```
+#### Client
+```py
+from connectIO import Client
+
+def main():
+    client = Client()
+    client.connect()
+
+    resp1 = client.recieve()
+    resp2 = client.send('hi server! how are you?')
+    resp3 = client.send('great thanks!')
+
+    client.close()
+
+
+if __name__ == "__main__":
+    main()
+```
+
+
