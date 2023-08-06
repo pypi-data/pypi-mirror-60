@@ -1,0 +1,12 @@
+cachemodel/__init__.py,sha256=v0qGPs5gL1Z4zg5rdP3gbPKMXB-RcUdr3IvlEvXjGHM,730
+cachemodel/decorators.py,sha256=PH2Zn3aJXhirhybt6oYzU3iphYDeVX5-H15aH7U91YQ,2162
+cachemodel/managers.py,sha256=VzvI9Lv9HP0gGrsFo-GhKF9rD5_rvJXFMY6CFf4OOUw,2569
+cachemodel/models.py,sha256=P7w6RLOO006XcXn0VNpw2pU-wObG3sFUq4d69k80uWI,3717
+cachemodel/tests.py,sha256=V5qp-P0_BI71C9QSQO6HiS_DIjIeLVFd1bDLS-_rBC8,4537
+cachemodel/utils.py,sha256=7EDXnIG7A6pdU4JXcXA7JEvrBM1kScg3kLWcq6UifKw,547
+cachemodel/version.py,sha256=pZdiKcdDGBnNtVGKpTXu8CrYPhE1DXfmtZq9qtlinbg,20
+django_cachemodel-2.2.0.dist-info/LICENSE.md,sha256=z2NdeCG23jRd4d_yFNzik26nyXG_oQ2s8wjZ632Oagc,560
+django_cachemodel-2.2.0.dist-info/METADATA,sha256=y6Eg4VlsMxIUm3p9qtORpxYSmjclFCHYzHygs1j1tOE,274
+django_cachemodel-2.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+django_cachemodel-2.2.0.dist-info/top_level.txt,sha256=Sxv7ZbrK68gCtCJ4k57EsZJHmOyEqwOnImk1gkKSs2E,11
+django_cachemodel-2.2.0.dist-info/RECORD,,

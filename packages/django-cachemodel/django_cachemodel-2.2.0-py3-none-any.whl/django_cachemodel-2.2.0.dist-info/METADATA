@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-cachemodel
+Version: 2.2.0
+Summary: Concentric Sky's cachemodel library
+Home-page: UNKNOWN
+Author: Concentric Sky
+Author-email: django@concentricsky.com
+License: Apache2
+Platform: UNKNOWN
+Requires-Dist: django
+Requires-Dist: six
+
+UNKNOWN
+
+
