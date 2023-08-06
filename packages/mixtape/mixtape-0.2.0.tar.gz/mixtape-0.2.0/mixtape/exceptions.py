@@ -1,0 +1,4 @@
+
+
+class PipelineStateChangeError(Exception):
+    pass
