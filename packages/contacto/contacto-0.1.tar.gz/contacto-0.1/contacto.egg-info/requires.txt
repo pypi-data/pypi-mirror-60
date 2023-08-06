@@ -1,0 +1,8 @@
+PyQt5
+click
+pyyaml
+pillow
+
+[dev]
+sphinx
+pytest
