@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+base_api.egg-info/PKG-INFO
+base_api.egg-info/SOURCES.txt
+base_api.egg-info/dependency_links.txt
+base_api.egg-info/requires.txt
+base_api.egg-info/top_level.txt
+base_api.egg-info/zip-safe
+baseapi/__init__.py
+baseapi/__version__.py
+baseapi/client.py
+baseapi/exceptions.py
+baseapi/utils.py
+baseapi/apis/__init__.py
+baseapi/apis/api.py
+baseapi/apis/graphql.py
