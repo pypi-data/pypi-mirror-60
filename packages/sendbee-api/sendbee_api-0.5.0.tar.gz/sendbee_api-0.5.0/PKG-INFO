@@ -1,0 +1,306 @@
+Metadata-Version: 2.1
+Name: sendbee_api
+Version: 0.5.0
+Summary: Python client SDK for Sendbee Public API
+Home-page: https://github.com/sendbee/sendbee-python-client
+Author: Sendbee ltd
+Author-email: info@sendbee.io
+License: MIT
+Project-URL: Source, https://github.com/sendbee/sendbee-python-client
+Description: ```
+        ███████╗███████╗███╗   ██╗██████╗ ██████╗ ███████╗███████╗    ██╗   ██╗██████╗      █████╗ ██████╗ ██╗
+        ██╔════╝██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔════╝██╔════╝    ██║   ██║╚════██╗    ██╔══██╗██╔══██╗██║
+        ███████╗█████╗  ██╔██╗ ██║██║  ██║██████╔╝█████╗  █████╗      ██║   ██║ █████╔╝    ███████║██████╔╝██║
+        ╚════██║██╔══╝  ██║╚██╗██║██║  ██║██╔══██╗██╔══╝  ██╔══╝      ╚██╗ ██╔╝██╔═══╝     ██╔══██║██╔═══╝ ██║
+        ███████║███████╗██║ ╚████║██████╔╝██████╔╝███████╗███████╗     ╚████╔╝ ███████╗    ██║  ██║██║     ██║
+        ╚══════╝╚══════╝╚═╝  ╚═══╝╚═════╝ ╚═════╝ ╚══════╝╚══════╝      ╚═══╝  ╚══════╝    ╚═╝  ╚═╝╚═╝     ╚═╝
+                                                                                                              
+                                                                                          
+                        .' '.            __
+               .        .   .           (__\_
+                .         .         . -{{_(|8)
+                  ' .  . ' ' .  . '     (__/
+        ```
+        
+        # Sendbee Python API Client  
+        
+        [![PyPI version](https://badge.fury.io/py/sendbee-api.svg)](https://badge.fury.io/py/sendbee-api)
+        [![Build Status](https://travis-ci.org/sendbee/sendbee-python-api-client.svg?branch=master)](https://travis-ci.org/sendbee/sendbee-python-api-client)
+        
+        ![GitHub issues](https://img.shields.io/github/issues/sendbee/sendbee-python-api-client.svg)
+        ![GitHub closed issues](https://img.shields.io/github/issues-closed/sendbee/sendbee-python-api-client.svg)
+        ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/sendbee/sendbee-python-api-client.svg)
+        
+        ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/sendbee-api.svg)
+        ![GitHub](https://img.shields.io/github/license/sendbee/sendbee-python-api-client.svg?color=blue)
+        ![GitHub last commit](https://img.shields.io/github/last-commit/sendbee/sendbee-python-api-client.svg?color=blue)
+        
+        ## Installation  
+        
+        ```bash
+        > pip install sendbee-api
+        ```
+        
+        ## Usage  
+        
+        ### Initialization  
+        
+        ```python
+        from sendbee_api import SendbeeApi
+        
+        api = SendbeeApi(
+            '__your_api_key_here__', '__your_secret_key_here__',
+            '__business_id_here__'
+        )
+        ```
+        
+        ### Fetch contacts  
+        
+        ```python
+        contacts = api.contacts([tags=['...', ...]], [search_query='...'])
+        
+        for contact in contacts:
+            contact.id
+            contact.status
+            contact.folder
+            contact.created_at
+            
+            contact.name
+            contact.phone
+            contact.email
+            contact.twitter_link
+            contact.facebook_link
+            
+            for tag in contact.tags:
+                tag.id
+                tag.name
+            
+            for note in contact.notes:
+                note.value
+            
+            for custom_field in contact.custom_fields:
+                custom_field.key
+                custom_field.value
+        ```
+        
+        ### Subscribe contact  
+        
+        ```python
+        contact = api.subscribe_contact(
+            phone='+...',
+            [tags=['...', ...]], [name='...'], [email='...'],
+            [address={
+                'line': '...',
+                'city': '...',
+                'postal_code': '...'
+            }],
+            [facebook_link='...'],[twitter_link='...'],
+            [notes=[...]], [custom_fields={...}],
+            [block_notifications=[True|False]]
+        )
+        
+        contact.id
+        contact.status
+        contact.folder
+        contact.created_at
+        
+        contact.name
+        contact.phone
+        contact.email
+        contact.twitter_link
+        contact.facebook_link
+        
+        for tag in contact.tags:
+            tag.id
+            tag.name
+        
+        for note in contact.notes:
+            note.value
+        
+        for custom_field in contact.custom_fields:
+            custom_field.key
+            custom_field.value
+        ```
+        
+        ### Update contact  
+        
+        ```python
+        contact = api.update_contact(
+            id='...',
+            [phone='+...'],
+            [tags=['...', ...]], [name='...'], [email='...'],
+            [address={
+                'line': '...',
+                'city': '...',
+                'postal_code': '...'
+            }],
+            [facebook_link='...'],[twitter_link='...'],
+            [notes=[...]], [custom_fields={...}],
+            [block_notifications=[True|False]]
+        )
+        
+        contact.id
+        contact.status
+        contact.folder
+        contact.created_at
+        
+        contact.name
+        contact.phone
+        contact.email
+        contact.twitter_link
+        contact.facebook_link
+        
+        for tag in contact.tags:
+            tag.id
+            tag.name
+        
+        for note in contact.notes:
+            note.value
+        
+        for custom_field in contact.custom_fields:
+            custom_field.key
+            custom_field.value
+        ```
+        
+        ### Fetch tags  
+        
+        ```python
+        tags = api.tags([name='...'])
+        
+        for tag in tags:
+            tag.id
+            tag.name
+        ```
+        
+        ### Create tag  
+        
+        ```python
+        tag = api.create_tag(name='...')
+        
+        tag.id
+        tag.name
+        ```
+        
+        ### Update tag  
+        
+        ```python
+        tag = api.update_tag(id='...', name='...')
+        
+        tag.id
+        tag.name
+        ```
+        
+        ### Delete tag  
+        
+        ```python
+        response = api.delete_tag(id='...')
+        
+        response.message
+        ```
+        
+        ### Fetch custom fields  
+        
+        ```python
+        custom_fields = api.custom_fields([search_query='...'])
+        
+        for custom_field in custom_fields:
+            custom_field.slug
+            custom_field.name
+            custom_field.type
+        ```
+        
+        ### Create custom field  
+        
+        ```python
+        custom_field = api.create_custom_field(
+            name='...', type='text|number|list|date|boolean'
+        )
+        
+        custom_field.slug
+        custom_field.name
+        custom_field.type
+        ```
+        
+        ### Update custom field  
+        
+        ```python
+        custom_field = api.update_custom_field(
+            slug='...', [name='...'], [type='text|number|list|date|boolean']
+        )
+        
+        custom_field.slug
+        custom_field.name
+        custom_field.type
+        ```
+        
+        ### Delete custom field  
+        
+        ```python
+        response = api.delete_custom_field(slug='...')
+        
+        response.message
+        ```
+        
+        ### Fetch message templates  
+        
+        ```python
+        templates = api.message_templates([search_query='...'])
+        
+        for template in templates:
+            template.id
+            template.text
+            template.tags
+            template.keyword
+            template.language
+            template.approved
+        ```
+        
+        ### Send template message  
+        
+        ```python
+        response = api.send_template_message(
+            phone='+...', template_keyword='...', language='...', tags=['...', ...]
+        )
+        
+        response.conversation_id
+        # save this id, and when you get sent message status requests on
+        # your webhook, you'll get this same id to identify the conversation
+        
+        ```
+        
+        ### Authenticate webhook request  
+        
+        After activating your webhook URL in Sendbee Dashboard, we will start sending requests on that URL depending on which webhook type is linked with that webhook URL.  
+        Every request that we make will have authorization token in header, like this:  
+        
+        ```
+        {
+            ...
+            'X-Authorization': '__auth_token_here__',
+            ...
+        }
+        ```
+        
+        To authenticate requests that we make to your webhook URL, take this token from request header and check it using Sendbee API Client:  
+        
+        ```python
+        from sendbee_api import SendbeeApi
+        
+        api = SendbeeApi('__your_api_key_here__', '__your_secret_key_here__')
+        
+        token = '...'  # taken from the request header
+        if api.auth.check_auth_token(token):
+            print('Weeee... Sendbee sent me the data on my webhook URL \o/ :)')
+        ```  
+        
+Keywords: sendbee api python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
