@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pyagoconnector
+Version: 0.1.2
+Summary: A connector to AGOpenGPS written in python
+Home-page: https://github.com/joschindlbeck/pyagoconnector
+Author: joschindlbeck
+Author-email: joschindlbeck@gmail.com
+License: MIT
+Download-URL: https://github.com/joschindlbeck/pyagoconnector/archive/v_01_2.tar.gz
+Description: UNKNOWN
+Keywords: AGOpenGPS,Connector,Noobish
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
