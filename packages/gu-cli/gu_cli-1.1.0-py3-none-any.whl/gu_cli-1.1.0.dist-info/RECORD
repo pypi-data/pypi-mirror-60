@@ -1,0 +1,13 @@
+gu/cli.py,sha256=4w4ZUABuMWj2rFWaOk-9D0PNjLmpOoizMuX6Ry0hHms,1577
+gu/config.py,sha256=4KKEhFokfN7-xRRzTw0ibdIT9kaaI4Z8vvTCEU5VQfc,976
+gu/version.py,sha256=T2arIacyZC4KMAJWaX8de26pGqBwamV6RvyBhDtD1uk,137
+gu/sender/__init__.py,sha256=DrygsvFlVyzlzwOfMYR6r7sNJbDlrxCqC4jHmpIZjRo,69
+gu/sender/default.py,sha256=pJzY-XKp9YlqEJ84VNJXm5POeFNVMgxR2PxIpzkibGc,376
+gu/sender/stdout.py,sha256=A2QxOFdrsNnrpkbod9d6M0UjKVtEl0qOItIN5WGeYyk,138
+gu/sender/telegram.py,sha256=XPU8Euzi9dbFmmAVC_7TN_RiGmg9zggnUst5lxlBMHg,941
+gu_cli-1.1.0.data/scripts/gu,sha256=7WHBDpvBzHJ41CvRfgIJZI8ITXiUk4lcT2dSiWBBTsc,71
+gu_cli-1.1.0.dist-info/LICENSE,sha256=_3rX0W6nqgUqYLlqVBfWBvqxiVEcXMjgSMkmV26-qXQ,1063
+gu_cli-1.1.0.dist-info/METADATA,sha256=OGbzHYw30DQDdLenMhUHiVcEF0ua_d5xN8PXDP1C4rw,1420
+gu_cli-1.1.0.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+gu_cli-1.1.0.dist-info/top_level.txt,sha256=93kcy6M5sz4d6jzMYbgWoctKbQ_EC-H0Oy18HN0YYFI,3
+gu_cli-1.1.0.dist-info/RECORD,,
