@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: sentence_diff
+Version: 0.1
+Summary: Difference English sentences via Liechtenstein distance, calculate word error rate, and list out word by word differences
+Home-page: https://github.com/utunga/sentence_diff
+Author: Miles Thompson
+Author-email: utunga@gmail.com
+License: MIT
+Download-URL: https://github.com/utunga/sentence_diff/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Levenshtein,English,Text,WER,Diff
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
