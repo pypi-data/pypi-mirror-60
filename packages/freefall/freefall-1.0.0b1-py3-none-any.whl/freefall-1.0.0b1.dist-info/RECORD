@@ -1,0 +1,9 @@
+freefall/__init__.py,sha256=Y5fIePAI0hArKJj6J0UnsElMYCEAfPs3cSudrA8BqAQ,321
+freefall/falling_objects.py,sha256=L_8wM-fOIWJ8nqBKo4jdL7YU5VKJzuqCx6L50oOoAOo,346
+freefall/simulators.py,sha256=JD87_-3gzJboOjE4WeTeKKQCqrWJlRpm3ZlldhlIoSs,4371
+freefall/utilities.py,sha256=Sdq0dLNkVe4Qvn-PQfvnkwfAjsqtcgGNSb83S2ojHZs,1175
+freefall-1.0.0b1.dist-info/LICENSE,sha256=qDQrSrXmKb3UpmGld_y4b0JJJv68vsX0ck6NpHtDsVY,1090
+freefall-1.0.0b1.dist-info/METADATA,sha256=j9yEG9exvdVePhPwjFULSePV_QjCbwacpUNGOa4bxG0,834
+freefall-1.0.0b1.dist-info/WHEEL,sha256=IWeGwTvdiaNRNtdERe0BHc5KsCqvvVfLuP8HWeQWYGw,97
+freefall-1.0.0b1.dist-info/top_level.txt,sha256=9hEcBREgpOsDVQZ4KuTHADR3CYilsQKq64ycJnyROTY,9
+freefall-1.0.0b1.dist-info/RECORD,,
