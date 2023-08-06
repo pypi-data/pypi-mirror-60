@@ -1,0 +1,12 @@
+backports.tempfile
+configobj
+contextlib2
+hs_restclient
+humanfriendly
+retry
+scandir
+setuptools
+tqdm>=4.17.1
+tzlocal
+utcdatetime
+zipfile2
