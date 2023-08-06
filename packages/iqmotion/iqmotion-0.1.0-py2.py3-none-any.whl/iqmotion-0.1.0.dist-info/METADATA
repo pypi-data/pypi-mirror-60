@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: iqmotion
+Version: 0.1.0
+Summary: Python libraries to talk to IQ Motion Control devices
+Home-page: https://github.com/iq-motion-control/iq-module-communication-python
+Author: Raphael Van Hoffelen
+Author-email: raf@iq-control.com
+License: lgpl-3.0
+Keywords: IQ,IQ CONTROL,IQ MOTION CONTROL,API,IQ MODULES,IQ LIBRARIES,SMART MOTORS
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: numpy
+Requires-Dist: pyserial
+
+UNKNOWN
+
+
