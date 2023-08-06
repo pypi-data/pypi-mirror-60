@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: just-config
+Version: 0.1
+Summary: Minimalistic library to handle configuration for the application
+Home-page: http://packages.python.org/just_config
+Author: Alexander Pushkarev
+Author-email: alexspush@gmail.com
+License: MIT
+Description: # just_config
+        Minimalistic library to handle configuration for the application
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
