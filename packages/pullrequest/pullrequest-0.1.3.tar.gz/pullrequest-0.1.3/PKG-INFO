@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pullrequest
+Version: 0.1.3
+Summary: Create pullrequest to git service
+Home-page: https://github.com/eerorika/pullrequest
+Author: Eero Rikalainen
+Author-email: eerorika@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
