@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+sutdobfs/__init__.py
+sutdobfs/__main__.py
+sutdobfs.egg-info/PKG-INFO
+sutdobfs.egg-info/SOURCES.txt
+sutdobfs.egg-info/dependency_links.txt
+sutdobfs.egg-info/entry_points.txt
+sutdobfs.egg-info/top_level.txt
+sutdobfs/memes/jojo.txt
+sutdobfs/memes/memes.txt
