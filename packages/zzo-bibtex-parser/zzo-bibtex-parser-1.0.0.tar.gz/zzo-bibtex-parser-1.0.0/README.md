@@ -1,0 +1,1 @@
+This program parse a .bib file and make new files(index.md, cite.bib) for using zzo theme blog
