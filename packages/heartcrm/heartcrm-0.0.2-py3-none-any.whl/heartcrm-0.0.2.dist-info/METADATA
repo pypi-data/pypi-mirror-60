@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: heartcrm
+Version: 0.0.2
+Summary: A Python utility for generating reports from the HEART CRM.
+Home-page: UNKNOWN
+Author: Matt Robinson
+Author-email: matt@fiddleranalytics.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: daiquiri
+Requires-Dist: simple-salesforce
+Provides-Extra: test
+Requires-Dist: ipython ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-sugar ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pylint ; extra == 'test'
+
+UNKNOWN
+
+
