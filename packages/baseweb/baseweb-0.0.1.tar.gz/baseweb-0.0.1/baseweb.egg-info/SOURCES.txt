@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.py
+.github/README.md
+baseweb/__init__.py
+baseweb/config.py
+baseweb/interface.py
+baseweb/rest.py
+baseweb/socketio.py
+baseweb/web.py
+baseweb.egg-info/PKG-INFO
+baseweb.egg-info/SOURCES.txt
+baseweb.egg-info/dependency_links.txt
+baseweb.egg-info/requires.txt
+baseweb.egg-info/top_level.txt
+demo/__init__.py
+demo/pages/__init__.py
+demo/pages/index/__init__.py
