@@ -1,0 +1,13 @@
+requests
+pendulum
+ipaddress
+Pillow
+networkx
+matplotlib
+PyGithub
+PyYAML
+Faker
+bs4
+lxml
+xmltodict
+netaddr
