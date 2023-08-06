@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+wrpclient/__init__.py
+wrpclient/__main__.py
+wrpclient/camera.py
+wrpclient/client.py
+wrpclient/driver.py
+wrpclient/message.py
+wrpclient/wrp_connector.py
+wrpclient.egg-info/PKG-INFO
+wrpclient.egg-info/SOURCES.txt
+wrpclient.egg-info/dependency_links.txt
+wrpclient.egg-info/not-zip-safe
+wrpclient.egg-info/requires.txt
+wrpclient.egg-info/top_level.txt
