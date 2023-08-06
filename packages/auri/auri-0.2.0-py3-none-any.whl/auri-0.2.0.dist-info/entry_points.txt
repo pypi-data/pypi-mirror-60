@@ -1,0 +1,3 @@
+[console_scripts]
+esque=auri.command_line:cli
+
