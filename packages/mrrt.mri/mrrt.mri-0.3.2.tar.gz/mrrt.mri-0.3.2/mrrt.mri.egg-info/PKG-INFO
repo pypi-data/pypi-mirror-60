@@ -1,0 +1,54 @@
+Metadata-Version: 1.2
+Name: mrrt.mri
+Version: 0.3.2
+Summary: MRI Reconstruction Tools
+Home-page: http://github.com/mritools/mrrt.mri
+Author: Gregory R. Lee
+Author-email: grlee77@gmail.com
+Maintainer: Gregory R. Lee
+Maintainer-email: grlee77@gmail.com
+License: BSD
+Description: 
+        
+        mrrt.mri
+        ==========
+        MRI Reconstruction Tools
+        
+        This module contains linear operators for Cartesian and Non-Cartesian MRI as
+        well as a number of utilities for coil sensitivity map estimation,
+        coil compression, kspace data prewhitening, phantoms and field map
+        approximation.
+        
+        .. _README: https://github.com/mritools/mrrt.mri/blob/master/README.md
+        
+        License
+        =======
+        ``mrrt.mri`` is licensed under the terms of the BSD 3-clause license. See
+        the file "LICENSE.txt" and "LICENSES_bundled.txt" for information on the
+        history of this software, terms & conditions for usage, and a DISCLAIMER OF ALL
+        WARRANTIES.
+        
+        All trademarks referenced herein are property of their respective holders.
+        
+        Copyright (c) 2014-2020,
+        Gregory R. Lee, Cincinnati Children's Hospital Medical Center.
+        
+Platform: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Requires: numpy
+Requires: mrrt.utils
+Requires: mrrt.nufft
+Requires: mrrt.operators
+Requires-Python: >= 3.6
