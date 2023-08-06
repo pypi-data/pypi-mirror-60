@@ -1,0 +1,8 @@
+fire
+gitpython
+PyGithub
+PySimpleGUI
+appdirs
+
+[Qt]
+PySimpleGuiQt
