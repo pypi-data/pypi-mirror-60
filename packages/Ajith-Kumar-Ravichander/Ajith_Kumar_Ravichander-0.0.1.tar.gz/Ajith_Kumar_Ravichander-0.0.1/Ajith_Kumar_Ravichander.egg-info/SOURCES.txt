@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+Ajith_Kumar_Ravichander.egg-info/PKG-INFO
+Ajith_Kumar_Ravichander.egg-info/SOURCES.txt
+Ajith_Kumar_Ravichander.egg-info/dependency_links.txt
+Ajith_Kumar_Ravichander.egg-info/top_level.txt
