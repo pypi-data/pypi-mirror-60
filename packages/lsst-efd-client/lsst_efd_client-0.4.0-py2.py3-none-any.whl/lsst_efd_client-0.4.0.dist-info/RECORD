@@ -1,0 +1,10 @@
+lsst_efd_client/__init__.py,sha256=UkB7KGH4KCzJOsIUYx6XC0xDgLZpbEhQOycWpdzBeZo,231
+lsst_efd_client/auth_helper.py,sha256=qKqyzvxzUXTKwBgDQjnYb7KpS_iE9vc0WinGFM4xURI,2824
+lsst_efd_client/efd_helper.py,sha256=J-m4qVBz4cbGyyVs7AUFvOQRtK12Eq8Phgf5QDXjhSE,14837
+lsst_efd_client/efd_utils.py,sha256=7k4RyzxtDvHocZiTfHEx_6MKR7tM4K3S7cfRUPLb3AQ,781
+lsst_efd_client-0.4.0.dist-info/AUTHORS.rst,sha256=wUu3oFdofOnOID60-myeqtGmg_zkAB5zF_rkWhfeqGU,157
+lsst_efd_client-0.4.0.dist-info/LICENSE,sha256=DPYt2K1XTfo1BfVhJ63aTIgwlz0Mo0_OHq6qQIwSytk,1112
+lsst_efd_client-0.4.0.dist-info/METADATA,sha256=y_44qLLrr-fXayg7jkxVVaVpXBEqJ-Z34ObIDlGoxSU,3575
+lsst_efd_client-0.4.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+lsst_efd_client-0.4.0.dist-info/top_level.txt,sha256=YLkEtAXiyUSJob--H1UoJ-s4WvV527Bo08byrBbeAjs,16
+lsst_efd_client-0.4.0.dist-info/RECORD,,
