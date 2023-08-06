@@ -1,0 +1,3 @@
+[console_scripts]
+pybuster = pybuster.pybuster:main
+
