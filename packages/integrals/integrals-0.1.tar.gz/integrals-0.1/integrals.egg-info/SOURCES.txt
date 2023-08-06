@@ -1,0 +1,11 @@
+setup.py
+integrals/__init__.py
+integrals/integrate.py
+integrals/riemann.py
+integrals/simpson.py
+integrals/trapezoid.py
+integrals.egg-info/PKG-INFO
+integrals.egg-info/SOURCES.txt
+integrals.egg-info/dependency_links.txt
+integrals.egg-info/not-zip-safe
+integrals.egg-info/top_level.txt

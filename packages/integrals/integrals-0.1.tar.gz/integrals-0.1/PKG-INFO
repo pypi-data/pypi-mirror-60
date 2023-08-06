@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: integrals
+Version: 0.1
+Summary: Numerical approximators to calculate the definit integral
+Home-page: UNKNOWN
+Author: Osama Maharmeh
+Author-email: maharmeh.osama98@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
