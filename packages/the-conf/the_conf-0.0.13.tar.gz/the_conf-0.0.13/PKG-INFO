@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: the_conf
+Version: 0.0.13
+Summary: Config build from multiple sources
+Home-page: https://github.com/jaesivsm/the_conf/
+Author: François Schmidts
+Author-email: francois@schmidts.fr
+Maintainer: François Schmidts
+Maintainer-email: francois@schmidts.fr
+License: GPLv3
+Description: UNKNOWN
+Keywords: conf configuration json yaml command line environ
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
