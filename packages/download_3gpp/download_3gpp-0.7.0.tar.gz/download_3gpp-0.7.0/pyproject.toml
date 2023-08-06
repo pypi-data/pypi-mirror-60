@@ -1,0 +1,34 @@
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "download_3gpp"
+author = "Russell Smiley"
+author-email = "im.russell.smiley@gmail.com"
+home-page = "https://gitlab.com/blueskyjunkie/download_3gpp"
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+description-file = "README.rst"
+
+requires-python = ">=3.6"
+
+requires = [
+  "beautifulsoup4 >=4.8.2, <5.0",
+  "requests >=2.22.0, <3.0",
+]
+
+[tool.flit.metadata.requires-extra]
+dev = [
+    "black >=19.10b0",
+    "isort >=4.3.21, <5.0",
+    # required for `description-file` parameter above (integration of README.rst)
+    "pygments >=2.5.2, <3.0",
+]
+test = [
+    "pytest >=5.3.4, <6.0",
+    "pytest-cov >=2.8.1, <3.0",
+    "pytest-mock >=2.0.0, <3.0",
+]
+
+[tool.flit.scripts]
+download_3gpp = "download_3gpp.entrypoint:flit_entry"

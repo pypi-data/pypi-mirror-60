@@ -1,0 +1,217 @@
+image: ${DOCKER_REGISTRY}/docker_download_3gpp/blueskyjunkie-docker-download-3gpp:0.2.0
+
+
+stages:
+  - pre-package
+  - package
+  - test
+  - publish
+
+
+variables:
+  FLIT_ROOT_INSTALL: 1
+
+  # Fulfilled by Gitlab CI
+  FLIT_USERNAME: __token__
+  FLIT_PASSWORD: SECURE
+
+  PACKAGE_PATH: 'dist/${CI_PROJECT_NAME}*.whl'
+
+  TEST_DIR: 'tests/'
+  VENV_DIR: '/venv/bin'
+
+  COVERAGE_THRESHOLD: '95'
+
+  # Bash doesn't have "\d" shortcut for decimal numbers and doesn't use "/" terminators.
+  # This release pattern also explicitly ignores the "-dryrun" suffix.
+  BASH_RELEASE_PATTERN: '^[0-9]+\.[0-9]+\.[0-9]+$'
+
+  VERSION_PATH: ${CI_PROJECT_NAME}/VERSION
+
+  DOCKER_REGISTRY: registry.gitlab.com/blueskyjunkie
+
+
+.acquire-project-dependencies:
+  before_script:
+    - '${VENV_DIR}/flit install -s'
+
+
+.registry-login:
+  before_script:
+    - 'echo ${DOCKER_TOKEN} |
+                       docker login
+                         --username ${DOCKER_TOKEN_USER}
+                         --password-stdin
+                         ${DOCKER_REGISTRY}'
+
+
+.release-refs: &release-refs
+  refs:
+    # Limit release builds to strict semantic versions and dry run suffix'd semantic versions.
+    # Cannot use variables in the global variables block above due to some parsing quirk.
+    - /^\d+\.\d+\.\d+$/
+    - /^\d+\.\d+\.\d+-dryrun\d*$/
+
+
+.restrict-release:
+  except:
+    - branches
+  only:
+    <<: *release-refs
+
+
+update-version:
+  artifacts:
+    paths:
+      - ${VERSION_PATH}
+  stage: pre-package
+
+  script:
+    - '${VENV_DIR}/python scripts/update_version.py
+          ${CI_PIPELINE_ID}
+          ${CI_COMMIT_REF_NAME}
+          >${VERSION_PATH}'
+    # debug logging
+    - cat ${CI_PROJECT_NAME}/VERSION
+
+
+build-package:
+  artifacts:
+    paths:
+      - ${PACKAGE_PATH}
+  dependencies:
+    - update-version
+  stage: package
+
+  script:
+    - '${VENV_DIR}/flit build'
+
+  extends:
+    - .acquire-project-dependencies
+
+
+run-wheel-install:
+  dependencies:
+    - build-package
+  stage: test
+
+  script:
+    - '${VENV_DIR}/pip install ${PACKAGE_PATH}'
+
+
+run-unit-tests:
+  artifacts:
+    reports:
+      junit: junit_report.xml
+  stage: test
+
+  script:
+    - '${VENV_DIR}/pytest
+        --junitxml=junit_report.xml
+        ${TEST_DIR}'
+
+  extends:
+    - .acquire-project-dependencies
+
+
+run-black-check:
+  stage: test
+
+  script:
+    - '${VENV_DIR}/black --check ${CI_PROJECT_NAME}'
+    - '${VENV_DIR}/black --check tests'
+
+
+run-isort-check:
+  stage: test
+
+  script:
+    - '[[ ! $(${VENV_DIR}/isort -rc --diff ${CI_PROJECT_NAME}) ]]'
+    - '[[ ! $(${VENV_DIR}/isort -rc --diff tests) ]]'
+
+  after_script:
+    # log diffs for debugging
+    - '${VENV_DIR}/isort -rc --diff ${CI_PROJECT_NAME}'
+    - '${VENV_DIR}/isort -rc --diff tests'
+
+
+run-coverage:
+  coverage: '/TOTAL.*?([0-9]{1,3})%/'
+  stage: test
+
+  script:
+    - '${VENV_DIR}/pytest
+        --cov=${CI_PROJECT_NAME}
+        ${TEST_DIR}'
+
+  extends:
+    - .acquire-project-dependencies
+
+
+run-coverage-threshold-test:
+  stage: test
+
+  script:
+    - '${VENV_DIR}/pytest
+             --cov=${CI_PROJECT_NAME}
+             ${TEST_DIR} | ${VENV_DIR}/python scripts/test_coverage.py ${COVERAGE_THRESHOLD}'
+  after_script:
+    # log coverage report for debugging
+    - '${VENV_DIR}/pytest
+        --cov=${CI_PROJECT_NAME}
+        ${TEST_DIR}'
+
+  extends:
+    - .acquire-project-dependencies
+
+run-xml-coverage-report:
+  artifacts:
+    paths:
+      - dist/coverage.xml
+  stage: test
+
+  script:
+    - 'mkdir -p dist'
+    - '${VENV_DIR}/pytest
+        --cov=${CI_PROJECT_NAME}
+        --cov-report=xml
+        ${TEST_DIR}'
+    - 'mv coverage.xml dist/'
+
+  extends:
+    - .acquire-project-dependencies
+
+
+run-html-coverage-report:
+  artifacts:
+    paths:
+      - dist/htmlcov/*
+  stage: test
+
+  script:
+    - 'mkdir -p dist'
+    - '${VENV_DIR}/pytest
+         --cov=${CI_PROJECT_NAME}
+         --cov-report=html
+         ${TEST_DIR}'
+    - 'mv htmlcov dist/'
+
+  extends:
+    - .acquire-project-dependencies
+
+
+publish-wheel:
+  dependencies:
+    - build-package
+    # Need to ensure that flit is looking for the correct version when it publishes
+    - update-version
+  stage: publish
+
+  script:
+    # debug logging
+    - 'ls -l dist/'
+    # On a strict release tag publish the package to pypi.org
+    # Otherwise just log a message
+    - '[[ ${CI_COMMIT_REF_NAME} =~ ${BASH_RELEASE_PATTERN} ]] &&
+         ${VENV_DIR}/flit publish ||
+         echo "Publish dry run"'

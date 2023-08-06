@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: download_3gpp
+Version: 0.7.0
+Summary: Command line utility for downloading standards documents from the 3GPP download site.
+Home-page: https://gitlab.com/blueskyjunkie/download_3gpp
+Author: Russell Smiley
+Author-email: im.russell.smiley@gmail.com
