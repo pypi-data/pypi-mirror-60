@@ -1,0 +1,17 @@
+panoptes/Panoptes1.py,sha256=t-w5xoKpqzw22PvVdmdnon0tkPdUyYcb8Wv74QqcCho,9521
+panoptes/Panoptes2.py,sha256=Fd-ix-fvOR1NEOXyLevxq6Qq8sCkKdZuzTUw42T0qjE,10243
+panoptes/Panoptes3.py,sha256=j-9k3zDmyIErC1BJc9zYJnWIUKCfOyIsZfZ9tzaLDCw,9622
+panoptes/Panoptes4.py,sha256=qrdhGp9yrPrB1cvXWtiEUCYPGOfFA3IiPIMrDtZ8TVU,10344
+panoptes/Slicer.py,sha256=Kn6Rffqz1t7tyv4OTTL6mUi2zDPUsXRvqMInjoK48-I,4621
+panoptes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panoptes/accessory.py,sha256=exKtcfei158elSwgc4xYAdTjaQlfOanqubP1kX6ocSc,14655
+panoptes/cnn.py,sha256=gcQL1O_wQQ-cP1v61ALGvm2xKG4LVwLsqtxvwU9OFk0,25889
+panoptes/data_input.py,sha256=Teqy3yn6NdkxqAZHOoURQFBSGeWbxXapoWqDubvQXDk,6537
+panoptes/execute.py,sha256=_sfFdOPYdjWh69FvSXQ46eqnq4ijP2KfEeDg9yTiiDE,12636
+panoptes/prep.py,sha256=FXgPHsiXjAJnzAOvr5-W2YZer2EUDfhIpHePpluOetE,11311
+panoptes/sample_prep.py,sha256=cI5KOQ8MGjRYnbb6k6-JODxIrYyJf9SXkfExYBco_Ww,9916
+panoptes_he-0.0.9.dist-info/LICENSE,sha256=pYA7jLAXAzYaUj0OlXHaagR3UeE9zcl9x03kjtUhOpk,1067
+panoptes_he-0.0.9.dist-info/METADATA,sha256=5k5D7Au4XDq9CXVbQmn9aKZWuOle8DMjVhkKfQ07BTk,3960
+panoptes_he-0.0.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+panoptes_he-0.0.9.dist-info/top_level.txt,sha256=SG3MpEcu5YbaMlic0SQwrBfhRWd0m1zHgD1wYGIjgto,9
+panoptes_he-0.0.9.dist-info/RECORD,,
