@@ -1,0 +1,16 @@
+robotpy_halsim_gui-2020.2.2.0.data/purelib/halsim_gui/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+robotpy_halsim_gui-2020.2.2.0.data/purelib/halsim_gui/_init_halsim_gui.py,sha256=cOHcGnXCqhGWj1aGp0_oum7F3-Vn1bnCPPE842DCRgs,311
+robotpy_halsim_gui-2020.2.2.0.data/purelib/halsim_gui/main.py,sha256=nI99Ge_S1dwTeLfA5h6Lz7Tcl_BvhPdYT6Vg8GFvPTI,875
+robotpy_halsim_gui-2020.2.2.0.data/purelib/halsim_gui/pkgcfg.py,sha256=1yOOIJbZa2x3uyUHS-Hl0qWRKe5oDfKClJIJFj3e9wk,569
+robotpy_halsim_gui-2020.2.2.0.data/purelib/halsim_gui/version.py,sha256=yeSLpqGEx_DWZ1r5gE-t9IwRMdq6zprbsDql9dwDWp0,121
+robotpy_halsim_gui-2020.2.2.0.data/purelib/halsim_gui/include/ExtraGuiWidgets.h,sha256=2rlIAnrOmkMFXjdWeaqsbbfS6uxNWHES_niYI4Kiz0k,2052
+robotpy_halsim_gui-2020.2.2.0.data/purelib/halsim_gui/include/HALSimGui.h,sha256=ta0YLi9K7iIP7SLUlzWXlgnHYhPb2vx0wdqev3BLsy8,4961
+robotpy_halsim_gui-2020.2.2.0.data/purelib/halsim_gui/include/LICENSE.txt,sha256=pvcNsIeJiNTm4jzzhyUO6KL_-AaDRQ243Cq2Ol2_7gs,1491
+robotpy_halsim_gui-2020.2.2.0.data/purelib/halsim_gui/include/SimDeviceGui.h,sha256=qOFxo7qEEitEcQ1txBKNvt67FNsro87sqhigSGeTEO4,2859
+robotpy_halsim_gui-2020.2.2.0.data/purelib/halsim_gui/include/ThirdPartyNotices.txt,sha256=rUNXQS3r3Ey_MH-eSjmGDwny8gg14BLYY3eG2dOgTKk,38193
+robotpy_halsim_gui-2020.2.2.0.data/purelib/halsim_gui/lib/libhalsim_gui.dylib,sha256=iU6Oolz4uwhlPMJPbB24WD07l9xeUIPgdMN2SmFR4UA,1368704
+robotpy_halsim_gui-2020.2.2.0.dist-info/METADATA,sha256=_ZXmFwCLbRg_i2mIN4j805hEtPwNkn8pCNIxqwlpRbs,891
+robotpy_halsim_gui-2020.2.2.0.dist-info/WHEEL,sha256=IZ0QLbBG94Xo_Fj3dKTi6KV6YlL-L-vsFj8GlumLDRg,110
+robotpy_halsim_gui-2020.2.2.0.dist-info/entry_points.txt,sha256=lGzm4QRti4u5D0EaWYbSS_jUtV1eCIFXmn30k325uXc,94
+robotpy_halsim_gui-2020.2.2.0.dist-info/top_level.txt,sha256=VrBayUUU4m9zQBygsx8p_N316_oLwkc3E0gwMbcTOqI,11
+robotpy_halsim_gui-2020.2.2.0.dist-info/RECORD,,
