@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cellular-modem
+Version: 0.0.1
+Summary: dummy short package description
+Home-page: https://github.com/andreaskuster/cellular-modem
+Author: Andreas Kuster
+Author-email: mail@andreaskuster.ch
+License: UNKNOWN
+Description: # Cellular Modem
+        dummy text
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
