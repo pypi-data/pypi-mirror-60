@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: image-croquis
+Version: 0.0.6
+Summary: An example of a python package with a basic use case
+Home-page: https://github.com/nagavenkateshgavini/image_croquis
+Author: Naga Venkatesh Gavini
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: opencv-python
+
+UNKNOWN
+
+
