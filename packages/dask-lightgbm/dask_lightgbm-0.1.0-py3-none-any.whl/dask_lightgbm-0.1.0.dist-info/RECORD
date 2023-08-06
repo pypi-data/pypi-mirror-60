@@ -1,0 +1,6 @@
+dask_lightgbm/__init__.py,sha256=U1vHGDDZASiWgvdwsdpyqb7AShYgkxC4ASb5cUNDBIc,56
+dask_lightgbm/core.py,sha256=NhvKH83cUAu4WrZWnDmChzF7vTIo0lqn6jKfz2uPqF4,8591
+dask_lightgbm-0.1.0.dist-info/LICENSE,sha256=7C7Fant-HcCoz-BlFiWHc1sIHmypiskkurhcRLno_wE,1518
+dask_lightgbm-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+dask_lightgbm-0.1.0.dist-info/METADATA,sha256=R872W-8Vi9FSZkGcG2Yy3PgJLRlM5cF3sIDaum_6K2g,2431
+dask_lightgbm-0.1.0.dist-info/RECORD,,
