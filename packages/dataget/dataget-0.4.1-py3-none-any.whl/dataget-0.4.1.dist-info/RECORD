@@ -1,0 +1,10 @@
+dataget/__init__.py,sha256=6KBDiWfPlY5b39kEUXV4j-npudB3s13QSA0cplSMWAI,111
+dataget/dataset.py,sha256=uEUzTO-_AkUhohhkpvo4xZWcADJEmCnCG6DYPTROJus,1423
+dataget/kaggle.py,sha256=2E4Mu2IlJ7VB3VciJNqfuDJJm6aAeQcbGDWBWmDR67s,1291
+dataget/utils.py,sha256=CALJxz1A0cJFMFaM7yIoPsO962YorCO0RQNEpkOxnek,1135
+dataget/vision/__init__.py,sha256=ItE93XE0EmFGeMJOnDotSRt0Q1MKJY9scxft4vwiMF0,25
+dataget/vision/mnist.py,sha256=PnPtK6M_nlU-9hIjeBS0aZovXr8lL7kfz9COLhdd6-s,2313
+dataget-0.4.1.dist-info/LICENSE,sha256=ZmQQhqRY7GOpg2-SbCcKB5s9QZ-ex2AS4HRXmu1uNSU,1072
+dataget-0.4.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+dataget-0.4.1.dist-info/METADATA,sha256=JyS8EV6I64wWQkz2tyGqeTm4gzwnxze-Lcg948bSkaU,3322
+dataget-0.4.1.dist-info/RECORD,,
