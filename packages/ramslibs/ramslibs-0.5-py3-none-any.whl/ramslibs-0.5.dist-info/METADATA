@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ramslibs
+Version: 0.5
+Summary: Set of tools for working with RAMS data
+Home-page: https://github.com/lsterzinger/ramslibs
+Author: Lucas Sterzinger
+Author-email: lsterzinger@ucdavis.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Development Status :: 4 - Beta
+
+# RAMSLIBS 
+## Useful tools for working with RAMS data
+
+[![Documentation Status](https://readthedocs.org/projects/ramslibs/badge/?version=latest)](https://ramslibs.readthedocs.io/en/latest/?badge=latest)
+
+Install with:
+```
+git clone git@github.com:lsterzinger/ramslibs.git
+cd ramslibs
+pip install .
+``` 
+
+
