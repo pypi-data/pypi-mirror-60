@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: chaosgame
+Version: 0.1
+Summary: A chaos game fractal generation library.
+Home-page: https://github.com/RW21/chaosgame
+Author: Rinze Watanabe
+Author-email: rinze.watanabe.translation@gmail.com
+License: MIT
+Download-URL: https://github.com/RW21/chaosgame/archive/v0.1-beta.tar.gzhttps://github.com/RW21/chaosgame/archive/v0.1-beta.tar.gz
+Description: UNKNOWN
+Keywords: chaos game
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
