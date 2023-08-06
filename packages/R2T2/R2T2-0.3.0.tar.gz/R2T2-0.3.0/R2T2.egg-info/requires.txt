@@ -1,0 +1,7 @@
+wrapt
+
+[dev]
+pytest
+pytest-flake8
+pytest-mypy
+pre-commit
