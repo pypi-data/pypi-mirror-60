@@ -1,0 +1,16 @@
+copyablemodeladmin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+copyablemodeladmin/helpers.py,sha256=i3qgdf4GGcxZNO67Q-unFVYr64qtI65QyCOwb2MGNa0,1289
+copyablemodeladmin/options.py,sha256=qP4tBLiBU6dXOp4LPr2pBX_dNCu8zLYe23D1s2FBhaY,1162
+copyablemodeladmin/views.py,sha256=qWMGvdO5vE3Lvcoz1l3uExKONHFzvCPIMa06tXAB0uA,655
+copyablemodeladmin/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+copyablemodeladmin/tests/settings.py,sha256=u6_Fi1W8UIkJNp0J705tHet_OnsW9xCZbHXtcWgWQbE,4001
+copyablemodeladmin/tests/test_options.py,sha256=cwkXp1RrUiG-OCbZHEum2u2AXBMOVdllxOZ0KWIfGAo,1043
+copyablemodeladmin/tests/urls.py,sha256=NCRGRAZb1MdWdskBONR1LwqqJGW0eM7aL2vhPo7V-fI,284
+copyablemodeladmin/tests/copyabletestapp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+copyablemodeladmin/tests/copyabletestapp/models.py,sha256=6cfeVclx-yqGQuE1yAqjPFuqe16lT5c0LiAtqtBh0JQ,152
+copyablemodeladmin/tests/copyabletestapp/wagtail_hooks.py,sha256=_6e2su999wDzxA8RQj9XZPaJEGbMsu8EDBtOnoir4Kc,568
+wagtail_copyablemodeladmin-1.0.0.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+wagtail_copyablemodeladmin-1.0.0.dist-info/METADATA,sha256=abasAWkeMA-S1aal9Z8RTQU3tnrj4RZhHRUAMTUwrSU,4233
+wagtail_copyablemodeladmin-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+wagtail_copyablemodeladmin-1.0.0.dist-info/top_level.txt,sha256=7k1iyOUVncg0KXJMSFnxsabuV8CiBT25xIj8Lmuvn2I,19
+wagtail_copyablemodeladmin-1.0.0.dist-info/RECORD,,
