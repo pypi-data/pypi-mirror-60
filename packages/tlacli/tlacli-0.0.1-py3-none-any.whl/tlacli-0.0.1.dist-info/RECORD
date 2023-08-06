@@ -1,0 +1,13 @@
+tlacli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tlacli/cfg.py,sha256=7HJ_mCSO3IuJrAe5ikl1tfRrfPbGs9FQXXMtJxopWCo,2966
+tlacli/tla2tools.jar,sha256=WMbfmhBFvrNB7pR7xkD-jYmYitHQtwDjkqqN2XUCEpo,2243073
+tlacli/tlacli.py,sha256=A06s5bl5xHoYmRB9DYOZquXTKXAtCftUKIXWak6c82Y,530
+tlacli/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tlacli/tools/pluscal.py,sha256=_4K6WeOlAVURzF3G5Ylo_rZGw9wip3HuKeZoTw5COOc,999
+tlacli/tools/tlc.py,sha256=LnuZS-P36zIzwnefkYShbFAM1XzTsWvBmYVuzWgAnEw,5854
+tlacli-0.0.1.dist-info/LICENSE.txt,sha256=TMQUAaSLCay1ac_K5CN-oqduB476SzJuvwu_5WwHc3s,1090
+tlacli-0.0.1.dist-info/METADATA,sha256=qD2YmR4y6yOKiEhA3slpDjST4tXo1dXT803c2rnNz9s,6424
+tlacli-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+tlacli-0.0.1.dist-info/entry_points.txt,sha256=Pk8px0PVz_ZdxUSy_EBsOwfhSnPg6i6fUIGDnesUS7M,47
+tlacli-0.0.1.dist-info/top_level.txt,sha256=iufjmSltmcje9m-Mz609lRCnJu8uB97iZqdyOi3vwF0,7
+tlacli-0.0.1.dist-info/RECORD,,
