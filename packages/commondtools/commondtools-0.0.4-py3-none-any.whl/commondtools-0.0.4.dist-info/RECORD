@@ -1,0 +1,12 @@
+calc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calc/calculator.py,sha256=-yPfEsvMG0ofyhbUiRdBBRbbwtUKZ9IxICt5SkPFkew,128
+calc/test_calculator.py,sha256=lOWyK8vdfV7bm0jgfR1-_7fy2UlbV7g00_2UPEh51YY,238
+filehandling/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+filehandling/csvReader.py,sha256=UjtrJ7hwJkP0_rjfXlX5k6hzt_Hp_Z0EfbZGdxbTLZk,1154
+network/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parallel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commondtools-0.0.4.dist-info/LICENSE,sha256=xCs5ywcMLkMC-TvTeDkUMLmDVEBNtjCVCqz5NAo3SJY,1073
+commondtools-0.0.4.dist-info/METADATA,sha256=J_tblLma4fzEAJ5z70ChEAi6EE4mfPGEC5bo3-F9Yls,593
+commondtools-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+commondtools-0.0.4.dist-info/top_level.txt,sha256=A_B0PX1gRcnWHk-qg-19_GINXFisviXexwqYhry9Dok,35
+commondtools-0.0.4.dist-info/RECORD,,
