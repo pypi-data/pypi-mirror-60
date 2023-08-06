@@ -1,0 +1,10 @@
+onwebchange/__init__.py,sha256=NF2knsvkbfqQXnZy_cV3GJxC6dl_g0RlEJmOzQSgWw0,155
+onwebchange/__main__.py,sha256=ef3VsZjMpwVV5fButLEjplHJ0z75ZBIh8WQT98mzy_A,1507
+onwebchange/core.py,sha256=gdq6vgyLtpX8Gj0O6F6Nx7tKmqVdLT58tIt3t479xm4,29597
+onwebchange/webui.py,sha256=ESk17ddO_gvtBMZepEITpy4Xs5iJReRPqwyFROshYnk,17613
+onwebchange/templates/index.html,sha256=ilWodyCpxpmwb1ELqoc5eIf0IqFqr3-27DT_ifTE25E,23077
+onwebchange-0.3.4.dist-info/LICENSE,sha256=_uGLXb8Xng8hnL405AG_T-JdzDYzRq5UBNtuQAWJ8RQ,1061
+onwebchange-0.3.4.dist-info/METADATA,sha256=beOwUcxflWetZuFlHQdl_Y84arvQBjbqt9soQyHElBo,7815
+onwebchange-0.3.4.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+onwebchange-0.3.4.dist-info/top_level.txt,sha256=bCgofqlCk6KCQ0MrMnyp8Uwwgk4Kku0-pGw1wZdRhMw,12
+onwebchange-0.3.4.dist-info/RECORD,,
