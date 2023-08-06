@@ -1,0 +1,43 @@
+Metadata-Version: 1.2
+Name: explainerdashboard
+Version: 0.1.8.2
+Summary: explainerdashboard allows you quickly build an interactive dashboard to explain the inner workings of your machine learning model.
+Home-page: https://github.com/oegedijk/explainerdashboard
+Author: Oege Dijk
+Author-email: oegedijk@gmail.com
+License: MIT
+Project-URL: Github page, https://github.com/oegedijk/explainerdashboard/
+Project-URL: Documentation, https://explainerdashboard.readthedocs.io/
+Description: 
+        explainerdashboard allows you quickly build an interactive dashboard to explain the inner workings of your machine learning model.
+        The library is flexible in that you first create an ExplainerBunch class that handles the computations and 
+        plotting functionality for you, so that you can then build a plotly dash dashboard on top of that. 
+        
+        The standard built-in dashboard comes with a number of standard tabs (that can be switched on individually), namely:
+        
+        - Model Summary Tab (classifier/regression metrics and plots + feature importances)
+        - Contributions Tab (explain individual predictions, and compare what-if scenarios using pdp plots)
+        - Dependence Tab (investigate how predictions change along the axis of each feature)
+        - Interactions Tab (investigate the interaction effects between your variables)
+        - Shadow Trees Tab (for RandomForests, display all the individual trees inside the forest)
+        
+        It includes:
+        - Model summary statistics
+        - SHAP values (importances, individual contributions, dependence plots, interaction plots, etc)
+        - permutation importances
+        - partial dependence plots
+        - DecisionTree visualizers
+        
+        You can display an interactive dashboard with all of these features with only three lines of code.
+        
+        A deployed example can be found at http://titanicexplainer.herokuapp.com
+        
+Keywords: machine learning,explainability,shap,feature importances,dash
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Dash
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
