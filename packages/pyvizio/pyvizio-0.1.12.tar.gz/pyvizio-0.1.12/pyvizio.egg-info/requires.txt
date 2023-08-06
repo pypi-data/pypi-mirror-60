@@ -1,0 +1,6 @@
+aiohttp
+asyncio
+click
+jsonpickle
+tabulate
+zeroconf
