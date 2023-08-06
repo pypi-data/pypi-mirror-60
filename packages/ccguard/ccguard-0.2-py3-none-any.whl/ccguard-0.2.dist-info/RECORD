@@ -1,0 +1,11 @@
+ccguard-0.2.data/scripts/ccguard.py,sha256=HfK7OsIfzQF42nCOCY_MbPmFZqjdLp0Xmi8PjpN7_qE,16201
+ccguard-0.2.data/scripts/ccguard_log.py,sha256=AETjXu9uCXYUCbjBEe2JQpWDHZsm7T4XRpDNDgQQZ_8,2820
+ccguard-0.2.data/scripts/ccguard_server.py,sha256=_jbmKLuwwYZzYnnsy4v4kqSpvaKFrsWQn68gnfnuPAQ,2891
+ccguard-0.2.data/scripts/ccguard_sync.py,sha256=B7zwY_KMIGM5bXIM6rNjNt4ZlapWWJoIvwOOtO1E4Qk,2153
+ccguard-0.2.data/scripts/redis_adapter.py,sha256=wBUAYgklMRjBYUop_bLCiWsrj60kZ9A0VWa61XiUiI0,1082
+ccguard-0.2.data/scripts/web_adapter.py,sha256=SNr0s7K629lqqoIW3ZTnDW85PcdEREovtWNcKW95EX4,984
+ccguard-0.2.dist-info/LICENSE.txt,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+ccguard-0.2.dist-info/METADATA,sha256=zZ_I9VkYO9O4mdByBaDezRBUoa6kxuxBb5g6Nqt8-V4,3628
+ccguard-0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ccguard-0.2.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ccguard-0.2.dist-info/RECORD,,
