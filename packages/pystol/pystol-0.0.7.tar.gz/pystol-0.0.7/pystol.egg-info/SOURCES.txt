@@ -1,0 +1,7 @@
+README.md
+pystol.egg-info/PKG-INFO
+pystol.egg-info/SOURCES.txt
+pystol.egg-info/dependency_links.txt
+pystol.egg-info/entry_points.txt
+pystol.egg-info/requires.txt
+pystol.egg-info/top_level.txt
