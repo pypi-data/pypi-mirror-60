@@ -1,0 +1,15 @@
+vvtool/__init__.py,sha256=gRSSNklT2gwrbKwtz3WUDF_HXmIWadIsh0KeqSUFY_4,366
+vvtool/application.py,sha256=L9XtHj_kGDkILyv2j6EaEEe9GWR0o7JJ_eslnrXtVOE,1040
+vvtool/cli.py,sha256=2SwSzpes1a8DPLFFuoMslYrTjUnD91vc77fTa1B8h6I,2729
+vvtool/documents.py,sha256=W7v4gjc1SqWF6daXmv1slH0WHEW0xSFV7X56zx-3P5U,3797
+vvtool/manager.py,sha256=UhPJQQji9cylP_FdmOv_ACg8RL77we4OaBSZJs0etL4,7468
+vvtool/migrations/0001_trump.py,sha256=RW4Q6PqGP6i17sTNzPhHsgG8T3OIFZ_IRW4q-YEUMfQ,1136
+vvtool/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vvtool/migrations/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vvtool/migrations/data/initial_trump_data.xlsx,sha256=3NPQ40IpmkFRRo_n6-dXWdCzjzup6afZU-rPOlnE8Fw,20125
+vvtool/migrations/data/initial_trump_votes.csv,sha256=rmaNsNBQmhm3W7P4iu7jXlBM7wPxfdK4VN-I4-p1tVQ,11398
+voteview_dev-0.1.5.dist-info/entry_points.txt,sha256=clzHkgq5H0qMhmhZdAUFmiZFSasYqTb7rBN6OxeX8-o,41
+voteview_dev-0.1.5.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+voteview_dev-0.1.5.dist-info/WHEEL,sha256=6upcAAvX4rd7BhxBF-R5FqXT39G-3jJUye5-930hcrk,85
+voteview_dev-0.1.5.dist-info/METADATA,sha256=PWkoU57OasVOrMIkzCeS9BoWZ2tYndg19tzSyX9A3k4,3962
+voteview_dev-0.1.5.dist-info/RECORD,,
