@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: adaptnlp
+Version: 0.1.0
+Summary: Novetta's Natural Language Processing Library
+Home-page: UNKNOWN
+Author: Andrew Chang
+Author-email: achang@novetta.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: NLP,flair,Natural Language Processing,Machine Learning,ML,torch,pytorch,NER
+Platform: UNKNOWN
