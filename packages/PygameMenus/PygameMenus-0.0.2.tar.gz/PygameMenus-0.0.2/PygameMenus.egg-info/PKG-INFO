@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: PygameMenus
+Version: 0.0.2
+Summary: Make menus with pygame
+Home-page: https://github.com/MrComboF10/PygameMenus
+Author: Pedro Azevedo
+Author-email: p.costa.azevedo@gmail.com
+License: MIT
+Description: # PygameMenus
+        Make menus for games with pygame
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: pygame
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
