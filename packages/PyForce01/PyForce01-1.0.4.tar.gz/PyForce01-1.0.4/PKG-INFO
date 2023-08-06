@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: PyForce01
+Version: 1.0.4
+Summary: You already know.
+Home-page: https://github.com/GrandMoff100/MathFunctions
+Author: Quantum_Wizard
+Author-email: minecraftcrusher100@gmail.com
+License: UNKNOWN
+Description: Documentation:
+            Version:
+                This is v1.0.0 of PyForce
+        
+            Description:
+                This is a module for bruteforcing district 833 school passwords using destiny quest.
+        
+            Usage:
+        	pip install PyForce
+        	
+        	Example:
+        	import PyForce
+        	PyForce.create_webdriver(username=<username>,browser_type='Chrome'#Prefered Browser but firefox works too if you the correct driver.#,driver_path=<driver path>)
+        	
+        	Then it will do its stuff, if there are any bugs contact me.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
