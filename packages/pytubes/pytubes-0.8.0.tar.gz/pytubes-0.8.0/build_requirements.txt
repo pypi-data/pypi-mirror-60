@@ -1,0 +1,11 @@
+cython
+jinja2
+pytest
+pyyaml
+recommonmark
+sphinx <= 1.9.0
+wheel
+numpy
+fin
+
+pandas
