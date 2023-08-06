@@ -1,0 +1,3 @@
+[console_scripts]
+ugt = urgent.cli:main
+
