@@ -1,0 +1,6 @@
+aioworker/__init__.py,sha256=sIchNfcZmoYBAH4HkOPkGkKdX7_msqOYluDHFKegNPY,139
+aioworker/service.py,sha256=mlRgbv25nMZ5f1NXooYgTNUFRyTNKSysGycm9JDiuc0,916
+aioworker/worker.py,sha256=vE8eURn1mLf-kot0MYcZ16cnjbWmVbS03VH7PsbhqKU,4050
+aioworker-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+aioworker-0.1.1.dist-info/METADATA,sha256=lubcG9y0mmNiaaoMGzBOBkHLSlBlbC3OPzBuXiNglhg,2363
+aioworker-0.1.1.dist-info/RECORD,,
