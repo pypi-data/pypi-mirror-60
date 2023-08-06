@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nomnomdata-cli
+Version: 0.1.0
+Summary: Core package for the nomnomdata cli suite
+Home-page: https://gitlab.com/nomnomdata/tools/nomnomdata-cli
+Author: Nom Nom Data
+Author-email: info@nomnomdata.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

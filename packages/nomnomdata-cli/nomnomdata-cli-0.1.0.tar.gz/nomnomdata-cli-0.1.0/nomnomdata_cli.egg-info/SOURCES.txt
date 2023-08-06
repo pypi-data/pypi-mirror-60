@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+nomnomdata/cli/__init__.py
+nomnomdata/cli/cli.py
+nomnomdata/cli/tests/__init__.py
+nomnomdata/cli/tests/test_cli.py
+nomnomdata_cli.egg-info/PKG-INFO
+nomnomdata_cli.egg-info/SOURCES.txt
+nomnomdata_cli.egg-info/dependency_links.txt
+nomnomdata_cli.egg-info/entry_points.txt
+nomnomdata_cli.egg-info/not-zip-safe
+nomnomdata_cli.egg-info/requires.txt
+nomnomdata_cli.egg-info/top_level.txt
