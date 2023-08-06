@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: wormhole-ui
+Version: 0.1.2
+Summary: UI for Magic Wormhole - get things from one computer to another safely
+Author: sneakypete81
+Author-email: sneakypete81@gmail.com
+Requires-Python: >=3.5,<3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: PySide2 (==5.13.1)
+Requires-Dist: humanize (>=0.5.1,<0.6.0)
+Requires-Dist: magic_wormhole (>=0.11.2,<0.12.0)
+Requires-Dist: qt5reactor (>=0.6,<0.7)
