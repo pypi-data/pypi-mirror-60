@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pgx-variant-tools
+Version: 0.0.3
+Summary: Tools for working with variants.
+Home-page: https://github.com/LUMC/pgx-variant-tools
+Author: Guy Allard
+Author-email: wgallard@lumc.nl
+License: UNKNOWN
+Keywords: bioinformatics
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: numpy (==1.13.1)
+Requires-Dist: biopython (==1.69)
+Requires-Dist: edlib (==1.1.2.post2)
+Requires-Dist: pyinterval (==1.2.0)
+
+UNKNOWN
+
+
