@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pagermaid
+Version: 2020.1.post48
+Summary: A telegram utility daemon and plugin framework.
+Home-page: https://katonkeyboard.moe/pagermaid.html
+Author: Stykers
+Author-email: stykers@stykers.moe
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: coloredlogs
+Requires-Dist: distutils2-py3
+Requires-Dist: beautifulsoup4
+Requires-Dist: pyzbar
+Requires-Dist: pillow
+Requires-Dist: aiohttp
+Requires-Dist: cowpy
+Requires-Dist: emoji
+Requires-Dist: gTTS-token
+Requires-Dist: gTTS
+Requires-Dist: gitpython
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: google-images-download
+Requires-Dist: googletrans
+Requires-Dist: gsearch
+Requires-Dist: hachoir
+Requires-Dist: pybase64
+Requires-Dist: python-dotenv
+Requires-Dist: pytube
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: speedtest-cli
+Requires-Dist: telegraph
+Requires-Dist: telethon
+Requires-Dist: wikipedia
+Requires-Dist: redis
+Requires-Dist: dnspython
+Requires-Dist: pyqrcode
+Requires-Dist: pypng
+Requires-Dist: qrtools
+Requires-Dist: youtube-dl
+Requires-Dist: pygments
+Requires-Dist: matplotlib
+Requires-Dist: wordcloud
+Requires-Dist: lxml
+Requires-Dist: pyyaml
+Requires-Dist: python-magic
+
+# PagerMaid
+
+PagerMaid is a utility daemon for telegram.
+
+It automates a range of tasks by responding to commands issued to self.
+
+Update channel: https://t.me/PagerMaidUpdates
+
+## Installation
+See [INSTALL.md](https://git.stykers.moe/users/stykers/repos/pagermaid/browse/INSTALL.md)
+
+## Contact
+Use -contact <message> on telegram, and enter the PM that's opened, if you have installation problems email me at stykers@stykers.moe or message me on telegram at [@KatOnKeyboard](https://t.me/KatOnKeyboard).
+
+
