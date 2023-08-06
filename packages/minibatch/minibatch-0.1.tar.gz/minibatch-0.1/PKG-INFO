@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: minibatch
+Version: 0.1
+Summary: Python stream processing for humans
+Home-page: http://github.com/omegaml/minibatch
+Author: Patrick Senti
+Author-email: patrick.senti@omegaml.io
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
