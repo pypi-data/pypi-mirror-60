@@ -1,0 +1,16 @@
+-r requirements.txt
+autopep8
+coverage
+pacifica-archiveinterface
+pacifica-cartd
+pacifica-ingest
+pacifica-metadata
+pacifica-policy
+pacifica-uniqueid
+pep257
+pre-commit
+pylint
+pytest
+radon
+recommonmark
+redis<3.4
