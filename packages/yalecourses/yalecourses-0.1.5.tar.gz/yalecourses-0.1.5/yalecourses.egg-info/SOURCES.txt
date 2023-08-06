@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+yalecourses/__init__.py
+yalecourses/main.py
+yalecourses.egg-info/PKG-INFO
+yalecourses.egg-info/SOURCES.txt
+yalecourses.egg-info/dependency_links.txt
+yalecourses.egg-info/requires.txt
+yalecourses.egg-info/top_level.txt
