@@ -1,0 +1,3 @@
+ansible
+footmark>=1.16.0
+ansible_alicloud_module_utils>=1.3.0
