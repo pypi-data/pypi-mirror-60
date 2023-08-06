@@ -1,0 +1,35 @@
+[relay]
+syncInterval = 300
+updateNetworksInterval = 120
+eventQueryTimeout = 20
+enableEtherFaucet = false
+enableRelayMetaTransaction = false
+enableDeployIdentity = false
+
+[relay.rpc]
+host = "localhost"
+port = 8545
+ssl = false
+
+[relay.gasPriceComputation]
+method = "rpc"
+gasPrice = 0
+
+[[relay.delegationFees]]
+# value = 0
+# currencyNetwork = "0x000..."
+
+# Configure a sentry DSN to report errors to sentry
+# [relay.sentry]
+# dsn = "https://f3e...@sentry.io/..."
+
+
+# Configure logging
+[logging.root]
+level = "INFO"
+
+[logging.loggers."api.resources"]
+level = "DEBUG"
+
+[logging.loggers.node]
+level = "DEBUG"
