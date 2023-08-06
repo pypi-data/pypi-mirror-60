@@ -1,0 +1,67 @@
+# Agape Auth
+
+The auth package provides a User model and an API for authenticating and registering users. It includes an account recovery API for resetting passwords and the User model can be extended dynamically.
+
+
+## Quick start
+
+
+1. Add the desired applications into the INSTALLED_APPS setting like this:
+
+    INSTALLED_APPS = [
+        ...
+        'agape.authentication',
+    ]
+
+2. Include the URLconf in your project urls.py like this:
+
+    url(r'^/api/, include('agape.authentication.urls')),
+
+
+3. Run `python manage.py migrate agapeAuth` to create the models.
+
+4. Start the development server and visit http://127.0.0.1:8000/
+
+
+## Developer Instructions
+
+### Testing
+
+There are 3 different `runtests_*.py` files. Each one runs tests using a different configuration file. There is also a `runtests.sh` file which will run all all of the `runtests_*.py` files.
+
+
+```
+./runtests.sh
+
+venv/bin/python runtests_default.py
+
+...
+```
+
+### Packaging & Distribution
+
+Instead of calling `python setup.py sdist` directly use the `build.sh` script. This script sets the version number in setup.py, builds the package, and releases to the loca repository if the `$REPO` variable is set.
+
+```
+./build.sh
+```
+
+## Installation
+
+pip install agape-auth
+
+### License
+
+Copyright (C) 2017-2020 Jeffrey Hallock, Maverik Software  
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    See the [LICENSE.md](LICENSE.md) file for details.
