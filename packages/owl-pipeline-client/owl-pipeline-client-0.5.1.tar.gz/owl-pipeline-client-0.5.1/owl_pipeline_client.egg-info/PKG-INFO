@@ -1,0 +1,43 @@
+Metadata-Version: 1.2
+Name: owl-pipeline-client
+Version: 0.5.1
+Summary: Pipeline Framework
+Home-page: https://github.com/IMAXT/owl-pipeline-client
+Author: Eduardo Gonzalez Solares
+Author-email: eglez@ast.cam.ac.uk
+License: GNU General Public License v3
+Download-URL: https://github.com/IMAXT/owl-pipeline-client/archive/v0.5.1.tar.gz
+Description: 
+        .. image:: https://img.shields.io/badge/python-3.6%20%7C%203.7-blue
+           :class: badge
+        
+        .. image:: https://anaconda.org/eddie0uk/owl-pipeline-client/badges/version.svg
+           :class: badge
+           :target: https://anaconda.org/eddie0uk/owl-pipeline-client
+        
+        .. image:: https://img.shields.io/pypi/v/owl-pipeline-client.svg
+           :class: badge
+           :target: https://pypi.org/project/owl-pipeline-client
+        
+        .. image:: https://anaconda.org/eddie0uk/owl-pipeline-client/badges/latest_release_date.svg
+           :class: badge
+           :target: https://anaconda.org/eddie0uk/owl-pipeline-client
+        
+        Client for submitting Owl pipelines either to the IMAXT server or locally using Dask.
+        
+        Owl is a framework for submitting jobs (a.k.a. pipelines) in a remote cluster.
+        The Owl server runs jobs in Kubernetes using Dask. The Owl client authenticates
+        with the remote server and submits the jobs as specified in a pipeline
+        definition file.
+        
+Keywords: owl,pipeline
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3
