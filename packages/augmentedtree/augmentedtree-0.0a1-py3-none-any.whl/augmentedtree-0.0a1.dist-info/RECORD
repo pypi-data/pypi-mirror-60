@@ -1,0 +1,15 @@
+augmentedtree/__init__.py,sha256=r1i56QPB6Z25QVtCVtmMFCXvPs6Gcqfgc0W1Ud8SJwY,1047
+augmentedtree/abc.py,sha256=rgTvvX2RfbEtfEitFYmp1EjHN4s0SylPPCjjcspD35g,7407
+augmentedtree/augmentation.py,sha256=8WZ8nTjkyC0j5LHVijSVSzA1bvOVSmbVui91LecdKzI,21882
+augmentedtree/core.py,sha256=6vYvnGzvN9i8yEgGL4ELvAeiMNT7Ai9a2m9nY-ar_10,20128
+augmentedtree/tree.py,sha256=MT3ln4oj6BOVL8jym-jiH7_EDqhTvxHR4hLtq3obHuM,20261
+augmentedtree/treeitems.py,sha256=u9dMfiAc0E3br91efxkr6kdl_oOzBX4FuF9ypflAfkU,33319
+augmentedtree/scratches/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+augmentedtree/scratches/example_1.py,sha256=aj5qDshcBPhzWi958WbMhr_f5_0MKwqCjWC9-HBROc8,9878
+augmentedtree/scratches/view_reduced_representation.py,sha256=i9SQNJjbDrr6NxnmOS8gj7bf0fQweO3WyPpa7ezutFo,2377
+augmentedtree/scratches/view_with_qt.py,sha256=efgEJvkD74lyp-KHuCAPnTbS6rLw2R7Hc1-zQM8KA8E,14503
+augmentedtree-0.0a1.dist-info/LICENSE,sha256=BRWSY-Jazy6aBueKK07EPlDJmUy1tFlJJUUKl1QuwQo,35757
+augmentedtree-0.0a1.dist-info/METADATA,sha256=zqBx7Qjj1qq2CmWlOvpsMlTFGrl-D8_Vac1-h2NiDSE,4008
+augmentedtree-0.0a1.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+augmentedtree-0.0a1.dist-info/top_level.txt,sha256=N4hG0gdPV6xX3Len7YJvNV4E6LD-ta7BjbmjtUHNT2A,14
+augmentedtree-0.0a1.dist-info/RECORD,,
