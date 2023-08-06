@@ -1,0 +1,12 @@
+oracle_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oracle_utils/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+oracle_utils/apps.py,sha256=feEbUYvmUQdtSP95WY3VB6s9u0xnW1xdNeoIoaFt_RY,98
+oracle_utils/models.py,sha256=6bu2M9mijUQeHL6V8aCo0KqeMHCD4_NsWaP2pza_WFY,669
+oracle_utils/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+oracle_utils/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+oracle_utils/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_oracle_utils-0.0.1.dist-info/LICENSE,sha256=onHS60zUbVpyqtfSpMDBPpSBZhe-2nmgQBiRyrtB8HM,1070
+django_oracle_utils-0.0.1.dist-info/METADATA,sha256=HSAxGsoRT0nD90W0vLP-rHAeIAjoXMiIZYhDBSu4cuw,653
+django_oracle_utils-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_oracle_utils-0.0.1.dist-info/top_level.txt,sha256=2G6i4l_C6eT7YnXoSi8gwMGcM-AqbPwPPgSa5TrmCg8,13
+django_oracle_utils-0.0.1.dist-info/RECORD,,
