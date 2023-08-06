@@ -1,0 +1,170 @@
+Metadata-Version: 2.1
+Name: dramatts
+Version: 0.2.1
+Summary: Screen play / drama text to multi-voice audio play converter
+Home-page: https://dramatts.readthedocs.io/en/latest/
+Author: Thies Hecker
+Author-email: thies.hecker@gmx.de
+License: GPL3
+Project-URL: Documentation, https://dramatts.readthedocs.io/en/latest/
+Project-URL: Source Code, https://gitlab.com/thecker/dramatts/
+Keywords: TTS play text-to-speech festival audio book
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
+Requires-Dist: PyQt5
+Requires-Dist: setuptools-scm
+Requires-Dist: jinja2
+Requires-Dist: pytest
+
+dramaTTS
+========
+
+About
+-----
+
+*dramaTTS* parses scripts (plain text files) for theatre/screen plays and converts them into a multi-voice audio plays
+(wave-files).
+
+While the script parsing functionality is provided by the *dramaTTS* program itself, it relies on external tools for
+the audio processing:
+
+* The `Festival Speech Synthesis System`_ (herein referred to as *Festival*) is used for speech synthesis
+* `Sound eXchange (SoX)`_  for audio post-processing.
+
+*SoX*, *Festival* as well as voices and lexicons for *Festival* have to be installed in order to create audio output
+with *dramaTTS*.
+
+See the `dramaTTS documentation`_ for more details
+
+Licenses
+--------
+
+*dramaTTS*, Copyright (c) 2020 Thies Hecker
+
+*dramaTTS* is free software released under the GPLv3 license (see the full disclaimer in COPYING_ and the LICENSE_
+file for details).
+It is written *python* and you can download the source code from `dramaTTS's gitlab page`_.
+
+*dramaTTS* is realized using:
+
+PyQt_, Copyright (c) Riverbank Computing Limited
+
+and
+
+setuptools_scm_, Copyright (c) Ronny Pfannschmidt.
+
+While *dramaTTS* is a standalone application, it is of limited use without *Festival* and *SoX* being installed,
+which provide the audio rendering (only script parsing including syntax highlighting, etc. is available).
+
+While the *Festival* application itself and *SoX* are released under free software licenses as well,
+specific components, which are commonly bundled with *Festival* (i.e. certain lexicons and voices) may be released
+under non-free licenses.
+
+For instance the *festlex-OALD* lexicon, which can be found among other files (incl. the source code of the latest
+*Festival* release) on the `Festvox 2.5 release page`_ lexicon is restricted to non-commercial use only.
+
+The `dramaTTS documentation`_ will provide an example for a *Festival* distribution based on *free* components only.
+
+Please see the COPYING_ file in the source code repository for details on licenses and copyright disclaimers of the
+individual components.
+
+Features
+--------
+
+As mentioned above *dramaTTS* consists of 2 main components: a script parser and a scheduler/configurator for
+the audio-rendering.
+
+The script parser features:
+
+* configurable input file formatting
+* syntax highlighting (identifies different content like new scenes, dialogue lines, narrative descriptions,...)
+* text string substitutions supporting regular expressions
+* some utility functions like sorting speakers according to their number of text lines
+
+The audio-renderering part basically provides a front-end to *Festival* and *SoX* with following features supported:
+
+* Altering of *Festival* voices (pitch, tempo and volume)
+* support for multiple CPU cores to accelerate audio rendering (dispatches parallel processes for individual lines)
+* using a *Festival* server for rendering is supported
+* some post-processing: normalize all voices, combine audio files (lines -> scenes -> single project file)
+* (re-)rendering of individual scenes or speakers
+
+Installing
+----------
+
+You will need a python3 distribution installed and for most convenience you should have either the *pip* or *conda*
+package manager installed.
+
+On linux you will most likely have python and pip already installed - if not you should be able to install them with
+distributions package-manager.
+
+E.g. for debian based system like ubuntu just run:
+
+.. code::
+
+    sudo apt-get python3-pip
+
+or on arch based:
+
+.. code::
+
+    sudo pacman -S python-pip
+
+For Windows users I would recommend to install Anaconda_ or miniconda_, which will provide the *conda* package
+manager (make sure to get the python3 - not the python2 - version!).
+
+To install *dramaTTS* with pip:
+
+.. code::
+
+    pip install dramatts
+
+Note, that on some distributions you may install python2 and python3 in parallel. In such cases you should make sure,
+that you not using a pip for your python2 environment to install *dramaTTS*. Eventually you need to use pip3 as a command.
+You can check if you are using the correct pip by calling:
+
+.. code::
+
+    pip --version
+
+To install *dramaTTS* with conda:
+
+.. code::
+
+    conda install -c thecker dramatts
+
+In both cases pip or conda should download all required dependencies and should be able to launch the program.
+To do that just type:
+
+.. code::
+
+    python -m dramatts.dramatts_gui
+
+The GUI should pop up and you can import text files, define roles etc., but you will not be able render audio unless
+you have installed *Festival* (and its components) and *SoX*.
+
+See the `dramaTTS documentation`_ for more details.
+
+.. _`dramaTTS's gitlab page`: https://gitlab.com/thecker/dramatts
+.. _`dramaTTS documentation`: https://dramatts.readthedocs.io/en/latest/
+.. _`Festival Speech Synthesis System`: http://www.cstr.ed.ac.uk/projects/Festival/
+.. _`Sound eXchange (SoX)`: http://sox.sourceforge.net/Main/HomePage
+.. _LICENSE: https://gitlab.com/thecker/dramatts/blob/master/LICENSE
+.. _PyQt: https://wiki.python.org/moin/PyQt
+.. _setuptools_scm: https://github.com/pypa/setuptools_scm/
+.. _COPYING: https://gitlab.com/thecker/dramatts/blob/master/COPYING
+.. _`Festival license`: https://github.com/festvox/festival/blob/master/COPYING
+.. _`Sox license`: https://sourceforge.net/p/sox/code/ci/master/tree/COPYING
+.. _`Festvox 2.5 release page`: http://festvox.org/packed/festival/2.5/
+.. _`Festvox github page`: https://github.com/festvox/
+.. _Anaconda: https://www.anaconda.com/distribution/#download-section
+.. _miniconda: https://docs.conda.io/en/latest/miniconda.html
+.. _`Festival 2.5 version including precompiled binaries for Windows`: https://sourceforge.net/projects/e-guidedog/files/related%20third%20party%20software/0.3/festival-2.5-win.7z/download
+.. _/utils folder: https://gitlab.com/thecker/dramatts/tree/master/utils
+.. _`SoX sourceforge page`: https://sourceforge.net/projects/sox/files/sox/14.4.2/
+.. _`CMU_ARCTIC speech synthesis databases`: http://festvox.org/cmu_arctic/index.html
+.. _here: http://festvox.org/packed/festival/2.5/voices/
+
+

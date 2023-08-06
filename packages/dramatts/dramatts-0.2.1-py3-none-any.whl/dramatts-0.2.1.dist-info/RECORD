@@ -1,0 +1,11 @@
+dramatts/__init__.py,sha256=yQgrQtSwv9zLzyF3RdG_SfrbxKI9d1iHMkgOUDyQYpc,78
+dramatts/core.py,sha256=_L3EXLS8UVn5OR9G2Tib3BH4ZiF5M7kPi-hT8urXmaE,65725
+dramatts/dramatts_gui.py,sha256=xLzIagcjveG_6Ggv0eZ9ErkDSj0OEqF9DKe3Ox57xUE,49769
+dramatts/gui.py,sha256=cL3p8vx0ipT1jG2oSXJR2FHz69-n-Sg_KRo5Q_sQCSE,70965
+dramatts/voices.py,sha256=_U6wYcQZqOO32TpAuHGU1dcCIlwzUmI2Cr32JkX0PI4,3990
+dramatts-0.2.1.dist-info/COPYING,sha256=cONSbqVx3TEPcdeDpSSFdVtS6G4Fs-Tsjm9AwmSgGQM,18297
+dramatts-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dramatts-0.2.1.dist-info/METADATA,sha256=BS6Qh_If-NIHRpZD3dlQ55qA-Vz247vVPH65OZPLxWg,6680
+dramatts-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dramatts-0.2.1.dist-info/top_level.txt,sha256=W2TYXYYFR1ZqUPqkJJZhXQlzvXwMGlYlL-PWYfgs0o4,9
+dramatts-0.2.1.dist-info/RECORD,,
