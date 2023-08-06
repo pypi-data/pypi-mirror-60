@@ -1,0 +1,8 @@
+mdlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mdlp/_mdlp.cpython-37m-darwin.so,sha256=CsDrUDmVxKGvWQampOCXYipr2Kg_pxYeFXs6lADQD3k,113724
+mdlp/discretization.py,sha256=GkoEnXUDFV2NyC_RXI24ZciYsNlAdmUAisodXrXWbqo,8305
+mdlp_discretization-0.3.3.dist-info/LICENSE,sha256=qgDI8IaOl3dru3jUEdgse2389gIRfKY3jqyCpKhdJn0,1507
+mdlp_discretization-0.3.3.dist-info/METADATA,sha256=Ce5_CqJJKi2izm-ojgTzw0FW0OVjKxXrS4yyKdMt2ww,503
+mdlp_discretization-0.3.3.dist-info/WHEEL,sha256=rmlMk8wCTC2tU76-T5zuJ94CZXlxNi2cojMvVRV0ySE,111
+mdlp_discretization-0.3.3.dist-info/top_level.txt,sha256=eMmfF_ORdAHzKqyA4Q8LDcdnQ5moXA2xUv2wXMp4NBY,5
+mdlp_discretization-0.3.3.dist-info/RECORD,,
