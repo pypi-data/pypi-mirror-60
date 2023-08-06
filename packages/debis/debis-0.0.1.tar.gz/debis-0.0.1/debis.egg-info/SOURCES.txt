@@ -1,0 +1,10 @@
+README.md
+setup.py
+debis/__init__.py
+debis/person.py
+debis/timer.py
+debis.egg-info/PKG-INFO
+debis.egg-info/SOURCES.txt
+debis.egg-info/dependency_links.txt
+debis.egg-info/requires.txt
+debis.egg-info/top_level.txt
