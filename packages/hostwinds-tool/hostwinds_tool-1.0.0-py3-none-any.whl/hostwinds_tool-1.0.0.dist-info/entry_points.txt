@@ -1,0 +1,3 @@
+[console_scripts]
+hw-alert=hostwinds.entry.alert_command:main
+
