@@ -1,0 +1,8 @@
+README.md
+setup.py
+url_parser/__init__.py
+url_parser.egg-info/PKG-INFO
+url_parser.egg-info/SOURCES.txt
+url_parser.egg-info/dependency_links.txt
+url_parser.egg-info/not-zip-safe
+url_parser.egg-info/top_level.txt
