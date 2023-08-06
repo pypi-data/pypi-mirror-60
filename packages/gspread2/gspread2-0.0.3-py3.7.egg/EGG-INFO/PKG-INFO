@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: gspread2
+Version: 0.0.3
+Summary: Wrapper for gspread
+Home-page: https://gspread2.readthedocs.io
+Author: FutuereProjects
+Author-email: nclark@riseup.net
+License: MIT
+Description: ![Stage](https://img.shields.io/badge/Stage-ALPHA-red)
+        [![PyPI](https://img.shields.io/pypi/v/gspread2)](https://pypi.org/project/gspread2)
+        [![gspread](https://img.shields.io/badge/gspread-3.1.0-blue)](https://github.com/burnash/gspread)
+        [![Documentation Status](https://readthedocs.org/projects/gspread2/badge/?version=latest)](https://gspread2.readthedocs.io/en/latest/?badge=latest)
+        
+        
+        # Wrapper/Extension for gspread
+        
+        A wrapper around [gspread](https://github.com/burnash/gspread) for easier usage.
+        Intended to provide features and syntax similar to [OpenPyXL](https://bitbucket.org/openpyxl/openpyxl).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Office/Business :: Financial :: Spreadsheet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
