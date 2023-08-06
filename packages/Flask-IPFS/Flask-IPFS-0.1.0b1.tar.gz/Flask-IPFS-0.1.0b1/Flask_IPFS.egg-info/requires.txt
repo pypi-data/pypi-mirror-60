@@ -1,0 +1,8 @@
+Flask
+ipfshttpclient
+multiaddr
+py-cid
+
+[dev]
+bumpversion
+ipython
