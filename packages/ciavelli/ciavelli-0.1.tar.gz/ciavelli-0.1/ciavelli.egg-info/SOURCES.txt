@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+ciavelli/__init__.py
+ciavelli/ciavelli.cmake
+ciavelli/ciavelli.py
+ciavelli.egg-info/PKG-INFO
+ciavelli.egg-info/SOURCES.txt
+ciavelli.egg-info/dependency_links.txt
+ciavelli.egg-info/entry_points.txt
+ciavelli.egg-info/top_level.txt
