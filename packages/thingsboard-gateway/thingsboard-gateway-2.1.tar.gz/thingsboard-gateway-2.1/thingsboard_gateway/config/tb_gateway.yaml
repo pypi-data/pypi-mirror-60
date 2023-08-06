@@ -1,0 +1,14 @@
+connectors:
+- configuration: request.json
+  name: REQUEST
+  type: request
+storage:
+  max_records_count: 10000
+  read_records_count: 100
+  type: memory
+thingsboard:
+  host: 127.0.0.1
+  port: 1883
+  remoteConfiguration: false
+  security:
+    accessToken: oZYMnQ1tQQW9Z6vfM59u
