@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pyassembly
+Version: 2.3
+Summary: Creates an egg or a zip distribution with all its transitive dependencies
+Home-page: https://github.com/alekseyig/pyassembly
+Author: Aleksey Zhukov
+Author-email: alekseyig@hotmail.com
+License: MIT
+Keywords: egg,zip,transitive,dependencies,assembly
+Platform: any
+Description-Content-Type: text/markdown
+Requires-Dist: pip (>=9.0.3)
+Requires-Dist: setuptools
+
+PyAssembly
+===============================
+pyassembly is the Python setup.py command. If you are familiar with fat or uber jar, than this command will come as no surprise for you. By installing and using it, you will get an "uber" egg or zip file, which will contain not only your project, but will also include all the dependencies you specified in you requirements.txt file, including the dependence of the dependencies (a.k.a. transitive dependencies), making it easy to create a self-contained distribution.
+
+
+Installing
+----------
+
+.. code-block:: shell
+
+	$ pip install pyassembly
+
+Alternatively, you can include it into your requirements.txt file.
+
+
+How to use
+----------
+Example for using the tool
+
+.. code-block:: shell
+
+	$ python setup.py pyassembly
+
+
+How to get more options
+-----------------------
+After you installed the command you can get the list of options
+
+.. code-block:: shell
+
+	$ python setup.py pyassembly --help
+
+
+Reporting Issues
+----------------
+If you have suggestions, bugs or other issues with this command - please open an issue or make a pull request.
+
+
