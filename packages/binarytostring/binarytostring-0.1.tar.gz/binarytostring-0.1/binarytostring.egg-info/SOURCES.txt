@@ -1,0 +1,7 @@
+setup.py
+binarytostring/__init__.py
+binarytostring.egg-info/PKG-INFO
+binarytostring.egg-info/SOURCES.txt
+binarytostring.egg-info/dependency_links.txt
+binarytostring.egg-info/not-zip-safe
+binarytostring.egg-info/top_level.txt
