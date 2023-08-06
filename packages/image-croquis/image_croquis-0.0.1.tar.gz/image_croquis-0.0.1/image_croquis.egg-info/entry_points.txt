@@ -1,0 +1,3 @@
+[console_scripts]
+image_croquis = image_croquis.image_croquis:main
+
