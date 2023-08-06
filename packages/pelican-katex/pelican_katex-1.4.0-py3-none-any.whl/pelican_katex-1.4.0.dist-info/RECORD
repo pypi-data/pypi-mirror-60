@@ -1,0 +1,12 @@
+pelican_katex/__init__.py,sha256=Vj82TmNvM0ZYAiT2DjZHnnpb9UBQT7e2WX4Z1tjNIdM,68
+pelican_katex/katex.js,sha256=Cd44R93UCyL4CQQlvHnHEoHUOdVSdFQQ5nii3hNdI3g,596910
+pelican_katex/markdown.py,sha256=UupxSLOb8WHSV_03Qqd05B-eMMTE2AJIkNc_sBMAkPo,1648
+pelican_katex/plugin.py,sha256=1cYp7wo41nzPd6wWLJsIsxgHfT3myooxLBx8LBrPZjA,1487
+pelican_katex/render-katex.js,sha256=_YMbKho90pAyPFd3tNyENHJAHU-Frc0faSzP4vm7r5U,4044
+pelican_katex/rendering.py,sha256=EBpUfoR6FDbPUY0zL_QpFw-pXhAXDSPGPs-4RYQ6Zz4,9870
+pelican_katex/restructuredtext.py,sha256=vld6kH8-ensZ4C_dst1sFNGiG4GmrH5pNh2adtWnZFU,1541
+pelican_katex-1.4.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pelican_katex-1.4.0.dist-info/METADATA,sha256=fna9rmlAj6g77mM67Zo22BRX1Kitjd1sAwAmkGGYKTQ,3975
+pelican_katex-1.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pelican_katex-1.4.0.dist-info/top_level.txt,sha256=vAK8e_2XASo5BXmZMYAcuSsvPkrRHrSHiODPaDDdVKQ,14
+pelican_katex-1.4.0.dist-info/RECORD,,
