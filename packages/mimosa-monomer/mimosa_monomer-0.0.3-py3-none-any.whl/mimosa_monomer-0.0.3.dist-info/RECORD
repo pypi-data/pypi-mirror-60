@@ -1,0 +1,10 @@
+mimosa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mimosa/db.py,sha256=vHyB2sV_VCUOk3i-1xhwC60Jj5TUif9IYTmc0mjHVdw,488
+mimosa/main.py,sha256=JrCa6Q89QatY5GormGOVEZHJBcWt0Rr-w37Vm91g0mQ,7557
+mimosa/models.py,sha256=cgYArlhd1s1SrbF-EIogRo4-3N5XLGdSDVdkNHbzTTE,4194
+mimosa_monomer-0.0.3.dist-info/LICENSE.md,sha256=QToHwuv73nNc0xRDE58hLJz_3fR3no6qLvqpp5-5_es,179
+mimosa_monomer-0.0.3.dist-info/METADATA,sha256=6UFwfUQWZyJz_QTz-IhVEcgeCdOE8vj8HoQNsI1JpwQ,951
+mimosa_monomer-0.0.3.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+mimosa_monomer-0.0.3.dist-info/entry_points.txt,sha256=Y3Uo7Fhf5CwFoz_v_kNtA9hQnpvgBjEGzwRlsTUnW60,45
+mimosa_monomer-0.0.3.dist-info/top_level.txt,sha256=IWnAUk_K0TXpSIR2iu2vDjCv9pg2_mWYZZgm4jT2CKw,7
+mimosa_monomer-0.0.3.dist-info/RECORD,,
