@@ -1,0 +1,8 @@
+django
+django-db-signals
+djangorestframework
+openimis-be-core
+openimis-be-insuree
+openimis-be-location
+openimis-be-claim
+openimis-be-policy
