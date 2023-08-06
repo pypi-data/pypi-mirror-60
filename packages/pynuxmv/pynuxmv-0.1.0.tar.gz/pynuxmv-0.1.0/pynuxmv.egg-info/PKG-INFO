@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pynuxmv
+Version: 0.1.0
+Summary: Transpile Python to nuXmv source code
+Home-page: https://github.com/mattyonweb/pynuxmv
+Author: Matteo Cavada
+Author-email: cvd00@insicuri.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Other
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Provides-Extra: Pretty printing
