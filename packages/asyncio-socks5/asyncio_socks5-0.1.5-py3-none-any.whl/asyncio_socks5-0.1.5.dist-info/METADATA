@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: asyncio-socks5
+Version: 0.1.5
+Summary: Socks5 Server/Client by asyncio.
+Home-page: https://github.com/abersheeran/socks5
+License: MIT
+Author: abersheeran
+Author-email: me@abersheeran.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Project-URL: Documentation, https://github.com/abersheeran/socks5
+Project-URL: Repository, https://github.com/abersheeran/socks5
+Description-Content-Type: text/markdown
+
+# Socks5
+
+Socks5 Server/Client by asyncio.
+
+## Reference link:
+
+* [RFC1928](https://www.ietf.org/rfc/rfc1928.txt)
+* [RFC1929](https://www.ietf.org/rfc/rfc1929.txt)
+* [Socks5协议](https://abersheeran.com/articles/Socks5/)
+
