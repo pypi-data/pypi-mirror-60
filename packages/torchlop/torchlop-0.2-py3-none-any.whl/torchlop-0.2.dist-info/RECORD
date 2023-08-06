@@ -1,0 +1,12 @@
+torchlop/__init__.py,sha256=QA9vOUD89NWU5BnVhZtEme_hbrAg7QPH9qXbZcxkVts,62
+torchlop/count_hooks.py,sha256=KWQ4pjEuzNS3LftzkdXBUtZqD0I6bTqYzGQZE0vOt2A,3774
+torchlop/nlp_hooks.py,sha256=mkZzP0xd8z3xRUvDyiGsWNAkVEJP8nrLVB7nlsZBgrA,1284
+torchlop/profile.py,sha256=91ZmXvdwjL7bfExY3MebXfo0Vgyf-bDcOB_Ss5PRZZA,6951
+torchlop/rst_process.py,sha256=zQ28O6xL2dSmyX_NGraRWwsJbtHnBrWQpMi8eq3cRag,482
+torchlop/utils.py,sha256=HHGyEEjqBWFBCG7r6wJzBuSxFOqd7sooOleXyYizTp8,681
+torchlop-0.2.dist-info/LICENSE,sha256=NvV3rSiPG-roGItuwJgI6u0njAi4KEusxpS7Vv-_Pfw,1067
+torchlop-0.2.dist-info/METADATA,sha256=jpleMRbtAx0aLQ-DTrPOrMwUNNzx00ImtJXFVthTu9M,3332
+torchlop-0.2.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+torchlop-0.2.dist-info/top_level.txt,sha256=Z6PfIA5Kynp96vV8R1DJAX1rSKdCFMve6SdlpQtkcvA,9
+torchlop-0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+torchlop-0.2.dist-info/RECORD,,
