@@ -1,0 +1,6 @@
+README.md
+setup.py
+s2v_extractor.egg-info/PKG-INFO
+s2v_extractor.egg-info/SOURCES.txt
+s2v_extractor.egg-info/dependency_links.txt
+s2v_extractor.egg-info/top_level.txt
