@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: sweet-rl
+Version: 0.0.1
+Summary: The sweetest Reinforcement Learning framework
+Home-page: https://github.com/Hadjubuntu/sweet-rl
+Author: Adrien Hadj-Salah
+Author-email: adrien.hadj.salah@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
