@@ -1,0 +1,9 @@
+mdul/__init__.py,sha256=ocujbQj3MBaIGr4kKWN_JI1Rv31P6hQJZd8yU9K30bs,90
+mdul/main.py,sha256=ewPF-VoCGoRadPZPzEi6Y01N_z6KWtjNDhbTyZKVXGs,2562
+mdul/test_mdul.py,sha256=jFirWZ_ibRK_eh_PguBJIaI5RYEH9qxqR_z2ge8lPhc,53
+mdul-0.0.2.dist-info/LICENSE,sha256=4KN1jRLdMWPToX_eKV463AZaUi3CkDgSJtrILWOesjQ,1073
+mdul-0.0.2.dist-info/METADATA,sha256=8fAoRAAlUgiI3ftmd1YfiXGkB306hKg4mCQQBffty5Q,1807
+mdul-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mdul-0.0.2.dist-info/entry_points.txt,sha256=Lr5AiU2Y7PPN7D5gSJnFIWHMvX_vdqoBzoJSg89yv7g,36
+mdul-0.0.2.dist-info/top_level.txt,sha256=hnXxiAAwE78wx4w7mSMA02XA4ty7KNMwqBVaMri-_o8,5
+mdul-0.0.2.dist-info/RECORD,,
