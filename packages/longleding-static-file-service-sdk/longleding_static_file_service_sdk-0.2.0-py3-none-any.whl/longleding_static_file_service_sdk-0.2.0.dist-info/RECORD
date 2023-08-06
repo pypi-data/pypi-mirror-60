@@ -1,0 +1,12 @@
+static_file_service/__init__.py,sha256=Phw9JKhGlMafoFo1kYhlYZZSbihjLvMVvErA-03yanc,1904
+static_file_service/common_pb2.py,sha256=jfg254X8R-lsk0-olL1XHCNjXloZg5nvaZJ4-IZAnzs,4042
+static_file_service/common_pb2_grpc.py,sha256=DWMIAZgxdUkWnngE5BvewClEYej5jZ2CTkiww5AhtnE,82
+static_file_service/grpc_client.py,sha256=bvEhu95yMQ6X7l4HP4jvdwYdXGiITg-kCerXqwThqR4,2839
+static_file_service/models.py,sha256=caEVP5iaDB_ORQYofvO5dSb9eWXysOViZ-L3ffO4VyU,1907
+static_file_service/staticFileService_pb2.py,sha256=VDgaGwy_Dfn5pCa4IRNtYk5lxIpZT2RmLWFAe5npyLo,22918
+static_file_service/staticFileService_pb2_grpc.py,sha256=RW1i_Za3-x7lIItdBjlCnU93FfFu-8n8IcWtmI5HAdc,7595
+longleding_static_file_service_sdk-0.2.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+longleding_static_file_service_sdk-0.2.0.dist-info/METADATA,sha256=36kv403zkwD1Rd7bfu6j5cK0H46z4M5OkDQVroRpVbg,2118
+longleding_static_file_service_sdk-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+longleding_static_file_service_sdk-0.2.0.dist-info/top_level.txt,sha256=zrhftagjmhQFVRfHVE312sUnAdsMbzpoHdNy5CsjgK8,20
+longleding_static_file_service_sdk-0.2.0.dist-info/RECORD,,
