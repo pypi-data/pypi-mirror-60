@@ -1,0 +1,14 @@
+ugapi/TabEngine.py,sha256=eIuoY_n8rkfy58KLMyIIT8DdwpMkiy7fNI58zFonwRg,1484
+ugapi/TabPipeline.py,sha256=teOJmKsgGvJEMCUHyeR0hi5npmhvV5IR9n2ybuAXkQE,333
+ugapi/TabSpider.py,sha256=GNkf-Y7VsfvBhphp6MCEzs2pkbOk_1APfYrywJ1xzgE,627
+ugapi/__init__.py,sha256=_CNtZCE1_Albr61q5sD2mxVLQcEaBOWY9JDUae1ugaY,151
+ugapi/enums.py,sha256=nOnrp2GjmtUcFvej7kvqkC271P58rDZcOPi__fZY7kU,186
+ugapi/wiki/WikiEngine.py,sha256=_Kx1OziV976TrY0sUlcXMImwNvGZOm4wBpRca-zgwkQ,1171
+ugapi/wiki/WikiPipeline.py,sha256=rb9d2RAsbrOiuQzSYivX0wGsepiEcwmKJli_oWCvhc4,336
+ugapi/wiki/WikiSpider.py,sha256=CETyuU9HKA209QZKalEX-vW135aqeeyCi-MqOrZaStU,812
+ugapi/wiki/__init__.py,sha256=OsCi6ZcQaRkCQGN1W1Ny_81v9xTp9eWq33A1K8mL6hA,135
+ugapi-0.1.3.dist-info/LICENSE.txt,sha256=el2DMELq59yGEWO7STK1pPpdNCrIqetdGjRAtiZLJls,1066
+ugapi-0.1.3.dist-info/METADATA,sha256=39So6m-9Xr03awPPz0PqKRvW84ZjRxanQrj2Iz06E4I,269
+ugapi-0.1.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ugapi-0.1.3.dist-info/top_level.txt,sha256=zi42DTtTPQak0wH7IU3XtEwlfTqUh3gRI_SPYn2014I,6
+ugapi-0.1.3.dist-info/RECORD,,
