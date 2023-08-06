@@ -1,0 +1,6 @@
+README.md
+setup.py
+matrixHandler.egg-info/PKG-INFO
+matrixHandler.egg-info/SOURCES.txt
+matrixHandler.egg-info/dependency_links.txt
+matrixHandler.egg-info/top_level.txt
