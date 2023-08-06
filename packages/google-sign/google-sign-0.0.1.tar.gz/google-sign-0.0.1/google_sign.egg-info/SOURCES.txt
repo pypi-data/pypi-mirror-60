@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+google_sign/__init__.py
+google_sign/google_sign.py
+google_sign.egg-info/PKG-INFO
+google_sign.egg-info/SOURCES.txt
+google_sign.egg-info/dependency_links.txt
+google_sign.egg-info/top_level.txt
