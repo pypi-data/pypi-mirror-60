@@ -1,0 +1,9 @@
+from dj_pony.tenant.polymorphic.base_models import PolymorphicMultipleTenantBaseModel
+from dj_pony.tenant.polymorphic.base_models import PolymorphicSingleTenantBaseModel
+from deprecated import deprecated
+
+
+PolymorphicSingleTenantModelMixin = deprecated(PolymorphicSingleTenantBaseModel)
+
+
+PolymorphicMultipleTenantsModelMixin = deprecated(PolymorphicMultipleTenantBaseModel)
