@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hellobye
+Version: 0.0.1
+Summary: It says "Hello" and "Bye".
+Home-page: http://hellobye.c1.biz
+Author: Tymoteusz Moryto
+Author-email: tymek24m@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Have you ever wanted to say "Hello" or "Bye" to someone using Python, but you were to lazy to do all that stuff?
+Well now you don't need to do all that complicated stuff!
+ With this package you can say "Hello" or "Bye" in a wide variety of **four** options!
+
