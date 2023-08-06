@@ -1,0 +1,7 @@
+acme>=1.0.0
+certbot>=1.1.0
+mock
+PyOpenSSL
+pyparsing>=1.5.5
+setuptools
+zope.interface
