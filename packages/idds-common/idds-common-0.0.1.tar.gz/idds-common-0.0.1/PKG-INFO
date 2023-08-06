@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: idds-common
+Version: 0.0.1
+Summary: intelligent Data Delivery Service(iDDS) Package
+Home-page: UNKNOWN
+Author: IRIS-HEP Team
+Author-email: atlas-adc-panda@cern.ch
+License: GPL
+Project-URL: Source, https://github.com/HSF/iDDS
+Project-URL: Documentation, https://github.com/HSF/iDDS/wiki
+Description: iDDS-common
+        ====
+        
+        iDDS-common subpackage is for iDDS common data structures, common functions.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
