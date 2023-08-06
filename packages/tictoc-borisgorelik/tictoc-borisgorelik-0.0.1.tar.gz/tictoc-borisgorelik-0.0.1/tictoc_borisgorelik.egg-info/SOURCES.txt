@@ -1,0 +1,6 @@
+README.md
+setup.py
+tictoc_borisgorelik.egg-info/PKG-INFO
+tictoc_borisgorelik.egg-info/SOURCES.txt
+tictoc_borisgorelik.egg-info/dependency_links.txt
+tictoc_borisgorelik.egg-info/top_level.txt
