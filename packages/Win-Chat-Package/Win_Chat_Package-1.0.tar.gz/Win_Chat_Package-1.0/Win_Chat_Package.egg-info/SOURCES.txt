@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Testchatpkg/__init__.py
+Win_Chat_Package.egg-info/PKG-INFO
+Win_Chat_Package.egg-info/SOURCES.txt
+Win_Chat_Package.egg-info/dependency_links.txt
+Win_Chat_Package.egg-info/top_level.txt

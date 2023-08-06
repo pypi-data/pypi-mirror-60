@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: Win_Chat_Package
+Version: 1.0
+Summary: Testing package publish
+Home-page: https://github.com/riturajpandey/Win_Chat_Package
+Author: Ashwini Bokade
+Author-email: ashwini_bokade@yahoo.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
