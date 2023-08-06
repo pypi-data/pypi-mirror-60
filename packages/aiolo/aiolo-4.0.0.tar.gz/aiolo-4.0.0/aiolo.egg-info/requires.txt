@@ -1,0 +1,16 @@
+
+[dev]
+uvloop
+netifaces
+pytest
+pytest-asyncio
+pytest-instafail
+
+[examples]
+pyaudio
+
+[test]
+uvloop
+netifaces
+pytest
+pytest-asyncio
