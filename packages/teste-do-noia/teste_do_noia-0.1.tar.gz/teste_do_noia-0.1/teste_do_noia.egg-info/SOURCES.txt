@@ -1,0 +1,10 @@
+README.md
+setup.py
+libpythonpro/__init__.py
+libpythonpro/github_api.py
+teste_do_noia.egg-info/PKG-INFO
+teste_do_noia.egg-info/SOURCES.txt
+teste_do_noia.egg-info/dependency_links.txt
+teste_do_noia.egg-info/not-zip-safe
+teste_do_noia.egg-info/requires.txt
+teste_do_noia.egg-info/top_level.txt

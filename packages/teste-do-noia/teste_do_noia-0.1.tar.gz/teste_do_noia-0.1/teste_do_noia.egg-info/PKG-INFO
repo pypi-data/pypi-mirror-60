@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: teste-do-noia
+Version: 0.1
+Summary: Módulo para exemplificar construção de projetos Python no curso PyTools
+Home-page: https://github.com/Tchucknoia/libpythonpro
+Author: Tiago André Lachman
+Author-email: tiagolachman@gmail.com
+License: GNU AFFERO GENERAL PUBLIC LICENSE
+Description: # libpythonpro
+        
+        MÃ³dulo para exemplificar construÃ§Ã£o de projetos Python
+        
+        Link para o acesso do [Google](https://google.com.br)
+        
+        [![Updates](https://pyup.io/repos/github/Tchucknoia/libpythonpro/shield.svg)](https://pyup.io/repos/github/Tchucknoia/libpythonpro/)
+        [![Python 3](https://pyup.io/repos/github/Tchucknoia/libpythonpro/python-3-shield.svg)](https://pyup.io/repos/github/Tchucknoia/libpythonpro/)
+        
+        Para instalar Windows:
+        ```console
+        python3 -m venv .venv
+        .venv\Scripts\activate
+        pip install -r requirements-dev.txt
+        ```
+        
+        Para conferir qualidade de cÃ³digo:
+        ```console
+        flake8
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Pytest
+Description-Content-Type: text/markdown
