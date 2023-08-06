@@ -1,0 +1,14 @@
+fabric2
+jx-python>=3.38.20029
+mo-collections>=3.38.20029
+mo-dots>=3.33.20028
+mo-files>=3.38.20029
+mo-future>=3.32.20028
+mo-json>=3.38.20029
+mo-kwargs>=3.38.20029
+mo-logs>=3.38.20029
+mo-math>=3.38.20029
+mo-sql>=3.34.20028
+mo-times>=3.38.20029
+pyLibrary>=3.13.20029
+pymysql
