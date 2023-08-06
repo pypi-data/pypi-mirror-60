@@ -1,0 +1,11 @@
+cqpy/__init__.py,sha256=0J1s_GQP6HWVrJtlXJ7QMDNG2bruF6Ldkem0T3n4WBM,1268
+cqpy/_callback.py,sha256=UWhx6DzXFHj0inZ6ioAzQMvduNCNHwBZKaSMtQsVTw0,4369
+cqpy/cqp.py,sha256=OW5TLBv31cm9qekKE6Z1ThuAHYcEWWwfbPOMIhs8_dk,5857
+cqpy/events.py,sha256=srHOS6uCfOMqljjiz48z8elqr2dndsPzCFniv1JvO_M,1711
+cqpy/log.py,sha256=PrfAjsRHN_ZXB5ogFqQNhb30O41k_6dZQ1wbNjeZkxY,190
+cqpy/tutorial.py,sha256=3c-OwZI7YSm52yhHRVx78QHcWh7TpMg8Lpfp8YlzUro,1196
+CQPy-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+CQPy-0.1.1.dist-info/METADATA,sha256=f_M-aoj17VHcuFjdPb-oRNsUcjooV3NduVz1FTzYedw,6705
+CQPy-0.1.1.dist-info/WHEEL,sha256=IWeGwTvdiaNRNtdERe0BHc5KsCqvvVfLuP8HWeQWYGw,97
+CQPy-0.1.1.dist-info/top_level.txt,sha256=A-zH6sKeHAFoDbH1UQCxM15FEWmtltPRVLSWvuuRqro,5
+CQPy-0.1.1.dist-info/RECORD,,
