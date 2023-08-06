@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rscase
+Version: 0.0.1
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Rust
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: General
+Requires-Dist: setuptools-rust>=0.10.6
+Requires-Dist: wheel
+Requires-Dist: toml
+Requires-Dist: setuptools
+Author: Sondre Lillebø Gundersen <sondrelg@live.no>
+Author-Email: Sondre Lillebø Gundersen <sondrelg@live.no>
