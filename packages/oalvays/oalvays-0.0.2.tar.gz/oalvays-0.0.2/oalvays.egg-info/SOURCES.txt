@@ -1,0 +1,11 @@
+README.md
+setup.py
+oalvays/__init__.py
+oalvays.egg-info/PKG-INFO
+oalvays.egg-info/SOURCES.txt
+oalvays.egg-info/dependency_links.txt
+oalvays.egg-info/top_level.txt
+oalvays/general/__init__.py
+oalvays/general/email.py
+oalvays/kaggle/__init__.py
+oalvays/kaggle/reduce_memory_usage.py
