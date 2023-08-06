@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: appthreat-vulndb
+Version: 1.0.0
+Summary: Vulnerability database and package search for sources such as CVE, GitHub, and so on. Uses a built-in tinydb based storage engine.
+Home-page: https://github.com/appthreat/vulndb
+Author: Team AppThreat
+Author-email: cloud@appthreat.com
+License: UNKNOWN
+Description: # Introduction
+        
+        Vulndb is a vulnerability database and package search for sources such as NVD, GitHub and so on. It uses a built-in file based storage to allow offline access.
+        
+        ## Installation
+        
+        ```bash
+        pip install appthreat-vulndb
+        ```
+        
+        ## Usage
+        
+        This package is meant to be used as a library along with another cli based tool such as [dep-scan](http://github.com/AppThreat/dep-scan). However, there is a limited cli capability available with few features to test this tool directly.
+        
+        ### Cache vulnerability data
+        
+        ```bash
+        vdb --cache
+        ```
+        
+        It is possible to customise the cache behaviour by increasing the historic data period to cache by setting the following environment variables.
+        
+        - NVD_START_YEAR - Default: 2016. Supports upto 2002
+        - GITHUB_PAGE_COUNT - Default: 5. Supports upto 20
+        
+        ### Periodic sync
+        
+        To periodically sync the latest vulnerabilities and update the database cache.
+        
+        ```bash
+        vdb --sync
+        ```
+        
+        ### Basic search
+        
+        It is possible to perform simple search using the cli.
+        
+        ```bash
+        vdb --search android:8.0
+        
+        vdb --search android:8.0,simplesamlphp:1.14.11
+        ```
+        
+        Syntax is package:version,package:version
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Utilities
+Classifier: Topic :: Security
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >= 3
+Description-Content-Type: text/markdown
