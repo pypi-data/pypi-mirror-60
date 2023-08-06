@@ -1,0 +1,7 @@
+setup.py
+sgasayhello/__init__.py
+sgasayhello.egg-info/PKG-INFO
+sgasayhello.egg-info/SOURCES.txt
+sgasayhello.egg-info/dependency_links.txt
+sgasayhello.egg-info/not-zip-safe
+sgasayhello.egg-info/top_level.txt
