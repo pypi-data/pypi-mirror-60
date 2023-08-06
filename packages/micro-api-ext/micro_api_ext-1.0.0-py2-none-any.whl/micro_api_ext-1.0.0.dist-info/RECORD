@@ -1,0 +1,10 @@
+micro_api_ext/__init__.py,sha256=iXYXuk9sgxdMOwuGxafK-VmysfpHEtgsCGySrX94xwQ,357
+micro_api_ext/api.py,sha256=TsK2bfVqzCef529Lrm1FUiZY-zNBPh6f6CoWYAA22bY,679
+micro_api_ext/http_exceptions.py,sha256=DjLQDJbCl6g50FxFltxVKxivj62m3ry67u-mt-baC3M,1270
+micro_api_ext/namespace.py,sha256=C0QG_CAgFometVotqt2IOreoTYF4DshoYfLbWZjjzDY,4477
+micro_api_ext/parameters.py,sha256=lDOQGD7eCv5CDnNhc235ZPdui1qC4dFu1xM3OWR9HrU,679
+micro_api_ext/webargs_parser.py,sha256=3UuDoeXg28vyJulWMQ1WOLJPV2Lt9UrWqfQc1Mt6CNA,1318
+micro_api_ext-1.0.0.dist-info/METADATA,sha256=ZJlQtIMv1dj7oPN26lQuofQYD9gMeWjXz7WyrtEPsU0,367
+micro_api_ext-1.0.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+micro_api_ext-1.0.0.dist-info/top_level.txt,sha256=QPPEJ54pp0p8h8xzXZhLBq7SEskHfOAtHKvmvQJN7uM,14
+micro_api_ext-1.0.0.dist-info/RECORD,,
