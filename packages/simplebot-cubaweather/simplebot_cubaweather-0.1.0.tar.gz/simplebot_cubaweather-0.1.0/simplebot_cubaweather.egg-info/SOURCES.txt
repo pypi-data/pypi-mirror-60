@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+simplebot_cubaweather/__init__.py
+simplebot_cubaweather.egg-info/PKG-INFO
+simplebot_cubaweather.egg-info/SOURCES.txt
+simplebot_cubaweather.egg-info/dependency_links.txt
+simplebot_cubaweather.egg-info/entry_points.txt
+simplebot_cubaweather.egg-info/not-zip-safe
+simplebot_cubaweather.egg-info/requires.txt
+simplebot_cubaweather.egg-info/top_level.txt

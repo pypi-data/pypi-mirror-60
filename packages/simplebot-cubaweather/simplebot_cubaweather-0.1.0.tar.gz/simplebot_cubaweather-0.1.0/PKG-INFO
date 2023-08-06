@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: simplebot_cubaweather
+Version: 0.1.0
+Summary: Cuba Weather plugin for SimpleBot (https://github.com/adbenitez/simplebot), a Delta Chat bot (http://delta.chat/)
+Home-page: https://github.com/cuba-weather/cuba-weather-simplebot-plugin
+Author: The SimpleBot Contributors
+Author-email: correaleyval@gmail.com
+License: MIT
+Description: For more info visit https://github.com/adbenitez/simplebot and https://github.com/cuba-weather
+Keywords: deltachat simplebot plugin cuba-weather
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
