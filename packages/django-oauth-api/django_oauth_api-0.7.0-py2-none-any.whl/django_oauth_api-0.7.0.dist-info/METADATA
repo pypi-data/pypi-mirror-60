@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: django-oauth-api
+Version: 0.7.0
+Summary: OAuth API for Django using Django Rest Framework
+Home-page: https://github.com/eofs/django-oauth-api
+Author: Tomi Pajunen
+Author-email: tomi@madlab.fi
+License: BSD
+Keywords: django djangorestframework oauth oauth2 oauthlib
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: django (>=2.0)
+Requires-Dist: djangorestframework (>=3.10)
+Requires-Dist: oauthlib (==2.0.7)
+
+UNKNOWN
+
+
