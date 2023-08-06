@@ -1,0 +1,12 @@
+nexusformat>=0.5.1
+numpy
+scipy
+h5py
+qtconsole
+ipython
+matplotlib
+ansi2html
+pillow
+
+[spec]
+spec2nexus>=2017.901.4
