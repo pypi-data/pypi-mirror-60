@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+terminal_colorizer/__init__.py
+terminal_colorizer/controller.py
+terminal_colorizer/settings.py
+terminal_colorizer.egg-info/PKG-INFO
+terminal_colorizer.egg-info/SOURCES.txt
+terminal_colorizer.egg-info/dependency_links.txt
+terminal_colorizer.egg-info/not-zip-safe
+terminal_colorizer.egg-info/top_level.txt
