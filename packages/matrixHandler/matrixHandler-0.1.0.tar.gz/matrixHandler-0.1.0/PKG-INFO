@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: matrixHandler
+Version: 0.1.0
+Summary: a small module which adds a Matrix class to be used as a new data type
+Home-page: https://github.com/EliotMcNab/pyMatrix.git
+Author: Eliot McNab
+Author-email: 
+License: MIT
+Description: MATRIXHANDLER
+        =============
+        
+        A small module which adds you to manipulate matrixes in Python3.
+        Code is still under development,features such as matrix division and power TBA.
+        
+        The code is made for Python3
+        
+        Installation
+        ------------
+        
+        ```
+        $ pip install -i https://test.pypi.org/simple/ matrixHandler
+        ```
+        
+        Example
+        -------
+        
+        ```python
+        from pymatrix import matrix
+        
+        # creates a 2x3 matrix based on a list
+        matrix1 = Matrice([[1, 2],[3, 4],[5, 6]])
+        
+        # creates another 3x2 matrix
+        matrix2 = Matrice([[10, 9, 8], [7, 6, 5]])
+        
+        # multiples both matrixes
+        multMatrix = matrix1 * matrix2
+        
+        # displays the result
+        print(multMatrix)
+        ```
+        
+        Output:
+        -------
+        
+        ```python
+        [14, 12]
+        [28, 24]
+        [42, 36]
+        ```
+Keywords: Matrix,Matrixes,Mathemacis,Maths,Algebra
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
