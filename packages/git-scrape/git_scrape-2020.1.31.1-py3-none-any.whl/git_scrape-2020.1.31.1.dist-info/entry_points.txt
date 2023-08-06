@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    git-scrape=git_scrape:do_it
+    
