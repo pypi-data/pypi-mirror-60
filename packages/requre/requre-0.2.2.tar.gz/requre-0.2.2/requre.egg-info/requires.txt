@@ -1,0 +1,6 @@
+PyYAML
+requests
+click
+
+[testing]
+pytest
