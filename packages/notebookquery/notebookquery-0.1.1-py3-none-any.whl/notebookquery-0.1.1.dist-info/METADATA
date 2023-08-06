@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: notebookquery
+Version: 0.1.1
+Summary: SQL integration and table display for ipython notebooks
+Author: Robert Lechte
+Author-email: robert.lechte@dpc.vic.gov.au
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: nouns
+Requires-Dist: results
+Description-Content-Type: text/markdown
+
+# `notebookquery`: SQL integration and table display for IPython notebooks
+
+Install with `pip`:
+
+```bash
+pip install notebookquery
+```
+
+Then just import into a notebook:
+
+```python
+import notebookquery
+```
+
+From there you can choose a database with `%db` at the start of a cell, for instance:
+
+```python
+%db postgresql:///example
+```
+
+Then write a query with `%%sql`:
+
+```python
+%%sql
+
+select * from example_table;
+```
+
+
