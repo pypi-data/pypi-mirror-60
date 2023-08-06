@@ -1,0 +1,379 @@
+README.md
+setup.py
+dtrspnsy/__init__.py
+dtrspnsy/__main__.py
+dtrspnsy/config_wikiEN.py
+dtrspnsy/config_wikiRU.py
+dtrspnsy/config_wikiZH.py
+dtrspnsy/dtrspnsy.py
+dtrspnsy/parse_wikiEN.py
+dtrspnsy/parse_wikiRU.py
+dtrspnsy/parse_wikiZH.py
+dtrspnsy/strutils_wiki.py
+dtrspnsy.egg-info/PKG-INFO
+dtrspnsy.egg-info/SOURCES.txt
+dtrspnsy.egg-info/dependency_links.txt
+dtrspnsy.egg-info/entry_points.txt
+dtrspnsy.egg-info/requires.txt
+dtrspnsy.egg-info/top_level.txt
+dtrspnsy/en_replics/Abaddon.json
+dtrspnsy/en_replics/Acolyte of the Lost Arts.json
+dtrspnsy/en_replics/Alchemist.json
+dtrspnsy/en_replics/Ancient Apparition.json
+dtrspnsy/en_replics/Announcer responses.json
+dtrspnsy/en_replics/Anti-Mage.json
+dtrspnsy/en_replics/Arc Warden.json
+dtrspnsy/en_replics/Axe Announcer Pack.json
+dtrspnsy/en_replics/Axe Unleashed.json
+dtrspnsy/en_replics/Axe.json
+dtrspnsy/en_replics/Bane.json
+dtrspnsy/en_replics/Bastion Announcer Pack.json
+dtrspnsy/en_replics/Batrider.json
+dtrspnsy/en_replics/Beastmaster.json
+dtrspnsy/en_replics/Bloodseeker.json
+dtrspnsy/en_replics/Bounty Hunter.json
+dtrspnsy/en_replics/Brewmaster.json
+dtrspnsy/en_replics/Bristleback Announcer Pack.json
+dtrspnsy/en_replics/Bristleback.json
+dtrspnsy/en_replics/Broodmother.json
+dtrspnsy/en_replics/Call of the Bladeform Legacy.json
+dtrspnsy/en_replics/Centaur Warrunner.json
+dtrspnsy/en_replics/Chaos Knight.json
+dtrspnsy/en_replics/Chen.json
+dtrspnsy/en_replics/Clinkz.json
+dtrspnsy/en_replics/Clockwerk Announcer Pack.json
+dtrspnsy/en_replics/Clockwerk.json
+dtrspnsy/en_replics/Crystal Maiden Announcer Pack.json
+dtrspnsy/en_replics/Crystal Maiden.json
+dtrspnsy/en_replics/Dark Seer.json
+dtrspnsy/en_replics/Dark Willow Announcer Pack.json
+dtrspnsy/en_replics/Dark Willow.json
+dtrspnsy/en_replics/Darkest Dungeon Announcer Pack (ft. Wayne June).json
+dtrspnsy/en_replics/Dazzle.json
+dtrspnsy/en_replics/Death Prophet.json
+dtrspnsy/en_replics/Defense Grid Announcer Pack.json
+dtrspnsy/en_replics/Deus Ex Announcer Pack.json
+dtrspnsy/en_replics/Disruptor.json
+dtrspnsy/en_replics/Doom.json
+dtrspnsy/en_replics/Dragon Knight.json
+dtrspnsy/en_replics/Drow Ranger.json
+dtrspnsy/en_replics/Earth Spirit.json
+dtrspnsy/en_replics/Earthshaker.json
+dtrspnsy/en_replics/Elder Titan.json
+dtrspnsy/en_replics/Ember Spirit.json
+dtrspnsy/en_replics/Enchantress.json
+dtrspnsy/en_replics/Enigma.json
+dtrspnsy/en_replics/Faceless Void.json
+dtrspnsy/en_replics/Fallout 4 Announcer Pack.json
+dtrspnsy/en_replics/Feast of Abscession.json
+dtrspnsy/en_replics/Grimstroke.json
+dtrspnsy/en_replics/Gyrocopter.json
+dtrspnsy/en_replics/Huskar.json
+dtrspnsy/en_replics/Invoker.json
+dtrspnsy/en_replics/Io.json
+dtrspnsy/en_replics/Jakiro.json
+dtrspnsy/en_replics/Juggernaut Announcer Pack.json
+dtrspnsy/en_replics/Juggernaut.json
+dtrspnsy/en_replics/Keeper of the Light.json
+dtrspnsy/en_replics/Kunkka & Tidehunter Announcer Pack.json
+dtrspnsy/en_replics/Kunkka.json
+dtrspnsy/en_replics/Legion Commander.json
+dtrspnsy/en_replics/Leshrac.json
+dtrspnsy/en_replics/Lich.json
+dtrspnsy/en_replics/Lifestealer.json
+dtrspnsy/en_replics/Lina Announcer Pack.json
+dtrspnsy/en_replics/Lina.json
+dtrspnsy/en_replics/Lion.json
+dtrspnsy/en_replics/Lone Druid.json
+dtrspnsy/en_replics/Luna.json
+dtrspnsy/en_replics/Lycan.json
+dtrspnsy/en_replics/Magnus.json
+dtrspnsy/en_replics/Mars.json
+dtrspnsy/en_replics/Medusa.json
+dtrspnsy/en_replics/Meepo Announcer Pack.json
+dtrspnsy/en_replics/Meepo.json
+dtrspnsy/en_replics/Mercurial's Call.json
+dtrspnsy/en_replics/Mirana.json
+dtrspnsy/en_replics/Monkey King Announcer Pack.json
+dtrspnsy/en_replics/Monkey King.json
+dtrspnsy/en_replics/Morphling.json
+dtrspnsy/en_replics/Naga Siren.json
+dtrspnsy/en_replics/Nature's Prophet Announcer Pack.json
+dtrspnsy/en_replics/Nature's Prophet.json
+dtrspnsy/en_replics/Necrophos.json
+dtrspnsy/en_replics/Night Stalker.json
+dtrspnsy/en_replics/Nyx Assassin.json
+dtrspnsy/en_replics/Ogre Magi.json
+dtrspnsy/en_replics/Omniknight.json
+dtrspnsy/en_replics/Oracle.json
+dtrspnsy/en_replics/Outworld Devourer.json
+dtrspnsy/en_replics/Pangolier.json
+dtrspnsy/en_replics/Phantom Assassin.json
+dtrspnsy/en_replics/Phantom Lancer.json
+dtrspnsy/en_replics/Phoenix.json
+dtrspnsy/en_replics/Planetfall.json
+dtrspnsy/en_replics/Portal Pack.json
+dtrspnsy/en_replics/Puck.json
+dtrspnsy/en_replics/Pudge.json
+dtrspnsy/en_replics/Pugna.json
+dtrspnsy/en_replics/Pyrion Flax Announcer Pack.json
+dtrspnsy/en_replics/Queen of Pain.json
+dtrspnsy/en_replics/Razor.json
+dtrspnsy/en_replics/Rick and Morty Announcer Pack.json
+dtrspnsy/en_replics/Riki.json
+dtrspnsy/en_replics/Rubick.json
+dtrspnsy/en_replics/Sand King.json
+dtrspnsy/en_replics/Shadow Demon.json
+dtrspnsy/en_replics/Shadow Fiend.json
+dtrspnsy/en_replics/Shadow Shaman.json
+dtrspnsy/en_replics/Shopkeeper responses.json
+dtrspnsy/en_replics/Silencer.json
+dtrspnsy/en_replics/Skeleton King.json
+dtrspnsy/en_replics/Skywrath Mage.json
+dtrspnsy/en_replics/Slardar.json
+dtrspnsy/en_replics/Slark.json
+dtrspnsy/en_replics/Snapfire.json
+dtrspnsy/en_replics/Sniper.json
+dtrspnsy/en_replics/Spectre.json
+dtrspnsy/en_replics/Spirit Breaker.json
+dtrspnsy/en_replics/Storm Spirit Announcer Pack.json
+dtrspnsy/en_replics/Storm Spirit.json
+dtrspnsy/en_replics/Sven.json
+dtrspnsy/en_replics/Techies' Bombastic Box.json
+dtrspnsy/en_replics/Techies.json
+dtrspnsy/en_replics/Templar Assassin.json
+dtrspnsy/en_replics/Terrorblade.json
+dtrspnsy/en_replics/The Pirate Cap'n Announcer Pack.json
+dtrspnsy/en_replics/The Stanley Parable Announcer Pack.json
+dtrspnsy/en_replics/Tidehunter.json
+dtrspnsy/en_replics/Timbersaw.json
+dtrspnsy/en_replics/Tinker.json
+dtrspnsy/en_replics/Tiny.json
+dtrspnsy/en_replics/Treant Protector.json
+dtrspnsy/en_replics/Trine Announcer Pack.json
+dtrspnsy/en_replics/Troll Warlord.json
+dtrspnsy/en_replics/Tusk.json
+dtrspnsy/en_replics/Underlord.json
+dtrspnsy/en_replics/Undying.json
+dtrspnsy/en_replics/Ursa.json
+dtrspnsy/en_replics/Vengeful Spirit.json
+dtrspnsy/en_replics/Venomancer.json
+dtrspnsy/en_replics/Viper.json
+dtrspnsy/en_replics/Visage.json
+dtrspnsy/en_replics/Voice of Flockheart's Gamble.json
+dtrspnsy/en_replics/Voice of the Magus Cypher.json
+dtrspnsy/en_replics/Void Spirit.json
+dtrspnsy/en_replics/Warlock's Golem.json
+dtrspnsy/en_replics/Warlock.json
+dtrspnsy/en_replics/Weaver.json
+dtrspnsy/en_replics/Windranger.json
+dtrspnsy/en_replics/Winter Wyvern.json
+dtrspnsy/en_replics/Witch Doctor.json
+dtrspnsy/en_replics/Wraith King.json
+dtrspnsy/en_replics/Zeus.json
+dtrspnsy/ru_replics/Abaddon.json
+dtrspnsy/ru_replics/Acolyte of the Lost Arts.json
+dtrspnsy/ru_replics/Alchemist.json
+dtrspnsy/ru_replics/Ancient Apparition.json
+dtrspnsy/ru_replics/Anti-Mage.json
+dtrspnsy/ru_replics/Arc Warden.json
+dtrspnsy/ru_replics/Axe Unleashed.json
+dtrspnsy/ru_replics/Axe.json
+dtrspnsy/ru_replics/Bane.json
+dtrspnsy/ru_replics/Batrider.json
+dtrspnsy/ru_replics/Beastmaster.json
+dtrspnsy/ru_replics/Bloodseeker.json
+dtrspnsy/ru_replics/Bounty Hunter.json
+dtrspnsy/ru_replics/Brewmaster.json
+dtrspnsy/ru_replics/Bristleback.json
+dtrspnsy/ru_replics/Broodmother.json
+dtrspnsy/ru_replics/Centaur Warrunner.json
+dtrspnsy/ru_replics/Chaos Knight.json
+dtrspnsy/ru_replics/Chen.json
+dtrspnsy/ru_replics/Clinkz.json
+dtrspnsy/ru_replics/Clockwerk.json
+dtrspnsy/ru_replics/Crystal Maiden.json
+dtrspnsy/ru_replics/Dark Seer.json
+dtrspnsy/ru_replics/Dark Willow.json
+dtrspnsy/ru_replics/Dazzle.json
+dtrspnsy/ru_replics/Death Prophet.json
+dtrspnsy/ru_replics/Disruptor.json
+dtrspnsy/ru_replics/Doom.json
+dtrspnsy/ru_replics/Dragon Knight.json
+dtrspnsy/ru_replics/Drow Ranger.json
+dtrspnsy/ru_replics/Earth Spirit.json
+dtrspnsy/ru_replics/Earthshaker.json
+dtrspnsy/ru_replics/Elder Titan.json
+dtrspnsy/ru_replics/Ember Spirit.json
+dtrspnsy/ru_replics/Enchantress.json
+dtrspnsy/ru_replics/Enigma.json
+dtrspnsy/ru_replics/Faceless Void.json
+dtrspnsy/ru_replics/Feast of Abscession.json
+dtrspnsy/ru_replics/Grimstroke.json
+dtrspnsy/ru_replics/Gyrocopter.json
+dtrspnsy/ru_replics/Huskar.json
+dtrspnsy/ru_replics/Invoker.json
+dtrspnsy/ru_replics/Io.json
+dtrspnsy/ru_replics/Jakiro.json
+dtrspnsy/ru_replics/Juggernaut.json
+dtrspnsy/ru_replics/Keeper of the Light.json
+dtrspnsy/ru_replics/Kunkka.json
+dtrspnsy/ru_replics/Legion Commander.json
+dtrspnsy/ru_replics/Leshrac.json
+dtrspnsy/ru_replics/Lich.json
+dtrspnsy/ru_replics/Lifestealer.json
+dtrspnsy/ru_replics/Lina.json
+dtrspnsy/ru_replics/Lion.json
+dtrspnsy/ru_replics/Lone Druid.json
+dtrspnsy/ru_replics/Luna.json
+dtrspnsy/ru_replics/Lycan.json
+dtrspnsy/ru_replics/Magnus.json
+dtrspnsy/ru_replics/Mars.json
+dtrspnsy/ru_replics/Medusa.json
+dtrspnsy/ru_replics/Meepo.json
+dtrspnsy/ru_replics/Mirana.json
+dtrspnsy/ru_replics/Monkey King.json
+dtrspnsy/ru_replics/Morphling.json
+dtrspnsy/ru_replics/Naga Siren.json
+dtrspnsy/ru_replics/Nature's Prophet.json
+dtrspnsy/ru_replics/Necrophos.json
+dtrspnsy/ru_replics/Night Stalker.json
+dtrspnsy/ru_replics/Nyx Assassin.json
+dtrspnsy/ru_replics/Ogre Magi.json
+dtrspnsy/ru_replics/Omniknight.json
+dtrspnsy/ru_replics/Oracle.json
+dtrspnsy/ru_replics/Outworld Devourer.json
+dtrspnsy/ru_replics/Pangolier.json
+dtrspnsy/ru_replics/Phantom Assassin.json
+dtrspnsy/ru_replics/Phantom Lancer.json
+dtrspnsy/ru_replics/Phoenix.json
+dtrspnsy/ru_replics/Planetfall.json
+dtrspnsy/ru_replics/Puck.json
+dtrspnsy/ru_replics/Pudge.json
+dtrspnsy/ru_replics/Pugna.json
+dtrspnsy/ru_replics/Queen of Pain.json
+dtrspnsy/ru_replics/Razor.json
+dtrspnsy/ru_replics/Riki.json
+dtrspnsy/ru_replics/Rubick.json
+dtrspnsy/ru_replics/Sand King.json
+dtrspnsy/ru_replics/Shadow Demon.json
+dtrspnsy/ru_replics/Shadow Fiend.json
+dtrspnsy/ru_replics/Shadow Shaman.json
+dtrspnsy/ru_replics/Silencer.json
+dtrspnsy/ru_replics/Skeleton King.json
+dtrspnsy/ru_replics/Skywrath Mage.json
+dtrspnsy/ru_replics/Slardar.json
+dtrspnsy/ru_replics/Slark.json
+dtrspnsy/ru_replics/Snapfire.json
+dtrspnsy/ru_replics/Sniper.json
+dtrspnsy/ru_replics/Spectre.json
+dtrspnsy/ru_replics/Spirit Breaker.json
+dtrspnsy/ru_replics/Storm Spirit.json
+dtrspnsy/ru_replics/Sven.json
+dtrspnsy/ru_replics/Techies.json
+dtrspnsy/ru_replics/Templar Assassin.json
+dtrspnsy/ru_replics/Terrorblade.json
+dtrspnsy/ru_replics/Tidehunter.json
+dtrspnsy/ru_replics/Timbersaw.json
+dtrspnsy/ru_replics/Tinker.json
+dtrspnsy/ru_replics/Tiny.json
+dtrspnsy/ru_replics/Treant Protector.json
+dtrspnsy/ru_replics/Troll Warlord.json
+dtrspnsy/ru_replics/Tusk.json
+dtrspnsy/ru_replics/Underlord.json
+dtrspnsy/ru_replics/Undying.json
+dtrspnsy/ru_replics/Ursa.json
+dtrspnsy/ru_replics/Vengeful Spirit.json
+dtrspnsy/ru_replics/Venomancer.json
+dtrspnsy/ru_replics/Viper.json
+dtrspnsy/ru_replics/Visage.json
+dtrspnsy/ru_replics/Void Spirit.json
+dtrspnsy/ru_replics/Warlock's Golem.json
+dtrspnsy/ru_replics/Warlock.json
+dtrspnsy/ru_replics/Weaver.json
+dtrspnsy/ru_replics/Windranger.json
+dtrspnsy/ru_replics/Winter Wyvern.json
+dtrspnsy/ru_replics/Witch Doctor.json
+dtrspnsy/ru_replics/Wraith King.json
+dtrspnsy/ru_replics/Zeus.json
+dtrspnsy/zh_replics/上古巨神.json
+dtrspnsy/zh_replics/不朽尸王.json
+dtrspnsy/zh_replics/主宰.json
+dtrspnsy/zh_replics/亚巴顿.json
+dtrspnsy/zh_replics/伐木机.json
+dtrspnsy/zh_replics/修补匠.json
+dtrspnsy/zh_replics/先知.json
+dtrspnsy/zh_replics/全能骑士.json
+dtrspnsy/zh_replics/兽王.json
+dtrspnsy/zh_replics/军团指挥官.json
+dtrspnsy/zh_replics/冥界亚龙.json
+dtrspnsy/zh_replics/冥魂大帝.json
+dtrspnsy/zh_replics/剃刀.json
+dtrspnsy/zh_replics/剧毒术士.json
+dtrspnsy/zh_replics/力丸.json
+dtrspnsy/zh_replics/卓尔游侠.json
+dtrspnsy/zh_replics/发条技师.json
+dtrspnsy/zh_replics/变体精灵.json
+dtrspnsy/zh_replics/哈斯卡.json
+dtrspnsy/zh_replics/噬魂鬼.json
+dtrspnsy/zh_replics/复仇之魂.json
+dtrspnsy/zh_replics/天怒法师.json
+dtrspnsy/zh_replics/天穹守望者.json
+dtrspnsy/zh_replics/孽主.json
+dtrspnsy/zh_replics/宙斯.json
+dtrspnsy/zh_replics/小小.json
+dtrspnsy/zh_replics/巫医.json
+dtrspnsy/zh_replics/巫妖.json
+dtrspnsy/zh_replics/帕克.json
+dtrspnsy/zh_replics/帕吉.json
+dtrspnsy/zh_replics/帕格纳.json
+dtrspnsy/zh_replics/幻影刺客.json
+dtrspnsy/zh_replics/幽鬼.json
+dtrspnsy/zh_replics/影魔.json
+dtrspnsy/zh_replics/戴泽.json
+dtrspnsy/zh_replics/拉席克.json
+dtrspnsy/zh_replics/撼地者.json
+dtrspnsy/zh_replics/敌法师.json
+dtrspnsy/zh_replics/斧王.json
+dtrspnsy/zh_replics/斯拉达.json
+dtrspnsy/zh_replics/斯温.json
+dtrspnsy/zh_replics/昆卡.json
+dtrspnsy/zh_replics/暗夜魔王.json
+dtrspnsy/zh_replics/暗影萨满.json
+dtrspnsy/zh_replics/末日使者.json
+dtrspnsy/zh_replics/术士.json
+dtrspnsy/zh_replics/杰奇洛.json
+dtrspnsy/zh_replics/死亡先知.json
+dtrspnsy/zh_replics/殁境神蚀者.json
+dtrspnsy/zh_replics/水晶室女.json
+dtrspnsy/zh_replics/沉默术士.json
+dtrspnsy/zh_replics/沙王.json
+dtrspnsy/zh_replics/混沌骑士.json
+dtrspnsy/zh_replics/潮汐猎人.json
+dtrspnsy/zh_replics/灰烬之灵.json
+dtrspnsy/zh_replics/炼金术士.json
+dtrspnsy/zh_replics/熊战士.json
+dtrspnsy/zh_replics/狙击手.json
+dtrspnsy/zh_replics/狼人.json
+dtrspnsy/zh_replics/痛苦女王.json
+dtrspnsy/zh_replics/瘟疫法师.json
+dtrspnsy/zh_replics/祸乱之源.json
+dtrspnsy/zh_replics/米拉娜.json
+dtrspnsy/zh_replics/编织者.json
+dtrspnsy/zh_replics/育母蜘蛛.json
+dtrspnsy/zh_replics/莉娜.json
+dtrspnsy/zh_replics/莱恩.json
+dtrspnsy/zh_replics/虚空假面.json
+dtrspnsy/zh_replics/蝙蝠骑士.json
+dtrspnsy/zh_replics/血魔.json
+dtrspnsy/zh_replics/裂魂人.json
+dtrspnsy/zh_replics/谜团.json
+dtrspnsy/zh_replics/远古冰魄.json
+dtrspnsy/zh_replics/陈.json
+dtrspnsy/zh_replics/风暴之灵.json
+dtrspnsy/zh_replics/风行者.json
+dtrspnsy/zh_replics/马格纳斯.json
+dtrspnsy/zh_replics/骷髅王.json
+dtrspnsy/zh_replics/黑暗贤者.json
+dtrspnsy/zh_replics/齐天大圣.json
+dtrspnsy/zh_replics/龙骑士.json
