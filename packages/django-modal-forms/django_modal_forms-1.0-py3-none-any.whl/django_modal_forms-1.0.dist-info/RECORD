@@ -1,0 +1,10 @@
+modal_forms/__init__.py,sha256=SCFWW5lT5GuBkS3ZF8QKrajORTYmZVwyeapGDy95WgE,34
+modal_forms/apps.py,sha256=g4eNQzo-16yYH7QPyDDYB7XsvW-em7KJB0d4O69qdE0,130
+modal_forms/modal_form.py,sha256=V0rFcOm86KWD8waqpTgbWMnfltWc_IQGvEdAYoo4QBI,2166
+modal_forms/static/modal_forms/js/script.js,sha256=jcBZI-Xd5BMPvCcaGDu-ujNpFllux1PZgJlZ1TBU5aA,2916
+modal_forms/templates/modal_forms/bootstrap3/form_horizontal.html,sha256=R785Nk1ZqTwxwm1IdB7OLfU82Tfv9RDsj8WYdcTNXRw,1749
+django_modal_forms-1.0.dist-info/LICENSE,sha256=NeZnTa0giMz9JHgjP5rF3tFwnoa5LDIEr7wmnPuV3Ek,1068
+django_modal_forms-1.0.dist-info/METADATA,sha256=hrHw9c-lPVc4_CxSJmkg0wo2uIkjK1H0JZF6FH4tBk4,619
+django_modal_forms-1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_modal_forms-1.0.dist-info/top_level.txt,sha256=3uJGpdLGO-zvcKXaHM-LfnzcuQlHjSNHfaSI13_Gm-k,12
+django_modal_forms-1.0.dist-info/RECORD,,
