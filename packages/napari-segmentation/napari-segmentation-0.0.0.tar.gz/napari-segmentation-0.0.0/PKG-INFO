@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: napari-segmentation
+Version: 0.0.0
+Summary: napari segmentation plugin.
+Home-page: https://github.com/sofroniewn/napari-segmentation
+Author: Nicholas Sofroniew
+Author-email: sofroniewn@gmail.com
+License: BSD 3-Clause
+Description: UNKNOWN
+Keywords: napari,napari-plugins,segmentation
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Utilities
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
