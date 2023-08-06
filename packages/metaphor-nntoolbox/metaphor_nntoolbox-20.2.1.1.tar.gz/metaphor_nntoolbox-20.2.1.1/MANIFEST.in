@@ -1,0 +1,10 @@
+include ez_setup.py
+include metaphor/cythonlist.txt
+include metaphor/version_nntoolbox.py
+#exclude metaphor/todo.py
+#
+#  Installation of nntoolbox
+#
+recursive-include metaphor/nntoolbox *.py *.c
+#
+exclude metaphor/nntoolbox/datareader/ODSReader.py
