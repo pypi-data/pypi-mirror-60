@@ -1,0 +1,15 @@
+pandas
+psycopg2-binary
+boto3
+awscli
+oss2
+click
+python-dotenv
+PyAthena
+dask
+dask[dataframe]
+fsspec
+
+[dev]
+pytest
+tox
