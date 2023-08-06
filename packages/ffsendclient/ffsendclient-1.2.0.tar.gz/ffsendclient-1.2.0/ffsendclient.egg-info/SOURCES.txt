@@ -1,0 +1,9 @@
+README.md
+setup.py
+ffsendclient/__init__.py
+ffsendclient/ffsendclient.py
+ffsendclient.egg-info/PKG-INFO
+ffsendclient.egg-info/SOURCES.txt
+ffsendclient.egg-info/dependency_links.txt
+ffsendclient.egg-info/requires.txt
+ffsendclient.egg-info/top_level.txt
