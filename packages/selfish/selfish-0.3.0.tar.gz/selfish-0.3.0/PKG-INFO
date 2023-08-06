@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: selfish
+Version: 0.3.0
+Summary: implicit self
+Home-page: https://github.com/dpep/py_selfish
+Author: Daniel Pepper
+License: MIT
+Description: selfish
+        ======
+        Making 'self' implicit, because even Java did a better job at this.
+        
+        
+        ### Install
+        ```pip install selfish```
+        
+        
+        ### Usage
+        ```python
+        @selfish
+        class Foo():
+            def __init__(val): self.val = val
+        
+            def val(): return self.val
+        
+            @classmethod
+            def klass(): return self
+        
+        
+        Foo(1).val()
+        > 1
+        
+        Foo.klass()
+        > Foo
+        ```
+        
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
