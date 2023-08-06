@@ -1,0 +1,9 @@
+tqdm
+lightkurve
+astropy
+astroquery
+sklearn
+setuptools>=41.0.0
+tensorflow>=2.0.0
+vaneska
+beautifulsoup4>=4.6.0
