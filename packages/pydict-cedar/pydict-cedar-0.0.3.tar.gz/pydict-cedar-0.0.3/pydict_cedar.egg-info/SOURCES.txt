@@ -1,0 +1,8 @@
+README.md
+pydict.py
+setup.py
+pydict_cedar.egg-info/PKG-INFO
+pydict_cedar.egg-info/SOURCES.txt
+pydict_cedar.egg-info/dependency_links.txt
+pydict_cedar.egg-info/requires.txt
+pydict_cedar.egg-info/top_level.txt
