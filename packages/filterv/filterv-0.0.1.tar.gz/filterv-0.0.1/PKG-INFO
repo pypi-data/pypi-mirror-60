@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: filterv
+Version: 0.0.1
+Summary: Visualizing what the filter values do to an image made easy! Just a few steps and you're good to go!
+Home-page: https://github.com/ParthikB/filterv
+Author: Parthik Bhandari
+Author-email: connect2parthik@gmail.com
+License: MIT
+Download-URL: https://github.com/ParthikB/filterv/archive/v0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: filter,visual,machine learning,CNN,Convolutional,images,plot
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
