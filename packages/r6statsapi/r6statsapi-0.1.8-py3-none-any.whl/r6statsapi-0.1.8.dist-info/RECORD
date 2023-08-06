@@ -1,0 +1,10 @@
+r6statsapi/__init__.py,sha256=d43SW__JM3BvlbPLrBnohodFvv-uVvszjw09wcjmoOw,1083
+r6statsapi/client.py,sha256=DzbK2j-ZtRpLf5f8uo7MiL4E1HTtSTN1XFlOIctZ740,6289
+r6statsapi/enums.py,sha256=BvdcVQGVsbEIZuE0FXsVF0FDut4cO4i9Rt2TOMdDwrg,1094
+r6statsapi/errors.py,sha256=OObsnQ2X0-DJG6ft6h7PD-NqpZRJy_M2s8Dl3XjvgHY,1312
+r6statsapi/player.py,sha256=uHA6j9c8f0lSbBoLxqK8A-C1STbYpBSWCTcsvzpNSog,7549
+r6statsapi-0.1.8.dist-info/LICENSE,sha256=3rBYN3cfbFujhLA7VVYYdHKy4h9c234DBM9xkcnMJwk,1063
+r6statsapi-0.1.8.dist-info/METADATA,sha256=b7_Yd-qrYPM9PHOyAnZhrxSPG5t5JnU3ozDCSomAFuM,1577
+r6statsapi-0.1.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+r6statsapi-0.1.8.dist-info/top_level.txt,sha256=3gKrOr_M6NqJPpP0KFrfPNa5VN6GihFS6zirGJJeq-A,11
+r6statsapi-0.1.8.dist-info/RECORD,,
