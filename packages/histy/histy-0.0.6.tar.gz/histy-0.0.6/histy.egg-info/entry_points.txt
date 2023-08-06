@@ -1,0 +1,3 @@
+[console_scripts]
+histy = histy.histy:main
+
