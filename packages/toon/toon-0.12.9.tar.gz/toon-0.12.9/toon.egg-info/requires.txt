@@ -1,0 +1,36 @@
+numpy
+psutil
+
+[birds]
+pyserial
+
+[cyberglove]
+pyserial
+
+[demo]
+pynput
+matplotlib
+pyqtgraph
+
+[force]
+
+[force:platform_system == "Windows"]
+nidaqmx
+
+[full]
+pynput
+matplotlib
+pyqtgraph
+pyserial
+hidapi
+pyusb
+
+[full:platform_system == "Windows"]
+nidaqmx
+
+[hand]
+hidapi
+pyusb
+
+[key_mouse]
+pynput
