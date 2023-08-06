@@ -1,0 +1,3 @@
+[console_scripts]
+GoogleTrans = GoogleTrans2020:terminal
+

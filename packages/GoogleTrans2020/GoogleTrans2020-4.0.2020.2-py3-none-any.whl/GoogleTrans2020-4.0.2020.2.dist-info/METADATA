@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: GoogleTrans2020
+Version: 4.0.2020.2
+Summary: A Free Google Translate Tool
+Home-page: https://github.com/wingram01
+Author: Andrew Luo
+Author-email: luoyanze07@gmail.com
+License: UNKNOWN
+Keywords: Google,Translator,2020
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: JavaScript
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet
+Requires-Dist: PyExecJs
+Requires-Dist: requests
+Requires-Dist: playsound
+Requires-Dist: pyperclip
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](http://t.cn/A6P3qXED)
+to write your content.
+
+
