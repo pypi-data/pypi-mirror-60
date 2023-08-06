@@ -1,0 +1,15 @@
+sqlite_rx/__init__.py,sha256=20qPILhdGLb_pl8DkK_LBXe6uhB_6e64yYyeD94Av-o,1221
+sqlite_rx/auth.py,sha256=rxMHz0dxsEhBEPtB3zRg6-MCqeEsim5X5_SrU09u7z0,10101
+sqlite_rx/client.py,sha256=HjdlCqtpJ8bH7hSxPexGxdMxtnHgtx4-qc6ENZsdb-k,6816
+sqlite_rx/exception.py,sha256=q2jW2QYdncBD-CdW3Dpte3_AYy0XFaAx84qcXKnaTXQ,404
+sqlite_rx/server.py,sha256=DRuJGDHqNVdhCbuqdfQPLrRr4BCYdcAXdQ_Uo9Y45Qo,10000
+sqlite_rx/utils.py,sha256=yKBDCdRt8Ifq1AcKkZyc0uThDefbRPKEcshN1C8jYdo,725
+sqlite_rx/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlite_rx/tests/test_authenticated_server.py,sha256=0aKSNtMlD0UUXVwg3qaBLY9ro3BEATnjFVCssUGBc28,16827
+sqlite_rx/tests/test_curve_key_gen.py,sha256=bWE9NJ1RBT5jSq6WECLRccdIwtRXMm-UjuiBdtZs6Nc,817
+sqlite_rx/tests/test_unauthenticated_server.py,sha256=6H7H9IptY1QmN8H_4j9XnljF9C54fnIkypUhyubOf8M,3636
+sqlite_rx-0.9.95.data/scripts/curve-keygen,sha256=1rWvP48SO_h0CG9BII4GoDT0MjJ44d6PtO58jJ5DTYM,982
+sqlite_rx-0.9.95.dist-info/METADATA,sha256=HGVVpPO-QNeheqOubX1D5BzPJGVc-tPVkHcHA-pa5J4,10060
+sqlite_rx-0.9.95.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sqlite_rx-0.9.95.dist-info/top_level.txt,sha256=-8GQ3G5EdFOWH9ECskG218Y5dygC1C5-xtSJPRFllK0,10
+sqlite_rx-0.9.95.dist-info/RECORD,,
