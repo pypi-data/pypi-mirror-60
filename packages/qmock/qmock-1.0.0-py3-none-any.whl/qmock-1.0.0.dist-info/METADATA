@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: qmock
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Alex Jacobs
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: mock (~=1.0) ; python_version < "3.3"
+
+UNKNOWN
+
+
