@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tfex
+Version: 0.0.6
+Summary: Sledgehammer for machine learning
+Home-page: https://github.com/shawwn/tfex
+Author: Shawn Presser
+Author-email: shawnpresser@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# tfex
+
+
