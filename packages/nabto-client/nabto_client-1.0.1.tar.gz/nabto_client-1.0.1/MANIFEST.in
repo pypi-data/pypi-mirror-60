@@ -1,0 +1,6 @@
+include extension/linux64/include/nabto_client_api.h
+include extension/linux64/lib/libnabto_client_api_static.a
+include extension/linux64/lib/libnabto_static_external.a
+include extension/mac64/include/nabto_client_api.h
+include extension/mac64/lib/libnabto_client_api_static.a
+include extension/mac64/lib/libnabto_static_external.a
