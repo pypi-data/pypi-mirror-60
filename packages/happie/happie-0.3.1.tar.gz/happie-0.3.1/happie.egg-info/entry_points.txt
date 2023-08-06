@@ -1,0 +1,4 @@
+[console_scripts]
+happie = happie.happie:main
+happie_install_or_update = happie.install:main
+

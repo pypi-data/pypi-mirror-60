@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: happie
+Version: 0.3.1
+Summary: happie: horizontally acquired partial pangenome of inserted elements
+Home-page: https://github.com/nickp60/happie
+Author: Nick Waters
+Author-email: nickp60@gmail.com
+License: MIT
+Description: 
+            check out the GitHub
+            repo for the real README.md file
+            
+Keywords: bioinformatics evolution genomics development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
