@@ -1,0 +1,3 @@
+[console_scripts]
+csvconverter-se211 = csvconverter.main:main
+
