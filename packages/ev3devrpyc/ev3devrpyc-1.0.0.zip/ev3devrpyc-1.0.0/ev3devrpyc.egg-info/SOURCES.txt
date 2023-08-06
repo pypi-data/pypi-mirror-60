@@ -1,0 +1,8 @@
+README.md
+ev3devrpyc.py
+setup.py
+ev3devrpyc.egg-info/PKG-INFO
+ev3devrpyc.egg-info/SOURCES.txt
+ev3devrpyc.egg-info/dependency_links.txt
+ev3devrpyc.egg-info/requires.txt
+ev3devrpyc.egg-info/top_level.txt
