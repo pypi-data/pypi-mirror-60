@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: onepassword
+Version: 0.1.1
+Summary: Python wrapper for the 1password CLI
+Home-page: https://github.com/lettdigital/onepassword-python
+License: MIT
+Author: Gabriel Chamon Araujo
+Author-email: gchamon@live.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Repository, https://github.com/lettdigital/onepassword-python
