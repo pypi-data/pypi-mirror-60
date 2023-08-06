@@ -1,0 +1,8 @@
+setup.py
+soulknight.egg-info/PKG-INFO
+soulknight.egg-info/SOURCES.txt
+soulknight.egg-info/dependency_links.txt
+soulknight.egg-info/entry_points.txt
+soulknight.egg-info/not-zip-safe
+soulknight.egg-info/requires.txt
+soulknight.egg-info/top_level.txt
