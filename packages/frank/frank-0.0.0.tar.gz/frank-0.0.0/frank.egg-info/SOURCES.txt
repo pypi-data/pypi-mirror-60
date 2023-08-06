@@ -1,0 +1,14 @@
+.DS_Store
+AUTHORS.rst
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+.circleci/config.yml
+frank/__init__.py
+frank.egg-info/PKG-INFO
+frank.egg-info/SOURCES.txt
+frank.egg-info/dependency_links.txt
+frank.egg-info/requires.txt
+frank.egg-info/top_level.txt
