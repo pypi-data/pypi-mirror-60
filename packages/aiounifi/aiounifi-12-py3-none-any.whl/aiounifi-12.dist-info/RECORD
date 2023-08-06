@@ -1,0 +1,13 @@
+aiounifi/__init__.py,sha256=BiKG2zR_-5Pi8AUM83PKPQ9E7QPjrlXVa7Netf0Ll2M,57
+aiounifi/api.py,sha256=6D43DY_roePMwMFbtrkEubswNlDIWat6A5bu70x33cY,1947
+aiounifi/clients.py,sha256=fLfAP0idNv5jrkftf1Q7sn-NusN0Cdv2Id1ZoMy6z0M,2605
+aiounifi/controller.py,sha256=Gt_XFqlbFYrhimGA7b0aGhBzN_VzRKZzymtibWvix2I,5066
+aiounifi/devices.py,sha256=2AVaha3Ca-8AdBhjxs6_AlSq2O_knJrKY9Cmfd5p_ps,5293
+aiounifi/errors.py,sha256=Gs5ieLgj0IGYZImo07yCE6PGkJN9OUWqMKa9I_tkLj4,790
+aiounifi/events.py,sha256=BJ9DWu1_M5F0Ii8fo4Lhv0psuWO263s0oahiQFc9_Ls,2032
+aiounifi/websocket.py,sha256=RYWt5vGCoXqQrLVN5gNsbqMNSTtCu5W4nWyskgoPSmw,2900
+aiounifi-12.dist-info/LICENSE,sha256=9p13ysxFd_py6eHGa2iQD9WfOHZQILG04lWDymWShp4,1072
+aiounifi-12.dist-info/METADATA,sha256=KHczEmDEhyYlvYDpzYz3H3O7rmutJvjO-CLV83wXTu0,503
+aiounifi-12.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+aiounifi-12.dist-info/top_level.txt,sha256=pOCGywFV2aAcagif27JloNIv71xkP5lUeqydygvTuK8,9
+aiounifi-12.dist-info/RECORD,,
