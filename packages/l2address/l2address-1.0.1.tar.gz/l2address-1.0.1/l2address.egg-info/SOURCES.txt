@@ -1,0 +1,10 @@
+README.md
+setup.py
+l2address/__init__.py
+l2address/formatter.py
+l2address/l2address.py
+l2address/utils.py
+l2address.egg-info/PKG-INFO
+l2address.egg-info/SOURCES.txt
+l2address.egg-info/dependency_links.txt
+l2address.egg-info/top_level.txt
