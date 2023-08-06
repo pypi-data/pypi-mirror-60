@@ -1,0 +1,3 @@
+pycryptodome
+gmpy2>=2
+six>=1.2
