@@ -1,0 +1,9 @@
+elasticsearch_follow/__init__.py,sha256=z53_OWEIfUki4JXMO5XzL3_G5JlOqnntnynNN_HmLgM,164
+elasticsearch_follow/default_processor.py,sha256=yhqWT67hrOwP2iC99YVkwcub1aVey76tihHUJwrYvmw,157
+elasticsearch_follow/elasticsearch_follow.py,sha256=sErgTs-sKBs7ivO5UK36gtMPH72iCwtT8YwEEtbLF-4,2989
+elasticsearch_follow/follower.py,sha256=GewQXqw4M2J2W90dnb-JJRcWRpgnmPQpR3E_PFCXqXQ,751
+elasticsearch_follow-0.1.2.dist-info/LICENSE,sha256=2xb24xdM9l8Sfh8hfCqRG0ZCh8LRJc2Sd3CzUPU64Kw,1071
+elasticsearch_follow-0.1.2.dist-info/METADATA,sha256=FibRLAxj8bEhWnZqZ1YK-mBddYx6pVQy_V2x_TzaT78,1223
+elasticsearch_follow-0.1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+elasticsearch_follow-0.1.2.dist-info/top_level.txt,sha256=9AiIvyzrtG4xOnThS31opkyvyL6JUppqJBHZf1Ysiq0,21
+elasticsearch_follow-0.1.2.dist-info/RECORD,,
