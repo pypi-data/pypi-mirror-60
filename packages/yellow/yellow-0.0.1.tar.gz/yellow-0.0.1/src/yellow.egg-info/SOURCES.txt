@@ -1,0 +1,6 @@
+setup.py
+src/yellow/__init__.py
+src/yellow.egg-info/PKG-INFO
+src/yellow.egg-info/SOURCES.txt
+src/yellow.egg-info/dependency_links.txt
+src/yellow.egg-info/top_level.txt

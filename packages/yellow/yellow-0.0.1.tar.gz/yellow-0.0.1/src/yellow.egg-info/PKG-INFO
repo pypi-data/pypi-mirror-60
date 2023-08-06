@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: yellow
+Version: 0.0.1
+Summary: Project Template
+Home-page: UNKNOWN
+Author: Damien "dee" Coureau
+Author-email: dee@dee909.com
+License: LGPLv3+
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
