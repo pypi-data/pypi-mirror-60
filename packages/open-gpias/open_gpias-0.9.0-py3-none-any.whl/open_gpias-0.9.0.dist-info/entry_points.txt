@@ -1,0 +1,6 @@
+[console_scripts]
+open_gpias = open_gpias.mainWindow:main
+
+[gui_scripts]
+open_gpias_gui = open_gpias.mainWindow:main
+
