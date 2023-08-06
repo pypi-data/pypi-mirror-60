@@ -1,0 +1,5 @@
+py-hopscotch-dict
+sortedcontainers
+
+[test]
+codecov
