@@ -1,0 +1,17 @@
+*.py[co]
+*.log
+*.egg-info/
+*~
+._*
+.cache
+.coverage*
+.DS_Store
+.eggs/
+.ipynb_checkpoints/
+.pytest_cache/
+.tox/
+_githash.py
+api/
+build/
+docs/_build
+htmlcov/

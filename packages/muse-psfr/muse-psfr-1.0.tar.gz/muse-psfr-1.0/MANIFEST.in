@@ -1,0 +1,9 @@
+include CHANGELOG
+include LICENSE
+include README.rst
+
+graft docs
+prune docs/_build
+prune muse_psfr.egg-info
+
+global-exclude *.log *.py[cod] __pycache__ .git
