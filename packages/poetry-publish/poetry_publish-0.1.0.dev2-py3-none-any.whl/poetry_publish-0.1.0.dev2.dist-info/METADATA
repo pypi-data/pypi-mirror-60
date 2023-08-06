@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: poetry-publish
+Version: 0.1.0.dev2
+Summary: 
+Author: JensDiemer
+Author-email: git@jensdiemer.de
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: python-creole (>=1.4.2,<2.0.0)
