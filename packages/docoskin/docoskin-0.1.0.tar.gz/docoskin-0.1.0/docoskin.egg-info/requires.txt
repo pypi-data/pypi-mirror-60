@@ -1,0 +1,7 @@
+six
+
+[:python_version<"3"]
+futures
+
+[pypi_opencv]
+opencv-python>=3.1.0
