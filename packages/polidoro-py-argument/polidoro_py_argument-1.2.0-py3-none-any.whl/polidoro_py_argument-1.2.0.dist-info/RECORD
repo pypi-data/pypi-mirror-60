@@ -1,0 +1,10 @@
+argument/__init__.py,sha256=JrCTjkClhEpiG1J83bnH7-RoFTv6118D7YVScS5-MFs,165
+argument/argument.py,sha256=CsN4mAGyUadnMxWHZoKyxIM2-x2OE8LAYHHFsno10uE,1213
+argument/argument_parser.py,sha256=WlcXM4igiTIhHLtDXLPrGEQGeNORU6fVOyRQp_0m55o,6305
+argument/command.py,sha256=4B-sdjKZqjoYGAKfFd1UTa51O0GDP2gQJoEgTFnBA6Q,738
+argument/custom_action.py,sha256=ycZzkGHmlWI-5D9c2pvNkldfLkewKNksKuO_WQFeMzY,400
+polidoro_py_argument-1.2.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+polidoro_py_argument-1.2.0.dist-info/METADATA,sha256=1CoIuNlU7cDnwGi6-PpiaJ7E0Wpt5K5uAmRL1_zlGHo,3085
+polidoro_py_argument-1.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+polidoro_py_argument-1.2.0.dist-info/top_level.txt,sha256=nRmU7xQ0zV8BsN8puAaHI_hgf0Y33C9AIH7V5CjS2E8,9
+polidoro_py_argument-1.2.0.dist-info/RECORD,,
