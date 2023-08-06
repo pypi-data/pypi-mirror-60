@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: nmapthon
+Version: 1.0.3
+Summary: A simple, high level Nmap library for Python
+Home-page: https://github.com/cblopez/nmapthon
+Author: cblopez
+Author-email: noeroiff@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Security
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# Nmapthon
+A complete, high level Nmap module for Python.  
+&nbsp;
+
+## Documentation  
+
+Please head to the [wiki](https://github.com/cblopez/nmapthon/wiki) site to see this module documentation.  
+
+## Examples  
+
+Please head to the wiki site to see explicit and complete examples from this module.  
+
+
