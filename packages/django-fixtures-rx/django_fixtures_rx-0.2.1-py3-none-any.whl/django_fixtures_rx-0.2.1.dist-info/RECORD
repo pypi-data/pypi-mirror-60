@@ -1,0 +1,12 @@
+django_fixtures/__init__.py,sha256=5V74VyPFq3K7BFMYRTmHv87ty2qxon90eYQ5N9nays4,205
+django_fixtures/dataset.py,sha256=OSiabABkGYoGE8WyvnkXnT9IUh8GZ0UMOc_gxefyU68,783
+django_fixtures/exceptions.py,sha256=K6MOddjvLShyFvtmTgd8AZzNZDGrw_MJoqVYD9igOEk,352
+django_fixtures/fixtures.py,sha256=cVFiNlxbi-oT81QfbbcjCSG8tlW0GHyUXbiwY6f_C5g,3913
+django_fixtures/unittests.py,sha256=UY5YBn_r6RkHWQ3vVqGZCwxngp8hhbPkpWGuT07XBSE,388
+django_fixtures/utilities.py,sha256=oay-xhk_9JmLb6tKPp1D4VBRrlgRiVJASBtvQh-GGv0,3301
+django_fixtures/management/commands/createfixtures.py,sha256=mfbXbRLUgitQv0i8aPfSEM3pxwVASM_FSzK0RroXXWo,1077
+django_fixtures_rx-0.2.1.dist-info/LICENSE,sha256=RCKtsYNiCO7JZt7oVhSFDsHsn5bZ4sqUMxLvujW1PQE,1070
+django_fixtures_rx-0.2.1.dist-info/METADATA,sha256=ae_BQ879GB3h8AufSL7iawc7b4P67dGzQDOmxM2L7Rc,438
+django_fixtures_rx-0.2.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+django_fixtures_rx-0.2.1.dist-info/top_level.txt,sha256=spwgfxB14ugjmwotjqi79tH05TIuqmbKjwvznWMGKOY,16
+django_fixtures_rx-0.2.1.dist-info/RECORD,,
