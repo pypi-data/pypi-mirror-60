@@ -1,0 +1,31 @@
+.mem-mon-progress-color-success {
+  background-color: #28a745 !important;
+}
+.mem-mon-progress-color-warn {
+  background-color: #ffc107 !important;
+}
+.mem-mon-progress-color-danger {
+  background-color: #dc3545 !important;
+}
+.progress-sm {
+  height: 10px;
+  width: 120px;
+}
+.progress-lg {
+  margin-top: 18px;
+  width: 500px;
+}
+#nb-memory-usage-sm {
+  margin-top: -20px;
+}
+.flexcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#mem-used-limit {
+  margin-left: 10px;
+  color: #565656;
+  font-weight: bold;
+}
