@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: yandex-dictionary
+Version: 0.1.4
+Summary: API yandex-dictionary python
+Home-page: UNKNOWN
+Author: Kovalenko Nikolay
+Author-email: kovalenko.n.r-g@yandex.ru
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

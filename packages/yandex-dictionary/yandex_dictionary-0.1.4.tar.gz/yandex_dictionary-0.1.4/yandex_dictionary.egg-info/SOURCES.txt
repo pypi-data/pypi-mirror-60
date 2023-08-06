@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+yandex_dictionary/__init__.py
+yandex_dictionary/errors.py
+yandex_dictionary/models.py
+yandex_dictionary.egg-info/PKG-INFO
+yandex_dictionary.egg-info/SOURCES.txt
+yandex_dictionary.egg-info/dependency_links.txt
+yandex_dictionary.egg-info/not-zip-safe
+yandex_dictionary.egg-info/top_level.txt
