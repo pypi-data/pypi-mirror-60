@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+unictelecome/__init__.py
+unictelecome/main.py
+unictelecomes.egg-info/PKG-INFO
+unictelecomes.egg-info/SOURCES.txt
+unictelecomes.egg-info/dependency_links.txt
+unictelecomes.egg-info/not-zip-safe
+unictelecomes.egg-info/requires.txt
+unictelecomes.egg-info/top_level.txt
