@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tcx2gpx
+Version: 0.1.3
+Summary: Convert Garmin TCX GPS tracks to GPX
+Home-page: https://gitlab.com/nshephard/tcx2gpx
+Author: Neil Shephard
+Author-email: nshephard@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
