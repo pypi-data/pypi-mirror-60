@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: ezcad
+Version: 0.1.7.post1
+Summary: Easy computer-aided design
+Home-page: http://ezcad.org
+Author: ezcad team
+Author-email: ezcad.dev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: chardet (>=3.0.4)
+Requires-Dist: cycler (>=0.10.0)
+Requires-Dist: freetype-py (>=2.1.0)
+Requires-Dist: joblib (>=0.14.1)
+Requires-Dist: kiwisolver (>=1.1.0)
+Requires-Dist: lxml (>=4.4.2)
+Requires-Dist: matplotlib (>=3.1.2)
+Requires-Dist: numpy (>=1.18.1)
+Requires-Dist: pandas (>=0.25.3)
+Requires-Dist: PyOpenGL (>=3.1.5)
+Requires-Dist: pyparsing (>=2.4.6)
+Requires-Dist: PyQt5 (>=5.14.1)
+Requires-Dist: pyqtgraph (>=0.11.0rc0)
+Requires-Dist: python-dateutil (>=2.8.1)
+Requires-Dist: python-dotenv (>=0.10.3)
+Requires-Dist: pytz (>=2019.3)
+Requires-Dist: QtAwesome (>=0.6.1)
+Requires-Dist: QtPy (>=1.9.0)
+Requires-Dist: scipy (>=1.4.1)
+Requires-Dist: six (>=1.14.0)
+Requires-Dist: vispy (>=0.6.4)
+Requires-Dist: Yapsy (>=1.12.2)
+
+EZCAD
+=====
+
+A tool for data visualization and analysis, geophysical and beyond.
+
+<https://ezcad.org/>
+
+![main window](examples/mainwindow.png)
+
+Maintainer
+----------
+
+  * Ezcad Team  <ezcad.dev@gmail.com>
+
+Installation
+------------
+* From PyPI:
+  * Last released version: `pip install ezcad`
+* From conda
+  * Last released version: `conda install ezcad`
+
+Documentation
+-------------
+
+<https://ezcad.org/documentation/>
+
+Support
+-------
+
+<https://ezcad.org/support/>
+
+
