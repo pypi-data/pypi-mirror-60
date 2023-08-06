@@ -1,0 +1,11 @@
+micro_restplus_ext/__init__.py,sha256=Fm9nRC9eB28ps0oGBjNqsss8LsdHpXmLPYucSShR-ow,258
+micro_restplus_ext/api.py,sha256=41fSFsCZ4YTkXFUbwhnJ4khiG_RITPgQ9-ekZJXjq-4,1054
+micro_restplus_ext/model.py,sha256=_-bPF_0EgU7hUZUEZlzW8w7mih9cH7sYHtUvfvmQRJ0,2489
+micro_restplus_ext/namespace.py,sha256=TTv5rdGrQvqF7GqTNseNSm5wd93v2-BbAxaHnsz0vXw,7929
+micro_restplus_ext/parameters.py,sha256=mlMGFHS06mKIpJc752ucy9IzSwRkd1TpyP6WXbwJegI,10771
+micro_restplus_ext/resource.py,sha256=t6pVp7IotNmjzBbCCd1xOuGYq0xJEDeOFZJcSf9CHeo,3359
+micro_restplus_ext/utils.py,sha256=YWj4g14_9WrnBozNKMmhlmo0yhJj7AeJjTLP_NVuauk,138
+micro_restplus_ext-1.0.0.dist-info/METADATA,sha256=mFxS46ejNZmookWJYG3jyuM78jvugm7KMlXimC3HZC8,317
+micro_restplus_ext-1.0.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+micro_restplus_ext-1.0.0.dist-info/top_level.txt,sha256=CrNgdtfuNM3Cp-T-LffRGeW6A-dJqviQKMph7MRxblE,19
+micro_restplus_ext-1.0.0.dist-info/RECORD,,
