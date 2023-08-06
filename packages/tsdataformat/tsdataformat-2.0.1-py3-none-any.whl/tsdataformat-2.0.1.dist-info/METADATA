@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: tsdataformat
+Version: 2.0.1
+Summary: A Python project to manage time series data
+Home-page: https://github.com/ctberthiaume/tsdataformat-python
+Author: Chris T. Berthiaume
+Author-email: chrisbee@uw.edu
+License: MIT
+Keywords: csv,command-line,time series,tsdata
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <4
+Requires-Dist: ciso8601
+Requires-Dist: click
+Requires-Dist: pandas
+
+============================================================
+Python Parser for Armbrust Lab Time Series Data Format Files
+============================================================
+
+Validate and csv-ify time series data files (TSDATA) structured as specified at
+https://github.com/armbrustlab/tsdataformat.
+
+This package installs a cli tool `tsdataformat` which validates or resamples a
+TSDATA file.
+
+
