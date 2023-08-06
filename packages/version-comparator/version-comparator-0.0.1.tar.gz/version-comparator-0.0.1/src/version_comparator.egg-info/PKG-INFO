@@ -1,0 +1,114 @@
+Metadata-Version: 1.2
+Name: version-comparator
+Version: 0.0.1
+Summary: An example package. Checks if a version is equal to, greater or less than another version
+Home-page: https://github.com/pcu4dros/pedro_cuadros_test/python-version-comparator
+Author: Pedro Miguel Cuadros
+Author-email: pemcda@gmail.com
+License: BSD-3-Clause
+Project-URL: Issue Tracker, https://github.com/pcu4dros/pedro_cuadros_test/python-version-comparator/issues
+Project-URL: Documentation, https://python-version-comparator.readthedocs.io/
+Project-URL: Changelog, https://python-version-comparator.readthedocs.io/en/latest/changelog.html
+Description: ========
+        Overview
+        ========
+        
+        
+        
+        An example package. Checks if a version is equal to, greater or less than another version
+        
+        * Free software: BSD 3-Clause License
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install version-comparator
+        
+        You can also install the in-development version with::
+        
+            pip install https://github.com/pcu4dros/pedro_cuadros_test/python-version-comparator/archive/master.zip
+        
+        
+        Documentation
+        =============
+        
+        
+        Project
+        =======
+        
+        The goal of this question is to write a software library that accepts 2 version string as input and
+        returns whether one is greater than, equal, or less than the other. As an example: “1.2” is
+        greater than “1.1”.
+        
+        =====
+        Usage
+        =====
+        
+        To use Distributed LRU Cache in a project::
+        
+        
+        	import compare_versions
+        
+                compare_versions('1.2.1', '1.2.1')
+        
+        
+        Where::
+        
+           0: The version are equal
+           1: The version is greater then the other version
+           -1: The version is less than the other version
+        
+        
+        Development
+        ===========
+        
+        To run the all tests run::
+        
+            tox
+        
+        Note, to combine the coverage data from all the tox environments run:
+        
+        .. list-table::
+            :widths: 10 90
+            :stub-columns: 1
+        
+            - - Windows
+              - ::
+        
+                    set PYTEST_ADDOPTS=--cov-append
+                    tox
+        
+            - - Other
+              - ::
+        
+                    PYTEST_ADDOPTS=--cov-append tox
+        
+        
+        Changelog
+        =========
+        
+        0.0.1 (2020-01-29)
+        ------------------
+        
+        * First release on PyPI.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
