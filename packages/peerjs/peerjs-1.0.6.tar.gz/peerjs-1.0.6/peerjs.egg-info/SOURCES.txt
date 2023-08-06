@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+peerjs.egg-info/PKG-INFO
+peerjs.egg-info/SOURCES.txt
+peerjs.egg-info/dependency_links.txt
+peerjs.egg-info/requires.txt
+peerjs.egg-info/top_level.txt
