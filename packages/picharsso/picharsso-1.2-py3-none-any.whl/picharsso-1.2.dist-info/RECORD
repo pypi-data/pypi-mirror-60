@@ -1,0 +1,16 @@
+picharsso/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+picharsso/__main__.py,sha256=8oLFoPwjsZkhglJjC4kl3Z8dtwFfXbRzYsaydvETakk,723
+picharsso/colorizer.py,sha256=HTrGhBc4QCTwtm6rMu9OyX2GlT8-9JnO2gwIT5B9N1k,1272
+picharsso/config.json,sha256=_cd5zI5ckyz1te7LO5qyXYD_G7-Z-zfZWrPBWrowDVk,152
+picharsso/configer.py,sha256=YN1sWoyMxEmwoaf6TUrmrwwKZkTFXBiOI27Eih4oqCE,467
+picharsso/displayer.py,sha256=22Kt_QWdcWSir65MLRYQkN5lNRTSVKkmrdxb5v1lvg8,609
+picharsso/interface.py,sha256=eDT8yr6NKoyX6ZZ7I04cD0rSvHkG5DzyZVBpMfrG_1E,2414
+picharsso/loader.py,sha256=TGEHvy8eCMo4vqLrdYFAplb8Q2qSlvSf1q8j5VIK5s4,927
+picharsso/processor.py,sha256=fvb0coNrCCEFeSSgpqjWhjYRLW5k1HHzkbxmUsEfNTY,1779
+picharsso/resizer.py,sha256=MSZvnCG7sVnd_78GtKD0_2K1FDAzxwHOXY8GosnceiA,1777
+picharsso-1.2.dist-info/LICENSE,sha256=Sg1ujRTUAlzANUsGq05hW_E3RQl3yn6PxJ35IXavfGQ,1071
+picharsso-1.2.dist-info/METADATA,sha256=CO1HaQlK7pzmhBozUvUjUJ9Nlj44QGNXDL20DOr3lDQ,3480
+picharsso-1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+picharsso-1.2.dist-info/entry_points.txt,sha256=F713pO9lV5k31rrm8963jDrG7BqUdeU1tIdDXN8MhQc,55
+picharsso-1.2.dist-info/top_level.txt,sha256=VPQZC22aZOIce9vxbiUeY0wiV0DBhaxyPK29DcG_W8g,10
+picharsso-1.2.dist-info/RECORD,,
