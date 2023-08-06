@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+duffel/__init__.py
+duffel/col.py
+duffel/df.py
+duffel/i_o.py
+duffel/loc.py
+duffel/na.py
+duffel/row.py
+duffel.egg-info/PKG-INFO
+duffel.egg-info/SOURCES.txt
+duffel.egg-info/dependency_links.txt
+duffel.egg-info/not-zip-safe
+duffel.egg-info/top_level.txt

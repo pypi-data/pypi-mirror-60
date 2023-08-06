@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: duffel
+Version: 0.1.1
+Summary: Lightweight Python data frames on the standard library
+Home-page: https://github.com/russellromney/duffel
+Author: Russell Romney
+Author-email: russellromney@gmail.com
+License: MIT
+Download-URL: https://github.com/russellromney/duffel/archive/v0.1.1.tar.gz
+Description: Lightweight Python data frames without bloat or typecasting, using only the standard library.
+Keywords: pandas numpy python dflite data.frame dataframe data lambda aws
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
