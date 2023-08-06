@@ -1,0 +1,6 @@
+numpy
+scipy
+h5py>=2.7.0
+
+[:python_version < "3.4"]
+pathlib2
