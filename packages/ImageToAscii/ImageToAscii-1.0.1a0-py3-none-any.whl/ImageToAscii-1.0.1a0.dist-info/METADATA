@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ImageToAscii
+Version: 1.0.1a0
+Summary: fast converter image to ascii and fast rendering ascii to image
+Home-page: https://github.com/ittybe/imageToAscii
+Author: ittybe
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: cffi
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: pycparser
+Requires-Dist: pyvips
+
+UNKNOWN
+
+
