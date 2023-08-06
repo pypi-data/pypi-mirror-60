@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pytchuka
+Version: 0.0.8
+Summary: A very simple http mock server
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Keywords: mock server http
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Utilities
+Requires-Dist: marshmallow (==3.3.0)
+Requires-Dist: falcon (==2.0.0)
+Requires-Dist: falcon-multipart (==0.2.0)
+Requires-Dist: deepdiff (==4.0.9)
+
+UNKNOWN
+
+
