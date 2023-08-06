@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+fastai_ml/basics.py
+fastai_ml.egg-info/PKG-INFO
+fastai_ml.egg-info/SOURCES.txt
+fastai_ml.egg-info/dependency_links.txt
+fastai_ml.egg-info/requires.txt
+fastai_ml.egg-info/top_level.txt
