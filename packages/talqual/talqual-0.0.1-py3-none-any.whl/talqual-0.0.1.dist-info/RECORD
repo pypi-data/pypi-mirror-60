@@ -1,0 +1,15 @@
+talqual/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talqual/__main__.py,sha256=Y6GsIEKFf9o7x0Cf8Nb0yAMG6VEx3tVyoAn_A4s_GbA,60
+talqual/batch.py,sha256=Jv-Tqj5K_ra2zVprGO5WS5MEQxCpojJ55_9MhCe2EuY,1627
+talqual/cli.py,sha256=Iubm_nrlVWX2tZ-LRh5i7xG7te1DjysR97mMgdcQc3g,1177
+talqual/importer.py,sha256=KMFkHEC4aAYsPPG3A5fiIo8It1kMneNs_XQ44q1KJ24,625
+talqual/main.py,sha256=Mbn5vUG7K3zxwUiyPN9a7KPVyfQ5XEqylWxDc5z1YWw,882
+talqual/templates.py,sha256=hMqnMeSBgorf2Y5FMTgwQNNySXNEFswbPiuHzCZ15nA,4668
+talqual/views.py,sha256=KMRFJzxCsBMK83uETSFv1_q4YgQIS2H6JwBnHyiJxgY,1228
+talqual/zpt.py,sha256=9GcPFd04rDEKs7bNoQf7N30vbsDmr-NZwhXGlzRU798,475
+talqual-0.0.1.dist-info/LICENSE,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+talqual-0.0.1.dist-info/METADATA,sha256=NsN9M9HgwFi6cebAQUPh39nnhd0tH4Rn_28jqPiLVOQ,4057
+talqual-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+talqual-0.0.1.dist-info/entry_points.txt,sha256=3UMWkeFYlo6c4Ay_tHqMf0KbRFoI2DhjI5Yq5FHo0rI,69
+talqual-0.0.1.dist-info/top_level.txt,sha256=AXXmxzE2lJekqZx3nmVmJl9MfJKlFfAYDm2waXfJ4OY,8
+talqual-0.0.1.dist-info/RECORD,,
