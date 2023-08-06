@@ -1,0 +1,7 @@
+[mm.managers]
+file = flask_mm.managers.file:FileManager
+image = flask_mm.managers.image:ImageManager
+
+[mm.storages]
+local = flask_mm.storages.local:LocalStorage
+
