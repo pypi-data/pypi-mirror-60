@@ -1,0 +1,12 @@
+ccc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ccc/argmin.py,sha256=day1gQztFH9nEW5jYYygu6bJz0hLEd_HsueoQoCdsD0,5385
+ccc/collocates.py,sha256=5_BCPC8lnWE810QuecdzquRnl0avlADol0rQCO4fVn0,6597
+ccc/concordances.py,sha256=GlsjGTtEru3IWcSDc5r1n-mw7MJ2j2PAUXhYNymxGFg,4159
+ccc/cqp_interface.py,sha256=eEbF3pJxIHsE0ZAc_tFjfUmTPULAY-8BCpAoTJHbbiM,14341
+ccc/cwb.py,sha256=WoSxG_xeSdYH0k3iamx0QGK5Oya8RtcxF3GtwGPw1nQ,15165
+ccc/utils.py,sha256=7qf1-XzPfuVave6a6PX_Us84aRVRsmqD_Q-kipWtHa8,3170
+cwb_ccc-0.9.5.dist-info/LICENSE,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+cwb_ccc-0.9.5.dist-info/METADATA,sha256=v2v_jAWcbG4j_53g9F4R40BQEtwZKwbGTO5eRaY6LJ4,12659
+cwb_ccc-0.9.5.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+cwb_ccc-0.9.5.dist-info/top_level.txt,sha256=VpXYKghrZ3lioLBCjtGiEyCChbe0DX02BIdtNqcQMCo,4
+cwb_ccc-0.9.5.dist-info/RECORD,,
