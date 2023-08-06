@@ -1,0 +1,8 @@
+voltorb_flip/__init__.py,sha256=NZnxdPD-Ha8oAwA676eOJ3UE-HgC56Fmg1kQQxAdSbI,26
+voltorb_flip/__main__.py,sha256=dfGLbunPh-iv53R38Q_3KHyfiDknYCnHbGhJzh3BlQM,486
+voltorb_flip/console.py,sha256=myxi3fM9wQNGXJ1edwryZY_DaIW88C9wqf54A_D3IIo,3088
+voltorb_flip/game.py,sha256=1H2jCojR7eFvBxvIQJjUtc5K_JQH-J6lRJa0ipqYQUA,4064
+voltorb_flip-0.1.0.dev0.dist-info/entry_points.txt,sha256=hKJnpOTut8vYAtOaqmlDaXwDGOl6U0rfLMTPjwnl1PA,58
+voltorb_flip-0.1.0.dev0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+voltorb_flip-0.1.0.dev0.dist-info/METADATA,sha256=EPcZ98htwQtxaZS3zEx1y8dXzCLRPUkxBfUoc1JVF3E,2110
+voltorb_flip-0.1.0.dev0.dist-info/RECORD,,
