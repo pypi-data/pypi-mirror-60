@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyconnectify/__init__.py
+pyconnectify.egg-info/PKG-INFO
+pyconnectify.egg-info/SOURCES.txt
+pyconnectify.egg-info/dependency_links.txt
+pyconnectify.egg-info/top_level.txt
