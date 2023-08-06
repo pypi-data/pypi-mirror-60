@@ -1,0 +1,13 @@
+import sys
+from outlier-101703382 import remove_outliers
+
+arguments = sys.argv[1:]
+assert len(arguments) == 2, "Insufficient number of arguments provided"
+
+filename_in = arguments[0]
+filename_out = arguments[1]
+assert filename_in, "provide input csv filename"
+assert filename_out, "provide output csv filename"
+assert '.csv' in filename_in, "file must be of type .csv"
+assert '.csv' in filename_out, "file must be of type .csv"
+remove_outliers(filename_in, filename_out)

@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+bin/outlier-101703382_cli
+outlier-101703382/__init__.py
+outlier-101703382/outlier-101703382.py
+src/outlier-101703382.py
+src/outlier-101703382.egg-info/PKG-INFO
+src/outlier-101703382.egg-info/SOURCES.txt
+src/outlier-101703382.egg-info/dependency_links.txt
+src/outlier-101703382.egg-info/requires.txt
+src/outlier-101703382.egg-info/top_level.txt
