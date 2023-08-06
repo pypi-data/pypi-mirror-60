@@ -1,0 +1,7 @@
+ev3devlogging
+arcade==2.1.3
+pyyaml
+pymunk
+
+[:sys_platform == "darwin"]
+pyobjc
