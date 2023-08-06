@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: lbmpy
+Version: 0.2.8
+Summary: Code Generation for Lattice Boltzmann Methods
+Home-page: https://i10git.cs.fau.de/pycodegen/lbmpy/
+Author: Martin Bauer
+Author-email: martin.bauer@fau.de
+License: AGPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Jupyter
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Python: >=3.6
+Provides-Extra: gpu
+Provides-Extra: opencl
+Provides-Extra: alltrafos
+Provides-Extra: interactive
+Provides-Extra: doc
