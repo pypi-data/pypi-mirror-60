@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: micro-sqlalchemy-ext
+Version: 1.0.0
+Summary: micro_sqlalchemy_ext
+Home-page: https://github.com/alhazmy13/sqlalchemy_ext
+Author: Alhazmy13
+Author-email: me@alhazmy13.net
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: SQLAlchemy (==1.1.5)
+Requires-Dist: SQLAlchemy-Utils (==0.32.12)
+Requires-Dist: Flask-SQLAlchemy (==2.2)
+
+# Sqlalchemy EXT
+
+
+
+[WIP]
+
