@@ -1,0 +1,9 @@
+just
+pandas
+metadate
+tok
+ijson
+cython
+pyarrow
+tldextract
+diskcache
