@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+bin/no-op.sh
+dev_env_testing/__init__.py
+dev_env_testing/foo.py
+dev_env_testing.egg-info/PKG-INFO
+dev_env_testing.egg-info/SOURCES.txt
+dev_env_testing.egg-info/dependency_links.txt
+dev_env_testing.egg-info/top_level.txt
