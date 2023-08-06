@@ -1,0 +1,42 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'leaflet/leaflet.css' %}">
+<link rel="stylesheet" href="{% static 'widgets/css/point.css' %}">
+<link rel="stylesheet" href="{% static 'vendor/fontawesome.5.12.0/css/all.css' %}">
+
+<textarea 
+    name="{{ widget.name }}"
+    {% include "django/forms/widgets/attrs.html" %}
+>
+    {% if widget.value %}{{ widget.value }}{% endif %}
+</textarea>
+
+<div class="map_container">
+    <div id="{{widget.name}}_map" class="map"></div>
+</div>
+
+{% include "./map_control/control.html" %}
+
+<script src="{% static 'vendor/jquery-2.2.4.min.js' %}"></script>
+<script src="{% static 'leaflet/leaflet.js' %}"></script>
+
+<script>
+
+    let polygon_input_widget = "{{widget.name}}"
+    let polygon_map_attributions = "{{map_attributions}}"
+    let polygon_map_center = "{{center}}"
+    
+
+    if(polygon_map_center){
+        var map_center_marker = JSON.parse(polygon_map_center);
+    }
+
+    var polygon_map = L.map('{{widget.name}}_map', {
+        center: [6.1720, 1.2263], // Default center to lome
+        zoom: 13,
+    });
+</script>
+
+
+
+<script src="{% static 'widgets/leaflet_implementations/polygon.js' %}"></script>
