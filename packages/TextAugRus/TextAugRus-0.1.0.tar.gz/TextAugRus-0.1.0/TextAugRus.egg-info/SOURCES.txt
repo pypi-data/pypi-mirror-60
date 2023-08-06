@@ -1,0 +1,20 @@
+MANIFEST.in
+README.txt
+requirements.txt
+setup.py
+TextAugRus/Bert_context_augmentation.py
+TextAugRus/Preprocessing.py
+TextAugRus/Random_swap.py
+TextAugRus/Synonym.py
+TextAugRus/Translate_aug.py
+TextAugRus/Word2vec_augmentation.py
+TextAugRus/Word_deletion.py
+TextAugRus/__init __.py
+TextAugRus/tokenization.py
+TextAugRus.egg-info/PKG-INFO
+TextAugRus.egg-info/SOURCES.txt
+TextAugRus.egg-info/dependency_links.txt
+TextAugRus.egg-info/not-zip-safe
+TextAugRus.egg-info/requires.txt
+TextAugRus.egg-info/top_level.txt
+dictionaries/freqrnc2011.csv
