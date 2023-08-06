@@ -1,0 +1,15 @@
+README.md
+setup.py
+sws/__init__.py
+sws/command_line_utility.py
+sws.egg-info/PKG-INFO
+sws.egg-info/SOURCES.txt
+sws.egg-info/dependency_links.txt
+sws.egg-info/entry_points.txt
+sws.egg-info/requires.txt
+sws.egg-info/top_level.txt
+sws/utilities/__init__.py
+sws/utilities/domains.py
+sws/utilities/redirects.py
+sws/utilities/ssl_utilities.py
+sws/utilities/youtube.py
