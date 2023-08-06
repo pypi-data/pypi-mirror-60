@@ -1,0 +1,8 @@
+{% extends "ink_cms/application.html" %}
+{% load render_bundle from webpack_loader %}
+
+{% block dist_asset %}{% endblock %}
+{% block content %}
+{{ block.super }}
+{% render_bundle "app" %}
+{% endblock %}
