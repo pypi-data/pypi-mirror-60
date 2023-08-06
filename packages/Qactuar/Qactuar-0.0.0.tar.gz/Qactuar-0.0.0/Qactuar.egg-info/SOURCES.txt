@@ -1,0 +1,7 @@
+setup.py
+Qactuar.egg-info/PKG-INFO
+Qactuar.egg-info/SOURCES.txt
+Qactuar.egg-info/dependency_links.txt
+Qactuar.egg-info/requires.txt
+Qactuar.egg-info/top_level.txt
+qactuar/__init__.py
