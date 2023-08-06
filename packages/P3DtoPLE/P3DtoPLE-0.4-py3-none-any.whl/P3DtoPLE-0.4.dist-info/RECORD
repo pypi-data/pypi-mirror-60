@@ -1,0 +1,13 @@
+P3DtoPLE/__init__.py,sha256=2UmVdIn6GR21hKClSidHb53SEhALePuJiIxHQDBzicE,963
+P3DtoPLE/__main__.py,sha256=j_g_q_vVvu6tVy1MKkUpYIawK31bmnyjnJ6STUTkW68,1379
+P3DtoPLE/components.py,sha256=OIelySh0nN867g5jV3t8kQYR5w-UuzQ2vd-UGzb6EUc,6832
+P3DtoPLE/dotproduct.py,sha256=foElGyp9v2bJ3sQHiOiRtiWJrvRhv0KdRnX_7gtHjSU,16148
+P3DtoPLE/gui.py,sha256=GCIxry6Zuh7_FB88SIs-80PNgC_XDv18Sq8Gbwjbc54,9509
+P3DtoPLE/isoconfig.py,sha256=4tKBWqA1MywNqWclvd1M_lIOdyhZoizDOoKE86jlUGs,16600
+P3DtoPLE/polydif.py,sha256=lJl1GYVhEiyZbyoq8Nm9kTIldT6mCv4fSEGFBnAY_s4,12459
+P3DtoPLE/visualise.py,sha256=ahGRGi_rp1yy8gt0x558281hKch3HTvhAxYqUDQvefc,5215
+P3DtoPLE-0.4.dist-info/COPYING.md,sha256=LtQ2ZwtVybk7o5cYwpeZxt7AQKIVNS5RvAdsrihzLfI,33004
+P3DtoPLE-0.4.dist-info/METADATA,sha256=TEx984HV_Sryo1d7dvc6hgg9jNm_h-nxi4Y5Nn3fI2s,591
+P3DtoPLE-0.4.dist-info/WHEEL,sha256=IWeGwTvdiaNRNtdERe0BHc5KsCqvvVfLuP8HWeQWYGw,97
+P3DtoPLE-0.4.dist-info/top_level.txt,sha256=-erMnzXN8YD-8j6U3PwJg3gykErzqI8jzaSCHkNqmiY,9
+P3DtoPLE-0.4.dist-info/RECORD,,

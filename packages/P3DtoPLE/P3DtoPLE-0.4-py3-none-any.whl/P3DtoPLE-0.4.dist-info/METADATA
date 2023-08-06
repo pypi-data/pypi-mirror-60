@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: P3DtoPLE
+Version: 0.4
+Summary: Plant3D output to PLE4win input
+Home-page: https://github.com/Hoffelhas/P3DtoPLE
+Author: Alexander Haselhoff
+Author-email: alexander.haselhoff@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: editpyxl
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: PyQt5
+
+P3DtoPLE package
+
+
