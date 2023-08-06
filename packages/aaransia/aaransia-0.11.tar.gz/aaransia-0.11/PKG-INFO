@@ -1,0 +1,81 @@
+Metadata-Version: 1.1
+Name: aaransia
+Version: 0.11
+Summary: The Moroccan Latin/Digit Language Framework 3aransia
+Home-page: https://github.com/3aransia/3aransia
+Author: Amine M. Boulouma
+Author-email: amine@boulouma.com
+License: MIT
+Download-URL: https://github.com/3aransia/3aransia/dist/aaransia-0.1.tar.gz
+Description: # 3aransia
+        
+        The Latin/Digit Moroccan Language Framework
+        
+        
+        [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
+        [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+        [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+        ![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg)
+        
+        ## Prerequisites
+        
+        - [`Python 3.7`](https://www.python.org/downloads/)
+        - [`Pandas`](https://pandas.pydata.org/pandas-docs/stable/install.html)
+          
+        ## Getting Started
+        
+        These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+        
+        ## Cloning the repository
+        
+        #### Using HTTP
+        
+        ```
+        git clone https://github.com/3aransia/3aransia.git
+        cd 3aransia
+        ```
+        
+        #### Using SSH
+        
+        ```
+        git clone git@github.com:3aransia/3aransia.git
+        cd 3aransia
+        ```
+        
+        ### Installing Libraries
+        
+        ```
+        pip install -r requirements.txt
+        ```
+        
+        ### Starting 3aransia
+        
+        ```
+        python main.py
+        ```
+        
+        ## Authors
+        
+        - [AUTHORS.md](https://github.com/3aransia/3aransia/blob/develop/AUTHORS.md)
+        
+        ## Contributiing
+        
+        - [CONTRIBUTING.md](https://github.com/3aransia/3aransia/blob/develop/CONTRIBUTING.md)
+        
+        ## Other related projects
+        
+        - [3aransia.api](https://github.com/3aransia/3aransia.api) The API of 3aransia
+        - [3aransia.web](https://github.com/3aransia/3aransia.web) The web app of 3aransia
+        - [3aransia.github.io](https://github.com/3aransia/3aransia.github.io) The presentation, documentation and blog of 3aransia
+        
+Keywords: python,nlp,language,moroccan,3aransia
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
