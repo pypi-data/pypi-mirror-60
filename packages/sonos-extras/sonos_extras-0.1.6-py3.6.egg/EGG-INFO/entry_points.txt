@@ -1,0 +1,3 @@
+[console_scripts]
+SonosExtrasCLI = bin.SonosExtrasCLI:main
+
