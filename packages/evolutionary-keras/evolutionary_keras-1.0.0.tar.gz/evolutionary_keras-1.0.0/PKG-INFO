@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: evolutionary_keras
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/N3PDF/evolutionary_keras
+Author: S. Carrazza, J. Cruz-Martinez, Roy Stegeman
+Author-email: juan.cruz@mi.infn.it, roy.stegeman@mi.infn.it
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
