@@ -1,0 +1,8 @@
+README.md
+setup.py
+corae/__init__.py
+corae.egg-info/PKG-INFO
+corae.egg-info/SOURCES.txt
+corae.egg-info/dependency_links.txt
+corae.egg-info/requires.txt
+corae.egg-info/top_level.txt
