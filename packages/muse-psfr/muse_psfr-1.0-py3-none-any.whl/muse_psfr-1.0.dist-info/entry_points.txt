@@ -1,0 +1,3 @@
+[console_scripts]
+muse-psfr = muse_psfr.cli:main
+

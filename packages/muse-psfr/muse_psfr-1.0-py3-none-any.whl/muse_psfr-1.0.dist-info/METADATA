@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: muse-psfr
+Version: 1.0
+Summary: MUSE WFM-AO PSF reconstruction from SPARTA
+Home-page: https://github.com/musevlt/muse-psfr
+Author: Simon Conseil
+Author-email: simon.conseil@univ-lyon1.fr
+License: MIT License
+Keywords: astronomy,astrophysics,science,muse,vlt
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
+Requires-Dist: mpdaf
+Requires-Dist: astropy
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: joblib
+Provides-Extra: all
+Requires-Dist: matplotlib ; extra == 'all'
+Requires-Dist: colorama ; extra == 'all'
+Provides-Extra: docs
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinx-automodapi ; extra == 'docs'
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'docs'
+Requires-Dist: matplotlib ; extra == 'docs'
+
+.. image:: https://travis-ci.org/musevlt/muse-psfr.svg?branch=master
+  :target: https://travis-ci.org/musevlt/muse-psfr
+
+.. image:: https://codecov.io/gh/musevlt/muse-psfr/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/musevlt/muse-psfr
+
+The MUSE-PSFR code allows to reconstruct a PSF for the `MUSE WFM-AO
+<https://www.eso.org/sci/facilities/paranal/instruments/muse/inst.html>`_ mode,
+using telemetry data from `SPARTA
+<https://www.eso.org/sci/facilities/develop/ao/tecno/sparta.html>`_.
+
+The method will be presented in more details in a forthcoming publication
+([Fusco et al. in prep.]).
+
+Links:
+
+- `Documentation <https://muse-psfr.readthedocs.io/>`_
+- `PyPI <https://pypi.org/project/muse-psfr/>`_
+- `Github <https://github.com/musevlt/muse-psfr>`_
+
+

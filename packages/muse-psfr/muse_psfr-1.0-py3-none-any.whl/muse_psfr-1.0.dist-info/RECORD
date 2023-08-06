@@ -1,0 +1,11 @@
+muse_psfr/__init__.py,sha256=HcK2SwgQiTwMm2eTKglXn4s0v5UyQB6WdHyTP-jj3QE,508
+muse_psfr/cli.py,sha256=49YMssDDf1P5InZpy_e-P1lBQUSy7pdaXKPkmUC5P7Y,4266
+muse_psfr/coeffL0.fits,sha256=VCoMivW6WfMGTemdfDpv7Lq14qL_1ajOTULpNSZRnTY,5760
+muse_psfr/psfrec.py,sha256=87KBdXiX5EjJwM0-f1wXFykiwteGIuI30yC1dlIl_2U,43204
+muse_psfr/test_psfrec.py,sha256=HjN7nYxXIEGgU52OEq5ngGUUy9cBX5WJMrMYkjRIErs,6588
+muse_psfr-1.0.dist-info/LICENSE,sha256=4wys04dn5KJNTNUTAH1k1Au_5WMnc37UheqX3X18KGY,1120
+muse_psfr-1.0.dist-info/METADATA,sha256=GoSZccMrmDO_CTfo3S2mXd37-O69WXZ1C4gCx4IyaK0,2069
+muse_psfr-1.0.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+muse_psfr-1.0.dist-info/entry_points.txt,sha256=0T25gb9iLtUxOYwq2yJmpUG0YS9gPgM9o_6rRgmhntg,50
+muse_psfr-1.0.dist-info/top_level.txt,sha256=18gW7KJmVWLypKBFgcKW5gouyvYLKV_sXHUTpWUw9oM,10
+muse_psfr-1.0.dist-info/RECORD,,
