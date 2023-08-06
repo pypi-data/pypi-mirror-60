@@ -1,0 +1,4 @@
+
+          [console_scripts]
+          tap-kustomer=tap_kustomer:main
+      
