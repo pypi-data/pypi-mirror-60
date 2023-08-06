@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rosey-keras
+Version: 0.20200131
+Summary: UNKNOWN
+Home-page: https://github.com/arose13/rosey-keras
+Author: Stephen Rose
+Author-email: me@stephenro.se
+License: BSD
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow-probability
+
+# Rosey (Keras)
+
+

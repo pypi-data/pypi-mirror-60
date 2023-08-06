@@ -1,0 +1,10 @@
+rosey_keras/__init__.py,sha256=2ACEf9cEEQloKDwiwe_mojnmQtejlM16C-NkkU1VsVg,42
+rosey_keras/activations.py,sha256=vj0SiRB1a60F8s_tJZLrZTgD-uRKoKNK9bzN0mBbB9g,789
+rosey_keras/layers.py,sha256=WB5cYBY4yYT1uXSuhMIBj9ckNspMrlVIVkD2VwJ9rng,8803
+rosey_keras/losses.py,sha256=UFJL1yvY1ZlIZU1RqWW5_4nUdaCWf9Sy_OPle2EM02w,929
+rosey_keras/metrics.py,sha256=M0Cwdxlat84Fm3U6hkgb7XBUkK2917JzcMnsS8fA_iE,456
+rosey_keras/regularizers.py,sha256=so2-t_0k1YzXTfEj_jOTLvJ3dMT8TxC-wHmrKlTqmTI,3472
+rosey_keras-0.20200131.dist-info/METADATA,sha256=0eLT2XTe_s3nl9grfPxK86pvwHZPzD53wlru-y3yxyU,274
+rosey_keras-0.20200131.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+rosey_keras-0.20200131.dist-info/top_level.txt,sha256=A6W6YFIxyao12AHZ2brlK25yIFmWLtti5CHwkH2E3-8,12
+rosey_keras-0.20200131.dist-info/RECORD,,
