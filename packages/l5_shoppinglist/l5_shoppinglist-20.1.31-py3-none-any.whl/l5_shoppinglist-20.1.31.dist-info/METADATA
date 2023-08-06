@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: l5_shoppinglist
+Version: 20.1.31
+Summary: gtk l5_shoppinglist
+Home-page: https://source.puri.sm/fphemeral/l5_shoppinglist
+License: UNKNOWN
+Author: fphemeral
+Author-email: fphemeral@i2pmail.org
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: tinydb>=3.15.2
+Requires-Dist: PyGObject
+
+# l5_shoppinglist
+
+gtk shoppinglist for librem5
+
+### running the application
+
+it can be started via `python3 l5_shoppinglist/l5_shoppinglist/__main__.py`
+
+but to run it conveniently from the app drawer on librem5,
+it is recommended add a `l5_shoppinglist.desktop` file to:
+
+`~/.local/share/applications`
+
+assuming the path of the `__main__.py` file is:
+
+`/home/purism/opt/l5_shoppinglist/l5_shoppinglist/__main__.py`
+
+the .desktop would need the following content:
+
+```
+[Desktop Entry]
+Categories=Accessories
+Comment=Libre shopping list
+Exec=python3 /home/purism/opt/l5_shoppinglist/l5_shoppinglist/__main__.py
+Icon=software-installed-symbolic
+Name=l5_shoppinglist
+NoDisplay=false
+Terminal=false
+Type=Application
+```
+
