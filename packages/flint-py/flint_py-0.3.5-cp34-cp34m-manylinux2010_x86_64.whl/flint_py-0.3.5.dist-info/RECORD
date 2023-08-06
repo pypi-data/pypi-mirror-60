@@ -1,0 +1,9 @@
+flint.cpython-34m.so,sha256=QHpRLKAVQ1LiNBvmf0jVLPIvMnvjlq43gkxeM-YyC38,10847096
+flint_py-0.3.5.dist-info/RECORD,,
+flint_py-0.3.5.dist-info/METADATA,sha256=_aKMsasyWb7XH7Qz6UOdDACs-CxeRL8ysj-yWgPHHHQ,3564
+flint_py-0.3.5.dist-info/WHEEL,sha256=ESNPYxsyn1zCRbcJYojqbYw9juB5zrokVxSdJBm_mI0,112
+flint_py-0.3.5.dist-info/top_level.txt,sha256=ERZPv0lz7-9_ArySDCJP7328QDmmfLPFA-v6AvY0EWo,6
+.libsflint/libflint-7e33ed03.so.13.5.2,sha256=yaxZ-udv1xqGr_ov5ad-kddL7CA7jGJfXWAIeh2x_OA,41067632
+.libsflint/libgmp-d797ad55.so.23.0.3,sha256=OlAt8gmdW2oy7ZDv5nAcAEhyg3ZmHLXdOUAW8_RttNM,553224
+.libsflint/libarb-68c74408.so.2.7.0,sha256=czBPnxJria9bXbHwX6yA5TsOgfpDnrGiZBdTO7O6kno,23805960
+.libsflint/libmpfr-a38ec2c5.so.6.0.1,sha256=KCwVjI7D60m4kSGfEVxLe-5A9CL81XEYa0iXs3Bya68,583480
