@@ -1,0 +1,142 @@
+Metadata-Version: 2.1
+Name: lgblkb-tools
+Version: 1.0.60
+Summary: Tools to make life easier
+Home-page: UNKNOWN
+Author: Dias Bakhtiyarov
+Author-email: dbakhtiyarov@nu.edu.kz
+License: BSD
+Keywords: setup,distutils
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst; charset=UTF-8
+Requires-Dist: atomicwrites (==1.3.0)
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: bcrypt (==3.1.7)
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: cffi (==1.13.2)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: checksumdir (==1.1.7)
+Requires-Dist: colorlog (==4.0.2)
+Requires-Dist: cryptography (==2.8)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: diskcache (==4.1.0)
+Requires-Dist: fabric (==2.5.0)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: gdal (==2.4.3)
+Requires-Dist: geoalchemy2 (==0.6.3)
+Requires-Dist: geojson (==2.5.0)
+Requires-Dist: geojsonio (==0.0.3)
+Requires-Dist: github3.py (==1.3.0)
+Requires-Dist: idna (==2.8)
+Requires-Dist: invoke (==1.3.0)
+Requires-Dist: joblib (==0.13.2)
+Requires-Dist: jwcrypto (==0.6.0)
+Requires-Dist: kiwisolver (==1.1.0)
+Requires-Dist: matplotlib (==3.1.1)
+Requires-Dist: more-itertools (==8.2.0)
+Requires-Dist: numpy (==1.17.2)
+Requires-Dist: packaging (==20.1)
+Requires-Dist: pandas (==0.25.1)
+Requires-Dist: paramiko (==2.7.1)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: py (==1.8.1)
+Requires-Dist: pycparser (==2.19)
+Requires-Dist: pynacl (==1.3.0)
+Requires-Dist: pyparsing (==2.4.6)
+Requires-Dist: pyproj (==2.3.1)
+Requires-Dist: pytest (==5.1.2)
+Requires-Dist: python-box (==3.4.3)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: python-log-indenter (==0.9)
+Requires-Dist: python-telegram-bot (==12.1.0)
+Requires-Dist: pytz (==2019.3)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: shapely (==1.6.4.post2)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: sqlalchemy (==1.3.8)
+Requires-Dist: telegram (==0.0.1)
+Requires-Dist: tornado (==6.0.3)
+Requires-Dist: typing (==3.7.4.1)
+Requires-Dist: uritemplate (==3.0.1)
+Requires-Dist: urllib3 (==1.25.8)
+Requires-Dist: wcwidth (==0.1.8)
+Requires-Dist: wrapt (==1.11.2)
+Requires-Dist: zipp (==2.1.0)
+Requires-Dist: importlib-metadata (==1.5.0) ; (python_version < '3.8')
+
+**Edit a file, create a new file, and clone from Bitbucket in under 2
+minutes**
+
+When you're done, you can delete the content in this README and update
+the file with details for others getting started with your repository.
+
+*We recommend that you open this README in another tab as you perform
+the tasks below. You can `watch our
+video <https://youtu.be/0ocf7u76WSo>`__ for a full demo of all the steps
+in this tutorial. Open the video in a new tab to avoid leaving
+Bitbucket.*
+
+--------------
+
+Edit a file
+-----------
+
+You’ll start by editing this README file to learn how to edit a file in
+Bitbucket.
+
+1. Click **Source** on the left side.
+2. Click the README.md link from the list of files.
+3. Click the **Edit** button.
+4. Delete the following text: *Delete this line to make a change to the
+   README from Bitbucket.*
+5. After making your change, click **Commit** and then **Commit** again
+   in the dialog. The commit page will open and you’ll see the change
+   you just made.
+6. Go back to the **Source** page.
+
+--------------
+
+Create a file
+-------------
+
+Next, you’ll add a new file to this repository.
+
+1. Click the **New file** button at the top of the **Source** page.
+2. Give the file a filename of **contributors.txt**.
+3. Enter your name in the empty file space.
+4. Click **Commit** and then **Commit** again in the dialog.
+5. Go back to the **Source** page.
+
+Before you move on, go ahead and explore the repository. You've already
+seen the **Source** page, but check out the **Commits**, **Branches**,
+and **Settings** pages.
+
+--------------
+
+Clone a repository
+------------------
+
+Use these steps to clone from SourceTree, our client for using the
+repository command-line free. Cloning allows you to work on your files
+locally. If you don't yet have SourceTree, `download and install
+first <https://www.sourcetreeapp.com/>`__. If you prefer to clone from
+the command line, see `Clone a
+repository <https://confluence.atlassian.com/x/4whODQ>`__.
+
+1. You’ll see the clone button under the **Source** heading. Click that
+   button.
+2. Now click **Check out in SourceTree**. You may need to create a
+   SourceTree account or log in.
+3. When you see the **Clone New** dialog in SourceTree, update the
+   destination path and name if you’d like to and then click **Clone**.
+4. Open the directory you just created to see your repository’s files.
+
+Now that you're more familiar with your Bitbucket repository, go ahead
+and add a new file locally. You can `push your change back to Bitbucket
+with SourceTree <https://confluence.atlassian.com/x/iqyBMg>`__, or you
+can `add, commit, <https://confluence.atlassian.com/x/8QhODQ>`__ and
+`push from the command
+line <https://confluence.atlassian.com/x/NQ0zDQ>`__.
+
+
+
