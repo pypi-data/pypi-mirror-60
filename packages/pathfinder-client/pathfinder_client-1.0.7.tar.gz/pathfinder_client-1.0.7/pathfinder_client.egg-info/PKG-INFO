@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pathfinder-client
+Version: 1.0.7
+Summary: Client for Pathfinder microservice
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+License: UNKNOWN
+Description: ## pathfinder_client
+        TODO: add description
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
