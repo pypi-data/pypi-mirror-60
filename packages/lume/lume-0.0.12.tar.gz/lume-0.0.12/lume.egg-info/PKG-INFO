@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: lume
+Version: 0.0.12
+Summary: Lume
+Home-page: https://github.com/alice-biometrics/lume
+Author: ALiCE Biometrics
+Author-email: support@alicebiometrics.com
+License: MIT
+Description: lume :fire:  [![version](https://img.shields.io/github/release/alice-biometrics/lume/all.svg)](https://github.com/alice-biometrics/lume/releases) [![ci](https://github.com/alice-biometrics/lume/workflows/ci/badge.svg)](https://github.com/alice-biometrics/lume/actions) [![pypi](https://img.shields.io/pypi/dm/lume)](https://pypi.org/project/lume/)
+        =====
+        
+        Lume helps you with your daily dev operations and ease the CI & CD process.
+        
+        ## Installation :computer:
+        
+        ~~~
+        pip install lume
+        ~~~
+        
+        ## Getting Started :chart_with_upwards_trend:	
+        
+        **lume** is a framework that give us a .....
+        
+        
+        ```console
+        lume -h
+        ```
+        
+        ```console
+        export LUME_CONFIG_FILENAME=examples/echo-lume.yml; lume -h
+        ```
+        
+        
+        ## Development
+        
+        ```
+        pip install -r requirements/dev.txt
+        ```
+Keywords: lume
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
