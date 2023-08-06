@@ -1,0 +1,7 @@
+flickr_mirroring-1.0.5.data/scripts/mirror_flickr,sha256=b40DCyP7r1t1f6OenxOk-jBxuwaXFXaF5D5Zw_EZmjg,1174
+mirroring/__init__.py,sha256=JvKKjVj61Hpvk8FSvzyIxJG32nxS1Aqohibw2Y2uQ78,1119
+mirroring/flickr.py,sha256=s4FksPBDHibAjgLvz_mjsofWgneA7_MfmpLmlHrJtaI,26865
+flickr_mirroring-1.0.5.dist-info/METADATA,sha256=BVskOQ6c1HzsM6NGPlFGN6Wxr6SCiqQWEby3WyAzNwI,1209
+flickr_mirroring-1.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+flickr_mirroring-1.0.5.dist-info/top_level.txt,sha256=39fNTwfIcgAwTjs62tquoBLzJPMJVK_NCzqCcQAb6aw,10
+flickr_mirroring-1.0.5.dist-info/RECORD,,
