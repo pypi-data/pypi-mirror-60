@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bgparsers
+Version: 0.10
+Summary: Library to read and parse mutation and region files.
+Home-page: https://bitbucket.org/bgframework/bgconfig
+Author: BBGLab (Barcelona Biomedical Genomics Lab)
+Author-email: bbglab@irbbarcelona.org
+License: Apache License 2
+Platform: UNKNOWN
+Requires-Dist: tqdm
+Requires-Dist: bgconfig
+Requires-Dist: click
+Requires-Dist: numpy
+Requires-Dist: intervaltree
+
+UNKNOWN
+
+
