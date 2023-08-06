@@ -1,0 +1,11 @@
+dicomanonymizer/__init__.py,sha256=UYHZyYSvYPYWdHTkHEBVEEMvWd32Krv39C7QFF8O8-E,36
+dicomanonymizer/anonymizer.py,sha256=e_2b5QgU8vKUfngZaGEYz2YTW6fB0tHomu8hLZFxMSA,4169
+dicomanonymizer/defaultAnonymizationFunctions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dicomanonymizer/dicomfields.py,sha256=BVXZb3i1b1eV3NQBqop5bFe-ku4nD7Y9T-dPWbdp7dk,13199
+dicomanonymizer/simpledicomanonymizer.py,sha256=EqKORQEdCBZO6Taj59ypxLzHcf8oSBOLBewKlW_kzmQ,7721
+dicom_anonymizer-1.0.3.dist-info/LICENSE,sha256=GYnYGjKBViAj_FRUhlydYnCqFjl2cr__wGr4XrfTLjM,1484
+dicom_anonymizer-1.0.3.dist-info/METADATA,sha256=6lw7iyPxjOZswwI_xOlzmkV3LvwPRhb6N7JZt7oOBFY,8406
+dicom_anonymizer-1.0.3.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+dicom_anonymizer-1.0.3.dist-info/entry_points.txt,sha256=Giu6Nnp1KvRVWg27B_E_ecIYfwSImfQkwZ1d8SLNl54,70
+dicom_anonymizer-1.0.3.dist-info/top_level.txt,sha256=p1wEeuJJhzASojJkTN3hxdVNZq1E-tVHfYKpAhc2deQ,16
+dicom_anonymizer-1.0.3.dist-info/RECORD,,
