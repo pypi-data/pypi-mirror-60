@@ -1,0 +1,490 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>metaphor.api_client &#8212; metaphor_client 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="metaphor.model" href="model.html" />
+    <link rel="prev" title="Welcome to metaphor_client’s documentation!" href="metaphor_client.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="model.html" title="metaphor.model"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="metaphor_client.html" title="Welcome to metaphor_client’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="metaphor_client.html">metaphor_client 0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="metaphor_client.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">metaphor.api_client</span></code></a></li>
+<li><a class="reference internal" href="#module-meta_client.client_toolbox"><code class="xref py py-mod docutils literal notranslate"><span class="pre">metaphor.client_toolbox</span></code></a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="metaphor_client.html"
+                        title="previous chapter">Welcome to metaphor_client’s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="model.html"
+                        title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">metaphor.model</span></code></a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/api.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-meta_client.api_client">
+<span id="metaphor-api-client"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">metaphor.api_client</span></code><a class="headerlink" href="#module-meta_client.api_client" title="Permalink to this headline">¶</a></h1>
+<p>Low level client interface for Metaphor server.</p>
+<p>This module expose procedures that call directly the metaphor server through the RESTful interface implemented with Sanic.</p>
+<dl class="function">
+<dt id="meta_client.api_client.add_user">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">add_user</code><span class="sig-paren">(</span><em class="sig-param">user_ame=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#add_user"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.add_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a user to the registered user list.</p>
+<p>parameter:</p>
+<ul class="simple">
+<li><p>user_ame -&gt; name of the user to add</p></li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.check_user">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">check_user</code><span class="sig-paren">(</span><em class="sig-param">username=''</em>, <em class="sig-param">getID=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#check_user"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.check_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the user situation.</p>
+<p>return :</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 13%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>user registered</p></th>
+<th class="head"><p>no</p></th>
+<th class="head"><p>yes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>getID True</p></td>
+<td><p>-1</p></td>
+<td><p>ID</p></td>
+</tr>
+<tr class="row-odd"><td><p>getID False</p></td>
+<td><p>warning</p></td>
+<td><p>3-tuple : name, ID, belongings dictionary</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.contact">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">contact</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#contact"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.contact" title="Permalink to this definition">¶</a></dt>
+<dd><p>Establish a first contact with the metaphor server. 
+It returns a welcome message.</p>
+<p>parameters:</p>
+<ul class="simple">
+<li><p>application (optional) -&gt; the application name get in contact with. Defaul <strong>metaphor</strong></p></li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.create_model">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">create_model</code><span class="sig-paren">(</span><em class="sig-param">userid</em>, <em class="sig-param">data=''</em>, <em class="sig-param">raw=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#create_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.create_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>create a new model.</p>
+<ul>
+<li><p>data -&gt; dictionary describing creation parameters.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>training -&gt; boolean giving the purpose of creation</p></li>
+<li><p>source -&gt; data file or data file content</p></li>
+<li><p>modelname -&gt; name imposed to the model</p></li>
+<li><p>trainable -&gt; training capacity (default True)</p></li>
+<li><p>inputs -&gt; input number (default 1)</p></li>
+<li><p>outputs -&gt; output number (default 1)</p></li>
+<li><p>hidden -&gt; number of hidden neurons (default 2)</p></li>
+<li><p>activfunc -&gt; activation fonction (default TANH)</p></li>
+<li><p>statelayer -&gt; state layer (default -1 )</p></li>
+<li><p>statenodeindex index of state node (default -1)</p></li>
+<li><p>order order of the network default 0)</p></li>
+<li><p>nosynapse -&gt; build model without any synapses (default False)</p></li>
+<li><p>existingnode -&gt; already existing nodes (default 0)</p></li>
+<li><p>polytype -&gt; type de polynome (default 0)</p></li>
+<li><p>classif -&gt; classifier (deafult False)</p></li>
+<li><p>verbose=0,</p></li>
+<li><p>data=None,</p></li>
+<li><p>dataformat=None,</p></li>
+<li><p>normalize=False,</p></li>
+<li><p>weights=None,</p></li>
+<li><p>disp=0,</p></li>
+<li><p>callback=None  unused</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>raw -&gt; If True, return raw request</p></li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.delete_models">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">delete_models</code><span class="sig-paren">(</span><em class="sig-param">userid</em>, <em class="sig-param">modelid</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#delete_models"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.delete_models" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete a registered model.</p>
+<p>parameters:</p>
+<ul class="simple">
+<li><p>userid -&gt; user ID</p></li>
+<li><p>modelid -&gt; model ID belonging to the designed user. modelid may be “*” to delete all the user’s models.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.delete_user">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">delete_user</code><span class="sig-paren">(</span><em class="sig-param">user_name=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#delete_user"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.delete_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unregister the designed user.</p>
+<p>All the user belongings are destroyed.</p>
+<p>parameter:</p>
+<ul class="simple">
+<li><p>user_name -&gt; name of the user to unregister. If this name is “*”, all the registered users are unregistered.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.get_function">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">get_function</code><span class="sig-paren">(</span><em class="sig-param">userid</em>, <em class="sig-param">modelid</em>, <em class="sig-param">root_func_name</em>, <em class="sig-param">data=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#get_function"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.get_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call a function to apply to the designed model. 
+The function called may <strong>not</strong> modify the sate of the designed model.</p>
+<p>parameters:</p>
+<ul>
+<li><p>userid -&gt; user ID</p></li>
+<li><p>modelid -&gt; model ID belonging to the designed user</p></li>
+<li><p>root_func_name, data -&gt; function to call. <strong>data</strong> is related to function:</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>function name</p></th>
+<th class="head"><p>data</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>paramCount</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-odd"><td><p>dataCount</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-even"><td><p>newWeights</p></td>
+<td><p>{‘stddev’: stddev, ‘bias0’: bias0}</p></td>
+</tr>
+<tr class="row-odd"><td><p>getTrainingData</p></td>
+<td><p>{‘prefix’: None}</p></td>
+</tr>
+<tr class="row-even"><td><p>inputNames</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-odd"><td><p>outputNames</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-even"><td><p>inputs</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-odd"><td><p>outputs</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-even"><td><p>inputNorm</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-odd"><td><p>outputNorm</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-even"><td><p>targets</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-odd"><td><p>getWeights</p></td>
+<td><p>{‘prefix’: None}</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.get_model_attribute">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">get_model_attribute</code><span class="sig-paren">(</span><em class="sig-param">userid</em>, <em class="sig-param">modelid</em>, <em class="sig-param">data=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#get_model_attribute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.get_model_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve model attributes.</p>
+<p>parameters:</p>
+<ul>
+<li><p>userid -&gt; user ID</p></li>
+<li><p>modelid -&gt; model ID belonging to the designed user.</p></li>
+<li><p>data -&gt; dictionary describing the attribute to read.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>{‘attributes’: &lt;attribute name&gt;}</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>return depending on the attribute.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.get_model_list">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">get_model_list</code><span class="sig-paren">(</span><em class="sig-param">userid</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#get_model_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.get_model_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the list of models belongings to the given user.</p>
+<p>parameter:</p>
+<ul class="simple">
+<li><p>userid -&gt; ID of the user to examine.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.get_user_name">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">get_user_name</code><span class="sig-paren">(</span><em class="sig-param">user_ID</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#get_user_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.get_user_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve user name.</p>
+<p>parameter:</p>
+<ul class="simple">
+<li><p>user_ID -&gt; ID to find</p></li>
+</ul>
+<p>return user name if found, else empty string.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.get_users">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">get_users</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#get_users"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.get_users" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve registered user dictionary.</p>
+<ul class="simple">
+<li><p>keys -&gt; user ID(s)</p></li>
+<li><p>values -&gt; user names</p></li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.initiate_connection">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">initiate_connection</code><span class="sig-paren">(</span><em class="sig-param">server='0.0.0.0'</em>, <em class="sig-param">port=5005</em>, <em class="sig-param">application='metaphor'</em>, <em class="sig-param">APIver=1.0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#initiate_connection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.initiate_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initiate metaphor client interface routes and establish contact.</p>
+<p>parameters:</p>
+<ul class="simple">
+<li><p>server -&gt; IP address or name of the server machine. default “0.0.0.0”</p></li>
+<li><p>port -&gt; Number of port. default 5005</p></li>
+<li><p>application -&gt; Application name. default ‘metaphor’</p></li>
+<li><p>APIver -&gt; Version of the interface. default APIversion</p></li>
+</ul>
+<p>return the server welcome message if success, otherwise an error message.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.load_model">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">load_model</code><span class="sig-paren">(</span><em class="sig-param">userid</em>, <em class="sig-param">data=''</em>, <em class="sig-param">getID=False</em>, <em class="sig-param">raw=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#load_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.load_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>load a new model from file.</p>
+<ul>
+<li><p>datas :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>source -&gt; file or file content</p></li>
+<li><p>‘modelname’ -&gt; name imposed to the model</p></li>
+<li><p>‘descriptor’ -&gt; smiles code or similar descriptor</p></li>
+<li><p>‘docompile’ -&gt;</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>raw -&gt; If True, return raw request</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.post_file">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">post_file</code><span class="sig-paren">(</span><em class="sig-param">userid</em>, <em class="sig-param">filepath=None</em>, <em class="sig-param">dest=''</em>, <em class="sig-param">extra={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#post_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.post_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upload a file to the server.</p>
+<p>parameters:</p>
+<ul class="simple">
+<li><p>filepath -&gt; path of the file to upload</p></li>
+<li><p>dest -&gt; relative destination path in the server</p></li>
+<li><p>extra -&gt; unused</p></li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.post_function">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">post_function</code><span class="sig-paren">(</span><em class="sig-param">userid</em>, <em class="sig-param">modelid</em>, <em class="sig-param">root_func_name</em>, <em class="sig-param">data=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#post_function"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.post_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call a function to apply to the designed model. The function called may modify the sate of the designed model.</p>
+<p>parameters:</p>
+<ul>
+<li><p>userid -&gt; user ID</p></li>
+<li><p>modelid -&gt; model ID belonging to the designed user</p></li>
+<li><p>root_func_name -&gt; function to call. Availables functions are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>transfer</p></li>
+<li><p>train</p></li>
+<li><p>reverse_train</p></li>
+<li><p>setWeights</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>data -&gt; a dictionary depending upon the called function:</p>
+<blockquote>
+<div><ul>
+<li><p>transfer:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>inputs -&gt; input vector.</p></li>
+<li><p>index -&gt; index of training data to use as inputs.</p></li>
+<li><p>weights -&gt; parameters to use. If None, current parameters are used.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>train -&gt;</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>startWeights -&gt; starting parameter set to strat training with.</p></li>
+<li><p>epochs -&gt; maximum number of epochs allowed to training job</p></li>
+<li><p>trainstyle -&gt; unused</p></li>
+<li><p>callback -&gt; unused</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>reverse_train -&gt;</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>outputtarget -&gt; output value to target</p></li>
+<li><p>inputs -&gt; starting inputs</p></li>
+<li><p>fixedinputs -&gt; vector of boolean giving the input mobility freedom</p></li>
+<li><p>epochs -&gt; maximum number of epochs allowed to training job</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>setWeights -&gt;</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>weights -&gt; parameter vector to affect</p></li>
+<li><p>prefix -&gt; None</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="meta_client.api_client.set_model_attribute">
+<code class="sig-prename descclassname">meta_client.api_client.</code><code class="sig-name descname">set_model_attribute</code><span class="sig-paren">(</span><em class="sig-param">userid</em>, <em class="sig-param">modelid</em>, <em class="sig-param">data=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/api_client.html#set_model_attribute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.api_client.set_model_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write an attribute to the model. Can be used for user defined attributes.</p>
+<p>parameters:</p>
+<ul class="simple">
+<li><p>userid -&gt; user ID</p></li>
+<li><p>modelid -&gt; model ID belonging to the designed user</p></li>
+<li><dl class="simple">
+<dt>data -&gt; dictionary describing the attribute to write</dt><dd><ul>
+<li><p>{‘attributes’: &lt;attribute name&gt;}</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+<div class="section" id="module-meta_client.client_toolbox">
+<span id="metaphor-client-toolbox"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">metaphor.client_toolbox</span></code><a class="headerlink" href="#module-meta_client.client_toolbox" title="Permalink to this headline">¶</a></h1>
+<p>This module defines the routes for metaphor server.</p>
+<dl class="function">
+<dt id="meta_client.client_toolbox.initiate_routes">
+<code class="sig-prename descclassname">meta_client.client_toolbox.</code><code class="sig-name descname">initiate_routes</code><span class="sig-paren">(</span><em class="sig-param">server='0.0.0.0'</em>, <em class="sig-param">port=5005</em>, <em class="sig-param">appli='metaphor'</em>, <em class="sig-param">APIver=1.0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/meta_client/client_toolbox.html#initiate_routes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#meta_client.client_toolbox.initiate_routes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initiate metaphor client interface routes.</p>
+<p>parameters:</p>
+<ul class="simple">
+<li><p>server -&gt; IP address or name of the server machine. default “0.0.0.0”</p></li>
+<li><p>port -&gt; Number of port. default 5005</p></li>
+<li><p>application -&gt; Application name. default ‘metaphor’</p></li>
+<li><p>APIversion -&gt; Version of the interface. default APIversion</p></li>
+</ul>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="model.html" title="metaphor.model"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="metaphor_client.html" title="Welcome to metaphor_client’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="metaphor_client.html">metaphor_client 0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Jean Luc PLOIX.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+include ez_setup.py
+include metaphor/version_client.py
+#
+# Installation of Metaphor Client
+#
+recursive-include metaphor *.py
+recursive-include metaphor/client_doc/build/html *.*
+prune metaphor/test
+prune metaphor/client_doc/source

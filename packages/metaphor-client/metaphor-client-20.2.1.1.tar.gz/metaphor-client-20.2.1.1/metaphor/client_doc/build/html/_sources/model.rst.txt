@@ -1,0 +1,7 @@
+
+:mod:`metaphor.model`
+***************************
+
+.. automodule:: meta_client.model
+   :members:
+

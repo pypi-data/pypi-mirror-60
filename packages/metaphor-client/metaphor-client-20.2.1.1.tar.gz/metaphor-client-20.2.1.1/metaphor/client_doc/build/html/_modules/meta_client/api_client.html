@@ -1,0 +1,613 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>meta_client.api_client &#8212; metaphor_client 0.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../metaphor_client.html">metaphor_client 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for meta_client.api_client</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: UTF-8 -*-</span>
+<span class="c1">#----------------------------------------------------------------------------</span>
+<span class="c1"># $Id$</span>
+<span class="c1">#</span>
+<span class="c1"># Copyright 2016 Jean-Luc PLOIX</span>
+<span class="c1"># </span>
+<span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="c1"># you may not use this file except in compliance with the License.</span>
+<span class="c1"># You may obtain a copy of the License at</span>
+<span class="c1"># </span>
+<span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="c1"># </span>
+<span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+<span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="c1"># WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="c1"># See the License for the specific language governing permissions and</span>
+<span class="c1"># limitations under the License.</span>
+<span class="c1">#----------------------------------------------------------------------------</span>
+
+<span class="sd">&quot;&quot;&quot;Low level client interface for Metaphor server.</span>
+
+<span class="sd">This module expose procedures that call directly the metaphor server through the RESTful interface implemented with Sanic.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="kn">from</span> <span class="nn">metaphor.meta_client</span> <span class="k">import</span> <span class="n">client_toolbox</span> <span class="k">as</span> <span class="n">ct</span>
+
+<div class="viewcode-block" id="initiate_connection"><a class="viewcode-back" href="../../api.html#meta_client.api_client.initiate_connection">[docs]</a><span class="k">def</span> <span class="nf">initiate_connection</span><span class="p">(</span><span class="n">server</span><span class="o">=</span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5005</span><span class="p">,</span> <span class="n">application</span><span class="o">=</span><span class="s1">&#39;metaphor&#39;</span><span class="p">,</span> 
+        <span class="n">APIver</span><span class="o">=</span><span class="n">ct</span><span class="o">.</span><span class="n">APIversion</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Initiate metaphor client interface routes and establish contact.</span>
+<span class="sd">    </span>
+<span class="sd">    parameters:</span>
+<span class="sd">    </span>
+<span class="sd">    - server -&gt; IP address or name of the server machine. default &quot;0.0.0.0&quot;</span>
+<span class="sd">    - port -&gt; Number of port. default 5005 </span>
+<span class="sd">    - application -&gt; Application name. default &#39;metaphor&#39; </span>
+<span class="sd">    - APIver -&gt; Version of the interface. default APIversion</span>
+<span class="sd">    </span>
+<span class="sd">    return the server welcome message if success, otherwise an error message.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">ct</span><span class="o">.</span><span class="n">initiate_routes</span><span class="p">(</span><span class="n">server</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">application</span><span class="p">,</span> <span class="n">APIver</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">contact</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="contact"><a class="viewcode-back" href="../../api.html#meta_client.api_client.contact">[docs]</a><span class="k">def</span> <span class="nf">contact</span><span class="p">():</span>  <span class="c1">#application=ct.application</span>
+    <span class="sd">&quot;&quot;&quot;Establish a first contact with the metaphor server. </span>
+<span class="sd">    It returns a welcome message.</span>
+<span class="sd">    </span>
+<span class="sd">    parameters:</span>
+<span class="sd">    </span>
+<span class="sd">    - application (optional) -&gt; the application name get in contact with. Defaul **metaphor**</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">welcome_url</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span></div>
+
+<div class="viewcode-block" id="check_user"><a class="viewcode-back" href="../../api.html#meta_client.api_client.check_user">[docs]</a><span class="k">def</span> <span class="nf">check_user</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">getID</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span> 
+<span class="c1">#   .../metaphor/vx.x/user/&lt;user_name&gt; </span>
+    <span class="sd">&quot;&quot;&quot;Check the user situation.</span>
+<span class="sd">    </span>
+<span class="sd">    return :</span>
+<span class="sd">    </span>
+<span class="sd">        ================  =========  ==========================================</span>
+<span class="sd">        user registered   no         yes</span>
+<span class="sd">        ================  =========  ==========================================</span>
+<span class="sd">        getID True        -1         ID </span>
+<span class="sd">        getID False       warning    3-tuple : name, ID, belongings dictionary</span>
+<span class="sd">        ================  =========  ==========================================    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">user_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">username</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>  
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">getID</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">res</span>
+        <span class="k">elif</span> <span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">username</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">res</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="c1">#int(res[1][&#39;id&#39;])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">content</span></div>
+
+<div class="viewcode-block" id="get_user_name"><a class="viewcode-back" href="../../api.html#meta_client.api_client.get_user_name">[docs]</a><span class="k">def</span> <span class="nf">get_user_name</span><span class="p">(</span><span class="n">user_ID</span><span class="p">):</span>
+<span class="c1">#  .../metaphor/vx.x/user/&lt;user_ID&gt;</span>
+    <span class="sd">&quot;&quot;&quot;Retrieve user name.</span>
+<span class="sd">    </span>
+<span class="sd">    parameter:</span>
+<span class="sd">    </span>
+<span class="sd">    - user_ID -&gt; ID to find</span>
+<span class="sd">    </span>
+<span class="sd">    return user name if found, else empty string.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">user_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">user_ID</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">res</span></div>
+
+<div class="viewcode-block" id="get_users"><a class="viewcode-back" href="../../api.html#meta_client.api_client.get_users">[docs]</a><span class="k">def</span> <span class="nf">get_users</span><span class="p">():</span>
+<span class="c1">#  .../metaphor/vx.x/users</span>
+    <span class="sd">&quot;&quot;&quot;Retrieve registered user dictionary.</span>
+<span class="sd">    </span>
+<span class="sd">    - keys -&gt; user ID(s)</span>
+<span class="sd">    - values -&gt; user names</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">users_url</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">content</span></div>
+
+<div class="viewcode-block" id="add_user"><a class="viewcode-back" href="../../api.html#meta_client.api_client.add_user">[docs]</a><span class="k">def</span> <span class="nf">add_user</span><span class="p">(</span><span class="n">user_ame</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+<span class="c1">#  .../metaphor/vx.x/users</span>
+    <span class="sd">&quot;&quot;&quot;Add a user to the registered user list.</span>
+<span class="sd">    </span>
+<span class="sd">    parameter:</span>
+<span class="sd">    </span>
+<span class="sd">    - user_ame -&gt; name of the user to add</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">users_url</span> 
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">user_ame</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span></div>
+
+<div class="viewcode-block" id="delete_user"><a class="viewcode-back" href="../../api.html#meta_client.api_client.delete_user">[docs]</a><span class="k">def</span> <span class="nf">delete_user</span><span class="p">(</span><span class="n">user_name</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+<span class="c1">#  .../metaphor/vx.x/users</span>
+    <span class="sd">&quot;&quot;&quot;Unregister the designed user.</span>
+<span class="sd">    </span>
+<span class="sd">    All the user belongings are destroyed.</span>
+<span class="sd">    </span>
+<span class="sd">    parameter:</span>
+<span class="sd">    </span>
+<span class="sd">    - user_name -&gt; name of the user to unregister. If this name is &quot;*&quot;, all the registered users are unregistered.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">users_url</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">user_name</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span></div>
+
+<div class="viewcode-block" id="get_model_list"><a class="viewcode-back" href="../../api.html#meta_client.api_client.get_model_list">[docs]</a><span class="k">def</span> <span class="nf">get_model_list</span><span class="p">(</span><span class="n">userid</span><span class="p">):</span>
+<span class="c1">#  .../metaphor/vx.x/user/&lt;user_id&gt;/models</span>
+    <span class="sd">&quot;&quot;&quot;Retrieve the list of models belongings to the given user.</span>
+<span class="sd">    </span>
+<span class="sd">    parameter:</span>
+<span class="sd">    </span>
+<span class="sd">    - userid -&gt; ID of the user to examine.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">models_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">userid</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span></div>
+        
+<div class="viewcode-block" id="create_model"><a class="viewcode-back" href="../../api.html#meta_client.api_client.create_model">[docs]</a><span class="k">def</span> <span class="nf">create_model</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">raw</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;create a new model.</span>
+<span class="sd">    </span>
+<span class="sd">    - data -&gt; dictionary describing creation parameters.</span>
+<span class="sd">    </span>
+<span class="sd">        - training -&gt; boolean giving the purpose of creation</span>
+<span class="sd">        </span>
+<span class="sd">        - source -&gt; data file or data file content </span>
+<span class="sd">        </span>
+<span class="sd">        - modelname -&gt; name imposed to the model</span>
+<span class="sd">        </span>
+<span class="sd">        - trainable -&gt; training capacity (default True)</span>
+<span class="sd">        </span>
+<span class="sd">        - inputs -&gt; input number (default 1) </span>
+<span class="sd">        </span>
+<span class="sd">        - outputs -&gt; output number (default 1) </span>
+<span class="sd">        </span>
+<span class="sd">        - hidden -&gt; number of hidden neurons (default 2)</span>
+<span class="sd">        </span>
+<span class="sd">        - activfunc -&gt; activation fonction (default TANH)</span>
+<span class="sd">        </span>
+<span class="sd">        - statelayer -&gt; state layer (default -1 )</span>
+<span class="sd">        </span>
+<span class="sd">        - statenodeindex index of state node (default -1) </span>
+<span class="sd">        </span>
+<span class="sd">        - order order of the network default 0) </span>
+<span class="sd">        </span>
+<span class="sd">        - nosynapse -&gt; build model without any synapses (default False)</span>
+<span class="sd">         </span>
+<span class="sd">        - existingnode -&gt; already existing nodes (default 0) </span>
+<span class="sd">        </span>
+<span class="sd">        - polytype -&gt; type de polynome (default 0)</span>
+<span class="sd">        </span>
+<span class="sd">        - classif -&gt; classifier (deafult False)</span>
+<span class="sd">        </span>
+<span class="sd">        - verbose=0,</span>
+<span class="sd">         </span>
+<span class="sd">        - data=None, </span>
+<span class="sd">        </span>
+<span class="sd">        - dataformat=None,</span>
+<span class="sd">         </span>
+<span class="sd">        - normalize=False, </span>
+<span class="sd">        </span>
+<span class="sd">        - weights=None, </span>
+<span class="sd">        </span>
+<span class="sd">        - disp=0, </span>
+<span class="sd">        </span>
+<span class="sd">        - callback=None  unused</span>
+<span class="sd">        </span>
+<span class="sd">    - raw -&gt; If True, return raw request</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<span class="c1">#    - modeldata=None, </span>
+<span class="c1">#    - callbackfct=None, </span>
+
+<span class="c1">#  .../metaphor/vx.x/user/&lt;user_id&gt;/models</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">models_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">userid</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">raw</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">content</span></div>
+        
+<div class="viewcode-block" id="load_model"><a class="viewcode-back" href="../../api.html#meta_client.api_client.load_model">[docs]</a><span class="k">def</span> <span class="nf">load_model</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">getID</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">raw</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;load a new model from file.</span>
+<span class="sd">    </span>
+<span class="sd">    - datas :</span>
+<span class="sd">    </span>
+<span class="sd">        - source -&gt; file or file content</span>
+<span class="sd">        - &#39;modelname&#39; -&gt; name imposed to the model</span>
+<span class="sd">        - &#39;descriptor&#39; -&gt; smiles code or similar descriptor</span>
+<span class="sd">        - &#39;docompile&#39; -&gt; </span>
+
+<span class="sd">    raw -&gt; If True, return raw request</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<span class="c1">#  .../metaphor/vx.x/user/&lt;user_id&gt;/models</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">models_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">userid</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="n">data</span><span class="p">}</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">raw</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">getID</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">res</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">res</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span></div>
+
+<div class="viewcode-block" id="get_model_attribute"><a class="viewcode-back" href="../../api.html#meta_client.api_client.get_model_attribute">[docs]</a><span class="k">def</span> <span class="nf">get_model_attribute</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">modelid</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="c1">#  .../metaphor/vx.x/user/&lt;user_id&gt;/models/&lt;model_id&gt;</span>
+    <span class="sd">&quot;&quot;&quot;Retrieve model attributes.</span>
+
+<span class="sd">    parameters:</span>
+<span class="sd">    </span>
+<span class="sd">    - userid -&gt; user ID</span>
+<span class="sd">    - modelid -&gt; model ID belonging to the designed user.</span>
+<span class="sd">    - data -&gt; dictionary describing the attribute to read.</span>
+<span class="sd">    </span>
+<span class="sd">        - {&#39;attributes&#39;: &lt;attribute name&gt;}</span>
+<span class="sd">        </span>
+<span class="sd">    return depending on the attribute.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">model_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">modelid</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span></div>
+
+<div class="viewcode-block" id="set_model_attribute"><a class="viewcode-back" href="../../api.html#meta_client.api_client.set_model_attribute">[docs]</a><span class="k">def</span> <span class="nf">set_model_attribute</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">modelid</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="c1">#  .../metaphor/vx.x/user/&lt;user_id&gt;/models/&lt;model_id&gt;</span>
+    <span class="sd">&quot;&quot;&quot;Write an attribute to the model. Can be used for user defined attributes.</span>
+<span class="sd">    </span>
+<span class="sd">    parameters:</span>
+<span class="sd">    </span>
+<span class="sd">    - userid -&gt; user ID</span>
+<span class="sd">    - modelid -&gt; model ID belonging to the designed user</span>
+<span class="sd">    - data -&gt; dictionary describing the attribute to write</span>
+<span class="sd">        - {&#39;attributes&#39;: &lt;attribute name&gt;}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">model_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">modelid</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span></div>
+
+<div class="viewcode-block" id="delete_models"><a class="viewcode-back" href="../../api.html#meta_client.api_client.delete_models">[docs]</a><span class="k">def</span> <span class="nf">delete_models</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">modelid</span><span class="p">):</span>
+    <span class="c1">#  .../metaphor/vx.x/user/&lt;user_id&gt;/models</span>
+    <span class="sd">&quot;&quot;&quot;Delete a registered model.</span>
+<span class="sd">    </span>
+<span class="sd">    parameters:</span>
+<span class="sd">    </span>
+<span class="sd">    - userid -&gt; user ID</span>
+<span class="sd">    - modelid -&gt; model ID belonging to the designed user. modelid may be &quot;*&quot; to delete all the user&#39;s models.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">models_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">userid</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">modelid</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span></div>
+
+<div class="viewcode-block" id="get_function"><a class="viewcode-back" href="../../api.html#meta_client.api_client.get_function">[docs]</a><span class="k">def</span> <span class="nf">get_function</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">modelid</span><span class="p">,</span> <span class="n">root_func_name</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span> 
+    <span class="c1">#  /metaphor/vx.x/users/&lt;user_id&gt;/models/&lt;model_id&gt;/&lt;root_func_name&gt;  GET</span>
+    <span class="sd">&quot;&quot;&quot;Call a function to apply to the designed model. </span>
+<span class="sd">    The function called may **not** modify the sate of the designed model.</span>
+<span class="sd">    </span>
+<span class="sd">    parameters:</span>
+<span class="sd">    </span>
+<span class="sd">    - userid -&gt; user ID</span>
+<span class="sd">    - modelid -&gt; model ID belonging to the designed user</span>
+<span class="sd">    - root_func_name, data -&gt; function to call. **data** is related to function:</span>
+<span class="sd">    </span>
+<span class="sd">        =============== ====================================</span>
+<span class="sd">        function name   data</span>
+<span class="sd">        =============== ====================================</span>
+<span class="sd">        paramCount      None</span>
+<span class="sd">        dataCount       None</span>
+<span class="sd">        newWeights      {&#39;stddev&#39;: stddev, &#39;bias0&#39;: bias0}</span>
+<span class="sd">        getTrainingData {&#39;prefix&#39;: None}</span>
+<span class="sd">        inputNames      None</span>
+<span class="sd">        outputNames     None</span>
+<span class="sd">        inputs          None</span>
+<span class="sd">        outputs         None</span>
+<span class="sd">        inputNorm       None</span>
+<span class="sd">        outputNorm      None</span>
+<span class="sd">        targets         None</span>
+<span class="sd">        getWeights      {&#39;prefix&#39;: None}</span>
+<span class="sd">        =============== ====================================</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">model_fct_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">modelid</span><span class="p">,</span> <span class="n">root_func_name</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span></div>
+    
+<span class="k">def</span> <span class="nf">_put_function</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">modelid</span><span class="p">,</span> <span class="n">root_func_name</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="c1">#  /metaphor/vx.x/users/&lt;user_id&gt;/models/&lt;model_id&gt;/&lt;root_func_name&gt;  PUT</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">model_fct_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">modelid</span><span class="p">,</span> <span class="n">root_func_name</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span>
+    
+<div class="viewcode-block" id="post_function"><a class="viewcode-back" href="../../api.html#meta_client.api_client.post_function">[docs]</a><span class="k">def</span> <span class="nf">post_function</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">modelid</span><span class="p">,</span> <span class="n">root_func_name</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="c1">#  /metaphor/vx.x/users/&lt;user_id&gt;/models/&lt;model_id&gt;/&lt;root_func_name&gt;  POST</span>
+    <span class="sd">&quot;&quot;&quot;Call a function to apply to the designed model. The function called may modify the sate of the designed model.</span>
+<span class="sd">    </span>
+<span class="sd">    parameters:</span>
+<span class="sd">    </span>
+<span class="sd">    - userid -&gt; user ID</span>
+<span class="sd">    - modelid -&gt; model ID belonging to the designed user</span>
+<span class="sd">    - root_func_name -&gt; function to call. Availables functions are:</span>
+<span class="sd">    </span>
+<span class="sd">        - transfer</span>
+<span class="sd">        - train</span>
+<span class="sd">        - reverse_train</span>
+<span class="sd">        - setWeights</span>
+<span class="sd">    </span>
+<span class="sd">    - data -&gt; a dictionary depending upon the called function:</span>
+<span class="sd">    </span>
+<span class="sd">        - transfer:</span>
+<span class="sd">        </span>
+<span class="sd">            - inputs -&gt; input vector.</span>
+<span class="sd">            - index -&gt; index of training data to use as inputs.</span>
+<span class="sd">            - weights -&gt; parameters to use. If None, current parameters are used.</span>
+<span class="sd">            </span>
+<span class="sd">        - train -&gt;</span>
+<span class="sd">        </span>
+<span class="sd">            - startWeights -&gt; starting parameter set to strat training with.</span>
+<span class="sd">            - epochs -&gt; maximum number of epochs allowed to training job</span>
+<span class="sd">            - trainstyle -&gt; unused</span>
+<span class="sd">            - callback -&gt; unused</span>
+
+<span class="sd">        - reverse_train -&gt;</span>
+<span class="sd">        </span>
+<span class="sd">            - outputtarget -&gt; output value to target</span>
+<span class="sd">            - inputs -&gt; starting inputs</span>
+<span class="sd">            - fixedinputs -&gt; vector of boolean giving the input mobility freedom</span>
+<span class="sd">            - epochs -&gt; maximum number of epochs allowed to training job</span>
+<span class="sd">            </span>
+<span class="sd">        - setWeights -&gt;</span>
+<span class="sd">        </span>
+<span class="sd">            - weights -&gt; parameter vector to affect</span>
+<span class="sd">            - prefix -&gt; None</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">model_fct_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">modelid</span><span class="p">,</span> <span class="n">root_func_name</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>  <span class="c1">#await </span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span></div>
+    
+<div class="viewcode-block" id="post_file"><a class="viewcode-back" href="../../api.html#meta_client.api_client.post_file">[docs]</a><span class="k">def</span> <span class="nf">post_file</span><span class="p">(</span><span class="n">userid</span><span class="p">,</span> <span class="n">filepath</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="p">{}):</span>
+    <span class="c1"># /metaphor/vx.x/users/&lt;user_id&gt;/files</span>
+    <span class="sd">&quot;&quot;&quot;Upload a file to the server.</span>
+<span class="sd">    </span>
+<span class="sd">    parameters:</span>
+<span class="sd">    </span>
+<span class="sd">    - filepath -&gt; path of the file to upload</span>
+<span class="sd">    </span>
+<span class="sd">    - dest -&gt; relative destination path in the server</span>
+<span class="sd">    </span>
+<span class="sd">    - extra -&gt; unused</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">files_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">userid</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">extra</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;dest&#39;</span><span class="p">:</span> <span class="n">dest</span><span class="p">})</span>
+    <span class="k">if</span> <span class="n">filepath</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">ff</span><span class="p">:</span>
+            <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="n">ff</span><span class="p">}</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span></div>
+
+<span class="c1">#-----------------------------------------------------------------------</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">server</span> <span class="o">=</span> <span class="s1">&#39;macprosigma&#39;</span>
+    <span class="n">port</span> <span class="o">=</span> <span class="mi">5005</span>
+    <span class="n">APIver</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">APIversion</span>
+    
+    <span class="n">result</span> <span class="o">=</span> <span class="n">initiate_connection</span><span class="p">(</span><span class="n">server</span><span class="o">=</span><span class="n">server</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span> <span class="n">APIver</span><span class="o">=</span><span class="n">APIver</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+    
+    <span class="n">res</span> <span class="o">=</span> <span class="n">get_users</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;User list&quot;</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+    
+    <span class="n">res</span> <span class="o">=</span> <span class="n">get_user_name</span><span class="p">(</span><span class="mi">946040</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+    
+    <span class="n">res</span> <span class="o">=</span> <span class="n">add_user</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;add existing user&quot;</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+    
+    <span class="n">res</span> <span class="o">=</span> <span class="n">add_user</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;add non existing user&quot;</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+    
+    <span class="n">res</span> <span class="o">=</span> <span class="n">check_user</span><span class="p">(</span><span class="s1">&#39;jeanluc&#39;</span><span class="p">,</span> <span class="n">getID</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">res</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;done&#39;</span><span class="p">)</span>
+<span class="c1">#     modelNML_0 = &quot;/Users/jeanluc/Documents/LiClipseWorkspace/Metaphor_api/src/testfiles/Tests SAP Samir MEDROUK/Modeles fusionnes/Modele_Final_V2.NML&quot;</span>
+<span class="c1">#     </span>
+<span class="c1">#     myname = &#39;jeanluc&#39;</span>
+<span class="c1">#     res = requests.get(welcome_url)</span>
+<span class="c1">#     print(res.text)</span>
+<span class="c1">#     print(&quot;end welcome&quot;)</span>
+<span class="c1">#     res = add_user(myname)</span>
+<span class="c1">#     for key, val in res[1].items():</span>
+<span class="c1">#         if val:</span>
+<span class="c1">#             print(&quot;{0} is already registered&quot;.format(key))</span>
+<span class="c1">#         else:</span>
+<span class="c1">#             print(&quot;added&quot;, key)</span>
+<span class="c1">#     add_user(&quot;albert&quot;)</span>
+<span class="c1">#     add_user(&quot;jo&quot;)</span>
+<span class="c1">#     res = delete_user(&quot;albert&quot;)</span>
+<span class="c1">#     for val in res:</span>
+<span class="c1">#         print(val)</span>
+<span class="c1">#         </span>
+<span class="c1">#     users = get_users()</span>
+<span class="c1">#     print(&#39;registered users&#39;)</span>
+<span class="c1">#     for key, val in users.items():</span>
+<span class="c1">#         print(&quot;\t{}\t{}&quot;.format(val, key))</span>
+<span class="c1"># </span>
+<span class="c1">#     </span>
+<span class="c1">#     </span>
+<span class="c1">#     userID = check_user(myname, True)</span>
+<span class="c1">#     data = {&#39;modelname&#39;: &#39;MyFirstModel&#39;,</span>
+<span class="c1">#             &#39;source&#39;: modelNML_0}</span>
+<span class="c1">#     user_id, model_id = load_model(userID, data, True)</span>
+<span class="c1">#     print(&#39;user \t-&gt;&#39;, user_id)</span>
+<span class="c1">#     print(&#39;model \t-&gt;&#39;, model_id)</span>
+<span class="c1"># </span>
+<span class="c1">#     user_id, model_id2 = load_model(userID, data, True)</span>
+<span class="c1">#     </span>
+<span class="c1">#     </span>
+<span class="c1">#     res = get_model_list(user_id)</span>
+<span class="c1">#     nm = get_user_name(user_id)</span>
+<span class="c1">#     print(&quot;models belonging to {}&quot;.format(nm))</span>
+<span class="c1">#     modelDict = res[&#39;models&#39;]</span>
+<span class="c1">#     for ind, (key, val) in enumerate(modelDict.items()):</span>
+<span class="c1">#         if not ind:</span>
+<span class="c1">#             key0 = key</span>
+<span class="c1">#         print(&quot;\t{0} -&gt; {1}&quot;.format(key, val))</span>
+<span class="c1">#         </span>
+<span class="c1">#     data = {&#39;delete&#39;: key0}</span>
+<span class="c1">#     res = delete_models(user_id, data)</span>
+<span class="c1">#     for val in res:</span>
+<span class="c1">#         print(val)</span>
+<span class="c1">#     print()</span>
+<span class="c1">#     res = get_model_list(user_id)</span>
+<span class="c1">#     modelDict = res[&#39;models&#39;]</span>
+<span class="c1">#     print(&quot;models belonging to {}&quot;.format(nm))</span>
+<span class="c1">#     key0 = 0</span>
+<span class="c1">#     if not len(modelDict):</span>
+<span class="c1">#         print(&quot;\tnone&quot;)</span>
+<span class="c1">#     else:</span>
+<span class="c1">#         for ind, (key, val) in enumerate(modelDict.items()):</span>
+<span class="c1">#             if not ind:</span>
+<span class="c1">#                 key0 = key</span>
+<span class="c1">#             print(&quot;\t{0} -&gt; {1}&quot;.format(key, val))</span>
+<span class="c1">#     </span>
+<span class="c1">#     data = {&#39;inputs&#39;: (1,1,1,1),}</span>
+<span class="c1">#     res = get_function(user_id, key0, &#39;transfer&#39;, data=data)</span>
+<span class="c1">#     print(&quot;model({0}, {1})(inputs=(1,1,1,1)) = {2}&quot;.format(myname, key0, res))</span>
+<span class="c1">#     </span>
+<span class="c1">#     filename = &quot;/Users/jeanluc/Documents/LiClipseWorkspace/Metaphor_Test/src/metaphor/test_monal/testFiles/fullalea.csv&quot;</span>
+<span class="c1">#     filename2 = &quot;/Users/jeanluc/Documents/LiClipseWorkspace/Metaphor_Test/src/metaphor/test_monal/testFiles/l_153.xlsx&quot;</span>
+<span class="c1">#     </span>
+<span class="c1"># #    res = post_file(user_id, dest=&#39;host/suite&#39;)</span>
+<span class="c1">#     </span>
+<span class="c1">#     res = post_file(user_id, filename, dest=&#39;suite&#39;)</span>
+<span class="c1">#     print(res)</span>
+<span class="c1">#     res = post_file(user_id, filename2)</span>
+<span class="c1">#     print(res)</span>
+<span class="c1">#     </span>
+<span class="c1">#     print(&quot;Done&quot;)</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../metaphor_client.html">metaphor_client 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Jean Luc PLOIX.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.1.
+    </div>
+  </body>
+</html>
