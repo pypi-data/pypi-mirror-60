@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+swan-vis/__init__.py
+swan-vis/graph.py
+swan-vis/plottedgraph.py
+swan-vis/report.py
+swan-vis/swangraph.py
+swan-vis/utils.py
+swan_vis.egg-info/PKG-INFO
+swan_vis.egg-info/SOURCES.txt
+swan_vis.egg-info/dependency_links.txt
+swan_vis.egg-info/requires.txt
+swan_vis.egg-info/top_level.txt
