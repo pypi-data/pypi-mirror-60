@@ -1,0 +1,10 @@
+tensorflow
+keras
+mxnet
+scikit-learn
+numpy
+pandas
+statsmodels
+matplotlib
+xgboost
+scipy
