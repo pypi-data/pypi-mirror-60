@@ -1,0 +1,4 @@
+PyQt5>=5.14
+psutil
+pynput
+gitpython
