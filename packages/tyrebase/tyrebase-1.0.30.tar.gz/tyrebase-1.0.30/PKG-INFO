@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: tyrebase
+Version: 1.0.30
+Summary: A simple python wrapper for the Firebase API forked from https://github.com/thisbejim/Pyrebase
+Home-page: https://github.com/tupio/Pyrebase/
+Author: James Childs-Maidment, Denil Verghese
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: Firebase Wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
