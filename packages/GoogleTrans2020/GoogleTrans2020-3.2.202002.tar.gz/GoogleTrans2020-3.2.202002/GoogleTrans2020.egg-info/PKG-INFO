@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: GoogleTrans2020
+Version: 3.2.202002
+Summary: 免费谷歌翻译工具
+Home-page: https://github.com/wingram01
+Author: Andrew Luo
+Author-email: wingram-luoyanze07@hotmail.com
+License: BSD
+Description: GoogleTrans2020
+Keywords: Google,Translator,2020
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP

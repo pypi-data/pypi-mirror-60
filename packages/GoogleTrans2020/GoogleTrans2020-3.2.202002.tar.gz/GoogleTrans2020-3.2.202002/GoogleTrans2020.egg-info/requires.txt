@@ -1,0 +1,4 @@
+PyExecJs
+requests
+playsound
+pyperclip
