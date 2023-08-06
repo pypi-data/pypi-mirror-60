@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pytextdist
+Version: 0.1.0
+Summary: A python implementation of a variety of text distance and similarity metrics.
+Home-page: UNKNOWN
+Author: Yifan Wu
+Author-email: yw693@cornell.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml (>=5.1.2)
+
+# python-text-distance
+
+A python implementation of a variety of text distance and similarity metrics.
+
+### Requirements
+---
+Python 3.3+
+
+### Install
+---
+```
+pip install pytextdistance
+```
+
+
+
+
