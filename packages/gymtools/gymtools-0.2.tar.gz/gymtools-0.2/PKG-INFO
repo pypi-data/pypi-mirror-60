@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: gymtools
+Version: 0.2
+Summary: A collection of tools that are useful for gyms.
+Home-page: https://github.com/tommylenz/gymtools
+Author: Nico Hähn
+Author-email: nicohaehn@t-online.de
+License: MIT
+Description: # gymtools
+        
+        Current version: 0.2
+        
+        ##### Installation:
+        `python -m pip install gymtools`
+        
+        ##### Building distribution archives
+        `python setup.py sdist bdist_wheel`
+Keywords: gymtools gym bmi
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown

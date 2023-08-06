@@ -1,0 +1,7 @@
+README.md
+setup.py
+gymtools/bmi.py
+gymtools.egg-info/PKG-INFO
+gymtools.egg-info/SOURCES.txt
+gymtools.egg-info/dependency_links.txt
+gymtools.egg-info/top_level.txt
