@@ -1,0 +1,10 @@
+nancorrmp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nancorrmp/nancorrmp.py,sha256=sZ7-m0JMuoPUiSiZtt2q1KxvZf5T_ikYS4-kWEo9fMA,4190
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_benchmark_nancorrmp.py,sha256=SCN9T6VRWCkFM8BtFM4k_SEel9bBCiFsrTIoM0-RYsk,3604
+test/test_nancorrmp.py,sha256=bE3yhA2Irefz-iWeIgJvM8stRElUf6s3FlvTUZ7MBu0,1792
+nancorrmp-0.1.dist-info/LICENSE.txt,sha256=qBVa-hegT-KM8V7Zrs1aaZaGqDs1-4u--oWh_GH7QW8,1099
+nancorrmp-0.1.dist-info/METADATA,sha256=63bbwynLghlVEGOq1sg4Wdi85yiZWUTIXvysvLxTKfc,420
+nancorrmp-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+nancorrmp-0.1.dist-info/top_level.txt,sha256=x8RJbqB2x4QtGS8Af-koK7Znru-zjppHSwdC420JMRs,15
+nancorrmp-0.1.dist-info/RECORD,,
