@@ -1,0 +1,12 @@
+rabbit_clients/__init__.py,sha256=EIidmHBaW_y82C508UBkI02b8fIGbsGBIak9prYY5uE,116
+rabbit_clients/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rabbit_clients/clients/blocking.py,sha256=2ssK-nhCwBG23fRDdph8zSlMUUZvNmIvJPobly5WvfA,4809
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/dummy_consumer.py,sha256=8C55inNOBiLnW8TJV0pnKLZeAZNOHbSyRpEJt8rAusU,248
+tests/dummy_producer.py,sha256=DMJ12yCT79d98uwgniKWUE_ko-4uv9kZmrCPe-cpH0s,408
+tests/test_base.py,sha256=bJOGYtMI5smxzJX6Q8zbY7s7ZzyePIMehnG2atP630s,1703
+rabbit_clients-2.0.0.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rabbit_clients-2.0.0.dist-info/METADATA,sha256=za0ArCdKyFoN_KQp-XxFfuhF2OUhim-9krg47fN0-wc,475
+rabbit_clients-2.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+rabbit_clients-2.0.0.dist-info/top_level.txt,sha256=auqGMoGT1OyALKzRJTpGN7R-S8V9jpeW4579w5xeBnM,21
+rabbit_clients-2.0.0.dist-info/RECORD,,
