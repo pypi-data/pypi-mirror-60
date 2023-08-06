@@ -1,0 +1,10 @@
+README.md
+setup.py
+heartcrm/__init__.py
+heartcrm/cli.py
+heartcrm.egg-info/PKG-INFO
+heartcrm.egg-info/SOURCES.txt
+heartcrm.egg-info/dependency_links.txt
+heartcrm.egg-info/entry_points.txt
+heartcrm.egg-info/requires.txt
+heartcrm.egg-info/top_level.txt

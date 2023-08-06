@@ -1,0 +1,9 @@
+daiquiri
+simple_salesforce
+
+[test]
+ipython
+pytest
+pytest-sugar
+pytest-cov
+pylint
