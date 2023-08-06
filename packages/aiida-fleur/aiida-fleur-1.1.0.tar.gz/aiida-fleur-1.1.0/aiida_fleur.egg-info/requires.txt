@@ -1,0 +1,26 @@
+aiida-core<2.0.0,>=1.0.1
+lxml>=3.6.4
+pytest-cov>=2.5.0
+pytest>=2.9
+pgtest
+numpy>=1.16.4
+sympy
+masci-tools
+future
+ase
+pymatgen
+
+[docs]
+Sphinx
+docutils
+sphinx_rtd_theme
+
+[graphs ]
+matplotlib
+masci-tools
+
+[pre-commit]
+pre-commit==1.11.0
+yapf==0.24.0
+prospector==0.12.11
+pylint==1.9.3

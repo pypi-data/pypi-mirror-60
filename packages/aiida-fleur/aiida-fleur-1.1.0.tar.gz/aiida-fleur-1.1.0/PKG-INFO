@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: aiida-fleur
+Version: 1.1.0
+Summary: Python FLEUR simulation package containing an AiiDA Plugin for running the FLEUR-code and its input generator. Plus some workflows and utility
+Home-page: https://github.com/JuDFTteam/aiida-fleur
+Author: JuDFTteam
+Author-email: j.broeder@fz-juelich.de
+License: MIT License, see LICENSE.txt file.
+Description: UNKNOWN
+Keywords: fleur aiida inpgen workflows flapw juelich dft all-electron
+Platform: UNKNOWN
+Classifier: Framework :: AiiDA
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Natural Language :: English
+Provides-Extra: pre-commit
+Provides-Extra: graphs 
+Provides-Extra: docs
