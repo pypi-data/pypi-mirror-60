@@ -1,0 +1,14 @@
+simple_parsing/__init__.py,sha256=JrdiLzB8AhXsEZtetDjeK0ZjFiGep5MvPGVJCJPd-F8,431
+simple_parsing/conflicts.py,sha256=_1jIsqyI3YtPQVvnGnvZY6WpMXh65_iz5mKoGi9yQCE,7996
+simple_parsing/docstring.py,sha256=vxnaCvkq01CTgfxQ9Ja0ZYQ_N4_YWO0feIqw27adzMk,9214
+simple_parsing/parsing.py,sha256=1sctqiGVdkSue0mIdDrh4Z3-QIgquQ93idoXTGAMrXw,11286
+simple_parsing/utils.py,sha256=eLobeZ8J7hRLBZdpQ9DXrVHJkrUr6A5VSgfRmRSleZA,19668
+simple_parsing/wrappers/__init__.py,sha256=fo77yVtg8z8EzP6vu54mAAc2ylAfErglvx1lIt1kKQY,87
+simple_parsing/wrappers/bob.py,sha256=oM6VLbTp5C9L66wTMfJWlP1A8_qG0z78ovFd6JyT9lc,129
+simple_parsing/wrappers/dataclass_wrapper.py,sha256=zvOYTRhAVBjmnx0aeJ4uJkjUIyzuIj-b4Xedbk7qQDI,8003
+simple_parsing/wrappers/field_wrapper.py,sha256=E09LAUIwxBnM-5_ayejHSE2fDYew9NChiai3w2Tbez4,25540
+simple_parsing-0.0.6.dist-info/LICENSE,sha256=RRsK8MCGQX8QMSMbP42ve1-V8MRABiiPZsjx6D5wmwQ,1073
+simple_parsing-0.0.6.dist-info/METADATA,sha256=C7p_wb42nVW9NpV15sHXd5_ChjDOwbiNGuzAQeithAM,5628
+simple_parsing-0.0.6.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+simple_parsing-0.0.6.dist-info/top_level.txt,sha256=MHo7tVUqd9Bb-zdLbiAnLT0ux7oI4f18A41RFHLz4uQ,15
+simple_parsing-0.0.6.dist-info/RECORD,,
