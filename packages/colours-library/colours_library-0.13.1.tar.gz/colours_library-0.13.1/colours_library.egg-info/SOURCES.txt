@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+colours_library/__init__.py
+colours_library/colours.py
+colours_library.egg-info/PKG-INFO
+colours_library.egg-info/SOURCES.txt
+colours_library.egg-info/dependency_links.txt
+colours_library.egg-info/not-zip-safe
+colours_library.egg-info/requires.txt
+colours_library.egg-info/top_level.txt
