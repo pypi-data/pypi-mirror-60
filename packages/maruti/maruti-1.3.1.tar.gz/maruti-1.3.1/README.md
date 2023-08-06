@@ -1,0 +1,2 @@
+# HELPING LIBRARY
+For myself

@@ -1,0 +1,3 @@
+opencv-python
+torch-lr-finder
+tqdm==4.40.2
