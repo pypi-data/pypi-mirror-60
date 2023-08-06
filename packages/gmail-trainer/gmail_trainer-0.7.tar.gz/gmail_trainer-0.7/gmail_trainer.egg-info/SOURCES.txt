@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+gmail_trainer/__init__.py
+gmail_trainer/send_mail.py
+gmail_trainer.egg-info/PKG-INFO
+gmail_trainer.egg-info/SOURCES.txt
+gmail_trainer.egg-info/dependency_links.txt
+gmail_trainer.egg-info/requires.txt
+gmail_trainer.egg-info/top_level.txt
