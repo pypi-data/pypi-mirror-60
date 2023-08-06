@@ -1,0 +1,11 @@
+download_3gpp/VERSION,sha256=ln2a-xATRmZxZvLnboGRC8GQSI19QdUMoAcunZLwDjI,6
+download_3gpp/__init__.py,sha256=dNOBiVmngrNLaIoUZWpcTSbvpnac9Z_79IVmVuO3ryk,1053
+download_3gpp/download.py,sha256=vc9Sv5azV8fc0tgm-TZjXuuQeMeA8vHDm4dTZQY_e_U,7301
+download_3gpp/entrypoint.py,sha256=jUO8f1-qDhG9srm7FJRm_uwte5i7uk9kCQZ-vei986g,1243
+download_3gpp/options.py,sha256=bSXDTY_TXeIqWozYXkZKEwSw_CEo9HNCqgcD4H3ILrk,2265
+download_3gpp/options.pyi,sha256=qidNSpD9j7qWu8bzLO4Xz4rQR9NC4j9yGOogilOj5bY,1467
+download_3gpp-0.7.0.dist-info/entry_points.txt,sha256=kbozb3IQgk-XZdgCqwj3sYc124dAngtiYlRKObhG8nI,69
+download_3gpp-0.7.0.dist-info/LICENSE,sha256=ljOS4DjXvqEo5VzGfdaRwgRZPbNScGBmfwyC8PChvmQ,32422
+download_3gpp-0.7.0.dist-info/WHEEL,sha256=W0C0r2jfBMZdb75jfiTB1qBj15B4vwTGGZrLTh2uslc,81
+download_3gpp-0.7.0.dist-info/METADATA,sha256=1qKKFLqkAaOGzSnMzDlu3E1e5qlno4pJ6oq2AcNqRdE,5322
+download_3gpp-0.7.0.dist-info/RECORD,,
