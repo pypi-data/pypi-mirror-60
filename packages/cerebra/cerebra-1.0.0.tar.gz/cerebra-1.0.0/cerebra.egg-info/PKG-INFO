@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: cerebra
+Version: 1.0.0
+Summary: finds mutants in your scRNA-seq experiment
+Home-page: https://github.com/czbiohub/cerebra
+Author: Lincoln Harris
+Author-email: lincoln.harris@czbiohub.org
+License: MIT
+Description: # Example Package
+        
+        This is a simple example package. You can use
+        [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+        to write your content.
+        
+        History
+        =======
+        
+        0.1.0 (2019-04-10)
+        ---------------------
+        
+        -   First release on PyPI.
+        
+Keywords: cerebra
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
