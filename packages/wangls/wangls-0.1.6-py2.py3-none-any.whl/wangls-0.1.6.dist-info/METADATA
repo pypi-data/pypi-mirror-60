@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: wangls
+Version: 0.1.6
+Summary: A command line tool that gives you the IPs of the devices connected to the same network segment.
+Home-page: https://github.com/ally-ahmed/wangls
+Author: Ahmed Ali
+Author-email: norbixin@live.com
+License: MIT license
+Keywords: wangls
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: Click (>=7.0)
+Requires-Dist: terminaltables
+Requires-Dist: halo
+
+======
+wangls
+======
+
+
+.. image:: https://img.shields.io/pypi/v/wangls.svg
+        :target: https://pypi.python.org/pypi/wangls
+
+.. image:: https://img.shields.io/travis/ally-ahmed/wangls.svg
+        :target: https://travis-ci.org/ally-ahmed/wangls
+
+.. image:: https://readthedocs.org/projects/wangls/badge/?version=latest
+        :target: https://wangls.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+A command line tool that gives you the IPs of the devices connected to the same network segment.
+
+
+* Free software: MIT license
+* Documentation: https://wangls.readthedocs.io.
+
+
+Usage
+--------
+
+* Simple scan that returns only IPs.
+
+.. code-block:: console
+
+    $ wangls
+
+.. image:: https://i.imgur.com/SIkQfju.gif
+
+* Scanning your whole network with OS detection might take some time especially if there are many devices connected.
+
+.. code-block:: console
+
+    $ wangls -o
+
+.. image:: https://i.imgur.com/HUNFvrD.png
+
+
+=======
+History
+=======
+
+0.1.0 (2020-02-04)
+------------------
+
+* First release on PyPI.
+
+0.1.1 (2020-02-05)
+------------------
+* Updated demos on docs
+
+0.1.2 (2020-02-05)
+------------------
+* Add dependencies requirements
+
+0.1.3 (2020-02-05)
+------------------
+* Added help option
+
+0.1.4 (2020-02-05)
+------------------
+* Fixed minor typos
+
+0.1.5 (2020-02-05)
+------------------
+* Added version option
+
+0.1.6 (2020-02-05)
+------------------
+* Updated version on option
+
+
