@@ -1,0 +1,6 @@
+pydig
+pyyaml
+requests
+dateparser
+tldextract
+python-whois
