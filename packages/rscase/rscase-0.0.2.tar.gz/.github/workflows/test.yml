@@ -1,0 +1,28 @@
+name: Tests
+on: [push, pull_request]
+jobs:
+  test:
+
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - uses: actions/checkout@v2
+      - name: Install Rust latest nightly
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: nightly
+          override: true
+
+      - name: Install Cargo-Tarpaulin (coverage)
+        run: cargo install cargo-tarpaulin
+
+      - name: Test
+        run: cargo test
+
+      - name: Generate XML
+        run: cargo tarpaulin --out Xml
+
+      - name: Upload coverage to Codecov
+        run: bash <(curl -s https://codecov.io/bash) -t ${{secrets.CODECOV_TOKEN}} && echo "Uploaded code coverage"
