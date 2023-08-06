@@ -1,0 +1,4 @@
+[console_scripts]
+psViewer = puzzlestream.launch:launchPSViewer
+puzzlestream = puzzlestream.launch:launchPuzzlestream
+
