@@ -1,0 +1,190 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: Kosmorro\n"
+"Language: fr\n"
+
+#: kosmorrolib/dumper.py:94
+msgid "Expected events:"
+msgstr "Événements prévus :"
+
+#: kosmorrolib/dumper.py:143
+msgid "Object"
+msgstr "Objet"
+
+#: kosmorrolib/dumper.py:144
+msgid "Rise time"
+msgstr "Heure de lever"
+
+#: kosmorrolib/dumper.py:145
+msgid "Culmination time"
+msgstr "Heure de culmination"
+
+#: kosmorrolib/dumper.py:146
+msgid "Set time"
+msgstr "Heure de coucher"
+
+#: kosmorrolib/dumper.py:144
+msgid "Moon phase: {current_moon_phase}"
+msgstr "Phase de la Lune : {current_moon_phase}"
+
+#: kosmorrolib/dumper.py:97
+msgid "Note: All the hours are given in UTC."
+msgstr "Note : toutes les heures sont en temps universel (UTC)."
+
+#: kosmorrolib/dumper.py:29
+msgid "{day_of_week} {month} {day_number}, {year}"
+msgstr "{day_of_week} {day_number} {month} {year}"
+
+#: kosmorrolib/dumper.py:31
+msgid "{hours}:{minutes}"
+msgstr "{hours}h{minutes}"
+
+#: kosmorrolib/dumper.py:160
+msgid "{next_moon_phase} on {next_moon_phase_date} at {next_moon_phase_time}"
+msgstr "{next_moon_phase} le {next_moon_phase_date} à {next_moon_phase_time}"
+
+#: kosmorrolib/core.py:34
+msgid "Sun"
+msgstr "Soleil"
+
+#: kosmorrolib/core.py:35
+msgid "Moon"
+msgstr "Lune"
+
+#: kosmorrolib/core.py:36
+msgid "Mercury"
+msgstr "Mercure"
+
+#: kosmorrolib/core.py:37
+msgid "Venus"
+msgstr "Vénus"
+
+#: kosmorrolib/core.py:38
+msgid "Mars"
+msgstr "Mars"
+
+#: kosmorrolib/core.py:39
+msgid "Jupiter"
+msgstr "Jupiter"
+
+#: kosmorrolib/core.py:40
+msgid "Saturn"
+msgstr "Saturne"
+
+#: kosmorrolib/core.py:41
+msgid "Uranus"
+msgstr "Uranus"
+
+#: kosmorrolib/core.py:42
+msgid "Neptune"
+msgstr "Neptune"
+
+#: kosmorrolib/core.py:43
+msgid "Pluto"
+msgstr "Pluton"
+
+#: kosmorrolib/data.py:28
+msgid "New Moon"
+msgstr "Nouvelle lune"
+
+#: kosmorrolib/data.py:29
+msgid "Waxing crescent"
+msgstr "Premier croissant"
+
+#: kosmorrolib/data.py:30
+msgid "First Quarter"
+msgstr "Premier quartier"
+
+#: kosmorrolib/data.py:31
+msgid "Waxing gibbous"
+msgstr "Gibbeuse croissante"
+
+#: kosmorrolib/data.py:32
+msgid "Full Moon"
+msgstr "Pleine lune"
+
+#: kosmorrolib/data.py:33
+msgid "Waning gibbous"
+msgstr "Gibbeuse décroissante"
+
+#: kosmorrolib/data.py:34
+msgid "Last Quarter"
+msgstr "Dernier quartier"
+
+#: kosmorrolib/data.py:35
+msgid "Waning crescent"
+msgstr "Dernier croissant"
+
+#: kosmorrolib/data.py:39
+msgid "%s is in opposition"
+msgstr "%s est à l'opposition"
+
+#: kosmorrolib/data.py:40
+msgid "%s and %s are in conjunction"
+msgstr "%s et %s sont en conjonction"
+
+#: kosmorrolib/main.py:76
+msgid "Running on Python {python_version}"
+msgstr "Exécuté à l'aide de Python {python_version}"
+
+#: kosmorrolib/main.py:82
+msgid "Do you really want to clear Kosmorro's cache? [yN] "
+msgstr "Voulez-vous vraiment effacer le cache de Kosmorro ? [oN]"
+
+#: kosmorrolib/main.py:89
+msgid "Answer did not match expected options, cache not cleared."
+msgstr "Réponse erronée, le cache n'a pas été effacé."
+
+#: kosmorrolib/main.py:98
+msgid "Compute the ephemerides and the events for a given date, at a given position on Earth."
+msgstr "Calcule les éphémérides et les événements pour une date et une position sur Terre données."
+
+#: kosmorrolib/main.py:100
+msgid "By default, only the events will be computed for today ({date}).\n"
+"To compute also the ephemerides, latitude and longitude arguments are needed."
+msgstr "Par défaut, seuls les événements sont calculés pour la date actuelle ({date}). Pour calculer les éphémérides, la latitude et la longitude sont requis."
+
+#: kosmorrolib/main.py:105
+msgid "Show the program version"
+msgstr "Affiche la version du programme"
+
+#: kosmorrolib/main.py:107
+msgid "Delete all the files Kosmorro stored in the cache."
+msgstr "Efface tous les fichiers du cache de Kosmorro"
+
+#: kosmorrolib/main.py:109
+msgid "The format under which the information have to be output"
+msgstr "Le format de sortie des informations"
+
+#: kosmorrolib/main.py:111
+msgid "The observer's latitude on Earth"
+msgstr "La latitude de l'observateur sur Terre"
+
+#: kosmorrolib/main.py:113
+msgid "The observer's longitude on Earth"
+msgstr "La longitude de l'observateur sur Terre"
+
+#: kosmorrolib/main.py:115
+msgid "A number between 1 and 28, 29, 30 or 31 (depending on the month). The day you want to  compute the ephemerides for. Defaults to {default_day} (the current day)."
+msgstr "Un nombre compris entre 1 et 28, 29, 30 ou 31 (en fonction du mois). Le jour pour lequel les éphémérides doivent être calculées. Par défaut, le jour actuel ({default_day}) est utilisé."
+
+#: kosmorrolib/main.py:119
+msgid "A number between 1 and 12. The month you want to compute the ephemerides for. Defaults to {default_month} (the current month)."
+msgstr "Un nombre entre 1 et 12. Le mois pour lequel les éphémérides doivent être calculées. Par défaut, le mois actuel ({default_month}) est utilisé."
+
+#: kosmorrolib/main.py:122
+msgid "The year you want to compute the ephemerides for. Defaults to {default_year} (the current year)."
+msgstr "L'année pour laquelle les éphémérides doivent être calculées. Par défaut, l'année actuelle ({default_year}) est utilisée."
+
+#: kosmorrolib/dumper.py:159
+msgid "Moon phase:"
+msgstr "Phase de la Lune :"
+
+#: kosmorrolib/main.py:125
+msgid "Disable the colors in the console."
+msgstr "Désactive les couleurs dans la console."
+
