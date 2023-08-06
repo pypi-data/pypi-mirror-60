@@ -1,0 +1,633 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>species.plot package &mdash; species 0.1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="species.read package" href="species.read.html" />
+    <link rel="prev" title="species.data package" href="species.data.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/species_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#virtual-environment">Virtual Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installation-from-github">Installation from Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#testing-species">Testing <cite>species</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/running_species.html">Running <em>species</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Adding-a-photometric-library">Adding a photometric library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#supported-data">Supported data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#analysis-tools">Analysis tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#output-boxes">Output boxes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/flux_magnitude.html">Flux and magnitude conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/synthetic_photometry.html">Synthetic photometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/spectral_library.html">Spectral library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/color_magnitude_broadband.html">Color-magnitude diagram: broadband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Adding-data-to-the-database">Adding data to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Database-content">Database content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Synthetic-photometry-from-isochrones">Synthetic photometry from isochrones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Photometry-of-directly-imaged-objects">Photometry of directly imaged objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html">Color-magnitude diagram: narrowband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Adding-data-and-models">Adding data and models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Synthetic-colors-and-magnitudes">Synthetic colors and magnitudes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Selecting-directly-imaged-planets">Selecting directly imaged planets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/atmospheric_models.html">Atmospheric models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Adding-model-spectra-to-the-database">Adding model spectra to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Interpolating-the-model-grid">Interpolating the model grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Extracting-a-spectrum-at-a-grid-point">Extracting a spectrum at a grid point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Calculating-synthetic-photometry">Calculating synthetic photometry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/data_model.html">Comparison of data and model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Adding-model-spectra">Adding model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Reading-model-spectra">Reading model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Reading-companion-data">Reading companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Synthetic-photometry-for-all-filters">Synthetic photometry for all filters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Creating-flux-residuals">Creating flux residuals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Opening-Box-objects">Opening Box objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Plotting-spectra,-fluxes-and-filters">Plotting spectra, fluxes and filters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/photometric_calibration.html">Photometric calibration: fitting a stellar spectrum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Adding-an-object-and-calibration-spectrum">Adding an object and calibration spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Fitting-the-stellar-spectrum">Fitting the stellar spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Plotting-the-results">Plotting the results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Photometric-calibration">Photometric calibration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/fitting_photometry.html">Fitting photometry with model spectra</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="species.html">species package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="species.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="species.analysis.html">species.analysis package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis.fit_model">species.analysis.fit_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis.fit_planck">species.analysis.fit_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis.fit_spectrum">species.analysis.fit_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis.photometry">species.analysis.photometry module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.core.html">species.core package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core.box">species.core.box module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core.constants">species.core.constants module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core.setup">species.core.setup module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.data.html">species.data package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.ames_cond">species.data.ames_cond module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.ames_dusty">species.data.ames_dusty module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.btnextgen">species.data.btnextgen module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.btsettl">species.data.btsettl module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.companions">species.data.companions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.database">species.data.database module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.drift_phoenix">species.data.drift_phoenix module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.filters">species.data.filters module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.irtf">species.data.irtf module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.isochrones">species.data.isochrones module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.leggett">species.data.leggett module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.petitcode">species.data.petitcode module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.queries">species.data.queries module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.spex">species.data.spex module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.vega">species.data.vega module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.vlm_plx">species.data.vlm_plx module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">species.plot package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.plot.plot_color">species.plot.plot_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.plot.plot_mcmc">species.plot.plot_mcmc module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.plot.plot_spectrum">species.plot.plot_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.plot">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.read.html">species.read package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_calibration">species.read.read_calibration module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_color">species.read.read_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_filter">species.read.read_filter module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_isochrone">species.read.read_isochrone module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_model">species.read.read_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_object">species.read.read_object module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_planck">species.read.read_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_spectrum">species.read.read_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.util.html">species.util package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.data_util">species.util.data_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.phot_util">species.util.phot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.plot_util">species.util.plot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.read_util">species.util.read_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.test_util">species.util.test_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="species.html#module-species">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">About species</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about.html#questions-feedback">Questions &amp; feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about.html#attribution">Attribution</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">species</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">API documentation</a> &raquo;</li>
+        
+          <li><a href="species.html">species package</a> &raquo;</li>
+        
+      <li>species.plot package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/tomasstolker/species/blob/master/docs/species.plot.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="species-plot-package">
+<h1>species.plot package<a class="headerlink" href="#species-plot-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-species.plot.plot_color">
+<span id="species-plot-plot-color-module"></span><h2>species.plot.plot_color module<a class="headerlink" href="#module-species.plot.plot_color" title="Permalink to this headline">¶</a></h2>
+<p>Module with functions for creating color-magnitude and color-color plots.</p>
+<dl class="function">
+<dt id="species.plot.plot_color.plot_color_color">
+<code class="descclassname">species.plot.plot_color.</code><code class="descname">plot_color_color</code><span class="sig-paren">(</span><em>boxes</em>, <em>objects=None</em>, <em>mass_labels=None</em>, <em>companion_labels=False</em>, <em>field_range=None</em>, <em>label_x='color [mag]'</em>, <em>label_y='color [mag]'</em>, <em>xlim=None</em>, <em>ylim=None</em>, <em>offset=None</em>, <em>legend='upper left'</em>, <em>output='color-color.pdf'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/plot/plot_color.html#plot_color_color"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.plot.plot_color.plot_color_color" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>boxes</strong> (<a class="reference internal" href="species.core.html#species.core.box.ColorColorBox" title="species.core.box.ColorColorBox"><em>species.core.box.ColorColorBox</em></a><em>, </em><em>None</em>) – Box with the colors and magnitudes.</li>
+<li><strong>objects</strong> (<em>tuple</em><em>(</em><em>tuple</em><em>(</em><em>str</em><em>, </em><em>str</em><em>, </em><em>str</em><em>, </em><em>str</em><em>)</em><em>, </em><em>)</em><em>,</em>) – tuple(tuple(str, str, str, str, str, str, float, float), ), None
+Tuple with individual objects. The objects require a tuple with their database tag, the two
+filter IDs for the first color, and the two filter IDs for the second color. Optionally,
+the horizontal and vertical alignment and fractional offset values can be provided for the
+label can be provided (default: ‘left’, ‘bottom’, 8e-3, 8e-3). Not used if set to None.</li>
+<li><strong>models</strong> (<em>tuple</em><em>(</em><a class="reference internal" href="species.core.html#species.core.box.ColorMagBox" title="species.core.box.ColorMagBox"><em>species.core.box.ColorMagBox</em></a><em>, </em><em>)</em><em>, </em><em>None</em>) – Tuple with <a class="reference internal" href="species.core.html#species.core.box.ColorColorBox" title="species.core.box.ColorColorBox"><code class="xref py py-class docutils literal notranslate"><span class="pre">ColorColorBox</span></code></a> objects which have been created from
+the isochrone data with <a class="reference internal" href="species.read.html#species.read.read_isochrone.ReadIsochrone.get_color_color" title="species.read.read_isochrone.ReadIsochrone.get_color_color"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_color_color()</span></code></a>.
+These boxes contain synthetic photometry for a given age and a range of masses. Not used
+if set to None.</li>
+<li><strong>mass_labels</strong> (<em>list</em><em>(</em><em>float</em><em>, </em><em>)</em><em>, </em><em>None</em>) – Plot labels with masses next to the isochrone data of <cite>models</cite>. The list with masses has
+to be provided in Jupiter mass. No labels are shown if set to None.</li>
+<li><strong>companion_labels</strong> (<em>bool</em>) – Plot labels with the names of the directly imaged companions.</li>
+<li><strong>field_range</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>str</em><em>)</em><em>, </em><em>None</em>) – Range of the discrete colorbar for the field dwarfs. The tuple should contain the lower
+and upper value (‘early M’, ‘late M’, ‘early L’, ‘late L’, ‘early T’, ‘late T’, ‘early Y).
+The full range is used if set to None.</li>
+<li><strong>label_x</strong> (<em>str</em>) – Label for the x-axis.</li>
+<li><strong>label_y</strong> (<em>str</em>) – Label for the y-axis.</li>
+<li><strong>output</strong> (<em>str</em>) – Output filename.</li>
+<li><strong>xlim</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em>) – Limits for the x-axis.</li>
+<li><strong>ylim</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em>) – Limits for the y-axis.</li>
+<li><strong>offset</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Offset of the x- and y-axis label.</li>
+<li><strong>legend</strong> (<em>str</em>) – Legend position.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="species.plot.plot_color.plot_color_magnitude">
+<code class="descclassname">species.plot.plot_color.</code><code class="descname">plot_color_magnitude</code><span class="sig-paren">(</span><em>boxes</em>, <em>objects=None</em>, <em>mass_labels=None</em>, <em>companion_labels=False</em>, <em>field_range=None</em>, <em>label_x='Color [mag]'</em>, <em>label_y='Magnitude [mag]'</em>, <em>xlim=None</em>, <em>ylim=None</em>, <em>offset=None</em>, <em>legend='upper left'</em>, <em>output='color-magnitude.pdf'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/plot/plot_color.html#plot_color_magnitude"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.plot.plot_color.plot_color_magnitude" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>boxes</strong> (<em>list</em><em>(</em><a class="reference internal" href="species.core.html#species.core.box.ColorMagBox" title="species.core.box.ColorMagBox"><em>species.core.box.ColorMagBox</em></a><em>, </em><a class="reference internal" href="species.core.html#species.core.box.IsochroneBox" title="species.core.box.IsochroneBox"><em>species.core.box.IsochroneBox</em></a><em>, </em><em>)</em>) – Boxes with the color-magnitude and isochrone data from photometric libraries, spectral
+libraries, and/or atmospheric models. The synthetic data have to be created with
+<a class="reference internal" href="species.read.html#species.read.read_isochrone.ReadIsochrone.get_color_magnitude" title="species.read.read_isochrone.ReadIsochrone.get_color_magnitude"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_color_magnitude()</span></code></a>. These boxes
+contain synthetic colors and magnitudes for a given age and a range of masses.</li>
+<li><strong>objects</strong> (<em>tuple</em><em>(</em><em>tuple</em><em>(</em><em>str</em><em>, </em><em>str</em><em>, </em><em>str</em><em>, </em><em>str</em><em>)</em><em>, </em><em>)</em><em>,</em>) – tuple(tuple(str, str, str, str, str, str, float, float), ), None
+Tuple with individual objects. The objects require a tuple with their database tag, the two
+filter IDs for the color, and the filter ID for the absolute magnitude. Optionally, the
+horizontal and vertical alignment and fractional offset values can be provided for the
+label can be provided (default: ‘left’, ‘bottom’, 8e-3, 8e-3). Not used if set to None.</li>
+<li><strong>mass_labels</strong> (<em>list</em><em>(</em><em>float</em><em>, </em><em>)</em><em>, </em><em>None</em>) – Plot labels with masses next to the isochrone data of <cite>models</cite>. The list with masses has
+to be provided in Jupiter mass. No labels are shown if set to None.</li>
+<li><strong>companion_labels</strong> (<em>bool</em>) – Plot labels with the names of the directly imaged companions.</li>
+<li><strong>field_range</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>str</em><em>)</em><em>, </em><em>None</em>) – Range of the discrete colorbar for the field dwarfs. The tuple should contain the lower
+and upper value (‘early M’, ‘late M’, ‘early L’, ‘late L’, ‘early T’, ‘late T’, ‘early Y).
+The full range is used if set to None.</li>
+<li><strong>label_x</strong> (<em>str</em>) – Label for the x-axis.</li>
+<li><strong>label_y</strong> (<em>str</em>) – Label for the y-axis.</li>
+<li><strong>xlim</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Limits for the x-axis.</li>
+<li><strong>ylim</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Limits for the y-axis.</li>
+<li><strong>offset</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Offset of the x- and y-axis label.</li>
+<li><strong>legend</strong> (<em>str</em><em>, </em><em>None</em>) – Legend position. Not shown if set to None.</li>
+<li><strong>output</strong> (<em>str</em>) – Output filename.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.plot.plot_mcmc">
+<span id="species-plot-plot-mcmc-module"></span><h2>species.plot.plot_mcmc module<a class="headerlink" href="#module-species.plot.plot_mcmc" title="Permalink to this headline">¶</a></h2>
+<p>Module for plotting MCMC results.</p>
+<dl class="function">
+<dt id="species.plot.plot_mcmc.plot_photometry">
+<code class="descclassname">species.plot.plot_mcmc.</code><code class="descname">plot_photometry</code><span class="sig-paren">(</span><em>tag</em>, <em>filter_id</em>, <em>burnin=None</em>, <em>xlim=None</em>, <em>output='photometry.pdf'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/plot/plot_mcmc.html#plot_photometry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.plot.plot_mcmc.plot_photometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to plot the posterior distribution of the synthetic photometry.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tag</strong> (<em>str</em>) – Database tag with the MCMC samples.</li>
+<li><strong>filter_id</strong> (<em>str</em>) – Filter ID.</li>
+<li><strong>burnin</strong> (<em>int</em><em>, </em><em>None</em>) – Number of burnin steps to exclude. All samples are used if set to None.</li>
+<li><strong>xlim</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Axis limits. Automatically set if set to None.</li>
+<li><strong>output</strong> (<em>strr</em>) – Output filename.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="species.plot.plot_mcmc.plot_posteriors">
+<code class="descclassname">species.plot.plot_mcmc.</code><code class="descname">plot_posteriors</code><span class="sig-paren">(</span><em>tag</em>, <em>burnin=None</em>, <em>title=None</em>, <em>offset=None</em>, <em>title_fmt='.2f'</em>, <em>limits=None</em>, <em>output='posterior.pdf'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/plot/plot_mcmc.html#plot_posteriors"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.plot.plot_mcmc.plot_posteriors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to plot the posterior distributions.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tag</strong> (<em>str</em>) – Database tag with the MCMC samples.</li>
+<li><strong>burnin</strong> (<em>int</em><em>, </em><em>None</em>) – Number of burnin steps to exclude. All samples are used if set to None.</li>
+<li><strong>title</strong> (<em>str</em><em>, </em><em>None</em>) – Plot title.</li>
+<li><strong>offset</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Offset of the x- and y-axis label.</li>
+<li><strong>title_fmt</strong> (<em>str</em>) – Format of the median and error values.</li>
+<li><strong>limits</strong> (<em>tuple</em><em>(</em><em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>)</em><em>, </em><em>None</em>) – Axis limits of all parameters. Automatically set if set to None.</li>
+<li><strong>output</strong> (<em>str</em>) – Output filename.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="species.plot.plot_mcmc.plot_walkers">
+<code class="descclassname">species.plot.plot_mcmc.</code><code class="descname">plot_walkers</code><span class="sig-paren">(</span><em>tag</em>, <em>nsteps=None</em>, <em>offset=None</em>, <em>output='walkers.pdf'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/plot/plot_mcmc.html#plot_walkers"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.plot.plot_mcmc.plot_walkers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to plot the step history of the walkers.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tag</strong> (<em>str</em>) – Database tag with the MCMC samples.</li>
+<li><strong>nsteps</strong> (<em>int</em>) – Number of steps.</li>
+<li><strong>offset</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em>) – Offset of the x- and y-axis label.</li>
+<li><strong>output</strong> (<em>str</em>) – Output filename.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.plot.plot_spectrum">
+<span id="species-plot-plot-spectrum-module"></span><h2>species.plot.plot_spectrum module<a class="headerlink" href="#module-species.plot.plot_spectrum" title="Permalink to this headline">¶</a></h2>
+<p>Module with a function for plotting spectra.</p>
+<dl class="function">
+<dt id="species.plot.plot_spectrum.plot_spectrum">
+<code class="descclassname">species.plot.plot_spectrum.</code><code class="descname">plot_spectrum</code><span class="sig-paren">(</span><em>boxes</em>, <em>filters=None</em>, <em>residuals=None</em>, <em>colors=None</em>, <em>xlim=None</em>, <em>ylim=None</em>, <em>scale=('linear'</em>, <em>'linear')</em>, <em>title=None</em>, <em>offset=None</em>, <em>legend='upper left'</em>, <em>figsize=(7.0</em>, <em>5.0)</em>, <em>object_type='planet'</em>, <em>quantity='flux'</em>, <em>output='spectrum.pdf'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/plot/plot_spectrum.html#plot_spectrum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.plot.plot_spectrum.plot_spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>boxes</strong> (<em>list</em><em>(</em><em>species.core.box</em><em>, </em><em>)</em>) – Boxes with data.</li>
+<li><strong>filters</strong> (<em>list</em><em>(</em><em>str</em><em>, </em><em>)</em><em>, </em><em>None</em>) – Filter IDs for which the transmission profile is plotted. Not plotted if set to None.</li>
+<li><strong>residuals</strong> (<a class="reference internal" href="species.core.html#species.core.box.ResidualsBox" title="species.core.box.ResidualsBox"><em>species.core.box.ResidualsBox</em></a><em>, </em><em>None</em>) – Box with residuals of a fit. Not plotted if set to None.</li>
+<li><strong>colors</strong> (<em>list</em><em>(</em><em>str</em><em>, </em><em>)</em><em>, </em><em>None</em>) – Colors to be used for the different boxes. Note that a box with residuals requires a tuple
+with two colors (i.e., for the photometry and spectrum). Automatic colors are used if set
+to None.</li>
+<li><strong>xlim</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em>) – Limits of the x-axis.</li>
+<li><strong>ylim</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em>) – Limits of the y-axis.</li>
+<li><strong>scale</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>str</em><em>)</em>) – Scale of the axes (‘linear’ or ‘log’).</li>
+<li><strong>title</strong> (<em>str</em>) – Title.</li>
+<li><strong>offset</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em>) – Offset for the label of the x- and y-axis.</li>
+<li><strong>legend</strong> (<em>str</em><em>, </em><em>None</em>) – Location of the legend.</li>
+<li><strong>figsize</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em>) – Figure size.</li>
+<li><strong>object_type</strong> (<em>str</em>) – Object type (‘planet’ or ‘star’). With ‘planet’, the radius and mass are expressed in
+Jupiter units. With ‘star’, the radius and mass are expressed in solar units.</li>
+<li><strong>quantity</strong> (<em>str</em>) – The quantity of the y-axis (‘flux’ or ‘magnitude’).</li>
+<li><strong>output</strong> (<em>str</em>) – Output filename.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.plot">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-species.plot" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="species.read.html" class="btn btn-neutral float-right" title="species.read package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="species.data.html" class="btn btn-neutral" title="species.data package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2020, Tomas Stolker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

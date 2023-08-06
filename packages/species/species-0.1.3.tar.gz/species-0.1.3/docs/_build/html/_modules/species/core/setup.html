@@ -1,0 +1,427 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>species.core.setup &mdash; species 0.1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html">
+          
+
+          
+            
+            <img src="../../../_static/species_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#virtual-environment">Virtual Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#installation-from-github">Installation from Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#testing-species">Testing <cite>species</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/running_species.html">Running <em>species</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Adding-a-photometric-library">Adding a photometric library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#supported-data">Supported data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#analysis-tools">Analysis tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#output-boxes">Output boxes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/flux_magnitude.html">Flux and magnitude conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/synthetic_photometry.html">Synthetic photometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/spectral_library.html">Spectral library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html">Color-magnitude diagram: broadband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Adding-data-to-the-database">Adding data to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Database-content">Database content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Synthetic-photometry-from-isochrones">Synthetic photometry from isochrones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Photometry-of-directly-imaged-objects">Photometry of directly imaged objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html">Color-magnitude diagram: narrowband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Adding-data-and-models">Adding data and models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Synthetic-colors-and-magnitudes">Synthetic colors and magnitudes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Selecting-directly-imaged-planets">Selecting directly imaged planets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/atmospheric_models.html">Atmospheric models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Adding-model-spectra-to-the-database">Adding model spectra to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Interpolating-the-model-grid">Interpolating the model grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Extracting-a-spectrum-at-a-grid-point">Extracting a spectrum at a grid point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Calculating-synthetic-photometry">Calculating synthetic photometry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/data_model.html">Comparison of data and model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Adding-model-spectra">Adding model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Reading-model-spectra">Reading model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Reading-companion-data">Reading companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Synthetic-photometry-for-all-filters">Synthetic photometry for all filters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Creating-flux-residuals">Creating flux residuals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Opening-Box-objects">Opening Box objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Plotting-spectra,-fluxes-and-filters">Plotting spectra, fluxes and filters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/photometric_calibration.html">Photometric calibration: fitting a stellar spectrum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Adding-an-object-and-calibration-spectrum">Adding an object and calibration spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Fitting-the-stellar-spectrum">Fitting the stellar spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Plotting-the-results">Plotting the results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Photometric-calibration">Photometric calibration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/fitting_photometry.html">Fitting photometry with model spectra</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules.html">API documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../species.html">species package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../species.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.analysis.html">species.analysis package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis.fit_model">species.analysis.fit_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis.fit_planck">species.analysis.fit_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis.fit_spectrum">species.analysis.fit_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis.photometry">species.analysis.photometry module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.core.html">species.core package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#module-species.core.box">species.core.box module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#module-species.core.constants">species.core.constants module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#module-species.core.setup">species.core.setup module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#module-species.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.data.html">species.data package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.ames_cond">species.data.ames_cond module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.ames_dusty">species.data.ames_dusty module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.btnextgen">species.data.btnextgen module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.btsettl">species.data.btsettl module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.companions">species.data.companions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.database">species.data.database module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.drift_phoenix">species.data.drift_phoenix module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.filters">species.data.filters module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.irtf">species.data.irtf module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.isochrones">species.data.isochrones module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.leggett">species.data.leggett module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.petitcode">species.data.petitcode module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.queries">species.data.queries module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.spex">species.data.spex module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.vega">species.data.vega module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.vlm_plx">species.data.vlm_plx module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.plot.html">species.plot package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#module-species.plot.plot_color">species.plot.plot_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#module-species.plot.plot_mcmc">species.plot.plot_mcmc module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#module-species.plot.plot_spectrum">species.plot.plot_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#module-species.plot">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.read.html">species.read package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_calibration">species.read.read_calibration module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_color">species.read.read_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_filter">species.read.read_filter module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_isochrone">species.read.read_isochrone module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_model">species.read.read_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_object">species.read.read_object module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_planck">species.read.read_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_spectrum">species.read.read_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.util.html">species.util package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.data_util">species.util.data_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.phot_util">species.util.phot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.plot_util">species.util.plot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.read_util">species.util.read_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.test_util">species.util.test_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../species.html#module-species">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">About species</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../about.html#questions-feedback">Questions &amp; feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../about.html#attribution">Attribution</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">species</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>species.core.setup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for species.core.setup</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Module for setting up species in the working folder.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">configparser</span>
+
+<span class="kn">import</span> <span class="nn">h5py</span>
+<span class="kn">import</span> <span class="nn">species</span>
+
+
+<div class="viewcode-block" id="SpeciesInit"><a class="viewcode-back" href="../../../species.core.html#species.core.setup.SpeciesInit">[docs]</a><span class="k">class</span> <span class="nc">SpeciesInit</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Class for initiating species by creating the database and configuration file in case they are</span>
+<span class="sd">    not present in the working folder, and creating the data folder for storage of input data.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        NoneType</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Initiating species v</span><span class="si">{species.__version__}</span><span class="s1">...&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">working_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
+
+        <span class="n">config_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">working_folder</span><span class="p">,</span> <span class="s1">&#39;species_config.ini&#39;</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; [DONE]&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">config_file</span><span class="p">):</span>
+
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Creating species_config.ini...&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">config_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+                <span class="n">file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;[species]</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="n">file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;database = species_database.hdf5</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="n">file_obj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;data_folder = ./data/</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; [DONE]&#39;</span><span class="p">)</span>
+
+        <span class="n">config</span> <span class="o">=</span> <span class="n">configparser</span><span class="o">.</span><span class="n">ConfigParser</span><span class="p">()</span>
+        <span class="n">config</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">config_file</span><span class="p">))</span>
+
+        <span class="n">database_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">][</span><span class="s1">&#39;database&#39;</span><span class="p">])</span>
+        <span class="n">data_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">][</span><span class="s1">&#39;data_folder&#39;</span><span class="p">])</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Database: </span><span class="si">{database_file}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Data folder: </span><span class="si">{data_folder}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Working folder: </span><span class="si">{working_folder}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">database_file</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Creating species_database.hdf5...&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="n">database_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+            <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; [DONE]&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">data_folder</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Creating data folder...&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">data_folder</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; [DONE]&#39;</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2020, Tomas Stolker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

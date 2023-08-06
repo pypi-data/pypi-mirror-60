@@ -1,0 +1,1390 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>species.data package &mdash; species 0.1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="species.plot package" href="species.plot.html" />
+    <link rel="prev" title="species.core package" href="species.core.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/species_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#virtual-environment">Virtual Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installation-from-github">Installation from Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#testing-species">Testing <cite>species</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/running_species.html">Running <em>species</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Adding-a-photometric-library">Adding a photometric library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#supported-data">Supported data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#analysis-tools">Analysis tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#output-boxes">Output boxes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/flux_magnitude.html">Flux and magnitude conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/synthetic_photometry.html">Synthetic photometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/spectral_library.html">Spectral library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/color_magnitude_broadband.html">Color-magnitude diagram: broadband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Adding-data-to-the-database">Adding data to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Database-content">Database content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Synthetic-photometry-from-isochrones">Synthetic photometry from isochrones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Photometry-of-directly-imaged-objects">Photometry of directly imaged objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html">Color-magnitude diagram: narrowband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Adding-data-and-models">Adding data and models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Synthetic-colors-and-magnitudes">Synthetic colors and magnitudes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Selecting-directly-imaged-planets">Selecting directly imaged planets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/atmospheric_models.html">Atmospheric models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Adding-model-spectra-to-the-database">Adding model spectra to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Interpolating-the-model-grid">Interpolating the model grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Extracting-a-spectrum-at-a-grid-point">Extracting a spectrum at a grid point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Calculating-synthetic-photometry">Calculating synthetic photometry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/data_model.html">Comparison of data and model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Adding-model-spectra">Adding model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Reading-model-spectra">Reading model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Reading-companion-data">Reading companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Synthetic-photometry-for-all-filters">Synthetic photometry for all filters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Creating-flux-residuals">Creating flux residuals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Opening-Box-objects">Opening Box objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Plotting-spectra,-fluxes-and-filters">Plotting spectra, fluxes and filters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/photometric_calibration.html">Photometric calibration: fitting a stellar spectrum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Adding-an-object-and-calibration-spectrum">Adding an object and calibration spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Fitting-the-stellar-spectrum">Fitting the stellar spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Plotting-the-results">Plotting the results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Photometric-calibration">Photometric calibration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/fitting_photometry.html">Fitting photometry with model spectra</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="species.html">species package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="species.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="species.analysis.html">species.analysis package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis.fit_model">species.analysis.fit_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis.fit_planck">species.analysis.fit_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis.fit_spectrum">species.analysis.fit_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis.photometry">species.analysis.photometry module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.core.html">species.core package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core.box">species.core.box module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core.constants">species.core.constants module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core.setup">species.core.setup module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">species.data package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.ames_cond">species.data.ames_cond module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.ames_dusty">species.data.ames_dusty module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.btnextgen">species.data.btnextgen module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.btsettl">species.data.btsettl module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.companions">species.data.companions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.database">species.data.database module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.drift_phoenix">species.data.drift_phoenix module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.filters">species.data.filters module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.irtf">species.data.irtf module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.isochrones">species.data.isochrones module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.leggett">species.data.leggett module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.petitcode">species.data.petitcode module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.queries">species.data.queries module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.spex">species.data.spex module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.vega">species.data.vega module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data.vlm_plx">species.data.vlm_plx module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.plot.html">species.plot package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#module-species.plot.plot_color">species.plot.plot_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#module-species.plot.plot_mcmc">species.plot.plot_mcmc module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#module-species.plot.plot_spectrum">species.plot.plot_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#module-species.plot">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.read.html">species.read package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_calibration">species.read.read_calibration module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_color">species.read.read_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_filter">species.read.read_filter module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_isochrone">species.read.read_isochrone module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_model">species.read.read_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_object">species.read.read_object module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_planck">species.read.read_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_spectrum">species.read.read_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.util.html">species.util package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.data_util">species.util.data_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.phot_util">species.util.phot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.plot_util">species.util.plot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.read_util">species.util.read_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.test_util">species.util.test_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="species.html#module-species">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">About species</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about.html#questions-feedback">Questions &amp; feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about.html#attribution">Attribution</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">species</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">API documentation</a> &raquo;</li>
+        
+          <li><a href="species.html">species package</a> &raquo;</li>
+        
+      <li>species.data package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/tomasstolker/species/blob/master/docs/species.data.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="species-data-package">
+<h1>species.data package<a class="headerlink" href="#species-data-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-species.data.ames_cond">
+<span id="species-data-ames-cond-module"></span><h2>species.data.ames_cond module<a class="headerlink" href="#module-species.data.ames_cond" title="Permalink to this headline">¶</a></h2>
+<p>Module for AMES-Cond atmospheric model spectra.</p>
+<dl class="function">
+<dt id="species.data.ames_cond.add_ames_cond">
+<code class="descclassname">species.data.ames_cond.</code><code class="descname">add_ames_cond</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em>, <em>wavel_range</em>, <em>teff_range</em>, <em>spec_res</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/ames_cond.html#add_ames_cond"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.ames_cond.add_ames_cond" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the AMES-Cond atmospheric models to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – Folder where the data is located.</li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+<li><strong>wavel_range</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em>) – Wavelength range (micron).</li>
+<li><strong>teff_range</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Effective temperature range (K).</li>
+<li><strong>spec_res</strong> (<em>float</em>) – Spectral resolution.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.ames_dusty">
+<span id="species-data-ames-dusty-module"></span><h2>species.data.ames_dusty module<a class="headerlink" href="#module-species.data.ames_dusty" title="Permalink to this headline">¶</a></h2>
+<p>Module for AMES-Dusty atmospheric model spectra.</p>
+<dl class="function">
+<dt id="species.data.ames_dusty.add_ames_dusty">
+<code class="descclassname">species.data.ames_dusty.</code><code class="descname">add_ames_dusty</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em>, <em>wavel_range</em>, <em>teff_range</em>, <em>spec_res</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/ames_dusty.html#add_ames_dusty"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.ames_dusty.add_ames_dusty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the AMES-Dusty atmospheric models to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – Folder where the data is located.</li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+<li><strong>wavel_range</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em>) – Wavelength range (micron).</li>
+<li><strong>teff_range</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Effective temperature range (K).</li>
+<li><strong>spec_res</strong> (<em>float</em>) – Spectral resolution.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.btnextgen">
+<span id="species-data-btnextgen-module"></span><h2>species.data.btnextgen module<a class="headerlink" href="#module-species.data.btnextgen" title="Permalink to this headline">¶</a></h2>
+<p>Module for BT-NextGen atmospheric model spectra.</p>
+<dl class="function">
+<dt id="species.data.btnextgen.add_btnextgen">
+<code class="descclassname">species.data.btnextgen.</code><code class="descname">add_btnextgen</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em>, <em>wavel_range</em>, <em>teff_range</em>, <em>spec_res</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/btnextgen.html#add_btnextgen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.btnextgen.add_btnextgen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the BT-NextGen atmospheric models to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – Folder where the data is located.</li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+<li><strong>wavel_range</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em>) – Wavelength range (micron).</li>
+<li><strong>teff_range</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Effective temperature range (K).</li>
+<li><strong>spec_res</strong> (<em>float</em>) – Spectral resolution.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.btsettl">
+<span id="species-data-btsettl-module"></span><h2>species.data.btsettl module<a class="headerlink" href="#module-species.data.btsettl" title="Permalink to this headline">¶</a></h2>
+<p>Module for BT-Settl atmospheric model spectra.</p>
+<dl class="function">
+<dt id="species.data.btsettl.add_btsettl">
+<code class="descclassname">species.data.btsettl.</code><code class="descname">add_btsettl</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em>, <em>wavel_range</em>, <em>teff_range</em>, <em>spec_res</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/btsettl.html#add_btsettl"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.btsettl.add_btsettl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the BT-Settl atmospheric models to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – Folder where the data is located.</li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+<li><strong>wavel_range</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em>) – Wavelength range (micron).</li>
+<li><strong>teff_range</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Effective temperature range (K).</li>
+<li><strong>spec_res</strong> (<em>float</em>) – Spectral resolution.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.companions">
+<span id="species-data-companions-module"></span><h2>species.data.companions module<a class="headerlink" href="#module-species.data.companions" title="Permalink to this headline">¶</a></h2>
+<p>Module for extracting data of directly imaged planets and brown dwarfs.</p>
+<dl class="function">
+<dt id="species.data.companions.get_data">
+<code class="descclassname">species.data.companions.</code><code class="descname">get_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/companions.html#get_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.companions.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for extracting a dictionary with the distances (pc) and apparent magnitudes of
+directly imaged planets and brown dwarfs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary with the distances and apparent magnitudes of directly imaged companions.
+Distances are from GAIA DR2 unless indicated as comment.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.database">
+<span id="species-data-database-module"></span><h2>species.data.database module<a class="headerlink" href="#module-species.data.database" title="Permalink to this headline">¶</a></h2>
+<p>Module with functionalities for reading and writing of data.</p>
+<dl class="class">
+<dt id="species.data.database.Database">
+<em class="property">class </em><code class="descclassname">species.data.database.</code><code class="descname">Database</code><a class="reference internal" href="_modules/species/data/database.html#Database"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for fitting atmospheric model spectra to photometric data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">NoneType</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.data.database.Database.add_calibration">
+<code class="descname">add_calibration</code><span class="sig-paren">(</span><em>tag</em>, <em>filename=None</em>, <em>data=None</em>, <em>units=None</em>, <em>scaling=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.add_calibration"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.add_calibration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding a calibration spectrum to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tag</strong> (<em>str</em>) – Tag name in the database.</li>
+<li><strong>filename</strong> (<em>str</em><em>, </em><em>None</em>) – Filename with the calibration spectrum. The first column should contain the wavelength
+(micron), the second column the flux density (W m-2 micron-1), and the third column
+the error (W m-2 micron-1). The <cite>data</cite> argument is used if set to None.</li>
+<li><strong>data</strong> (<em>numpy.ndarray</em><em>, </em><em>None</em>) – Spectrum stored as 3D array with shape (n_wavelength, 3). The first column should
+contain the wavelength (micron), the second column the flux density (W m-2 micron-1),
+and the third column the error (W m-2 micron-1).</li>
+<li><strong>units</strong> (<em>dict</em><em>, </em><em>None</em>) – Dictionary with the wavelength and flux units. Default (micron and W m-2 micron-1) is
+used if set to None.</li>
+<li><strong>scaling</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em>) – Scaling for the wavelength and flux as (scaling_wavelength, scaling_flux). Not used if
+set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.add_companion">
+<code class="descname">add_companion</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.add_companion"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.add_companion" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>list</em><em>(</em><em>str</em><em>, </em><em>)</em>) – Companion name. All companions are added if set to None.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">NoneType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.add_filter">
+<code class="descname">add_filter</code><span class="sig-paren">(</span><em>filter_name</em>, <em>filename=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.add_filter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.add_filter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filter_name</strong> (<em>str</em>) – Filter name from the SVO Filter Profile Service (e.g., ‘Paranal/NACO.Lp’).</li>
+<li><strong>filename</strong> (<em>str</em>) – Filename with the filter profile. The first column should contain the wavelength
+(micron) and the second column the transmission (no units). The profile is downloaded
+from the SVO Filter Profile Service if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.add_isochrones">
+<code class="descname">add_isochrones</code><span class="sig-paren">(</span><em>filename</em>, <em>tag</em>, <em>model='baraffe'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.add_isochrones"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.add_isochrones" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding isochrones data to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filename</strong> (<em>str</em>) – Filename with the isochrones data.</li>
+<li><strong>tag</strong> (<em>str</em>) – Database tag name where the isochrone that will be stored.</li>
+<li><strong>model</strong> (<em>str</em>) – Evolutionary model (‘baraffe’ or ‘marleau’). For ‘baraffe’ models, the isochrone data
+can be downloaded from <a class="reference external" href="https://phoenix.ens-lyon.fr/Grids/">https://phoenix.ens-lyon.fr/Grids/</a>. For ‘marleau’ models, the
+data can be requested from Gabriel Marleau.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.add_model">
+<code class="descname">add_model</code><span class="sig-paren">(</span><em>model</em>, <em>wavel_range</em>, <em>spec_res</em>, <em>teff_range=None</em>, <em>data_folder=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.add_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.add_model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>model</strong> (<em>str</em>) – Model name (‘ames-cond’, ‘ames-dusty’, ‘bt-settl’, ‘bt-nextgen’, ‘drift-phoenix’,
+‘petitcode-cool-clear’, ‘petitcode-cool-cloudy’, ‘petitcode-hot-clear’, or
+‘petitcode-hot-cloudy’).</li>
+<li><strong>wavel_range</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Wavelength range (micron). Not required for the DRIFT-PHOENIX and petitCODE models, in
+which case the argument can be set to None.</li>
+<li><strong>spec_res</strong> (<em>float</em><em>, </em><em>None</em>) – Spectral resolution. Not required for the DRIFT-PHOENIX and petitCODE models, in which
+case the argument can be set to None.</li>
+<li><strong>teff_range</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Effective temperature range (K). Not required for the DRIFT-PHOENIX and petitCODE
+models, in which case the argument can be set to None. Setting the value to None for
+the other models will add all available temperatures.</li>
+<li><strong>data_folder</strong> (<em>str</em><em>, </em><em>None</em>) – Folder with input data. Only required for the petitCODE hot models which are not
+publically available.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.add_object">
+<code class="descname">add_object</code><span class="sig-paren">(</span><em>object_name</em>, <em>distance=None</em>, <em>app_mag=None</em>, <em>spectrum=None</em>, <em>instrument=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.add_object"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.add_object" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>object_name</strong> (<em>str</em>) – Object name.</li>
+<li><strong>distance</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Distance and uncertainty (pc). Not written if set to None.</li>
+<li><strong>app_mag</strong> (<em>dict</em>) – Apparent magnitudes. Not written if set to None.</li>
+<li><strong>spectrum</strong> (<em>str</em>) – Spectrum filename. The first three columns should contain the wavelength (micron),
+flux density (W m-2 micron-1), and the error (W m-2 micron-1). Not written if set
+to None.</li>
+<li><strong>instrument</strong> (<em>str</em>) – Instrument that was used for the spectrum (currently only ‘gpi’ possible). Not
+used if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.add_photometry">
+<code class="descname">add_photometry</code><span class="sig-paren">(</span><em>phot_library</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.add_photometry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.add_photometry" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>phot_library</strong> (<em>str</em>) – Photometric library (‘vlm-plx’ or ‘leggett’).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">NoneType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.add_samples">
+<code class="descname">add_samples</code><span class="sig-paren">(</span><em>sampler</em>, <em>spectrum</em>, <em>tag</em>, <em>modelpar</em>, <em>distance=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.add_samples"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.add_samples" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sampler</strong> (<em>emcee.ensemble.EnsembleSampler</em>) – Ensemble sampler.</li>
+<li><strong>spectrum</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>str</em><em>)</em>) – Tuple with the spectrum type (‘model’ or ‘calibration’) and spectrum name (e.g.
+‘drift-phoenix’).</li>
+<li><strong>tag</strong> (<em>str</em>) – Database tag.</li>
+<li><strong>modelpar</strong> (<em>list</em><em>(</em><em>str</em><em>, </em><em>)</em>) – List with the model parameter names.</li>
+<li><strong>distance</strong> (<em>float</em>) – Distance to the object (pc). Not used if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.add_spectrum">
+<code class="descname">add_spectrum</code><span class="sig-paren">(</span><em>spec_library</em>, <em>sptypes=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.add_spectrum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.add_spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>spec_library</strong> (<em>str</em>) – Spectral library (‘irtf’ or ‘spex’).</li>
+<li><strong>sptypes</strong> (<em>list</em><em>(</em><em>str</em><em>, </em><em>)</em>) – Spectral types (‘F’, ‘G’, ‘K’, ‘M’, ‘L’, ‘T’). Currently only implemented for ‘irtf’.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.get_mcmc_photometry">
+<code class="descname">get_mcmc_photometry</code><span class="sig-paren">(</span><em>tag</em>, <em>burnin</em>, <em>filter_name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.get_mcmc_photometry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.get_mcmc_photometry" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tag</strong> (<em>str</em>) – Database tag with the MCMC samples.</li>
+<li><strong>burnin</strong> (<em>int</em>) – Number of burnin steps.</li>
+<li><strong>filter_name</strong> (<em>str</em>) – Filter name for which the photometry is calculated.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Synthetic photometry (mag).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.get_mcmc_spectra">
+<code class="descname">get_mcmc_spectra</code><span class="sig-paren">(</span><em>tag</em>, <em>burnin</em>, <em>random</em>, <em>wavel_range</em>, <em>spec_res=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.get_mcmc_spectra"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.get_mcmc_spectra" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tag</strong> (<em>str</em>) – Database tag with the MCMC samples.</li>
+<li><strong>burnin</strong> (<em>int</em>) – Number of burnin steps.</li>
+<li><strong>random</strong> (<em>int</em>) – Number of random samples.</li>
+<li><strong>wavel_range</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>) or </em><em>str</em>) – Wavelength range (micron) or filter name. Full spectrum if set to None.</li>
+<li><strong>spec_res</strong> (<em>float</em>) – Spectral resolution, achieved by smoothing with a Gaussian kernel. The original
+wavelength points are used if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Boxes with the randomly sampled spectra.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list(<a class="reference internal" href="species.core.html#species.core.box.ModelBox" title="species.core.box.ModelBox">species.core.box.ModelBox</a>, )</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.get_median_sample">
+<code class="descname">get_median_sample</code><span class="sig-paren">(</span><em>tag</em>, <em>burnin</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.get_median_sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.get_median_sample" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tag</strong> (<em>str</em>) – Database tag with the MCMC results.</li>
+<li><strong>burnin</strong> (<em>int</em>) – Number of burnin steps.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Parameters and values for the sample with the maximum posterior probability.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.get_object">
+<code class="descname">get_object</code><span class="sig-paren">(</span><em>object_name</em>, <em>filters=None</em>, <em>inc_phot=True</em>, <em>inc_spec=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.get_object"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.get_object" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>object_name</strong> (<em>str</em>) – Object name in the database.</li>
+<li><strong>filters</strong> (<em>list</em><em>(</em><em>str</em><em>, </em><em>)</em>) – Filter names for which the photometry is selected. All available photometry of the
+object is selected if set to None.</li>
+<li><strong>inc_phot</strong> (<em>bool</em>) – Include photometry in the box.</li>
+<li><strong>inc_spec</strong> (<em>bool</em>) – Include spectrum in the box.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Box with the object’s data.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="species.core.html#species.core.box.ObjectBox" title="species.core.box.ObjectBox">species.core.box.ObjectBox</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.get_probable_sample">
+<code class="descname">get_probable_sample</code><span class="sig-paren">(</span><em>tag</em>, <em>burnin</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.get_probable_sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.get_probable_sample" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tag</strong> (<em>str</em>) – Database tag with the MCMC results.</li>
+<li><strong>burnin</strong> (<em>int</em>) – Number of burnin steps.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Parameters and values for the sample with the maximum posterior probability.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.get_samples">
+<code class="descname">get_samples</code><span class="sig-paren">(</span><em>tag</em>, <em>burnin=None</em>, <em>random=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.get_samples"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.get_samples" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tag</strong> (<em>str</em>) – Database tag with the samples.</li>
+<li><strong>burnin</strong> (<em>int</em><em>, </em><em>None</em>) – Number of burnin samples to exclude. All samples are selected if set to None.</li>
+<li><strong>random</strong> (<em>int</em><em>, </em><em>None</em>) – Number of random samples to select. All samples (with the burnin excluded) are
+selected if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Box with the MCMC samples.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="species.core.html#species.core.box.SamplesBox" title="species.core.box.SamplesBox">species.core.box.SamplesBox</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="species.data.database.Database.list_companions">
+<em class="property">static </em><code class="descname">list_companions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.list_companions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.list_companions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">NoneType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.data.database.Database.list_content">
+<code class="descname">list_content</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/database.html#Database.list_content"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.database.Database.list_content" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">NoneType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.drift_phoenix">
+<span id="species-data-drift-phoenix-module"></span><h2>species.data.drift_phoenix module<a class="headerlink" href="#module-species.data.drift_phoenix" title="Permalink to this headline">¶</a></h2>
+<p>Module for DRIFT-PHOENIX atmospheric model spectra.</p>
+<dl class="function">
+<dt id="species.data.drift_phoenix.add_drift_phoenix">
+<code class="descclassname">species.data.drift_phoenix.</code><code class="descname">add_drift_phoenix</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/drift_phoenix.html#add_drift_phoenix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.drift_phoenix.add_drift_phoenix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the DRIFT-PHOENIX atmospheric models to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – Folder where the data is located.</li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.filters">
+<span id="species-data-filters-module"></span><h2>species.data.filters module<a class="headerlink" href="#module-species.data.filters" title="Permalink to this headline">¶</a></h2>
+<p>Module for downloading filter data from the SVO website.</p>
+<dl class="function">
+<dt id="species.data.filters.download_filter">
+<code class="descclassname">species.data.filters.</code><code class="descname">download_filter</code><span class="sig-paren">(</span><em>filter_id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/filters.html#download_filter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.filters.download_filter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filter_id</strong> (<em>str</em>) – Filter ID.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><ul class="simple">
+<li><em>numpy.ndarray</em> – Wavelength (micron).</li>
+<li><em>numpy.ndarray</em> – Transmission.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.irtf">
+<span id="species-data-irtf-module"></span><h2>species.data.irtf module<a class="headerlink" href="#module-species.data.irtf" title="Permalink to this headline">¶</a></h2>
+<p>Module for adding IRTF spectra tot the database.</p>
+<dl class="function">
+<dt id="species.data.irtf.add_irtf">
+<code class="descclassname">species.data.irtf.</code><code class="descname">add_irtf</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em>, <em>sptypes</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/irtf.html#add_irtf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.irtf.add_irtf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to add the IRTF Spectral Library to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – Path of the data folder.</li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+<li><strong>sptypes</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>)</em>) – Spectral types (‘F’, ‘G’, ‘K’, ‘M’, ‘L’, ‘T’).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.isochrones">
+<span id="species-data-isochrones-module"></span><h2>species.data.isochrones module<a class="headerlink" href="#module-species.data.isochrones" title="Permalink to this headline">¶</a></h2>
+<p>Module for isochrone data of evolutionary models.</p>
+<dl class="function">
+<dt id="species.data.isochrones.add_baraffe">
+<code class="descclassname">species.data.isochrones.</code><code class="descname">add_baraffe</code><span class="sig-paren">(</span><em>database</em>, <em>tag</em>, <em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/isochrones.html#add_baraffe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.isochrones.add_baraffe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the Baraffe et al. isochrone data to the database. Any of the isochrones
+from  <a class="reference external" href="https://phoenix.ens-lyon.fr/Grids/">https://phoenix.ens-lyon.fr/Grids/</a> can be used as input.</p>
+<p><a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2003A%26A...402..701B/">https://ui.adsabs.harvard.edu/abs/2003A%26A…402..701B/</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+<li><strong>tag</strong> (<em>str</em>) – Tag name in the database.</li>
+<li><strong>filename</strong> (<em>str</em>) – Filename with the isochrones data.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="species.data.isochrones.add_marleau">
+<code class="descclassname">species.data.isochrones.</code><code class="descname">add_marleau</code><span class="sig-paren">(</span><em>database</em>, <em>tag</em>, <em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/isochrones.html#add_marleau"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.isochrones.add_marleau" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the Marleau et al. isochrone data to the database. The isochrone data can
+be requested from Gabriel Marleau.</p>
+<p><a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2019A%26A...624A..20M/abstract">https://ui.adsabs.harvard.edu/abs/2019A%26A…624A..20M/abstract</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+<li><strong>tag</strong> (<em>str</em>) – Tag name in the database.</li>
+<li><strong>filename</strong> (<em>str</em>) – Filename with the isochrones data.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.leggett">
+<span id="species-data-leggett-module"></span><h2>species.data.leggett module<a class="headerlink" href="#module-species.data.leggett" title="Permalink to this headline">¶</a></h2>
+<p>Text</p>
+<dl class="function">
+<dt id="species.data.leggett.add_leggett">
+<code class="descclassname">species.data.leggett.</code><code class="descname">add_leggett</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/leggett.html#add_leggett"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.leggett.add_leggett" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the Database of Ultracool Parallaxes to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – Path of the data folder.</li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.petitcode">
+<span id="species-data-petitcode-module"></span><h2>species.data.petitcode module<a class="headerlink" href="#module-species.data.petitcode" title="Permalink to this headline">¶</a></h2>
+<p>Module for petitCODE atmospheric model spectra.</p>
+<dl class="function">
+<dt id="species.data.petitcode.add_petitcode_cool_clear">
+<code class="descclassname">species.data.petitcode.</code><code class="descname">add_petitcode_cool_clear</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/petitcode.html#add_petitcode_cool_clear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.petitcode.add_petitcode_cool_clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the petitCODE cool clear atmospheric models to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – Folder where the data is located.</li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="species.data.petitcode.add_petitcode_cool_cloudy">
+<code class="descclassname">species.data.petitcode.</code><code class="descname">add_petitcode_cool_cloudy</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/petitcode.html#add_petitcode_cool_cloudy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.petitcode.add_petitcode_cool_cloudy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the petitCODE cool cloudy atmospheric models to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – Folder where the data is located.</li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="species.data.petitcode.add_petitcode_hot_clear">
+<code class="descclassname">species.data.petitcode.</code><code class="descname">add_petitcode_hot_clear</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em>, <em>data_folder</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/petitcode.html#add_petitcode_hot_clear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.petitcode.add_petitcode_hot_clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the petitCODE hot clear atmospheric models to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – Folder where the data is located.</li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+<li><strong>data_folder</strong> (<em>str</em>) – Path with input data.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="species.data.petitcode.add_petitcode_hot_cloudy">
+<code class="descclassname">species.data.petitcode.</code><code class="descname">add_petitcode_hot_cloudy</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em>, <em>data_folder</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/petitcode.html#add_petitcode_hot_cloudy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.petitcode.add_petitcode_hot_cloudy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the petitCODE hot cloudy atmospheric models to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – Folder where the data is located.</li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+<li><strong>data_folder</strong> (<em>str</em>) – Path with input data.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.queries">
+<span id="species-data-queries-module"></span><h2>species.data.queries module<a class="headerlink" href="#module-species.data.queries" title="Permalink to this headline">¶</a></h2>
+<p>Text</p>
+<dl class="class">
+<dt id="species.data.queries.NoStdStreams">
+<em class="property">class </em><code class="descclassname">species.data.queries.</code><code class="descname">NoStdStreams</code><span class="sig-paren">(</span><em>stdout=None</em>, <em>stderr=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/queries.html#NoStdStreams"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.queries.NoStdStreams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Text</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="species.data.queries.get_distance">
+<code class="descclassname">species.data.queries.</code><code class="descname">get_distance</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/queries.html#get_distance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.queries.get_distance" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target</strong> (<em>str</em>) – Target name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><ul class="simple">
+<li><em>str</em> – SIMBAD name.</li>
+<li><em>float</em> – Distance (pc).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="species.data.queries.get_simbad">
+<code class="descclassname">species.data.queries.</code><code class="descname">get_simbad</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/queries.html#get_simbad"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.queries.get_simbad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for getting the SIMBAD identifier of an object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>numpy.ndarray</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">SIMBAD name.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">numpy.ndarray</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.spex">
+<span id="species-data-spex-module"></span><h2>species.data.spex module<a class="headerlink" href="#module-species.data.spex" title="Permalink to this headline">¶</a></h2>
+<p>Text</p>
+<dl class="function">
+<dt id="species.data.spex.add_spex">
+<code class="descclassname">species.data.spex.</code><code class="descname">add_spex</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/spex.html#add_spex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.spex.add_spex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the SpeX Prism Spectral Library to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – Path of the data folder.</li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – The HDF5 database.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.vega">
+<span id="species-data-vega-module"></span><h2>species.data.vega module<a class="headerlink" href="#module-species.data.vega" title="Permalink to this headline">¶</a></h2>
+<p>Text</p>
+<dl class="function">
+<dt id="species.data.vega.add_vega">
+<code class="descclassname">species.data.vega.</code><code class="descname">add_vega</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/vega.html#add_vega"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.vega.add_vega" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding a Vega spectrum to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – Path of the data folder.</li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – Database.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data.vlm_plx">
+<span id="species-data-vlm-plx-module"></span><h2>species.data.vlm_plx module<a class="headerlink" href="#module-species.data.vlm_plx" title="Permalink to this headline">¶</a></h2>
+<p>Text</p>
+<dl class="function">
+<dt id="species.data.vlm_plx.add_vlm_plx">
+<code class="descclassname">species.data.vlm_plx.</code><code class="descname">add_vlm_plx</code><span class="sig-paren">(</span><em>input_path</em>, <em>database</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/data/vlm_plx.html#add_vlm_plx"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.data.vlm_plx.add_vlm_plx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for adding the Database of Ultracool Parallaxes to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_path</strong> (<em>str</em>) – </li>
+<li><strong>database</strong> (<em>h5py._hl.files.File</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.data">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-species.data" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="species.plot.html" class="btn btn-neutral float-right" title="species.plot package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="species.core.html" class="btn btn-neutral" title="species.core package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2020, Tomas Stolker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

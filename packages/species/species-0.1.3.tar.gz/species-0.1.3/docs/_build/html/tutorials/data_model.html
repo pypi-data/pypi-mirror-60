@@ -1,0 +1,1054 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Comparison of data and model &mdash; species 0.1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Photometric calibration: fitting a stellar spectrum" href="photometric_calibration.html" />
+    <link rel="prev" title="Atmospheric models" href="atmospheric_models.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/species_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#virtual-environment">Virtual Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#installation-from-github">Installation from Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#testing-species">Testing <cite>species</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="running_species.html">Running <em>species</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="running_species.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="running_species.html#Adding-a-photometric-library">Adding a photometric library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="running_species.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="running_species.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="running_species.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#supported-data">Supported data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#analysis-tools">Analysis tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#output-boxes">Output boxes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration.html">Configuration</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../tutorials.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="flux_magnitude.html">Flux and magnitude conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synthetic_photometry.html">Synthetic photometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spectral_library.html">Spectral library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="color_magnitude_broadband.html">Color-magnitude diagram: broadband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Adding-data-to-the-database">Adding data to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Database-content">Database content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Synthetic-photometry-from-isochrones">Synthetic photometry from isochrones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Photometry-of-directly-imaged-objects">Photometry of directly imaged objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="color_magnitude_narrowband.html">Color-magnitude diagram: narrowband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_narrowband.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_narrowband.html#Adding-data-and-models">Adding data and models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_narrowband.html#Synthetic-colors-and-magnitudes">Synthetic colors and magnitudes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_narrowband.html#Selecting-directly-imaged-planets">Selecting directly imaged planets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_narrowband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="atmospheric_models.html">Atmospheric models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="atmospheric_models.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmospheric_models.html#Adding-model-spectra-to-the-database">Adding model spectra to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmospheric_models.html#Interpolating-the-model-grid">Interpolating the model grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmospheric_models.html#Extracting-a-spectrum-at-a-grid-point">Extracting a spectrum at a grid point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmospheric_models.html#Calculating-synthetic-photometry">Calculating synthetic photometry</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Comparison of data and model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Adding-model-spectra">Adding model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Reading-model-spectra">Reading model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Reading-companion-data">Reading companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Synthetic-photometry-for-all-filters">Synthetic photometry for all filters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Creating-flux-residuals">Creating flux residuals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Opening-Box-objects">Opening Box objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Plotting-spectra,-fluxes-and-filters">Plotting spectra, fluxes and filters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="photometric_calibration.html">Photometric calibration: fitting a stellar spectrum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="photometric_calibration.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="photometric_calibration.html#Adding-an-object-and-calibration-spectrum">Adding an object and calibration spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="photometric_calibration.html#Fitting-the-stellar-spectrum">Fitting the stellar spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="photometric_calibration.html#Plotting-the-results">Plotting the results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="photometric_calibration.html#Photometric-calibration">Photometric calibration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="fitting_photometry.html">Fitting photometry with model spectra</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">API documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../species.html">species package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../species.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../species.analysis.html">species.analysis package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../species.analysis.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.analysis.html#module-species.analysis.fit_model">species.analysis.fit_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.analysis.html#module-species.analysis.fit_planck">species.analysis.fit_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.analysis.html#module-species.analysis.fit_spectrum">species.analysis.fit_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.analysis.html#module-species.analysis.photometry">species.analysis.photometry module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.analysis.html#module-species.analysis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../species.core.html">species.core package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../species.core.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.core.html#module-species.core.box">species.core.box module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.core.html#module-species.core.constants">species.core.constants module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.core.html#module-species.core.setup">species.core.setup module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.core.html#module-species.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../species.data.html">species.data package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.ames_cond">species.data.ames_cond module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.ames_dusty">species.data.ames_dusty module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.btnextgen">species.data.btnextgen module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.btsettl">species.data.btsettl module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.companions">species.data.companions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.database">species.data.database module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.drift_phoenix">species.data.drift_phoenix module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.filters">species.data.filters module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.irtf">species.data.irtf module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.isochrones">species.data.isochrones module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.leggett">species.data.leggett module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.petitcode">species.data.petitcode module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.queries">species.data.queries module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.spex">species.data.spex module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.vega">species.data.vega module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.vlm_plx">species.data.vlm_plx module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../species.plot.html">species.plot package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../species.plot.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.plot.html#module-species.plot.plot_color">species.plot.plot_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.plot.html#module-species.plot.plot_mcmc">species.plot.plot_mcmc module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.plot.html#module-species.plot.plot_spectrum">species.plot.plot_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.plot.html#module-species.plot">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../species.read.html">species.read package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_calibration">species.read.read_calibration module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_color">species.read.read_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_filter">species.read.read_filter module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_isochrone">species.read.read_isochrone module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_model">species.read.read_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_object">species.read.read_object module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_planck">species.read.read_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_spectrum">species.read.read_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../species.util.html">species.util package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#module-species.util.data_util">species.util.data_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#module-species.util.phot_util">species.util.phot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#module-species.util.plot_util">species.util.plot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#module-species.util.read_util">species.util.read_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#module-species.util.test_util">species.util.test_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#module-species.util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../species.html#module-species">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">About species</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../about.html#questions-feedback">Questions &amp; feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about.html#attribution">Attribution</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">species</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../tutorials.html">Tutorials</a> &raquo;</li>
+        
+      <li>Comparison of data and model</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/tomasstolker/species/blob/master/docs/tutorials/data_model.ipynb" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container,
+div.nbinput.container div.prompt,
+div.nbinput.container div.input_area,
+div.nbinput.container div[class*=highlight],
+div.nbinput.container div[class*=highlight] pre,
+div.nboutput.container,
+div.nboutput.container div.prompt,
+div.nboutput.container div.output_area,
+div.nboutput.container div[class*=highlight],
+div.nboutput.container div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    min-width: 5ex;
+    padding-top: 0.4em;
+    padding-right: 0.4em;
+    text-align: right;
+    flex: 0;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    padding: 0.4em;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: #f5f5f5;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="Comparison-of-data-and-model">
+<h1>Comparison of data and model<a class="headerlink" href="#Comparison-of-data-and-model" title="Permalink to this headline">¶</a></h1>
+<p>In this tutorial, the photometric fluxes of the brown dwarf companion PZ Tel B is compared with a spectrum from the AMES-Cond atmospheric model.</p>
+<div class="section" id="Initiating-species">
+<h2>Initiating <em>species</em><a class="headerlink" href="#Initiating-species" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">species</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">species</span><span class="o">.</span><span class="n">SpeciesInit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Initiating species v0.1.0... [DONE]
+Creating species_config.ini... [DONE]
+Database: /Users/tomasstolker/applications/species/docs/tutorials/species_database.hdf5
+Data folder: /Users/tomasstolker/applications/species/docs/tutorials/data
+Working folder: /Users/tomasstolker/applications/species/docs/tutorials
+Creating species_database.hdf5... [DONE]
+Creating data folder... [DONE]
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;species.core.setup.SpeciesInit at 0x12556b5f8&gt;
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Adding-model-spectra">
+<h2>Adding model spectra<a class="headerlink" href="#Adding-model-spectra" title="Permalink to this headline">¶</a></h2>
+<p>A <code class="docutils literal notranslate"><span class="pre">Database</span></code> object is now created which can be used for importing of data into the database.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">database</span> <span class="o">=</span> <span class="n">species</span><span class="o">.</span><span class="n">Database</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<p>The spectra of the AMES-Cond model are downloaded and added to the database. This requires sufficient disk storage in the <em>data_folder</em> that is set in the configuration file.</p>
+<p>While the full AMES-Cond grid is downloaded, a restiction on the wavelength and Teff range can be used when the data is imported. Also the spectral resolution can be set to downsample the high-resolution of the original spectra spectra.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">database</span><span class="o">.</span><span class="n">add_model</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;ames-cond&#39;</span><span class="p">,</span>
+                   <span class="n">wavel_range</span><span class="o">=</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">6.</span><span class="p">),</span>
+                   <span class="n">spec_res</span><span class="o">=</span><span class="mf">1000.</span>
+                   <span class="n">teff_range</span><span class="o">=</span><span class="p">(</span><span class="mf">2800.</span><span class="p">,</span> <span class="mf">3000.</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Downloading AMES-Cond model spectra (823 MB)... [DONE]
+Unpacking AMES-Cond model spectra (823 MB)... [DONE]
+Adding AMES-Cond model spectra... [DONE]
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Adding-companion-data">
+<h2>Adding companion data<a class="headerlink" href="#Adding-companion-data" title="Permalink to this headline">¶</a></h2>
+<p>The distance and magnitudes of PZ Tel B are added to the database. This will automatically download the filter transmission profiles and a flux calibrated spectrum of Vega, which are used for the flux calibration.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">database</span><span class="o">.</span><span class="n">add_companion</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;PZ Tel B&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding filter: Paranal/SPHERE.ZIMPOL_R_PRIM... [DONE]
+Downloading Vega spectrum (270 kB)... [DONE]
+Adding Vega spectrum... [DONE]
+Adding filter: Paranal/SPHERE.ZIMPOL_I_PRIM... [DONE]
+Adding filter: Paranal/SPHERE.IRDIS_D_H23_2... [DONE]
+Adding filter: Paranal/SPHERE.IRDIS_D_H23_3... [DONE]
+Adding filter: Paranal/SPHERE.IRDIS_D_K12_1... [DONE]
+Adding filter: Paranal/SPHERE.IRDIS_D_K12_2... [DONE]
+Adding filter: Paranal/NACO.J... [DONE]
+Adding filter: Paranal/NACO.H... [DONE]
+Adding filter: Paranal/NACO.Ks... [DONE]
+Adding filter: Paranal/NACO.Lp... [DONE]
+Adding filter: Paranal/NACO.NB405... [DONE]
+Adding filter: Paranal/NACO.Mp... [DONE]
+Adding filter: Gemini/NICI.ED286... [DONE]
+Adding filter: Gemini/NIRI.H2S1v2-1-G0220... [DONE]
+Adding object: PZ Tel B... [DONE]
+</pre></div></div>
+</div>
+<p>Alternatively, the <code class="docutils literal notranslate"><span class="pre">add_object</span></code> method of <code class="docutils literal notranslate"><span class="pre">Database</span></code> can be used for manually adding magnitudes and spectra of an individual object. Before coninuing, let’s check the content of the database.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">database</span><span class="o">.</span><span class="n">list_content</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Database content:
+- filters: &lt;HDF5 group &#34;/filters&#34; (2 members)&gt;
+        - Gemini: &lt;HDF5 group &#34;/filters/Gemini&#34; (2 members)&gt;
+                - NICI.ED286: &lt;HDF5 dataset &#34;NICI.ED286&#34;: shape (2, 387), type &#34;&lt;f4&#34;&gt;
+                - NIRI.H2S1v2-1-G0220: &lt;HDF5 dataset &#34;NIRI.H2S1v2-1-G0220&#34;: shape (2, 129), type &#34;&lt;f4&#34;&gt;
+        - Paranal: &lt;HDF5 group &#34;/filters/Paranal&#34; (12 members)&gt;
+                - NACO.H: &lt;HDF5 dataset &#34;NACO.H&#34;: shape (2, 23), type &#34;&lt;f4&#34;&gt;
+                - NACO.J: &lt;HDF5 dataset &#34;NACO.J&#34;: shape (2, 20), type &#34;&lt;f4&#34;&gt;
+                - NACO.Ks: &lt;HDF5 dataset &#34;NACO.Ks&#34;: shape (2, 27), type &#34;&lt;f4&#34;&gt;
+                - NACO.Lp: &lt;HDF5 dataset &#34;NACO.Lp&#34;: shape (2, 31), type &#34;&lt;f4&#34;&gt;
+                - NACO.Mp: &lt;HDF5 dataset &#34;NACO.Mp&#34;: shape (2, 18), type &#34;&lt;f4&#34;&gt;
+                - NACO.NB405: &lt;HDF5 dataset &#34;NACO.NB405&#34;: shape (2, 67), type &#34;&lt;f4&#34;&gt;
+                - SPHERE.IRDIS_D_H23_2: &lt;HDF5 dataset &#34;SPHERE.IRDIS_D_H23_2&#34;: shape (2, 113), type &#34;&lt;f4&#34;&gt;
+                - SPHERE.IRDIS_D_H23_3: &lt;HDF5 dataset &#34;SPHERE.IRDIS_D_H23_3&#34;: shape (2, 180), type &#34;&lt;f4&#34;&gt;
+                - SPHERE.IRDIS_D_K12_1: &lt;HDF5 dataset &#34;SPHERE.IRDIS_D_K12_1&#34;: shape (2, 175), type &#34;&lt;f4&#34;&gt;
+                - SPHERE.IRDIS_D_K12_2: &lt;HDF5 dataset &#34;SPHERE.IRDIS_D_K12_2&#34;: shape (2, 191), type &#34;&lt;f4&#34;&gt;
+                - SPHERE.ZIMPOL_I_PRIM: &lt;HDF5 dataset &#34;SPHERE.ZIMPOL_I_PRIM&#34;: shape (2, 189), type &#34;&lt;f4&#34;&gt;
+                - SPHERE.ZIMPOL_R_PRIM: &lt;HDF5 dataset &#34;SPHERE.ZIMPOL_R_PRIM&#34;: shape (2, 169), type &#34;&lt;f4&#34;&gt;
+- models: &lt;HDF5 group &#34;/models&#34; (1 members)&gt;
+        - ames-cond: &lt;HDF5 group &#34;/models/ames-cond&#34; (4 members)&gt;
+                - flux: &lt;HDF5 dataset &#34;flux&#34;: shape (3, 13, 4097), type &#34;&lt;f4&#34;&gt;
+                - logg: &lt;HDF5 dataset &#34;logg&#34;: shape (13,), type &#34;&lt;f4&#34;&gt;
+                - teff: &lt;HDF5 dataset &#34;teff&#34;: shape (3,), type &#34;&lt;f4&#34;&gt;
+                - wavelength: &lt;HDF5 dataset &#34;wavelength&#34;: shape (4097,), type &#34;&lt;f4&#34;&gt;
+- objects: &lt;HDF5 group &#34;/objects&#34; (1 members)&gt;
+        - PZ Tel B: &lt;HDF5 group &#34;/objects/PZ Tel B&#34; (3 members)&gt;
+                - Gemini: &lt;HDF5 group &#34;/objects/PZ Tel B/Gemini&#34; (2 members)&gt;
+                        - NICI.ED286: &lt;HDF5 dataset &#34;NICI.ED286&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                        - NIRI.H2S1v2-1-G0220: &lt;HDF5 dataset &#34;NIRI.H2S1v2-1-G0220&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                - Paranal: &lt;HDF5 group &#34;/objects/PZ Tel B/Paranal&#34; (12 members)&gt;
+                        - NACO.H: &lt;HDF5 dataset &#34;NACO.H&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                        - NACO.J: &lt;HDF5 dataset &#34;NACO.J&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                        - NACO.Ks: &lt;HDF5 dataset &#34;NACO.Ks&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                        - NACO.Lp: &lt;HDF5 dataset &#34;NACO.Lp&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                        - NACO.Mp: &lt;HDF5 dataset &#34;NACO.Mp&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                        - NACO.NB405: &lt;HDF5 dataset &#34;NACO.NB405&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                        - SPHERE.IRDIS_D_H23_2: &lt;HDF5 dataset &#34;SPHERE.IRDIS_D_H23_2&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                        - SPHERE.IRDIS_D_H23_3: &lt;HDF5 dataset &#34;SPHERE.IRDIS_D_H23_3&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                        - SPHERE.IRDIS_D_K12_1: &lt;HDF5 dataset &#34;SPHERE.IRDIS_D_K12_1&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                        - SPHERE.IRDIS_D_K12_2: &lt;HDF5 dataset &#34;SPHERE.IRDIS_D_K12_2&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                        - SPHERE.ZIMPOL_I_PRIM: &lt;HDF5 dataset &#34;SPHERE.ZIMPOL_I_PRIM&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                        - SPHERE.ZIMPOL_R_PRIM: &lt;HDF5 dataset &#34;SPHERE.ZIMPOL_R_PRIM&#34;: shape (4,), type &#34;&lt;f4&#34;&gt;
+                - distance: &lt;HDF5 dataset &#34;distance&#34;: shape (2,), type &#34;&lt;f4&#34;&gt;
+- spectra: &lt;HDF5 group &#34;/spectra&#34; (1 members)&gt;
+        - calibration: &lt;HDF5 group &#34;/spectra/calibration&#34; (1 members)&gt;
+                - vega: &lt;HDF5 dataset &#34;vega&#34;: shape (3, 8827), type &#34;&lt;f4&#34;&gt;
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Reading-model-spectra">
+<h2>Reading model spectra<a class="headerlink" href="#Reading-model-spectra" title="Permalink to this headline">¶</a></h2>
+<p>Model spectra are read from the database by creating an object of <code class="docutils literal notranslate"><span class="pre">ReadModel</span></code>. The model name and optionally a wavelength range should be provided. The wavelength range should fit within the range that was specified in <code class="docutils literal notranslate"><span class="pre">add_model</span></code>.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">readmodel</span> <span class="o">=</span> <span class="n">species</span><span class="o">.</span><span class="n">ReadModel</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;ames-cond&#39;</span><span class="p">,</span>
+                              <span class="n">wavel_range</span><span class="o">=</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">6.</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<p>Before extracting a spectrum, let’s check which parameters are required for the AMES-Cond models.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">readmodel</span><span class="o">.</span><span class="n">get_parameters</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;teff&#39;, &#39;logg&#39;]
+</pre></div></div>
+</div>
+<p>And also the grid boundaries that are stored in the database.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">readmodel</span><span class="o">.</span><span class="n">get_bounds</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;teff&#39;: (2800.0, 3000.0), &#39;logg&#39;: (0.0, 6.0)}
+</pre></div></div>
+</div>
+<p>The parameters are provided in a dictionary. Make sure to chose values within the grid boundaries. The radius (RJup) and distance (pc) will scale the emitted spectrum to the observer. Without these values, the spectrum is provided at the outermost layer of the atmosphere.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">model_param</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;teff&#39;</span><span class="p">:</span> <span class="mf">2900.</span><span class="p">,</span> <span class="s1">&#39;logg&#39;</span><span class="p">:</span> <span class="mf">4.5</span><span class="p">,</span> <span class="s1">&#39;radius&#39;</span><span class="p">:</span> <span class="mf">2.2</span><span class="p">,</span> <span class="s1">&#39;distance&#39;</span><span class="p">:</span> <span class="mf">47.13</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p>The grid of spectra is linearly interpolated at a spectral resolution of 100 and stored in a <code class="docutils literal notranslate"><span class="pre">ModelBox</span></code>.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">modelbox</span> <span class="o">=</span> <span class="n">readmodel</span><span class="o">.</span><span class="n">get_model</span><span class="p">(</span><span class="n">model_param</span><span class="o">=</span><span class="n">model_param</span><span class="p">,</span>
+                               <span class="n">spec_res</span><span class="o">=</span><span class="mf">100.</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Reading-companion-data">
+<h2>Reading companion data<a class="headerlink" href="#Reading-companion-data" title="Permalink to this headline">¶</a></h2>
+<p>The photometry data of PZ Tel B are also read from the database and stored in an <code class="docutils literal notranslate"><span class="pre">ObjectBox</span></code>.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">objectbox</span> <span class="o">=</span> <span class="n">database</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="n">object_name</span><span class="o">=</span><span class="s1">&#39;PZ Tel B&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Getting object: PZ Tel B... [DONE]
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Synthetic-photometry-for-all-filters">
+<h2>Synthetic photometry for all filters<a class="headerlink" href="#Synthetic-photometry-for-all-filters" title="Permalink to this headline">¶</a></h2>
+<p>For comparison, we create synthetic photometry from the model spectrum for all filters of PZ Tel B, which are stored in a <code class="docutils literal notranslate"><span class="pre">SynphotBox</span></code>.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">synphotbox</span> <span class="o">=</span> <span class="n">species</span><span class="o">.</span><span class="n">multi_photometry</span><span class="p">(</span><span class="n">datatype</span><span class="o">=</span><span class="s1">&#39;model&#39;</span><span class="p">,</span>
+                                      <span class="n">spectrum</span><span class="o">=</span><span class="s1">&#39;ames-cond&#39;</span><span class="p">,</span>
+                                      <span class="n">filters</span><span class="o">=</span><span class="n">objectbox</span><span class="o">.</span><span class="n">filters</span><span class="p">,</span>
+                                      <span class="n">parameters</span><span class="o">=</span><span class="n">model_param</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Calculating synthetic photometry... [DONE]
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Creating-flux-residuals">
+<h2>Creating flux residuals<a class="headerlink" href="#Creating-flux-residuals" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">get_residuals</span></code> function is used to calculate the difference between the observed fluxes and the synthetic photometry of the model spectrum. The residuals are stored in a <code class="docutils literal notranslate"><span class="pre">ResidualsBox</span></code>.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">residualsbox</span> <span class="o">=</span> <span class="n">species</span><span class="o">.</span><span class="n">get_residuals</span><span class="p">(</span><span class="n">datatype</span><span class="o">=</span><span class="s1">&#39;model&#39;</span><span class="p">,</span>
+                                     <span class="n">spectrum</span><span class="o">=</span><span class="s1">&#39;ames-cond&#39;</span><span class="p">,</span>
+                                     <span class="n">parameters</span><span class="o">=</span><span class="n">model_param</span><span class="p">,</span>
+                                     <span class="n">filters</span><span class="o">=</span><span class="n">objectbox</span><span class="o">.</span><span class="n">filters</span><span class="p">,</span>
+                                     <span class="n">objectbox</span><span class="o">=</span><span class="n">objectbox</span><span class="p">,</span>
+                                     <span class="n">inc_phot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                                     <span class="n">inc_spec</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Calculating synthetic photometry... [DONE]
+Calculating residuals... [DONE]
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Opening-Box-objects">
+<h2>Opening Box objects<a class="headerlink" href="#Opening-Box-objects" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">open_box</span></code> function can be used to view the content of a <code class="docutils literal notranslate"><span class="pre">Box</span></code> object. For example, the <code class="docutils literal notranslate"><span class="pre">ModelBox</span></code> contains several attributes, including the wavelength points and flux densities.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">modelbox</span><span class="o">.</span><span class="n">open_box</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Opening ModelBox...
+
+model = ames-cond
+type = None
+wavelength = [0.1       0.1001    0.1002001 ... 5.739604  5.7453437 5.751089 ]
+flux = [7.69244319e-10 6.23827156e-09 1.04784443e-05 ... 3.85241479e-16
+ 3.84432439e-16 3.83581166e-16]
+parameters = {&#39;teff&#39;: 2900.0, &#39;logg&#39;: 4.5, &#39;radius&#39;: 2.2, &#39;distance&#39;: 47.13, &#39;mass&#39;: 61.7508434070773}
+quantity = flux
+</pre></div></div>
+</div>
+<p>Similarly, an <code class="docutils literal notranslate"><span class="pre">ObjectBox</span></code> contains a dictionary with the apparent magnitudes and a dictionary with the flux densities.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">objectbox</span><span class="o">.</span><span class="n">open_box</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Opening ObjectBox...
+
+name = PZ Tel B
+filters = [&#39;Gemini/NICI.ED286&#39;, &#39;Gemini/NIRI.H2S1v2-1-G0220&#39;, &#39;Paranal/NACO.H&#39;, &#39;Paranal/NACO.J&#39;, &#39;Paranal/NACO.Ks&#39;, &#39;Paranal/NACO.Lp&#39;, &#39;Paranal/NACO.Mp&#39;, &#39;Paranal/NACO.NB405&#39;, &#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;, &#39;Paranal/SPHERE.IRDIS_D_H23_3&#39;, &#39;Paranal/SPHERE.IRDIS_D_K12_1&#39;, &#39;Paranal/SPHERE.IRDIS_D_K12_2&#39;, &#39;Paranal/SPHERE.ZIMPOL_I_PRIM&#39;, &#39;Paranal/SPHERE.ZIMPOL_R_PRIM&#39;]
+magnitude = {&#39;Gemini/NICI.ED286&#39;: array([11.68,  0.14], dtype=float32), &#39;Gemini/NIRI.H2S1v2-1-G0220&#39;: array([11.39,  0.14], dtype=float32), &#39;Paranal/NACO.H&#39;: array([11.93,  0.14], dtype=float32), &#39;Paranal/NACO.J&#39;: array([12.47,  0.2 ], dtype=float32), &#39;Paranal/NACO.Ks&#39;: array([11.53,  0.07], dtype=float32), &#39;Paranal/NACO.Lp&#39;: array([11.04,  0.22], dtype=float32), &#39;Paranal/NACO.Mp&#39;: array([10.93,  0.03], dtype=float32), &#39;Paranal/NACO.NB405&#39;: array([10.94,  0.07], dtype=float32), &#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;: array([11.78,  0.19], dtype=float32), &#39;Paranal/SPHERE.IRDIS_D_H23_3&#39;: array([11.65,  0.19], dtype=float32), &#39;Paranal/SPHERE.IRDIS_D_K12_1&#39;: array([11.56,  0.09], dtype=float32), &#39;Paranal/SPHERE.IRDIS_D_K12_2&#39;: array([11.29,  0.1 ], dtype=float32), &#39;Paranal/SPHERE.ZIMPOL_I_PRIM&#39;: array([15.16,  0.12], dtype=float32), &#39;Paranal/SPHERE.ZIMPOL_R_PRIM&#39;: array([17.84,  0.31], dtype=float32)}
+flux = {&#39;Gemini/NICI.ED286&#39;: array([2.7825625e-14, 3.5979198e-15], dtype=float32), &#39;Gemini/NIRI.H2S1v2-1-G0220&#39;: array([1.0590437e-14, 1.3693687e-15], dtype=float32), &#39;Paranal/NACO.H&#39;: array([1.9687588e-14, 2.5456521e-15], dtype=float32), &#39;Paranal/NACO.J&#39;: array([3.1106848e-14, 5.7625536e-15], dtype=float32), &#39;Paranal/NACO.Ks&#39;: array([1.1241627e-14, 7.2527667e-16], dtype=float32), &#39;Paranal/NACO.Lp&#39;: array([2.0200626e-15, 4.1212692e-16], dtype=float32), &#39;Paranal/NACO.Mp&#39;: array([9.1877844e-16, 2.5390018e-17], dtype=float32), &#39;Paranal/NACO.NB405&#39;: array([1.6704631e-15, 1.0777336e-16], dtype=float32), &#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;: array([2.5412999e-14, 4.4699182e-15], dtype=float32), &#39;Paranal/SPHERE.IRDIS_D_H23_3&#39;: array([2.4269955e-14, 4.2688669e-15], dtype=float32), &#39;Paranal/SPHERE.IRDIS_D_K12_1&#39;: array([1.1547812e-14, 9.5833011e-16], dtype=float32), &#39;Paranal/SPHERE.IRDIS_D_K12_2&#39;: array([1.1428121e-14, 1.0540576e-15], dtype=float32), &#39;Paranal/SPHERE.ZIMPOL_I_PRIM&#39;: array([1.0862880e-14, 1.2030557e-15], dtype=float32), &#39;Paranal/SPHERE.ZIMPOL_R_PRIM&#39;: array([1.8263311e-15, 5.2856905e-16], dtype=float32)}
+distance = 47.130001068115234
+spectrum = None
+</pre></div></div>
+</div>
+<p>The attributes in the <code class="docutils literal notranslate"><span class="pre">Box</span></code> objects can be extracted for further analyis or manual plots, for example:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">modelbox</span><span class="o">.</span><span class="n">wavelength</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([0.1      , 0.1001   , 0.1002001, ..., 5.739604 , 5.7453437,
+       5.751089 ], dtype=float32)
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Plotting-spectra,-fluxes-and-filters">
+<h2>Plotting spectra, fluxes and filters<a class="headerlink" href="#Plotting-spectra,-fluxes-and-filters" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">Box</span></code> objects can provided as list to <code class="docutils literal notranslate"><span class="pre">plot_spectrum</span></code>, which will be interpreted accordingly. Optionally, the filter names can be included for plotting the transmission profiles and the <code class="docutils literal notranslate"><span class="pre">ResidualsBox</span></code> can be included for showing the residuals. The <code class="docutils literal notranslate"><span class="pre">ObjectBox</span></code> requires a color for the photometry data and a spectrum with the latter set to <code class="docutils literal notranslate"><span class="pre">None</span></code> in this case.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">species</span><span class="o">.</span><span class="n">plot_spectrum</span><span class="p">(</span><span class="n">boxes</span><span class="o">=</span><span class="p">[</span><span class="n">modelbox</span><span class="p">,</span> <span class="n">objectbox</span><span class="p">,</span> <span class="n">synphotbox</span><span class="p">],</span>
+                      <span class="n">filters</span><span class="o">=</span><span class="n">objectbox</span><span class="o">.</span><span class="n">filters</span><span class="p">,</span>
+                      <span class="n">residuals</span><span class="o">=</span><span class="n">residualsbox</span><span class="p">,</span>
+                      <span class="n">colors</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;darkblue&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span> <span class="s1">&#39;black&#39;</span><span class="p">),</span>
+                      <span class="n">offset</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">0.08</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.06</span><span class="p">),</span>
+                      <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">),</span>
+                      <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">3e-15</span><span class="p">,</span> <span class="mf">4.8e-14</span><span class="p">),</span>
+                      <span class="n">legend</span><span class="o">=</span><span class="s1">&#39;upper right&#39;</span><span class="p">,</span>
+                      <span class="n">output</span><span class="o">=</span><span class="s1">&#39;spectrum.png&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Plotting spectrum: spectrum.png... [DONE]
+</pre></div></div>
+</div>
+<p>Let’s have a look at the result. The plot is stored in the working folder. The black squares are the photometry data of PZ Tel B and the open squares are the synthetic photometry computed from the model spectrum. The residuals are shown relative to the uncertainties on the fluxes.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Image</span>
+<span class="n">Image</span><span class="p">(</span><span class="s1">&#39;spectrum.png&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/tutorials_data_model_46_0.png" src="../_images/tutorials_data_model_46_0.png" />
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="photometric_calibration.html" class="btn btn-neutral float-right" title="Photometric calibration: fitting a stellar spectrum" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="atmospheric_models.html" class="btn btn-neutral" title="Atmospheric models" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2020, Tomas Stolker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

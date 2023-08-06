@@ -1,0 +1,996 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>species.analysis package &mdash; species 0.1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="species.core package" href="species.core.html" />
+    <link rel="prev" title="species package" href="species.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/species_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#virtual-environment">Virtual Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installation-from-github">Installation from Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#testing-species">Testing <cite>species</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/running_species.html">Running <em>species</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Adding-a-photometric-library">Adding a photometric library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#supported-data">Supported data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#analysis-tools">Analysis tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#output-boxes">Output boxes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/flux_magnitude.html">Flux and magnitude conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/synthetic_photometry.html">Synthetic photometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/spectral_library.html">Spectral library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/color_magnitude_broadband.html">Color-magnitude diagram: broadband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Adding-data-to-the-database">Adding data to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Database-content">Database content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Synthetic-photometry-from-isochrones">Synthetic photometry from isochrones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Photometry-of-directly-imaged-objects">Photometry of directly imaged objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html">Color-magnitude diagram: narrowband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Adding-data-and-models">Adding data and models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Synthetic-colors-and-magnitudes">Synthetic colors and magnitudes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Selecting-directly-imaged-planets">Selecting directly imaged planets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/atmospheric_models.html">Atmospheric models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Adding-model-spectra-to-the-database">Adding model spectra to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Interpolating-the-model-grid">Interpolating the model grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Extracting-a-spectrum-at-a-grid-point">Extracting a spectrum at a grid point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Calculating-synthetic-photometry">Calculating synthetic photometry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/data_model.html">Comparison of data and model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Adding-model-spectra">Adding model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Reading-model-spectra">Reading model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Reading-companion-data">Reading companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Synthetic-photometry-for-all-filters">Synthetic photometry for all filters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Creating-flux-residuals">Creating flux residuals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Opening-Box-objects">Opening Box objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Plotting-spectra,-fluxes-and-filters">Plotting spectra, fluxes and filters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/photometric_calibration.html">Photometric calibration: fitting a stellar spectrum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Adding-an-object-and-calibration-spectrum">Adding an object and calibration spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Fitting-the-stellar-spectrum">Fitting the stellar spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Plotting-the-results">Plotting the results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Photometric-calibration">Photometric calibration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/fitting_photometry.html">Fitting photometry with model spectra</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="species.html">species package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="species.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">species.analysis package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.analysis.fit_model">species.analysis.fit_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.analysis.fit_planck">species.analysis.fit_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.analysis.fit_spectrum">species.analysis.fit_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.analysis.photometry">species.analysis.photometry module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.analysis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.core.html">species.core package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core.box">species.core.box module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core.constants">species.core.constants module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core.setup">species.core.setup module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.data.html">species.data package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.ames_cond">species.data.ames_cond module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.ames_dusty">species.data.ames_dusty module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.btnextgen">species.data.btnextgen module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.btsettl">species.data.btsettl module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.companions">species.data.companions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.database">species.data.database module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.drift_phoenix">species.data.drift_phoenix module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.filters">species.data.filters module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.irtf">species.data.irtf module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.isochrones">species.data.isochrones module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.leggett">species.data.leggett module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.petitcode">species.data.petitcode module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.queries">species.data.queries module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.spex">species.data.spex module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.vega">species.data.vega module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.vlm_plx">species.data.vlm_plx module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.plot.html">species.plot package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#module-species.plot.plot_color">species.plot.plot_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#module-species.plot.plot_mcmc">species.plot.plot_mcmc module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#module-species.plot.plot_spectrum">species.plot.plot_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#module-species.plot">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.read.html">species.read package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_calibration">species.read.read_calibration module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_color">species.read.read_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_filter">species.read.read_filter module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_isochrone">species.read.read_isochrone module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_model">species.read.read_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_object">species.read.read_object module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_planck">species.read.read_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read.read_spectrum">species.read.read_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.read.html#module-species.read">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.util.html">species.util package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.data_util">species.util.data_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.phot_util">species.util.phot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.plot_util">species.util.plot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.read_util">species.util.read_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.test_util">species.util.test_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="species.html#module-species">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">About species</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about.html#questions-feedback">Questions &amp; feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about.html#attribution">Attribution</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">species</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">API documentation</a> &raquo;</li>
+        
+          <li><a href="species.html">species package</a> &raquo;</li>
+        
+      <li>species.analysis package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/tomasstolker/species/blob/master/docs/species.analysis.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="species-analysis-package">
+<h1>species.analysis package<a class="headerlink" href="#species-analysis-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-species.analysis.fit_model">
+<span id="species-analysis-fit-model-module"></span><h2>species.analysis.fit_model module<a class="headerlink" href="#module-species.analysis.fit_model" title="Permalink to this headline">¶</a></h2>
+<p>Module with functionalities for fitting atmospheric model specra.</p>
+<dl class="class">
+<dt id="species.analysis.fit_model.FitModel">
+<em class="property">class </em><code class="descclassname">species.analysis.fit_model.</code><code class="descname">FitModel</code><span class="sig-paren">(</span><em>object_name</em>, <em>filters</em>, <em>model</em>, <em>bounds</em>, <em>inc_phot=True</em>, <em>inc_spec=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/fit_model.html#FitModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.fit_model.FitModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for fitting atmospheric model spectra to photometric data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>object_name</strong> (<em>str</em>) – Object name in the database.</li>
+<li><strong>filters</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>)</em>) – Filter IDs for which the photometry is selected. All available photometry of the
+object is selected if set to None.</li>
+<li><strong>model</strong> (<em>str</em>) – Atmospheric model.</li>
+<li><strong>bounds</strong> (<em>dict</em>) – Parameter boundaries. Full parameter range is used if set to None or not specified.
+The radius parameter range is set to 0-5 Rjup if not specified.</li>
+<li><strong>inc_phot</strong> (<em>bool</em>) – Include photometry data with the fit.</li>
+<li><strong>inc_spec</strong> (<em>bool</em>) – Include spectral data with the fit.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.analysis.fit_model.FitModel.run_mcmc">
+<code class="descname">run_mcmc</code><span class="sig-paren">(</span><em>nwalkers</em>, <em>nsteps</em>, <em>guess</em>, <em>tag</em>, <em>prior=None</em>, <em>weighting=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/fit_model.html#FitModel.run_mcmc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.fit_model.FitModel.run_mcmc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to run the MCMC sampler.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>nwalkers</strong> (<em>int</em>) – Number of walkers.</li>
+<li><strong>nsteps</strong> (<em>int</em>) – Number of steps per walker.</li>
+<li><strong>guess</strong> (<em>dict</em>) – Guess for the parameter values. Random values between the boundary values are used
+if set to None.</li>
+<li><strong>tag</strong> (<em>str</em>) – Database tag where the MCMC samples are stored.</li>
+<li><strong>prior</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>float</em><em>, </em><em>float</em><em>)</em>) – Gaussian prior on one of the parameters. Currently only possible for the mass, e.g.
+(‘mass’, 13., 3.) for an expected mass of 13 Mjup with an uncertainty of 3 Mjup. Not
+used if set to None.</li>
+<li><strong>weighting</strong> (<em>float</em><em>, </em><em>None</em>) – Weighting applied to the spectrum when calculating the likelihood function in order
+to not have a spectrum dominate the chi-squared value. For example, with <cite>weighting=3</cite>
+then all combined spectrum points (e.g. covering the YJH bandpasses) have a weighted
+that is equal to three photometry points. The spectrum data points have an equal
+weighting as the photometry points if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="species.analysis.fit_model.lnlike">
+<code class="descclassname">species.analysis.fit_model.</code><code class="descname">lnlike</code><span class="sig-paren">(</span><em>param</em>, <em>modelpar</em>, <em>modelphot</em>, <em>objphot</em>, <em>synphot</em>, <em>distance</em>, <em>spectrum</em>, <em>modelspec</em>, <em>weighting</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/fit_model.html#lnlike"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.fit_model.lnlike" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal function for the likelihood probability.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>param</strong> (<em>numpy.ndarray</em>) – Parameter values.</li>
+<li><strong>modelpar</strong> (<em>list</em><em>(</em><em>str</em><em>, </em><em>)</em>) – Parameter names.</li>
+<li><strong>modelphot</strong> (<em>list</em><em>(</em><em>'species.read.read_model.ReadModel</em><em>, </em><em>)</em>) – </li>
+<li><strong>objphot</strong> (<em>list</em><em>(</em><em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>)</em>) – </li>
+<li><strong>synphot</strong> (<em>list</em><em>(</em><a class="reference internal" href="#species.analysis.photometry.SyntheticPhotometry" title="species.analysis.photometry.SyntheticPhotometry"><em>species.analysis.photometry.SyntheticPhotometry</em></a><em>, </em><em>)</em>) – </li>
+<li><strong>distance</strong> (<em>float</em>) – Distance (pc).</li>
+<li><strong>spectrum</strong> (<em>numpy.ndarray</em>) – Wavelength (micron), apparent flux (W m-2 micron-1), and flux error (W m-2 micron-1).</li>
+<li><strong>modelspec</strong> (<a class="reference internal" href="species.read.html#species.read.read_model.ReadModel" title="species.read.read_model.ReadModel"><em>species.read.read_model.ReadModel</em></a>) – </li>
+<li><strong>weighting</strong> (<em>float</em><em>, </em><em>None</em>) – Weighting applied to the spectrum when calculating the likelihood function in order
+to not have a spectrum dominate the chi-squared value. For example, with <cite>weighting=3</cite>
+then all combined spectrum points (e.g. covering the YJH bandpasses) have a weighted
+that is equal to three photometry points. The spectrum data points have an equal
+weighting as the photometry points if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Log likelihood probability.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="species.analysis.fit_model.lnprior">
+<code class="descclassname">species.analysis.fit_model.</code><code class="descname">lnprior</code><span class="sig-paren">(</span><em>param</em>, <em>bounds</em>, <em>modelpar</em>, <em>prior=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/fit_model.html#lnprior"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.fit_model.lnprior" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal function for the prior probability.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>param</strong> (<em>numpy.ndarray</em>) – Parameter values.</li>
+<li><strong>bounds</strong> (<em>dict</em>) – Parameter boundaries.</li>
+<li><strong>modelpar</strong> (<em>list</em><em>(</em><em>str</em><em>, </em><em>)</em>) – Parameter names.</li>
+<li><strong>prior</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Gaussian prior on one of the parameters. Currently only possible for the mass, e.g.
+(‘mass’, 13., 3.) for an expected mass of 13 Mjup with an uncertainty of 3 Mjup. Not
+used if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Log prior probability.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="species.analysis.fit_model.lnprob">
+<code class="descclassname">species.analysis.fit_model.</code><code class="descname">lnprob</code><span class="sig-paren">(</span><em>param</em>, <em>bounds</em>, <em>modelpar</em>, <em>modelphot</em>, <em>objphot</em>, <em>synphot</em>, <em>distance</em>, <em>prior</em>, <em>spectrum</em>, <em>modelspec</em>, <em>weighting</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/fit_model.html#lnprob"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.fit_model.lnprob" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal function for the posterior probability.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>param</strong> (<em>numpy.ndarray</em>) – Parameter values.</li>
+<li><strong>bounds</strong> (<em>dict</em>) – Parameter boundaries.</li>
+<li><strong>modelpar</strong> (<em>list</em><em>(</em><em>str</em><em>, </em><em>)</em>) – Parameter names.</li>
+<li><strong>modelphot</strong> (<em>list</em><em>(</em><em>'species.read.read_model.ReadModel</em><em>, </em><em>)</em>) – </li>
+<li><strong>objphot</strong> (<em>list</em><em>(</em><em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>)</em>) – </li>
+<li><strong>synphot</strong> (<em>list</em><em>(</em><a class="reference internal" href="#species.analysis.photometry.SyntheticPhotometry" title="species.analysis.photometry.SyntheticPhotometry"><em>species.analysis.photometry.SyntheticPhotometry</em></a><em>, </em><em>)</em>) – </li>
+<li><strong>distance</strong> (<em>float</em>) – Distance (pc).</li>
+<li><strong>prior</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>float</em><em>, </em><em>float</em><em>)</em>) – Gaussian prior on one of the parameters. Currently only possible for the mass, e.g.
+(‘mass’, 13., 3.) for an expected mass of 13 Mjup with an uncertainty of 3 Mjup. Not
+used if set to None.</li>
+<li><strong>spectrum</strong> (<em>numpy.ndarray</em>) – Wavelength (micron), apparent flux (W m-2 micron-1), and flux error (W m-2 micron-1).</li>
+<li><strong>modelspec</strong> (<a class="reference internal" href="species.read.html#species.read.read_model.ReadModel" title="species.read.read_model.ReadModel"><em>species.read.read_model.ReadModel</em></a>) – </li>
+<li><strong>weighting</strong> (<em>float</em><em>, </em><em>None</em>) – Weighting applied to the spectrum when calculating the likelihood function in order
+to not have a spectrum dominate the chi-squared value. For example, with <cite>weighting=3</cite>
+then all combined spectrum points (e.g. covering the YJH bandpasses) have a weighted
+that is equal to three photometry points. The spectrum data points have an equal
+weighting as the photometry points if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Log posterior probability.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.analysis.fit_planck">
+<span id="species-analysis-fit-planck-module"></span><h2>species.analysis.fit_planck module<a class="headerlink" href="#module-species.analysis.fit_planck" title="Permalink to this headline">¶</a></h2>
+<p>Module with functionalities for fitting a Planck spectrum.</p>
+<dl class="class">
+<dt id="species.analysis.fit_planck.FitPlanck">
+<em class="property">class </em><code class="descclassname">species.analysis.fit_planck.</code><code class="descname">FitPlanck</code><span class="sig-paren">(</span><em>object_name</em>, <em>filters</em>, <em>bounds</em>, <em>inc_phot=True</em>, <em>inc_spec=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/fit_planck.html#FitPlanck"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.fit_planck.FitPlanck" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for fitting Planck spectra to spectral and photometric data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>object_name</strong> (<em>str</em>) – Object name in the database.</li>
+<li><strong>filters</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>)</em>) – Filter names for which the photometry is selected. All available photometry of the
+object are used if set to None.</li>
+<li><strong>bounds</strong> (<em>dict</em>) – Parameter boundaries for ‘teff’ and ‘radius’. The values should be provided either as
+float or as list of floats such that multiple Planck functions can be combined,
+e.g. <code class="docutils literal notranslate"><span class="pre">{'teff':</span> <span class="pre">[(1000.,</span> <span class="pre">2000.),</span> <span class="pre">(500.,</span> <span class="pre">1500.)],</span> <span class="pre">'radius':</span> <span class="pre">[(0.5,</span> <span class="pre">1.5),</span> <span class="pre">(1.5,</span> <span class="pre">2.0)]}</span></code>.</li>
+<li><strong>inc_phot</strong> (<em>bool</em>) – Include photometry data with the fit.</li>
+<li><strong>inc_spec</strong> (<em>bool</em>) – Include spectral data with the fit.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.analysis.fit_planck.FitPlanck.run_mcmc">
+<code class="descname">run_mcmc</code><span class="sig-paren">(</span><em>nwalkers</em>, <em>nsteps</em>, <em>guess</em>, <em>tag</em>, <em>weighting=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/fit_planck.html#FitPlanck.run_mcmc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.fit_planck.FitPlanck.run_mcmc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to run the MCMC sampler.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>nwalkers</strong> (<em>int</em>) – Number of walkers.</li>
+<li><strong>nsteps</strong> (<em>int</em>) – Number of steps per walker.</li>
+<li><strong>guess</strong> (<em>dict</em><em>, </em><em>None</em>) – Guess for the ‘teff’ and ‘radius’. Random values between the boundary values are used
+if a value is set to None. The values should be provided either as float or in a list
+of floats such that multiple Planck functions can be combined, e.g.
+<code class="docutils literal notranslate"><span class="pre">{'teff':</span> <span class="pre">[1500.,</span> <span class="pre">1000.],</span> <span class="pre">'radius':</span> <span class="pre">[1.,</span> <span class="pre">2.]</span></code>.</li>
+<li><strong>tag</strong> (<em>str</em>) – Database tag where the MCMC samples are stored.</li>
+<li><strong>weighting</strong> (<em>float</em><em>, </em><em>None</em>) – Weighting applied to the spectrum when calculating the likelihood function in order
+to not have a spectrum dominate the chi-squared value. For example, with <cite>weighting=3</cite>
+then all combined spectrum points (e.g. covering the YJH bandpasses) have a weighted
+that is equal to three photometry points. The spectrum data points have an equal
+weighting as the photometry points if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="species.analysis.fit_planck.lnlike">
+<code class="descclassname">species.analysis.fit_planck.</code><code class="descname">lnlike</code><span class="sig-paren">(</span><em>param</em>, <em>bounds</em>, <em>objphot</em>, <em>synphot</em>, <em>distance</em>, <em>spectrum</em>, <em>weighting</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/fit_planck.html#lnlike"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.fit_planck.lnlike" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal function for the likelihood probability.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>param</strong> (<em>numpy.ndarray</em>) – Parameter values.</li>
+<li><strong>bounds</strong> (<em>dict</em>) – Parameter boundaries for ‘teff’ and ‘radius’. The values should be provided in a list
+such that multiple Planck functions can be combined, e.g. <code class="docutils literal notranslate"><span class="pre">{'teff':</span> <span class="pre">[(1000.,</span> <span class="pre">2000.),</span>
+<span class="pre">(500.,</span> <span class="pre">1500.)],</span> <span class="pre">'radius':</span> <span class="pre">[(0.5,</span> <span class="pre">1.5),</span> <span class="pre">(1.5,</span> <span class="pre">2.0)]}</span></code>.</li>
+<li><strong>objphot</strong> (<em>list</em><em>(</em><em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>)</em>) – List with the photometric fluxes and uncertainties.</li>
+<li><strong>synphot</strong> (<em>list</em><em>(</em><a class="reference internal" href="#species.analysis.photometry.SyntheticPhotometry" title="species.analysis.photometry.SyntheticPhotometry"><em>species.analysis.photometry.SyntheticPhotometry</em></a><em>, </em><em>)</em>) – List with the <a class="reference internal" href="#species.analysis.photometry.SyntheticPhotometry" title="species.analysis.photometry.SyntheticPhotometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">SyntheticPhotometry</span></code></a> objects for
+calculation of synthetic photometry from the model spectra.</li>
+<li><strong>distance</strong> (<em>float</em>) – Distance (pc).</li>
+<li><strong>spectrum</strong> (<em>numpy.ndarray</em><em>, </em><em>None</em>) – Spectrum array with the wavelength (micron), flux (W m-2 micron-1), and error
+(W m-2 micron-1). Not used if set to None.</li>
+<li><strong>weighting</strong> (<em>float</em><em>, </em><em>None</em>) – Weighting applied to the spectrum when calculating the likelihood function in order
+to not have a spectrum dominate the chi-squared value. For example, with <cite>weighting=3</cite>
+then all combined spectrum points (e.g. covering the YJH bandpasses) have a weighted
+that is equal to three photometry points. The spectrum data points have an equal
+weighting as the photometry points if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Log likelihood probability.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="species.analysis.fit_planck.lnprior">
+<code class="descclassname">species.analysis.fit_planck.</code><code class="descname">lnprior</code><span class="sig-paren">(</span><em>param</em>, <em>bounds</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/fit_planck.html#lnprior"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.fit_planck.lnprior" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal function for the prior probability.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>param</strong> (<em>numpy.ndarray</em>) – Parameter values.</li>
+<li><strong>bounds</strong> (<em>dict</em>) – Parameter boundaries for ‘teff’ and ‘radius’. The values should be provided in a list
+such that multiple Planck functions can be combined, e.g. <code class="docutils literal notranslate"><span class="pre">{'teff':</span> <span class="pre">[(1000.,</span> <span class="pre">2000.),</span>
+<span class="pre">(500.,</span> <span class="pre">1500.)],</span> <span class="pre">'radius':</span> <span class="pre">[(0.5,</span> <span class="pre">1.5),</span> <span class="pre">(1.5,</span> <span class="pre">2.0)]}</span></code>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Log prior probability.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="species.analysis.fit_planck.lnprob">
+<code class="descclassname">species.analysis.fit_planck.</code><code class="descname">lnprob</code><span class="sig-paren">(</span><em>param</em>, <em>bounds</em>, <em>objphot</em>, <em>synphot</em>, <em>distance</em>, <em>spectrum</em>, <em>weighting</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/fit_planck.html#lnprob"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.fit_planck.lnprob" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal function for the posterior probability.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>param</strong> (<em>numpy.ndarray</em>) – Parameter values.</li>
+<li><strong>bounds</strong> (<em>dict</em>) – Parameter boundaries for ‘teff’ and ‘radius’. The values should be provided in a list
+such that multiple Planck functions can be combined, e.g. <code class="docutils literal notranslate"><span class="pre">{'teff':</span> <span class="pre">[(1000.,</span> <span class="pre">2000.),</span>
+<span class="pre">(500.,</span> <span class="pre">1500.)],</span> <span class="pre">'radius':</span> <span class="pre">[(0.5,</span> <span class="pre">1.5),</span> <span class="pre">(1.5,</span> <span class="pre">2.0)]}</span></code>.</li>
+<li><strong>objphot</strong> (<em>list</em><em>(</em><em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>)</em>) – List with the photometric fluxes and uncertainties.</li>
+<li><strong>synphot</strong> (<em>list</em><em>(</em><a class="reference internal" href="#species.analysis.photometry.SyntheticPhotometry" title="species.analysis.photometry.SyntheticPhotometry"><em>species.analysis.photometry.SyntheticPhotometry</em></a><em>, </em><em>)</em>) – List with the <a class="reference internal" href="#species.analysis.photometry.SyntheticPhotometry" title="species.analysis.photometry.SyntheticPhotometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">SyntheticPhotometry</span></code></a> objects for
+calculation of synthetic photometry from the model spectra.</li>
+<li><strong>distance</strong> (<em>float</em>) – Distance (pc).</li>
+<li><strong>spectrum</strong> (<em>numpy.ndarray</em><em>, </em><em>None</em>) – Spectrum array with the wavelength (micron), flux (W m-2 micron-1), and error
+(W m-2 micron-1). Not used if set to None.</li>
+<li><strong>weighting</strong> (<em>float</em><em>, </em><em>None</em>) – Weighting applied to the spectrum when calculating the likelihood function in order
+to not have a spectrum dominate the chi-squared value. For example, with <cite>weighting=3</cite>
+then all combined spectrum points (e.g. covering the YJH bandpasses) have a weighted
+that is equal to three photometry points. The spectrum data points have an equal
+weighting as the photometry points if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Log posterior probability.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.analysis.fit_spectrum">
+<span id="species-analysis-fit-spectrum-module"></span><h2>species.analysis.fit_spectrum module<a class="headerlink" href="#module-species.analysis.fit_spectrum" title="Permalink to this headline">¶</a></h2>
+<p>Module with functionalities for fitting a calibration spectrum.</p>
+<dl class="class">
+<dt id="species.analysis.fit_spectrum.FitSpectrum">
+<em class="property">class </em><code class="descclassname">species.analysis.fit_spectrum.</code><code class="descname">FitSpectrum</code><span class="sig-paren">(</span><em>object_name</em>, <em>filters</em>, <em>spectrum</em>, <em>bounds</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/fit_spectrum.html#FitSpectrum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.fit_spectrum.FitSpectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for fitting a calibration spectrum to photometric data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>object_name</strong> (<em>str</em>) – Object name in the database.</li>
+<li><strong>filters</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>)</em>) – Filter IDs for which the photometry is selected. All available photometry of the
+object is selected if set to None.</li>
+<li><strong>spectrum</strong> (<em>str</em>) – Calibration spectrum.</li>
+<li><strong>bounds</strong> (<em>dict</em>) – Boundaries of the scaling parameter, as {‘scaling’:(min, max)}.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.analysis.fit_spectrum.FitSpectrum.run_mcmc">
+<code class="descname">run_mcmc</code><span class="sig-paren">(</span><em>nwalkers</em>, <em>nsteps</em>, <em>guess</em>, <em>tag</em>, <em>bands=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/fit_spectrum.html#FitSpectrum.run_mcmc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.fit_spectrum.FitSpectrum.run_mcmc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to run the MCMC sampler.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>nwalkers</strong> (<em>int</em>) – Number of walkers.</li>
+<li><strong>nsteps</strong> (<em>int</em>) – Number of steps per walker.</li>
+<li><strong>guess</strong> (<em>dict</em>) – Guess of the scaling parameter.</li>
+<li><strong>tag</strong> (<em>str</em>) – Database tag where the MCMC samples are stored.</li>
+<li><strong>bands</strong> (<em>bool</em>) – Use band-dependent scaling parameters in addition to the main scaling parameter which
+is used for the full spectrum.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="species.analysis.fit_spectrum.lnprob">
+<code class="descclassname">species.analysis.fit_spectrum.</code><code class="descname">lnprob</code><span class="sig-paren">(</span><em>param</em>, <em>bounds</em>, <em>modelpar</em>, <em>objphot</em>, <em>specphot</em>, <em>bands</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/fit_spectrum.html#lnprob"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.fit_spectrum.lnprob" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal function for the posterior probability.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>param</strong> (<em>numpy.ndarray</em>) – Values of the main scaling parameter and optionally additional band-dependent scaling
+parameters.</li>
+<li><strong>bounds</strong> (<em>dict</em>) – Boundaries of the main scaling parameter.</li>
+<li><strong>modelpar</strong> (<em>list</em><em>(</em><em>str</em><em>, </em><em>)</em>) – Parameter names.</li>
+<li><strong>objphot</strong> (<em>list</em><em>(</em><em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>)</em>) – Photometry of the object.</li>
+<li><strong>specphot</strong> (<em>list</em><em>(</em><em>float</em><em>, </em><em>)</em>) – Synthetic photometry of the calibration spectrum for the same filters as the photometry
+of the object.</li>
+<li><strong>bands</strong> (<em>bool</em>) – Use band-dependent scaling parameters in addition to the main scaling parameter which
+is used for the full spectrum.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Log posterior probability.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.analysis.photometry">
+<span id="species-analysis-photometry-module"></span><h2>species.analysis.photometry module<a class="headerlink" href="#module-species.analysis.photometry" title="Permalink to this headline">¶</a></h2>
+<p>Module with functionalities for calculating synthetic photometry.</p>
+<dl class="class">
+<dt id="species.analysis.photometry.SyntheticPhotometry">
+<em class="property">class </em><code class="descclassname">species.analysis.photometry.</code><code class="descname">SyntheticPhotometry</code><span class="sig-paren">(</span><em>filter_name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/photometry.html#SyntheticPhotometry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.photometry.SyntheticPhotometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for calculating synthetic photometry from a spectrum.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filter_name</strong> (<em>str</em>) – Filter ID as listed in the database. Filters from the SVO Filter Profile Service are
+automatically downloaded and added to the database.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">NoneType</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.analysis.photometry.SyntheticPhotometry.flux_to_magnitude">
+<code class="descname">flux_to_magnitude</code><span class="sig-paren">(</span><em>flux</em>, <em>distance</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/photometry.html#SyntheticPhotometry.flux_to_magnitude"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.photometry.SyntheticPhotometry.flux_to_magnitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for converting a flux density to a magnitude.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>flux</strong> (<em>float</em>) – Flux density (W m-2 micron-1).</li>
+<li><strong>distance</strong> (<em>float</em>) – Distance (pc).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li><em>float</em> – Apparent magnitude (mag).</li>
+<li><em>float</em> – Absolute magnitude (mag).</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.analysis.photometry.SyntheticPhotometry.magnitude_to_flux">
+<code class="descname">magnitude_to_flux</code><span class="sig-paren">(</span><em>magnitude</em>, <em>error=None</em>, <em>zp_flux=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/photometry.html#SyntheticPhotometry.magnitude_to_flux"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.photometry.SyntheticPhotometry.magnitude_to_flux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for converting a magnitude to a flux density.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>magnitude</strong> (<em>float</em>) – Magnitude (mag).</li>
+<li><strong>error</strong> (<em>float</em><em>, </em><em>None</em>) – Error (mag). Not used if set to None.</li>
+<li><strong>zp_flux</strong> (<em>float</em>) – Zero-point flux density (W m-2 micron-1). The value is calculated if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li><em>float</em> – Flux density (W m-2 micron-1).</li>
+<li><em>float</em> – Error (W m-2 micron-1).</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.analysis.photometry.SyntheticPhotometry.spectrum_to_flux">
+<code class="descname">spectrum_to_flux</code><span class="sig-paren">(</span><em>wavelength</em>, <em>flux</em>, <em>threshold=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/photometry.html#SyntheticPhotometry.spectrum_to_flux"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.photometry.SyntheticPhotometry.spectrum_to_flux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for calculating the average flux density from a spectrum and a filter profile.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>wavelength</strong> (<em>numpy.ndarray</em><em>, </em><em>list</em><em>(</em><em>numpy.ndarray</em><em>)</em>) – Wavelength points (micron) provided as a 1D array or a list of 1D arrays.</li>
+<li><strong>flux</strong> (<em>numpy.ndarray</em><em>, </em><em>list</em><em>(</em><em>numpy.ndarray</em><em>)</em>) – Flux density (W m-2 micron-1) provided as a 1D array or a list of 1D arrays.</li>
+<li><strong>threshold</strong> (<em>float</em><em>, </em><em>None</em>) – Transmission threshold (value between 0 and 1). If the minimum transmission value is
+larger than the threshold, a NaN is returned. This will happen if the input spectrum
+does not cover the full wavelength range of the filter profile. Not used if set to
+None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Average flux density (W m-2 micron-1).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float, numpy.ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.analysis.photometry.SyntheticPhotometry.spectrum_to_magnitude">
+<code class="descname">spectrum_to_magnitude</code><span class="sig-paren">(</span><em>wavelength</em>, <em>flux</em>, <em>distance=None</em>, <em>threshold=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/photometry.html#SyntheticPhotometry.spectrum_to_magnitude"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.photometry.SyntheticPhotometry.spectrum_to_magnitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for calculating the apparent and absolute magnitude from a spectrum and a
+filter profile.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>wavelength</strong> (<em>numpy.ndarray</em><em>, </em><em>list</em><em>(</em><em>numpy.ndarray</em><em>)</em>) – Wavelength points (micron) provided as a 1D array or a list of 1D arrays.</li>
+<li><strong>flux</strong> (<em>numpy.ndarray</em><em>, </em><em>list</em><em>(</em><em>numpy.ndarray</em><em>)</em>) – Flux density (W m-2 micron-1) provided as a 1D array or a list of 1D arrays.</li>
+<li><strong>distance</strong> (<em>float</em><em>, </em><em>None</em>) – Distance (pc). No absolute magnitude is calculated if set to None.</li>
+<li><strong>threshold</strong> (<em>float</em><em>, </em><em>None</em>) – Transmission threshold (value between 0 and 1). If the minimum transmission value is
+larger than the threshold, a NaN is returned. This will happen if the input spectrum
+does not cover the full wavelength range of the filter profile. Not used if set to
+None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li><em>float, numpy.ndarray</em> – Apparent magnitude (mag).</li>
+<li><em>float, numpy.ndarray</em> – Absolute magnitude (mag).</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.analysis.photometry.SyntheticPhotometry.zero_point">
+<code class="descname">zero_point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/analysis/photometry.html#SyntheticPhotometry.zero_point"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.analysis.photometry.SyntheticPhotometry.zero_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal function for calculating the zero-point of the provided <cite>filter_name</cite>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Zero-point flux density (W m-2 micron-1).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.analysis">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-species.analysis" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="species.core.html" class="btn btn-neutral float-right" title="species.core package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="species.html" class="btn btn-neutral" title="species package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2020, Tomas Stolker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

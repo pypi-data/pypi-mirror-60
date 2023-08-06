@@ -1,0 +1,810 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>species.plot.plot_spectrum &mdash; species 0.1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html">
+          
+
+          
+            
+            <img src="../../../_static/species_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#virtual-environment">Virtual Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#installation-from-github">Installation from Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#testing-species">Testing <cite>species</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/running_species.html">Running <em>species</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Adding-a-photometric-library">Adding a photometric library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#supported-data">Supported data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#analysis-tools">Analysis tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#output-boxes">Output boxes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/flux_magnitude.html">Flux and magnitude conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/synthetic_photometry.html">Synthetic photometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/spectral_library.html">Spectral library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html">Color-magnitude diagram: broadband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Adding-data-to-the-database">Adding data to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Database-content">Database content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Synthetic-photometry-from-isochrones">Synthetic photometry from isochrones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Photometry-of-directly-imaged-objects">Photometry of directly imaged objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html">Color-magnitude diagram: narrowband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Adding-data-and-models">Adding data and models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Synthetic-colors-and-magnitudes">Synthetic colors and magnitudes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Selecting-directly-imaged-planets">Selecting directly imaged planets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/atmospheric_models.html">Atmospheric models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Adding-model-spectra-to-the-database">Adding model spectra to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Interpolating-the-model-grid">Interpolating the model grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Extracting-a-spectrum-at-a-grid-point">Extracting a spectrum at a grid point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Calculating-synthetic-photometry">Calculating synthetic photometry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/data_model.html">Comparison of data and model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Adding-model-spectra">Adding model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Reading-model-spectra">Reading model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Reading-companion-data">Reading companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Synthetic-photometry-for-all-filters">Synthetic photometry for all filters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Creating-flux-residuals">Creating flux residuals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Opening-Box-objects">Opening Box objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Plotting-spectra,-fluxes-and-filters">Plotting spectra, fluxes and filters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/photometric_calibration.html">Photometric calibration: fitting a stellar spectrum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Adding-an-object-and-calibration-spectrum">Adding an object and calibration spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Fitting-the-stellar-spectrum">Fitting the stellar spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Plotting-the-results">Plotting the results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Photometric-calibration">Photometric calibration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/fitting_photometry.html">Fitting photometry with model spectra</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules.html">API documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../species.html">species package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../species.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.analysis.html">species.analysis package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis.fit_model">species.analysis.fit_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis.fit_planck">species.analysis.fit_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis.fit_spectrum">species.analysis.fit_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis.photometry">species.analysis.photometry module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.core.html">species.core package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#module-species.core.box">species.core.box module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#module-species.core.constants">species.core.constants module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#module-species.core.setup">species.core.setup module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#module-species.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.data.html">species.data package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.ames_cond">species.data.ames_cond module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.ames_dusty">species.data.ames_dusty module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.btnextgen">species.data.btnextgen module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.btsettl">species.data.btsettl module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.companions">species.data.companions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.database">species.data.database module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.drift_phoenix">species.data.drift_phoenix module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.filters">species.data.filters module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.irtf">species.data.irtf module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.isochrones">species.data.isochrones module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.leggett">species.data.leggett module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.petitcode">species.data.petitcode module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.queries">species.data.queries module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.spex">species.data.spex module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.vega">species.data.vega module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.vlm_plx">species.data.vlm_plx module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.plot.html">species.plot package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#module-species.plot.plot_color">species.plot.plot_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#module-species.plot.plot_mcmc">species.plot.plot_mcmc module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#module-species.plot.plot_spectrum">species.plot.plot_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#module-species.plot">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.read.html">species.read package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_calibration">species.read.read_calibration module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_color">species.read.read_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_filter">species.read.read_filter module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_isochrone">species.read.read_isochrone module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_model">species.read.read_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_object">species.read.read_object module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_planck">species.read.read_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_spectrum">species.read.read_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.util.html">species.util package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.data_util">species.util.data_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.phot_util">species.util.phot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.plot_util">species.util.plot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.read_util">species.util.read_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.test_util">species.util.test_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../species.html#module-species">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">About species</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../about.html#questions-feedback">Questions &amp; feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../about.html#attribution">Attribution</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">species</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>species.plot.plot_spectrum</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for species.plot.plot_spectrum</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Module with a function for plotting spectra.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">itertools</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">from</span> <span class="nn">species.core</span> <span class="k">import</span> <span class="n">box</span><span class="p">,</span> <span class="n">constants</span>
+<span class="kn">from</span> <span class="nn">species.read</span> <span class="k">import</span> <span class="n">read_filter</span>
+<span class="kn">from</span> <span class="nn">species.util</span> <span class="k">import</span> <span class="n">plot_util</span>
+
+
+<span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.serif&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Bitstream Vera Serif&#39;</span><span class="p">]</span>
+<span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;serif&#39;</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;axes&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.axisbelow&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+
+
+<div class="viewcode-block" id="plot_spectrum"><a class="viewcode-back" href="../../../species.plot.html#species.plot.plot_spectrum.plot_spectrum">[docs]</a><span class="k">def</span> <span class="nf">plot_spectrum</span><span class="p">(</span><span class="n">boxes</span><span class="p">,</span>
+                  <span class="n">filters</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                  <span class="n">residuals</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                  <span class="n">colors</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                  <span class="n">xlim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                  <span class="n">ylim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                  <span class="n">scale</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="s1">&#39;linear&#39;</span><span class="p">),</span>
+                  <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                  <span class="n">offset</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                  <span class="n">legend</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">,</span>
+                  <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">7.</span><span class="p">,</span> <span class="mf">5.</span><span class="p">),</span>
+                  <span class="n">object_type</span><span class="o">=</span><span class="s1">&#39;planet&#39;</span><span class="p">,</span>
+                  <span class="n">quantity</span><span class="o">=</span><span class="s1">&#39;flux&#39;</span><span class="p">,</span>
+                  <span class="n">output</span><span class="o">=</span><span class="s1">&#39;spectrum.pdf&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    boxes : list(species.core.box, )</span>
+<span class="sd">        Boxes with data.</span>
+<span class="sd">    filters : list(str, ), None</span>
+<span class="sd">        Filter IDs for which the transmission profile is plotted. Not plotted if set to None.</span>
+<span class="sd">    residuals : species.core.box.ResidualsBox, None</span>
+<span class="sd">        Box with residuals of a fit. Not plotted if set to None.</span>
+<span class="sd">    colors : list(str, ), None</span>
+<span class="sd">        Colors to be used for the different boxes. Note that a box with residuals requires a tuple</span>
+<span class="sd">        with two colors (i.e., for the photometry and spectrum). Automatic colors are used if set</span>
+<span class="sd">        to None.</span>
+<span class="sd">    xlim : tuple(float, float)</span>
+<span class="sd">        Limits of the x-axis.</span>
+<span class="sd">    ylim : tuple(float, float)</span>
+<span class="sd">        Limits of the y-axis.</span>
+<span class="sd">    scale : tuple(str, str)</span>
+<span class="sd">        Scale of the axes (&#39;linear&#39; or &#39;log&#39;).</span>
+<span class="sd">    title : str</span>
+<span class="sd">        Title.</span>
+<span class="sd">    offset : tuple(float, float)</span>
+<span class="sd">        Offset for the label of the x- and y-axis.</span>
+<span class="sd">    legend : str, None</span>
+<span class="sd">        Location of the legend.</span>
+<span class="sd">    figsize : tuple(float, float)</span>
+<span class="sd">        Figure size.</span>
+<span class="sd">    object_type : str</span>
+<span class="sd">        Object type (&#39;planet&#39; or &#39;star&#39;). With &#39;planet&#39;, the radius and mass are expressed in</span>
+<span class="sd">        Jupiter units. With &#39;star&#39;, the radius and mass are expressed in solar units.</span>
+<span class="sd">    quantity: str</span>
+<span class="sd">        The quantity of the y-axis (&#39;flux&#39; or &#39;magnitude&#39;).</span>
+<span class="sd">    output : str</span>
+<span class="sd">        Output filename.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    NoneType</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">marker</span> <span class="o">=</span> <span class="n">itertools</span><span class="o">.</span><span class="n">cycle</span><span class="p">((</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;P&#39;</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">,</span> <span class="s1">&#39;^&#39;</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">residuals</span> <span class="ow">and</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="n">figsize</span><span class="p">)</span>
+        <span class="n">gridsp</span> <span class="o">=</span> <span class="n">mpl</span><span class="o">.</span><span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">height_ratios</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+        <span class="n">gridsp</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">wspace</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">gridsp</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+        <span class="n">ax2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">gridsp</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+        <span class="n">ax3</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">gridsp</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+    <span class="k">elif</span> <span class="n">residuals</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="n">figsize</span><span class="p">)</span>
+        <span class="n">gridsp</span> <span class="o">=</span> <span class="n">mpl</span><span class="o">.</span><span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">height_ratios</span><span class="o">=</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+        <span class="n">gridsp</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">wspace</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">gridsp</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+        <span class="n">ax3</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">gridsp</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+    <span class="k">elif</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="n">figsize</span><span class="p">)</span>
+        <span class="n">gridsp</span> <span class="o">=</span> <span class="n">mpl</span><span class="o">.</span><span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">height_ratios</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+        <span class="n">gridsp</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">wspace</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">gridsp</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+        <span class="n">ax2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">gridsp</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="n">figsize</span><span class="p">)</span>
+        <span class="n">gridsp</span> <span class="o">=</span> <span class="n">mpl</span><span class="o">.</span><span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">gridsp</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">wspace</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">gridsp</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="n">residuals</span><span class="p">:</span>
+        <span class="n">labelbottom</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">labelbottom</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="n">ax1</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                    <span class="n">direction</span><span class="o">=</span><span class="s1">&#39;in&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                    <span class="n">bottom</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">labelbottom</span><span class="o">=</span><span class="n">labelbottom</span><span class="p">)</span>
+
+    <span class="n">ax1</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                    <span class="n">direction</span><span class="o">=</span><span class="s1">&#39;in&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                    <span class="n">bottom</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">labelbottom</span><span class="o">=</span><span class="n">labelbottom</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                        <span class="n">direction</span><span class="o">=</span><span class="s1">&#39;in&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                        <span class="n">bottom</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">labelbottom</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="n">ax2</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                        <span class="n">direction</span><span class="o">=</span><span class="s1">&#39;in&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                        <span class="n">bottom</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">labelbottom</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">residuals</span><span class="p">:</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                        <span class="n">direction</span><span class="o">=</span><span class="s1">&#39;in&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                        <span class="n">bottom</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">ax3</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                        <span class="n">direction</span><span class="o">=</span><span class="s1">&#39;in&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                        <span class="n">bottom</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">residuals</span> <span class="ow">and</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Wavelength [micron]&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">residuals</span><span class="p">:</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Wavelength [micron]&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Wavelength [micron]&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Wavelength [micron]&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Transmission&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">residuals</span><span class="p">:</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Residual [$\sigma$]&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">xlim</span><span class="p">:</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">xlim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">xlim</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mf">0.6</span><span class="p">,</span> <span class="mf">6.</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">quantity</span> <span class="o">==</span> <span class="s1">&#39;magnitude&#39;</span><span class="p">:</span>
+        <span class="n">scaling</span> <span class="o">=</span> <span class="mf">1.</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Flux contrast [mag]&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">ylim</span><span class="p">:</span>
+            <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">ylim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ylim</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+    <span class="k">elif</span> <span class="n">quantity</span> <span class="o">==</span> <span class="s1">&#39;flux&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ylim</span><span class="p">:</span>
+            <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">ylim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ylim</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+            <span class="n">ylim</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">get_ylim</span><span class="p">()</span>
+
+            <span class="n">exponent</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">ylim</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+            <span class="n">scaling</span> <span class="o">=</span> <span class="mf">10.</span><span class="o">**</span><span class="n">exponent</span>
+
+            <span class="n">ylabel</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;Flux [10$^{&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">exponent</span><span class="p">)</span><span class="o">+</span><span class="sa">r</span><span class="s1">&#39;}$ W m$^{-2}$ $\mu$m$^{-1}$]&#39;</span>
+
+            <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">ylabel</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+            <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">ylim</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span> <span class="n">ylim</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">scaling</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">ylim</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">0.</span><span class="p">:</span>
+                <span class="n">ax1</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">dashes</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">zorder</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Flux [W m$^{-2}$ $\mu$m$^{-1}$]&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+            <span class="n">scaling</span> <span class="o">=</span> <span class="mf">1.</span>
+
+    <span class="k">if</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">)</span>
+
+    <span class="n">xlim</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">get_xlim</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">xlim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">xlim</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="n">residuals</span><span class="p">:</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">xlim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">xlim</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="n">offset</span> <span class="ow">and</span> <span class="n">residuals</span> <span class="ow">and</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">get_xaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">offset</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="n">ax1</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="n">offset</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mf">0.5</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="n">offset</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mf">0.5</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="n">offset</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">offset</span> <span class="ow">and</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">get_xaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">offset</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="n">ax1</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="n">offset</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mf">0.5</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="n">offset</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">offset</span> <span class="ow">and</span> <span class="n">residuals</span><span class="p">:</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">get_xaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">offset</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="n">ax1</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="n">offset</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mf">0.5</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="n">offset</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">offset</span><span class="p">:</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">get_xaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">offset</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="n">offset</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">get_xaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.12</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_label_coords</span><span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="n">scale</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="n">scale</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="n">scale</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="n">residuals</span><span class="p">:</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="n">scale</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">color_obj_phot</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">color_obj_spec</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">boxitem</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">boxes</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">boxitem</span><span class="p">,</span> <span class="p">(</span><span class="n">box</span><span class="o">.</span><span class="n">SpectrumBox</span><span class="p">,</span> <span class="n">box</span><span class="o">.</span><span class="n">ModelBox</span><span class="p">)):</span>
+            <span class="n">wavelength</span> <span class="o">=</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">wavelength</span>
+            <span class="n">flux</span> <span class="o">=</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">flux</span>
+
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wavelength</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)):</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">flux</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
+                <span class="n">masked</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">boxitem</span><span class="p">,</span> <span class="n">box</span><span class="o">.</span><span class="n">ModelBox</span><span class="p">):</span>
+                    <span class="n">param</span> <span class="o">=</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">parameters</span>
+
+                    <span class="n">par_key</span><span class="p">,</span> <span class="n">par_unit</span> <span class="o">=</span> <span class="n">plot_util</span><span class="o">.</span><span class="n">quantity_unit</span><span class="p">(</span><span class="n">param</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">param</span><span class="o">.</span><span class="n">keys</span><span class="p">()),</span>
+                                                                <span class="n">object_type</span><span class="o">=</span><span class="n">object_type</span><span class="p">)</span>
+
+                    <span class="n">par_val</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">param</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+                    <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+                    <span class="n">newline</span> <span class="o">=</span> <span class="kc">False</span>
+
+                    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">par_key</span><span class="p">):</span>
+
+                        <span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="sa">r</span><span class="s1">&#39;$T_\mathregular</span><span class="si">{eff}</span><span class="s1">$&#39;</span><span class="p">:</span>
+                            <span class="n">value</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;</span><span class="si">{par_val[i]:.1f}</span><span class="s1">&#39;</span>
+
+                        <span class="k">elif</span> <span class="n">item</span> <span class="ow">in</span> <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\log\,g$&#39;</span><span class="p">,</span> <span class="s1">&#39;[Fe/H]&#39;</span><span class="p">,</span> <span class="s1">&#39;C/O&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;f$_\mathregular</span><span class="si">{sed}</span><span class="s1">$&#39;</span><span class="p">):</span>
+                            <span class="n">value</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;</span><span class="si">{par_val[i]:.2f}</span><span class="s1">&#39;</span>
+
+                        <span class="k">elif</span> <span class="n">item</span> <span class="o">==</span> <span class="sa">r</span><span class="s1">&#39;$R$&#39;</span><span class="p">:</span>
+
+                            <span class="k">if</span> <span class="n">object_type</span> <span class="o">==</span> <span class="s1">&#39;planet&#39;</span><span class="p">:</span>
+                                <span class="n">value</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;</span><span class="si">{par_val[i]:.2f}</span><span class="s1">&#39;</span>
+
+                            <span class="k">elif</span> <span class="n">object_type</span> <span class="o">==</span> <span class="s1">&#39;star&#39;</span><span class="p">:</span>
+                                <span class="n">value</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;{par_val[i]*constants.R_JUP/constants.R_SUN:.2f}&#39;</span>
+
+                        <span class="k">elif</span> <span class="n">item</span> <span class="o">==</span> <span class="sa">r</span><span class="s1">&#39;$M$&#39;</span><span class="p">:</span>
+                            <span class="k">if</span> <span class="n">object_type</span> <span class="o">==</span> <span class="s1">&#39;planet&#39;</span><span class="p">:</span>
+                                <span class="n">value</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;</span><span class="si">{par_val[i]:.2f}</span><span class="s1">&#39;</span>
+                            <span class="k">elif</span> <span class="n">object_type</span> <span class="o">==</span> <span class="s1">&#39;star&#39;</span><span class="p">:</span>
+                                <span class="n">value</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;{par_val[i]*constants.M_JUP/constants.M_SUN:.2f}&#39;</span>
+
+                        <span class="k">elif</span> <span class="n">item</span> <span class="o">==</span> <span class="sa">r</span><span class="s1">&#39;$L$&#39;</span><span class="p">:</span>
+                            <span class="n">value</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;</span><span class="si">{par_val[i]:.1e}</span><span class="s1">&#39;</span>
+
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="k">continue</span>
+
+                        <span class="c1"># if len(label) &gt; 110 and newline == False:</span>
+                        <span class="c1">#     label += &#39;\n&#39;</span>
+                        <span class="c1">#     newline = True</span>
+
+                        <span class="k">if</span> <span class="n">par_unit</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                            <span class="n">label</span> <span class="o">+=</span> <span class="n">item</span><span class="o">+</span><span class="s1">&#39; = &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">label</span> <span class="o">+=</span> <span class="n">item</span><span class="o">+</span><span class="s1">&#39; = &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">par_unit</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+                        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">par_key</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                            <span class="n">label</span> <span class="o">+=</span> <span class="s1">&#39;, &#39;</span>
+
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">label</span> <span class="o">=</span> <span class="kc">None</span>
+
+                <span class="k">if</span> <span class="n">colors</span><span class="p">:</span>
+                    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">wavelength</span><span class="p">,</span> <span class="n">masked</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+                             <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">wavelength</span><span class="p">,</span> <span class="n">masked</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wavelength</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)):</span>
+                <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">wavelength</span><span class="p">):</span>
+                    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">flux</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
+                    <span class="n">masked</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+
+                    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">boxitem</span><span class="o">.</span><span class="n">name</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">bytes</span><span class="p">):</span>
+                        <span class="n">label</span> <span class="o">=</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">name</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">label</span> <span class="o">=</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">name</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+                    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">masked</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">boxitem</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">boxitem</span><span class="p">):</span>
+                <span class="n">wavelength</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">wavelength</span>
+                <span class="n">flux</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">flux</span>
+
+                <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">flux</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
+                <span class="n">masked</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+
+                <span class="k">if</span> <span class="n">colors</span><span class="p">:</span>
+                    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">wavelength</span><span class="p">,</span> <span class="n">masked</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">j</span><span class="p">],</span>
+                             <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">wavelength</span><span class="p">,</span> <span class="n">masked</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">boxitem</span><span class="p">,</span> <span class="n">box</span><span class="o">.</span><span class="n">PhotometryBox</span><span class="p">):</span>
+            <span class="n">marker</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">marker</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">quantity</span> <span class="o">!=</span> <span class="s1">&#39;flux&#39;</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;The quantity of the PhotometryBox is </span><span class="se">\&#39;</span><span class="si">{boxitem.quantity}</span><span class="se">\&#39;</span><span class="s1"> &#39;</span>
+                                 <span class="n">f</span><span class="s1">&#39;and not </span><span class="se">\&#39;</span><span class="s1">flux</span><span class="se">\&#39;</span><span class="s1">.&#39;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">boxitem</span><span class="o">.</span><span class="n">wavelength</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">colors</span><span class="p">:</span>
+                    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">boxitem</span><span class="o">.</span><span class="n">wavelength</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">flux</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="n">marker</span><span class="p">,</span> <span class="n">ms</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+                             <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">boxitem</span><span class="o">.</span><span class="n">wavelength</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">flux</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="n">marker</span><span class="p">,</span> <span class="n">ms</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+                             <span class="n">zorder</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">boxitem</span><span class="p">,</span> <span class="n">box</span><span class="o">.</span><span class="n">ObjectBox</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">flux</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">flux</span><span class="p">:</span>
+                    <span class="n">transmission</span> <span class="o">=</span> <span class="n">read_filter</span><span class="o">.</span><span class="n">ReadFilter</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+                    <span class="n">wavelength</span> <span class="o">=</span> <span class="n">transmission</span><span class="o">.</span><span class="n">mean_wavelength</span><span class="p">()</span>
+                    <span class="n">fwhm</span> <span class="o">=</span> <span class="n">transmission</span><span class="o">.</span><span class="n">filter_fwhm</span><span class="p">()</span>
+
+                    <span class="n">color_obj_phot</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+
+                    <span class="n">ax1</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span><span class="n">wavelength</span><span class="p">,</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">flux</span><span class="p">[</span><span class="n">item</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span> <span class="n">xerr</span><span class="o">=</span><span class="n">fwhm</span><span class="o">/</span><span class="mf">2.</span><span class="p">,</span>
+                                 <span class="n">yerr</span><span class="o">=</span><span class="n">boxitem</span><span class="o">.</span><span class="n">flux</span><span class="p">[</span><span class="n">item</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="n">ms</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+                                 <span class="n">color</span><span class="o">=</span><span class="n">color_obj_phot</span><span class="p">,</span> <span class="n">markerfacecolor</span><span class="o">=</span><span class="n">color_obj_phot</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">spectrum</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">masked</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">boxitem</span><span class="o">.</span><span class="n">spectrum</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">boxitem</span><span class="o">.</span><span class="n">spectrum</span><span class="p">))</span>
+
+                <span class="n">color_obj_spec</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+
+                <span class="k">if</span> <span class="n">colors</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">ax1</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span><span class="n">masked</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">masked</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span> <span class="n">yerr</span><span class="o">=</span><span class="n">masked</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span>
+                                 <span class="n">ms</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mf">2.5</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">)</span>
+
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">ax1</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span><span class="n">masked</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">masked</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span> <span class="n">yerr</span><span class="o">=</span><span class="n">masked</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span>
+                                 <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">ms</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mf">2.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color_obj_spec</span><span class="p">,</span>
+                                 <span class="n">markerfacecolor</span><span class="o">=</span><span class="n">color_obj_spec</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">boxitem</span><span class="p">,</span> <span class="n">box</span><span class="o">.</span><span class="n">SynphotBox</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">flux</span><span class="p">:</span>
+                <span class="n">transmission</span> <span class="o">=</span> <span class="n">read_filter</span><span class="o">.</span><span class="n">ReadFilter</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+                <span class="n">wavelength</span> <span class="o">=</span> <span class="n">transmission</span><span class="o">.</span><span class="n">mean_wavelength</span><span class="p">()</span>
+                <span class="n">fwhm</span> <span class="o">=</span> <span class="n">transmission</span><span class="o">.</span><span class="n">filter_fwhm</span><span class="p">()</span>
+
+                <span class="n">ax1</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span><span class="n">wavelength</span><span class="p">,</span> <span class="n">boxitem</span><span class="o">.</span><span class="n">flux</span><span class="p">[</span><span class="n">item</span><span class="p">]</span><span class="o">/</span><span class="n">scaling</span><span class="p">,</span> <span class="n">xerr</span><span class="o">=</span><span class="n">fwhm</span><span class="o">/</span><span class="mf">2.</span><span class="p">,</span> <span class="n">yerr</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                             <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="n">ms</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">j</span><span class="p">],</span>
+                             <span class="n">markerfacecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">filters</span><span class="p">):</span>
+            <span class="n">transmission</span> <span class="o">=</span> <span class="n">read_filter</span><span class="o">.</span><span class="n">ReadFilter</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">transmission</span><span class="o">.</span><span class="n">get_filter</span><span class="p">()</span>
+
+            <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">],</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">residuals</span><span class="p">:</span>
+        <span class="n">res_max</span> <span class="o">=</span> <span class="mf">0.</span>
+
+        <span class="k">if</span> <span class="n">residuals</span><span class="o">.</span><span class="n">photometry</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">residuals</span><span class="o">.</span><span class="n">photometry</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">],</span> <span class="n">residuals</span><span class="o">.</span><span class="n">photometry</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">,</span>
+                     <span class="n">ms</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color_obj_phot</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+            <span class="n">res_max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmax</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">residuals</span><span class="o">.</span><span class="n">photometry</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">]))</span>
+
+        <span class="k">if</span> <span class="n">residuals</span><span class="o">.</span><span class="n">spectrum</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">residuals</span><span class="o">.</span><span class="n">spectrum</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">],</span> <span class="n">residuals</span><span class="o">.</span><span class="n">spectrum</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span>
+                     <span class="n">ms</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color_obj_spec</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+            <span class="n">max_tmp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmax</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">residuals</span><span class="o">.</span><span class="n">spectrum</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">]))</span>
+
+            <span class="k">if</span> <span class="n">max_tmp</span> <span class="o">&gt;</span> <span class="n">res_max</span><span class="p">:</span>
+                <span class="n">res_max</span> <span class="o">=</span> <span class="n">max_tmp</span>
+
+        <span class="n">res_lim</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">1.1</span><span class="o">*</span><span class="n">res_max</span><span class="p">)</span>
+
+        <span class="n">ax3</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">dashes</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">zorder</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="n">res_lim</span><span class="p">,</span> <span class="n">res_lim</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Plotting spectrum: </span><span class="si">{output}</span><span class="s1">...&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">title</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">filters</span><span class="p">:</span>
+            <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.02</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.02</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+
+    <span class="n">handles</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">handles</span> <span class="ow">and</span> <span class="n">legend</span><span class="p">:</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="n">legend</span><span class="p">,</span> <span class="n">prop</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">9</span><span class="p">},</span> <span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span><span class="o">+</span><span class="s1">&#39;/&#39;</span><span class="o">+</span><span class="n">output</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">clf</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; [DONE]&#39;</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2020, Tomas Stolker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

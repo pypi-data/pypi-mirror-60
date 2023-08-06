@@ -1,0 +1,1422 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>species.read package &mdash; species 0.1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="species.util package" href="species.util.html" />
+    <link rel="prev" title="species.plot package" href="species.plot.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/species_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#virtual-environment">Virtual Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installation-from-github">Installation from Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#testing-species">Testing <cite>species</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/running_species.html">Running <em>species</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Adding-a-photometric-library">Adding a photometric library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/running_species.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#supported-data">Supported data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#analysis-tools">Analysis tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#output-boxes">Output boxes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/flux_magnitude.html">Flux and magnitude conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/synthetic_photometry.html">Synthetic photometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/spectral_library.html">Spectral library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/color_magnitude_broadband.html">Color-magnitude diagram: broadband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Adding-data-to-the-database">Adding data to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Database-content">Database content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Synthetic-photometry-from-isochrones">Synthetic photometry from isochrones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Photometry-of-directly-imaged-objects">Photometry of directly imaged objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_broadband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html">Color-magnitude diagram: narrowband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Adding-data-and-models">Adding data and models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Synthetic-colors-and-magnitudes">Synthetic colors and magnitudes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Selecting-directly-imaged-planets">Selecting directly imaged planets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/color_magnitude_narrowband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/atmospheric_models.html">Atmospheric models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Adding-model-spectra-to-the-database">Adding model spectra to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Interpolating-the-model-grid">Interpolating the model grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Extracting-a-spectrum-at-a-grid-point">Extracting a spectrum at a grid point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/atmospheric_models.html#Calculating-synthetic-photometry">Calculating synthetic photometry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/data_model.html">Comparison of data and model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Adding-model-spectra">Adding model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Reading-model-spectra">Reading model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Reading-companion-data">Reading companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Synthetic-photometry-for-all-filters">Synthetic photometry for all filters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Creating-flux-residuals">Creating flux residuals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Opening-Box-objects">Opening Box objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/data_model.html#Plotting-spectra,-fluxes-and-filters">Plotting spectra, fluxes and filters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/photometric_calibration.html">Photometric calibration: fitting a stellar spectrum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Adding-an-object-and-calibration-spectrum">Adding an object and calibration spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Fitting-the-stellar-spectrum">Fitting the stellar spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Plotting-the-results">Plotting the results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials/photometric_calibration.html#Photometric-calibration">Photometric calibration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/fitting_photometry.html">Fitting photometry with model spectra</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="species.html">species package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="species.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="species.analysis.html">species.analysis package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis.fit_model">species.analysis.fit_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis.fit_planck">species.analysis.fit_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis.fit_spectrum">species.analysis.fit_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis.photometry">species.analysis.photometry module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.analysis.html#module-species.analysis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.core.html">species.core package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core.box">species.core.box module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core.constants">species.core.constants module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core.setup">species.core.setup module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.core.html#module-species.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.data.html">species.data package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.ames_cond">species.data.ames_cond module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.ames_dusty">species.data.ames_dusty module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.btnextgen">species.data.btnextgen module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.btsettl">species.data.btsettl module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.companions">species.data.companions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.database">species.data.database module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.drift_phoenix">species.data.drift_phoenix module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.filters">species.data.filters module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.irtf">species.data.irtf module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.isochrones">species.data.isochrones module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.leggett">species.data.leggett module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.petitcode">species.data.petitcode module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.queries">species.data.queries module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.spex">species.data.spex module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.vega">species.data.vega module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data.vlm_plx">species.data.vlm_plx module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.data.html#module-species.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.plot.html">species.plot package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#module-species.plot.plot_color">species.plot.plot_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#module-species.plot.plot_mcmc">species.plot.plot_mcmc module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#module-species.plot.plot_spectrum">species.plot.plot_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.plot.html#module-species.plot">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">species.read package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.read.read_calibration">species.read.read_calibration module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.read.read_color">species.read.read_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.read.read_filter">species.read.read_filter module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.read.read_isochrone">species.read.read_isochrone module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.read.read_model">species.read.read_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.read.read_object">species.read.read_object module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.read.read_planck">species.read.read_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.read.read_spectrum">species.read.read_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-species.read">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="species.util.html">species.util package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.data_util">species.util.data_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.phot_util">species.util.phot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.plot_util">species.util.plot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.read_util">species.util.read_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util.test_util">species.util.test_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="species.util.html#module-species.util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="species.html#module-species">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">About species</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about.html#questions-feedback">Questions &amp; feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about.html#attribution">Attribution</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">species</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">API documentation</a> &raquo;</li>
+        
+          <li><a href="species.html">species package</a> &raquo;</li>
+        
+      <li>species.read package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/tomasstolker/species/blob/master/docs/species.read.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="species-read-package">
+<h1>species.read package<a class="headerlink" href="#species-read-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-species.read.read_calibration">
+<span id="species-read-read-calibration-module"></span><h2>species.read.read_calibration module<a class="headerlink" href="#module-species.read.read_calibration" title="Permalink to this headline">¶</a></h2>
+<p>Module with reading functionalities for calibration spectra.</p>
+<dl class="class">
+<dt id="species.read.read_calibration.ReadCalibration">
+<em class="property">class </em><code class="descclassname">species.read.read_calibration.</code><code class="descname">ReadCalibration</code><span class="sig-paren">(</span><em>tag</em>, <em>filter_name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_calibration.html#ReadCalibration"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_calibration.ReadCalibration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for reading a calibration spectrum from the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tag</strong> (<em>str</em>) – Database tag of the calibration spectrum.</li>
+<li><strong>filter_name</strong> (<em>str</em><em>, </em><em>None</em>) – Filter ID that is used for the wavelength range. Full spectrum is used if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.read.read_calibration.ReadCalibration.get_flux">
+<code class="descname">get_flux</code><span class="sig-paren">(</span><em>model_param=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_calibration.html#ReadCalibration.get_flux"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_calibration.ReadCalibration.get_flux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for calculating the average flux density for the <code class="docutils literal notranslate"><span class="pre">filter_name</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>model_param</strong> (<em>dict</em><em>, </em><em>None</em>) – Model parameters. Should contain the ‘scaling’ value. Not used if set to None.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Average flux density (W m-2 micron-1).</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_calibration.ReadCalibration.get_magnitude">
+<code class="descname">get_magnitude</code><span class="sig-paren">(</span><em>model_param=None</em>, <em>distance=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_calibration.html#ReadCalibration.get_magnitude"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_calibration.ReadCalibration.get_magnitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for calculating the apparent magnitude for the <code class="docutils literal notranslate"><span class="pre">filter_name</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>model_param</strong> (<em>dict</em><em>, </em><em>None</em>) – Model parameters. Should contain the ‘scaling’ value. Not used if set to None.</li>
+<li><strong>distance</strong> (<em>float</em><em>, </em><em>None</em>) – Distance to the calibration objects (pc).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li><em>float</em> – Apparent magnitude (mag).</li>
+<li><em>float, None</em> – Absolute magnitude (mag).</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_calibration.ReadCalibration.get_spectrum">
+<code class="descname">get_spectrum</code><span class="sig-paren">(</span><em>model_param=None</em>, <em>apply_mask=False</em>, <em>spec_res=None</em>, <em>extrapolate=False</em>, <em>min_wavelength=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_calibration.html#ReadCalibration.get_spectrum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_calibration.ReadCalibration.get_spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for selecting the calibration spectrum.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>model_param</strong> (<em>dict</em><em>, </em><em>None</em>) – Model parameters. Should contain the ‘scaling’ value. Not used if set to None.</li>
+<li><strong>apply_mask</strong> (<em>bool</em>) – Exclude negative values and NaN values.</li>
+<li><strong>spec_res</strong> (<em>float</em><em>, </em><em>None</em>) – Spectral resolution. Original wavelength points are used if set to None.</li>
+<li><strong>extrapolate</strong> (<em>bool</em>) – Extrapolate to 6 micron by fitting a power law function.</li>
+<li><strong>min_wavelength</strong> (<em>float</em><em>, </em><em>None</em>) – Minimum wavelength used for fitting the power law function. All data is used if set
+to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Box with the spectrum.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="species.core.html#species.core.box.SpectrumBox" title="species.core.box.SpectrumBox">species.core.box.SpectrumBox</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_calibration.ReadCalibration.interpolate_spectrum">
+<code class="descname">interpolate_spectrum</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_calibration.html#ReadCalibration.interpolate_spectrum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_calibration.ReadCalibration.interpolate_spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for linearly interpolating of a calibration spectrum.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Linearly interpolated spectrum.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">scipy.interpolate.interpolate.interp1d</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_calibration.ReadCalibration.resample_spectrum">
+<code class="descname">resample_spectrum</code><span class="sig-paren">(</span><em>wavel_points</em>, <em>apply_mask=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_calibration.html#ReadCalibration.resample_spectrum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_calibration.ReadCalibration.resample_spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for resampling of a spectrum and uncertainties onto a new wavelength grid.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>wavel_points</strong> (<em>numpy.ndarray</em>) – Wavelength points (micron).</li>
+<li><strong>apply_mask</strong> (<em>bool</em>) – Exclude negative values and NaN values.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Box with the resampled spectrum.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="species.core.html#species.core.box.SpectrumBox" title="species.core.box.SpectrumBox">species.core.box.SpectrumBox</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.read.read_color">
+<span id="species-read-read-color-module"></span><h2>species.read.read_color module<a class="headerlink" href="#module-species.read.read_color" title="Permalink to this headline">¶</a></h2>
+<p>Module with reading functionalities of color and magnitude data from photometric and
+spectral libraries.</p>
+<dl class="class">
+<dt id="species.read.read_color.ReadColorColor">
+<em class="property">class </em><code class="descclassname">species.read.read_color.</code><code class="descname">ReadColorColor</code><span class="sig-paren">(</span><em>library</em>, <em>filters_colors</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_color.html#ReadColorColor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_color.ReadColorColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for reading color-color data from the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>library</strong> (<em>str</em>) – Photometric (‘vlm-plx’ or ‘leggett’) or spectral (‘irtf’ or ‘spex’) library.</li>
+<li><strong>filters_colors</strong> (<em>tuple</em><em>(</em><em>tuple</em><em>(</em><em>str</em><em>, </em><em>str</em><em>)</em><em>, </em><em>tuple</em><em>(</em><em>str</em><em>, </em><em>str</em><em>)</em><em>)</em>) – Filter names for the colors. For a photometric library, these have to be present in
+the database (typically in the MKO, 2MASS, or WISE system). For a spectral library,
+any filter names can be provided as long as they overlap with the wavelength range
+of the spectra.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.read.read_color.ReadColorColor.get_color_color">
+<code class="descname">get_color_color</code><span class="sig-paren">(</span><em>object_type</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_color.html#ReadColorColor.get_color_color"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_color.ReadColorColor.get_color_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for extracting color-color data from the selected library.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object_type</strong> (<em>str</em><em>, </em><em>None</em>) – Object type for which the colors and magnitudes are extracted. Either field dwarfs
+(‘field’) or young/low-gravity objects (‘young’). All objects are selected if set
+to None.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Box with the colors.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="species.core.html#species.core.box.ColorColorBox" title="species.core.box.ColorColorBox">species.core.box.ColorColorBox</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="species.read.read_color.ReadColorMagnitude">
+<em class="property">class </em><code class="descclassname">species.read.read_color.</code><code class="descname">ReadColorMagnitude</code><span class="sig-paren">(</span><em>library</em>, <em>filters_color</em>, <em>filter_mag</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_color.html#ReadColorMagnitude"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_color.ReadColorMagnitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for reading color-magnitude data from the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>library</strong> (<em>str</em>) – Photometric (‘vlm-plx’ or ‘leggett’) or spectral (‘irtf’ or ‘spex’) library.</li>
+<li><strong>filters_color</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>str</em><em>)</em>) – Filter names for the color. For a photometric library, these have to be present in
+the database (typically in the MKO, 2MASS, or WISE system). For a spectral library,
+any filter names can be provided as long as they overlap with the wavelength range
+of the spectra.</li>
+<li><strong>filter_mag</strong> (<em>str</em>) – Filter name for the absolute magnitudes (see also description of <code class="docutils literal notranslate"><span class="pre">filters_color</span></code>).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.read.read_color.ReadColorMagnitude.get_color_magnitude">
+<code class="descname">get_color_magnitude</code><span class="sig-paren">(</span><em>object_type=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_color.html#ReadColorMagnitude.get_color_magnitude"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_color.ReadColorMagnitude.get_color_magnitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for extracting color-magnitude data from the selected library.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object_type</strong> (<em>str</em><em>, </em><em>None</em>) – Object type for which the colors and magnitudes are extracted. Either field dwarfs
+(‘field’) or young/low-gravity objects (‘young’). All objects are selected if set
+to None.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Box with the colors and magnitudes.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="species.core.html#species.core.box.ColorMagBox" title="species.core.box.ColorMagBox">species.core.box.ColorMagBox</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.read.read_filter">
+<span id="species-read-read-filter-module"></span><h2>species.read.read_filter module<a class="headerlink" href="#module-species.read.read_filter" title="Permalink to this headline">¶</a></h2>
+<p>Module with reading functionalities for filter profiles.</p>
+<dl class="class">
+<dt id="species.read.read_filter.ReadFilter">
+<em class="property">class </em><code class="descclassname">species.read.read_filter.</code><code class="descname">ReadFilter</code><span class="sig-paren">(</span><em>filter_name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_filter.html#ReadFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_filter.ReadFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for reading a filter profile from the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filter_name</strong> (<em>str</em>) – Filter ID as stored in the database. Filter IDs from the SVO Filter Profile Service
+will be automatically downloaded, stored in the database, and read from the database.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">NoneType</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.read.read_filter.ReadFilter.filter_fwhm">
+<code class="descname">filter_fwhm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_filter.html#ReadFilter.filter_fwhm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_filter.ReadFilter.filter_fwhm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the full width at half maximum (FWHM) of the filter profile.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Filter full width at half maximum (micron).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_filter.ReadFilter.get_filter">
+<code class="descname">get_filter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_filter.html#ReadFilter.get_filter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_filter.ReadFilter.get_filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for selecting a filter profile from the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Filter transmission profile.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">numpy.ndarray</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_filter.ReadFilter.interpolate_filter">
+<code class="descname">interpolate_filter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_filter.html#ReadFilter.interpolate_filter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_filter.ReadFilter.interpolate_filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linearly interpolate the filter profile.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Linearly interpolated filter.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">scipy.interpolate.interpolate.interp1d</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_filter.ReadFilter.mean_wavelength">
+<code class="descname">mean_wavelength</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_filter.html#ReadFilter.mean_wavelength"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_filter.ReadFilter.mean_wavelength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the weighted mean wavelength of the filter profile.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Mean wavelength (micron).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_filter.ReadFilter.wavelength_range">
+<code class="descname">wavelength_range</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_filter.html#ReadFilter.wavelength_range"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_filter.ReadFilter.wavelength_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract the wavelength range of the filter profile.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><ul class="simple">
+<li><em>float</em> – Minimum wavelength (micron).</li>
+<li><em>float</em> – Maximum wavelength (micron).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.read.read_isochrone">
+<span id="species-read-read-isochrone-module"></span><h2>species.read.read_isochrone module<a class="headerlink" href="#module-species.read.read_isochrone" title="Permalink to this headline">¶</a></h2>
+<p>Module with reading functionalities for isochrones.</p>
+<dl class="class">
+<dt id="species.read.read_isochrone.ReadIsochrone">
+<em class="property">class </em><code class="descclassname">species.read.read_isochrone.</code><code class="descname">ReadIsochrone</code><span class="sig-paren">(</span><em>tag</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_isochrone.html#ReadIsochrone"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_isochrone.ReadIsochrone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for reading an isochrone from the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>tag</strong> (<em>str</em>) – Database tag of the isochrone data.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">NoneType</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.read.read_isochrone.ReadIsochrone.get_color_color">
+<code class="descname">get_color_color</code><span class="sig-paren">(</span><em>age</em>, <em>masses</em>, <em>model</em>, <em>filters</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_isochrone.html#ReadIsochrone.get_color_color"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_isochrone.ReadIsochrone.get_color_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for calculating color-magnitude combinations from a selected isochrone.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>age</strong> (<em>str</em>) – Age (Myr) at which the isochrone data is interpolated.</li>
+<li><strong>masses</strong> (<em>numpy.ndarray</em>) – Masses (Mjup) at which the isochrone data is interpolated.</li>
+<li><strong>model</strong> (<em>str</em>) – Atmospheric model used to compute the synthetic photometry.</li>
+<li><strong>filters</strong> (<em>tuple</em><em>(</em><em>tuple</em><em>(</em><em>str</em><em>, </em><em>str</em><em>)</em><em>, </em><em>tuple</em><em>(</em><em>str</em><em>, </em><em>str</em><em>)</em><em>)</em>) – Filter IDs for the colors as listed in the file with the isochrone data. The filter IDs
+should be provided in the format of the SVO Filter Profile Service.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Box with the color-color data.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="species.core.html#species.core.box.ColorColorBox" title="species.core.box.ColorColorBox">species.core.box.ColorColorBox</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_isochrone.ReadIsochrone.get_color_magnitude">
+<code class="descname">get_color_magnitude</code><span class="sig-paren">(</span><em>age</em>, <em>masses</em>, <em>model</em>, <em>filters_color</em>, <em>filter_mag</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_isochrone.html#ReadIsochrone.get_color_magnitude"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_isochrone.ReadIsochrone.get_color_magnitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for calculating color-magnitude combinations from a selected isochrone.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>age</strong> (<em>str</em>) – Age (Myr) at which the isochrone data is interpolated.</li>
+<li><strong>masses</strong> (<em>numpy.ndarray</em>) – Masses (Mjup) at which the isochrone data is interpolated.</li>
+<li><strong>model</strong> (<em>str</em>) – Atmospheric model used to compute the synthetic photometry.</li>
+<li><strong>filters_color</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>str</em><em>)</em>) – Filter IDs for the color as listed in the file with the isochrone data. The filter IDs
+should be provided in the format of the SVO Filter Profile Service.</li>
+<li><strong>filter_mag</strong> (<em>str</em>) – Filter ID for the absolute magnitude as listed in the file with the isochrone data. The
+value should be equal to one of the <code class="docutils literal notranslate"><span class="pre">filters_color</span></code> values.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Box with the color-magnitude data.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="species.core.html#species.core.box.ColorMagBox" title="species.core.box.ColorMagBox">species.core.box.ColorMagBox</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_isochrone.ReadIsochrone.get_isochrone">
+<code class="descname">get_isochrone</code><span class="sig-paren">(</span><em>age</em>, <em>masses</em>, <em>filters_color</em>, <em>filter_mag</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_isochrone.html#ReadIsochrone.get_isochrone"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_isochrone.ReadIsochrone.get_isochrone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for selecting an isochrone.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>age</strong> (<em>str</em>) – Age (Myr) at which the isochrone data is interpolated.</li>
+<li><strong>masses</strong> (<em>numpy.ndarray</em>) – Masses (Mjup) at which the isochrone data is interpolated.</li>
+<li><strong>filters_color</strong> (<em>tuple</em><em>(</em><em>str</em><em>, </em><em>str</em><em>)</em><em>, </em><em>None</em>) – Filter IDs for the color as listed in the file with the isochrone data. Not selected if
+set to None or if only evolutionary tracks are available.</li>
+<li><strong>filter_mag</strong> (<em>str</em><em>, </em><em>None</em>) – Filter ID for the absolute magnitude as listed in the file with the isochrone data. Not
+selected if set to None or if only evolutionary tracks are available.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Box with the isochrone.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="species.core.html#species.core.box.IsochroneBox" title="species.core.box.IsochroneBox">species.core.box.IsochroneBox</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.read.read_model">
+<span id="species-read-read-model-module"></span><h2>species.read.read_model module<a class="headerlink" href="#module-species.read.read_model" title="Permalink to this headline">¶</a></h2>
+<p>Module with reading functionalities for atmospheric model spectra.</p>
+<dl class="class">
+<dt id="species.read.read_model.ReadModel">
+<em class="property">class </em><code class="descclassname">species.read.read_model.</code><code class="descname">ReadModel</code><span class="sig-paren">(</span><em>model</em>, <em>wavel_range=None</em>, <em>filter_name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_model.html#ReadModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_model.ReadModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for reading a model spectrum from the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>model</strong> (<em>str</em>) – Name of the atmospheric model.</li>
+<li><strong>wavel_range</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Wavelength range (micron). Full spectrum is selected if set to None. Not used if
+<code class="docutils literal notranslate"><span class="pre">filter_name</span></code> is not None.</li>
+<li><strong>filter_name</strong> (<em>str</em><em>, </em><em>None</em>) – Filter ID that is used for the wavelength range. The <code class="docutils literal notranslate"><span class="pre">wavel_range</span></code> is used if set
+to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.read.read_model.ReadModel.get_bounds">
+<code class="descname">get_bounds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_model.html#ReadModel.get_bounds"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_model.ReadModel.get_bounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for extracting the grid boundaries.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Boundaries of parameter grid.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_model.ReadModel.get_data">
+<code class="descname">get_data</code><span class="sig-paren">(</span><em>model_param</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_model.html#ReadModel.get_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_model.ReadModel.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for selecting a model spectrum (without interpolation) for a set of parameter
+values that coincide with the grid points. The stored grid points can be inspected with
+<a class="reference internal" href="#species.read.read_model.ReadModel.get_points" title="species.read.read_model.ReadModel.get_points"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_points()</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>model_param</strong> (<em>dict</em>) – Model parameters and values. Only discrete values from the original grid are possible.
+Else, the nearest grid values are selected.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Box with the model spectrum.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="species.core.html#species.core.box.ModelBox" title="species.core.box.ModelBox">species.core.box.ModelBox</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_model.ReadModel.get_flux">
+<code class="descname">get_flux</code><span class="sig-paren">(</span><em>model_param</em>, <em>synphot=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_model.html#ReadModel.get_flux"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_model.ReadModel.get_flux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for calculating the average flux density for the <code class="docutils literal notranslate"><span class="pre">filter_name</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>model_param</strong> (<em>dict</em>) – Model parameters and values.</li>
+<li><strong>synphot</strong> (<a class="reference internal" href="species.analysis.html#species.analysis.photometry.SyntheticPhotometry" title="species.analysis.photometry.SyntheticPhotometry"><em>species.analysis.photometry.SyntheticPhotometry</em></a><em>, </em><em>None</em>) – Synthetic photometry object. The object is created if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Average flux density (W m-2 micron-1).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_model.ReadModel.get_magnitude">
+<code class="descname">get_magnitude</code><span class="sig-paren">(</span><em>model_param</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_model.html#ReadModel.get_magnitude"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_model.ReadModel.get_magnitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for calculating the apparent and absolute magnitudes for the <code class="docutils literal notranslate"><span class="pre">filter_name</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>model_param</strong> (<em>dict</em>) – Model parameters and values.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><ul class="simple">
+<li><em>float</em> – Apparent magnitude (mag).</li>
+<li><em>float</em> – Absolute magnitude (mag).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_model.ReadModel.get_model">
+<code class="descname">get_model</code><span class="sig-paren">(</span><em>model_param</em>, <em>spec_res=None</em>, <em>magnitude=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_model.html#ReadModel.get_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_model.ReadModel.get_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for extracting a model spectrum by linearly interpolating the model grid. The
+parameters values should lie within the boundaries of the grid points that are stored
+in the database. The stored grid points can be inspected with
+<a class="reference internal" href="#species.read.read_model.ReadModel.get_points" title="species.read.read_model.ReadModel.get_points"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_points()</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>model_param</strong> (<em>dict</em>) – Model parameters and values.</li>
+<li><strong>spec_res</strong> (<em>float</em><em>, </em><em>None</em>) – Spectral resolution, achieved by smoothing with a Gaussian kernel. The original
+wavelength points are used if set to None.</li>
+<li><strong>magnitude</strong> (<em>bool</em>) – Normalize the spectrum with a flux calibrated spectrum of Vega and return the magnitude
+instead of flux density.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Box with the model spectrum.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="species.core.html#species.core.box.ModelBox" title="species.core.box.ModelBox">species.core.box.ModelBox</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_model.ReadModel.get_parameters">
+<code class="descname">get_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_model.html#ReadModel.get_parameters"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_model.ReadModel.get_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for extracting the parameter names.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Model parameters.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list(str, )</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_model.ReadModel.get_points">
+<code class="descname">get_points</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_model.html#ReadModel.get_points"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_model.ReadModel.get_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for extracting the grid points.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Parameter points of the model grid.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_model.ReadModel.get_wavelengths">
+<code class="descname">get_wavelengths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_model.html#ReadModel.get_wavelengths"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_model.ReadModel.get_wavelengths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for extracting the wavelength points.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Wavelength points (micron).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">numpy.ndarray</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_model.ReadModel.interpolate_model">
+<code class="descname">interpolate_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_model.html#ReadModel.interpolate_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_model.ReadModel.interpolate_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal function for linearly interpolating the grid of model spectra.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">NoneType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_model.ReadModel.open_database">
+<code class="descname">open_database</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_model.html#ReadModel.open_database"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_model.ReadModel.open_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal function for opening the <cite>species</cite> database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The HDF5 database.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">h5py._hl.files.File</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_model.ReadModel.wavelength_points">
+<code class="descname">wavelength_points</code><span class="sig-paren">(</span><em>hdf5_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_model.html#ReadModel.wavelength_points"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_model.ReadModel.wavelength_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal function for extracting the wavelength points and indices that are used.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>hdf5_file</strong> (<em>h5py._hl.files.File</em>) – The HDF5 database.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><ul class="simple">
+<li><em>numpy.ndarray</em> – Wavelength points (micron).</li>
+<li><em>numpy.ndarray</em> – Array with the size of the original wavelength grid. The booleans indicate if a
+wavelength point was used.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.read.read_object">
+<span id="species-read-read-object-module"></span><h2>species.read.read_object module<a class="headerlink" href="#module-species.read.read_object" title="Permalink to this headline">¶</a></h2>
+<p>Module with reading functionalities for data from individual objects.</p>
+<dl class="class">
+<dt id="species.read.read_object.ReadObject">
+<em class="property">class </em><code class="descclassname">species.read.read_object.</code><code class="descname">ReadObject</code><span class="sig-paren">(</span><em>object_name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_object.html#ReadObject"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_object.ReadObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for reading data from an individual object from the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object_name</strong> (<em>str</em>) – Object name as stored in the database (e.g. ‘beta Pic b’, ‘PZ Tel B’).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">NoneType</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.read.read_object.ReadObject.get_absmag">
+<code class="descname">get_absmag</code><span class="sig-paren">(</span><em>filter_name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_object.html#ReadObject.get_absmag"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_object.ReadObject.get_absmag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for calculating the absolute magnitudes of the object from the apparent
+magnitudes and distance. The errors on the apparent magnitude and distance are propagated
+into an error on the absolute magnitude.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filter_name</strong> (<em>str</em>) – Filter ID.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Absolute magnitude (mag), uncertainty (mag).</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float, float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_object.ReadObject.get_distance">
+<code class="descname">get_distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_object.html#ReadObject.get_distance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_object.ReadObject.get_distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for extracting the distance to the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Distance (pc).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_object.ReadObject.get_instrument">
+<code class="descname">get_instrument</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_object.html#ReadObject.get_instrument"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_object.ReadObject.get_instrument" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for extracting the instrument name of the spectrum.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Instrument that was used for the spectrum.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_object.ReadObject.get_photometry">
+<code class="descname">get_photometry</code><span class="sig-paren">(</span><em>filter_name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_object.html#ReadObject.get_photometry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_object.ReadObject.get_photometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for extracting the photometry of the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filter_name</strong> (<em>str</em>) – Filter ID.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Apparent magnitude (mag), magnitude error (error), flux (W m-2 micron-1),
+flux error (W m-2 micron-1).</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">numpy.ndarray</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_object.ReadObject.get_spectrum">
+<code class="descname">get_spectrum</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_object.html#ReadObject.get_spectrum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_object.ReadObject.get_spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for extracting the spectrum of the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Wavelength (micron), flux (W m-2 micron-1), and flux error (W m-2 micron-1).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">numpy.ndarray</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.read.read_planck">
+<span id="species-read-read-planck-module"></span><h2>species.read.read_planck module<a class="headerlink" href="#module-species.read.read_planck" title="Permalink to this headline">¶</a></h2>
+<p>Module with reading functionalities for Planck spectra.</p>
+<dl class="class">
+<dt id="species.read.read_planck.ReadPlanck">
+<em class="property">class </em><code class="descclassname">species.read.read_planck.</code><code class="descname">ReadPlanck</code><span class="sig-paren">(</span><em>wavel_range=None</em>, <em>filter_name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_planck.html#ReadPlanck"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_planck.ReadPlanck" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for reading a Planck spectrum.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>wavel_range</strong> (<em>tuple</em><em>(</em><em>float</em><em>, </em><em>float</em><em>)</em><em>, </em><em>None</em>) – Wavelength range (micron). A wavelength range of 0.1-1000 micron is used if set to
+None. Not used if <code class="docutils literal notranslate"><span class="pre">filter_name</span></code> is not None.</li>
+<li><strong>filter_name</strong> (<em>str</em><em>, </em><em>None</em>) – Filter name that is used for the wavelength range. The <code class="docutils literal notranslate"><span class="pre">wavel_range</span></code> is used if set
+to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.read.read_planck.ReadPlanck.get_flux">
+<code class="descname">get_flux</code><span class="sig-paren">(</span><em>model_param</em>, <em>synphot=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_planck.html#ReadPlanck.get_flux"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_planck.ReadPlanck.get_flux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for calculating the average flux density for the <code class="docutils literal notranslate"><span class="pre">filter_name</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>model_param</strong> (<em>dict</em>) – Dictionary with the ‘teff’ (K), ‘radius’ (Rjup), and ‘distance’ (pc).</li>
+<li><strong>synphot</strong> (<a class="reference internal" href="species.analysis.html#species.analysis.photometry.SyntheticPhotometry" title="species.analysis.photometry.SyntheticPhotometry"><em>species.analysis.photometry.SyntheticPhotometry</em></a><em>, </em><em>None</em>) – Synthetic photometry object. The object is created if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Average flux density (W m-2 micron-1).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_planck.ReadPlanck.get_spectrum">
+<code class="descname">get_spectrum</code><span class="sig-paren">(</span><em>model_param</em>, <em>spec_res</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_planck.html#ReadPlanck.get_spectrum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_planck.ReadPlanck.get_spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for calculating a Planck spectrum or a combination of multiple Planck spectra.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>model_param</strong> (<em>dict</em>) – Dictionary with the ‘teff’ (K), ‘radius’ (Rjup), and ‘distance’ (pc). The values
+of ‘teff’ and ‘radius’ can be a single float, or a list with floats for a combination
+of multiple Planck functions, e.g.
+{‘teff’: [1500., 1000.], ‘radius’: [1., 2.], ‘distance’: 10.}.</li>
+<li><strong>spec_res</strong> (<em>float</em>) – Spectral resolution.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Box with the Planck spectrum.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="species.core.html#species.core.box.ModelBox" title="species.core.box.ModelBox">species.core.box.ModelBox</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="species.read.read_planck.ReadPlanck.planck">
+<em class="property">static </em><code class="descname">planck</code><span class="sig-paren">(</span><em>wavel_points</em>, <em>temperature</em>, <em>scaling</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_planck.html#ReadPlanck.planck"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_planck.ReadPlanck.planck" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal function for calculating a Planck function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>wavel_points</strong> (<em>numpy.ndarray</em>) – Wavelength points (micron).</li>
+<li><strong>temperature</strong> (<em>float</em>) – Temperature (K).</li>
+<li><strong>scaling</strong> (<em>float</em>) – Scaling parameter.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Flux density (W m-2 micron-1).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.read.read_spectrum">
+<span id="species-read-read-spectrum-module"></span><h2>species.read.read_spectrum module<a class="headerlink" href="#module-species.read.read_spectrum" title="Permalink to this headline">¶</a></h2>
+<p>Module with reading functionalities for spectral libraries.</p>
+<dl class="class">
+<dt id="species.read.read_spectrum.ReadSpectrum">
+<em class="property">class </em><code class="descclassname">species.read.read_spectrum.</code><code class="descname">ReadSpectrum</code><span class="sig-paren">(</span><em>spec_library</em>, <em>filter_name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_spectrum.html#ReadSpectrum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_spectrum.ReadSpectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for reading spectral library data from the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>spec_library</strong> (<em>str</em>) – Name of the spectral library (‘irtf’, ‘spex’) or other type of spectrum (‘vega’).</li>
+<li><strong>filter_name</strong> (<em>str</em><em>, </em><em>None</em>) – Filter ID for the wavelength range. Full spectra are read if set to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">NoneType</p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="species.read.read_spectrum.ReadSpectrum.get_flux">
+<code class="descname">get_flux</code><span class="sig-paren">(</span><em>sptypes=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_spectrum.html#ReadSpectrum.get_flux"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_spectrum.ReadSpectrum.get_flux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for calculating the average flux density for the <code class="docutils literal notranslate"><span class="pre">filter_name</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sptypes</strong> (<em>list</em><em>(</em><em>'str'</em><em>, </em><em>)</em>) – Spectral types to select from a library. The spectral types should be indicated with
+two characters (e.g. ‘M5’, ‘L2’, ‘T3’). All spectra are selected if set to None.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Box with the synthetic photometry.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="species.core.html#species.core.box.PhotometryBox" title="species.core.box.PhotometryBox">species.core.box.PhotometryBox</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_spectrum.ReadSpectrum.get_magnitude">
+<code class="descname">get_magnitude</code><span class="sig-paren">(</span><em>sptypes=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_spectrum.html#ReadSpectrum.get_magnitude"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_spectrum.ReadSpectrum.get_magnitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for calculating the apparent magnitude for the <code class="docutils literal notranslate"><span class="pre">filter_name</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sptypes</strong> (<em>list</em><em>(</em><em>'str'</em><em>, </em><em>)</em>) – Spectral types to select from a library. The spectral types should be indicated with
+two characters (e.g. ‘M5’, ‘L2’, ‘T3’). All spectra are selected if set to None.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Box with the synthetic photometry.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="species.core.html#species.core.box.PhotometryBox" title="species.core.box.PhotometryBox">species.core.box.PhotometryBox</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="species.read.read_spectrum.ReadSpectrum.get_spectrum">
+<code class="descname">get_spectrum</code><span class="sig-paren">(</span><em>sptypes=None</em>, <em>exclude_nan=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/species/read/read_spectrum.html#ReadSpectrum.get_spectrum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#species.read.read_spectrum.ReadSpectrum.get_spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for selecting spectra from the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sptypes</strong> (<em>list</em><em>(</em><em>'str'</em><em>, </em><em>)</em>) – Spectral types to select from a library. The spectral types should be indicated with
+two characters (e.g. ‘M5’, ‘L2’, ‘T3’). All spectra are selected if set to None.</li>
+<li><strong>exclude_nan</strong> (<em>bool</em>) – Exclude wavelength points for which the flux is NaN.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Box with the spectra.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="species.core.html#species.core.box.SpectrumBox" title="species.core.box.SpectrumBox">species.core.box.SpectrumBox</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-species.read">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-species.read" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="species.util.html" class="btn btn-neutral float-right" title="species.util package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="species.plot.html" class="btn btn-neutral" title="species.plot package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2020, Tomas Stolker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,1928 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Color-magnitude diagram: narrowband filters &mdash; species 0.1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Atmospheric models" href="atmospheric_models.html" />
+    <link rel="prev" title="Color-magnitude diagram: broadband filters" href="color_magnitude_broadband.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/species_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#virtual-environment">Virtual Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#installation-from-github">Installation from Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#testing-species">Testing <cite>species</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="running_species.html">Running <em>species</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="running_species.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="running_species.html#Adding-a-photometric-library">Adding a photometric library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="running_species.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="running_species.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="running_species.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#supported-data">Supported data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#analysis-tools">Analysis tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#output-boxes">Output boxes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration.html">Configuration</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../tutorials.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="flux_magnitude.html">Flux and magnitude conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synthetic_photometry.html">Synthetic photometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spectral_library.html">Spectral library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="color_magnitude_broadband.html">Color-magnitude diagram: broadband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Adding-data-to-the-database">Adding data to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Database-content">Database content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Synthetic-photometry-from-isochrones">Synthetic photometry from isochrones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Photometry-of-directly-imaged-objects">Photometry of directly imaged objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="color_magnitude_broadband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Color-magnitude diagram: narrowband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Adding-data-and-models">Adding data and models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Synthetic-colors-and-magnitudes">Synthetic colors and magnitudes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Selecting-directly-imaged-planets">Selecting directly imaged planets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="atmospheric_models.html">Atmospheric models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="atmospheric_models.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmospheric_models.html#Adding-model-spectra-to-the-database">Adding model spectra to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmospheric_models.html#Interpolating-the-model-grid">Interpolating the model grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmospheric_models.html#Extracting-a-spectrum-at-a-grid-point">Extracting a spectrum at a grid point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmospheric_models.html#Calculating-synthetic-photometry">Calculating synthetic photometry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_model.html">Comparison of data and model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#Adding-model-spectra">Adding model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#Reading-model-spectra">Reading model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#Reading-companion-data">Reading companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#Synthetic-photometry-for-all-filters">Synthetic photometry for all filters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#Creating-flux-residuals">Creating flux residuals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#Opening-Box-objects">Opening Box objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#Plotting-spectra,-fluxes-and-filters">Plotting spectra, fluxes and filters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="photometric_calibration.html">Photometric calibration: fitting a stellar spectrum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="photometric_calibration.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="photometric_calibration.html#Adding-an-object-and-calibration-spectrum">Adding an object and calibration spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="photometric_calibration.html#Fitting-the-stellar-spectrum">Fitting the stellar spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="photometric_calibration.html#Plotting-the-results">Plotting the results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="photometric_calibration.html#Photometric-calibration">Photometric calibration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="fitting_photometry.html">Fitting photometry with model spectra</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">API documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../species.html">species package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../species.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../species.analysis.html">species.analysis package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../species.analysis.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.analysis.html#module-species.analysis.fit_model">species.analysis.fit_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.analysis.html#module-species.analysis.fit_planck">species.analysis.fit_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.analysis.html#module-species.analysis.fit_spectrum">species.analysis.fit_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.analysis.html#module-species.analysis.photometry">species.analysis.photometry module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.analysis.html#module-species.analysis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../species.core.html">species.core package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../species.core.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.core.html#module-species.core.box">species.core.box module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.core.html#module-species.core.constants">species.core.constants module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.core.html#module-species.core.setup">species.core.setup module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.core.html#module-species.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../species.data.html">species.data package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.ames_cond">species.data.ames_cond module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.ames_dusty">species.data.ames_dusty module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.btnextgen">species.data.btnextgen module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.btsettl">species.data.btsettl module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.companions">species.data.companions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.database">species.data.database module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.drift_phoenix">species.data.drift_phoenix module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.filters">species.data.filters module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.irtf">species.data.irtf module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.isochrones">species.data.isochrones module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.leggett">species.data.leggett module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.petitcode">species.data.petitcode module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.queries">species.data.queries module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.spex">species.data.spex module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.vega">species.data.vega module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data.vlm_plx">species.data.vlm_plx module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.data.html#module-species.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../species.plot.html">species.plot package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../species.plot.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.plot.html#module-species.plot.plot_color">species.plot.plot_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.plot.html#module-species.plot.plot_mcmc">species.plot.plot_mcmc module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.plot.html#module-species.plot.plot_spectrum">species.plot.plot_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.plot.html#module-species.plot">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../species.read.html">species.read package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_calibration">species.read.read_calibration module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_color">species.read.read_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_filter">species.read.read_filter module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_isochrone">species.read.read_isochrone module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_model">species.read.read_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_object">species.read.read_object module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_planck">species.read.read_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read.read_spectrum">species.read.read_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.read.html#module-species.read">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../species.util.html">species.util package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#module-species.util.data_util">species.util.data_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#module-species.util.phot_util">species.util.phot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#module-species.util.plot_util">species.util.plot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#module-species.util.read_util">species.util.read_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#module-species.util.test_util">species.util.test_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../species.util.html#module-species.util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../species.html#module-species">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">About species</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../about.html#questions-feedback">Questions &amp; feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about.html#attribution">Attribution</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">species</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../tutorials.html">Tutorials</a> &raquo;</li>
+        
+      <li>Color-magnitude diagram: narrowband filters</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/tomasstolker/species/blob/master/docs/tutorials/color_magnitude_narrowband.ipynb" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container,
+div.nbinput.container div.prompt,
+div.nbinput.container div.input_area,
+div.nbinput.container div[class*=highlight],
+div.nbinput.container div[class*=highlight] pre,
+div.nboutput.container,
+div.nboutput.container div.prompt,
+div.nboutput.container div.output_area,
+div.nboutput.container div[class*=highlight],
+div.nboutput.container div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    min-width: 5ex;
+    padding-top: 0.4em;
+    padding-right: 0.4em;
+    text-align: right;
+    flex: 0;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    padding: 0.4em;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: #f5f5f5;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="Color-magnitude-diagram:-narrowband-filters">
+<h1>Color-magnitude diagram: narrowband filters<a class="headerlink" href="#Color-magnitude-diagram:-narrowband-filters" title="Permalink to this headline">¶</a></h1>
+<p>In this tutorial, we compute synthetic photometry for the VLT/SPHERE H2 and H3 filters from the <a class="reference external" href="http://pono.ucsd.edu/~adam/browndwarfs/spexprism/index_old.html">SpeX Prism Spectral Library</a>. Also, synthetic photometry is calculated from the AMES-Cond and AMES-Dusty isochrones and atmospheric model spectra. These are compared in a color-magnitude diagram with the photometric data of directly imaged planets.</p>
+<div class="section" id="Getting-started">
+<h2>Getting started<a class="headerlink" href="#Getting-started" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">species</span>
+</pre></div>
+</div>
+</div>
+<p>The isochrone will be extracted at an age of 20 Myr for 100 logarithmically spaced masses.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">age</span> <span class="o">=</span> <span class="mf">20.</span>  <span class="c1"># [Myr]</span>
+<span class="n">masses</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">4.</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># [Mjup]</span>
+</pre></div>
+</div>
+</div>
+<p>Next, <em>species</em> is initiated by reading the configuration file from the working folder.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">species</span><span class="o">.</span><span class="n">SpeciesInit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Initiating species v0.1.1... [DONE]
+Creating species_config.ini... [DONE]
+Database: /Users/tomasstolker/applications/species/docs/tutorials/species_database.hdf5
+Data folder: /Users/tomasstolker/applications/species/docs/tutorials/data
+Working folder: /Users/tomasstolker/applications/species/docs/tutorials
+Creating species_database.hdf5... [DONE]
+Creating data folder... [DONE]
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;species.core.setup.SpeciesInit at 0x12bdedfd0&gt;
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Adding-data-and-models">
+<h2>Adding data and models<a class="headerlink" href="#Adding-data-and-models" title="Permalink to this headline">¶</a></h2>
+<p>A <code class="docutils literal notranslate"><span class="pre">Database</span></code> object is created which is used for adding data and models to the HDF5 database.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">database</span> <span class="o">=</span> <span class="n">species</span><span class="o">.</span><span class="n">Database</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<p>The available <a class="reference external" href="https://github.com/tomasstolker/species/blob/master/species/data/companions.py">photometric data of directly imaged companions</a> is added. Alternative, <code class="docutils literal notranslate"><span class="pre">add_object</span></code> can be used to manually add the properties of an object.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">database</span><span class="o">.</span><span class="n">add_companion</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding filter: LCO/VisAO.Ys... [DONE]
+Downloading Vega spectrum (270 kB)... [DONE]
+Adding Vega spectrum... [DONE]
+Adding filter: Paranal/NACO.J... [DONE]
+Adding filter: Gemini/NICI.ED286... [DONE]
+Adding filter: Paranal/NACO.H... [DONE]
+Adding filter: Paranal/NACO.Ks... [DONE]
+Adding filter: Paranal/NACO.NB374... [DONE]
+Adding filter: Paranal/NACO.Lp... [DONE]
+Adding filter: Paranal/NACO.NB405... [DONE]
+Adding filter: Paranal/NACO.Mp... [DONE]
+Adding object: beta Pic b... [DONE]
+Adding filter: Paranal/SPHERE.IRDIS_D_H23_2... [DONE]
+Adding filter: Paranal/SPHERE.IRDIS_D_H23_3... [DONE]
+Adding filter: Paranal/SPHERE.IRDIS_D_K12_1... [DONE]
+Adding filter: Paranal/SPHERE.IRDIS_D_K12_2... [DONE]
+Adding object: HIP 65426 b... [DONE]
+Adding filter: MKO/NSFCam.J... [DONE]
+Adding filter: MKO/NSFCam.H... [DONE]
+Adding filter: MKO/NSFCam.K... [DONE]
+Adding filter: Keck/NIRC2.Lp... [DONE]
+Adding filter: Keck/NIRC2.Ms... [DONE]
+Adding object: 51 Eri b... [DONE]
+Adding filter: Subaru/CIAO.z... [DONE]
+Adding filter: Paranal/SPHERE.IRDIS_B_J... [DONE]
+Adding filter: Keck/NIRC2.H... [DONE]
+Adding filter: Keck/NIRC2.Ks... [DONE]
+Adding object: HR 8799 b... [DONE]
+Adding object: HR 8799 c... [DONE]
+Adding object: HR 8799 d... [DONE]
+Adding object: HR 8799 e... [DONE]
+Adding filter: Gemini/GPI.H... [DONE]
+Adding filter: Gemini/GPI.K1... [DONE]
+Adding object: HD 95086 b... [DONE]
+Adding object: PDS 70 b... [DONE]
+Adding object: PDS 70 c... [DONE]
+Adding filter: HST/NICMOS1.F090M... [DONE]
+Adding filter: HST/NICMOS1.F110M... [DONE]
+Adding filter: HST/NICMOS1.F145M... [DONE]
+Adding filter: HST/NICMOS1.F160W... [DONE]
+Adding object: 2M1207 b... [DONE]
+Adding object: AB Pic B... [DONE]
+Adding filter: Paranal/SPHERE.IRDIS_B_H... [DONE]
+Adding object: HD 206893 B... [DONE]
+Adding filter: HST/WFPC2.f606w... [DONE]
+Adding filter: HST/WFPC2.f814w... [DONE]
+Adding filter: HST/NICMOS2.F171M... [DONE]
+Adding filter: HST/NICMOS2.F190N... [DONE]
+Adding filter: HST/NICMOS2.F215N... [DONE]
+Adding filter: Subaru/CIAO.CH4s... [DONE]
+Adding filter: Subaru/CIAO.K... [DONE]
+Adding filter: Subaru/CIAO.Lp... [DONE]
+Adding object: GQ Lup B... [DONE]
+Adding filter: Paranal/SPHERE.ZIMPOL_R_PRIM... [DONE]
+Adding filter: Paranal/SPHERE.ZIMPOL_I_PRIM... [DONE]
+Adding filter: Gemini/NIRI.H2S1v2-1-G0220... [DONE]
+Adding object: PZ Tel B... [DONE]
+Adding filter: Subaru/CIAO.J... [DONE]
+Adding filter: Subaru/CIAO.H... [DONE]
+Adding filter: Subaru/CIAO.Ks... [DONE]
+Adding filter: LBT/LMIRCam.M_77K... [DONE]
+Adding object: kappa And b... [DONE]
+Adding filter: Keck/NIRC2.J... [DONE]
+Adding object: ROXs 42 Bb... [DONE]
+Adding filter: Paranal/SPHERE.IRDIS_D_Y23_2... [DONE]
+Adding filter: Paranal/SPHERE.IRDIS_D_Y23_3... [DONE]
+Adding filter: Paranal/SPHERE.IRDIS_D_J23_3... [DONE]
+Adding filter: Subaru/IRCS.Lp... [DONE]
+Adding object: GJ 504 b... [DONE]
+Adding filter: Gemini/GMOS-S.z... [DONE]
+Adding filter: CFHT/Wircam.Y... [DONE]
+Adding filter: CFHT/Wircam.J... [DONE]
+Adding filter: CFHT/Wircam.H... [DONE]
+Adding filter: CFHT/Wircam.Ks... [DONE]
+Adding filter: WISE/WISE.W1... [DONE]
+Adding filter: WISE/WISE.W2... [DONE]
+Adding object: GU Psc b... [DONE]
+Adding object: 2M0103 ABb... [DONE]
+Adding filter: Gemini/NIRI.J-G0202w... [DONE]
+Adding filter: Gemini/NIRI.H-G0203w... [DONE]
+Adding filter: Gemini/NIRI.K-G0204w... [DONE]
+Adding filter: Gemini/NIRI.Lprime-G0207w... [DONE]
+Adding object: 1RXS 1609 B... [DONE]
+Adding filter: MKO/NSFCam.Kp... [DONE]
+Adding filter: MKO/NSFCam.Lp... [DONE]
+Adding object: GSC 06214 B... [DONE]
+</pre></div></div>
+</div>
+<p>The spectra from the SpeX Prism Spectral Library are downloaded and added to the database. For each spectrum, the <a class="reference external" href="http://simbad.u-strasbg.fr/simbad/">SIMBAD Astronomical Database</a> is queried for the SIMBAD name and parallax of the object. If the parallax is not available then several VizieR cataloges with data of brown dwarfs are queried (see <a class="reference external" href="https://github.com/tomasstolker/species/blob/master/species/data/queries.py">get_distance</a>). A NaN value is stored for the distance if the parallax
+is not found. Therefore, these objects are not used in the color-magnitude diagram.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">database</span><span class="o">.</span><span class="n">add_spectrum</span><span class="p">(</span><span class="s1">&#39;spex&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Downloading SpeX Prism Spectral Library... [DONE]
+Adding filter: 2MASS/2MASS.H... [DONE]
+Adding SpeX Prism Spectral Library... 2MASS J13184794+1736117
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J13184794+1736117 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... SDSS J213154.43-011939.3
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J21315444-0119374 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J04070885+1514565
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J09293364+3429527 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASSI J1807159+501531
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J14192618+5919047 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J15412408+5425598
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J04062677-3812102 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J03280716+3022432 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J16452207+3004071
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J04574903+3015195 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J00013044+1010146
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J01414839-1601196 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J18212815+1414010
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J12425052+2357231 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J22120703+3430351
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J03422594+3148496 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... SDSS J121659.17+300306.3
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J18131803+5101246 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J16382073+1327354 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J16382073+1327354
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J05460407-0003228 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J20261584-2943124
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J01151621+3130061 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... SDSS J104335.08+121314.1
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J19495702+6222440 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J14283132+5923354
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/.pyenv/versions/3.6.0/envs/general3.6/lib/python3.6/site-packages/astroquery/simbad/core.py:138: UserWarning: Warning: The script line number 3 raised an error (recorded in the `errors` attribute of the result table): Identifier not found in the database : 2MASS J14162394+1348363
+  (error.line, error.msg))
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J14162394+1348363 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... SDSS J074201.41+205520.5
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J03023398-1028223 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J12490872+4157286
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J13452562+5216337 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J11145133-2618235
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J11181292-0856106 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J04382218+2553503 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... SDSS J102109.69-030420.1
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J00150206+2959323 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... SDSS J204317.69-155103.4
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J01340281+0508125 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J13571237+1428398
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J21555848+2345307 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J12373919+6526148
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J15575011-2952431 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... SDSS J011912.22+240331.6
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J01191207+2403317 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... SDSS J104842.84+011158.5
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J18282794+1453337 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J23515044-2537367
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J02425693+2123204 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASSW J1146345+223053
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J03431581+3210455 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J09243114+2143536
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J10595185+3042059 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASSI J2107316-030733
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J12474944-1117551 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J13313310+3407583
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J02055138-0759253 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASSW J0820299+450031
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J21513979+3402444 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J12373441+3028596
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J12373441+3028596 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J15561873+1300527
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J19163888-3700026 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... DENIS-P J1228.2-1547
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J01472702+4731142 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J05103520-4208140
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J13023811+5650212 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASSW J1728114+394859
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J17451618-2903156 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... LHS 217
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J00025097+2454141 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... SDSS J000250.98+245413.8
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J21210987+6557255 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... SDSS J075840.33+324723.4
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J11582077+0435014 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J18244344+2937133
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J20342948+6727398 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J19415458+6826021 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J21512543-2441000
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J05363776+1000232 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J05341594-0631397
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J05341594-0631397 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASSI J1047538+212423
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J14343616+2202463 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... SDSS J003609.26+241343.3
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J00360925+2413434 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J17220990-1158127AB
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J23512200+3010540 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J15461461+4932114
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J15461461+4932114 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J10461875+4441149
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J03001631+2130205 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... SDSS J121951.45+312849.4
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J04190126+2802487 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... HN Peg B
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J10315064+3349595 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASS J02271036-1624479
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J01481478+1202447 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... DENIS-P J225210.73-173013.4
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J04394748+2601407 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... DENIS J124514.1-442907
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J04480182-0557254 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... 2MASSI J1553022+153236
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/data/queries.py:209: UserWarning: No parallax was found for 2MASS J22274034+1753215 so storing a NaN value.
+  warnings.warn(f&#39;No parallax was found for {target} so storing a NaN value.&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding SpeX Prism Spectral Library... [DONE]
+</pre></div></div>
+</div>
+<p>The AMES-Cond en AMES-Dusty model spectra are also downloaded and included.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">database</span><span class="o">.</span><span class="n">add_model</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;ames-cond&#39;</span><span class="p">,</span>
+                   <span class="n">wavel_range</span><span class="o">=</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">10.</span><span class="p">),</span>
+                   <span class="n">spec_res</span><span class="o">=</span><span class="mf">1000.</span>
+                   <span class="n">teff_range</span><span class="o">=</span><span class="p">(</span><span class="mf">100.</span><span class="p">,</span> <span class="mf">4000.</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Downloading AMES-Cond model spectra (823 MB)... [DONE]
+Unpacking AMES-Cond model spectra (823 MB)... [DONE]
+Adding AMES-Cond model spectra... [DONE]
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">database</span><span class="o">.</span><span class="n">add_model</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;ames-dusty&#39;</span><span class="p">,</span>
+                   <span class="n">wavel_range</span><span class="o">=</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">10.</span><span class="p">),</span>
+                   <span class="n">spec_res</span><span class="o">=</span><span class="mf">1000.</span>
+                   <span class="n">teff_range</span><span class="o">=</span><span class="p">(</span><span class="mf">100.</span><span class="p">,</span> <span class="mf">4000.</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Downloading AMES-Dusty model spectra [Fe/H]=0.0 (106 MB)... [DONE]
+Unpacking AMES-Dusty model spectra [Fe/H]=0.0 (106 MB)... [DONE]
+Adding AMES-Dusty model spectra... [DONE]
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/Users/tomasstolker/applications/species/species/util/data_util.py:268: UserWarning: Interpolation is not possible at the edge of the parameter grid. A NaN value is stored for Teff = 4000.0 K.
+  warnings.warn(f&#39;Interpolation is not possible at the edge of the &#39;
+</pre></div></div>
+</div>
+<p>The AMES-Cond and AMES-Dusty isochones are downloaded.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span><span class="s1">&#39;https://phoenix.ens-lyon.fr/Grids/AMES-Cond/ISOCHRONES/model.AMES-Cond-2000.M-0.0.NaCo.Vega&#39;</span><span class="p">,</span>
+                           <span class="s1">&#39;data/model.AMES-Cond-2000.M-0.0.NaCo.Vega&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;data/model.AMES-dusty.M-0.0.NaCo.Vega&#39;
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span><span class="s1">&#39;https://phoenix.ens-lyon.fr/Grids/AMES-Dusty/ISOCHRONES/model.AMES-dusty.M-0.0.NaCo.Vega&#39;</span><span class="p">,</span>
+                           <span class="s1">&#39;data/model.AMES-dusty.M-0.0.NaCo.Vega&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>And added to the database.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">database</span><span class="o">.</span><span class="n">add_isochrones</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;data/model.AMES-Cond-2000.M-0.0.NaCo.Vega&#39;</span><span class="p">,</span>
+                        <span class="n">isochrone_tag</span><span class="o">=</span><span class="s1">&#39;iso_ames-cond&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding isochrones: iso_ames-cond... [DONE]
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">database</span><span class="o">.</span><span class="n">add_isochrones</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;data/model.AMES-dusty.M-0.0.NaCo.Vega&#39;</span><span class="p">,</span>
+                        <span class="n">isochrone_tag</span><span class="o">=</span><span class="s1">&#39;iso_ames-dusty&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Adding isochrones: iso_ames-dusty... [DONE]
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Synthetic-colors-and-magnitudes">
+<h2>Synthetic colors and magnitudes<a class="headerlink" href="#Synthetic-colors-and-magnitudes" title="Permalink to this headline">¶</a></h2>
+<p>For the narrowband filters of SPHERE, the synthetic colors and magnitudes are computed from the SpeX spectra. An object of <code class="docutils literal notranslate"><span class="pre">ReadColorMagnitude</span></code> is initiated.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">read_color</span> <span class="o">=</span> <span class="n">species</span><span class="o">.</span><span class="n">ReadColorMagnitude</span><span class="p">(</span><span class="n">library</span><span class="o">=</span><span class="s1">&#39;spex&#39;</span><span class="p">,</span>
+                                        <span class="n">filters_color</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_3&#39;</span><span class="p">),</span>
+                                        <span class="n">filter_mag</span><span class="o">=</span><span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>All spectra are used and the colors and magnitudes are stored in a <code class="docutils literal notranslate"><span class="pre">ColorMagObject</span></code>.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">colorbox</span> <span class="o">=</span> <span class="n">read_color</span><span class="o">.</span><span class="n">get_color_magnitude</span><span class="p">(</span><span class="n">object_type</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Next, the isochrone data is selected with the functionalities of <code class="docutils literal notranslate"><span class="pre">ReadIsochrone</span></code>.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">read_iso_cond</span> <span class="o">=</span> <span class="n">species</span><span class="o">.</span><span class="n">ReadIsochrone</span><span class="p">(</span><span class="n">isochrone_tag</span><span class="o">=</span><span class="s1">&#39;iso_ames-cond&#39;</span><span class="p">)</span>
+<span class="n">read_iso_dusty</span> <span class="o">=</span> <span class="n">species</span><span class="o">.</span><span class="n">ReadIsochrone</span><span class="p">(</span><span class="n">isochrone_tag</span><span class="o">=</span><span class="s1">&#39;iso_ames-dusty&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>The atmospheric model for each of the isochrones is chosen together with an age and masses. The <code class="docutils literal notranslate"><span class="pre">get_color_magnitude</span></code> function will return a <code class="docutils literal notranslate"><span class="pre">ColorMagBox</span></code> object.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">modelcolor1</span> <span class="o">=</span> <span class="n">read_iso_cond</span><span class="o">.</span><span class="n">get_color_magnitude</span><span class="p">(</span><span class="n">age</span><span class="o">=</span><span class="n">age</span><span class="p">,</span>
+                                                <span class="n">masses</span><span class="o">=</span><span class="n">masses</span><span class="p">,</span>
+                                                <span class="n">model</span><span class="o">=</span><span class="s1">&#39;ames-cond&#39;</span><span class="p">,</span>
+                                                <span class="n">filters_color</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_3&#39;</span><span class="p">),</span>
+                                                <span class="n">filter_mag</span><span class="o">=</span><span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">modelcolor2</span> <span class="o">=</span> <span class="n">read_iso_dusty</span><span class="o">.</span><span class="n">get_color_magnitude</span><span class="p">(</span><span class="n">age</span><span class="o">=</span><span class="n">age</span><span class="p">,</span>
+                                                 <span class="n">masses</span><span class="o">=</span><span class="n">masses</span><span class="p">,</span>
+                                                 <span class="n">model</span><span class="o">=</span><span class="s1">&#39;ames-dusty&#39;</span><span class="p">,</span>
+                                                 <span class="n">filters_color</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_3&#39;</span><span class="p">),</span>
+                                                 <span class="n">filter_mag</span><span class="o">=</span><span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Selecting-directly-imaged-planets">
+<h2>Selecting directly imaged planets<a class="headerlink" href="#Selecting-directly-imaged-planets" title="Permalink to this headline">¶</a></h2>
+<p>The directly imaged planets and brown dwarfs are selected by their database tag. The filters for the colors and magnitudes have to be present in the database.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">objects</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;HIP 65426 b&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_3&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">),</span>
+           <span class="p">(</span><span class="s1">&#39;HR 8799 b&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_3&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">),</span>
+           <span class="p">(</span><span class="s1">&#39;HR 8799 d&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_3&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">),</span>
+           <span class="p">(</span><span class="s1">&#39;PZ Tel B&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_3&#39;</span><span class="p">,</span> <span class="s1">&#39;Paranal/SPHERE.IRDIS_D_H23_2&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Plotting-a-color-magnitude-diagram">
+<h2>Plotting a color-magnitude diagram<a class="headerlink" href="#Plotting-a-color-magnitude-diagram" title="Permalink to this headline">¶</a></h2>
+<p>The color-magnitude diagram is now created by providing the <code class="docutils literal notranslate"><span class="pre">ColorMagBox</span></code> objects, which will be interpreted by <code class="docutils literal notranslate"><span class="pre">plot_color_magnitude</span></code>.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">species</span><span class="o">.</span><span class="n">plot_color_magnitude</span><span class="p">(</span><span class="n">boxes</span><span class="o">=</span><span class="p">[</span><span class="n">colorbox</span><span class="p">,</span> <span class="n">modelcolor1</span><span class="p">,</span> <span class="n">modelcolor2</span><span class="p">],</span>
+                             <span class="n">objects</span><span class="o">=</span><span class="n">objects</span><span class="p">,</span>
+                             <span class="n">mass_labels</span><span class="o">=</span><span class="p">[</span><span class="mf">3.</span><span class="p">,</span> <span class="mf">5.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">,</span> <span class="mf">20.</span><span class="p">,</span> <span class="mf">50.</span><span class="p">,</span> <span class="mf">100.</span><span class="p">,</span> <span class="mf">200.</span><span class="p">,</span> <span class="mf">500.</span><span class="p">],</span>
+                             <span class="n">companion_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                             <span class="n">field_range</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;late M&#39;</span><span class="p">,</span> <span class="s1">&#39;late T&#39;</span><span class="p">),</span>
+                             <span class="n">label_x</span><span class="o">=</span><span class="s1">&#39;H2 - H3 [mag]&#39;</span><span class="p">,</span>
+                             <span class="n">label_y</span><span class="o">=</span><span class="s1">&#39;M$_\mathregular</span><span class="si">{H2}</span><span class="s1">$ [mag]&#39;</span><span class="p">,</span>
+                             <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">2.7</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">),</span>
+                             <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mf">17.3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+                             <span class="n">offset</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">0.07</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1</span><span class="p">),</span>
+                             <span class="n">legend</span><span class="o">=</span><span class="p">(</span><span class="mf">0.07</span><span class="p">,</span> <span class="mf">0.82</span><span class="p">),</span>
+                             <span class="n">output</span><span class="o">=</span><span class="s1">&#39;color_mag.png&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Plotting color-magnitude diagram: color_mag.png... [DONE]
+</pre></div></div>
+</div>
+<p>Let’s have a look at the plot. As expected, towards later type objects, the colors becomes blue due to CH4 absorption across the H3 filter.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Image</span>
+<span class="n">Image</span><span class="p">(</span><span class="s1">&#39;color_mag.png&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/tutorials_color_magnitude_narrowband_41_0.png" src="../_images/tutorials_color_magnitude_narrowband_41_0.png" />
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="atmospheric_models.html" class="btn btn-neutral float-right" title="Atmospheric models" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="color_magnitude_broadband.html" class="btn btn-neutral" title="Color-magnitude diagram: broadband filters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2020, Tomas Stolker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

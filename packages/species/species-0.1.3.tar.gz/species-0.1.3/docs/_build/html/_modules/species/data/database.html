@@ -1,0 +1,1394 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>species.data.database &mdash; species 0.1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html">
+          
+
+          
+            
+            <img src="../../../_static/species_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#virtual-environment">Virtual Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#installation-from-github">Installation from Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#testing-species">Testing <cite>species</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/running_species.html">Running <em>species</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Adding-a-photometric-library">Adding a photometric library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/running_species.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#supported-data">Supported data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#analysis-tools">Analysis tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#output-boxes">Output boxes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/flux_magnitude.html">Flux and magnitude conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/synthetic_photometry.html">Synthetic photometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/spectral_library.html">Spectral library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html">Color-magnitude diagram: broadband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Adding-data-to-the-database">Adding data to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Database-content">Database content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Synthetic-photometry-from-isochrones">Synthetic photometry from isochrones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Photometry-of-directly-imaged-objects">Photometry of directly imaged objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Reading-color-magnitude-data">Reading color-magnitude data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_broadband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html">Color-magnitude diagram: narrowband filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Adding-data-and-models">Adding data and models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Synthetic-colors-and-magnitudes">Synthetic colors and magnitudes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Selecting-directly-imaged-planets">Selecting directly imaged planets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/color_magnitude_narrowband.html#Plotting-a-color-magnitude-diagram">Plotting a color-magnitude diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/atmospheric_models.html">Atmospheric models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Adding-model-spectra-to-the-database">Adding model spectra to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Interpolating-the-model-grid">Interpolating the model grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Extracting-a-spectrum-at-a-grid-point">Extracting a spectrum at a grid point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/atmospheric_models.html#Calculating-synthetic-photometry">Calculating synthetic photometry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/data_model.html">Comparison of data and model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Initiating-species">Initiating <em>species</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Adding-model-spectra">Adding model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Adding-companion-data">Adding companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Reading-model-spectra">Reading model spectra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Reading-companion-data">Reading companion data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Synthetic-photometry-for-all-filters">Synthetic photometry for all filters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Creating-flux-residuals">Creating flux residuals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Opening-Box-objects">Opening Box objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/data_model.html#Plotting-spectra,-fluxes-and-filters">Plotting spectra, fluxes and filters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/photometric_calibration.html">Photometric calibration: fitting a stellar spectrum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Adding-an-object-and-calibration-spectrum">Adding an object and calibration spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Fitting-the-stellar-spectrum">Fitting the stellar spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Plotting-the-results">Plotting the results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorials/photometric_calibration.html#Photometric-calibration">Photometric calibration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials/fitting_photometry.html">Fitting photometry with model spectra</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules.html">API documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../species.html">species package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../species.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.analysis.html">species.analysis package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis.fit_model">species.analysis.fit_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis.fit_planck">species.analysis.fit_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis.fit_spectrum">species.analysis.fit_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis.photometry">species.analysis.photometry module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.analysis.html#module-species.analysis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.core.html">species.core package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#module-species.core.box">species.core.box module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#module-species.core.constants">species.core.constants module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#module-species.core.setup">species.core.setup module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.core.html#module-species.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.data.html">species.data package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.ames_cond">species.data.ames_cond module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.ames_dusty">species.data.ames_dusty module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.btnextgen">species.data.btnextgen module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.btsettl">species.data.btsettl module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.companions">species.data.companions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.database">species.data.database module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.drift_phoenix">species.data.drift_phoenix module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.filters">species.data.filters module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.irtf">species.data.irtf module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.isochrones">species.data.isochrones module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.leggett">species.data.leggett module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.petitcode">species.data.petitcode module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.queries">species.data.queries module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.spex">species.data.spex module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.vega">species.data.vega module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data.vlm_plx">species.data.vlm_plx module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.data.html#module-species.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.plot.html">species.plot package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#module-species.plot.plot_color">species.plot.plot_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#module-species.plot.plot_mcmc">species.plot.plot_mcmc module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#module-species.plot.plot_spectrum">species.plot.plot_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.plot.html#module-species.plot">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.read.html">species.read package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_calibration">species.read.read_calibration module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_color">species.read.read_color module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_filter">species.read.read_filter module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_isochrone">species.read.read_isochrone module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_model">species.read.read_model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_object">species.read.read_object module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_planck">species.read.read_planck module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read.read_spectrum">species.read.read_spectrum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.read.html#module-species.read">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../species.util.html">species.util package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.data_util">species.util.data_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.phot_util">species.util.phot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.plot_util">species.util.plot_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.read_util">species.util.read_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util.test_util">species.util.test_util module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../species.util.html#module-species.util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../species.html#module-species">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">About species</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../about.html#questions-feedback">Questions &amp; feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../about.html#attribution">Attribution</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">species</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>species.data.database</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for species.data.database</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Module with functionalities for reading and writing of data.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">import</span> <span class="nn">configparser</span>
+
+<span class="kn">import</span> <span class="nn">h5py</span>
+<span class="kn">import</span> <span class="nn">tqdm</span>
+<span class="kn">import</span> <span class="nn">emcee</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">species.analysis</span> <span class="k">import</span> <span class="n">photometry</span>
+<span class="kn">from</span> <span class="nn">species.core</span> <span class="k">import</span> <span class="n">box</span>
+<span class="kn">from</span> <span class="nn">species.data</span> <span class="k">import</span> <span class="n">drift_phoenix</span><span class="p">,</span> <span class="n">btnextgen</span><span class="p">,</span> <span class="n">vega</span><span class="p">,</span> <span class="n">irtf</span><span class="p">,</span> <span class="n">spex</span><span class="p">,</span> <span class="n">vlm_plx</span><span class="p">,</span> <span class="n">leggett</span><span class="p">,</span> \
+                         <span class="n">companions</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">btsettl</span><span class="p">,</span> <span class="n">ames_dusty</span><span class="p">,</span> <span class="n">ames_cond</span><span class="p">,</span> \
+                         <span class="n">isochrones</span><span class="p">,</span> <span class="n">petitcode</span>
+<span class="kn">from</span> <span class="nn">species.read</span> <span class="k">import</span> <span class="n">read_model</span><span class="p">,</span> <span class="n">read_calibration</span><span class="p">,</span> <span class="n">read_planck</span>
+<span class="kn">from</span> <span class="nn">species.util</span> <span class="k">import</span> <span class="n">data_util</span>
+
+
+<div class="viewcode-block" id="Database"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database">[docs]</a><span class="k">class</span> <span class="nc">Database</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Class for fitting atmospheric model spectra to photometric data.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        NoneType</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">config_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s1">&#39;species_config.ini&#39;</span><span class="p">)</span>
+
+        <span class="n">config</span> <span class="o">=</span> <span class="n">configparser</span><span class="o">.</span><span class="n">ConfigParser</span><span class="p">()</span>
+        <span class="n">config</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">config_file</span><span class="p">))</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">database</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">][</span><span class="s1">&#39;database&#39;</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">input_path</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">][</span><span class="s1">&#39;data_folder&#39;</span><span class="p">]</span>
+
+<div class="viewcode-block" id="Database.list_content"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.list_content">[docs]</a>    <span class="k">def</span> <span class="nf">list_content</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        NoneType</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Database content:&#39;</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">descend</span><span class="p">(</span><span class="n">h5_object</span><span class="p">,</span>
+                    <span class="n">seperator</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+            <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            Parameters</span>
+<span class="sd">            ----------</span>
+<span class="sd">            h5_object : h5py._hl.files.File, h5py._hl.group.Group, h5py._hl.dataset.Dataset</span>
+<span class="sd">            separator : str</span>
+
+<span class="sd">            Returns</span>
+<span class="sd">            -------</span>
+<span class="sd">            NoneType</span>
+<span class="sd">                None</span>
+<span class="sd">            &quot;&quot;&quot;</span>
+
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">h5_object</span><span class="p">,</span> <span class="p">(</span><span class="n">h5py</span><span class="o">.</span><span class="n">_hl</span><span class="o">.</span><span class="n">files</span><span class="o">.</span><span class="n">File</span><span class="p">,</span> <span class="n">h5py</span><span class="o">.</span><span class="n">_hl</span><span class="o">.</span><span class="n">group</span><span class="o">.</span><span class="n">Group</span><span class="p">)):</span>
+                <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">h5_object</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="n">seperator</span><span class="o">+</span><span class="s1">&#39;- &#39;</span><span class="o">+</span><span class="n">key</span><span class="o">+</span><span class="s1">&#39;: &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">h5_object</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span>
+                    <span class="n">descend</span><span class="p">(</span><span class="n">h5_object</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="n">seperator</span><span class="o">=</span><span class="n">seperator</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">h5_object</span><span class="p">,</span> <span class="n">h5py</span><span class="o">.</span><span class="n">_hl</span><span class="o">.</span><span class="n">dataset</span><span class="o">.</span><span class="n">Dataset</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">h5_object</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="n">seperator</span><span class="o">+</span><span class="s1">&#39;- &#39;</span><span class="o">+</span><span class="n">key</span><span class="o">+</span><span class="s1">&#39;: &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">h5_object</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span>
+
+        <span class="k">with</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">hdf_file</span><span class="p">:</span>
+            <span class="n">descend</span><span class="p">(</span><span class="n">hdf_file</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Database.list_companions"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.list_companions">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">list_companions</span><span class="p">():</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        NoneType</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">for</span> <span class="n">planet_name</span><span class="p">,</span> <span class="n">planet_dict</span> <span class="ow">in</span> <span class="n">companions</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">distance</span> <span class="o">=</span> <span class="n">planet_dict</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">]</span>
+            <span class="n">app_mag</span> <span class="o">=</span> <span class="n">planet_dict</span><span class="p">[</span><span class="s1">&#39;app_mag&#39;</span><span class="p">]</span>
+
+            <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Object name = </span><span class="si">{planet_name}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Distance [pc] = </span><span class="si">{distance[0]}</span><span class="s1"> +/- </span><span class="si">{distance[1]}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">mag_name</span><span class="p">,</span> <span class="n">mag_dict</span> <span class="ow">in</span> <span class="n">app_mag</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;</span><span class="si">{mag_name}</span><span class="s1"> [mag] = </span><span class="si">{mag_dict[0]}</span><span class="s1"> +/- </span><span class="si">{mag_dict[1]}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="nb">print</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.add_companion"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.add_companion">[docs]</a>    <span class="k">def</span> <span class="nf">add_companion</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                      <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        name : list(str, )</span>
+<span class="sd">            Companion name. All companions are added if set to None.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        NoneType</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="nb">list</span><span class="p">((</span><span class="n">name</span><span class="p">,</span> <span class="p">))</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="n">companions</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">name</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">name</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">add_object</span><span class="p">(</span><span class="n">object_name</span><span class="o">=</span><span class="n">item</span><span class="p">,</span>
+                            <span class="n">distance</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="n">item</span><span class="p">][</span><span class="s1">&#39;distance&#39;</span><span class="p">],</span>
+                            <span class="n">app_mag</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="n">item</span><span class="p">][</span><span class="s1">&#39;app_mag&#39;</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Database.add_filter"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.add_filter">[docs]</a>    <span class="k">def</span> <span class="nf">add_filter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                   <span class="n">filter_name</span><span class="p">,</span>
+                   <span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        filter_name : str</span>
+<span class="sd">            Filter name from the SVO Filter Profile Service (e.g., &#39;Paranal/NACO.Lp&#39;).</span>
+<span class="sd">        filename : str</span>
+<span class="sd">            Filename with the filter profile. The first column should contain the wavelength</span>
+<span class="sd">            (micron) and the second column the transmission (no units). The profile is downloaded</span>
+<span class="sd">            from the SVO Filter Profile Service if set to None.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        NoneType</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">filter_split</span> <span class="o">=</span> <span class="n">filter_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;filters&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="n">h5_file</span><span class="o">.</span><span class="n">create_group</span><span class="p">(</span><span class="s1">&#39;filters&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;filters/&#39;</span><span class="o">+</span><span class="n">filter_split</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="n">h5_file</span><span class="o">.</span><span class="n">create_group</span><span class="p">(</span><span class="s1">&#39;filters/&#39;</span><span class="o">+</span><span class="n">filter_split</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="k">if</span> <span class="s1">&#39;filters/&#39;</span><span class="o">+</span><span class="n">filter_name</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="k">del</span> <span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;filters/&#39;</span><span class="o">+</span><span class="n">filter_name</span><span class="p">]</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Adding filter: </span><span class="si">{filter_name}</span><span class="s1">...&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">filename</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+            <span class="n">wavelength</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
+            <span class="n">transmission</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">wavelength</span><span class="p">,</span> <span class="n">transmission</span> <span class="o">=</span> <span class="n">filters</span><span class="o">.</span><span class="n">download_filter</span><span class="p">(</span><span class="n">filter_name</span><span class="p">)</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="s1">&#39;filters/&#39;</span><span class="o">+</span><span class="n">filter_name</span><span class="p">,</span>
+                               <span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">wavelength</span><span class="p">,</span> <span class="n">transmission</span><span class="p">)),</span>
+                               <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;f&#39;</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; [DONE]&#39;</span><span class="p">)</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.add_isochrones"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.add_isochrones">[docs]</a>    <span class="k">def</span> <span class="nf">add_isochrones</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                       <span class="n">filename</span><span class="p">,</span>
+                       <span class="n">tag</span><span class="p">,</span>
+                       <span class="n">model</span><span class="o">=</span><span class="s1">&#39;baraffe&#39;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Function for adding isochrones data to the database.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        filename : str</span>
+<span class="sd">            Filename with the isochrones data.</span>
+<span class="sd">        tag : str</span>
+<span class="sd">            Database tag name where the isochrone that will be stored.</span>
+<span class="sd">        model : str</span>
+<span class="sd">            Evolutionary model (&#39;baraffe&#39; or &#39;marleau&#39;). For &#39;baraffe&#39; models, the isochrone data</span>
+<span class="sd">            can be downloaded from https://phoenix.ens-lyon.fr/Grids/. For &#39;marleau&#39; models, the</span>
+<span class="sd">            data can be requested from Gabriel Marleau.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        NoneType</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;isochrones&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="n">h5_file</span><span class="o">.</span><span class="n">create_group</span><span class="p">(</span><span class="s1">&#39;isochrones&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;isochrones/&#39;</span><span class="o">+</span><span class="n">tag</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="k">del</span> <span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;isochrones/&#39;</span><span class="o">+</span><span class="n">tag</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">model</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;baraffe&#39;</span><span class="p">:</span>
+            <span class="n">isochrones</span><span class="o">.</span><span class="n">add_baraffe</span><span class="p">(</span><span class="n">h5_file</span><span class="p">,</span> <span class="n">tag</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">model</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;marleau&#39;</span><span class="p">:</span>
+            <span class="n">isochrones</span><span class="o">.</span><span class="n">add_marleau</span><span class="p">(</span><span class="n">h5_file</span><span class="p">,</span> <span class="n">tag</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.add_model"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.add_model">[docs]</a>    <span class="k">def</span> <span class="nf">add_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                  <span class="n">model</span><span class="p">,</span>
+                  <span class="n">wavel_range</span><span class="p">,</span>
+                  <span class="n">spec_res</span><span class="p">,</span>
+                  <span class="n">teff_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                  <span class="n">data_folder</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        model : str</span>
+<span class="sd">            Model name (&#39;ames-cond&#39;, &#39;ames-dusty&#39;, &#39;bt-settl&#39;, &#39;bt-nextgen&#39;, &#39;drift-phoenix&#39;,</span>
+<span class="sd">            &#39;petitcode-cool-clear&#39;, &#39;petitcode-cool-cloudy&#39;, &#39;petitcode-hot-clear&#39;, or</span>
+<span class="sd">            &#39;petitcode-hot-cloudy&#39;).</span>
+<span class="sd">        wavel_range : tuple(float, float), None</span>
+<span class="sd">            Wavelength range (micron). Not required for the DRIFT-PHOENIX and petitCODE models, in</span>
+<span class="sd">            which case the argument can be set to None.</span>
+<span class="sd">        spec_res : float, None</span>
+<span class="sd">            Spectral resolution. Not required for the DRIFT-PHOENIX and petitCODE models, in which</span>
+<span class="sd">            case the argument can be set to None.</span>
+<span class="sd">        teff_range : tuple(float, float), None</span>
+<span class="sd">            Effective temperature range (K). Not required for the DRIFT-PHOENIX and petitCODE</span>
+<span class="sd">            models, in which case the argument can be set to None. Setting the value to None for</span>
+<span class="sd">            the other models will add all available temperatures.</span>
+<span class="sd">        data_folder : str, None</span>
+<span class="sd">            Folder with input data. Only required for the petitCODE hot models which are not</span>
+<span class="sd">            publically available.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        NoneType</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="n">model</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;petitcode-hot-clear&#39;</span><span class="p">,</span> <span class="s1">&#39;petitcode-hot-cloudy&#39;</span><span class="p">]</span> <span class="ow">and</span> <span class="n">data_folder</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;The petitCODE hot models are not publicly available and should &#39;</span>
+                             <span class="s1">&#39;be imported by setting the </span><span class="se">\&#39;</span><span class="s1">data_folder</span><span class="se">\&#39;</span><span class="s1"> parameter. Please &#39;</span>
+                             <span class="s1">&#39;contact Paul Mollière (molliere@mpia.de) for the model spectra.&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">9</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;petitcode&#39;</span> <span class="ow">or</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;drift-phoenix&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">wavel_range</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s1">&#39;The </span><span class="se">\&#39;</span><span class="s1">wavel_range</span><span class="se">\&#39;</span><span class="s1"> parameter is not required for the DRIFT-PHOENIX &#39;</span>
+                          <span class="s1">&#39;and petitCODE model spectra because they are sampled on a fixed &#39;</span>
+                          <span class="s1">&#39;wavelength grid.&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">9</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;petitcode&#39;</span> <span class="ow">or</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;drift-phoenix&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">spec_res</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s1">&#39;The </span><span class="se">\&#39;</span><span class="s1">spec_res</span><span class="se">\&#39;</span><span class="s1"> parameter is not required for the DRIFT-PHOENIX and &#39;</span>
+                          <span class="s1">&#39;petitCODE model spectra because they are sampled on a fixed wavelength &#39;</span>
+                          <span class="s1">&#39;grid.&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">9</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;petitcode&#39;</span> <span class="ow">or</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;drift-phoenix&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">teff_range</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s1">&#39;The </span><span class="se">\&#39;</span><span class="s1">teff_range</span><span class="se">\&#39;</span><span class="s1"> parameter is ignored for the DRIFT-PHOENIX and &#39;</span>
+                          <span class="s1">&#39;petitCODE model spectra.&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">model</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;bt-settl&#39;</span><span class="p">,</span> <span class="s1">&#39;bt-nextgen&#39;</span><span class="p">]</span> <span class="ow">and</span> <span class="n">teff_range</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s1">&#39;The temperature range is not restricted with the </span><span class="se">\&#39;</span><span class="s1">teff_range</span><span class="se">\&#39;</span><span class="s1">&#39;</span>
+                          <span class="s1">&#39;parameter. Therefore, adding the BT-Settl or BT-NextGen spectra &#39;</span>
+                          <span class="s1">&#39;will be very slow.&#39;</span><span class="p">)</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;models&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="n">h5_file</span><span class="o">.</span><span class="n">create_group</span><span class="p">(</span><span class="s1">&#39;models&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;ames-cond&#39;</span><span class="p">:</span>
+            <span class="n">ames_cond</span><span class="o">.</span><span class="n">add_ames_cond</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">wavel_range</span><span class="p">,</span> <span class="n">teff_range</span><span class="p">,</span> <span class="n">spec_res</span><span class="p">)</span>
+            <span class="n">data_util</span><span class="o">.</span><span class="n">add_missing</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;teff&#39;</span><span class="p">,</span> <span class="s1">&#39;logg&#39;</span><span class="p">],</span> <span class="n">h5_file</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;ames-dusty&#39;</span><span class="p">:</span>
+            <span class="n">ames_dusty</span><span class="o">.</span><span class="n">add_ames_dusty</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">wavel_range</span><span class="p">,</span> <span class="n">teff_range</span><span class="p">,</span> <span class="n">spec_res</span><span class="p">)</span>
+            <span class="n">data_util</span><span class="o">.</span><span class="n">add_missing</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;teff&#39;</span><span class="p">,</span> <span class="s1">&#39;logg&#39;</span><span class="p">],</span> <span class="n">h5_file</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;bt-settl&#39;</span><span class="p">:</span>
+            <span class="n">btsettl</span><span class="o">.</span><span class="n">add_btsettl</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">wavel_range</span><span class="p">,</span> <span class="n">teff_range</span><span class="p">,</span> <span class="n">spec_res</span><span class="p">)</span>
+            <span class="n">data_util</span><span class="o">.</span><span class="n">add_missing</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;teff&#39;</span><span class="p">,</span> <span class="s1">&#39;logg&#39;</span><span class="p">],</span> <span class="n">h5_file</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;bt-nextgen&#39;</span><span class="p">:</span>
+            <span class="n">btnextgen</span><span class="o">.</span><span class="n">add_btnextgen</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">wavel_range</span><span class="p">,</span> <span class="n">teff_range</span><span class="p">,</span> <span class="n">spec_res</span><span class="p">)</span>
+            <span class="n">data_util</span><span class="o">.</span><span class="n">add_missing</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;teff&#39;</span><span class="p">,</span> <span class="s1">&#39;logg&#39;</span><span class="p">,</span> <span class="s1">&#39;feh&#39;</span><span class="p">],</span> <span class="n">h5_file</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;drift-phoenix&#39;</span><span class="p">:</span>
+            <span class="n">drift_phoenix</span><span class="o">.</span><span class="n">add_drift_phoenix</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">)</span>
+            <span class="n">data_util</span><span class="o">.</span><span class="n">add_missing</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;teff&#39;</span><span class="p">,</span> <span class="s1">&#39;logg&#39;</span><span class="p">,</span> <span class="s1">&#39;feh&#39;</span><span class="p">],</span> <span class="n">h5_file</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;petitcode-cool-clear&#39;</span><span class="p">:</span>
+            <span class="n">petitcode</span><span class="o">.</span><span class="n">add_petitcode_cool_clear</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">)</span>
+            <span class="n">data_util</span><span class="o">.</span><span class="n">add_missing</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;teff&#39;</span><span class="p">,</span> <span class="s1">&#39;logg&#39;</span><span class="p">,</span> <span class="s1">&#39;feh&#39;</span><span class="p">],</span> <span class="n">h5_file</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;petitcode-cool-cloudy&#39;</span><span class="p">:</span>
+            <span class="n">petitcode</span><span class="o">.</span><span class="n">add_petitcode_cool_cloudy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">)</span>
+            <span class="n">data_util</span><span class="o">.</span><span class="n">add_missing</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;teff&#39;</span><span class="p">,</span> <span class="s1">&#39;logg&#39;</span><span class="p">,</span> <span class="s1">&#39;feh&#39;</span><span class="p">,</span> <span class="s1">&#39;fsed&#39;</span><span class="p">],</span> <span class="n">h5_file</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;petitcode-hot-clear&#39;</span><span class="p">:</span>
+            <span class="n">petitcode</span><span class="o">.</span><span class="n">add_petitcode_hot_clear</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">data_folder</span><span class="p">)</span>
+            <span class="n">data_util</span><span class="o">.</span><span class="n">add_missing</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;teff&#39;</span><span class="p">,</span> <span class="s1">&#39;logg&#39;</span><span class="p">,</span> <span class="s1">&#39;feh&#39;</span><span class="p">,</span> <span class="s1">&#39;co&#39;</span><span class="p">],</span> <span class="n">h5_file</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;petitcode-hot-cloudy&#39;</span><span class="p">:</span>
+            <span class="n">petitcode</span><span class="o">.</span><span class="n">add_petitcode_hot_cloudy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">data_folder</span><span class="p">)</span>
+            <span class="n">data_util</span><span class="o">.</span><span class="n">add_missing</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;teff&#39;</span><span class="p">,</span> <span class="s1">&#39;logg&#39;</span><span class="p">,</span> <span class="s1">&#39;feh&#39;</span><span class="p">,</span> <span class="s1">&#39;co&#39;</span><span class="p">,</span> <span class="s1">&#39;fsed&#39;</span><span class="p">],</span> <span class="n">h5_file</span><span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;The </span><span class="si">{model}</span><span class="s1"> atmospheric model does not exist. Please choose from &#39;</span>
+                             <span class="n">f</span><span class="s1">&#39;</span><span class="se">\&#39;</span><span class="s1">ames-cond</span><span class="se">\&#39;</span><span class="s1">, </span><span class="se">\&#39;</span><span class="s1">ames-dusty</span><span class="se">\&#39;</span><span class="s1">, </span><span class="se">\&#39;</span><span class="s1">bt-settl</span><span class="se">\&#39;</span><span class="s1">, </span><span class="se">\&#39;</span><span class="s1">bt-nextgen</span><span class="se">\&#39;</span><span class="s1">, &#39;</span>
+                             <span class="n">f</span><span class="s1">&#39;</span><span class="se">\&#39;</span><span class="s1">drift-phoexnix</span><span class="se">\&#39;</span><span class="s1">, </span><span class="se">\&#39;</span><span class="s1">petitcode-cool-clear</span><span class="se">\&#39;</span><span class="s1">, &#39;</span>
+                             <span class="n">f</span><span class="s1">&#39;</span><span class="se">\&#39;</span><span class="s1">petitcode-cool-cloudy</span><span class="se">\&#39;</span><span class="s1">, </span><span class="se">\&#39;</span><span class="s1">petitcode-hot-clear</span><span class="se">\&#39;</span><span class="s1">, &#39;</span>
+                             <span class="n">f</span><span class="s1">&#39;</span><span class="se">\&#39;</span><span class="s1">petitcode-hot-cloudy</span><span class="se">\&#39;</span><span class="s1">.&#39;</span><span class="p">)</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.add_object"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.add_object">[docs]</a>    <span class="k">def</span> <span class="nf">add_object</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                   <span class="n">object_name</span><span class="p">,</span>
+                   <span class="n">distance</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                   <span class="n">app_mag</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                   <span class="n">spectrum</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                   <span class="n">instrument</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        object_name: str</span>
+<span class="sd">            Object name.</span>
+<span class="sd">        distance : tuple(float, float), None</span>
+<span class="sd">            Distance and uncertainty (pc). Not written if set to None.</span>
+<span class="sd">        app_mag : dict</span>
+<span class="sd">            Apparent magnitudes. Not written if set to None.</span>
+<span class="sd">        spectrum : str</span>
+<span class="sd">            Spectrum filename. The first three columns should contain the wavelength (micron),</span>
+<span class="sd">            flux density (W m-2 micron-1), and the error (W m-2 micron-1). Not written if set</span>
+<span class="sd">            to None.</span>
+<span class="sd">        instrument : str</span>
+<span class="sd">            Instrument that was used for the spectrum (currently only &#39;gpi&#39; possible). Not</span>
+<span class="sd">            used if set to None.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        NoneType</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;objects&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="n">h5_file</span><span class="o">.</span><span class="n">create_group</span><span class="p">(</span><span class="s1">&#39;objects&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="n">h5_file</span><span class="o">.</span><span class="n">create_group</span><span class="p">(</span><span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">distance</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span><span class="o">+</span><span class="s1">&#39;/distance&#39;</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+                <span class="k">del</span> <span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span><span class="o">+</span><span class="s1">&#39;/distance&#39;</span><span class="p">]</span>
+
+            <span class="n">h5_file</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span><span class="o">+</span><span class="s1">&#39;/distance&#39;</span><span class="p">,</span>
+                                   <span class="n">data</span><span class="o">=</span><span class="n">distance</span><span class="p">,</span>
+                                   <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;f&#39;</span><span class="p">)</span>  <span class="c1"># [pc]</span>
+
+        <span class="k">if</span> <span class="n">app_mag</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">flux</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="n">error</span> <span class="o">=</span> <span class="p">{}</span>
+
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">app_mag</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">synphot</span> <span class="o">=</span> <span class="n">photometry</span><span class="o">.</span><span class="n">SyntheticPhotometry</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+                    <span class="n">flux</span><span class="p">[</span><span class="n">item</span><span class="p">],</span> <span class="n">error</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">synphot</span><span class="o">.</span><span class="n">magnitude_to_flux</span><span class="p">(</span><span class="n">app_mag</span><span class="p">[</span><span class="n">item</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+                                                                        <span class="n">app_mag</span><span class="p">[</span><span class="n">item</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+
+                <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                    <span class="c1"># Write NaNs if the filter is not available</span>
+                    <span class="n">flux</span><span class="p">[</span><span class="n">item</span><span class="p">],</span> <span class="n">error</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">app_mag</span><span class="p">:</span>
+                <span class="k">if</span> <span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span><span class="o">+</span><span class="s1">&#39;/&#39;</span><span class="o">+</span><span class="n">item</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+                    <span class="k">del</span> <span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span><span class="o">+</span><span class="s1">&#39;/&#39;</span><span class="o">+</span><span class="n">item</span><span class="p">]</span>
+
+                <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">([</span><span class="n">app_mag</span><span class="p">[</span><span class="n">item</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+                                   <span class="n">app_mag</span><span class="p">[</span><span class="n">item</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
+                                   <span class="n">flux</span><span class="p">[</span><span class="n">item</span><span class="p">],</span>
+                                   <span class="n">error</span><span class="p">[</span><span class="n">item</span><span class="p">]])</span>
+
+                <span class="c1"># [mag], [mag], [W m-2 micron-1], [W m-2 micron-1]</span>
+                <span class="n">h5_file</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span><span class="o">+</span><span class="s1">&#39;/&#39;</span><span class="o">+</span><span class="n">item</span><span class="p">,</span>
+                                       <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+                                       <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;f&#39;</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Adding object: </span><span class="si">{object_name}</span><span class="s1">...&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">spectrum</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+
+            <span class="k">if</span> <span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span><span class="o">+</span><span class="s1">&#39;/spectrum&#39;</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+                <span class="k">del</span> <span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span><span class="o">+</span><span class="s1">&#39;/spectrum&#39;</span><span class="p">]</span>
+
+            <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">spectrum</span><span class="p">)</span>
+
+            <span class="n">dset</span> <span class="o">=</span> <span class="n">h5_file</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span><span class="o">+</span><span class="s1">&#39;/spectrum&#39;</span><span class="p">,</span>
+                                          <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">],</span>
+                                          <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;f&#39;</span><span class="p">)</span>
+
+            <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;instrument&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">instrument</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; [DONE]&#39;</span><span class="p">)</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.add_photometry"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.add_photometry">[docs]</a>    <span class="k">def</span> <span class="nf">add_photometry</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                       <span class="n">phot_library</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        phot_library : str</span>
+<span class="sd">            Photometric library (&#39;vlm-plx&#39; or &#39;leggett&#39;).</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        NoneType</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;photometry&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="n">h5_file</span><span class="o">.</span><span class="n">create_group</span><span class="p">(</span><span class="s1">&#39;photometry&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;photometry/&#39;</span><span class="o">+</span><span class="n">phot_library</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="k">del</span> <span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;photometry/&#39;</span><span class="o">+</span><span class="n">phot_library</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">phot_library</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;vlm-plx&#39;</span><span class="p">:</span>
+            <span class="n">vlm_plx</span><span class="o">.</span><span class="n">add_vlm_plx</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">phot_library</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;leggett&#39;</span><span class="p">:</span>
+            <span class="n">leggett</span><span class="o">.</span><span class="n">add_leggett</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">)</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.add_calibration"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.add_calibration">[docs]</a>    <span class="k">def</span> <span class="nf">add_calibration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                        <span class="n">tag</span><span class="p">,</span>
+                        <span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                        <span class="n">data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                        <span class="n">units</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                        <span class="n">scaling</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Function for adding a calibration spectrum to the database.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        tag : str</span>
+<span class="sd">            Tag name in the database.</span>
+<span class="sd">        filename : str, None</span>
+<span class="sd">            Filename with the calibration spectrum. The first column should contain the wavelength</span>
+<span class="sd">            (micron), the second column the flux density (W m-2 micron-1), and the third column</span>
+<span class="sd">            the error (W m-2 micron-1). The `data` argument is used if set to None.</span>
+<span class="sd">        data : numpy.ndarray, None</span>
+<span class="sd">            Spectrum stored as 3D array with shape (n_wavelength, 3). The first column should</span>
+<span class="sd">            contain the wavelength (micron), the second column the flux density (W m-2 micron-1),</span>
+<span class="sd">            and the third column the error (W m-2 micron-1).</span>
+<span class="sd">        units : dict, None</span>
+<span class="sd">            Dictionary with the wavelength and flux units. Default (micron and W m-2 micron-1) is</span>
+<span class="sd">            used if set to None.</span>
+<span class="sd">        scaling : tuple(float, float)</span>
+<span class="sd">            Scaling for the wavelength and flux as (scaling_wavelength, scaling_flux). Not used if</span>
+<span class="sd">            set to None.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        NoneType</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="n">filename</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Either the </span><span class="se">\&#39;</span><span class="s1">filename</span><span class="se">\&#39;</span><span class="s1"> or </span><span class="se">\&#39;</span><span class="s1">data</span><span class="se">\&#39;</span><span class="s1"> argument should be provided.&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">scaling</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">scaling</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">)</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;spectra/calibration&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="n">h5_file</span><span class="o">.</span><span class="n">create_group</span><span class="p">(</span><span class="s1">&#39;spectra/calibration&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;spectra/calibration/&#39;</span><span class="o">+</span><span class="n">tag</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="k">del</span> <span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;spectra/calibration/&#39;</span><span class="o">+</span><span class="n">tag</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">filename</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">units</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">wavelength</span> <span class="o">=</span> <span class="n">scaling</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>  <span class="c1"># [micron]</span>
+            <span class="n">flux</span> <span class="o">=</span> <span class="n">scaling</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>  <span class="c1"># [W m-2 micron-1]</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">units</span><span class="p">[</span><span class="s1">&#39;wavelength&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;micron&#39;</span><span class="p">:</span>
+                <span class="n">wavelength</span> <span class="o">=</span> <span class="n">scaling</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>  <span class="c1"># [micron]</span>
+
+            <span class="k">if</span> <span class="n">units</span><span class="p">[</span><span class="s1">&#39;flux&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;w m-2 micron-1&#39;</span><span class="p">:</span>
+                <span class="n">flux</span> <span class="o">=</span> <span class="n">scaling</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>  <span class="c1"># [W m-2 micron-1]</span>
+            <span class="k">elif</span> <span class="n">units</span><span class="p">[</span><span class="s1">&#39;flux&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;w m-2&#39;</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">units</span><span class="p">[</span><span class="s1">&#39;wavelength&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;micron&#39;</span><span class="p">:</span>
+                    <span class="n">flux</span> <span class="o">=</span> <span class="n">scaling</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">wavelength</span>  <span class="c1"># [W m-2 micron-1]</span>
+
+        <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">units</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">error</span> <span class="o">=</span> <span class="n">scaling</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>  <span class="c1"># [W m-2 micron-1]</span>
+
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">units</span><span class="p">[</span><span class="s1">&#39;flux&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;w m-2 micron-1&#39;</span><span class="p">:</span>
+                    <span class="n">error</span> <span class="o">=</span> <span class="n">scaling</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>  <span class="c1"># [W m-2 micron-1]</span>
+                <span class="k">elif</span> <span class="n">units</span><span class="p">[</span><span class="s1">&#39;flux&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;w m-2&#39;</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">units</span><span class="p">[</span><span class="s1">&#39;wavelength&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;micron&#39;</span><span class="p">:</span>
+                        <span class="n">error</span> <span class="o">=</span> <span class="n">scaling</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="n">wavelength</span>  <span class="c1"># [W m-2 micron-1]</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="n">wavelength</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Adding calibration spectrum: </span><span class="si">{tag}</span><span class="s1">...&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="s1">&#39;spectra/calibration/&#39;</span><span class="o">+</span><span class="n">tag</span><span class="p">,</span>
+                               <span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">wavelength</span><span class="p">,</span> <span class="n">flux</span><span class="p">,</span> <span class="n">error</span><span class="p">)),</span>
+                               <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;f&#39;</span><span class="p">)</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; [DONE]&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Database.add_spectrum"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.add_spectrum">[docs]</a>    <span class="k">def</span> <span class="nf">add_spectrum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                     <span class="n">spec_library</span><span class="p">,</span>
+                     <span class="n">sptypes</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        spec_library : str</span>
+<span class="sd">            Spectral library (&#39;irtf&#39; or &#39;spex&#39;).</span>
+<span class="sd">        sptypes : list(str, )</span>
+<span class="sd">            Spectral types (&#39;F&#39;, &#39;G&#39;, &#39;K&#39;, &#39;M&#39;, &#39;L&#39;, &#39;T&#39;). Currently only implemented for &#39;irtf&#39;.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        NoneType</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;spectra&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="n">h5_file</span><span class="o">.</span><span class="n">create_group</span><span class="p">(</span><span class="s1">&#39;spectra&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;spectra/&#39;</span><span class="o">+</span><span class="n">spec_library</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="k">del</span> <span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;spectra/&#39;</span><span class="o">+</span><span class="n">spec_library</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">spec_library</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;vega&#39;</span><span class="p">:</span>
+            <span class="n">vega</span><span class="o">.</span><span class="n">add_vega</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">spec_library</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;irtf&#39;</span><span class="p">:</span>
+            <span class="n">irtf</span><span class="o">.</span><span class="n">add_irtf</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">sptypes</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">spec_library</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;spex&#39;</span><span class="p">:</span>
+            <span class="n">spex</span><span class="o">.</span><span class="n">add_spex</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">input_path</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">)</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.add_samples"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.add_samples">[docs]</a>    <span class="k">def</span> <span class="nf">add_samples</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                    <span class="n">sampler</span><span class="p">,</span>
+                    <span class="n">spectrum</span><span class="p">,</span>
+                    <span class="n">tag</span><span class="p">,</span>
+                    <span class="n">modelpar</span><span class="p">,</span>
+                    <span class="n">distance</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        sampler : emcee.ensemble.EnsembleSampler</span>
+<span class="sd">            Ensemble sampler.</span>
+<span class="sd">        spectrum : tuple(str, str)</span>
+<span class="sd">            Tuple with the spectrum type (&#39;model&#39; or &#39;calibration&#39;) and spectrum name (e.g.</span>
+<span class="sd">            &#39;drift-phoenix&#39;).</span>
+<span class="sd">        tag : str</span>
+<span class="sd">            Database tag.</span>
+<span class="sd">        modelpar : list(str, )</span>
+<span class="sd">            List with the model parameter names.</span>
+<span class="sd">        distance : float</span>
+<span class="sd">            Distance to the object (pc). Not used if set to None.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        NoneType</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;results&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="n">h5_file</span><span class="o">.</span><span class="n">create_group</span><span class="p">(</span><span class="s1">&#39;results&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;results/mcmc&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="n">h5_file</span><span class="o">.</span><span class="n">create_group</span><span class="p">(</span><span class="s1">&#39;results/mcmc&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s1">&#39;results/mcmc/&#39;</span><span class="o">+</span><span class="n">tag</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="k">del</span> <span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;results/mcmc/&#39;</span><span class="o">+</span><span class="n">tag</span><span class="p">]</span>
+
+        <span class="n">dset</span> <span class="o">=</span> <span class="n">h5_file</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="s1">&#39;results/mcmc/&#39;</span><span class="o">+</span><span class="n">tag</span><span class="o">+</span><span class="s1">&#39;/samples&#39;</span><span class="p">,</span>
+                                      <span class="n">data</span><span class="o">=</span><span class="n">sampler</span><span class="o">.</span><span class="n">chain</span><span class="p">,</span>
+                                      <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;f&#39;</span><span class="p">)</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="s1">&#39;results/mcmc/&#39;</span><span class="o">+</span><span class="n">tag</span><span class="o">+</span><span class="s1">&#39;/probability&#39;</span><span class="p">,</span>
+                               <span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">sampler</span><span class="o">.</span><span class="n">lnprobability</span><span class="p">),</span>
+                               <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;f&#39;</span><span class="p">)</span>
+
+        <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;spectrum&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;nparam&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">modelpar</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="n">distance</span><span class="p">:</span>
+            <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">modelpar</span><span class="p">):</span>
+            <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;parameter&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+
+        <span class="n">mean_accep</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">sampler</span><span class="o">.</span><span class="n">acceptance_fraction</span><span class="p">)</span>
+        <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;acceptance&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">mean_accep</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Mean acceptance fraction: </span><span class="si">{mean_accep:.3f}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">int_auto</span> <span class="o">=</span> <span class="n">emcee</span><span class="o">.</span><span class="n">autocorr</span><span class="o">.</span><span class="n">integrated_time</span><span class="p">(</span><span class="n">sampler</span><span class="o">.</span><span class="n">flatchain</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Integrated autocorrelation time = </span><span class="si">{int_auto}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+        <span class="k">except</span> <span class="n">emcee</span><span class="o">.</span><span class="n">autocorr</span><span class="o">.</span><span class="n">AutocorrError</span><span class="p">:</span>
+            <span class="n">int_auto</span> <span class="o">=</span> <span class="kc">None</span>
+
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The chain is shorter than 50 times the integrated autocorrelation time. &#39;</span>
+                  <span class="s1">&#39;[WARNING]&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">int_auto</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">int_auto</span><span class="p">):</span>
+                <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;autocorrelation&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Database.get_probable_sample"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.get_probable_sample">[docs]</a>    <span class="k">def</span> <span class="nf">get_probable_sample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                            <span class="n">tag</span><span class="p">,</span>
+                            <span class="n">burnin</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        tag : str</span>
+<span class="sd">            Database tag with the MCMC results.</span>
+<span class="sd">        burnin : int</span>
+<span class="sd">            Number of burnin steps.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        dict</span>
+<span class="sd">            Parameters and values for the sample with the maximum posterior probability.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+        <span class="n">dset</span> <span class="o">=</span> <span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;results/mcmc/&#39;</span><span class="o">+</span><span class="n">tag</span><span class="o">+</span><span class="s1">&#39;/samples&#39;</span><span class="p">]</span>
+
+        <span class="n">samples</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">dset</span><span class="p">)</span>
+        <span class="n">samples</span> <span class="o">=</span> <span class="n">samples</span><span class="p">[:,</span> <span class="n">burnin</span><span class="p">:,</span> <span class="p">:]</span>
+
+        <span class="n">probability</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;results/mcmc/&#39;</span><span class="o">+</span><span class="n">tag</span><span class="o">+</span><span class="s1">&#39;/probability&#39;</span><span class="p">])</span>
+        <span class="n">probability</span> <span class="o">=</span> <span class="n">probability</span><span class="p">[:,</span> <span class="n">burnin</span><span class="p">:]</span>
+
+        <span class="n">nparam</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;nparam&#39;</span><span class="p">]</span>
+
+        <span class="n">index_max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unravel_index</span><span class="p">(</span><span class="n">probability</span><span class="o">.</span><span class="n">argmax</span><span class="p">(),</span> <span class="n">probability</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+        <span class="c1"># max_prob = probability[index_max]</span>
+        <span class="n">max_sample</span> <span class="o">=</span> <span class="n">samples</span><span class="p">[</span><span class="n">index_max</span><span class="p">]</span>
+
+        <span class="c1"># print(f&#39;Maximum probability: {max_prob:.2f}&#39;)</span>
+        <span class="c1"># print(f&#39;Most probable sample:&#39;, end=&#39;&#39;, flush=True)</span>
+
+        <span class="n">prob_sample</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nparam</span><span class="p">):</span>
+            <span class="n">par_key</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;parameter&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)]</span>
+            <span class="n">par_value</span> <span class="o">=</span> <span class="n">max_sample</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+            <span class="n">prob_sample</span><span class="p">[</span><span class="n">par_key</span><span class="p">]</span> <span class="o">=</span> <span class="n">par_value</span>
+            <span class="c1"># print(f&#39; {par_key}={par_value:.2f}&#39;, end=&#39;)</span>
+
+        <span class="k">if</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="fm">__contains__</span><span class="p">(</span><span class="s1">&#39;distance&#39;</span><span class="p">):</span>
+            <span class="n">prob_sample</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">]</span>
+
+        <span class="c1"># print()</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="n">prob_sample</span></div>
+
+<div class="viewcode-block" id="Database.get_median_sample"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.get_median_sample">[docs]</a>    <span class="k">def</span> <span class="nf">get_median_sample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                          <span class="n">tag</span><span class="p">,</span>
+                          <span class="n">burnin</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        tag : str</span>
+<span class="sd">            Database tag with the MCMC results.</span>
+<span class="sd">        burnin : int</span>
+<span class="sd">            Number of burnin steps.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        dict</span>
+<span class="sd">            Parameters and values for the sample with the maximum posterior probability.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+        <span class="n">dset</span> <span class="o">=</span> <span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;results/mcmc/&#39;</span><span class="o">+</span><span class="n">tag</span><span class="o">+</span><span class="s1">&#39;/samples&#39;</span><span class="p">]</span>
+
+        <span class="n">nparam</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;nparam&#39;</span><span class="p">]</span>
+
+        <span class="n">samples</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">dset</span><span class="p">)</span>
+        <span class="n">samples</span> <span class="o">=</span> <span class="n">samples</span><span class="p">[:,</span> <span class="n">burnin</span><span class="p">:,</span> <span class="p">:]</span>
+        <span class="n">samples</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">samples</span><span class="p">,</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">nparam</span><span class="p">))</span>
+
+        <span class="c1"># print(f&#39;Median sample:&#39;, end=&#39;&#39;, flush=True)</span>
+
+        <span class="n">median_sample</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nparam</span><span class="p">):</span>
+            <span class="n">par_key</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;parameter&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)]</span>
+            <span class="n">par_value</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">samples</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="mf">50.</span><span class="p">)</span>
+
+            <span class="n">median_sample</span><span class="p">[</span><span class="n">par_key</span><span class="p">]</span> <span class="o">=</span> <span class="n">par_value</span>
+            <span class="c1"># print(f&#39; {par_key}={par_value:.2f}&#39;, end=&#39;&#39;, flush=True)</span>
+
+        <span class="k">if</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="fm">__contains__</span><span class="p">(</span><span class="s1">&#39;distance&#39;</span><span class="p">):</span>
+            <span class="n">median_sample</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">]</span>
+
+        <span class="c1"># print()</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="n">median_sample</span></div>
+
+<div class="viewcode-block" id="Database.get_mcmc_spectra"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.get_mcmc_spectra">[docs]</a>    <span class="k">def</span> <span class="nf">get_mcmc_spectra</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                         <span class="n">tag</span><span class="p">,</span>
+                         <span class="n">burnin</span><span class="p">,</span>
+                         <span class="n">random</span><span class="p">,</span>
+                         <span class="n">wavel_range</span><span class="p">,</span>
+                         <span class="n">spec_res</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        tag : str</span>
+<span class="sd">            Database tag with the MCMC samples.</span>
+<span class="sd">        burnin : int</span>
+<span class="sd">            Number of burnin steps.</span>
+<span class="sd">        random : int</span>
+<span class="sd">            Number of random samples.</span>
+<span class="sd">        wavel_range : tuple(float, float) or str</span>
+<span class="sd">            Wavelength range (micron) or filter name. Full spectrum if set to None.</span>
+<span class="sd">        spec_res : float</span>
+<span class="sd">            Spectral resolution, achieved by smoothing with a Gaussian kernel. The original</span>
+<span class="sd">            wavelength points are used if set to None.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        list(species.core.box.ModelBox, )</span>
+<span class="sd">            Boxes with the randomly sampled spectra.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+        <span class="n">dset</span> <span class="o">=</span> <span class="n">h5_file</span><span class="p">[</span><span class="n">f</span><span class="s1">&#39;results/mcmc/</span><span class="si">{tag}</span><span class="s1">/samples&#39;</span><span class="p">]</span>
+
+        <span class="n">nparam</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;nparam&#39;</span><span class="p">]</span>
+        <span class="n">spectrum_type</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span>
+        <span class="n">spectrum_name</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;spectrum&#39;</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">spec_res</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">spectrum_type</span> <span class="o">==</span> <span class="s1">&#39;calibration&#39;</span><span class="p">:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s1">&#39;Smoothing of the spectral resolution is not implemented for calibration &#39;</span>
+                          <span class="s1">&#39;spectra.&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="fm">__contains__</span><span class="p">(</span><span class="s1">&#39;distance&#39;</span><span class="p">):</span>
+            <span class="n">distance</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">distance</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="n">samples</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">dset</span><span class="p">)</span>
+        <span class="n">samples</span> <span class="o">=</span> <span class="n">samples</span><span class="p">[:,</span> <span class="n">burnin</span><span class="p">:,</span> <span class="p">:]</span>
+
+        <span class="n">ran_walker</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">samples</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">size</span><span class="o">=</span><span class="n">random</span><span class="p">)</span>
+        <span class="n">ran_step</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">samples</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">size</span><span class="o">=</span><span class="n">random</span><span class="p">)</span>
+        <span class="n">samples</span> <span class="o">=</span> <span class="n">samples</span><span class="p">[</span><span class="n">ran_walker</span><span class="p">,</span> <span class="n">ran_step</span><span class="p">,</span> <span class="p">:]</span>
+
+        <span class="n">param</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nparam</span><span class="p">):</span>
+            <span class="n">param</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="n">f</span><span class="s1">&#39;parameter</span><span class="si">{i}</span><span class="s1">&#39;</span><span class="p">]))</span>
+
+        <span class="k">if</span> <span class="n">spectrum_type</span> <span class="o">==</span> <span class="s1">&#39;model&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">spectrum_name</span> <span class="o">==</span> <span class="s1">&#39;planck&#39;</span><span class="p">:</span>
+                <span class="n">readmodel</span> <span class="o">=</span> <span class="n">read_planck</span><span class="o">.</span><span class="n">ReadPlanck</span><span class="p">(</span><span class="n">wavel_range</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">readmodel</span> <span class="o">=</span> <span class="n">read_model</span><span class="o">.</span><span class="n">ReadModel</span><span class="p">(</span><span class="n">spectrum_name</span><span class="p">,</span> <span class="n">wavel_range</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">spectrum_type</span> <span class="o">==</span> <span class="s1">&#39;calibration&#39;</span><span class="p">:</span>
+            <span class="n">readcalib</span> <span class="o">=</span> <span class="n">read_calibration</span><span class="o">.</span><span class="n">ReadCalibration</span><span class="p">(</span><span class="n">spectrum_name</span><span class="p">,</span> <span class="n">filter_name</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+        <span class="n">boxes</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="o">.</span><span class="n">tqdm</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">samples</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;Getting MCMC spectra&#39;</span><span class="p">):</span>
+            <span class="n">model_param</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">samples</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+                <span class="n">model_param</span><span class="p">[</span><span class="n">param</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span> <span class="o">=</span> <span class="n">samples</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+
+            <span class="k">if</span> <span class="n">distance</span><span class="p">:</span>
+                <span class="n">model_param</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">distance</span>
+
+            <span class="k">if</span> <span class="n">spectrum_type</span> <span class="o">==</span> <span class="s1">&#39;model&#39;</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">spectrum_name</span> <span class="o">==</span> <span class="s1">&#39;planck&#39;</span><span class="p">:</span>
+                    <span class="n">specbox</span> <span class="o">=</span> <span class="n">readmodel</span><span class="o">.</span><span class="n">get_spectrum</span><span class="p">(</span><span class="n">model_param</span><span class="p">,</span> <span class="n">spec_res</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">specbox</span> <span class="o">=</span> <span class="n">readmodel</span><span class="o">.</span><span class="n">get_model</span><span class="p">(</span><span class="n">model_param</span><span class="p">,</span> <span class="n">spec_res</span><span class="p">)</span>
+
+            <span class="k">elif</span> <span class="n">spectrum_type</span> <span class="o">==</span> <span class="s1">&#39;calibration&#39;</span><span class="p">:</span>
+                <span class="n">specbox</span> <span class="o">=</span> <span class="n">readcalib</span><span class="o">.</span><span class="n">get_spectrum</span><span class="p">(</span><span class="n">model_param</span><span class="p">)</span>
+
+            <span class="n">box</span><span class="o">.</span><span class="n">type</span> <span class="o">=</span> <span class="s1">&#39;mcmc&#39;</span>
+
+            <span class="n">boxes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">specbox</span><span class="p">)</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">boxes</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Database.get_mcmc_photometry"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.get_mcmc_photometry">[docs]</a>    <span class="k">def</span> <span class="nf">get_mcmc_photometry</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                            <span class="n">tag</span><span class="p">,</span>
+                            <span class="n">burnin</span><span class="p">,</span>
+                            <span class="n">filter_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        tag : str</span>
+<span class="sd">            Database tag with the MCMC samples.</span>
+<span class="sd">        burnin : int</span>
+<span class="sd">            Number of burnin steps.</span>
+<span class="sd">        filter_name : str</span>
+<span class="sd">            Filter name for which the photometry is calculated.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        numpy.ndarray</span>
+<span class="sd">            Synthetic photometry (mag).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+        <span class="n">dset</span> <span class="o">=</span> <span class="n">h5_file</span><span class="p">[</span><span class="n">f</span><span class="s1">&#39;results/mcmc/</span><span class="si">{tag}</span><span class="s1">/samples&#39;</span><span class="p">]</span>
+
+        <span class="n">nparam</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;nparam&#39;</span><span class="p">]</span>
+        <span class="n">spectrum_type</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span>
+        <span class="n">spectrum_name</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;spectrum&#39;</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="fm">__contains__</span><span class="p">(</span><span class="s1">&#39;distance&#39;</span><span class="p">):</span>
+            <span class="n">distance</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">distance</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="n">samples</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">dset</span><span class="p">)</span>
+        <span class="n">samples</span> <span class="o">=</span> <span class="n">samples</span><span class="p">[:,</span> <span class="n">burnin</span><span class="p">:,</span> <span class="p">:]</span>
+        <span class="n">samples</span> <span class="o">=</span> <span class="n">samples</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="n">samples</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">samples</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">nparam</span><span class="p">))</span>
+
+        <span class="n">param</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nparam</span><span class="p">):</span>
+            <span class="n">param</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;parameter&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)]))</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">spectrum_type</span> <span class="o">==</span> <span class="s1">&#39;model&#39;</span><span class="p">:</span>
+            <span class="n">readmodel</span> <span class="o">=</span> <span class="n">read_model</span><span class="o">.</span><span class="n">ReadModel</span><span class="p">(</span><span class="n">spectrum_name</span><span class="p">,</span> <span class="n">filter_name</span><span class="p">)</span>
+        <span class="c1"># elif spectrum_type == &#39;calibration&#39;:</span>
+        <span class="c1">#     readcalib = read_calibration.ReadCalibration(spectrum_name, None)</span>
+
+        <span class="n">mcmc_phot</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">samples</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">))</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="o">.</span><span class="n">tqdm</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">samples</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;Getting MCMC photometry&#39;</span><span class="p">):</span>
+            <span class="n">model_param</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nparam</span><span class="p">):</span>
+                <span class="n">model_param</span><span class="p">[</span><span class="n">param</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span> <span class="o">=</span> <span class="n">samples</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+
+            <span class="k">if</span> <span class="n">distance</span><span class="p">:</span>
+                <span class="n">model_param</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">distance</span>
+
+            <span class="k">if</span> <span class="n">spectrum_type</span> <span class="o">==</span> <span class="s1">&#39;model&#39;</span><span class="p">:</span>
+                <span class="n">mcmc_phot</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">_</span> <span class="o">=</span> <span class="n">readmodel</span><span class="o">.</span><span class="n">get_magnitude</span><span class="p">(</span><span class="n">model_param</span><span class="p">)</span>
+            <span class="c1"># elif spectrum_type == &#39;calibration&#39;:</span>
+            <span class="c1">#     specbox = readcalib.get_spectrum(model_param)</span>
+
+        <span class="k">return</span> <span class="n">mcmc_phot</span></div>
+
+<div class="viewcode-block" id="Database.get_object"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.get_object">[docs]</a>    <span class="k">def</span> <span class="nf">get_object</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                   <span class="n">object_name</span><span class="p">,</span>
+                   <span class="n">filters</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                   <span class="n">inc_phot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                   <span class="n">inc_spec</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        object_name : str</span>
+<span class="sd">            Object name in the database.</span>
+<span class="sd">        filters : list(str, )</span>
+<span class="sd">            Filter names for which the photometry is selected. All available photometry of the</span>
+<span class="sd">            object is selected if set to None.</span>
+<span class="sd">        inc_phot : bool</span>
+<span class="sd">            Include photometry in the box.</span>
+<span class="sd">        inc_spec : bool</span>
+<span class="sd">            Include spectrum in the box.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        species.core.box.ObjectBox</span>
+<span class="sd">            Box with the object&#39;s data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Getting object: </span><span class="si">{object_name}</span><span class="s1">...&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+        <span class="n">dset</span> <span class="o">=</span> <span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span><span class="p">]</span>
+
+        <span class="n">distance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">dset</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">inc_phot</span><span class="p">:</span>
+
+            <span class="n">magnitude</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="n">flux</span> <span class="o">=</span> <span class="p">{}</span>
+
+            <span class="k">if</span> <span class="n">filters</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">filters</span><span class="p">:</span>
+                    <span class="n">data</span> <span class="o">=</span> <span class="n">dset</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+
+                    <span class="n">magnitude</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+                    <span class="n">flux</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
+
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">dset</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                    <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;distance&#39;</span><span class="p">,</span> <span class="s1">&#39;spectrum&#39;</span><span class="p">):</span>
+                        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">dset</span><span class="p">[</span><span class="n">key</span><span class="p">]:</span>
+                            <span class="n">name</span> <span class="o">=</span> <span class="n">key</span><span class="o">+</span><span class="s1">&#39;/&#39;</span><span class="o">+</span><span class="n">item</span>
+
+                            <span class="n">magnitude</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">dset</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+                            <span class="n">flux</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">dset</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
+
+            <span class="n">filters</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">magnitude</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+
+        <span class="k">else</span><span class="p">:</span>
+
+            <span class="n">magnitude</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="n">flux</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="n">filters</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">if</span> <span class="n">inc_spec</span> <span class="ow">and</span> <span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span><span class="o">+</span><span class="s1">&#39;/spectrum&#39;</span> <span class="ow">in</span> <span class="n">h5_file</span><span class="p">:</span>
+            <span class="n">spectrum</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;objects/&#39;</span><span class="o">+</span><span class="n">object_name</span><span class="o">+</span><span class="s1">&#39;/spectrum&#39;</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">spectrum</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; [DONE]&#39;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">box</span><span class="o">.</span><span class="n">create_box</span><span class="p">(</span><span class="s1">&#39;object&#39;</span><span class="p">,</span>
+                              <span class="n">name</span><span class="o">=</span><span class="n">object_name</span><span class="p">,</span>
+                              <span class="n">filters</span><span class="o">=</span><span class="n">filters</span><span class="p">,</span>
+                              <span class="n">magnitude</span><span class="o">=</span><span class="n">magnitude</span><span class="p">,</span>
+                              <span class="n">flux</span><span class="o">=</span><span class="n">flux</span><span class="p">,</span>
+                              <span class="n">distance</span><span class="o">=</span><span class="n">distance</span><span class="p">,</span>
+                              <span class="n">spectrum</span><span class="o">=</span><span class="n">spectrum</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Database.get_samples"><a class="viewcode-back" href="../../../species.data.html#species.data.database.Database.get_samples">[docs]</a>    <span class="k">def</span> <span class="nf">get_samples</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                    <span class="n">tag</span><span class="p">,</span>
+                    <span class="n">burnin</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                    <span class="n">random</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        tag: str</span>
+<span class="sd">            Database tag with the samples.</span>
+<span class="sd">        burnin : int, None</span>
+<span class="sd">            Number of burnin samples to exclude. All samples are selected if set to None.</span>
+<span class="sd">        random : int, None</span>
+<span class="sd">            Number of random samples to select. All samples (with the burnin excluded) are</span>
+<span class="sd">            selected if set to None.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        species.core.box.SamplesBox</span>
+<span class="sd">            Box with the MCMC samples.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="n">burnin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">burnin</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+        <span class="n">dset</span> <span class="o">=</span> <span class="n">h5_file</span><span class="p">[</span><span class="s1">&#39;results/mcmc/&#39;</span><span class="o">+</span><span class="n">tag</span><span class="o">+</span><span class="s1">&#39;/samples&#39;</span><span class="p">]</span>
+
+        <span class="n">spectrum</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;spectrum&#39;</span><span class="p">]</span>
+        <span class="n">nparam</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;nparam&#39;</span><span class="p">]</span>
+
+        <span class="n">samples</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">dset</span><span class="p">)</span>
+        <span class="n">samples</span> <span class="o">=</span> <span class="n">samples</span><span class="p">[:,</span> <span class="n">burnin</span><span class="p">:,</span> <span class="p">:]</span>
+
+        <span class="k">if</span> <span class="n">random</span><span class="p">:</span>
+            <span class="n">ran_walker</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">samples</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">size</span><span class="o">=</span><span class="n">random</span><span class="p">)</span>
+            <span class="n">ran_step</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">samples</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">size</span><span class="o">=</span><span class="n">random</span><span class="p">)</span>
+            <span class="n">samples</span> <span class="o">=</span> <span class="n">samples</span><span class="p">[</span><span class="n">ran_walker</span><span class="p">,</span> <span class="n">ran_step</span><span class="p">,</span> <span class="p">:]</span>
+
+        <span class="n">param</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nparam</span><span class="p">):</span>
+            <span class="n">param</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dset</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;parameter&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)])</span>
+
+        <span class="n">h5_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+        <span class="n">prob_sample</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_probable_sample</span><span class="p">(</span><span class="n">tag</span><span class="p">,</span> <span class="n">burnin</span><span class="p">)</span>
+        <span class="n">median_sample</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_median_sample</span><span class="p">(</span><span class="n">tag</span><span class="p">,</span> <span class="n">burnin</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">box</span><span class="o">.</span><span class="n">create_box</span><span class="p">(</span><span class="s1">&#39;samples&#39;</span><span class="p">,</span>
+                              <span class="n">spectrum</span><span class="o">=</span><span class="n">spectrum</span><span class="p">,</span>
+                              <span class="n">parameters</span><span class="o">=</span><span class="n">param</span><span class="p">,</span>
+                              <span class="n">samples</span><span class="o">=</span><span class="n">samples</span><span class="p">,</span>
+                              <span class="n">prob_sample</span><span class="o">=</span><span class="n">prob_sample</span><span class="p">,</span>
+                              <span class="n">median_sample</span><span class="o">=</span><span class="n">median_sample</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2020, Tomas Stolker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
