@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bangla_stemmer/__init__.py
+bangla_stemmer.egg-info/PKG-INFO
+bangla_stemmer.egg-info/SOURCES.txt
+bangla_stemmer.egg-info/dependency_links.txt
+bangla_stemmer.egg-info/top_level.txt
+bangla_stemmer/resources/__init__.py
+bangla_stemmer/resources/grammar.py
+bangla_stemmer/stemmer/__init__.py
+bangla_stemmer/stemmer/stemmer.py
