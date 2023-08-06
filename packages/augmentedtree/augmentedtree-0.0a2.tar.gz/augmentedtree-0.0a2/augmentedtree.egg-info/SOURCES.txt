@@ -1,0 +1,12 @@
+README.md
+setup.py
+augmentedtree/__init__.py
+augmentedtree/abc.py
+augmentedtree/augmentation.py
+augmentedtree/core.py
+augmentedtree/tree.py
+augmentedtree/treeitems.py
+augmentedtree.egg-info/PKG-INFO
+augmentedtree.egg-info/SOURCES.txt
+augmentedtree.egg-info/dependency_links.txt
+augmentedtree.egg-info/top_level.txt
