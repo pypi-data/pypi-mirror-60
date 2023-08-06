@@ -1,0 +1,45 @@
+class SEMMessage(primary) {
+    message: SEMMessageType
+}
+
+union SEMMessageType {
+    SEMReadRequest
+    SEMReadResponse
+    SEMWriteRequest
+    SEMWriteResponse
+}
+
+class SEMReadRequest {
+   field: string
+   query: string
+   minimumScore: float
+   limit: int
+}
+
+class SearchResult {
+    score: float
+    document: [Tuple]
+}
+
+class SEMReadResponse {
+    results: [SearchResult]
+}
+
+enum WriteResult {
+    SUCCESS
+    FAILURE
+}
+
+class SEMWriteRequest {
+   document: [Tuple]
+}
+
+class Tuple {
+    key: string
+    value: string
+}
+
+class SEMWriteResponse {
+    writeResult: WriteResult
+}
+
