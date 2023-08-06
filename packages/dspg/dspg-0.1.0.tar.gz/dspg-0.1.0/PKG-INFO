@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dspg
+Version: 0.1.0
+Summary: 
+Author: Dominic Looser
+Author-email: dominic.looser@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pyyaml (>=5.3,<6.0)
+Requires-Dist: wikidata (>=0.6.1,<0.7.0)

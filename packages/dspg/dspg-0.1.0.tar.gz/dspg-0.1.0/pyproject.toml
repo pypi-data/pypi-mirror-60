@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dspg"
+version = "0.1.0"
+description = ""
+authors = ["Dominic Looser <dominic.looser@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+wikidata = "^0.6.1"
+pyyaml = "^5.3"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+dspg = 'dspg.cli:main'
+
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
