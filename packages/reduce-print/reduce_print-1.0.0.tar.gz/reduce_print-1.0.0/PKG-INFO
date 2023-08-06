@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: reduce_print
+Version: 1.0.0
+Summary: A intresting printer of nested lists
+Home-page: http://www.headfirstlabs.com
+Author: GentleSummer
+Author-email: heaven.frostsword@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
