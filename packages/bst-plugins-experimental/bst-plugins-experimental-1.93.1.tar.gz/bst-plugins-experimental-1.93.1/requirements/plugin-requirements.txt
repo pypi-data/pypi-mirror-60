@@ -1,0 +1,14 @@
+# The dependencies listed here are necessary for specifc plugins, but
+# aren't required for bst-plugins-experimental to be installed. 
+
+# deb source
+arpy
+
+# OSTree source
+PyGObject
+
+# Cargo source
+pytoml
+
+# Bazel source
+requests

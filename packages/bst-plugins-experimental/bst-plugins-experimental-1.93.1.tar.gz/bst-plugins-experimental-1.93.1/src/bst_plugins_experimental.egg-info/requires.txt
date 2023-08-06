@@ -1,0 +1,13 @@
+buildstream
+
+[bazel]
+requests
+
+[cargo]
+pytoml
+
+[deb]
+arpy
+
+[ostree]
+PyGObject
