@@ -1,0 +1,11 @@
+fast_tabnet/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+fast_tabnet/_nbdev.py,sha256=ZfyYMhRGmLJuSVCibrRk2M2del4MftNGHDlQVSMS-hM,1131
+fast_tabnet/core.py,sha256=ZsATCq0o7mX7BLmb5DH_23af7rciwztNGEKTAJhVhQs,5623
+fast_tabnet/sparsemax.py,sha256=N9P52KToNoUCsCW_wAIq7hOx6F8dkcVHKBG34u7MIA4,6272
+fast_tabnet/tab_network.py,sha256=uH95j4tw8jEDml3twKIDIjLQDJOyqsr6yHIizCBbzbk,6425
+fast_tabnet-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fast_tabnet-0.0.4.dist-info/METADATA,sha256=SAY7UEWkbcpRUA0r4tY7PTOKJG8nCZIcoUNfVaBWpzg,15290
+fast_tabnet-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fast_tabnet-0.0.4.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+fast_tabnet-0.0.4.dist-info/top_level.txt,sha256=kvuGrQDPxpz6ruAOa58sg5zwt7YV7Q0frjmhC12tsB4,12
+fast_tabnet-0.0.4.dist-info/RECORD,,
