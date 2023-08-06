@@ -1,0 +1,8 @@
+setup.py
+atapublishpypi/__init__.py
+atapublishpypi/pdf2image.py
+atapublishpypi/pdf2text.py
+atapublishpypi.egg-info/PKG-INFO
+atapublishpypi.egg-info/SOURCES.txt
+atapublishpypi.egg-info/dependency_links.txt
+atapublishpypi.egg-info/top_level.txt
