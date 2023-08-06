@@ -1,0 +1,6 @@
+matplotlib
+Pillow
+h5py
+Shapely
+docutils
+reportlab
