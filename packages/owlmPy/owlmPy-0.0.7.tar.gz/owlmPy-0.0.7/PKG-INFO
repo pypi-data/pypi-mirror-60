@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: owlmPy
+Version: 0.0.7
+Summary: A python package for the modeling and simulation of the propagation of electromagnetic waves in structured multilayers with magneto-optical activity using FDTD method
+Home-page: https://github.com/mojv/owlmPy
+Author: Oscar Munoz, Nivolas Avilan, Cesar Herreno
+Author-email: oscar.munozs@utadeo.edu.co
+License: UNKNOWN
+Description: Package home at PyPI: http://pypi.python.org/pypi/owlmPy
+        
+        Package home at Github: https://github.com/mojv/owlmPy
+        
+        # About owlmPy
+        owlmPy is a python package for the modeling and simulation of the propagation of electromagnetic waves in structured devices with magneto-optical activity using Finite Differences Time-Domain method
+        
+        ## Documentation
+        This package is a working Master Thesis, see details in <a href="https://www.overleaf.com/read/mwbhfnktgzgw" >link</a>
+        
+        ## Installation
+        It can be installed using pip:
+        
+            pip install owlmPy
+        
+        And imported in python code:
+        
+            import owlmPy as ow
+        
+        See the following <a href="https://github.com/oscarmunoz20/owlmPy/blob/master/twobytwo_example.ipynb" >notebook</a> to get an example of the two by two matrix method.<br>
+        See the following <a href="https://github.com/oscarmunoz20/owlmPy/blob/master/FDTD_1D_example.ipynb" >notebook</a> to get an example of a 1D FDTD simulation.
+        
+        ## Required Dependencies
+        - numpy
+        - numba
+        - matplotlib
+        - tqdm
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
