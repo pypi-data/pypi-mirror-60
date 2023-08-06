@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: eproj
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/sthhher/eproj
+Author: Esther Vendrell
+Author-email: esvemira@hotmail.com
+License: UNKNOWN
+Description: Date: June 2019
+        We are learning how to do an API, readthedocs,...
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

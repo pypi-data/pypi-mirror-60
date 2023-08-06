@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+eproj/__init__.py
+eproj/extract_atoms_information.py
+eproj/obtain_file.py
+eproj.egg-info/PKG-INFO
+eproj.egg-info/SOURCES.txt
+eproj.egg-info/dependency_links.txt
+eproj.egg-info/top_level.txt
