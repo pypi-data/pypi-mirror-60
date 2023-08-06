@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: autogluon
+Version: 0.0.5
+Summary: AutoML Toolkit with MXNet Gluon
+Home-page: https://github.com/awslabs/autogluon
+Author: AutoGluon Community
+License: Apache
+Platform: UNKNOWN
+Requires-Python: >=3.6.*
+Requires-Dist: Pillow (<=6.2.1)
+Requires-Dist: numpy (>=1.16.0)
+Requires-Dist: scipy (>=1.3.3)
+Requires-Dist: cython
+Requires-Dist: tornado (>=5.0.1)
+Requires-Dist: requests
+Requires-Dist: matplotlib
+Requires-Dist: tqdm (>=4.38.0)
+Requires-Dist: paramiko (>=2.5.0)
+Requires-Dist: dask (==2.6.0)
+Requires-Dist: cryptography (>=2.8)
+Requires-Dist: distributed (==2.6.0)
+Requires-Dist: ConfigSpace (<=0.4.10)
+Requires-Dist: gluoncv (>=0.5.0)
+Requires-Dist: gluonnlp (==0.8.1)
+Requires-Dist: graphviz
+Requires-Dist: scikit-optimize
+Requires-Dist: catboost
+Requires-Dist: boto3 (==1.9.187)
+Requires-Dist: lightgbm (==2.3.0)
+Requires-Dist: pandas (<1.0,>=0.24.0)
+Requires-Dist: psutil (>=5.0.0)
+Requires-Dist: scikit-learn (==0.21.2)
+
+AutoGluon: AutoML Toolkit for Deep Learning
+-------------------------------------------
+
+|Build Status| |Pypi Version|
+
+AutoGluon automates machine learning tasks enabling you to easily
+achieve strong predictive performance in your applications. With just a
+few lines of code, you can train and deploy high-accuracy deep learning
+models on tabular, image, and text data. Get started with:
+
+.. code:: python
+
+   # First install package from terminal:  pip install mxnet autogluon
+
+   from autogluon import TabularPrediction as task
+   train_data = task.Dataset(file_path='https://autogluon.s3.amazonaws.com/datasets/Inc/train.csv')
+   test_data = task.Dataset(file_path='https://autogluon.s3.amazonaws.com/datasets/Inc/test.csv')
+   predictor = task.fit(train_data=train_data, label='class')
+   performance = predictor.evaluate(test_data)
+
+See the `AutoGluon Website <http://autogluon.mxnet.io/index.html>`__ for
+instructions on: - `Installing
+AutoGluon <http://autogluon.mxnet.io/index.html#installation>`__ -
+`Learning with tabular
+data <http://autogluon.mxnet.io/tutorials/tabular_prediction/tabular-quickstart.html>`__
+- `Learning with image
+data <http://autogluon.mxnet.io/tutorials/image_classification/beginner.html>`__
+- `Learning with text
+data <http://autogluon.mxnet.io/tutorials/text_classification/beginner.html>`__
+- More advanced topics such as `Neural Architecture
+Search <http://autogluon.mxnet.io/tutorials/nas/index.html>`__
+
+License
+-------
+
+This library is licensed under the Apache 2.0 License.
+
+.. |Build Status| image:: http://ci.mxnet.io/view/all/job/autogluon/job/master/badge/icon
+   :target: http://ci.mxnet.io/view/all/job/autogluon/job/master/
+.. |Pypi Version| image:: https://img.shields.io/pypi/v/autogluon.svg
+   :target: https://pypi.org/project/autogluon/#history
+
+
