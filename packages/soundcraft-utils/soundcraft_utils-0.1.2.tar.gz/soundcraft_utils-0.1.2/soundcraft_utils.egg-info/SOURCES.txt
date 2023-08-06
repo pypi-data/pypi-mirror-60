@@ -1,0 +1,12 @@
+README.md
+setup.py
+soundcraft/__init__.py
+soundcraft/__main__.py
+soundcraft/cli.py
+soundcraft/notepad.py
+soundcraft_utils.egg-info/PKG-INFO
+soundcraft_utils.egg-info/SOURCES.txt
+soundcraft_utils.egg-info/dependency_links.txt
+soundcraft_utils.egg-info/entry_points.txt
+soundcraft_utils.egg-info/requires.txt
+soundcraft_utils.egg-info/top_level.txt
