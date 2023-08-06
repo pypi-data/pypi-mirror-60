@@ -1,0 +1,8 @@
+README.md
+ffsize.py
+setup.py
+ffsize.egg-info/PKG-INFO
+ffsize.egg-info/SOURCES.txt
+ffsize.egg-info/dependency_links.txt
+ffsize.egg-info/entry_points.txt
+ffsize.egg-info/top_level.txt
