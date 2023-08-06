@@ -1,0 +1,7 @@
+assignment2.py
+deepali/__init__.py
+deepali.egg-info/PKG-INFO
+deepali.egg-info/SOURCES.txt
+deepali.egg-info/dependency_links.txt
+deepali.egg-info/not-zip-safe
+deepali.egg-info/top_level.txt
