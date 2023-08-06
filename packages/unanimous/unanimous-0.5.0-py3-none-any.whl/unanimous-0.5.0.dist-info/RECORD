@@ -1,0 +1,12 @@
+unanimous/__init__.py,sha256=newkkMqyJ2eQyn3sSsKQjZDL5uSoQ9N1pC5Cq2WHYAY,120
+unanimous/__main__.py,sha256=yCnPTPR-DP6hXB2hPJA8HbpS2zVIpxGIutHsrLIVOIE,3008
+unanimous/custom_nonwords.py,sha256=vZ18wST_SoCoYcw8q-8tPyp-cmz6eyam019uS4uzXiY,1174
+unanimous/pypi_load.py,sha256=qSAMBXiUkqsRLLkzfhxoE29BVOefl0KWJ2WlssKabYE,376
+unanimous/store.py,sha256=t2OwM4TpYewLPeRN64274kQnTrvhECjvfrxqszKvMWk,4359
+unanimous/version.py,sha256=hUYVP1A4cQGTCwFg-Ey7K20oJFk9rJvplfZuClx7Ato,63
+unanimous/filters/__init__.py,sha256=RfNSV755MIGGfEHrHZOG2lslOsqc8N_C8LS3GmLwASU,93
+unanimous/filters/nonwords.py,sha256=aOdfu2rNgwK06Y0W8gPP7zYsUkxvbxERaidp22a5jFw,2026
+unanimous-0.5.0.dist-info/METADATA,sha256=_Ha9ySarIniuu2ojJL37uvOrX6T-GnpQRN5cIVqTAFk,4631
+unanimous-0.5.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+unanimous-0.5.0.dist-info/top_level.txt,sha256=GvspXAG9StGUMch26xwuYEz8TDNWF-A59lagWBMgSXU,10
+unanimous-0.5.0.dist-info/RECORD,,
