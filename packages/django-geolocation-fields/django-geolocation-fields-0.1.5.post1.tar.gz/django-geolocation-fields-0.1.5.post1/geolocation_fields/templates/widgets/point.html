@@ -1,0 +1,57 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'leaflet/leaflet.css' %}">
+<link rel="stylesheet" href="{% static 'widgets/css/point.css' %}">
+
+
+<input 
+    type="{{ widget.type }}" 
+    name="{{ widget.name }}"
+    {% if widget.value != None %} 
+        value="{{ widget.value|stringformat:'s' }}"
+    {% endif %}
+    {% include "django/forms/widgets/attrs.html" %}
+
+    {% if display_input %}
+
+    {% else %}
+        hidden
+    {% endif %}
+
+>
+
+{% if display_input %}
+{% else %}
+    <div>
+        <span id='point_display'>{{point_value}}</span>
+    </div>
+    <br>
+
+{% endif %}
+
+<div class="map_container">
+    <div id="{{widget.name}}_map" class="map"></div>
+</div>
+
+<script src="{% static 'vendor/jquery-2.2.4.min.js' %}"></script>
+<script src="{% static 'leaflet/leaflet.js' %}"></script>
+
+<script>
+    let input_widget = "{{widget.name}}"
+    let map_attributions = "{{map_attributions}}"
+    let the_value = "{{point_value}}";
+    console.log(the_value);
+    if(the_value){
+        var point_value = JSON.parse(the_value);
+    }
+
+    var map = L.map('{{widget.name}}_map', {
+        center: [6.1720, 1.2263], // Default center to lome
+        zoom: 13,
+        dragging: false,
+    });
+</script>
+
+
+
+<script src="{% static 'widgets/leaflet_implementations/point.js' %}"></script>
