@@ -1,0 +1,11 @@
+future
+psutil
+numpy
+scipy
+pandas
+netcdf4
+svgwrite
+networkx
+matplotlib
+ujson
+mdtraj
