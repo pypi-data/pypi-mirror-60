@@ -1,0 +1,17 @@
+privacy_ccp/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+privacy_ccp/communication_system/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+privacy_ccp/communication_system/message.py,sha256=U7cv6KxUcq_tU4v16TLkMlTjBX637uY6A274wcUqWWc,3409
+privacy_ccp/communication_system/message_board.py,sha256=M4punoMREcNAVfIehztRBuXqLze_Jjm7mec0TFc2dNk,5521
+privacy_ccp/crypto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+privacy_ccp/crypto/encryption.py,sha256=EgemUUzK94Mi9C52Bsq5mRQI4VQm-k632wSvzOeVaKs,2882
+privacy_ccp/crypto/generate_hash.py,sha256=aOomeBEB4c2X8c9hk34F4qv3wE9RHbLbSZh4mNMzzUI,1645
+privacy_ccp/crypto/generate_signature.py,sha256=j7037ONa_hL_15y2dHtcj1sqpd7cAA2slXQU29mRP8k,2058
+privacy_ccp/crypto/rsa_encryption.py,sha256=-DL2F-uBatxu08a7hPOr5MgVISDO1WJQ2DAZITUC1JE,2387
+privacy_ccp/main.py,sha256=LEFZkME_1jwB4EOK2fmvOYUaS_6ltOpps4u_hl0WU_Q,5361
+privacy_ccp/privacy_contracts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+privacy_ccp/simulation_environment/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+privacy_ccp/simulation_environment/user_agent.py,sha256=6799PoK18UvFv_VpFLm3vFmNlSEqOhAs0A5QiWe481E,5341
+privacy_ccp-0.1.0.dist-info/entry_points.txt,sha256=asAna5F9RVdTb9hRGPEdRVv8JvKz8S4kTfvtGz_6apE,45
+privacy_ccp-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+privacy_ccp-0.1.0.dist-info/METADATA,sha256=Ph8ASz875nCj0qoVNmcLyLnT-Qls-YXQwpDQno2V4U0,457
+privacy_ccp-0.1.0.dist-info/RECORD,,
