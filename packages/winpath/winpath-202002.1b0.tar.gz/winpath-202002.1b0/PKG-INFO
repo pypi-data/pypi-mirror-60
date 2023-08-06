@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: winpath
+Version: 202002.1b0
+Summary: Retrieves common Windows folders as Unicode strings
+Home-page: https://github.com/git-albertomarin/winpath
+Author: Alberto J. Marin
+Author-email: alberto@ajmar.in
