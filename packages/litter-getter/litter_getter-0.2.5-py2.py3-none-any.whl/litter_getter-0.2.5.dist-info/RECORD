@@ -1,0 +1,10 @@
+litter_getter/__init__.py,sha256=Xsa3ayOMVkhUWm4t06YeyHE0apjpZefxLH4ylp0CDtU,22
+litter_getter/hero.py,sha256=yQzCDOlzi0qHTTjRjXB-S_bYFSV1eZCZTPVblaFEHrM,4718
+litter_getter/pubmed.py,sha256=quiDbbuN3omqofzspNb70iy0TplO6ZZ7g-QA7lfJCTY,11100
+litter_getter/ris.py,sha256=wvwnsRB6qAmJIW8vkyZKjSD_VDuKUf6pjGojdDCVunk,8448
+litter_getter/utils.py,sha256=WyGOxD9M9oUCLS3cPEmoW4EpnzLoe0F9-qVZuHcWhL8,544
+litter_getter-0.2.5.dist-info/LICENSE,sha256=NP-hlNWSOBOUo1gTL3AgEb04LLqlXxDEmhiqvCsTt54,1072
+litter_getter-0.2.5.dist-info/METADATA,sha256=J8smd2130sxv5jjtkGi2I6Qrx5231_2CdydgHMfpSwo,1008
+litter_getter-0.2.5.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+litter_getter-0.2.5.dist-info/top_level.txt,sha256=w0MFZQNyzZBy4XrC1QB3pidQFJj5HSzLH4F_futxcHs,14
+litter_getter-0.2.5.dist-info/RECORD,,
