@@ -1,0 +1,17 @@
+README.rst
+setup.cfg
+setup.py
+dtoolai/data.py
+dtoolai/imageutils.py
+dtoolai/models.py
+dtoolai/parameters.py
+dtoolai/trained.py
+dtoolai/training.py
+dtoolai/utils.py
+dtoolai.egg-info/PKG-INFO
+dtoolai.egg-info/SOURCES.txt
+dtoolai.egg-info/dependency_links.txt
+dtoolai.egg-info/entry_points.txt
+dtoolai.egg-info/not-zip-safe
+dtoolai.egg-info/requires.txt
+dtoolai.egg-info/top_level.txt

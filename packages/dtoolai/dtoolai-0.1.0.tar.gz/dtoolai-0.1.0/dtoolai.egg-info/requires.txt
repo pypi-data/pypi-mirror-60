@@ -1,0 +1,6 @@
+dtoolcore
+dtool-http
+click
+pillow
+torch
+torchvision

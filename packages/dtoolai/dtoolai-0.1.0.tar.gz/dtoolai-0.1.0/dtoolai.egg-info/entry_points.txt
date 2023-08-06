@@ -1,0 +1,4 @@
+[console_scripts]
+create-image-dataset-from-dirtree = dtoolai.utils:image_dataset_from_dirtree_cli
+dtoolai-provenance = dtoolai.utils:print_provenance
+
