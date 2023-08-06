@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: kphys
+Version: 0.0.1
+Summary: A small example package for rendering physics on blender
+Home-page: https://https://github.com/Karthik-Dulam/kphys
+Author: Karthik Dulam
+Author-email: karthik.06.dulam@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Author: Karthik Dulam
+Email: karthik.06.dulam@gmail.com
+31-01-2020
+2008 hrs IST
+
+My Physics engine with blender renedering
+
