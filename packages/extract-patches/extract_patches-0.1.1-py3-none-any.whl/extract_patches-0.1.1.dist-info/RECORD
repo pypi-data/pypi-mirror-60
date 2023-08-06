@@ -1,0 +1,10 @@
+extract_patches/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+extract_patches/_nbdev.py,sha256=nInhqFr1OllYbz22f4leijtNjrC0HvbrQ6tkpNutY-A,998
+extract_patches/core.py,sha256=MGa_kWr50nLOVMdBft_gBkilzE2BIDDaOO3sftZSYf8,6165
+extract_patches/laf.py,sha256=3rQdqnJbi-QYhQg45ywi3XUpBPeU31HUdjxWgvA1TpE,6516
+extract_patches-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+extract_patches-0.1.1.dist-info/METADATA,sha256=wWwMIijmYHzPopB40IAbbO470elmzyH-6_cKS1WViQQ,8120
+extract_patches-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+extract_patches-0.1.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+extract_patches-0.1.1.dist-info/top_level.txt,sha256=hGjLjXdQ0IUHVOBafFkqXA7VEo44tPh_TW1D-z3r_RQ,16
+extract_patches-0.1.1.dist-info/RECORD,,
