@@ -1,0 +1,4 @@
+include README.md
+include colours_library/white.jpg
+include colours_library/whiteblack.jpg
+include colours_library/black.jpg
