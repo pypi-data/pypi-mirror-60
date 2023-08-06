@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: vkbee
+Version: 0.1
+Summary: Simple Async VKLibrary faster than vk_api
+Home-page: https://github.com/asyncvk/vkbee
+Author: YamkaFox
+Author-email: cryptoyamafox@gmail.com
+License: Mozilla Public License 2.0
+Project-URL: Github, https://github.com/asyncvk/vkbee
+Project-URL: Documentation, https://github.com/asyncvk/vkbee
+Keywords: vk api framework python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: requests
+
+![vkbee](https://raw.githubusercontent.com/asyncvk/vkbee/master/bg.png)
+# vkbee
+Simple Async VKLibrary faster than vk_api
+```python
+import aiohttp
+import asyncio
+import longpoll
+import api
+import time
+
+
+
+async def main(loop):
+    token = "paste your token here"
+
+    vk = api.VkApi(token, loop=loop)
+    vk_poll = longpoll.BotLongpoll(vk, "group id paste here")
+
+    start_time = time.time()
+    event_count = 0
+    async for event in vk_poll.events():
+
+        data = {
+            'random_id': 0,
+            'peer_id': event['object']['message']['peer_id'],
+            'message': 'Pre-alpha check longpoll'
+        }
+
+
+        if event['object']['message']['peer_id'] < 2000000000:
+            if event['type'] == 'message_new':
+                asyncio.create_task(game.enter(event))
+
+            print('user')
+            print(event['object']['message']['peer_id'])
+            asyncio.create_task(vk.call('messages.send', data=data))
+        else:
+            print('chat')
+
+        event_count += 1
+        work_time = time.time() - start_time
+        print(f'All Events - {event_count}')
+        print(f'Work Time - {work_time}')
+        avr_time = work_time / event_count
+        speed = event_count / work_time
+        print(f'Events in Second - {speed}')
+        print(f'Average Time - {avr_time}')
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main(loop))
+
+```
+
+
