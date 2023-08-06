@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: web-platform-py-sdk
+Version: 0.1.0
+Summary: web-platform sdk tools
+Home-page: https://github.com/allwefantasy/sfcli
+Author: ZhuWilliam
+Author-email: allwefantasy@gmail.com
+License: http://www.apache.org/licenses/LICENSE-2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: requests (>=2.22.0)
+
+With this lib help you to develop base on web-platform
+
+

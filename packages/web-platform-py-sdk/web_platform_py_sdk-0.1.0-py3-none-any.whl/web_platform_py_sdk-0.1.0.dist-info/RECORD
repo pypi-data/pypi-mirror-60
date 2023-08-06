@@ -1,0 +1,15 @@
+tech/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/serviceframework/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/serviceframework/sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/serviceframework/sdk/app_runtime.py,sha256=9s-307ptiaEeMNtmWUjbh4eD8-0E5njo6cDcsJfS600,3022
+tech/mlsql/serviceframework/sdk/version.py,sha256=gUC9joFgsQUdO_Okq-dibFUR_xAD7ly425FVsF6H844,44
+tech/mlsql/serviceframework/sdk/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/serviceframework/sdk/plugins/ar_python.py,sha256=AxpLZiqxn-btNztVgppau9Bxso9CuQcVkEXQRD71kgk,2693
+tech/mlsql/serviceframework/sdk/plugins/user_system.py,sha256=bJBbHRmOms7o5r1VM2T8wPqy2raUXdzyKMFjYNjOkdU,1178
+tech/mlsql/serviceframework/sdk/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/serviceframework/sdk/tests/test.py,sha256=oZkmR-DH1_SsNTJD_U9xNaSEfH529Wca8HbplBii3-8,756
+web_platform_py_sdk-0.1.0.dist-info/METADATA,sha256=6AmS9YK0cG6ZzQCiJw1q3PqwvObyvd5ShnoiAfAmtv4,723
+web_platform_py_sdk-0.1.0.dist-info/RECORD,,
+web_platform_py_sdk-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+web_platform_py_sdk-0.1.0.dist-info/top_level.txt,sha256=wWIyTjCg-fGhEjOvcdurcjtSh-sAi8Sy4iEdDAIkIAU,5
