@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: parakh-basic-string-pkgs
+Version: 0.1
+Summary: Basic packages which is used in basic programs while learning a language
+Home-page: UNKNOWN
+Author: parakhtayal
+Author-email: parakh.tayal@sganalytics.com
+License: MIT
+Platform: UNKNOWN
+
+First Package replaces $ in a string while passing two arguments, first giving string and second the replacement character; Second package reverses num while giving integer and receiving integer itself
+
+
