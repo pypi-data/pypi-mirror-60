@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nomnomdata-cli
+Version: 0.1.0
+Summary: Core package for the nomnomdata cli suite
+Home-page: https://gitlab.com/nomnomdata/tools/nomnomdata-cli
+Author: Nom Nom Data
+Author-email: info@nomnomdata.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pytest (>=4.3.0)
+Requires-Dist: click-plugins (>=1.0.4)
+Requires-Dist: click (>=7.0)
+Requires-Dist: coloredlogs (>=4.12.1)
+
+UNKNOWN
+
+

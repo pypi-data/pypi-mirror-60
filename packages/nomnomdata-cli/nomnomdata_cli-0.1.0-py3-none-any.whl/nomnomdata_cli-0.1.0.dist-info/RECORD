@@ -1,0 +1,10 @@
+nomnomdata/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nomnomdata/cli/cli.py,sha256=Fls_v9SZmi3qSgq4F4xuNrUGtcho7dyvQRWxByA9pbU,725
+nomnomdata/cli/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nomnomdata/cli/tests/test_cli.py,sha256=QT3UAU8V9MzVc9zgSzvt1IiMn4f2xMdQkx0Vg874X_k,178
+nomnomdata_cli-0.1.0.dist-info/LICENSE,sha256=N_LQHYNBQzKC7MJMeC-r0oO3BZTvR9Hk43YANr9yn3g,1269
+nomnomdata_cli-0.1.0.dist-info/METADATA,sha256=b0svceu8US46hDd6ZyX3WdAMp_5QsMeGI7s0TrU-74Q,600
+nomnomdata_cli-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+nomnomdata_cli-0.1.0.dist-info/entry_points.txt,sha256=2Z0qlVsoXa2p5kzUab8BjznOCZ9xtxDTEGBXjiA2C9w,48
+nomnomdata_cli-0.1.0.dist-info/top_level.txt,sha256=xhQsg0KvSMzl_Qxgv0b_2xwpOt4csPu-ib7zxsO_TRs,11
+nomnomdata_cli-0.1.0.dist-info/RECORD,,
