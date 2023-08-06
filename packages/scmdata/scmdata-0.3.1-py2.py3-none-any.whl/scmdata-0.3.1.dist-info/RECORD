@@ -1,0 +1,14 @@
+scmdata/__init__.py,sha256=Ep-8BIJXg8I95uBhUFM2dCVE2EzmpN3glDrO5tDoQ8U,162
+scmdata/_version.py,sha256=Wpq47ZqSmk2a5fhHPIWjN1NwB1BISkGqlftN6U5dhPw,497
+scmdata/dataframe.py,sha256=uwTnDLbd174bWqfcXF6CClQRRW8ehlASl5vzvbfbYj0,52255
+scmdata/filters.py,sha256=-F-zsfaFMauLRloXmAKcCcDQxhofY6L1R1L8rNurVsY,11658
+scmdata/offsets.py,sha256=yoPAbyZOIQSheetqx2gqId0q589MY6nnIGSbIGyF4EA,8383
+scmdata/pyam_compat.py,sha256=3iM1Vt5qa_ZW0GOAD3mprBTEviI1tKV-Bk2FIlBqd2M,1883
+scmdata/time.py,sha256=igOpo-IllRR52Rnn5rLqAzGIpPqvGoyhkSaDG4CdZ0c,10032
+scmdata/units.py,sha256=omChPxXhxRLxMPfpkoyX_jRscfk2X9vbxO6D6xXNTH4,17546
+scmdata/data/metric_conversions.csv,sha256=Q0PRnX5eaQl2UvI-HzhZoqS20WdZAJEE9xE2D5EcNl8,2017
+scmdata-0.3.1.dist-info/LICENSE,sha256=HlF348XT3hKyTnTPiSzVrrFy0svmQo1RpwAIzJ4ntes,1503
+scmdata-0.3.1.dist-info/METADATA,sha256=0Av_xnBiL72RfjRyYXJmZMos7vwQwcgJV7Mkla3zgYw,4593
+scmdata-0.3.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+scmdata-0.3.1.dist-info/top_level.txt,sha256=LWSKuT4j79EYPtYjQyXhIsRmbh5tbS7hm4U_9AoY5Lc,8
+scmdata-0.3.1.dist-info/RECORD,,
