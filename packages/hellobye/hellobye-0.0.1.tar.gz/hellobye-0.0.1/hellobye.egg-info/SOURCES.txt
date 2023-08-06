@@ -1,0 +1,8 @@
+README.md
+setup.py
+hellobye/__init__.py
+hellobye/hellobye.py
+hellobye.egg-info/PKG-INFO
+hellobye.egg-info/SOURCES.txt
+hellobye.egg-info/dependency_links.txt
+hellobye.egg-info/top_level.txt
