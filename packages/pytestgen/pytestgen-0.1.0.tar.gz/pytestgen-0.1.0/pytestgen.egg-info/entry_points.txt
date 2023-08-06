@@ -1,0 +1,3 @@
+[console_scripts]
+pytestgen = pytestgen.cli.pytestgen:cli
+
