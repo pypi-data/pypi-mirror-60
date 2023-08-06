@@ -1,0 +1,17 @@
+SQLAlchemy
+flask-restplus
+flask_sqlalchemy
+
+[dev]
+bandit
+coverage
+pylint
+pytest-cov
+sphinx-theme
+
+[test]
+bandit
+coverage
+pylint
+pytest-cov
+sphinx-theme
