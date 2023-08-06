@@ -1,0 +1,10 @@
+datamart_materialize/__init__.py,sha256=QJZ3_j-crM_whltWKxMoh7E7op-qUSOftTD-KujAlW4,9969
+datamart_materialize/d3m.py,sha256=c-PoD-R0AJnV8XyOrah95hOCQ3EUN5GTrtNjTi8ho6U,3729
+datamart_materialize/excel.py,sha256=YKZDSvTq3QespfxJ2RQ4GdfIldzHCIbdlYSQWx9ztCk,1799
+datamart_materialize/noaa.py,sha256=XOrXli3qJtcW9i58FdGEPgdtxPr5ggp-yAt3DNTIQy8,2812
+datamart_materialize/types.py,sha256=i0rpjOj_Ec-hemtesuakiKaL35T-gjV21RZkepugCSQ,543
+datamart_materialize-0.5.4.dist-info/METADATA,sha256=lRglpPEh1UZFgDgDuyX9e8fxFmsdNbeS1x0PfHjPJnU,1848
+datamart_materialize-0.5.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+datamart_materialize-0.5.4.dist-info/entry_points.txt,sha256=MFaaWjBTZPuzP4FZkYmi3nuuqjmGkC948u-daSyIX2w,274
+datamart_materialize-0.5.4.dist-info/top_level.txt,sha256=3OEE-2fZcruJ01QDmV8yxP-9Z7eFKIYnBc_NOely0Rc,21
+datamart_materialize-0.5.4.dist-info/RECORD,,
