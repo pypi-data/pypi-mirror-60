@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        ifile=ifile.cli:cli
+    
