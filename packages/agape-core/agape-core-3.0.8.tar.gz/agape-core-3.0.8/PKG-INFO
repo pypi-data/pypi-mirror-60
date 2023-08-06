@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: agape-core
+Version: 3.0.8
+Summary: Agape Core libraries for application development.
+Home-page: https://gitlab.com/maverik.software/agape-django
+Author: Maverik Apollo Minett
+Author-email: maverik.apollo.minett@gmail.com
+License: All rights reserved.
+Description: # Agape
+        
+        Agape is DRY software.
+        
+        ## Description
+        
+        See [the github repo](https://github.com/MaverikSoftware/agape) for more information.
+        
+        ## License
+        
+        Copyright (C) 2017-2020 Jeffrey Hallock, Maverik Software  
+        
+        The (MIT) license.
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown

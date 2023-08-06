@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+include agape/django/*
+include agape/models.py
+include agape/serializers.py
+include agape/signals.py
+include agape/viewsets.py
+include */migrations/*
