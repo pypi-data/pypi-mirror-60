@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/elide_text.egg-info/PKG-INFO
+src/elide_text.egg-info/SOURCES.txt
+src/elide_text.egg-info/dependency_links.txt
+src/elide_text.egg-info/not-zip-safe
+src/elide_text.egg-info/top_level.txt
+src/elidetext/__init__.py
+src/elidetext/elidetext.py
