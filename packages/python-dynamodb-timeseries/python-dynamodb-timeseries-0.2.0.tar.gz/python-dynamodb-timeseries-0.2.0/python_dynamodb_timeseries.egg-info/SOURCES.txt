@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+dynamodb_timeseries/__init__.py
+dynamodb_timeseries/constants.py
+dynamodb_timeseries/dynamodb.py
+dynamodb_timeseries/exceptions.py
+dynamodb_timeseries/tableresolver.py
+dynamodb_timeseries/timeseries.py
+python_dynamodb_timeseries.egg-info/PKG-INFO
+python_dynamodb_timeseries.egg-info/SOURCES.txt
+python_dynamodb_timeseries.egg-info/dependency_links.txt
+python_dynamodb_timeseries.egg-info/requires.txt
+python_dynamodb_timeseries.egg-info/top_level.txt
