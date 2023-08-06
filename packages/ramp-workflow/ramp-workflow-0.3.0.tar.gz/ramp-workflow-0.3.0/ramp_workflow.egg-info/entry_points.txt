@@ -1,0 +1,10 @@
+[console_scripts]
+ramp-hyperopt = rampwf.hyperopt.cli.hyperopt:start
+ramp-show = rampwf.utils.cli.show:start
+ramp-test = rampwf.utils.cli.testing:start
+ramp_blend_submissions = rampwf.utils.command_line:ramp_blend_submissions
+ramp_convert_notebook = rampwf.utils.command_line:ramp_convert_notebook
+ramp_leaderboard = rampwf.utils.command_line:ramp_leaderboard
+ramp_test_notebook = rampwf.utils.command_line:ramp_test_notebook
+ramp_test_submission = rampwf.utils.command_line:ramp_test_submission
+
