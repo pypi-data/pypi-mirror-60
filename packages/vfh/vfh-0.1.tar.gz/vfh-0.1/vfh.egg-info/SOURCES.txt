@@ -1,0 +1,7 @@
+setup.py
+vfh/VFH.py
+vfh/__init__.py
+vfh.egg-info/PKG-INFO
+vfh.egg-info/SOURCES.txt
+vfh.egg-info/dependency_links.txt
+vfh.egg-info/top_level.txt
