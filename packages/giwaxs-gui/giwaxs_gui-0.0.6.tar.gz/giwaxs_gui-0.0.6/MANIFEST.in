@@ -1,0 +1,2 @@
+include giwaxs_gui/static/default_config/*.json
+include giwaxs_gui/static/icons/*.png
