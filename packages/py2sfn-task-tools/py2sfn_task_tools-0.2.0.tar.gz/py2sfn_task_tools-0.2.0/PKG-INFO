@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: py2sfn_task_tools
+Version: 0.2.0
+Summary: Tools for tasks embedded in an AWS Step Functions state machine.
+Home-page: https://github.com/NarrativeScience/py2sfn-task-tools
+Author: Jonathan Drake
+Author-email: jdrake@narrativescience.com
