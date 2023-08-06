@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+chalice_restful/__init__.py
+chalice_restful/authorization.py
+chalice_restful/configs.py
+chalice_restful/core.py
+chalice_restful.egg-info/PKG-INFO
+chalice_restful.egg-info/SOURCES.txt
+chalice_restful.egg-info/dependency_links.txt
+chalice_restful.egg-info/requires.txt
+chalice_restful.egg-info/top_level.txt
+chalice_restful/common/__init__.py
+chalice_restful/common/guards.py
