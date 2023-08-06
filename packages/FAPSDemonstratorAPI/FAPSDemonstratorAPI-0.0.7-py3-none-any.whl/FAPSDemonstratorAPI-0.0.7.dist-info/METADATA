@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: FAPSDemonstratorAPI
+Version: 0.0.7
+Summary: FAPS Demonstrator FAPSDemonstratorAPI api
+Home-page: https://faps.de/
+Author: FAU - FAPS
+Author-email: jupiter.bakakeu@faps.fau.de
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy
+Requires-Dist: deap
+Requires-Dist: pika
+Requires-Dist: PyYAML
+Requires-Dist: pandas
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+Requires-Dist: Pillow
+Requires-Dist: opencv-contrib-python
+
+FAPS Demonstrator API. This api enable the control of the demonstrator from the cloud.
+
+
