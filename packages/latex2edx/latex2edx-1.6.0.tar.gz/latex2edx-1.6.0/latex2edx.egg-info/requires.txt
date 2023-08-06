@@ -1,0 +1,6 @@
+lxml
+path.py
+plastex
+beautifulsoup4
+latex2dnd
+pyyaml
