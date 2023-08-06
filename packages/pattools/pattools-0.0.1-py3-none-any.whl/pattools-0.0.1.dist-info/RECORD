@@ -1,0 +1,11 @@
+pattools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pattools/ants.py,sha256=nRjC2XNeQvX8Hzol6Yy1cuoiXflontSpfBNA-VWRea8,1751
+pattools/fsl.py,sha256=4OjNyjKN3J771TRWiZiWTjfS3E3fC2kR7IYiTOLWw9g,500
+pattools/pacs.py,sha256=Jl-1HSG0SoHRioVKPRBTWBJMka68wIdD0kp3er5QSY0,24075
+pattools/resources.py,sha256=Um0R5rOUixFBs30gYxe4GbcsBYnxCECuHFFV9AMviTg,4161
+pattools/timelines.py,sha256=oGUhSV2INKT-228cjoeLEVED4UqvDkelgpMrUtj_Ros,20996
+pattools-0.0.1.dist-info/LICENSE,sha256=vGw6GvNv0aPqq2Ol51NB0PcTGV1yKoN8TVP_18_JM0w,1082
+pattools-0.0.1.dist-info/METADATA,sha256=qle55GKnVpOnjiKaBGSlee6kGvUI_wJj-pXw8LE3xf4,1177
+pattools-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pattools-0.0.1.dist-info/top_level.txt,sha256=2nFF1G2uO06aQrZtLkEw1qXZ98MJfqS30_PxeNzCiXo,9
+pattools-0.0.1.dist-info/RECORD,,
