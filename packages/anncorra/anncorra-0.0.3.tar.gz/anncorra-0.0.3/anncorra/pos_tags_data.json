@@ -1,0 +1,158 @@
+[
+  {
+    "POS Tags": "CC",
+    "Full Form": "Conjuncts",
+    "Example": "mohana bAzAra jA rahA hE Ora_CC  ravi skUla jA rahA hE\n'Mohan' 'market' 'go' 'PROG' 'is' 'and' 'Ravi' 'school' 'go' 'PROG' 'is'\n“Mohan is going to the market and Ravi is going to the school”",
+    "Description": "It indicates the words that are linked to another word, phrase or clause through coordination"
+  },
+  {
+    "POS Tags": "DEM",
+    "Full Form": "Demonstratives",
+    "Example": "vaha  ladakA merA bhAI       hE         \n 'that'   'boy'      'my'   'brother' 'is'",
+    "Description": "It denotes the words that are used to indicate which entities are being referred to and distinguish those entities from others."
+  },
+  {
+    "POS Tags": "INTF",
+    "Full Form": "Intensifier",
+    "Example": "hEdarAbAda  meM   aMgUra   bahuta_INTF   acche   milate      hEM\n'HyderabAd'    'in'        'grapes'            'very'     'good'  'available'  'are'  \n“Very good grapes are available in Hyderabad”.",
+    "Description": "It marks the words that intensify the adjectives or adverbs"
+  },
+  {
+    "POS Tags": "JJ",
+    "Full Form": "Adjective",
+    "Example": "vaha mahaMgI_JJ mahaMgI_JJ  cIjZeM kharIda lAyA   \n 'he'   'expensive' 'expensive' 'things' 'buy'   'bring'\n“He bought all expensive things”.",
+    "Description": "It denotes the words that are used to describe or modify nouns or pronouns"
+  },
+  {
+    "POS Tags": "JJC",
+    "Full Form": "Part of compound adjective",
+    "Example": "bagIce  meM ranga_JJC  biraMge_JJ  phUla     khile         the\n'garden'  'in'        'colourful'                      'flowers' 'flowered' 'were'\n“The garden had colorful flowers”",
+    "Description": "It denotes the single adjective made up of more than one word"
+  },
+  {
+    "POS Tags": "NN",
+    "Full Form": "Noun",
+    "Example": "yaha bAta  galI_NN galI_RDP meM  phEla gayI\n 'this' 'talk'  'lane'      'lane'         'in'    'spread' 'went' \n “The word was spread in every lane”.",
+    "Description": "It indicates the nouns in sentence. This tag does not get into disctinction based on the grammatical information contained in noun word"
+  },
+  {
+    "POS Tags": "NNC",
+    "Full Form": "part of compound nouns",
+    "Example": "keMdra_NNC sarakAra_NN.\n'kendra'           'sarakara'\n\"Central government",
+    "Description": "It denotes the word that is compounded noun. Like \"Kendra\" is compunded with noun \"Sarakara\"."
+  },
+  {
+    "POS Tags": "NNP",
+    "Full Form": "Proper Nouns",
+    "Example": "atala bihAri bAjapaI_NNP bhArata ke pradhAna mantrI the.\n 'Atal' 'Bihari' 'Vajpayee' 'India'   'of'  'prime'    'minister' 'was'\n “Atal Behari Vajpayee was the Prime Minister of India”.",
+    "Description": "It denotes the words that  can occur common lexical items or as proper names. exmaple  last name(surname)"
+  },
+  {
+    "POS Tags": "NNPC",
+    "Full Form": "part of proper nouns",
+    "Example": "Ranjit_NNPC Deshmukh_NNP \n'Ranjit'              'Deshmukh'\n\"Ranjit Deshmukh",
+    "Description": "It denotes the word that is linked with proper noun in sentence just like the  first name in hindi linked with pronoun last name(surname)."
+  },
+  {
+    "POS Tags": "NST",
+    "Full Form": "Noun denoting spatial and temporal expressions",
+    "Example": "vaha Upara   so rahA thA .    \n'he'   'upstairs'  'sleep'  'PROG'  'was'\n“He was sleeping upstairs”.",
+    "Description": "It indicates the word which are used to show certain expressions or content words denoting time and space. like upr, niche, pehle, bahar"
+  },
+  {
+    "POS Tags": "NSTC",
+    "Full Form": "Compound Noun denoting spatial and temporal expressions",
+    "Example": "voh upar_NSTC niche_NST bhag raha tha \n'he'  'up'              'down'         'running'\n\"He was running up and down",
+    "Description": "It denotes a noun denoting spatial and temporal expressions made up of more than one word."
+  },
+  {
+    "POS Tags": "PRP",
+    "Full Form": "Pronoun",
+    "Example": "mEne_PRP usako_PRP  dekhA\n'I'                  'him'            'saw'\n\"I saw him",
+    "Description": "Any word that is a pronoun( accusative, dative, possesive etc.) are tagged as PRP"
+  },
+  {
+    "POS Tags": "PRPC",
+    "Full Form": "Compound Pronoun",
+    "Example": "svayam_PRPC voh_PRP khade hue\n'self'                   'he'           'stood'\n\"he himself stood up",
+    "Description": "It denotes a pronoun made up of more than one word."
+  },
+  {
+    "POS Tags": "PSP",
+    "Full Form": "Postpositions",
+    "Example": "mEne_PRP usako_PRP  bAzAra_NN meM_PSP dekhA\n'I'                 'him'              'market'        'in'              'saw'\n\"I saw him in the market",
+    "Description": "Class of words used to express spatial or temporal relations, that come after the word it governs"
+  },
+  {
+    "POS Tags": "QC",
+    "Full Form": "Cardinals",
+    "Example": "vaha itne_QC log  baithe the\n'there' 'many'  'people' 'sat'\n\"Many people were sitting there",
+    "Description": "Any word denoting quantity is tagged QC"
+  },
+  {
+    "POS Tags": "QCC",
+    "Full Form": "Cardinal Compund",
+    "Example": "vaha itne_QCC saare_QC log baithe the",
+    "Description": "Compound is of type Cardinal so the part is labelled QCC"
+  },
+  {
+    "POS Tags": "QF",
+    "Full Form": "Quantifiers",
+    "Example": "vahAz bahuta_QF  loga        Aye    the\n'there'  many'          'people'  'came'  'was' \n“Many people came there”.",
+    "Description": "All quantifiers like Hindi kama (less), jyAdA (more), bahuwa (lots), etc. will be marked as QF."
+  },
+  {
+    "POS Tags": "QFC",
+    "Full Form": "Quantifier Compund",
+    "Example": "vahAz bahuta_QFC saare _QF  loga        Aye    the\n'there'  many'          'people'  'came'  'was' \n“Many people came there”.",
+    "Description": "Compound is of type Quantifier so the part is labelled QCC"
+  },
+  {
+    "POS Tags": "QO",
+    "Full Form": "Ordinals",
+    "Example": "mEMne kitAba tIsare_QO laDake ko dI  thI\n'I'          'book'   'third'         'boy'     'to'  'give' 'was'\nI gave the book to the third boy”",
+    "Description": "First, second, third … are ordinal numbers. Ordinal numbers can be created by adding -TH to the end of a cardinal number"
+  },
+  {
+    "POS Tags": "RB",
+    "Full Form": "Adverb",
+    "Example": "Aasha acha_RB gati hai\n'Aasha' 'good' 'sings'\n\"Aasha sings well.",
+    "Description": "A word or phrase that modifies or qualifies an adjective, verb, or other adverb or a word group"
+  },
+  {
+    "POS Tags": "RBC",
+    "Full Form": "Adverb Compund",
+    "Example": "Kuldeep bahut_RBC ACHa_RB gata hai\n'Kuldeep''much'        'good'   '      'sings'\n\"Kuldeep sings much well\".",
+    "Description": "It denotes that the word is an adverb made of more than one word."
+  },
+  {
+    "POS Tags": "RDP",
+    "Full Form": "Reduplication",
+    "Example": "vaha dhIre_RB dhIre_RDP    cala      rahA     thA.\n'he'    'slowly'      'slowly'         'walk'   'was'\n“He was walking (very) slowly.",
+    "Description": "In Indian languages, some words are repeated intentionally. They are classified under 'RDP' tag."
+  },
+  {
+    "POS Tags": "RP",
+    "Full Form": "Particles",
+    "Example": "mujhako to_RP  nahIM patA                    \n 'I'           'particile' 'not'  'know'                                                            \n\"I don’t know\".",
+    "Description": "A particle is a word that has a grammatical function but does not fit into the main parts of speech.The expressions such as bhi, toh, ji, sa, na, etc. are called particles. The 'na' in the list is not the 'na' used for negation."
+  },
+  {
+    "POS Tags": "VAUX",
+    "Full Form": "Verb Aux",
+    "Example": "laDZakA seba khAtA  raHA_VAUX thA_VAUX\n'boy'       'apple' 'eating'  'PROG'      'was' \n\"Boy was eating apple.",
+    "Description": "It denotes a verb which isused in forming the tenses, moods, and voices of other verbs (called auxiliary verb)."
+  },
+  {
+    "POS Tags": "VM",
+    "Full Form": "Verb-finite",
+    "Example": "laDZakA seba     khAtA_VM       raHA    thA\n'boy'       'apple'  'eating'              'PROG' 'was'  \n\"Boy was eating apple.",
+    "Description": "It denotes that the word is a finite verb. A finite verb is a form of a verb that has a subject (expressed or implied)."
+  },
+  {
+    "POS Tags": "WQ",
+    "Full Form": "Question words",
+    "Example": "kOna  AyA   hE\n'who' 'come' 'has'\n“Who has come ?",
+    "Description": "It indicates the words we use to ask questions like why, when, where, etc."
+  }
+]

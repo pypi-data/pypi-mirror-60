@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+anncorra/pos_tags_data.json
+anncorra.egg-info/PKG-INFO
+anncorra.egg-info/SOURCES.txt
+anncorra.egg-info/dependency_links.txt
+anncorra.egg-info/top_level.txt
