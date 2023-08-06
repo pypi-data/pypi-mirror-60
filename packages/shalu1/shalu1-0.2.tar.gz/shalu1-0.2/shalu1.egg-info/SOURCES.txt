@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+shalu1.egg-info/PKG-INFO
+shalu1.egg-info/SOURCES.txt
+shalu1.egg-info/dependency_links.txt
+shalu1.egg-info/not-zip-safe
+shalu1.egg-info/top_level.txt
