@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: islandest
+Version: 0.0.0.dev4
+Summary: A command line tool to identify and annotate tRNA-targeting genomic islands
+Home-page: https://github.com/bhattlab/islandest
+Author: Matt Durrant
+Author-email: mdurrant@stanford.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: click
+Requires-Dist: biopython
+
+UNKNOWN
+
+
