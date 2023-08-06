@@ -1,0 +1,6 @@
+*.pyc
+/dist/
+/venv/
+/quantly.egg-info/
+/setup.py
+/.idea/
