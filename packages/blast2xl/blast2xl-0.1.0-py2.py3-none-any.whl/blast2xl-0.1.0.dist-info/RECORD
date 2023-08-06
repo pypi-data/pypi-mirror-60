@@ -1,0 +1,13 @@
+blast2xl/__init__.py,sha256=tG0vv6ZtNbC4pXE66IZfv9HN_Ayk39oWsYhVfM7EOdc,142
+blast2xl/blast2xl.py,sha256=tN7gptAFUIpHWiPoA3HTDPOd0I77b9G6esrauU5248I,2311
+blast2xl/cli.py,sha256=9Oc8Vnu1AR53z_v_FBKCpKgCxMk6vCrI3iw9ir9KMNI,6457
+blast2xl/io.py,sha256=ply9SR-QTICt2rHebK-zOTJGVao3vZnWrMV6oYvbMmo,6922
+blast2xl/log.py,sha256=yH79u_5AvGZWAPWFRvVEqcstFoBoGhhrC32IxWJNOFk,456
+blast2xl/util.py,sha256=HPcpyWpTa-Lbfo1js_DiebnO89dT3qYo0pCt02NlYJQ,233
+blast2xl-0.1.0.dist-info/AUTHORS.rst,sha256=A_cU2mLHSZuh8NU0Dht5D4yn0e2IqlWHHzCxQn4YHx8,172
+blast2xl-0.1.0.dist-info/LICENSE,sha256=FFzQYWbO-jgUEoqxspYlY_Eno4ifm66FBF0zAtzQyE0,1077
+blast2xl-0.1.0.dist-info/METADATA,sha256=MH-Xpph8vNH8Xo4CsxouShpShkyNR2QhoCqhg5MLjxY,2033
+blast2xl-0.1.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+blast2xl-0.1.0.dist-info/entry_points.txt,sha256=LbTBKMpTzzMx2D-uSPvwf1m1fOjeRtEt0GiFYe1NJHs,48
+blast2xl-0.1.0.dist-info/top_level.txt,sha256=SzAh2BzMt77sr_75gtlIu69-Si1mxguNoherI2x62OM,9
+blast2xl-0.1.0.dist-info/RECORD,,
