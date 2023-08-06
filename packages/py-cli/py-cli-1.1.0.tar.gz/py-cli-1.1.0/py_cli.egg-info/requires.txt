@@ -1,0 +1,9 @@
+androguard
+oss2
+requests
+
+[dev]
+check-manifest
+
+[test]
+coverage

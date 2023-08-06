@@ -1,0 +1,16 @@
+README.md
+setup.py
+lang/__init__.py
+lang/xio.py
+py_cli.egg-info/PKG-INFO
+py_cli.egg-info/SOURCES.txt
+py_cli.egg-info/dependency_links.txt
+py_cli.egg-info/entry_points.txt
+py_cli.egg-info/not-zip-safe
+py_cli.egg-info/requires.txt
+py_cli.egg-info/top_level.txt
+xcli/__init__.py
+xcli/apks.py
+xcli/deploy.py
+xcli/fir.py
+xcli/oxs.py
