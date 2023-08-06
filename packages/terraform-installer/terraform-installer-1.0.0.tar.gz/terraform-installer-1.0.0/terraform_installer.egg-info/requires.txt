@@ -1,0 +1,8 @@
+setuptools
+string-color
+beautifulsoup4
+requests
+tqdm
+
+[:platform_system == "Windows"]
+pywin32
