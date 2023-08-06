@@ -1,0 +1,11 @@
+README.md
+setup.py
+hein_utilities/__init__.py
+hein_utilities/files.py
+hein_utilities/misc.py
+hein_utilities/slackbot.py
+hein_utilities.egg-info/PKG-INFO
+hein_utilities.egg-info/SOURCES.txt
+hein_utilities.egg-info/dependency_links.txt
+hein_utilities.egg-info/requires.txt
+hein_utilities.egg-info/top_level.txt
