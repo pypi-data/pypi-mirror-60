@@ -1,0 +1,10 @@
+README.md
+setup.py
+notifylog/__init__.py
+notifylog/notifylog.py
+notifylog.egg-info/PKG-INFO
+notifylog.egg-info/SOURCES.txt
+notifylog.egg-info/dependency_links.txt
+notifylog.egg-info/entry_points.txt
+notifylog.egg-info/requires.txt
+notifylog.egg-info/top_level.txt

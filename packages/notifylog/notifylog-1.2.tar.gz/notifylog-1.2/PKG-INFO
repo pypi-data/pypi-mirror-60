@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: notifylog
+Version: 1.2
+Summary: org.freedesktop.Notifications eavesdropper
+Home-page: https://github.com/digitalduke/notify-log
+Author: George P.
+Author-email: digitalduke@gmail.com
+License: MIT
+Description: # notify-log
+        
+        For any ideas, issues reporting, etc. feel free to ask me via [Telegram](http://t.me/digitalduke)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+Description-Content-Type: text/markdown
