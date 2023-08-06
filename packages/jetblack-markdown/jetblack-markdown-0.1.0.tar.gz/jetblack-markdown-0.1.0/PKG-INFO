@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: jetblack-markdown
+Version: 0.1.0
+Summary: A markdown extension for python documentation
+Home-page: https://github.com/rob-blackbourn/jetblack-markdown
+License: Apache-2.0
+Author: Rob Blackbourn
+Author-email: rob.blackbourn@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: docstring-parser (>=0.6,<0.7)
+Requires-Dist: markdown (>=3.1,<4.0)
+Project-URL: Repository, https://github.com/rob-blackbourn/jetblack-markdown
+Description-Content-Type: text/markdown
+
+# jetblack-markdown
+
+Markdown extensions for automatic document generation.
+
+See [here](https://rob-blackbourn.github.io/jetblack-markdown/) for documentation.
+
