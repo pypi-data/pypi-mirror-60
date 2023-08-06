@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: json_dict_comparator
+Version: 0.0.3
+Summary: Provides tools for comparing python dictionaries obtained from json objects.
+Home-page: https://github.com/humbcezar/json-dict-comparator
+Author: Humberto Cezar
+Author-email: betoncios@gmail.com
+License: MIT
+Download-URL: https://github.com/humbcezar/json-dict-comparator/archive/0.0.3.tar.gz
+Description: UNKNOWN
+Keywords: json,dict,comparison
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.8
