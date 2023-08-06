@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "privacy_ccp"
+version = "0.1.1"
+description = "Privacy Preserving Collective Computation Platform"
+authors = ["Pradipta Deb <pradipta.deb@inria.fr>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pycryptodome = "^3.9.4"
+tqdm = "^4.42.0"
+click = "^7.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+init = "test_simulation:perform_ccp_simulation"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
