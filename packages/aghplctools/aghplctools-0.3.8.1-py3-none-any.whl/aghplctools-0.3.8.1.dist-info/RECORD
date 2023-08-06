@@ -1,0 +1,16 @@
+aghplctools/__init__.py,sha256=nfBuosMSFvLXy1xJrYTn1aaf7t9DuY4xwSxUJZEk3uE,25
+aghplctools/batch.py,sha256=lsw4_A8Wa20Eeb_YBnCXB7bhezrTm5EPaCP9gEms968,7220
+aghplctools/config.py,sha256=4oM8svCFz06w1sZTmQ3mou2llhM2xKtQJD6Cy2Tr9uQ,2041
+aghplctools/data_types.py,sha256=gZ6bz90xufPLdHdNkwq3rhJdIyj8txyR2xKwIgKko2M,33164
+aghplctools/hplc.py,sha256=3VNGcu8Vlo-7qgKpnqi2b1lAMqwjGNkg06HMZlMnc_k,9541
+aghplctools/ingestion.py,sha256=Dm-FP8BI3GMhK7NY8Vk08xQ0WZuBfLr_-Ivkm2LeD9Q,11432
+aghplctools/temp.py,sha256=pwuZudtwmwxBO9uNkB-z1-r_l0HaZAaZFCiJgkWqji8,8536
+aghplctools/ingestion/__init__.py,sha256=HMhCZcybGlexJOKdVnpUMWmHuO3y6TUJfCGGuLrOSHM,1348
+aghplctools/ingestion/csv.py,sha256=LeJ68X53pkAqGVr-oP4APBzjAzmICSwGauAAvbWnFQA,4675
+aghplctools/ingestion/direct.py,sha256=O6NQPQHrcGgmQjvgkmn79XGozqo1o0RjI2FEuiQMqI8,191
+aghplctools/ingestion/text.py,sha256=pI3Ed57KZlxSYN5mi-w9IPRfAu0o9EUoiGnF0ToKRiQ,8588
+aghplctools-0.3.8.1.dist-info/LICENSE,sha256=pN9QGTGxC_S1sDmtpyoZjtGZmPD6-mw6glMunJrbF6M,1076
+aghplctools-0.3.8.1.dist-info/METADATA,sha256=e7FpOtb6CQ-0XyLE1Z3L89ZZrVWo4Nq1IQ_3_HmvRcQ,2025
+aghplctools-0.3.8.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+aghplctools-0.3.8.1.dist-info/top_level.txt,sha256=exmQc1eoy29dF9L1aaZQhbYfyFO14mU97CGHitkU7z8,12
+aghplctools-0.3.8.1.dist-info/RECORD,,
