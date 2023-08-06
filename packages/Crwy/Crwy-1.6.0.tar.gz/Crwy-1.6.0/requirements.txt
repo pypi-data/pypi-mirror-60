@@ -1,0 +1,15 @@
+Scrapy
+scrapy-redis
+scrapy-splash
+scrapy-sentry
+DBUtils
+python-dateutil
+SQLAlchemy
+pygresql
+PyMySQL
+beautifulsoup4
+configparser
+requests
+gevent
+imapclient
+redis
