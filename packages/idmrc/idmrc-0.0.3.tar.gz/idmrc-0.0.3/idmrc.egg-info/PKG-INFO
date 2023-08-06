@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: idmrc
+Version: 0.0.3
+Summary: a simple idmrc
+Home-page: https://gitlab.hrz.tu-chemnitz.de/slm/rc
+Author: Lukas Jurk
+Author-email: lukas.jurk@tu-dresden.de
+License: GPLv3
+Description: # rc
+        
+        ## installation
+        
+        - `pip install idmrc`
+        - enjoy
+        
+        or 
+        - clone this repository
+        - install package: `pip install . --user`
+        - enjoy
+        
+        ## usage
+        
+        ```
+        rc --help
+        ```
+        
+Keywords: requests rest
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
