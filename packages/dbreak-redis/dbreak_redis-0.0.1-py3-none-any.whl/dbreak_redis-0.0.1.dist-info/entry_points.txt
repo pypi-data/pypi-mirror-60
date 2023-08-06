@@ -1,0 +1,3 @@
+[connection_wrappers]
+redis = dbreak_redis:RedisWrapper
+
