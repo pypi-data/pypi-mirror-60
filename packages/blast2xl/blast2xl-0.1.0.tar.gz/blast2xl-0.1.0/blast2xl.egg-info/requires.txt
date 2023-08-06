@@ -1,0 +1,4 @@
+Click>=7.0
+pandas>=0.25.0
+biopython>=1.73
+xlsxwriter
