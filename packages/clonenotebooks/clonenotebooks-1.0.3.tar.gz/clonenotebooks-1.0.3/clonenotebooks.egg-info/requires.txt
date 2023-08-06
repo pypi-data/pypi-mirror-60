@@ -1,0 +1,6 @@
+nbviewer
+notebook
+jupyterhub
+nbformat
+tornado
+jupyter_client
