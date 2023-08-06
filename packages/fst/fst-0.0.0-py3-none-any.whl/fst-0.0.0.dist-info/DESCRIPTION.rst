@@ -1,0 +1,12 @@
+Home-page: https://github.com/RishabhBhatnagar/fst
+Author: Rishabh Bhatnagar
+Author-email: bhatnagarrishabh4@gmail.com
+License: UNKNOWN
+Description: FST in Python3 - NLP
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
