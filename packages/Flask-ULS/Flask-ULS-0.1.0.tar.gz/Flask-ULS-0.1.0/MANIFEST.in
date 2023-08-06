@@ -1,0 +1,10 @@
+# static resources
+include flask_uls/static/*.css
+include flask_uls/static/*.js
+# jquery.uls resources
+include flask_uls/static/jquery.uls/css/*.css
+include flask_uls/static/jquery.uls/images/*.png
+include flask_uls/static/jquery.uls/images/*.svg
+include flask_uls/static/jquery.uls/src/*.js
+# templates
+include flask_uls/templates/uls/*.html
