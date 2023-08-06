@@ -1,0 +1,9 @@
+connectIO/__init__.py,sha256=cel0l7-fcj9P-wfhkc_iAltFNvNF5vHDBC8k5k68KNQ,131
+connectIO/client.py,sha256=e8aVvqv3cy8kVfDTkZXn-63Wkoroe79NKjo8-xOnhFE,1053
+connectIO/server.py,sha256=5eN-7THDXt4GGJQRxtPzJZGCit2e002aYMosxSl69Vc,1620
+connectIO/utils.py,sha256=Md51XMQGG3XUzCwMHLlKWqYLx_NPNNQDUuYhdeYqpl8,392
+connectIO-0.0.2.dist-info/LICENSE,sha256=XJsuKWh95mStNQ20o3MFtNmxr14WgJdekOPB2liYd_w,1087
+connectIO-0.0.2.dist-info/METADATA,sha256=Ob6ZtS4wUrFpbjJtsv8nZ37vi76-4GnCyGwuMQ1q2pw,1927
+connectIO-0.0.2.dist-info/WHEEL,sha256=IWeGwTvdiaNRNtdERe0BHc5KsCqvvVfLuP8HWeQWYGw,97
+connectIO-0.0.2.dist-info/top_level.txt,sha256=AKWmnuYhXEdcOBr0HpMm2EOr_NC-CgLzsKfTZCr919Q,10
+connectIO-0.0.2.dist-info/RECORD,,
