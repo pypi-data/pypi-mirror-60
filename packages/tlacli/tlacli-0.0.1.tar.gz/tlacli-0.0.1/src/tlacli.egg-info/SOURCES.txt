@@ -1,0 +1,13 @@
+setup.py
+src/tlacli/__init__.py
+src/tlacli/cfg.py
+src/tlacli/tla2tools.jar
+src/tlacli/tlacli.py
+src/tlacli.egg-info/PKG-INFO
+src/tlacli.egg-info/SOURCES.txt
+src/tlacli.egg-info/dependency_links.txt
+src/tlacli.egg-info/entry_points.txt
+src/tlacli.egg-info/top_level.txt
+src/tlacli/tools/__init__.py
+src/tlacli/tools/pluscal.py
+src/tlacli/tools/tlc.py
