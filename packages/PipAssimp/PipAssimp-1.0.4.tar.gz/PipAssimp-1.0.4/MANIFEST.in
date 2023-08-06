@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+PipAssimp/__init__.py
+PipAssimp/core.py
+PipAssimp/errors.py
+PipAssimp/formats.py
+PipAssimp/helper.py
+PipAssimp/material.py
+PipAssimp/postprocess.py
+PipAssimp/structs.py
+PipAssimp/libassimp.so.5.0.1
