@@ -1,0 +1,9 @@
+reproduce_wem_taxonomy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reproduce_wem_taxonomy/collect_relevant_publications.py,sha256=ouVYbo0KNdCPKPsYmzf4YcOklLJsVH_0_mZruPYl3pg,14569
+reproduce_wem_taxonomy/export_database.py,sha256=M9Dqv22btuXk7AU1nL9C_dUMLcvAhRXzRkq7sdFyEY4,1902
+reproduce_wem_taxonomy/fish_wem_taxonomy.py,sha256=OXDHf-D47pPl6mXjuPBC1y-m7lwPON-TftrAsyU11Ho,14990
+reproduce_wem_taxonomy/share.py,sha256=ZwNY3RxRuYpCWycy-OGmLGeZlKVSi0JPt-0s418EyE4,548
+reproduce_wem_taxonomy-2020.1.29.dist-info/METADATA,sha256=bGqtms6eU5X5j1vKwAvyBAyzoWuZ2nazvfwp8ILdQaE,2531
+reproduce_wem_taxonomy-2020.1.29.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+reproduce_wem_taxonomy-2020.1.29.dist-info/top_level.txt,sha256=PX39il-0AddTMUmJC1C_28WxUm0cAqEdPWpVD0CTnr4,23
+reproduce_wem_taxonomy-2020.1.29.dist-info/RECORD,,
