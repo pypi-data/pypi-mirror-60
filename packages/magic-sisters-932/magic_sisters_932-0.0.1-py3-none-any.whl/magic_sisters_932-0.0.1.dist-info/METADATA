@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: magic-sisters-932
+Version: 0.0.1
+Summary: Specially created package for Magic Sisters
+Home-page: https://github.com/pypa/sampleproject
+Author: Yuani Chen
+Author-email: yuanic12@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+## This is a package created specially for the magic sisters.
+
+
