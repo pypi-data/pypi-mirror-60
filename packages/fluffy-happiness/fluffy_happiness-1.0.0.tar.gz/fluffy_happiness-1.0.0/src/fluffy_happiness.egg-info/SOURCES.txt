@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+src/fluffy_happiness/__about__.py
+src/fluffy_happiness/__init__.py
+src/fluffy_happiness/foo.py
+src/fluffy_happiness.egg-info/PKG-INFO
+src/fluffy_happiness.egg-info/SOURCES.txt
+src/fluffy_happiness.egg-info/dependency_links.txt
+src/fluffy_happiness.egg-info/not-zip-safe
+src/fluffy_happiness.egg-info/requires.txt
+src/fluffy_happiness.egg-info/top_level.txt
+tests/test_foo.py

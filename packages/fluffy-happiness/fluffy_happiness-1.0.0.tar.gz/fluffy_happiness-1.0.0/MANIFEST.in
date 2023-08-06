@@ -1,0 +1,9 @@
+CHANGELOG.rst
+LICENSE
+README.rst
+
+recursive-include docs *
+prune docs/_build
+
+recursive-include src/fluffy_happiness *.py
+recursive-include tests *.py
