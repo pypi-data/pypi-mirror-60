@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+countrytagger/__init__.py
+countrytagger/generate.py
+countrytagger/util.py
+countrytagger.egg-info/PKG-INFO
+countrytagger.egg-info/SOURCES.txt
+countrytagger.egg-info/dependency_links.txt
+countrytagger.egg-info/requires.txt
+countrytagger.egg-info/top_level.txt
+countrytagger/data/places.csv
