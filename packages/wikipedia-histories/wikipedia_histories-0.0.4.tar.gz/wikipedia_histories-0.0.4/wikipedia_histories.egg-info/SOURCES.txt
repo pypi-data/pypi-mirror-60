@@ -1,0 +1,10 @@
+README.md
+setup.py
+wikipedia_histories/Change.py
+wikipedia_histories/__init__.py
+wikipedia_histories/scrape_complete.py
+wikipedia_histories.egg-info/PKG-INFO
+wikipedia_histories.egg-info/SOURCES.txt
+wikipedia_histories.egg-info/dependency_links.txt
+wikipedia_histories.egg-info/requires.txt
+wikipedia_histories.egg-info/top_level.txt
