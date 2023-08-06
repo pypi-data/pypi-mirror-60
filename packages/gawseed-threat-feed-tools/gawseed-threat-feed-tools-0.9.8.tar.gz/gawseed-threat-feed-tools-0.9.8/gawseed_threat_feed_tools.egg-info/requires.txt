@@ -1,0 +1,7 @@
+pyfsdb>=0.9.2
+kafka-python
+python-dateutil
+jinja2
+pyyaml
+msgpack
+lz4
