@@ -1,0 +1,412 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      "ITGT101-zinc-static-site": {
+        "id": "ITGT101-zinc-static-site",
+        "path": "ITGT101-zinc-static-site",
+        "children": {
+          "HostedZone": {
+            "id": "HostedZone",
+            "path": "ITGT101-zinc-static-site/HostedZone"
+          },
+          "Site": {
+            "id": "Site",
+            "path": "ITGT101-zinc-static-site/Site"
+          },
+          "SiteBucket": {
+            "id": "SiteBucket",
+            "path": "ITGT101-zinc-static-site/SiteBucket",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "ITGT101-zinc-static-site/SiteBucket/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "bucketName": "itgt101.zinc.static-site",
+                    "websiteConfiguration": {
+                      "indexDocument": "index.html",
+                      "errorDocument": "index.html"
+                    }
+                  }
+                }
+              },
+              "Notifications": {
+                "id": "Notifications",
+                "path": "ITGT101-zinc-static-site/SiteBucket/Notifications"
+              },
+              "Policy": {
+                "id": "Policy",
+                "path": "ITGT101-zinc-static-site/SiteBucket/Policy",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "ITGT101-zinc-static-site/SiteBucket/Policy/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::S3::BucketPolicy",
+                      "aws:cdk:cloudformation:props": {
+                        "bucket": {
+                          "Ref": "SiteBucket397A1860"
+                        },
+                        "policyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "s3:GetObject",
+                              "Effect": "Allow",
+                              "Principal": "*",
+                              "Resource": {
+                                "Fn::Join": [
+                                  "",
+                                  [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "SiteBucket397A1860",
+                                        "Arn"
+                                      ]
+                                    },
+                                    "/*"
+                                  ]
+                                ]
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "BucketArn": {
+            "id": "BucketArn",
+            "path": "ITGT101-zinc-static-site/BucketArn"
+          },
+          "SiteAliasRecord": {
+            "id": "SiteAliasRecord",
+            "path": "ITGT101-zinc-static-site/SiteAliasRecord",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "ITGT101-zinc-static-site/SiteAliasRecord/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Route53::RecordSet",
+                  "aws:cdk:cloudformation:props": {
+                    "name": "zinccli.com.",
+                    "type": "A",
+                    "hostedZoneId": "Z2V1AL5NKD0TDT",
+                    "resourceRecords": [
+                      "itgt101.zinc.static-site"
+                    ],
+                    "ttl": "1800"
+                  }
+                }
+              }
+            }
+          },
+          "DeployWithInvalidation": {
+            "id": "DeployWithInvalidation",
+            "path": "ITGT101-zinc-static-site/DeployWithInvalidation",
+            "children": {
+              "CustomResourceHandler": {
+                "id": "CustomResourceHandler",
+                "path": "ITGT101-zinc-static-site/DeployWithInvalidation/CustomResourceHandler"
+              },
+              "Asset1": {
+                "id": "Asset1",
+                "path": "ITGT101-zinc-static-site/DeployWithInvalidation/Asset1",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "ITGT101-zinc-static-site/DeployWithInvalidation/Asset1/Stage"
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "ITGT101-zinc-static-site/DeployWithInvalidation/Asset1/AssetBucket"
+                  }
+                }
+              },
+              "CustomResource": {
+                "id": "CustomResource",
+                "path": "ITGT101-zinc-static-site/DeployWithInvalidation/CustomResource",
+                "children": {
+                  "Default": {
+                    "id": "Default",
+                    "path": "ITGT101-zinc-static-site/DeployWithInvalidation/CustomResource/Default"
+                  }
+                }
+              }
+            }
+          },
+          "Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C": {
+            "id": "Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C",
+            "path": "ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C",
+            "children": {
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "s3:GetObject*",
+                                    "s3:GetBucket*",
+                                    "s3:List*"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          "arn:",
+                                          {
+                                            "Ref": "AWS::Partition"
+                                          },
+                                          ":s3:::",
+                                          {
+                                            "Ref": "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1S3Bucket14650576"
+                                          }
+                                        ]
+                                      ]
+                                    },
+                                    {
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          "arn:",
+                                          {
+                                            "Ref": "AWS::Partition"
+                                          },
+                                          ":s3:::",
+                                          {
+                                            "Ref": "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1S3Bucket14650576"
+                                          },
+                                          "/*"
+                                        ]
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Action": [
+                                    "s3:GetObject*",
+                                    "s3:GetBucket*",
+                                    "s3:List*",
+                                    "s3:DeleteObject*",
+                                    "s3:PutObject*",
+                                    "s3:Abort*"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "SiteBucket397A1860",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          {
+                                            "Fn::GetAtt": [
+                                              "SiteBucket397A1860",
+                                              "Arn"
+                                            ]
+                                          },
+                                          "/*"
+                                        ]
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+                            "roles": [
+                              {
+                                "Ref": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "Code": {
+                "id": "Code",
+                "path": "ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/Stage"
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/AssetBucket"
+                  }
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                  "aws:cdk:cloudformation:props": {
+                    "code": {
+                      "s3Bucket": {
+                        "Ref": "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430S3Bucket13DFEC6A"
+                      },
+                      "s3Key": {
+                        "Fn::Join": [
+                          "",
+                          [
+                            {
+                              "Fn::Select": [
+                                0,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430S3VersionKeyED938FBC"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Fn::Select": [
+                                1,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430S3VersionKeyED938FBC"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "handler": "index.handler",
+                    "role": {
+                      "Fn::GetAtt": [
+                        "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+                        "Arn"
+                      ]
+                    },
+                    "runtime": "python3.6",
+                    "timeout": 900
+                  }
+                }
+              }
+            }
+          },
+          "AssetParameters": {
+            "id": "AssetParameters",
+            "path": "ITGT101-zinc-static-site/AssetParameters",
+            "children": {
+              "6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430": {
+                "id": "6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430",
+                "path": "ITGT101-zinc-static-site/AssetParameters/6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "ITGT101-zinc-static-site/AssetParameters/6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430/S3Bucket"
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "ITGT101-zinc-static-site/AssetParameters/6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430/S3VersionKey"
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "ITGT101-zinc-static-site/AssetParameters/6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430/ArtifactHash"
+                  }
+                }
+              },
+              "4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1": {
+                "id": "4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1",
+                "path": "ITGT101-zinc-static-site/AssetParameters/4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "ITGT101-zinc-static-site/AssetParameters/4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1/S3Bucket"
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "ITGT101-zinc-static-site/AssetParameters/4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1/S3VersionKey"
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "ITGT101-zinc-static-site/AssetParameters/4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1/ArtifactHash"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

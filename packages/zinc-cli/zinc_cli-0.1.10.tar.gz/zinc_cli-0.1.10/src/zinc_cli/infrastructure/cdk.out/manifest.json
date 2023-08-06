@@ -1,0 +1,456 @@
+{
+  "version": "1.21.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "ITGT101-zinc-static-site": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://535707483867/us-east-1",
+      "properties": {
+        "templateFile": "ITGT101-zinc-static-site.template.json"
+      },
+      "metadata": {
+        "/ITGT101-zinc-static-site": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.f50156b06e01f1dc6e1cd9ed0a8a839ed83b6e01c5b88cb83ec14da0322221cf.zip",
+              "id": "6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430",
+              "packaging": "file",
+              "sourceHash": "6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430",
+              "s3BucketParameter": "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430S3Bucket13DFEC6A",
+              "s3KeyParameter": "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430S3VersionKeyED938FBC",
+              "artifactHashParameter": "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430ArtifactHash55E30580"
+            },
+            "trace": [
+              "Stack.addFileAsset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/stack.js:370:23)",
+              "new Asset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:35:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:17:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:20:25)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1",
+              "id": "4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1",
+              "packaging": "zip",
+              "sourceHash": "4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1",
+              "s3BucketParameter": "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1S3Bucket14650576",
+              "s3KeyParameter": "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1S3VersionKeyBD8C65EA",
+              "artifactHashParameter": "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1ArtifactHash9AF43440"
+            },
+            "trace": [
+              "Stack.addFileAsset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/stack.js:370:23)",
+              "new Asset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:32)",
+              "Object.bind (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:36:31)",
+              "BucketDeployment.props.sources.map (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:30:62)",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:30:39)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/Site": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Site",
+            "trace": [
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/SiteBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SiteBucket397A1860",
+            "trace": [
+              "new Bucket (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3/lib/bucket.js:366:26)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/SiteBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SiteBucketPolicy3AC1D0F8",
+            "trace": [
+              "new BucketPolicy (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3/lib/bucket-policy.js:21:9)",
+              "Bucket.addToResourcePolicy (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3/lib/bucket.js:125:27)",
+              "Function.addToPrincipalOrResource (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-iam/lib/grant.js:43:26)",
+              "Bucket.grantPublicAccess (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3/lib/bucket.js:253:26)",
+              "new Bucket (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3/lib/bucket.js:408:18)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/BucketArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketArn",
+            "trace": [
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/SiteAliasRecord/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SiteAliasRecord3C0AF5BF",
+            "trace": [
+              "new RecordSet (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-route53/lib/record-set.js:59:27)",
+              "new ARecord (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-route53/lib/record-set.js:85:9)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/DeployWithInvalidation/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeployWithInvalidationCustomResourceE3FF7455",
+            "trace": [
+              "new CustomResource (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-cloudformation/lib/custom-resource.js:56:25)",
+              "new BucketDeployment (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:40:9)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-iam/lib/role.js:36:22)",
+              "new Function (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:35:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:17:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:20:25)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-iam/lib/policy.js:30:26)",
+              "Role.addToPolicy (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-iam/lib/role.js:146:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-iam/lib/grant.js:57:65)",
+              "Function.addToPrincipalOrResource (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-iam/lib/grant.js:31:30)",
+              "Import.grant (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3/lib/bucket.js:275:29)",
+              "Import.grantRead (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3/lib/bucket.js:176:21)",
+              "BucketDeployment.sources.forEach.source (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:31:49)",
+              "Array.forEach (<anonymous>)",
+              "new BucketDeployment (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:31:17)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "trace": [
+              "new Function (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:26)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:35:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:17:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:20:25)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/AssetParameters/6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430S3Bucket13DFEC6A",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:11:36)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/stack.js:360:22)",
+              "new Asset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:35:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:17:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:20:25)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/AssetParameters/6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430S3VersionKeyED938FBC",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:15:35)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/stack.js:360:22)",
+              "new Asset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:35:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:17:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:20:25)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/AssetParameters/6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430ArtifactHash55E30580",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:19:38)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/stack.js:360:22)",
+              "new Asset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:35:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:17:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:20:25)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/AssetParameters/4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1S3Bucket14650576",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:11:36)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/stack.js:360:22)",
+              "new Asset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:32)",
+              "Object.bind (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:36:31)",
+              "BucketDeployment.props.sources.map (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:30:62)",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:30:39)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/AssetParameters/4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1S3VersionKeyBD8C65EA",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:15:35)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/stack.js:360:22)",
+              "new Asset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:32)",
+              "Object.bind (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:36:31)",
+              "BucketDeployment.props.sources.map (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:30:62)",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:30:39)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ITGT101-zinc-static-site/AssetParameters/4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1ArtifactHash9AF43440",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:19:38)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/core/lib/stack.js:360:22)",
+              "new Asset (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:32)",
+              "Object.bind (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:36:31)",
+              "BucketDeployment.props.sources.map (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:30:62)",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/tmp/jsii-kernel-HMGUsf/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:30:39)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cx-api": "1.22.0",
+      "@aws-cdk/core": "1.22.0",
+      "@aws-cdk/region-info": "1.22.0",
+      "@aws-cdk/aws-iam": "1.22.0",
+      "@aws-cdk/aws-cloudwatch": "1.22.0",
+      "@aws-cdk/aws-kms": "1.22.0",
+      "@aws-cdk/aws-ssm": "1.22.0",
+      "@aws-cdk/aws-ec2": "1.22.0",
+      "@aws-cdk/aws-events": "1.22.0",
+      "@aws-cdk/aws-logs": "1.22.0",
+      "@aws-cdk/aws-s3": "1.22.0",
+      "@aws-cdk/assets": "1.22.0",
+      "@aws-cdk/aws-s3-assets": "1.22.0",
+      "@aws-cdk/aws-sqs": "1.22.0",
+      "@aws-cdk/aws-lambda": "1.22.0",
+      "@aws-cdk/aws-route53": "1.22.0",
+      "@aws-cdk/aws-sns": "1.22.0",
+      "@aws-cdk/aws-cloudformation": "1.22.0",
+      "@aws-cdk/aws-certificatemanager": "1.22.0",
+      "@aws-cdk/aws-cloudfront": "1.22.0",
+      "@aws-cdk/aws-elasticloadbalancingv2": "1.22.0",
+      "@aws-cdk/aws-apigateway": "1.22.0",
+      "@aws-cdk/aws-elasticloadbalancing": "1.22.0",
+      "@aws-cdk/aws-route53-targets": "1.22.0",
+      "@aws-cdk/aws-s3-deployment": "1.22.0",
+      "jsii-runtime": "Python/3.7.3"
+    }
+  }
+}
