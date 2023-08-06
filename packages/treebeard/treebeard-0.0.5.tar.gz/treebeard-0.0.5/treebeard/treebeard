@@ -1,0 +1,47 @@
+#!/bin/bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+function create_bundle() {
+    [ -d ".treebeard_temp" ] && rm -r .treebeard_temp
+    # exit 0
+    mkdir .treebeard_temp
+    cd .treebeard_temp
+
+    cp -R $DIR/deploy/* .
+    rsync -av --exclude .treebeard_temp .. . # Add project files
+    cp -R $DIR/.. treebeard_lib # Development: Add treebeard_lib package
+    repo2docker --no-run --image-name gcr.io/treebeard-259315/app .
+    docker push gcr.io/treebeard-259315/app
+    exit 0
+}
+
+function host_bundle() {
+    gcloud builds submit --tag gcr.io/treebeard-259315/app
+    gcloud run deploy app --image gcr.io/treebeard-259315/app --memory 2Gi
+}
+
+function run() {
+    create_bundle;
+    host_bundle
+}
+
+function list() {
+    echo 'Your job run can be viewed at https://file-access-cvee2224cq-ew.a.run.app/log'
+}
+
+if [[ $1 == 'schedule' ]]; then
+    run
+    gcloud scheduler jobs delete app --quiet
+    gcloud scheduler jobs create http app \
+        --uri "https://app-cvee2224cq-ew.a.run.app" \
+        --schedule "* * * * *" \
+        --attempt-deadline 300S \
+        --http-method POST
+elif [[ $1 == 'list' ]]; then
+    list
+elif [[ $1 == 'run' ]]; then
+    run;
+    echo 'Running...'
+    curl -X POST -d "" "https://app-cvee2224cq-ew.a.run.app"
+    list
+fi
