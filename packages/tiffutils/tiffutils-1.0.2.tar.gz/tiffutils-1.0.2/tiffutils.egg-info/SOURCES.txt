@@ -1,0 +1,8 @@
+README.md
+setup.py
+tiffutils.c
+tiffutils.egg-info/PKG-INFO
+tiffutils.egg-info/SOURCES.txt
+tiffutils.egg-info/dependency_links.txt
+tiffutils.egg-info/requires.txt
+tiffutils.egg-info/top_level.txt
