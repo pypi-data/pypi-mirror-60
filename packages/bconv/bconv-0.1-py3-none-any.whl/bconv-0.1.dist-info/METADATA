@@ -1,0 +1,37 @@
+Metadata-Version: 2.0
+Name: bconv
+Version: 0.1
+Summary: Convert between BioNLP formats
+Home-page: https://github.com/lfurrer/bconv
+Author: Lenz Furrer
+Author-email: lenz.furrer@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+Requires-Dist: nltk
+
+# `bconv`: Python library for converting between BioNLP formats
+
+## Supported formats
+
+The following formats are currently supported:
+
+- `bioc_xml`, `bioc_json`: BioC
+- `bionlp`: BioNLP stand-off (output only)
+- `brat`: brat stand-off (output only)
+- `conll`: CoNLL
+- `europepmc`, `europepmc.zip`: Europe-PMC JSON (output only)
+- `pubtator`:, `pubtator_fbk`: PubTator
+- `pubmed`, `pxml`, `pxml.gz`: PubMed abstracts (input only)
+- `pmc`, `nxml`: PMC full-text (input only)
+- `pubanno_json`: PubAnnotation JSON (output only)
+- `tsv`, `text_tsv`: tab-separated values (output only)
+- `txt`: plain text
+- `txt_json`: collection of plain-text documents (input only)
+
+
