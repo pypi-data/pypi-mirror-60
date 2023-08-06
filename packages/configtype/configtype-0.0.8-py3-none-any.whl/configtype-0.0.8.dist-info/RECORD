@@ -1,0 +1,11 @@
+configtype/__init__.py,sha256=SgiDuoaM7WkuduwM_4Be7j56tngigcYC5u66_TVigD0,710
+configtype/errors.py,sha256=i5LHObKek2jWavvUZZGiZPjJrBaEE6vF-qVgBEiX0sQ,333
+configtype/jsonconfig.py,sha256=jpC00QNLu7oinrd-RWa-rX0dfCDEtnp7PPZ7_EDt-aw,3534
+configtype/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configtype/test/test_json.py,sha256=Wx0Bz2i2erXtqGFm7Cr0Kf0eWiTiIZSJRl1cx2FW9Ks,1349
+configtype-0.0.8.dist-info/LICENCE.txt,sha256=UM6XccLer2POEj9uNQbyHrIH4ungw_IUnfDby7m__xc,33039
+configtype-0.0.8.dist-info/METADATA,sha256=2b6HZ1Zijlds9JdHBu9scM9HKhHOQdyNiJnTuFEtd-g,430
+configtype-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+configtype-0.0.8.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+configtype-0.0.8.dist-info/top_level.txt,sha256=glEPzByaVy8X-rFT8TcTk_0NXvzC0m9Pu6D6aVQCRoI,11
+configtype-0.0.8.dist-info/RECORD,,
