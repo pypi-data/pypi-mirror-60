@@ -1,0 +1,17 @@
+windows_wifi_manager/__init__.py,sha256=O6Hcm5iZIrpcFQnuw3IzCUSoKf0HHRvbYGyeE-Tz5Zk,23
+windows_wifi_manager/__main__.py,sha256=5GrSponHgr-RHgij-6EaK9XQg51_2La2Bq_vtAB6kUI,8302
+windows_wifi_manager/display_data.py,sha256=UGJFxIbHV2riUyM_90xYAvfePsA3ux8qQFhK4V6h--w,9381
+windows_wifi_manager/top_level_window.py,sha256=F3jr1haYv7DYXD1H8KfiD-WuLbrvN3tGJhRtVvt-iRM,25273
+windows_wifi_manager/wifi_connection.py,sha256=z32bHFnlv8hhL89CgH_9LXfZ3xaESWN4qE6tlvQN_pI,3169
+windows_wifi_manager/wifi_data.py,sha256=cXP_JK_1Gzx78km0MKCU1lfUTHO1RLTq3W6wWI-y4jY,9654
+windows_wifi_manager/Data/sampleProfile.xml,sha256=9FcbK4b03LQMndJDfnahNkZmuGJ8CY4kVZv9iaE6lvc,777
+windows_wifi_manager/Data/images/check.png,sha256=sZPoPaOb_NxVVAjDoFhvBlepzZbbu81i2-EPVN_jkEA,4761
+windows_wifi_manager/Data/images/error.png,sha256=GgHDylzoAUJ7eilQeorYEpn0VeSwL2z6ntUUk-UhBhs,3536
+windows_wifi_manager/Data/images/warning.png,sha256=1Yz3jV_19MCebhvMB-MYYlh9Wf8ZeVBy_2yYvuiDeTQ,3566
+windows_wifi_manager/Data/images/wifi2.ico,sha256=NLOBx3qO2mIwqcrkkoBLcd1xYlz6QXrT-F8YJkFy2A0,5396
+windows_wifi_manager-0.2.0.dist-info/LICENSE,sha256=nXxuWDxjApfXlWRVQU7-VdE0QseEW1vPZaU6qTOVpkM,1091
+windows_wifi_manager-0.2.0.dist-info/METADATA,sha256=MoJYKcdBhhpdtE4zKSI2ZPcFAKtOH1PtSsFXwFGAt1o,6264
+windows_wifi_manager-0.2.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+windows_wifi_manager-0.2.0.dist-info/entry_points.txt,sha256=AOZcc6wQFKMVBFIhetiv8uC0utrIqNRmteNr51e_3f4,133
+windows_wifi_manager-0.2.0.dist-info/top_level.txt,sha256=wa2exKzYcmdX6tpSFLiFbRpnA6F081yUiKMA8FQTsiw,21
+windows_wifi_manager-0.2.0.dist-info/RECORD,,

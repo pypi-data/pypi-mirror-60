@@ -1,0 +1,4 @@
+[console_scripts]
+windows-wifi-manager = windows_wifi_manager.__main__:main
+windowswifimanager = windows_wifi_manager.__main__:main
+
