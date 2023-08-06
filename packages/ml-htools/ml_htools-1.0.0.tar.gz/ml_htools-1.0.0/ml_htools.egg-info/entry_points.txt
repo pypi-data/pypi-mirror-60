@@ -1,0 +1,3 @@
+[console_scripts]
+ml_htools = ml_htools.cli:main
+
