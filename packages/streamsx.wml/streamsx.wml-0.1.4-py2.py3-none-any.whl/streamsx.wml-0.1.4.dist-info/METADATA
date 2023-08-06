@@ -1,0 +1,39 @@
+Metadata-Version: 2.0
+Name: streamsx.wml
+Version: 0.1.4
+Summary: Watson Machine Learning online scoring integration in IBM Streams topology applications
+Home-page: https://github.com/IBMStreams/pypi.streamsx.wml
+Author: IBM Streams @ github.com
+Author-email: hegermar@de.ibm.com
+License: Apache License - Version 2.0
+Description-Content-Type: UNKNOWN
+Keywords: streams,ibmstreams,streaming,analytics,streaming-analytics,wml,streamsx,topology
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: streamsx (>=1.13.15)
+
+Overview
+========
+
+Provides functions to score input records using online scoring deployments of Watson Machine Learning (WML) service.
+Actual version supports Cloud Pak for Data only.
+
+
+* `IBM Streams developer community <https://developer.ibm.com/streamsdev/>`_
+* `IBM Cloud Machine-Learning-Service <https://console.bluemix.net/catalog/services/machine-learning>`_
+
+
+
+For details on WML see `Watson Machine Learning Service <https://dataplatform.cloud.ibm.com/docs/content/analyze-data/ml-overview.html?context=analytics>`_.
+
+
+Documentation
+=============
+
+* `streamsx.wml package documentation <http://streamsxwml.readthedocs.io>`_
+
+
