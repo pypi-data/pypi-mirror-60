@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+python_spin/__init__.py
+python_spin.egg-info/PKG-INFO
+python_spin.egg-info/SOURCES.txt
+python_spin.egg-info/dependency_links.txt
+python_spin.egg-info/entry_points.txt
+python_spin.egg-info/not-zip-safe
+python_spin.egg-info/requires.txt
+python_spin.egg-info/top_level.txt
+python_spin/static/spin.desktop
+python_spin/static/spin.svg

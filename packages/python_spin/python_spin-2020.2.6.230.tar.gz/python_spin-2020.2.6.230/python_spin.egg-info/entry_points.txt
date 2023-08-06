@@ -1,0 +1,3 @@
+[console_scripts]
+spin = python_spin.__init__:main
+
