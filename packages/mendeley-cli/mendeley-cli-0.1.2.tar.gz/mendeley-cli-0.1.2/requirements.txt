@@ -1,0 +1,5 @@
+requests
+mendeley
+click
+tablib[all]
+python-dotenv
