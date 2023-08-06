@@ -1,0 +1,3 @@
+[console_scripts]
+Eval_Eshika = Eval_param_EM
+
