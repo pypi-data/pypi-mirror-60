@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: amc
+Version: 0.9.1
+Summary: Automatic angular-momentum reduction
+Home-page: UNKNOWN
+Author: Julien Ripoche, Alexander Tichai, Roland Wirth
+License: UNKNOWN
+Description: 
+        In quantum many-body theory, one often encounters problems with rotational
+        symmetry. While methods are most conveniently derived in schemes that do not
+        exploit the symmetry, a symmetry-adapted formulation can lead to orders of
+        magnitude savings in computation time. However, actually reducing the formulas
+        of a many-body method to symmetry-adapted form is tedious and error-prone.
+        
+        The AMC package aims to help practitioners by automating the reduction
+        process. The unreduced (m-scheme) equations can be entered via an easy-to-use
+        language. The package then uses Yutsis graph techniques to reduce the
+        resulting network of angular-momentum variables to irreducible Wigner 6j and
+        9j symbols, and outputs the reduced equations as a LaTeX file. Moreover, the
+        package is based on abstract representations of the unreduced and reduced
+        equations in the form of syntax trees, which enable other uses such as
+        automatic generation of code that computes the reduced equations.
+        
+Keywords: angular momentum,symbolic computation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
