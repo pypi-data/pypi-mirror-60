@@ -1,0 +1,14 @@
+hc05config/AT_command.py,sha256=tMYpei2wrKtEYNoJc-ZquFcAa6C7q-qMpOl24K0vuoU,4540
+hc05config/__init__.py,sha256=dXqfd8AkP1qJjTwv2ncE4pugIeTYYKynZfbMwlFMdSQ,190
+hc05config/__main__.py,sha256=_ddPU_k-oCiETWtFojvv2qx-H71O4A5s6WyPdlOZi1I,846
+hc05config/basic_info.py,sha256=oZlFexzT0z_nj1IxEnTKMvCLYJJzIyS8A8UDUv0Uj2c,1757
+hc05config/bluetooth_config.py,sha256=hUgehR0uzl5GPF1ZpENLQsntryTnXQJVHuUS6Jpne9Y,1444
+hc05config/input_lib.py,sha256=RtLTceLd3lZzJ8Evp9UJVjJQNhoN2EuEFBmBLKPLcig,2844
+hc05config/master_and_slave.py,sha256=GWx9WDRbUHZ8ceE6LsNHz2Xj0bSymuvf0D5mdiLcD_E,5847
+hc05config/port_select.py,sha256=4RE8s-CLdcuN3j6VWFp4otOWgB7dn1mDahqEvBu_pkc,900
+hc05config/preset.py,sha256=cbn6Q4dNjtjHpgeDadBW4ZiSO_ucSc_wX5k9_wDoQJQ,9275
+HC_05_ConfigTool-0.1.0.dist-info/LICENSE,sha256=zpNa52JGix7uD3dIJCVK7jq988nYAA0M16X02Tc_jOI,1067
+HC_05_ConfigTool-0.1.0.dist-info/METADATA,sha256=XzgMcPEwL9n3_QJdqMenaHtUKgObwuZPJ9KKd-_4zLc,6168
+HC_05_ConfigTool-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+HC_05_ConfigTool-0.1.0.dist-info/top_level.txt,sha256=3feilLPlg2-GqncZSc70U5Rr9kd0u6Ah5N0ZbFNTmQ4,11
+HC_05_ConfigTool-0.1.0.dist-info/RECORD,,
