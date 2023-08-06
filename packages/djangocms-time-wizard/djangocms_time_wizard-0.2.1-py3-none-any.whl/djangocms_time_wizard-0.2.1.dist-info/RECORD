@@ -1,0 +1,13 @@
+djangocms_time_wizard/__init__.py,sha256=Iy06fX-H8a6jTyTN3a2cLQihUHklzKfG2y0PioIdb9A,46
+djangocms_time_wizard/cms_plugins.py,sha256=wPb40IVcjaWc4xgeAFjnHkqjvq7rGfKiGo9Sq0S5_qg,1432
+djangocms_time_wizard/conf.py,sha256=CvnZ6N5JRKa5nnvtDFNwEgpoRecsHOtqjf5cBqdsU2w,204
+djangocms_time_wizard/models.py,sha256=YXeuvLWxAqefBx8eMmL0nVVLPawl7vbYUecBn2sEyUU,239
+djangocms_time_wizard/migrations/0001_initial.py,sha256=AJPhqEMAnDDrPrrr8am_lLrsF-kiPT_7rMZ2AGoAfI0,1250
+djangocms_time_wizard/migrations/0002_timewizardinlinemodel.py,sha256=fUY7MsDR2XmRZ0h3KYTTpzVFEYNc60Tc0nQJTmZIN04,969
+djangocms_time_wizard/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangocms_time_wizard/templates/djangocms_time_wizard/time_wizard.html,sha256=hqW7Lz3VLAOkuw9rSLFKLwdKXhAiuhN5XWFoOCDOeyI,456
+djangocms_time_wizard-0.2.1.dist-info/LICENSE,sha256=a0Ym-JcqeRGOhACFvHX075djazBCYi1Et09qviLTvFw,1310
+djangocms_time_wizard-0.2.1.dist-info/METADATA,sha256=W3MOEg8_tmrR0DiCxmJg4HenMTSAEcya6OqwpekYzvM,1940
+djangocms_time_wizard-0.2.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+djangocms_time_wizard-0.2.1.dist-info/top_level.txt,sha256=o9n7wKfniTljp16AJxYSxgqUP5unq6EGrWU1sM2W51o,22
+djangocms_time_wizard-0.2.1.dist-info/RECORD,,
