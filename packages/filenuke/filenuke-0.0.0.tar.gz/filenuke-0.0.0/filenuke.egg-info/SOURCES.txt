@@ -1,0 +1,8 @@
+README.md
+setup.py
+filenuke/__init__.py
+filenuke/nuke.py
+filenuke.egg-info/PKG-INFO
+filenuke.egg-info/SOURCES.txt
+filenuke.egg-info/dependency_links.txt
+filenuke.egg-info/top_level.txt
