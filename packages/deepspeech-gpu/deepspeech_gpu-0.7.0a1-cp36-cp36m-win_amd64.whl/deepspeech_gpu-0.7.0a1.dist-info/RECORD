@@ -1,0 +1,12 @@
+Release/_impl.cp36-win_amd64.exp,sha256=WGFpezz0ZJ8ItgjypY1S3toDUwHbu9imyBTphDZAY-o,701
+Release/_impl.cp36-win_amd64.lib,sha256=7VfFyO34DgfK7xzpHUShZYAjgYz73XN-S-q2bYRmSAo,1964
+deepspeech/__init__.py,sha256=pAzEs4v5gPhftSuTR_DzqgARbCM7lDiy58OCMmewku0,8080
+deepspeech/_impl.cp36-win_amd64.pyd,sha256=0g0eCIKi3bMPlxZzU_d82bv5--r0KVQTd_-2Xvul7A0,66560
+deepspeech/client.py,sha256=Pe3Ik1196jSqJHHz2HmpA1clrEKZxssb7arRYmU663I,5945
+deepspeech/impl.py,sha256=6OLNi680dATaAoOLFci2CwsTPlF-tlN8K_1XIc6TW8s,2105
+deepspeech/lib/libdeepspeech.so,sha256=ivSTtxoaBNF96v3inr7d9c4AtlaPnwKG9N3c1K6L934,68057088
+deepspeech_gpu-0.7.0a1.dist-info/METADATA,sha256=UfAu2GSDJAs1-d0bCnAME4e6XymXR_pmjlcnfozJ3g0,1431
+deepspeech_gpu-0.7.0a1.dist-info/WHEEL,sha256=uQaeujkjkt7SlmOZGXO6onhwBPrzw2WTI2otbCZzdNI,106
+deepspeech_gpu-0.7.0a1.dist-info/entry_points.txt,sha256=2LA7LnK4cLU3QjZZzstFv-c9Uehkm1AN1-SgBs2Syf4,55
+deepspeech_gpu-0.7.0a1.dist-info/top_level.txt,sha256=B30ih_hZ1TGIRlPsXwDZMBh1XVkFt8cA0T5s3POEE9Q,11
+deepspeech_gpu-0.7.0a1.dist-info/RECORD,,
