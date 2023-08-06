@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: SpriteSheet-kyquan
+Version: 1.0.0
+Summary: A small example package
+Home-page: https://github.com/intek-training-jsc/sprite-sheet-kyquanlx
+Author: Ho Ky Quan
+Author-email: quan.ho@f4.intek.edu.vn
+License: UNKNOWN
+Description: # Sprite-sheet-kyquanlx
+        In computer graphics, a sprite is a two-dimensional bitmap that is integrated into a larger scene, most often in a 2D video game. Sprites were developed at Texas Instruments by Daniel Hillis.
+        
+        A sprite sheet is an image that consists of several smaller images (sprites) and/or animations. Combining the small images in one big image improves the game performance, reduces the memory usage and speeds up the startup time of the game.
+        
+        This project will create a SpriteSheet class and will find all sprite in object image.
+        
+        # How to use
+        - You need to have python 3 installed.
+        ```shell
+        $ python3
+        Python 3.6.8 (default, Oct  7 2019, 12:59:55) 
+        [GCC 8.3.0] on linux
+        Type "help", "copyright", "credits" or "license" for more information.
+        ```
+        
+        
+        # Contact
+        - Phone: 0336 589 604
+        - Email: quan.ho@f4.intek.edu.vn
+        - Address: 482/10/18 No Trang Long, Binh Thanh district, Ho Chi Minh City.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
