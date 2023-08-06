@@ -1,0 +1,17 @@
+setuptools>=38.3.0
+DataProperty<2,>=0.44.0
+six<2,>=1.10.0
+typepy<2,>=0.6.4
+
+[:python_version < "3.2"]
+futures
+
+[:python_version < "3.4"]
+enum34
+
+[logging]
+Logbook<2.0.0,>=0.12.3
+
+[test]
+pytablewriter>=0.46
+pytest
