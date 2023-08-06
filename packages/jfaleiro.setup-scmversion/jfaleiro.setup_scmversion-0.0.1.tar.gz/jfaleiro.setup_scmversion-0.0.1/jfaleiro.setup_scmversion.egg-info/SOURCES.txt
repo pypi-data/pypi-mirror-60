@@ -1,0 +1,10 @@
+README.md
+setup.py
+setup_scmversion.py
+jfaleiro.setup_scmversion.egg-info/PKG-INFO
+jfaleiro.setup_scmversion.egg-info/SOURCES.txt
+jfaleiro.setup_scmversion.egg-info/dependency_links.txt
+jfaleiro.setup_scmversion.egg-info/entry_points.txt
+jfaleiro.setup_scmversion.egg-info/top_level.txt
+test/__init__.py
+test/test_setup_scmversion.py
