@@ -1,0 +1,7 @@
+avro-python3
+fastavro
+more-itertools
+numpy
+pandas
+requests
+six
