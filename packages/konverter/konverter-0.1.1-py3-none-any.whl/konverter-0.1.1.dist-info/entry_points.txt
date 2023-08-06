@@ -1,0 +1,4 @@
+[console_scripts]
+konverter=konverter.__main__:cli
+konverter-vault=konverter.vault:cli
+
