@@ -1,0 +1,16 @@
+hypershell/__init__.py,sha256=HgdlBixlkp2rtxFKSdrZr4P58_mjcXEaqEnRL9pzrSo,788
+hypershell/__meta__.py,sha256=LVWmb49JfEK-goGrnTT7lRHokLgP_EOs1eBm-qTo5fk,1154
+hypershell/apps/__init__.py,sha256=rsTG6Ss2FA9-IO3QbAwZQSlkyDHZeZmK0qii5cQ1x_M,2644
+hypershell/apps/client.py,sha256=Sbpy-Xg1j-WVrYZyRQ1WbWs27KGJ_IDHCHOJkWY8YxY,5806
+hypershell/apps/cluster.py,sha256=Fcqix0ETjEQPsrz0Mcst7FGYv2d-EVXBOBo-HauXELc,10309
+hypershell/apps/server.py,sha256=Iu99w5ok-eUvBnJ7zkePy9Guu5aU4E4f7TD5IMyjpH0,8587
+hypershell/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hypershell/core/exceptions.py,sha256=Rawn2JljDY80iBfPt0_cJmXQRsvyO5UQzaZszCBsiMM,886
+hypershell/core/logging.py,sha256=iI7-tjvrMbnbqWjsziYr2YFjmhVZlVG2xi3Cj2OVfhY,3254
+hypershell/core/queue.py,sha256=E5yFFElNR3X2EPILJe97EVIjKkz9q_GlyeuSmuClJa8,2865
+hyper_shell-1.5.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hyper_shell-1.5.5.dist-info/METADATA,sha256=J5YDGbbbaDW7RnpgnmhtA3hRB0m9uIvbYUjbhjK0MKg,2655
+hyper_shell-1.5.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+hyper_shell-1.5.5.dist-info/entry_points.txt,sha256=sbjjD0cokI_wtxw8fMKhApTDGkXhOvIpXwUCpKP3p0w,49
+hyper_shell-1.5.5.dist-info/top_level.txt,sha256=mt9iWgUtDZJ0dJW7wcjvlkc6imYfUo2ePKnwPIFXQbA,11
+hyper_shell-1.5.5.dist-info/RECORD,,
