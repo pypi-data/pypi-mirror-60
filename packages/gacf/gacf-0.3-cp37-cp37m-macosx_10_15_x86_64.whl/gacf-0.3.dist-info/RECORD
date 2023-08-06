@@ -1,0 +1,9 @@
+gacf/__init__.py,sha256=SVBEKBzt4ONW86YSJMXDdEL77VUlEtQsZ10B4Ou_n3k,244
+gacf/correlator.cpython-37m-darwin.so,sha256=2fwgn_16QX4Gyl8lAAXKlqBXgWWkwq5VUCYHnUwumKs,170220
+gacf/datastructure.cpython-37m-darwin.so,sha256=qUhbJGkI7QGobNVZjhLUcgZFB9ddWs9cRNd4boUcFe8,161904
+gacf/gacf.py,sha256=grz7BKteHHP6Ot_zN6RTaEEJdQgOf2lZjYIYZ_L6lWo,5862
+gacf-0.3.dist-info/LICENSE,sha256=u2OFybs3xhlrME3VO4kENBwZAI9wDwHpnR-HRQ2BLM0,1069
+gacf-0.3.dist-info/METADATA,sha256=-SqPZTdiEkBUwzgHd0R0Bcrm9BzJiCAe5RbzPMmpp4w,265
+gacf-0.3.dist-info/WHEEL,sha256=ucMU4FfcbiQ5Rm6hLUKBly6b_2JxDmK3TJVwRBGK0L0,111
+gacf-0.3.dist-info/top_level.txt,sha256=VonoZhpxtB-joweS31dJUnHPgP3pQk3gM3eCkzRR8OI,5
+gacf-0.3.dist-info/RECORD,,
