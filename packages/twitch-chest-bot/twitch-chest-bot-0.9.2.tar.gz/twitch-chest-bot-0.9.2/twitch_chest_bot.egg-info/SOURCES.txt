@@ -1,0 +1,13 @@
+README.md
+setup.py
+autochests_bot/__init__.py
+autochests_bot/__main__.py
+autochests_bot/start_bot.py
+autochests_bot/bot_controll/__init__.py
+autochests_bot/bot_controll/args.py
+autochests_bot/bot_controll/chests_bot.py
+twitch_chest_bot.egg-info/PKG-INFO
+twitch_chest_bot.egg-info/SOURCES.txt
+twitch_chest_bot.egg-info/dependency_links.txt
+twitch_chest_bot.egg-info/requires.txt
+twitch_chest_bot.egg-info/top_level.txt
