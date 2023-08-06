@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: kohler
+Version: 0.0.5
+Summary: Python library for talking to Kohler devices
+Home-page: https://github.com/niemyjski/kohler-python
+Author: Blake Niemyjski
+Author-email: bniemyjski@gmail.com
+License: Apache
+Description: # kohler-python
+        
+        Python library for talking to Kohler devices (DTV+)
+        
+        ## Installation
+        
+        ```cmd
+        pip3 install kohler
+        ```
+        
+        ## Usage
+        
+        ```python
+        from kohler import Kohler
+        kohler = Kohler(bondIp='192.168.1.50')
+        
+        kohler.lightOn(1, 50)
+        kohler.musicOn()
+        kohler.quickShower()
+        kohler.stopShower()
+        kohler.steamOn()
+        kohler.steamOff()
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
