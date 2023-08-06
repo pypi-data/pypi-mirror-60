@@ -1,0 +1,13 @@
+sws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sws/command_line_utility.py,sha256=ZIPoC-V4aubtoC9kQL-p4K1ZxzxnwdA9bNBYzR3OXCI,2833
+sws/utilities/__init__.py,sha256=hLrQ69fbwG76quOalXnnfmXoOqvb6-fYb1nRUFUctMo,78
+sws/utilities/domains.py,sha256=P5lg2GzjAzDBI13MN7kXfIjhitXngLf_RoOR2aJrtx0,1050
+sws/utilities/redirects.py,sha256=NnAuXT230roUqIBgB_3cOgVoZ7ITxsA_CSNPbEZk2nc,3915
+sws/utilities/ssl_utilities.py,sha256=Fn0ZFHhAnt8GNm70mQWYa7b1Yys-7-qHshxEjns1qac,4052
+sws/utilities/youtube.py,sha256=0BQdDEIKIcKWDgJFivKBRUwCCEUiVa_O7vP-0cNu1t8,1712
+sws-0.1.1.dist-info/LICENSE,sha256=1Hhtuij30JyN5XO8Wc_pX2Fxo417dFwDePb_ALFBQyI,1089
+sws-0.1.1.dist-info/METADATA,sha256=UP4ln5dzCLYFAByv0MN2a2X6DZEgT4JJhUAGZLbzuqg,5271
+sws-0.1.1.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+sws-0.1.1.dist-info/entry_points.txt,sha256=_Q0zGKg_WjpBPM15k6pVskd1OI0opaMGXzxpZSBmZzo,55
+sws-0.1.1.dist-info/top_level.txt,sha256=dNp3Q_UY3GUPB7Pk-qoBtwEyVW36g13OYXBdSuyhgRs,4
+sws-0.1.1.dist-info/RECORD,,
