@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: eisen-core
+Version: 0.0.2
+Summary: Eisen is a collection of tools to train neural networks for medical image analysis
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: nilearn (==0.6.0)
+Requires-Dist: torch (==1.3.1)
+Requires-Dist: numpy (==1.18.0)
+Requires-Dist: nibabel (==3.0.0)
+Requires-Dist: prettytable (==0.7.2)
+Requires-Dist: PyDispatcher (==2.0.5)
+
+UNKNOWN
+
+
