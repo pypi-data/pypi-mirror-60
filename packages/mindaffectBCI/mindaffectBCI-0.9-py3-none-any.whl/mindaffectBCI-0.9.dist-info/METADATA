@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mindaffectBCI
+Version: 0.9
+Summary: The MindAffect BCI python SDK
+Home-page: http://github.com/mindaffect/pymindaffectBCI
+Author: Jason Farquhar
+Author-email: jason@mindaffect.nl
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
