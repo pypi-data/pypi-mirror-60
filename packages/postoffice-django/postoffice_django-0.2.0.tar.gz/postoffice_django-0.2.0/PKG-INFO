@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: postoffice_django
+Version: 0.2.0
+Summary: Postoffice django client
+Home-page: http://github.com/mercadona/postoffice_django
+Author: MercadonaTech
+Author-email: software.online@mercadona.es
+License: Apache Software License 2.0
+Description: UNKNOWN
+Keywords: postoffice
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
