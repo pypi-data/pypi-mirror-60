@@ -1,0 +1,3 @@
+[console_scripts]
+speedapply = speedapply.__main__:main
+
