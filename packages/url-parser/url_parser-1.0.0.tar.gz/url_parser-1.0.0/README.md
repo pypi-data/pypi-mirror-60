@@ -1,0 +1,86 @@
+# URL Parser
+![PyPI - Format](https://img.shields.io/pypi/format/url-parser?style=plastic)
+![PyPI - Status](https://img.shields.io/pypi/status/url-parser?style=plastic)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/url-parser?style=plastic)
+
+![Downloads](https://pepy.tech/badge/url-parser)
+
+A small yet nice package to help you parse all types of url`s and return the parsed url with group name.
+
+### Installation
+```
+pip install url-parser
+```
+
+### Usage
+
+```
+from url_parser import parse_url
+
+
+url = parse_url('https://open.prospecta.app/my_user_login?user=url-parser&password=H3ll0')
+
+print(url)
+>>> {'http': 'https://', 'www': None, 'sub_domain': 'open', 
+     'domain': 'prospecta', 'top_domain': 'app', 'dir': ['my_user_login'],
+     'args': ['user=url-parser', 'password=H3ll0']}
+```
+
+### keywords
+
+You can call the package with specific keywords to return the part of the url you  want.
+
+| keyword | result |
+| ------ | ------ |
+| ['http'] | Returns: http/https or None |
+| ['www'] | Returns: www or None |
+| ['sub_domain'] | Returns: sub-domain or None |
+| ['domain'] | Returns: domain or None |
+| ['top_domain'] | Returns: top-domain or None |
+| ['dir'] | Returns: list of directories or None |
+| ['args'] | Returns: list of args or None |
+
+### Usage with keywords
+
+```
+from url_parser import parse_url
+
+
+url = parse_url('https://open.prospecta.app/my_user_login?user=url-parser&password=H3ll0')
+
+print(url)
+>>> {'http': 'https://', 'www': None, 'sub_domain': 'open', 
+     'domain': 'prospecta', 'top_domain': 'app', 'dir': ['my_user_login'],
+     'args': ['user=url-parser', 'password=H3ll0']}
+
+http = url['http']
+sub_domain = url['sub_domain']
+domain = url['domain']
+top_domain = url['top_domain']
+directory = url['dir]
+args = url['args']
+
+print(http)
+>>> https://
+
+print(sub_domain)
+>>> open
+
+print(domain)
+>>> prospecta
+
+print(top_domain)
+>>> .app
+
+print(directory)
+>>> ['my_user_login']
+
+print(args)
+>>> ['user=url-parser', 'password=H3ll0']
+```
+
+#### Versions:
+v 0.9.9 | Bugfixes on the readme file.  
+v 0.9.8 | Added support for args.  
+v 0.9.7 | Changed setup.py and readme for PyPi optimisation.  
+v 0.9.6 | Added support for secondary top domain (like: co.uk, .parliament.uk, .gov.au).
