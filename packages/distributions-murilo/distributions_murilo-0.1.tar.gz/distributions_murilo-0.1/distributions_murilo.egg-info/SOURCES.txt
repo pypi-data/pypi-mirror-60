@@ -1,0 +1,10 @@
+setup.py
+distributions_murilo/Binomialdistribution.py
+distributions_murilo/Gaussiandistribution.py
+distributions_murilo/Generaldistribution.py
+distributions_murilo/__init__.py
+distributions_murilo.egg-info/PKG-INFO
+distributions_murilo.egg-info/SOURCES.txt
+distributions_murilo.egg-info/dependency_links.txt
+distributions_murilo.egg-info/not-zip-safe
+distributions_murilo.egg-info/top_level.txt
