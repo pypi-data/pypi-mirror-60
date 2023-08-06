@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ddipy
+Version: 0.0.2
+Summary: web-service client of omicsDI API
+Home-page: https://github.com/OmicsDI/Pyddi
+Author: Xpon
+Author-email: hll3939092@gmail.com
+License: MIT Licence
+Description: UNKNOWN
+Keywords: pip,omicsDI,WS-client
+Platform: any
