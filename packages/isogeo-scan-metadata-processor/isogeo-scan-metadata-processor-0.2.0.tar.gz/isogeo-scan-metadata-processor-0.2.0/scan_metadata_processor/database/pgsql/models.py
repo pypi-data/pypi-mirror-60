@@ -1,0 +1,231 @@
+# coding: utf-8
+#! python3  # noqa: E265
+
+"""
+    Models of database used for the Isogeo Scan Metadata Processor.
+    NOT FINISHED.
+"""
+
+# #############################################################################
+# ########## Libraries #############
+# ##################################
+
+# Standard library
+from random import choice
+from string import ascii_lowercase, digits
+import logging
+
+# 3rd party
+from peewee import (
+    BooleanField,
+    CharField,
+    DateTimeField,
+    DeferredForeignKey,
+    FloatField,
+    IntegerField,
+    ForeignKeyField,
+    Model,
+    TimestampField,
+    UUIDField,
+)
+
+from playhouse.sqlite_ext import SqliteExtDatabase
+
+# submodules
+from scan_metadata_processor.utils import sluggy
+
+# #############################################################################
+# ########## Globals ###############
+# ##################################
+
+logger = logging.getLogger(__name__)
+
+# ##############################################################################
+# ########## Classes ###############
+# ##################################
+
+
+database = SqliteExtDatabase(
+    None,
+    pragmas={
+        "journal_mode": "wal",
+        "cache_size": -1 * 64000,  # 64MB
+        "foreign_keys": 1,
+        "ignore_check_constraints": 0,
+        "synchronous": 0,
+    },
+    timeout=30,
+)
+
+
+class BaseModel(Model):
+    """As suggested in the documentation, this class defines a base model class that \
+        specifies which database to use. Then, any subclasses will automatically use \
+            the correct storage."""
+
+    class Meta:
+        database = database
+
+
+class Metadata(BaseModel):
+    """ORM model of a dataset stored as file."""
+
+    name = CharField()
+
+    # identification
+    title = CharField()
+    abstract = CharField()
+    keywords = CharField()
+    catalogs = CharField()
+
+    # smart things
+    profile = CharField()
+    formatName = DeferredForeignKey("Formats")
+
+    path = CharField()
+
+    # relation id
+    src_uuid = UUIDField(verbose_name="Source UUID")
+
+    # timestamps
+    created = TimestampField()
+    updated = DateTimeField()
+
+
+class IsogeoMatcher(BaseModel):
+    """ORM model establishing the match between local and Isogeo."""
+
+    dataset = ForeignKeyField(Metadata, backref="isogeo")
+    isogeo_md_uuid = CharField(max_length=32, index=True)
+    isogeo_md_complete_hash = CharField(max_length=64)
+    isogeo_md_onlyscan_hash = CharField(max_length=64)
+    isogeo_md_last_seen = DateTimeField()
+    isogeo_md_is_deleted = BooleanField(default=False)
+
+
+# -- KEYWORDS #######################################################
+class Formats(BaseModel):
+    """ORM model of Formats."""
+
+    # attribute model
+    name = CharField()
+    name_isogeo = CharField()
+    name_short = CharField()
+    name_long = CharField()
+    versions = DeferredForeignKey("FormatsVersions", null=True)
+
+    slug = CharField(unique=True)
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = sluggy(self.name)
+        super(Formats, self).save(*args, **kwargs)
+
+
+class FormatsVersions(BaseModel):
+    """ORM model of Formats."""
+
+    # attribute model
+    number = CharField(unique=True, null=True)
+
+
+# -- KEYWORDS #######################################################
+class Keywords(BaseModel):
+    """ORM model of keywords."""
+
+    # attribute model
+    name = CharField()
+    slug = CharField(unique=True)
+    thesaurus = CharField(null=False, default="isogeo")
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = "{}:{}".format(sluggy(self.thesaurus), sluggy(self.name))
+        super(Keywords, self).save(*args, **kwargs)
+
+
+# -- VECTORS - FEATURES ATTRIBUTES ##################################################
+class FeatureAttributesTypes(BaseModel):
+    """ORM model of feature-attributes types."""
+
+    # attribute model
+    type_fme = CharField()
+    type_isogeo = CharField()
+    type_generic = CharField()
+
+
+class FeatureAttributesDescriptions(BaseModel):
+    """ORM model of a generic feature-attributes."""
+
+    # attribute model
+    name = CharField(index=True)
+    alias = CharField()
+    description = CharField()
+    language = CharField(max_length=3)
+    isDomain = BooleanField()
+    isIsogeo = BooleanField()
+
+
+class FeatureAttributes(BaseModel):
+    """ORM model of a feature attribute."""
+
+    # relationships
+    metadata = ForeignKeyField(Metadata, backref="metadata")
+
+    # attribute model
+    name = CharField(index=True)
+    dataType = ForeignKeyField(
+        FeatureAttributesTypes, backref="feature-attribute-description"
+    )
+    description = ForeignKeyField(
+        FeatureAttributesDescriptions, backref="feature-attribute-description"
+    )
+    length = IntegerField()
+    precision = FloatField()
+    isNullable = BooleanField()
+    isAutoGenerated = BooleanField()
+
+
+# #############################################################################
+# ##### Main #######################
+# ##################################
+if __name__ == "__main__":
+    # basic test
+    random_str = "".join([choice(ascii_lowercase + digits) for n in range(5)])
+
+    database.init(
+        database="./tests/fixtures/database/scan_metadata_processor_tests_{}.db".format(
+            random_str
+        ),
+        pragmas={
+            "journal_mode": "wal",
+            "cache_size": -1 * 64000,  # 64MB
+            "foreign_keys": 1,
+            "ignore_check_constraints": 0,
+            "synchronous": 0,
+        },
+    )
+
+    database.create_tables(
+        [
+            Metadata,
+            IsogeoMatcher,
+            FeatureAttributes,
+            FeatureAttributesDescriptions,
+            FeatureAttributesTypes,
+            Formats,
+            FormatsVersions,
+            Keywords,
+        ]
+    )
+
+    FormatsVersions.create(number=None)
+
+    Formats.create(
+        name="postgis",
+        name_isogeo="postgis",
+        name_short="POSTGIS",
+        name_long="PostGIS",
+    )
+
+    Keywords.create(name="Bonjour Madame öpé@ {}".format(random_str))

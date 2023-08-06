@@ -1,0 +1,6 @@
+click==7
+isogeo-pysdk<3.4,>=3.3
+python-dotenv
+peewee==3.13.*
+semver==2.9.*
+Send2Trash==1.5.*
