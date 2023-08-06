@@ -1,0 +1,21 @@
+---
+
+extra_includes:
+- pybind11/operators.h
+
+classes:
+  Color8Bit:
+    shared_ptr: true
+    attributes:
+      red:
+      green:
+      blue:
+    methods:
+      Color8Bit:
+        overloads:
+          "":
+          int, int, int:
+          Color&:
+
+inline_code: |
+  cls_Color8Bit.def(py::self == py::self);
