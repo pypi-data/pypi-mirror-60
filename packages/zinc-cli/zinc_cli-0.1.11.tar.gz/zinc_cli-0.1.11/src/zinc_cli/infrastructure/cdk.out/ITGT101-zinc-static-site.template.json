@@ -1,0 +1,355 @@
+{
+  "Outputs": {
+    "Site": {
+      "Value": "https://zinccli.com"
+    },
+    "BucketArn": {
+      "Value": {
+        "Fn::GetAtt": [
+          "SiteBucket397A1860",
+          "Arn"
+        ]
+      }
+    }
+  },
+  "Resources": {
+    "SiteBucket397A1860": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": "zinccli.com",
+        "WebsiteConfiguration": {
+          "ErrorDocument": "index.html",
+          "IndexDocument": "index.html"
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "ITGT101-zinc-static-site/SiteBucket/Resource"
+      }
+    },
+    "SiteBucketPolicy3AC1D0F8": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "SiteBucket397A1860"
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": "*",
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "SiteBucket397A1860",
+                        "Arn"
+                      ]
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ITGT101-zinc-static-site/SiteBucket/Policy/Resource"
+      }
+    },
+    "SiteAliasRecord3C0AF5BF": {
+      "Type": "AWS::Route53::RecordSet",
+      "Properties": {
+        "Name": "zinccli.com.",
+        "Type": "A",
+        "AliasTarget": {
+          "DNSName": "s3-website-us-east-1.amazonaws.com",
+          "HostedZoneId": "Z3AQBSTGFYJSTF"
+        },
+        "HostedZoneId": "Z2V1AL5NKD0TDT"
+      },
+      "Metadata": {
+        "aws:cdk:path": "ITGT101-zinc-static-site/SiteAliasRecord/Resource"
+      }
+    },
+    "DeployWithInvalidationCustomResourceE3FF7455": {
+      "Type": "Custom::CDKBucketDeployment",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "Arn"
+          ]
+        },
+        "SourceBucketNames": [
+          {
+            "Ref": "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1S3Bucket14650576"
+          }
+        ],
+        "SourceObjectKeys": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1S3VersionKeyBD8C65EA"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1S3VersionKeyBD8C65EA"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        "DestinationBucketName": {
+          "Ref": "SiteBucket397A1860"
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "ITGT101-zinc-static-site/DeployWithInvalidation/CustomResource/Default"
+      }
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource"
+      }
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::",
+                      {
+                        "Ref": "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1S3Bucket14650576"
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::",
+                      {
+                        "Ref": "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1S3Bucket14650576"
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*",
+                "s3:DeleteObject*",
+                "s3:PutObject*",
+                "s3:Abort*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "SiteBucket397A1860",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "SiteBucket397A1860",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+        "Roles": [
+          {
+            "Ref": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430S3Bucket13DFEC6A"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430S3VersionKeyED938FBC"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430S3VersionKeyED938FBC"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Handler": "index.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "Arn"
+          ]
+        },
+        "Runtime": "python3.6",
+        "Timeout": 900
+      },
+      "DependsOn": [
+        "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+        "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "ITGT101-zinc-static-site/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource",
+        "aws:asset:path": "asset.f50156b06e01f1dc6e1cd9ed0a8a839ed83b6e01c5b88cb83ec14da0322221cf.zip",
+        "aws:asset:property": "Code"
+      }
+    }
+  },
+  "Parameters": {
+    "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430S3Bucket13DFEC6A": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430\""
+    },
+    "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430S3VersionKeyED938FBC": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430\""
+    },
+    "AssetParameters6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430ArtifactHash55E30580": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"6416c21be320b522db64c705872c0a54d788e3df57b34a5f0d1e8602d7521430\""
+    },
+    "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1S3Bucket14650576": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1\""
+    },
+    "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1S3VersionKeyBD8C65EA": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1\""
+    },
+    "AssetParameters4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1ArtifactHash9AF43440": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"4e8819f876ac70bed06931a3d0f961c7a133295f6abc413a32ae052ee048dde1\""
+    }
+  }
+}
