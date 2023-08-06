@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: SpeakerCraftPy
+Version: 0.5
+Summary: A python library for controlling Speaker Craft MZC series amplifiers over serial.
+Home-page: https://github.com/Fraserbc/SpeakerCraftPy
+Author: Fraser Price
+Author-email: fraserbcprice@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
