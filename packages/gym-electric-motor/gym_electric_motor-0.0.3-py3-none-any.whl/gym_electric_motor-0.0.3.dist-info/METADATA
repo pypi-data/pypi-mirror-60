@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gym-electric-motor
+Version: 0.0.3
+Summary: An OpenAI gym environment for electric motor control.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: matplotlib (>=3.1.0)
+Requires-Dist: numpy (>=1.16.4)
+Requires-Dist: scipy (>=1.2.1)
+Requires-Dist: gym (>=0.15.4)
+Requires-Dist: pytest (>=5.2.2)
+Requires-Dist: pytest-cov
+Requires-Dist: PyQT5
+
+UNKNOWN
+
+
