@@ -1,0 +1,9 @@
+rcsb.utils.io>=0.53
+beautifulsoup4
+lxml
+
+[dev]
+check-manifest
+
+[test]
+coverage
