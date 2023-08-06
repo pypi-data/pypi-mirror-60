@@ -1,0 +1,1 @@
+mashumaro==1.12
