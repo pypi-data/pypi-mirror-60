@@ -1,0 +1,10 @@
+README.rst
+setup.py
+pervect/__init__.py
+pervect/pervect_.py
+pervect.egg-info/PKG-INFO
+pervect.egg-info/SOURCES.txt
+pervect.egg-info/dependency_links.txt
+pervect.egg-info/requires.txt
+pervect.egg-info/top_level.txt
+pervect.egg-info/zip-safe
