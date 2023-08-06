@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: privat24-business-python-sdk
+Version: 0.0.1
+Summary: Privat24 for Business Python SDK
+Home-page: https://github.com/antonlabs/privat24-business-python-sdk
+Author: Anton Kuzmenko
+Author-email: antonlabsnet@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pandas-dev/pandas/issues
+Project-URL: Documentation, https://pandas.pydata.org/pandas-docs/stable/
+Project-URL: Source Code, https://github.com/pandas-dev/pandas
+Description: # privat24-business-python-sdk
+        Privat24 for Business Python SDK
+        
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
