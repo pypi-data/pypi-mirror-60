@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+from argparse import ArgumentParser
+
+def pyhelp(s):
+    l = s.split('.')
+    for i in range(len(l)):
+        pfx = '.'.join(l[:i])
+        sfx = '.'.join(l[i:])
+        if pfx:
+            s = ('from {} import {}'.format(pfx, sfx))
+        else:
+            s = ('import {}'.format(sfx))
+        try:
+            exec('{}; help({})'.format(s,sfx))
+            break
+        except (ImportError, SyntaxError) as e:
+            #print('{} did not work: {}'.format(s,e))
+            pass
+    else:
+        print('Nothing worked - please check input : {}'.format(s))
+        return 1
+    return 0
+
+def main():
+    parser = ArgumentParser()
+    parser.add_argument('src', type=str)
+    arg = parser.parse_args()
+    return pyhelp(arg.src)
+
+if __name__ == '__main__':
+    main()
