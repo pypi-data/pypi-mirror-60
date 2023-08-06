@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: Framework-cheddy51
+Version: 0.0.1
+Summary: A simple python framework for client/server applications
+Home-page: https://github/cheddy51/Framework
+Author: Edward Mansfield
+Author-email: emansfield@neuvoapps.com
+License: UNKNOWN
+Description: # Framework-cheddy51
+        
+        Miscellaneous base classes to implement Client/Server architecture.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <=3.6
