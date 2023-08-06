@@ -1,0 +1,9 @@
+README.md
+setup.py
+magic_sisters_932/__init__.py
+magic_sisters_932/actions.py
+magic_sisters_932/roomie_names.py
+magic_sisters_932.egg-info/PKG-INFO
+magic_sisters_932.egg-info/SOURCES.txt
+magic_sisters_932.egg-info/dependency_links.txt
+magic_sisters_932.egg-info/top_level.txt
