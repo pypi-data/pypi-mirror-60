@@ -1,0 +1,127 @@
+get_user_charges_metadata_sample = (
+    True,  # is_success
+    "",  # message
+    {  # objects
+        "response": {
+            "x-ratelimit-limit": "10000",
+            "x-ratelimit-remaining": "9859",
+            "date": "Tue, 28 Jan 2020 17:18:19 GMT",
+            "status": "200",
+        },
+        "count": 3,
+        "results": {
+            "count": 6,
+            "min_create_date": 1579021561,
+            "max_create_date": 1580213411,
+        },
+        "params": {"user_id": "__SELF__"},
+        "type": "Dict",
+        "pagination": {},
+    },
+)
+
+
+find_all_bill_charges_action_sample = (
+    True,  # is_success
+    "",  # message
+    {  # objects
+        "response": {
+            "x-ratelimit-limit": "10000",
+            "x-ratelimit-remaining": "9863",
+            "date": "Tue, 28 Jan 2020 16:04:10 GMT",
+            "status": "200",
+        },
+        "count": 6,
+        "results": [
+            {
+                "bill_charge_id": 4296492590,
+                "creation_tsz": 1579021561,
+                "type": "vat_seller_services",
+                "type_id": 4379169423,
+                "user_id": 266587158,
+                "amount": 0.04,
+                "currency_code": "USD",
+                "creation_year": "2020",
+                "creation_month": "1",
+                "last_modified_tsz": 1579021561,
+            },
+            {
+                "bill_charge_id": 4379169423,
+                "creation_tsz": 1579021561,
+                "type": "listing",
+                "type_id": 770254433,
+                "user_id": 266587158,
+                "amount": 0.2,
+                "currency_code": "USD",
+                "creation_year": "2020",
+                "creation_month": "1",
+                "last_modified_tsz": 1579021561,
+            },
+            {
+                "bill_charge_id": 4322681042,
+                "creation_tsz": 1580213303,
+                "type": "listing",
+                "type_id": 771024915,
+                "user_id": 266587158,
+                "amount": 0.2,
+                "currency_code": "USD",
+                "creation_year": "2020",
+                "creation_month": "1",
+                "last_modified_tsz": 1580213303,
+            },
+            {
+                "bill_charge_id": 4322681044,
+                "creation_tsz": 1580213303,
+                "type": "vat_seller_services",
+                "type_id": 4322681042,
+                "user_id": 266587158,
+                "amount": 0.04,
+                "currency_code": "USD",
+                "creation_year": "2020",
+                "creation_month": "1",
+                "last_modified_tsz": 1580213303,
+            },
+            {
+                "bill_charge_id": 4322682274,
+                "creation_tsz": 1580213411,
+                "type": "vat_seller_services",
+                "type_id": 4405345583,
+                "user_id": 266587158,
+                "amount": 0.04,
+                "currency_code": "USD",
+                "creation_year": "2020",
+                "creation_month": "1",
+                "last_modified_tsz": 1580213411,
+            },
+            {
+                "bill_charge_id": 4405345583,
+                "creation_tsz": 1580213411,
+                "type": "renew_sold_auto",
+                "type_id": 771024915,
+                "user_id": 266587158,
+                "amount": 0.2,
+                "currency_code": "USD",
+                "creation_year": "2020",
+                "creation_month": "1",
+                "last_modified_tsz": 1580213411,
+            },
+        ],
+        "params": {
+            "limit": 25,
+            "offset": 0,
+            "page": None,
+            "user_id": "__SELF__",
+            "sort_order": "up",
+            "min_created": "1577549049.606895",
+            "max_created": "1580227449.606895",
+        },
+        "type": "BillCharge",
+        "pagination": {
+            "effective_limit": 25,
+            "effective_offset": 0,
+            "next_offset": None,
+            "effective_page": 1,
+            "next_page": None,
+        },
+    },
+)
