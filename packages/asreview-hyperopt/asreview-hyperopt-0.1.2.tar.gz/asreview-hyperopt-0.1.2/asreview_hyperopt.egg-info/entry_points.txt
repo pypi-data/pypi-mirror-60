@@ -1,0 +1,6 @@
+[asreview.entry_points]
+hyper-active = asreviewcontrib.hyperopt:HyperActiveEntryPoint
+hyper-cluster = asreviewcontrib.hyperopt:HyperClusterEntryPoint
+hyper-inactive = asreviewcontrib.hyperopt:HyperInactiveEntryPoint
+show = asreviewcontrib.hyperopt:ShowTrialsEntryPoint
+
