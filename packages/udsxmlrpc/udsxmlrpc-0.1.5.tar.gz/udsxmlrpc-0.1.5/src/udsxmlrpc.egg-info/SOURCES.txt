@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+examples/__init__.py
+examples/client.py
+examples/server.py
+src/udsxmlrpc/__init__.py
+src/udsxmlrpc/client.py
+src/udsxmlrpc/server.py
+src/udsxmlrpc.egg-info/PKG-INFO
+src/udsxmlrpc.egg-info/SOURCES.txt
+src/udsxmlrpc.egg-info/dependency_links.txt
+src/udsxmlrpc.egg-info/not-zip-safe
+src/udsxmlrpc.egg-info/top_level.txt

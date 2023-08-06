@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: udsxmlrpc
+Version: 0.1.5
+Summary: Unix domain socket XML-RPC
+Home-page: https://github.com/daizhaolin/udsxmlrpc
+Author: daizhaolin
+Author-email: UNKNOWN
+License: BSD
+Description: 
+        Created on 2020-01-13
+        
+        @author: daizhaolin
+        
+Platform: 
