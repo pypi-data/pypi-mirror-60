@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: conan-settings
+Version: 0.1.0
+Summary: Modify Conan settings.yml configuration
+Home-page: https://github.com/eerorika/conan-settings
+Author: Eero Rikalainen
+Author-email: eerorika@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,9 @@
+setup.py
+conan_settings/__init__.py
+conan_settings/cli.py
+conan_settings.egg-info/PKG-INFO
+conan_settings.egg-info/SOURCES.txt
+conan_settings.egg-info/dependency_links.txt
+conan_settings.egg-info/entry_points.txt
+conan_settings.egg-info/requires.txt
+conan_settings.egg-info/top_level.txt
