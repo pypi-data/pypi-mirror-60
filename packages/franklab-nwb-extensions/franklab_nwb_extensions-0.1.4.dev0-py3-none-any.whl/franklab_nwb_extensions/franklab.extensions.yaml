@@ -1,0 +1,124 @@
+groups:
+- neurodata_type_def: Apparatus
+  neurodata_type_inc: NWBDataInterface
+  doc: a graph of nodes and edges
+  quantity: '*'
+  attributes:
+  - name: name
+    dtype: text
+    doc: the name of this apparatus
+  - name: help
+    dtype: text
+    value: Behavioral Apparatus
+    doc: help doc
+  groups:
+  - neurodata_type_def: Node
+    neurodata_type_inc: NWBDataInterface
+    doc: nodes in the graph
+    quantity: '*'
+    attributes:
+    - name: name
+      dtype: text
+      doc: the name of this node
+    - name: help
+      dtype: text
+      value: Apparatus Node
+      doc: help doc
+  - neurodata_type_def: Edge
+    neurodata_type_inc: NWBDataInterface
+    doc: edges in the graph
+    quantity: '*'
+    attributes:
+    - name: help
+      dtype: text
+      value: Apparatus Edge
+      doc: help doc
+    datasets:
+    - name: edge_nodes
+      dtype: text
+      dims:
+      - first_node_name|second_node_name
+      shape:
+      - 2
+      doc: names of the nodes this edge connects
+- neurodata_type_def: Task
+  neurodata_type_inc: NWBDataInterface
+  doc: a behavioral task
+  attributes:
+  - name: name
+    dtype: text
+    doc: the name of this task
+  - name: description
+    dtype: text
+    doc: description of this task
+  - name: help
+    dtype: text
+    value: Behavioral Task
+    doc: help doc
+- neurodata_type_def: PointNode
+  neurodata_type_inc: Node
+  doc: node representing a point in 2D space
+  quantity: '*'
+  attributes:
+  - name: help
+    dtype: text
+    value: Apparatus Point
+    doc: help doc
+  datasets:
+  - name: coords
+    dtype: float
+    dims:
+    - num_coords
+    - x_vals|y_vals
+    shape:
+    - 1
+    - 2
+    doc: x/y coordinate of this 2D point
+- neurodata_type_def: SegmentNode
+  neurodata_type_inc: Node
+  doc: node representing a 2D linear segment defined by its start andend points
+  quantity: '*'
+  attributes:
+  - name: help
+    dtype: text
+    value: Apparatus Segment
+    doc: help doc
+  datasets:
+  - name: coords
+    dtype: float
+    dims:
+    - num_coords
+    - x_vals|y_vals
+    shape:
+    - 2
+    - 2
+    doc: x/y coordinates of the start and end points of this segment
+- neurodata_type_def: PolygonNode
+  neurodata_type_inc: Node
+  doc: node representing a 2D polygon area
+  quantity: '*'
+  attributes:
+  - name: help
+    dtype: text
+    value: Apparatus Polygon
+    doc: help doc
+  datasets:
+  - name: coords
+    dtype: float
+    dims:
+    - num_coords
+    - x_vals|y_vals
+    shape:
+    - 'null'
+    - 2
+    doc: x/y coordinates of the exterior points of this polygon
+  - name: interior_coords
+    dtype: float
+    dims:
+    - num_coords
+    - x_vals|y_vals
+    shape:
+    - 'null'
+    - 2
+    doc: x/y coordinates of interior points inside this polygon
+    quantity: '?'

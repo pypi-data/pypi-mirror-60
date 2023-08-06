@@ -1,0 +1,12 @@
+franklab_nwb_extensions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+franklab_nwb_extensions/core.py,sha256=7rJlLQpurecYhg8h1F69DhQqEpvv_D47A-LLB7BbhGs,333
+franklab_nwb_extensions/create_franklab_spec.py,sha256=SPLAdPu1J_iwYUXwxyYC7-21jYej3mjSlDok-C-W0I4,12018
+franklab_nwb_extensions/fl_extension.py,sha256=RKswO1-oe4lSf-eTA6cq-CLnELt16CRWdoLP7Xu20Gk,6125
+franklab_nwb_extensions/franklab.extensions.yaml,sha256=j69F3ekN61eUidNiurSbDs9-0lkzoq-ZH1kaHGSZGs4,2708
+franklab_nwb_extensions/franklab.namespace.yaml,sha256=2zEvgWqCQ6djT1IujXX1AG8-TxLy8H4iN4t-1hxwRpw,140
+franklab_nwb_extensions-0.1.4.dev0.dist-info/LICENSE,sha256=BFR4O7e4-n3v9JIB6alO02DMXjcncPuKvB7SE9HJqyo,1072
+franklab_nwb_extensions-0.1.4.dev0.dist-info/METADATA,sha256=7VSe3kHeUJpdVMz4_ZyRUV0mROt-t3Hht2RiLt2JHRE,557
+franklab_nwb_extensions-0.1.4.dev0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+franklab_nwb_extensions-0.1.4.dev0.dist-info/entry_points.txt,sha256=FHfJFT79drPfKMWPx-SgT-KGl7F5fYd-dreuv7SFN2g,110
+franklab_nwb_extensions-0.1.4.dev0.dist-info/top_level.txt,sha256=dfQwIWys-TVEdn2WtzqrGuM9baQKIga6-AO3yaaWqXQ,24
+franklab_nwb_extensions-0.1.4.dev0.dist-info/RECORD,,
