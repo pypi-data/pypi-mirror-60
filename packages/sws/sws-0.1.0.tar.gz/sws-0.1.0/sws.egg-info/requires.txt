@@ -1,0 +1,9 @@
+requests
+pytube3
+docopt
+
+[dev]
+nox
+pytest
+mkdocs
+mkdocs-material
