@@ -1,0 +1,10 @@
+README.md
+setup.py
+bin/mirror_flickr
+flickr_mirroring.egg-info/PKG-INFO
+flickr_mirroring.egg-info/SOURCES.txt
+flickr_mirroring.egg-info/dependency_links.txt
+flickr_mirroring.egg-info/requires.txt
+flickr_mirroring.egg-info/top_level.txt
+mirroring/__init__.py
+mirroring/flickr.py

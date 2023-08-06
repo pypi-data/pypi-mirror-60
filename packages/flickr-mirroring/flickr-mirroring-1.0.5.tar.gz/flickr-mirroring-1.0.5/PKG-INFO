@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: flickr-mirroring
+Version: 1.0.5
+Summary: Flickr Mirroring
+Home-page: UNKNOWN
+Author: Daniel CAUNE
+Author-email: daniel.caune@gmail.com
+License: MIT
+Description: # Flickr Mirroring
+        
+        ## Installation
+        
+        ```bash
+        $ pipenv shell --three
+        $ pipenv install flickr-mirroring
+        Installing flickr-mirroring…
+        Adding flickr-mirroring to Pipfile's [packages]…
+        ✔ Installation Succeeded
+        Pipfile.lock not found, creating…
+        Locking [dev-packages] dependencies…
+        Locking [packages] dependencies…
+        ✔ Success!
+        Updated Pipfile.lock (96799b)!
+        Installing dependencies from Pipfile.lock (96799b)…
+          🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 32/32 — 00:00:15
+        ```
+        
+        ## Execution
+        
+        ```bash
+        $ flickr_mirror
+        ```
+        
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
