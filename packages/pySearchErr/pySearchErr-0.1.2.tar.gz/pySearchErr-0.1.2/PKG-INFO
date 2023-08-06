@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pySearchErr
+Version: 0.1.2
+Summary: Detects Python3 exception and searches for the error on Google automatically
+Home-page: https://github.com/JING1201/SwampHacks2020
+Author: jlionwg
+License: MIT
+Description: # pySearchErr
+        Detects Python3 exception and searches for the error on Google automatically
+        ## Installation
+        ```
+        pip install pySearchErr
+        ```
+        ## Usage
+        ```
+        pySearchErr <filename.py>
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
