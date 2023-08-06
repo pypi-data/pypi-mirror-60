@@ -1,0 +1,11 @@
+Pipfile
+Pipfile.lock
+README.md
+forexcast.py
+setup.py
+forexcast.egg-info/PKG-INFO
+forexcast.egg-info/SOURCES.txt
+forexcast.egg-info/dependency_links.txt
+forexcast.egg-info/entry_points.txt
+forexcast.egg-info/requires.txt
+forexcast.egg-info/top_level.txt

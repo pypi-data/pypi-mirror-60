@@ -1,0 +1,6 @@
+Click
+fbprophet
+holidays<=0.10
+pandas
+requests
+plotly
