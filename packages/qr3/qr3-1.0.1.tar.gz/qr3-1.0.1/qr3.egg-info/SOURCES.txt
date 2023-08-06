@@ -1,0 +1,11 @@
+setup.py
+qr3/__init__.py
+qr3/qr.py
+qr3.egg-info/PKG-INFO
+qr3.egg-info/SOURCES.txt
+qr3.egg-info/dependency_links.txt
+qr3.egg-info/not-zip-safe
+qr3.egg-info/requires.txt
+qr3.egg-info/top_level.txt
+test/__init__.py
+test/test_qr3.py
