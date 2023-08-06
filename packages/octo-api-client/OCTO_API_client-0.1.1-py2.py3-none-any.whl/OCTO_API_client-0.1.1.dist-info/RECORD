@@ -1,0 +1,8 @@
+octo_client/__init__.py,sha256=IwYkMC67VQVt8QZmENZd4LtsjXvpl_hB475yZox_nAg,111
+octo_client/client.py,sha256=4s5vf0OvCP6qJBGrkobaLSy8SkxD2cglX_D53N72dn8,9974
+octo_client/exceptions.py,sha256=g8FOAAX8_ZUaSj052z2PmGlvo2WEinPj6rIgJMeHrSc,426
+octo_client/models.py,sha256=Rf06SfmYIwcZnSnAiJLZJl1LAHTZNT2_rxQ6XlOZHjI,4793
+OCTO_API_client-0.1.1.dist-info/METADATA,sha256=drwIm6tn4vbaibNdZsa2hkBzATpqyEYO2Or8503sBII,1474
+OCTO_API_client-0.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+OCTO_API_client-0.1.1.dist-info/top_level.txt,sha256=yXKmlVffgy3BRjtlwXj46armh3Szalv0YnrAfEOtTHs,12
+OCTO_API_client-0.1.1.dist-info/RECORD,,
