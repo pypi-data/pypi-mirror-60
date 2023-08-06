@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: django-app-bootstrap
+Version: 1.0.1
+Summary: Quickly generate application from django model files
+Home-page: https://www.bapp.ro/
+Author: Cristian Boboc
+Author-email: cristi@cbsoft.ro
+License: GNU
+Description: # django-app-bootstrap
+        A simple django application that can speedup your development by generating code from models.
+        
+Platform: UNKNOWN
