@@ -1,0 +1,48 @@
+#!/bin/bash
+. /pi/bin/inc/wait_funcs.sh
+. /pi/bin/inc/matchers.sh
+. /pi/bin/inc/docker_utils.sh
+
+function start_inventory(){
+	# mysqld: ready for connections.
+	start_docker inventory "$msg_mysql"
+}
+
+rasa="$HOME/miniconda3/envs/rasa/bin/rasa"
+
+# startup 
+if [ $# -lt 1 ]; then	
+	echo "available opts: all, zk, storm, repl, ..."
+else
+	CMD=$1
+	case "$CMD" in
+	"redis")
+		start_docker redis "$msg_redis"
+		;;
+	"inventory")
+		start_inventory
+		;;
+	"duckling")
+		target_dir="$HOME/jcloud/assets/langs/workspace/data-procs/duckling/duckling"
+		# https://github.com/facebook/duckling/issues/85
+		cd $target_dir ; stack exec duckling-example-exe -- -p 8000
+		;;
+	"servant")
+	    python -m servants.avatar_servant run 1701 False
+	    ;;
+	"servant_nlu")
+	    python -m servants.nlu_dispatcher run 1702 False
+	    ;;
+    "agent")
+        $rasa run --enable-api -v
+        ;;
+	"actions")
+	    $rasa run actions -p 5077
+	    ;;
+	*)
+		# default proc
+		handle_cmd ${@:1}
+		;;
+	esac
+fi
+

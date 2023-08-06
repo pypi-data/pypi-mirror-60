@@ -1,0 +1,15 @@
+jieba~=0.40
+simplejson
+paddlepaddle-tiny~=1.6.1
+sagas>=0.1.2
+python_json_config
+python-dotenv
+
+[dev]
+jupyter~=1.0.0
+streamlit~=0.50.2
+ipymarkup~=0.5.0
+
+[rasa]
+rasa~=1.6.0
+rasa-sdk~=1.6.0

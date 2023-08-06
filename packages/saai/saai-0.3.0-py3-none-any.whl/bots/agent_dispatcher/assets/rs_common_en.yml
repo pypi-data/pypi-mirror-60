@@ -1,0 +1,41 @@
+package: common
+lang: en
+
+rules_verb: &defaults
+  v1: verb(nsubj=agency, obj=agency, conj='c_verb')
+  v2: verb(nsubj=agency, cop='c_aux', nmod=agency)
+rules_aux: &targets
+  a1: aux('adj', nsubj=agency, cop='c_aux')
+behave_purpose: &behave_purpose
+  v4: verb(behaveof('arrive', 'v'), nsubj=agency, xcomp='c_verb', obl=agency, )
+
+intents:
+  food:
+    rules:
+      r5: root(obl=ci.cust_ents('cuisine'))
+    examples:
+      - how about north eastern food
+
+  injured:
+    rules:
+      r5: verb(behaveof('take', 'v'), pred_any_path('obj', 'damage', 'n'), obj=dateins('number'))
+    examples:
+      - you took fifty damage
+
+  dead:
+    rules:
+      r5: cop(behaveof('dead', 'a'), nsubj=agency, cop='c_aux')
+    examples:
+      - you are dead
+
+  list_products:
+    rules:
+      v5: verb(behaveof('enumerate', 'v'), obj=kindof('product/artifact', 'n'))
+    examples:
+      - list some products
+
+  birth:
+    rules:
+      v5: verb(nsubj_pass=agency, obl=dateins('time'))
+    examples:
+      - I was born in the spring of 1982.

@@ -1,0 +1,46 @@
+version: '3.0'
+
+services:
+  rasa:
+    image: samlet/rasa_zh
+    ports:
+    - "5005:5005"
+    volumes:
+    - "./:/app/"
+
+  actions:
+    image: samlet/tour_zh
+    ports:
+    - "5055:5055"
+    volumes:
+    - "./actions:/app/actions"
+    depends_on:
+      - mysql
+    # restart: on-failure
+    environment:
+      db_host: mysql
+
+  duckling:
+    image: samlet/duckling:2019-12-22
+    ports:
+    - "8000:8000"
+
+  mysql:
+    image: mysql:8
+    ports:
+    - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: "%"
+    volumes:
+    - ./docker/data:/docker-entrypoint-initdb.d
+    - db-data:/var/lib/mysql
+    # command: --default-authentication-plugin=mysql_native_password
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+volumes:
+  db-data:
+

@@ -1,0 +1,89 @@
+#!/bin/bash
+# . /pi/bin/inc/wait_funcs.sh
+# . /pi/bin/inc/matchers.sh
+# . /pi/bin/inc/docker_utils.sh
+
+function start_inventory(){
+	# mysqld: ready for connections.
+	start_docker inventory "$msg_mysql"
+}
+
+export PYTHONPATH=/pi/stack:$PYTHONPATH
+python="$HOME/miniconda3/envs/rasa/bin/python"
+jupyter="$HOME/miniconda3/envs/rasa/bin/jupyter"
+streamlit="$HOME/miniconda3/envs/rasa/bin/streamlit"
+rasa="$HOME/miniconda3/envs/rasa/bin/rasa"
+
+# startup 
+if [ $# -lt 1 ]; then	
+	echo "available opts: all, zk, storm, repl, ..."
+else
+	CMD=$1
+	case "$CMD" in
+	"redis")
+		start_docker redis "$msg_redis"
+		;;
+	"build")
+		$python setup.py sdist bdist_wheel
+		;;
+    "local")
+        pip install --no-deps -e .
+        ;;
+    "dist")
+	    rm ./dist/*
+        python setup.py sdist bdist_wheel
+        python -m twine upload dist/*
+	    ;;
+	"note")		
+		$jupyter notebook
+		;;
+	"sl")
+		$python -m sagas.tool.creators normal ${@:2}
+		$streamlit run ${@:2}
+		;;
+	"agent_servant")
+	    $python -m saai.agent_servant app
+	    ;;
+	"agent_servant_prod")
+	    $python -m saai.agent_servant app agents_prod
+	    ;;
+	"genesis_actions")
+	    cd bots/genesis && $python -m rasa_sdk --actions actions.actions
+	    # $rasa run actions.actions
+	    ;;
+	"saya_actions")
+		cd bots/saya && $python -m rasa_sdk --actions actions.actions --port 5088
+		# $rasa run actions.actions
+		;;
+	"saya_nlg")
+	    $python -m saai.nlg.nlg_server --domain /pi/ws/sagas-ai/bots/saya/domain.yml	    
+		;;
+	"saya")
+		cd bots/saya
+		$rasa shell --endpoints endpoints.yml
+		;;
+	"saya_en")
+		cd bots/saya
+		$rasa shell --endpoints endpoints_en.yml
+		;;
+	"nlu")		
+		model_dir='/pi/ws/sagas-ai/nlu_multilang/models'
+		if [ $# -gt 2 ]; then
+			lang=$2
+			port=$3
+			echo "run server for lang $lang on port $port ..."
+			$rasa run --enable-api -m ${model_dir}/${lang}_current.tar.gz -p $port
+		else
+			echo "use: start nlu <lang> <port>"
+		fi		
+		;;	
+	"nlu_multilang")
+		$python -m saai.multi_nlu_servant 
+		;;
+	*)
+		# default proc
+		handle_cmd ${@:1}
+		;;
+	esac
+fi
+
