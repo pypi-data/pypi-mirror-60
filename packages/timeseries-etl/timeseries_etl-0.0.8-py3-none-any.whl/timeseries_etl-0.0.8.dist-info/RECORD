@@ -1,0 +1,10 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_etl.py,sha256=u2mKY--sxnQTuT--Ynn397KenUcMEEwBDHr4NHP_dfA,6154
+timeseries_etl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timeseries_etl/network_service.py,sha256=oThV6zQzj8ibPdSaG0V8_8mcdDnoZ1F2voIAKFaIpBE,3278
+timeseries_etl/timeseries_etl.py,sha256=5LcS0aZf5yHa_S1rRJ1UDqdKdKzrgxFvq6uwGj9pnII,18074
+timeseries_etl-0.0.8.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+timeseries_etl-0.0.8.dist-info/METADATA,sha256=bF8WFkNicm8J0YADBOgtTgD14f-66x0DF4WThw_OpdU,595
+timeseries_etl-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+timeseries_etl-0.0.8.dist-info/top_level.txt,sha256=NlkbI49txXAo8GlZ6SV_GLHN_v-q-x5ecxbC038BR1Q,20
+timeseries_etl-0.0.8.dist-info/RECORD,,
