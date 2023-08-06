@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: libsbml-draw
+Version: 0.0.17
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: matplotlib
+Requires-Dist: numpy (==1.18.1)
+Requires-Dist: nose
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: sphinx-autobuild
+Requires-Dist: sphinxcontrib-napoleon
+Requires-Dist: tellurium
+Requires-Dist: coverage
+Requires-Dist: networkx
+Provides-Extra: documentation
+Requires-Dist: sphinx ; extra == 'documentation'
+Requires-Dist: sphinx-rtd-theme ; extra == 'documentation'
+Requires-Dist: sphinx-autobuild ; extra == 'documentation'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'documentation'
+Provides-Extra: testing
+Requires-Dist: nose ; extra == 'testing'
+
+UNKNOWN
+
+
