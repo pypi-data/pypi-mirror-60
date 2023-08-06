@@ -1,0 +1,15 @@
+datadog_lambda/__init__.py,sha256=UAcBR3kljxP8cTml-HOZx9uEmqODaZcU0mKX3-e3yj8,294
+datadog_lambda/cold_start.py,sha256=GC4If8U_7AdBnPFR9eTblwr5MbHHmrLupaZnCHvzZVQ,628
+datadog_lambda/constants.py,sha256=RfWlWqr8VjF5pMaQCtlVjzRcOFdoFEsgexUoLPTQcjc,716
+datadog_lambda/metric.py,sha256=NxVVGzLViGaVxLojZgIUYr7rDTRUGEVW0UqeXSQKsOk,4589
+datadog_lambda/patch.py,sha256=99drmNUEgA9P-GODG07VvdMkXWtxDeTuOJE9H_RmvH4,2485
+datadog_lambda/tags.py,sha256=lyp8U1NqlM-jmMD_D-1zn9IYvUsCMD0Asoo9FDsjKvU,1974
+datadog_lambda/tracing.py,sha256=wR7PedsIYKTLrJPLqvYCdnJjpkc1rpj6j9q5H3WrVDk,6007
+datadog_lambda/wrapper.py,sha256=MbcXPXKFV9g2WcAViXX1mvgObNEd3IY-UESMMHJH2o4,2529
+datadog_lambda-1.12.0.dist-info/LICENSE,sha256=4yQmjpKp1MKL7DdRDPVHkKYc2W0aezm5SIDske8oAdM,11379
+datadog_lambda-1.12.0.dist-info/LICENSE-3rdparty.csv,sha256=462QRPQeMmKfirV6Tt7X2h80Z8ZJex-eHm9Q9sGr9ls,545
+datadog_lambda-1.12.0.dist-info/METADATA,sha256=51vSS_cFTXQgKn_3vtuQ0umfCBh8TB4mUFFP7YivUx0,13384
+datadog_lambda-1.12.0.dist-info/NOTICE,sha256=fHZDHJLS6pSIZxUiuAYGL3pbrqKCMOgVhfbeRymG3zo,147
+datadog_lambda-1.12.0.dist-info/WHEEL,sha256=CbUdLTqD3-4zWemf83rgR_2_MC4TeXw9qXwrXte5w4w,92
+datadog_lambda-1.12.0.dist-info/top_level.txt,sha256=k1eZ7KUdAy9ze8LgmXkoG-zgIQ5-Lyz3dnq5S2YAiyI,15
+datadog_lambda-1.12.0.dist-info/RECORD,,
