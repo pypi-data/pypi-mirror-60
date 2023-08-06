@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+ez_setup.py
+setup.py
+metaphor/__init__.py
+metaphor/services_draw.txt
+metaphor/version_draw.py
+metaphor/draw/__init__.py
+metaphor/draw/__main__.py
+metaphor/draw/graphcreation.py
+metaphor_draw.egg-info/PKG-INFO
+metaphor_draw.egg-info/SOURCES.txt
+metaphor_draw.egg-info/dependency_links.txt
+metaphor_draw.egg-info/not-zip-safe
+metaphor_draw.egg-info/top_level.txt

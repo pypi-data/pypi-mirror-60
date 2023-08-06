@@ -1,0 +1,4 @@
+[module]
+path = metaphor.draw
+name = draw
+sticker = dr

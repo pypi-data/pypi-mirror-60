@@ -1,0 +1,7 @@
+include ez_setup.py
+include metaphor/version_draw.py
+include metaphor/services_draw.txt
+#
+#  Installation of draw
+#
+recursive-include metaphor/draw *.py
