@@ -1,0 +1,18 @@
+pyvis
+networkx
+matplotlib
+numpy
+lxml
+graphviz
+pandas
+scipy
+pyarrow
+scikit-learn
+pydotplus
+pulp
+pytz
+ortools==7.4.7247
+intervaltree
+
+[:python_version < "3.7"]
+ciso8601
