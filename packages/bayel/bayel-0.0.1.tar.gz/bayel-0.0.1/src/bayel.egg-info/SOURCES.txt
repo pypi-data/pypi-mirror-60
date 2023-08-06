@@ -1,0 +1,6 @@
+setup.py
+src/bayel/__init__.py
+src/bayel.egg-info/PKG-INFO
+src/bayel.egg-info/SOURCES.txt
+src/bayel.egg-info/dependency_links.txt
+src/bayel.egg-info/top_level.txt
