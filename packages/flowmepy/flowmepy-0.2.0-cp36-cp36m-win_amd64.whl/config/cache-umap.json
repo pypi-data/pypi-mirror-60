@@ -1,0 +1,10 @@
+{
+  "batch": {
+    "mode": "cache_umap",
+    "dataPath": "../samples/",
+    "resultPath": "../batch-cache-umap.txt",
+    "cachePath": "../umap-cache/",
+    "day": "all",
+    "tube": "all"
+  }
+}
