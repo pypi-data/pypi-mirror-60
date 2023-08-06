@@ -1,0 +1,11 @@
+README.md
+setup.py
+sciler/__init__.py
+sciler/app.py
+sciler/device.py
+sciler/test_device.py
+sciler.egg-info/PKG-INFO
+sciler.egg-info/SOURCES.txt
+sciler.egg-info/dependency_links.txt
+sciler.egg-info/requires.txt
+sciler.egg-info/top_level.txt
