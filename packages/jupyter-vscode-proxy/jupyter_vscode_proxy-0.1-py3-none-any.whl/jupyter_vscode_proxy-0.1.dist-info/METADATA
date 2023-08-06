@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jupyter-vscode-proxy
+Version: 0.1
+Summary: VS Code extension for Jupyter
+Home-page: https://github.com/betatim/vscode-binder
+Author: Tim Head
+License: BSD
+Project-URL: Source, https://github.com/betatim/vscode-binder/
+Project-URL: Tracker, https://github.com/betatim/vscode-binder/issues
+Keywords: Jupyter,vscode,vs code,editor
+Platform: UNKNOWN
+Classifier: Framework :: Jupyter
+Description-Content-Type: text/markdown
+Requires-Dist: jupyter-server-proxy
+
+# VS Code on Binder
+
+VS Code on Binder, because sometimes you need a real editor.
+
+Try it: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/betatim/vscode-binder/master?urlpath=lab)
+
+
