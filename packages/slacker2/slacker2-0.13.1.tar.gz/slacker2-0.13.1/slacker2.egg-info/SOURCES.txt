@@ -1,0 +1,9 @@
+README.md
+setup.py
+slacker2/__init__.py
+slacker2/utilities.py
+slacker2.egg-info/PKG-INFO
+slacker2.egg-info/SOURCES.txt
+slacker2.egg-info/dependency_links.txt
+slacker2.egg-info/requires.txt
+slacker2.egg-info/top_level.txt
