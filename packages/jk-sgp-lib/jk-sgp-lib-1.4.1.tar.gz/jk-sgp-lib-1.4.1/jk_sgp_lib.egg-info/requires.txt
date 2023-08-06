@@ -1,0 +1,6 @@
+scrapy
+simplejson
+pytz
+pymysql
+datetime
+qcloudsms_py
