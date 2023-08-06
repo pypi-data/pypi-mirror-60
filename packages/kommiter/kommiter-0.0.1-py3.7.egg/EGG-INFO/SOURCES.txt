@@ -1,0 +1,10 @@
+README.md
+autocommit.py
+setup.py
+kommiter.egg-info/PKG-INFO
+kommiter.egg-info/SOURCES.txt
+kommiter.egg-info/dependency_links.txt
+kommiter.egg-info/entry_points.txt
+kommiter.egg-info/requires.txt
+kommiter.egg-info/top_level.txt
+kommiter.egg-info/zip-safe
