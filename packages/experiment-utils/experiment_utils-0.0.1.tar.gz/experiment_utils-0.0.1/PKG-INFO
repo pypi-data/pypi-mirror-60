@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: experiment_utils
+Version: 0.0.1
+Summary: Helpers utils for manage and track experiments.
+Home-page: https://github.com/ayasyrev/experiment_utils
+Author: Andrei Yasyrev
+Author-email: a.yasyrev@gmail.com
+License: Apache Software License 2.0
+Description: # Experiment-utils
+        > Helper utils for track and manage Dl experimets with pytorch.
+        
+        
+        Wery early stage - just draft for my utils.
+        
+        ## Install
+        
+        `pip install __`
+        
+        `Editeble install: 
+        git clone https://github.com/ayasyrev/experiment-utils  
+        cd experiment-utils  
+        pip install -e .  `
+        
+        ## How to use
+        
+        Import Experiment:
+        
+        ```python
+        from experiment_utils.experiment import *
+        ```
+        
+        After import you has p (stands for Parameters) and e (Experiment) objects.
+        
+        ```python
+        p.exp_name
+        ```
+        
+        
+        
+        
+            'noname'
+        
+        
+        
+        ```python
+        e.name
+        ```
+        
+        
+        
+        
+            'noname'
+        
+        
+        
+Keywords: DL pytorch experiment
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
