@@ -1,0 +1,11 @@
+README.md
+setup.py
+NotAOrm/SQLQueries.py
+NotAOrm/__init__.py
+NotAOrm/condition.py
+NotAOrm/query.py
+NotAOrm/table.py
+NotAOrm.egg-info/PKG-INFO
+NotAOrm.egg-info/SOURCES.txt
+NotAOrm.egg-info/dependency_links.txt
+NotAOrm.egg-info/top_level.txt
