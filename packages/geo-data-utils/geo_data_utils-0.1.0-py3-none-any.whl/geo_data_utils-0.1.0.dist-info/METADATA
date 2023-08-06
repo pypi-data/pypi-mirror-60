@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: geo-data-utils
+Version: 0.1.0
+Summary: Geology Data Utils
+Home-page: https://gitlab.com/csiro-geoanalytics/python-shared/geo-data-utils
+Maintainer: Samuel Bradley
+Maintainer-email: sam.bradley@csiro.au
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: loguru
+Requires-Dist: click
+Requires-Dist: xlrd
+Requires-Dist: openpyxl
+
+# Geology Data Utils v0.1.0
+
+## Getting Started
+
+install from pypi
+
+```
+pip install geo-data-utils
+```
+
+Install direct from git
+
+```
+pip install git+https://gitlab.com/csiro-geoanalytics/python-shared/geo-data-utils.git
+```
+
+Or clone the repo so you can make changes or view the code, note the -e in the pip install is optional, it makes it so any code changes are automatically picked up.
+
+```
+git clone https://gitlab.com/csiro-geoanalytics/python-shared/geo-data-utils.git
+<Navigate to the code directory>
+pip install -e .
+```
+
+If you would like to work on the code in a virtual env a pipfile is available
+
+```
+pip install pipenv
+pipenv install
+pipenv shell
+```
+
+## Usage
+
+Once it's installed use the command 'geo-data-utils'
+
+TODO: more info
+
+
