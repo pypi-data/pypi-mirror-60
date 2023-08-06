@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pgx-pipe-helper
+Version: 0.0.4
+Summary: Simple helper for common functionality
+Home-page: https://github.com/lumc/pgx-pipe-helper
+Author: Guy Allard, LUMC
+Author-email: guyallard01@gmail.com
+License: UNKNOWN
+Keywords: bioinformatics snakemake
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pyyaml
+Requires-Dist: locus-processing
+Requires-Dist: snakemake
+
+UNKNOWN
+
+
