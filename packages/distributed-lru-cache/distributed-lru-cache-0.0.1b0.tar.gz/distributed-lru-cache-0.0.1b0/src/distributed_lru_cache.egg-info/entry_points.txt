@@ -1,0 +1,3 @@
+[console_scripts]
+distributed-lru-cache = distributed_lru_cache.cli:main
+
