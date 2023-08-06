@@ -1,0 +1,13 @@
+django_s3_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_s3_sqlite/base.py,sha256=0apjw4CDprmr0GyEFWFyws6nLlh_5hYceZF7AjudoJw,4504
+django_s3_sqlite/client.py,sha256=13O4hBY0lYxRC3ZM48lJAFdOCdkqyP6LnbMQNH4Eyuk,296
+django_s3_sqlite/features.py,sha256=ZwmbIwYIWk5CcVaxJnEgFUyWghzyKFkYPDMY5wuBYSA,66
+django_s3_sqlite/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_s3_sqlite/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_s3_sqlite/management/commands/create_admin_user.py,sha256=A_C-xGFRfDbDQAZ41eguPIGAlcV43ieEuSPagj5Glog,2243
+django_s3_sqlite/management/commands/s3_sqlite_vacuum.py,sha256=HIqgGgFjh43cL3AhJesTROxrteLBVj-FmTUKOCO8buw,1041
+django_s3_sqlite/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_s3_sqlite-0.0.3.dist-info/METADATA,sha256=m5po2D3AWStg04Jx202n0gUuwbajZ34WVa8jxPu4H0o,5158
+django_s3_sqlite-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_s3_sqlite-0.0.3.dist-info/top_level.txt,sha256=K6S3mshdgH92NRi2nTP-lCP4cV6XSTnKgYCcWGcp8dA,17
+django_s3_sqlite-0.0.3.dist-info/RECORD,,
