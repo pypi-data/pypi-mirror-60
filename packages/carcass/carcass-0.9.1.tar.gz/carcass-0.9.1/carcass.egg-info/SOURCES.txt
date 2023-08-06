@@ -1,0 +1,14 @@
+README.md
+setup.py
+carcass/__init__.py
+carcass/carcass.py
+carcass/command_line.py
+carcass/options.py
+carcass.egg-info/PKG-INFO
+carcass.egg-info/SOURCES.txt
+carcass.egg-info/dependency_links.txt
+carcass.egg-info/entry_points.txt
+carcass.egg-info/requires.txt
+carcass.egg-info/top_level.txt
+carcass/utils/__init__.py
+carcass/utils/version.py
