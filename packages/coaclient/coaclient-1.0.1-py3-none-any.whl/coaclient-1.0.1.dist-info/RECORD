@@ -1,0 +1,13 @@
+coaclient/__init__.py,sha256=032tsPV8oM1mr9kK5PqM7Uo7iQ1gnFxF19zdxqpmz3Y,56
+coaclient/main.py,sha256=mrAYRb9KhAceB0BUqrsX7z-hP6a0C851DR0PI6W0b3A,2380
+coaclient/oauth2.py,sha256=wlp3GVtnzILon-YhG1FTCRfVI-sni-mFlxf2NS4RARU,21336
+coaclient/utils.py,sha256=38KZrMzI4PFlb0IgKH_yocdg7WVwvMNn2qMFAdg33EQ,2172
+coaclient/version.py,sha256=6DEdOaq3r-p9xYFL6rZb2ACwBgmAq3PaS2mXoo7Siy8,54
+coaclient/commands/__init__.py,sha256=GtWSJ_HpVd_luOi0pCrZCrAfSyZNWCK09nntcEKrrXQ,156
+coaclient/commands/config.py,sha256=RXieCcFwHwOYbyU4P166KnIg7BIPrYfG53jkGCUmn-U,5210
+coaclient/commands/version.py,sha256=imZHesoXw5a_trzfdWe2GBqoGmFCUHPZUNnD6bpo7n0,1388
+coaclient-1.0.1.dist-info/METADATA,sha256=d6nDcZEm1fJOH3gIltMv3wvbaK5LBUh5pm10BNOiYTY,3965
+coaclient-1.0.1.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+coaclient-1.0.1.dist-info/entry_points.txt,sha256=bILiwcA38Tem2Y45fAGWH27TagBoXh3ALk1c4s-c5qM,51
+coaclient-1.0.1.dist-info/top_level.txt,sha256=4EjSvszd9yuQoxJ9-7HKqbd2jxZTHZJWHMtF_9x_55s,10
+coaclient-1.0.1.dist-info/RECORD,,
