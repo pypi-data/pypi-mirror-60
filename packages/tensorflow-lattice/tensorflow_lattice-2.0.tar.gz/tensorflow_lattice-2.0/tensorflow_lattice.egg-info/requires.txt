@@ -1,0 +1,13 @@
+absl-py
+graphviz
+matplotlib
+numpy
+pandas
+six
+sklearn
+
+[tensorflow]
+tensorflow>=1.15
+
+[tensorflow-gpu]
+tensorflow-gpu>=1.15
