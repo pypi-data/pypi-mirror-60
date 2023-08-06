@@ -1,0 +1,10 @@
+wotconsole/__init__.py,sha256=ecmcsjB_ix7mniTc2dtcFp7pzerXtw9tc4PIvTmlPYo,593
+wotconsole/api.py,sha256=lpaoh8utbMvUiUiPyeCwTYuiYN273Ci2ogh3-IS0zwk,39133
+wotconsole/session.py,sha256=n5r_RhwR9zR5l-nPWquM2U6NkmMOWBGONtBcyWYHHwk,33318
+wotconsole/utils.py,sha256=J1Rme70iyecKzVckiEU3XCHbSodU3dDYth0mVEFSZ6I,3230
+wotconsole-0.4.2.dist-info/DESCRIPTION.rst,sha256=ONEJ1OCpmSxDiVt145wLNY1S6G1kGLa7cZ66eA-bYVI,3784
+wotconsole-0.4.2.dist-info/METADATA,sha256=2djg9x5OeVGiksP-Rq_s1KLmVd0zudh-vlAFFqlVErE,4081
+wotconsole-0.4.2.dist-info/RECORD,,
+wotconsole-0.4.2.dist-info/WHEEL,sha256=u6Fy2U76CDFJ6q2P27rqtBo3AN6qpylFiMaYzNr2lJg,95
+wotconsole-0.4.2.dist-info/metadata.json,sha256=l0FPOgOXYIaFPA7aJl1aa1lpMS4aCii-5mfCCrBe-nU,522
+wotconsole-0.4.2.dist-info/top_level.txt,sha256=1jk5RaQFCES-jrkjwCkI7MYXw73zDKT8a1goPrjEcUY,11
