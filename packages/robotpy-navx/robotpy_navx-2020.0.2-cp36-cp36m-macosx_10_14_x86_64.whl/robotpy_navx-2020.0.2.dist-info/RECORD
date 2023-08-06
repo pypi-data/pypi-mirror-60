@@ -1,0 +1,13 @@
+navx/__init__.py,sha256=tg2pZWcIOJjyyHbta5dYXp5sckiYyQxQm0ETd-o96KA,136
+navx/_init_navx.py,sha256=MF4MIcrDTvtiKMjYWWDiqj8SqFnhX5KJ83xdm6jHuJ8,251
+navx/_navx.cpython-36m-darwin.so,sha256=OPAS1J6cC_ZQUJVWYYgIzWsIP-zzOUxr6dBR06CPJdo,420284
+navx/pkgcfg.py,sha256=j06aaXxITtTAimFkqAvJw67rh-XEb3GsvtvWtiKyt-E,510
+navx/version.py,sha256=NJsiw0rFxuA1uLTcHS0sZWcT4IMCLm4uqm7OCvcoqr8,119
+navx/rpy-include/rpygen/__AHRS.hpp,sha256=nJxa_gwvZY-3EVTAOakmABF3tEZVv50MBVwLF6H4kWQ,547
+navx/src/rpy/AHRS.cpp.inl,sha256=UErnMAFjdWz_kkF9b2pC1bbALmuk4ZrplBQvAEUlOdQ,1836
+navx/src/rpy/navx.cpp,sha256=-ps1JNZOCudo2Tdn2-MCroRzBITqjY2PDNr9HaM23y8,78
+robotpy_navx-2020.0.2.dist-info/METADATA,sha256=y9ofa4rqdeMlNQSK1yKokOSW7owSpsYwDBwb0OLojoE,862
+robotpy_navx-2020.0.2.dist-info/WHEEL,sha256=dushfQTgksSU5ysvLIsWtFIpTHGocvpS502Xe3sbFWM,111
+robotpy_navx-2020.0.2.dist-info/entry_points.txt,sha256=Im8vyBFPApHT9ZQHjRs1eSuq31vu82sDeEokkzmLvts,35
+robotpy_navx-2020.0.2.dist-info/top_level.txt,sha256=fZ__Sq0qmUGRb-fuF9VYjzwNwNyJIKTdY0CKWaD_xYQ,5
+robotpy_navx-2020.0.2.dist-info/RECORD,,
