@@ -1,0 +1,12 @@
+fastlogranktest/__init__.py,sha256=Kx0NH9BI8MH3waIMKGIH5p-4krc1Ki_l0RVunYgh9z4,477
+fastlogranktest/fastlogranktest.cp37-win_amd64.pyd,sha256=kMJ1M-WX4A2yvWoAYpPaolb4K8qxk-Va3Yb-SoIdd0E,211968
+fastlogranktest/fastlogranktest.cpp,sha256=49CeWJ3UDGKAm0BDLK2ajEq8Ka2ZFqvlOpNf1WITwwM,192203
+fastlogranktest/fastlogranktest.pyx,sha256=W8S8iU23BjCU77aC41KVEn5jhYXz9WhTZ6Fe-vI2jW4,1091
+fastlogranktest/logrank_python.cpp,sha256=M2uoUDpETM1xgRnOYygYFFrAUeyWxrOwQ05Vj_EFQRc,5515
+fastlogranktest/logrank_python.pxd,sha256=uGumt7WJlwrfICCSqF5BVesWjtI2cgl6CfFlCLsVVNI,671
+fastlogranktest-0.2.0.dist-info/AUTHORS.rst,sha256=FlPtecxgQRu_ovTh6xPp1u26BbFlukcO6v6cGtJHkZA,372
+fastlogranktest-0.2.0.dist-info/LICENSE,sha256=5AAWlISMgeNHi8pSptqIikbezae2aTs4Aac29UkGpPw,1509
+fastlogranktest-0.2.0.dist-info/METADATA,sha256=W2y8u-7hYep7ooJzcpHu_HkdA2YDET6SwYNRYm5d-K4,3193
+fastlogranktest-0.2.0.dist-info/WHEEL,sha256=uaZe_9gV-4T_d4AskuIQkCgcY8wMc0UXsVFnf0_mBGs,106
+fastlogranktest-0.2.0.dist-info/top_level.txt,sha256=7kFRWpUws7zWWO00RbrjBPOHL3VEoBBtiQlV1D9P6GA,16
+fastlogranktest-0.2.0.dist-info/RECORD,,
