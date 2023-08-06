@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: passjoin
+Version: 0.0.1
+Summary: Python implementation of the Pass-join index
+Home-page: https://github.com/mapado/passjoin
+Author: Romain SENESI
+Author-email: romain.senesi@mapado.com
+Maintainer: Romain SENESI
+Maintainer-email: romain.senesi@mapado.com
+License: ['MIT']
+Description: # Passjoin
+        Python implementation of the Pass-join index.
+        
+        This index allows to efficiently query similar words within a distance threshold.
+        
+        The implementation is based on this [paper](http://people.csail.mit.edu/dongdeng/papers/vldb2012-passjoin.pdf) and the existing Javascript implementation in the mnemoist package ([link](https://github.com/Yomguithereal/mnemonist)).
+        
+        
+        ## Installation
+        
+        
+        
+        
+        ## Usage
+        
+        ### Index creation
+        ```python
+        from passjoin import Passjoin
+        from Levenshtein import distance  # or any string distance function
+        
+        max_edit_distance = 1  # maximum edit distance for retrieval
+        corpus = ['pierre', 'pierr', 'jean', 'jeanne']
+        
+        passjoin_index = Passjoin(corpus, max_edit_distance, distance)
+        
+        ```
+        
+        ### Index querying
+        ```python
+        
+        passjoin_index.get_word_variations('pierre')
+        >> {'pierre', 'pierr'}
+        
+        passjoin_index.get_word_variations('jeann')
+        >> {'jean', 'jeanne'}
+        
+        passjoin_index.get_word_variations('jeanine')
+        >> {'jeanne'}
+        
+        ```
+        
+        ## Contributing
+        
+        Clone the project.
+        
+        Install [pipenv](https://github.com/pypa/pipenv).
+        
+        Run `pipenv install --dev`
+        
+        Launch test with `pipenv run pytest`
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
