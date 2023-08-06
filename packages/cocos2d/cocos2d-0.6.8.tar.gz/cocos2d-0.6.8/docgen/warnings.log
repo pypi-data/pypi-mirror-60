@@ -1,0 +1,6 @@
+[31;01mWARNING: html_static_path entry '_static' does not exist[39;49;00m
+[31;01mWARNING: autodoc: failed to import module 'darwin' from module 'cocos.audio.SDL'; the following exception was raised:
+No module named 'Foundation'[39;49;00m
+[31;01mWARNING: autodoc: failed to import module 'sound' from module 'cocos.audio.SDL'; the following exception was raised:
+Dynamic library "SDL_sound" was not found[39;49;00m
+[31;01mD:\dev\cocos2020\docgen\api\modules.txt: WARNING: document isn't included in any toctree[39;49;00m
