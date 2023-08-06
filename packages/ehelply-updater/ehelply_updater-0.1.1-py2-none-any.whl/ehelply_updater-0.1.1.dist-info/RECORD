@@ -1,0 +1,10 @@
+ehelply_updater/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ehelply_updater/ehelply_updater.py,sha256=hWIW8Oxb2EFMxefriMK85pi4FQJeNcQWBHd9UOMQqoE,519
+ehelply_updater/updater.py,sha256=RqO7oYgygA8jMIy5NCH6XWyrXTMZyLd701NrFx6MfqA,12129
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ehelply_updater-0.1.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+ehelply_updater-0.1.1.dist-info/METADATA,sha256=Xc9qRHxP9NNjM8-d7-Jrd_zF4usXU_8lwDm4Ts6EtmA,706
+ehelply_updater-0.1.1.dist-info/WHEEL,sha256=2n5gfr2CmDNU5qrqPgO0uSe7oSWu-GEpPLFa0_ueMrk,97
+ehelply_updater-0.1.1.dist-info/entry_points.txt,sha256=f_bR2ULaCXBTpJfXXAgr2v6bkLgaSIeDG_yHiTgdzc8,83
+ehelply_updater-0.1.1.dist-info/top_level.txt,sha256=CFvw_YBJiFnKX7wX4Ct9aBLT9k1bkB4-6Es8UgGIJ8k,22
+ehelply_updater-0.1.1.dist-info/RECORD,,
