@@ -1,0 +1,9 @@
+README.rst
+setup.py
+up2superbed.py
+up2superbed.egg-info/PKG-INFO
+up2superbed.egg-info/SOURCES.txt
+up2superbed.egg-info/dependency_links.txt
+up2superbed.egg-info/not-zip-safe
+up2superbed.egg-info/requires.txt
+up2superbed.egg-info/top_level.txt
