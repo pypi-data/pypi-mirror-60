@@ -1,0 +1,17 @@
+phonology_engine/__init__.py,sha256=Yy22jluCOmw6rx2IBQQtUBrr2LunLdJAydSlDJYjJ70,94
+phonology_engine/pe_native.py,sha256=sHMGTU-GwNXSzcbSwwDJEKYL9RCJ4zCHRh1eYuovR-s,9742
+phonology_engine/pe_output.py,sha256=W9uunWdd_4aNsBRVw6bPU_1KvpgDrRLC1aIPA7bhEJ4,6914
+phonology_engine/phonology_engine.py,sha256=DIIJArBKp8c20O69nCn_QnQZ_oDG6DneGxddHmYDdZw,6252
+phonology_engine/version.py,sha256=R7I_nTCe1kQR5_5SGwjzqs4zjTYOrtJIT9yD1sPDLyM,57
+phonology_engine/Linux_x86/libPhonologyEngine.so,sha256=X1nNbIGPbBSFSoTKX4VMLDsS95uimXWbIen0tvOugl0,2830336
+phonology_engine/Linux_x86_64/libPhonologyEngine.so,sha256=fYFSFH8-jSbNMQSJneu-CPg6kOmriBoa5bwxBm8FMQI,5008248
+phonology_engine/Win32_x86/PhonologyEngine.dll,sha256=WLZLxyCPDD8NjX7xFNcckCG1ZNCPzCUE0F7DGg2t6KE,2128896
+phonology_engine/Win64_x64/PhonologyEngine.dll,sha256=pDGtMRdLbtiOjjrchB0gY3GTwtR668PVPBTmaB2sbxw,2769408
+phonology_engine/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phonology_engine/tests/test_word_span.py,sha256=QxSVGPx-Cavyn8RmIlRErLhmHT7ALHArSUp0oMCAf-g,478
+phonology_engine/tests/tests.py,sha256=vWrMjt0PnwFUV9dUM80yCjA7OdqNxWAb_4fs2maKfr8,7746
+phonology_engine-0.2.7.dist-info/LICENSE,sha256=LcJnWN-4_xevmmx6bSh34Rr__dy81LRGKb66irvS3lU,2959
+phonology_engine-0.2.7.dist-info/METADATA,sha256=xQqpiCXgjXyCFUuS7fbbsPsQ70BINe7BeTHl76zkckc,6319
+phonology_engine-0.2.7.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+phonology_engine-0.2.7.dist-info/top_level.txt,sha256=T0wDk0ZeT2qdoj_ljn-6q92IfVLikoUpBpNQnNjAoEs,17
+phonology_engine-0.2.7.dist-info/RECORD,,
