@@ -1,0 +1,30 @@
+decorator
+hexdump
+python-magic
+six
+urllib3
+
+[dev]
+
+[pook]
+pook>=0.2.1
+
+[speedups]
+
+[speedups:platform_python_implementation == "CPython"]
+xxhash
+
+[speedups:platform_python_implementation == "PyPy"]
+xxhash-cffi
+
+[tests]
+flake8
+gevent
+mock
+pep8
+pook
+pytest-cov
+pytest>4.6
+redis
+requests
+sure
