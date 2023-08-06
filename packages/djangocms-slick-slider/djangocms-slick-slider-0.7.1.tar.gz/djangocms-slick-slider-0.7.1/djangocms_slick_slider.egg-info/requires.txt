@@ -1,0 +1,4 @@
+django-cms<3.8
+django<3.0
+jsonfield
+django-filer<1.7.0
