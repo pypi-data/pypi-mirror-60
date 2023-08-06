@@ -1,0 +1,26 @@
+pkgbase='python-ansilog'
+pkgname=('python-ansilog')
+_module='ansilog'
+pkgver='1.3'
+pkgrel=1
+pkgdesc="Smart and colorful solution for logging, output, and basic terminal control."
+url="https://github.com/lainproliant/ansilog"
+depends=('python')
+makedepends=('python-setuptools')
+license=('BSD')
+arch=('any')
+source=("https://files.pythonhosted.org/packages/source/${_module::1}/$_module/$_module-$pkgver.tar.gz")
+sha256sums=('d500acacf43a72d7b4d71039c9b7a5c2aebc646647c0950ae0bfdfcbb7bd6223')
+
+build() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    python setup.py clean --all
+    python setup.py build
+}
+
+package() {
+    depends+=()
+    cd "${srcdir}/${_module}-${pkgver}"
+    python setup.py install --root="${pkgdir}" --optimize=1 --skip-build
+    install -Dm644 "$srcdir/${_module}-${pkgver}/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
