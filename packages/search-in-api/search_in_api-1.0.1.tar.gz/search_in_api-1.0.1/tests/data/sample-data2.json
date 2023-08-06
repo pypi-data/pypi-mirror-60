@@ -1,0 +1,35 @@
+{
+    "meta": {
+        "total_count": 17,
+        "items_per_page": 5,
+        "prev": "https://raw.githubusercontent.com/archatas/search_in_api/master/tests/data/sample-data.json",
+        "next": "https://raw.githubusercontent.com/archatas/search_in_api/master/tests/data/sample-data3.json"
+    },
+    "songs": [
+        {
+            "id": 6,
+            "artist": "Imagination, Errol Kennedy",
+            "title": "Burning Up - Soul Clap Remix"
+        },
+        {
+            "id": 7,
+            "artist": "Imagination, Errol Kennedy",
+            "title": "U Can Be"
+        },
+        {
+            "id": 8,
+            "artist": "Phaeleh",
+            "title": "Journey"
+        },
+        {
+            "id": 9,
+            "artist": "Kotelett & Zadak",
+            "title": "Siwa"
+        },
+        {
+            "id": 10,
+            "artist": "Strolch",
+            "title": "Kati Yake"
+        }
+    ]
+}

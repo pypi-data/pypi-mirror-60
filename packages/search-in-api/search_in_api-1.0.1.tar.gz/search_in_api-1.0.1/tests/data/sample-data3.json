@@ -1,0 +1,35 @@
+{
+    "meta": {
+        "total_count": 17,
+        "items_per_page": 5,
+        "prev": "https://raw.githubusercontent.com/archatas/search_in_api/master/tests/data/sample-data2.json",
+        "next": "https://raw.githubusercontent.com/archatas/search_in_api/master/tests/data/sample-data4.json"
+    },
+    "songs": [
+        {
+            "id": 11,
+            "artist": "Yuna",
+            "title": "Lullabies"
+        },
+        {
+            "id": 12,
+            "artist": "Mees Dierdrop",
+            "title": "Mano Sera's River"
+        },
+        {
+            "id": 13,
+            "artist": "Joachim Pastor",
+            "title": "Eternity"
+        },
+        {
+            "id": 14,
+            "artist": "Chapelier Fou",
+            "title": "Philémon"
+        },
+        {
+            "id": 15,
+            "artist": "Chapelier Fou",
+            "title": "Thorns"
+        }
+    ]
+}

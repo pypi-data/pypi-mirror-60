@@ -1,0 +1,35 @@
+{
+    "meta": {
+        "total_count": 17,
+        "items_per_page": 5,
+        "prev": null,
+        "next": "https://raw.githubusercontent.com/archatas/search_in_api/master/tests/data/sample-data2.json"
+    },
+    "songs": [
+        {
+            "id": 1,
+            "artist": "Jon Sine",
+            "title": "Yourself"
+        },
+        {
+            "id": 2,
+            "artist": "Tigerskin",
+            "title": "The King Always Stays the King"
+        },
+        {
+            "id": 3,
+            "artist": "Joachim Pastor, Florence Bird",
+            "title": "Wayfaring Stranger"
+        },
+        {
+            "id": 4,
+            "artist": "Mees Dierdrop",
+            "title": "Wild Window"
+        },
+        {
+            "id": 5,
+            "artist": "Satin Jackets",
+            "title": "Latin Jackets"
+        }
+    ]
+}

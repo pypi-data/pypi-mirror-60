@@ -1,0 +1,20 @@
+{
+    "meta": {
+        "total_count": 17,
+        "items_per_page": 5,
+        "prev": "https://raw.githubusercontent.com/archatas/search_in_api/master/tests/data/sample-data3.json",
+        "next": null
+    },
+    "songs": [
+        {
+            "id": 11,
+            "artist": "Raidho",
+            "title": "Point of View"
+        },
+        {
+            "id": 12,
+            "artist": "Ott",
+            "title": "Owl Stretching Time"
+        }
+    ]
+}
