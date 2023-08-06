@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyidi
+Version: 0.21
+Summary: Python Image Displacement Identification.
+Home-page: https://github.com/ladisk/pyidi
+Author: Klemen Zaletelj, Domen Gorjup, Janko Slavič
+Author-email: janko.slavic@fs.uni-lj.si, ladisk@gmail.com
+License: UNKNOWN
+Keywords: computer vision dic gradient-based image identification
+Platform: UNKNOWN
+Requires-Dist: matplotlib (>=3.0.0)
+Requires-Dist: numpy (>=1.15.4)
+Requires-Dist: pytest (>=3.0.5)
+Requires-Dist: scipy (>=1.0.0)
+Requires-Dist: pyMRAW (>=0.30)
+Requires-Dist: psutil
+Requires-Dist: tqdm
+Requires-Dist: mantichora
+Requires-Dist: atpbar
+
+
+pyidi
+=====
+Image-based Displacement Identification (IDI) implementation in python.
+
+The documentation for this repository is accessible `here <https://pyidi.readthedocs.io/en/latest/index.html>`_.
+
+
