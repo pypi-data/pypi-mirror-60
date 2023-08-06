@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyepub/__init__.py
+pyepub/tests.py
+pyepub.egg-info/PKG-INFO
+pyepub.egg-info/SOURCES.txt
+pyepub.egg-info/dependency_links.txt
+pyepub.egg-info/requires.txt
+pyepub.egg-info/top_level.txt
