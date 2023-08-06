@@ -1,0 +1,2 @@
+include hpexome/HPexome.scala
+include hpexome/Queue.jar
