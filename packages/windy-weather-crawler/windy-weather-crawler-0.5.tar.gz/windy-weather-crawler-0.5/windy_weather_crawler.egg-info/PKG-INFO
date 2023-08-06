@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: windy-weather-crawler
+Version: 0.5
+Summary: A web crawler that takes input as place gives the weather forecast for 5 days
+Home-page: https://github.com/SHARANTANGEDA/windy_crawler
+Author: Sai Sharan Tangeda
+Author-email: saisarantangeda@gmail.com
+License: UNKNOWN
+Description: # Windy Web Crawler
+        #### This application is built with scrapy and selenium
+        
+        It takes places name as input to give weather forecast in commandline for 5 upcoming days
+        below shown is the example of the display:
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment :: Mozilla
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,15 @@
+README.md
+setup.py
+windy_crawler/__init__.py
+windy_crawler/items.py
+windy_crawler/middlewares.py
+windy_crawler/pipelines.py
+windy_crawler/run.py
+windy_crawler/settings.py
+windy_crawler/spiders/__init__.py
+windy_crawler/spiders/forecast_spider.py
+windy_weather_crawler.egg-info/PKG-INFO
+windy_weather_crawler.egg-info/SOURCES.txt
+windy_weather_crawler.egg-info/dependency_links.txt
+windy_weather_crawler.egg-info/requires.txt
+windy_weather_crawler.egg-info/top_level.txt
