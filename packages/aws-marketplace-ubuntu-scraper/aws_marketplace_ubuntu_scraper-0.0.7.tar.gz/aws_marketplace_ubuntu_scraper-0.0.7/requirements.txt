@@ -1,0 +1,10 @@
+# Run pip install --requirement=requirements.txt to install all requirements
+
+boto3
+click
+pytest
+selenium
+selenium-wire
+requests
+beautifulsoup4
+joblib
