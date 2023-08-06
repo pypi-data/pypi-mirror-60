@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_rest_action_serializer.egg-info/PKG-INFO
+django_rest_action_serializer.egg-info/SOURCES.txt
+django_rest_action_serializer.egg-info/dependency_links.txt
+django_rest_action_serializer.egg-info/requires.txt
+django_rest_action_serializer.egg-info/top_level.txt
+dra/__init__.py
+dra/serializers.py
+tests/__init__.py
+tests/serializers.py
+tests/tests.py
+tests/urls.py
+tests/viewsets.py
