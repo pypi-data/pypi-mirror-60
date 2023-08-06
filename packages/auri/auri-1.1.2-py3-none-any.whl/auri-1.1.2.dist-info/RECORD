@@ -1,0 +1,16 @@
+LICENSE,sha256=QrmaxOeXj2NNQVV2Hlcs_KwhD0vCgVk_Y4W5KdXZ24Y,1129
+README.md,sha256=rDK2m8qH74B1Pf7ba6sm3m45TS0zExTcycs-m1fhysI,3493
+auri/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auri/__main__.py,sha256=zD6gaaVl20oFcpwZFz3TGk5EsBfmBcaMVDv7zUJQkpY,87
+auri/ambilight.py,sha256=TLBEV2VTBKH6M3FWbypjKqPlpQGZ8BM8mSo5ilav0sM,5175
+auri/aurora.py,sha256=fuidEPpCvZfmWPX_198oNZ9jVMVAIOMI9l1bswHMINI,7964
+auri/command_line.py,sha256=Oj09VqWE_TuztEzWp-MwOe14yon0aoEQLCI7bzVGLm8,13510
+auri/device_finder.py,sha256=DDov_U0Ic8U4XMQThSFHw1zZ7P09CasAgJCJSFaeU68,2810
+auri/device_manager.py,sha256=Wk2vAyeovBawX2JOY69E9eohU4BJLC_zpmGdtrdzvNg,9647
+auri/effects.py,sha256=B9Aa52nipU2-GJ2ONEkKtTlkDw3tIFM0VkEFYNoaiJM,3669
+pyproject.toml,sha256=7wrg3-b5GDSCGeP2TV0Gruk9zSXKUmmy4dXPhioifcY,858
+auri-1.1.2.dist-info/entry_points.txt,sha256=LTEbPzaz2n6gHxcX_jSu_0GaVKUA-e8gtxtUcRkud7c,46
+auri-1.1.2.dist-info/LICENSE,sha256=QrmaxOeXj2NNQVV2Hlcs_KwhD0vCgVk_Y4W5KdXZ24Y,1129
+auri-1.1.2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+auri-1.1.2.dist-info/METADATA,sha256=2JGuhqfL_Stqux7caM_CzTrjyWGhFRy2TYLC7l0L_U0,4303
+auri-1.1.2.dist-info/RECORD,,
