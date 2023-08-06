@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pywhere39
+Version: 0.0.1
+Summary: Use BIP39 words to locate anywhere in the world
+Author: Dominik Kozaczko
+Author-email: dominik@kozaczko.info
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.0,<8.0)
