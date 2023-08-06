@@ -1,0 +1,14 @@
+fileclean/__init__.py,sha256=N6gqwhNWu7WDO4Muo-VIRCBWJ6A8RtyOFVuh1-FpbQM,20
+fileclean/clean.py,sha256=cYTkLRBmJPO5LBiMMx6HOJisLzfEMLs9ViWEW3MTaAM,1651
+fileclean/models.py,sha256=0e4_ckxeCIdMdNzlFngfU8o7NpaQx90IMxshClob0g8,959
+fileclean/setuptest.py,sha256=QzN5hUrmHx0i57JilmSiuo9RWV7a9Dr1aHeYk5ieDtQ,238
+fileclean/view.py,sha256=N-R2TJTDbktgGnNjlOFFe4SXK0hu5IbgccavFeuQtuc,1490
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_clean.py,sha256=KjGhZwQC6lsMYG4oCBW1LuKzuY4f9PHx7oL_9KuLn5M,466
+tests/test_views.py,sha256=b3haRmuk8RXiOx85lwiRQkHbuCpCgCGJmL2OPUypgMA,325
+fileclean-0.1.dist-info/LICENSE,sha256=h3OmW93fQJ7151KY9cc41IRQXQ_hHRIB4xcmu8_jE_c,1067
+fileclean-0.1.dist-info/METADATA,sha256=FHu9wPmN0_D3yhEdTt45Ijeryg5gD4Dn_E_H-dW8d0Q,245
+fileclean-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fileclean-0.1.dist-info/entry_points.txt,sha256=Vj8OBbA7gVWMS6q9MCl_RTbNmr8Gar9hGlkpRqH1_Rk,51
+fileclean-0.1.dist-info/top_level.txt,sha256=VOm_v0hOWY5sRP2xHMfMbFo0ooMC7_c_dBp6R6J3NLI,16
+fileclean-0.1.dist-info/RECORD,,
