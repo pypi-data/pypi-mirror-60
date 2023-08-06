@@ -1,0 +1,10 @@
+[console_scripts]
+ninjecto = ninjecto.__main__:main
+
+[ninjecto_plugins_filters_1_0]
+
+
+[ninjecto_plugins_namespaces_1_0]
+env = ninjecto.plugins.namespaces.env:namespace_env
+git = ninjecto.plugins.namespaces.git:namespace_git
+
