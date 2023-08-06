@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: face-mask
+Version: 0.1.0
+Summary: Useful data structures, utils for Python.
+Home-page: https://github.com/Prodesire/face-mask
+Author: Prodesire
+Author-email: wangbinxin001@126.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: face-recognition (==1.2.3)
+Requires-Dist: Pillow (==7.0.0)
+Requires-Dist: numpy (==1.18.1)
+
+# face-mask
+Wear a face mask in the given picture.
+
+
