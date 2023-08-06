@@ -1,0 +1,35 @@
+{% extends '_base.html' %}
+{% load markdown_deux_tags %}
+
+{% block title %}Posts{% endblock %}
+
+{% block content %}
+
+
+
+<h1>{{ post.title }}</h1>
+<p>
+{{ post.body|markdown }}
+</p>
+
+<h1 id="Comments">Comments</h1>
+
+{% if user.is_authenticated %}
+<form method="post">
+{% csrf_token %}
+	<div class="input-group mb-3">
+		<input name="{{ commentForm.comment.html_name }}" type="text" class="form-control"  aria-describedby="button-addon2">
+		<div class="input-group-append">
+			<button class="btn btn-outline-primary" id="button-addon2">Submit</button>
+		</div>
+	</div>
+</form>
+{% endif %}
+
+<ul class="list-group">
+{% for comment in post.comments_set.all %}
+	<li class="list-group-item">{{ comment }}</li>
+{% endfor %}
+</ul>
+
+{% endblock content %}
