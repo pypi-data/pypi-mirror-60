@@ -1,0 +1,17 @@
+README.md
+setup.py
+pyddi_xupan/__init__.py
+pyddi_xupan/database_client.py
+pyddi_xupan/dataset_client.py
+pyddi_xupan/dblucenemapping_client.py
+pyddi_xupan/enrichement_client.py
+pyddi_xupan/feedback_client.py
+pyddi_xupan/publication_client.py
+pyddi_xupan/seo_client.py
+pyddi_xupan/statistics_client.py
+pyddi_xupan/term_client.py
+pyddi_xupan.egg-info/PKG-INFO
+pyddi_xupan.egg-info/SOURCES.txt
+pyddi_xupan.egg-info/dependency_links.txt
+pyddi_xupan.egg-info/requires.txt
+pyddi_xupan.egg-info/top_level.txt
