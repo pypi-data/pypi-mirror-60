@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: nms-api-helpers
+Version: 0.2
+Summary: nms api helpers
+Home-page: https://github.com/Jandon-Ltd/nms-api-helpers
+Author: Jandon Limited
+Author-email: automation@jandon.co.uk
+License: MIT
+Description:  NMS API Helpers and Wrappers 
+Platform: UNKNOWN
