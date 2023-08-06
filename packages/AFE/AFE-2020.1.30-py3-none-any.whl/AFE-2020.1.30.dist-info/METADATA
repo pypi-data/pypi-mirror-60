@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: AFE
+Version: 2020.1.30
+Summary: Accelerometer Feature Extractor
+Home-page: https://bitbucket.org/atpage/afe
+Author: Alex Page
+Author-email: alex.page@rochester.edu
+License: UNKNOWN
+Keywords: accelerometer acceleration gyroscope machine learning features
+Platform: UNKNOWN
+Requires-Python: >=3.0
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: actigraph
+
+UNKNOWN
+
+

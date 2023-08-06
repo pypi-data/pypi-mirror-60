@@ -1,0 +1,6 @@
+AFE-2020.1.30.dist-info/METADATA,sha256=aYIw2qu7kAK2dwrTbqy0oFmUvt_XZ7ZTXeFibAz9Jbc,423
+AFE-2020.1.30.dist-info/RECORD,,
+AFE-2020.1.30.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+AFE-2020.1.30.dist-info/top_level.txt,sha256=aqCkH1kfwYdtkt6SsVqxfUmYcti9q6pfT6oSgDKnNNA,4
+afe/__init__.py,sha256=j8hfjjGlVopZvjZQBz98KC2xr9WmiEYER2qpgUt-33Y,5115
+afe/features.py,sha256=gABkxfp1qtnsd0YnKSRIiry9sQUid43zqswMSuDVVSY,11565
