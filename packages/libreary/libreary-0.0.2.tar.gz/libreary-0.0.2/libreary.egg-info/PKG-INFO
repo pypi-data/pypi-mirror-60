@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: libreary
+Version: 0.0.2
+Summary: Distributed Digital Object Archive System
+Home-page: https://github.com/LIBREary/libre-ary
+Author: Ben Glick
+Author-email: glick@glick.cloud
+License: Apache 2.0
+Download-URL: https://github.com/LIBREary/libre-ary#0.0.2
+Description: Distributed Digital Object Archive System
+Keywords: Archive,Distributed Systems
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
