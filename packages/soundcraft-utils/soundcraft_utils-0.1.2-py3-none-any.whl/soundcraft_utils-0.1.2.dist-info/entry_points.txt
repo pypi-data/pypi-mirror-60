@@ -1,0 +1,3 @@
+[console_scripts]
+soundcraft_ctl = soundcraft.cli:main
+

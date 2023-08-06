@@ -1,0 +1,10 @@
+soundcraft/__init__.py,sha256=8-rx0tCOb68RG2wqPtZBlbr_jhx4cKxSAAzG2CrVXgo,202
+soundcraft/__main__.py,sha256=z3OQolCKD8rUd3pKYp_FISq2VctFhFl1mV-DVnaoNOM,29
+soundcraft/cli.py,sha256=JNs7yzxwqCpNpnECN93u_xFDypp_KAa4ahoaVnmVuLM,1456
+soundcraft/notepad.py,sha256=PUtfHZG3dqi2NwyYF9uCza0_2L6vMh24r5HezMg0qy0,3772
+soundcraft_utils-0.1.2.dist-info/LICENSE,sha256=VNBzT_eMbvj5uNKovm8EKkp-yb4XvTBKjrKB5GMtQmE,1061
+soundcraft_utils-0.1.2.dist-info/METADATA,sha256=uv-1wD-9jtdpdC3l0x-tKiRZ-eyy2Vmlmn2qQbw3Mm8,1937
+soundcraft_utils-0.1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+soundcraft_utils-0.1.2.dist-info/entry_points.txt,sha256=nw_uu3xO7NSyLBP9FRq0KBz9WTzgvJvUjjWtBQ-ofqM,56
+soundcraft_utils-0.1.2.dist-info/top_level.txt,sha256=Rnu5niRyOOYTHqBHLrKyWWrWdJB3Qb8_IqaUB8s9oYw,11
+soundcraft_utils-0.1.2.dist-info/RECORD,,
