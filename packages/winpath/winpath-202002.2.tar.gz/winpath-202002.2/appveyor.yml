@@ -1,0 +1,18 @@
+# appveyor.yml
+---
+environment:
+  matrix:
+    - PYTHON: "C:\\Python36"
+    - PYTHON: "C:\\Python37"
+
+build: off
+
+install:
+  - "%PYTHON%\\python.exe -m pip install tox"
+  - "%PYTHON%\\python.exe -m pip install ."
+
+test_script:
+  - "%PYTHON%\\Scripts\\tox.exe"
+
+#deploy_script:
+#  - ps: IF ($env:APPVEYOR_REPO_TAG -eq "true") { %PYTHON%\\Scripts\\flit.exe publish }
