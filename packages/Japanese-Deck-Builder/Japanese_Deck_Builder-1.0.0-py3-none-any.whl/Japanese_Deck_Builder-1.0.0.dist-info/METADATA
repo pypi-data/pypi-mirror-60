@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Japanese-Deck-Builder
+Version: 1.0.0
+Summary: A tool for building Anki decks from Japanese text with well-formatted definitions
+Home-page: https://github.com/sduncan56/japanesedeckbuilder
+Author: Shane Duncan
+Author-email: shane.duncan56@gmail.com
+License: CC0
+Keywords: anki japanese
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: click
+Requires-Dist: genanki
+Requires-Dist: japana
+
+This is a script to generate Anki decks from text files with Japanese text, using WWWJDIC to get English translations, and editing those translations to remove dictionary terminology/generally simplify the card. It also automatically moves already-seen words to a hidden field, and can automatically filter words to that field using Japana's text analysis to remove extremely frequent words or words from below a certain JLPT level.
+
+

@@ -1,0 +1,12 @@
+deckbuilder/CardGenerator.py,sha256=DNRIuzQqlRB-bkLW6jBQTDT6D93cOTlfAYT6V7UaBGM,1648
+deckbuilder/DeckBuilder.py,sha256=VG2DqkAyhlI0Bpu2kz8cYacrnt9GJwRm-eovFU0Mtfk,2553
+deckbuilder/Gloss.py,sha256=RHOMsa1V_2DqhrttCEdCa-nYdl9oyZGTTHXwvAlKbNU,6609
+deckbuilder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deckbuilder/__main__.py,sha256=rErRHi93NV05-WTLCeMuTfG6MscNqhXePYrRB_cY83w,1678
+deckbuilder/glosser_test.py,sha256=LNhNOCz4JCFju7IM9yBGLaPidCQXa6aQvbbh4cfafAg,13846
+Japanese_Deck_Builder-1.0.0.dist-info/LICENSE.txt,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+Japanese_Deck_Builder-1.0.0.dist-info/METADATA,sha256=dCMqBWb2WcL0PrFAd6w_GiFqP_dSWXYRQFBjKGjf8nw,1132
+Japanese_Deck_Builder-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+Japanese_Deck_Builder-1.0.0.dist-info/entry_points.txt,sha256=iNeEVYHPGMsdle_bStw5iM3YoBF2_rYvYXd-a5S5yrM,67
+Japanese_Deck_Builder-1.0.0.dist-info/top_level.txt,sha256=d_v5KuJA58emC6ia9OfBODwakI_rl6d2fsYm4Q9fD6s,12
+Japanese_Deck_Builder-1.0.0.dist-info/RECORD,,
