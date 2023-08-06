@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: py-niconico-comment
+Version: 0.0.3
+Summary: niconico comment utils
+Home-page: https://github.com/nicovideo-comment/py-niconico-comment
+Author: poipoii
+Author-email: earth.sama@gmail.com
+License: mit
+Project-URL: Documentation, https://py-niconico-comment.readthedocs.io/en/latest/
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Requires-Dist: cssselect (==1.1.0)
+Requires-Dist: lxml (==4.4.2)
+Requires-Dist: requests (==2.22.0)
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+# py-niconico-comment
+
+[![Documentation Status](https://readthedocs.org/projects/py-niconico-comment/badge/?version=latest)](https://py-niconico-comment.readthedocs.io/en/latest/?badge=latest)
+[![codecov](https://codecov.io/gh/nicovideo-comment/py-niconico-comment/branch/master/graph/badge.svg)](https://codecov.io/gh/nicovideo-comment/py-niconico-comment)
+[![PyPI](https://img.shields.io/pypi/v/py-niconico-comment)](https://pypi.org/project/py-niconico-comment/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/py-niconico-comment)](https://pypi.org/project/py-niconico-comment/)
+
+

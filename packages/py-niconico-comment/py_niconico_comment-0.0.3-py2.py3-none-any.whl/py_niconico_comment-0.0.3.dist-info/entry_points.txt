@@ -1,0 +1,3 @@
+[console_scripts]
+niconico_comment = py_niconico_comment.skeleton:run
+
