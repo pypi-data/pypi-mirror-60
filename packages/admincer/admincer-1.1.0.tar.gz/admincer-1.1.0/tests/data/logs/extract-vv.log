@@ -1,0 +1,26 @@
+# Extract
+- source dir: */regdir
+- target dirs:
+  - r0: */r0
+  - r1: */r1
+  - r2: */r2
+STREAM b'IHDR' *
+STREAM b'IDAT' *
+STREAM b'IHDR' *
+STREAM b'IDAT' *
+## Type: r0 to: */r0
+## Type: r1 to: */r1
+### blue3.png
+STREAM b'IHDR' *
+STREAM b'IDAT' *
+- region (10, 10: 10x10) to: 00000.png
+- region (40, 10: 10x10) to: 00001.png
+### white2.png
+STREAM b'IHDR' *
+STREAM b'IDAT' *
+- region (10, 20: 10x20) to: 00002.png
+## Type: r2 to: */r2
+### white2.png
+STREAM b'IHDR' *
+STREAM b'IDAT' *
+- region (50, 50: 30x40) to: 00000.png

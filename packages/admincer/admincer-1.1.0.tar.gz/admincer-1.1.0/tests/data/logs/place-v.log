@@ -1,0 +1,20 @@
+# Place
+- source dir: */regdir2
+- fragments:
+  - a: */fragdir
+  - b: */fragdir
+- target dir: */output
+## 00000.png
+- source image: */regdir2/img.png
+- fragment from: */fragdir/red.gif into region: (0, 0: 10x24)
+- fragment from: */fragdir/green.png into region: (10, 0: 30x40)
+- fragment from: */fragdir/subdir/orange.jpg into region: (40, 0: 50x60)
+- no fragment for region: (0, 100: 10x10)
+- save as: */output/00000.png
+## 00001.png
+- source image: */regdir2/img.png
+- fragment from: */fragdir/red.gif into region: (0, 0: 10x24)
+- fragment from: */fragdir/green.png into region: (10, 0: 30x40)
+- fragment from: */fragdir/subdir/orange.jpg into region: (40, 0: 50x60)
+- no fragment for region: (0, 100: 10x10)
+- save as: */output/00001.png

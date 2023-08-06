@@ -1,0 +1,42 @@
+# Slice
+- source dir: */slice_source0
+- target dir: */output
+- slicing step: 10 pixels
+- include regions that overlap the slice by at least 50%
+## 0.png (30x30)
+### slice (0, 0: 30x30)
+- region (0, 0: 10x10) type r1
+- region (20, 10: 10x20) type r2
+- saved as 0-0.png
+## 1.png (30x30)
+### slice (0, 0: 30x30)
+- no regions
+- saved as 1-0.png
+## 2.png (30x40)
+### slice (0, 0: 30x30)
+- region (0, 0: 10x10) type r1
+- region (20, 0: 10x20) type r3
+- saved as 2-0.png
+### slice (0, 10: 30x30)
+- region (20, 0: 10x10) type r3
+- region (20, 20: 10x10) type r1
+- saved as 2-10.png
+## 3.png (30x80)
+### slice (0, 0: 30x30)
+- region (20, 10: 10x20) type r1
+- saved as 3-0.png
+### slice (0, 10: 30x30)
+- region (20, 0: 10x20) type r1
+- saved as 3-10.png
+### slice (0, 20: 30x30)
+- region (20, 0: 10x10) type r1
+- saved as 3-20.png
+### slice (0, 30: 30x30)
+- no regions
+- saved as 3-30.png
+### slice (0, 40: 30x30)
+- region (20, 20: 10x10) type r2
+- saved as 3-40.png
+### slice (0, 50: 30x30)
+- region (20, 10: 10x20) type r2
+- saved as 3-50.png
