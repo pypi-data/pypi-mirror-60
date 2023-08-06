@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: PyStatsBatteries
+Version: 0.0.3
+Summary: This library provides several tools for your Python dataframes, such as graphics, Machine Learning alogrithms, and data analysis tools. All these functions will be applied to electrochemical Lithium-ion batteries.
+Home-page: https://github.com/MarcDuquesnoy/PyStatsBatteries
+Author: Marc Duquesnoy
+Author-email: marc.duquesnoy@u-picardie.fr
+License: GNU Public License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Communications
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: tensorflow
+
+PyStatsBatteries
+========================================================
+
+PyStatsBatteries is a Python library for dealing with statistical and graphic tools for your
+dataframes.
+
+This library provides several tools directly loaded into your virtual environment, and 
+also example notebook on using this tools.
+It is maintained by a team of researchers at 'Laboratoire de Réactivité et Chimies 
+du Solide', (Amiens, FRANCE), as part of ARTISTIC project.
+
+Please, do not hesitate to discover the team of researchers behind the librairy and also the ARTISTIC project
+also involved : [ARTISTIC](https://www.u-picardie.fr/erc-artistic/?L=0)
+
+
+Setup
+========================================================
+We ask you to get a virtual environment such as **conda**. Go to their webpage and download
+it. All dependencies will be installed on your environment.
+
+Note that you need to follow the way below to install PyStatsBatteries :
+
+1. Clone the repository
+2. Enter into the directory at the root where the **setup.py** file is located
+
+Now open a terminal and try theses command lines :
+```python
+pip install PyStatsBatteries
+```
+or 
+```python
+python setup.py install
+```
+
+For installation and usage, it works with python3.x and upper versions with dependencies.
+Make sure all libraris required are installed with the right version.
+In the case python modules error occur, please upgrade the packages indicated by :
+```python
+pip install [name_of_package] --upgrade
+```
+
+Example
+========================================================
+
+
+There is an example notebook providing what the library is able to do. Check it 
+directly on the Github page, or with [Jupyter](https://jupyter.org/install) on your own session.
+
+##### Run a test
+
+```python
+from PyStatsBatteries.Descriptors import *
+import pandas as pd
+
+Data = pd.read_csv('path/to/your/dataframe.csv')
+
+d = Descriptors()
+d.Per_feature(Data, "Feature1")
+```
+
+ Authors
+ ========================================================
+  - **Marc DUQUESNOY** , Research Engineer
+
+ Contributing 
+========================================================
+
+Pull requests are not allowed. For more informations about the library, please
+ contact the authors.
+ Do not hesitate to ask them if inappropriate bugs occur.
+
+
+ License
+========================================================
+
+This project is licensed under the [GNU Public License](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
+Contributors
+========================================================
+@MarcDuquesnoy, 
+
