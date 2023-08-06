@@ -1,0 +1,6 @@
+[console_scripts]
+manage=pyhardlinkbackup.django_project.manage:cli
+phlb=pyhardlinkbackup.phlb_cli:cli
+publish=pyhardlinkbackup.phlb.publish:publish
+update_rst_readme=pyhardlinkbackup.phlb.publish:update_readme
+
