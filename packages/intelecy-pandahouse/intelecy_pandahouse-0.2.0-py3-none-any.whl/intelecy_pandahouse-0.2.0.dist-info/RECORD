@@ -1,0 +1,9 @@
+pandahouse/__init__.py,sha256=RZLVoRLF5SC3ELM9A7lvVgvRC2NfSHI8Fu7DXeesHRo,487
+pandahouse/convert.py,sha256=B4CQzusgb_f7Jo6OYMBF0dLLO3rP3YVWAWRjMy9mJRg,2871
+pandahouse/core.py,sha256=uzB-ztgDupdiRVk54E76PgVtGaLeVRoWaf5ou_oDhUs,2048
+pandahouse/http.py,sha256=hnltkGtNDU5BAjaWQFTX21WLdyHTHo-4AmpUUvSZ30k,2046
+pandahouse/utils.py,sha256=LWBYP0E8E-dxx7QGDIWs6H7mNWdKFBY3FEKTLTYk9SQ,1494
+intelecy_pandahouse-0.2.0.dist-info/LICENSE,sha256=fnzRw_QLBRDzObndrLvWeGiZyLHyyoHGZ-e1FIEOoeI,1503
+intelecy_pandahouse-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+intelecy_pandahouse-0.2.0.dist-info/METADATA,sha256=Am7WimEp7cEO2abBw-Onp86cf5fLdHaqTEOjY8BfwEA,1305
+intelecy_pandahouse-0.2.0.dist-info/RECORD,,
