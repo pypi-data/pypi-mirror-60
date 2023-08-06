@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: directnet
+Version: 2.5
+Summary: DirectNET communication library
+Home-page: https://github.com/cuchac/directnet
+Author: Cuchac
+Author-email: cuchac@email.cz
+License: LGPL v2
+Description: directnet
+        =========
+        Python library for DirectNET and K-Sequence protocols
+        
+        License
+        =======
+        LGPL v2
+        
+Platform: UNKNOWN
