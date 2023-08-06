@@ -1,0 +1,7 @@
+torch
+numpy
+
+[dev]
+somajo
+fastai
+tqdm
