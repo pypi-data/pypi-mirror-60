@@ -1,0 +1,16 @@
+COPYING.LESSER.md
+COPYING.md
+MANIFEST.in
+README.rst
+dev_requirements.txt
+noxfile.py
+pyproject.toml
+requirements.txt
+setup.py
+stupify/__init__.py
+stupify/_about.py
+stupify.egg-info/PKG-INFO
+stupify.egg-info/SOURCES.txt
+stupify.egg-info/dependency_links.txt
+stupify.egg-info/top_level.txt
+test/.gitkeep

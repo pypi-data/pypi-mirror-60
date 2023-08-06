@@ -1,0 +1,11 @@
+graft stupify
+graft test
+include dev_requirements.txt
+include COPYING.md
+include COPYING.LESSER.md
+include noxfile.py
+include requirements.txt
+include setup.py
+include pyproject.toml
+include README.rst
+global-exclude *.py[cod]

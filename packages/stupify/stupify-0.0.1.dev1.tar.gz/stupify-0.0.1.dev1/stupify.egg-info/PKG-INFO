@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: stupify
+Version: 0.0.1.dev1
+Summary: Stupidly smart and speedy serialization
+Home-page: UNKNOWN
+Author: Nekoka.tt
+Author-email: nekoka.tt@outlook.com
+License: LGPL-3.0-ONLY
+Description: stupify
+        #######
+        
+        Stupidly smart and speedy serialization.
+        
+        .. image:: https://www.gnu.org/graphics/lgplv3-with-text-154x68.png
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst

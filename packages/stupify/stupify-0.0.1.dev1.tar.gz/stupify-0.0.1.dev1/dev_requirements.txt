@@ -1,0 +1,7 @@
+black
+nox
+pytest
+setuptools
+wheel
+
+https://github.com/cython/cython/zipball/master
