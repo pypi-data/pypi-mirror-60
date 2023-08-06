@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['tfmake']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['click>=7.0,<8.0']
+
+entry_points = \
+{'console_scripts': ['tfmake = tfmake.cli:main']}
+
+setup_kwargs = {
+    'name': 'tfmake',
+    'version': '0.4.0',
+    'description': 'Python based Makefile wrapper',
+    'long_description': None,
+    'author': 'Pascal Prins',
+    'author_email': 'pascal.prins@foobar-it.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': None,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.7,<4.0',
+}
+
+
+setup(**setup_kwargs)
