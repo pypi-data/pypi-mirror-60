@@ -1,0 +1,4 @@
+pennylane
+openfermion
+openfermionpyscf
+openfermionpsi4
