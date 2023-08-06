@@ -1,0 +1,11 @@
+requests
+six
+
+[cli]
+Click
+docker
+jsonschema
+pyhcl
+
+[prediction-store]
+fluent-logger
