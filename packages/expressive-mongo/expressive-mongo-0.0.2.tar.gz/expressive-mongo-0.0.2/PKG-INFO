@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: expressive-mongo
+Version: 0.0.2
+Summary: Easy MongoDB queries with Python expressions
+Home-page: https://github.com/johnyu916/expressive-mongo
+Author: John Yu
+Author-email: johnyu916@hotmail.com
+License: Apache License, Version 2.0
+Download-URL: https://github.com/johnyu916/expressive-mongo/archive/0.0.2.tar.gz
+Description: UNKNOWN
+Keywords: MongoDB,Database,Query
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
