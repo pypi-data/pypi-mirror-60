@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: opsas-pylib
+Version: 0.2.2
+Summary: operation should as a service
+Home-page: https://github.com/calmzhu/opsas-pylib
+Author: Calm Zhu
+Author-email: saint@justcalm.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML (==5.2)
+Requires-Dist: urllib3 (==1.25.7)
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.8)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: Jinja2 (==2.10.3)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: more-itertools (==8.1.0)
+Requires-Dist: packaging (==20.0)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: py (==1.8.1)
+Requires-Dist: pyparsing (==2.4.6)
+Requires-Dist: pytest (==5.3.2)
+Requires-Dist: six (==1.13.0)
+Requires-Dist: wcwidth (==0.1.8)
+Requires-Dist: retrying (==1.3.3)
+
+# opsas-pylib
+[![Build Status](https://github.com/calmzhu/opsas-pylib/workflows/build/badge.svg)](https://github.com/calmzhu/opsas-pylib/actions)
+[![Documentation Status](https://readthedocs.org/projects/opsas-pylib/badge/?version=latest)](https://readthedocs.org/projects/opsas-pylib/builds/)
+
+
+## Install
+```
+    pip install opsas-pylib 
+```
+
+## [Read the doc](https://opsas-pylib.readthedocs.io/en/latest/)
+
+
+
+
+
