@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+docassemble/__init__.py
+docassemble.spot.egg-info/PKG-INFO
+docassemble.spot.egg-info/SOURCES.txt
+docassemble.spot.egg-info/dependency_links.txt
+docassemble.spot.egg-info/namespace_packages.txt
+docassemble.spot.egg-info/not-zip-safe
+docassemble.spot.egg-info/top_level.txt
+docassemble/spot/__init__.py
+docassemble/spot/spot.py
+docassemble/spot/data/sources/README.md
+docassemble/spot/data/static/README.md
+docassemble/spot/data/templates/README.md
