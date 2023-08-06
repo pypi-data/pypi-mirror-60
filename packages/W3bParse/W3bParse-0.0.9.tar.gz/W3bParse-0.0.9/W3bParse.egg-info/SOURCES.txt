@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+W3bParse.egg-info/PKG-INFO
+W3bParse.egg-info/SOURCES.txt
+W3bParse.egg-info/dependency_links.txt
+W3bParse.egg-info/top_level.txt
+data/data_file
+src/__init__.py
+src/W3bParse/webParse.py
