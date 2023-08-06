@@ -1,0 +1,16 @@
+discogspy/__init__.py,sha256=2kVAnjsBvItqGKUvCu_6WC3bmmtbL2vRm4ODWoBwEwk,42
+discogspy/_nbdev.py,sha256=e9l_rM_FSM--UD0of-NMRObgweEUpm6vyW97UgklQFw,4258
+discogspy/core/__init__.py,sha256=zhJjchHazA5JT7HgSQ1I-c4sKOzGUnbaqo3AO2-IjE8,180
+discogspy/core/constants.py,sha256=B5Z2aQzgbmqm0emIVTqddQvEpBTDzRthSGlEk-T4bvk,5082
+discogspy/core/database_rq.py,sha256=eeU-I8k-85CHV0XyynHsgjV_nhx6J9fogBKhxn-5spw,8980
+discogspy/core/discogs_user.py,sha256=QDD-IiNz7AxtDONWY9_VGr1I8qRyhYO5C_hyCxyY6As,971
+discogspy/core/rq_database.py,sha256=U1dpl33REUhp-BgRViaaiFnpEuuechdD2HgQlmisOTw,9297
+discogspy/core/rq_inventory_export.py,sha256=MxUAM3wEvTd_JaHO_qpG2zyNwvPuz3J0RkiQnbjCoBU,2298
+discogspy/core/rq_inventory_upload.py,sha256=Vu6Xi-PjlfE7gWIahwsUA-FSvCLs-IdIdB8LMsjbiKA,2689
+discogspy/core/rq_marketplace.py,sha256=20ZgCKblulgX8kpVBZ_mJTvrOUbo2x4zmQdlHioorao,11952
+discogspy-0.4.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+discogspy-0.4.0.dist-info/METADATA,sha256=6S1_412GPqLo-G4-cZYjuPLGOCfH7j3qG1aMAmBhlsg,2464
+discogspy-0.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+discogspy-0.4.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+discogspy-0.4.0.dist-info/top_level.txt,sha256=OoBnR6D52oeGUEyKyDArFHt-CKeMdvLRzeLRVEI56PI,10
+discogspy-0.4.0.dist-info/RECORD,,
