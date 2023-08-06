@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gpr-complex
+Version: 0.0.1.post2
+Summary: A GPR library that can work with complex numbers
+Home-page: https://github.com/darcamo/gpr_complex
+Author: Darlan Cavalcante Moreira
+Author-email: darcamo@gmail.com
+License: UNKNOWN
+Description: A Gaussian Process Regression (GPR) library that can work with complex numbers.
+        
+        
+Keywords: GPR complex
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
