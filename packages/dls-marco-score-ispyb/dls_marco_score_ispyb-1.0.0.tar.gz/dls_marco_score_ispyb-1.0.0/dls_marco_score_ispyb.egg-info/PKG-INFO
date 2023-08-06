@@ -1,0 +1,65 @@
+Metadata-Version: 1.0
+Name: dls-marco-score-ispyb
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: 'Urszula Neuman',
+Author-email: UNKNOWN
+License: Apache License 2.0
+Description: dls_marco_score_ispby
+        =====================
+        
+        dls_marco_score_ispby ia a script which runs the marco scoring tool
+        for images passed to it in a list and writes the scores into ispyb database
+        using ispby API.
+        
+        There are two requirements for it tow work:
+        
+        * the connection to the database has
+        * the images for which the scoring is calculate need to be add to the database table called ispyb.BLSampleImage.
+        
+        
+        See comments in ticket VMXI-488 for more details.
+        
+        Once the local database connection is established and the image added
+        to the database the script can be used as follows:
+        
+            import dls_marco_score_ispyb.score as ms
+        
+            crystal_images =
+            ['imgae1', 'image2']
+        
+            ms.run(crystal_images)
+        
+        Features
+        --------
+        The script takes 3 parameters. The first one is the list of image names
+        (absolute path) and is an obligatory parameter. The second is the path
+        to the ispyb config file, this is a optional parameter with the default
+        path to the local host (see file dls_marco_score_ispby/config.conf)
+        The third parameter is the path to the marco model, this is also
+        an optional parameter, the default value is the path to the model
+        packaged up with the module (see folder dls_marco_score_ispby/savemodel)
+        
+        Installation
+        ------------
+        dls_marco_score_ispyb is part of dls-python3.
+        In order to install it do:
+        
+            pip install dls_marco_score_ispyb
+        
+        
+        Contribute
+        ----------
+        The source code of dls_marco_score_ispyb is on gitlab
+        - Source Code: https://gitlab.diamond.ac.uk/controls/python3/dls_marco_score_ispyb
+        
+        Support
+        -------
+        
+        If you are having issues, please contact Urszula Neuman at
+        urszula.neuman@diamond.ac.uk
+        
+        
+        
+Platform: UNKNOWN
