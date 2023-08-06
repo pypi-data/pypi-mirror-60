@@ -1,0 +1,12 @@
+docal_tkinter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docal_tkinter/__main__.py,sha256=TBiT7LZdpq23Rq5BRoo0oLj_xNh8yMl-q2PH8HF_cfo,248
+docal_tkinter/app.py,sha256=61M_0qxw1R5jkLntplTBGM3iMWAYjKvoFi2UCFfHAOs,1439
+docal_tkinter/menubar.py,sha256=J23DA0YgeKi7sDp7knSK5h07rWzW5XaWoMgW56gFo0c,8968
+docal_tkinter/sidebar.py,sha256=jC2ionUxvy-IOpJBP2UaN1E15uqf8myD4RJ7lS5UDT4,6723
+docal_tkinter/toolbar.py,sha256=9bxRiRRRJxuuAK2fsHB4sKsE09SR030VtdudcKiYaOE,6229
+docal_tkinter/worksheet.py,sha256=XWdU6-nMGEAGsmUjcIeKg1AH3Gi8gVbFodZNhT9hEpE,22900
+docal_tkinter-2.2.2.dist-info/LICENSE,sha256=SaxJB7NbVpK8A6tf4qdFsmNeavKKLZ8bgYadhQmgA-E,1093
+docal_tkinter-2.2.2.dist-info/METADATA,sha256=L4WfgZDaljCNaoQ7FKOodMmkNkBGTNXnJXUKCYxjh8U,1053
+docal_tkinter-2.2.2.dist-info/WHEEL,sha256=IWeGwTvdiaNRNtdERe0BHc5KsCqvvVfLuP8HWeQWYGw,97
+docal_tkinter-2.2.2.dist-info/top_level.txt,sha256=Di8T8sL7AVVUBBUDW73sfMH6e2uHRJrFvG_1691j1As,14
+docal_tkinter-2.2.2.dist-info/RECORD,,
