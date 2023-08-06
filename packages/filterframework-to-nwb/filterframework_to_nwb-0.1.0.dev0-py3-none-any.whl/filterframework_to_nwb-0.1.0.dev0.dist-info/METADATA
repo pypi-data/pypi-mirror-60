@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: filterframework-to-nwb
+Version: 0.1.0.dev0
+Summary: Convert files from Loren Frank Lab old matlab format to NWB 2.0
+Home-page: https://github.com/LorenFrankLab/filterframework_to_nwb
+Author: Frank Lab members
+Author-email: loren@phy.ucsf.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pynwb
+Requires-Dist: hdmf
+Requires-Dist: pandas
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: python-dateutil
+Requires-Dist: python-intervals
+Requires-Dist: franklab-nwb-extensions
+
+# filterframework_to_nwb
+Converts from Frank Lab Filterframework DataFormat to Neurodata Without Borders 2.0
+
+

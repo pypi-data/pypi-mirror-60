@@ -1,0 +1,10 @@
+filterframework_to_nwb/__init__.py,sha256=8kQYGtNzuvqX8PI9x47IOcwzKOObr0tZjNHr_aw-ekU,63
+filterframework_to_nwb/core.py,sha256=G1VA0tSHzTdsqyYQd6ewqoEWQXXuFBGTXOKAYaVl_hs,24302
+filterframework_to_nwb/fl_extension_helpers.py,sha256=iwOA53EIdwigKacK2FCH9LIF6L9SxL80fpqn-NZH6Jc,8828
+filterframework_to_nwb/nspike_helpers.py,sha256=Pz9IP5mythj5-U5E33mVKALIeajrP_yzkCFuZl2Xlks,14714
+filterframework_to_nwb-0.1.0.dev0.dist-info/LICENSE,sha256=BFR4O7e4-n3v9JIB6alO02DMXjcncPuKvB7SE9HJqyo,1072
+filterframework_to_nwb-0.1.0.dev0.dist-info/METADATA,sha256=KBQtdoxqyeI2wWmzkV519yxUe55yKXAXukFw6ANARGo,883
+filterframework_to_nwb-0.1.0.dev0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+filterframework_to_nwb-0.1.0.dev0.dist-info/entry_points.txt,sha256=RcuqZ0jxSKJpn_tWB1JbkpqBn9rYrnP1SKhbsi-T-h4,109
+filterframework_to_nwb-0.1.0.dev0.dist-info/top_level.txt,sha256=cJeTpuRMHZ9yVePetGyaGUgbW9tyBD8iMhEcTBHwtZQ,23
+filterframework_to_nwb-0.1.0.dev0.dist-info/RECORD,,
