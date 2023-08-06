@@ -1,0 +1,9 @@
+py2sfn_task_tools/__init__.py,sha256=D9q5sxmlrKCGGD5rw9CNKhS8P_iVo1tlD0rbPu-3Jqg,94
+py2sfn_task_tools/context.py,sha256=j65Emt2lJNbF4PwAuwYPzeoN3O0MDW6YT7GJUzzKXqM,417
+py2sfn_task_tools/exceptions.py,sha256=J7Qn-__EHs7uVpn941jDkCnm-sFpH12YZt8mFWdZqXo,286
+py2sfn_task_tools/state_data_client.py,sha256=DUXPf8NcVYiEEVSzDr6_4mOakxTA2WPSGLz-VzTHMJo,16265
+py2sfn_task_tools/stop_execution.py,sha256=sW5iykzduzdLpepVJCBIvS7W1iWNd-ZzWQd4dTb7swc,777
+py2sfn_task_tools-0.2.0.dist-info/LICENSE.md,sha256=G88t14xpsk91u_IobgImtvJTlNRL1W25pM8nur6_oCU,1464
+py2sfn_task_tools-0.2.0.dist-info/WHEEL,sha256=bH-u_BY_RnUj9Z3s1FehhR3OifYy3H_vQHEtDkXLu84,81
+py2sfn_task_tools-0.2.0.dist-info/METADATA,sha256=uEN4AB-5XnuuX6Pqo0_8g57yqPP1-VS4IpCPAy-bbtY,7223
+py2sfn_task_tools-0.2.0.dist-info/RECORD,,
