@@ -1,0 +1,10 @@
+tshistory_supervision/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tshistory_supervision/api.py,sha256=6XeikSlvCL9f1ByfQ24p95aWZkd7vj1nmBsL8uM6rnw,566
+tshistory_supervision/cli.py,sha256=S6rnkfwPejANdM3nsN9yxAnQm8AnfwGgqOuo4b8vdvc,2801
+tshistory_supervision/schema.py,sha256=D_PiddJgSuEZdh2gOg6K8nsrDu0qRVPyuSvGJyGxGPI,329
+tshistory_supervision/tsio.py,sha256=RdIj3EQQDW1CK-Yi6fugJtPLavXcQ-VXkZS_DbMNBlE,8966
+tshistory_supervision-0.8.0.dist-info/METADATA,sha256=vlQJ3a_7ZTV5TvKfKgkanHj8kiPDumlUcWaDytvZY3k,752
+tshistory_supervision-0.8.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+tshistory_supervision-0.8.0.dist-info/entry_points.txt,sha256=PPKg80cS-yx3D7Es4uV8NAGNCwhBngt3FOAVCVj7OWM,213
+tshistory_supervision-0.8.0.dist-info/top_level.txt,sha256=3njUKwliJ85ts3t4Yh7Tm8meVGpns2jqhY_ZlYnS70E,22
+tshistory_supervision-0.8.0.dist-info/RECORD,,
