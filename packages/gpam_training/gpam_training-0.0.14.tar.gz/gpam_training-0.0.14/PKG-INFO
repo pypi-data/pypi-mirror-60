@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: gpam_training
+Version: 0.0.14
+Summary: Module to facilitate the integration of a sklearn training pipeline into a deploy and retraining system
+Home-page: https://github.com/joaorobson/gpam_training
+Author: João Robson
+Author-email: None
