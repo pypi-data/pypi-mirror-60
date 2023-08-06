@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: nishant_outlier_removal_76
+Version: 0.0.2
+Summary: An outlier removal assignment
+Home-page: https://github.com/pypa/sampleproject
+Author: Nishant Goel
+Author-email: ngoel_be17@thapar.edu
+License: UNKNOWN
+Description: #Package for topsis
+        
+        This package has been created based on Project 2 of course UCS633.
+        
+        Nishant Goel COE 17 101703376
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
