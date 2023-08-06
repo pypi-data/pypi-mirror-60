@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+pdc_python_sdk/__init__.py
+pdc_python_sdk/__main__.py
+pdc_python_sdk/cmdline.py
+pdc_python_sdk/demo.py
+pdc_python_sdk.egg-info/PKG-INFO
+pdc_python_sdk.egg-info/SOURCES.txt
+pdc_python_sdk.egg-info/dependency_links.txt
+pdc_python_sdk.egg-info/not-zip-safe
+pdc_python_sdk.egg-info/top_level.txt
+pdc_python_sdk/tests/__init__.py
