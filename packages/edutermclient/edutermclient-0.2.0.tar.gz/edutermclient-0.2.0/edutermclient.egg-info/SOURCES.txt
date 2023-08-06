@@ -1,0 +1,16 @@
+.gitignore
+.travis.yml
+LICENSE
+README.md
+setup.py
+edutermclient/__init__.py
+edutermclient/edutermclient.py
+edutermclient.egg-info/PKG-INFO
+edutermclient.egg-info/SOURCES.txt
+edutermclient.egg-info/dependency_links.txt
+edutermclient.egg-info/requires.txt
+edutermclient.egg-info/top_level.txt
+test/example.json
+test/test_init.py
+test/test_query.py
+test/test_table.py

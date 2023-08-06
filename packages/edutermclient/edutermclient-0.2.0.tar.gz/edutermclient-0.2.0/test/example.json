@@ -1,0 +1,56 @@
+{
+  "head": {
+    "vars": [
+      "vak",
+      "vakLabel",
+      "hasChildren",
+      "childCount"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "vak": {
+          "type": "uri",
+          "value": "http://purl.edustandaard.nl/begrippenkader/c001f86a-4f8f-4420-bd78-381c615ecedc"
+        },
+        "vakLabel": {
+          "xml:lang": "nl",
+          "type": "literal",
+          "value": "Aardrijkskunde"
+        },
+        "hasChildren": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "type": "literal",
+          "value": "true"
+        },
+        "childCount": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "type": "literal",
+          "value": "5"
+        }
+      },
+      {
+        "vak": {
+          "type": "uri",
+          "value": "http://purl.edustandaard.nl/begrippenkader/570aef95-9d43-401d-bac2-b40a6dab4082"
+        },
+        "vakLabel": {
+          "xml:lang": "nl",
+          "type": "literal",
+          "value": "Audiovisuele vormgeving"
+        },
+        "hasChildren": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "type": "literal",
+          "value": "false"
+        },
+        "childCount": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "type": "literal",
+          "value": "0"
+        }
+      }
+    ]
+  }
+}
