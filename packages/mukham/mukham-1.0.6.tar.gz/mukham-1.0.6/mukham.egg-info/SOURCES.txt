@@ -1,0 +1,10 @@
+README.md
+setup.py
+mukham/__init__.py
+mukham/__main__.py
+mukham/detector.py
+mukham.egg-info/PKG-INFO
+mukham.egg-info/SOURCES.txt
+mukham.egg-info/dependency_links.txt
+mukham.egg-info/requires.txt
+mukham.egg-info/top_level.txt
