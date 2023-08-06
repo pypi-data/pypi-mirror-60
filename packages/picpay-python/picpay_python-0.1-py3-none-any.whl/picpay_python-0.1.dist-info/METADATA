@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: picpay-python
+Version: 0.1
+Summary: Aceite PicPay e faça parte do movimento que está revolucionando a relação com o dinheiro no Brasil.
+Home-page: https://github.com/hudsonbrendon/picpay-python
+Author: Hudson Brendon
+Author-email: contato.hudsonbrendon@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
