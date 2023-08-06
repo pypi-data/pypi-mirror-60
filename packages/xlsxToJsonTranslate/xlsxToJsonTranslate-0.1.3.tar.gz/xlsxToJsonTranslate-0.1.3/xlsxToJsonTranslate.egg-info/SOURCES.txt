@@ -1,0 +1,9 @@
+README.md
+setup.py
+xlsxToJsonTranslate
+xlsxToJsonTranslate.egg-info/PKG-INFO
+xlsxToJsonTranslate.egg-info/SOURCES.txt
+xlsxToJsonTranslate.egg-info/dependency_links.txt
+xlsxToJsonTranslate.egg-info/requires.txt
+xlsxToJsonTranslate.egg-info/top_level.txt
+xlsxToJsonTranslate.egg-info/zip-safe
