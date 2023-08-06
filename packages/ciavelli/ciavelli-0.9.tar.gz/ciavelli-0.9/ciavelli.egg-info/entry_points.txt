@@ -1,0 +1,3 @@
+[console_scripts]
+cia = ciavelli.ciavelli:main
+
