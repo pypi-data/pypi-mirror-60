@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+bbconf/__init__.py
+bbconf/_version.py
+bbconf/bbconf.py
+bbconf/const.py
+bbconf/exceptions.py
+bbconf.egg-info/PKG-INFO
+bbconf.egg-info/SOURCES.txt
+bbconf.egg-info/dependency_links.txt
+bbconf.egg-info/requires.txt
+bbconf.egg-info/top_level.txt
+requirements/requirements-all.txt
