@@ -1,0 +1,17 @@
+snpmatch/__init__.py,sha256=mOhPC7YDUFWxZqCaGRv4NyjedbzmNgtDP3zYQGUSDAs,11254
+snpmatch/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snpmatch/core/csmatch.py,sha256=K9kQlWNfpiPnLUbBQVyg7k6SXqZsZhAG2i2ERZs2fiw,14487
+snpmatch/core/genomes.py,sha256=WX7shpI2D-8CndFht84ql0Oi0dpKbsg6VjJyk2-k0XY,6171
+snpmatch/core/genotype_cross.py,sha256=k07f4pEiAihyxDiWSAplPTKYhgL2NHT8gxr6i_dM5p8,16202
+snpmatch/core/makedb.py,sha256=2WO3cUwkbKceZaW3nipwsp1zWe5RlpBGTj5wz7z2rfs,4094
+snpmatch/core/parsers.py,sha256=8FOfXfqEqoMZNe1ZlG7my7jWFMV6xrBxjiYmu0_M9Lk,6879
+snpmatch/core/simulate.py,sha256=dGJUA6j838ZCY1qhxZRYv-2YDIFxZbwpdUT2wbresrw,3766
+snpmatch/core/snp_genotype.py,sha256=TmLQTWNo9hCvAE8MXPVCTUWNqwexkpCYLD6-01-OIuo,11250
+snpmatch/core/snpmatch.py,sha256=emd-EG5sVENZzN6Mz7KZCpId5SPNlvgcv10bPJo4TKY,12998
+snpmatch/resources/genomes/athaliana_tair10.json,sha256=-oBfwYD2scJmH0XoFrKa0Qd6CVEf1qUdAIFOP6fBhbE,301
+SNPmatch-4.0.0.dist-info/LICENSE,sha256=AxWG6cE6G2DrOZ8ycjUi38LNLg37KsKtqfPpljX1aG0,1117
+SNPmatch-4.0.0.dist-info/METADATA,sha256=TqYeWl4Bg3jao0vEeJbl-Z7tEHhzqQFbR8n1Op8pdLw,9901
+SNPmatch-4.0.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+SNPmatch-4.0.0.dist-info/entry_points.txt,sha256=6rH4-fpK5ITjPWxR2aj-0r4PoZEqOOwg4uSC8JhWtYc,44
+SNPmatch-4.0.0.dist-info/top_level.txt,sha256=B0L5UjzdzwFxWZbm1mpjIQAVOqu7ASPYZwKNbOg-VaI,9
+SNPmatch-4.0.0.dist-info/RECORD,,
