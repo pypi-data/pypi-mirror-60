@@ -1,0 +1,8 @@
+README.md
+setup.py
+pymoos.egg-info/PKG-INFO
+pymoos.egg-info/SOURCES.txt
+pymoos.egg-info/dependency_links.txt
+pymoos.egg-info/top_level.txt
+python/MOOSCommClient.py
+python/__init__.py
