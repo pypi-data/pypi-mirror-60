@@ -1,0 +1,29 @@
+﻿Tableau Software, Inc.
+HYPER API Open Source Software Disclosure (rev. July 17, 2019)
+
+HYPER API may contain one or more of the following open source software packages. For more information, including copies
+of applicable open source software licenses, or to request copies of open source software, please contact legal@tableau.com.
+For Instructional Purposes: The first column on the left identifies the name or title of the open source software package
+that the HYPER API may contain. The second column from the left identifies the applicable license(s) for the respective
+software package in that row. The third column from the left contains a text link to the applicable license for that open
+source software package.
+
+Open Source Software Package, License Information, License Link
+Boost, Boost Software License v1.0, https://www.boost.org/users/license.html
+cffi, MIT, https://bitbucket.org/cffi/cffi/src/default/LICENSE
+clang, LLVM release license, http://releases.llvm.org/7.0.0/LICENSE.TXT
+GeographicLib, MIT/X11 License, https://geographiclib.sourceforge.io/html/LICENSE.txt
+HashCode from .NET, licensed under the MIT license, https://github.com/dotnet/coreclr/blob/master/LICENSE.TXT
+ICU library, Unicode Data Files and Software License, http://www.unicode.org/copyright.html#License
+JNA, dual-licensed under LGPL 2.1 or later and Apache License 2.0. (starting with JNA version 4.0.0), https://raw.githubusercontent.com/java-native-access/jna/master/LICENSE
+libgcc_s, GCC runtime library exception, https://www.gnu.org/software/gcc/gcc-6/
+LLVM library, LLVM release license, http://releases.llvm.org/7.0.0/LICENSE.TXT
+lz4 library, BSD 2-clause license, https://github.com/lz4/lz4
+Milo Yip's grisu2 library, MIT, https://github.com/miloyip/dtoa-benchmark/blob/master/license.txt
+musl libc library, MIT, https://www.musl-libc.org/intro.html
+pdqsort library, Apache 2.0, https://raw.githubusercontent.com/stjepang/pdqsort/master/LICENSE-APACHE
+RE2 library, RE2 license, https://raw.githubusercontent.com/google/re2/master/LICENSE
+Sampling+dsfmt+HyperGeometricDistribution, BSD2, https://github.com/lorenzhs/sampling/blob/master/LICENSE https://github.com/lorenzhs/sampling/blob/master/sampling/rng/dSFMT.hpp https://github.com/lorenzhs/sampling/blob/master/sampling/hypergeometric_distribution.hpp
+span lite, Boost Software License v1.0, https://raw.githubusercontent.com/martinmoene/span-lite/master/LICENSE.txt
+Zstd, dual-licensed under BSD and GPLv2, https://github.com/facebook/zstd/blob/dev/LICENSE
+Zlib, The zlib/libpng License (Zlib), https://opensource.org/licenses/Zlib
