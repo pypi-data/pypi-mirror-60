@@ -1,0 +1,14 @@
+tune/__init__.py,sha256=X_2a5rpGCgFlIW50rblSGFHtQaLT4Up4Hu3MeT0l7M0,144
+tune/cli.py,sha256=QmwnUpPdklrlP0qlzXvx8BQVPR8ZAwYcRrTvYGCMSBU,2338
+tune/io.py,sha256=Ob1YwkXcGCm_CMeJ6c-viyL4B-ugTRSaKmKt6C59268,1707
+tune/db_workers/__init__.py,sha256=jKht1s21P3Z7Plzvb1fp_f8QbddJnZ25w8G2XY14_iI,58
+tune/db_workers/tuning_client.py,sha256=F0PxqjKbcyxV0hQM08oTaqE6s5uBnw3a-c_V2AJbB2w,10846
+tune/db_workers/tuning_server.py,sha256=SYeNTHxPIIqz2k2PW3Nj006dXjZvlIcyZZC_zIVW6lc,14357
+tune/db_workers/utils.py,sha256=DrKhl3jFNtQfJZPZgw450iaOcdiIfwruJG8DR2ft-PY,324
+chess_tuning_tools-0.1.5.dist-info/AUTHORS.rst,sha256=KSOmejbNLz5qJ2oN0zfogFbhxts0UyK7NJkJYcmG1VQ,164
+chess_tuning_tools-0.1.5.dist-info/LICENSE,sha256=Knex1r8GciObrnhw2sIINayfbYbKVBfJlRC-ussIKcQ,592
+chess_tuning_tools-0.1.5.dist-info/METADATA,sha256=g_iDh5pcvumZ4JvbKr--HVMTmaIVSWQL6FVDq9vnsZE,3409
+chess_tuning_tools-0.1.5.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+chess_tuning_tools-0.1.5.dist-info/entry_points.txt,sha256=v0oZrMN3SJANQYDT4r4jSOmewMpFJr07DbiQ-KbWDyQ,39
+chess_tuning_tools-0.1.5.dist-info/top_level.txt,sha256=Uo8ifPGTgi6LSGmPauHqWebpLcUhiAcUNjdyAt5lza8,5
+chess_tuning_tools-0.1.5.dist-info/RECORD,,
