@@ -1,0 +1,12 @@
+dls_marco_score_ispyb/VERSION,sha256=1R5uyUBYVUqEVYpbQC7m71_fVFXjXJAv7aYc2odSlDo,5
+dls_marco_score_ispyb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dls_marco_score_ispyb/config.cfg,sha256=VXIZCn76IHStT5q-jlCibAgL32ckZrAKI6hUe3Tq9KE,112
+dls_marco_score_ispyb/score.py,sha256=QPwucJRrlIOXWd2KsFCWCnMe90s2F86pUbOcVAAl5oM,1345
+dls_marco_score_ispyb/savedmodel/saved_model.pb,sha256=0v27cqBWNKJtOBEUnAmLF2fkBeft8LLqJNbnJna92wM,2074862
+dls_marco_score_ispyb/savedmodel/variables/variables.data-00000-of-00001,sha256=HLSGDGlM6h_4og1UO4W7sm4mfLiCFJsWurdg_xfN2Tw,45906344
+dls_marco_score_ispyb/savedmodel/variables/variables.index,sha256=OuPuch2zXbKqV1oUwI6-gcD3hy0oid71ky6HtkYgZUA,6933
+dls_marco_score_ispyb-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dls_marco_score_ispyb-1.0.1.dist-info/METADATA,sha256=32G_jPXr7SKPPmvkC8iXSOL21w90Rx3VQgI7LvXh8Tc,2154
+dls_marco_score_ispyb-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dls_marco_score_ispyb-1.0.1.dist-info/top_level.txt,sha256=hVFTBsAcj8EuaZ00tvhZi4QTlw-ET9EoRk56JmUhxkE,22
+dls_marco_score_ispyb-1.0.1.dist-info/RECORD,,
