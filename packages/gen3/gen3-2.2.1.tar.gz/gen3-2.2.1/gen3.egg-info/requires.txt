@@ -1,0 +1,6 @@
+requests
+pandas
+indexclient
+aiohttp
+backoff
+click
