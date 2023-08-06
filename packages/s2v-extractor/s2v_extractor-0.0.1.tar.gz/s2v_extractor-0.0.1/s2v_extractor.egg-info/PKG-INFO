@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: s2v-extractor
+Version: 0.0.1
+Summary: Python package extractoin value from string
+Home-page: https://github.com/iammoni/s2v-extractor
+Author: Shubham Dhanda
+Author-email: sdhandahr08@gmail.com
+License: UNKNOWN
+Description: # s2v-extractor
+        
+        #you get "abc234d4" from this 2344 as number
+        
+        #memory and age are column of datafrme which has values like 16GB and you want 16 as number it will return dataframe withconverted values
+        
+        import pandas as pd
+        
+        
+        from test import s2v
+        
+         
+        
+        df=pd.read_csv('test_data.csv')
+        
+        
+        obj=s2v(df,["Memory","Age"])         
+                      
+        print(obj.extract())
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
