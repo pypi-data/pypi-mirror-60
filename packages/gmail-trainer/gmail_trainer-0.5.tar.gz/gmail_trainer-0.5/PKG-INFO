@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: gmail_trainer
+Version: 0.5
+Summary: get mail notifications when your training is completed
+Home-page: https://github.com/aymericdelab/gmail_trainer
+Author: Aymeric de la Brousse
+Author-email: aymericdelabrousse@gmail.com
+License: MIT
+Download-URL: https://github.com/aymericdelab/gmail_trainer/archive/v_05.tar.gz
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
