@@ -1,0 +1,9 @@
+README.md
+setup.py
+SpeakerCraft/SpeakerCraft.py
+SpeakerCraft/__init__.py
+SpeakerCraftPy.egg-info/PKG-INFO
+SpeakerCraftPy.egg-info/SOURCES.txt
+SpeakerCraftPy.egg-info/dependency_links.txt
+SpeakerCraftPy.egg-info/requires.txt
+SpeakerCraftPy.egg-info/top_level.txt
