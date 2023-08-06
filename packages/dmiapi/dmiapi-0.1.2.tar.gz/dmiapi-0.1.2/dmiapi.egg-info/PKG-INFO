@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: dmiapi
+Version: 0.1.2
+Summary: Wrapper for access weather observations and forecasts from the Danish Metrology Institute (DMI) API
+Home-page: https://github.com/niklascp/py-dmiapi
+Author: Niklas Christoffer Petersen
+Author-email: nikalscp@gmail.com
+License: MIT
+Download-URL: https://github.com/niklascp/py-dmiapi/archive/v0.1.0.tar.gz
+Description: ## Installation
+        
+        ```pip install dmiapi```
+        
+        ## Data available
+        
+        - observations
+        - forecasts
+        
+        ## Usage
+        
+        The wrapper supports both synchronous and asynchronous methods.
+        
+        ### Synchronous example
+        ```python
+        import pandas as pd
+        import dmiapi
+        
+        client = dmiapi.DmiApiClient()
+        
+        obs_response = client.observations(station_id = 2619856)
+        obs = pd.DataFrame(obs_response['observations'])
+        print('Mean temperature (2 meters above ground):', obs['temperature2m'].mean())
+        ```
+        
+        ### Asynchronous example
+        ```python
+        import pandas as pd
+        import dmiapi
+        
+        async def max_forecast_temp():
+            client = dmiapi.DmiApiClient()
+            forecasts_response = await client.async_forecasts(location_id = 2619856)
+            forecasts = pd.DataFrame(forecasts_response['forecasts'])
+            print('Forcasted max. temperature:', forecasts['temp'].max())
+        ```
+        
+Keywords: weather,metrology,forecast,dmi
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

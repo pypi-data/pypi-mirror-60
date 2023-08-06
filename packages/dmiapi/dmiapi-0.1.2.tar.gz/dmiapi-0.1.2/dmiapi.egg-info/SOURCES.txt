@@ -1,0 +1,10 @@
+README.md
+setup.py
+dmiapi/DmiApiClient.py
+dmiapi/__init__.py
+dmiapi/constants.py
+dmiapi.egg-info/PKG-INFO
+dmiapi.egg-info/SOURCES.txt
+dmiapi.egg-info/dependency_links.txt
+dmiapi.egg-info/requires.txt
+dmiapi.egg-info/top_level.txt
