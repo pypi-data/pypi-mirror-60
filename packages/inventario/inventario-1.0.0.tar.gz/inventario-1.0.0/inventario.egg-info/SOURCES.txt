@@ -1,0 +1,7 @@
+README.md
+inventario.py
+setup.py
+inventario.egg-info/PKG-INFO
+inventario.egg-info/SOURCES.txt
+inventario.egg-info/dependency_links.txt
+inventario.egg-info/top_level.txt
