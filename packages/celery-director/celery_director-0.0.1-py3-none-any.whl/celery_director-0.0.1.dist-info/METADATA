@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: celery-director
+Version: 0.0.1
+Summary: Celery Director
+Home-page: UNKNOWN
+Author: OVHcloud
+Author-email: opensource@ovhcloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Monitoring
+Requires-Python: ~=3.6
+Requires-Dist: celery (==4.4.0)
+Requires-Dist: flower (==0.9.3)
+Requires-Dist: kombu (==4.6.7)
+Requires-Dist: psycopg2-binary (==2.8.4)
+Requires-Dist: SQLAlchemy (==1.3.11)
+Requires-Dist: sqlalchemy-utils (==0.35.0)
+Requires-Dist: redis (==3.3.11)
+Requires-Dist: alembic (==1.3.2)
+Requires-Dist: Flask (==1.1.1)
+Requires-Dist: Flask-SQLAlchemy (==2.4.1)
+Requires-Dist: Flask-json-schema (==0.0.5)
+Requires-Dist: Flask-Migrate (==2.5.2)
+Requires-Dist: gunicorn (==20.0.4)
+Requires-Dist: environs (==6.1.0)
+Requires-Dist: pyyaml (==5.1.2)
+Requires-Dist: click (==7.0)
+Requires-Dist: terminaltables (==3.1.0)
+Requires-Dist: pluginbase (==1.0.0)
+Provides-Extra: ci
+Requires-Dist: pytest ; extra == 'ci'
+Requires-Dist: pytest-cov ; extra == 'ci'
+Provides-Extra: dev
+Requires-Dist: tox (==3.5.3) ; extra == 'dev'
+Requires-Dist: black (==19.10b0) ; extra == 'dev'
+
+Celery Director
+
+
