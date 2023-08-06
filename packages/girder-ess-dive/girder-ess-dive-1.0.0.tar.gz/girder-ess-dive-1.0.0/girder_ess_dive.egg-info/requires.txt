@@ -1,0 +1,6 @@
+girder
+pytest
+requests
+xmltodict
+shapely
+pyproj

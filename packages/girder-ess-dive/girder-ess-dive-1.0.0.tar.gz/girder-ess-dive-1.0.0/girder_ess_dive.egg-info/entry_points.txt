@@ -1,0 +1,3 @@
+[girder.plugin]
+ess-dive = girder_ess_dive:GirderESSDive
+
