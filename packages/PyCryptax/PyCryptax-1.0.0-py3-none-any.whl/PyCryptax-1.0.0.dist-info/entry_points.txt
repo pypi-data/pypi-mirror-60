@@ -1,0 +1,3 @@
+[console_scripts]
+pycryptax = pycryptax.__main__:main
+
