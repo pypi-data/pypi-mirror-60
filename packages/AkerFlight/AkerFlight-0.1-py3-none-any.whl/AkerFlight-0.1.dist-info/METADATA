@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: AkerFlight
+Version: 0.1
+Summary: AutoFlightAware for Sunstates Aker
+Home-page: http://github.com/example
+Author: Matthew Turner
+Author-email: MatthewT@example.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: selenium
+Requires-Dist: openpyxl
+Requires-Dist: datetime
+
+UNKNOWN
+
+
