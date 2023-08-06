@@ -1,0 +1,12 @@
+bsdict/__init__.py,sha256=e3D0Vo2oPU6Y3GP2RiALtMr-3Pql86-VDIgWiLI4mUU,37
+bsdict/bsdict.py,sha256=H5Ud9ImHLzyU2PTYN57zHyA_YQUYmhd6qX-w9X9ZIdk,3668
+bsdict/bsdict_tests.py,sha256=S4U63_hkvV2blaiaufXWtxDh0oxh6MmMhTlnlIRgLfY,3636
+bsdict/bslt.py,sha256=AZrgAPWsUvsoXFejqmGu1MJPdVl1L9spuz2uuddvHqE,3821
+bsdict/bslt_tests.py,sha256=jhOc-YXC0NmuZe0RwDWk_HhY_OKm3BMrhAeBmTrChI8,3415
+bsdict/farray.py,sha256=LcZHiNlkgRMrlWutqtzVXZWc5R2G_3aRZjhhB3fv8N4,2765
+bsdict/farray_tests.py,sha256=jvdEnU4ienu-YTbkfHFCwGfRMY2HbZIohcawYkymkb8,1771
+bsdict-0.1.0.dist-info/LICENSE.txt,sha256=WHkbBbE7mRT4IkKKRpC-EWW8RqWvr0xMupaxjoNqsCo,1516
+bsdict-0.1.0.dist-info/METADATA,sha256=HRVrjfpMczXcYtjP4Z0oyqtogm1cRbklPw4ty1cPB94,3077
+bsdict-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+bsdict-0.1.0.dist-info/top_level.txt,sha256=x7Clb2fhmgH7jKOtAzDz_uf-pjcvzbJ2BfltM9g3LlM,7
+bsdict-0.1.0.dist-info/RECORD,,
