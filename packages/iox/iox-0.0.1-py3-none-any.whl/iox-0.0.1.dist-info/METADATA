@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: iox
+Version: 0.0.1
+Summary: iox
+Home-page: https://www.lockhartlab.org
+Author: C. Lockhart
+Author-email: chris@lockhartlab.org
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: google-api-python-client
+Requires-Dist: google-cloud-bigquery (==1.22.0)
+Requires-Dist: google-auth
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+iox
+
+
