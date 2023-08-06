@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: votifier2
+Version: 0.1.0
+Summary: Votifier protocol v2 client for Python.
+Home-page: https://github.com/ano95/votifier2-py
+Author: ano95
+Author-email: adam@ano95.eu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Votifier2
+
+## Overview
+
+Votifier protocol v2 client for Python.
+
+Based on https://github.com/NuVotifier/votifier2-php/.
+
+## Installation / Usage
+
+To install use pip:
+
+    pip install votifier2
+
+
+## Example
+
+```python
+    from votifier2 import Server, Vote
+
+    v = Vote("SERVICE", "ano95", "127.0.0.1")
+    s = Server("127.0.0.1", 8192, "TOKEN")
+    s.send_vote(v)
+```
+
