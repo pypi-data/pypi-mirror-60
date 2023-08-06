@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+fastentrypoints.py
+recent2.py
+setup.py
+version.txt
+recent2.egg-info/PKG-INFO
+recent2.egg-info/SOURCES.txt
+recent2.egg-info/dependency_links.txt
+recent2.egg-info/entry_points.txt
+recent2.egg-info/top_level.txt
