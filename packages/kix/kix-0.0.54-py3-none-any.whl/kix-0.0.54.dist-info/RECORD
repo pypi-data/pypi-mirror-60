@@ -1,0 +1,12 @@
+kix/__init__.py,sha256=l7O9d21F_oGOllQjwnvqaSrUIrk-jjZR_thVK3AuibY,308
+kix/color.py,sha256=iEnD2NosgzjiAYbfuFkTsYi8WpGziDiSeXqkGKjQ_TI,1438
+kix/dict_expander.py,sha256=rbN9NfhLW53dDpwp7QtvqTazkI4ZW11RsYBrz6ruDak,3309
+kix/log.py,sha256=ZjaaP-8A3GkED5S7jH3s0OYUtXnR1bGQ5wjSq59vFY0,832
+kix/logger.py,sha256=NJ4mS4AStMBgpW6VuWStv5GCef7IoEwx5xyNmHpQxUM,4115
+kix/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kix/utils/pather.py,sha256=fmD26PUzeyhHpn1Up5ytZTyYH_1vdz7_DXetXMrTImo,1224
+kix/utils/truncate.py,sha256=wSLYaf4pICew7B-t4Q4kQ-TkpQKGf9nNEQfghRTLCR0,737
+kix-0.0.54.dist-info/METADATA,sha256=cqGzqd8BaeZsZGvurRFh1Fld1lLsrxcFVcEZ8FGBp-A,469
+kix-0.0.54.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+kix-0.0.54.dist-info/top_level.txt,sha256=OYegoTjRBjfuJgtORFnmAFy4p_8Sfcz3cBw2K7WGnpI,4
+kix-0.0.54.dist-info/RECORD,,
