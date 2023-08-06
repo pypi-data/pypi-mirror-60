@@ -1,0 +1,11 @@
+modelmanager_api/add_model.py,sha256=SRo0JDiuO5L6X-q22lqhSSP2nXCoZ2DCWriKB5VoOlk,1123
+modelmanager_api/add_project.py,sha256=MlPELiEYeu6coQ3ObAQB_gtL4hRNGLpE7y_jkxCxFbA,533
+modelmanager_api/delete_model.py,sha256=q6_hqj9sWn5FCooA5D8ot5njkfrTELu6_-Sxkyletew,270
+modelmanager_api/delete_project.py,sha256=v6ACvv4vXD5gWNDo1OrtX6hmFWXEKE_Cgig2BENOEHc,263
+modelmanager_api/modelmanager_api.py,sha256=ZiQT1TIYjD5R0gEwifsb00YFoVXVn_BaqzRaaxj6t0U,7911
+modelmanager_api/update_model.py,sha256=MQJRScz1GVImFANxThyfGb1ANj7vv7GG5OudN5D92tY,1130
+modelmanager_api/update_project.py,sha256=6IO2YpEtCIg-LjwGnm6bMg0qvXT4UQoN918-vhC5oBg,555
+modelmanager_api-1.0.0.dist-info/METADATA,sha256=Yi4275KmhOKYu5Fl2Yd_Yn1SbdLLBX6MQRTCTXnr-AQ,330
+modelmanager_api-1.0.0.dist-info/RECORD,,
+modelmanager_api-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+modelmanager_api-1.0.0.dist-info/top_level.txt,sha256=06W2Q-JlJlCp5BRLxKl2yyrl2q-z3zsjSEzh1EXNJ3g,17
