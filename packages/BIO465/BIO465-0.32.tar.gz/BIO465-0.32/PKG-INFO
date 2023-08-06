@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: BIO465
+Version: 0.32
+Summary: Class content for students at BYU who are taking BIO 465 - Capstone in Bioinformatics
+Home-page: https://github.com/user/PayneLab/BIO465
+Author: Samuel Payne, Thomas Molina, Teancum Paquette
+Author-email: samuel.payne@byu.edu
+License: MIT
+Download-URL: https://github.com/PayneLab/BIO465/archive/v_031.tar.gz
+Description: UNKNOWN
+Keywords: Bioinformatics,BIO465,BYU,CPTAC,BIOLOGY
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
