@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+helics/__init__.py
+helics/_version.py
+helics.egg-info/PKG-INFO
+helics.egg-info/SOURCES.txt
+helics.egg-info/dependency_links.txt
+helics.egg-info/entry_points.txt
+helics.egg-info/not-zip-safe
+helics.egg-info/top_level.txt
