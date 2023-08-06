@@ -1,0 +1,4 @@
+[console_scripts]
+kalc-dump=kalc.misc.cluster_dump:run
+kalc-optimize=kalc.misc.cli_optimize:tryrun
+
