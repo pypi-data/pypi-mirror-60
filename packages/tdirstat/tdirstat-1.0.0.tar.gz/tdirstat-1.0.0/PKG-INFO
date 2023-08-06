@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: tdirstat
+Version: 1.0.0
+Summary: Terminal-based directory statistics with a nice TUI and quick actionable information
+Home-page: https://github.com/apockill/tdirstat
+Author: Alex Thiel
+License: UNKNOWN
+Download-URL: https://github.com/apockill/tdirstat/archive/v1.0.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
