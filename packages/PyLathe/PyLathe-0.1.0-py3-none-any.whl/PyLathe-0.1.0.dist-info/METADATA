@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: PyLathe
+Version: 0.1.0
+Summary: A Python Wrapper for Lathe
+Home-page: https://github.com/emmettgb/PyLathe
+Author: Emmett Boudreau
+Author-email: emmettgb@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PyLathe
+![Lathe Logo](http://lathe.ai/logo.png)\
+Lathe.lisp is a port of the machine-learning module for Julia, Python, and R (Lathe) into common lisp.\
+Install it!\
+**Bash**
+```bash
+sudo pip3 install (coming soon)
+```
+**Python**
+```python
+from Lathe import stats
+stats.mean([5,7,4,5,6,7,2])
+```
+[Julia Documentation (Python docs coming soon)](http://lathe.ai/doc.html)
+
+
