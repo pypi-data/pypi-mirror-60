@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: torricelli
+Version: 4.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/fposseik/Torricelli
+Author: Francois C. Bocquet
+Author-email: f.posseik@fz-juelich.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: lmfit
+Requires-Dist: pyqtgraph
+Requires-Dist: h5py
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# Torricelli
+A software to determine atomic spatial distribution from normal incidence x-ray standing wave data
+
+### Files and folders:
+
+* **Torricelli.py**: The main program written in Python 3.7
+* **Example data sets/**: Folder containing few data set to try Torricelli out
+* **imports/**: All necessary files needed to run Torricelli (GUI as well as databases)
+* **LICENSE**: A copy of the GNU General Public License
+
