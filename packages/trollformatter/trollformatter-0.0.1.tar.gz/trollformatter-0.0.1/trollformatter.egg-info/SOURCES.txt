@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+bin/trollformatter
+trollformatter/__init__.py
+trollformatter/__main__.py
+trollformatter.egg-info/PKG-INFO
+trollformatter.egg-info/SOURCES.txt
+trollformatter.egg-info/dependency_links.txt
+trollformatter.egg-info/top_level.txt
