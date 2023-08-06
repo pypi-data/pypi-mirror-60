@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        tap-googlesearch=tap_googlesearch:main
+    

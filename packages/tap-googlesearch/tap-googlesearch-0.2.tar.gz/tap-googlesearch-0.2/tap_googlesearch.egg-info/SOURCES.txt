@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tap_googlesearch/__init__.py
+tap_googlesearch/stream.py
+tap_googlesearch.egg-info/PKG-INFO
+tap_googlesearch.egg-info/SOURCES.txt
+tap_googlesearch.egg-info/dependency_links.txt
+tap_googlesearch.egg-info/entry_points.txt
+tap_googlesearch.egg-info/requires.txt
+tap_googlesearch.egg-info/top_level.txt
+tap_googlesearch/schemas/record.json
