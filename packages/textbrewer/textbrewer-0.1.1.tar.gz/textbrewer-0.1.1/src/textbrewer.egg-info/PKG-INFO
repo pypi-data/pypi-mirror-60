@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: textbrewer
+Version: 0.1.1
+Summary: Distillation in Natural Language Processing for PyTorch
+Home-page: UNKNOWN
+Author: ziqingyang
+Author-email: zqyang5@iflytek.com
+License: UNKNOWN
+Description: Distillation in Natural Language Processing for PyTorch
+Keywords: NLP deep learning knowledge distillation pytorch
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
