@@ -1,0 +1,8 @@
+README.rst
+setup.py
+elysianfields/__init__.py
+elysianfields/fields.py
+elysianfields.egg-info/PKG-INFO
+elysianfields.egg-info/SOURCES.txt
+elysianfields.egg-info/dependency_links.txt
+elysianfields.egg-info/top_level.txt

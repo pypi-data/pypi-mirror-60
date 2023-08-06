@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: elysianfields
+Version: 1.0.4
+Summary: Elsyian Fields
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: Apache 2.0
+Description: Elysian Fields
+        ==============
+        
+        A serialization library for C structs.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
