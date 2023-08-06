@@ -1,0 +1,12 @@
+geospock_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geospock_cli/auth.py,sha256=v1jL8jFRm3GODbB7BUhB94_HsYRr3Nhpe7KZCtixwrg,8781
+geospock_cli/geospockcli.py,sha256=sEtEFGSkZ4p25GC62lYgVwdSHkz9zRVm3J34d5M7M1A,15702
+geospock_cli/messages.json,sha256=l17R6MAfxiuxKmCGv6QNsUdQIaWFQH9_jax4sXu4GEE,2604
+geospock_cli/graphql_templates/getCommand.graphql,sha256=3TvHnXKhVhDBzAoAuC3SS5F6TmFe2y3CIr-MBvE4aGI,91
+geospock_cli/graphql_templates/getCommands.graphql,sha256=fhGfANqYzPLcUPSkQNiPQgiRMvbXUi-6KzpbUm_ycII,42
+geospock_cli-0.1.2.dist-info/LICENSE,sha256=mCl7fIIrOGraJL29maDHeZff80iyy0jlRPZb5HNzGj4,1056
+geospock_cli-0.1.2.dist-info/METADATA,sha256=EfpMVb6ODIIH6ujNMABgUUGV6YEmr_hlnQNyn-YEwCk,2193
+geospock_cli-0.1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+geospock_cli-0.1.2.dist-info/entry_points.txt,sha256=oEVgykZB8-2Nqynz0Yn9HHpU8uEg_Ko5Q2A3twWH89w,59
+geospock_cli-0.1.2.dist-info/top_level.txt,sha256=ht7TRZdCttQts8WxfE7L81dunust6YIjhEvR4yJ7vcI,13
+geospock_cli-0.1.2.dist-info/RECORD,,
