@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: aiida-fleur
+Version: 1.1.0
+Summary: Python FLEUR simulation package containing an AiiDA Plugin for running the FLEUR-code and its input generator. Plus some workflows and utility
+Home-page: https://github.com/JuDFTteam/aiida-fleur
+Author: JuDFTteam
+Author-email: j.broeder@fz-juelich.de
+License: MIT License, see LICENSE.txt file.
+Keywords: fleur aiida inpgen workflows flapw juelich dft all-electron
+Platform: UNKNOWN
+Classifier: Framework :: AiiDA
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Natural Language :: English
+Requires-Dist: aiida-core (<2.0.0,>=1.0.1)
+Requires-Dist: lxml (>=3.6.4)
+Requires-Dist: pytest-cov (>=2.5.0)
+Requires-Dist: pytest (>=2.9)
+Requires-Dist: pgtest
+Requires-Dist: numpy (>=1.16.4)
+Requires-Dist: sympy
+Requires-Dist: masci-tools
+Requires-Dist: future
+Requires-Dist: ase
+Requires-Dist: pymatgen
+Provides-Extra: docs
+Requires-Dist: Sphinx ; extra == 'docs'
+Requires-Dist: docutils ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: graphs
+Requires-Dist: matplotlib ; extra == 'graphs'
+Requires-Dist: masci-tools ; extra == 'graphs'
+Provides-Extra: pre-commit
+Requires-Dist: pre-commit (==1.11.0) ; extra == 'pre-commit'
+Requires-Dist: yapf (==0.24.0) ; extra == 'pre-commit'
+Requires-Dist: prospector (==0.12.11) ; extra == 'pre-commit'
+Requires-Dist: pylint (==1.9.3) ; extra == 'pre-commit'
+
+UNKNOWN
+
+
