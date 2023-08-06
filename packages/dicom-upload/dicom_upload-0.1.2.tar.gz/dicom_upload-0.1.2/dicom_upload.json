@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "dicom_upload/extension": true
+  }
+}
