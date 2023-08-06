@@ -1,0 +1,6 @@
+
+        [console_scripts] 
+            players_amp = players_amp.main:main
+            players_amp.debug = players_amp.debug:debug
+            players_amp.setserver = players_amp.setserver:setserver
+        
