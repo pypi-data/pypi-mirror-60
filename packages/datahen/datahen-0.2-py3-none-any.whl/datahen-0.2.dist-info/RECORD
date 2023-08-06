@@ -1,0 +1,15 @@
+datahen/API.py,sha256=6S2Uc8sshh874VTNFLLMI40jzLiMcV4LG1ajje-cY-o,1203
+datahen/CLI.py,sha256=pdiERA54hOSZzaOVS2sEfZqQS8w40owcHlufIBrNHkw,1364
+datahen/Exports.py,sha256=jXAkASy3j6RZ6Gd2Y0m90rl6O7ITvnB3uCmRjORCCkA,935
+datahen/Helpers.py,sha256=5tCXboMjxO4Sal3zPn7unttWlyhur_ZCUzsKgZ2KIRI,1765
+datahen/JobPages.py,sha256=V3pX0WqLHJE7UqM6Hzx7e9CwQsr-7dmV8J-YOPSfZZI,266
+datahen/Jobs.py,sha256=EicKlfEt433hjJ6OwU4GvZzIE0runM1Mzo-UDI2VH3Q,616
+datahen/ScraperJobs.py,sha256=RK8_A6LtjTsF0yrnBh6D_cqWZtJVpEMp5QqYmNfuWqo,933
+datahen/Scrapers.py,sha256=HYy1qUC-z6IKsNb3VF7WEo_LG-DEw8hRR-u54cDnX_4,733
+datahen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datahen-0.2.dist-info/LICENSE,sha256=DfAiVLSzGeUIuzNK910CCKzFIJEXr3FdxSwZcH-ob5M,1063
+datahen-0.2.dist-info/METADATA,sha256=Ic1Lz8OXiJML1wRClpBnsh3Ivf7n0VtUPs3cSyhvgGY,565
+datahen-0.2.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+datahen-0.2.dist-info/entry_points.txt,sha256=eGnfo4W07sNgsZ75n3hv-YEcx69u4DEdp2ovRLLXWYc,46
+datahen-0.2.dist-info/top_level.txt,sha256=XcT3EaADni7zvTIj5JTNgVSH7xaWkshLa-rU3Kuxqy8,8
+datahen-0.2.dist-info/RECORD,,
