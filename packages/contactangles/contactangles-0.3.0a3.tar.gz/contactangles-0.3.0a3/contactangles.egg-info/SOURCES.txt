@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+environment.yml
+setup.cfg
+setup.py
+versioneer.py
+contactangles/__init__.py
+contactangles/_version.py
+contactangles/analysis.py
+contactangles/imageanalysis.py
+contactangles/movie_handling.py
+contactangles.egg-info/PKG-INFO
+contactangles.egg-info/SOURCES.txt
+contactangles.egg-info/dependency_links.txt
+contactangles.egg-info/entry_points.txt
+contactangles.egg-info/requires.txt
+contactangles.egg-info/top_level.txt
