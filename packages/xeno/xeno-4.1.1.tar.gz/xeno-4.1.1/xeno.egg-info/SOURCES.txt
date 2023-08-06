@@ -1,0 +1,15 @@
+.travis.yml
+LICENSE
+MANIFEST.in
+PKGBUILD
+README.md
+setup.py
+test.py
+xeno/__init__.py
+xeno/py.typed
+xeno.egg-info/PKG-INFO
+xeno.egg-info/SOURCES.txt
+xeno.egg-info/dependency_links.txt
+xeno.egg-info/entry_points.txt
+xeno.egg-info/top_level.txt
+xeno/__main__/__init__.pyi
