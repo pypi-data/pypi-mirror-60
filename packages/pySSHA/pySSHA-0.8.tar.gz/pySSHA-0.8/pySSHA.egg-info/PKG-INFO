@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pySSHA
+Version: 0.8
+Summary: Create and verify common LDAP passwords and hashes
+Home-page: https://github.com/peppelinux/pySSHA
+Author: Giuseppe De Marco
+Author-email: giuseppe.demarco@unical.it
+License: BSD
+Description: Create and verify common LDAP passwords and hashes
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
