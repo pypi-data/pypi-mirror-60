@@ -1,0 +1,3 @@
+[console_scripts]
+autogenertor = xiaobaiauto.genertor:main
+
