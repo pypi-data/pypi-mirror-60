@@ -1,0 +1,13 @@
+multi_email_field/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multi_email_field/fields.py,sha256=xIlaUcN4xh9GkWEiOubdI0FsDCnY_0ZqqPe_HoSJcbM,1135
+multi_email_field/forms.py,sha256=pQSEknn5ZflwDgWV0SIIo2MLuyJOfOyKprziDZEBMxk,998
+multi_email_field/models.py,sha256=lOuLg3W-FKeOTRGwBTTS3R7TyMtMHQEdxkp_7CfrYq0,48
+multi_email_field/widgets.py,sha256=njbpZS46RJnvjfxiMeeXNgo4dZpQuyjnuDXHt16fCkA,797
+multi_email_field/tests/__init__.py,sha256=Bjdewssljt0LIefjixBem9JN0kkghPvmrIETj3GdXbY,17
+multi_email_field/tests/models.py,sha256=8_-fefxfSXPLSaa14ThgYmpPYl5tSf7RHEbknvvaPH4,163
+multi_email_field/tests/tests.py,sha256=lsi3ybYiMnzpr_alQet0eXt0Dl3O-hRLvOL6jj4cib8,5917
+django_multi_email_field-0.6.0.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+django_multi_email_field-0.6.0.dist-info/METADATA,sha256=Ft-KRD_Y3sAxUdaeOfOcR9UGwvK035l3O5RSGXQ2nxs,3804
+django_multi_email_field-0.6.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_multi_email_field-0.6.0.dist-info/top_level.txt,sha256=IBKbP2HTXXJRammAE3Qn3qvrPbkWUTOX1qWG7Q7fVww,18
+django_multi_email_field-0.6.0.dist-info/RECORD,,
