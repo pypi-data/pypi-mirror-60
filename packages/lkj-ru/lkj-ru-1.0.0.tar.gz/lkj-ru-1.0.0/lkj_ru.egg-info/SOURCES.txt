@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+lkj/fun.py
+lkj_ru.egg-info/PKG-INFO
+lkj_ru.egg-info/SOURCES.txt
+lkj_ru.egg-info/dependency_links.txt
+lkj_ru.egg-info/entry_points.txt
+lkj_ru.egg-info/requires.txt
+lkj_ru.egg-info/top_level.txt
