@@ -1,0 +1,9 @@
+setup.py
+distribuicao_gaussiana/Gaussiandistribution.py
+distribuicao_gaussiana/Generaldistribution.py
+distribuicao_gaussiana/__init__.py
+distribuicao_gaussiana.egg-info/PKG-INFO
+distribuicao_gaussiana.egg-info/SOURCES.txt
+distribuicao_gaussiana.egg-info/dependency_links.txt
+distribuicao_gaussiana.egg-info/not-zip-safe
+distribuicao_gaussiana.egg-info/top_level.txt
