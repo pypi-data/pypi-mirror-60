@@ -1,0 +1,5 @@
+[console_scripts]
+clip_screencapture = deepclustering.postprocessing.clip_images:call_from_cmd
+report = deepclustering.postprocessing.report2:call_from_cmd
+viewer = deepclustering.viewer.Viewer:main
+
