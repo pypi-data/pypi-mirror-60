@@ -1,0 +1,17 @@
+trytond/modules/nereid_catalog_variants/__init__.py,sha256=3Sc0f4LwDpC9r_T2WT-ySKruXpzLrt79sAbNRVFTEA0,414
+trytond/modules/nereid_catalog_variants/product.py,sha256=rFUtuBHXjGnKyGEmEg_r-1jMggemUdodqs1X2mz7Sqo,9475
+trytond/modules/nereid_catalog_variants/product.xml,sha256=qvMlr1syOVZq49WZYSUH778ZYO1HjvfkclIB_3hCQ88,1231
+trytond/modules/nereid_catalog_variants/tryton.cfg,sha256=mNq4x0PnZJgn_ahXT9-JKtNdsH0aPm6jUqZAZ0yj9PI,101
+trytond/modules/nereid_catalog_variants/locale/de.po,sha256=aMwjnqWDlvbVJ1vIFkq9e3TLtnXhAgSb5FtepbCOMMQ,2222
+trytond/modules/nereid_catalog_variants/tests/__init__.py,sha256=zDFR_9JWXBasXkTGpBSO5ABuuXiqhTVXqMo6094L4q4,310
+trytond/modules/nereid_catalog_variants/tests/test_nereid_catalog_variants.py,sha256=nQPpH4x0Bfwoiq_mJLVji882G_aBMZbfn8vn11wN6A4,10178
+trytond/modules/nereid_catalog_variants/view/product_form.xml,sha256=tCHsE-KPbbepxZuK4fm09xa7ihcn9n7FZiSDkjzeAP8,257
+trytond/modules/nereid_catalog_variants/view/template_form.xml,sha256=77lvWTkFwKQWixwMtvwzCCBfaUVColFuiRQU3owu3Ss,329
+trytond/modules/nereid_catalog_variants/view/variation_attributes_form.xml,sha256=QsgTtqJV3zCtdeWW9CC20vvZqWwAFUOsvTFBWkVAdMY,289
+trytond/modules/nereid_catalog_variants/view/variation_attributes_tree.xml,sha256=Dsxyik28vU3sD-p4PixjWA-IWPA_cgkQ3cgayMGCjLE,250
+m9s_nereid_catalog_variants-5.2.1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+m9s_nereid_catalog_variants-5.2.1.dist-info/METADATA,sha256=4hQMpTKe693AuUDIMUVEYPlvCDXzB8443oI9KdPCFKQ,3354
+m9s_nereid_catalog_variants-5.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+m9s_nereid_catalog_variants-5.2.1.dist-info/entry_points.txt,sha256=q9l_hXI7NVkLRMy4tVZfcbH8Epsum9K2Vn8fTa_opYA,97
+m9s_nereid_catalog_variants-5.2.1.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
+m9s_nereid_catalog_variants-5.2.1.dist-info/RECORD,,
