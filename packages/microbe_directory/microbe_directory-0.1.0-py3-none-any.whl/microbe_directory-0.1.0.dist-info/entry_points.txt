@@ -1,0 +1,3 @@
+[console_scripts]
+microbe_directory = microbe_directory.cli:main
+
