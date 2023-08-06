@@ -1,0 +1,15 @@
+pyimgy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyimgy/core.py,sha256=MyNWrgDTw4kPPug1AWp_0xUf5jDBOZLvIdot9obzSFU,14373
+pyimgy/image_crop.py,sha256=Db1pkM9gMlJAkDellLybrqK458ELmqwUhF0Hydc7RSI,4596
+pyimgy/utils.py,sha256=W0qdZtL6tSCllQUXl5pPU3cvK0RA0VWhSRF48rBIbTQ,4052
+pyimgy/optional/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyimgy/optional/fastai.py,sha256=HBhuWyxEYsqmbtLe6fWyqQUrCQjKNAaTp6qwPWH_E9M,515
+pyimgy/optional/torch.py,sha256=sKjzl6UILg_xfd4PaEbG2Eso3m3e_ou8oRB74WzfvXQ,1345
+pyimgy/optional/torch_utils.py,sha256=KTxI21TQPtWBqo_B3-xMQ3GgoH1mDV6CZ9DZ_BJ1Vak,427
+pyimgy/video/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyimgy/video/video_utils.py,sha256=XC4dFev-OsOOShAGtxtRy-jQd6WXCyOk3B4g_4tFXw0,1735
+pyimgy-0.1.0.dist-info/LICENSE,sha256=HuxiST71rWGK3lVgDzoK6DEOkt07BP3EMbuZTGMTeEw,1070
+pyimgy-0.1.0.dist-info/METADATA,sha256=bbitZIH-gHURGuJVHy73m61xov7C555nPBcEsHuslXM,1255
+pyimgy-0.1.0.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+pyimgy-0.1.0.dist-info/top_level.txt,sha256=GEXOSDA5nt_c5vMHqjrfw8O5N0PH8mCZBWfAqq0VMMU,7
+pyimgy-0.1.0.dist-info/RECORD,,
