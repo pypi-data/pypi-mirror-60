@@ -1,0 +1,10 @@
+aiohttp_cache/__init__.py,sha256=IBJK0m_w4ta03qX4hrJZrAhwhxVVqdTUlZYvbAPBxdM,325
+aiohttp_cache/backends.py,sha256=xgtSr6TXIatSgSgwXGmAa6TmCaEH_lXS48DTbU_NIIc,7486
+aiohttp_cache/decorators.py,sha256=OmWajPZ9surjN_XW1IKrybnPx5hOsLyQpPiIqqvpCjM,331
+aiohttp_cache/exceptions.py,sha256=0wFwb2xetBtp2NCsyPLGblcFT8f2nKA83hnHXPNE0sE,65
+aiohttp_cache/middleware.py,sha256=M5cdghnfZPpop3bRmOjyktUDOAC7GaVWmp2vGfiI-a0,1063
+aiohttp_cache/setup.py,sha256=ZkZ9pEq8hJKft-VaHG-93p4AMl3OrPfW7tPbjrpPKqE,1440
+aiohttp_cache-2.0.1.dist-info/LICENSE,sha256=bKuemMvXWWpUmaOt-SLgzPHkDfvmD_haB5_3BuwGtYk,1602
+aiohttp_cache-2.0.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+aiohttp_cache-2.0.1.dist-info/METADATA,sha256=6aQ4H7KtWwu1K9u6EPWT7RJlrGY8TX-nq6vvF8F-RvQ,3858
+aiohttp_cache-2.0.1.dist-info/RECORD,,
