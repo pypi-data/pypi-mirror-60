@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+RELEASE-VERSION
+setup.py
+lbmpy_walberla/__init__.py
+lbmpy_walberla/boundary.py
+lbmpy_walberla/sparse.py
+lbmpy_walberla/walberla_lbm_generation.py
+lbmpy_walberla.egg-info/PKG-INFO
+lbmpy_walberla.egg-info/SOURCES.txt
+lbmpy_walberla.egg-info/dependency_links.txt
+lbmpy_walberla.egg-info/requires.txt
+lbmpy_walberla.egg-info/top_level.txt
+lbmpy_walberla/templates/Boundary.tmpl.cpp
+lbmpy_walberla/templates/Boundary.tmpl.h
+lbmpy_walberla/templates/LatticeModel.tmpl.cpp
+lbmpy_walberla/templates/LatticeModel.tmpl.h
