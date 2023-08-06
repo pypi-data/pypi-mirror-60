@@ -1,0 +1,11 @@
+pvlib>-=0.7
+pandas>=0.25
+pvfactors>=1.4
+fastcore
+numpy
+matplotlib
+sklearn
+fastprogress
+hdf5storage
+tables
+bifacialvf
