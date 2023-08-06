@@ -1,0 +1,37 @@
+
+metaphor/monal/Property
+# metaphor/monal/monalrecords
+# metaphor/monal/specialmath
+# metaphor/monal/monalconst
+metaphor/monal/modelutils
+#metaphor/monal/driver/_dataset
+metaphor/monal/driver/_workshop
+metaphor/monal/driver/_driver
+# metaphor/monal/driver/_driverlib
+metaphor/monal/driver/_optimizer
+# metaphor/monal/driver/_drivermultidyn
+# metaphor/monal/driver/_networkfactory
+# metaphor/monal/driver/_parallelJobs
+metaphor/monal/lcode/ccrypt
+metaphor/monal/lcode/codeconst
+metaphor/monal/lcode/codewriter
+metaphor/monal/lcode/codewriterC
+metaphor/monal/lcode/codewriterdetailC
+metaphor/monal/library/libmanager
+# metaphor/monal/model/_link
+# metaphor/monal/model/_node
+# metaphor/monal/model/_network
+# metaphor/monal/model/_model
+# metaphor/monal/model/_modelcontainer
+# metaphor/monal/model/_modellib
+# metaphor/monal/model/_monalfunc
+metaphor/monal/model/_pseudomatrix
+metaphor/monal/util/cleanxml
+metaphor/monal/util/const_st
+metaphor/monal/util/leverage
+metaphor/monal/util/mathtoolbox
+metaphor/monal/util/modelworkshop
+metaphor/monal/util/monalbase
+metaphor/monal/util/sqlite_copy_db
+metaphor/monal/util/toolbox
+metaphor/monal/util/monaltoolbox

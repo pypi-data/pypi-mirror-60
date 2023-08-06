@@ -1,0 +1,9 @@
+six
+numpy>=1.14
+scipy>=O.19
+tqdm
+pandas>=0.22.0
+xlrd>=1.0
+xlwt>=1.2
+openpyxl>=2.5.0
+metaphor_nntoolbox

@@ -1,0 +1,31 @@
+include ez_setup.py
+include metaphor/cythonlist.txt
+include metaphor/version.py
+include metaphor/services_pp.txt
+#include README.md
+#
+#  Installation of monal and nn1
+#
+recursive-include metaphor/monal *.py *.txt *.c *.cc *.h
+recursive-include metaphor/nn1 *.py *.txt
+#recursive-include metaphor/monal/include *.h
+#recursive-include metaphor/monal/lcode/code_templates *.txt *.h *.cc
+#recursive-include metaphor/monal/lcode/code_templates/common *.cc
+#
+#exclude metaphor/monal/lcode/libmonal.a
+#
+exclude metaphor/nn1/api/run/linkedServices.txt
+#recursive-exclude metaphor/nntoolbox *.py *.c
+recursive-exclude metaphor/monal/lcode/code_templates *.c
+exclude metaphor/monal/monalrecords_old.py
+#exclude metaphor/nntoolbox/modelutils_old.py
+#exclude metaphor/monal/driver/_parallelJobs_old.py
+# prune metaphor/monal/lcode/code_templates/commonorigin
+prune metaphor/monal/util/t_estPy
+prune metaphor/monal/lcode/code_templates/old
+prune metaphor/monal/lcode/code_templates/poubelle
+exclude metaphor/monal/requirements.txt
+#exclude metaphor/monal/datareader/ODSReader.py
+exclude metaphor/monal/cython_builder.py
+#prune metaphor/nn1/api/_api_old
+#exclude metaphor/monal/util/t_estPy

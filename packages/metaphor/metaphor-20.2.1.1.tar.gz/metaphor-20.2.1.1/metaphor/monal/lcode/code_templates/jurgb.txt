@@ -1,0 +1,28 @@
+   This code has been created by the Python monal.code package.
+
+   This code is protected as well by the national and international rights
+   applicable in the intellectual property matters. The rights of this code 
+   are exclusive property of Jean-Luc PLOIX. Usage or modification rights of 
+   this code are submitted to a license 
+   contract.
+
+   This code has been deposited to the Agence pour la Protection des 
+   Programmes under the number : 
+   IDDN.FR.001.500018.00.S.P.1999.000.20700
+
+   Jean-Luc PLOIX cannot be in any matter taken as responsible of the usage 
+   of this code.
+
+   Please read carefully the "licGB.txt" file to know the rights in using
+   this code.
+
+   In order to obtain a license or for any question, please ask the 
+   following contact :
+
+               NETRAL
+               14, rue Verdi
+               9213 Issy-les-Moulineaux
+               tel : (33) 146 387 512
+               email: info@netral.com
+   
+

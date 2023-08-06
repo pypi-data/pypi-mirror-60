@@ -1,0 +1,197 @@
+Code généré par le Module Neuro Code
+
+1. DROITS DE PROPRIETE INTELLECTUELLE
+
+1.1 Le Module Neuro Code est protégé en France par les dispositions du Code de
+la propriété intellectuelle, ainsi qu'à l'étranger par les conventions interna-
+tionales applicables en la matière. Le Module Neuro Code a fait à cet égard
+l'objet d'un dépôt auprès de l'Agence pour la Protection des Programmes sous le
+numéro IDDN.FR.001.500018.00.S.P.1999.000.20700, en tant que complément du
+progiciel Neuro One.
+
+1.2 La société NETRAL, déclarant détenir sur le Code généré, la totalité
+des droits de propriété intellectuelle afférents, concède au Client, qui s'y
+oblige, une licence personnelle, non-exclusive et incessible d'utilisation du
+Progiciel sur le Matériel, à l'exception de toute utilisation en mode réseau
+interne ou externe et/ou en mode partagé par plusieurs postes.
+
+La présente licence d'utilisation concédée est réputée indissociable de la
+licence d'utilisation du Progiciel.
+
+Pour l'exécution des présentes, la société NETRAL accorde à cet effet au Client
+le droit d'installer, de reproduire et d'utiliser 1 exemplaire du Module Neuro
+Code sur le Matériel pour une exploitation sur le Site, et ce nonobstant le
+nombre de licences d'utilisation du Progiciel qui a été concédé par la société
+NETRAL.
+
+TOUTE EXTENSION DU DROIT D'UTILISATION NON PREVUE AUX PRESENTES EST INTERDITE ET
+SERA CONSTITUTIVE D'UN ACTE DE CONTREFAÇON.
+
+1.3 La concession du présent droit d'utilisation du Code généré n'entraî-
+nant aucun transfert des droits de propriété intellectuelle afférents audit
+Module, le Client s'interdit en conséquence :
+-	toute reproduction du Code généré, totale ou partielle, quelle
+        qu'en soit la forme, sous quelque support que ce soit, sauf à des fins
+        de sauvegarde dans les conditions de l'article L. 122-6-1 II du Code de
+        la propriété intellectuelle ;
+-	la traduction, l'adaptation, l'arrangement ou toute autre modification
+        du Progiciel et de la reproduction en résultant, en ce compris sa tra-
+        duction dans un autre langage informatique, sauf dans les conditions et
+        limites énoncées à l'article 2.4 des présentes ;
+-	la correction d'une ou plusieurs Anomalies de quelque nature que ce soit,
+        ou plus généralement en vue d'une correction ou d'une modification, même
+        non substantielle, en vue d'une utilisation du Code généré, en ce
+        compris conformément à sa destination telle que déterminée à l'article
+        2.5 des présentes ;
+-	au prêt, à la location ou à la mise à disposition ou la cession, à titre
+        gratuit ou onéreux, du Code généré quel qu'en soit le moyen ;
+-	la transmission, la diffusion, l'utilisation sur un réseau interne ou
+        externe.
+
+
+1.4 DROIT DE MODIFICATION ET DE DESTINATION :
+
+La société NETRAL concède néanmoins au Client un droit non-exclusif, incessible
+et personnel de modification du Code généré.
+
+Le Client s'interdit en conséquence de faire effectuer les opérations de modifi-
+cation du Code généré par des tiers au sens de l'article 14 du contrat de
+licence d'utilisation du Progiciel.
+
+Le présent droit de modification est concédé au Client aux seules fins d'adap-
+tation des interfaces.
+
+Le Client s'interdit en conséquence toute modification du Code généré qui
+ne serait pas conforme au présent droit de destination.
+
+
+1.6 DROITS DE PROPRIETE INTELLECTUELLE DU CLIENT ET NON CONCURRENCE :
+
+Le Client n'acquiert aucun droit de propriété intellectuelle sur le Module Neuro
+Code tant dans sa forme originale que dérivée, y compris par modification du
+Client ou encore par incorporation dans un autre logiciel ou module informatique.
+
+Afin de préserver les droits de propriété intellectuelle ainsi que le savoir-
+faire de la société NETRAL, le Client s'interdit de faire développer, produire,
+éditer, commercialiser, directement ou indirectement, un logiciel, progiciel,
+module informatique directement ou indirectement concurrent, identique ou simi-
+laire au Code généré ou au Progiciel.
+
+
+1.7 MENTIONS DE DROIT D'AUTEUR :
+
+Afin d'assurer la protection de la propriété du Code généré, le Client
+s'engage notamment à :
+-	maintenir apparentes les mentions de propriété et de droit d'auteur
+        (copyright) que la société NETRAL aurait apposées sur le Code généré ;
+-	prendre à l'égard de son personnel et de toute personne extérieure au
+        Client toutes mesures utiles d'information et de prévention.
+
+La société NETRAL pourra procéder par elle-même, ou par tout organisme spécia-
+lisé qu'elle aura habilité à cet effet, à des contrôles dans les locaux du
+Client afin de vérifier le respect par cette dernière des engagements souscrits
+aux termes des présentes.
+
+2. SAVOIR FAIRE
+
+Il est incorporé au Code généré un certain nombre d'éléments participant
+du savoir-faire détenu par la société NETRAL.
+
+Nonobstant l'absence de protection dudit savoir-faire par un droit de propriété
+intellectuelle, celui-ci constitue un avantage économique important, transmis-
+sible, mais néanmoins secret, notamment en ce qui concerne, en particulier, le
+procédé de programmation du Code généré et de sa mise en oeuvre, ses
+caractéristiques techniques ou tout autre élément résultant d'une amélioration
+dudit Code généré, ainsi que des résultats issus dudit Code généré.
+
+Le Client reconnaît de ce fait que ce savoir-faire constitue une valeur patri-
+moniale très importante et est une composante du fonds de commerce de la société
+NETRAL.
+
+En conséquence de quoi, le Client s'engage à garder strictement confidentiel, ne
+pas publier, ne pas divulguer, sous toute forme que ce soit, à des tiers au sens
+de l'article 14 du contrat de licence d'utilisation du Progiciel, toute informa-
+tion relative au savoir-faire de la société NETRAL, notamment contenu dans le
+Code généré, et ce dans les conditions déterminées à l'article 4 des
+présentes.
+
+
+3. CONFIDENTIALITE
+
+Au sens de la présente annexe sont considérées comme des Informations Confiden-
+tielles : la présente annexe, tout ou partie du Module Additionnelle en tant que
+tel, tant en langage source que compilée, sa documentation, le support numérique
+sur lequel sera remis le Code généré, les résultats issus du Module Neuro
+Code, ainsi que plus généralement toutes informations, données, documents,
+quelle qu'en soit le mode de communication, la forme, le support et qu'elles
+soient liées à une création protégée ou non par les dispositions relatives à la
+propriété intellectuelle et dont le Client a connaissance dans le cadre de ses
+échanges avec la société NETRAL.
+
+Le Client s'engage à :
+-	garder strictement confidentielle, ne pas publier, ne pas divulguer,
+        sous toute forme que ce soit, à des tiers au sens de l'article 14 du
+        contrat de licence d'utilisation du Progiciel, l'Information qui lui
+        aurait été communiquée par la société NETRAL ou dont il aurait eu con-
+        naissance par l'intermédiaire ou l'intervention de la société NETRAL ;
+-	n'utiliser ladite Information qu'aux seules fins de l'exécution de la
+        présente annexe et selon la destination telle qu'indiquée à l'article
+        2.4 des présentes
+-	ne communiquer cette Information qu'à ses salariés directement concernés
+        par la présente annexe qui auraient directement besoin de la connaître
+        pour les besoins de leur activité professionnelle ;
+-	n'effectuer aucune reproduction, duplication, communication de l'Infor-
+        mation, sauf autorisation préalable et écrite de la société NETRAL
+
+Dans le cadre de toute communication, même autorisée par la société NETRAL, le
+Client qui communique ladite Information doit informer clairement ses salariés
+du caractère strictement confidentiel de l'Information et obtenir d'eux un enga-
+gement assurant le respect de la présente clause de confidentialité.
+
+En conséquence de quoi, le Client qui communique une information à un salarié ou
+à un tiers se porte garant vis à vis de la société NETRAL du respect de la pré-
+sente clause.
+
+La présente obligation de confidentialité est valable pour la durée du présent
+accord prorogée d'une période de 5 (cinq) ans à compter du terme du présent
+accord.
+
+
+4. RESPONSABILITE
+
+Il est rappelé en tant que de besoin que le Code généré est fourni au
+Client en l'état sans autres garanties.
+
+Le Client, disposant du personnel qualifié et des connaissances nécessaires pour
+ce faire, reconnaît avoir reçu de la société NETRAL les conseils, mises en garde
+et informations nécessaires à l'installation et l'utilisation du Module Neuro
+Code, ainsi que des résultats issus de cette utilisation.
+
+Le Client est seul responsable de l'utilisation, l'exploitation et la mise en
+œuvre du Code généré, ainsi que des erreurs éventuelles liées au fonction-
+nement du Code généré, du Progiciel, du Matériel ou aux détériorations dues
+à des coupures de courant.
+
+De la même manière, le Client est seul responsable des résultats issus du Module
+Neuro Code tant dans sa forme source que compilée, ainsi que de l'exploitation
+de ces résultats, notamment sur une autre plate-forme informatique que le
+Matériel.
+
+Il appartient à cet égard au Client de vérifier les résultats qu'il obtient avec
+le Progiciel et/ou le Code généré par les moyens en usage dans sa profes-
+sion. Le Client est en conséquence seul responsable de l'usage fait par lui des-
+dits résultats.
+
+Il appartient en outre au Client de réaliser des sauvegardes des données issues
+du ou de l'utilisation du Code généré, ainsi que des fichiers informa-
+tiques connexes ou nécessaires à l'utilisation du Code généré et/ou du
+Progiciel.
+
+5. RESILIATION
+
+Il est rappelé en tant que de besoin qu'en cas de résiliation du contrat de
+licence d'utilisation du Progiciel ou de la présente annexe pour quelle que
+cause que ce soit, le Client s'engage à restituer à la société NETRAL le Module
+Neuro Code et à n'en conserver aucune copie. Les clauses préceddentes de Respon-
+sabilité et de Confidentialité restent en vigueur concernant les codes générés
+par le Progiciel.

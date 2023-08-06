@@ -1,0 +1,10 @@
+[console_scripts]
+complib = metaphor.monal.util.utils:docompilelib
+description = metaphor.nn1.api.printfile:printdescription
+help = metaphor.nn1.api.printfile:printhelp
+license = metaphor.nn1.api.printfile:printlicense
+linkservices = metaphor.nn1.api._api_service:linkToServices
+supervisor = metaphor.nn1.api.run.nn_run:supervisor
+usage = metaphor.nn1.api.use.nn_use:usage
+version = metaphor.nn1.api.printfile:printversion
+

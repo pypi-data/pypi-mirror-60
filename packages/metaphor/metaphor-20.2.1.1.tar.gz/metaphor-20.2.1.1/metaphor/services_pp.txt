@@ -1,0 +1,13 @@
+[module]
+path = metaphor.preproc.api
+name = _api_service
+sticker = pp
+
+[replaces]
+preAction = preProcAction
+
+[extendlist]
+add_arg_list = add_arg_list
+
+[addkeytodict]
+dialogdefaults = preproc, preprocdefaults

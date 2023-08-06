@@ -1,0 +1,26 @@
+   Ce code a été crée automatiquement par le paquet Python monal.code
+
+
+   Le présent code source est protégé tant 
+   par les dispositions nationales qu’internationales en matière de droits de 
+   la propriété intellectuelle, dont les droits sont détenus, à titre 
+   exclusif, par la Jean-Luc PLOIX.
+   L’utilisation et la modification de ce code source est soumise à un contrat
+   de licence d’utilisation.
+
+   La contrefaçon est un délit pénal puni de 2 ans d’emprisonnement et de 
+   150.000 Euros d’amende.
+
+   Le modèle du présent code source a fait l’objet d’un dépôt auprès de 
+   la Société desq gens de lettre (SGDL) sous le numéro : 
+   
+   
+
+   Jean-Luc PLOIX ne peut en aucun cas être tenu pour responsable des 
+   conséquences de l'utilisation de ce code.
+
+   Pour obtenir une licence ou tout renseignement complémentaire,
+   adressez vous à :
+
+               Jean-Luc PLOIX
+               email: jeanluc.ploix@gmail.com
