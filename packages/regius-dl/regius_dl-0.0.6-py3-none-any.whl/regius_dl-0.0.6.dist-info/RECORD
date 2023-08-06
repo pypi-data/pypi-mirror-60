@@ -1,0 +1,16 @@
+regius/__init__.py,sha256=Jzb_RfgvXCrm_SQ4AfeGVi1N36YybxnM5mpyxrnihgI,33
+regius/callbacks.py,sha256=L6lctcXu_tmNBDPMx7wWN6vbiOEB4o8Wy7YZM-EqA94,3586
+regius/core.py,sha256=eZsA0aFoufUClva_D3Ndg1k3J8BGxaH2MI43h1hVRlU,860
+regius/metrics.py,sha256=qT_GeQ-FnZiSUJl0eN0urtOlPmCiwepJpEuuf1IDUes,1092
+regius/version.py,sha256=CHUdJvPS3l7PphMt_r17ufrpB0TIJkmifpqmTNjwh84,22
+regius/tabular/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regius/tabular/data.py,sha256=FB8CRsE-Y355s7n04jNWNDrU-FOQBvp36QmPVDVsqwM,927
+regius/tabular/learner.py,sha256=HJLI17iG4U2ssW_iPZ-yNq1K_auY33Xdn0cPiizFzSc,10126
+regius/tabular/models.py,sha256=C0ACnlNKaam9MXMevBMcDv6rHuSmrSSgkJowxQIJEtU,5599
+regius/tabular/preprocessing.py,sha256=mJQJ7M_lst880UHPxR045uRTpj6rZiFggkYynx-WftE,4264
+regius/tabular/utils.py,sha256=h_s9S05_IZdo9J1bAFxeAdj5ZjNsqKQQ3knUtThruXs,1574
+regius_dl-0.0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+regius_dl-0.0.6.dist-info/METADATA,sha256=u-1j-fLVs1gU3-b3rXF2MR7GlS9Rxr6TA4KnSlneZNs,1561
+regius_dl-0.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+regius_dl-0.0.6.dist-info/top_level.txt,sha256=_e5k5X05PKF07LJDxtnIYZXEVu6_6kd6gaCjEqcWemw,7
+regius_dl-0.0.6.dist-info/RECORD,,
