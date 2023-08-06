@@ -1,0 +1,7 @@
+README.md
+sd_notify.py
+setup.py
+sd_notify.egg-info/PKG-INFO
+sd_notify.egg-info/SOURCES.txt
+sd_notify.egg-info/dependency_links.txt
+sd_notify.egg-info/top_level.txt
