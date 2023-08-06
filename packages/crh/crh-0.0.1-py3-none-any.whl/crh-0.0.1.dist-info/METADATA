@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: crh
+Version: 0.0.1
+Summary: An utility to upload local image in markdown to sm.ms and convert markdown file correspondingly.
+Home-page: https://github.com/crh19970307/crh
+Author: Ruiheng Chang
+Author-email: rhchang@pku.edu.cn
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
