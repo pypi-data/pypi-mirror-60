@@ -1,0 +1,14 @@
+concrete_mailer/__init__.py,sha256=oPikiwbXHBkj3EXaLbmNJ7-KI-8P0PWSvNXfKBRrfyI,199
+concrete_mailer/client.py,sha256=S-NGWsuDGcsVXOPz6VNaLRS__826mglIaSNTs58UC9Y,2094
+concrete_mailer/preparers.py,sha256=I1w1M2JvUEF_-jipEKL-pqIOH_k085RYRYkuvggXtLY,5837
+concrete_mailer/utils.py,sha256=Cky9O3G7hPEoNJsejtJn8LkmDlycp563uyKHG8XfGHY,1394
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/runtests.py,sha256=wAILsymzW2zhM8y7MoUivj1cxaveDhuzlSyPGm62_tc,884
+tests/test_email_client.py,sha256=0UoKxzbiyImXDogy7fg5mZDqHK0YJbblVnr54sSycps,1978
+tests/test_imports.py,sha256=Gx4vdo9aHaxvxJbZfiUYGnFcXk0b0c09lWvW7GSLqbQ,361
+tests/test_prepare_email.py,sha256=h6DGnYixpCshz4OPSgM2dYIFGlJGxhPqGHhWe9YeFAU,2303
+concrete_mailer-2.13.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+concrete_mailer-2.13.0.dist-info/METADATA,sha256=GE8Z5Ew8DPCbvNQsJdkSCAReNzLM38FXyq23zl1pdOU,5024
+concrete_mailer-2.13.0.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+concrete_mailer-2.13.0.dist-info/top_level.txt,sha256=GShN67Y4T9ycvieea5FcpTCAV29v15fh1xh8aLmpTcQ,22
+concrete_mailer-2.13.0.dist-info/RECORD,,
