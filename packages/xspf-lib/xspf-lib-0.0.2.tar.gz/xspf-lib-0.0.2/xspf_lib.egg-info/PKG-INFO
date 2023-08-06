@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xspf-lib
+Version: 0.0.2
+Summary: Library for work with xspf format
+Home-page: https://github.com/dem214/xspf-lib
+Author: Dzmitry Izaitka
+Author-email: dem214overlord@gmail.com
+License: UNKNOWN
+Description: Library to work with xspf.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Video
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
