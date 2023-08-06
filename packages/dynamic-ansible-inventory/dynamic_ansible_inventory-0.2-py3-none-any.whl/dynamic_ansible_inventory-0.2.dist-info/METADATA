@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: dynamic-ansible-inventory
+Version: 0.2
+Summary: create inventory file for ansible
+Home-page: https://github.com/yellowglasses20/ansible_inventory
+Author: makoto yano
+Author-email: yano.makoto20@gmail.com
+License: Apache Software License
+Keywords: ansible,inventory
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+
+UNKNOWN
+
+
