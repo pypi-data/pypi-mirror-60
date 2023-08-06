@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pyfim
+Version: 6.28
+Summary: Frequent Item Set Mining and Association Rule Induction for Python
+Home-page: http://www.borgelt.net/pyfim.html
+Author: Christian Borgelt
+Author-email: christian@borgelt.net
+License: MIT License (Expat License)
+Download-URL: http://www.borgelt.net/pyfim.html
+Description: Frequent Item Set Mining and Association Rule Induction for Python
+Platform: Linux/Unix
+Platform: Microsoft Windows

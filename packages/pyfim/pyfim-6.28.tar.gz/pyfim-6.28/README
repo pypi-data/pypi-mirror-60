@@ -1,0 +1,15 @@
+Call help() on the functions
+  fim
+  arules
+  apriori
+  eclat
+  fpgrowth
+  sam
+  relim
+  carpenter
+  ista
+  accretion
+  apriacc
+  patspec
+  estpsp
+for explanations about their parameters.
