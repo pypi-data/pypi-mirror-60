@@ -1,0 +1,17 @@
+hepanoptes/Main.py,sha256=_9Xi5TUoX_NQzbMAFWc69YRTccje43jw3-e8Wj8k8no,13462
+hepanoptes/Panoptes1.py,sha256=t-w5xoKpqzw22PvVdmdnon0tkPdUyYcb8Wv74QqcCho,9521
+hepanoptes/Panoptes2.py,sha256=Fd-ix-fvOR1NEOXyLevxq6Qq8sCkKdZuzTUw42T0qjE,10243
+hepanoptes/Panoptes3.py,sha256=j-9k3zDmyIErC1BJc9zYJnWIUKCfOyIsZfZ9tzaLDCw,9622
+hepanoptes/Panoptes4.py,sha256=qrdhGp9yrPrB1cvXWtiEUCYPGOfFA3IiPIMrDtZ8TVU,10344
+hepanoptes/Slicer.py,sha256=FObdnT5bcdBsTtYREmObIEGAmg4V8SdiEeoVZuljMEs,4618
+hepanoptes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hepanoptes/accessory.py,sha256=wbX8hvWUIhAlhzi6qolt64hc0AyTvvR2lqjNn1a9Sl8,21864
+hepanoptes/cnn.py,sha256=gw3UQKI5grKq0Xf48RrVBilwuc6pggh1ACwT1HZYYF4,30184
+hepanoptes/data_input.py,sha256=Teqy3yn6NdkxqAZHOoURQFBSGeWbxXapoWqDubvQXDk,6537
+hepanoptes/prep.py,sha256=sXMH3KfoW6Xkwy2civ1M3RvMvI46njYG_6jIt0LEbmw,21490
+hepanoptes/sample_prep.py,sha256=jBGr9DUgZozfk_6od96QeuDB9_Cpiu7BQsrNNtundQc,9950
+panoptes_he-0.0.8.dist-info/LICENSE,sha256=pYA7jLAXAzYaUj0OlXHaagR3UeE9zcl9x03kjtUhOpk,1067
+panoptes_he-0.0.8.dist-info/METADATA,sha256=t659LTbb2YoxQzhSjE0IPHhFHC6g2KPG5oKEUTmR4HQ,3741
+panoptes_he-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+panoptes_he-0.0.8.dist-info/top_level.txt,sha256=tNYracJHedxuT8GcJ6c_RY6jJwry2c5wjhRN9YuWizA,11
+panoptes_he-0.0.8.dist-info/RECORD,,
