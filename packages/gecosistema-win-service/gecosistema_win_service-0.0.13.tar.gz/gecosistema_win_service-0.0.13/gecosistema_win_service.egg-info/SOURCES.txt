@@ -1,0 +1,9 @@
+README.md
+setup.py
+gecosistema_win_service/__init__.py
+gecosistema_win_service/example.py
+gecosistema_win_service/winservice.py
+gecosistema_win_service.egg-info/PKG-INFO
+gecosistema_win_service.egg-info/SOURCES.txt
+gecosistema_win_service.egg-info/dependency_links.txt
+gecosistema_win_service.egg-info/top_level.txt
