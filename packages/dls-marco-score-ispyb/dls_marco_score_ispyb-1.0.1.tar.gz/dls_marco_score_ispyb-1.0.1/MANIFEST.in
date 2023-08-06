@@ -1,0 +1,3 @@
+include dls_marco_score_ispyb/*.cfg
+include dls_marco_score_ispyb/savedmodel/variables/*
+include dls_marco_score_ispyb/savedmodel/*.pb

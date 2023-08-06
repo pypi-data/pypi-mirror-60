@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+dls_marco_score_ispyb/__init__.py
+dls_marco_score_ispyb/config.cfg
+dls_marco_score_ispyb/score.py
+dls_marco_score_ispyb.egg-info/PKG-INFO
+dls_marco_score_ispyb.egg-info/SOURCES.txt
+dls_marco_score_ispyb.egg-info/dependency_links.txt
+dls_marco_score_ispyb.egg-info/requires.txt
+dls_marco_score_ispyb.egg-info/top_level.txt
+dls_marco_score_ispyb/savedmodel/saved_model.pb
+dls_marco_score_ispyb/savedmodel/variables/variables.data-00000-of-00001
+dls_marco_score_ispyb/savedmodel/variables/variables.index
+test/test_dls_marco_score_ispyb.py
