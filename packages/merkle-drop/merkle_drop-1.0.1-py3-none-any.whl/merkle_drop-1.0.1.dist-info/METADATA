@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: merkle-drop
+Version: 1.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >= 3.6
+Requires-Dist: click
+Requires-Dist: web3
+Requires-Dist: contract-deploy-tools
+Requires-Dist: eth-utils
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: pendulum
+Requires-Dist: gunicorn
+
+UNKNOWN
+
+
