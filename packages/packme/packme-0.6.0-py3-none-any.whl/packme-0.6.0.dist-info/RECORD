@@ -1,0 +1,15 @@
+packme/PackerTemplate.py,sha256=ttIdpOP8yze6aTB6TjRp-nPcahhkdFb-WKIN8jFt_lI,11290
+packme/Packman.py,sha256=U2659jJSC7u5q5BUux2uyA63epDpfd0Pq3qvI6O6_LE,9914
+packme/__init__.py,sha256=WR4_tS3OJstX8ZkTtB1wQcFVzakOdZG_g0SZAKlfkMA,65
+packme/__pkginfo__.py,sha256=BuFhLKb6LZYfLhcaku6jdm0G3QU94FxMWNPsUGg4Jzc,1249
+packme-0.6.0.data/data/stubs/packme/PackerTemplate.pyi,sha256=N0sonni_Es7o4vq4WvBLoeKbfDI9QlDnkE5JUpJwa38,628
+packme-0.6.0.data/data/stubs/packme/Packman.pyi,sha256=pdl8s2t7asXJ9pqe6SeNwgaGtUZ0CtfkURIzSajPC0o,603
+packme-0.6.0.data/data/stubs/packme/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packme-0.6.0.data/data/stubs/packme/__pkginfo__.pyi,sha256=Yhp-l_mxpbib6vugMN5YJTV4PXIIxIZevSMYqxCApBs,232
+packme-0.6.0.data/scripts/packme,sha256=tx-ewFQiUBcF3Rn0PcZKzlXwNt-74ym5WOQfVycoiII,4082
+packme-0.6.0.dist-info/COPYING,sha256=by009KDV_Ar22_k93GTG-bclcfogSxaPIuiHAangIOI,1084
+packme-0.6.0.dist-info/LICENSE,sha256=by009KDV_Ar22_k93GTG-bclcfogSxaPIuiHAangIOI,1084
+packme-0.6.0.dist-info/METADATA,sha256=XaD_KsyBzn3RbYzqp2h1vC6spzGoAq2oyBJkGvLxu34,3131
+packme-0.6.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+packme-0.6.0.dist-info/top_level.txt,sha256=25O7Q0xzUdQnXClgWN__s65uUBL34BqF8k2czw58low,7
+packme-0.6.0.dist-info/RECORD,,
