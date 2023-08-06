@@ -1,0 +1,11 @@
+README.md
+setup.py
+flask_pycasbin/__about__.py
+flask_pycasbin/__init__.py
+flask_pycasbin/utils.py
+flask_pycasbin.egg-info/PKG-INFO
+flask_pycasbin.egg-info/SOURCES.txt
+flask_pycasbin.egg-info/dependency_links.txt
+flask_pycasbin.egg-info/not-zip-safe
+flask_pycasbin.egg-info/requires.txt
+flask_pycasbin.egg-info/top_level.txt
