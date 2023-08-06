@@ -1,0 +1,12 @@
+soundcraft/__init__.py,sha256=BLlfgpgK_1VvOuvF2FwQCr-psJApylicShZfWAZ-UFM,47
+soundcraft/cli.py,sha256=uURDW5XRneg72H2jIoQ53fKcDR0CWsp1cIXKYN2X7zA,2108
+soundcraft/dbus.py,sha256=QIlBRG7wnJ0tvsvw_e-hUVA7lyYCkEtVVzB2iaWXFa0,5860
+soundcraft/notepad.py,sha256=_PzYknX9UE7NXABqjqFfWMYwjOoB8_oeS18JfvHaffQ,4461
+soundcraft/data/dbus-1/system-services/soundcraft.utils.notepad.service,sha256=5ECX0i6E1W4H5O4JHmDDnPVMkDR0tvcZi6KTn7sfzOQ,64
+soundcraft/data/dbus-1/system.d/soundcraft-utils.conf,sha256=rMkgd4aBUmG5UKBKYY760PAPEwZvyihHfGSwjJBM6hY,373
+soundcraft_utils-0.1.4.dist-info/LICENSE,sha256=C9dKbSVSRr9XF4KqBvs_0EOcX9bPYvlAt8xMRBkSago,1088
+soundcraft_utils-0.1.4.dist-info/METADATA,sha256=SvE9vxqV1UBIeoujDtct_l80NNFgmMlgbpOJBB_MZa0,3037
+soundcraft_utils-0.1.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+soundcraft_utils-0.1.4.dist-info/entry_points.txt,sha256=n93tevwkxQoKpwD9dCNtKS3f8rYY7OqyrcoFKJs8PhM,103
+soundcraft_utils-0.1.4.dist-info/top_level.txt,sha256=Rnu5niRyOOYTHqBHLrKyWWrWdJB3Qb8_IqaUB8s9oYw,11
+soundcraft_utils-0.1.4.dist-info/RECORD,,
