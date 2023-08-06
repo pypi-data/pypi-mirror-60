@@ -1,0 +1,4 @@
+marshmallow==3.3.0
+falcon==2.0.0
+falcon-multipart==0.2.0
+deepdiff==4.0.9
