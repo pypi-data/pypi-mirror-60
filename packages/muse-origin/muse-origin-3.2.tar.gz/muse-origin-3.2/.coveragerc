@@ -1,0 +1,13 @@
+[run]
+source = muse_origin
+
+[report]
+show_missing = false
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    def info
+    def plot
+    raise AssertionError
+    raise NotImplementedError
+    if __name__ == .__main__.:
