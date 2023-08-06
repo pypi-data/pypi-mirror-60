@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: oimdp
+Version: 0.0.1
+Summary: OpenITI mARkdown Parser
+Home-page: http://github.com/umd-mith/oimdp
+Author: Raff Viglianti
+Author-email: rviglian@umd.edu
+License: UNKNOWN
+Description: # oimdp: OpenITI mARkdown Parser
+        
+        This Python library will parse an [OpenITI mARkdown](https://alraqmiyyat.github.io/mARkdown/) and return a python class
+        representation of the document structures.
+        
+        THIS IS WORK IN PROGRESS.
+Platform: UNKNOWN
+Requires-Python: >=3.6.*
+Description-Content-Type: text/markdown
