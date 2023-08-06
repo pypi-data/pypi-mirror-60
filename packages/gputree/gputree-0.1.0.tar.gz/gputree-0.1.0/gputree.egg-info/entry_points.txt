@@ -1,0 +1,3 @@
+[console_scripts]
+gputree = gputree.cli:main
+
