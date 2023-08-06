@@ -1,0 +1,3 @@
+python-mpv
+requests
+python-mpv-jsonipc
