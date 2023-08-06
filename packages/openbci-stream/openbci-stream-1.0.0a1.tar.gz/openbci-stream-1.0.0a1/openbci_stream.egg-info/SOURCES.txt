@@ -1,0 +1,7 @@
+README.md
+setup.py
+dummy/__init__.py
+openbci_stream.egg-info/PKG-INFO
+openbci_stream.egg-info/SOURCES.txt
+openbci_stream.egg-info/dependency_links.txt
+openbci_stream.egg-info/top_level.txt
