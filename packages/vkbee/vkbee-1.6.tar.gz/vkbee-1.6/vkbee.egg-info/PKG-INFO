@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: vkbee
+Version: 1.6
+Summary: Simple Async VKLibrary faster than vk_api
+Home-page: https://github.com/asyncvk/vkbee
+Author-email: cryptoyamafox@gmail.com
+License: Mozilla Public License 2.0
+Project-URL: Github, https://github.com/asyncvk/vkbee
+Project-URL: Documentation, https://github.com/asyncvk/vkbee
+Description: ﻿![vkbee](https://github.com/asyncvk/vkbee/blob/master/vkbee/bgtio.png?raw=true)
+        ### vkbee
+        ## Установка
+        ```bash
+        pip3 install vkbee
+        ```
+        Simple Async VKLibrary faster than vk_api
+        # Пример работы
+        ```python
+        import aiohttp
+        import asyncio
+        import vkbee
+        import time
+        import datetime
+        
+        async def main(loop):
+            token = "сюдатокен"
+            vk = vkbee.VkApi(token, loop=loop)
+            delta = datetime.timedelta(hours=8, minutes=0)  # разница от UTC. Можете вписать любое значение вместо 3
+            t = (datetime.datetime.now(datetime.timezone.utc) + delta)  # Присваиваем дату и время переменной «t»
+            nowtime = t.strftime("%H:%M")  # текущее время
+            nowdate = t.strftime("%d.%m.%Y")  # текущая дата
+            none={}
+            on = await vkbee.VkApi.call(vk,"friends.getOnline",none)
+            counted = len(on)  # считаем кол-во элементов в списке
+        
+            data = {
+                'text':'VKBee: '+nowtime + " ● " + nowdate + " ● " + "Друзей онлайн: " + str(counted)
+            }
+            while True:
+                a=await vkbee.VkApi.call(vk,'status.set',data)
+                print(a)
+                time.sleep(1)
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(main(loop))
+        
+        ```
+        
+        
+        
+        
+Keywords: vk api framework python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2
+Description-Content-Type: text/markdown
