@@ -1,0 +1,8 @@
+README.md
+setup.py
+vurl_cli.egg-info/PKG-INFO
+vurl_cli.egg-info/SOURCES.txt
+vurl_cli.egg-info/dependency_links.txt
+vurl_cli.egg-info/entry_points.txt
+vurl_cli.egg-info/requires.txt
+vurl_cli.egg-info/top_level.txt
