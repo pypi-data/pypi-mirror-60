@@ -1,0 +1,9 @@
+setup_scmversion.py,sha256=Qvz3EZTN-oqFd80xaUWB0jTszzP8kQEbbzyNUCxUH4Y,3109
+test/__init__.py,sha256=BkDP4qhdawUv9kz24cTON4RhXvKvXiGuV_zbeXrj_MM,804
+test/test_setup_scmversion.py,sha256=W4C6SgGAqQc7kMeTrg7nkBIjrUp-wudvA8pOgh4er1o,2003
+jfaleiro.setup_scmversion-0.0.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+jfaleiro.setup_scmversion-0.0.1.dist-info/METADATA,sha256=EtQvnpmFWStFlTYbxHTLFSHSA0ZVBLl_Qkuj7XUF7jQ,3021
+jfaleiro.setup_scmversion-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jfaleiro.setup_scmversion-0.0.1.dist-info/entry_points.txt,sha256=AeRG_stvGKfhNk_pViubnhyE26mM4waDSy1chEf-Fb8,54
+jfaleiro.setup_scmversion-0.0.1.dist-info/top_level.txt,sha256=m3CfR4qJ_FiKbhW5mDI08w8gj0-Zl6PFEZITtSWwods,22
+jfaleiro.setup_scmversion-0.0.1.dist-info/RECORD,,
