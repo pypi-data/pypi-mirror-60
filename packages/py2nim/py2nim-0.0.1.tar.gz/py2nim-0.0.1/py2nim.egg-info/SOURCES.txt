@@ -1,0 +1,9 @@
+README.md
+setup.py
+py2nim/PythonToNim.py
+py2nim/__init__.py
+py2nim.egg-info/PKG-INFO
+py2nim.egg-info/SOURCES.txt
+py2nim.egg-info/dependency_links.txt
+py2nim.egg-info/requires.txt
+py2nim.egg-info/top_level.txt
