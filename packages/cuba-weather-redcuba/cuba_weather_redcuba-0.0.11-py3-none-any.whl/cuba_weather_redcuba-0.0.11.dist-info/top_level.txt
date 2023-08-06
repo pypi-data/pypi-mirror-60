@@ -1,0 +1,5 @@
+cuba_weather_redcuba
+cuba_weather_redcuba/data_providers
+cuba_weather_redcuba/models
+cuba_weather_redcuba/repositories
+cuba_weather_redcuba/utils
