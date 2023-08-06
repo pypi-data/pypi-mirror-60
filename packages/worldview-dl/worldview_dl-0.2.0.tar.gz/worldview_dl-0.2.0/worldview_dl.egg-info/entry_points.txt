@@ -1,0 +1,3 @@
+[console_scripts]
+worldview_dl = worldview_dl.cli:main
+
