@@ -1,0 +1,4 @@
+[console_scripts]
+world = prutils:utils.world
+ydtk = prutils:utils.hello
+
