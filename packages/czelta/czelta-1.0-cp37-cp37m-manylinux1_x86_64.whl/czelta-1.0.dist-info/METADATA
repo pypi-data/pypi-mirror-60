@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: czelta
+Version: 1.0
+Summary: Analysis libraty for project CZELTA (http://czelta.utef.cvut.cz/)
+Home-page: https://github.com/Hinogary/czelta-python/
+Author: Martin Quarda
+Author-email: hinogary@gmail.com
+License: LICENSE.txt
+Keywords: czelta cosmic rays
+Platform: UNKNOWN
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: C++
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+Requires-Dist: scipy
+Requires-Dist: PyYAML
+
+Czelta file loading and analysis library
+========================================
+
+documentation: [czelta-python.readthedocs.io](https://czelta-python.readthedocs.io/en/latest/)
+
+Compilation requirement:
+------------------------
+* C++11 compiler for use with C++ code
+* Cython compiler and Python itself for use with Python code
+
+Example Python code:
+--------------------
+```
+import czelta
+
+#init eventreader object
+reader = czelta.event_reader()
+
+#load data from file, usally downloaded from czelta website
+reader.load("test.dat")
+
+print("Events loaded: %i"%reader.number_of_events())
+
+t_sum = 0
+for event in reader:
+    t_sum += sum(event.temps()[:2])/3
+
+t_avg = t_sum/len(reader)
+print("Average tempeature is %f *C"%t_avg)
+```
+
+
