@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: snag-dom
+Version: 0.9
+Summary: An HTML utility package
+Home-page: UNKNOWN
+Author: Cassandra Gentry
+Author-email: cassiegentlekitty@gmail.com
+License: UNKNOWN
+Description: # snag-dom
+        
+        A simple Python project to make accessing HTML elements easier; really more of an experiment than a full-fledged project.
+        
+        
+        It is recommended that you create a virtual environment before installing.
+        
+        `pip install virtualenv`
+        
+        `virtualenv ev`
+        
+        `source ev/bin/activate`
+        
+        
+        Then install snag-dom.
+        
+        `pip install snag-dom`
+        
+        
+        To use, simply call `S` with the CSS selector and the URL you intend to select elements from.
+        
+        ```python
+        from snag-dom import S
+        header = S('h1', 'http://www.example.com')[0]
+        print(header)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
