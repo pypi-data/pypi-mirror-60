@@ -1,0 +1,15 @@
+baseweb/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+baseweb/config.py,sha256=hhBx8jjHhoOMES_6heDtJtixtHqE5_LCWbCDCczoUl0,647
+baseweb/interface.py,sha256=6cFpPTt4D-aAMSTYmFrd68WGbtQBhghOA0Az2sUsLvo,1026
+baseweb/module.py,sha256=napOl8yfSuKW50h8ZCBWjwkLmqMJISo7QLba4nN7t_w,457
+baseweb/rest.py,sha256=lpVrBx3BSgKMPAtHVDd6KRO0bFPrIZ7QDc_dJiNE8s4,347
+baseweb/socketio.py,sha256=RhoTfParpUog2E6egGA17oCEhwWMfm3-BxtECyVtd9Q,442
+baseweb/web.py,sha256=W6iosSo_0BPOkWpV3A44HT_8qwsgyr98rujXWDLYnh4,240
+demo/__init__.py,sha256=u-0mfPmswkiAb6VHlqBC7VFUB7yEgMSmJH2dHGkFCVc,1093
+demo/pages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demo/pages/index/__init__.py,sha256=8Y7SlGgWeD83IuoCP1gWQyaXhnwkUvXXrtyFkZewpfg,1165
+baseweb-0.0.1.dist-info/LICENSE.txt,sha256=v4fppxUq7iLyzN5dDR63Y0M-ih6Wjkurx7r6RPfWAK4,1072
+baseweb-0.0.1.dist-info/METADATA,sha256=AoLgcVXsqh8lH1L3fwrKXp3lvRNVQktzro53FBy4Y2Q,1822
+baseweb-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+baseweb-0.0.1.dist-info/top_level.txt,sha256=HUsXx3RcC7eixjpzSyCU_SXyNaRMbsOeJhhpstTc0b8,13
+baseweb-0.0.1.dist-info/RECORD,,
