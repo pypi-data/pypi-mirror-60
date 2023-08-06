@@ -1,0 +1,13 @@
+nnsplit/__init__.py,sha256=t7WyuaINbAFZVgYeIl-9zEcu7ONqAUY05294LT27_pI,2283
+nnsplit/_nbdev.py,sha256=gT1Wv07Ohv0bzWIk38ecLS18gxgva0VUfdIvruwVcys,1401
+nnsplit/core.py,sha256=n76POxgSO-BMgL7OPUuLnVgZ-9DgHNeBPWuaGXoB1N8,2084
+nnsplit/tokenizer.py,sha256=_otP-Xk2rJOnrWca6L6c-MZF8EhURTLVtBFa-Su72nk,752
+nnsplit/train.py,sha256=z50Biwd_e4thCpoc02jzunTjXxbarZriydO88ILUuc0,7927
+nnsplit/utils.py,sha256=6RbPJ6gB4TQvpn3S50WYqPilSJ7H76XKiM665pD2A7Q,659
+nnsplit/data/de.pt,sha256=Xoxc9ymNq14fivR0NcmeXc99kH7wsKvnixVYJxFmGqo,385013
+nnsplit-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nnsplit-0.0.1.dist-info/METADATA,sha256=jlHiZX0OXRcMJ1xBpIaBrAh0qEiTcKMyDf2Cj8m_VQA,1039
+nnsplit-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nnsplit-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+nnsplit-0.0.1.dist-info/top_level.txt,sha256=RZWhs9NCAcwSE7OH3VRSIDy4fcsB3t8-G-kuVbzhzvM,8
+nnsplit-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: nnsplit
+Version: 0.0.1
+Summary: Fast, robust sentence splitting with bindings for Python, Rust and Javascript.
+Home-page: https://github.com/bminixhofer/nnsplit
+Author: Benjamin Minixhofer
+Author-email: bminixhofer@gmail.com
+License: Apache Software License 2.0
+Keywords: pytorch,neural network,tokenizer,sentencizer,deep learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: somajo ; extra == 'dev'
+Requires-Dist: fastai ; extra == 'dev'
+Requires-Dist: tqdm ; extra == 'dev'
+
+# nbdev template
+
+Use this template to more easily create your nbdev project.
+
+
+
