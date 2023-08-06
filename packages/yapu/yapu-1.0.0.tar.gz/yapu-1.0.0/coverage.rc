@@ -1,0 +1,3 @@
+[run]
+source = yapu,tests
+omit = */nose/*
