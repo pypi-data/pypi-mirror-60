@@ -1,0 +1,6 @@
+pandas==0.25.3
+
+[testing]
+pytest>=3.7.4
+pytest-cov
+flake8
