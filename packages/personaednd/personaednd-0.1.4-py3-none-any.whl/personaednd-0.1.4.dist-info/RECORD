@@ -1,0 +1,15 @@
+personaednd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+personaednd/attributes.py,sha256=K9twzSXBtPPXuDgMZIQkalAWHcUi1qcGDVHG1vTclBg,12856
+personaednd/dice.py,sha256=Y_Ss4kNfOu9ioaHFLOzYuG_KP-cZq4a8fzL6zayiJJM,668
+personaednd/ol.py,sha256=7Yz90qGtCj4OwMAIQ_GyB6Fc79p8BGnTS24sgsXUKXY,4110
+personaednd/shell.py,sha256=LUCiBEPqi_iaETDV3JDglLgxWAf6zsCTl-fA_Zj1eiI,12173
+personaednd/version.py,sha256=Wzf5T3NBDfhQoTnhnRNHSlAsE0XMqbclXG-M81Vas70,22
+personaednd/sources/__init__.py,sha256=cqeq6nZ5ZoakbvPZGzKvc0gTbl0Jk0ml-LP6YspJ3iI,18336
+personaednd/sources/reader.py,sha256=_b8bmtEJkPVf5-YqFxFVhic514ZI9FLOc6RqsSvFi0Y,2481
+personaednd/sources/sources.yml,sha256=iavadCFebbkH3ySA80jLVG0igz47kYCEkkMfPmCs-7M,28782
+personaednd-0.1.4.dist-info/LICENSE,sha256=7yVH2RvO15MjCY8mqqf0-Lfr-t9GlIcvK8tVDDWlIBQ,1070
+personaednd-0.1.4.dist-info/METADATA,sha256=whJVYDshVNLH6Ri1N1kQbQGBdv5BT0iNkuKBYT_5JgI,6918
+personaednd-0.1.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+personaednd-0.1.4.dist-info/entry_points.txt,sha256=UaL6T369CPL77vQ_7yR3g4UIc7V0ESJJS0hLozrWhJg,56
+personaednd-0.1.4.dist-info/top_level.txt,sha256=rZNRPq67PzaLhr8gkLK-HUaa53uIg6wuiY3T7GUyF9s,12
+personaednd-0.1.4.dist-info/RECORD,,
