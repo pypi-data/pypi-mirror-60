@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pylint-single-element-destructuring"
+version = "0.1.0"
+description = ""
+authors = ["d1618033"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+astroid = "^2.3.3"
+pylint = "^2.4.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3.5"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
