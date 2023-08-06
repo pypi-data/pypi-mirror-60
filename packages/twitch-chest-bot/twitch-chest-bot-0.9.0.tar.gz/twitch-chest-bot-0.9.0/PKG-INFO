@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: twitch-chest-bot
+Version: 0.9.0
+Summary: Twitch bot for auto collection of chests
+Home-page: https://github.com/J4CKVVH173/twitch_auto_chests
+Author: J4CK VVH173
+Author-email: author@example.com
+License: UNKNOWN
+Description: # Twitch chests bot
+        
+        Bot for automatic collection of chests on twitch.
+        
+        `python autochests_bot -h` show all available commands
+        
+        In debug mode, you can view the area of the screen for processing and the location of the cursor click. These
+        parameters can be changed by passing arguments when starting the bot.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
