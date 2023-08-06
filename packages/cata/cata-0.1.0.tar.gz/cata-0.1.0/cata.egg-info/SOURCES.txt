@@ -1,0 +1,15 @@
+.readthedocs.txt
+.requirements-dev.txt
+MANIFEST.in
+Readme.rst
+requirements.txt
+setup.py
+cata/__init__.py
+cata/__meta__.py
+cata/tests.py
+cata.egg-info/PKG-INFO
+cata.egg-info/SOURCES.txt
+cata.egg-info/dependency_links.txt
+cata.egg-info/not-zip-safe
+cata.egg-info/requires.txt
+cata.egg-info/top_level.txt
