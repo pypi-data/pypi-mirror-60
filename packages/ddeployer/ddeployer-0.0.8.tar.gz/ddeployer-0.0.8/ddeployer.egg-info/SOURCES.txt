@@ -1,0 +1,14 @@
+README.md
+setup.py
+dd/__init__.py
+dd/__main__.py
+dd/daemon.py
+dd/main.py
+dd/mylog.py
+dd/run.py
+ddeployer.egg-info/PKG-INFO
+ddeployer.egg-info/SOURCES.txt
+ddeployer.egg-info/dependency_links.txt
+ddeployer.egg-info/entry_points.txt
+ddeployer.egg-info/requires.txt
+ddeployer.egg-info/top_level.txt

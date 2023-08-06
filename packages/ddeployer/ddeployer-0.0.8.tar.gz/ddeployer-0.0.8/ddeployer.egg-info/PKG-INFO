@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ddeployer
+Version: 0.0.8
+Summary: A simple tool for deploying docker
+Home-page: https://github.com/stosc/dockerdeployer
+Author: stosc lee
+Author-email: stosc@sidaxin.com
+License: MIT Licence
+Description: 详情请见：[https://github.com/stosc/dockerdeployer](https://github.com/stosc/dockerdeployer)
+Keywords: pip,docker,deploy,k8s,kubernetes,ddeployer,ddd
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,4 @@
+[console_scripts]
+ddd = dd.main:run
+ddeployer = dd.run:main
+
