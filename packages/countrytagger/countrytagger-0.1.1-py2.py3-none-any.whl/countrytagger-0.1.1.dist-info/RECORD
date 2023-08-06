@@ -1,0 +1,9 @@
+countrytagger/__init__.py,sha256=jWA4Viwdi-M4WoSoakaDWpgPlJZb_SfGm5dSuJRO0Rc,1421
+countrytagger/generate.py,sha256=iXrVuoy0AqSVBBamSbzNML1hhXcw2t5x-muQpimYRJg,1655
+countrytagger/util.py,sha256=ydswZkol2eTHtNwngcYyZ51TIkIUrFcGfqJkcIYQP_w,629
+countrytagger/data/places.csv,sha256=57oX7I8TshbfXFfh9mQWOuayoSGWJcD73ExfSaf1C7U,2930071
+countrytagger-0.1.1.dist-info/LICENSE,sha256=WfibZcAImsTrxEuRCVq-Lhi68LzN2n0X8Ua_hrcpskg,1094
+countrytagger-0.1.1.dist-info/METADATA,sha256=GyPvh6SjudKp6Cs2jz6gdavFkn7ZoANMU_Kzk4rWlb8,1185
+countrytagger-0.1.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+countrytagger-0.1.1.dist-info/top_level.txt,sha256=6zNH_gUZkRUShyCrMdMwdEtLHA-OGmru0rouSuAGkjA,14
+countrytagger-0.1.1.dist-info/RECORD,,
