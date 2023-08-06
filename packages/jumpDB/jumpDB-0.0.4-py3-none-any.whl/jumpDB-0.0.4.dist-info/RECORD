@@ -1,0 +1,11 @@
+jumpDB/__init__.py,sha256=cjhW_mbPOBcUo_dbvRmYdICTHRaHtwGPqr9wOB6dhPo,23
+jumpDB/jump_db.py,sha256=eUftIQfvsCJGHeToABr2Y-iO0k8gn7Q3MgvLoCXDsCA,16574
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=E_hRfMQ7o79_JJxdGXcEmPOLxThup-etg38AxCzNA3s,115
+tests/test_db.py,sha256=ITzN4YpGQINZXZN6UWA430uUdpBVRF-bhdqqihbYQZU,5271
+tests/test_segment.py,sha256=VVvpwW4Os2fjjF9Y1_hMnyvIqC5qVWf5a4qdzOS9qNQ,4183
+jumpDB-0.0.4.dist-info/LICENSE,sha256=edJsh4g8aJzFChbinD-dAGmpI4YtitzKvBdINirUedw,1316
+jumpDB-0.0.4.dist-info/METADATA,sha256=86hZYGpiRYvhLhoieJikHdrWam6xdMmd5SxHWbv9sbQ,3575
+jumpDB-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jumpDB-0.0.4.dist-info/top_level.txt,sha256=WGd4kK3nbyfEi4IABR-TtryMHv_IfIzPY-QZFKLMvj4,13
+jumpDB-0.0.4.dist-info/RECORD,,
