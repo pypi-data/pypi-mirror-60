@@ -1,0 +1,36 @@
+stages:
+  - style
+  - test
+
+image: python:3.7
+
+before_script:
+  - pip install -r requirements.txt
+
+flake8:
+  stage: style
+  script:
+    - flake8
+
+black:
+  stage: style
+  script:
+    - black --check .
+
+mypy:
+  stage: style
+  script:
+    - mypy --strict sqlite_numpy
+
+tests-3.7:
+  stage: test
+  script:
+    - python setup.py develop
+    - pytest
+
+tests-3.8:
+  stage: test
+  image: python:3.8
+  script:
+    - python setup.py develop
+    - pytest
