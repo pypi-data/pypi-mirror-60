@@ -1,0 +1,8 @@
+typing-extensions
+
+[dev]
+pytest
+setuptools
+twine
+wheel
+typeguard
