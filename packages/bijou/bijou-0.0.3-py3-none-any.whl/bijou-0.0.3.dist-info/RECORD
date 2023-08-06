@@ -1,0 +1,13 @@
+bijou/__init__.py,sha256=I6OEksMKf30NluY2fyzwJl_kS0VDnSXkTrAsLLgnrcs,15
+bijou/callbacks.py,sha256=vaU2V8yTWaTnflbYy6HKoYEWzQgkk5LsiBlH0BOuS2M,14035
+bijou/data.py,sha256=FFU1QlT4SRiNV-oFb7rkbV-tJN9BgZgHb1QtoQdb948,3010
+bijou/hook.py,sha256=0DBlA2UPXrT9-t78HyDN0OAiEZ1lNa9vliZnZmmUma4,2015
+bijou/learner.py,sha256=jLBfluRd9zeJTZ4H8-XNHEY4ZUj49bf8eanGPBkAHto,5366
+bijou/metrics.py,sha256=U_tpTb4G7TWTGVNzZHfPbF8H0XzNiFtnwJrvm74SF5M,2911
+bijou/modules.py,sha256=7Rkc0DTTMFBhIH55-akxauMCADzCOA4xgp3daYbd68o,644
+bijou/utils.py,sha256=NAFf2OeUG5tzZQTXFnmYwUNsWrBoTnyX4_0_7Cti85s,1575
+bijou-0.0.3.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+bijou-0.0.3.dist-info/METADATA,sha256=-JKrely7QBmxwLf4riq1wZEtk7CQ1m4z-zyx6-FrfV4,576
+bijou-0.0.3.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+bijou-0.0.3.dist-info/top_level.txt,sha256=KOaRrC0XGx3rVJIln9m49jRFtV_OWsTMTshhe3vybtM,6
+bijou-0.0.3.dist-info/RECORD,,
