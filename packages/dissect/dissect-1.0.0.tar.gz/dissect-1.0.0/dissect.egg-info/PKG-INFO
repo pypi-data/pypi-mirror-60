@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: dissect
+Version: 1.0.0
+Summary: Namespace and collection package for all dissect projects.
+Home-page: https://github.com/fox-it/dissect
+Author: Fox-IT
+License: MIT
+Description: # dissect
+        This package serves as a namespace and collection package for all dissect.\* related projects. It's only purpose is to secure the dissect namespace, as well as provide an easy way of installing all open-sourced dissect packages.
+        
+        Currently, it will install the following packages:
+        - dissect.cstruct
+        
+        ## Installation
+        ```
+        pip install dissect
+        ```
+        
+Keywords: dissect
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
