@@ -1,0 +1,2 @@
+include alure.pxd palace.pyx CMakeLists.txt
+graft examples
