@@ -1,0 +1,7 @@
+setup.py
+sga_imdb/imdb.py
+sga_imdb.egg-info/PKG-INFO
+sga_imdb.egg-info/SOURCES.txt
+sga_imdb.egg-info/dependency_links.txt
+sga_imdb.egg-info/not-zip-safe
+sga_imdb.egg-info/top_level.txt
