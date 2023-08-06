@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "dataget"
+version = "0.4.1"
+description = "A framework-agnostic datasets library for Machine Learning research and education."
+authors = ["Cristian Garcia <cgarcia.e88@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/cgarciae/dataget"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+httpx = "*"
+numpy = "*"
+pandas = "*"
+idx2numpy = "*"
+aiofiles = "*"
+tqdm = "*"
+pyarrow = "*"
+kaggle = "^1.5.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3.5"
+pytest-cov = "^2.8.1"
+pytest-sugar = "^0.9.2"
+coverage = "^5.0.3"
+mkdocs = "^1.0.4"
+mkdocs-material = "^4.6.0"
+mkdocstrings = "^0.7.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
