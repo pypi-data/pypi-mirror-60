@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: arancini
+Version: 0.1.0
+Summary: scATAC-seq utils
+Home-page: https://github.com/mvinyard/arancini
+Author: Michael Edward Vinyard
+Author-email: vinyard@g.harvard.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: samtools
+Requires-Dist: bedtools
+Requires-Dist: umi-tools
+Requires-Dist: pysam
+Requires-Dist: pandas
+Requires-Dist: os
+Requires-Dist: time
+Requires-Dist: trimmomatic
+Requires-Dist: bwa
+Requires-Dist: fastqc
+Requires-Dist: multiqc
+Requires-Dist: sys
+Requires-Dist: glob
+Requires-Dist: subprocess
+Requires-Dist: tqdm
+
+This package contains various pre-processing and post-processing tools for scATAC-seq data
+
+
