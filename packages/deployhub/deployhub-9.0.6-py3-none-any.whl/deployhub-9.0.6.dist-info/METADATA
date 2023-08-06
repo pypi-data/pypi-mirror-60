@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: deployhub
+Version: 9.0.6
+Summary: UNKNOWN
+Home-page: https://www.deployhub.com
+Author: Steve Taylor
+Author-email: steve@deployhub.com
+License: GNU AFFERO GENERAL PUBLIC LICENSE
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: click
+Requires-Dist: qtoml
+Requires-Dist: PyYAML
+Requires-Dist: requests
+
+# DeployHub CLI
+The dh script interacts with the DeployHub REST APIs to perform a deployment of an application to an environment and update an application version with the component version including attributes.
+
+
+
