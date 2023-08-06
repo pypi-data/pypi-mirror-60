@@ -1,0 +1,33 @@
+Metadata-Version: 1.2
+Name: distributions-avb-udt
+Version: 0.2
+Summary: Distributions
+Home-page: UNKNOWN
+License: GNU GENERAL PUBLIC LICENSE v3.0
+Description: Distributions
+        =============
+        
+        A package for representing and manipulating distributions.
+        
+        Installation
+        ------------
+        
+        ``pip install distributions``
+        
+        Usage
+        -----
+        
+        ::
+        
+            from distributions import Gaussian, Binomial
+        
+            g = Gaussiann(0, 1)
+            b = Binomial(0.5, 15)
+        
+        Supported distributions
+        -----------------------
+        
+        Gaussian, Binomial
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6

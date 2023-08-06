@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+distributions/Binomialdistribution.py
+distributions/Gaussiandistribution.py
+distributions/Generaldistribution.py
+distributions/__init__.py
+distributions_avb_udt.egg-info/PKG-INFO
+distributions_avb_udt.egg-info/SOURCES.txt
+distributions_avb_udt.egg-info/dependency_links.txt
+distributions_avb_udt.egg-info/not-zip-safe
+distributions_avb_udt.egg-info/top_level.txt
