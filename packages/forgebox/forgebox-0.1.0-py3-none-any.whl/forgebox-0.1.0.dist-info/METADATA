@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: forgebox
+Version: 0.1.0
+Summary: Tools for managing machine learning
+Home-page: UNKNOWN
+Author: raynardj
+Author-email: raynard@rasenn.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: tqdm (>=4.25.0)
+
+UNKNOWN
+
+
