@@ -1,0 +1,33 @@
+image: goblinogm/goblin-buildchain:latest
+
+cache:
+  paths:
+  - vendor
+
+test:
+  services:
+    - name: goblinogm/gremlin-server-python:latest
+      alias: gremlin-server
+  image: goblinogm/goblin-buildchain:latest
+  script:
+  - pip install -U codecov codacy-coverage
+  - pip install -U -r requirements.txt
+  - coverage run --source=goblin/ setup.py test
+  - python -m unittest discover
+  - coverage report -m
+  - coverage xml
+  - python-codacy-coverage -r coverage.xml
+  - codecov
+  coverage: '/TOTAL.+ ([0-9]{1,3}%)/'
+pages:
+  script:
+  - pip install -U -r requirements.txt
+  - cd docs
+  - make html
+  - cd ..
+  - mv docs/_build/html public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
